@@ -1,0 +1,119 @@
+{
+  "lang": "ar-EG",
+  "country": "EG",
+  "title": "ليلى والفانوس والكشري",
+  "title_en": "Layla, the Lantern, and the Koshari",
+  "characters": [
+    { "name": "ليلى حسن", "role": "protagonist", "note": "Layla Hassan, 10, American-Egyptian from New Jersey; curly dark-brown hair in two braids, round red glasses, yellow T-shirt." },
+    { "name": "تيتة سميرة", "role": "elder_mentor", "note": "Teta Samira, Layla's grandmother in Sayyida Zeinab, Cairo; lilac flowered headscarf, blue apron, gentle wrinkles, full of proverbs." },
+    { "name": "بابا كريم", "role": "bridge_parent", "note": "Karim Hassan, Layla's Cairo-born father; short beard, rectangular glasses, white shirt with rolled sleeves." },
+    { "name": "ماما سارة", "role": "supportive_parent", "note": "Sarah Hassan, Layla's American mother who is cheerfully learning Arabic; freckles, auburn ponytail, green blouse." },
+    { "name": "يوسف", "role": "younger_sibling", "note": "Yusuf, 6, Layla's brother; messy curls, a missing front tooth, dinosaur T-shirt." },
+    { "name": "نور", "role": "host_peer", "note": "Nour, 11, neighbour upstairs and patient lantern expert; short black bob, orange striped dress." },
+    { "name": "زياد", "role": "host_peer", "note": "Ziad, 9, Nour's joking brother; skinny, spiky black hair, green football shirt." }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "title": "تيتة في المطار",
+      "text": "أول ما باب المطار اتفتح، الحر خبط في وش ليلى زي ما يكون حد فتح فرن كبير. وبعدين سمعت صوت عالي جاي من ورا السور: «يا ليلى! يا حبيبة قلب تيتة!» تيتة سميرة كانت واقفة بطرحتها البنفسجي، ورافعة إيديها الاتنين كأنها بتوقف طيارة. ليلى جريت عليها، وتيتة حضنتها حضن طويل خلى نضارتها الحمرا تتعوج. ليلى كانت مذاكرة جملة كاملة في الطيارة، عشر مرات ورا بعض. خدت نفسها وقالت: «إزيك يا تيتة؟ أنا وحشتيني أوي!» تيتة ضحكت لحد ما عينيها دمعت، وقالت: «إنتي اللي وحشتيني يا قلبي، قصدك كده!» يوسف أخوها الصغير شد طرف فستانها وسألها: «هو فيه ديناصورات في مصر؟» بابا كريم شال الشنط وهو بيضحك، وماما سارة قالت بثقة: «رمضان كريم!» رغم إن الكلمة طلعت منها شبه «رمضان كارام». ليلى بصت في الأرض وخدودها سخنت شوية. عشر مرات في الطيارة، وبرضه الجملة طلعت غلط. بس تيتة مسكت إيدها وما سابتهاش طول الطريق لحد العربية.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt being hugged at Cairo airport by her grandmother Teta Samira in a lilac flowered headscarf, while her father Karim with a short beard, her auburn-haired mother Sarah and little Yusuf in a dinosaur T-shirt look on smiling."
+    },
+    {
+      "id": 2,
+      "title": "البلكونة في السيدة زينب",
+      "text": "شقة تيتة في السيدة زينب، في الدور التالت من عمارة قديمة سلمها بيزيق مع كل خطوة. ريحة البيت كانت خليط من الكمون والصابون والغسيل النضيف. ليلى خرجت البلكونة، وفضلت واقفة مش مصدقة عينيها. الشارع كله كان متزوق! زينة ملونة متعلقة من بلكونة لبلكونة، وفوانيس حمرا وخضرا وصفرا بتتهز فوق دماغ الناس، وبياع العرقسوس ماشي بيرن بالصاجات بتاعته. «الله!» قالت ليلى بصوت واطي. في البلكونة اللي فوقها، بنت شعرها أسود قصير طلت براسها، وجنبها ولد رفيع شعره واقف زي القنفد. الولد زعق: «إنتي بنت عمو كريم اللي جاية من أمريكا؟» قلب ليلى دق جامد. كل الجمل اللي حفظتها طارت من دماغها مرة واحدة. فتحت بقها، وما طلعش منه غير: «هاي». الولد والبنت بصوا لبعض وضحكوا ضحكة صغيرة، مش وحشة يعني، بس ليلى سمعتها. رفعت إيدها وسلمت بسرعة، ودخلت جوه وهي بتقول لنفسها: «خلاص، من النهارده أنا هتكلم بالإشارة وبس».",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt on an old Cairo balcony in Sayyida Zeinab, shyly waving up at 11-year-old Nour with a short black bob and orange striped dress and 9-year-old Ziad with spiky black hair and a green football shirt, beneath strings of colourful Ramadan decorations and lanterns."
+    },
+    {
+      "id": 3,
+      "title": "مهمة العدس",
+      "text": "تاني يوم الصبح، تيتة حطت صينية كبيرة قدام ليلى، وعليها جبل صغير من العدس. «يوم الجمعة العيلة كلها هتفطر هنا. خمسة وعشرين نفر، وعمك مش بياكل في رمضان حاجة غير كشري تيتة». ليلى برقت: «خمسة وعشرين؟ وكشري على الفطار؟» تيتة غمزت وقالت: «الناس بتستنى المحشي والبط، بس عيلتنا مجانين كشري من زمان. وإنتي بقى مساعدتي الأولى». شغلانة ليلى كانت تنقي العدس، وتشيل منه أي طوبة صغيرة أو حباية سودا. تيتة شاورت بصباعها: «دي اسمها إيه؟» «أدس». «لأ يا حبيبتي. عدس. عـــ. طلعيها من هنا، من زورك». ليلى حاولت، فطلع منها صوت شبه واحد بيغرغر بمية. يوسف وقع من الضحك على الأرض، وتيتة كمان ضحكت، بس ضحكتها كانت دافية. ليلى كانت صايمة لحد الضهر زي ما اتفقت مع بابا، وبطنها بتزقزق. فضلت تنقي وتقول بصوت واطي: «عدس، عدس، عدس». وكل حباية بتتشال، كانت الكلمة بتبقى أحسن حبة صغيرين.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt sorting a large tray of brown lentils at a kitchen table beside Teta Samira in a lilac flowered headscarf and blue apron, while little Yusuf in a dinosaur T-shirt giggles on the tiled floor."
+    },
+    {
+      "id": 4,
+      "title": "شارع الفوانيس",
+      "text": "بعد العصر، بابا كريم خد ليلى ويوسف لتحت الربع، الشارع اللي جنب باب زويلة، عشان يشوفوا الفوانيس. ليلى عمرها ما شافت حاجة زي كده! فوانيس صاج وإزاز قد الإيد، وفوانيس قد يوسف نفسه، وصنايعية قاعدين على الرصيف بيقصوا الصفيح ويلحموه قدام الناس، وبابا شدها بعيد عن الشرار وقال: «نتفرج من هنا». ليلى وقفت قدام فانوس أزرق وقالت للراجل بكل شجاعتها: «بكام ده لو سمحت؟» الراجل ابتسم وقال: «ده ببلاش علشانك يا أمريكانية! إنتي منين في أمريكا؟» هو كان بيهزر، وصوته طيب خالص. بس الكلمة قعدت في قلب ليلى زي حباية رز واقفة في الزور. أمريكانية. في مدرستها في نيوجيرسي، العيال بيقولوا لها: «إنتي منين بجد؟» وهنا في مصر بيقولوا لها أمريكانية. وهي بقى من فين؟ بابا بص لها كأنه فاهم من غير كلام. «وأنا صغير كنت باجي هنا مع جدك، وكنت عايز فانوس كل سنة». وطبطب على كتفها وقال: «تعالي، نشتري كيس فشار ليوسف ونرجع».",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt looking thoughtfully at a blue tin-and-glass lantern on a crowded Cairo lantern street near an old stone gate, holding the hand of her father Karim with a short beard and rectangular glasses, with little Yusuf in a dinosaur T-shirt beside them."
+    },
+    {
+      "id": 5,
+      "title": "الكلب اللي على الفانوس",
+      "text": "يوم الحد، نور خبطت على الباب، وقالت لتيتة: «ممكن ليلى تطلع معانا السطح؟ بنعمل فوانيس لعيال العمارة». ليلى طلعت وهي ساكتة. فوق، كان فيه خمس عيال قاعدين على حصيرة، وقدامهم كرتون وورق سلوفان ملون، وصمغ، ومقصات صغيرة بسن مدور، ولمبات صغيرة بالبطارية بدل الشمع. نور علمتها إزاي تقص الشبابيك في الكرتون، وتلزق وراها السلوفان الأحمر والأصفر. ليلى لقت إيديها شاطرة في الموضوع ده، وابتدت تنسى إنها مكسوفة. زياد قرب منها وسأل: «هتحطي إيه على الوش الأخير؟» كانت عايزة ترسم قلب كبير. قالت بكل حماس، وبصوت عالي: «أنا عايزة أحط كلب كبير على الفانوس!» السطح سكت ثانية واحدة. بعدين انفجر. زياد وقع على ضهره، وبيقول: «كلب؟ كلب؟ هو هيهوهو في رمضان؟» واحدة من البنات ابتدت تنبح. ليلى ما فهمتش في الأول، وبعدين فهمت. وشها ولع. كلب مش قلب! سابت المقص على الحصيرة، وقالت: «أنا لازم أنزل»، ونزلت السلم بسرعة، ونور بتنادي عليها من فوق: «استني يا ليلى!»",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of a Cairo rooftop at golden hour where 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt stands blushing among children making cardboard-and-cellophane lanterns, as 9-year-old Ziad with spiky black hair and a green football shirt rolls with laughter and 11-year-old Nour with a short black bob and orange striped dress reaches toward her kindly."
+    },
+    {
+      "id": 6,
+      "title": "القلب والألب",
+      "text": "تيتة كانت في المطبخ بتغسل الرز. شافت وش ليلى من الباب، وما سألتش ولا سؤال. قفلت الحنفية، وادتها كوباية مية، لأن ليلى كانت فطرت خلاص من الضهر. ليلى حكت لها وهي بتعيط وبتضحك في نفس الوقت. «قلت كلب يا تيتة! قدام كل الناس!» تيتة شالت نضارة ليلى الحمرا ومسحتها في المريلة الزرقا، ورجعتها على وشها. «اسمعي بقى. إحنا في مصر بنقول ألب، مش قلب. الكتاب بيقول قلب، والقاهرة بتقول ألب. وأبوكي لما كان عنده أربع سنين، قال لمدرسته: أنا بحبك يا ميس من كل كلبي!» ليلى ضحكت من وسط دموعها. «بجد؟» «وحياتك. وأنا لما رحت أزورك في نيوجيرسي، طلبت من الراجل في السوبر ماركت كيلو كيتشن، وكنت عايزة تشيكن. الراجل قال لي: مطبخ يا مدام؟ عايزة مطبخ بالكيلو؟» ليلى ماتت من الضحك. تيتة حطت في إيدها حفنة رز تحت المية. «اغسلي معايا. اللي بيتكلم بيغلط، واللي بيغلط بيتعلم. واللي ساكت ده بس اللي ما بيغلطش، بس كمان ما حدش بيعرفه».",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of a cosy Cairo kitchen where Teta Samira in a lilac flowered headscarf and blue apron gently cleans the round red glasses of teary, laughing 10-year-old Layla with curly dark-brown hair in two braids and a yellow T-shirt, beside a big bowl of rice soaking under the tap."
+    },
+    {
+      "id": 7,
+      "title": "البروفة الكبيرة",
+      "text": "قبل العزومة بكام يوم، تيتة قررت تعمل بروفة صغيرة. قالت لليلى: «الكشري زي الفرقة الموسيقية. كل واحد ليه دوره». تيتة وقفت قدام البوتاجاز، وحواليها الحلل بتبقبق، وليلى واقفة بعيد عند الترابيزة، مسؤولة عن كل حاجة باردة. كيلت المكرونة في الكوباية، وعصرت الليمون، وخلطت الخل مع التوم اللي تيتة فرمته لها، وعملت الدقة. «حطي معلقتين خل». ليلى كانت بتحسب بالمعلقة الأمريكاني الكبيرة بتاعة ماما، فحطت معلقتين... وبعدين كمان معلقتين عشان تبقى متأكدة. لما المغرب أدن وفطروا، يوسف خد أول معلقة دقة. عينيه فضلت تكبر وتكبر. وشه بقى زي الطماطم. وقال بصوت مبحوح: «أنا... شايف... ديناصور!» كل اللي في البيت ماتوا من الضحك، وماما سارة قالت بعربيتها اللي بتتكعبل: «أنا بحب الخل... أوي... بس مش أوي أوي». تيتة دقت طعمها وكشرت وشها كله، بعدين طبطبت على ليلى: «ولا يهمك. البروفة معمولة عشان نغلط فيها. يوم الجمعة معلقتين بس، ومصري مش أمريكاني».",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of a family iftar table in a Cairo flat where little Yusuf in a dinosaur T-shirt pulls a comically sour face after tasting garlic-vinegar sauce, as 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt covers her mouth laughing beside Teta Samira in a lilac flowered headscarf and auburn-haired Sarah in a green blouse."
+    },
+    {
+      "id": 8,
+      "title": "رسمة تحت الباب",
+      "text": "تاني يوم الصبح لقت ليلى ورقة مطوية داخلة من تحت باب الشقة. فتحتها. كانت رسمة بالألوان الخشب لكلب صغير بودان كبيرة، ماسك في بقه قلب أحمر، ومكتوب تحتها بخط معوج: «آسف. زياد». وتحتها بخط أحسن: «السطح بعد العصر. فانوسك مستنيكي. نور». ليلى فضلت ماسكة الورقة كتير. لما طلعت السطح، رجليها كانت تقيلة شوية، بس طلعت. زياد قام بسرعة، وباين عليه مكسوف بجد، حاجة نادرة جدا. قال: «أنا ضحكت عشان كانت جملة تحفة، مش عشانك إنتي». نور ادته خبطة على دماغه وقالت: «قول عدل!» ليلى خدت نفسها، وقالت بصوت واضح: «عندي فكرة. هرسم الاتنين». «الاتنين إيه؟» «قلب... وكلب. الكلب ماسك القلب. زي رسمتك». زياد فتح بقه، وبعدين صقف بإيديه الاتنين: «ده هيبقى أحلى فانوس في السيدة زينب كلها!» ليلى قعدت على الحصيرة ومسكت المقص الصغير تاني، وقصت الكلب من الكرتون بودانه الكبيرة، ولزقت وراه سلوفان أصفر، وقلبه أحمر. ومن وقتها، كل العمارة بقت تسمي الفانوس ده: فانوس الكلب.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt smiling on a Cairo rooftop mat as she cuts a floppy-eared dog shape from cardboard, while 9-year-old Ziad with spiky black hair and a green football shirt applauds and 11-year-old Nour with a short black bob and orange striped dress holds up red and yellow cellophane."
+    },
+    {
+      "id": 9,
+      "title": "زانك يو",
+      "text": "وهما بيلزقوا، زياد قال فجأة: «علميني إنجليزي. أنا بعرف أقول كل حاجة». ليلى سألته: «قول يعني إيه شكرا؟» وقف زياد وعدل ياقة التيشرت الأخضر بتاعه زي المذيعين، وقال بفخر: «زانك يو فيري ماتش!» ليلى كتمت الضحكة، بس ما قدرتش. «اسمها ثانك، حط لسانك بين سنانك». زياد طلع لسانه، وحاول، فطرطش على كل اللي قدامه. «ثثثثانك!» كل العيال حاولوا، والسطح كله بقى بيرش. نور قالت وهي بتمسح نضارة ليلى: «وعلى فكرة، ستي من سوهاج بتنطق الجيم والقاف غيرنا خالص، وخالتو في إسكندرية بتتكلم بطريقة تانية خالص، وكلنا مصريين». ليلى بطلت لزق، وسرحت. «يعني كل الناس عندها لهجة؟» زياد قال وهو بيمسح بقه: «طبعا! وأنا عندي لهجة إنجليزي، اسمها زانك يو». ليلى ضحكت من قلبها، قلب مش كلب. الشمس كانت بتنزل ورا المآذن، والسما بقت لونها زي البرتقال. كان أول يوم تحس فيه إن صوتها، بكل حروفه المعوجة، مش حاجة لازم تخبيها.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of children on a Cairo rooftop at sunset with minarets behind them, where 9-year-old Ziad with spiky black hair and a green football shirt comically sticks out his tongue practising English, as 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt and 11-year-old Nour with a short black bob and orange striped dress laugh among paper lanterns."
+    },
+    {
+      "id": 10,
+      "title": "يوسف قعد على الفانوس",
+      "text": "الفانوس خلص أخيرا، ونزلته ليلى الشقة زي ما تكون شايلة بيضة نعام. حطته على الكنبة عشان الصمغ ينشف، وراحت تجيب اللمبة الصغيرة. سمعت صوت خفيف كده: «كرررش». رجعت لقت يوسف قاعد على الكنبة، بيتفرج على الكارتون، وتحته حاجة ملونة ومفعوصة. «يوسف! قوم! قوم بسرعة!» يوسف قام وبص وراه، وشاف الفانوس بقى زي الفطيرة. الكلب ودانه اتنيت، والسلوفان اتقطع. يوسف شفايفه ابتدت تترعش، وعينيه ملت دموع. ليلى كانت عايزة تزعق، وفي الحقيقة زعقت شوية. بس لما شافته بيعيط بجد، افتكرت البنت اللي نزلت السلم بتجري، وعرفت الإحساس ده. قعدت جنبه وقالت: «خلاص، ما تعيطش. انت ما كنتش شايفه». بعدين ماما سارة جات بشريط لزق، ونور وزياد نزلوا بالكرتون. الأربعة فردوا الفانوس على الترابيزة، وزياد قال: «دلوقتي الكلب بقى شكله كأنه خارج من خناقة، وده أحلى». يوسف مسح مناخيره وطلب يساعد. ليلى ادته الصمغ وقالت: «المرة دي انت حارس الفانوس، ما تقعدش عليه!»",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of a Cairo living room where 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt comforts teary little Yusuf in a dinosaur T-shirt beside a squashed cardboard lantern, as auburn-haired Sarah in a green blouse, Nour with a short black bob and Ziad with spiky black hair arrive with tape and cardboard."
+    },
+    {
+      "id": 11,
+      "title": "البصل اتحرق",
+      "text": "يوم الجمعة، الشقة كانت زي خلية نحل. حلة العدس والرز على النار، وحلة المكرونة بتغلي، وبابا كريم واقف قدام طاسة البصل، شايل مهمة ما حدش بيتساهل فيها. البصل المحمر هو تاج الكشري، وتيتة بنفسها سلمته المعلقة الكبيرة. «ركز يا كريم، ما تسيبش الطاسة!» بس عمو حسام اتصل يسأل على العنوان، زي كل سنة، وبابا مسك التليفون ثانيتين، أو يمكن عشرين. بعدين شم الكل نفس الريحة. تيتة جريت وقفلت البوتاجاز، وبابا شال الطاسة. البصل بقى فحم أسود، والدخان طالع من الشباك، ويوسف بيكح وبيقول: «ده بصل ديناصور!» بابا كريم وقف زي العيل الصغير قدام مدرسته. «يا ماما، والله ما...». تيتة بصت في الساعة. فاضل ساعتين على المغرب، والبصل اللي في البيت خلص، وكلهم مشغولين. ليلى رفعت إيدها: «أنا هروح أجيب». الكل بص لها. «لوحدك؟» «مع نور. عند عم سيد البقال، تحت العمارة». سكتت ثانية، وبعدين قالت: «أنا عارفة أتكلم». تيتة حطت في إيدها الفلوس وابتسمت.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of a busy Cairo kitchen with a little smoke drifting out of the window where Karim with a short beard and rectangular glasses sheepishly holds a blackened pan away from the children, while Teta Samira in a lilac flowered headscarf and blue apron hands money to brave 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt."
+    },
+    {
+      "id": 12,
+      "title": "عند عم سيد",
+      "text": "نور نزلت معاها، بس قالت: «إنتي اللي هتتكلمي، أنا هقف أتفرج». دكان عم سيد كان ضيق وطويل، مليان شكاير وعلب، وريحة الجبنة والزتون مالية المكان. وكان فيه طابور! ليلى قلبها كان بيدق، وقلبت الجملة في دماغها مية مرة. لما جه دورها، وقفت على طراطيف صوابعها. «السلام عليكم يا عم سيد. رمضان كريم». «الله أكرم يا ست البنات». «لو سمحت، عايزة خمسة كيلو بصل. البصل بتاعنا اتحرق». عم سيد رفع حواجبه. «خمسة كيلو؟ إنتي بنت مين؟» «أنا ليلى، بنت كريم، حفيدة تيتة سميرة». بص لها من فوق نضارته. «آه! إنتي بقى الأمريكانية بتاعة فانوس الكلب؟» ليلى حست بالكلمة تاني. بس المرة دي رفعت راسها وضحكت. «أنا من هنا ومن هناك يا عم سيد. والكلب ده بتاعي، وكان غلطة، بس طلع حلو». الراجل ضحك لحد ما كرشه اتهز، ووزن البصل وزود بصلتين فوق البيعة. «قولي لسميرة، حفيدتها لسانها مصري، حتى لو طالع بالعافية». نور خبطت كتفها في كتف ليلى، وطلعوا السلم جري.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of a narrow old Cairo grocery shop lined with sacks and tins, where 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt stands on tiptoe confidently talking to a chuckling round-bellied grocer weighing onions, as 11-year-old Nour with a short black bob and orange striped dress watches proudly."
+    },
+    {
+      "id": 13,
+      "title": "طبقات وطبقات",
+      "text": "البصل الجديد اتحمر على إيد تيتة نفسها، وبابا اتمنع رسميا من دخول المطبخ. ليلى لفت حوالين الترابيزة الكبيرة اللي خرجت لنص الصالة، وحطت الأطباق وعدتها: خمسة وعشرين. تيتة جابت أول طبق كبير بعد ما برد شوية، وقالت: «يلا، ده شغلك». تيتة بتغرف، وليلى بتحط بالراحة: الرز والعدس الأول، بعدين المكرونة، وبعدين الصلصة الحمرا، وبعدين الحمص، وعلى الوش البصل المحمر اللي بيقرمش. والدقة في طبق لوحدها، والمرة دي كانت بمعلقتين مصري، ويوسف، حارس الفانوس والدقة، اتأكد بنفسه. الجرس رن، ورن تاني، والشقة اتملت. عمو حسام وصل، وأول حاجة قالها: «هو الشارع ده اتنقل؟» عمتو وعيالها، وأبو نور وزياد وأمهم جايين بصينية قطايف، وطنط ماري جارتهم اللي في الدور الأول جابت طبق كنافة زي كل سنة، وقالت: «رمضان كريم يا حبايبي». الكل بيسلم وبيبوس وبيتكلم في نفس الوقت. عمة ليلى قرصتها من خدها وقالت: «كبرتي يا بت!» وليلى ردت من غير ما تفكر: «وحشتيني أوي يا عمتو». والجملة طلعت صح من أول مرة.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt carefully layering crispy onions on platters of koshari at a long family table with Teta Samira in a lilac flowered headscarf and blue apron, as cheerful relatives and neighbours arrive through the door carrying trays of sweets."
+    },
+    {
+      "id": 14,
+      "title": "أنا كشري",
+      "text": "قبل المغرب بشوية، ليلى ونور وزياد خرجوا البلكونة، وعلقوا الفانوس. لمبته الصغيرة نورت، والكلب الأصفر بقلبه الأحمر، بودانه المتنية وشريط اللزق بتاعه، ظهر قدام الشارع كله. عيال من البلكونة اللي قصادهم زعقوا: «فانوس الكلب!» والراديو جوه جاب صوت المدفع، وبعده الأدان. الكل سكت لحظة، وكل واحد خد تمرة ومية. بعدين الترابيزة اشتغلت! عمو حسام خد أول معلقة، وغمض عينيه، وقال: «يا سلام! مين عمل الدقة دي؟» تيتة حطت إيدها على كتف ليلى: «الشيف بتاعتي». ابن عمتها، اللي أكبر منها، سألها بهزار: «طيب إنتي دلوقتي مصرية ولا أمريكانية؟» الترابيزة كلها بصت لها، وليلى بصت في طبقها. رز وعدس ومكرونة وصلصة وبصل، كلهم في طبق واحد، وكل واحد لسه طعمه باين. رفعت معلقتها وقالت بكل جدية: «أنا كشري». سكوت ثانية. وبعدين الصالة كلها انفجرت ضحك، وبابا كريم دمعت عينيه، وتيتة باستها في راسها وقالت: «وأحلى طبق على الترابيزة، يا ألب تيتة». ألب. مش كلب. ليلى ابتسمت، وأخدت تاني معلقة.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of a joyful Ramadan iftar in a Cairo flat, with 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt raising a spoon over a plate of koshari as Teta Samira in a lilac flowered headscarf kisses her head, the family laughing around the table and a glowing cardboard lantern with a floppy-eared dog holding a red heart shining on the balcony behind them."
+    },
+    {
+      "id": 15,
+      "title": "نداء المسحراتي",
+      "text": "الليل نزل هادي على السيدة زينب، والشارع لسه منور. الضيوف مشيوا واحد ورا التاني، وكل واحد واخد علبة كشري، وعمو حسام سأل على طريق البيت تاني. ليلى ويوسف ناموا على الكنبة، وهي بتحلم بحاجات ملونة. وفي عز الليل، صحيت على صوت طبلة بعيدة: دوم دوم، دوم تك. جريت على البلكونة، وتيتة جات وراها وهي بتظبط الطرحة. تحت في الشارع، المسحراتي ماشي بطبلته الصغيرة، وبينادي على الناس بأسمائهم: «اصحي يا نور! اصحى يا زياد! وحدوا الله!» وبعدين وقف تحت الفانوس، وبص لفوق، وزعق: «واصحي يا ليلى، يا صاحبة الكلب!» ليلى حطت إيدها على بقها. اسمها! اسمها هي، في شارعها، زي كل العيال. من البلكونة اللي فوقها، زياد طلع راسه وزعق: «زانك يو يا عم!» ونور شدته لجوه وهي بتضحك. ليلى زعقت بأعلى صوتها: «صحينا يا عم! رمضان كريم!» الجيم والعين والقاف، كل الحروف كانت معاها. تيتة لفت دراعها حوالين كتفها، وقالت: «شفتي؟ البيت بيعرف أصحابه». والكلب الأصفر فضل منور فوق الشارع لحد الفجر.",
+      "image_prompt": "Watercolor-and-gouache children's book illustration of a night-blue Cairo street where a kindly drummer walks below a balcony, as 10-year-old Layla with curly dark-brown hair in two braids, round red glasses and a yellow T-shirt waves joyfully beside Teta Samira in a lilac flowered headscarf, under the glow of a cardboard lantern showing a floppy-eared dog holding a red heart."
+    }
+  ],
+  "vocab": [
+    { "word": "تيتة", "translit": "teita", "en": "grandma" },
+    { "word": "فانوس", "translit": "fanous", "en": "Ramadan lantern" },
+    { "word": "كشري", "translit": "koshari", "en": "Egyptian dish of rice, lentils, pasta, tomato sauce and crispy onions" },
+    { "word": "عدس", "translit": "ʿads", "en": "lentils" },
+    { "word": "دقة", "translit": "daʾʾa", "en": "garlic-and-vinegar sauce" },
+    { "word": "ألب", "translit": "ʾalb", "en": "heart (Cairene pronunciation of qalb)" },
+    { "word": "عايزة", "translit": "ʿayza", "en": "I want (said by a girl or woman)" },
+    { "word": "دلوقتي", "translit": "delwaʾti", "en": "now" },
+    { "word": "الفطار", "translit": "el-fetar", "en": "the iftar, the sunset meal in Ramadan" },
+    { "word": "المسحراتي", "translit": "el-mesaharati", "en": "the pre-dawn drummer who wakes the neighbourhood in Ramadan" }
+  ]
+}
