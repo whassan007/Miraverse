@@ -1,0 +1,168 @@
+{
+  "country": "EG",
+  "name_en": "Egypt",
+  "lang": "ar-EG",
+  "colors": {
+    "primary": "#1E5B88",
+    "secondary": "#D99B26"
+  },
+  "regions": [
+    {
+      "id": "cairo",
+      "name_en": "Cairo"
+    },
+    {
+      "id": "alexandria",
+      "name_en": "Alexandria"
+    },
+    {
+      "id": "aswan",
+      "name_en": "Aswan"
+    }
+  ],
+  "mentor": {
+    "name": "Teta Samira",
+    "greeting_en": "Welcome, my dear! You have lit up Egypt—come, let's make a warm bowl of koshari and hang the Nile lanterns together.",
+    "greeting": "أهلاً وسهلاً يا حبيبي! نوّرت مصر، تعالَ نعمل أحلى طبق كشري ونعلّق فوانيس النيل سوا."
+  },
+  "items": [
+    {
+      "id": "rice",
+      "name_en": "Egyptian Short-Grain Rice",
+      "color": "#F5F0E6"
+    },
+    {
+      "id": "lentils",
+      "name_en": "Brown Lentils",
+      "color": "#5C4033"
+    },
+    {
+      "id": "tomato_sauce",
+      "name_en": "Spiced Garlic Tomato Sauce",
+      "color": "#C83E2B"
+    },
+    {
+      "id": "crispy_onions",
+      "name_en": "Golden Crispy Onions",
+      "color": "#B87333"
+    },
+    {
+      "id": "koshari",
+      "name_en": "Bowl of Koshari",
+      "color": "#A84A28"
+    },
+    {
+      "id": "acacia_plank",
+      "name_en": "Acacia Wood Plank",
+      "color": "#8B5A2B"
+    },
+    {
+      "id": "linen_sail",
+      "name_en": "Woven Linen Sail",
+      "color": "#FAF8F5"
+    },
+    {
+      "id": "fanous_lantern",
+      "name_en": "Brass Fanous Lantern",
+      "color": "#E5A93C"
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "title_en": "Lanterns on the Nile",
+      "challenges": [
+        {
+          "id": "EG-1-gather",
+          "type": "gather",
+          "title_en": "Pantry on the Corniche",
+          "goal_en": "Collect rice, brown lentils, and spiced tomato sauce from the market stalls for Teta Samira's koshari pot.",
+          "needs": [
+            {
+              "item": "rice",
+              "count": 2
+            },
+            {
+              "item": "lentils",
+              "count": 2
+            },
+            {
+              "item": "tomato_sauce",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "EG-1-cook",
+          "type": "cook",
+          "title_en": "Teta Samira's Koshari",
+          "goal_en": "Layer the rice, lentils, spiced tomato sauce, and golden crispy onions in order to prepare a festive bowl of Egyptian koshari.",
+          "recipe": {
+            "inputs": [
+              "rice",
+              "lentils",
+              "tomato_sauce",
+              "crispy_onions"
+            ],
+            "output": "koshari"
+          }
+        },
+        {
+          "id": "EG-1-build",
+          "type": "build",
+          "title_en": "Felucca on the Nile",
+          "goal_en": "Assemble a traditional wooden Nile felucca hull with acacia planks and hoist its tall white linen sail.",
+          "blueprint": [
+            "..S..",
+            ".SSS.",
+            "..S..",
+            "PPPPP"
+          ],
+          "blueprintLegend": {
+            "S": "linen_sail",
+            "P": "acacia_plank"
+          }
+        },
+        {
+          "id": "EG-1-trade",
+          "type": "trade",
+          "title_en": "Lanterns of Khan el-Khalili",
+          "goal_en": "Share a warm bowl of homemade koshari with the bazaar artisan in exchange for a brass fanous lantern.",
+          "needs": [
+            {
+              "item": "koshari",
+              "count": 1
+            }
+          ],
+          "reward": {
+            "item": "fanous_lantern",
+            "count": 1
+          }
+        },
+        {
+          "id": "EG-1-word",
+          "type": "word",
+          "title_en": "Words from Cairo",
+          "goal_en": "Practice three everyday Cairene Egyptian Arabic words with Teta Samira before the evening river boat sets sail.",
+          "words": [
+            {
+              "word": "كشري",
+              "translit": "koshari",
+              "en": "Egyptian dish of rice, lentils, spiced tomato sauce, and crispy onions"
+            },
+            {
+              "word": "فانوس",
+              "translit": "fanous",
+              "en": "traditional decorative lantern"
+            },
+            {
+              "word": "فلوكة",
+              "translit": "felucca",
+              "en": "wooden sailboat on the Nile"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
