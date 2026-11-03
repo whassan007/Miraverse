@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MiraVerse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html {
       scroll-behavior: smooth;
     }
-    /* Custom font for a playful feel */
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
     body {
       font-family: 'Nunito', sans-serif;
     }
@@ -32,25 +32,8 @@
       }
     }
   </script>
-<script type="importmap">
-{
-  "imports": {
-    "rxjs": "https://aistudiocdn.com/rxjs@^7.8.2?conditions=es2015",
-    "rxjs/operators": "https://aistudiocdn.com/rxjs@^7.8.2/operators?conditions=es2015",
-    "rxjs/ajax": "https://aistudiocdn.com/rxjs@^7.8.2/ajax?conditions=es2015",
-    "rxjs/webSocket": "https://aistudiocdn.com/rxjs@^7.8.2/webSocket?conditions=es2015",
-    "rxjs/testing": "https://aistudiocdn.com/rxjs@^7.8.2/testing?conditions=es2015",
-    "rxjs/fetch": "https://aistudiocdn.com/rxjs@^7.8.2/fetch?conditions=es2015",
-    "@google/genai": "https://next.esm.sh/@google/genai@^1.28.0?external=rxjs",
-    "@angular/compiler": "https://next.esm.sh/@angular/compiler@^20.3.9?external=rxjs",
-    "@angular/common": "https://next.esm.sh/@angular/common@^20.3.9?external=rxjs",
-    "@angular/core": "https://next.esm.sh/@angular/core@^20.3.9?external=rxjs",
-    "@angular/forms": "https://next.esm.sh/@angular/forms@^20.3.9?external=rxjs",
-    "@angular/platform-browser": "https://next.esm.sh/@angular/platform-browser@^20.3.9?external=rxjs"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+<link rel="icon" type="image/png" href="favicon.png">
+  <style>@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } } .animate-fade-in { animation: fade-in .4s ease-out; }</style>
 </head>
 <body class="bg-warm-white text-charcoal">
   <app-root></app-root>

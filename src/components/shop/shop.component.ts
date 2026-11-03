@@ -32,7 +32,7 @@ export class ShopComponent {
       description: 'A light, airy dress with traditional Lebanese embroidery. Perfect for a sunny day!',
       price: 45.00,
       tokenPrice: 45,
-      imageUrl: 'https://picsum.photos/id/102/400/400',
+      imageUrl: 'assets/mira/mira-yay.jpg',
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ export class ShopComponent {
       description: 'Learn to cook like my Tita! Includes wooden play food like tabbouleh and hummus.',
       price: 60.00,
       tokenPrice: 60,
-      imageUrl: 'https://picsum.photos/id/119/400/400',
+      imageUrl: 'assets/mira/kitchen-tools.jpg',
     },
     {
       id: 3,
@@ -48,7 +48,7 @@ export class ShopComponent {
       description: 'A collection of my adventures in Paris and Beirut. Written in English and French!',
       price: 18.50,
       tokenPrice: 18,
-      imageUrl: 'https://picsum.photos/id/24/400/400',
+      imageUrl: 'assets/mira/kitchen-with-tita.jpg',
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ export class ShopComponent {
       description: 'A beautiful toy car, handmade by artisans in Beirut from real Lebanese cedar wood.',
       price: 35.00,
       tokenPrice: 35,
-      imageUrl: 'https://picsum.photos/id/180/400/400',
+      imageUrl: 'assets/mira/mira-crown.jpg',
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ export class ShopComponent {
       description: 'A classic, soft wool beret, just like the one I wear when I walk by the Seine.',
       price: 22.00,
       tokenPrice: 22,
-      imageUrl: 'https://picsum.photos/id/342/400/400',
+      imageUrl: 'assets/mira/mira-pattern.jpg',
     },
     {
       id: 6,
@@ -72,7 +72,7 @@ export class ShopComponent {
       description: 'A fun and comfy t-shirt with "Yalla!" (Let\'s go!) written in colorful Arabic script.',
       price: 25.00,
       tokenPrice: 25,
-      imageUrl: 'https://picsum.photos/id/431/400/400',
+      imageUrl: 'assets/mira/mira-trophy.jpg',
     },
   ]);
 

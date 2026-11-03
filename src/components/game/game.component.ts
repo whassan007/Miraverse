@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, signal, inject, ElementRef, viewChild, effect, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GameService } from '../../services/game.service';
-import { GenerateContentResponse } from '@google/genai';
+import { StreamChunk } from '../../services/demo-stream';
 
 interface GameMessage {
   role: 'user' | 'model';
@@ -116,7 +116,7 @@ export class GameComponent implements OnInit {
     }
   }
 
-  private async handleStream(stream: AsyncGenerator<GenerateContentResponse>) {
+  private async handleStream(stream: AsyncGenerator<StreamChunk>) {
     let fullResponseText = '';
     for await (const chunk of stream) {
       const chunkText = chunk.text ?? '';

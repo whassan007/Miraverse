@@ -41,7 +41,7 @@ export class UserService {
           id: 101, 
           name: 'Leo', 
           age: 8, 
-          avatar: 'https://picsum.photos/seed/leo/200', 
+          avatar: 'assets/mira/zaatar-bowl.jpg', 
           tokenBalance: 150, 
           wishlist: [],
           pin: '1234'
@@ -50,7 +50,7 @@ export class UserService {
           id: 102, 
           name: 'Chloe', 
           age: 6, 
-          avatar: 'https://picsum.photos/seed/chloe/200', 
+          avatar: 'assets/mira/fig-leaf.jpg', 
           tokenBalance: 75, 
           wishlist: [],
           pin: '5678'

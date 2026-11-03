@@ -24,28 +24,28 @@ export class StoriesComponent {
       type: 'Recipe',
       title: 'Tita\'s Famous Tabbouleh',
       description: 'The secret to my Tita\'s tabbouleh is lots of fresh parsley and a little bit of love!',
-      imageUrl: 'https://picsum.photos/id/1060/400/300',
+      imageUrl: 'assets/mira/cooking.jpg',
     },
     {
       id: 2,
       type: 'Story',
       title: 'The Day I Got Lost in Paris',
       description: 'It was a little scary, but I discovered the most magical little bakery all by myself.',
-      imageUrl: 'https://picsum.photos/id/1041/400/300',
+      imageUrl: 'assets/mira/mira-wondering.jpg',
     },
     {
       id: 3,
       type: 'Story',
       title: 'Summer Nights in Beirut',
       description: 'Listening to the sounds of the city from Tita\'s balcony is my favorite part of summer.',
-      imageUrl: 'https://picsum.photos/id/1050/400/300',
+      imageUrl: 'assets/mira/fig-leaf.jpg',
     },
     {
       id: 4,
       type: 'Recipe',
       title: 'Fluffy French Crêpes',
       description: 'My papa taught me how to make these. The trick is to get the pan really hot!',
-      imageUrl: 'https://picsum.photos/id/292/400/300',
+      imageUrl: 'assets/mira/zaatar-bowl.jpg',
     },
   ]);
 }
