@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiraVerse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'powder-blue': '#B0E0E6',
+            'coral': '#FF7F50',
+            'sunny-yellow': '#FFD700',
+            'warm-white': '#FFF8F0',
+            'charcoal': '#36454F',
+            'soft-gray': '#E8E8E8',
+            'sage-green': '#A7C4A0',
+          }
+        }
+      }
+    }
+  </script>
+<link rel="icon" type="image/png" href="favicon.png">
+  <style>@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } } .animate-fade-in { animation: fade-in .4s ease-out; }</style>
+</head>
+<body class="bg-warm-white text-charcoal">
+  <app-root></app-root>
+</body>
+</html>

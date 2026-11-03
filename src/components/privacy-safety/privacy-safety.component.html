@@ -1,0 +1,65 @@
+<div class="animate-fade-in max-w-4xl mx-auto">
+  <!-- Hero Section -->
+  <div class="text-center mb-12">
+    <h1 class="text-5xl font-bold text-charcoal">Your Privacy & Safety</h1>
+    <p class="mt-4 text-lg text-charcoal">
+      We believe in transparency. Here's everything you need to know about how we protect you and your family online.
+    </p>
+  </div>
+  
+  <!-- Version Toggle -->
+  <div class="flex justify-center mb-8 bg-soft-gray p-1 rounded-full">
+    <button (click)="setView('parents')" class="px-6 py-2 rounded-full font-bold w-1/2 transition-colors" [class.bg-white]="activeView() === 'parents'" [class.text-charcoal]="activeView() === 'parents'" [class.text-gray-500]="activeView() !== 'parents'">
+      For Parents 👨‍👩‍👧
+    </button>
+    <button (click)="setView('kids')" class="px-6 py-2 rounded-full font-bold w-1/2 transition-colors" [class.bg-white]="activeView() === 'kids'" [class.text-charcoal]="activeView() === 'kids'" [class.text-gray-500]="activeView() !== 'kids'">
+      For Kids 👧
+    </button>
+  </div>
+
+  <!-- Content -->
+  <div class="bg-white p-6 md:p-10 rounded-lg shadow-lg prose max-w-none">
+    @if (activeView() === 'parents') {
+      <div class="prose-headings:text-charcoal prose-a:text-coral">
+        <h2>For Parents & Guardians</h2>
+        <p class="lead">Effective Date: July 2024</p>
+        
+        <h3>Introduction</h3>
+        <p>Miraverse is committed to protecting the privacy and safety of our users, especially children. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, products, and services. We are fully compliant with the Children's Online Privacy Protection Act (COPPA).</p>
+
+        <h3>Information We Collect</h3>
+        <p>We collect only the information necessary to provide our services safely and effectively. This includes account information you provide (name, email), purchase information (processed securely by our partners), and anonymized usage data to help us improve the site.</p>
+        
+        <h3>Children's Privacy (COPPA Compliance)</h3>
+        <p>We require verifiable parental consent for any user under 13. Parents have the right to review their child's personal information, request deletion, and refuse further collection. We do not collect more information from children than is reasonably necessary to participate in an activity.</p>
+        
+        <h3>AI Chat & Safety</h3>
+        <p>Our chat with Mira feature is designed with multiple layers of safety. Content is filtered for inappropriate topics, and conversations are monitored for safety purposes. Parents can review chat logs and disable the feature at any time. We never use chat data for advertising.</p>
+        
+        <h3>Your Rights & Choices</h3>
+        <p>You have control over your data. You can update your information, manage communication preferences, and request account deletion at any time. For detailed requests, please contact us at <a href="mailto:privacy@miraverse.com">privacy@miraverse.com</a>.</p>
+      </div>
+    } @else {
+      <div class="prose-headings:text-charcoal prose-a:text-coral text-lg">
+        <h2>For Kids: Staying Safe in MiraVerse!</h2>
+        <p>Bonjour! It's me, Mira! This page is all about how we keep you safe here. It might sound a little boring, but it's super important! 🌸</p>
+        
+        <h3>What we know about you</h3>
+        <p>So the website works right, we only need to know a few things, like your first name and your parent's email. We NEVER ask for your full name, where you live, your phone number, or where you go to school.</p>
+
+        <h3>Who sees your information?</h3>
+        <p>Only the grown-ups on Mira's Team whose job is to keep the website safe and fun, and your parents. No one else!</p>
+        
+        <h3>What you should NEVER share online</h3>
+        <p>This is super important! Even here, you should NEVER tell anyone your full name, address, phone number, school, passwords, or photos of yourself. If anyone asks for these things, even if they seem friendly, you must <strong>tell a grown-up right away!</strong></p>
+
+        <h3>What if you see something scary or mean?</h3>
+        <p>If anything on MiraVerse ever makes you feel uncomfortable, scared, or sad, please tell a parent, teacher, or another trusted adult immediately. You won't be in trouble! We want to know so we can fix it and keep everyone safe.</p>
+
+        <p>Stay safe and have fun exploring!</p>
+        <p>💙 - Mira</p>
+      </div>
+    }
+  </div>
+
+</div>

@@ -1,0 +1,191 @@
+<div class="animate-fade-in space-y-16 md:space-y-24">
+  <!-- Hero Section -->
+  <section class="text-center bg-white p-8 rounded-lg shadow-lg relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('assets/mira/kitchen-with-tita.jpg')"></div>
+    <div class="relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold text-coral mb-4">Bonjour! I'm Mira.</h1>
+        <h2 class="text-2xl md:text-3xl font-bold text-charcoal mb-4">Welcome to my world between two homes.</h2>
+        <p class="text-lg text-charcoal max-w-3xl mx-auto mb-8">
+          I'm so glad you're here! My life is split between two amazing places: Paris, France, and Beirut, Lebanon. It can be a little confusing, but it's also full of amazing stories, delicious food, and lots of big questions. Come and explore with me!
+        </p>
+        <a href="#who-am-i" class="bg-coral text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-80 transition-transform transform hover:scale-105 inline-block">
+          Discover My Story
+        </a>
+    </div>
+  </section>
+
+  <!-- Who Am I? Section -->
+  <section id="who-am-i" class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-white p-8 rounded-lg shadow-lg">
+      <div class="flex-shrink-0 text-center">
+        <img src="assets/mira/mira-avatar.jpg" alt="Illustrated portrait of Mira" class="w-48 h-48 rounded-full object-cover mx-auto border-4 border-powder-blue">
+        <h2 class="text-3xl font-bold text-charcoal mt-4">Who Am I?</h2>
+      </div>
+      <div class="flex-grow">
+        <p class="text-lg text-charcoal mb-4">
+          Hi again! My name is Mira, and I'm 9 years old. I was born in Paris, but my Maman and Papa are from Lebanon. This means I get to have two homes! I spend most of the year in Paris, but every summer, I fly to Beirut to live with my grandmother, my Tita.
+        </p>
+        <p class="text-lg text-charcoal mb-6">
+          Tita's house is my other world. It smells like jasmine and za'atar, and it's where I learn all about my family's stories. Sometimes I feel a little bit like a puzzle, with a French piece and a Lebanese piece. I'm learning that I'm not one or the other... I'm both. And that's pretty special.
+        </p>
+        <div class="bg-warm-white/50 border-l-4 border-coral p-4 rounded-r-lg">
+            @if (activeChildProfile(); as child) {
+              <h3 class="font-bold text-xl text-charcoal mb-2">You & Mira</h3>
+              <ul class="list-none space-y-1 text-charcoal">
+                <li>👤 <strong>You:</strong> {{ child.name }}, age {{ child.age }}</li>
+                <li class="pt-2 mt-2 border-t border-coral/30">📚 <strong>Mira's Mission:</strong> To collect Tita's stories and recipes to share with you!</li>
+                <li>🏠 <strong>Mira's Two Homes:</strong> Paris, France and Beirut, Lebanon.</li>
+                <li>❓ <strong>Mira's Favorite Question:</strong> "Mais pourquoi?" (But why?)</li>
+              </ul>
+            } @else {
+              <h3 class="font-bold text-xl text-charcoal mb-2">My Key Facts</h3>
+              <ul class="list-none space-y-1 text-charcoal">
+                  <li>🏠 <strong>Two Homes:</strong> Born in Paris, with my heart in Beirut.</li>
+                  <li>👵 <strong>Learning from Tita:</strong> My guide to all things Lebanese.</li>
+                  <li>🗣️ <strong>Three Languages:</strong> French, English, and learning Arabic!</li>
+                  <li>❓ <strong>Always Asking:</strong> My favorite question is "Mais pourquoi?"</li>
+                  <li>📚 <strong>My Mission:</strong> I collect Tita's stories and recipes to share with you!</li>
+              </ul>
+            }
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Two Worlds Section -->
+  <section class="container mx-auto px-4 text-center">
+     <h2 class="text-3xl font-bold text-charcoal mb-2">My Two Worlds</h2>
+     <p class="text-lg text-charcoal mb-8">I belong to both, even when I feel I don't quite fit in either one.</p>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Paris Card -->
+        <div class="relative bg-powder-blue/30 p-6 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+            <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('assets/mira/mira-wondering.jpg')"></div>
+            <div class="relative z-10">
+                <h3 class="text-2xl font-bold text-charcoal mb-4">In Paris... (10 Months)</h3>
+                <ul class="space-y-3 text-left bg-white/50 rounded-lg p-4">
+                    <li><strong class="text-lg">🏡 My home</strong> is a modern apartment.</li>
+                    <li><strong class="text-lg">🥐 My breakfast</strong> is a baguette with jam.</li>
+                    <li><strong class="text-lg">🏫 I go to school</strong> and wear a uniform.</li>
+                    <li><strong class="text-lg">🗣️ I speak French</strong> all day.</li>
+                    <li><strong class="text-lg">🤔 I'm "the Lebanese girl"</strong> to my friends.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Beirut Card -->
+        <div class="relative bg-sunny-yellow/30 p-6 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105">
+             <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('assets/mira/beirut-courtyard.jpg')"></div>
+             <div class="relative z-10">
+                <h3 class="text-2xl font-bold text-charcoal mb-4">In Beirut... (2 Months)</h3>
+                <ul class="space-y-3 text-left bg-white/50 rounded-lg p-4">
+                    <li><strong class="text-lg">🌳 My home</strong> is Tita's old stone house.</li>
+                    <li><strong class="text-lg">🧕 My breakfast</strong> is warm man'akeesh with za'atar.</li>
+                    <li><strong class="text-lg">☀️ It's summer break!</strong> I wear light cotton dresses.</li>
+                    <li><strong class="text-lg">🤝 I speak a mix</strong> of French, Arabic, and English.</li>
+                    <li><strong class="text-lg">🤔 I'm "the French cousin"</strong> to my family.</li>
+                </ul>
+            </div>
+        </div>
+     </div>
+     <p class="text-center text-xl font-bold text-charcoal mt-8">Both places are home. 💙🇱🇧🇫🇷</p>
+  </section>
+  
+  <!-- Meet Tita Section -->
+   <section class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-white p-8 rounded-lg shadow-lg">
+      <div class="flex-shrink-0 text-center">
+        <img src="assets/mira/kitchen-with-tita.jpg" alt="Mira cooking with Tita in the kitchen" class="w-48 h-48 rounded-full object-cover mx-auto border-4 border-coral">
+        <h2 class="text-3xl font-bold text-charcoal mt-4">Meet Tita</h2>
+      </div>
+      <div class="flex-grow">
+        <p class="text-lg text-charcoal mb-4">
+            Tita is my everything in Lebanon. She's my grandmother, my teacher, my storyteller, and my best friend during the summer. Tita's house smells like olive oil, za'atar, and jasmine. She teaches me to cook, tells me about Lebanon's history, and helps me understand what it means to be Lebanese even when I live in France.
+        </p>
+         <p class="text-lg text-charcoal mb-4">
+            She speaks Arabic to me, even though I answer in French sometimes. She just smiles and says, "Your heart knows Arabic even if your tongue is still learning."
+        </p>
+        <div class="bg-warm-white/50 border-l-4 border-sage-green p-4 rounded-r-lg">
+            <h3 class="font-bold text-xl text-charcoal mb-2">Tita's Favorite Things</h3>
+            <ul class="list-none space-y-1 text-charcoal">
+                <li><strong>Recipe:</strong> Her famous kibbeh</li>
+                <li><strong>Place:</strong> Under the big fig tree in her courtyard</li>
+                <li><strong>Story:</strong> How she met my grandfather (Jiddo)</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A Year in My Life -->
+  <section class="container mx-auto px-4">
+     <h2 class="text-3xl font-bold text-charcoal text-center mb-8">A Year in My Life</h2>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+        <!-- Horizontal Scrolling Timeline -->
+        <div class="pb-4 border-b-2 border-soft-gray">
+          <div class="flex overflow-x-auto space-x-2 py-2 scrollbar-thin scrollbar-thumb-coral scrollbar-track-powder-blue/50">
+            @for(event of timelineEvents(); track event.title) {
+                <button (click)="selectEvent(event)" class="flex-shrink-0 px-4 py-2 rounded-full font-semibold transition-colors" [class.bg-coral]="selectedEvent() === event" [class.text-white]="selectedEvent() === event" [class.bg-soft-gray]="selectedEvent() !== event" [class.text-charcoal]="selectedEvent() !== event">
+                    {{ event.month }}
+                </button>
+            }
+          </div>
+        </div>
+        <!-- Selected Event Details -->
+        @if(selectedEvent(); as event) {
+            <div class="mt-6 text-center animate-fade-in">
+                <p class="text-5xl mb-2">{{ event.icon }}</p>
+                <h3 class="text-2xl font-bold text-coral">{{ event.title }}</h3>
+                <p class="text-charcoal mt-2 max-w-xl mx-auto">{{ event.description }}</p>
+            </div>
+        }
+     </div>
+  </section>
+  
+  <!-- Fun Facts Section -->
+  <section class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-charcoal text-center mb-8">Get to Know Me Better!</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <h3 class="text-xl font-bold text-charcoal mb-2">🍽️ My Favorite Food</h3>
+        <p>Tabbouleh! But only the way Tita makes it—with LOTS of parsley. Papa says it's more like a parsley salad, but Tita says that's the authentic Lebanese way.</p>
+      </div>
+      <!-- Card 2 -->
+       <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <h3 class="text-xl font-bold text-charcoal mb-2">📍 My Favorite Place</h3>
+        <p>Under the big fig tree in Tita's courtyard. It's the perfect spot for reading, listening to Tita's stories, and thinking about big questions.</p>
+      </div>
+      <!-- Card 3 -->
+       <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <h3 class="text-xl font-bold text-charcoal mb-2">❓ My Most Asked Question</h3>
+        <p>"Mais pourquoi?" (But why?). I want to understand everything! Tita says asking questions is how we learn.</p>
+      </div>
+      <!-- Card 4 -->
+       <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <h3 class="text-xl font-bold text-charcoal mb-2">✨ My Dream for the Future</h3>
+        <p>To open a restaurant that serves both French and Lebanese food! Croissants AND man'akeesh. A place where people from everywhere feel at home.</p>
+      </div>
+      <!-- Card 5 -->
+       <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <h3 class="text-xl font-bold text-charcoal mb-2">😂 What Makes Me Laugh</h3>
+        <p>When Tita tells stories about when Papa was little and got in trouble! She makes funny voices for everyone.</p>
+      </div>
+      <!-- Card 6 -->
+       <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+        <h3 class="text-xl font-bold text-charcoal mb-2">😢 What Makes Me Sad</h3>
+        <p>Saying goodbye to Tita at the end of summer. Every single year. And when I try really hard to speak Arabic and the words don't come out right.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Parents & Educators CTA -->
+  <section class="container mx-auto px-4">
+    <div class="bg-charcoal text-warm-white p-8 rounded-lg shadow-lg text-center">
+        <h2 class="text-3xl font-bold text-powder-blue mb-4">For Parents & Educators</h2>
+        <p class="mb-6 max-w-2xl mx-auto">Are you a parent or teacher? I have a special section just for you! Click here to find educational resources, discussion guides for my stories, and information on how Miraverse keeps kids safe.</p>
+        <button (click)="userService.setView('resources')" class="bg-powder-blue text-charcoal font-bold py-3 px-8 rounded-full hover:bg-opacity-80 transition-transform transform hover:scale-105">
+            View Parent & Educator Resources
+        </button>
+    </div>
+  </section>
+
+</div>

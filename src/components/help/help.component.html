@@ -1,0 +1,69 @@
+<div class="animate-fade-in">
+  <!-- Hero Section -->
+  <div class="bg-powder-blue/50 rounded-lg p-8 md:p-12 mb-12 text-center">
+    <h1 class="text-4xl font-bold text-charcoal mb-2">How can I help you?</h1>
+    <p class="text-lg text-charcoal mb-6">I'm here to answer your questions! 🌸</p>
+    <div class="max-w-xl mx-auto relative">
+      <input 
+        type="text" 
+        [ngModel]="searchTerm()"
+        (ngModelChange)="searchTerm.set($event)"
+        placeholder="Search for help... (e.g., 'How do I return an item?')" 
+        class="w-full h-14 pl-12 pr-4 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-coral">
+      <svg class="w-6 h-6 text-gray-400 absolute left-4 top-1/2 transform -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex flex-col md:flex-row gap-8">
+    <!-- Left: Category Navigation -->
+    <aside class="w-full md:w-1/4">
+      <h2 class="text-2xl font-bold mb-4 text-charcoal">Categories</h2>
+      <ul class="space-y-2">
+        <li>
+            <button (click)="selectCategory(null)" class="w-full text-left px-4 py-2 rounded-lg transition-colors text-charcoal" [class.bg-powder-blue]="selectedCategory() === null" [class.hover:bg-soft-gray]="selectedCategory() !== null">
+                All Articles
+            </button>
+        </li>
+        @for (category of categories(); track category.id) {
+          <li>
+            <button (click)="selectCategory(category.id)" class="w-full text-left px-4 py-2 rounded-lg transition-colors text-charcoal" [class.bg-powder-blue]="selectedCategory() === category.id" [class.hover:bg-soft-gray]="selectedCategory() !== category.id">
+              {{ category.icon }} {{ category.name }}
+            </button>
+          </li>
+        }
+      </ul>
+    </aside>
+
+    <!-- Right: Content Display -->
+    <section class="w-full md:w-3/4">
+      @if (filteredArticles().length > 0) {
+        <h2 class="text-2xl font-bold mb-4 text-coral">
+            @if (searchTerm()) {
+                Search Results for "{{ searchTerm() }}"
+            } @else if (selectedCategory()) {
+                {{ selectedCategoryName() }}
+            } @else {
+                Popular Articles
+            }
+        </h2>
+        <div class="space-y-4">
+          @for (article of filteredArticles(); track article.id) {
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h3 class="text-xl font-bold text-charcoal mb-2">{{ article.title }}</h3>
+              <p class="text-gray-700">{{ article.content }}</p>
+            </div>
+          }
+        </div>
+      } @else {
+        <div class="text-center bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-charcoal mb-4">Hmm, I couldn't find anything about that...</h2>
+            <p class="text-gray-600 mb-4">Try searching with different keywords or selecting a category.</p>
+            <button (click)="searchTerm.set(''); selectCategory(null)" class="bg-coral text-white font-bold py-2 px-6 rounded-full">
+                Clear Search
+            </button>
+        </div>
+      }
+    </section>
+  </div>
+</div>
