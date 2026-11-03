@@ -506,13 +506,12 @@ matches_batch() {
   esac
 }
 
-run_batch() {
-  local target="$1" resume_mode="${2:-0}"
-  init_status_json
+run_provider_queue() {
+  local target="$1" resume_mode="$2" target_prov="$3"
   local pids=()
-
   while IFS=$'\t' read -r id provider wave write_paths reads task_card model_tier depends_on; do
     [[ -z "$id" || "$id" == \#* ]] && continue
+    [ "$provider" != "$target_prov" ] && continue
     if ! matches_batch "$id" "$wave" "$depends_on" "$target"; then
       continue
     fi
@@ -524,7 +523,6 @@ run_batch() {
       continue
     fi
 
-    # Check dependencies
     if [ "$depends_on" != "none" ]; then
       local IFS=','
       local dep_missing=0
@@ -546,12 +544,30 @@ run_batch() {
     wait_for_slot "$provider"
     run_single_agent "$id" "$provider" "$wave" "$write_paths" "$reads" "$task_card" "$model_tier" &
     pids+=("$!")
-    sleep 0.3
+    sleep 0.5
   done < "$ROOT/swarm/agents.tsv"
 
   local fail_count=0
   for pid in "${pids[@]}"; do
     if ! wait "$pid"; then
+      fail_count=$((fail_count + 1))
+    fi
+  done
+  return "$fail_count"
+}
+
+run_batch() {
+  local target="$1" resume_mode="${2:-0}"
+  init_status_json
+  local q_pids=()
+  for prov in claude codex ag dgx; do
+    run_provider_queue "$target" "$resume_mode" "$prov" &
+    q_pids+=("$!")
+  done
+
+  local fail_count=0
+  for qpid in "${q_pids[@]}"; do
+    if ! wait "$qpid"; then
       fail_count=$((fail_count + 1))
     fi
   done
