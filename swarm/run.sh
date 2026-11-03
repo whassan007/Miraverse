@@ -294,7 +294,6 @@ invoke_provider() {
         agy -p "$prompt_text" \
           --model "$model" \
           --mode accept-edits \
-          --settings '{"permissions":{"allow":["command(*)"]}}' \
           --add-dir "$wt_dir" \
           --output-format json
       ) >> "$log_file" 2>&1

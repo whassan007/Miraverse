@@ -1,0 +1,152 @@
+[
+  {
+    "word": "mamie",
+    "translit": "ma-mee",
+    "en": "grandma"
+  },
+  {
+    "word": "papi",
+    "translit": "pah-pee",
+    "en": "grandpa"
+  },
+  {
+    "word": "famille",
+    "translit": "fa-mee-yuh",
+    "en": "family"
+  },
+  {
+    "word": "maman",
+    "translit": "ma-mahn",
+    "en": "mom/mummy"
+  },
+  {
+    "word": "papa",
+    "translit": "pah-pah",
+    "en": "dad/daddy"
+  },
+  {
+    "word": "frère",
+    "translit": "frehr",
+    "en": "brother"
+  },
+  {
+    "word": "sœur",
+    "translit": "suhr",
+    "en": "sister"
+  },
+  {
+    "word": "cousin",
+    "translit": "koo-sahn",
+    "en": "cousin (male)"
+  },
+  {
+    "word": "cousine",
+    "translit": "koo-zeen",
+    "en": "cousin (female)"
+  },
+  {
+    "word": "boulangerie",
+    "translit": "boo-lahn-zheh-ree",
+    "en": "bakery"
+  },
+  {
+    "word": "boulanger",
+    "translit": "boo-lahn-zhay",
+    "en": "baker"
+  },
+  {
+    "word": "galette",
+    "translit": "gah-leht",
+    "en": "flat cake (especially galette des rois)"
+  },
+  {
+    "word": "fève",
+    "translit": "fehv",
+    "en": "bean (hidden in galette des rois)"
+  },
+  {
+    "word": "couronne",
+    "translit": "ko-rohn",
+    "en": "crown"
+  },
+  {
+    "word": "roi",
+    "translit": "rwah",
+    "en": "king"
+  },
+  {
+    "word": "reine",
+    "translit": "ren",
+    "en": "queen"
+  },
+  {
+    "word": "amande",
+    "translit": "ah-mahnd",
+    "en": "almond"
+  },
+  {
+    "word": "pâte",
+    "translit": "pat",
+    "en": "dough"
+  },
+  {
+    "word": "crème",
+    "translit": "krem",
+    "en": "cream"
+  },
+  {
+    "word": "sucre",
+    "translit": "sewr",
+    "en": "sugar"
+  },
+  {
+    "word": "farine",
+    "translit": "fah-reen",
+    "en": "flour"
+  },
+  {
+    "word": "œuf",
+    "translit": "uhf",
+    "en": "egg"
+  },
+  {
+    "word": "beurre",
+    "translit": "ber",
+    "en": "butter"
+  },
+  {
+    "word": "lait",
+    "translit": "leh",
+    "en": "milk"
+  },
+  {
+    "word": "pain",
+    "translit": "pan",
+    "en": "bread"
+  },
+  {
+    "word": "croissant",
+    "translit": "kwa-sahn",
+    "en": "croissant"
+  },
+  {
+    "word": "tarte",
+    "translit": "tahrt",
+    "en": "pie/tart"
+  },
+  {
+    "word": "gâteau",
+    "translit": "ga-toh",
+    "en": "cake"
+  },
+  {
+    "word": "café",
+    "translit": "kah-fay",
+    "en": "coffee"
+  },
+  {
+    "word": "thé",
+    "translit": "tay",
+    "en": "tea"
+  }
+]
