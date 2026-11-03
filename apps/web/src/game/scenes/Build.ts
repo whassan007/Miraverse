@@ -1,6 +1,10 @@
-export class Build extends (globalThis as any).Phaser?.Scene || class {} {
+import Phaser from 'phaser';
+import type { Challenge, Lang, Pack } from '../../../../../packages/content/schema';
+
+export class Build extends Phaser.Scene {
   constructor() {
-    super({ key: 'build' });
+    super('build');
   }
+  init(_data?: { pack: Pack; challenge: Challenge; lang: Lang }) {}
 }
 export default Build;

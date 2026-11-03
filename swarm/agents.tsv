@@ -1,41 +1,41 @@
-#id	backend	wave	own
-C1	claude	A	packages/content/stories/ar-LB.json
-C2	claude	A	packages/content/stories/ar-EG.json
-C3	claude	A	packages/content/stories/ar-IQ.json
-C4	claude	A	packages/content/stories/ko.json
-C5	claude	A	packages/content/stories/fr.json
-C6	claude	A	apps/roblox/default.project.json,apps/roblox/src/server/Main.server.luau,apps/roblox/src/server/Core/,apps/roblox/src/client/
-C7	claude	A	apps/roblox/src/shared/Challenges/
-C8	claude	A	apps/minecraft/package.json,apps/minecraft/build.mjs,apps/minecraft/bp/manifest.json,apps/minecraft/rp/manifest.json,apps/minecraft/scripts/main.ts,apps/minecraft/scripts/core/
-C9	claude	A	apps/minecraft/scripts/challenges/
-C10	claude	A	apps/minecraft/bp/entities/,apps/minecraft/rp/entity/,apps/minecraft/scripts/npc/
-X1	codex	A	apps/web/package.json,apps/web/vite.config.ts,apps/web/index.html,apps/web/src/main.tsx,apps/web/src/App.tsx,apps/web/src/i18n/index.ts,apps/web/src/lib/,apps/web/src/styles.css
-X2	codex	A	apps/web/src/pages/Story.tsx,apps/web/src/components/story/
-X3	codex	A	apps/web/src/pages/Play.tsx,apps/web/src/game/scenes/Globe.ts,apps/web/src/game/shared/
-X4	codex	A	apps/web/src/game/scenes/Cook.ts
-X5	codex	A	apps/web/src/game/scenes/Build.ts,apps/web/src/game/scenes/Gather.ts
-X6	codex	A	apps/web/src/game/scenes/Trade.ts,apps/web/src/game/scenes/Word.ts
-X7	codex	A	apps/web/src/pages/Passport.tsx,packages/shared/stamp.ts,packages/shared/stamp.md,tests/stamp.test.ts
-X8	codex	A	tools/compiler/index.ts,tools/compiler/web.ts,tools/compiler/roblox.ts
-X9	codex	A	tools/compiler/minecraft.ts
-X10	codex	A	.github/,tools/pack/
-G1	ag	A	packages/content/packs/LB.json
-G2	ag	A	packages/content/packs/EG.json
-G3	ag	A	packages/content/packs/IQ.json
-G4	ag	A	packages/content/packs/KR.json
-G5	ag	A	packages/content/packs/FR.json
-G6	ag	A	apps/web/public/art/
-G7	ag	A	apps/minecraft/rp/textures/,tools/textures/
-G8	ag	A	apps/minecraft/scripts/world/
-G9	ag	A	apps/roblox/src/server/MapBuilder.luau
-G10	ag	A	README.md,apps/web/src/pages/About.tsx
-G11	ag	A	tests/compiler.test.ts,tests/validate.test.ts
-G12	ag	A	apps/web/src/pages/Home.tsx,apps/web/src/components/home/
-D1	dgx	A	apps/web/src/i18n/locales/
-D2	dgx	A	packages/content/vocab/
-G13	ag	B	packages/content/stories/ar-LB.json
-G14	ag	B	packages/content/stories/ar-EG.json
-G15	ag	B	packages/content/stories/ar-IQ.json
-G16	ag	B	packages/content/stories/ko.json
-G17	ag	B	packages/content/stories/fr.json
-D3	dgx	C	packages/content/,swarm/REPORT.md
+#id	provider	wave	write_paths	reads	task_card	model_tier	depends_on
+C1	claude	A	packages/content/stories/ar-LB.json	packages/content/schema.ts,packages/content/STYLE.md	swarm/cards/C1.md	strong_writing	none
+C2	claude	A	packages/content/stories/ar-EG.json	packages/content/schema.ts,packages/content/STYLE.md	swarm/cards/C2.md	strong_writing	none
+C3	claude	A	packages/content/stories/ar-IQ.json	packages/content/schema.ts,packages/content/STYLE.md	swarm/cards/C3.md	strong_writing	none
+C4	claude	A	packages/content/stories/ko.json	packages/content/schema.ts,packages/content/STYLE.md	swarm/cards/C4.md	strong_writing	none
+C5	claude	A	packages/content/stories/fr.json	packages/content/schema.ts,packages/content/STYLE.md	swarm/cards/C5.md	strong_writing	none
+G1	ag	A	packages/content/packs/LB.json	packages/content/schema.ts,packages/content/STYLE.md,tools/validate.ts	swarm/cards/G1.md	standard	none
+G2	ag	A	packages/content/packs/EG.json	packages/content/schema.ts,packages/content/STYLE.md,tools/validate.ts	swarm/cards/G2.md	standard	none
+G3	ag	A	packages/content/packs/IQ.json	packages/content/schema.ts,packages/content/STYLE.md,tools/validate.ts	swarm/cards/G3.md	standard	none
+G4	ag	A	packages/content/packs/KR.json	packages/content/schema.ts,packages/content/STYLE.md,tools/validate.ts	swarm/cards/G4.md	standard	none
+G5	ag	A	packages/content/packs/FR.json	packages/content/schema.ts,packages/content/STYLE.md,tools/validate.ts	swarm/cards/G5.md	standard	none
+G6	ag	A	apps/web/public/art/	packages/content/schema.ts	swarm/cards/G6.md	economical	none
+G7	ag	A	tools/textures/,apps/minecraft/rp/textures/	packages/content/schema.ts	swarm/cards/G7.md	economical	none
+D1	dgx	A	apps/web/src/i18n/locales/	packages/content/schema.ts,apps/web/src/i18n/index.ts	swarm/cards/D1.md	local_review	none
+D2	dgx	A	packages/content/vocab/	packages/content/schema.ts,tools/validate.ts	swarm/cards/D2.md	local_review	none
+G10	ag	A	README.md,apps/web/src/pages/About.tsx	package.json,packages/content/schema.ts	swarm/cards/G10.md	economical	none
+G11	ag	A	tests/content/,tests/compiler/,tests/validate.test.ts,tests/compiler.test.ts	packages/content/schema.ts,tools/validate.ts,tools/compiler/index.ts	swarm/cards/G11.md	high	none
+X8	codex	A	tools/compiler/index.ts,tools/compiler/web.ts,tools/compiler/roblox.ts	packages/content/schema.ts,packages/content/packs/LB.json	swarm/cards/X8.md	high	G1,G2,G3,G4,G5
+X9	codex	A	tools/compiler/minecraft.ts	packages/content/schema.ts,packages/content/packs/LB.json,tools/compiler/index.ts	swarm/cards/X9.md	high	G1,G2,G3,G4,G5
+X1	codex	A	apps/web/package.json,apps/web/tsconfig.json,apps/web/vite.config.ts,apps/web/index.html,apps/web/src/main.tsx,apps/web/src/App.tsx,apps/web/src/i18n/index.ts,apps/web/src/lib/,apps/web/src/styles.css,apps/web/public/fonts/	packages/content/schema.ts,apps/web/src/i18n/locales/en.json	swarm/cards/X1.md	high	G1,G2,G3,G4,G5,D1
+C6	claude	A	apps/roblox/default.project.json,apps/roblox/src/server/Main.server.luau,apps/roblox/src/server/Core/,apps/roblox/src/client/	packages/content/schema.ts,packages/shared/stamp.md,apps/roblox/src/server/MapBuilder.luau,apps/roblox/src/shared/Challenges/init.luau	swarm/cards/C6.md	high	G1,G2,G3,G4,G5
+C7	claude	A	apps/roblox/src/shared/Challenges/	packages/content/schema.ts,packages/content/packs/LB.json	swarm/cards/C7.md	high	G1,G2,G3,G4,G5
+C8	claude	A	apps/minecraft/package.json,apps/minecraft/tsconfig.json,apps/minecraft/build.mjs,apps/minecraft/bp/manifest.json,apps/minecraft/rp/manifest.json,apps/minecraft/scripts/main.ts,apps/minecraft/scripts/core/	packages/content/schema.ts,packages/shared/stamp.md,apps/minecraft/scripts/world/index.ts,apps/minecraft/scripts/challenges/index.ts,apps/minecraft/scripts/npc/index.ts	swarm/cards/C8.md	high	G1,G2,G3,G4,G5
+C9	claude	A	apps/minecraft/scripts/challenges/	packages/content/schema.ts,apps/minecraft/scripts/main.ts,apps/minecraft/scripts/world/index.ts	swarm/cards/C9.md	high	G1,G2,G3,G4,G5
+C10	claude	A	apps/minecraft/bp/entities/,apps/minecraft/rp/entity/,apps/minecraft/scripts/npc/	packages/content/schema.ts,apps/minecraft/bp/manifest.json,apps/minecraft/rp/manifest.json	swarm/cards/C10.md	standard	G1,G2,G3,G4,G5
+G8	ag	A	apps/minecraft/scripts/world/	packages/content/schema.ts,apps/minecraft/scripts/main.ts	swarm/cards/G8.md	high	G1,G2,G3,G4,G5
+G9	ag	A	apps/roblox/src/server/MapBuilder.luau	packages/content/schema.ts,apps/roblox/default.project.json	swarm/cards/G9.md	standard	G1,G2,G3,G4,G5
+X7	codex	A	packages/shared/stamp.ts,packages/shared/stamp.md,tests/stamp/,tests/stamp.test.ts,apps/web/src/pages/Passport.tsx	packages/content/schema.ts,packages/shared/stamp.md,apps/web/src/i18n/index.ts	swarm/cards/X7.md	high	G1,G2,G3,G4,G5
+X10	codex	A	.github/,tools/pack/	package.json,apps/minecraft/bp/manifest.json,apps/minecraft/rp/manifest.json	swarm/cards/X10.md	high	G1,G2,G3,G4,G5
+X2	codex	A	apps/web/src/pages/Story.tsx,apps/web/src/components/story/	packages/content/schema.ts,apps/web/src/lib/content.ts,apps/web/src/i18n/index.ts	swarm/cards/X2.md	standard	X1,X8,C1,C2,C3,C4,C5
+X3	codex	A	apps/web/src/pages/Play.tsx,apps/web/src/game/scenes/Globe.ts,apps/web/src/game/shared/	packages/content/schema.ts,apps/web/src/lib/content.ts,apps/web/src/i18n/index.ts,packages/shared/stamp.ts	swarm/cards/X3.md	high	X1,X8,X7
+X4	codex	A	apps/web/src/game/scenes/Cook.ts	packages/content/schema.ts,apps/web/src/game/shared/,apps/web/src/i18n/index.ts	swarm/cards/X4.md	standard	X1,X8
+X5	codex	A	apps/web/src/game/scenes/Build.ts,apps/web/src/game/scenes/Gather.ts	packages/content/schema.ts,apps/web/src/game/shared/,apps/web/src/i18n/index.ts	swarm/cards/X5.md	standard	X1,X8
+X6	codex	A	apps/web/src/game/scenes/Trade.ts,apps/web/src/game/scenes/Word.ts	packages/content/schema.ts,apps/web/src/game/shared/,apps/web/src/i18n/index.ts	swarm/cards/X6.md	standard	X1,X8
+G12	ag	A	apps/web/src/pages/Home.tsx,apps/web/src/components/home/	packages/content/schema.ts,apps/web/src/lib/content.ts,apps/web/src/i18n/index.ts	swarm/cards/G12.md	standard	X1,X8
+G13	ag	B	packages/content/stories/ar-LB.json	packages/content/stories/ar-LB.json,packages/content/STYLE.md,packages/content/schema.ts	swarm/cards/G13.md	high_language	C1
+G14	ag	B	packages/content/stories/ar-EG.json	packages/content/stories/ar-EG.json,packages/content/STYLE.md,packages/content/schema.ts	swarm/cards/G14.md	high_language	C2
+G15	ag	B	packages/content/stories/ar-IQ.json	packages/content/stories/ar-IQ.json,packages/content/STYLE.md,packages/content/schema.ts	swarm/cards/G15.md	high_language	C3
+G16	ag	B	packages/content/stories/ko.json	packages/content/stories/ko.json,packages/content/STYLE.md,packages/content/schema.ts	swarm/cards/G16.md	high_language	C4
+G17	ag	B	packages/content/stories/fr.json	packages/content/stories/fr.json,packages/content/STYLE.md,packages/content/schema.ts	swarm/cards/G17.md	high_language	C5
+D3	dgx	C	swarm/REPORT.md	package.json,swarm/status.json,swarm/PREFLIGHT.md	swarm/cards/D3.md	local_strongest	G13,G14,G15,G16,G17

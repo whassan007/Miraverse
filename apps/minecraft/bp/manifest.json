@@ -1,0 +1,38 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "MiraVerse Behavior Pack",
+    "description": "MiraVerse v0.1.0 Cultural Adventures Behavior Pack",
+    "uuid": "5b7c8a10-3e19-4c92-9a14-100000000001",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 21, 50]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "5b7c8a10-3e19-4c92-9a14-100000000002",
+      "version": [0, 1, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "5b7c8a10-3e19-4c92-9a14-100000000003",
+      "entry": "scripts/main.js",
+      "version": [0, 1, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "5b7c8a10-3e19-4c92-9a14-200000000001",
+      "version": [0, 1, 0]
+    },
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.17.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.3.0"
+    }
+  ]
+}

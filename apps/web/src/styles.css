@@ -1,0 +1,8 @@
+/* Phase 1 minimal scaffold stylesheet (replaced by X1) */
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
