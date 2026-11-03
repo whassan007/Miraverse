@@ -1,0 +1,25 @@
+<div class="animate-fade-in">
+  <h2 class="text-3xl font-bold text-center text-coral mb-8">Stories & Recipes from MiraVerse</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    @for (item of contentItems(); track item.id) {
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform hover:-translate-y-2 duration-300">
+        <div class="relative">
+          <img [src]="item.imageUrl" [alt]="item.title" class="w-full h-56 object-cover">
+          <span
+            [class.bg-coral]="item.type === 'Recipe'"
+            [class.bg-sunny-yellow]="item.type === 'Story'"
+            [class.text-white]="item.type === 'Recipe'"
+            [class.text-charcoal]="item.type === 'Story'"
+            class="absolute top-4 left-4 font-bold py-1 px-3 rounded-full text-sm">
+            {{ item.type }}
+          </span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-charcoal mb-2">{{ item.title }}</h3>
+          <p class="text-gray-600 mb-4">{{ item.description }}</p>
+          <button class="font-bold text-coral hover:underline text-left focus:outline-none">Read More...</button>
+        </div>
+      </div>
+    }
+  </div>
+</div>

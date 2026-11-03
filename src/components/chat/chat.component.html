@@ -1,0 +1,80 @@
+
+<div class="flex flex-col h-[75vh] max-w-2xl mx-auto bg-warm-white rounded-lg shadow-lg border-4 border-white/50 animate-fade-in">
+  <!-- Header -->
+  <div class="bg-powder-blue/50 p-4 rounded-t-lg border-b-2 border-soft-gray flex items-center justify-center space-x-3">
+    <img src="https://picsum.photos/seed/mira-avatar/40" alt="Mira's avatar" class="w-10 h-10 rounded-full border-2 border-white">
+    <h2 class="text-xl font-bold text-center text-charcoal">Mira's Notebook</h2>
+  </div>
+
+  <!-- Messages -->
+  <div #chatContainer class="flex-grow p-6 space-y-4 overflow-y-auto">
+    @for (message of messages(); track $index) {
+      <div class="flex" [class.justify-end]="message.role === 'user'" [class.justify-start]="message.role === 'model'">
+        <div 
+          class="max-w-sm md:max-w-md p-3 rounded-2xl shadow-sm" 
+          [class.bg-coral]="message.role === 'user'" 
+          [class.text-white]="message.role === 'user'" 
+          [class.bg-white]="message.role === 'model'"
+          [class.border]="message.role === 'model'"
+          [class.border-soft-gray]="message.role === 'model'"
+          [class.text-charcoal]="message.role === 'model'"
+          [class.rounded-br-none]="message.role === 'user'"
+          [class.rounded-bl-none]="message.role === 'model'">
+          <p class="whitespace-pre-wrap">{{ message.text }}</p>
+        </div>
+      </div>
+    }
+    
+    <!-- Conversation Starters -->
+    @if (messages().length <= 1) {
+      <div class="pt-4 animate-fade-in">
+        <p class="text-sm text-center text-gray-500 mb-3">Not sure what to ask? Try one of these!</p>
+        <div class="flex flex-wrap justify-center gap-2">
+          @for(starter of conversationStarters(); track starter) {
+            <button (click)="startConversation(starter)" class="text-sm bg-white border border-soft-gray text-charcoal px-3 py-1 rounded-full hover:bg-powder-blue/50 transition-colors">
+              {{ starter }}
+            </button>
+          }
+        </div>
+      </div>
+    }
+
+    @if (isLoading()) {
+      <div class="flex justify-start">
+        <div class="max-w-sm md:max-w-md p-3 rounded-2xl bg-white border border-soft-gray text-charcoal rounded-bl-none">
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">Hmm, let me think...</span>
+            <div class="w-2 h-2 bg-coral rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+            <div class="w-2 h-2 bg-coral rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+            <div class="w-2 h-2 bg-coral rounded-full animate-bounce"></div>
+          </div>
+        </div>
+      </div>
+    }
+    @if (error()) {
+       <div class="text-center text-red-500 p-2 bg-red-100 rounded-lg">{{error()}}</div>
+    }
+  </div>
+
+  <!-- Input Form -->
+  <div class="p-4 bg-powder-blue/50 rounded-b-lg border-t-2 border-soft-gray">
+    <form (submit)="sendMessage()" class="flex space-x-3">
+      <input 
+        type="text" 
+        [(ngModel)]="userInput"
+        name="userInput"
+        placeholder="Write a message in my notebook..." 
+        class="flex-grow p-3 rounded-full border-2 border-soft-gray focus:outline-none focus:ring-2 focus:ring-coral transition"
+        [disabled]="isLoading()"
+      >
+      <button 
+        type="submit" 
+        class="bg-coral text-white font-bold p-3 rounded-full hover:bg-opacity-80 disabled:bg-soft-gray disabled:cursor-not-allowed transition-transform transform hover:scale-110"
+        [disabled]="isLoading() || userInput().trim() === ''">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>

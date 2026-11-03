@@ -1,0 +1,247 @@
+<div class="min-h-screen flex flex-col">
+  <!-- Header & Navigation -->
+  <header class="bg-warm-white shadow-md sticky top-0 z-50 border-b border-soft-gray">
+    <nav class="container mx-auto px-5 md:px-10 h-16 md:h-20 flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2 cursor-pointer" (click)="setView('home')">
+        <svg class="w-10 h-10 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span class="text-2xl font-bold text-charcoal">MiraVerse</span>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex flex-grow justify-end items-center">
+        @if (!loggedInUser()) {
+          <!-- Logged Out Navigation -->
+          <div class="flex space-x-8 items-center">
+            <a (click)="setView('shop')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Shop</a>
+            <a (click)="setView('stories')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Stories & Recipes</a>
+            <a (click)="setView('community')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Community</a>
+            <a (click)="setView('about')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">About Mira</a>
+          </div>
+          <div class="flex items-center space-x-6 ml-8">
+            <a (click)="setView('login')" class="bg-coral text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-80 transition-transform transform hover:scale-105">
+              Login
+            </a>
+            <div class="cursor-pointer relative" (click)="setView('shop')">
+              <svg class="w-7 h-7 text-charcoal hover:text-coral" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5l.415-.207a.75.75 0 011.085.022L12 9.75l2.25-2.435a.75.75 0 011.086-.022l.415.207M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H18.375c.621 0 1.125-.504 1.125-1.125V9.75M8.25 9.75h7.5" />
+              </svg>
+              <span class="absolute -top-2 -right-2 bg-coral text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">0</span>
+            </div>
+          </div>
+        } @else if (activeProfile(); as profile) {
+            @if (profile.type === 'parent') {
+              <!-- Parent Navigation -->
+              <div class="flex space-x-8 items-center">
+                <a (click)="setView('shop')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Shop</a>
+                <a (click)="setView('stories')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Stories & Recipes</a>
+                <a (click)="setView('community')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Community</a>
+                <a (click)="setView('dashboard')" class="cursor-pointer text-charcoal hover:text-coral transition-colors font-bold">Dashboard</a>
+              </div>
+              <div class="flex items-center space-x-6 ml-8">
+                  <button (click)="switchProfile()" class="text-sm text-charcoal hover:underline">Switch Profile</button>
+                  <a (click)="logout()" class="bg-charcoal text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-80">Logout</a>
+              </div>
+            } @else if (profile.type === 'child') {
+              <!-- Child Navigation -->
+              <div class="flex items-center space-x-8">
+                <a (click)="setView('shop')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Shop</a>
+                <a (click)="setView('stories')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Stories & Recipes</a>
+                <a (click)="setView('community')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Community</a>
+                <a (click)="setView('wishlist')" class="cursor-pointer text-charcoal hover:text-coral transition-colors font-bold">My Wishlist</a>
+                <a (click)="setView('redeem')" class="cursor-pointer text-charcoal hover:text-coral transition-colors">Redeem Gift Card</a>
+              </div>
+              <div class="flex items-center space-x-6 ml-8">
+                <div class="text-right">
+                  <p class="font-bold text-charcoal">Hi, {{ profile.name }}!</p>
+                  <p class="font-bold text-sunny-yellow flex items-center justify-end"><span class="mr-1">⭐</span> {{ profile.tokenBalance }}</p>
+                </div>
+                <button (click)="switchProfile()" class="text-sm bg-soft-gray px-3 py-1 rounded-full hover:bg-powder-blue">Switch Profile</button>
+                <a (click)="logout()" class="text-sm text-charcoal hover:underline">Logout</a>
+              </div>
+            }
+        } @else {
+          <!-- Profile Selection or PIN Login Screen Header -->
+           <div class="flex items-center space-x-6 ml-8">
+               <span class="font-bold">Welcome, {{ loggedInUser()?.name }}!</span>
+               <a (click)="logout()" class="bg-charcoal text-white font-bold py-2 px-6 rounded-full hover:bg-opacity-80">Logout</a>
+           </div>
+        }
+      </div>
+      
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button (click)="toggleMobileMenu()" class="text-charcoal focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  @if (mobileMenuOpen()) {
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden" (click)="toggleMobileMenu()"></div>
+    <div class="fixed top-0 left-0 h-full w-4/5 max-w-sm bg-warm-white z-50 shadow-lg transform transition-transform duration-300 ease-in-out md:hidden" [class]="mobileMenuOpen() ? 'translate-x-0' : '-translate-x-full'">
+        <div class="p-5">
+            <div class="flex items-center space-x-2 cursor-pointer mb-8" (click)="setView('home')">
+              <svg class="w-10 h-10 text-coral" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span class="text-2xl font-bold text-charcoal">MiraVerse</span>
+            </div>
+            
+            @if (!loggedInUser()) {
+              <!-- Logged Out Mobile Menu -->
+              <nav class="flex flex-col space-y-2">
+                <a (click)="setView('home')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Home</a>
+                <a (click)="setView('shop')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Shop</a>
+                <a (click)="setView('stories')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Stories & Recipes</a>
+                <a (click)="setView('community')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Community</a>
+                <a (click)="setView('about')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">About Mira</a>
+                <a (click)="setView('login')" class="mt-4 bg-coral text-white block w-full text-center px-3 py-3 rounded-full text-base font-medium cursor-pointer">Login</a>
+              </nav>
+            } @else if (activeProfile(); as profile) {
+                @if (profile.type === 'parent') {
+                  <!-- Parent Mobile Menu -->
+                  <nav class="flex flex-col space-y-2">
+                    <a (click)="setView('dashboard')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Dashboard</a>
+                    <a (click)="setView('shop')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Shop</a>
+                    <a (click)="setView('stories')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Stories & Recipes</a>
+                    <a (click)="setView('community')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Community</a>
+                    <a (click)="switchProfile()" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Switch Profile</a>
+                    <a (click)="logout()" class="mt-4 bg-charcoal text-white block w-full text-center px-3 py-3 rounded-full text-base font-medium cursor-pointer">Logout</a>
+                  </nav>
+                } @else if (profile.type === 'child') {
+                  <!-- Child Mobile Menu -->
+                   <div class="mb-4 text-center">
+                      <p class="font-bold text-xl text-charcoal">Hi, {{ profile.name }}!</p>
+                      <p class="font-bold text-lg text-sunny-yellow flex items-center justify-center"><span class="mr-1">⭐</span> {{ profile.tokenBalance }}</p>
+                    </div>
+                  <nav class="flex flex-col space-y-2">
+                    <a (click)="setView('home')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Home</a>
+                    <a (click)="setView('shop')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Shop</a>
+                    <a (click)="setView('stories')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Stories & Recipes</a>
+                    <a (click)="setView('community')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Community</a>
+                    <a (click)="setView('wishlist')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">My Wishlist</a>
+                     <a (click)="setView('redeem')" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Redeem Gift Card</a>
+                    <a (click)="switchProfile()" class="text-charcoal hover:text-coral block px-3 py-2 rounded-md text-lg font-medium cursor-pointer">Switch Profile</a>
+                    <a (click)="logout()" class="mt-4 bg-charcoal text-white block w-full text-center px-3 py-3 rounded-full text-base font-medium cursor-pointer">Logout</a>
+                  </nav>
+                }
+            } @else {
+              <!-- Profile Selection Mobile Menu -->
+              <div class="text-center">
+                <p class="text-lg font-bold">Welcome, {{ loggedInUser()?.name }}!</p>
+                <p class="text-sm">Please select a profile to continue.</p>
+                 <a (click)="logout()" class="mt-4 bg-charcoal text-white block w-full text-center px-3 py-3 rounded-full text-base font-medium cursor-pointer">Logout</a>
+              </div>
+            }
+        </div>
+    </div>
+  }
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto p-4 md:p-8">
+    @if (loggedInUser() && !activeProfile()) {
+      <!-- Interstitial state for profile selection / pin login -->
+      @if (activeView() === 'profileSelection') {
+        <app-profile-selection (profileSelected)="onProfileSelected($event)"></app-profile-selection>
+      }
+      @if (activeView() === 'pinLogin') {
+        <app-pin-login (pinLoginSuccess)="onPinLoginSuccess()" (backToProfiles)="onBackToProfiles()"></app-pin-login>
+      }
+    } @else {
+       @switch (activeView()) {
+        @case ('home') {
+          <div class="text-center bg-white p-8 rounded-lg shadow-lg animate-fade-in">
+            <div class="w-full max-w-2xl mx-auto mb-6 rounded-lg overflow-hidden shadow-md">
+              <div class="aspect-video">
+                <iframe class="w-full h-full" src="https://drive.google.com/file/d/1W2Uvv_hF3_mevy4hCc3fL48f7RH7QyD7/preview" title="MiraVerse Welcome Video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+            <h1 class="text-4xl font-bold text-coral mb-2">Welcome to MiraVerse!</h1>
+            <p class="text-lg text-charcoal mb-6">
+              I'm Mira! I'm so happy you're here. Let's explore my two homes, Paris and Beirut, together. We can shop for beautiful things, read stories, and maybe even cook something yummy with my Tita!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <button (click)="setView('shop')" class="bg-powder-blue text-charcoal font-bold py-3 px-6 rounded-full hover:bg-opacity-80 transition-transform transform hover:scale-105 w-full sm:w-auto">
+                Explore the Shop
+              </button>
+              <button (click)="setView('game')" class="bg-purple-500 text-white font-bold py-3 px-6 rounded-full hover:bg-purple-600 transition-transform transform hover:scale-105 w-full sm:w-auto flex items-center justify-center space-x-2">
+                <span>🎮</span>
+                <span>Play with Mira!</span>
+              </button>
+              <button (click)="setView('chat')" class="bg-coral text-white font-bold py-3 px-6 rounded-full hover:bg-opacity-80 transition-transform transform hover:scale-105 w-full sm:w-auto">
+                Let's Chat!
+              </button>
+            </div>
+          </div>
+        }
+        @case ('shop') { <app-shop></app-shop> }
+        @case ('stories') { <app-stories></app-stories> }
+        @case ('community') { <app-community-page></app-community-page> }
+        @case ('about') { <app-about></app-about> }
+        @case ('resources') { <app-resources></app-resources> }
+        @case ('chat') { <app-chat></app-chat> }
+        @case ('help') { <app-help></app-help> }
+        @case ('contact') { <app-contact></app-contact> }
+        @case ('privacy-safety') { <app-privacy-safety></app-privacy-safety> }
+        @case ('terms') { <app-terms></app-terms> }
+        @case ('login') { <app-login (loginSuccess)="onLoginSuccess()" (navigateToRegister)="setView('register')"></app-login> }
+        @case ('register') { <app-register (registerSuccess)="onLoginSuccess()" (navigateToLogin)="setView('login')"></app-register> }
+        @case ('dashboard') { <app-dashboard></app-dashboard> }
+        @case ('wishlist') { <app-wishlist></app-wishlist> }
+        @case ('redeem') { <app-redeem></app-redeem> }
+        @case ('game') { <app-game></app-game> }
+      }
+    }
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-charcoal text-warm-white pt-12 pb-8">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- Newsletter Signup -->
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold text-powder-blue mb-4">Get Recipes and Stories from Mira!</h3>
+          <p class="mb-4">Join our newsletter for weekly recipes, new stories, and special offers. Unsubscribe anytime.</p>
+          <form (submit)="subscribeNewsletter()" class="flex flex-col sm:flex-row gap-2">
+            <input type="email" name="newsletterEmail" [(ngModel)]="newsletterEmail" placeholder="Your email address" class="flex-grow px-4 py-2 rounded-full text-charcoal focus:outline-none focus:ring-2 focus:ring-coral">
+            <button type="submit" class="bg-powder-blue text-charcoal font-bold px-6 py-2 rounded-full hover:bg-opacity-80 transition-colors">Subscribe</button>
+          </form>
+          @if (newsletterSuccess()) {
+            <p class="text-green-400 mt-2">Welcome! 🎉 Check your email to confirm your subscription.</p>
+          }
+          @if (newsletterError()) {
+            <p class="text-red-400 mt-2">{{ newsletterError() }}</p>
+          }
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold text-powder-blue mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a (click)="setView('shop')" class="hover:text-coral cursor-pointer">Shop</a></li>
+            <li><a (click)="setView('about')" class="hover:text-coral cursor-pointer">About Mira</a></li>
+            <li><a (click)="setView('stories')" class="hover:text-coral cursor-pointer">Stories & Recipes</a></li>
+            <li><a (click)="setView('community')" class="hover:text-coral cursor-pointer">Community</a></li>
+             @if (activeChildProfile()) {
+               <li><a (click)="setView('redeem')" class="hover:text-coral cursor-pointer">Redeem Gift Card</a></li>
+             }
+          </ul>
+        </div>
+        <!-- Support -->
+        <div>
+          <h3 class="text-xl font-bold text-powder-blue mb-4">Support</h3>
+          <ul class="space-y-2">
+            <li><a (click)="setView('help')" class="hover:text-coral cursor-pointer">Help Center / FAQ</a></li>
+            <li><a (click)="setView('contact')" class="hover:text-coral cursor-pointer">Contact Us</a></li>
+            <li><a (click)="setView('resources')" class="hover:text-coral cursor-pointer">Resources for Parents</a></li>
+            <li><a (click)="setView('privacy-safety')" class="hover:text-coral cursor-pointer">Privacy & Safety</a></li>
+            <li><a (click)="setView('terms')" class="hover:text-coral cursor-pointer">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-warm-white/20 pt-6 text-center text-sm">
+        <p>&copy; 2024 MiraVerse. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>

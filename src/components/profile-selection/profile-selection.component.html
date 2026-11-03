@@ -1,0 +1,26 @@
+<div class="animate-fade-in text-center">
+  <h1 class="text-4xl font-bold text-charcoal mb-4">Who's Exploring?</h1>
+  <p class="text-lg text-gray-600 mb-12">Please select a profile to continue.</p>
+  
+  @if (user(); as parent) {
+    <div class="flex justify-center items-start gap-8 flex-wrap">
+      <!-- Parent Profile -->
+      <div (click)="selectProfile(parent, 'parent')" class="cursor-pointer group">
+        <div class="w-32 h-32 rounded-full bg-powder-blue flex items-center justify-center shadow-lg transition-transform transform group-hover:scale-110">
+          <svg class="w-20 h-20 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+        </div>
+        <p class="mt-4 text-xl font-bold text-charcoal">{{ parent.name }}</p>
+        <p class="text-sm text-gray-500">(Parent)</p>
+      </div>
+
+      <!-- Child Profiles -->
+      @for (child of parent.children; track child.id) {
+        <div (click)="selectProfile(child, 'child')" class="cursor-pointer group">
+          <img [src]="child.avatar" [alt]="child.name" class="w-32 h-32 rounded-full object-cover shadow-lg transition-transform transform group-hover:scale-110 border-4 border-coral">
+          <p class="mt-4 text-xl font-bold text-charcoal">{{ child.name }}</p>
+          <p class="text-sm text-gray-500">(Age {{child.age}})</p>
+        </div>
+      }
+    </div>
+  }
+</div>

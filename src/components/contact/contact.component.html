@@ -1,0 +1,130 @@
+<div class="animate-fade-in max-w-4xl mx-auto">
+  <!-- Hero Section -->
+  <div class="text-center mb-12">
+    <h1 class="text-5xl font-bold text-charcoal">Let's Talk!</h1>
+    <p class="mt-4 text-lg text-charcoal">
+      I'd love to hear from you! Whether you have a question, a suggestion, or just want to say hi, we're here for you. 💙
+    </p>
+    <div class="inline-block mt-4 bg-white border-2 border-powder-blue text-charcoal font-semibold py-2 px-4 rounded-full shadow-sm">
+      We respond within 24 hours! ⏱️
+    </div>
+  </div>
+
+  <!-- Contact Method Tabs -->
+  <div class="mb-8 border-b-2 border-soft-gray flex justify-center space-x-2 md:space-x-8">
+    <button (click)="setTab('form')" class="px-4 py-2 font-bold transition-colors" [class.text-coral]="activeTab() === 'form'" [class.border-coral]="activeTab() === 'form'" [class.border-transparent]="activeTab() !== 'form'" [class.border-b-4]="true">Send a Message</button>
+    <button (click)="setTab('email')" class="px-4 py-2 font-bold transition-colors" [class.text-coral]="activeTab() === 'email'" [class.border-coral]="activeTab() === 'email'" [class.border-transparent]="activeTab() !== 'email'" [class.border-b-4]="true">Email Us</button>
+    <button (click)="setTab('chat')" class="px-4 py-2 font-bold transition-colors" [class.text-coral]="activeTab() === 'chat'" [class.border-coral]="activeTab() === 'chat'" [class.border-transparent]="activeTab() !== 'chat'" [class.border-b-4]="true">Chat with Mira</button>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="bg-white p-8 rounded-lg shadow-lg">
+    @switch (activeTab()) {
+      @case ('form') {
+        @if (submitSuccess()) {
+          <div class="text-center p-8">
+            <h2 class="text-3xl font-bold text-green-600 mb-4">Message Sent! 🎉</h2>
+            <p class="text-charcoal">Thank you! We received your message and will respond within 24 hours. Check your inbox (and spam folder just in case)!</p>
+          </div>
+        } @else {
+          <form #contactForm="ngForm" (ngSubmit)="contactForm.form.valid && submitForm()">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-bold text-charcoal mb-1">Your Name *</label>
+                <input type="text" id="name" name="name" [(ngModel)]="form().name" required minlength="2" #name="ngModel" class="w-full px-4 py-2 border border-soft-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-coral" [class.border-red-500]="name.invalid && name.touched">
+                @if (name.invalid && name.touched) {
+                  <p class="text-red-500 text-sm mt-1">Please enter your name.</p>
+                }
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-bold text-charcoal mb-1">Email Address *</label>
+                <input type="email" id="email" name="email" [(ngModel)]="form().email" required email #email="ngModel" class="w-full px-4 py-2 border border-soft-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-coral" [class.border-red-500]="email.invalid && email.touched">
+                 @if (email.invalid && email.touched) {
+                  <p class="text-red-500 text-sm mt-1">Please enter a valid email.</p>
+                }
+              </div>
+              <div>
+                <label for="iam" class="block text-sm font-bold text-charcoal mb-1">I am a... *</label>
+                <select id="iam" name="iam" [(ngModel)]="form().iam" required #iam="ngModel" class="w-full px-4 py-2 border border-soft-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-coral" [class.border-red-500]="iam.invalid && iam.touched">
+                  <option value="" disabled>Please select...</option>
+                  <option>Parent or Guardian</option>
+                  <option>Teacher or Educator</option>
+                  <option>Customer</option>
+                  <option>Media/Press</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label for="subject" class="block text-sm font-bold text-charcoal mb-1">Subject *</label>
+                <select id="subject" name="subject" [(ngModel)]="form().subject" required #subject="ngModel" class="w-full px-4 py-2 border border-soft-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-coral" [class.border-red-500]="subject.invalid && subject.touched">
+                  <option value="" disabled>What's this about?</option>
+                  <option>Product Question</option>
+                  <option>Order Help</option>
+                  <option>Return or Exchange</option>
+                  <option>Safety Concern</option>
+                  <option>Feedback</option>
+                </select>
+              </div>
+            </div>
+            @if (form().subject === 'Order Help' || form().subject === 'Return or Exchange') {
+              <div class="mt-6">
+                <label for="orderNumber" class="block text-sm font-bold text-charcoal mb-1">Order Number (Optional)</label>
+                <input type="text" id="orderNumber" name="orderNumber" [(ngModel)]="form().orderNumber" placeholder="#12345" class="w-full px-4 py-2 border border-soft-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-coral">
+              </div>
+            }
+            <div class="mt-6">
+              <label for="message" class="block text-sm font-bold text-charcoal mb-1">Your Message *</label>
+              <textarea id="message" name="message" rows="6" [(ngModel)]="form().message" required minlength="20" #message="ngModel" placeholder="Tell us what's on your mind..." class="w-full px-4 py-2 border border-soft-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-coral" [class.border-red-500]="message.invalid && message.touched"></textarea>
+              @if (message.invalid && message.touched) {
+                <p class="text-red-500 text-sm mt-1">Please write at least 20 characters.</p>
+              }
+            </div>
+            <div class="mt-6">
+              <button type="submit" [disabled]="contactForm.form.invalid || submitting()" class="w-full bg-powder-blue text-charcoal font-bold py-3 px-6 rounded-full hover:bg-opacity-80 transition-transform transform hover:scale-105 disabled:bg-soft-gray disabled:cursor-not-allowed">
+                @if (submitting()) {
+                  <span>Sending...</span>
+                } @else {
+                  <span>Send Message</span>
+                }
+              </button>
+            </div>
+            @if (submitError()) {
+              <p class="text-red-500 text-center mt-4">{{ submitError() }}</p>
+            }
+          </form>
+        }
+      }
+      @case ('email') {
+        <div>
+          <h3 class="text-2xl font-bold text-charcoal mb-4">Email Us Directly</h3>
+          <p class="text-charcoal mb-6">Choose the right address to get the fastest help. For faster service, please include your order number if applicable.</p>
+          <div class="space-y-4">
+            <div class="p-4 border border-soft-gray rounded-lg">
+              <p class="font-bold">General Inquiries</p>
+              <a href="mailto:hello@miraverse.com" class="text-coral hover:underline">hello@miraverse.com</a>
+            </div>
+            <div class="p-4 border border-soft-gray rounded-lg">
+              <p class="font-bold">Parents & Guardians</p>
+              <a href="mailto:parents@miraverse.com" class="text-coral hover:underline">parents@miraverse.com</a>
+            </div>
+            <div class="p-4 border border-soft-gray rounded-lg bg-red-50">
+              <p class="font-bold text-red-800">Safety Concerns (Priority)</p>
+              <a href="mailto:safety@miraverse.com" class="text-coral hover:underline">safety@miraverse.com</a>
+            </div>
+          </div>
+        </div>
+      }
+      @case ('chat') {
+        <div class="text-center">
+            <h3 class="text-2xl font-bold text-charcoal mb-4">Chat with Mira - Instant Help!</h3>
+            <p class="text-charcoal mb-6 max-w-md mx-auto">
+                Need quick answers? I'm here to chat about products, order tracking, returns, and more!
+            </p>
+            <button (click)="userService.setView('chat')" class="bg-coral text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-80 transition-transform transform hover:scale-105">
+                Start Chatting
+            </button>
+        </div>
+      }
+    }
+  </div>
+</div>

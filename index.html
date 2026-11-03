@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiraVerse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Custom font for a playful feel */
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'powder-blue': '#B0E0E6',
+            'coral': '#FF7F50',
+            'sunny-yellow': '#FFD700',
+            'warm-white': '#FFF8F0',
+            'charcoal': '#36454F',
+            'soft-gray': '#E8E8E8',
+            'sage-green': '#A7C4A0',
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "rxjs": "https://aistudiocdn.com/rxjs@^7.8.2?conditions=es2015",
+    "rxjs/operators": "https://aistudiocdn.com/rxjs@^7.8.2/operators?conditions=es2015",
+    "rxjs/ajax": "https://aistudiocdn.com/rxjs@^7.8.2/ajax?conditions=es2015",
+    "rxjs/webSocket": "https://aistudiocdn.com/rxjs@^7.8.2/webSocket?conditions=es2015",
+    "rxjs/testing": "https://aistudiocdn.com/rxjs@^7.8.2/testing?conditions=es2015",
+    "rxjs/fetch": "https://aistudiocdn.com/rxjs@^7.8.2/fetch?conditions=es2015",
+    "@google/genai": "https://next.esm.sh/@google/genai@^1.28.0?external=rxjs",
+    "@angular/compiler": "https://next.esm.sh/@angular/compiler@^20.3.9?external=rxjs",
+    "@angular/common": "https://next.esm.sh/@angular/common@^20.3.9?external=rxjs",
+    "@angular/core": "https://next.esm.sh/@angular/core@^20.3.9?external=rxjs",
+    "@angular/forms": "https://next.esm.sh/@angular/forms@^20.3.9?external=rxjs",
+    "@angular/platform-browser": "https://next.esm.sh/@angular/platform-browser@^20.3.9?external=rxjs"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-warm-white text-charcoal">
+  <app-root></app-root>
+</body>
+</html>

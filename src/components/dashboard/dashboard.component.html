@@ -1,0 +1,77 @@
+<div class="animate-fade-in">
+  @if (user(); as parent) {
+    <h1 class="text-4xl font-bold text-charcoal mb-2">Welcome, {{ parent.name }}!</h1>
+    <p class="text-lg text-gray-600 mb-8">This is your dashboard. Here you can manage your family's profiles, wishlists, and settings.</p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Left Column: Child Management -->
+      <div class="lg:col-span-2 space-y-8">
+        <!-- Child Profiles -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold text-coral mb-4">Your Children</h2>
+          <div class="space-y-4">
+            @for (child of parent.children; track child.id) {
+              <div class="flex items-center justify-between p-4 bg-warm-white/50 rounded-lg border border-soft-gray">
+                <div class="flex items-center space-x-4">
+                  <img [src]="child.avatar" [alt]="child.name" class="w-16 h-16 rounded-full object-cover border-2 border-powder-blue">
+                  <div>
+                    <p class="font-bold text-lg text-charcoal">{{ child.name }} (Age {{ child.age }})</p>
+                    <p class="font-semibold text-sunny-yellow flex items-center"><span class="mr-1">⭐</span> {{ child.tokenBalance }} Discovery Tokens</p>
+                  </div>
+                </div>
+                <button class="bg-powder-blue text-charcoal font-semibold py-2 px-4 rounded-full hover:bg-opacity-80">Manage</button>
+              </div>
+            }
+          </div>
+        </div>
+
+         <!-- Add New Child Profile -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold text-coral mb-4">Add a New Profile</h2>
+          <form (submit)="addChildProfile()" class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-end">
+              <div class="sm:col-span-2 grid grid-cols-2 gap-4">
+                <div>
+                    <label for="childName" class="block text-sm font-bold text-charcoal mb-1">Child's Name</label>
+                    <input type="text" id="childName" name="childName" [(ngModel)]="newChildName" required class="w-full px-3 py-2 border border-soft-gray rounded-lg focus:outline-none focus:ring-1 focus:ring-coral">
+                </div>
+                <div>
+                    <label for="childAge" class="block text-sm font-bold text-charcoal mb-1">Age</label>
+                    <input type="number" id="childAge" name="childAge" [(ngModel)]="newChildAge" required class="w-full px-3 py-2 border border-soft-gray rounded-lg focus:outline-none focus:ring-1 focus:ring-coral">
+                </div>
+              </div>
+              <button type="submit" class="w-full bg-coral text-white font-bold py-2 px-4 rounded-lg hover:bg-opacity-80">Add Profile</button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Right Column: Wishlists & Activity -->
+      <div class="space-y-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold text-coral mb-4">Children's Wishlists</h2>
+          @for (child of parent.children; track child.id) {
+            <div class="mb-6">
+              <h3 class="font-bold text-lg text-charcoal mb-2">{{ child.name }}'s Wishlist</h3>
+              @if (child.wishlist.length > 0) {
+                <ul class="space-y-2">
+                  @for (item of child.wishlist; track item.id) {
+                    <li class="flex items-center justify-between text-sm p-2 bg-warm-white/50 rounded">
+                      <span>{{ item.name }}</span>
+                      <span class="font-bold text-sunny-yellow">⭐ {{ item.tokenPrice }}</span>
+                    </li>
+                  }
+                </ul>
+              } @else {
+                <p class="text-sm text-gray-500">No items in the wishlist yet.</p>
+              }
+            </div>
+          }
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-coral mb-4">Pending Approvals</h2>
+            <p class="text-sm text-gray-500">Purchase requests from your children will appear here. (Coming Soon!)</p>
+        </div>
+      </div>
+    </div>
+  }
+</div>
