@@ -1,0 +1,119 @@
+{
+  "lang": "ar-LB",
+  "country": "LB",
+  "title": "ميرا والمركب والمنقوشة",
+  "title_en": "Mira, the Boat and the Man'oushe",
+  "characters": [
+    { "name": "ميرا أبو خليل", "role": "protagonist", "note": "Mira Abu Khalil, age 9, lives in Lyon, France; curly dark-brown hair in a short ponytail, mustard-yellow cardigan; understands Lebanese Arabic but is shy about speaking it." },
+    { "name": "تيتا نهلا", "role": "elder_mentor", "note": "Teta Nahla, Mira's grandmother in Byblos (Jbeil); small and silver-haired with round glasses and a blue flowered apron; patient, funny, grows her own za'atar." },
+    { "name": "بابا سامي", "role": "bridge_parent", "note": "Sami Abu Khalil, Mira's father, grew up in Byblos and now lives in Lyon; short greying beard and a blue linen shirt." },
+    { "name": "عمتو هبة", "role": "supportive_parent", "note": "Aunt Hiba, Sami's sister and mother of Karim and Yara; wavy auburn bob and a rust-coloured apron; the adult who works the saj." },
+    { "name": "إيليو", "role": "younger_sibling", "note": "Elio, Mira's brother, age 5; mop of dark curls and a red striped T-shirt; always hungry." },
+    { "name": "كريم", "role": "host_peer", "note": "Karim, Mira's cousin, age 11, lives in Byblos; tall and thin with short black hair and a green football shirt; a tireless joker." },
+    { "name": "يارا", "role": "host_peer", "note": "Yara, Mira's cousin, age 10, lives in Byblos; long black braid and a white cap; kind and learning French at school." }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "title": "البلكون اللي بيطلّ عالبحر",
+      "text": "ميرا عمرها تسع سنين، وعايشة بمدينة ليون بفرنسا، والشتي هونيك بيجي بلا ما يستأذن. بس هلّق هيي بجبيل، واقفة عبلكون تيتا نهلا، وعم تتطلّع عالبحر الأزرق وهيي مش مصدّقة قدّيش الشمس قوية. وراها، أخوها الزغير إيليو عم يركض حوالين الطاولة ويصرّخ: «تيتا! في عندك أكل؟» تيتا نهلا ضحكت، ومسحت إيديها بمريولها الأزرق المورّد، وقالت: «ولو يا حبيبي! بهالبيت الأكل بيوصل قبل الضيوف.» بعدين لفّت على ميرا وباستها عخدّيها تلات مرّات، وقالتلها: «كيفك يا روح تيتا؟ كبرتي كتير! شو أخبار المدرسة؟» ميرا فهمت كل كلمة، بس لسانها وقف. بالبيت بليون، بتحكي مع بابا عربي شوي، وبس حدا غريب يسمعها بتسكت. فتحت تمّها وسكّرتو، وبالآخر قالت بصوت واطي: «منيحة... merci.» تيتا ما علّقت، بس غمزتها من ورا نضّاراتها المدوّرة، وكأنّو عم تقلّها: ما تخافي، معنا كل الصيفية قدّامنا.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan being kissed on the cheek by small silver-haired Teta Nahla with round glasses and a blue flowered apron on a sunny balcony overlooking the Mediterranean at Byblos, while five-year-old Elio with a mop of dark curls and a red striped T-shirt runs around a table."
+    },
+    {
+      "id": 2,
+      "title": "ولاد عمتو",
+      "text": "قبل ما تخلص ميرا كبّاية الليموناضة، سمعت زمّور السيارة تحت البيت. «وصلوا!» صرّخ بابا سامي، وركض عالدرج متل ولد زغير. طلعت عمتو هبة وهيي حاملة صينية كبيرة مغطّاية بفوطة، ووراها كريم ويارا، ولاد عمّة ميرا. كريم عمرو إحدعشر سنة، طويل ونحيف، وما بيعرف يوقف بلا ما يقول نكتة. ويارا عمرها عشر سنين، جديلتها السودا طويلة، وعلى راسها كاب أبيض. «أهلا يا ميرا! قدّيش صرلك بجبيل؟ بتحبّي البحر؟ بتلعبي فوتبول؟» كريم سأل تلات أسئلة بنفس واحد. ميرا كانت عارفة الجواب على التلاتة، بس الكلمات تخربطت براسها متل قطع بازل وقعت عالأرض. هزّت راسها بس، وبعدين خبّت حالها ورا بيّها. يارا ابتسمتلها وقالت: «ما تردّي عليه، هيدا كريم، حتى السمك بيهرب من حكيو.» ميرا كانت بدها تضحك، بس خافت تطلع ضحكتها بالفرنساوي. ولمّا فاتوا كلّن عالصالون، قعدت عطرف الكنباي، وقالت بقلبها: ليش الحكي سهل بس براسي؟",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of shy nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan half hiding behind her father Sami with a short greying beard and a blue linen shirt as ten-year-old Yara with a long black braid and a white cap, eleven-year-old Karim with short black hair and a green football shirt, and Aunt Hiba with a wavy auburn bob and a rust-coloured apron arrive at a stone house in Byblos."
+    },
+    {
+      "id": 3,
+      "title": "خطّة تيتا",
+      "text": "عالعشا، ضربت تيتا نهلا الطاولة بالمعلقة متل مدير مدرسة وقالت: «اسمعوا كلّكن! يوم الأحد منعمل غدا عالمينا، كل العيلة، ومناقيش زعتر من إيدينا، مش من الفرن.» كريم صفّق، وإيليو سأل إذا الأحد بكرا. «لأ يا تقبرني، الأحد بعد يومين، وبدنا نحضّر من بكرا.» بعدين تطلّعت تيتا بميرا وقالت: «وإنتي بدّي ياكي مساعدتي الأولى. مين غيرك بيقدر يتعلّم سرّ زعتر تيتا؟» ميرا بلعت ريقها. مساعدة؟ يعني لازم تحكي؟ بابا سامي مال عليها وهمس: «لمّا كنت قدّك، كنت موت لقعد حدّ إمّي بالمطبخ. كل شي تعلّمتو بحياتي، بلّش هونيك.» ميرا هزّت راسها، وسألتو بصوت واطي بالفرنساوي إذا لازم تحكي مع ولاد عمتها كمان. ضحك بابا وجاوبها بالعربي: «ما حدا رح يعطيكي علامة، يا ميرا. مش امتحان. هودي عيلتك.» بس ميرا ما اقتنعت كتير. بالليل، وهيي بالتخت، صارت تتمرّن بصوت واطي عالسقف: «صباح الخير... كيفك... وين الزعتر؟»",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of a lively family dinner in a Byblos home where small silver-haired Teta Nahla with round glasses and a blue flowered apron taps a table with a spoon while nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan listens nervously beside her father Sami with a short greying beard and a blue linen shirt."
+    },
+    {
+      "id": 4,
+      "title": "الزعتر بالجلّ",
+      "text": "تاني يوم، بكّير، قبل ما تحمى الشمس، أخدت تيتا ميرا عالجلّ ورا البيت. كان في زيتون، ودوالي عنب، وبزاوية محمية من الهوا، شتول زعتر خضرا رمادية. «شمّي هالورقة،» قالت تيتا، وفركتها بين صابيعها. ميرا شمّت وبرقوا عيونها: كانت نفس ريحة كيس الزعتر اللي بتبعتو تيتا عليون كل سنة، بس أقوى بألف مرّة. «هيدا زعتر؟» سألت، وتفاجأت إنّو طلع صوتها. «إي، هيدا زعتر، يا عيني عليكي!» تيتا ما عملت قصة كبيرة، بس عطتها سلّة زغيرة وفرجتها كيف تقطف الروس الطرية بلا ما تقلع الشتلة. «خدي شوي من هون وشوي من هون. الزرعة متل الناس، إذا خدتي منها كل شي بتزعل.» ميرا ضحكت وصارت تقطف. ما كان في حدا يسمعها إلّا تيتا والنحل، فصارت تسأل: «هيدي شو؟» «وهيدا؟» وتيتا تجاوب: «هيدا سمّاق، هيدي مريمية، وهيداك اللي واقف عالحيط، هيدا إيليو، ممنوع ينقطف.» وبآخر الجلّ، كانت السلّة مليانة وريحة الزعتر لازقة بإيديها.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan picking wild thyme into a small basket beside small silver-haired Teta Nahla with round glasses and a blue flowered apron on a terraced Mount Lebanon hillside with olive trees and the sea beyond, as five-year-old Elio with a mop of dark curls and a red striped T-shirt balances on a stone wall."
+    },
+    {
+      "id": 5,
+      "title": "عطسة إيليو",
+      "text": "نشّفت تيتا الزعتر من الصيف الماضي بكياس قماش، وأمّا اللي قطفوه اليوم، فحطّتو بالضلّ لينشف عمهلو للسنة الجايي. قعدوا هلّق عالطاولة بالمطبخ، وقدّامن زعتر ناشف، سمّاق أحمر، سمسم محمّص، وشوية ملح. «قدّيش منحطّ سمّاق؟» سألت ميرا، وهيي ماسكة المعلقة متل عالمة بمختبر. تيتا رفعت كتافها: «لحتى يقلّك قلبك بس.» «بس بفرنسا الوصفة بتقول غرام!» قالت ميرا، ونسيت تخجل. «وبجبيل الوصفة بتقول: دوقي!» حطّت تيتا شوية عطرف صبعها، وميرا داقت. حامض شوي، مالح شوي، وطيّب كتير. هون، إجا إيليو يتطلّع عن قرب، حطّ منخارو فوق السمّاق، وشمّ شمّة كبيرة. عيونو كبروا، ومناخيرو تحرّكت، وبعدين: «آآآتشي!» طار السمّاق بكل المطبخ، وصارت نضّارات تيتا حمرا، وشعر ميرا بقع بقع. للحظة ما حدا حكي. بعدين انفجرت تيتا من الضحك، وميرا معها. «صحّة يا إيليو!» قالت ميرا بعربي واضح. «هلّق صار الزعتر من مطبخ إيليو، بدنا نعملّو ماركة.» وعادوا نضّفوا، وعادوا خلطوا.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of five-year-old Elio with a mop of dark curls and a red striped T-shirt sneezing a puff of red sumac across a Lebanese kitchen table as nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan and small silver-haired Teta Nahla with round glasses and a blue flowered apron burst out laughing."
+    },
+    {
+      "id": 6,
+      "title": "احكي مع العجين",
+      "text": "يوم الأحد، قبل ما يطلع الضو منيح، نزلت ميرا عالمطبخ بالبيجاما. تيتا كانت حاطّة قدّامها لقن كبير فيه طحين وخميرة وشوية سكّر. «يلّا، شمّري عن زنودك، واغسلي إيديكي منيح.» كبّت تيتا المي الدافية شوي شوي، وميرا صارت تعجن. العجين كان لازق بين صابيعها متل الغرا، وهيي عم تقاتلو. «ليش ما بدّو يصير ملس؟» «لأنّك زعلانة منّو،» قالت تيتا بجدّية. «العجين بدّو حدا يحكي معو. أنا من خمسين سنة عم إحكيلو أخباري، وبعمرو ما ضحك عليّي.» ميرا ضحكت، بس جرّبت. «صباح الخير يا عجين... كيفك؟ أنا ميرا. ساكنة بليون. عندي أخ بيعطس عالأكل.» وبلّشت تخبّرو عن مدرستها، وعن رفيقتها كلوي، وعن الترامواي الأزرق. ما حدا كان عم يصحّحلها، والعجين ما عمل ولا تعليق. وبلا ما تنتبه، صار ملس ودافي متل خدّ البيبي. غطّتو تيتا بحرام صوف، وقالت: «هلّق بدّو يرتاح. والعربي تبعك كمان، شفتي؟ كان بس بدّو شوية عجن.» وغمزتها.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan over pyjamas kneading a big bowl of dough and chatting to it at dawn while small silver-haired Teta Nahla with round glasses and a blue flowered apron pours warm water and smiles in a cosy stone kitchen."
+    },
+    {
+      "id": 7,
+      "title": "الركبة الكبيرة",
+      "text": "ولمّا العجين كان عم يرتاح، قال بابا سامي: «يلّا، منمشي شوي عالمينا لنحجز طاولة قبل ما تعجّ.» نزلوا مع كريم ويارا بسوق جبيل القديم، بين الحجار العتيقة ودكاكين الصدف، لحد ما انفتح قدّامن الميناء الزغير، والقلعة من ورا، والمراكب الملوّنة عم تتمرجح عالمي. ميرا كانت لسّا مبسوطة من حديثها مع العجين، وحسّت حالها شجاعة. شافت مركب أزرق وأصفر كبير، وقرّرت: هلّق بدّي إحكي! شدّت كريم من كمّو وقالت بصوت عالي: «شوف! شوف! في ركبة كبيرة كتير بالبحر!» سكت كريم شوي. تطلّع بالبحر، تطلّع بركبته، وتطلّع فيها. «ركبة؟» وبلّش يضحك لحد ما قعد عالأرض. «وين؟ لمين هالركبة؟ يا عمّو، ضيّعت ركبتك!» حتى الصياد اللي حدّهن ابتسم تحت شواربو. ميرا فهمت غلطتها: كان بدها تقول مركب، مش ركبة. حسّت وجّها عم يولّع أكتر من الشمس. ما قالت ولا كلمة. راحت قعدت لحالها عحيط الميناء، وقرّرت إنّو من هلّق، رح تحكي فرنساوي بس، مع السمك كمان.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of eleven-year-old Karim with short black hair and a green football shirt laughing on the ground at Byblos harbour with its old stone castle and bright wooden fishing boats, while nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan blushes and points at a blue-and-yellow boat."
+    },
+    {
+      "id": 8,
+      "title": "السمك والسمّ",
+      "text": "بعد شوي، إجت يارا قعدت حدّها عالحيط، ودلّت إجريها متلها. ما قالت شي بالأول. طلّعت من جيبتها حبّتين مشمش، وعطت ميرا وحدة. بعدين قالت بفرنساوي مكسّر: «Moi aussi... je dis des bêtises.» ميرا تطلّعت فيها باستغراب. رجعت يارا عالعربي: «بدّي خبّرك شي، بس احلفي إنّك ما تخبّري كريم. السنة الماضية، بصفّ الفرنساوي، سألتنا المعلمة شو منحبّ ناكل. وقفت أنا، قدّام كل الصف، وقلت بكل فخر: J'adore le poison!» ميرا شهقت، وغطّت تمّها. «قلتي إنّك بتحبّي السمّ؟» «إي! كان قصدي poisson، سمك! المعلمة تركت الطبشورة من إيدها، وصاروا يسألوني شهر كامل إذا بدّي سمّ بالساندويش.» ضحكت ميرا لحد ما وجعها بطنها، وهيدي المرّة ما خافت تطلع ضحكتها بأي لغة. «وبعدين؟ وقّفتي تحكي فرنساوي؟» «لأ يا ستّي! إذا وقّفت، كيف بدّي إتعلّم؟» قالت يارا، ورمت بزرة المشمش بالمي. «إنتي بتعرفي الفرنساوي منيح، بتعلّميني، وأنا بعلّمك مركب.» فكّرت ميرا شوي، ومدّت إيدها: «اتّفقنا. بس إنتي كمان ما تاكلي سمّ.»",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of ten-year-old Yara with a long black braid and a white cap and nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan sitting on the old stone harbour wall at Byblos sharing apricots, laughing together with their legs dangling above the water."
+    },
+    {
+      "id": 9,
+      "title": "طابات العجين",
+      "text": "رجعوا عالبيت، وركضت ميرا عالمطبخ وشالت الحرام عن اللقن. «تيتا! كبر! صار قدّ جبل صنّين!» «شو بدّك، عم يسمع أخبارك من الصبح، انبسط،» قالت تيتا. خبّرتها ميرا عن الركبة، وصوتها واطي بالأول، بس لمّا وصلت لسمّ يارا صارت تتمسخر. تيتا مسحت دمعة من الضحك. «يا تقبرني! بتعرفي شو قال جدّك أوّل مرّة راح عفرنسا؟ طلب من الجرسون بالمطعم كرسي بدل الكبّاية، وضلّ ناطر.» بعدين رشّت طحين عالطاولة ودقّتها: «يلّا، إيد عالشغل. منقطع العجين طابات قدّ التفاحة.» هيي اللي قطّعت بالسكينة الكبيرة، وميرا دوّرت الطابات بإيديها عالطحين، طابة ورا طابة، وصفّتن عالصينية متل جيش زغير أبيض. وهيي عم تدوّر، وصل كريم ويارا وإيليو، وريحتن ريحة شمس وبحر. كريم وقف بالباب وما كان عارف شو يقول. مسح راسو وقال: «ميرا، مش قصدي... يعني كانت مزحة.» ميرا تطلّعت فيه من تحت لفوق، ورشّتلو طحين عالتيشرت الخضرا. «إغسل إيديك وتعا، يا عمّو. في شغل كتير.»",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan cheerfully flicking flour at eleven-year-old Karim with short black hair and a green football shirt in a kitchen doorway, beside rows of dough balls on a tray and small silver-haired Teta Nahla with round glasses and a blue flowered apron."
+    },
+    {
+      "id": 10,
+      "title": "المعلّمة ميرا",
+      "text": "صار المطبخ زحمة، وكل واحد بدّو يشتغل. تيتا قعدت عالكرسي شوي، وقالت بصوت بريء: «يا ميرا، فرجيهن إنتي كيف. أنا ظهري تعبان.» ميرا عرفت إنّو ظهر تيتا ما فيه شي، بس وقفت قدّام الطاولة. «طيب. أوّل شي، بتفتحوا الطابة هيك، بإيديكن، من النص لبرّا، شوي شوي. كريم! مش هيك! هيدي بدها تصير منقوشة، مش طيّارة!» كريم كان عم يرمي العجين بالهوا متل معلّم البيتزا. ضحكت يارا. «تاني شي: بتغمّسوا صابيعكن بالزيت، وبتعملوا حفر زغيرة، طق طق طق، لحتى يقعد الزعتر فيها.» وبعدين دوّبت المزيج مع زيت الزيتون بالصحن، وكبّت معلقة عكل دايرة، ومدّتها لحدّ الطرف. إيليو عمل منقوشة قدّ الليرة، وقال إنّها إلو لحالو. يارا وقفت وسألتها: «هيك منيح، يا معلّمة؟» ما كانت ميرا منتبهة، بس عم تحكي من ربع ساعة بلا ما توقف، عربي، وغلطت يمكن خمس مرّات، وما حدا مات. تيتا كانت قاعدة عالكرسي، عم تتفرّج ومبسوطة، وظهرها منيح كتير.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan showing ten-year-old Yara with a long black braid and a white cap, eleven-year-old Karim with short black hair and a green football shirt, and five-year-old Elio with a mop of dark curls and a red striped T-shirt how to dimple dough rounds and spread za'atar, while small silver-haired Teta Nahla with round glasses and a blue flowered apron watches contentedly from a chair."
+    },
+    {
+      "id": 11,
+      "title": "منقوشة بشكل ركبة",
+      "text": "برّا عالفرندا، كانت عمتو هبة ولّعت النار تحت الصاج. والصاج متل قبّة حديد كبيرة، بيحمى كتير، وهيدا شغل الكبار بس. رسمت تيتا خطّ بالطبشورة عالأرض وقالت: «الولاد ورا الخطّ. اللي بيقطع الخطّ، بياكل آخر واحد.» حتى إيليو رجع خطوتين، لأنّو الأكل عندو أهمّ شي بالدني. ميرا وكريم ويارا كانوا يقرّبوا الصواني لحدّ الخطّ، وبابا سامي ياخدها منّن ويعطيها لهبة. أخدت عمتو هبة أوّل دايرة عجين، وفرشتها عالصاج، وبأقل من دقيقة، طلعت ريحة خلّت كل الحي يفتح شبابيكو. هبة شالتها بالمجرفة الطويلة، ورفعتها لفوق ليشوفوها الولاد. بس هيدي كانت منقوشة كريم، اللي رماها بالهوا: طالعة معوجّة، مدوّرة من فوق، ومنفوخة بالنص. سكت الكل. ميرا قرّبت لحدّ الخطّ، وزمّت عيونها متل أستاذة، وقالت بأعلى صوتها: «شوفوا! في ركبة كبيرة كتير عالصاج!» كريم وقع عالأرض تاني مرّة، وبابا سامي ضحك لحد ما دمعت عيونو. وهيدي المرّة، ميرا كانت هيي اللي عملت النكتة، وكانت هيي اللي ضحكت أكتر من الكل.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of Aunt Hiba with a wavy auburn bob and a rust-coloured apron lifting a funny lopsided za'atar flatbread from a domed saj over a fire with a long spatula, while nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan, ten-year-old Yara with a long black braid and a white cap, and eleven-year-old Karim with short black hair and a green football shirt laugh from behind a chalk safety line on a terrace."
+    },
+    {
+      "id": 12,
+      "title": "السلّة الكبيرة",
+      "text": "طلعوا المناقيش وحدة ورا التانية، خضرا وذهبية، وريحتها بتخلّي الواحد ينسى اسمو. عمتو هبة وبابا سامي ضلّوا عالصاج، والولاد صفّوا المناقيش عالصواني لتبرد شوي. بعدين لفّوها بفوط نضاف وحطّوها بسلّة قش كبيرة. «يلّا يا معلّمة، شو ناقصنا؟» سألت تيتا، وعطت ميرا ورقة وقلم. ميرا كتبت اللايحة بأحرف عربية كبيرة ومعوجّة، وصارت تنادي متل قبطان: «لبنة!» «عندي!» قال كريم. «خيار وبندورة!» «عندي!» قالت يارا. «نعنع وزيتون!» «عندي، وعندي كمان فوط،» قال إيليو، اللي كان حامل كومة فوط أعلى من راسو، وماشي وما شايف قدّامو. «إيليو، وين المنقوشة اللي قدّ الليرة؟» سألته ميرا. تطلّع فيها ببراءة وبلّش يمضغ. «ما شفتها.» وقبل ما يطلعوا، وقفت ميرا قدّام المراية بالممر تزبّط كنزتها الصفرا. لقت حالها عم تتمرّن، بس مش خايفة هيدي المرّة: «مركب، مركب، مركب.» سمعها بيّها من ورا، وما قال شي. بس حطّ إيدو عكتفها، ونزلوا كلّن عالسيارة، وريحة الزعتر قبلهن.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan reading a handwritten list like a ship's captain while eleven-year-old Karim with short black hair and a green football shirt and ten-year-old Yara with a long black braid and a white cap fill a big straw basket with flatbreads, and five-year-old Elio with a mop of dark curls and a red striped T-shirt carries a towering pile of napkins."
+    },
+    {
+      "id": 13,
+      "title": "عمّو طوني والمركب",
+      "text": "عالمينا، فرشوا الأكل عطاولتين حدّ المي، والنسمة عم تجيب ريحة ملح وتاخد ريحة زعتر. وبنفس المطرح، كان الصياد العجوز بالبرنيطة الكحلية عم يصلّح شباكو. عرفو كريم وناداه: «صباح الخير، عمّو طوني!» ميرا تطلّعت بشواربو البيض، وعرفت إنّو هوّي نفسو اللي سمع قصة الركبة. قلبها دقّ شوي. بس أخدت منقوشة من السلّة، وراحت لحالها لعندو، وكل العيلة عم تتفرّج. «نهارك سعيد، عمّو. أنا ميرا، بنت سامي، من ليون. هيدي منقوشة زعتر عملناها اليوم، أنا وتيتا نهلا. والزعتر من جلّها. تفضّل، صحتين!» عمّو طوني أخدها، وعضّها، وغمّض عيونو. «يسلمو إيديكي يا بنتي! هيدا طعم زعتر نهلا، بعرفو من أربعين سنة.» بعدين رفع حاجبو وسألها بجدّية كبيرة: «وشو رأيك بهالشي الأزرق والأصفر اللي هونيك؟» ميرا لفّت تتطلّع، وابتسمت من الدينة للدينة. «هيدا مركبك، يا عمّو. بس الركبة، أنا بظنّ إنّها عم تسبح وراه.» ضحك عمّو طوني لحدّ ما طارت البرنيطة، ووراه كل الطاولة صارت تصفّق.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan confidently offering a za'atar flatbread to an elderly fisherman with a white moustache and a navy cap mending nets beside his blue-and-yellow boat at Byblos harbour, as her family applauds from tables by the water."
+    },
+    {
+      "id": 14,
+      "title": "صحتين عالمينا",
+      "text": "أكلوا لحد ما ما عاد حدا فيه يتحرّك، إلّا إيليو، اللي لسّا عم يفتّش بالسلّة. المنقوشة مع اللبنة والنعنع والخيار طلعت أطيب شي داقتو ميرا بحياتها، وهيي مرّة أكلت كريب بباريس. «صحتين!» قالت لعمتو هبة، وعمتو جاوبتها: «على قلبك يا عيوني.» صارت يارا تتمرّن عالفرنساوي، وميرا تصحّحلها، وبعدين تبادلوا الدور. «Le poisson، يعني سمك. Le poison، ممنوع عالغدا!» وكريم، اللي ما بيقدر يسكت، صار بدّو يتعلّم كيف يقول «ركبة» بالفرنساوي، لأسباب علمية. قالتلو: «Le genou.» وصار يصرّخ بوجّ البحر: «جونو! جونو!» والنورس طار من فوقو خايف. خبّرتن ميرا عن ليون، عن النهرين والجسور، وكيف بالشتي بيقعدوا بالبيت وبابا سامي بيعمل مناقيش بالفرن وبتطلع ناشفة، وبيقول دايماً: «مش متل مناقيش إمّي.» كلّن ضحكوا، وبابا كمان. بعدين مال عليها وقال بصوت واطي: «سمعتك مع عمّو طوني. ما بتعرفي قدّيش حسّيت إنّو ليون وجبيل صاروا مطرح واحد.» ميرا ما جاوبتو، بس حطّت راسها عكتفو، والشمس عم تنزل ورا المراكب.",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of a golden late-afternoon family picnic at Byblos harbour with nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan leaning on the shoulder of her father Sami with a short greying beard and a blue linen shirt, while eleven-year-old Karim with short black hair and a green football shirt shouts at seagulls and ten-year-old Yara with a long black braid and a white cap giggles."
+    },
+    {
+      "id": 15,
+      "title": "مرطبان الزعتر",
+      "text": "مرقت أيام الصيفية متل المي، وإجا يوم الرجعة عليون. عالبلكون نفسو، إجت تيتا نهلا حاملة مرطبان زجاج مليان زعتر، مسكّر منيح وملفوف بفوطة. «هيدا زعتر هالسنة، اللي قطفتيه بإيديكي،» قالت. «بس ما في غرامات. الوصفة ضلّت متل ما هيي: دوقي.» ميرا حضنت المرطبان، وبعدين حضنت تيتا، وحسّت بريحة الطحين والصابون بمريولها. وصل كريم ويارا يودّعوها. يارا قالتلها بفرنساوي قوي ونضيف: «À bientôt, ma cousine!» وكريم عطاها رسمة لمركب، وكاتب تحتها بالخط العريض: «هيدي ركبة.» ضحكت ميرا لحد ما بكت، أو بكت لحد ما ضحكت، ما بقى تعرف. «يا تيتا،» قالت ميرا، وهيدي المرّة ما وقف لسانها ولا بقى بدّو يوقف، «الصيفية الجايي بدّي إعمل العجين لحالي، وإنتي بتقعدي عالكرسي، وظهرك بيكون تعبان.» تيتا ضحكت، وباستها تلات مرّات، وقالت: «إيه يا روحي، واحكي معو كل يوم بليون، لحتى ما ينسى العربي.» وبالطيّارة، فتحت ميرا المرطبان شوي، شمّت، وهمست لإيليو: «صباح الخير يا زعتر. كيفك؟»",
+      "image_prompt": "A watercolor-and-gouache children's book illustration of nine-year-old Mira with curly dark-brown hair in a short ponytail and a mustard-yellow cardigan hugging a glass jar of za'atar and small silver-haired Teta Nahla with round glasses and a blue flowered apron on a sunny Byblos balcony, as ten-year-old Yara with a long black braid and a white cap waves and eleven-year-old Karim with short black hair and a green football shirt hands her a drawing of a boat."
+    }
+  ],
+  "vocab": [
+    { "word": "تيتا", "translit": "teta", "en": "grandma" },
+    { "word": "منقوشة", "translit": "man'oushe", "en": "flatbread topped with za'atar and olive oil" },
+    { "word": "زعتر", "translit": "za'tar", "en": "wild thyme, and the herb, sumac and sesame mix made from it" },
+    { "word": "صاج", "translit": "saj", "en": "domed metal griddle heated over a fire" },
+    { "word": "عجين", "translit": "'ajin", "en": "dough" },
+    { "word": "مركب", "translit": "markab", "en": "boat" },
+    { "word": "ركبة", "translit": "rekbe", "en": "knee" },
+    { "word": "هلّق", "translit": "halla'", "en": "now" },
+    { "word": "صحتين", "translit": "sahtein", "en": "enjoy your meal (literally: two healths)" },
+    { "word": "يسلمو إيديكي", "translit": "yeslamo idayki", "en": "bless your hands (said to thank a girl or woman for her cooking)" }
+  ]
+}
