@@ -1,0 +1,168 @@
+{
+  "country": "IQ",
+  "name_en": "Iraq",
+  "lang": "ar-IQ",
+  "colors": {
+    "primary": "#1A7B88",
+    "secondary": "#D4882A"
+  },
+  "regions": [
+    {
+      "id": "baghdad",
+      "name_en": "Baghdad"
+    },
+    {
+      "id": "erbil",
+      "name_en": "Erbil"
+    },
+    {
+      "id": "basra",
+      "name_en": "Basra"
+    }
+  ],
+  "mentor": {
+    "name": "Bibi Amal",
+    "greeting_en": "Welcome, my dears! Come bake Eid kleicha and drink cardamom tea in the courtyard.",
+    "greeting": "هلا بيكم يا عيوني! تعالوا نخبز كليچة العيد ونشرب چاي مهيل بالحوش."
+  },
+  "items": [
+    {
+      "id": "wheat_dough",
+      "name_en": "Wheat Dough",
+      "color": "#F3E5AB"
+    },
+    {
+      "id": "date_paste",
+      "name_en": "Date Paste",
+      "color": "#5C2C16"
+    },
+    {
+      "id": "cardamom",
+      "name_en": "Ground Cardamom",
+      "color": "#6E8B3D"
+    },
+    {
+      "id": "kleicha",
+      "name_en": "Eid Kleicha",
+      "color": "#D49B4B"
+    },
+    {
+      "id": "mud_brick",
+      "name_en": "Tigris Mud Brick",
+      "color": "#C29B61"
+    },
+    {
+      "id": "turquoise_tile",
+      "name_en": "Turquoise Glazed Tile",
+      "color": "#1A8C9C"
+    },
+    {
+      "id": "palm_wood",
+      "name_en": "Date Palm Beam",
+      "color": "#8B5A2B"
+    },
+    {
+      "id": "brass_teapot",
+      "name_en": "Baghdadi Brass Teapot",
+      "color": "#D4AF37"
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "title_en": "Eid by the Tigris",
+      "challenges": [
+        {
+          "id": "IQ-1-gather",
+          "type": "gather",
+          "title_en": "Pantry by the Tigris",
+          "goal_en": "Gather warm wheat dough, sweet date paste, and fragrant cardamom with Bibi Amal for the Eid baking tray.",
+          "needs": [
+            {
+              "item": "wheat_dough",
+              "count": 2
+            },
+            {
+              "item": "date_paste",
+              "count": 2
+            },
+            {
+              "item": "cardamom",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "IQ-1-cook",
+          "type": "cook",
+          "title_en": "Bake the Eid Kleicha",
+          "goal_en": "Roll the spiced wheat dough around the date paste and cardamom filling so Bibi Amal can bake golden kleicha cookies.",
+          "recipe": {
+            "inputs": [
+              "wheat_dough",
+              "date_paste",
+              "cardamom"
+            ],
+            "output": "kleicha"
+          }
+        },
+        {
+          "id": "IQ-1-build",
+          "type": "build",
+          "title_en": "Baghdadi Courtyard House",
+          "goal_en": "Lay the mud-brick walls, palm-wood shanashil beams, and turquoise tiles around the family courtyard.",
+          "blueprint": [
+            "TTTTT",
+            "BPPPB",
+            "B...B",
+            "BB.BB"
+          ],
+          "blueprintLegend": {
+            "T": "turquoise_tile",
+            "B": "mud_brick",
+            "P": "palm_wood"
+          }
+        },
+        {
+          "id": "IQ-1-trade",
+          "type": "trade",
+          "title_en": "Tea in Al-Mutanabbi",
+          "goal_en": "Share a plate of fresh Eid kleicha with the neighborhood coppersmith in exchange for a polished brass teapot.",
+          "needs": [
+            {
+              "item": "kleicha",
+              "count": 1
+            }
+          ],
+          "reward": {
+            "item": "brass_teapot",
+            "count": 1
+          }
+        },
+        {
+          "id": "IQ-1-word",
+          "type": "word",
+          "title_en": "Words from Bibi's Courtyard",
+          "goal_en": "Learn three Baghdadi Iraqi Arabic words used during family Eid gatherings.",
+          "words": [
+            {
+              "word": "كليچة",
+              "translit": "kleicha",
+              "en": "spiced date-filled Eid cookie"
+            },
+            {
+              "word": "بيبي",
+              "translit": "bibi",
+              "en": "grandmother"
+            },
+            {
+              "word": "شكو ماكو",
+              "translit": "shaku maku",
+              "en": "what's up / how is everything"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
