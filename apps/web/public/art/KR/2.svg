@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Autumn Garden Harvest &amp; Onggi Jars</title>
+  <desc>Serene courtyard scene featuring glazed earthenware onggi fermentation pots on a stone terrace, woven bamboo baskets of harvested shiitake mushrooms and radishes, and strings of sun-drying red chilies.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="onggi-glaze" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0%" stop-color="#4d413b" />
+      <stop offset="50%" stop-color="#2d2522" />
+      <stop offset="100%" stop-color="#14100f" />
+    </radialGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <rect width="800" height="500" fill="#f7f3eb" />
+
+  <!-- Hanok Stone Terrace for Fermentation Pots (Jangdokdae) -->
+  <polygon points="0,260 800,260 800,500 0,500" fill="#9e9182" stroke="#756754" stroke-width="4" />
+  <line x1="0" y1="360" x2="800" y2="360" stroke="#7d7061" stroke-width="2" />
+
+  <!-- Traditional Korean Onggi Fermentation Jars (Earthenware) -->
+  <!-- Onggi 1 Grand -->
+  <g transform="translate(140, 210)">
+    <ellipse cx="70" cy="20" rx="42" ry="12" fill="#14100f" />
+    <!-- Lid with handle knob -->
+    <ellipse cx="70" cy="16" rx="40" ry="10" fill="#38302b" />
+    <circle cx="70" cy="12" r="6" fill="#1a1412" />
+    <!-- Belly of Jar -->
+    <path d="M30,20 C-10,80 -10,180 70,180 C150,180 150,80 110,20 Z" fill="url(#onggi-glaze)" />
+    <!-- Glossy ceramic reflection highlight -->
+    <path d="M35,60 Q30,110 50,140" stroke="#8c786e" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round" />
+  </g>
+
+  <!-- Onggi 2 Medium -->
+  <g transform="translate(290, 250)">
+    <ellipse cx="50" cy="15" rx="32" ry="9" fill="#14100f" />
+    <ellipse cx="50" cy="12" rx="30" ry="7" fill="#38302b" />
+    <circle cx="50" cy="9" r="5" fill="#1a1412" />
+    <path d="M20,15 C-5,60 -5,130 50,130 C105,130 105,60 80,15 Z" fill="url(#onggi-glaze)" />
+  </g>
+
+  <!-- Bamboo Basket (Sokuri) with Autumn Harvest: Shiitake, Radish, Greens -->
+  <g transform="translate(480, 260)">
+    <ellipse cx="120" cy="110" rx="130" ry="45" fill="#8c6c44" stroke="#5c4324" stroke-width="3" />
+    <ellipse cx="120" cy="105" rx="122" ry="40" fill="#baa079" />
+    <!-- Shiitake mushrooms -->
+    <ellipse cx="60" cy="95" rx="24" ry="16" fill="#543826" />
+    <path d="M48,95 L72,95" stroke="#f7ecd9" stroke-width="3" stroke-linecap="round" />
+    <ellipse cx="105" cy="85" rx="26" ry="17" fill="#63442f" />
+    <path d="M92,85 L118,85" stroke="#f7ecd9" stroke-width="3" stroke-linecap="round" />
+    <!-- Korean Daikon Radish (Mu) -->
+    <polygon points="140,95 210,80 230,95 150,110" fill="#fdfcf7" stroke="#cbd3c1" stroke-width="2" />
+    <!-- Radish green leaves -->
+    <path d="M220,85 Q260,70 270,80" stroke="#527d34" stroke-width="5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- Hanging strings of sun-dried red chili peppers (Gochu) -->
+  <g transform="translate(680, 40)" stroke="#2b1a0e" stroke-width="1.5">
+    <line x1="40" y1="0" x2="40" y2="180" />
+    <g fill="#c92a2a" stroke="#871212" stroke-width="1.5">
+      <path d="M40,30 Q25,45 35,60 Q38,45 40,30" />
+      <path d="M40,65 Q55,80 45,95 Q42,80 40,65" />
+      <path d="M40,100 Q25,115 35,130 Q38,115 40,100" />
+      <path d="M40,135 Q55,150 45,165 Q42,150 40,135" />
+    </g>
+  </g>
+  
+</svg>

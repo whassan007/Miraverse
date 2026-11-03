@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Tigris Riverbank at Golden Hour</title>
+  <desc>Serene Mesopotamian river twilight on the Tigris with silhouettes of towering date palms, warm ripples, and a historic round woven guffa coracle boat resting near the reeds.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="tigris-sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#36395b" />
+      <stop offset="40%" stop-color="#b05459" />
+      <stop offset="70%" stop-color="#e88552" />
+      <stop offset="100%" stop-color="#fad074" />
+    </linearGradient>
+    <linearGradient id="tigris-water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#df8e59" />
+      <stop offset="50%" stop-color="#805663" />
+      <stop offset="100%" stop-color="#2d304a" />
+    </linearGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <!-- Sunset Sky over the Tigris -->
+  <rect width="800" height="280" fill="url(#tigris-sunset)" />
+  <circle cx="500" cy="190" r="45" fill="#fff5d9" opacity="0.9" />
+
+  <!-- Opposite riverbank silhouette with date palms -->
+  <path d="M0,260 Q300,245 800,260 L800,285 L0,285 Z" fill="#45272a" />
+  <g fill="#2d171c">
+    <path d="M120,260 Q125,170 135,130 Q130,170 123,260 Z" />
+    <path d="M135,130 Q100,110 80,130 Q110,140 135,130" />
+    <path d="M135,130 Q160,105 185,125 Q155,135 135,130" />
+
+    <path d="M160,260 Q168,185 180,150 Q170,185 163,260 Z" />
+    <path d="M180,150 Q150,135 135,150 Q160,155 180,150" />
+    <path d="M180,150 Q200,125 225,140 Q200,150 180,150" />
+  </g>
+
+  <!-- Tigris River Waters -->
+  <rect y="280" width="800" height="220" fill="url(#tigris-water)" />
+  <!-- Water highlights -->
+  <ellipse cx="500" cy="305" rx="90" ry="5" fill="#fad074" opacity="0.5" />
+  <ellipse cx="490" cy="330" rx="140" ry="6" fill="#e88552" opacity="0.4" />
+  <ellipse cx="480" cy="370" rx="180" ry="7" fill="#fad074" opacity="0.25" />
+
+  <!-- Traditional Mesopotamian Guffa (Round woven coracle boat) -->
+  <g transform="translate(320, 340)">
+    <!-- Round woven hull coated in natural bitumen -->
+    <ellipse cx="60" cy="40" rx="60" ry="25" fill="#1f1815" stroke="#3d2c25" stroke-width="4" />
+    <ellipse cx="60" cy="35" rx="55" ry="20" fill="#2d221c" />
+    <!-- Woven reed texture rim -->
+    <ellipse cx="60" cy="34" rx="54" ry="18" fill="none" stroke="#634f3a" stroke-width="2.5" stroke-dasharray="6,4" />
+    <!-- Wooden oar leaning across -->
+    <line x1="10" y1="10" x2="110" y2="55" stroke="#87582b" stroke-width="3.5" />
+    <ellipse cx="112" cy="56" rx="10" ry="5" transform="rotate(25 112 56)" fill="#87582b" />
+  </g>
+
+  <!-- River reeds in foreground -->
+  <g stroke="#3a452d" stroke-width="3" fill="none">
+    <path d="M40,500 Q50,420 30,370" />
+    <path d="M55,500 Q70,410 50,350" />
+    <path d="M75,500 Q80,430 70,380" />
+  </g>
+  
+</svg>
