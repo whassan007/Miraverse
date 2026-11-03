@@ -1,0 +1,167 @@
+{
+  "country": "KR",
+  "name_en": "South Korea",
+  "lang": "ko",
+  "colors": {
+    "primary": "#2E7D6F",
+    "secondary": "#C84B31"
+  },
+  "regions": [
+    {
+      "id": "seoul",
+      "name_en": "Seoul"
+    },
+    {
+      "id": "jeonju",
+      "name_en": "Jeonju"
+    },
+    {
+      "id": "busan",
+      "name_en": "Busan"
+    }
+  ],
+  "mentor": {
+    "name": "Halmeoni",
+    "greeting_en": "Welcome, sweet grandchild! Let's shape warm songpyeon together under the bright harvest moon in Jeonju.",
+    "greeting": "어서 오렴, 우리 손주! 전주 한옥 마루에서 밝은 보름달을 보며 따뜻한 송편을 함께 빚자꾸나."
+  },
+  "items": [
+    {
+      "id": "rice_flour",
+      "name_en": "Rice Flour",
+      "color": "#F7F4EB"
+    },
+    {
+      "id": "sesame_honey",
+      "name_en": "Sesame & Honey Filling",
+      "color": "#D49B35"
+    },
+    {
+      "id": "pine_needles",
+      "name_en": "Fresh Pine Needles",
+      "color": "#3A6B4C"
+    },
+    {
+      "id": "songpyeon",
+      "name_en": "Half-Moon Songpyeon",
+      "color": "#E8A598"
+    },
+    {
+      "id": "giwa_tile",
+      "name_en": "Curved Giwa Roof Tile",
+      "color": "#3B444B"
+    },
+    {
+      "id": "pine_pillar",
+      "name_en": "Red Pine Pillar",
+      "color": "#8C5332"
+    },
+    {
+      "id": "hanji_paper",
+      "name_en": "Mulberry Hanji Screen",
+      "color": "#F3EAD8"
+    },
+    {
+      "id": "celadon_cup",
+      "name_en": "Inlaid Celadon Tea Cup",
+      "color": "#7BA899"
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "title_en": "Harvest Moon in Jeonju",
+      "challenges": [
+        {
+          "id": "KR-1-gather",
+          "type": "gather",
+          "title_en": "Chuseok Basket in Jeonju",
+          "goal_en": "Gather freshly milled rice flour, sweet sesame-honey filling, and fragrant pine needles for the courtyard steamer.",
+          "needs": [
+            {
+              "item": "rice_flour",
+              "count": 2
+            },
+            {
+              "item": "sesame_honey",
+              "count": 2
+            },
+            {
+              "item": "pine_needles",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "KR-1-cook",
+          "type": "cook",
+          "title_en": "Steam Half-Moon Songpyeon",
+          "goal_en": "Knead the rice flour dough, fold in the sesame-honey filling, and layer over pine needles so Halmeoni can steam the songpyeon.",
+          "recipe": {
+            "inputs": [
+              "rice_flour",
+              "sesame_honey",
+              "pine_needles"
+            ],
+            "output": "songpyeon"
+          }
+        },
+        {
+          "id": "KR-1-build",
+          "type": "build",
+          "title_en": "Restore the Hanok Courtyard Pavilion",
+          "goal_en": "Arrange curved giwa roof tiles above sturdy pine pillars and warm hanji paper doors.",
+          "blueprint": [
+            "GGGG",
+            "PHHP",
+            "PHHP"
+          ],
+          "blueprintLegend": {
+            "G": "giwa_tile",
+            "P": "pine_pillar",
+            "H": "hanji_paper"
+          }
+        },
+        {
+          "id": "KR-1-trade",
+          "type": "trade",
+          "title_en": "Share Chuseok Songpyeon",
+          "goal_en": "Offer a plate of warm songpyeon to the neighborhood potter and receive an inlaid celadon tea cup in return.",
+          "needs": [
+            {
+              "item": "songpyeon",
+              "count": 1
+            }
+          ],
+          "reward": {
+            "item": "celadon_cup",
+            "count": 1
+          }
+        },
+        {
+          "id": "KR-1-word",
+          "type": "word",
+          "title_en": "Jeonju Harvest Words",
+          "goal_en": "Learn three Korean words for Chuseok traditions in Jeonju.",
+          "words": [
+            {
+              "word": "송편",
+              "translit": "songpyeon",
+              "en": "half-moon rice cake"
+            },
+            {
+              "word": "한옥",
+              "translit": "hanok",
+              "en": "traditional Korean house"
+            },
+            {
+              "word": "추석",
+              "translit": "chuseok",
+              "en": "autumn harvest festival"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
