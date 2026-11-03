@@ -1,0 +1,7 @@
+- Readers 8-12. Warm, funny, modern everyday family life. 15 scenes, 120-180 words each.
+- Dual plot: a cooking challenge + a social/identity challenge that resolve together.
+- Regional specificity (a real town or neighbourhood, real dishes, real occasions).
+- Write genuinely in the named dialect, not Modern Standard Arabic.
+- No politics, war, borders, religious debate, romance, or scary peril. Adults handle knives/heat.
+- image_prompt: English, one sentence, watercolor-and-gouache children's book style, same character descriptions every scene.
+- vocab: 10 words from the story, with transliteration and English.

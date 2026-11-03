@@ -1,0 +1,13 @@
+{
+  "name": "miraverse",
+  "private": true,
+  "type": "module",
+  "workspaces": ["apps/web", "apps/minecraft"],
+  "scripts": {
+    "validate": "tsx tools/validate.ts",
+    "compile": "tsx tools/compiler/index.ts",
+    "check": "npm run validate && npm run compile && npm -w apps/web run build && npm -w apps/minecraft run build && vitest run",
+    "dev": "npm -w apps/web run dev"
+  },
+  "devDependencies": { "tsx": "^4", "typescript": "^5", "vitest": "^2" }
+}
