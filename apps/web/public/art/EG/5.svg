@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Cairo Rooftop Iftar Feast Table</title>
+  <desc>Warm celebratory scene on a Cairo rooftop table at sunset with glowing Ramadan fanous, sweet dates, chilled hibiscus drinks, and traditional Egyptian dishes overlooking the city.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="iftar-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14172b" />
+      <stop offset="60%" stop-color="#2d2b4e" />
+      <stop offset="100%" stop-color="#644863" />
+    </linearGradient>
+    <radialGradient id="table-glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#ffe494" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#f39c12" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#14172b" stop-opacity="0" />
+    </radialGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <rect width="800" height="500" fill="url(#iftar-sky)" />
+
+  <!-- Distant illuminated Cairo skyline -->
+  <g fill="#3e324a" opacity="0.7">
+    <rect x="100" y="160" width="8" height="80" />
+    <polygon points="100,160 104,135 108,160" />
+    <ellipse cx="140" cy="220" rx="20" ry="18" />
+    <rect x="680" y="150" width="8" height="90" />
+    <polygon points="680,150 684,125 688,150" />
+  </g>
+
+  <!-- Rooftop terrace table -->
+  <ellipse cx="400" cy="400" rx="360" ry="140" fill="#4d3220" />
+  <circle cx="400" cy="360" r="260" fill="url(#table-glow)" />
+
+  <!-- Central Ramadan Fanous on table -->
+  <g transform="translate(400, 220)">
+    <polygon points="-25,40 0,15 25,40" fill="#d4af37" />
+    <polygon points="-35,100 -25,40 25,40 35,100" fill="#ffb703" opacity="0.85" stroke="#7a5509" stroke-width="2" />
+    <ellipse cx="0" cy="70" rx="8" ry="18" fill="#fff" filter="url(#soft-glow)" />
+    <polygon points="-35,100 -15,130 15,130 35,100" fill="#b38719" />
+  </g>
+
+  <!-- Dish of Dates (Tamar) for breaking the fast -->
+  <g transform="translate(240, 360)">
+    <ellipse cx="0" cy="0" rx="50" ry="24" fill="#dfd6c5" stroke="#b0a28f" stroke-width="2" />
+    <ellipse cx="-15" cy="-2" rx="14" ry="8" transform="rotate(-15 -15 -2)" fill="#4a1e12" />
+    <ellipse cx="10" cy="-4" rx="14" ry="8" transform="rotate(20 10 -4)" fill="#3b150a" />
+    <ellipse cx="-5" cy="5" rx="14" ry="8" transform="rotate(5 -5 5)" fill="#5c2618" />
+  </g>
+
+  <!-- Tall glasses of Karkadeh (Hibiscus) & Qamar al-Din (Apricot) -->
+  <g transform="translate(560, 340)">
+    <!-- Red Hibiscus glass -->
+    <rect x="-35" y="-15" width="20" height="40" rx="4" fill="#99152b" opacity="0.85" stroke="#fad0c4" stroke-width="1.5" />
+    <!-- Yellow Apricot glass -->
+    <rect x="15" y="-15" width="20" height="40" rx="4" fill="#f79d1e" opacity="0.85" stroke="#fceabb" stroke-width="1.5" />
+  </g>
+
+  <!-- Big bowl of Egyptian Koshari / Ful at center bottom -->
+  <g transform="translate(400, 420)">
+    <ellipse cx="0" cy="10" rx="90" ry="32" fill="#c45d31" />
+    <ellipse cx="0" cy="0" rx="90" ry="30" fill="#e89858" stroke="#a0441e" stroke-width="2" />
+    <ellipse cx="0" cy="-2" rx="80" ry="25" fill="#f2e2cb" />
+    <!-- Crispy fried onions and chickpeas topping -->
+    <ellipse cx="0" cy="-3" rx="55" ry="16" fill="#803816" opacity="0.8" />
+    <circle cx="-15" cy="-5" r="4" fill="#eedaa2" />
+    <circle cx="10" cy="-2" r="4.5" fill="#eedaa2" />
+    <circle cx="2" cy="-8" r="4" fill="#eedaa2" />
+  </g>
+  
+</svg>

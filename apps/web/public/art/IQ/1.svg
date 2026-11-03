@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Al-Mutanabbi Street &amp; Shanashil Balconies</title>
+  <desc>Watercolor view down Baghdad&#x27;s historic Al-Mutanabbi cultural street framed by intricate wooden shanashil bay windows, traditional brickwork, and literary bookstalls.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="iq-street-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d5a80" />
+      <stop offset="70%" stop-color="#98c1d9" />
+      <stop offset="100%" stop-color="#e0fbfc" />
+    </linearGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <!-- Sky between tall historic facades -->
+  <rect width="800" height="500" fill="url(#iq-street-sky)" />
+
+  <!-- Street Facades -->
+  <!-- Left Building with cantilevered Shanashil -->
+  <polygon points="0,0 280,40 240,500 0,500" fill="#d5b68b" />
+  <!-- Wooden Shanashil 1 -->
+  <polygon points="80,100 240,120 220,240 60,220" fill="#4a2e1b" />
+  <rect x="90" y="125" width="40" height="70" fill="#2d170a" stroke="#875323" stroke-width="2" />
+  <rect x="150" y="132" width="40" height="70" fill="#2d170a" stroke="#875323" stroke-width="2" />
+  <circle cx="110" cy="160" r="5" fill="#e76f51" />
+  <circle cx="170" cy="167" r="5" fill="#2a9d8f" />
+
+  <!-- Right Building with Overhanging Wooden Balconies -->
+  <polygon points="800,0 520,30 560,500 800,500" fill="#c9a779" />
+  <polygon points="560,110 720,90 740,210 580,230" fill="#422917" />
+  <rect x="600" y="125" width="40" height="65" fill="#281509" stroke="#875323" stroke-width="2" />
+  <rect x="660" y="120" width="40" height="65" fill="#281509" stroke="#875323" stroke-width="2" />
+  <circle cx="620" cy="155" r="5" fill="#e9c46a" />
+  <circle cx="680" cy="150" r="5" fill="#457b9d" />
+
+  <!-- Cobblestone / brick alleyway -->
+  <polygon points="240,500 560,500 440,320 360,320" fill="#a4845e" />
+
+  <!-- Historic book stalls & display on Al-Mutanabbi street -->
+  <g transform="translate(280, 360)">
+    <!-- Wooden table / book crate -->
+    <rect x="0" y="40" width="240" height="60" fill="#5c381e" stroke="#3d210e" stroke-width="2" />
+    <!-- Rows of vintage colorful books -->
+    <rect x="15" y="15" width="14" height="35" rx="2" fill="#9b2226" />
+    <rect x="33" y="10" width="16" height="40" rx="2" fill="#005f73" />
+    <rect x="53" y="18" width="12" height="32" rx="2" fill="#bb3e03" />
+    <rect x="69" y="12" width="15" height="38" rx="2" fill="#0a9396" />
+    <rect x="88" y="20" width="14" height="30" rx="2" fill="#ee9b00" />
+    <rect x="106" y="14" width="16" height="36" rx="2" fill="#ca6702" />
+    <rect x="126" y="8" width="18" height="42" rx="2" fill="#264653" />
+  </g>
+
+  <!-- Hanging copper lamp -->
+  <g transform="translate(400, 150)">
+    <line x1="0" y1="-80" x2="0" y2="0" stroke="#2b1a0e" stroke-width="2" />
+    <polygon points="-15,0 0,-15 15,0 8,25 -8,25" fill="#c47a32" />
+    <circle cx="0" cy="12" r="5" fill="#ffecb3" />
+  </g>
+  
+</svg>

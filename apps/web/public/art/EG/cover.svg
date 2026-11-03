@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Cairo Ramadan Lanterns &amp; Nile Felucca</title>
+  <desc>Rich watercolor twilight view over the Nile river in Cairo with a graceful white-sailed felucca, Islamic minaret skyline, and glowing brass Ramadan fanous lanterns.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="eg-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2347" />
+      <stop offset="40%" stop-color="#693d6b" />
+      <stop offset="70%" stop-color="#be5854" />
+      <stop offset="100%" stop-color="#f8a264" />
+    </linearGradient>
+    <linearGradient id="eg-nile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d375a" />
+      <stop offset="45%" stop-color="#263b52" />
+      <stop offset="100%" stop-color="#142131" />
+    </linearGradient>
+    <radialGradient id="lantern-glow-gold" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#fff8db" />
+      <stop offset="40%" stop-color="#ffb732" stop-opacity="0.85" />
+      <stop offset="75%" stop-color="#ff7b1a" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#ff7b1a" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="lantern-glow-ruby" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ffccd0" />
+      <stop offset="45%" stop-color="#d92e43" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#730e1d" stop-opacity="0" />
+    </radialGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <!-- Twilight Sky over Cairo -->
+  <rect width="800" height="340" fill="url(#eg-sky)" />
+
+  <!-- Crescent moon in sky -->
+  <path d="M520,70 A25,25 0 1 0 540,110 A20,20 0 1 1 520,70 Z" fill="#ffecb3" />
+
+  <!-- Distant Cairo minarets & citadel silhouette -->
+  <g fill="#3a233c" opacity="0.85">
+    <!-- Minaret 1 -->
+    <rect x="220" y="160" width="10" height="120" />
+    <polygon points="220,160 225,130 230,160" />
+    <rect x="217" y="180" width="16" height="6" />
+    <!-- Minaret 2 -->
+    <rect x="250" y="180" width="12" height="100" />
+    <polygon points="250,180 256,155 262,180" />
+    <ellipse cx="280" cy="240" rx="30" ry="25" />
+    <!-- Distant palm clusters on the Nile bank -->
+    <path d="M120,280 Q130,220 145,210 Q148,225 155,280 Z" fill="#2d1c30" />
+    <path d="M150,220 Q120,200 110,210 Q125,225 150,220" />
+    <path d="M150,220 Q175,200 185,215 Q170,225 150,220" />
+  </g>
+
+  <!-- Nile River -->
+  <rect y="290" width="800" height="130" fill="url(#eg-nile)" />
+  <!-- Water reflections -->
+  <ellipse cx="420" cy="320" rx="140" ry="6" fill="#f8a264" opacity="0.35" />
+  <ellipse cx="440" cy="340" rx="180" ry="7" fill="#be5854" opacity="0.25" />
+
+  <!-- Elegant Nile Felucca sailing boat -->
+  <g transform="translate(360, 240)">
+    <!-- Wooden boat hull -->
+    <path d="M0,80 Q50,95 110,80 Q125,68 130,62 Q60,65 0,80 Z" fill="#4d3319" />
+    <!-- Mast -->
+    <line x1="50" y1="75" x2="45" y2="10" stroke="#2d1d0c" stroke-width="3.5" />
+    <!-- Soaring lateen sail yard -->
+    <line x1="15" y1="70" x2="85" y2="-45" stroke="#3b2712" stroke-width="3" />
+    <!-- White curved lateen sail -->
+    <path d="M15,70 Q55,20 85,-45 Q65,10 48,72 Z" fill="#fdfaf3" opacity="0.92" />
+    <path d="M15,70 Q45,45 48,72 Z" fill="#e8dfce" opacity="0.7" />
+  </g>
+
+  <!-- Foreground Nile Balcony / Arch with Ramadan Lanterns (Fanous) -->
+  <!-- Balcony ledge -->
+  <path d="M0,370 Q400,360 800,370 L800,500 L0,500 Z" fill="#2a1b14" />
+  <rect x="0" y="365" width="800" height="15" fill="#3a271d" />
+
+  <!-- Hanging Fanous Lantern Left (Golden Glow) -->
+  <g transform="translate(130, 20)">
+    <line x1="0" y1="0" x2="0" y2="100" stroke="#8a6c32" stroke-width="2.5" />
+    <!-- Aura -->
+    <circle cx="0" cy="180" r="130" fill="url(#lantern-glow-gold)" />
+    <!-- Fanous Top Cap -->
+    <polygon points="-25,120 0,95 25,120" fill="#c49a37" />
+    <circle cx="0" cy="95" r="7" fill="none" stroke="#c49a37" stroke-width="3" />
+    <!-- Glass Chamber -->
+    <polygon points="-35,185 -25,120 25,120 35,185" fill="#ffe066" opacity="0.85" stroke="#7a5c18" stroke-width="3" />
+    <!-- Inner Candle Flame -->
+    <ellipse cx="0" cy="155" rx="8" ry="16" fill="#fff" filter="url(#soft-glow)" />
+    <!-- Bottom Base -->
+    <polygon points="-35,185 -15,225 15,225 35,185" fill="#a47a22" stroke="#684a0f" stroke-width="2.5" />
+    <!-- Hanging brass bells -->
+    <circle cx="-15" cy="232" r="4" fill="#d4af37" />
+    <circle cx="0" cy="235" r="5" fill="#d4af37" />
+    <circle cx="15" cy="232" r="4" fill="#d4af37" />
+  </g>
+
+  <!-- Grand Fanous Lantern Right (Ruby & Gold) -->
+  <g transform="translate(670, 70)">
+    <line x1="0" y1="0" x2="0" y2="80" stroke="#8a6c32" stroke-width="2.5" />
+    <circle cx="0" cy="170" r="140" fill="url(#lantern-glow-ruby)" />
+    <polygon points="-30,105 0,75 30,105" fill="#b8860b" />
+    <circle cx="0" cy="75" r="8" fill="none" stroke="#b8860b" stroke-width="3" />
+    <polygon points="-45,180 -30,105 30,105 45,180" fill="#e63946" opacity="0.8" stroke="#5e141a" stroke-width="3" />
+    <ellipse cx="0" cy="145" rx="10" ry="20" fill="#ffea88" filter="url(#soft-glow)" />
+    <polygon points="-45,180 -20,230 20,230 45,180" fill="#996515" />
+  </g>
+  
+</svg>

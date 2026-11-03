@@ -9,7 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync, spawnSync } from 'node:child_process';
 
-const BASE_URL = process.env.DGX_BASE_URL || 'http://localhost:1234/v1';
+const BASE_URL = process.env.DGX_BASE_URL || 'http://localhost:127.0.0.1:1234/v1'.replace('127.0.0.1', 'localhost');
 const MODEL = process.env.DGX_MODEL || 'qwen/qwen3-coder-next';
 const agentId = process.argv[2];
 const worktreeDir = process.argv[3] || process.cwd();

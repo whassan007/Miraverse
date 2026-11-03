@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Traditional Chai Khana &amp; Courtyard Tea</title>
+  <desc>Warm evening gathering in an Iraqi courtyard featuring waist-shaped istikan tea glasses filled with cardamom black tea, a gleaming brass samovar, and plates of fresh date kleicha pastries.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="tea-glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#fedaa0" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#f39c12" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#2d1a10" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="samovar-brass" cx="0.3" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#fff4ba" />
+      <stop offset="40%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#73550e" />
+    </radialGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <rect width="800" height="500" fill="#2d1c14" />
+  <circle cx="400" cy="300" r="300" fill="url(#tea-glow)" />
+
+  <!-- Traditional Kilims and Courtyard Low Table -->
+  <ellipse cx="400" cy="400" rx="360" ry="130" fill="#694025" stroke="#482914" stroke-width="6" />
+
+  <!-- Gleaming Iraqi Brass Samovar in background -->
+  <g transform="translate(180, 160)">
+    <!-- Base -->
+    <rect x="30" y="170" width="40" height="15" fill="url(#samovar-brass)" />
+    <!-- Pedestal legs -->
+    <line x1="25" y1="185" x2="35" y2="170" stroke="#73550e" stroke-width="4" />
+    <line x1="75" y1="185" x2="65" y2="170" stroke="#73550e" stroke-width="4" />
+    <!-- Urn Body -->
+    <path d="M15,90 C10,160 90,160 85,90 Z" fill="url(#samovar-brass)" />
+    <!-- Upper rim & Teapot perch -->
+    <ellipse cx="50" cy="90" rx="35" ry="12" fill="url(#samovar-brass)" />
+    <rect x="35" y="60" width="30" height="30" fill="url(#samovar-brass)" />
+    <!-- Small Teapot on top (Quri) -->
+    <ellipse cx="50" cy="50" rx="20" ry="14" fill="#d9534f" stroke="#872320" stroke-width="2" />
+    <circle cx="50" cy="34" r="4" fill="#d9534f" />
+    <!-- Spigot faucet -->
+    <rect x="45" y="140" width="20" height="6" fill="#8a6918" />
+    <!-- Steam -->
+    <path d="M48,30 Q40,10 52,-10" stroke="#fff" stroke-width="2.5" fill="none" opacity="0.6" stroke-linecap="round" />
+  </g>
+
+  <!-- Classical Waist-shaped Glass Istikan Cups of Fragrant Tea -->
+  <!-- Left Istikan -->
+  <g transform="translate(350, 320)">
+    <!-- Saucer with gold rim -->
+    <ellipse cx="0" cy="55" rx="35" ry="12" fill="#fffdfa" stroke="#d4af37" stroke-width="2" />
+    <!-- Clear glass istikan silhouette with narrow waist -->
+    <path d="M-18,0 Q-8,25 -14,45 L14,45 Q8,25 18,0 Z" fill="#992208" opacity="0.8" stroke="#ffe3b3" stroke-width="1.5" />
+    <!-- Liquid top amber tea -->
+    <ellipse cx="0" cy="4" rx="16" ry="6" fill="#ba3c14" opacity="0.9" />
+    <!-- Gold rim on glass top -->
+    <ellipse cx="0" cy="0" rx="18" ry="6" fill="none" stroke="#d4af37" stroke-width="2" />
+    <!-- Petite stir spoon -->
+    <line x1="-5" y1="40" x2="16" y2="-12" stroke="#d9d9d9" stroke-width="2" />
+  </g>
+
+  <!-- Right Istikan -->
+  <g transform="translate(470, 320)">
+    <ellipse cx="0" cy="55" rx="35" ry="12" fill="#fffdfa" stroke="#d4af37" stroke-width="2" />
+    <path d="M-18,0 Q-8,25 -14,45 L14,45 Q8,25 18,0 Z" fill="#992208" opacity="0.8" stroke="#ffe3b3" stroke-width="1.5" />
+    <ellipse cx="0" cy="4" rx="16" ry="6" fill="#ba3c14" opacity="0.9" />
+    <ellipse cx="0" cy="0" rx="18" ry="6" fill="none" stroke="#d4af37" stroke-width="2" />
+    <line x1="-5" y1="40" x2="14" y2="-10" stroke="#d9d9d9" stroke-width="2" />
+  </g>
+
+  <!-- Plate of Kleicha Pastries in foreground center -->
+  <g transform="translate(410, 420)">
+    <ellipse cx="0" cy="0" rx="90" ry="32" fill="#fcf9f2" stroke="#d4af37" stroke-width="2.5" />
+    <!-- Kleicha cookies -->
+    <ellipse cx="-40" cy="-2" rx="20" ry="12" fill="#d9a44c" stroke="#87581c" />
+    <ellipse cx="0" cy="-6" rx="22" ry="13" fill="#e0b058" stroke="#87581c" />
+    <ellipse cx="40" cy="-2" rx="20" ry="12" fill="#d9a44c" stroke="#87581c" />
+    <ellipse cx="-20" cy="8" rx="21" ry="12" fill="#caa050" stroke="#87581c" />
+    <ellipse cx="20" cy="8" rx="21" ry="12" fill="#e0b058" stroke="#87581c" />
+  </g>
+  
+</svg>
