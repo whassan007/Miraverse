@@ -1,0 +1,15 @@
+[CL09] Wave=W3 Backend=claude Model=claude-sonnet-4-6
+Start: 2026-11-04T05:38:07.984Z
+End:   2026-11-04T05:38:08.340Z
+Branch: v06/CL09 -> Commit: 8e91cab
+Owned Paths: apps/roblox/tools/release/, apps/roblox/tools/release/avatar-marketplace/
+Required Evidence: apps/roblox/tools/release/avatar-marketplace/MARKETPLACE_CANDIDATE_PIPELINE.md
+Telemetry: {"mode":"claude","model":"claude-sonnet-4-6"}
+Acceptance Output:
+$ npm run build:roblox
+> miraverse@0.4.0 build:roblox
+> mkdir -p apps/roblox/dist && rojo build apps/roblox -o apps/roblox/dist/miraverse.rbxlx
+
+Building project 'MiraVerse'
+Built project to miraverse.rbxlx
+DONE CL09 8e91cab apps/roblox/tools/release/avatar-marketplace/MARKETPLACE_CANDIDATE_PIPELINE.md

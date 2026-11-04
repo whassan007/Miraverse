@@ -1,0 +1,18 @@
+[DX14] Wave=W3 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:38:23.293Z
+End:   2026-11-04T05:38:24.121Z
+Branch: v06/DX14 -> Commit: aab8c59
+Owned Paths: tests/fixtures/web-locales/
+Required Evidence: tests/fixtures/web-locales/rtl-viewport-fixtures.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":0,"completion_tokens":0,"total_tokens":0,"latency_ms":3}
+Acceptance Output:
+$ npx vitest run tests/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:38:23
+   Duration  202ms (transform 73ms, setup 0ms, collect 72ms, tests 6ms, environment 0ms, prepare 34ms)
+DONE DX14 aab8c59 tests/fixtures/web-locales/rtl-viewport-fixtures.json

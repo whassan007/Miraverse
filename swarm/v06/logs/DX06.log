@@ -1,0 +1,11 @@
+[DX06] Wave=W2 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:37:56.620Z
+End:   2026-11-04T05:38:00.350Z
+Branch: v06/DX06 -> Commit: 6c78297
+Owned Paths: tools/v06/roblox-perf/, tools/v06/roblox-perf/social-avatar/
+Required Evidence: tools/v06/roblox-perf/social-avatar/avatar-memory-budget.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":77,"completion_tokens":200,"total_tokens":277,"latency_ms":3478}
+Acceptance Output:
+$ node tools/v06/roblox-perf/check-budgets.mjs
+{"status":"PASS","runtimeProfilingStatus":"STATIC_BUDGETS_VERIFIED_LIVE_DEVICE_CAPTURE_BLOCKED_ON_LINUX_ARM64"}
+DONE DX06 6c78297 tools/v06/roblox-perf/social-avatar/avatar-memory-budget.json

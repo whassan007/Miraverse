@@ -1,0 +1,18 @@
+[DX08] Wave=W2 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:38:04.551Z
+End:   2026-11-04T05:38:07.982Z
+Branch: v06/DX08 -> Commit: 25ecb8a
+Owned Paths: tests/fixtures/quests/LB/
+Required Evidence: tests/fixtures/quests/LB/byblos-quest-vectors.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":67,"completion_tokens":157,"total_tokens":224,"latency_ms":2752}
+Acceptance Output:
+$ npx vitest run tests/content/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/content/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:38:07
+   Duration  205ms (transform 71ms, setup 0ms, collect 72ms, tests 6ms, environment 0ms, prepare 37ms)
+DONE DX08 25ecb8a tests/fixtures/quests/LB/byblos-quest-vectors.json

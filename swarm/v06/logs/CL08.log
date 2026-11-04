@@ -1,0 +1,15 @@
+[CL08] Wave=W2 Backend=claude Model=claude-sonnet-4-6
+Start: 2026-11-04T05:37:33.474Z
+End:   2026-11-04T05:37:33.887Z
+Branch: v06/CL08 -> Commit: 0ca925e
+Owned Paths: apps/roblox/src/server/Progression/, apps/roblox/src/server/Progression/Avatar/
+Required Evidence: apps/roblox/src/server/Progression/Avatar/AvatarLoadoutService.luau
+Telemetry: {"mode":"claude","model":"claude-sonnet-4-6"}
+Acceptance Output:
+$ npm run build:roblox
+> miraverse@0.4.0 build:roblox
+> mkdir -p apps/roblox/dist && rojo build apps/roblox -o apps/roblox/dist/miraverse.rbxlx
+
+Building project 'MiraVerse'
+Built project to miraverse.rbxlx
+DONE CL08 0ca925e apps/roblox/src/server/Progression/Avatar/AvatarLoadoutService.luau

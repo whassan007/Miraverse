@@ -1,0 +1,18 @@
+[DX07] Wave=W2 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:38:00.351Z
+End:   2026-11-04T05:38:04.550Z
+Branch: v06/DX07 -> Commit: 1992a5c
+Owned Paths: tests/fixtures/world-anchors/LB/
+Required Evidence: tests/fixtures/world-anchors/LB/byblos-anchors.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":70,"completion_tokens":200,"total_tokens":270,"latency_ms":3472}
+Acceptance Output:
+$ npx vitest run tests/content/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/content/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:38:04
+   Duration  203ms (transform 70ms, setup 0ms, collect 75ms, tests 6ms, environment 0ms, prepare 28ms)
+DONE DX07 1992a5c tests/fixtures/world-anchors/LB/byblos-anchors.json

@@ -1,0 +1,11 @@
+[CX14] Wave=W3 Backend=codex Model=gpt-6-astra
+Start: 2026-11-04T05:38:26.332Z
+End:   2026-11-04T05:38:26.859Z
+Branch: v06/CX14 -> Commit: e26ceab
+Owned Paths: tools/quality/v06/
+Required Evidence: tools/quality/v06/verify-option-a.ts
+Telemetry: {"mode":"codex","model":"gpt-6-astra"}
+Acceptance Output:
+$ npx tsx tools/quality/v06/verify-option-a.ts
+{"status":"PASS","flagshipCountry":"LB","compiledCountries":["LB","EG","IQ","KR","FR"],"robloxArtifactBytes":183059}
+DONE CX14 e26ceab tools/quality/v06/verify-option-a.ts
