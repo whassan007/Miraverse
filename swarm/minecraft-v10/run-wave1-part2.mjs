@@ -586,26 +586,28 @@ console.log(\`PASS: DX16 verified \${pngs.length} PNG textures have valid header
 async function runDX17() {
   const id = 'DX17';
   const { wtDir } = prepareWorktree(id);
-  const dgx = await queryDgxSpark('Verify terrain_texture.json and item_texture.json atlas references.');
+  const dgx = await queryDgxSpark('Verify block and item texture atlas references across blocks-kit-manifest.json and food-items-manifest.json.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
 
-const rp = path.join(process.cwd(), 'apps/minecraft/rp');
-const itemTex = JSON.parse(fs.readFileSync(path.join(rp, 'textures/item_texture.json'), 'utf8'));
-const terrainTex = JSON.parse(fs.readFileSync(path.join(rp, 'textures/terrain_texture.json'), 'utf8'));
+const root = process.cwd();
+const blocks = JSON.parse(fs.readFileSync(path.join(root, 'apps/minecraft/assets-src/blocks/blocks-kit-manifest.json'), 'utf8'));
+const items = JSON.parse(fs.readFileSync(path.join(root, 'apps/minecraft/assets-src/items/food/food-items-manifest.json'), 'utf8'));
 
 let count = 0;
-for (const [k, v] of Object.entries(itemTex.texture_data || {})) {
-  const p = path.join(rp, v.textures + '.png');
-  if (!fs.existsSync(p)) throw new Error('Missing item texture PNG for ' + k + ': ' + p);
+for (const b of blocks.blocks || []) {
+  const p = path.join(root, b.textureSource);
+  if (!fs.existsSync(p)) throw new Error('Missing block texture PNG: ' + p);
   count++;
 }
-for (const [k, v] of Object.entries(terrainTex.texture_data || {})) {
-  const p = path.join(rp, v.textures + '.png');
-  if (!fs.existsSync(p)) throw new Error('Missing terrain texture PNG for ' + k + ': ' + p);
-  count++;
+for (const list of Object.values(items.itemsByRegion || {})) {
+  for (const it of list) {
+    const p = path.join(root, 'apps/minecraft/assets-src/items/food', it.tex + '.png');
+    if (!fs.existsSync(p)) throw new Error('Missing item texture PNG: ' + p);
+    count++;
+  }
 }
 console.log(\`PASS: DX17 verified \${count} item and terrain texture atlas references.\`);
 `;
