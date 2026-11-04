@@ -1,0 +1,16 @@
+{
+  "countryId": "FR",
+  "chapterTitle": "France: Morning in Vieux Lyon",
+  "mentorId": "npc_camille_lyon",
+  "worldOrigin": [
+    220,
+    8,
+    0
+  ],
+  "landmarks": [
+    "lyon_traboule_courtyard",
+    "boulangerie_lumiere",
+    "saone_river_quai"
+  ],
+  "dish": "Galette & Brioche"
+}
