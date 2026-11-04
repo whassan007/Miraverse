@@ -21,6 +21,7 @@ import { InteractionManager } from '../game3d/interactions/index';
 import { ThirdPersonController } from '../game3d/player/index';
 import { buildSculptedWorldScene, createBabylonEngine } from '../game3d/runtime/index';
 import { useI18n } from '../i18n';
+import { RobloxLaunchBanner } from '../launch/RobloxLaunchPage';
 import { PACKS } from '../lib/content';
 import { DialoguePanel } from '../ui/dialogue/index';
 import { AdventureHud } from '../ui/hud/index';
@@ -294,20 +295,21 @@ export default function Play() {
     : null;
 
   return (
-    <div
-      dir={dir}
-      data-testid="play-3d-viewport"
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: 'calc(100vh - 54px)',
-        minHeight: '640px',
-        overflow: 'hidden',
-        background: '#0F172A',
-        color: '#FFF8EE',
-        userSelect: 'none',
-      }}
-    >
+    <div dir={dir} style={{ background: '#0B1325' }}>
+      <RobloxLaunchBanner countryCode={activeCountryCode} />
+      <div
+        data-testid="play-3d-viewport"
+        style={{
+          position: 'relative',
+          width: '100%',
+          height: 'calc(100vh - 54px)',
+          minHeight: '640px',
+          overflow: 'hidden',
+          background: '#0F172A',
+          color: '#FFF8EE',
+          userSelect: 'none',
+        }}
+      >
       {/* Stylized 3D Storybook Perspective Scene Backdrop (Always visible under WebGL canvas & in headless software mode) */}
       <svg
         viewBox="0 0 1600 900"
@@ -696,6 +698,7 @@ export default function Play() {
         }}
         onClose={() => setSettingsOpen(false)}
       />
+      </div>
     </div>
   );
 }

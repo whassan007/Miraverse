@@ -13,6 +13,7 @@ import {
   COUNTRY_META,
   type CountryCode,
 } from '../../../../../packages/contracts/index';
+import { OptionALandingStrip } from '../../marketing/landing-v06/OptionALandingSection';
 import { mountLandingDiorama, type LandingDioramaController } from '../scene/index';
 
 export const CinematicLandingPage: React.FC = () => {
@@ -228,37 +229,37 @@ export const CinematicLandingPage: React.FC = () => {
 
           <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', alignItems: 'center' }}>
             <Link
-              to="/play/FR"
+              to="/play/LB"
               data-testid="cta-play-free"
               style={{
-                background: 'linear-gradient(135deg, #F4A261 0%, #E76F51 100%)',
-                color: '#0F172A',
+                background: 'linear-gradient(135deg, #00B06F 0%, #059669 100%)',
+                color: '#052E16',
                 textDecoration: 'none',
                 padding: '15px 32px',
                 borderRadius: '999px',
                 fontSize: '18px',
                 fontWeight: 900,
-                boxShadow: '0 12px 28px rgba(231, 111, 81, 0.4)',
+                boxShadow: '0 12px 28px rgba(0, 176, 111, 0.35)',
               }}
             >
-              ▶ Play Free Now
+              ▶ Play free on Roblox
             </Link>
 
             <Link
-              to="/play"
+              to="/minecraft"
               data-testid="cta-enter-hub"
               style={{
-                background: 'rgba(255, 255, 255, 0.12)',
-                color: '#FFF8EE',
+                background: 'rgba(245, 158, 11, 0.16)',
+                color: '#FDE68A',
                 textDecoration: 'none',
                 padding: '14px 24px',
                 borderRadius: '999px',
                 fontSize: '16px',
                 fontWeight: 700,
-                border: '1px solid rgba(255, 255, 255, 0.3)',
+                border: '1px solid rgba(245, 158, 11, 0.5)',
               }}
             >
-              Explore 3D World Hub
+              Play in Minecraft Bedrock
             </Link>
 
             <button
@@ -374,6 +375,8 @@ export const CinematicLandingPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <OptionALandingStrip />
 
       {/* Below the Fold 1: Five World Showcase Cards */}
       <section
