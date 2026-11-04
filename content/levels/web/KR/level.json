@@ -1,0 +1,251 @@
+{
+  "levelId": "level:web:KR",
+  "country": "KR",
+  "titleEn": "KR · Jeonju Hanok Village",
+  "titleNative": "전주 한옥 기와마당과 장독대",
+  "glbAssetPath": "/assets/models/world_KR.glb",
+  "spawnPosition": [
+    0,
+    0,
+    -8
+  ],
+  "spawnRotationY": 0,
+  "returnPortalPosition": [
+    0,
+    0,
+    -12
+  ],
+  "bounds": {
+    "minX": -24,
+    "maxX": 24,
+    "minZ": -24,
+    "maxZ": 24
+  },
+  "npcs": [
+    {
+      "npcId": "npc:KR:halmeoni",
+      "name": "Halmeoni",
+      "role": "mentor",
+      "dialogueId": "dlg:KR:halmeoni",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "rotationY": 0,
+      "costumeVariant": "mentor",
+      "primaryColorHex": "#2E5A44",
+      "accentColorHex": "#D96B70"
+    },
+    {
+      "npcId": "npc:KR:ajusshi_min",
+      "name": "Merchant Min",
+      "role": "vendor",
+      "dialogueId": "dlg:KR:ajusshi_min",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "rotationY": -0.5,
+      "costumeVariant": "vendor",
+      "primaryColorHex": "#D96B70",
+      "accentColorHex": "#2E5A44"
+    },
+    {
+      "npcId": "npc:KR:moksu_jihoon",
+      "name": "Master Carpenter Jihoon",
+      "role": "artisan",
+      "dialogueId": "dlg:KR:moksu_jihoon",
+      "position": [
+        -5.2,
+        0,
+        1.8
+      ],
+      "rotationY": 0.5,
+      "costumeVariant": "artisan",
+      "primaryColorHex": "#2E5A44",
+      "accentColorHex": "#F4F1DE"
+    },
+    {
+      "npcId": "npc:KR:soomin_musician",
+      "name": "Soomin",
+      "role": "neighbor",
+      "dialogueId": "dlg:KR:soomin_musician",
+      "position": [
+        2.2,
+        0,
+        -3.5
+      ],
+      "rotationY": 2.2,
+      "costumeVariant": "neighbor",
+      "primaryColorHex": "#588157",
+      "accentColorHex": "#D96B70"
+    }
+  ],
+  "interactables": [
+    {
+      "interactableId": "npc:KR:halmeoni",
+      "kind": "npc",
+      "labelEn": "Talk to Halmeoni",
+      "labelNative": "전주 한옥 기와마당과 장독대",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "KR:ch1:hanok:gather"
+    },
+    {
+      "interactableId": "station:KR:gather",
+      "kind": "gather_prop",
+      "labelEn": "Gather Ingredients for Chuseok Pine-Steamed Songpyeon",
+      "labelNative": "전주 한옥 기와마당과 장독대",
+      "position": [
+        3.2,
+        0,
+        -1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "KR:ch1:hanok:gather"
+    },
+    {
+      "interactableId": "station:KR:trade",
+      "kind": "trade_stall",
+      "labelEn": "Trade with Merchant Min",
+      "labelNative": "전주 한옥 기와마당과 장독대",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "KR:ch1:hanok:trade"
+    },
+    {
+      "interactableId": "station:KR:build",
+      "kind": "build_site",
+      "labelEn": "Restore Giwa Hanok Courtyard & Onggi Terrace",
+      "labelNative": "전주 한옥 기와마당과 장독대",
+      "position": [
+        0,
+        0,
+        6.5
+      ],
+      "interactionRadius": 4.5,
+      "linkedObjectiveId": "KR:ch1:hanok:build"
+    },
+    {
+      "interactableId": "station:KR:cook",
+      "kind": "cook_station",
+      "labelEn": "Prepare Chuseok Pine-Steamed Songpyeon",
+      "labelNative": "전주 한옥 기와마당과 장독대",
+      "position": [
+        -3.5,
+        0,
+        5.2
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "KR:ch1:hanok:cook"
+    },
+    {
+      "interactableId": "station:KR:word",
+      "kind": "word_prop",
+      "labelEn": "Discover Cultural Words in Jeonju Hanok Village",
+      "labelNative": "송편",
+      "position": [
+        1.8,
+        0,
+        4
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "KR:ch1:hanok:word",
+      "vocabEntry": {
+        "word": "송편",
+        "translit": "songpyeon",
+        "en": "half-moon rice cake"
+      }
+    },
+    {
+      "interactableId": "portal:HUB",
+      "kind": "portal",
+      "labelEn": "Return to 3D World Hub",
+      "labelNative": "World Hub",
+      "position": [
+        0,
+        0,
+        -12
+      ],
+      "interactionRadius": 3.2
+    }
+  ],
+  "restorationLandmark": {
+    "landmarkId": "landmark:KR:giwa_hanok",
+    "nameEn": "Giwa Hanok Courtyard & Onggi Terrace",
+    "nameNative": "전주 한옥 기와마당과 장독대",
+    "position": [
+      0,
+      0,
+      8
+    ],
+    "components": [
+      {
+        "componentId": "comp:KR:base",
+        "labelEn": "Giwa Hanok Courtyard & Onggi Terrace Walls",
+        "labelNative": "전주 한옥 기와마당과 장독대",
+        "materialId": "mat:KR:base",
+        "positionOffset": [
+          0,
+          2.3,
+          0
+        ],
+        "scale": [
+          8.4,
+          4.6,
+          5.6
+        ],
+        "damagedColorHex": "#6B655E",
+        "restoredColorHex": "#D96B70"
+      },
+      {
+        "componentId": "comp:KR:roof",
+        "labelEn": "Giwa Hanok Courtyard & Onggi Terrace Roof",
+        "labelNative": "전주 한옥 기와마당과 장독대",
+        "materialId": "mat:KR:roof",
+        "positionOffset": [
+          0,
+          5.9,
+          0
+        ],
+        "scale": [
+          9,
+          2.8,
+          6.2
+        ],
+        "damagedColorHex": "#52525B",
+        "restoredColorHex": "#2E5A44"
+      },
+      {
+        "componentId": "comp:KR:trim",
+        "labelEn": "Giwa Hanok Courtyard & Onggi Terrace Woodwork",
+        "labelNative": "전주 한옥 기와마당과 장독대",
+        "materialId": "mat:KR:trim",
+        "positionOffset": [
+          0,
+          2.6,
+          0
+        ],
+        "scale": [
+          8.8,
+          1.6,
+          6
+        ],
+        "damagedColorHex": "#57534E",
+        "restoredColorHex": "#D96B70"
+      }
+    ]
+  },
+  "lookdevPresetId": "lookdev:KR",
+  "ambientAudioCueId": "audio:KR:ambience"
+}

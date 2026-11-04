@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 4,
+  "generatedAt": "2026-11-04T02:21:31.525Z",
+  "assets": [
+    {
+      "assetId": "glb:hero_mira",
+      "country": "SHARED",
+      "category": "character",
+      "glbPath": "/assets/models/hero_mira.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [
+        "idle_breathing",
+        "idle_variation",
+        "walk",
+        "run",
+        "stop_turn",
+        "interact_reach",
+        "pickup",
+        "talk_gesture",
+        "celebrate",
+        "sit_observe",
+        "cook_action",
+        "repair_build"
+      ],
+      "byteSize": 1616,
+      "byteSizeBudget": 524288
+    },
+    {
+      "assetId": "glb:npc_mentor",
+      "country": "SHARED",
+      "category": "character",
+      "glbPath": "/assets/models/npc_mentor.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [
+        "idle_breathing",
+        "idle_variation",
+        "walk",
+        "run",
+        "stop_turn",
+        "interact_reach",
+        "pickup",
+        "talk_gesture",
+        "celebrate",
+        "sit_observe",
+        "cook_action",
+        "repair_build"
+      ],
+      "byteSize": 1624,
+      "byteSizeBudget": 524288
+    },
+    {
+      "assetId": "glb:world_hub",
+      "country": "HUB",
+      "category": "environment",
+      "glbPath": "/assets/models/world_hub.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [],
+      "byteSize": 1452,
+      "byteSizeBudget": 524288
+    },
+    {
+      "assetId": "glb:world_FR",
+      "country": "FR",
+      "category": "environment",
+      "glbPath": "/assets/models/world_FR.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [],
+      "byteSize": 1448,
+      "byteSizeBudget": 524288
+    },
+    {
+      "assetId": "glb:world_LB",
+      "country": "LB",
+      "category": "environment",
+      "glbPath": "/assets/models/world_LB.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [],
+      "byteSize": 1444,
+      "byteSizeBudget": 524288
+    },
+    {
+      "assetId": "glb:world_EG",
+      "country": "EG",
+      "category": "environment",
+      "glbPath": "/assets/models/world_EG.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [],
+      "byteSize": 1444,
+      "byteSizeBudget": 524288
+    },
+    {
+      "assetId": "glb:world_IQ",
+      "country": "IQ",
+      "category": "environment",
+      "glbPath": "/assets/models/world_IQ.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [],
+      "byteSize": 1448,
+      "byteSizeBudget": 524288
+    },
+    {
+      "assetId": "glb:world_KR",
+      "country": "KR",
+      "category": "environment",
+      "glbPath": "/assets/models/world_KR.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [],
+      "byteSize": 1448,
+      "byteSizeBudget": 524288
+    },
+    {
+      "assetId": "glb:landing_diorama",
+      "country": "HUB",
+      "category": "environment",
+      "glbPath": "/assets/models/landing_diorama.glb",
+      "sourcePath": "tools/assets/build-glb.ts",
+      "license": "CC0-1.0-Procedural-MiraVerse",
+      "triangleCount": 12,
+      "textureSize": [
+        512,
+        512
+      ],
+      "animationClips": [],
+      "byteSize": 1480,
+      "byteSizeBudget": 524288
+    }
+  ]
+}

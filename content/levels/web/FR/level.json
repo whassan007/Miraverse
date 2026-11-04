@@ -1,0 +1,252 @@
+{
+  "levelId": "level:web:FR",
+  "country": "FR",
+  "titleEn": "France · Vieux Lyon & Boulangerie du Soleil",
+  "titleNative": "France · Vieux Lyon et la Boulangerie du Soleil",
+  "glbAssetPath": "/assets/models/world_FR.glb",
+  "spawnPosition": [
+    0,
+    0,
+    -8
+  ],
+  "spawnRotationY": 0,
+  "returnPortalPosition": [
+    0,
+    0,
+    -12
+  ],
+  "bounds": {
+    "minX": -24,
+    "maxX": 24,
+    "minZ": -24,
+    "maxZ": 24
+  },
+  "npcs": [
+    {
+      "npcId": "npc:FR:mamie_claire",
+      "name": "Mamie Claire",
+      "role": "mentor",
+      "dialogueId": "dlg:FR:mamie_claire",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "rotationY": 0,
+      "costumeVariant": "lyon_baker",
+      "primaryColorHex": "#3B6EA5",
+      "accentColorHex": "#E8A838"
+    },
+    {
+      "npcId": "npc:FR:monsieur_henri",
+      "name": "Monsieur Henri",
+      "role": "vendor",
+      "dialogueId": "dlg:FR:monsieur_henri",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "rotationY": -0.5,
+      "costumeVariant": "market_vendor",
+      "primaryColorHex": "#E8A838",
+      "accentColorHex": "#3B6EA5"
+    },
+    {
+      "npcId": "npc:FR:camille_mason",
+      "name": "Artisan Camille",
+      "role": "artisan",
+      "dialogueId": "dlg:FR:camille_mason",
+      "position": [
+        -5.2,
+        0,
+        1.8
+      ],
+      "rotationY": 0.5,
+      "costumeVariant": "stone_mason",
+      "primaryColorHex": "#8C3B2B",
+      "accentColorHex": "#F4F1DE"
+    },
+    {
+      "npcId": "npc:FR:lucas_musician",
+      "name": "Lucas le Musicien",
+      "role": "musician",
+      "dialogueId": "dlg:FR:lucas_musician",
+      "position": [
+        2.2,
+        0,
+        -3.5
+      ],
+      "rotationY": 2.2,
+      "costumeVariant": "street_musician",
+      "primaryColorHex": "#588157",
+      "accentColorHex": "#E8A838"
+    }
+  ],
+  "interactables": [
+    {
+      "interactableId": "npc:FR:mamie_claire",
+      "kind": "npc",
+      "labelEn": "Talk to Mamie Claire",
+      "labelNative": "Parler à Mamie Claire",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "FR:ch1:bakery:gather"
+    },
+    {
+      "interactableId": "station:FR:gather",
+      "kind": "gather_prop",
+      "labelEn": "Gather Puff Pastry, Almonds & Fève",
+      "labelNative": "Récolter pâte feuilletée, amandes et fève",
+      "position": [
+        3.2,
+        0,
+        -1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "FR:ch1:bakery:gather",
+      "itemId": "item:FR:puff_pastry"
+    },
+    {
+      "interactableId": "station:FR:trade",
+      "kind": "trade_stall",
+      "labelEn": "Trade with Monsieur Henri",
+      "labelNative": "Échanger avec Monsieur Henri",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "FR:ch1:bakery:trade"
+    },
+    {
+      "interactableId": "station:FR:build",
+      "kind": "build_site",
+      "labelEn": "Restore Boulangerie Roof, Limestone & Shutters",
+      "labelNative": "Restaurer la Boulangerie du Soleil",
+      "position": [
+        0,
+        0,
+        6.5
+      ],
+      "interactionRadius": 4.5,
+      "linkedObjectiveId": "FR:ch1:bakery:build"
+    },
+    {
+      "interactableId": "station:FR:cook",
+      "kind": "cook_station",
+      "labelEn": "Bake the Golden Galette des Rois",
+      "labelNative": "Cuire la Galette des Rois",
+      "position": [
+        -3.5,
+        0,
+        5.2
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "FR:ch1:bakery:cook"
+    },
+    {
+      "interactableId": "station:FR:word",
+      "kind": "word_prop",
+      "labelEn": "Discover French Cultural Words on Traboule Signs",
+      "labelNative": "Découvrir les mots du Vieux Lyon",
+      "position": [
+        1.8,
+        0,
+        4
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "FR:ch1:bakery:word",
+      "vocabEntry": {
+        "word": "boulangerie",
+        "translit": "bou-lan-je-rie",
+        "en": "bakery"
+      }
+    },
+    {
+      "interactableId": "portal:HUB",
+      "kind": "portal",
+      "labelEn": "Return to 3D World Hub",
+      "labelNative": "Retour à la Place du Monde",
+      "position": [
+        0,
+        0,
+        -12
+      ],
+      "interactionRadius": 3.2
+    }
+  ],
+  "restorationLandmark": {
+    "landmarkId": "landmark:FR:boulangerie",
+    "nameEn": "Boulangerie du Soleil",
+    "nameNative": "Boulangerie du Soleil · Vieux Lyon",
+    "position": [
+      0,
+      0,
+      8
+    ],
+    "components": [
+      {
+        "componentId": "comp:FR:limestone",
+        "labelEn": "Lyon Cut Limestone Facade",
+        "labelNative": "Pierre dorée de Lyon",
+        "materialId": "mat:FR:limestone",
+        "positionOffset": [
+          0,
+          2.3,
+          0
+        ],
+        "scale": [
+          8.4,
+          4.6,
+          5.6
+        ],
+        "damagedColorHex": "#6B655E",
+        "restoredColorHex": "#E8A838"
+      },
+      {
+        "componentId": "comp:FR:slate_roof",
+        "labelEn": "Mansard Slate Roof Tiles",
+        "labelNative": "Tuiles d’ardoise mansardées",
+        "materialId": "mat:FR:slate",
+        "positionOffset": [
+          0,
+          5.9,
+          0
+        ],
+        "scale": [
+          9,
+          2.8,
+          6.2
+        ],
+        "damagedColorHex": "#52525B",
+        "restoredColorHex": "#3B6EA5"
+      },
+      {
+        "componentId": "comp:FR:oak_shutters",
+        "labelEn": "Carved Oak Shutters",
+        "labelNative": "Volets en chêne sculpté",
+        "materialId": "mat:FR:oak",
+        "positionOffset": [
+          0,
+          2.6,
+          0
+        ],
+        "scale": [
+          8.8,
+          1.6,
+          6
+        ],
+        "damagedColorHex": "#57534E",
+        "restoredColorHex": "#B45309"
+      }
+    ]
+  },
+  "lookdevPresetId": "lookdev:FR",
+  "ambientAudioCueId": "audio:FR:lyon_bakery"
+}

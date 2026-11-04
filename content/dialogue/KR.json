@@ -1,0 +1,158 @@
+[
+  {
+    "dialogueId": "dlg:KR:halmeoni",
+    "country": "KR",
+    "npcId": "npc:KR:halmeoni",
+    "npcName": "Halmeoni",
+    "role": "mentor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:KR:halmeoni",
+        "speakerName": "Halmeoni",
+        "portraitId": "npc:KR:halmeoni",
+        "emotion": "warm",
+        "gestureClip": "talk_gesture",
+        "textNative": "어서 오렴, 우리 손주! 전주 한옥 기와지붕을 고치고 추석 반달 송편을 빚자꾸나.",
+        "textTranslit": "Eo-seo o-ryeom, u-ri son-ju! Jeonju hanok giwa-jibung-eul gochigo...",
+        "textEn": "Welcome, my sweet grandchild! Let's restore our Jeonju hanok tiled roof and shape half-moon songpyeon for Chuseok.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Let's start the chapter quest!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "KR:ch1:hanok:gather"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:KR:halmeoni",
+        "speakerName": "Halmeoni",
+        "portraitId": "npc:KR:halmeoni",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "송편",
+        "textTranslit": "songpyeon",
+        "textEn": "Remember the word \"송편\" (half-moon rice cake) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:KR:ajusshi_min",
+    "country": "KR",
+    "npcId": "npc:KR:ajusshi_min",
+    "npcName": "Merchant Min",
+    "role": "vendor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:KR:ajusshi_min",
+        "speakerName": "Merchant Min",
+        "portraitId": "npc:KR:ajusshi_min",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "고소한 참깨와 달콤한 꿀, 향긋한 솔잎이 여기 있단다!",
+        "textTranslit": "Go-so-han cham-kkae-wa dal-kom-han kkul, sol-ip-i yeo-gi it-dan-da!",
+        "textEn": "Toasted sesame seeds, sweet honey, and fresh green pine needles are ready at my stall!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "KR:ch1:hanok:trade"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:KR:ajusshi_min",
+        "speakerName": "Merchant Min",
+        "portraitId": "npc:KR:ajusshi_min",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "한옥",
+        "textTranslit": "hanok",
+        "textEn": "Remember the word \"한옥\" (traditional wooden house) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:KR:moksu_jihoon",
+    "country": "KR",
+    "npcId": "npc:KR:moksu_jihoon",
+    "npcName": "Master Carpenter Jihoon",
+    "role": "artisan",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:KR:moksu_jihoon",
+        "speakerName": "Master Carpenter Jihoon",
+        "portraitId": "npc:KR:moksu_jihoon",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "전통 기와와 소나무 서까래로 한옥 대청마루를 멋지게 복원해 보자.",
+        "textTranslit": "Jeon-tong gi-wa-wa so-na-mu seo-kka-rae-ro...",
+        "textEn": "Curved giwa roof tiles, pine rafters, and hanji lattice doors will restore the hanok pavilion.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "KR:ch1:hanok:build"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:KR:moksu_jihoon",
+        "speakerName": "Master Carpenter Jihoon",
+        "portraitId": "npc:KR:moksu_jihoon",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "할머니",
+        "textTranslit": "halmeoni",
+        "textEn": "Remember the word \"할머니\" (grandmother) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:KR:soomin_musician",
+    "country": "KR",
+    "npcId": "npc:KR:soomin_musician",
+    "npcName": "Soomin",
+    "role": "musician",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:KR:soomin_musician",
+        "speakerName": "Soomin",
+        "portraitId": "npc:KR:soomin_musician",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "마당 옹기 장독대 위로 보름달이 환하게 떠오르고 있어요!",
+        "textTranslit": "Ma-dang ong-gi jang-dok-dae wi-ro bo-reum-dal-i...",
+        "textEn": "The harvest full moon is rising above the onggi earthenware courtyard!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "KR:ch1:hanok:word"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:KR:soomin_musician",
+        "speakerName": "Soomin",
+        "portraitId": "npc:KR:soomin_musician",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "솔잎",
+        "textTranslit": "sol-ip",
+        "textEn": "Remember the word \"솔잎\" (pine needles) as you explore!"
+      }
+    ]
+  }
+]

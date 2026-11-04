@@ -1,0 +1,251 @@
+{
+  "levelId": "level:web:LB",
+  "country": "LB",
+  "titleEn": "LB · Byblos Harbor & Old Souk",
+  "titleNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+  "glbAssetPath": "/assets/models/world_LB.glb",
+  "spawnPosition": [
+    0,
+    0,
+    -8
+  ],
+  "spawnRotationY": 0,
+  "returnPortalPosition": [
+    0,
+    0,
+    -12
+  ],
+  "bounds": {
+    "minX": -24,
+    "maxX": 24,
+    "minZ": -24,
+    "maxZ": 24
+  },
+  "npcs": [
+    {
+      "npcId": "npc:LB:teta_nahla",
+      "name": "Teta Nahla",
+      "role": "mentor",
+      "dialogueId": "dlg:LB:teta_nahla",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "rotationY": 0,
+      "costumeVariant": "mentor",
+      "primaryColorHex": "#1E7A68",
+      "accentColorHex": "#D97B38"
+    },
+    {
+      "npcId": "npc:LB:amo_farid",
+      "name": "Amo Farid",
+      "role": "vendor",
+      "dialogueId": "dlg:LB:amo_farid",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "rotationY": -0.5,
+      "costumeVariant": "vendor",
+      "primaryColorHex": "#D97B38",
+      "accentColorHex": "#1E7A68"
+    },
+    {
+      "npcId": "npc:LB:nadim_builder",
+      "name": "Usta Nadim",
+      "role": "artisan",
+      "dialogueId": "dlg:LB:nadim_builder",
+      "position": [
+        -5.2,
+        0,
+        1.8
+      ],
+      "rotationY": 0.5,
+      "costumeVariant": "artisan",
+      "primaryColorHex": "#1E7A68",
+      "accentColorHex": "#F4F1DE"
+    },
+    {
+      "npcId": "npc:LB:rima_sailor",
+      "name": "Captain Rima",
+      "role": "neighbor",
+      "dialogueId": "dlg:LB:rima_sailor",
+      "position": [
+        2.2,
+        0,
+        -3.5
+      ],
+      "rotationY": 2.2,
+      "costumeVariant": "neighbor",
+      "primaryColorHex": "#588157",
+      "accentColorHex": "#D97B38"
+    }
+  ],
+  "interactables": [
+    {
+      "interactableId": "npc:LB:teta_nahla",
+      "kind": "npc",
+      "labelEn": "Talk to Teta Nahla",
+      "labelNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "LB:ch1:harbor:gather"
+    },
+    {
+      "interactableId": "station:LB:gather",
+      "kind": "gather_prop",
+      "labelEn": "Gather Ingredients for Za'atar Man'oushe",
+      "labelNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+      "position": [
+        3.2,
+        0,
+        -1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "LB:ch1:harbor:gather"
+    },
+    {
+      "interactableId": "station:LB:trade",
+      "kind": "trade_stall",
+      "labelEn": "Trade with Amo Farid",
+      "labelNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "LB:ch1:harbor:trade"
+    },
+    {
+      "interactableId": "station:LB:build",
+      "kind": "build_site",
+      "labelEn": "Restore Byblos Saj Bakery & Harbor Arch",
+      "labelNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+      "position": [
+        0,
+        0,
+        6.5
+      ],
+      "interactionRadius": 4.5,
+      "linkedObjectiveId": "LB:ch1:harbor:build"
+    },
+    {
+      "interactableId": "station:LB:cook",
+      "kind": "cook_station",
+      "labelEn": "Prepare Za'atar Man'oushe",
+      "labelNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+      "position": [
+        -3.5,
+        0,
+        5.2
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "LB:ch1:harbor:cook"
+    },
+    {
+      "interactableId": "station:LB:word",
+      "kind": "word_prop",
+      "labelEn": "Discover Cultural Words in Byblos Harbor & Old Souk",
+      "labelNative": "منقوشة",
+      "position": [
+        1.8,
+        0,
+        4
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "LB:ch1:harbor:word",
+      "vocabEntry": {
+        "word": "منقوشة",
+        "translit": "man'oushe",
+        "en": "thyme flatbread"
+      }
+    },
+    {
+      "interactableId": "portal:HUB",
+      "kind": "portal",
+      "labelEn": "Return to 3D World Hub",
+      "labelNative": "World Hub",
+      "position": [
+        0,
+        0,
+        -12
+      ],
+      "interactionRadius": 3.2
+    }
+  ],
+  "restorationLandmark": {
+    "landmarkId": "landmark:LB:harbor_arch",
+    "nameEn": "Byblos Saj Bakery & Harbor Arch",
+    "nameNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+    "position": [
+      0,
+      0,
+      8
+    ],
+    "components": [
+      {
+        "componentId": "comp:LB:base",
+        "labelEn": "Byblos Saj Bakery & Harbor Arch Walls",
+        "labelNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+        "materialId": "mat:LB:base",
+        "positionOffset": [
+          0,
+          2.3,
+          0
+        ],
+        "scale": [
+          8.4,
+          4.6,
+          5.6
+        ],
+        "damagedColorHex": "#6B655E",
+        "restoredColorHex": "#D97B38"
+      },
+      {
+        "componentId": "comp:LB:roof",
+        "labelEn": "Byblos Saj Bakery & Harbor Arch Roof",
+        "labelNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+        "materialId": "mat:LB:roof",
+        "positionOffset": [
+          0,
+          5.9,
+          0
+        ],
+        "scale": [
+          9,
+          2.8,
+          6.2
+        ],
+        "damagedColorHex": "#52525B",
+        "restoredColorHex": "#1E7A68"
+      },
+      {
+        "componentId": "comp:LB:trim",
+        "labelEn": "Byblos Saj Bakery & Harbor Arch Woodwork",
+        "labelNative": "قوس ميناء جبيل وصاج تيتا نهلة",
+        "materialId": "mat:LB:trim",
+        "positionOffset": [
+          0,
+          2.6,
+          0
+        ],
+        "scale": [
+          8.8,
+          1.6,
+          6
+        ],
+        "damagedColorHex": "#57534E",
+        "restoredColorHex": "#D97B38"
+      }
+    ]
+  },
+  "lookdevPresetId": "lookdev:LB",
+  "ambientAudioCueId": "audio:LB:ambience"
+}

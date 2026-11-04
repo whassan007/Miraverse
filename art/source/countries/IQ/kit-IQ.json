@@ -1,0 +1,35 @@
+{
+  "country": "IQ",
+  "region": "Baghdad Shanasheel & Tigris Bank",
+  "DistinctCulturalKit": true,
+  "props": [
+    {
+      "propId": "iq_carved_shanasheel_balcony",
+      "palette": [
+        "#8C4A27",
+        "#3AA6B9"
+      ]
+    },
+    {
+      "propId": "iq_baghdadi_brick_arch",
+      "palette": [
+        "#8C4A27",
+        "#3AA6B9"
+      ]
+    },
+    {
+      "propId": "iq_tigris_palm_terrace",
+      "palette": [
+        "#8C4A27",
+        "#3AA6B9"
+      ]
+    },
+    {
+      "propId": "iq_kleicha_wood_stamp",
+      "palette": [
+        "#8C4A27",
+        "#3AA6B9"
+      ]
+    }
+  ]
+}

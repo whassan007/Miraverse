@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 4,
+  "mentors": [
+    {
+      "id": "npc:FR:mamie_claire",
+      "country": "FR",
+      "name": "Mamie Claire",
+      "robe": "#3B6EA5",
+      "apron": "#F4F1DE",
+      "scarf": "#E8A838",
+      "hair": "#D9D9D9",
+      "skin": "#E8C3A9"
+    },
+    {
+      "id": "npc:LB:teta_nahla",
+      "country": "LB",
+      "name": "Teta Nahla",
+      "robe": "#1E7A68",
+      "apron": "#F8EFE6",
+      "scarf": "#D97B38",
+      "hair": "#C8C8C8",
+      "skin": "#DCA884"
+    },
+    {
+      "id": "npc:EG:teta_samira",
+      "country": "EG",
+      "name": "Teta Samira",
+      "robe": "#2B4C7E",
+      "apron": "#F4E4C1",
+      "scarf": "#F0B429",
+      "hair": "#BFBFBF",
+      "skin": "#C98E63"
+    },
+    {
+      "id": "npc:IQ:bibi_amal",
+      "country": "IQ",
+      "name": "Bibi Amal",
+      "robe": "#8C4A27",
+      "apron": "#F6E7D8",
+      "scarf": "#3AA6B9",
+      "hair": "#CFCFCF",
+      "skin": "#D49B72"
+    },
+    {
+      "id": "npc:KR:halmeoni",
+      "country": "KR",
+      "name": "Halmeoni",
+      "robe": "#2E5A44",
+      "apron": "#D96B70",
+      "scarf": "#F2E8DC",
+      "hair": "#E0E0E0",
+      "skin": "#E6C2A6"
+    }
+  ]
+}

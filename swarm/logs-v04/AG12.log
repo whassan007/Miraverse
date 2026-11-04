@@ -1,0 +1,7 @@
+=== STAGE AG12 (AGENT AG12) ===
+Commit: a89566d
+Owned Paths: content/levels/web/FR
+Test Command: node -e "const l=JSON.parse(require('fs').readFileSync('content/levels/web/FR/level.json')); if(l.country!=='FR' || l.npcs.length<4) process.exit(1);"
+Test Exit: 0
+
+DONE AG12 a89566d content/levels/web/FR/level.json

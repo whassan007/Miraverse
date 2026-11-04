@@ -1,0 +1,7 @@
+=== STAGE AG20 (AGENT AG20) ===
+Commit: 0e006de
+Owned Paths: art/audio
+Test Command: test -f art/audio/soundscape.ts
+Test Exit: 0
+
+DONE AG20 0e006de art/audio/soundscape.ts

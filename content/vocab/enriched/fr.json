@@ -1,0 +1,336 @@
+{
+  "lang": "fr",
+  "count": 30,
+  "entries": [
+    {
+      "word": "mamie",
+      "translit": "ma-mee",
+      "en": "grandma",
+      "entryId": "vocab:fr:1",
+      "propBindingId": "prop:fr:vocab_1",
+      "synonymsEn": [
+        "grandma"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "papi",
+      "translit": "pah-pee",
+      "en": "grandpa",
+      "entryId": "vocab:fr:2",
+      "propBindingId": "prop:fr:vocab_2",
+      "synonymsEn": [
+        "grandpa"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "famille",
+      "translit": "fa-mee-yuh",
+      "en": "family",
+      "entryId": "vocab:fr:3",
+      "propBindingId": "prop:fr:vocab_3",
+      "synonymsEn": [
+        "family"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "maman",
+      "translit": "ma-mahn",
+      "en": "mom/mummy",
+      "entryId": "vocab:fr:4",
+      "propBindingId": "prop:fr:vocab_4",
+      "synonymsEn": [
+        "mom/mummy"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "papa",
+      "translit": "pah-pah",
+      "en": "dad/daddy",
+      "entryId": "vocab:fr:5",
+      "propBindingId": "prop:fr:vocab_5",
+      "synonymsEn": [
+        "dad/daddy"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "frère",
+      "translit": "frehr",
+      "en": "brother",
+      "entryId": "vocab:fr:6",
+      "propBindingId": "prop:fr:vocab_6",
+      "synonymsEn": [
+        "brother"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "sœur",
+      "translit": "suhr",
+      "en": "sister",
+      "entryId": "vocab:fr:7",
+      "propBindingId": "prop:fr:vocab_7",
+      "synonymsEn": [
+        "sister"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "cousin",
+      "translit": "koo-sahn",
+      "en": "cousin (male)",
+      "entryId": "vocab:fr:8",
+      "propBindingId": "prop:fr:vocab_8",
+      "synonymsEn": [
+        "cousin (male)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "cousine",
+      "translit": "koo-zeen",
+      "en": "cousin (female)",
+      "entryId": "vocab:fr:9",
+      "propBindingId": "prop:fr:vocab_9",
+      "synonymsEn": [
+        "cousin (female)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "boulangerie",
+      "translit": "boo-lahn-zheh-ree",
+      "en": "bakery",
+      "entryId": "vocab:fr:10",
+      "propBindingId": "prop:fr:vocab_10",
+      "synonymsEn": [
+        "bakery"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "boulanger",
+      "translit": "boo-lahn-zhay",
+      "en": "baker",
+      "entryId": "vocab:fr:11",
+      "propBindingId": "prop:fr:vocab_11",
+      "synonymsEn": [
+        "baker"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "galette",
+      "translit": "gah-leht",
+      "en": "flat cake (especially galette des rois)",
+      "entryId": "vocab:fr:12",
+      "propBindingId": "prop:fr:vocab_12",
+      "synonymsEn": [
+        "flat cake (especially galette des rois)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "fève",
+      "translit": "fehv",
+      "en": "bean (hidden in galette des rois)",
+      "entryId": "vocab:fr:13",
+      "propBindingId": "prop:fr:vocab_13",
+      "synonymsEn": [
+        "bean (hidden in galette des rois)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "couronne",
+      "translit": "ko-rohn",
+      "en": "crown",
+      "entryId": "vocab:fr:14",
+      "propBindingId": "prop:fr:vocab_14",
+      "synonymsEn": [
+        "crown"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "roi",
+      "translit": "rwah",
+      "en": "king",
+      "entryId": "vocab:fr:15",
+      "propBindingId": "prop:fr:vocab_15",
+      "synonymsEn": [
+        "king"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "reine",
+      "translit": "ren",
+      "en": "queen",
+      "entryId": "vocab:fr:16",
+      "propBindingId": "prop:fr:vocab_16",
+      "synonymsEn": [
+        "queen"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "amande",
+      "translit": "ah-mahnd",
+      "en": "almond",
+      "entryId": "vocab:fr:17",
+      "propBindingId": "prop:fr:vocab_17",
+      "synonymsEn": [
+        "almond"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "pâte",
+      "translit": "pat",
+      "en": "dough",
+      "entryId": "vocab:fr:18",
+      "propBindingId": "prop:fr:vocab_18",
+      "synonymsEn": [
+        "dough"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "crème",
+      "translit": "krem",
+      "en": "cream",
+      "entryId": "vocab:fr:19",
+      "propBindingId": "prop:fr:vocab_19",
+      "synonymsEn": [
+        "cream"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "sucre",
+      "translit": "sewr",
+      "en": "sugar",
+      "entryId": "vocab:fr:20",
+      "propBindingId": "prop:fr:vocab_20",
+      "synonymsEn": [
+        "sugar"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "farine",
+      "translit": "fah-reen",
+      "en": "flour",
+      "entryId": "vocab:fr:21",
+      "propBindingId": "prop:fr:vocab_21",
+      "synonymsEn": [
+        "flour"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "œuf",
+      "translit": "uhf",
+      "en": "egg",
+      "entryId": "vocab:fr:22",
+      "propBindingId": "prop:fr:vocab_22",
+      "synonymsEn": [
+        "egg"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "beurre",
+      "translit": "ber",
+      "en": "butter",
+      "entryId": "vocab:fr:23",
+      "propBindingId": "prop:fr:vocab_23",
+      "synonymsEn": [
+        "butter"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "lait",
+      "translit": "leh",
+      "en": "milk",
+      "entryId": "vocab:fr:24",
+      "propBindingId": "prop:fr:vocab_24",
+      "synonymsEn": [
+        "milk"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "pain",
+      "translit": "pan",
+      "en": "bread",
+      "entryId": "vocab:fr:25",
+      "propBindingId": "prop:fr:vocab_25",
+      "synonymsEn": [
+        "bread"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "croissant",
+      "translit": "kwa-sahn",
+      "en": "croissant",
+      "entryId": "vocab:fr:26",
+      "propBindingId": "prop:fr:vocab_26",
+      "synonymsEn": [
+        "croissant"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "tarte",
+      "translit": "tahrt",
+      "en": "pie/tart",
+      "entryId": "vocab:fr:27",
+      "propBindingId": "prop:fr:vocab_27",
+      "synonymsEn": [
+        "pie/tart"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "gâteau",
+      "translit": "ga-toh",
+      "en": "cake",
+      "entryId": "vocab:fr:28",
+      "propBindingId": "prop:fr:vocab_28",
+      "synonymsEn": [
+        "cake"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "café",
+      "translit": "kah-fay",
+      "en": "coffee",
+      "entryId": "vocab:fr:29",
+      "propBindingId": "prop:fr:vocab_29",
+      "synonymsEn": [
+        "coffee"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "thé",
+      "translit": "tay",
+      "en": "tea",
+      "entryId": "vocab:fr:30",
+      "propBindingId": "prop:fr:vocab_30",
+      "synonymsEn": [
+        "tea"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    }
+  ]
+}

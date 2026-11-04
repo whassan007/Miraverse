@@ -1,0 +1,6 @@
+=== STAGE AG28 (AGENT AG28) ===
+Commit: 3e7afa6
+Owned Paths: reports/screens/v0.4,reports/screens/commerce,reports/screens/BEFORE_AFTER_COMPARISON.md
+Telemetry: {"model":"Antigravity-Native"}
+Test Command: test -f reports/screens/v0.4/france-3d-1440x900.png && test -f reports/screens/commerce/parents-shop-1440x900.png && test -f reports/screens/BEFORE_AFTER_COMPARISON.md
+Test Exit: 0

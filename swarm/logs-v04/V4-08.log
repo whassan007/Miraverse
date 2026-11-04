@@ -1,0 +1,7 @@
+=== STAGE V4-08 (AGENT CX10) ===
+Commit: ad092e6
+Owned Paths: apps/api/src/gifts,apps/api/src/entitlements
+Test Command: npx tsx -e "import { EntitlementService } from './apps/api/src/entitlements/index.ts'; import { GiftService } from './apps/api/src/gifts/index.ts'; const ent = new EntitlementService(); const g = new GiftService(ent); const issued = g.issueGiftForPaidOrder({ orderId: 'o1', purchaserAccountId: 'a1', sku: 'SKU_GIFT_EXPLORER_BUNDLE' }); const r1 = g.redeemGiftCodeAtomically({ rawCode: issued.rawCodeOnce!, recipientAdultAccountId: 'a2' }); const r2 = g.redeemGiftCodeAtomically({ rawCode: issued.rawCodeOnce!, recipientAdultAccountId: 'a3' }); if (!r1.ok || r2.ok || r2.status !== 'REDEEMED') process.exit(1);"
+Test Exit: 0
+
+DONE V4-08 ad092e6 apps/api/src/gifts/index.ts

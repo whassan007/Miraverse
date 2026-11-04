@@ -1,0 +1,17 @@
+{
+  "locale": "ko",
+  "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW",
+  "strings": {
+    "landing.hero.playFree": "무료로 플레이",
+    "landing.hero.exploreWorlds": "세계 탐험하기",
+    "landing.hero.forParents": "보호자 안내",
+    "landing.hero.tagline": "다섯 개의 살아 숨 쉬는 문화 세계로 떠나는 3D 모험",
+    "hud.questTracker": "진행 중인 퀘스트",
+    "hud.inventory": "가방",
+    "hud.miraTokens": "미라 토큰 (이 기기에 저장됨)",
+    "hud.returnHub": "월드 허브",
+    "parents.portal.title": "미라버스 보호자 포털",
+    "parents.shop.badge.earned": "게임 내 획득 (무료)",
+    "parents.shop.badge.parent": "보호자 구매 (선택 사항)"
+  }
+}

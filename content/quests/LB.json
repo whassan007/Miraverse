@@ -1,0 +1,365 @@
+{
+  "questId": "LB:ch1:harbor:main",
+  "country": "LB",
+  "chapter": 1,
+  "titleEn": "Lebanon: Byblos Harbor & Teta Nahla's Saj",
+  "titleNative": "لبنان · ميناء جبيل وصاج تيتا نهلة",
+  "synopsis": "Welcome, my dear! Let's restore the limestone harbor arch and bake warm za'atar man'oushe on the domed saj.",
+  "mentorId": "npc:LB:teta_nahla",
+  "mentorName": "Teta Nahla",
+  "landmarkId": "landmark:LB:main",
+  "objectives": [
+    {
+      "objectiveId": "LB:ch1:harbor:gather",
+      "challengeType": "gather",
+      "title": "Pantry & Terrace Harvest",
+      "description": "Gather wild za'atar, mountain olive oil, and wheat flour for Teta Nahla's morning bake.",
+      "targetNpcId": "npc:LB:teta_nahla",
+      "targetStationId": "station:LB:gather",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:flour",
+          "quantity": 1,
+          "labelEn": "Wheat Flour",
+          "labelNative": "Wheat Flour"
+        },
+        {
+          "itemId": "item:LB:zaatar",
+          "quantity": 1,
+          "labelEn": "Wild Za'atar Blend",
+          "labelNative": "Wild Za'atar Blend"
+        },
+        {
+          "itemId": "item:LB:olive_oil",
+          "quantity": 1,
+          "labelEn": "Mountain Olive Oil",
+          "labelNative": "Mountain Olive Oil"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:gather_badge",
+          "quantity": 1,
+          "labelEn": "Za'atar Man'oushe GATHER Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, habibi! Come into the courtyard—the saj is warming up for fresh manoushe.",
+      "vocabWords": [
+        {
+          "word": "منقوشة",
+          "translit": "man'oushe",
+          "en": "thyme flatbread",
+          "objectId": "prop:LB:saj_dome"
+        },
+        {
+          "word": "زعتر",
+          "translit": "za'atar",
+          "en": "wild thyme & sesame blend",
+          "objectId": "prop:LB:zaatar_bowl"
+        },
+        {
+          "word": "صاج",
+          "translit": "saj",
+          "en": "domed iron griddle",
+          "objectId": "prop:LB:saj_station"
+        },
+        {
+          "word": "تيتا",
+          "translit": "teta",
+          "en": "grandmother",
+          "objectId": "prop:LB:courtyard_bench"
+        },
+        {
+          "word": "ميناء",
+          "translit": "mina'",
+          "en": "harbor",
+          "objectId": "prop:LB:harbor_boat"
+        }
+      ]
+    },
+    {
+      "objectiveId": "LB:ch1:harbor:trade",
+      "challengeType": "trade",
+      "title": "Share with the Souk Spice Merchant",
+      "description": "Share a warm manoushe at the Byblos market in exchange for a jar of tangy crimson sumac.",
+      "targetNpcId": "npc:LB:amo_farid",
+      "targetStationId": "station:LB:trade",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:flour",
+          "quantity": 1,
+          "labelEn": "Wheat Flour",
+          "labelNative": "Wheat Flour"
+        },
+        {
+          "itemId": "item:LB:zaatar",
+          "quantity": 1,
+          "labelEn": "Wild Za'atar Blend",
+          "labelNative": "Wild Za'atar Blend"
+        },
+        {
+          "itemId": "item:LB:olive_oil",
+          "quantity": 1,
+          "labelEn": "Mountain Olive Oil",
+          "labelNative": "Mountain Olive Oil"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:trade_badge",
+          "quantity": 1,
+          "labelEn": "Za'atar Man'oushe TRADE Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, habibi! Come into the courtyard—the saj is warming up for fresh manoushe.",
+      "vocabWords": [
+        {
+          "word": "منقوشة",
+          "translit": "man'oushe",
+          "en": "thyme flatbread",
+          "objectId": "prop:LB:saj_dome"
+        },
+        {
+          "word": "زعتر",
+          "translit": "za'atar",
+          "en": "wild thyme & sesame blend",
+          "objectId": "prop:LB:zaatar_bowl"
+        },
+        {
+          "word": "صاج",
+          "translit": "saj",
+          "en": "domed iron griddle",
+          "objectId": "prop:LB:saj_station"
+        },
+        {
+          "word": "تيتا",
+          "translit": "teta",
+          "en": "grandmother",
+          "objectId": "prop:LB:courtyard_bench"
+        },
+        {
+          "word": "ميناء",
+          "translit": "mina'",
+          "en": "harbor",
+          "objectId": "prop:LB:harbor_boat"
+        }
+      ]
+    },
+    {
+      "objectiveId": "LB:ch1:harbor:build",
+      "challengeType": "build",
+      "title": "Restore the Mountain Stone House",
+      "description": "Arrange the red terracotta roof tiles, cedar beams, and pale limestone blocks to repair the courtyard archway.",
+      "targetNpcId": "npc:LB:nadim_builder",
+      "targetStationId": "station:LB:build",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:flour",
+          "quantity": 1,
+          "labelEn": "Wheat Flour",
+          "labelNative": "Wheat Flour"
+        },
+        {
+          "itemId": "item:LB:zaatar",
+          "quantity": 1,
+          "labelEn": "Wild Za'atar Blend",
+          "labelNative": "Wild Za'atar Blend"
+        },
+        {
+          "itemId": "item:LB:olive_oil",
+          "quantity": 1,
+          "labelEn": "Mountain Olive Oil",
+          "labelNative": "Mountain Olive Oil"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:build_badge",
+          "quantity": 1,
+          "labelEn": "Za'atar Man'oushe BUILD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, habibi! Come into the courtyard—the saj is warming up for fresh manoushe.",
+      "vocabWords": [
+        {
+          "word": "منقوشة",
+          "translit": "man'oushe",
+          "en": "thyme flatbread",
+          "objectId": "prop:LB:saj_dome"
+        },
+        {
+          "word": "زعتر",
+          "translit": "za'atar",
+          "en": "wild thyme & sesame blend",
+          "objectId": "prop:LB:zaatar_bowl"
+        },
+        {
+          "word": "صاج",
+          "translit": "saj",
+          "en": "domed iron griddle",
+          "objectId": "prop:LB:saj_station"
+        },
+        {
+          "word": "تيتا",
+          "translit": "teta",
+          "en": "grandmother",
+          "objectId": "prop:LB:courtyard_bench"
+        },
+        {
+          "word": "ميناء",
+          "translit": "mina'",
+          "en": "harbor",
+          "objectId": "prop:LB:harbor_boat"
+        }
+      ]
+    },
+    {
+      "objectiveId": "LB:ch1:harbor:cook",
+      "challengeType": "cook",
+      "title": "Bake Saj Manoushe",
+      "description": "Help Teta Nahla shape the dough, brush on olive oil and za'atar, and bake a warm manoushe on the saj.",
+      "targetNpcId": "npc:LB:teta_nahla",
+      "targetStationId": "station:LB:cook",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:flour",
+          "quantity": 1,
+          "labelEn": "Wheat Flour",
+          "labelNative": "Wheat Flour"
+        },
+        {
+          "itemId": "item:LB:zaatar",
+          "quantity": 1,
+          "labelEn": "Wild Za'atar Blend",
+          "labelNative": "Wild Za'atar Blend"
+        },
+        {
+          "itemId": "item:LB:olive_oil",
+          "quantity": 1,
+          "labelEn": "Mountain Olive Oil",
+          "labelNative": "Mountain Olive Oil"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:cook_badge",
+          "quantity": 1,
+          "labelEn": "Za'atar Man'oushe COOK Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, habibi! Come into the courtyard—the saj is warming up for fresh manoushe.",
+      "vocabWords": [
+        {
+          "word": "منقوشة",
+          "translit": "man'oushe",
+          "en": "thyme flatbread",
+          "objectId": "prop:LB:saj_dome"
+        },
+        {
+          "word": "زعتر",
+          "translit": "za'atar",
+          "en": "wild thyme & sesame blend",
+          "objectId": "prop:LB:zaatar_bowl"
+        },
+        {
+          "word": "صاج",
+          "translit": "saj",
+          "en": "domed iron griddle",
+          "objectId": "prop:LB:saj_station"
+        },
+        {
+          "word": "تيتا",
+          "translit": "teta",
+          "en": "grandmother",
+          "objectId": "prop:LB:courtyard_bench"
+        },
+        {
+          "word": "ميناء",
+          "translit": "mina'",
+          "en": "harbor",
+          "objectId": "prop:LB:harbor_boat"
+        }
+      ]
+    },
+    {
+      "objectiveId": "LB:ch1:harbor:word",
+      "challengeType": "word",
+      "title": "Words from Teta's Kitchen",
+      "description": "Practice three Lebanese Arabic words with Teta Nahla before breakfast is served.",
+      "targetNpcId": "npc:LB:teta_nahla",
+      "targetStationId": "station:LB:word",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:flour",
+          "quantity": 1,
+          "labelEn": "Wheat Flour",
+          "labelNative": "Wheat Flour"
+        },
+        {
+          "itemId": "item:LB:zaatar",
+          "quantity": 1,
+          "labelEn": "Wild Za'atar Blend",
+          "labelNative": "Wild Za'atar Blend"
+        },
+        {
+          "itemId": "item:LB:olive_oil",
+          "quantity": 1,
+          "labelEn": "Mountain Olive Oil",
+          "labelNative": "Mountain Olive Oil"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:word_badge",
+          "quantity": 1,
+          "labelEn": "Za'atar Man'oushe WORD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, habibi! Come into the courtyard—the saj is warming up for fresh manoushe.",
+      "vocabWords": [
+        {
+          "word": "منقوشة",
+          "translit": "man'oushe",
+          "en": "thyme flatbread",
+          "objectId": "prop:LB:saj_dome"
+        },
+        {
+          "word": "زعتر",
+          "translit": "za'atar",
+          "en": "wild thyme & sesame blend",
+          "objectId": "prop:LB:zaatar_bowl"
+        },
+        {
+          "word": "صاج",
+          "translit": "saj",
+          "en": "domed iron griddle",
+          "objectId": "prop:LB:saj_station"
+        },
+        {
+          "word": "تيتا",
+          "translit": "teta",
+          "en": "grandmother",
+          "objectId": "prop:LB:courtyard_bench"
+        },
+        {
+          "word": "ميناء",
+          "translit": "mina'",
+          "en": "harbor",
+          "objectId": "prop:LB:harbor_boat"
+        }
+      ]
+    }
+  ],
+  "completionReward": {
+    "rewardId": "reward:LB:ch1_keepsake",
+    "keepsakeNameEn": "Byblos Saj Bakery & Harbor Arch Golden Keepsake",
+    "keepsakeNameNative": "لبنان · ميناء جبيل وصاج تيتا نهلة",
+    "miraTokensBonus": 50,
+    "stampChapter": 1
+  }
+}

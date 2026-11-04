@@ -1,0 +1,365 @@
+{
+  "questId": "FR:ch1:bakery:main",
+  "country": "FR",
+  "chapter": 1,
+  "titleEn": "France: The Golden Galette of Vieux Lyon",
+  "titleNative": "France · La Galette Dorée du Vieux Lyon",
+  "synopsis": "Welcome to my bakery in Vieux Lyon! Help me restore our shutters and bake the golden galette des rois.",
+  "mentorId": "npc:FR:mamie_claire",
+  "mentorName": "Mamie Claire",
+  "landmarkId": "landmark:FR:main",
+  "objectives": [
+    {
+      "objectiveId": "FR:ch1:bakery:gather",
+      "challengeType": "gather",
+      "title": "Market Day at Les Halles",
+      "description": "Gather flaky puff pastry, sweet almond cream, and a tiny porcelain fève charm for Mamie Claire.",
+      "targetNpcId": "npc:FR:mamie_claire",
+      "targetStationId": "station:FR:gather",
+      "requiredItems": [
+        {
+          "itemId": "item:FR:puff_pastry",
+          "quantity": 1,
+          "labelEn": "Flaky Puff Pastry",
+          "labelNative": "Flaky Puff Pastry"
+        },
+        {
+          "itemId": "item:FR:almond_cream",
+          "quantity": 1,
+          "labelEn": "Sweet Almond Cream",
+          "labelNative": "Sweet Almond Cream"
+        },
+        {
+          "itemId": "item:FR:porcelain_feve",
+          "quantity": 1,
+          "labelEn": "Porcelain Fève Charm",
+          "labelNative": "Porcelain Fève Charm"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:FR:gather_badge",
+          "quantity": 1,
+          "labelEn": "Galette des Rois GATHER Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome to my kitchen in Lyon! Let us bake a warm golden galette des rois together.",
+      "vocabWords": [
+        {
+          "word": "boulangerie",
+          "translit": "bou-lan-je-rie",
+          "en": "bakery",
+          "objectId": "prop:FR:bakery_sign"
+        },
+        {
+          "word": "galette",
+          "translit": "ga-let",
+          "en": "flaky puff-pastry cake",
+          "objectId": "prop:FR:galette_table"
+        },
+        {
+          "word": "fève",
+          "translit": "fev",
+          "en": "hidden porcelain charm",
+          "objectId": "prop:FR:feve_jar"
+        },
+        {
+          "word": "couronne",
+          "translit": "kou-ron",
+          "en": "golden paper crown",
+          "objectId": "prop:FR:crown_display"
+        },
+        {
+          "word": "traboule",
+          "translit": "tra-boul",
+          "en": "covered Lyon passageway",
+          "objectId": "prop:FR:traboule_arch"
+        }
+      ]
+    },
+    {
+      "objectiveId": "FR:ch1:bakery:trade",
+      "challengeType": "trade",
+      "title": "Sharing the Epiphany Treat",
+      "description": "Share a warm Galette des Rois with the neighborhood baker in exchange for a festive Golden Paper Crown.",
+      "targetNpcId": "npc:FR:monsieur_henri",
+      "targetStationId": "station:FR:trade",
+      "requiredItems": [
+        {
+          "itemId": "item:FR:puff_pastry",
+          "quantity": 1,
+          "labelEn": "Flaky Puff Pastry",
+          "labelNative": "Flaky Puff Pastry"
+        },
+        {
+          "itemId": "item:FR:almond_cream",
+          "quantity": 1,
+          "labelEn": "Sweet Almond Cream",
+          "labelNative": "Sweet Almond Cream"
+        },
+        {
+          "itemId": "item:FR:porcelain_feve",
+          "quantity": 1,
+          "labelEn": "Porcelain Fève Charm",
+          "labelNative": "Porcelain Fève Charm"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:FR:trade_badge",
+          "quantity": 1,
+          "labelEn": "Galette des Rois TRADE Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome to my kitchen in Lyon! Let us bake a warm golden galette des rois together.",
+      "vocabWords": [
+        {
+          "word": "boulangerie",
+          "translit": "bou-lan-je-rie",
+          "en": "bakery",
+          "objectId": "prop:FR:bakery_sign"
+        },
+        {
+          "word": "galette",
+          "translit": "ga-let",
+          "en": "flaky puff-pastry cake",
+          "objectId": "prop:FR:galette_table"
+        },
+        {
+          "word": "fève",
+          "translit": "fev",
+          "en": "hidden porcelain charm",
+          "objectId": "prop:FR:feve_jar"
+        },
+        {
+          "word": "couronne",
+          "translit": "kou-ron",
+          "en": "golden paper crown",
+          "objectId": "prop:FR:crown_display"
+        },
+        {
+          "word": "traboule",
+          "translit": "tra-boul",
+          "en": "covered Lyon passageway",
+          "objectId": "prop:FR:traboule_arch"
+        }
+      ]
+    },
+    {
+      "objectiveId": "FR:ch1:bakery:build",
+      "challengeType": "build",
+      "title": "The Vieux Lyon Bakery Facade",
+      "description": "Restore the neighborhood boulangerie facade with slate roof tiles, limestone walls, and oak shutters.",
+      "targetNpcId": "npc:FR:camille_mason",
+      "targetStationId": "station:FR:build",
+      "requiredItems": [
+        {
+          "itemId": "item:FR:puff_pastry",
+          "quantity": 1,
+          "labelEn": "Flaky Puff Pastry",
+          "labelNative": "Flaky Puff Pastry"
+        },
+        {
+          "itemId": "item:FR:almond_cream",
+          "quantity": 1,
+          "labelEn": "Sweet Almond Cream",
+          "labelNative": "Sweet Almond Cream"
+        },
+        {
+          "itemId": "item:FR:porcelain_feve",
+          "quantity": 1,
+          "labelEn": "Porcelain Fève Charm",
+          "labelNative": "Porcelain Fève Charm"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:FR:build_badge",
+          "quantity": 1,
+          "labelEn": "Galette des Rois BUILD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome to my kitchen in Lyon! Let us bake a warm golden galette des rois together.",
+      "vocabWords": [
+        {
+          "word": "boulangerie",
+          "translit": "bou-lan-je-rie",
+          "en": "bakery",
+          "objectId": "prop:FR:bakery_sign"
+        },
+        {
+          "word": "galette",
+          "translit": "ga-let",
+          "en": "flaky puff-pastry cake",
+          "objectId": "prop:FR:galette_table"
+        },
+        {
+          "word": "fève",
+          "translit": "fev",
+          "en": "hidden porcelain charm",
+          "objectId": "prop:FR:feve_jar"
+        },
+        {
+          "word": "couronne",
+          "translit": "kou-ron",
+          "en": "golden paper crown",
+          "objectId": "prop:FR:crown_display"
+        },
+        {
+          "word": "traboule",
+          "translit": "tra-boul",
+          "en": "covered Lyon passageway",
+          "objectId": "prop:FR:traboule_arch"
+        }
+      ]
+    },
+    {
+      "objectiveId": "FR:ch1:bakery:cook",
+      "challengeType": "cook",
+      "title": "Baking the Galette des Rois",
+      "description": "Layer the puff pastry with almond cream, tuck in the porcelain fève, and help Mamie Claire bake the golden galette.",
+      "targetNpcId": "npc:FR:mamie_claire",
+      "targetStationId": "station:FR:cook",
+      "requiredItems": [
+        {
+          "itemId": "item:FR:puff_pastry",
+          "quantity": 1,
+          "labelEn": "Flaky Puff Pastry",
+          "labelNative": "Flaky Puff Pastry"
+        },
+        {
+          "itemId": "item:FR:almond_cream",
+          "quantity": 1,
+          "labelEn": "Sweet Almond Cream",
+          "labelNative": "Sweet Almond Cream"
+        },
+        {
+          "itemId": "item:FR:porcelain_feve",
+          "quantity": 1,
+          "labelEn": "Porcelain Fève Charm",
+          "labelNative": "Porcelain Fève Charm"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:FR:cook_badge",
+          "quantity": 1,
+          "labelEn": "Galette des Rois COOK Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome to my kitchen in Lyon! Let us bake a warm golden galette des rois together.",
+      "vocabWords": [
+        {
+          "word": "boulangerie",
+          "translit": "bou-lan-je-rie",
+          "en": "bakery",
+          "objectId": "prop:FR:bakery_sign"
+        },
+        {
+          "word": "galette",
+          "translit": "ga-let",
+          "en": "flaky puff-pastry cake",
+          "objectId": "prop:FR:galette_table"
+        },
+        {
+          "word": "fève",
+          "translit": "fev",
+          "en": "hidden porcelain charm",
+          "objectId": "prop:FR:feve_jar"
+        },
+        {
+          "word": "couronne",
+          "translit": "kou-ron",
+          "en": "golden paper crown",
+          "objectId": "prop:FR:crown_display"
+        },
+        {
+          "word": "traboule",
+          "translit": "tra-boul",
+          "en": "covered Lyon passageway",
+          "objectId": "prop:FR:traboule_arch"
+        }
+      ]
+    },
+    {
+      "objectiveId": "FR:ch1:bakery:word",
+      "challengeType": "word",
+      "title": "French Bakery Words",
+      "description": "Learn three everyday French words from Mamie Claire's kitchen in Lyon.",
+      "targetNpcId": "npc:FR:mamie_claire",
+      "targetStationId": "station:FR:word",
+      "requiredItems": [
+        {
+          "itemId": "item:FR:puff_pastry",
+          "quantity": 1,
+          "labelEn": "Flaky Puff Pastry",
+          "labelNative": "Flaky Puff Pastry"
+        },
+        {
+          "itemId": "item:FR:almond_cream",
+          "quantity": 1,
+          "labelEn": "Sweet Almond Cream",
+          "labelNative": "Sweet Almond Cream"
+        },
+        {
+          "itemId": "item:FR:porcelain_feve",
+          "quantity": 1,
+          "labelEn": "Porcelain Fève Charm",
+          "labelNative": "Porcelain Fève Charm"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:FR:word_badge",
+          "quantity": 1,
+          "labelEn": "Galette des Rois WORD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome to my kitchen in Lyon! Let us bake a warm golden galette des rois together.",
+      "vocabWords": [
+        {
+          "word": "boulangerie",
+          "translit": "bou-lan-je-rie",
+          "en": "bakery",
+          "objectId": "prop:FR:bakery_sign"
+        },
+        {
+          "word": "galette",
+          "translit": "ga-let",
+          "en": "flaky puff-pastry cake",
+          "objectId": "prop:FR:galette_table"
+        },
+        {
+          "word": "fève",
+          "translit": "fev",
+          "en": "hidden porcelain charm",
+          "objectId": "prop:FR:feve_jar"
+        },
+        {
+          "word": "couronne",
+          "translit": "kou-ron",
+          "en": "golden paper crown",
+          "objectId": "prop:FR:crown_display"
+        },
+        {
+          "word": "traboule",
+          "translit": "tra-boul",
+          "en": "covered Lyon passageway",
+          "objectId": "prop:FR:traboule_arch"
+        }
+      ]
+    }
+  ],
+  "completionReward": {
+    "rewardId": "reward:FR:ch1_keepsake",
+    "keepsakeNameEn": "Boulangerie du Soleil Golden Keepsake",
+    "keepsakeNameNative": "France · La Galette Dorée du Vieux Lyon",
+    "miraTokensBonus": 50,
+    "stampChapter": 1
+  }
+}

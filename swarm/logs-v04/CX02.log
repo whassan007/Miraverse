@@ -1,0 +1,8 @@
+=== STAGE CX02 (AGENT CX02) ===
+Commit: f84bc5a
+Owned Paths: apps/web/src/game3d/runtime,apps/web/src/landing/scene
+Test Command: npx tsx -e "import { createBabylonEngine, buildSculptedWorldScene } from './apps/web/src/game3d/runtime/index.ts'; const { engine } = createBabylonEngine(null); const s = buildSculptedWorldScene(engine, 'FR'); s.dispose();"
+Test Exit: 0
+BJS - [18:21:32]: Babylon.js v7.34.2 - Null engine
+
+DONE CX02 f84bc5a apps/web/src/game3d/runtime/index.ts

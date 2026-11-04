@@ -1,0 +1,8 @@
+=== STAGE AG27 (AGENT AG27) ===
+Commit: 8634d93
+Owned Paths: reports/accessibility
+Telemetry: {"provider":"ag","elapsedMs":0}
+Test Command: test -f reports/accessibility/ACCESSIBILITY_AND_RTL_REPORT.md
+Test Exit: 0
+
+DONE AG27 8634d93 reports/accessibility/ACCESSIBILITY_AND_RTL_REPORT.md

@@ -1,0 +1,7 @@
+=== STAGE CL04 (AGENT CL04) ===
+Commit: e9ecd13
+Owned Paths: apps/roblox/src/server/challenges
+Test Command: test -f apps/roblox/src/server/challenges/ChallengeService.luau
+Test Exit: 0
+
+DONE CL04 e9ecd13 apps/roblox/src/server/challenges/ChallengeService.luau

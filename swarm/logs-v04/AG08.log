@@ -1,0 +1,7 @@
+=== STAGE AG08 (AGENT AG08) ===
+Commit: fc17dd9
+Owned Paths: art/source/countries/EG
+Test Command: test -f art/source/countries/EG/kit-EG.json
+Test Exit: 0
+
+DONE AG08 fc17dd9 art/source/countries/EG/kit-EG.json

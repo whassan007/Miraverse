@@ -1,0 +1,365 @@
+{
+  "questId": "IQ:ch1:shanasheel:main",
+  "country": "IQ",
+  "chapter": 1,
+  "titleEn": "Iraq: Baghdad Shanasheel & Bibi Amal's Kleicha",
+  "titleNative": "العراق · شناشيل بغداد وكليجة بيبي أمل",
+  "synopsis": "Welcome to Baghdad by the Tigris! Help me restore our carved wooden shanasheel balcony and stamp cardamom date kleicha.",
+  "mentorId": "npc:IQ:bibi_amal",
+  "mentorName": "Bibi Amal",
+  "landmarkId": "landmark:IQ:main",
+  "objectives": [
+    {
+      "objectiveId": "IQ:ch1:shanasheel:gather",
+      "challengeType": "gather",
+      "title": "Pantry by the Tigris",
+      "description": "Gather warm wheat dough, sweet date paste, and fragrant cardamom with Bibi Amal for the Eid baking tray.",
+      "targetNpcId": "npc:IQ:bibi_amal",
+      "targetStationId": "station:IQ:gather",
+      "requiredItems": [
+        {
+          "itemId": "item:IQ:wheat_dough",
+          "quantity": 1,
+          "labelEn": "Wheat Dough",
+          "labelNative": "Wheat Dough"
+        },
+        {
+          "itemId": "item:IQ:date_paste",
+          "quantity": 1,
+          "labelEn": "Date Paste",
+          "labelNative": "Date Paste"
+        },
+        {
+          "itemId": "item:IQ:cardamom",
+          "quantity": 1,
+          "labelEn": "Ground Cardamom",
+          "labelNative": "Ground Cardamom"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:IQ:gather_badge",
+          "quantity": 1,
+          "labelEn": "Cardamom Date Kleicha GATHER Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dears! Come bake Eid kleicha and drink cardamom tea in the courtyard.",
+      "vocabWords": [
+        {
+          "word": "كليجة",
+          "translit": "kleicha",
+          "en": "spiced date-filled pastry",
+          "objectId": "prop:IQ:kleicha_tray"
+        },
+        {
+          "word": "شناشيل",
+          "translit": "shanasheel",
+          "en": "carved latticework balcony",
+          "objectId": "prop:IQ:shanasheel_balcony"
+        },
+        {
+          "word": "تمر",
+          "translit": "tamr",
+          "en": "dates",
+          "objectId": "prop:IQ:date_basket"
+        },
+        {
+          "word": "هيل",
+          "translit": "heil",
+          "en": "cardamom",
+          "objectId": "prop:IQ:cardamom_jar"
+        },
+        {
+          "word": "دجلة",
+          "translit": "Dijla",
+          "en": "Tigris River",
+          "objectId": "prop:IQ:tigris_terrace"
+        }
+      ]
+    },
+    {
+      "objectiveId": "IQ:ch1:shanasheel:trade",
+      "challengeType": "trade",
+      "title": "Tea in Al-Mutanabbi",
+      "description": "Share a plate of fresh Eid kleicha with the neighborhood coppersmith in exchange for a polished brass teapot.",
+      "targetNpcId": "npc:IQ:abu_zaid",
+      "targetStationId": "station:IQ:trade",
+      "requiredItems": [
+        {
+          "itemId": "item:IQ:wheat_dough",
+          "quantity": 1,
+          "labelEn": "Wheat Dough",
+          "labelNative": "Wheat Dough"
+        },
+        {
+          "itemId": "item:IQ:date_paste",
+          "quantity": 1,
+          "labelEn": "Date Paste",
+          "labelNative": "Date Paste"
+        },
+        {
+          "itemId": "item:IQ:cardamom",
+          "quantity": 1,
+          "labelEn": "Ground Cardamom",
+          "labelNative": "Ground Cardamom"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:IQ:trade_badge",
+          "quantity": 1,
+          "labelEn": "Cardamom Date Kleicha TRADE Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dears! Come bake Eid kleicha and drink cardamom tea in the courtyard.",
+      "vocabWords": [
+        {
+          "word": "كليجة",
+          "translit": "kleicha",
+          "en": "spiced date-filled pastry",
+          "objectId": "prop:IQ:kleicha_tray"
+        },
+        {
+          "word": "شناشيل",
+          "translit": "shanasheel",
+          "en": "carved latticework balcony",
+          "objectId": "prop:IQ:shanasheel_balcony"
+        },
+        {
+          "word": "تمر",
+          "translit": "tamr",
+          "en": "dates",
+          "objectId": "prop:IQ:date_basket"
+        },
+        {
+          "word": "هيل",
+          "translit": "heil",
+          "en": "cardamom",
+          "objectId": "prop:IQ:cardamom_jar"
+        },
+        {
+          "word": "دجلة",
+          "translit": "Dijla",
+          "en": "Tigris River",
+          "objectId": "prop:IQ:tigris_terrace"
+        }
+      ]
+    },
+    {
+      "objectiveId": "IQ:ch1:shanasheel:build",
+      "challengeType": "build",
+      "title": "Baghdadi Courtyard House",
+      "description": "Lay the mud-brick walls, palm-wood shanashil beams, and turquoise tiles around the family courtyard.",
+      "targetNpcId": "npc:IQ:sinan_carpenter",
+      "targetStationId": "station:IQ:build",
+      "requiredItems": [
+        {
+          "itemId": "item:IQ:wheat_dough",
+          "quantity": 1,
+          "labelEn": "Wheat Dough",
+          "labelNative": "Wheat Dough"
+        },
+        {
+          "itemId": "item:IQ:date_paste",
+          "quantity": 1,
+          "labelEn": "Date Paste",
+          "labelNative": "Date Paste"
+        },
+        {
+          "itemId": "item:IQ:cardamom",
+          "quantity": 1,
+          "labelEn": "Ground Cardamom",
+          "labelNative": "Ground Cardamom"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:IQ:build_badge",
+          "quantity": 1,
+          "labelEn": "Cardamom Date Kleicha BUILD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dears! Come bake Eid kleicha and drink cardamom tea in the courtyard.",
+      "vocabWords": [
+        {
+          "word": "كليجة",
+          "translit": "kleicha",
+          "en": "spiced date-filled pastry",
+          "objectId": "prop:IQ:kleicha_tray"
+        },
+        {
+          "word": "شناشيل",
+          "translit": "shanasheel",
+          "en": "carved latticework balcony",
+          "objectId": "prop:IQ:shanasheel_balcony"
+        },
+        {
+          "word": "تمر",
+          "translit": "tamr",
+          "en": "dates",
+          "objectId": "prop:IQ:date_basket"
+        },
+        {
+          "word": "هيل",
+          "translit": "heil",
+          "en": "cardamom",
+          "objectId": "prop:IQ:cardamom_jar"
+        },
+        {
+          "word": "دجلة",
+          "translit": "Dijla",
+          "en": "Tigris River",
+          "objectId": "prop:IQ:tigris_terrace"
+        }
+      ]
+    },
+    {
+      "objectiveId": "IQ:ch1:shanasheel:cook",
+      "challengeType": "cook",
+      "title": "Bake the Eid Kleicha",
+      "description": "Roll the spiced wheat dough around the date paste and cardamom filling so Bibi Amal can bake golden kleicha cookies.",
+      "targetNpcId": "npc:IQ:bibi_amal",
+      "targetStationId": "station:IQ:cook",
+      "requiredItems": [
+        {
+          "itemId": "item:IQ:wheat_dough",
+          "quantity": 1,
+          "labelEn": "Wheat Dough",
+          "labelNative": "Wheat Dough"
+        },
+        {
+          "itemId": "item:IQ:date_paste",
+          "quantity": 1,
+          "labelEn": "Date Paste",
+          "labelNative": "Date Paste"
+        },
+        {
+          "itemId": "item:IQ:cardamom",
+          "quantity": 1,
+          "labelEn": "Ground Cardamom",
+          "labelNative": "Ground Cardamom"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:IQ:cook_badge",
+          "quantity": 1,
+          "labelEn": "Cardamom Date Kleicha COOK Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dears! Come bake Eid kleicha and drink cardamom tea in the courtyard.",
+      "vocabWords": [
+        {
+          "word": "كليجة",
+          "translit": "kleicha",
+          "en": "spiced date-filled pastry",
+          "objectId": "prop:IQ:kleicha_tray"
+        },
+        {
+          "word": "شناشيل",
+          "translit": "shanasheel",
+          "en": "carved latticework balcony",
+          "objectId": "prop:IQ:shanasheel_balcony"
+        },
+        {
+          "word": "تمر",
+          "translit": "tamr",
+          "en": "dates",
+          "objectId": "prop:IQ:date_basket"
+        },
+        {
+          "word": "هيل",
+          "translit": "heil",
+          "en": "cardamom",
+          "objectId": "prop:IQ:cardamom_jar"
+        },
+        {
+          "word": "دجلة",
+          "translit": "Dijla",
+          "en": "Tigris River",
+          "objectId": "prop:IQ:tigris_terrace"
+        }
+      ]
+    },
+    {
+      "objectiveId": "IQ:ch1:shanasheel:word",
+      "challengeType": "word",
+      "title": "Words from Bibi's Courtyard",
+      "description": "Learn three Baghdadi Iraqi Arabic words used during family Eid gatherings.",
+      "targetNpcId": "npc:IQ:bibi_amal",
+      "targetStationId": "station:IQ:word",
+      "requiredItems": [
+        {
+          "itemId": "item:IQ:wheat_dough",
+          "quantity": 1,
+          "labelEn": "Wheat Dough",
+          "labelNative": "Wheat Dough"
+        },
+        {
+          "itemId": "item:IQ:date_paste",
+          "quantity": 1,
+          "labelEn": "Date Paste",
+          "labelNative": "Date Paste"
+        },
+        {
+          "itemId": "item:IQ:cardamom",
+          "quantity": 1,
+          "labelEn": "Ground Cardamom",
+          "labelNative": "Ground Cardamom"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:IQ:word_badge",
+          "quantity": 1,
+          "labelEn": "Cardamom Date Kleicha WORD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dears! Come bake Eid kleicha and drink cardamom tea in the courtyard.",
+      "vocabWords": [
+        {
+          "word": "كليجة",
+          "translit": "kleicha",
+          "en": "spiced date-filled pastry",
+          "objectId": "prop:IQ:kleicha_tray"
+        },
+        {
+          "word": "شناشيل",
+          "translit": "shanasheel",
+          "en": "carved latticework balcony",
+          "objectId": "prop:IQ:shanasheel_balcony"
+        },
+        {
+          "word": "تمر",
+          "translit": "tamr",
+          "en": "dates",
+          "objectId": "prop:IQ:date_basket"
+        },
+        {
+          "word": "هيل",
+          "translit": "heil",
+          "en": "cardamom",
+          "objectId": "prop:IQ:cardamom_jar"
+        },
+        {
+          "word": "دجلة",
+          "translit": "Dijla",
+          "en": "Tigris River",
+          "objectId": "prop:IQ:tigris_terrace"
+        }
+      ]
+    }
+  ],
+  "completionReward": {
+    "rewardId": "reward:IQ:ch1_keepsake",
+    "keepsakeNameEn": "Tigris Shanasheel Courtyard House Golden Keepsake",
+    "keepsakeNameNative": "العراق · شناشيل بغداد وكليجة بيبي أمل",
+    "miraTokensBonus": 50,
+    "stampChapter": 1
+  }
+}

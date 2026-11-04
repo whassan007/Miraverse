@@ -1,0 +1,7 @@
+=== STAGE AG10 (AGENT AG10) ===
+Commit: c89ad66
+Owned Paths: art/source/countries/KR
+Test Command: test -f art/source/countries/KR/kit-KR.json
+Test Exit: 0
+
+DONE AG10 c89ad66 art/source/countries/KR/kit-KR.json

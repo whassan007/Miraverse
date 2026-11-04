@@ -1,0 +1,8 @@
+=== STAGE CL07 (AGENT CL07) ===
+Commit: 04363f9
+Owned Paths: apps/minecraft/world,apps/minecraft/structures
+Telemetry: {"provider":"claude","elapsedMs":1}
+Test Command: test -f apps/minecraft/world/world-layout.json && test -f apps/minecraft/structures/FR.mcstructure.json
+Test Exit: 0
+
+DONE CL07 04363f9 apps/minecraft/world/WORLD_EXPORT_STATUS.md

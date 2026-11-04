@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="MiraVerse 3D World Panorama Poster">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="48%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#F4A261"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="62%" r="42%">
+      <stop offset="0%" stop-color="#FFF3B0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#F4A261" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#heroSky)"/>
+  <circle cx="960" cy="640" r="540" fill="url(#sunGlow)"/>
+  <!-- Five Sculpted Cultural World Silhouettes -->
+  <path d="M0 780 Q320 690 640 750 T1280 730 T1920 760 L1920 1080 L0 1080 Z" fill="#1E293B"/>
+  <!-- France Vieux Lyon Boulangerie Silhouette -->
+  <rect x="210" y="540" width="200" height="220" rx="10" fill="#D9A05B"/>
+  <polygon points="195,542 310,450 425,542" fill="#3B6EA5"/>
+  <!-- Lebanon Byblos Harbor Arch -->
+  <rect x="520" y="570" width="210" height="190" rx="10" fill="#E6CCB2"/>
+  <circle cx="625" cy="570" r="65" fill="#1E7A68"/>
+  <!-- Central Compass Rose Hub Spire -->
+  <polygon points="960,360 1015,740 905,740" fill="#F4A261"/>
+  <circle cx="960" cy="360" r="42" fill="#FFF3B0"/>
+  <!-- Egypt Cairo Fanous & Courtyard -->
+  <rect x="1180" y="560" width="210" height="200" rx="12" fill="#DDA15E"/>
+  <polygon points="1220,560 1285,470 1350,560" fill="#F0B429"/>
+  <!-- Iraq Shanasheel & Korea Giwa Hanok -->
+  <rect x="1480" y="545" width="240" height="215" rx="10" fill="#C68B59"/>
+  <path d="M1450 550 Q1600 470 1750 550 Z" fill="#2E5A44"/>
+</svg>

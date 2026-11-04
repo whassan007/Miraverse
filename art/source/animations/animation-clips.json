@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 4,
+  "clips": [
+    {
+      "name": "idle_breathing",
+      "durationSec": 2.4,
+      "loop": true,
+      "blendMs": 200,
+      "rootMotion": false,
+      "desc": "Soft chest & shoulder breathing cycle with gentle head poise"
+    },
+    {
+      "name": "idle_variation",
+      "durationSec": 3.2,
+      "loop": false,
+      "blendMs": 250,
+      "rootMotion": false,
+      "desc": "Checks explorer satchel and looks around town plaza"
+    },
+    {
+      "name": "walk",
+      "durationSec": 1,
+      "loop": true,
+      "blendMs": 150,
+      "rootMotion": false,
+      "desc": "Balanced stride matched to 3.8 m/s ground speed with zero foot slide"
+    },
+    {
+      "name": "run",
+      "durationSec": 0.72,
+      "loop": true,
+      "blendMs": 140,
+      "rootMotion": false,
+      "desc": "Upbeat adventure run matched to 6.2 m/s ground speed"
+    },
+    {
+      "name": "stop_turn",
+      "durationSec": 0.45,
+      "loop": false,
+      "blendMs": 120,
+      "rootMotion": false,
+      "desc": "Weight-settled deceleration and pivot turn"
+    },
+    {
+      "name": "interact_reach",
+      "durationSec": 0.8,
+      "loop": false,
+      "blendMs": 120,
+      "rootMotion": false,
+      "desc": "Right-hand forward reach toward doors, workstations, and portals"
+    },
+    {
+      "name": "pickup",
+      "durationSec": 0.9,
+      "loop": false,
+      "blendMs": 140,
+      "rootMotion": false,
+      "desc": "Knee bend and two-hand gather into satchel"
+    },
+    {
+      "name": "talk_gesture",
+      "durationSec": 2,
+      "loop": true,
+      "blendMs": 180,
+      "rootMotion": false,
+      "desc": "Warm open-palm conversational gesture"
+    },
+    {
+      "name": "celebrate",
+      "durationSec": 2.2,
+      "loop": false,
+      "blendMs": 160,
+      "rootMotion": false,
+      "desc": "Joyful hop and raised-arm celebration on quest/chapter completion"
+    },
+    {
+      "name": "sit_observe",
+      "durationSec": 3,
+      "loop": true,
+      "blendMs": 220,
+      "rootMotion": false,
+      "desc": "Seated courtyard rest posture"
+    },
+    {
+      "name": "cook_action",
+      "durationSec": 1.6,
+      "loop": true,
+      "blendMs": 150,
+      "rootMotion": false,
+      "desc": "Rhythmic kneading, stirring, and shaping at cultural cooking stations"
+    },
+    {
+      "name": "repair_build",
+      "durationSec": 1.4,
+      "loop": true,
+      "blendMs": 150,
+      "rootMotion": false,
+      "desc": "Woodwork/masonry placement motion during landmark restoration"
+    }
+  ]
+}

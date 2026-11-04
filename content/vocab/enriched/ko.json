@@ -1,0 +1,336 @@
+{
+  "lang": "ko",
+  "count": 30,
+  "entries": [
+    {
+      "word": "할머니",
+      "translit": "halmeoni",
+      "en": "grandmother",
+      "entryId": "vocab:ko:1",
+      "propBindingId": "prop:ko:vocab_1",
+      "synonymsEn": [
+        "grandmother"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "할아버지",
+      "translit": "harabeoji",
+      "en": "grandfather",
+      "entryId": "vocab:ko:2",
+      "propBindingId": "prop:ko:vocab_2",
+      "synonymsEn": [
+        "grandfather"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "엄마",
+      "translit": "eomma",
+      "en": "mom/mother",
+      "entryId": "vocab:ko:3",
+      "propBindingId": "prop:ko:vocab_3",
+      "synonymsEn": [
+        "mom/mother"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "아빠",
+      "translit": "appa",
+      "en": "dad/father",
+      "entryId": "vocab:ko:4",
+      "propBindingId": "prop:ko:vocab_4",
+      "synonymsEn": [
+        "dad/father"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "오빠",
+      "translit": "oppa",
+      "en": "older brother (used by girls)",
+      "entryId": "vocab:ko:5",
+      "propBindingId": "prop:ko:vocab_5",
+      "synonymsEn": [
+        "older brother (used by girls)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "누나",
+      "translit": "nuna",
+      "en": "older sister (used by boys)",
+      "entryId": "vocab:ko:6",
+      "propBindingId": "prop:ko:vocab_6",
+      "synonymsEn": [
+        "older sister (used by boys)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "형",
+      "translit": "hyeong",
+      "en": "older brother (used by boys)",
+      "entryId": "vocab:ko:7",
+      "propBindingId": "prop:ko:vocab_7",
+      "synonymsEn": [
+        "older brother (used by boys)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "자매",
+      "translit": "jamae",
+      "en": "sisters",
+      "entryId": "vocab:ko:8",
+      "propBindingId": "prop:ko:vocab_8",
+      "synonymsEn": [
+        "sisters"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "가족",
+      "translit": "gajok",
+      "en": "family",
+      "entryId": "vocab:ko:9",
+      "propBindingId": "prop:ko:vocab_9",
+      "synonymsEn": [
+        "family"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "친척",
+      "translit": "chincheok",
+      "en": "relatives",
+      "entryId": "vocab:ko:10",
+      "propBindingId": "prop:ko:vocab_10",
+      "synonymsEn": [
+        "relatives"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "추석",
+      "translit": "chuseok",
+      "en": "Korean harvest festival (Chuseok)",
+      "entryId": "vocab:ko:11",
+      "propBindingId": "prop:ko:vocab_11",
+      "synonymsEn": [
+        "korean harvest festival (chuseok)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "한옥",
+      "translit": "hanok",
+      "en": "traditional Korean house",
+      "entryId": "vocab:ko:12",
+      "propBindingId": "prop:ko:vocab_12",
+      "synonymsEn": [
+        "traditional korean house"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "송편",
+      "translit": "songpyeon",
+      "en": "half-moon rice cakes (Chuseok food)",
+      "entryId": "vocab:ko:13",
+      "propBindingId": "prop:ko:vocab_13",
+      "synonymsEn": [
+        "half-moon rice cakes (chuseok food)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "산책",
+      "translit": "sanjaek",
+      "en": "leisurely walk in nature",
+      "entryId": "vocab:ko:14",
+      "propBindingId": "prop:ko:vocab_14",
+      "synonymsEn": [
+        "leisurely walk in nature"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "솔잎",
+      "translit": "solip",
+      "en": "pine needle",
+      "entryId": "vocab:ko:15",
+      "propBindingId": "prop:ko:vocab_15",
+      "synonymsEn": [
+        "pine needle"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "깨",
+      "translit": "kkae",
+      "en": "sesame seeds",
+      "entryId": "vocab:ko:16",
+      "propBindingId": "prop:ko:vocab_16",
+      "synonymsEn": [
+        "sesame seeds"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "참기름",
+      "translit": "chamgireum",
+      "en": "sesame oil",
+      "entryId": "vocab:ko:17",
+      "propBindingId": "prop:ko:vocab_17",
+      "synonymsEn": [
+        "sesame oil"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "된장",
+      "translit": "doenjang",
+      "en": "fermented soybean paste",
+      "entryId": "vocab:ko:18",
+      "propBindingId": "prop:ko:vocab_18",
+      "synonymsEn": [
+        "fermented soybean paste"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "고추장",
+      "translit": "gochujang",
+      "en": "Korean chili paste",
+      "entryId": "vocab:ko:19",
+      "propBindingId": "prop:ko:vocab_19",
+      "synonymsEn": [
+        "korean chili paste"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "김치",
+      "translit": "kimchi",
+      "en": "fermented cabbage dish",
+      "entryId": "vocab:ko:20",
+      "propBindingId": "prop:ko:vocab_20",
+      "synonymsEn": [
+        "fermented cabbage dish"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "밥",
+      "translit": "bap",
+      "en": "cooked rice",
+      "entryId": "vocab:ko:21",
+      "propBindingId": "prop:ko:vocab_21",
+      "synonymsEn": [
+        "cooked rice"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "국",
+      "translit": "guk",
+      "en": "Korean soup",
+      "entryId": "vocab:ko:22",
+      "propBindingId": "prop:ko:vocab_22",
+      "synonymsEn": [
+        "korean soup"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "찌개",
+      "translit": "jjigae",
+      "en": "stew",
+      "entryId": "vocab:ko:23",
+      "propBindingId": "prop:ko:vocab_23",
+      "synonymsEn": [
+        "stew"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "반찬",
+      "translit": "banchan",
+      "en": "side dishes",
+      "entryId": "vocab:ko:24",
+      "propBindingId": "prop:ko:vocab_24",
+      "synonymsEn": [
+        "side dishes"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "사과",
+      "translit": "sagwa",
+      "en": "apple",
+      "entryId": "vocab:ko:25",
+      "propBindingId": "prop:ko:vocab_25",
+      "synonymsEn": [
+        "apple"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "배",
+      "translit": "bae",
+      "en": "pear",
+      "entryId": "vocab:ko:26",
+      "propBindingId": "prop:ko:vocab_26",
+      "synonymsEn": [
+        "pear"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "감",
+      "translit": "gam",
+      "en": "persimmon",
+      "entryId": "vocab:ko:27",
+      "propBindingId": "prop:ko:vocab_27",
+      "synonymsEn": [
+        "persimmon"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "호박",
+      "translit": "hobak",
+      "en": "pumpkin or squash",
+      "entryId": "vocab:ko:28",
+      "propBindingId": "prop:ko:vocab_28",
+      "synonymsEn": [
+        "pumpkin or squash"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "고구마",
+      "translit": "goguma",
+      "en": "sweet potato",
+      "entryId": "vocab:ko:29",
+      "propBindingId": "prop:ko:vocab_29",
+      "synonymsEn": [
+        "sweet potato"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "전",
+      "translit": "jeon",
+      "en": "pan-fried dish (e.g., kimchi jeon)",
+      "entryId": "vocab:ko:30",
+      "propBindingId": "prop:ko:vocab_30",
+      "synonymsEn": [
+        "pan-fried dish (e.g., kimchi jeon)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    }
+  ]
+}

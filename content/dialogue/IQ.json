@@ -1,0 +1,158 @@
+[
+  {
+    "dialogueId": "dlg:IQ:bibi_amal",
+    "country": "IQ",
+    "npcId": "npc:IQ:bibi_amal",
+    "npcName": "Bibi Amal",
+    "role": "mentor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:IQ:bibi_amal",
+        "speakerName": "Bibi Amal",
+        "portraitId": "npc:IQ:bibi_amal",
+        "emotion": "warm",
+        "gestureClip": "talk_gesture",
+        "textNative": "هلا بيكم يا عيوني ببغداد! تعالوا نرمم الشناشيل ونخبز كليجة بالتمر والهيل.",
+        "textTranslit": "Hala bikom ya ayouni b-Baghdad! Taalou nrammim el-shanasheel...",
+        "textEn": "Welcome to Baghdad by the Tigris! Help me restore our carved wooden shanasheel balcony and stamp cardamom date kleicha.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Let's start the chapter quest!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "IQ:ch1:shanasheel:gather"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:IQ:bibi_amal",
+        "speakerName": "Bibi Amal",
+        "portraitId": "npc:IQ:bibi_amal",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "كليجة",
+        "textTranslit": "kleicha",
+        "textEn": "Remember the word \"كليجة\" (spiced date-filled pastry) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:IQ:abu_zaid",
+    "country": "IQ",
+    "npcId": "npc:IQ:abu_zaid",
+    "npcName": "Abu Zaid",
+    "role": "vendor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:IQ:abu_zaid",
+        "speakerName": "Abu Zaid",
+        "portraitId": "npc:IQ:abu_zaid",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "تمر البصرة وهيل مطحون ريحته تفوح من الشورجة!",
+        "textTranslit": "Tamr el-Basra w heil mathoun rihteh tfouh min el-Shorja!",
+        "textEn": "Sweet Basra dates and freshly ground green cardamom straight from the Shorja spice market!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "IQ:ch1:shanasheel:trade"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:IQ:abu_zaid",
+        "speakerName": "Abu Zaid",
+        "portraitId": "npc:IQ:abu_zaid",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "شناشيل",
+        "textTranslit": "shanasheel",
+        "textEn": "Remember the word \"شناشيل\" (carved latticework balcony) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:IQ:sinan_carpenter",
+    "country": "IQ",
+    "npcId": "npc:IQ:sinan_carpenter",
+    "npcName": "Najjar Sinan",
+    "role": "artisan",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:IQ:sinan_carpenter",
+        "speakerName": "Najjar Sinan",
+        "portraitId": "npc:IQ:sinan_carpenter",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "خشب الساج والزجاج الملون يرجّع الشناشيل البغدادية مثل أيام زمان.",
+        "textTranslit": "Khashab el-saj wel-zujaj el-mulawwan...",
+        "textEn": "Carved teak latticework and stained glass will restore our Baghdad shanasheel balcony.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "IQ:ch1:shanasheel:build"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:IQ:sinan_carpenter",
+        "speakerName": "Najjar Sinan",
+        "portraitId": "npc:IQ:sinan_carpenter",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "تمر",
+        "textTranslit": "tamr",
+        "textEn": "Remember the word \"تمر\" (dates) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:IQ:mariam_poet",
+    "country": "IQ",
+    "npcId": "npc:IQ:mariam_poet",
+    "npcName": "Mariam",
+    "role": "neighbor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:IQ:mariam_poet",
+        "speakerName": "Mariam",
+        "portraitId": "npc:IQ:mariam_poet",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "ما أحلى الگعدة على شط دجلة ويا استكان الجاي المهيل!",
+        "textTranslit": "Ma ahla el-ga’da ala shatt Dijla wya istikan el-chai el-mhayyal!",
+        "textEn": "Nothing beats gathering on the Tigris riverfront terrace with cardamom tea and warm kleicha!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "IQ:ch1:shanasheel:word"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:IQ:mariam_poet",
+        "speakerName": "Mariam",
+        "portraitId": "npc:IQ:mariam_poet",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "هيل",
+        "textTranslit": "heil",
+        "textEn": "Remember the word \"هيل\" (cardamom) as you explore!"
+      }
+    ]
+  }
+]

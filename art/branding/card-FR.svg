@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Vieux Lyon · France">
+  <defs>
+    <linearGradient id="sky-FR" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3B6EA5"/>
+      <stop offset="100%" stop-color="#E8A838"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="20" fill="url(#sky-FR)"/>
+  <path d="M0 260 Q160 220 320 250 T640 240 L640 360 L0 360 Z" fill="#1D2D44" opacity="0.55"/>
+  <rect x="68" y="130" width="140" height="140" rx="8" fill="#F4F1DE" opacity="0.9"/>
+  <polygon points="58,132 138,76 218,132" fill="#E8A838"/>
+  <rect x="250" y="110" width="180" height="160" rx="10" fill="#FFF8EE" opacity="0.92"/>
+  <polygon points="240,112 340,56 440,112" fill="#3B6EA5"/>
+  <circle cx="520" cy="96" r="38" fill="#FFF3B0" opacity="0.88"/>
+  <text x="36" y="324" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#FFFFFF">Vieux Lyon · France</text>
+</svg>

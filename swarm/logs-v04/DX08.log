@@ -1,0 +1,6 @@
+=== STAGE DX08 (AGENT DX08) ===
+Commit: 5d7a669
+Owned Paths: docs/operations/BUILD_AND_PLAYTEST_MANUAL.md
+Telemetry: {"model":"qwen/qwen3-coder-next","latencyMs":7657,"usage":{"prompt_tokens":74,"completion_tokens":450,"total_tokens":524,"completion_tokens_details":{"reasoning_tokens":0}}}
+Test Command: test -f docs/operations/BUILD_AND_PLAYTEST_MANUAL.md
+Test Exit: 0

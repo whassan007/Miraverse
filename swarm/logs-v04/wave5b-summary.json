@@ -1,0 +1,86 @@
+[
+  {
+    "stageId": "CX08",
+    "agentId": "CX08",
+    "sha": "5ca73ea",
+    "ownPaths": "tests/e2e/web",
+    "evidencePath": "tests/e2e/web/web-3d-adventure.test.ts",
+    "telemetry": {
+      "model": "gpt-5.3-codex"
+    },
+    "status": "DONE"
+  },
+  {
+    "stageId": "V4-11",
+    "agentId": "CX08",
+    "sha": "eddc982",
+    "ownPaths": "tests/e2e/commerce",
+    "evidencePath": "tests/e2e/commerce/commerce-c01-c20.test.ts",
+    "telemetry": {
+      "model": "gpt-5.3-codex"
+    },
+    "status": "DONE"
+  },
+  {
+    "stageId": "DX08",
+    "agentId": "DX08",
+    "sha": "5d7a669",
+    "ownPaths": "docs/operations/BUILD_AND_PLAYTEST_MANUAL.md",
+    "evidencePath": "docs/operations/BUILD_AND_PLAYTEST_MANUAL.md",
+    "telemetry": {
+      "model": "qwen/qwen3-coder-next",
+      "latencyMs": 7657,
+      "usage": {
+        "prompt_tokens": 74,
+        "completion_tokens": 450,
+        "total_tokens": 524,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    "status": "DONE"
+  },
+  {
+    "stageId": "V4-12",
+    "agentId": "DX08",
+    "sha": "cb8a935",
+    "ownPaths": "docs/operations/commerce",
+    "evidencePath": "docs/operations/commerce/COMMERCE_OPERATIONS_RUNBOOK.md",
+    "telemetry": {
+      "model": "qwen/qwen3-coder-next",
+      "latencyMs": 7513,
+      "usage": {
+        "prompt_tokens": 64,
+        "completion_tokens": 450,
+        "total_tokens": 514,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      }
+    },
+    "status": "DONE"
+  },
+  {
+    "stageId": "AG28",
+    "agentId": "AG28",
+    "sha": "3e7afa6",
+    "ownPaths": "reports/screens/v0.4,reports/screens/commerce,reports/screens/BEFORE_AFTER_COMPARISON.md",
+    "evidencePath": "reports/screens/BEFORE_AFTER_COMPARISON.md",
+    "telemetry": {
+      "model": "Antigravity-Native"
+    },
+    "status": "DONE"
+  },
+  {
+    "stageId": "AG30",
+    "agentId": "AG30",
+    "sha": "e192794",
+    "ownPaths": "reports/ART_QA.md,reports/V04_COMMERCE_QA.md",
+    "evidencePath": "reports/ART_QA.md",
+    "telemetry": {
+      "model": "Antigravity-Native"
+    },
+    "status": "DONE"
+  }
+]

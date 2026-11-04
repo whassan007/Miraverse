@@ -1,0 +1,7 @@
+=== STAGE AG25 (AGENT AG25) ===
+Commit: dc20591
+Owned Paths: reports/culture/KR.md
+Test Command: test -f reports/culture/KR.md
+Test Exit: 0
+
+DONE AG25 dc20591 reports/culture/KR.md

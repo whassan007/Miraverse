@@ -1,0 +1,8 @@
+=== STAGE DX06 (AGENT DX06) ===
+Commit: 37f20b6
+Owned Paths: tests/fixtures/generated
+Telemetry: {"provider":"dgx","model":"qwen/qwen3-coder-next","elapsedMs":717,"usage":{"prompt_tokens":69,"completion_tokens":37,"total_tokens":106,"completion_tokens_details":{"reasoning_tokens":0}}}
+Test Command: node -e "JSON.parse(require('fs').readFileSync('tests/fixtures/generated/commerce/edge-cases.json'));"
+Test Exit: 0
+
+DONE DX06 37f20b6 tests/fixtures/generated/commerce/edge-cases.json

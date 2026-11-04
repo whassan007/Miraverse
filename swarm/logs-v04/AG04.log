@@ -1,0 +1,12 @@
+=== STAGE AG04 (AGENT AG04) ===
+Timestamp: 2026-11-04T01:55:06.167Z
+Worktree: /home/wael/Code/mv-wt/AG04
+Branch: ag/AG04
+Commit: 4e72bd1
+Owned Paths: art/source/characters/npcs
+Telemetry: {"provider":"ag","model":"gemini-4-argon-medium","elapsedMs":1}
+Test Command: test -f art/source/characters/npcs/npc-kits.json && test -f art/source/characters/npcs/mamie_claire.svg
+Test Exit Code: 0
+Test Output:
+
+DONE AG04 4e72bd1 art/source/characters/npcs/NPC_DESIGN.md

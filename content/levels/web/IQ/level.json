@@ -1,0 +1,251 @@
+{
+  "levelId": "level:web:IQ",
+  "country": "IQ",
+  "titleEn": "IQ · Baghdad Shanasheel & Tigris Bank",
+  "titleNative": "بيت الشناشيل البغدادي على دجلة",
+  "glbAssetPath": "/assets/models/world_IQ.glb",
+  "spawnPosition": [
+    0,
+    0,
+    -8
+  ],
+  "spawnRotationY": 0,
+  "returnPortalPosition": [
+    0,
+    0,
+    -12
+  ],
+  "bounds": {
+    "minX": -24,
+    "maxX": 24,
+    "minZ": -24,
+    "maxZ": 24
+  },
+  "npcs": [
+    {
+      "npcId": "npc:IQ:bibi_amal",
+      "name": "Bibi Amal",
+      "role": "mentor",
+      "dialogueId": "dlg:IQ:bibi_amal",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "rotationY": 0,
+      "costumeVariant": "mentor",
+      "primaryColorHex": "#8C4A27",
+      "accentColorHex": "#3AA6B9"
+    },
+    {
+      "npcId": "npc:IQ:abu_zaid",
+      "name": "Abu Zaid",
+      "role": "vendor",
+      "dialogueId": "dlg:IQ:abu_zaid",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "rotationY": -0.5,
+      "costumeVariant": "vendor",
+      "primaryColorHex": "#3AA6B9",
+      "accentColorHex": "#8C4A27"
+    },
+    {
+      "npcId": "npc:IQ:sinan_carpenter",
+      "name": "Najjar Sinan",
+      "role": "artisan",
+      "dialogueId": "dlg:IQ:sinan_carpenter",
+      "position": [
+        -5.2,
+        0,
+        1.8
+      ],
+      "rotationY": 0.5,
+      "costumeVariant": "artisan",
+      "primaryColorHex": "#8C4A27",
+      "accentColorHex": "#F4F1DE"
+    },
+    {
+      "npcId": "npc:IQ:mariam_poet",
+      "name": "Mariam",
+      "role": "neighbor",
+      "dialogueId": "dlg:IQ:mariam_poet",
+      "position": [
+        2.2,
+        0,
+        -3.5
+      ],
+      "rotationY": 2.2,
+      "costumeVariant": "neighbor",
+      "primaryColorHex": "#588157",
+      "accentColorHex": "#3AA6B9"
+    }
+  ],
+  "interactables": [
+    {
+      "interactableId": "npc:IQ:bibi_amal",
+      "kind": "npc",
+      "labelEn": "Talk to Bibi Amal",
+      "labelNative": "بيت الشناشيل البغدادي على دجلة",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "IQ:ch1:shanasheel:gather"
+    },
+    {
+      "interactableId": "station:IQ:gather",
+      "kind": "gather_prop",
+      "labelEn": "Gather Ingredients for Cardamom Date Kleicha",
+      "labelNative": "بيت الشناشيل البغدادي على دجلة",
+      "position": [
+        3.2,
+        0,
+        -1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "IQ:ch1:shanasheel:gather"
+    },
+    {
+      "interactableId": "station:IQ:trade",
+      "kind": "trade_stall",
+      "labelEn": "Trade with Abu Zaid",
+      "labelNative": "بيت الشناشيل البغدادي على دجلة",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "IQ:ch1:shanasheel:trade"
+    },
+    {
+      "interactableId": "station:IQ:build",
+      "kind": "build_site",
+      "labelEn": "Restore Tigris Shanasheel Courtyard House",
+      "labelNative": "بيت الشناشيل البغدادي على دجلة",
+      "position": [
+        0,
+        0,
+        6.5
+      ],
+      "interactionRadius": 4.5,
+      "linkedObjectiveId": "IQ:ch1:shanasheel:build"
+    },
+    {
+      "interactableId": "station:IQ:cook",
+      "kind": "cook_station",
+      "labelEn": "Prepare Cardamom Date Kleicha",
+      "labelNative": "بيت الشناشيل البغدادي على دجلة",
+      "position": [
+        -3.5,
+        0,
+        5.2
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "IQ:ch1:shanasheel:cook"
+    },
+    {
+      "interactableId": "station:IQ:word",
+      "kind": "word_prop",
+      "labelEn": "Discover Cultural Words in Baghdad Shanasheel & Tigris Bank",
+      "labelNative": "كليجة",
+      "position": [
+        1.8,
+        0,
+        4
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "IQ:ch1:shanasheel:word",
+      "vocabEntry": {
+        "word": "كليجة",
+        "translit": "kleicha",
+        "en": "cardamom date pastry"
+      }
+    },
+    {
+      "interactableId": "portal:HUB",
+      "kind": "portal",
+      "labelEn": "Return to 3D World Hub",
+      "labelNative": "World Hub",
+      "position": [
+        0,
+        0,
+        -12
+      ],
+      "interactionRadius": 3.2
+    }
+  ],
+  "restorationLandmark": {
+    "landmarkId": "landmark:IQ:shanasheel_house",
+    "nameEn": "Tigris Shanasheel Courtyard House",
+    "nameNative": "بيت الشناشيل البغدادي على دجلة",
+    "position": [
+      0,
+      0,
+      8
+    ],
+    "components": [
+      {
+        "componentId": "comp:IQ:base",
+        "labelEn": "Tigris Shanasheel Courtyard House Walls",
+        "labelNative": "بيت الشناشيل البغدادي على دجلة",
+        "materialId": "mat:IQ:base",
+        "positionOffset": [
+          0,
+          2.3,
+          0
+        ],
+        "scale": [
+          8.4,
+          4.6,
+          5.6
+        ],
+        "damagedColorHex": "#6B655E",
+        "restoredColorHex": "#3AA6B9"
+      },
+      {
+        "componentId": "comp:IQ:roof",
+        "labelEn": "Tigris Shanasheel Courtyard House Roof",
+        "labelNative": "بيت الشناشيل البغدادي على دجلة",
+        "materialId": "mat:IQ:roof",
+        "positionOffset": [
+          0,
+          5.9,
+          0
+        ],
+        "scale": [
+          9,
+          2.8,
+          6.2
+        ],
+        "damagedColorHex": "#52525B",
+        "restoredColorHex": "#8C4A27"
+      },
+      {
+        "componentId": "comp:IQ:trim",
+        "labelEn": "Tigris Shanasheel Courtyard House Woodwork",
+        "labelNative": "بيت الشناشيل البغدادي على دجلة",
+        "materialId": "mat:IQ:trim",
+        "positionOffset": [
+          0,
+          2.6,
+          0
+        ],
+        "scale": [
+          8.8,
+          1.6,
+          6
+        ],
+        "damagedColorHex": "#57534E",
+        "restoredColorHex": "#3AA6B9"
+      }
+    ]
+  },
+  "lookdevPresetId": "lookdev:IQ",
+  "ambientAudioCueId": "audio:IQ:ambience"
+}

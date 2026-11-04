@@ -1,0 +1,7 @@
+=== STAGE V4-09 (AGENT CX04) ===
+Commit: ad092e6
+Owned Paths: apps/api/src/wallet,apps/api/src/profiles,apps/api/src/consent,packages/game-domain/rewards
+Test Command: npx tsx -e "import { ConsentService } from './apps/api/src/consent/index.ts'; import { ChildProfileService } from './apps/api/src/profiles/index.ts'; import { MiraTokenWalletService } from './apps/api/src/wallet/index.ts'; const c = new ConsentService(); const cr = c.recordParentalConsent('a1'); const p = new ChildProfileService(c); const prof = p.createPseudonymousProfile({ adultAccountId: 'a1', consentId: cr.consentId, nickname: 'MiraExplorer' }); const w = new MiraTokenWalletService(p); const e1 = w.awardQuestCompletion({ profileId: prof.profileId, adultAccountId: 'a1', questEventKey: 'FR:ch1:bakery:gather' }); const e2 = w.awardQuestCompletion({ profileId: prof.profileId, adultAccountId: 'a1', questEventKey: 'FR:ch1:bakery:gather' }); if (e1.balance !== 20 || !e2.deduplicated || e2.balance !== 20) process.exit(1);"
+Test Exit: 0
+
+DONE V4-09 ad092e6 apps/api/src/wallet/index.ts

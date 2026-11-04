@@ -1,0 +1,158 @@
+[
+  {
+    "dialogueId": "dlg:FR:mamie_claire",
+    "country": "FR",
+    "npcId": "npc:FR:mamie_claire",
+    "npcName": "Mamie Claire",
+    "role": "mentor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:FR:mamie_claire",
+        "speakerName": "Mamie Claire",
+        "portraitId": "npc:FR:mamie_claire",
+        "emotion": "warm",
+        "gestureClip": "talk_gesture",
+        "textNative": "Bienvenue dans ma boulangerie à Lyon !",
+        "textTranslit": "Bien-ve-nue dan ma bou-lan-je-rie a Lyon!",
+        "textEn": "Welcome to my bakery in Vieux Lyon! Help me restore our shutters and bake the golden galette des rois.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Let's start the chapter quest!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "FR:ch1:bakery:gather"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:FR:mamie_claire",
+        "speakerName": "Mamie Claire",
+        "portraitId": "npc:FR:mamie_claire",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "boulangerie",
+        "textTranslit": "bou-lan-je-rie",
+        "textEn": "Remember the word \"boulangerie\" (bakery) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:FR:monsieur_henri",
+    "country": "FR",
+    "npcId": "npc:FR:monsieur_henri",
+    "npcName": "Monsieur Henri",
+    "role": "vendor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:FR:monsieur_henri",
+        "speakerName": "Monsieur Henri",
+        "portraitId": "npc:FR:monsieur_henri",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "Voici les meilleures amandes et le beurre frais du marché !",
+        "textTranslit": "Vwa-si le mei-yeur za-mand e le beur fre!",
+        "textEn": "Here are the finest almonds and fresh market butter for your frangipane!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "FR:ch1:bakery:trade"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:FR:monsieur_henri",
+        "speakerName": "Monsieur Henri",
+        "portraitId": "npc:FR:monsieur_henri",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "galette",
+        "textTranslit": "ga-let",
+        "textEn": "Remember the word \"galette\" (flaky puff-pastry cake) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:FR:camille_mason",
+    "country": "FR",
+    "npcId": "npc:FR:camille_mason",
+    "npcName": "Artisan Camille",
+    "role": "artisan",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:FR:camille_mason",
+        "speakerName": "Artisan Camille",
+        "portraitId": "npc:FR:camille_mason",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "Les tuiles d’ardoise et la pierre dorée rendront la façade magnifique.",
+        "textTranslit": "Le twil dar-dwaz e la pyer do-re...",
+        "textEn": "Slate roof tiles, golden Lyon limestone, and carved oak shutters will make the bakery shine again.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "FR:ch1:bakery:build"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:FR:camille_mason",
+        "speakerName": "Artisan Camille",
+        "portraitId": "npc:FR:camille_mason",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "fève",
+        "textTranslit": "fev",
+        "textEn": "Remember the word \"fève\" (hidden porcelain charm) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:FR:lucas_musician",
+    "country": "FR",
+    "npcId": "npc:FR:lucas_musician",
+    "npcName": "Lucas le Musicien",
+    "role": "musician",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:FR:lucas_musician",
+        "speakerName": "Lucas le Musicien",
+        "portraitId": "npc:FR:lucas_musician",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "Traversez la traboule secrète, la fête commence bientôt !",
+        "textTranslit": "Tra-ver-se la tra-boul se-kret!",
+        "textEn": "Walk through the hidden Lyon traboule passage—our street celebration begins as soon as the bakery is restored!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "FR:ch1:bakery:word"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:FR:lucas_musician",
+        "speakerName": "Lucas le Musicien",
+        "portraitId": "npc:FR:lucas_musician",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "couronne",
+        "textTranslit": "kou-ron",
+        "textEn": "Remember the word \"couronne\" (golden paper crown) as you explore!"
+      }
+    ]
+  }
+]

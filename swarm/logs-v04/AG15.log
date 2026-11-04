@@ -1,0 +1,7 @@
+=== STAGE AG15 (AGENT AG15) ===
+Commit: 8a51bd0
+Owned Paths: content/levels/web/IQ
+Test Command: node -e "const l=JSON.parse(require('fs').readFileSync('content/levels/web/IQ/level.json')); if(l.country!=='IQ') process.exit(1);"
+Test Exit: 0
+
+DONE AG15 8a51bd0 content/levels/web/IQ/level.json

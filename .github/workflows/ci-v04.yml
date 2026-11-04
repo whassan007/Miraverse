@@ -1,0 +1,23 @@
+name: MiraVerse v0.4 CI & Release Gate
+on:
+  push:
+    branches: [integration/miraverse-v0.4]
+  pull_request:
+    branches: [main, integration/miraverse-v0.4]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run compile
+      - run: npm run assets:build
+      - run: npm -w apps/web run build
+      - run: npm -w apps/minecraft run build
+      - run: npm -w apps/api run build
+      - run: npx vitest run

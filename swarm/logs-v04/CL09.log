@@ -1,0 +1,8 @@
+=== STAGE CL09 (AGENT CL09) ===
+Commit: 0163180
+Owned Paths: apps/minecraft/bp,apps/minecraft/rp
+Telemetry: {"provider":"claude","elapsedMs":0}
+Test Command: node -e "JSON.parse(require('fs').readFileSync('apps/minecraft/rp/animations/mentor.animation.json')); JSON.parse(require('fs').readFileSync('apps/minecraft/rp/animation_controllers/mentor.animation_controllers.json'));"
+Test Exit: 0
+
+DONE CL09 0163180 apps/minecraft/rp/animation_controllers/mentor.animation_controllers.json

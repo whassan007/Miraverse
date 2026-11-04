@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 4,
+  "generator": "tools/procedural-props",
+  "kits": {
+    "HUB": {
+      "plazaRadius": 24,
+      "portalCount": 5,
+      "fountainRadius": 3.2
+    },
+    "FR": {
+      "buildingWidth": 8.5,
+      "buildingDepth": 6.5,
+      "roofPitchDeg": 42,
+      "shutterCount": 6,
+      "trabouleArchHeight": 3.4
+    },
+    "LB": {
+      "harborDockLength": 14,
+      "sajDomeRadius": 0.9,
+      "tripleArchWidth": 6
+    },
+    "EG": {
+      "courtyardWidth": 16,
+      "fanousHeight": 1.4,
+      "mashrabiyaWidth": 3.2
+    },
+    "IQ": {
+      "shanasheelProjection": 1.2,
+      "balconyWidth": 5.5,
+      "tigrisTerraceLength": 16
+    },
+    "KR": {
+      "hanokWidth": 9,
+      "giwaCurveLift": 0.85,
+      "onggiCount": 6
+    }
+  }
+}

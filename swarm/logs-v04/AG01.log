@@ -1,0 +1,12 @@
+=== STAGE AG01 (AGENT AG01) ===
+Timestamp: 2026-11-04T01:55:05.547Z
+Worktree: /home/wael/Code/mv-wt/AG01
+Branch: ag/AG01
+Commit: ef0daf6
+Owned Paths: art/direction
+Telemetry: {"provider":"ag","model":"gemini-4-argon-high","elapsedMs":0}
+Test Command: test -f art/direction/STYLE_BIBLE.md && test -f art/direction/palettes.json
+Test Exit Code: 0
+Test Output:
+
+DONE AG01 ef0daf6 art/direction/STYLE_BIBLE.md
