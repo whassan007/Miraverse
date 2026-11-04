@@ -1,0 +1,16 @@
+=== AGENT DX05 (DGX · W2) ===
+Timestamp: 2026-11-04T06:57:30.370Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (59.2 tok/s)
+Branch: minecraft-v10/DX05
+Agent Commit SHA: 409cf9a
+Integration Merge SHA: d7c145e
+Owned Paths: apps/minecraft/tools/checks/EG/
+Test Command: node apps/minecraft/tools/checks/EG/check-eg.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/checks/EG/check-eg.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+PASS: DX05 verified EG district exteriors (5), interiors (3), NPCs (4), anchors (11), and restoration (3 stages).
+
+DONE DX05 409cf9a apps/minecraft/tools/checks/EG/check-eg.mjs

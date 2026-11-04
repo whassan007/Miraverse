@@ -738,12 +738,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX05.md",
       "branch": "minecraft-v10/DX05",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX05",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "409cf9a",
       "test_command": "node apps/minecraft/tools/checks/EG/check-eg.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tools/checks/EG/check-eg.mjs"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (59.2 tok/s)",
       "blockers": []
     },
     {
