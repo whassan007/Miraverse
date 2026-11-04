@@ -1884,13 +1884,17 @@
       "acceptance": "Profiling report, asset budget and lower-end hardware acceptance",
       "branch": "minecraft-global/DX19",
       "worktree": "/home/wael/Code/mv-wt-mcg/DX19",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 2,
+      "commit_sha": "0321233",
+      "integration_sha": "4a2c715",
+      "runtime_environment": "DGX Spark (qwen/qwen3-coder-next, 59.14 tok/s, maxConcurrency=1) | NVIDIA GB10, 580.178.04, 42, 0 % | Total=121GiB Used=102GiB Free=1GiB Available=19GiB",
+      "modified_files": [
+        "apps/minecraft/tools/optimize/profile-budget.mjs"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/tools/optimize/profile-budget.mjs"
+      ],
       "report_path": "reports/minecraft-global/agents/DX19.md",
       "log_path": "swarm/minecraft-global/logs/DX19.log",
       "blockers": []
