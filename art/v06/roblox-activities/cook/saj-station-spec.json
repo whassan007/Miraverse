@@ -1,0 +1,31 @@
+{
+  "stationId": "lb_saj_station_v06",
+  "dishId": "manoushe_zaatar",
+  "safetyRule": "Teta Nahla operates the hot domed saj oven; player prepares dough, olive oil, and zaatar topping.",
+  "steps": [
+    {
+      "order": 1,
+      "id": "roll_dough",
+      "prompt": "Roll fresh flatbread dough on the wooden board",
+      "animClip": "mv_cook_saj_fold"
+    },
+    {
+      "order": 2,
+      "id": "brush_olive_oil",
+      "prompt": "Brush golden Byblos olive oil across the dough",
+      "animClip": "mv_interact_gather"
+    },
+    {
+      "order": 3,
+      "id": "sprinkle_zaatar_sumac",
+      "prompt": "Sprinkle wild mountain za'atar, sumac, and toasted sesame",
+      "animClip": "mv_interact_gather"
+    },
+    {
+      "order": 4,
+      "id": "teta_saj_bake",
+      "prompt": "Hand to Teta Nahla to bake on the warm domed saj",
+      "animClip": "mv_celebrate_stamp"
+    }
+  ]
+}
