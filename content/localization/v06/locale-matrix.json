@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "v06.1",
+  "humanNativeSpeakerSignoffStatus": "PENDING_FINAL_REVIEW",
+  "supportedLocales": [
+    {
+      "code": "en",
+      "dir": "ltr",
+      "primaryCta": "Play free on Roblox",
+      "bedrockCta": "Play in Minecraft Bedrock"
+    },
+    {
+      "code": "fr",
+      "dir": "ltr",
+      "primaryCta": "Jouer gratuitement sur Roblox",
+      "bedrockCta": "Jouer dans Minecraft Bedrock"
+    },
+    {
+      "code": "ar-LB",
+      "dir": "rtl",
+      "primaryCta": "العب مجاناً على روبلوكس",
+      "bedrockCta": "العب في ماينكرافت بيدروك"
+    },
+    {
+      "code": "ar-EG",
+      "dir": "rtl",
+      "primaryCta": "العب مجاناً على روبلوكس",
+      "bedrockCta": "العب في ماينكرافت بيدروك"
+    },
+    {
+      "code": "ar-IQ",
+      "dir": "rtl",
+      "primaryCta": "العب مجاناً على روبلوكس",
+      "bedrockCta": "العب في ماينكرافت بيدروك"
+    },
+    {
+      "code": "ko",
+      "dir": "ltr",
+      "primaryCta": "Roblox에서 무료로 플레이",
+      "bedrockCta": "Minecraft Bedrock에서 플레이"
+    }
+  ]
+}
