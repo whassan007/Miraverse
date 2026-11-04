@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "v06.1",
+  "countries": [
+    "LB",
+    "EG",
+    "IQ",
+    "KR",
+    "FR"
+  ],
+  "challengeTypes": [
+    "gather",
+    "trade",
+    "cook",
+    "build",
+    "word"
+  ],
+  "flagshipSlice": {
+    "countryId": "LB",
+    "title": "Lebanon: Summer at Teta's",
+    "mentor": "Teta Nahla",
+    "hero": "Mira",
+    "dish": "Man'oushe Za'atar"
+  }
+}
