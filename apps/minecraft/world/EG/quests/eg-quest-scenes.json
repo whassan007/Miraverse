@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "eg_quest_eg01",
+    "chapterId": "EG01",
+    "title": "A Darkened Courtyard",
+    "kind": "navigation_and_gathering",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 370,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:eg_cairo_mashrabiya",
+    "rewardArtifactId": "eg_lantern_frame"
+  },
+  {
+    "anchorId": "eg_quest_eg02",
+    "chapterId": "EG02",
+    "title": "The Fanous Workshop",
+    "kind": "craft_and_assembly",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 382,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:eg_fanous_lantern_block",
+    "rewardArtifactId": "eg_glass_star"
+  },
+  {
+    "anchorId": "eg_quest_eg03",
+    "chapterId": "EG03",
+    "title": "The Market at Dusk",
+    "kind": "weighted_trade",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 394,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:eg_khan_arch_stone",
+    "rewardArtifactId": "eg_market_scale"
+  },
+  {
+    "anchorId": "eg_quest_eg04",
+    "chapterId": "EG04",
+    "title": "Koshari for Everyone",
+    "kind": "cooking_sequence",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 406,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:eg_courtyard_fountain_tile",
+    "rewardArtifactId": "eg_koshari_bowl"
+  },
+  {
+    "anchorId": "eg_quest_eg05",
+    "chapterId": "EG05",
+    "title": "Stories of the Lantern",
+    "kind": "folklore_comparison",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 418,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:eg_koshari_cauldron_block",
+    "rewardArtifactId": "eg_story_flame"
+  },
+  {
+    "anchorId": "eg_quest_eg06",
+    "chapterId": "EG06",
+    "title": "The City of Light",
+    "kind": "accessible_route_design",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 430,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:eg_carved_cedar_door_frame",
+    "rewardArtifactId": "eg_cairo_light_stamp"
+  }
+]
