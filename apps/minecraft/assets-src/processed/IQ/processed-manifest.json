@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "IQ",
+  "countryName": "Iraq",
+  "region": "Baghdad",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 57.44,
+    "hardware": "NVIDIA GB10, 580.178.04, 44, 0 % | Total=121GiB Used=100GiB Free=4GiB Available=21GiB",
+    "notes": "Here's a concise summary of **visual material and texture QA checks** for the *Iraq (Baghdad)* region in a **Minecraft Bedrock Resource Pack**, covering **8 custom blocks** and **6 chapter artifacts**: --- ### ✅ **Visual & Texture QA Checklist Summary** #### *"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/IQ/items/iq_house_of_wisdom_book.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:iq_shanasheel_oriel_screen",
+      "shortName": "iq_shanasheel_oriel_screen",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/blocks/iq_shanasheel_oriel_screen.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:iq_tigris_glazed_brick",
+      "shortName": "iq_tigris_glazed_brick",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/blocks/iq_tigris_glazed_brick.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:iq_baghdadi_courtyard_arch",
+      "shortName": "iq_baghdadi_courtyard_arch",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/blocks/iq_baghdadi_courtyard_arch.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:iq_kleicha_brick_oven",
+      "shortName": "iq_kleicha_brick_oven",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/blocks/iq_kleicha_brick_oven.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:iq_turquoise_muqarnas",
+      "shortName": "iq_turquoise_muqarnas",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/blocks/iq_turquoise_muqarnas.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:iq_palm_weave_mat",
+      "shortName": "iq_palm_weave_mat",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/blocks/iq_palm_weave_mat.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:iq_copper_samovar_stand",
+      "shortName": "iq_copper_samovar_stand",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/blocks/iq_copper_samovar_stand.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:iq_calligraphy_frieze",
+      "shortName": "iq_calligraphy_frieze",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/blocks/iq_calligraphy_frieze.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "iq_bookseller_seal",
+      "chapterId": "IQ01",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/items/iq_bookseller_seal.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "iq_scholars_astrolabe",
+      "chapterId": "IQ02",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/items/iq_scholars_astrolabe.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "iq_translation_scroll",
+      "chapterId": "IQ03",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/items/iq_translation_scroll.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "iq_kleicha_mold",
+      "chapterId": "IQ04",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/items/iq_kleicha_mold.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "iq_courtyard_lattice",
+      "chapterId": "IQ05",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/items/iq_courtyard_lattice.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "iq_knowledge_keeper_stamp",
+      "chapterId": "IQ06",
+      "texturePath": "apps/minecraft/assets-src/processed/IQ/items/iq_knowledge_keeper_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}
