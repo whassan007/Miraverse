@@ -1,6 +1,7 @@
 --!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
+local ByblosWorld = require(script.Parent.world.ByblosWorld)
 
 local MapBuilder = {}
 
@@ -81,7 +82,7 @@ local function loadContentPacks(): { [string]: any }
 	if not sharedFolder then
 		return {}
 	end
-	local contentMod = sharedFolder:FindFirstChild("ContentData") or sharedFolder:FindFirstChild("Content")
+	local contentMod = sharedFolder:FindFirstChild("Packs")
 	if contentMod and contentMod:IsA("ModuleScript") then
 		local ok, data = pcall(require, contentMod)
 		if ok and type(data) == "table" then
@@ -447,6 +448,12 @@ function MapBuilder.build(): Folder
 
 	for i, cc in ipairs(COUNTRIES) do
 		buildCountryPlaza(mapFolder, i, cc, metas[cc])
+		if cc == "LB" then
+			local plaza = mapFolder:FindFirstChild("Plaza_LB")
+			if plaza then
+				ByblosWorld.build(plaza, Vector3.new(i * 160, 10, 0))
+			end
+		end
 	end
 
 	mapFolder.Parent = Workspace
