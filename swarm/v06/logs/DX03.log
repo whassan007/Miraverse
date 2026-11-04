@@ -1,0 +1,18 @@
+[DX03] Wave=W1 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:30:16.710Z
+End:   2026-11-04T05:30:19.910Z
+Branch: v06/DX03 -> Commit: c4bf66a
+Owned Paths: tests/fixtures/content-v06/
+Required Evidence: tests/fixtures/content-v06/parity-fixtures.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":74,"completion_tokens":141,"total_tokens":215,"latency_ms":2489}
+Acceptance Output:
+$ npx vitest run tests/content/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/content/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:30:19
+   Duration  219ms (transform 59ms, setup 0ms, collect 66ms, tests 6ms, environment 0ms, prepare 28ms)
+DONE DX03 c4bf66a tests/fixtures/content-v06/parity-fixtures.json

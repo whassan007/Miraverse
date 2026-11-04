@@ -1,0 +1,18 @@
+[AG03] Wave=W1 Backend=antigravity Model=gemini-4-argon
+Start: 2026-11-04T05:29:57.997Z
+End:   2026-11-04T05:29:58.833Z
+Branch: v06/AG03 -> Commit: 2f92a4f
+Owned Paths: art/v06/animations/, art/v06/animations/avatar-packs/
+Required Evidence: art/v06/animations/avatar-packs/animation-manifest.json
+Telemetry: {"mode":"antigravity","model":"gemini-4-argon"}
+Acceptance Output:
+$ npx vitest run tests/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:29:58
+   Duration  214ms (transform 62ms, setup 0ms, collect 69ms, tests 6ms, environment 0ms, prepare 38ms)
+DONE AG03 2f92a4f art/v06/animations/avatar-packs/animation-manifest.json

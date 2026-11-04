@@ -1,0 +1,18 @@
+[DX01] Wave=W0 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:29:50.136Z
+End:   2026-11-04T05:29:54.418Z
+Branch: v06/DX01 -> Commit: 0b27205
+Owned Paths: reports/v06/dgx-inventory/
+Required Evidence: reports/v06/dgx-inventory/INVENTORY.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":73,"completion_tokens":209,"total_tokens":282,"latency_ms":3614}
+Acceptance Output:
+$ npx vitest run tests/scaffold.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/scaffold.test.ts (3 tests) 5ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  21:29:54
+   Duration  195ms (transform 59ms, setup 0ms, collect 64ms, tests 5ms, environment 0ms, prepare 36ms)
+DONE DX01 0b27205 reports/v06/dgx-inventory/INVENTORY.json

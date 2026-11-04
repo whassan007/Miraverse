@@ -1,0 +1,18 @@
+[AG02] Wave=W1 Backend=antigravity Model=gemini-4-argon
+Start: 2026-11-04T05:29:57.150Z
+End:   2026-11-04T05:29:57.995Z
+Branch: v06/AG02 -> Commit: c99b0e9
+Owned Paths: art/v06/characters/, art/v06/characters/avatar-marketplace/
+Required Evidence: art/v06/characters/avatar-marketplace/collection-manifest.json
+Telemetry: {"mode":"antigravity","model":"gemini-4-argon"}
+Acceptance Output:
+$ npx vitest run tests/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:29:57
+   Duration  217ms (transform 67ms, setup 0ms, collect 75ms, tests 6ms, environment 0ms, prepare 29ms)
+DONE AG02 c99b0e9 art/v06/characters/avatar-marketplace/collection-manifest.json
