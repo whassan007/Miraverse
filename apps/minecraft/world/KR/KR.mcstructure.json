@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "structureId": "miraverse:kr_district",
+  "size": [
+    96,
+    32,
+    96
+  ],
+  "origin": [
+    800,
+    64,
+    0
+  ],
+  "palette": [
+    "miraverse:kr_hanji_sliding_screen",
+    "miraverse:kr_giwa_eave_tile",
+    "miraverse:kr_pine_beam_bracket",
+    "miraverse:kr_songpyeon_steamer_block"
+  ]
+}
