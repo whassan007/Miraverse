@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "UA",
+  "countryName": "Ukraine",
+  "region": "Kyiv founding hills / community music square",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 57.14,
+    "hardware": "NVIDIA GB10, 580.178.04, 48, 0 % | Total=121GiB Used=101GiB Free=0GiB Available=20GiB",
+    "notes": "Here's a concise summary of **visual material and texture QA checks** for a Minecraft Bedrock resource pack focused on the *Kyiv founding hills / community music square* theme—featuring **8 custom blocks** and **6 chapter artifacts**, designed to reflect histo"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/UA/items/ua_bandura_memory_charm.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:ua_kyiv_hill_timber",
+      "shortName": "ua_kyiv_hill_timber",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/blocks/ua_kyiv_hill_timber.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ua_embroidered_rushnyk_banner",
+      "shortName": "ua_embroidered_rushnyk_banner",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/blocks/ua_embroidered_rushnyk_banner.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ua_bandura_luthier_bench",
+      "shortName": "ua_bandura_luthier_bench",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/blocks/ua_bandura_luthier_bench.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ua_cobblestone_music_stage",
+      "shortName": "ua_cobblestone_music_stage",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/blocks/ua_cobblestone_music_stage.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ua_carved_oak_archway",
+      "shortName": "ua_carved_oak_archway",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/blocks/ua_carved_oak_archway.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ua_sunflower_garden_border",
+      "shortName": "ua_sunflower_garden_border",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/blocks/ua_sunflower_garden_border.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ua_river_footbridge_stone",
+      "shortName": "ua_river_footbridge_stone",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/blocks/ua_river_footbridge_stone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ua_archive_display_case",
+      "shortName": "ua_archive_display_case",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/blocks/ua_archive_display_case.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "ua_founders_river_map",
+      "chapterId": "UA01",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/items/ua_founders_river_map.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ua_river_bridge_plaque",
+      "chapterId": "UA02",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/items/ua_river_bridge_plaque.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ua_bandura_string",
+      "chapterId": "UA03",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/items/ua_bandura_string.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ua_dumy_page",
+      "chapterId": "UA04",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/items/ua_dumy_page.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ua_carved_music_stand",
+      "chapterId": "UA05",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/items/ua_carved_music_stand.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ua_ukraine_song_stamp",
+      "chapterId": "UA06",
+      "texturePath": "apps/minecraft/assets-src/processed/UA/items/ua_ukraine_song_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}
