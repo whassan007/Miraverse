@@ -1,0 +1,15 @@
+/* Device-local faces keep every font request offline. System fallbacks cover Arabic and Korean. */
+@font-face {
+  font-family: 'Mira Sans';
+  src: local('Arial');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mira Sans';
+  src: local('Arial Bold');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
