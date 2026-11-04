@@ -307,13 +307,21 @@
       "acceptance": "Hidden village, changing routes, moon courtyard and 6 scenes",
       "branch": "minecraft-global/AG08",
       "worktree": "/home/wael/Code/mv-wt-mcg/AG08",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "4f0f814",
+      "integration_sha": "59cdcc9",
+      "runtime_environment": "Antigravity World District Lead (CN · Peach Blossom Spring, Wuling-inspired setting)",
+      "modified_files": [
+        "apps/minecraft/world/CN/district-v11.json",
+        "apps/minecraft/world/CN/quests/cn-quest-scenes.json",
+        "apps/minecraft/world/CN/structures/cn_district_v11.mcstructure.json"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/world/CN/district-v11.json",
+        "apps/minecraft/world/CN/structures/cn_district_v11.mcstructure.json",
+        "apps/minecraft/world/CN/quests/cn-quest-scenes.json"
+      ],
       "report_path": "reports/minecraft-global/agents/AG08.md",
       "log_path": "swarm/minecraft-global/logs/AG08.log",
       "blockers": []
