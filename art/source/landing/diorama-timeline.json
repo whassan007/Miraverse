@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 4,
+  "defaultCamera": {
+    "alpha": -1.57,
+    "beta": 1.16,
+    "radius": 18,
+    "target": [
+      0,
+      1.6,
+      0
+    ]
+  },
+  "reducedMotionStaticCamera": {
+    "alpha": -1.57,
+    "beta": 1.2,
+    "radius": 19,
+    "target": [
+      0,
+      1.6,
+      0
+    ]
+  },
+  "vignettes": [
+    {
+      "country": "FR",
+      "cameraAlpha": -1.57,
+      "title": "France · Vieux Lyon",
+      "mentor": "Mamie Claire",
+      "teaser": "Restore the Boulangerie du Soleil and bake a golden Galette des Rois."
+    },
+    {
+      "country": "LB",
+      "cameraAlpha": -2.82,
+      "title": "Lebanon · Byblos Harbor",
+      "mentor": "Teta Nahla",
+      "teaser": "Rebuild the limestone harbor arch and bake warm za'atar man'oushe on the saj."
+    },
+    {
+      "country": "EG",
+      "cameraAlpha": -4.08,
+      "title": "Egypt · Cairo Courtyard",
+      "mentor": "Teta Samira",
+      "teaser": "Hang glowing brass fanous lanterns and layer spiced Cairene koshari."
+    },
+    {
+      "country": "IQ",
+      "cameraAlpha": -5.34,
+      "title": "Iraq · Baghdad Riverfront",
+      "mentor": "Bibi Amal",
+      "teaser": "Restore carved wooden shanasheel balconies and stamp cardamom date kleicha."
+    },
+    {
+      "country": "KR",
+      "cameraAlpha": -6.59,
+      "title": "South Korea · Jeonju Hanok",
+      "mentor": "Halmeoni",
+      "teaser": "Repair curved giwa roof tiles and steam pine-scented Chuseok songpyeon."
+    }
+  ]
+}
