@@ -4,7 +4,7 @@
  */
 import { AdultAuthService, type AdultSessionRecord } from './auth/index';
 import { BillingService, signWebhookPayloadForTest, verifyStripeWebhookSignature } from './billing/index';
-import { COMMERCE_FLAGS, getCatalogByCategory, getCatalogItem, getPublicCatalog, resolveParentPurchasableSku } from './catalog/index';
+import { COMMERCE_FLAGS, SERVER_CATALOG, listPublicCatalog, resolveParentPurchasableSku } from './catalog/index';
 import { ConsentService } from './consent/index';
 import { EntitlementService, type EntitlementRecord } from './entitlements/index';
 import { GiftService, hashGiftCode, redactGiftCodeInText, type StoredGiftRecord } from './gifts/index';
@@ -22,9 +22,8 @@ export {
   ChildProfileService,
   MiraTokenWalletService,
   OrderService,
-  getCatalogByCategory,
-  getCatalogItem,
-  getPublicCatalog,
+  SERVER_CATALOG,
+  listPublicCatalog,
   hashGiftCode,
   redactGiftCodeInText,
   resolveParentPurchasableSku,
@@ -107,8 +106,7 @@ export class MiraVerseCommerceApi {
       return {
         status: 200,
         body: {
-          catalog: getPublicCatalog(),
-          byCategory: getCatalogByCategory(),
+          catalog: listPublicCatalog(),
           flags: COMMERCE_FLAGS,
         },
       };
