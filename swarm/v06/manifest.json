@@ -1,0 +1,2142 @@
+{
+  "version": "0.7.0-option-a",
+  "integration_branch": "integration/miraverse-v0.6-option-a",
+  "generated_at": "2026-11-04T05:27:05.417Z",
+  "total_agents": 65,
+  "concurrency_ceilings": {
+    "antigravity": 4,
+    "claude": 3,
+    "codex": 3,
+    "dgx-spark": 1
+  },
+  "agents": [
+    {
+      "id": "CL01",
+      "backend": "claude",
+      "wave": "W0",
+      "objective": "Freeze Option A user journeys, RC1/RC2/RC3 acceptance, country scope, website launch truthfulness, art/child safety criteria.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [],
+      "owned_paths": [
+        "docs/v06/product/"
+      ],
+      "read_paths": [
+        "reports/v06/BASELINE.md",
+        "apps/web/src/App.tsx"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "docs/v06/product/OPTION_A_DECISION_RECORD.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL01",
+      "branch": "v06/CL01",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL01.log",
+      "blocker": null
+    },
+    {
+      "id": "CL02",
+      "backend": "claude",
+      "wave": "W1",
+      "objective": "Versioned shared country/story/quest schema, five challenge types, native identifiers, quest event envelope, migration from original schema.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [
+        "CL01",
+        "CX01",
+        "AG01",
+        "DX01"
+      ],
+      "owned_paths": [
+        "packages/contracts/v06/"
+      ],
+      "read_paths": [
+        "packages/contracts/index.ts",
+        "packages/content/schema.ts"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/contracts/contracts.test.ts"
+      ],
+      "required_evidence": "packages/contracts/v06/index.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL02",
+      "branch": "v06/CL02",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL02.log",
+      "blocker": null
+    },
+    {
+      "id": "CL03",
+      "backend": "claude",
+      "wave": "W1",
+      "objective": "Server entry/bootstrap, shared services, safe remotes, world hub arrival orchestration, native lifecycle + SocialService adapter, invitation eligibility and session orchestration.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [
+        "CL01",
+        "CX01"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/Foundation/",
+        "apps/roblox/src/server/Foundation/Social/"
+      ],
+      "read_paths": [
+        "apps/roblox/default.project.json",
+        "apps/roblox/src/server/Main.server.luau"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/server/Foundation/Social/SocialInvitationService.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL03",
+      "branch": "v06/CL03",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL03.log",
+      "blocker": null
+    },
+    {
+      "id": "CL04",
+      "backend": "claude",
+      "wave": "W2",
+      "objective": "Data-driven native quest state machine, objective transitions, validation, idempotent rewards, five challenge adapters, end-to-end Byblos quest + shared objective and individual reward semantics for cooperative quest.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [
+        "CL02",
+        "CL03",
+        "CX05"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/QuestEngine/",
+        "apps/roblox/src/server/QuestEngine/Coop/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/shared/Packs.luau",
+        "packages/content/packs/LB.json"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/server/QuestEngine/Coop/CoopQuestCoordinator.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL04",
+      "branch": "v06/CL04",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL04.log",
+      "blocker": null
+    },
+    {
+      "id": "CL05",
+      "backend": "claude",
+      "wave": "W2",
+      "objective": "NPC interaction, authored localized mentor dialogue (Teta Nahla & country mentors), proximity validation, quest assignment and response animations.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "dependencies": [
+        "CL03",
+        "CL04"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/NPCs/"
+      ],
+      "read_paths": [
+        "packages/content/packs/LB.json",
+        "packages/content/stories/ar-LB.json"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/server/NPCs/MentorDialogueService.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL05",
+      "branch": "v06/CL05",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL05.log",
+      "blocker": null
+    },
+    {
+      "id": "CL06",
+      "backend": "claude",
+      "wave": "W2",
+      "objective": "Bounded modular construction: placement snapping, plot ownership, inventory costs, save deltas, anti-abuse, restoration sequence + collaborative plot permissions, revocation and server-side ownership.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [
+        "CL03",
+        "CL04",
+        "CX05"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/Building/",
+        "apps/roblox/src/server/Building/Collaboration/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/shared/Challenges/Build.luau"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/server/Building/Collaboration/CollaborativePlotService.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL06",
+      "branch": "v06/CL06",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL06.log",
+      "blocker": null
+    },
+    {
+      "id": "CL07",
+      "backend": "claude",
+      "wave": "W2",
+      "objective": "Native Cook, Gather, Trade, Word gameplay adapters in Luau with spatial/object events, kid-friendly outcomes and tests. No React minigame panels.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "dependencies": [
+        "CL04",
+        "CX05"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/Activities/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/shared/Challenges/Cook.luau",
+        "apps/roblox/src/shared/Challenges/Gather.luau"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/server/Activities/ActivityAdapters.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL07",
+      "branch": "v06/CL07",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL07.log",
+      "blocker": null
+    },
+    {
+      "id": "CL08",
+      "backend": "claude",
+      "wave": "W2",
+      "objective": "DataStore versioning, safe restore/retry, passport, per-player earned Mira Tokens, cosmetics, replay prevention + cosmetic ownership/loadouts, item status and reward idempotency.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [
+        "CL03",
+        "CL04",
+        "CX05"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/Progression/",
+        "apps/roblox/src/server/Progression/Avatar/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/server/core/SecurityAndPersistence.luau"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/server/Progression/Avatar/AvatarLoadoutService.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL08",
+      "branch": "v06/CL08",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL08.log",
+      "blocker": null
+    },
+    {
+      "id": "CL09",
+      "backend": "claude",
+      "wave": "W3",
+      "objective": "Rojo build reproducibility, Studio validation checklist, staging/publishing procedure, place IDs from actual config + Marketplace candidate validation, creator-only submission checklist and verified IDs.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "dependencies": [
+        "CL03",
+        "CL08",
+        "AG02"
+      ],
+      "owned_paths": [
+        "apps/roblox/tools/release/",
+        "apps/roblox/tools/release/avatar-marketplace/"
+      ],
+      "read_paths": [
+        "apps/roblox/default.project.json"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/tools/release/avatar-marketplace/MARKETPLACE_CANDIDATE_PIPELINE.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL09",
+      "branch": "v06/CL09",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL09.log",
+      "blocker": null
+    },
+    {
+      "id": "CL10",
+      "backend": "claude",
+      "wave": "W4",
+      "objective": "Stable Bedrock API bootstrap, lifecycle, game modes, world state/dynamic properties and external pack source.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "dependencies": [
+        "CL02",
+        "CX02"
+      ],
+      "owned_paths": [
+        "apps/minecraft/scripts/core/"
+      ],
+      "read_paths": [
+        "apps/minecraft/bp/manifest.json",
+        "apps/minecraft/scripts/main.ts"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/minecraft run build"
+      ],
+      "required_evidence": "apps/minecraft/scripts/core/v06-bootstrap.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL10",
+      "branch": "v06/CL10",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL10.log",
+      "blocker": null
+    },
+    {
+      "id": "CL11",
+      "backend": "claude",
+      "wave": "W4",
+      "objective": "Minecraft-native five quest adapters, actual block placement checks, Bedrock forms, recipe/items and persisted Byblos completion; then data-driven country expansion.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [
+        "CL10",
+        "AG19"
+      ],
+      "owned_paths": [
+        "apps/minecraft/scripts/challenges/"
+      ],
+      "read_paths": [
+        "apps/minecraft/scripts/generated/packs.ts",
+        "apps/minecraft/structures/LB.mcstructure.json"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/minecraft run build"
+      ],
+      "required_evidence": "apps/minecraft/scripts/challenges/v06-byblos-challenges.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL11",
+      "branch": "v06/CL11",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL11.log",
+      "blocker": null
+    },
+    {
+      "id": "CL12",
+      "backend": "claude",
+      "wave": "W4",
+      "objective": "Pack and world packaging, supported API manifest constraints, UUID checks, import verification procedure, .mcworld/.mcaddon outputs, version/compatibility.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "dependencies": [
+        "CL10",
+        "CL11",
+        "DX13"
+      ],
+      "owned_paths": [
+        "apps/minecraft/tools/release/"
+      ],
+      "read_paths": [
+        "tools/pack/mcaddon.mjs",
+        "apps/minecraft/world/WORLD_EXPORT_STATUS.md"
+      ],
+      "acceptance_commands": [
+        "npm run pack:mcaddon"
+      ],
+      "required_evidence": "apps/minecraft/tools/release/PACKAGE_VERIFICATION.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL12",
+      "branch": "v06/CL12",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL12.log",
+      "blocker": null
+    },
+    {
+      "id": "CL13",
+      "backend": "claude",
+      "wave": "W0",
+      "objective": "Cross-platform child privacy and community risk boundaries, platform policies, age-appropriate experience, Roblox native chat settings analysis + Friends/community safety and age/communication restrictions.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [],
+      "owned_paths": [
+        "docs/v06/safety/",
+        "docs/v06/safety/roblox-social/"
+      ],
+      "read_paths": [
+        "docs/policy/safety/COPPA_PRIVACY_ARCHITECTURE.md",
+        "apps/roblox/src/server/core/SecurityAndPersistence.luau"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "docs/v06/safety/roblox-social/ROBLOX_SOCIAL_AND_COMMUNITY_SAFETY.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL13",
+      "branch": "v06/CL13",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL13.log",
+      "blocker": null
+    },
+    {
+      "id": "CL14",
+      "backend": "claude",
+      "wave": "W1",
+      "objective": "Precisely define separate native/platform and adult-web economies, web-only gift SKU semantics, Stripe order lifecycle and prohibited account-sync assumptions.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [
+        "CL01",
+        "CL13"
+      ],
+      "owned_paths": [
+        "docs/v06/commerce/"
+      ],
+      "read_paths": [
+        "packages/contracts/commerce/index.ts",
+        "apps/api/src/index.ts"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/e2e/commerce/commerce-c01-c20.test.ts"
+      ],
+      "required_evidence": "docs/v06/commerce/OPTION_A_ECONOMY_BOUNDARIES.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL14",
+      "branch": "v06/CL14",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL14.log",
+      "blocker": null
+    },
+    {
+      "id": "CL15",
+      "backend": "claude",
+      "wave": "W6",
+      "objective": "Independent full review, all three deliverables, play footage integrity, legal/commercial open approvals, exact pass/fail evidence, release recommendation.",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "dependencies": [
+        "CL09",
+        "CL12",
+        "CX13",
+        "CX14",
+        "AG20"
+      ],
+      "owned_paths": [
+        "reports/v06/independent-release/"
+      ],
+      "read_paths": [
+        "reports/v06/BASELINE.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run"
+      ],
+      "required_evidence": "reports/v06/independent-release/INDEPENDENT_RELEASE_REVIEW.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/CL15",
+      "branch": "v06/CL15",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CL15.log",
+      "blocker": null
+    },
+    {
+      "id": "CX01",
+      "backend": "codex",
+      "wave": "W0",
+      "objective": "Actual existing repo/branch/test audit, source reuse map, compile/run baseline and risk register; document real failures and priorities.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [],
+      "owned_paths": [
+        "reports/v06/engineering-audit/"
+      ],
+      "read_paths": [
+        "package.json",
+        "reports/v06/BASELINE.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/scaffold.test.ts"
+      ],
+      "required_evidence": "reports/v06/engineering-audit/ENGINEERING_AUDIT.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX01",
+      "branch": "v06/CX01",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX01.log",
+      "blocker": null
+    },
+    {
+      "id": "CX02",
+      "backend": "codex",
+      "wave": "W1",
+      "objective": "Validated exports to Roblox Luau and Bedrock/JS formats, schema compatibility, deterministic generation and five-country content tests.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL01",
+        "CX01",
+        "DX01"
+      ],
+      "owned_paths": [
+        "tools/content-compiler/v06/"
+      ],
+      "read_paths": [
+        "tools/compiler/index.ts",
+        "tools/compiler/roblox.ts",
+        "tools/compiler/minecraft.ts"
+      ],
+      "acceptance_commands": [
+        "npm run compile"
+      ],
+      "required_evidence": "tools/content-compiler/v06/index.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX02",
+      "branch": "v06/CX02",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX02.log",
+      "blocker": null
+    },
+    {
+      "id": "CX03",
+      "backend": "codex",
+      "wave": "W3",
+      "objective": "Native quest/build/persistence test harness, Luau unit/static test wiring, Studio manual/test instructions + multi-account invite, rejoin, cooperative quest and avatar integration tests.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL03",
+        "CL04",
+        "CL06",
+        "CL08",
+        "CX05"
+      ],
+      "owned_paths": [
+        "tests/roblox/integration/",
+        "tests/roblox/integration/social-avatar/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/server/Foundation/",
+        "apps/roblox/src/server/QuestEngine/"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/roblox/integration/"
+      ],
+      "required_evidence": "tests/roblox/integration/social-avatar/social-avatar-integration.test.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX03",
+      "branch": "v06/CX03",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX03.log",
+      "blocker": null
+    },
+    {
+      "id": "CX04",
+      "backend": "codex",
+      "wave": "W3",
+      "objective": "Adversarial remote/receipt/quest/build tests: spoofed objective, duplicate reward, invalid range/plot, abuse rate, data isolation + adversarial invite, reward, ownership, permission and race-condition tests.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL03",
+        "CL04",
+        "CL06",
+        "CL08",
+        "CX03"
+      ],
+      "owned_paths": [
+        "tests/roblox/security/",
+        "tests/roblox/security/social-avatar/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/server/core/SecurityAndPersistence.luau",
+        "apps/roblox/src/server/Building/"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/roblox/security/"
+      ],
+      "required_evidence": "tests/roblox/security/social-avatar/social-avatar-security.test.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX04",
+      "branch": "v06/CX04",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX04.log",
+      "blocker": null
+    },
+    {
+      "id": "CX05",
+      "backend": "codex",
+      "wave": "W1",
+      "objective": "Shared Roblox item, inventory, object marker and replication contracts used by server/client, plus client-safe generated data access + typed replicated social/avatar contracts, sanitized data.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL02",
+        "CX02"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/shared/Systems/",
+        "apps/roblox/src/shared/Systems/SocialAvatar/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/shared/Packs.luau"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/shared/Systems/SocialAvatar/SocialAvatarContracts.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX05",
+      "branch": "v06/CX05",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX05.log",
+      "blocker": null
+    },
+    {
+      "id": "CX06",
+      "backend": "codex",
+      "wave": "W2",
+      "objective": "Native controller/camera interaction polish, platform-aware input prompts, accessibility toggles, context action and mobile/gamepad behavior.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "medium",
+      "dependencies": [
+        "CX05",
+        "CL03"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/client/Controls/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/client/AdventureClient.client.luau"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/client/Controls/NativeControllerAdapter.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX06",
+      "branch": "v06/CX06",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX06.log",
+      "blocker": null
+    },
+    {
+      "id": "CX07",
+      "backend": "codex",
+      "wave": "W1",
+      "objective": "Route shells and redirect compatibility, distinct public/player launch/adult boundaries, locale routing, missing URL handling and 404. Never embed new full 3D game.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL01",
+        "AG15"
+      ],
+      "owned_paths": [
+        "apps/web/src/app/v06/"
+      ],
+      "read_paths": [
+        "apps/web/src/App.tsx"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/web run build"
+      ],
+      "required_evidence": "apps/web/src/app/v06/routes.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX07",
+      "branch": "v06/CX07",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX07.log",
+      "blocker": null
+    },
+    {
+      "id": "CX08",
+      "backend": "codex",
+      "wave": "W2",
+      "objective": "Real Roblox share-link launcher, approved destination metadata, safe links, app-install fallback, Minecraft status/download links and checksum display. No fake progress sync.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CX07",
+        "CL01"
+      ],
+      "owned_paths": [
+        "apps/web/src/launch/"
+      ],
+      "read_paths": [
+        "apps/web/src/pages/Play.tsx",
+        "apps/minecraft/world/WORLD_EXPORT_STATUS.md"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/web run build"
+      ],
+      "required_evidence": "apps/web/src/launch/RobloxLaunchPage.tsx",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX08",
+      "branch": "v06/CX08",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX08.log",
+      "blocker": null
+    },
+    {
+      "id": "CX09",
+      "backend": "codex",
+      "wave": "W1",
+      "objective": "Adult-only auth adapter and authorization, CSRF/session protections, accounts/parent profile and no assumed Roblox account link.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL13",
+        "CL14"
+      ],
+      "owned_paths": [
+        "apps/api/src/identity/"
+      ],
+      "read_paths": [
+        "apps/api/src/auth/index.ts",
+        "apps/api/src/consent/index.ts"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/api run build"
+      ],
+      "required_evidence": "apps/api/src/identity/index.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX09",
+      "branch": "v06/CX09",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX09.log",
+      "blocker": null
+    },
+    {
+      "id": "CX10",
+      "backend": "codex",
+      "wave": "W2",
+      "objective": "Stripe hosted test Checkout, durable order/webhook handling, server pricing, idempotent confirmation/refund, real deliverable gating.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL14",
+        "CX09"
+      ],
+      "owned_paths": [
+        "apps/api/src/payments/"
+      ],
+      "read_paths": [
+        "apps/api/src/billing/index.ts",
+        "apps/api/src/orders/index.ts"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/api run build"
+      ],
+      "required_evidence": "apps/api/src/payments/index.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX10",
+      "branch": "v06/CX10",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX10.log",
+      "blocker": null
+    },
+    {
+      "id": "CX11",
+      "backend": "codex",
+      "wave": "W2",
+      "objective": "Web-only digital gift catalog, high-entropy one-time codes, atomic redemption, hashed token storage, delivery/print flows, replay/rate limit/refund coverage.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL14",
+        "CX09",
+        "CX10"
+      ],
+      "owned_paths": [
+        "apps/api/src/gifts/v06/"
+      ],
+      "read_paths": [
+        "apps/api/src/gifts/index.ts"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/api run build"
+      ],
+      "required_evidence": "apps/api/src/gifts/v06/index.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX11",
+      "branch": "v06/CX11",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX11.log",
+      "blocker": null
+    },
+    {
+      "id": "CX12",
+      "backend": "codex",
+      "wave": "W4",
+      "objective": "Bedrock add-on/world manifest validation, native challenge state tests, real import checklist and client evidence; report missing runtime clearly.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "medium",
+      "dependencies": [
+        "CL10",
+        "CL11",
+        "CL12",
+        "DX13"
+      ],
+      "owned_paths": [
+        "tests/minecraft/integration/"
+      ],
+      "read_paths": [
+        "apps/minecraft/bp/manifest.json",
+        "apps/minecraft/rp/manifest.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/minecraft/integration/"
+      ],
+      "required_evidence": "tests/minecraft/integration/bedrock-v06.test.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX12",
+      "branch": "v06/CX12",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX12.log",
+      "blocker": null
+    },
+    {
+      "id": "CX13",
+      "backend": "codex",
+      "wave": "W3",
+      "objective": "Browser E2E for cinematic home, real Roblox CTA, country pages, Minecraft install, adult checkout in test mode, gifts, auth, RTL and viewports.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CX08",
+        "AG16",
+        "AG17",
+        "AG18",
+        "DX14"
+      ],
+      "owned_paths": [
+        "tests/web/e2e/v06/"
+      ],
+      "read_paths": [
+        "apps/web/src/App.tsx"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/web/e2e/v06/"
+      ],
+      "required_evidence": "tests/web/e2e/v06/option-a-routes.test.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX13",
+      "branch": "v06/CX13",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX13.log",
+      "blocker": null
+    },
+    {
+      "id": "CX14",
+      "backend": "codex",
+      "wave": "W3",
+      "objective": "CI scripts, content/schema/native package asset verification, release evidence collector, site Core Web Vitals and device test instrumentation.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CX02",
+        "CX03",
+        "CX13"
+      ],
+      "owned_paths": [
+        "tools/quality/v06/"
+      ],
+      "read_paths": [
+        "tools/validate.ts",
+        "package.json"
+      ],
+      "acceptance_commands": [
+        "npx tsx tools/quality/v06/verify-option-a.ts"
+      ],
+      "required_evidence": "tools/quality/v06/verify-option-a.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX14",
+      "branch": "v06/CX14",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX14.log",
+      "blocker": null
+    },
+    {
+      "id": "CX15",
+      "backend": "codex",
+      "wave": "W6",
+      "objective": "Reconciliation/merge planner, final SHA/tests, 65 statuses including avatar/social addenda, compatibility matrix, manifest ownership audit and rollback instructions.",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "dependencies": [
+        "CL15",
+        "CX12",
+        "CX13",
+        "CX14",
+        "DX15"
+      ],
+      "owned_paths": [
+        "reports/v06/integration/"
+      ],
+      "read_paths": [
+        "swarm/v06/manifest.json",
+        "reports/v06/BASELINE.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run"
+      ],
+      "required_evidence": "reports/v06/integration/RECONCILIATION_REPORT.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/CX15",
+      "branch": "v06/CX15",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/CX15.log",
+      "blocker": null
+    },
+    {
+      "id": "AG01",
+      "backend": "antigravity",
+      "wave": "W0",
+      "objective": "Original premium family-adventure style bible, Roblox/Bedrock/site shared identity, five region palettes, shape/lighting/animation spec, culture-specific reference boards and rejection criteria.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [],
+      "owned_paths": [
+        "art/v06/direction/"
+      ],
+      "read_paths": [
+        "art/direction/ART_BIBLE_V04.md",
+        "packages/content/STYLE.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/direction/STYLE_BIBLE_V06.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG01",
+      "branch": "v06/AG01",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG01.log",
+      "blocker": null
+    },
+    {
+      "id": "AG02",
+      "backend": "antigravity",
+      "wave": "W1",
+      "objective": "Original hero and primary NPC character assets/rig sources, consistent proportions, licenses, animation attachment points + five-country avatar/outfit/accessory source collection, rig compatibility and thumbnails.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [
+        "AG01"
+      ],
+      "owned_paths": [
+        "art/v06/characters/",
+        "art/v06/characters/avatar-marketplace/"
+      ],
+      "read_paths": [
+        "art/v06/direction/STYLE_BIBLE_V06.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/characters/avatar-marketplace/collection-manifest.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG02",
+      "branch": "v06/AG02",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG02.log",
+      "blocker": null
+    },
+    {
+      "id": "AG03",
+      "backend": "antigravity",
+      "wave": "W1",
+      "objective": "Native-compatible animation set for hero and NPCs, idle/walk/run/jump/interact/cook/build/celebrate and transition timing + avatar animation candidates, previews and verified native playback.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [
+        "AG01",
+        "AG02"
+      ],
+      "owned_paths": [
+        "art/v06/animations/",
+        "art/v06/animations/avatar-packs/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/shared/npc/NpcAnimator.luau"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/animations/avatar-packs/animation-manifest.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG03",
+      "branch": "v06/AG03",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG03.log",
+      "blocker": null
+    },
+    {
+      "id": "AG04",
+      "backend": "antigravity",
+      "wave": "W1",
+      "objective": "Original Roblox world hub, readable country portals, arrival composition, landmarks, ambient motion, lighting and low-device fallback; Studio source assets.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG01"
+      ],
+      "owned_paths": [
+        "art/v06/roblox-hub/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/server/MapBuilder.luau"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/roblox-hub/hub-scene-spec.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG04",
+      "branch": "v06/AG04",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG04.log",
+      "blocker": null
+    },
+    {
+      "id": "AG05",
+      "backend": "antigravity",
+      "wave": "W2",
+      "objective": "Complete premium Byblos environment, coastline, harbor, homes, market, saj, NPC anchors, construction plot, colliders and rendered captures.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [
+        "AG01",
+        "AG04"
+      ],
+      "owned_paths": [
+        "art/v06/roblox-worlds/LB/"
+      ],
+      "read_paths": [
+        "packages/content/packs/LB.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/roblox-worlds/LB/byblos-world-spec.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG05",
+      "branch": "v06/AG05",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG05.log",
+      "blocker": null
+    },
+    {
+      "id": "AG06",
+      "backend": "antigravity",
+      "wave": "W2",
+      "objective": "Native Roblox quest HUD, passport, inventory, dialogue, settings, contextual actions, RTL UI, gamepad/touch layout + Avatar Studio, friends/co-op HUD, permission and invitation states.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [
+        "AG01",
+        "CX05",
+        "CL03"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/client/Presentation/",
+        "apps/roblox/src/client/Presentation/social-avatar/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/client/UI.luau"
+      ],
+      "acceptance_commands": [
+        "npm run build:roblox"
+      ],
+      "required_evidence": "apps/roblox/src/client/Presentation/social-avatar/AvatarStudioUI.luau",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG06",
+      "branch": "v06/AG06",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG06.log",
+      "blocker": null
+    },
+    {
+      "id": "AG07",
+      "backend": "antigravity",
+      "wave": "W2",
+      "objective": "Original man'oushe ingredients, saj cooking station, preparation poses, animation/camera framing and interaction effects.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG01",
+        "AG05"
+      ],
+      "owned_paths": [
+        "art/v06/roblox-activities/cook/"
+      ],
+      "read_paths": [
+        "packages/content/packs/LB.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/roblox-activities/cook/saj-station-spec.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG07",
+      "branch": "v06/AG07",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG07.log",
+      "blocker": null
+    },
+    {
+      "id": "AG08",
+      "backend": "antigravity",
+      "wave": "W2",
+      "objective": "Lebanese stone house modular kit (10-20 parts), decals/materials, snapping visuals, ghost preview, restoration stages, before/after camera shots and editable sources.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG01",
+        "AG05"
+      ],
+      "owned_paths": [
+        "art/v06/roblox-activities/build/"
+      ],
+      "read_paths": [
+        "packages/content/packs/LB.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/roblox-activities/build/byblos-modular-kit.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG08",
+      "branch": "v06/AG08",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG08.log",
+      "blocker": null
+    },
+    {
+      "id": "AG09",
+      "backend": "antigravity",
+      "wave": "W5",
+      "objective": "Vieux Lyon explorable world, recognizable bakery/traboules, Camille and galette, restoration meshes, lighting, readable interactions.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG05"
+      ],
+      "owned_paths": [
+        "art/v06/roblox-worlds/FR/"
+      ],
+      "read_paths": [
+        "packages/content/packs/FR.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/roblox-worlds/FR/lyon-world-spec.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG09",
+      "branch": "v06/AG09",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG09.log",
+      "blocker": null
+    },
+    {
+      "id": "AG10",
+      "backend": "antigravity",
+      "wave": "W5",
+      "objective": "Distinct Cairo neighborhood, courtyards, fanous lanterns, koshari interactions, original culture-accurate props and ambient animations.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG05"
+      ],
+      "owned_paths": [
+        "art/v06/roblox-worlds/EG/"
+      ],
+      "read_paths": [
+        "packages/content/packs/EG.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/roblox-worlds/EG/cairo-world-spec.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG10",
+      "branch": "v06/AG10",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG10.log",
+      "blocker": null
+    },
+    {
+      "id": "AG11",
+      "backend": "antigravity",
+      "wave": "W5",
+      "objective": "Distinct Baghdad riverside, shanasheel balconies, family home, kleicha setpieces and native original materials/characters.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG05"
+      ],
+      "owned_paths": [
+        "art/v06/roblox-worlds/IQ/"
+      ],
+      "read_paths": [
+        "packages/content/packs/IQ.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/roblox-worlds/IQ/baghdad-world-spec.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG11",
+      "branch": "v06/AG11",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG11.log",
+      "blocker": null
+    },
+    {
+      "id": "AG12",
+      "backend": "antigravity",
+      "wave": "W5",
+      "objective": "Jeonju hanok village, onggi jars, songpyeon home, local plant palette, original sets and distinctive seasonal ambience.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG05"
+      ],
+      "owned_paths": [
+        "art/v06/roblox-worlds/KR/"
+      ],
+      "read_paths": [
+        "packages/content/packs/KR.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/roblox-worlds/KR/jeonju-world-spec.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG12",
+      "branch": "v06/AG12",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG12.log",
+      "blocker": null
+    },
+    {
+      "id": "AG13",
+      "backend": "antigravity",
+      "wave": "W2",
+      "objective": "Real Roblox arrival/quest reward sequences, polished camera and animation timing, original sound/cue specifications + cinematic character reveal and cooperative quest celebration.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG03",
+        "AG05"
+      ],
+      "owned_paths": [
+        "art/v06/cinematics/",
+        "art/v06/cinematics/social/"
+      ],
+      "read_paths": [
+        "art/v06/direction/STYLE_BIBLE_V06.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/cinematics/social/coop-celebration-spec.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG13",
+      "branch": "v06/AG13",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG13.log",
+      "blocker": null
+    },
+    {
+      "id": "AG14",
+      "backend": "antigravity",
+      "wave": "W1",
+      "objective": "Cinematic illustrated/3D pre-rendered public hero, expressive family-friendly characters, video poster and accessible mobile/reduced-motion variant. Asset provenance.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG01"
+      ],
+      "owned_paths": [
+        "art/v06/website-hero/"
+      ],
+      "read_paths": [
+        "apps/web/src/landing/ui/index.tsx"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "art/v06/website-hero/hero-provenance.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG14",
+      "branch": "v06/AG14",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG14.log",
+      "blocker": null
+    },
+    {
+      "id": "AG15",
+      "backend": "antigravity",
+      "wave": "W1",
+      "objective": "Premium original responsive web design system, type/colors/motion/icons, nav/cards/buttons/dialogs, adult vs child separation, RTL, accessible controls.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG01"
+      ],
+      "owned_paths": [
+        "apps/web/src/design-system/v06/"
+      ],
+      "read_paths": [
+        "apps/web/src/styles.css"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/web run build"
+      ],
+      "required_evidence": "apps/web/src/design-system/v06/tokens.ts",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG15",
+      "branch": "v06/AG15",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG15.log",
+      "blocker": null
+    },
+    {
+      "id": "AG16",
+      "backend": "antigravity",
+      "wave": "W3",
+      "objective": "Implement polished homepage using actual approved scene renders, truthful \"Play free on Roblox\" CTA, country showcases with availability labels, how-to-play, Minecraft companion section, parent section and measurable hero load.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [
+        "AG14",
+        "AG15",
+        "CX07",
+        "CX08"
+      ],
+      "owned_paths": [
+        "apps/web/src/marketing/landing-v06/"
+      ],
+      "read_paths": [
+        "apps/web/src/landing/ui/index.tsx"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/web run build"
+      ],
+      "required_evidence": "apps/web/src/marketing/landing-v06/OptionALandingSection.tsx",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG16",
+      "branch": "v06/AG16",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG16.log",
+      "blocker": null
+    },
+    {
+      "id": "AG17",
+      "backend": "antigravity",
+      "wave": "W2",
+      "objective": "Interactive five-destination atlas (/explore, /explore/:country), /adventures, and /characters pages with distinct art, availability labels (LB RC1 Flagship vs Upcoming RC3), valid play/download links and language coverage.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [
+        "AG15",
+        "CX07"
+      ],
+      "owned_paths": [
+        "apps/web/src/marketing/worlds-v06/"
+      ],
+      "read_paths": [
+        "packages/content/packs/LB.json"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/web run build"
+      ],
+      "required_evidence": "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG17",
+      "branch": "v06/AG17",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG17.log",
+      "blocker": null
+    },
+    {
+      "id": "AG18",
+      "backend": "antigravity",
+      "wave": "W3",
+      "objective": "Adult-only shop, gifting/card printing, order and consent dashboard with no child purchases, accurate web-only item fulfillment, and truthful platform disclosures.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [
+        "AG15",
+        "CX09",
+        "CX10",
+        "CX11"
+      ],
+      "owned_paths": [
+        "apps/web/src/parent/ui-v06/"
+      ],
+      "read_paths": [
+        "apps/web/src/parent/index.tsx",
+        "apps/web/src/storefront/index.tsx"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/web run build"
+      ],
+      "required_evidence": "apps/web/src/parent/ui-v06/AdultCommerceNotice.tsx",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG18",
+      "branch": "v06/AG18",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG18.log",
+      "blocker": null
+    },
+    {
+      "id": "AG19",
+      "backend": "antigravity",
+      "wave": "W4",
+      "objective": "Handcrafted Bedrock Byblos voxel palette/structures/textures/NPC visuals, then culturally distinct companion kits for other countries; native source files and import captures.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "dependencies": [
+        "AG01",
+        "AG05"
+      ],
+      "owned_paths": [
+        "art/v06/minecraft/"
+      ],
+      "read_paths": [
+        "apps/minecraft/world/world-layout.json",
+        "apps/minecraft/structures/LB.mcstructure.json"
+      ],
+      "acceptance_commands": [
+        "npm -w apps/minecraft run build"
+      ],
+      "required_evidence": "art/v06/minecraft/bedrock-byblos-kit.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG19",
+      "branch": "v06/AG19",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG19.log",
+      "blocker": null
+    },
+    {
+      "id": "AG20",
+      "backend": "antigravity",
+      "wave": "W6",
+      "objective": "Independent visual director: review actual Studio/Bedrock/site screenshots and footage, rate lighting, cultural distinction, characters, animation, HUD, composition, performance and originality + independent marketplace-asset and cooperative-gameplay art review.",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "dependencies": [
+        "AG02",
+        "AG05",
+        "AG16",
+        "AG19"
+      ],
+      "owned_paths": [
+        "reports/v06/art-review/",
+        "reports/v06/art-review/avatar-social/"
+      ],
+      "read_paths": [
+        "art/v06/direction/STYLE_BIBLE_V06.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run"
+      ],
+      "required_evidence": "reports/v06/art-review/avatar-social/AVATAR_SOCIAL_ART_REVIEW.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/AG20",
+      "branch": "v06/AG20",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/AG20.log",
+      "blocker": null
+    },
+    {
+      "id": "DX01",
+      "backend": "dgx-spark",
+      "wave": "W0",
+      "objective": "Repository asset, model, content, license, task/tool and available local model inventory; paths and provenance.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [],
+      "owned_paths": [
+        "reports/v06/dgx-inventory/"
+      ],
+      "read_paths": [
+        "package.json",
+        "reports/v06/BASELINE.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/scaffold.test.ts"
+      ],
+      "required_evidence": "reports/v06/dgx-inventory/INVENTORY.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX01",
+      "branch": "v06/DX01",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX01.log",
+      "blocker": null
+    },
+    {
+      "id": "DX02",
+      "backend": "dgx-spark",
+      "wave": "W1",
+      "objective": "Deterministic static Luau/import checks, source path consistency and compile test scripts against actual Rojo config.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "DX01"
+      ],
+      "owned_paths": [
+        "tools/v06/luau-checks/"
+      ],
+      "read_paths": [
+        "apps/roblox/default.project.json"
+      ],
+      "acceptance_commands": [
+        "node tools/v06/luau-checks/check-luau.mjs"
+      ],
+      "required_evidence": "tools/v06/luau-checks/check-luau.mjs",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX02",
+      "branch": "v06/DX02",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX02.log",
+      "blocker": null
+    },
+    {
+      "id": "DX03",
+      "backend": "dgx-spark",
+      "wave": "W1",
+      "objective": "Five-country story/quest/schema/compiler fixtures, stable ID maps, missing-translation reports; no invented production lines.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "DX01"
+      ],
+      "owned_paths": [
+        "tests/fixtures/content-v06/"
+      ],
+      "read_paths": [
+        "packages/content/packs/LB.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/content/validate.test.ts"
+      ],
+      "required_evidence": "tests/fixtures/content-v06/parity-fixtures.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX03",
+      "branch": "v06/DX03",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX03.log",
+      "blocker": null
+    },
+    {
+      "id": "DX04",
+      "backend": "dgx-spark",
+      "wave": "W2",
+      "objective": "Geometry/textures/rig/animation asset checks, filename and license rules, duplicate detection + rig/attachments/cage/texture and Marketplace candidate validation reports.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "dependencies": [
+        "AG02",
+        "AG03"
+      ],
+      "owned_paths": [
+        "tools/v06/asset-audit/",
+        "tools/v06/asset-audit/avatar-marketplace/"
+      ],
+      "read_paths": [
+        "art/v06/characters/avatar-marketplace/collection-manifest.json"
+      ],
+      "acceptance_commands": [
+        "node tools/v06/asset-audit/audit-assets.mjs"
+      ],
+      "required_evidence": "tools/v06/asset-audit/avatar-marketplace/marketplace-audit.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX04",
+      "branch": "v06/DX04",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX04.log",
+      "blocker": null
+    },
+    {
+      "id": "DX05",
+      "backend": "dgx-spark",
+      "wave": "W1",
+      "objective": "EN, FR, Lebanese/Egyptian/Iraqi Arabic and Korean UI key consistency and draft fixture scaffolding, clearly marked human-language review.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "DX01"
+      ],
+      "owned_paths": [
+        "content/localization/v06/"
+      ],
+      "read_paths": [
+        "apps/web/src/i18n.tsx"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "content/localization/v06/locale-matrix.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX05",
+      "branch": "v06/DX05",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX05.log",
+      "blocker": null
+    },
+    {
+      "id": "DX06",
+      "backend": "dgx-spark",
+      "wave": "W2",
+      "objective": "Roblox runtime profiling scripts/checklists, scene/asset budgets, device tests and measured evidence formatting + multiplayer profiling and avatar memory budgets. No fabricated FPS.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "dependencies": [
+        "CL03",
+        "AG05"
+      ],
+      "owned_paths": [
+        "tools/v06/roblox-perf/",
+        "tools/v06/roblox-perf/social-avatar/"
+      ],
+      "read_paths": [
+        "apps/roblox/default.project.json"
+      ],
+      "acceptance_commands": [
+        "node tools/v06/roblox-perf/check-budgets.mjs"
+      ],
+      "required_evidence": "tools/v06/roblox-perf/social-avatar/avatar-memory-budget.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX06",
+      "branch": "v06/DX06",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX06.log",
+      "blocker": null
+    },
+    {
+      "id": "DX07",
+      "backend": "dgx-spark",
+      "wave": "W2",
+      "objective": "Byblos spawn/quest/NPC/collision/build-plot metadata and consistency tests grounded in actual asset scene IDs.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "AG05"
+      ],
+      "owned_paths": [
+        "tests/fixtures/world-anchors/LB/"
+      ],
+      "read_paths": [
+        "packages/content/packs/LB.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/content/validate.test.ts"
+      ],
+      "required_evidence": "tests/fixtures/world-anchors/LB/byblos-anchors.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX07",
+      "branch": "v06/DX07",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX07.log",
+      "blocker": null
+    },
+    {
+      "id": "DX08",
+      "backend": "dgx-spark",
+      "wave": "W2",
+      "objective": "Byblos quest path/inventory/reward/replay/persistence fixtures from the real story/pack.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "CL04",
+        "DX07"
+      ],
+      "owned_paths": [
+        "tests/fixtures/quests/LB/"
+      ],
+      "read_paths": [
+        "packages/content/packs/LB.json",
+        "packages/content/stories/ar-LB.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/content/validate.test.ts"
+      ],
+      "required_evidence": "tests/fixtures/quests/LB/byblos-quest-vectors.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX08",
+      "branch": "v06/DX08",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX08.log",
+      "blocker": null
+    },
+    {
+      "id": "DX09",
+      "backend": "dgx-spark",
+      "wave": "W5",
+      "objective": "France chapter fixture coverage, quest anchors, bakery semantics and localization smoke tests.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "AG09"
+      ],
+      "owned_paths": [
+        "tests/fixtures/quests/FR/"
+      ],
+      "read_paths": [
+        "packages/content/packs/FR.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/content/validate.test.ts"
+      ],
+      "required_evidence": "tests/fixtures/quests/FR/lyon-quest-vectors.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX09",
+      "branch": "v06/DX09",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX09.log",
+      "blocker": null
+    },
+    {
+      "id": "DX10",
+      "backend": "dgx-spark",
+      "wave": "W5",
+      "objective": "Egypt chapter fixtures, koshari/lantern item/quest consistency and test vectors.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "AG10"
+      ],
+      "owned_paths": [
+        "tests/fixtures/quests/EG/"
+      ],
+      "read_paths": [
+        "packages/content/packs/EG.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/content/validate.test.ts"
+      ],
+      "required_evidence": "tests/fixtures/quests/EG/cairo-quest-vectors.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX10",
+      "branch": "v06/DX10",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX10.log",
+      "blocker": null
+    },
+    {
+      "id": "DX11",
+      "backend": "dgx-spark",
+      "wave": "W5",
+      "objective": "Iraq chapter fixtures, kleicha/courtyard item/quest consistency and test vectors.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "AG11"
+      ],
+      "owned_paths": [
+        "tests/fixtures/quests/IQ/"
+      ],
+      "read_paths": [
+        "packages/content/packs/IQ.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/content/validate.test.ts"
+      ],
+      "required_evidence": "tests/fixtures/quests/IQ/baghdad-quest-vectors.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX11",
+      "branch": "v06/DX11",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX11.log",
+      "blocker": null
+    },
+    {
+      "id": "DX12",
+      "backend": "dgx-spark",
+      "wave": "W5",
+      "objective": "Korea chapter fixtures, hanok/songpyeon item/quest consistency and test vectors.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "AG12"
+      ],
+      "owned_paths": [
+        "tests/fixtures/quests/KR/"
+      ],
+      "read_paths": [
+        "packages/content/packs/KR.json"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/content/validate.test.ts"
+      ],
+      "required_evidence": "tests/fixtures/quests/KR/jeonju-quest-vectors.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX12",
+      "branch": "v06/DX12",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX12.log",
+      "blocker": null
+    },
+    {
+      "id": "DX13",
+      "backend": "dgx-spark",
+      "wave": "W4",
+      "objective": "Bedrock UUID/manifest/resource/item/script/version and package-contents validator; no unsupported stable API claims.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "dependencies": [
+        "CL10"
+      ],
+      "owned_paths": [
+        "tools/v06/bedrock-validators/"
+      ],
+      "read_paths": [
+        "apps/minecraft/bp/manifest.json",
+        "apps/minecraft/rp/manifest.json"
+      ],
+      "acceptance_commands": [
+        "node tools/v06/bedrock-validators/validate-bedrock.mjs"
+      ],
+      "required_evidence": "tools/v06/bedrock-validators/validate-bedrock.mjs",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX13",
+      "branch": "v06/DX13",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX13.log",
+      "blocker": null
+    },
+    {
+      "id": "DX14",
+      "backend": "dgx-spark",
+      "wave": "W3",
+      "objective": "RTL stress tests, French text overflow, Korean wrapping, 360px viewport content and honest Roblox launcher/error fixtures.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "dependencies": [
+        "DX05",
+        "AG16"
+      ],
+      "owned_paths": [
+        "tests/fixtures/web-locales/"
+      ],
+      "read_paths": [
+        "apps/web/src/i18n.tsx"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "tests/fixtures/web-locales/rtl-viewport-fixtures.json",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX14",
+      "branch": "v06/DX14",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX14.log",
+      "blocker": null
+    },
+    {
+      "id": "DX15",
+      "backend": "dgx-spark",
+      "wave": "W6",
+      "objective": "Runbooks, asset licensing index, child safety incident/rollback, Roblox Studio and Bedrock client validation checklists + Community/Marketplace creator runbooks and moderation incident response.",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "dependencies": [
+        "CL09",
+        "CL12",
+        "CL13"
+      ],
+      "owned_paths": [
+        "docs/v06/operations/",
+        "docs/v06/operations/social-marketplace/"
+      ],
+      "read_paths": [
+        "docs/v06/safety/roblox-social/ROBLOX_SOCIAL_AND_COMMUNITY_SAFETY.md"
+      ],
+      "acceptance_commands": [
+        "npx vitest run tests/validate.test.ts"
+      ],
+      "required_evidence": "docs/v06/operations/social-marketplace/COMMUNITY_AND_MARKETPLACE_RUNBOOK.md",
+      "worktree": "/home/wael/Code/mv-wt-v06/DX15",
+      "branch": "v06/DX15",
+      "status": "PENDING",
+      "attempts": 0,
+      "cost_or_tokens_if_available": null,
+      "start": null,
+      "end": null,
+      "commit_sha": null,
+      "log_path": "swarm/v06/logs/DX15.log",
+      "blocker": null
+    }
+  ]
+}

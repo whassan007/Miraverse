@@ -1,0 +1,658 @@
+{
+  "waves": [
+    {
+      "wave": "W0",
+      "agents": [
+        "CL01",
+        "CL13",
+        "CX01",
+        "AG01",
+        "DX01"
+      ]
+    },
+    {
+      "wave": "W1",
+      "agents": [
+        "CL02",
+        "CL03",
+        "CL14",
+        "CX02",
+        "CX05",
+        "CX07",
+        "CX09",
+        "AG02",
+        "AG03",
+        "AG04",
+        "AG14",
+        "AG15",
+        "DX02",
+        "DX03",
+        "DX05"
+      ]
+    },
+    {
+      "wave": "W2",
+      "agents": [
+        "CL04",
+        "CL05",
+        "CL06",
+        "CL07",
+        "CL08",
+        "CX06",
+        "CX08",
+        "CX10",
+        "CX11",
+        "AG05",
+        "AG06",
+        "AG07",
+        "AG08",
+        "AG13",
+        "AG17",
+        "DX04",
+        "DX06",
+        "DX07",
+        "DX08"
+      ]
+    },
+    {
+      "wave": "W3",
+      "agents": [
+        "CL09",
+        "CX03",
+        "CX04",
+        "CX13",
+        "CX14",
+        "AG16",
+        "AG18",
+        "DX14"
+      ]
+    },
+    {
+      "wave": "W4",
+      "agents": [
+        "CL10",
+        "CL11",
+        "CL12",
+        "CX12",
+        "AG19",
+        "DX13"
+      ]
+    },
+    {
+      "wave": "W5",
+      "agents": [
+        "AG09",
+        "AG10",
+        "AG11",
+        "AG12",
+        "DX09",
+        "DX10",
+        "DX11",
+        "DX12"
+      ]
+    },
+    {
+      "wave": "W6",
+      "agents": [
+        "CL15",
+        "CX15",
+        "AG20",
+        "DX15"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "CL01",
+      "to": "CL02"
+    },
+    {
+      "from": "CX01",
+      "to": "CL02"
+    },
+    {
+      "from": "AG01",
+      "to": "CL02"
+    },
+    {
+      "from": "DX01",
+      "to": "CL02"
+    },
+    {
+      "from": "CL01",
+      "to": "CL03"
+    },
+    {
+      "from": "CX01",
+      "to": "CL03"
+    },
+    {
+      "from": "CL02",
+      "to": "CL04"
+    },
+    {
+      "from": "CL03",
+      "to": "CL04"
+    },
+    {
+      "from": "CX05",
+      "to": "CL04"
+    },
+    {
+      "from": "CL03",
+      "to": "CL05"
+    },
+    {
+      "from": "CL04",
+      "to": "CL05"
+    },
+    {
+      "from": "CL03",
+      "to": "CL06"
+    },
+    {
+      "from": "CL04",
+      "to": "CL06"
+    },
+    {
+      "from": "CX05",
+      "to": "CL06"
+    },
+    {
+      "from": "CL04",
+      "to": "CL07"
+    },
+    {
+      "from": "CX05",
+      "to": "CL07"
+    },
+    {
+      "from": "CL03",
+      "to": "CL08"
+    },
+    {
+      "from": "CL04",
+      "to": "CL08"
+    },
+    {
+      "from": "CX05",
+      "to": "CL08"
+    },
+    {
+      "from": "CL03",
+      "to": "CL09"
+    },
+    {
+      "from": "CL08",
+      "to": "CL09"
+    },
+    {
+      "from": "AG02",
+      "to": "CL09"
+    },
+    {
+      "from": "CL02",
+      "to": "CL10"
+    },
+    {
+      "from": "CX02",
+      "to": "CL10"
+    },
+    {
+      "from": "CL10",
+      "to": "CL11"
+    },
+    {
+      "from": "AG19",
+      "to": "CL11"
+    },
+    {
+      "from": "CL10",
+      "to": "CL12"
+    },
+    {
+      "from": "CL11",
+      "to": "CL12"
+    },
+    {
+      "from": "DX13",
+      "to": "CL12"
+    },
+    {
+      "from": "CL01",
+      "to": "CL14"
+    },
+    {
+      "from": "CL13",
+      "to": "CL14"
+    },
+    {
+      "from": "CL09",
+      "to": "CL15"
+    },
+    {
+      "from": "CL12",
+      "to": "CL15"
+    },
+    {
+      "from": "CX13",
+      "to": "CL15"
+    },
+    {
+      "from": "CX14",
+      "to": "CL15"
+    },
+    {
+      "from": "AG20",
+      "to": "CL15"
+    },
+    {
+      "from": "CL01",
+      "to": "CX02"
+    },
+    {
+      "from": "CX01",
+      "to": "CX02"
+    },
+    {
+      "from": "DX01",
+      "to": "CX02"
+    },
+    {
+      "from": "CL03",
+      "to": "CX03"
+    },
+    {
+      "from": "CL04",
+      "to": "CX03"
+    },
+    {
+      "from": "CL06",
+      "to": "CX03"
+    },
+    {
+      "from": "CL08",
+      "to": "CX03"
+    },
+    {
+      "from": "CX05",
+      "to": "CX03"
+    },
+    {
+      "from": "CL03",
+      "to": "CX04"
+    },
+    {
+      "from": "CL04",
+      "to": "CX04"
+    },
+    {
+      "from": "CL06",
+      "to": "CX04"
+    },
+    {
+      "from": "CL08",
+      "to": "CX04"
+    },
+    {
+      "from": "CX03",
+      "to": "CX04"
+    },
+    {
+      "from": "CL02",
+      "to": "CX05"
+    },
+    {
+      "from": "CX02",
+      "to": "CX05"
+    },
+    {
+      "from": "CX05",
+      "to": "CX06"
+    },
+    {
+      "from": "CL03",
+      "to": "CX06"
+    },
+    {
+      "from": "CL01",
+      "to": "CX07"
+    },
+    {
+      "from": "AG15",
+      "to": "CX07"
+    },
+    {
+      "from": "CX07",
+      "to": "CX08"
+    },
+    {
+      "from": "CL01",
+      "to": "CX08"
+    },
+    {
+      "from": "CL13",
+      "to": "CX09"
+    },
+    {
+      "from": "CL14",
+      "to": "CX09"
+    },
+    {
+      "from": "CL14",
+      "to": "CX10"
+    },
+    {
+      "from": "CX09",
+      "to": "CX10"
+    },
+    {
+      "from": "CL14",
+      "to": "CX11"
+    },
+    {
+      "from": "CX09",
+      "to": "CX11"
+    },
+    {
+      "from": "CX10",
+      "to": "CX11"
+    },
+    {
+      "from": "CL10",
+      "to": "CX12"
+    },
+    {
+      "from": "CL11",
+      "to": "CX12"
+    },
+    {
+      "from": "CL12",
+      "to": "CX12"
+    },
+    {
+      "from": "DX13",
+      "to": "CX12"
+    },
+    {
+      "from": "CX08",
+      "to": "CX13"
+    },
+    {
+      "from": "AG16",
+      "to": "CX13"
+    },
+    {
+      "from": "AG17",
+      "to": "CX13"
+    },
+    {
+      "from": "AG18",
+      "to": "CX13"
+    },
+    {
+      "from": "DX14",
+      "to": "CX13"
+    },
+    {
+      "from": "CX02",
+      "to": "CX14"
+    },
+    {
+      "from": "CX03",
+      "to": "CX14"
+    },
+    {
+      "from": "CX13",
+      "to": "CX14"
+    },
+    {
+      "from": "CL15",
+      "to": "CX15"
+    },
+    {
+      "from": "CX12",
+      "to": "CX15"
+    },
+    {
+      "from": "CX13",
+      "to": "CX15"
+    },
+    {
+      "from": "CX14",
+      "to": "CX15"
+    },
+    {
+      "from": "DX15",
+      "to": "CX15"
+    },
+    {
+      "from": "AG01",
+      "to": "AG02"
+    },
+    {
+      "from": "AG01",
+      "to": "AG03"
+    },
+    {
+      "from": "AG02",
+      "to": "AG03"
+    },
+    {
+      "from": "AG01",
+      "to": "AG04"
+    },
+    {
+      "from": "AG01",
+      "to": "AG05"
+    },
+    {
+      "from": "AG04",
+      "to": "AG05"
+    },
+    {
+      "from": "AG01",
+      "to": "AG06"
+    },
+    {
+      "from": "CX05",
+      "to": "AG06"
+    },
+    {
+      "from": "CL03",
+      "to": "AG06"
+    },
+    {
+      "from": "AG01",
+      "to": "AG07"
+    },
+    {
+      "from": "AG05",
+      "to": "AG07"
+    },
+    {
+      "from": "AG01",
+      "to": "AG08"
+    },
+    {
+      "from": "AG05",
+      "to": "AG08"
+    },
+    {
+      "from": "AG05",
+      "to": "AG09"
+    },
+    {
+      "from": "AG05",
+      "to": "AG10"
+    },
+    {
+      "from": "AG05",
+      "to": "AG11"
+    },
+    {
+      "from": "AG05",
+      "to": "AG12"
+    },
+    {
+      "from": "AG03",
+      "to": "AG13"
+    },
+    {
+      "from": "AG05",
+      "to": "AG13"
+    },
+    {
+      "from": "AG01",
+      "to": "AG14"
+    },
+    {
+      "from": "AG01",
+      "to": "AG15"
+    },
+    {
+      "from": "AG14",
+      "to": "AG16"
+    },
+    {
+      "from": "AG15",
+      "to": "AG16"
+    },
+    {
+      "from": "CX07",
+      "to": "AG16"
+    },
+    {
+      "from": "CX08",
+      "to": "AG16"
+    },
+    {
+      "from": "AG15",
+      "to": "AG17"
+    },
+    {
+      "from": "CX07",
+      "to": "AG17"
+    },
+    {
+      "from": "AG15",
+      "to": "AG18"
+    },
+    {
+      "from": "CX09",
+      "to": "AG18"
+    },
+    {
+      "from": "CX10",
+      "to": "AG18"
+    },
+    {
+      "from": "CX11",
+      "to": "AG18"
+    },
+    {
+      "from": "AG01",
+      "to": "AG19"
+    },
+    {
+      "from": "AG05",
+      "to": "AG19"
+    },
+    {
+      "from": "AG02",
+      "to": "AG20"
+    },
+    {
+      "from": "AG05",
+      "to": "AG20"
+    },
+    {
+      "from": "AG16",
+      "to": "AG20"
+    },
+    {
+      "from": "AG19",
+      "to": "AG20"
+    },
+    {
+      "from": "DX01",
+      "to": "DX02"
+    },
+    {
+      "from": "DX01",
+      "to": "DX03"
+    },
+    {
+      "from": "AG02",
+      "to": "DX04"
+    },
+    {
+      "from": "AG03",
+      "to": "DX04"
+    },
+    {
+      "from": "DX01",
+      "to": "DX05"
+    },
+    {
+      "from": "CL03",
+      "to": "DX06"
+    },
+    {
+      "from": "AG05",
+      "to": "DX06"
+    },
+    {
+      "from": "AG05",
+      "to": "DX07"
+    },
+    {
+      "from": "CL04",
+      "to": "DX08"
+    },
+    {
+      "from": "DX07",
+      "to": "DX08"
+    },
+    {
+      "from": "AG09",
+      "to": "DX09"
+    },
+    {
+      "from": "AG10",
+      "to": "DX10"
+    },
+    {
+      "from": "AG11",
+      "to": "DX11"
+    },
+    {
+      "from": "AG12",
+      "to": "DX12"
+    },
+    {
+      "from": "CL10",
+      "to": "DX13"
+    },
+    {
+      "from": "DX05",
+      "to": "DX14"
+    },
+    {
+      "from": "AG16",
+      "to": "DX14"
+    },
+    {
+      "from": "CL09",
+      "to": "DX15"
+    },
+    {
+      "from": "CL12",
+      "to": "DX15"
+    },
+    {
+      "from": "CL13",
+      "to": "DX15"
+    }
+  ]
+}
