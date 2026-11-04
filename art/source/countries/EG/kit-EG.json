@@ -1,0 +1,35 @@
+{
+  "country": "EG",
+  "region": "Cairo Lantern Courtyard",
+  "DistinctCulturalKit": true,
+  "props": [
+    {
+      "propId": "eg_mashrabiya_courtyard",
+      "palette": [
+        "#2B4C7E",
+        "#F0B429"
+      ]
+    },
+    {
+      "propId": "eg_pierced_brass_fanous",
+      "palette": [
+        "#2B4C7E",
+        "#F0B429"
+      ]
+    },
+    {
+      "propId": "eg_koshari_copper_pot",
+      "palette": [
+        "#2B4C7E",
+        "#F0B429"
+      ]
+    },
+    {
+      "propId": "eg_khan_stone_archway",
+      "palette": [
+        "#2B4C7E",
+        "#F0B429"
+      ]
+    }
+  ]
+}
