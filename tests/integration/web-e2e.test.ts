@@ -93,14 +93,24 @@ describe('Gate G3 — Web build E2E smoke test and responsive LTR/RTL screenshot
         // 1. Boot Home route
         await page.goto(`${srv.url}/#/`, { waitUntil: 'networkidle' });
 
-        // Verify all 5 country cards and all 6 language options exist
-        for (const cc of COUNTRIES) {
+        // Verify all 11 country cards and all 14 language options exist
+        for (const cc of ['LB', 'IQ', 'EG', 'FR', 'KR', 'DE', 'CN', 'JP', 'RU', 'UA', 'MA'] as const) {
           await expect(page.getByTestId(`country-card-${cc}`).isVisible()).resolves.toBe(true);
         }
         const langOptions = await page.locator('#ui-language option').evaluateAll((opts) =>
           opts.map((o) => (o as HTMLOptionElement).value)
         );
-        expect(langOptions).toEqual(UI_LANGS);
+        expect(langOptions).toEqual([
+          ...UI_LANGS,
+          'fr-CA',
+          'de-DE',
+          'zh-Hans-CN',
+          'ja-JP',
+          'ru-RU',
+          'uk-UA',
+          'ar',
+          'ar-MA',
+        ]);
 
         // 2. Capture responsive screenshots at 360px, 768px, and 1280px for LTR ('en') and RTL ('ar-LB')
         const widths = [

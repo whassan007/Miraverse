@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Japan Illustrated Adventure Quest Map">
+  <rect width="800" height="450" fill="#142824"/>
+  <rect x="20" y="20" width="760" height="410" rx="18" fill="#1F3A33" stroke="#FB7185" stroke-width="3" stroke-dasharray="10 6"/>
+  <path d="M90 340 C220 180 340 360 480 210 C580 120 650 260 720 140" fill="none" stroke="#FECDD3" stroke-width="6" stroke-dasharray="12 8"/>
+  <circle cx="90" cy="340" r="16" fill="#38BDF8" stroke="#FFF8EE" stroke-width="3"/>
+  <circle cx="290" cy="265" r="16" fill="#FB7185" stroke="#FFF8EE" stroke-width="3"/>
+  <circle cx="480" cy="210" r="16" fill="#10B981" stroke="#FFF8EE" stroke-width="3"/>
+  <circle cx="720" cy="140" r="18" fill="#F59E0B" stroke="#FFF8EE" stroke-width="3"/>
+  <text x="48" y="64" fill="#FFF8EE" font-family="Georgia, serif" font-size="24" font-weight="900">8. Japan (Michinoku Waystations (Tohoku)) — 6-Chapter Adventure Map</text>
+  <text x="48" y="94" fill="#FECDD3" font-family="system-ui, sans-serif" font-size="15" font-weight="700">The Narrow Road Home · 6 Sequential Quests × 4 Age Tracks</text>
+</svg>

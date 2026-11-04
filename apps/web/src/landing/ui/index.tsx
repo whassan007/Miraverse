@@ -30,6 +30,12 @@ import { DynamicWorldHeroShowcase } from '../hero-v14/DynamicWorldHeroShowcase';
 import { HeroDynamicBackdrop } from '../hero-v14/HeroDynamicBackdrop';
 import { useHeroAutoplay } from '../hero-v14/useHeroAutoplay';
 import { useHeroImagePreloader } from '../hero-v14/useHeroImagePreloader';
+import {
+  GLOBAL_COUNTRIES_CATALOG,
+  GLOBAL_NEW_COUNTRY_CODES,
+  GLOBAL_COUNTRY_MAP,
+  GLOBAL_WEB_LOCALES,
+} from '../../lib/globalCatalog';
 
 const EXPANSION_COUNTRIES: CountryCode[] = ['IQ', 'EG', 'FR', 'KR'];
 
@@ -155,7 +161,7 @@ export const CinematicLandingPage: React.FC = () => {
                 color: '#FFF8EE',
               }}
             >
-              Five Living Worlds. One Unforgettable Cultural Adventure.
+              Eleven Living Worlds. 66 Connected Chapters. 14 Languages.
             </h1>
 
             <p
@@ -168,9 +174,8 @@ export const CinematicLandingPage: React.FC = () => {
               }}
             >
               Join <strong>Mira</strong> and warm community elders across{' '}
-              <strong>Byblos Harbor</strong>, <strong>Historic Cairo</strong>,{' '}
-              <strong>Baghdad’s Tigris Courtyards</strong>, <strong>Jeonju Hanok Village</strong>, and{' '}
-              <strong>Vieux Lyon</strong>. Gather local herbs, restore treasured landmarks, bake signature dishes, and collect illustrated Passport stamps.
+              <strong>Lebanon, Iraq, Egypt, France, South Korea, Germany, China, Japan, Russia, Ukraine, and Morocco</strong> in{' '}
+              <em>Echoes of Home: The Atlas of Belonging</em>. Gather local herbs, restore treasured landmarks, bake signature dishes, and collect keepsakes across 4 age tracks (Ages 5–17).
             </p>
 
             {/* Primary & Secondary CTAs */}
@@ -207,7 +212,7 @@ export const CinematicLandingPage: React.FC = () => {
                   border: '1px solid #F4A261',
                 }}
               >
-                Explore 5 Worlds
+                Explore All 11 Worlds
               </Link>
 
               <Link
@@ -266,22 +271,22 @@ export const CinematicLandingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 2. WORLD DISCOVERY SHELF: Featured Byblos Flagship + Balanced 4-World Grid (Zero 4+1 Orphan!) */}
+      {/* 2. WORLD DISCOVERY SHELF: Featured Byblos Flagship + Core 4 + Global 6 (All 11 Destinations!) */}
       <section
         id="worlds"
-        aria-label="Five Living Cultural Worlds"
+        aria-label="Eleven Living Cultural Worlds"
         style={{ padding: '52px clamp(16px, 4vw, 56px)', maxWidth: '1360px', margin: '0 auto' }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '16px', marginBottom: '26px' }}>
           <div>
             <span style={{ fontSize: '12px', fontWeight: 800, color: '#F4A261', textTransform: 'uppercase', letterSpacing: '1.4px' }}>
-              Cultural World Library · Five Destinations
+              Cultural World Library · 11 Destinations · 66 Chapters · 14 Languages
             </span>
             <h2 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(26px, 3.4vw, 38px)', margin: '6px 0 8px 0' }}>
-              Choose Your Cultural Destination
+              Choose Your Cultural Destination (All 11 Countries)
             </h2>
-            <p style={{ color: '#CBD5E1', margin: 0, maxWidth: '720px', fontSize: '15px' }}>
-              Start in our flagship <strong>Byblos Harbor, Lebanon</strong> adventure on Roblox and Minecraft Bedrock, or read and preview all five 15-scene bilingual stories.
+            <p style={{ color: '#CBD5E1', margin: 0, maxWidth: '820px', fontSize: '15px' }}>
+              Start in our flagship <strong>Byblos Harbor, Lebanon</strong> adventure on Roblox and Minecraft Bedrock, explore the core worlds (<strong>Iraq, Egypt, France, South Korea</strong>), and journey across the six global expansion regions (<strong>Germany, China, Japan, Russia, Ukraine, and Morocco</strong>) in <em>Echoes of Home: The Atlas of Belonging</em>.
             </p>
           </div>
           <Link
@@ -297,7 +302,7 @@ export const CinematicLandingPage: React.FC = () => {
               background: '#131F38',
             }}
           >
-            Open Full World Atlas →
+            Open All 11 Worlds Library →
           </Link>
         </div>
 
@@ -539,6 +544,200 @@ export const CinematicLandingPage: React.FC = () => {
               </article>
             );
           })}
+        </div>
+
+        {/* Global v1.1 Expansion Shelf: 6 Additional Countries (6. Germany, 7. China, 8. Japan, 9. Russia, 10. Ukraine, 11. Morocco) */}
+        <div style={{ marginTop: '32px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: '16px' }}>
+            <div>
+              <span style={{ fontSize: '11px', fontWeight: 800, color: '#6EE7B7', textTransform: 'uppercase', letterSpacing: '1.2px' }}>
+                Echoes of Home: The Atlas of Belonging · Global v1.1 Destinations (6–11)
+              </span>
+              <h3 style={{ margin: '4px 0 0 0', fontFamily: 'Georgia, serif', fontSize: '24px', color: '#FFF8EE' }}>
+                Explore Germany, China, Japan, Russia, Ukraine &amp; Morocco (6 Chapters Each)
+              </h3>
+            </div>
+            <Link
+              to="/minecraft"
+              style={{
+                background: 'rgba(16, 185, 129, 0.18)',
+                border: '1px solid #10B981',
+                color: '#A7F3D0',
+                textDecoration: 'none',
+                padding: '8px 16px',
+                borderRadius: '999px',
+                fontSize: '12px',
+                fontWeight: 800,
+              }}
+            >
+              Download 11-Country miraverse-global.mcaddon →
+            </Link>
+          </div>
+
+          <div
+            data-testid="global-expansion-grid-6"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 360px), 1fr))',
+              gap: '20px',
+            }}
+          >
+            {GLOBAL_NEW_COUNTRY_CODES.map((code) => {
+              const g = GLOBAL_COUNTRY_MAP[code];
+              return (
+                <article
+                  key={code}
+                  data-testid={`country-card-${code}`}
+                  style={{
+                    background: `linear-gradient(180deg, ${g.surfaceTintHex} 0%, #131F38 100%)`,
+                    borderRadius: '20px',
+                    overflow: 'hidden',
+                    border: `1px solid ${g.primaryColorHex}`,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    boxShadow: '0 10px 24px rgba(0, 0, 0, 0.3)',
+                  }}
+                >
+                  <div>
+                    <div style={{ position: 'relative', aspectRatio: '16 / 10', overflow: 'hidden', background: '#0F172A' }}>
+                      <img
+                        src={g.coverArtUrl}
+                        alt={`${g.order}. ${g.name}: ${g.city}`}
+                        loading="eager"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                      />
+                      <span
+                        style={{
+                          position: 'absolute',
+                          top: '10px',
+                          left: '10px',
+                          background: 'rgba(11, 19, 37, 0.88)',
+                          color: '#6EE7B7',
+                          border: '1px solid #10B981',
+                          padding: '3px 10px',
+                          borderRadius: '999px',
+                          fontSize: '11px',
+                          fontWeight: 800,
+                        }}
+                      >
+                        {g.order}. 6 Chapters · 4 Age Tracks · {g.localLanguage}
+                      </span>
+                    </div>
+
+                    <div data-testid={`world-card-${code}`} style={{ padding: '16px 18px 10px' }}>
+                      <div style={{ fontSize: '11px', fontWeight: 800, color: g.accentColorHex, textTransform: 'uppercase' }}>
+                        {g.order}. {g.name}: {g.city}
+                      </div>
+                      <h3 style={{ margin: '4px 0 6px 0', fontSize: '20px', fontFamily: 'Georgia, serif' }}>
+                        {g.name} · <span lang={g.localLanguage}>{g.nameNative}</span>
+                      </h3>
+                      <p style={{ fontSize: '13px', color: '#FFE29F', fontWeight: 700, margin: '0 0 6px 0' }}>
+                        {g.subtitle}
+                      </p>
+                      <p style={{ fontSize: '13px', color: '#CBD5E1', lineHeight: 1.48, margin: '0 0 12px 0' }}>
+                        {g.visualIdentity}
+                      </p>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: '#E2E8F0' }}>
+                        <img src={g.portraitArtUrl} alt={g.mentorName} width={28} height={28} style={{ borderRadius: '50%' }} />
+                        <span>
+                          Mentor: <strong>{g.mentorName}</strong> · Keepsake: <strong>{g.capstoneArtifact.name}</strong>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style={{ padding: '12px 18px 18px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                    <Link
+                      to={`/explore/${code}`}
+                      style={{
+                        flex: 1,
+                        textAlign: 'center',
+                        background: '#F4A261',
+                        color: '#0F172A',
+                        textDecoration: 'none',
+                        padding: '9px 10px',
+                        borderRadius: '10px',
+                        fontSize: '12px',
+                        fontWeight: 800,
+                      }}
+                    >
+                      Country Guide (6 Quests)
+                    </Link>
+                    <Link
+                      to={`/quests`}
+                      data-testid={`play-chapter-${code}`}
+                      style={{
+                        flex: 1,
+                        textAlign: 'center',
+                        background: g.primaryColorHex,
+                        color: '#FFF8EE',
+                        textDecoration: 'none',
+                        padding: '9px 10px',
+                        borderRadius: '10px',
+                        fontSize: '12px',
+                        fontWeight: 800,
+                      }}
+                    >
+                      6 Chapters ({code}01–{code}06)
+                    </Link>
+                    <Link
+                      to="/minecraft"
+                      style={{
+                        flex: 1,
+                        textAlign: 'center',
+                        background: 'rgba(255,255,255,0.1)',
+                        color: '#FFF8EE',
+                        textDecoration: 'none',
+                        padding: '9px 10px',
+                        borderRadius: '10px',
+                        fontSize: '12px',
+                        fontWeight: 700,
+                      }}
+                    >
+                      Bedrock Pack
+                    </Link>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* 14 Supported Languages Strip */}
+        <div
+          data-testid="global-14-languages-strip"
+          style={{
+            marginTop: '28px',
+            background: 'rgba(15, 23, 42, 0.92)',
+            border: '1px solid rgba(244, 162, 97, 0.4)',
+            borderRadius: '18px',
+            padding: '18px 22px',
+          }}
+        >
+          <div style={{ fontSize: '12px', fontWeight: 800, color: '#F4A261', textTransform: 'uppercase', marginBottom: '8px' }}>
+            14 Supported Interface &amp; Content Locale Profiles (9 Native Bedrock + 5 RTL Arabic Dialects)
+          </div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+            {GLOBAL_WEB_LOCALES.map((loc) => (
+              <span
+                key={loc.id}
+                lang={loc.id}
+                dir={loc.direction}
+                style={{
+                  background: loc.direction === 'rtl' ? 'rgba(16, 185, 129, 0.16)' : 'rgba(56, 189, 248, 0.14)',
+                  border: `1px solid ${loc.direction === 'rtl' ? 'rgba(16, 185, 129, 0.45)' : 'rgba(56, 189, 248, 0.4)'}`,
+                  color: '#FFF8EE',
+                  padding: '5px 12px',
+                  borderRadius: '999px',
+                  fontSize: '12px',
+                  fontWeight: 700,
+                }}
+              >
+                {loc.nativeLabel}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* v1.3 Featured Cultural Discoveries: Interactive World Atlas, 25 Quest Maps & Treasury */}
@@ -859,11 +1058,11 @@ export const CinematicLandingPage: React.FC = () => {
               />
             </div>
             <div style={{ display: 'flex', gap: '10px', marginBottom: '14px', overflowX: 'auto' }}>
-              {COUNTRIES.map((code) => (
+              {GLOBAL_COUNTRIES_CATALOG.map((c) => (
                 <img
-                  key={code}
-                  src={V08_WORLD_VISUAL_MAP[code].stampArtUrl}
-                  alt={`${V08_WORLD_VISUAL_MAP[code].nameEn} Stamp`}
+                  key={c.code}
+                  src={c.stampArtUrl}
+                  alt={`${c.name} Stamp`}
                   width={56}
                   height={56}
                   loading="eager"

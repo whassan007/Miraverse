@@ -18,6 +18,14 @@ import {
   V13_QUEST_ENCYCLOPEDIA,
   type AgeTierId,
 } from '../../../../../packages/contracts/v13/index';
+import {
+  GLOBAL_CHAPTERS_CATALOG,
+  GLOBAL_COUNTRIES_CATALOG,
+  GLOBAL_COUNTRIES_ORDERED,
+  GLOBAL_COUNTRY_MAP,
+  isCoreCountryCode,
+  type GlobalCountryCode,
+} from '../../lib/globalCatalog';
 
 function formatCoord(lat: number, lng: number): string {
   const ns = lat >= 0 ? 'N' : 'S';
@@ -32,14 +40,22 @@ function projectWgs84ToPercent(lat: number, lng: number): { x: number; y: number
 }
 
 export const InteractiveWorldAtlasPage: React.FC = () => {
-  const [selectedCountry, setSelectedCountry] = useState<CountryCode>('LB');
+  const [selectedCountry, setSelectedCountry] = useState<GlobalCountryCode>('LB');
   const [selectedAct, setSelectedAct] = useState<1 | 2 | 3 | 4 | 5>(1);
+  const [selectedGlobalIdx, setSelectedGlobalIdx] = useState<1 | 2 | 3 | 4 | 5 | 6>(1);
   const [activeMapSystem, setActiveMapSystem] = useState<'BOTH' | 'GEOGRAPHIC' | 'ADVENTURE'>('BOTH');
 
-  const countryExp = V13_COUNTRY_EXPERIENCES[selectedCountry];
-  const countryQuests = V13_QUEST_ENCYCLOPEDIA.filter((q) => q.country === selectedCountry);
+  const isCore = isCoreCountryCode(selectedCountry);
+  const globalMeta = GLOBAL_COUNTRY_MAP[selectedCountry];
+  const countryExp = isCore ? V13_COUNTRY_EXPERIENCES[selectedCountry as CountryCode] : undefined;
+  const countryQuests = isCore
+    ? V13_QUEST_ENCYCLOPEDIA.filter((q) => q.country === selectedCountry)
+    : V13_QUEST_ENCYCLOPEDIA.filter((q) => q.country === 'LB');
   const activeQuest = countryQuests.find((q) => q.actNumber === selectedAct) ?? countryQuests[0];
   const primaryNpc = activeQuest.npcs[0] ?? { name: 'Community Mentor', role: 'Cultural Guide' };
+  const globalChapters = GLOBAL_CHAPTERS_CATALOG.filter((ch) => ch.countryCode === selectedCountry);
+  const activeGlobalChapter = globalChapters.find((ch) => ch.chapterIndex === selectedGlobalIdx) ?? globalChapters[0];
+  const activeLandmarks = isCore && countryExp ? countryExp.landmarks : globalMeta.landmarks;
 
   return (
     <div
@@ -99,8 +115,8 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
           }}
         >
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {V13_COUNTRIES_ORDERED.map((cc) => {
-              const exp = V13_COUNTRY_EXPERIENCES[cc];
+            {GLOBAL_COUNTRIES_ORDERED.map((cc) => {
+              const g = GLOBAL_COUNTRY_MAP[cc];
               const active = cc === selectedCountry;
               return (
                 <button
@@ -119,7 +135,7 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
                     cursor: 'pointer',
                   }}
                 >
-                  {exp.orderIndex}. {exp.countryNameEn}: {exp.cityName}
+                  {g.order}. {g.name}: {g.city}
                 </button>
               );
             })}
@@ -193,8 +209,8 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
                   Map System 1 · Verified Real-World WGS84 Coordinates
                 </span>
                 <h2 style={{ margin: 0, fontSize: '24px', fontFamily: 'Georgia, serif' }}>
-                  Geographic Survey Atlas — {countryExp.countryNameEn}: {countryExp.cityName} (
-                  {formatCoord(countryExp.coordinatesCenter[0], countryExp.coordinatesCenter[1])})
+                  Geographic Survey Atlas — {globalMeta.name}: {globalMeta.city} (
+                  {formatCoord(globalMeta.coordinatesCenter[0], globalMeta.coordinatesCenter[1])})
                 </h2>
               </div>
               <div
@@ -256,16 +272,16 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
                   stroke="rgba(244, 162, 97, 0.55)"
                   strokeWidth="2.5"
                   strokeDasharray="6 4"
-                  points={V13_COUNTRIES_ORDERED.map((cc) => {
-                    const c = V13_COUNTRY_EXPERIENCES[cc].coordinatesCenter;
+                  points={GLOBAL_COUNTRIES_ORDERED.map((cc) => {
+                    const c = GLOBAL_COUNTRY_MAP[cc].coordinatesCenter;
                     const p = projectWgs84ToPercent(c[0], c[1]);
                     return `${(p.x * 10).toFixed(1)},${(p.y * 3.6).toFixed(1)}`;
                   }).join(' ')}
                 />
 
-                {V13_COUNTRIES_ORDERED.map((cc) => {
-                  const exp = V13_COUNTRY_EXPERIENCES[cc];
-                  const p = projectWgs84ToPercent(exp.coordinatesCenter[0], exp.coordinatesCenter[1]);
+                {GLOBAL_COUNTRIES_ORDERED.map((cc) => {
+                  const g = GLOBAL_COUNTRY_MAP[cc];
+                  const p = projectWgs84ToPercent(g.coordinatesCenter[0], g.coordinatesCenter[1]);
                   const cx = p.x * 10;
                   const cy = p.y * 3.6;
                   const isActive = cc === selectedCountry;
@@ -288,19 +304,19 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
                         y={cy - 16}
                         textAnchor="middle"
                         fill={isActive ? '#FFE29F' : '#E2E8F0'}
-                        fontSize="13"
+                        fontSize="12"
                         fontWeight="bold"
                       >
-                        {exp.orderIndex}. {exp.cityName} ({cc})
+                        {g.order}. {g.name} ({cc})
                       </text>
                       <text
                         x={cx}
-                        y={cy + 26}
+                        y={cy + 24}
                         textAnchor="middle"
                         fill="#93C5FD"
-                        fontSize="11"
+                        fontSize="10"
                       >
-                        {formatCoord(exp.coordinatesCenter[0], exp.coordinatesCenter[1])}
+                        {formatCoord(g.coordinatesCenter[0], g.coordinatesCenter[1])}
                       </text>
                     </g>
                   );
@@ -316,7 +332,7 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
                 gap: '14px',
               }}
             >
-              {countryExp.landmarks.map((lm) => (
+              {activeLandmarks.map((lm) => (
                 <article
                   key={lm.landmarkId}
                   data-testid={`geographic-landmark-${lm.landmarkId}`}
@@ -528,7 +544,7 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
                     Inspect Full Quest Entry →
                   </Link>
                   <Link
-                    to={`/play/${selectedCountry}`}
+                    to={isCore ? `/play/${selectedCountry}` : '/minecraft'}
                     style={{
                       background: 'rgba(0, 176, 111, 0.2)',
                       border: '1px solid #00B06F',
@@ -540,7 +556,7 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
                       fontSize: '13px',
                     }}
                   >
-                    Launch {countryExp.cityName} Quest →
+                    Launch {globalMeta.city} Quest →
                   </Link>
                 </div>
               </div>
@@ -557,7 +573,7 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
 
 export const QuestEncyclopediaPage: React.FC = () => {
   const params = useParams<{ questId?: string }>();
-  const [countryFilter, setCountryFilter] = useState<CountryCode | 'ALL'>('ALL');
+  const [countryFilter, setCountryFilter] = useState<GlobalCountryCode | 'ALL'>('ALL');
   const [selectedAgeTier, setSelectedAgeTier] = useState<AgeTierId>('8-10');
 
   const focusedQuest = params.questId
@@ -567,6 +583,10 @@ export const QuestEncyclopediaPage: React.FC = () => {
   const filteredQuests = focusedQuest
     ? [focusedQuest]
     : V13_QUEST_ENCYCLOPEDIA.filter((q) => countryFilter === 'ALL' || q.country === countryFilter);
+
+  const filteredGlobalChapters = GLOBAL_CHAPTERS_CATALOG.filter(
+    (ch) => countryFilter === 'ALL' || ch.countryCode === countryFilter
+  );
 
   return (
     <div
@@ -593,7 +613,7 @@ export const QuestEncyclopediaPage: React.FC = () => {
               marginBottom: '8px',
             }}
           >
-            MiraVerse v1.3 Quest Encyclopedia · 25 Quests × 4 Age Tracks = 100 Age-Adapted Stages
+            MiraVerse Global Quest Encyclopedia · 11 Countries · 66 Chapters × 4 Age Tracks = 264 Variants (+ 25 Core Quests)
           </span>
           <h1
             style={{
@@ -602,10 +622,10 @@ export const QuestEncyclopediaPage: React.FC = () => {
               fontSize: 'clamp(28px, 4vw, 44px)',
             }}
           >
-            Cultural Quest Encyclopedia &amp; Age-Adapted Learning Guide
+            Cultural Quest Encyclopedia &amp; Age-Adapted Learning Guide (All 11 Countries)
           </h1>
           <p style={{ margin: 0, color: '#CBD5E1', fontSize: '15px', maxWidth: '840px', lineHeight: 1.6 }}>
-            Explore all 25 cultural quests across Lebanon, Iraq, Egypt, France, and South Korea. Switch between the 4 age-specific learning tracks (<strong>Ages 5–7, 8–10, 11–13, and 14–17</strong>) to inspect tailored narratives, activities, epistemic classifications, and platform mechanics.
+            Explore all 11 cultural destinations (Lebanon, Iraq, Egypt, France, South Korea, Germany, China, Japan, Russia, Ukraine, and Morocco) with 66 connected chapters and 264 age-adapted variants across <strong>Ages 5–7, 8–10, 11–13, and 14–17</strong>.
           </p>
         </header>
 
@@ -640,10 +660,10 @@ export const QuestEncyclopediaPage: React.FC = () => {
                 cursor: 'pointer',
               }}
             >
-              All 5 Countries (25 Quests)
+              All 11 Countries (66 Chapters + 25 Core Quests)
             </button>
-            {V13_COUNTRIES_ORDERED.map((cc) => {
-              const exp = V13_COUNTRY_EXPERIENCES[cc];
+            {GLOBAL_COUNTRIES_ORDERED.map((cc) => {
+              const g = GLOBAL_COUNTRY_MAP[cc];
               const active = countryFilter === cc;
               return (
                 <button
@@ -662,7 +682,7 @@ export const QuestEncyclopediaPage: React.FC = () => {
                     cursor: 'pointer',
                   }}
                 >
-                  {exp.orderIndex}. {exp.countryNameEn} ({exp.cityName})
+                  {g.order}. {g.name} ({g.city})
                 </button>
               );
             })}
@@ -876,6 +896,66 @@ export const QuestEncyclopediaPage: React.FC = () => {
             );
           })}
         </div>
+
+        {/* Global v1.1 66-Chapter Catalog (11 Countries × 6 Chapters × 4 Age Variants = 264 Variants) */}
+        {!focusedQuest && (
+          <section
+            data-testid="global-66-chapters-encyclopedia"
+            style={{ marginTop: '36px' }}
+          >
+            <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '26px', color: '#FFE29F', margin: '0 0 8px 0' }}>
+              Echoes of Home: 66 Connected Chapters Across All 11 Countries ({filteredGlobalChapters.length} Shown · Track: Ages {selectedAgeTier})
+            </h2>
+            <p style={{ color: '#CBD5E1', fontSize: '14px', margin: '0 0 18px 0' }}>
+              Every country in the Global v1.1 campaign includes 6 sequential chapters (`01`–`06`) with 4 authored age-track behavior variants (`Explorer 5–7`, `Adventurer 8–10`, `Investigator 11–13`, `Architect / Curator 14–17`).
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '16px' }}>
+              {filteredGlobalChapters.map((ch) => {
+                const g = GLOBAL_COUNTRY_MAP[ch.countryCode];
+                const v = ch.ageVariants[selectedAgeTier];
+                return (
+                  <article
+                    key={ch.id}
+                    data-testid={`global-chapter-card-${ch.id}`}
+                    style={{
+                      background: 'rgba(15, 23, 42, 0.94)',
+                      border: `1px solid ${g.primaryColorHex}`,
+                      borderRadius: '16px',
+                      padding: '18px',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '8px', marginBottom: '6px' }}>
+                      <span style={{ fontSize: '11px', fontWeight: 800, color: '#6EE7B7' }}>
+                        {g.order}. {g.name} · {ch.id} (Chapter {ch.chapterIndex}/6)
+                      </span>
+                      <span style={{ fontSize: '11px', fontWeight: 800, color: '#93C5FD' }}>
+                        [{ch.sourceType}]
+                      </span>
+                    </div>
+                    <h3 style={{ margin: '0 0 6px 0', fontSize: '18px', fontFamily: 'Georgia, serif', color: '#FFF8EE' }}>
+                      {ch.title}
+                    </h3>
+                    <p style={{ margin: '0 0 8px 0', fontSize: '13px', color: '#E2E8F0', lineHeight: 1.5 }}>
+                      {ch.activity}
+                    </p>
+                    <div style={{ fontSize: '12px', color: '#FDE68A', marginBottom: '8px' }}>
+                      <strong>{v.track} (Ages {selectedAgeTier}):</strong> {v.activitySummary} ({v.steps} steps)
+                    </div>
+                    <div style={{ fontSize: '12px', color: '#A7F3D0', marginBottom: '10px' }}>
+                      <strong>Earned Artifact:</strong> {ch.reward.artifactName} (+{ch.reward.storySparks} Story Sparks)
+                    </div>
+                    <Link
+                      to={`/explore/${ch.countryCode}`}
+                      style={{ color: '#F4A261', fontSize: '12px', fontWeight: 800, textDecoration: 'none' }}
+                    >
+                      Open {g.name} Country Guide →
+                    </Link>
+                  </article>
+                );
+              })}
+            </div>
+          </section>
+        )}
       </div>
     </div>
   );

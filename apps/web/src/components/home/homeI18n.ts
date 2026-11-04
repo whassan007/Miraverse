@@ -186,10 +186,10 @@ function pickTranslated(
 }
 
 export function resolveHomeCopy(
-  lang: Lang,
+  lang: string,
   t: (key: string, fallback?: string) => string
 ): HomeCopy {
-  const base = LOCALIZED_HOME_COPY[lang] ?? LOCALIZED_HOME_COPY.en;
+  const base = (LOCALIZED_HOME_COPY as Record<string, HomeCopy>)[lang] ?? LOCALIZED_HOME_COPY.en;
 
   return {
     badge: pickTranslated(t, ['home.badge', 'hero.badge'], base.badge),

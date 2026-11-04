@@ -169,13 +169,13 @@ export const MinecraftCompanionPage: React.FC = () => {
             marginBottom: '12px',
           }}
         >
-          Companion Edition · Play in Minecraft Bedrock
+          Companion Edition · Play in Minecraft Bedrock (Global v1.1 · 11 Countries · 66 Chapters · 14 Languages)
         </span>
         <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(28px, 4vw, 44px)', margin: '0 0 12px 0' }}>
-          MiraVerse for Minecraft Bedrock Edition — Cultural Restoration Companion
+          MiraVerse for Minecraft Bedrock Edition — Echoes of Home: The Atlas of Belonging
         </h1>
         <p style={{ color: '#CBD5E1', fontSize: '16px', lineHeight: 1.6, marginBottom: '24px' }}>
-          Requires a licensed copy of <strong>Minecraft Bedrock Edition (v1.21.50+)</strong> on Windows, iOS, Android, Xbox, PlayStation, or Nintendo Switch. This companion focuses on hands-on block restoration of historic courtyards, libraries, lanterns, silk workshops, and hanok roofs across all 5 destinations, with independent Bedrock-local progression. It does not run in a web browser.
+          Requires a licensed copy of <strong>Minecraft Bedrock Edition (v1.21.50+)</strong> on Windows, iOS, Android, Xbox, PlayStation, or Nintendo Switch. Explore <strong>The Atlas Observatory</strong> and all <strong>11 cultural destinations</strong> (Lebanon, Iraq, Egypt, France, South Korea, Germany, China, Japan, Russia, Ukraine, and Morocco) with 66 sequential chapters, 264 age-adapted variants (Ages 5–7, 8–10, 11–13, and 14–17), and 14 supported language profiles.
         </p>
 
         <div
@@ -206,16 +206,21 @@ export const MinecraftCompanionPage: React.FC = () => {
           <h2 style={{ marginTop: 0, color: '#FFE29F' }}>Verified Companion Add-On &amp; Installation Guide</h2>
           <ul style={{ lineHeight: 1.8, color: '#E2E8F0' }}>
             <li>
-              <strong>Behavior &amp; Resource Add-On (`miraverse.mcaddon`):</strong> Verified `@minecraft/server@1.17.0` &amp; `@minecraft/server-ui@1.3.0` package with 6 authored `.mcstructure` cultural templates (`hub`, `LB`, `IQ`, `EG`, `FR`, `KR`).
+              <strong>Global v1.1 Add-On (`miraverse-global.mcaddon`):</strong> Complete 11-country campaign (<em>Echoes of Home: The Atlas of Belonging</em>) with 66 chapters, 264 age-track variants, 88 custom cultural blocks, 55 Blockbench NPC models, and 14 localized language profiles:
+              {' '}
+              <a href="/downloads/miraverse-global.mcaddon" style={{ color: '#6EE7B7', fontWeight: 800 }}>
+                Download miraverse-global.mcaddon (11 Countries · 66 Chapters · 14 Languages)
+              </a>
             </li>
             <li>
-              <strong>Download Add-On Package:</strong>{' '}
-              <a href="/downloads/miraverse.mcaddon" style={{ color: '#6EE7B7', fontWeight: 700 }}>
+              <strong>Core 5-Country Add-On (`miraverse.mcaddon`):</strong> Verified `@minecraft/server@1.17.0` &amp; `@minecraft/server-ui@1.3.0` package with 6 authored `.mcstructure` cultural templates (`hub`, `LB`, `IQ`, `EG`, `FR`, `KR`):
+              {' '}
+              <a href="/downloads/miraverse.mcaddon" style={{ color: '#93C5FD', fontWeight: 700 }}>
                 Download miraverse.mcaddon (Free Companion Add-On)
               </a>
             </li>
             <li>
-              <strong>How to Import:</strong> Download <code>miraverse.mcaddon</code> on a device with Minecraft Bedrock Edition installed, open the file to trigger automatic pack import, and activate both the MiraVerse Behavior Pack and Resource Pack on your world.
+              <strong>How to Import:</strong> Download <code>miraverse-global.mcaddon</code> (or <code>miraverse.mcaddon</code>) on a device with Minecraft Bedrock Edition installed, open the file to trigger automatic pack import, and activate both the MiraVerse Behavior Pack and Resource Pack on your world.
             </li>
           </ul>
         </div>

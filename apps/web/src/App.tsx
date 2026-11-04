@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { HashRouter, Link, NavLink, Route, Routes, useLocation } from 'react-router-dom';
-import { UI_LANGS, type Lang } from '../../../packages/content/schema';
-import { I18nProvider, useI18n } from './i18n';
+import { I18nProvider, useI18n, WEB_UI_LANGS, WEB_UI_LANG_LABELS, type WebUiLang } from './i18n';
 import { CinematicLandingPage } from './landing/ui/index';
 import { AdminDiagnosticsPage, MinecraftCompanionPage } from './launch/RobloxLaunchPage';
 import {
@@ -21,15 +20,6 @@ import {
   QuestEncyclopediaPage,
 } from './portal/v13/CulturalPortalPages';
 import { AdultStorefront } from './storefront/index';
-
-const languageNames: Record<Lang, string> = {
-  en: 'English',
-  fr: 'Français',
-  'ar-LB': 'العربية · لبنان',
-  'ar-EG': 'العربية · مصر',
-  'ar-IQ': 'العربية · العراق',
-  ko: '한국어',
-};
 
 // Synchronize direct path navigation (e.g. /play/FR or /parents/shop) into HashRouter on initial load
 if (
@@ -89,13 +79,13 @@ function Shell() {
             {t('nav.home', 'Home')}
           </NavLink>
           <NavLink to="/explore">
-            Explore Worlds
+            Explore Worlds (11)
           </NavLink>
           <NavLink to="/atlas">
             World Atlas
           </NavLink>
           <NavLink to="/quests">
-            Quests (25)
+            Quests (66)
           </NavLink>
           <NavLink to="/passport">
             {t('nav.passport', 'Passport')}
@@ -112,11 +102,11 @@ function Shell() {
         </nav>
 
         <label className="language-picker" htmlFor="ui-language">
-          <span>{t('nav.language', 'Language')}</span>
+          <span>{t('nav.language', 'Language')} (14)</span>
           <select
             id="ui-language"
             value={lang}
-            onChange={(event) => setLang(event.target.value as Lang)}
+            onChange={(event) => setLang(event.target.value as WebUiLang)}
             style={{
               background: '#131F38',
               color: '#FFF8EE',
@@ -126,9 +116,9 @@ function Shell() {
               borderRadius: '8px',
             }}
           >
-            {UI_LANGS.map((locale) => (
+            {WEB_UI_LANGS.map((locale) => (
               <option key={locale} value={locale} lang={locale}>
-                {languageNames[locale]}
+                {WEB_UI_LANG_LABELS[locale]}
               </option>
             ))}
           </select>
