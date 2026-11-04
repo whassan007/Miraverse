@@ -285,6 +285,13 @@ Return ONLY the raw JSON array.`;
 
 async function runD3() {
   // Wave C read-only audit and report generation
+  const rootStatusPath = path.resolve(worktreeDir, '../../Miraverse/swarm/status.json');
+  const localStatusPath = path.join(worktreeDir, 'swarm/status.json');
+  const copiedStatus = !fs.existsSync(localStatusPath) && fs.existsSync(rootStatusPath);
+  if (copiedStatus) {
+    fs.copyFileSync(rootStatusPath, localStatusPath);
+  }
+
   const gates = [
     { name: 'Content Release Validation (Gate G1)', cmd: 'npm', args: ['run', 'validate:release'] },
     { name: 'Cross-Platform Compiler (Gate G2)', cmd: 'npm', args: ['run', 'compile'] },
@@ -292,7 +299,7 @@ async function runD3() {
     { name: 'Minecraft Add-On Build (Gate G5)', cmd: 'npm', args: ['-w', 'apps/minecraft', 'run', 'build'] },
     { name: 'Rojo Place Build (Gate G4)', cmd: 'npm', args: ['run', 'build:roblox'] },
     { name: 'MCAddon Packaging (Gate G5)', cmd: 'npm', args: ['run', 'pack:mcaddon'] },
-    { name: 'Unit & Integration Tests (Gate G1-G6)', cmd: 'npx', args: ['vitest', 'run'] },
+    { name: 'Unit, Integration & Web E2E Tests (Gates G1-G6)', cmd: 'npx', args: ['vitest', 'run'] },
   ];
 
   const gateResults = [];
@@ -313,18 +320,20 @@ async function runD3() {
     });
   }
 
-  // Clean up untracked build artifacts inside D3's worktree so D3 only touches swarm/REPORT.md
-  fs.rmSync(path.join(worktreeDir, 'apps/roblox/dist'), { recursive: true, force: true });
-  fs.rmSync(path.join(worktreeDir, 'apps/minecraft/dist'), { recursive: true, force: true });
-  fs.rmSync(path.join(worktreeDir, 'dist'), { recursive: true, force: true });
-
   // Read root swarm/status.json for the 40-agent table
-  const rootStatusPath = path.resolve(worktreeDir, '../../Miraverse/swarm/status.json');
-  const localStatusPath = path.join(worktreeDir, 'swarm/status.json');
   const statusFile = fs.existsSync(rootStatusPath) ? rootStatusPath : localStatusPath;
   const statusData = fs.existsSync(statusFile)
     ? JSON.parse(fs.readFileSync(statusFile, 'utf-8'))
     : { agents: {} };
+
+  // Clean up untracked build artifacts inside D3's worktree so D3 only touches swarm/REPORT.md
+  if (copiedStatus) {
+    fs.rmSync(localStatusPath, { force: true });
+  }
+  fs.rmSync(path.join(worktreeDir, 'apps/web/dist'), { recursive: true, force: true });
+  fs.rmSync(path.join(worktreeDir, 'apps/roblox/dist'), { recursive: true, force: true });
+  fs.rmSync(path.join(worktreeDir, 'apps/minecraft/dist'), { recursive: true, force: true });
+  fs.rmSync(path.join(worktreeDir, 'dist'), { recursive: true, force: true });
 
   const summaryPrompt = `You are D3, the independent Wave C final auditor on local DGX (${MODEL}).
 Summarize the following verified gate results in 4 concise bullet points for the executive audit commentary in swarm/REPORT.md.
