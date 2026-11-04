@@ -1,0 +1,516 @@
+{
+  "schemaVersion": "10.0.0",
+  "totalItems": 50,
+  "itemsByRegion": {
+    "LB": [
+      {
+        "id": "miraverse:lb_manoushe",
+        "tex": "lb_manoushe",
+        "role": "cooked_dish",
+        "color": [
+          217,
+          123,
+          56
+        ]
+      },
+      {
+        "id": "miraverse:lb_zaatar",
+        "tex": "lb_zaatar",
+        "role": "ingredient",
+        "color": [
+          76,
+          145,
+          65
+        ]
+      },
+      {
+        "id": "miraverse:lb_sumac_jar",
+        "tex": "lb_sumac_jar",
+        "role": "ingredient",
+        "color": [
+          168,
+          42,
+          58
+        ]
+      },
+      {
+        "id": "miraverse:lb_olive_oil",
+        "tex": "lb_olive_oil",
+        "role": "traded_ingredient",
+        "color": [
+          212,
+          188,
+          62
+        ]
+      },
+      {
+        "id": "miraverse:lb_flour",
+        "tex": "lb_flour",
+        "role": "ingredient",
+        "color": [
+          242,
+          235,
+          218
+        ]
+      },
+      {
+        "id": "miraverse:lb_limestone_block",
+        "tex": "lb_limestone_block",
+        "role": "restoration_material",
+        "color": [
+          224,
+          206,
+          172
+        ]
+      },
+      {
+        "id": "miraverse:lb_cedar_beam",
+        "tex": "lb_cedar_beam",
+        "role": "restoration_material",
+        "color": [
+          142,
+          88,
+          52
+        ]
+      },
+      {
+        "id": "miraverse:lb_red_tile",
+        "tex": "lb_red_tile",
+        "role": "restoration_material",
+        "color": [
+          188,
+          74,
+          52
+        ]
+      },
+      {
+        "id": "miraverse:lb_cedar_sapling",
+        "tex": "lb_cedar_sapling",
+        "role": "optional_collectible",
+        "color": [
+          46,
+          125,
+          72
+        ]
+      },
+      {
+        "id": "miraverse:lb_soap",
+        "tex": "lb_soap",
+        "role": "cultural_artifact",
+        "color": [
+          215,
+          224,
+          192
+        ]
+      }
+    ],
+    "EG": [
+      {
+        "id": "miraverse:eg_koshari",
+        "tex": "eg_koshari",
+        "role": "cooked_dish",
+        "color": [
+          204,
+          88,
+          44
+        ]
+      },
+      {
+        "id": "miraverse:eg_lentils",
+        "tex": "eg_lentils",
+        "role": "ingredient",
+        "color": [
+          132,
+          92,
+          58
+        ]
+      },
+      {
+        "id": "miraverse:eg_rice",
+        "tex": "eg_rice",
+        "role": "ingredient",
+        "color": [
+          245,
+          242,
+          232
+        ]
+      },
+      {
+        "id": "miraverse:eg_tomato_sauce",
+        "tex": "eg_tomato_sauce",
+        "role": "traded_ingredient",
+        "color": [
+          214,
+          52,
+          42
+        ]
+      },
+      {
+        "id": "miraverse:eg_crispy_onions",
+        "tex": "eg_crispy_onions",
+        "role": "ingredient",
+        "color": [
+          178,
+          114,
+          48
+        ]
+      },
+      {
+        "id": "miraverse:eg_fanous_lantern",
+        "tex": "eg_fanous_lantern",
+        "role": "restoration_material",
+        "color": [
+          240,
+          180,
+          41
+        ]
+      },
+      {
+        "id": "miraverse:eg_acacia_plank",
+        "tex": "eg_acacia_plank",
+        "role": "restoration_material",
+        "color": [
+          168,
+          92,
+          52
+        ]
+      },
+      {
+        "id": "miraverse:eg_linen_sail",
+        "tex": "eg_linen_sail",
+        "role": "restoration_material",
+        "color": [
+          236,
+          228,
+          208
+        ]
+      },
+      {
+        "id": "miraverse:eg_sun_stone",
+        "tex": "eg_sun_stone",
+        "role": "optional_collectible",
+        "color": [
+          232,
+          172,
+          64
+        ]
+      },
+      {
+        "id": "miraverse:eg_date_fruit",
+        "tex": "eg_date_fruit",
+        "role": "cultural_artifact",
+        "color": [
+          118,
+          62,
+          42
+        ]
+      }
+    ],
+    "IQ": [
+      {
+        "id": "miraverse:iq_kleicha",
+        "tex": "iq_kleicha",
+        "role": "cooked_dish",
+        "color": [
+          214,
+          158,
+          78
+        ]
+      },
+      {
+        "id": "miraverse:iq_date_paste",
+        "tex": "iq_date_paste",
+        "role": "ingredient",
+        "color": [
+          112,
+          58,
+          38
+        ]
+      },
+      {
+        "id": "miraverse:iq_cardamom",
+        "tex": "iq_cardamom",
+        "role": "traded_ingredient",
+        "color": [
+          118,
+          164,
+          88
+        ]
+      },
+      {
+        "id": "miraverse:iq_wheat_dough",
+        "tex": "iq_wheat_dough",
+        "role": "ingredient",
+        "color": [
+          234,
+          214,
+          174
+        ]
+      },
+      {
+        "id": "miraverse:iq_palm_wood",
+        "tex": "iq_palm_wood",
+        "role": "restoration_material",
+        "color": [
+          148,
+          102,
+          62
+        ]
+      },
+      {
+        "id": "miraverse:iq_turquoise_tile",
+        "tex": "iq_turquoise_tile",
+        "role": "restoration_material",
+        "color": [
+          58,
+          166,
+          185
+        ]
+      },
+      {
+        "id": "miraverse:iq_mud_brick",
+        "tex": "iq_mud_brick",
+        "role": "restoration_material",
+        "color": [
+          164,
+          118,
+          84
+        ]
+      },
+      {
+        "id": "miraverse:iq_brass_teapot",
+        "tex": "iq_brass_teapot",
+        "role": "cultural_artifact",
+        "color": [
+          218,
+          168,
+          56
+        ]
+      },
+      {
+        "id": "miraverse:iq_pomegranate",
+        "tex": "iq_pomegranate",
+        "role": "optional_collectible",
+        "color": [
+          188,
+          38,
+          56
+        ]
+      },
+      {
+        "id": "miraverse:iq_samoon",
+        "tex": "iq_samoon",
+        "role": "cultural_artifact",
+        "color": [
+          222,
+          172,
+          98
+        ]
+      }
+    ],
+    "KR": [
+      {
+        "id": "miraverse:kr_songpyeon",
+        "tex": "kr_songpyeon",
+        "role": "cooked_dish",
+        "color": [
+          148,
+          198,
+          152
+        ]
+      },
+      {
+        "id": "miraverse:kr_rice_flour",
+        "tex": "kr_rice_flour",
+        "role": "ingredient",
+        "color": [
+          248,
+          246,
+          242
+        ]
+      },
+      {
+        "id": "miraverse:kr_sesame_honey",
+        "tex": "kr_sesame_honey",
+        "role": "traded_ingredient",
+        "color": [
+          218,
+          162,
+          54
+        ]
+      },
+      {
+        "id": "miraverse:kr_pine_needles",
+        "tex": "kr_pine_needles",
+        "role": "ingredient",
+        "color": [
+          46,
+          112,
+          68
+        ]
+      },
+      {
+        "id": "miraverse:kr_giwa_tile",
+        "tex": "kr_giwa_tile",
+        "role": "restoration_material",
+        "color": [
+          64,
+          76,
+          88
+        ]
+      },
+      {
+        "id": "miraverse:kr_pine_pillar",
+        "tex": "kr_pine_pillar",
+        "role": "restoration_material",
+        "color": [
+          158,
+          106,
+          64
+        ]
+      },
+      {
+        "id": "miraverse:kr_hanji_paper",
+        "tex": "kr_hanji_paper",
+        "role": "restoration_material",
+        "color": [
+          242,
+          236,
+          222
+        ]
+      },
+      {
+        "id": "miraverse:kr_celadon_cup",
+        "tex": "kr_celadon_cup",
+        "role": "optional_collectible",
+        "color": [
+          128,
+          186,
+          168
+        ]
+      },
+      {
+        "id": "miraverse:kr_inkstone",
+        "tex": "kr_inkstone",
+        "role": "cultural_artifact",
+        "color": [
+          52,
+          58,
+          66
+        ]
+      },
+      {
+        "id": "miraverse:kr_kimchi",
+        "tex": "kr_kimchi",
+        "role": "cultural_artifact",
+        "color": [
+          204,
+          62,
+          48
+        ]
+      }
+    ],
+    "FR": [
+      {
+        "id": "miraverse:fr_galette_des_rois",
+        "tex": "fr_galette_des_rois",
+        "role": "cooked_dish",
+        "color": [
+          228,
+          168,
+          56
+        ]
+      },
+      {
+        "id": "miraverse:fr_puff_pastry",
+        "tex": "fr_puff_pastry",
+        "role": "ingredient",
+        "color": [
+          238,
+          208,
+          142
+        ]
+      },
+      {
+        "id": "miraverse:fr_almond_cream",
+        "tex": "fr_almond_cream",
+        "role": "traded_ingredient",
+        "color": [
+          242,
+          224,
+          178
+        ]
+      },
+      {
+        "id": "miraverse:fr_porcelain_feve",
+        "tex": "fr_porcelain_feve",
+        "role": "ingredient",
+        "color": [
+          236,
+          242,
+          248
+        ]
+      },
+      {
+        "id": "miraverse:fr_paper_crown",
+        "tex": "fr_paper_crown",
+        "role": "cultural_artifact",
+        "color": [
+          244,
+          196,
+          48
+        ]
+      },
+      {
+        "id": "miraverse:fr_cut_stone",
+        "tex": "fr_cut_stone",
+        "role": "restoration_material",
+        "color": [
+          218,
+          196,
+          158
+        ]
+      },
+      {
+        "id": "miraverse:fr_slate_roof",
+        "tex": "fr_slate_roof",
+        "role": "restoration_material",
+        "color": [
+          72,
+          92,
+          118
+        ]
+      },
+      {
+        "id": "miraverse:fr_oak_shutter",
+        "tex": "fr_oak_shutter",
+        "role": "restoration_material",
+        "color": [
+          138,
+          86,
+          44
+        ]
+      },
+      {
+        "id": "miraverse:fr_lavender",
+        "tex": "fr_lavender",
+        "role": "optional_collectible",
+        "color": [
+          148,
+          108,
+          196
+        ]
+      },
+      {
+        "id": "miraverse:fr_baguette",
+        "tex": "fr_baguette",
+        "role": "cultural_artifact",
+        "color": [
+          216,
+          156,
+          72
+        ]
+      }
+    ]
+  }
+}
