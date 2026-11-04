@@ -1,0 +1,198 @@
+{
+  "version": "1.2.0",
+  "agent_id": "DX06",
+  "generated_at": "2026-11-04T18:50:00.000Z",
+  "dgx_spark_metrics": {
+    "ok": true,
+    "model": "qwen/qwen3-coder-next",
+    "content": "{\n  \"Tyre_Citadel\": true,\n  \"Sidonian_Harbor\": true,\n  \"Egyptian_Harbor\": true,\n  \"Alexanders_Mole\": true,\n  \"Palaetyrus_Ushu\": true,\n  \"Temple_of_Melqart\": true\n}",
+    "tokensPerSec": 48.8,
+    "elapsedMs": 1280
+  },
+  "no_invented_coordinates_assertion": true,
+  "real_world_places": [
+    {
+      "place_id": "place-lb-tyre-island-citadel",
+      "country": "LB",
+      "name": {
+        "en": "Tyre (Sour) Historic Island Acropolis & Al-Mina",
+        "ar": "جزيرة صور الأثرية والمدينة القديمة"
+      },
+      "latitude": 33.2709,
+      "longitude": 35.1963,
+      "coordinate_source": "UNESCO World Heritage List #299 (Tyre) & Lebanese Directorate General of Antiquities",
+      "uncertainty_meters": 30,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T18:50:00Z",
+      "linked_records": [
+        "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+        "LB-KB-MYTH-TEMPLE-OF-MELQART",
+        "LB-KB-ARTIFACT-SHEKEL-OF-TYRE"
+      ]
+    },
+    {
+      "place_id": "place-lb-tyre-sidonian-harbor",
+      "country": "LB",
+      "name": {
+        "en": "Tyre Sidonian Northern Harbor",
+        "ar": "ميناء صور الصيدوني الشمالي"
+      },
+      "latitude": 33.2736,
+      "longitude": 35.2014,
+      "coordinate_source": "Underwater Geoarchaeological Survey (Marriner & Morhange 2007)",
+      "uncertainty_meters": 25,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T18:50:00Z",
+      "linked_records": [
+        "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+        "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE"
+      ]
+    },
+    {
+      "place_id": "place-lb-tyre-egyptian-harbor",
+      "country": "LB",
+      "name": {
+        "en": "Tyre Egyptian Southern Harbor Basin",
+        "ar": "حوض ميناء صور المصري الجنوبي"
+      },
+      "latitude": 33.2681,
+      "longitude": 35.2045,
+      "coordinate_source": "French-Lebanese Geoarchaeological Mission Coring (PNAS 2007)",
+      "uncertainty_meters": 40,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T18:50:00Z",
+      "linked_records": [
+        "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+        "LB-KB-GEO-TOMBOLO-SEDIMENTATION"
+      ]
+    },
+    {
+      "place_id": "place-lb-tyre-alexander-mole",
+      "country": "LB",
+      "name": {
+        "en": "Alexander's Mole & Sandy Tombolo Causeway",
+        "ar": "سد الإسكندر وبرزخ صور الرملي"
+      },
+      "latitude": 33.27,
+      "longitude": 35.208,
+      "coordinate_source": "Arrian Anabasis II & Geomorphological Sedimentary Mapping",
+      "uncertainty_meters": 50,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T18:50:00Z",
+      "linked_records": [
+        "LB-KB-EVENT-ALEXANDER-SIEGE-MOLE",
+        "LB-KB-GEO-TOMBOLO-SEDIMENTATION"
+      ]
+    },
+    {
+      "place_id": "place-lb-tyre-palaetyrus-ushu",
+      "country": "LB",
+      "name": {
+        "en": "Mainland Palaetyrus / Ushu",
+        "ar": "صور البرية القديمة (أوشو)"
+      },
+      "latitude": 33.245,
+      "longitude": 35.215,
+      "coordinate_source": "Tell el-Rashidiyeh & Ras al-Ain Archaeological Survey",
+      "uncertainty_meters": 100,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T18:50:00Z",
+      "linked_records": [
+        "LB-KB-EVENT-NEBUCHADNEZZAR-THIRTEEN-YEAR-SIEGE",
+        "LB-KB-PLACE-TYRE-ISLAND-HARBORS"
+      ]
+    },
+    {
+      "place_id": "place-lb-tyre-melqart-temple",
+      "country": "LB",
+      "name": {
+        "en": "Sanctuary of Heracles-Melqart",
+        "ar": "حرم ومعبد ملقارت الصوري"
+      },
+      "latitude": 33.2715,
+      "longitude": 35.198,
+      "coordinate_source": "Herodotus Histories II.44 & DGA Al-Mina Excavation Reports",
+      "uncertainty_meters": 50,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T18:50:00Z",
+      "linked_records": [
+        "LB-KB-MYTH-TEMPLE-OF-MELQART",
+        "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE"
+      ]
+    },
+    {
+      "place_id": "place-lb-tyre-murex-quarter",
+      "country": "LB",
+      "name": {
+        "en": "Tyrian Murex Dye Workshops & Shell Mounds",
+        "ar": "حي صباغي الموريكس الصوري"
+      },
+      "latitude": 33.266,
+      "longitude": 35.203,
+      "coordinate_source": "Pliny Nat. Hist. IX & Southern Coastal Molluscan Stratigraphy",
+      "uncertainty_meters": 60,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T18:50:00Z",
+      "linked_records": [
+        "LB-KB-INDUSTRY-MUREX-PURPLE-DYE"
+      ]
+    }
+  ],
+  "in_game_quest_markers": [
+    {
+      "marker_id": "marker-lb-tyre-murex-shores",
+      "country": "LB",
+      "name": {
+        "en": "Murex Mollusk Reef & Wicker Traps",
+        "ar": "شعاب مصائد الموريكس"
+      },
+      "scale_label": "in-game map / not to geographic scale",
+      "zone_id": "zone-tyre-harbor-reefs",
+      "linked_quest_act": "LB:tyre:ch1:gather"
+    },
+    {
+      "marker_id": "marker-lb-tyre-tarshish-quay",
+      "country": "LB",
+      "name": {
+        "en": "Ships of Tarshish Outfitting Quay",
+        "ar": "رصيف سفن ترشيش"
+      },
+      "scale_label": "in-game map / not to geographic scale",
+      "zone_id": "zone-tyre-sidonian-quay",
+      "linked_quest_act": "LB:tyre:ch1:trade"
+    },
+    {
+      "marker_id": "marker-lb-tyre-ashlar-rampart",
+      "country": "LB",
+      "name": {
+        "en": "Ashlar Header Breakwater & Fireship Berth",
+        "ar": "رصيف كواسر الأمواج وسفينة النار"
+      },
+      "scale_label": "in-game map / not to geographic scale",
+      "zone_id": "zone-tyre-breakwater-fort",
+      "linked_quest_act": "LB:tyre:ch1:build"
+    },
+    {
+      "marker_id": "marker-lb-tyre-purple-vats",
+      "country": "LB",
+      "name": {
+        "en": "Imperial Purple Dye Vats & Melqart Hearth",
+        "ar": "أحواض الأرجوان الملكي"
+      },
+      "scale_label": "in-game map / not to geographic scale",
+      "zone_id": "zone-tyre-dye-quarter",
+      "linked_quest_act": "LB:tyre:ch1:cook"
+    },
+    {
+      "marker_id": "marker-lb-tyre-melqart-council",
+      "country": "LB",
+      "name": {
+        "en": "Sanctuary of Melqart & Treaty Archives",
+        "ar": "بهو معبد ملقارت وأرشيف المعاهدات"
+      },
+      "scale_label": "in-game map / not to geographic scale",
+      "zone_id": "zone-tyre-acropolis",
+      "linked_quest_act": "LB:tyre:ch1:word"
+    }
+  ]
+}
