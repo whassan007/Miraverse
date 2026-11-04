@@ -1024,12 +1024,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX15.md",
       "branch": "minecraft-v10/DX15",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX15",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "346e35b",
       "test_command": "test -s apps/minecraft/docs/operations/v10/WINDOWS_EDITOR_AND_CLIENT_RUNBOOK.md",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/docs/operations/v10/WINDOWS_EDITOR_AND_CLIENT_RUNBOOK.md"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (59.29 tok/s)",
       "blockers": []
     },
     {
