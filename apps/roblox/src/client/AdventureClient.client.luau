@@ -2,7 +2,7 @@
 -- MiraVerse v0.4 Roblox Client HUD, ProximityPrompt Listener & Safe Quick-Chat
 -- Owner: CL05
 local TextChatService = game:GetService("TextChatService")
-local NpcAnimator = require(game:GetService("ReplicatedStorage"):WaitForChild("MiraVerse"):WaitForChild("npc"):WaitForChild("NpcAnimator"))
+local NpcAnimator = require(game:GetService("ReplicatedStorage"):WaitForChild("Shared"):WaitForChild("npc"):WaitForChild("NpcAnimator"))
 
 -- Child-safety policy: no free-text chat or external purchase prompts
 pcall(function()
