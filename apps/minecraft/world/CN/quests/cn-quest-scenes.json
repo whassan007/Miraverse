@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "cn_quest_cn01",
+    "chapterId": "CN01",
+    "title": "Where the River Turns",
+    "kind": "exploration_and_discovery",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1370,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:cn_peach_blossom_timber",
+    "rewardArtifactId": "cn_blossom_petal"
+  },
+  {
+    "anchorId": "cn_quest_cn02",
+    "chapterId": "CN02",
+    "title": "The Hidden Valley",
+    "kind": "gathering_and_bridge_repair",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1382,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:cn_whitewashed_hui_wall",
+    "rewardArtifactId": "cn_valley_map"
+  },
+  {
+    "anchorId": "cn_quest_cn03",
+    "chapterId": "CN03",
+    "title": "The Calendar of Change",
+    "kind": "seasonal_comparison",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1394,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:cn_grey_curved_roof_tile",
+    "rewardArtifactId": "cn_season_wheel"
+  },
+  {
+    "anchorId": "cn_quest_cn04",
+    "chapterId": "CN04",
+    "title": "A Path That Moves",
+    "kind": "map_revision_reasoning",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1406,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:cn_bamboo_lattice_screen",
+    "rewardArtifactId": "cn_changing_compass"
+  },
+  {
+    "anchorId": "cn_quest_cn05",
+    "chapterId": "CN05",
+    "title": "Moonlight Letters",
+    "kind": "folklore_and_cooking",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 1418,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:cn_terrace_water_channel",
+    "rewardArtifactId": "cn_moon_letter"
+  },
+  {
+    "anchorId": "cn_quest_cn06",
+    "chapterId": "CN06",
+    "title": "Plant a New Garden",
+    "kind": "cooperative_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1430,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:cn_moon_pavilion_lantern",
+    "rewardArtifactId": "cn_peach_spring_stamp"
+  }
+]
