@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "ma_quest_ma01",
+    "chapterId": "MA01",
+    "title": "Join the Circle",
+    "kind": "interactive_circle_onboarding",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 2170,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:ma_marrakesh_terracotta_pise",
+    "rewardArtifactId": "ma_circle_invitation"
+  },
+  {
+    "anchorId": "ma_quest_ma02",
+    "chapterId": "MA02",
+    "title": "A Tale With Many Voices",
+    "kind": "branching_oral_story",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 2182,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:ma_zellij_star_mosaic",
+    "rewardArtifactId": "ma_hakawati_token"
+  },
+  {
+    "anchorId": "ma_quest_ma03",
+    "chapterId": "MA03",
+    "title": "Tea and Craft",
+    "kind": "hospitality_and_trade",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 2194,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:ma_carved_cedar_arch",
+    "rewardArtifactId": "ma_mint_tea_tray"
+  },
+  {
+    "anchorId": "ma_quest_ma04",
+    "chapterId": "MA04",
+    "title": "The Story We Change",
+    "kind": "collaborative_attribution",
+    "sourceType": "fictional_gameplay",
+    "coords": {
+      "x": 2206,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:ma_halqa_circle_paver",
+    "rewardArtifactId": "ma_story_thread"
+  },
+  {
+    "anchorId": "ma_quest_ma05",
+    "chapterId": "MA05",
+    "title": "Paths of Wisdom",
+    "kind": "respectful_heritage_mapping",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 2218,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:ma_mint_tea_hospitality_table",
+    "rewardArtifactId": "ma_heritage_map"
+  },
+  {
+    "anchorId": "ma_quest_ma06",
+    "chapterId": "MA06",
+    "title": "The Circle Travels",
+    "kind": "cooperative_stage_performance",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 2230,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:ma_brass_pierced_lantern",
+    "rewardArtifactId": "ma_morocco_circle_stamp"
+  }
+]

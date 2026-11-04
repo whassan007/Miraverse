@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "ru_quest_ru01",
+    "chapterId": "RU01",
+    "title": "The Bell at Dawn",
+    "kind": "sound_navigation_and_repair",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 1770,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:ru_carved_pine_izba_log",
+    "rewardArtifactId": "ru_lake_bell_fragment"
+  },
+  {
+    "anchorId": "ru_quest_ru02",
+    "chapterId": "RU02",
+    "title": "The City in Reflection",
+    "kind": "reflection_puzzle",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 1782,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:ru_svetloyar_reflection_prism",
+    "rewardArtifactId": "ru_reflection_prism"
+  },
+  {
+    "anchorId": "ru_quest_ru03",
+    "chapterId": "RU03",
+    "title": "Sadko’s Strings",
+    "kind": "musical_rhythm",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 1794,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:ru_wooden_belfry_shingle",
+    "rewardArtifactId": "ru_gusli_charm"
+  },
+  {
+    "anchorId": "ru_quest_ru04",
+    "chapterId": "RU04",
+    "title": "The Water Garden",
+    "kind": "ecological_stewardship",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1806,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:ru_lakeside_reed_bed",
+    "rewardArtifactId": "ru_reed_wreath"
+  },
+  {
+    "anchorId": "ru_quest_ru05",
+    "chapterId": "RU05",
+    "title": "Keepers of Stories",
+    "kind": "source_comparison_archive",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 1818,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:ru_musical_dock_plank",
+    "rewardArtifactId": "ru_legend_folio"
+  },
+  {
+    "anchorId": "ru_quest_ru06",
+    "chapterId": "RU06",
+    "title": "A Story Above Water",
+    "kind": "cooperative_pavilion_build",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1830,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:ru_folklore_archive_shelf",
+    "rewardArtifactId": "ru_kitezh_memory_stamp"
+  }
+]

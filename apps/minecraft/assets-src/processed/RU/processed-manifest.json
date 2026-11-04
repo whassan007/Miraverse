@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "RU",
+  "countryName": "Russia",
+  "region": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 56.74,
+    "hardware": "NVIDIA GB10, 580.178.04, 48, 0 % | Total=121GiB Used=101GiB Free=1GiB Available=20GiB",
+    "notes": "Here's a concise summary of **Visual Material & Texture QA Checks** for a *Minecraft Bedrock* resource pack inspired by the **Lake Svetloyar / Kitezh legend**, featuring **8 custom blocks** and **6 chapter artifacts**: --- ### 🌊 **Core Visual Identity & Theme"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/RU/items/ru_kitezh_bell.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:ru_carved_pine_izba_log",
+      "shortName": "ru_carved_pine_izba_log",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/blocks/ru_carved_pine_izba_log.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ru_svetloyar_reflection_prism",
+      "shortName": "ru_svetloyar_reflection_prism",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/blocks/ru_svetloyar_reflection_prism.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ru_wooden_belfry_shingle",
+      "shortName": "ru_wooden_belfry_shingle",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/blocks/ru_wooden_belfry_shingle.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ru_lakeside_reed_bed",
+      "shortName": "ru_lakeside_reed_bed",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/blocks/ru_lakeside_reed_bed.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ru_musical_dock_plank",
+      "shortName": "ru_musical_dock_plank",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/blocks/ru_musical_dock_plank.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ru_folklore_archive_shelf",
+      "shortName": "ru_folklore_archive_shelf",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/blocks/ru_folklore_archive_shelf.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ru_painted_window_nalichnik",
+      "shortName": "ru_painted_window_nalichnik",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/blocks/ru_painted_window_nalichnik.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ru_story_pavilion_arch",
+      "shortName": "ru_story_pavilion_arch",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/blocks/ru_story_pavilion_arch.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "ru_lake_bell_fragment",
+      "chapterId": "RU01",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/items/ru_lake_bell_fragment.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ru_reflection_prism",
+      "chapterId": "RU02",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/items/ru_reflection_prism.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ru_gusli_charm",
+      "chapterId": "RU03",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/items/ru_gusli_charm.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ru_reed_wreath",
+      "chapterId": "RU04",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/items/ru_reed_wreath.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ru_legend_folio",
+      "chapterId": "RU05",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/items/ru_legend_folio.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ru_kitezh_memory_stamp",
+      "chapterId": "RU06",
+      "texturePath": "apps/minecraft/assets-src/processed/RU/items/ru_kitezh_memory_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}

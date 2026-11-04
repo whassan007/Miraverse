@@ -1,0 +1,90 @@
+{
+  "code": "UA",
+  "order": 10,
+  "name": "Ukraine",
+  "nameNative": "Україна · Київські пагорби",
+  "city": "Kyiv founding hills / community music square",
+  "subtitle": "The Guardian of Songs",
+  "theme": "Collective cultural memory, music, craftsmanship and solidarity",
+  "visualIdentity": "River hills, wooden founding village, contemporary music square, artisan instrument workshop, community archive and gardens.",
+  "localLanguage": "uk-UA",
+  "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+  "origin": [
+    2000,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      1952,
+      60,
+      -48
+    ],
+    "max": [
+      2048,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    72,
+    132,
+    196
+  ],
+  "accentRgb": [
+    238,
+    194,
+    56
+  ],
+  "customBlocks": [
+    "miraverse:ua_kyiv_hill_timber",
+    "miraverse:ua_embroidered_rushnyk_banner",
+    "miraverse:ua_bandura_luthier_bench",
+    "miraverse:ua_cobblestone_music_stage",
+    "miraverse:ua_carved_oak_archway",
+    "miraverse:ua_sunflower_garden_border",
+    "miraverse:ua_river_footbridge_stone",
+    "miraverse:ua_archive_display_case"
+  ],
+  "capstoneArtifact": {
+    "id": "ua_bandura_memory_charm",
+    "name": "Bandura Memory Charm"
+  },
+  "stampId": "ua_ukraine_song_stamp",
+  "stampName": "Ukraine Song Stamp",
+  "learnWords": [
+    {
+      "key": "bandura",
+      "native": "бандура",
+      "translit": "bandúra",
+      "en": "Ukrainian plucked string instrument combining lute and harp elements"
+    },
+    {
+      "key": "dumy",
+      "native": "думи",
+      "translit": "dúmy",
+      "en": "Sung epic poems preserving oral cultural memory"
+    },
+    {
+      "key": "toloka",
+      "native": "толока",
+      "translit": "tolóka",
+      "en": "Community solidarity gathering to build or restore together"
+    }
+  ],
+  "chapterIds": [
+    "UA01",
+    "UA02",
+    "UA03",
+    "UA04",
+    "UA05",
+    "UA06"
+  ],
+  "castIds": [
+    "ua_guide_lybid",
+    "ua_storyteller_taras",
+    "ua_kobzar_mykola",
+    "ua_maker_solomiya",
+    "ua_curator_kateryna"
+  ]
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="9. Russia: Lake Svetloyar and Northern Pines">
+  <defs>
+    <linearGradient id="bg-RU" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#102338"/>
+      <stop offset="100%" stop-color="#1E3A5F"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg-RU)"/>
+  
+      <rect x="0" y="290" width="800" height="210" fill="#0C4A6E"/>
+      <polygon points="360,155 400,90 440,155 428,285 372,285" fill="#92400E" stroke="#FDE68A" stroke-width="3"/>
+      <circle cx="400" cy="82" r="18" fill="#F59E0B"/>
+      <polygon points="140,160 185,285 95,285" fill="#065F46"/>
+      <polygon points="210,145 255,285 165,285" fill="#047857"/>
+      <polygon points="590,150 635,285 545,285" fill="#047857"/>
+      <ellipse cx="400" cy="350" rx="180" ry="26" fill="none" stroke="#7DD3FC" stroke-width="3" stroke-dasharray="8 6"/>
+    
+  <rect x="28" y="24" width="744" height="452" rx="22" fill="none" stroke="#F59E0B" stroke-width="3" opacity="0.75"/>
+  <rect x="44" y="330" width="712" height="126" rx="16" fill="#091224" opacity="0.88" stroke="#F59E0B" stroke-width="2"/>
+  <text x="68" y="368" fill="#FDE68A" font-family="system-ui, sans-serif" font-size="15" font-weight="800" letter-spacing="1.2">DESTINATION #9 OF 11 · ECHOES OF HOME</text>
+  <text x="68" y="404" fill="#FFF8EE" font-family="Georgia, serif" font-size="30" font-weight="900">9. Russia: Lake Svetloyar and Northern Pines</text>
+  <text x="68" y="436" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Россия · Озеро Светлояр — The Bells Beneath the Lake</text>
+</svg>

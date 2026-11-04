@@ -1,0 +1,772 @@
+[
+  {
+    "id": "lb_teta_nahla",
+    "nameEn": "Teta Nahla",
+    "nameNative": "تيتا نهلة",
+    "role": "mentor",
+    "greetingNative": "أهلاً وسهلاً في جبيل يا حبيبي! يلا نرجع حكايات المرفأ.",
+    "countryCode": "LB",
+    "city": "Byblos/Jbeil",
+    "spawnCoords": {
+      "x": 176,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "lb_archivist_rami",
+    "nameEn": "Young Archivist Rami",
+    "nameNative": "الأرشيفي رامي",
+    "role": "archivist",
+    "greetingNative": "نحنا منجمع الصور والرسائل القديمة بأمان.",
+    "countryCode": "LB",
+    "city": "Byblos/Jbeil",
+    "spawnCoords": {
+      "x": 188,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "lb_captain_faris",
+    "nameEn": "Harbor Captain Faris",
+    "nameNative": "القبطان فارس",
+    "role": "navigator",
+    "greetingNative": "الفوانيس على الرصيف بتدلّ المراكب عالبيت.",
+    "countryCode": "LB",
+    "city": "Byblos/Jbeil",
+    "spawnCoords": {
+      "x": 200,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "lb_baker_tariq",
+    "nameEn": "Baker Tariq",
+    "nameNative": "الخبّاز طارق",
+    "role": "merchant",
+    "greetingNative": "الزعتر والزيت البلدي جاهزين لمنقوشة الصاج!",
+    "countryCode": "LB",
+    "city": "Byblos/Jbeil",
+    "spawnCoords": {
+      "x": 212,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "lb_artisan_nadia",
+    "nameEn": "Script Artisan Nadia",
+    "nameNative": "الحرفية نادية",
+    "role": "artisan",
+    "greetingNative": "الحروف الفينيقية المنحوتة بالحجر سافرت عبر البحر.",
+    "countryCode": "LB",
+    "city": "Byblos/Jbeil",
+    "spawnCoords": {
+      "x": 224,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "iq_bibi_amal",
+    "nameEn": "Bibi Amal",
+    "nameNative": "بيبي أمل",
+    "role": "mentor",
+    "greetingNative": "هلا بيكم ببغداد على شط دجلة! العلم والحكايات تسافر ويّانا.",
+    "countryCode": "IQ",
+    "city": "Baghdad",
+    "spawnCoords": {
+      "x": 576,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "iq_merchant_hassan",
+    "nameEn": "Book Merchant Hassan",
+    "nameNative": "الكتبي حسان",
+    "role": "merchant",
+    "greetingNative": "شارع المتنبي عامر بالكتب والقراء المتحابين.",
+    "countryCode": "IQ",
+    "city": "Baghdad",
+    "spawnCoords": {
+      "x": 588,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "iq_translator_mariam",
+    "nameEn": "Translator Mariam",
+    "nameNative": "المترجمة مريم",
+    "role": "scholar",
+    "greetingNative": "الترجمة بين السريانية واليونانية والعربية حفظت العلوم.",
+    "countryCode": "IQ",
+    "city": "Baghdad",
+    "spawnCoords": {
+      "x": 600,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "iq_baker_salim",
+    "nameEn": "Baker Salim",
+    "nameNative": "الخبّاز سليم",
+    "role": "artisan",
+    "greetingNative": "ريحة الهيل والتمر بالكليجة تجمع العائلة.",
+    "countryCode": "IQ",
+    "city": "Baghdad",
+    "spawnCoords": {
+      "x": 612,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "iq_astronomer_zaid",
+    "nameEn": "Apprentice Astronomer Zaid",
+    "nameNative": "الفلكي زيد",
+    "role": "cousin",
+    "greetingNative": "الأصطرلاب يساعدنا نقيس النجوم ونفهم السماء.",
+    "countryCode": "IQ",
+    "city": "Baghdad",
+    "spawnCoords": {
+      "x": 624,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "eg_layla_guide",
+    "nameEn": "Layla & Teta Samira",
+    "nameNative": "ليلى وتيتا سميرة",
+    "role": "mentor",
+    "greetingNative": "يا هلا بيكم في حارة القاهرة المنوّرة بالفوانيس!",
+    "countryCode": "EG",
+    "city": "Cairo",
+    "spawnCoords": {
+      "x": 376,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "eg_lantern_maker_amm_adel",
+    "nameEn": "Lantern Maker Amm Adel",
+    "nameNative": "عم عادل صانع الفوانيس",
+    "role": "artisan",
+    "greetingNative": "النحاس والزجاج الملوّن بيعملوا أحلى فانوس.",
+    "countryCode": "EG",
+    "city": "Cairo",
+    "spawnCoords": {
+      "x": 388,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "eg_market_auntie_nadia",
+    "nameEn": "Market Auntie Nadia",
+    "nameNative": "طنط نادية في السوق",
+    "role": "merchant",
+    "greetingNative": "العدس والرز الطازة جاهزين بميزان العدل!",
+    "countryCode": "EG",
+    "city": "Cairo",
+    "spawnCoords": {
+      "x": 400,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "eg_cook_ibrahim",
+    "nameEn": "Chef Ibrahim",
+    "nameNative": "الشيف إبراهيم",
+    "role": "cook",
+    "greetingNative": "طبق الكشري المصري بيجمع الجيران كلهم عالسفرة.",
+    "countryCode": "EG",
+    "city": "Cairo",
+    "spawnCoords": {
+      "x": 412,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "eg_storyteller_youssef",
+    "nameEn": "Storyteller Youssef",
+    "nameNative": "الحكواتي يوسف",
+    "role": "storyteller",
+    "greetingNative": "للفانوس حكايات كتير متوارثة في شوارع القاهرة.",
+    "countryCode": "EG",
+    "city": "Cairo",
+    "spawnCoords": {
+      "x": 424,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "fr_camille_mamie",
+    "nameEn": "Camille & Mamie Claire",
+    "nameNative": "Camille et Mamie Claire",
+    "role": "mentor",
+    "greetingNative": "Bienvenue dans le Vieux Lyon ! Explorons les traboules et préparons nos recettes de famille.",
+    "countryCode": "FR",
+    "city": "Vieux Lyon",
+    "spawnCoords": {
+      "x": 976,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "fr_silk_artisan_henri",
+    "nameEn": "Silk Artisan Henri",
+    "nameNative": "Henri l’Artisan Canut",
+    "role": "artisan",
+    "greetingNative": "Les métiers Jacquard tissent des motifs de soie avec précision.",
+    "countryCode": "FR",
+    "city": "Vieux Lyon",
+    "spawnCoords": {
+      "x": 988,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "fr_chef_marguerite",
+    "nameEn": "Chef Marguerite",
+    "nameNative": "Cheffe Marguerite",
+    "role": "cook",
+    "greetingNative": "Dans la tradition des Mères Lyonnaises, chaque plat raconte l’entraide.",
+    "countryCode": "FR",
+    "city": "Vieux Lyon",
+    "spawnCoords": {
+      "x": 1000,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "fr_guide_luc",
+    "nameEn": "Local Guide Luc",
+    "nameNative": "Luc le Guide",
+    "role": "navigator",
+    "greetingNative": "Ces passages couverts relient les cours de la Renaissance à la rivière.",
+    "countryCode": "FR",
+    "city": "Vieux Lyon",
+    "spawnCoords": {
+      "x": 1012,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "fr_merchant_elise",
+    "nameEn": "Market Merchant Élise",
+    "nameNative": "Élise du Marché",
+    "role": "merchant",
+    "greetingNative": "Comparez les produits de saison sur les quais de Saône !",
+    "countryCode": "FR",
+    "city": "Vieux Lyon",
+    "spawnCoords": {
+      "x": 1024,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "kr_jiwoo_halmeoni",
+    "nameEn": "Ji-woo & Halmeoni",
+    "nameNative": "지우와 할머니",
+    "role": "mentor",
+    "greetingNative": "전주 한옥마을에 오신 것을 환영해요! 다섯 가지 색깔의 조화를 함께 배워 봐요.",
+    "countryCode": "KR",
+    "city": "Jeonju",
+    "spawnCoords": {
+      "x": 776,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "kr_gardener_minho",
+    "nameEn": "Market Gardener Min-ho",
+    "nameNative": "농부 민호",
+    "role": "merchant",
+    "greetingNative": "계절마다 자라는 신선한 나물과 채소를 정성껏 가꾸었답니다.",
+    "countryCode": "KR",
+    "city": "Jeonju",
+    "spawnCoords": {
+      "x": 788,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "kr_carpenter_seojun",
+    "nameEn": "Hanok Carpenter Seo-jun",
+    "nameNative": "대목장 서준",
+    "role": "artisan",
+    "greetingNative": "못을 쓰지 않고 나무를 맞물리는 한옥 결구법을 살펴보세요.",
+    "countryCode": "KR",
+    "city": "Jeonju",
+    "spawnCoords": {
+      "x": 800,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "kr_cook_soyeon",
+    "nameEn": "Community Cook So-yeon",
+    "nameNative": "요리사 소연",
+    "role": "cook",
+    "greetingNative": "오방색 재료가 한 그릇에서 어우러지는 비빔밥과 송편을 만들어 봐요.",
+    "countryCode": "KR",
+    "city": "Jeonju",
+    "spawnCoords": {
+      "x": 812,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "kr_guide_haneul",
+    "nameEn": "Archivist Ha-neul",
+    "nameNative": "학예사 하늘",
+    "role": "scholar",
+    "greetingNative": "비빔밥의 유래에는 여러 가지 흥미로운 역사적 설명이 전해 내려와요.",
+    "countryCode": "KR",
+    "city": "Jeonju",
+    "spawnCoords": {
+      "x": 824,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "de_navigator_klara",
+    "nameEn": "River Navigator Klara",
+    "nameNative": "Flusslotsin Klara",
+    "role": "mentor",
+    "greetingNative": "Willkommen am Rhein! Gemeinsam lesen wir die sicheren Signale auf dem Fluss.",
+    "countryCode": "DE",
+    "city": "Rhine / symbolic Grail landscape",
+    "spawnCoords": {
+      "x": 1176,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "de_historian_lukas",
+    "nameEn": "Historian Lukas",
+    "nameNative": "Historiker Lukas",
+    "role": "scholar",
+    "greetingNative": "Wir unterscheiden literarische Dichtungen wie die Lorelei von der echten Flussgeschichte.",
+    "countryCode": "DE",
+    "city": "Rhine / symbolic Grail landscape",
+    "spawnCoords": {
+      "x": 1188,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "de_narrator_lorelei",
+    "nameEn": "Storyteller Marlene",
+    "nameNative": "Erzählerin Marlene",
+    "role": "storyteller",
+    "greetingNative": "Jedes Echo am Felsen erinnert uns daran, genau hinzuhören statt uns ablenken zu lassen.",
+    "countryCode": "DE",
+    "city": "Rhine / symbolic Grail landscape",
+    "spawnCoords": {
+      "x": 1200,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "de_parzival",
+    "nameEn": "Traveler Parzival",
+    "nameNative": "Wanderer Parzival",
+    "role": "cousin",
+    "greetingNative": "Früher schwieg ich aus Unsicherheit — doch eine mitfühlende Frage kann vieles heilen.",
+    "countryCode": "DE",
+    "city": "Rhine / symbolic Grail landscape",
+    "spawnCoords": {
+      "x": 1212,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "de_gardener_jonas",
+    "nameEn": "Gardener Jonas",
+    "nameNative": "Gärtner Jonas",
+    "role": "artisan",
+    "greetingNative": "Hilf mir, den verlassenen Burggarten wieder zum Blühen zu bringen!",
+    "countryCode": "DE",
+    "city": "Rhine / symbolic Grail landscape",
+    "spawnCoords": {
+      "x": 1224,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "cn_elder_lin",
+    "nameEn": "Village Elder Lin",
+    "nameNative": "林长老",
+    "role": "mentor",
+    "greetingNative": "欢迎来到桃花溪谷！四季流转，记忆与家园也在不断生长。",
+    "countryCode": "CN",
+    "city": "Peach Blossom Spring, Wuling-inspired setting",
+    "spawnCoords": {
+      "x": 1376,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "cn_fisher_zhou",
+    "nameEn": "Fisher Zhou",
+    "nameNative": "渔夫周叔",
+    "role": "navigator",
+    "greetingNative": "沿着溪水逆流而上，你会看到落英缤纷的桃林。",
+    "countryCode": "CN",
+    "city": "Peach Blossom Spring, Wuling-inspired setting",
+    "spawnCoords": {
+      "x": 1388,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "cn_orchard_keeper_mei",
+    "nameEn": "Orchard Keeper Mei",
+    "nameNative": "果园守护者梅姨",
+    "role": "artisan",
+    "greetingNative": "每一棵桃树都随着春去秋来而变化。",
+    "countryCode": "CN",
+    "city": "Peach Blossom Spring, Wuling-inspired setting",
+    "spawnCoords": {
+      "x": 1400,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "cn_mapmaker_chen",
+    "nameEn": "Mapmaker Chen",
+    "nameNative": "制图师小陈",
+    "role": "scholar",
+    "greetingNative": "旧地图记下了过去，但河流与山径每天都在更新。",
+    "countryCode": "CN",
+    "city": "Peach Blossom Spring, Wuling-inspired setting",
+    "spawnCoords": {
+      "x": 1412,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "cn_moon_host_yue",
+    "nameEn": "Moon Festival Host Yue",
+    "nameNative": "中秋主理人悦姐",
+    "role": "cook",
+    "greetingNative": "来赏月庭院一起制作象征团圆与分享的月饼吧！",
+    "countryCode": "CN",
+    "city": "Peach Blossom Spring, Wuling-inspired setting",
+    "spawnCoords": {
+      "x": 1424,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "jp_guide_haruka",
+    "nameEn": "Traveler Guide Haruka",
+    "nameNative": "旅の案内人 はるか",
+    "role": "mentor",
+    "greetingNative": "みちのくの旅路へようこそ。歩く道そのものが、心のふるさとになります。",
+    "countryCode": "JP",
+    "city": "Bashō’s journey, Tohoku-inspired route",
+    "spawnCoords": {
+      "x": 1576,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "jp_innkeeper_kenji",
+    "nameEn": "Innkeeper Kenji",
+    "nameNative": "宿の主人 けんじ",
+    "role": "merchant",
+    "greetingNative": "旅の疲れを癒やす温かいお茶と宿の備えをどうぞ。",
+    "countryCode": "JP",
+    "city": "Bashō’s journey, Tohoku-inspired route",
+    "spawnCoords": {
+      "x": 1588,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "jp_bridge_builder_takumi",
+    "nameEn": "Bridge Builder Takumi",
+    "nameNative": "橋大工 たくみ",
+    "role": "artisan",
+    "greetingNative": "川を安全に渡れるよう、木の橋を一緒に整えましょう。",
+    "countryCode": "JP",
+    "city": "Bashō’s journey, Tohoku-inspired route",
+    "spawnCoords": {
+      "x": 1600,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "jp_poet_aoi",
+    "nameEn": "Poet Aoi",
+    "nameNative": "俳人 あおい",
+    "role": "scholar",
+    "greetingNative": "季節の風や空の色を、短い言葉に込めてみましょう。",
+    "countryCode": "JP",
+    "city": "Bashō’s journey, Tohoku-inspired route",
+    "spawnCoords": {
+      "x": 1612,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "jp_gardener_ren",
+    "nameEn": "Gardener Ren",
+    "nameNative": "庭師 れん",
+    "role": "cousin",
+    "greetingNative": "旅人がいつでも休める共有の庭を手入れしています。",
+    "countryCode": "JP",
+    "city": "Bashō’s journey, Tohoku-inspired route",
+    "spawnCoords": {
+      "x": 1624,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ru_keeper_yelena",
+    "nameEn": "Lake Keeper Yelena",
+    "nameNative": "Хранительница озера Елена",
+    "role": "mentor",
+    "greetingNative": "Добро пожаловать на озеро Светлояр! Здесь бережно хранят природный край и народные предания.",
+    "countryCode": "RU",
+    "city": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+    "spawnCoords": {
+      "x": 1776,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ru_historian_pavel",
+    "nameEn": "Village Historian Pavel",
+    "nameNative": "Историк Павел",
+    "role": "scholar",
+    "greetingNative": "Легенда о Китеже существует в разных вариантах — мы отличаем фольклор от наблюдений природы.",
+    "countryCode": "RU",
+    "city": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+    "spawnCoords": {
+      "x": 1788,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ru_musician_ilya",
+    "nameEn": "Musical Traveler Ilya",
+    "nameNative": "Музыкант Илья",
+    "role": "storyteller",
+    "greetingNative": "Послушай звон струн гуслей, вдохновлённый сказкой о Садко!",
+    "countryCode": "RU",
+    "city": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+    "spawnCoords": {
+      "x": 1800,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ru_archivist_vera",
+    "nameEn": "Archivist Vera",
+    "nameNative": "Архивист Вера",
+    "role": "archivist",
+    "greetingNative": "Мы записываем устные рассказы жителей и сохраняем их для будущих поколений.",
+    "countryCode": "RU",
+    "city": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+    "spawnCoords": {
+      "x": 1812,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ru_carpenter_maksim",
+    "nameEn": "Carpenter Maksim",
+    "nameNative": "Плотник Максим",
+    "role": "artisan",
+    "greetingNative": "Помоги построить деревянный павильон для общих историй у воды!",
+    "countryCode": "RU",
+    "city": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+    "spawnCoords": {
+      "x": 1824,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ua_guide_lybid",
+    "nameEn": "Guide Olena (Lybid Route)",
+    "nameNative": "Провідниця Олена",
+    "role": "mentor",
+    "greetingNative": "Ласкаво просимо на київські пагорби! Тут пісні й майстерність об’єднують громаду.",
+    "countryCode": "UA",
+    "city": "Kyiv founding hills / community music square",
+    "spawnCoords": {
+      "x": 1976,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ua_storyteller_taras",
+    "nameEn": "Historical Storyteller Taras",
+    "nameNative": "Оповідач Тарас",
+    "role": "scholar",
+    "greetingNative": "Літописна легенда про Кия, Щека, Хорива та Либідь — це стародавній переказ про заснування міста.",
+    "countryCode": "UA",
+    "city": "Kyiv founding hills / community music square",
+    "spawnCoords": {
+      "x": 1988,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ua_kobzar_mykola",
+    "nameEn": "Musician Mykola",
+    "nameNative": "Кобзар Микола",
+    "role": "storyteller",
+    "greetingNative": "Послухай звучання бандури та приєднуйся до нашої спільної мелодії!",
+    "countryCode": "UA",
+    "city": "Kyiv founding hills / community music square",
+    "spawnCoords": {
+      "x": 2000,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ua_maker_solomiya",
+    "nameEn": "Instrument Maker Solomiya",
+    "nameNative": "Майстриня Соломія",
+    "role": "artisan",
+    "greetingNative": "Кожна струна бандури виготовляється з увагою до традиції та доступності.",
+    "countryCode": "UA",
+    "city": "Kyiv founding hills / community music square",
+    "spawnCoords": {
+      "x": 2012,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ua_curator_kateryna",
+    "nameEn": "Curator Kateryna",
+    "nameNative": "Кураторка Катерина",
+    "role": "archivist",
+    "greetingNative": "Ми відокремлюємо усні думи від документальних хронік у спільному архіві.",
+    "countryCode": "UA",
+    "city": "Kyiv founding hills / community music square",
+    "spawnCoords": {
+      "x": 2024,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ma_hakawati_driss",
+    "nameEn": "Hakawati Master Driss",
+    "nameNative": "الحكواتي المعلم إدريس",
+    "role": "mentor",
+    "greetingNative": "مرحبا بيكم فجامع الفنا بمراكش! الحلقة كتكمل بوجودكم وبحكاياتكم.",
+    "countryCode": "MA",
+    "city": "Marrakesh / Jemaa el-Fnaa-inspired square",
+    "spawnCoords": {
+      "x": 2176,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ma_tea_host_kenza",
+    "nameEn": "Tea Host Kenza",
+    "nameNative": "لالة كنزة مضيفة أتاي",
+    "role": "cook",
+    "greetingNative": "أتاي بالنعناع الطري رمز الضيافة والترحيب فكل دار مغربية.",
+    "countryCode": "MA",
+    "city": "Marrakesh / Jemaa el-Fnaa-inspired square",
+    "spawnCoords": {
+      "x": 2188,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ma_merchant_yassine",
+    "nameEn": "Craft Merchant Yassine",
+    "nameNative": "الصانع ياسين",
+    "role": "merchant",
+    "greetingNative": "الزليج والخشب المنقوش صنعة تقليدية متوارثة فأسواق المدينة.",
+    "countryCode": "MA",
+    "city": "Marrakesh / Jemaa el-Fnaa-inspired square",
+    "spawnCoords": {
+      "x": 2200,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ma_historian_salma",
+    "nameEn": "Historian Salma",
+    "nameNative": "المؤرخة سلمى",
+    "role": "scholar",
+    "greetingNative": "كنحافظو على التراث الشفوي وتاريخ مراكش باحترام وتوثيق دقيق.",
+    "countryCode": "MA",
+    "city": "Marrakesh / Jemaa el-Fnaa-inspired square",
+    "spawnCoords": {
+      "x": 2212,
+      "y": 65,
+      "z": -8
+    }
+  },
+  {
+    "id": "ma_performer_amine",
+    "nameEn": "Young Performer Amine",
+    "nameNative": "الفنان الشاب أمين",
+    "role": "cousin",
+    "greetingNative": "أجي نشاركو فالحلقة ونبنيو مسرح الحكايات متعددة اللغات!",
+    "countryCode": "MA",
+    "city": "Marrakesh / Jemaa el-Fnaa-inspired square",
+    "spawnCoords": {
+      "x": 2224,
+      "y": 65,
+      "z": -8
+    }
+  }
+]

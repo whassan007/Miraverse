@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "KR",
+  "countryName": "South Korea",
+  "regionName": "Jeonju",
+  "storyTitle": "The Five Colors of Jeonju",
+  "localLocale": "ko-KR",
+  "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+  "origin": {
+    "x": 800,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 800,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 800,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 796,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 830,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "kr_five_color_bibimbap_bowl",
+    "name": "Five-Color Bibimbap Bowl"
+  },
+  "passportStamp": {
+    "id": "kr_jeonju_harmony_stamp",
+    "name": "Jeonju Harmony Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "kr_mentor_cultural_house",
+      "nameEn": "Jeonju Mentor Courtyard & Hearth",
+      "nameNative": "대한민국 · 전주",
+      "origin": {
+        "x": 782,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_ondol_hearth_stone",
+      "hasInterior": true,
+      "interiorId": "kr_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "kr_story_archive_hall",
+      "nameEn": "Jeonju Story & Epigraphy Archive",
+      "nameNative": "대한민국 · 전주",
+      "origin": {
+        "x": 804,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_ondol_hearth_stone",
+      "hasInterior": true,
+      "interiorId": "kr_interior_story_archive"
+    },
+    {
+      "buildingId": "kr_artisan_craft_guild",
+      "nameEn": "Jeonju Master Artisan Workshop",
+      "nameNative": "대한민국 · 전주",
+      "origin": {
+        "x": 780,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_ondol_hearth_stone",
+      "hasInterior": true,
+      "interiorId": "kr_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "kr_market_bazaar_arcade",
+      "nameEn": "Jeonju Fair-Trade Market Arcade",
+      "nameNative": "대한민국 · 전주",
+      "origin": {
+        "x": 806,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_ondol_hearth_stone",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "kr_heritage_landmark_pavilion",
+      "nameEn": "Jeonju Community Gathering & Performance Pavilion",
+      "nameNative": "대한민국 · 전주",
+      "origin": {
+        "x": 794,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_ondol_hearth_stone",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "kr_interior_mentor_hearth",
+      "buildingId": "kr_mentor_cultural_house",
+      "nameEn": "Jeonju Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 788,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "kr_cooking_hearth",
+          "blockId": "miraverse:kr_pine_beam_bracket",
+          "offset": {
+            "x": 788,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "kr_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 786,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "kr_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 788,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "kr_interior_story_archive",
+      "buildingId": "kr_story_archive_hall",
+      "nameEn": "Jeonju Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 810,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "kr_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 810,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "kr_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 812,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "kr_keepsake_display",
+          "blockId": "miraverse:kr_stone_pagoda_lantern",
+          "offset": {
+            "x": 808,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Five-Color Bibimbap Bowl"
+        }
+      ]
+    },
+    {
+      "interiorId": "kr_interior_artisan_workshop",
+      "buildingId": "kr_artisan_craft_guild",
+      "nameEn": "Jeonju Restoration & Craft Studio",
+      "entryPos": {
+        "x": 786,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "kr_craft_bench",
+          "blockId": "miraverse:kr_songpyeon_steamer_block",
+          "offset": {
+            "x": 786,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "kr_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 784,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "kr_jiwoo_halmeoni",
+      "countryCode": "KR",
+      "nameEn": "Ji-woo & Halmeoni",
+      "nameNative": "지우와 할머니",
+      "role": "mentor",
+      "greetingNative": "전주 한옥마을에 오신 것을 환영해요! 다섯 가지 색깔의 조화를 함께 배워 봐요.",
+      "spawnPos": {
+        "x": 776,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "KR01",
+        "KR06"
+      ]
+    },
+    {
+      "npcId": "kr_gardener_minho",
+      "countryCode": "KR",
+      "nameEn": "Market Gardener Min-ho",
+      "nameNative": "농부 민호",
+      "role": "merchant",
+      "greetingNative": "계절마다 자라는 신선한 나물과 채소를 정성껏 가꾸었답니다.",
+      "spawnPos": {
+        "x": 788,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "KR02"
+      ]
+    },
+    {
+      "npcId": "kr_carpenter_seojun",
+      "countryCode": "KR",
+      "nameEn": "Hanok Carpenter Seo-jun",
+      "nameNative": "대목장 서준",
+      "role": "artisan",
+      "greetingNative": "못을 쓰지 않고 나무를 맞물리는 한옥 결구법을 살펴보세요.",
+      "spawnPos": {
+        "x": 800,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "KR03"
+      ]
+    },
+    {
+      "npcId": "kr_cook_soyeon",
+      "countryCode": "KR",
+      "nameEn": "Community Cook So-yeon",
+      "nameNative": "요리사 소연",
+      "role": "cook",
+      "greetingNative": "오방색 재료가 한 그릇에서 어우러지는 비빔밥과 송편을 만들어 봐요.",
+      "spawnPos": {
+        "x": 812,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "KR04"
+      ]
+    },
+    {
+      "npcId": "kr_guide_haneul",
+      "countryCode": "KR",
+      "nameEn": "Archivist Ha-neul",
+      "nameNative": "학예사 하늘",
+      "role": "scholar",
+      "greetingNative": "비빔밥의 유래에는 여러 가지 흥미로운 역사적 설명이 전해 내려와요.",
+      "spawnPos": {
+        "x": 824,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "KR05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "kr_quest_kr01",
+      "chapterId": "KR01",
+      "title": "The Hanok Gate",
+      "kind": "navigation_and_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 770,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:kr_giwa_eave_tile",
+      "rewardArtifactId": "kr_hanok_door_charm"
+    },
+    {
+      "anchorId": "kr_quest_kr02",
+      "chapterId": "KR02",
+      "title": "Five Colors, Many Meanings",
+      "kind": "gathering_and_classification",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 782,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:kr_hanji_sliding_screen",
+      "rewardArtifactId": "kr_five_color_palette"
+    },
+    {
+      "anchorId": "kr_quest_kr03",
+      "chapterId": "KR03",
+      "title": "The Market Morning",
+      "kind": "polite_trade",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 794,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:kr_ondol_hearth_stone",
+      "rewardArtifactId": "kr_market_token"
+    },
+    {
+      "anchorId": "kr_quest_kr04",
+      "chapterId": "KR04",
+      "title": "Jeonju’s Shared Bowl",
+      "kind": "cooking_sequence",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 806,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:kr_onggi_fermentation_jar",
+      "rewardArtifactId": "kr_bibimbap_bowl"
+    },
+    {
+      "anchorId": "kr_quest_kr05",
+      "chapterId": "KR05",
+      "title": "Craft of the Courtyard",
+      "kind": "architecture_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 818,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:kr_pine_beam_bracket",
+      "rewardArtifactId": "kr_joinery_pattern"
+    },
+    {
+      "anchorId": "kr_quest_kr06",
+      "chapterId": "KR06",
+      "title": "Harmony Feast",
+      "kind": "cooperative_feast",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 830,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:kr_songpyeon_steamer_block",
+      "rewardArtifactId": "kr_jeonju_harmony_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "kr_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 800,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "kr_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 810,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Jeonju Fair-Trade Stall"
+    },
+    {
+      "anchorId": "kr_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 776,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:kr_courtyard_stepping_stone",
+      "labelEn": "Jeonju Resource Gathering Spot"
+    },
+    {
+      "anchorId": "kr_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 796,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:kr_giwa_eave_tile",
+      "labelEn": "Jeonju Community Restoration Plot"
+    },
+    {
+      "anchorId": "kr_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 830,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:kr_hanji_sliding_screen",
+      "labelEn": "Jeonju Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "hanok",
+      "native": "한옥",
+      "translit": "hanok",
+      "en": "Traditional Korean timber-framed house with curved giwa roof tiles"
+    },
+    {
+      "key": "obangsaek",
+      "native": "오방색",
+      "translit": "obangsaek",
+      "en": "Traditional Korean five-color harmony palette"
+    },
+    {
+      "key": "bibimbap",
+      "native": "비빔밥",
+      "translit": "bibimbap",
+      "en": "Warm rice mixed with seasoned vegetables and savory sauces"
+    }
+  ]
+}

@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "LB",
+  "countryName": "Lebanon",
+  "regionName": "Byblos/Jbeil",
+  "storyTitle": "The Harbor of Returning Stories",
+  "localLocale": "ar-LB",
+  "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+  "origin": {
+    "x": 200,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 200,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 200,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 196,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 230,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "lb_cedar_sea_memory_chest",
+    "name": "Cedar-and-sea Memory Chest"
+  },
+  "passportStamp": {
+    "id": "lb_harbor_home_stamp",
+    "name": "Harbor Home Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "lb_mentor_cultural_house",
+      "nameEn": "Byblos/Jbeil Mentor Courtyard & Hearth",
+      "nameNative": "لبنان · جبيل",
+      "origin": {
+        "x": 182,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:lb_byblos_limestone",
+      "trimBlock": "miraverse:lb_carved_arch_stone",
+      "roofBlock": "miraverse:lb_terracotta_roof_tile",
+      "hasInterior": true,
+      "interiorId": "lb_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "lb_story_archive_hall",
+      "nameEn": "Byblos/Jbeil Story & Epigraphy Archive",
+      "nameNative": "لبنان · جبيل",
+      "origin": {
+        "x": 204,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:lb_byblos_limestone",
+      "trimBlock": "miraverse:lb_carved_arch_stone",
+      "roofBlock": "miraverse:lb_terracotta_roof_tile",
+      "hasInterior": true,
+      "interiorId": "lb_interior_story_archive"
+    },
+    {
+      "buildingId": "lb_artisan_craft_guild",
+      "nameEn": "Byblos/Jbeil Master Artisan Workshop",
+      "nameNative": "لبنان · جبيل",
+      "origin": {
+        "x": 180,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:lb_byblos_limestone",
+      "trimBlock": "miraverse:lb_carved_arch_stone",
+      "roofBlock": "miraverse:lb_terracotta_roof_tile",
+      "hasInterior": true,
+      "interiorId": "lb_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "lb_market_bazaar_arcade",
+      "nameEn": "Byblos/Jbeil Fair-Trade Market Arcade",
+      "nameNative": "لبنان · جبيل",
+      "origin": {
+        "x": 206,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:lb_byblos_limestone",
+      "trimBlock": "miraverse:lb_carved_arch_stone",
+      "roofBlock": "miraverse:lb_terracotta_roof_tile",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "lb_heritage_landmark_pavilion",
+      "nameEn": "Byblos/Jbeil Community Gathering & Performance Pavilion",
+      "nameNative": "لبنان · جبيل",
+      "origin": {
+        "x": 194,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:lb_byblos_limestone",
+      "trimBlock": "miraverse:lb_carved_arch_stone",
+      "roofBlock": "miraverse:lb_terracotta_roof_tile",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "lb_interior_mentor_hearth",
+      "buildingId": "lb_mentor_cultural_house",
+      "nameEn": "Byblos/Jbeil Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 188,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "lb_cooking_hearth",
+          "blockId": "miraverse:lb_saj_hearth_block",
+          "offset": {
+            "x": 188,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "lb_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 186,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "lb_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 188,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "lb_interior_story_archive",
+      "buildingId": "lb_story_archive_hall",
+      "nameEn": "Byblos/Jbeil Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 210,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "lb_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 210,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "lb_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 212,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "lb_keepsake_display",
+          "blockId": "miraverse:lb_mosaic_courtyard_tile",
+          "offset": {
+            "x": 208,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Cedar-and-sea Memory Chest"
+        }
+      ]
+    },
+    {
+      "interiorId": "lb_interior_artisan_workshop",
+      "buildingId": "lb_artisan_craft_guild",
+      "nameEn": "Byblos/Jbeil Restoration & Craft Studio",
+      "entryPos": {
+        "x": 186,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "lb_craft_bench",
+          "blockId": "miraverse:lb_harbor_bollard",
+          "offset": {
+            "x": 186,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "lb_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 184,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "lb_teta_nahla",
+      "countryCode": "LB",
+      "nameEn": "Teta Nahla",
+      "nameNative": "تيتا نهلة",
+      "role": "mentor",
+      "greetingNative": "أهلاً وسهلاً في جبيل يا حبيبي! يلا نرجع حكايات المرفأ.",
+      "spawnPos": {
+        "x": 176,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "LB01",
+        "LB06"
+      ]
+    },
+    {
+      "npcId": "lb_archivist_rami",
+      "countryCode": "LB",
+      "nameEn": "Young Archivist Rami",
+      "nameNative": "الأرشيفي رامي",
+      "role": "archivist",
+      "greetingNative": "نحنا منجمع الصور والرسائل القديمة بأمان.",
+      "spawnPos": {
+        "x": 188,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "LB02"
+      ]
+    },
+    {
+      "npcId": "lb_captain_faris",
+      "countryCode": "LB",
+      "nameEn": "Harbor Captain Faris",
+      "nameNative": "القبطان فارس",
+      "role": "navigator",
+      "greetingNative": "الفوانيس على الرصيف بتدلّ المراكب عالبيت.",
+      "spawnPos": {
+        "x": 200,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "LB03"
+      ]
+    },
+    {
+      "npcId": "lb_baker_tariq",
+      "countryCode": "LB",
+      "nameEn": "Baker Tariq",
+      "nameNative": "الخبّاز طارق",
+      "role": "merchant",
+      "greetingNative": "الزعتر والزيت البلدي جاهزين لمنقوشة الصاج!",
+      "spawnPos": {
+        "x": 212,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "LB04"
+      ]
+    },
+    {
+      "npcId": "lb_artisan_nadia",
+      "countryCode": "LB",
+      "nameEn": "Script Artisan Nadia",
+      "nameNative": "الحرفية نادية",
+      "role": "artisan",
+      "greetingNative": "الحروف الفينيقية المنحوتة بالحجر سافرت عبر البحر.",
+      "spawnPos": {
+        "x": 224,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "LB05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "lb_quest_lb01",
+      "chapterId": "LB01",
+      "title": "The Harbor Wakes",
+      "kind": "navigation_and_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 170,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:lb_byblos_limestone",
+      "rewardArtifactId": "lb_harbor_compass"
+    },
+    {
+      "anchorId": "lb_quest_lb02",
+      "chapterId": "LB02",
+      "title": "Letters in Stone",
+      "kind": "epigraphy_and_craft",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 182,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:lb_carved_arch_stone",
+      "rewardArtifactId": "lb_alphabet_tile"
+    },
+    {
+      "anchorId": "lb_quest_lb03",
+      "chapterId": "LB03",
+      "title": "Teta’s Table",
+      "kind": "cooking_and_trade",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 194,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:lb_terracotta_roof_tile",
+      "rewardArtifactId": "lb_family_recipe_card"
+    },
+    {
+      "anchorId": "lb_quest_lb04",
+      "chapterId": "LB04",
+      "title": "The Cedar Chest",
+      "kind": "myth_vs_history",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 206,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:lb_cedar_shutter",
+      "rewardArtifactId": "lb_cedar_token"
+    },
+    {
+      "anchorId": "lb_quest_lb05",
+      "chapterId": "LB05",
+      "title": "Photographs Across the Sea",
+      "kind": "oral_history_archive",
+      "sourceType": "fictional_gameplay",
+      "coords": {
+        "x": 218,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:lb_saj_hearth_block",
+      "rewardArtifactId": "lb_archive_album"
+    },
+    {
+      "anchorId": "lb_quest_lb06",
+      "chapterId": "LB06",
+      "title": "Festival of Return",
+      "kind": "cooperative_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 230,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:lb_harbor_bollard",
+      "rewardArtifactId": "lb_harbor_home_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "lb_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 200,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "lb_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 210,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Byblos/Jbeil Fair-Trade Stall"
+    },
+    {
+      "anchorId": "lb_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 176,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:lb_zaatar_drying_rack",
+      "labelEn": "Byblos/Jbeil Resource Gathering Spot"
+    },
+    {
+      "anchorId": "lb_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 196,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:lb_byblos_limestone",
+      "labelEn": "Byblos/Jbeil Community Restoration Plot"
+    },
+    {
+      "anchorId": "lb_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 230,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:lb_carved_arch_stone",
+      "labelEn": "Byblos/Jbeil Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "saj",
+      "native": "صاج",
+      "translit": "ṣāj",
+      "en": "Domed griddle for baking flatbread"
+    },
+    {
+      "key": "zaatar",
+      "native": "زعتر",
+      "translit": "za'tar",
+      "en": "Fragrant wild thyme, sesame, and sumac blend"
+    },
+    {
+      "key": "mina",
+      "native": "مينا",
+      "translit": "mīnā",
+      "en": "Coastal harbor and stone dock"
+    }
+  ]
+}

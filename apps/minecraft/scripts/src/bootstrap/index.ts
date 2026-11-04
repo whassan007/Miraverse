@@ -72,3 +72,142 @@ export class MiraVerseBedrockRuntimeV10 {
     return claimOrGetPrivatePlot(this.worldState, country, playerId);
   }
 }
+
+
+// ============================================================================
+// MiraVerse Global v1.1 — Unified Global Runtime Bootstrap
+// Owner: CX04 (Wave W4)
+// ============================================================================
+import {
+  QuestDirector,
+  ObjectiveRegistry,
+  AgeTrackResolver,
+  type GlobalAgeTrack,
+  type GlobalCountryCode,
+} from '../quests/index.js';
+import { LocaleService, DialogueService, type SupportedLocaleId } from '../locales/index.js';
+import { StateStore, RewardLedger, type GlobalPlayerSaveStateV11 } from '../state/index.js';
+import { CoopSession } from '../multiplayer/index.js';
+import { StructureRestore } from '../building/index.js';
+import { AtlasJournal, ArtifactViewer } from '../ui/index.js';
+import {
+  MINECRAFT_ALL_COUNTRIES,
+  MINECRAFT_COUNTRY_DESTINATIONS,
+  MINECRAFT_GEO_DESTINATIONS,
+  getMinecraftGeoDestination,
+  canTravelMinecraft,
+} from '../../generated/geo-terrain.js';
+
+export class MiraVerseGlobalRuntimeV11 {
+  readonly coop = new CoopSession();
+  readonly restore = new StructureRestore();
+  readonly geoDestinations = MINECRAFT_GEO_DESTINATIONS;
+  readonly countryDestinations = MINECRAFT_COUNTRY_DESTINATIONS;
+  private readonly players = new Map<string, GlobalPlayerSaveStateV11>();
+  private readonly playerLocation = new Map<string, string>();
+
+  getDestination(locationId: string) {
+    return getMinecraftGeoDestination(locationId);
+  }
+
+  travelToDestination(playerId: string, toDestinationId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    const currentLoc = this.playerLocation.get(playerId) ?? 'LOBBY';
+    if (!canTravelMinecraft(currentLoc, toDestinationId)) {
+      return { ok: false, reason: 'TRAVEL_CONNECTION_NOT_AVAILABLE', from: currentLoc, to: toDestinationId };
+    }
+    if (toDestinationId === 'LOBBY') {
+      this.playerLocation.set(playerId, 'LOBBY');
+      return { ok: true, destinationId: 'LOBBY', countryId: null, spawn: { x: 0, y: 100, z: 0 } };
+    }
+    const dest = getMinecraftGeoDestination(toDestinationId)!;
+    this.playerLocation.set(playerId, dest.locationId);
+    return {
+      ok: true,
+      destinationId: dest.locationId,
+      countryId: dest.countryId as GlobalCountryCode,
+      displayName: dest.displayName,
+      spawn: dest.spawn,
+      origin: dest.origin,
+      waterFeature: dest.waterFeature,
+      biome: dest.biome,
+      landmarks: dest.landmarks,
+      playerLocale: p.locale,
+    };
+  }
+
+  getOrCreatePlayer(
+    playerId: string,
+    playerName = 'Storykeeper',
+    locale: SupportedLocaleId = 'en-US',
+    ageTrack: GlobalAgeTrack = '8-10'
+  ): GlobalPlayerSaveStateV11 {
+    let p = this.players.get(playerId);
+    if (!p) {
+      p = StateStore.createDefaultGlobalPlayerState(playerId, playerName, locale, ageTrack);
+      this.players.set(playerId, p);
+    }
+    return p;
+  }
+
+  switchLocale(playerId: string, newLocale: SupportedLocaleId) {
+    const p = this.getOrCreatePlayer(playerId);
+    p.locale = newLocale;
+    return {
+      ok: true,
+      locale: p.locale,
+      hubWelcome: LocaleService.translate(newLocale, 'ui.hub.welcome'),
+    };
+  }
+
+  switchAgeTrack(playerId: string, newAgeTrack: GlobalAgeTrack, activeChapterId?: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    p.ageTrack = AgeTrackResolver.normalizeTrack(newAgeTrack);
+    if (activeChapterId && p.chapters[activeChapterId]) {
+      QuestDirector.switchAgeTrackMidQuest(p.chapters, activeChapterId, p.ageTrack);
+    }
+    return { ok: true, ageTrack: p.ageTrack };
+  }
+
+  playFullChapter(playerId: string, chapterId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    const startRes = QuestDirector.startChapter(p.chapters, chapterId, p.ageTrack);
+    if (!startRes.ok || !startRes.variant) {
+      return { ok: false, reason: startRes.reason };
+    }
+    for (const node of startRes.variant.objectiveNodes) {
+      QuestDirector.advanceObjectiveStep(p.chapters, chapterId, p.ageTrack, node);
+    }
+    const compRes = QuestDirector.completeChapterAndUnlockNext(p.chapters, chapterId);
+    const rewardRes = RewardLedger.grantChapterRewardsIdempotent(
+      p,
+      chapterId,
+      compRes.reward.artifactId,
+      compRes.reward.storySparks,
+      compRes.reward.grantsCountryStamp,
+      compRes.reward.grantsCapstoneKeepsake
+    );
+    const dialogue = DialogueService.buildChapterDialogue(chapterId, p.locale, p.ageTrack);
+    const sourceInspect = ArtifactViewer.inspectChapterSource(chapterId, p.locale, p.ageTrack);
+    return {
+      ok: true,
+      chapterId,
+      ageTrack: p.ageTrack,
+      locale: p.locale,
+      unlockedNextChapterId: compRes.unlockedNextChapterId,
+      reward: rewardRes,
+      dialogue,
+      sourceInspect,
+    };
+  }
+
+  openAtlasJournal(playerId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    return AtlasJournal.buildAtlasOverview(p.locale, p.ageTrack, p.chapters, p.earnedKeepsakes, p.earnedStamps);
+  }
+
+  attemptCircleOfStoriesFinale(playerId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    return RewardLedger.tryCompleteCircleOfStoriesFinale(p);
+  }
+}

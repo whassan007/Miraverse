@@ -17,6 +17,7 @@ import {
 } from '../../../../packages/contracts/v13/index';
 import type { CountryCode } from '../../../../packages/contracts/index';
 import { useI18n } from '../i18n';
+import { GLOBAL_COUNTRIES_CATALOG } from '../lib/globalCatalog';
 
 const COUNTRIES: Array<{ id: CountryCode; name: string; colors: [string, string] }> = [
   { id: 'LB', name: '1. Lebanon: Byblos', colors: ['#0D9488', '#F4A261'] },
@@ -418,6 +419,44 @@ export default function Passport() {
                 </article>
               ));
             })}
+          </div>
+
+          {/* 11-Country Global Atlas of Belonging Keepsakes & Culminating Stamps */}
+          <div style={{ marginTop: '24px' }}>
+            <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', fontFamily: 'Georgia, serif', color: '#6EE7B7' }}>
+              Echoes of Home: 11 Country Capstone Keepsakes &amp; Culminating Stamps (Minecraft Bedrock Global v1.1)
+            </h3>
+            <p style={{ margin: '0 0 12px 0', fontSize: '13px', color: '#CBD5E1' }}>
+              Bring any 3 or more completed country keepsakes into The Atlas Observatory Rotunda in Minecraft Bedrock to celebrate <em>The Circle of Stories</em> and earn the Global Storykeeper Stamp.
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px' }}>
+              {GLOBAL_COUNTRIES_CATALOG.map((g) => (
+                <article
+                  key={g.code}
+                  data-testid={`passport-global-keepsake-${g.code}`}
+                  style={{
+                    background: 'rgba(15, 23, 42, 0.88)',
+                    borderRadius: '12px',
+                    padding: '12px',
+                    border: `1px solid ${g.primaryColorHex}`,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                  }}
+                >
+                  <img src={g.stampArtUrl} alt={g.stampName} width={44} height={44} style={{ borderRadius: '8px', flexShrink: 0 }} />
+                  <div>
+                    <div style={{ fontSize: '10px', fontWeight: 800, color: g.accentColorHex }}>
+                      {g.order}. {g.name} ({g.localLanguage})
+                    </div>
+                    <strong style={{ fontSize: '13px', color: '#FFF8EE', display: 'block' }}>
+                      {g.capstoneArtifact.name}
+                    </strong>
+                    <span style={{ fontSize: '11px', color: '#94A3B8' }}>{g.stampName}</span>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 

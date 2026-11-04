@@ -1,0 +1,28 @@
+# MiraVerse Global v1.1 — Child Safety, Accessibility, Non-Violence & Red-Team Sign-Off
+
+## 1. Red-Line Safety & Ethics Controls (Ages 5–17)
+1. **Non-Violent Core Progression:** All 66 chapters revolve around exploration, gathering, fair trade, non-hazardous simulated cooking/crafts, block-based architectural restoration, music, and storytelling. Zero weapons, combat, or graphic conflict.
+2. **Zero Child PII Collection:** Age tracks (`5-7`, `8-10`, `11-13`, `14-17`) are local gameplay/accessibility profiles. No birth date, ethnic origin, real name, email, or external telemetry is requested or transmitted.
+3. **Safe Communication:** Co-op multiplayer uses structured pre-localized emotes, quest callouts, and waypoint pings. No unmoderated free-text child chat.
+4. **No Dark Patterns or Paywalls:** Zero microtransactions, loot boxes, paid quest skips, or FOMO timers. Every artifact and keepsake is earned solely through gameplay.
+5. **Religious & Cultural Respect:** Sacred architecture and spiritual traditions are contextualized as cultural heritage and architecture without requiring player worship or proselytizing, and without sacralizing national superiority.
+
+## 2. Red-Team Audit Matrix Across All 11 Countries
+| Country | Potential Sensitivity Audited | Mitigation Enforced in v1.1 | Status |
+|---|---|---|---|
+| **Lebanon** (`LB`) | The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **Iraq** (`IQ`) | Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **Egypt** (`EG`) | The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **France** (`FR`) | Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **South Korea** (`KR`) | The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **Germany** (`DE`) | Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **China** (`CN`) | Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **Japan** (`JP`) | Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **Russia** (`RU`) | Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **Ukraine** (`UA`) | The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+| **Morocco** (`MA`) | Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers. | Explicit `contentType` badge on every chapter, respectful mentor dialogue, non-violent community focus | `PASSED` |
+
+## 3. Accessibility Guarantees
+- **Low-Literacy / Ages 5–7:** Pictogram tags, glowing floor beacons, 1–2 step objectives, zero timers, and checkpoint on every step.
+- **Deaf / Hard of Hearing:** Every sound cue or musical rhythm activity (`IQ06`, `KR05`, `DE05`, `CN06`, `RU06`, `UA06`, `MA06`) has synchronized visual particle/lantern indicators and subtitle strings.
+- **Motor / Navigation:** No mandatory precision parkour; every elevated viewpoint (`FR06`, `CN01`, `JP02`, `MA04`) includes gentle stair/ramp access and teleport assist.

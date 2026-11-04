@@ -41,10 +41,33 @@ export function buildRobloxLaunchInfo(countryHint?: string, config = DEFAULT_ROB
   };
 }
 
+export type RobloxPlayAction =
+  | { kind: 'launch'; href: string; label: string }
+  | { kind: 'not-published'; href: string; label: string; explanation: string };
+
+/**
+ * Decides what the Play button may truthfully do.
+ * A button labelled "Play" is only ever produced when a verified, published
+ * destination exists. Otherwise we never imply gameplay: the child gets an
+ * honest explanation and the official (non-game) Roblox download page.
+ */
+export function resolveRobloxPlayAction(config = DEFAULT_ROBLOX_LAUNCH_CONFIG, countryName = 'Miraverse'): RobloxPlayAction {
+  if (config.publishingStatus === 'PUBLISHED' && config.officialShareUrl) {
+    return { kind: 'launch', href: config.officialShareUrl, label: `▶ Play free on Roblox (${countryName})` };
+  }
+  return {
+    kind: 'not-published',
+    href: 'https://www.roblox.com/download',
+    label: 'Get the free Roblox app (the Miraverse world is not open yet)',
+    explanation: 'The Miraverse world on Roblox is not published yet, so there is nothing to play there today. You can get the Roblox app ready with a parent, and explore the web quests or the Minecraft add-on now.',
+  };
+}
+
 export const RobloxLaunchBanner: React.FC<{ countryCode?: CountryCode }> = ({ countryCode = 'LB' }) => {
   const info = buildRobloxLaunchInfo(countryCode);
   const meta = COUNTRY_META[info.targetCountry];
   const v13Country = V13_COUNTRY_EXPERIENCES[info.targetCountry];
+  const playAction = resolveRobloxPlayAction(DEFAULT_ROBLOX_LAUNCH_CONFIG, meta.nameEn);
 
   return (
     <section
@@ -75,9 +98,9 @@ export const RobloxLaunchBanner: React.FC<{ countryCode?: CountryCode }> = ({ co
               marginBottom: '8px',
             }}
           >
-            {v13Country.platformInfo.robloxPlayableNow
+            {playAction.kind === 'launch' && v13Country.platformInfo.robloxPlayableNow
               ? 'RC1 Flagship · Playable on Roblox'
-              : 'RC3 Roblox World Planned · Web Companion Ready'} · Destination: {meta.nameEn} ({meta.regionName})
+              : 'Roblox world coming soon · Web Companion Ready'} · Destination: {meta.nameEn} ({meta.regionName})
           </span>
           <h2 style={{ margin: '0 0 6px 0', fontSize: '22px', fontFamily: 'Georgia, serif' }}>
             Launch MiraVerse on Roblox — {info.availability.chapter_title}
@@ -89,7 +112,7 @@ export const RobloxLaunchBanner: React.FC<{ countryCode?: CountryCode }> = ({ co
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-start' }}>
           <a
-            href={info.officialShareUrl || 'https://www.roblox.com/download'}
+            href={playAction.href}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="btn-launch-roblox-official"
@@ -103,12 +126,17 @@ export const RobloxLaunchBanner: React.FC<{ countryCode?: CountryCode }> = ({ co
               fontSize: '15px',
             }}
           >
-            ▶ Play free on Roblox ({meta.nameEn})
+            {playAction.label}
           </a>
+          {playAction.kind === 'not-published' && (
+            <span data-testid="roblox-not-published-note" style={{ fontSize: '13px', color: '#E2E8F0', maxWidth: '360px' }}>
+              {playAction.explanation}
+            </span>
+          )}
           <span data-testid="roblox-publish-status" style={{ fontSize: '12px', color: '#FCD34D' }}>
-            {info.targetCountry === 'LB'
-              ? 'Flagship RC1 World Ready · Free Roblox App Required'
-              : 'RC3 Roblox World Expansion Planned · Explore Web Quests & Bedrock Add-On Today'}
+            {playAction.kind === 'launch'
+              ? 'Free Roblox App and account required'
+              : 'Roblox world not published yet · Explore Web Quests & Bedrock Add-On Today'}
           </span>
         </div>
       </div>
@@ -141,13 +169,13 @@ export const MinecraftCompanionPage: React.FC = () => {
             marginBottom: '12px',
           }}
         >
-          Companion Edition · Play in Minecraft Bedrock
+          Companion Edition · Play in Minecraft Bedrock (Global v1.1 · 11 Countries · 66 Chapters · 14 Languages)
         </span>
         <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(28px, 4vw, 44px)', margin: '0 0 12px 0' }}>
-          MiraVerse for Minecraft Bedrock Edition — Cultural Restoration Companion
+          MiraVerse for Minecraft Bedrock Edition — Echoes of Home: The Atlas of Belonging
         </h1>
         <p style={{ color: '#CBD5E1', fontSize: '16px', lineHeight: 1.6, marginBottom: '24px' }}>
-          Requires a licensed copy of <strong>Minecraft Bedrock Edition (v1.21.50+)</strong> on Windows, iOS, Android, Xbox, PlayStation, or Nintendo Switch. This companion focuses on hands-on block restoration of historic courtyards, libraries, lanterns, silk workshops, and hanok roofs across all 5 destinations, with independent Bedrock-local progression. It does not run in a web browser.
+          Requires a licensed copy of <strong>Minecraft Bedrock Edition (v1.21.50+)</strong> on Windows, iOS, Android, Xbox, PlayStation, or Nintendo Switch. Explore <strong>The Atlas Observatory</strong> and all <strong>11 cultural destinations</strong> (Lebanon, Iraq, Egypt, France, South Korea, Germany, China, Japan, Russia, Ukraine, and Morocco) with 66 sequential chapters, 264 age-adapted variants (Ages 5–7, 8–10, 11–13, and 14–17), and 14 supported language profiles.
         </p>
 
         <div
@@ -178,16 +206,21 @@ export const MinecraftCompanionPage: React.FC = () => {
           <h2 style={{ marginTop: 0, color: '#FFE29F' }}>Verified Companion Add-On &amp; Installation Guide</h2>
           <ul style={{ lineHeight: 1.8, color: '#E2E8F0' }}>
             <li>
-              <strong>Behavior &amp; Resource Add-On (`miraverse.mcaddon`):</strong> Verified `@minecraft/server@1.17.0` &amp; `@minecraft/server-ui@1.3.0` package with 6 authored `.mcstructure` cultural templates (`hub`, `LB`, `IQ`, `EG`, `FR`, `KR`).
+              <strong>Global v1.1 Add-On (`miraverse-global.mcaddon`):</strong> Complete 11-country campaign (<em>Echoes of Home: The Atlas of Belonging</em>) with 66 chapters, 264 age-track variants, 88 custom cultural blocks, 55 Blockbench NPC models, and 14 localized language profiles:
+              {' '}
+              <a href="/downloads/miraverse-global.mcaddon" style={{ color: '#6EE7B7', fontWeight: 800 }}>
+                Download miraverse-global.mcaddon (11 Countries · 66 Chapters · 14 Languages)
+              </a>
             </li>
             <li>
-              <strong>Download Add-On Package:</strong>{' '}
-              <a href="/downloads/miraverse.mcaddon" style={{ color: '#6EE7B7', fontWeight: 700 }}>
+              <strong>Core 5-Country Add-On (`miraverse.mcaddon`):</strong> Verified `@minecraft/server@1.17.0` &amp; `@minecraft/server-ui@1.3.0` package with 6 authored `.mcstructure` cultural templates (`hub`, `LB`, `IQ`, `EG`, `FR`, `KR`):
+              {' '}
+              <a href="/downloads/miraverse.mcaddon" style={{ color: '#93C5FD', fontWeight: 700 }}>
                 Download miraverse.mcaddon (Free Companion Add-On)
               </a>
             </li>
             <li>
-              <strong>How to Import:</strong> Download <code>miraverse.mcaddon</code> on a device with Minecraft Bedrock Edition installed, open the file to trigger automatic pack import, and activate both the MiraVerse Behavior Pack and Resource Pack on your world.
+              <strong>How to Import:</strong> Download <code>miraverse-global.mcaddon</code> (or <code>miraverse.mcaddon</code>) on a device with Minecraft Bedrock Edition installed, open the file to trigger automatic pack import, and activate both the MiraVerse Behavior Pack and Resource Pack on your world.
             </li>
           </ul>
         </div>

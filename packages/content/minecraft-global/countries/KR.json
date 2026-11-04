@@ -1,0 +1,90 @@
+{
+  "code": "KR",
+  "order": 5,
+  "name": "South Korea",
+  "nameNative": "대한민국 · 전주",
+  "city": "Jeonju",
+  "subtitle": "The Five Colors of Jeonju",
+  "theme": "Harmony through diversity of ingredients and generations",
+  "visualIdentity": "Hanok rooftops, wooden gates, onggi jars, stone paths, ingredient market, garden and community kitchen.",
+  "localLanguage": "ko-KR",
+  "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+  "origin": [
+    800,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      752,
+      60,
+      -48
+    ],
+    "max": [
+      848,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    72,
+    118,
+    96
+  ],
+  "accentRgb": [
+    204,
+    62,
+    48
+  ],
+  "customBlocks": [
+    "miraverse:kr_giwa_eave_tile",
+    "miraverse:kr_hanji_sliding_screen",
+    "miraverse:kr_ondol_hearth_stone",
+    "miraverse:kr_onggi_fermentation_jar",
+    "miraverse:kr_pine_beam_bracket",
+    "miraverse:kr_songpyeon_steamer_block",
+    "miraverse:kr_stone_pagoda_lantern",
+    "miraverse:kr_courtyard_stepping_stone"
+  ],
+  "capstoneArtifact": {
+    "id": "kr_five_color_bibimbap_bowl",
+    "name": "Five-Color Bibimbap Bowl"
+  },
+  "stampId": "kr_jeonju_harmony_stamp",
+  "stampName": "Jeonju Harmony Stamp",
+  "learnWords": [
+    {
+      "key": "hanok",
+      "native": "한옥",
+      "translit": "hanok",
+      "en": "Traditional Korean timber-framed house with curved giwa roof tiles"
+    },
+    {
+      "key": "obangsaek",
+      "native": "오방색",
+      "translit": "obangsaek",
+      "en": "Traditional Korean five-color harmony palette"
+    },
+    {
+      "key": "bibimbap",
+      "native": "비빔밥",
+      "translit": "bibimbap",
+      "en": "Warm rice mixed with seasoned vegetables and savory sauces"
+    }
+  ],
+  "chapterIds": [
+    "KR01",
+    "KR02",
+    "KR03",
+    "KR04",
+    "KR05",
+    "KR06"
+  ],
+  "castIds": [
+    "kr_jiwoo_halmeoni",
+    "kr_gardener_minho",
+    "kr_carpenter_seojun",
+    "kr_cook_soyeon",
+    "kr_guide_haneul"
+  ]
+}

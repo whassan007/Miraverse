@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "1.1.0",
+  "totalLocales": 14,
+  "nativeBedrockPackLocalesCount": 9,
+  "customApplicationLocalesCount": 5,
+  "locales": [
+    {
+      "locale": "en-US",
+      "name": "English",
+      "script": "Latin",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "en_US",
+      "renderingRoute": "rp/texts/en_US.lang",
+      "fallbackChain": [
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": false,
+      "reviewerStatus": "APPROVED_BASELINE"
+    },
+    {
+      "locale": "fr-FR",
+      "name": "French (France)",
+      "script": "Latin",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "fr_FR",
+      "renderingRoute": "rp/texts/fr_FR.lang",
+      "fallbackChain": [
+        "fr-FR",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "fr-CA",
+      "name": "French (Canada)",
+      "script": "Latin",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "fr_CA",
+      "renderingRoute": "rp/texts/fr_CA.lang",
+      "fallbackChain": [
+        "fr-CA",
+        "fr-FR",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "de-DE",
+      "name": "German",
+      "script": "Latin",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "de_DE",
+      "renderingRoute": "rp/texts/de_DE.lang",
+      "fallbackChain": [
+        "de-DE",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "zh-Hans-CN",
+      "name": "Simplified Chinese",
+      "script": "CJK",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "zh_CN",
+      "renderingRoute": "rp/texts/zh_CN.lang",
+      "fallbackChain": [
+        "zh-Hans-CN",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "ja-JP",
+      "name": "Japanese",
+      "script": "CJK",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "ja_JP",
+      "renderingRoute": "rp/texts/ja_JP.lang",
+      "fallbackChain": [
+        "ja-JP",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "ru-RU",
+      "name": "Russian",
+      "script": "Cyrillic",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "ru_RU",
+      "renderingRoute": "rp/texts/ru_RU.lang",
+      "fallbackChain": [
+        "ru-RU",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "uk-UA",
+      "name": "Ukrainian",
+      "script": "Cyrillic",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "uk_UA",
+      "renderingRoute": "rp/texts/uk_UA.lang",
+      "fallbackChain": [
+        "uk-UA",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "ko-KR",
+      "name": "Korean",
+      "script": "CJK",
+      "direction": "ltr",
+      "isNativeBedrock": true,
+      "nativePackLang": "ko_KR",
+      "renderingRoute": "rp/texts/ko_KR.lang",
+      "fallbackChain": [
+        "ko-KR",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "ar",
+      "name": "Modern Standard Arabic",
+      "script": "Arabic",
+      "direction": "rtl",
+      "isNativeBedrock": false,
+      "nativePackLang": null,
+      "renderingRoute": "custom_ui_rtl_adapter_with_fallback",
+      "fallbackChain": [
+        "ar",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "ar-LB",
+      "name": "Lebanese Arabic",
+      "script": "Arabic",
+      "direction": "rtl",
+      "isNativeBedrock": false,
+      "nativePackLang": null,
+      "renderingRoute": "custom_ui_rtl_adapter_with_fallback",
+      "fallbackChain": [
+        "ar-LB",
+        "ar",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "ar-IQ",
+      "name": "Iraqi Arabic",
+      "script": "Arabic",
+      "direction": "rtl",
+      "isNativeBedrock": false,
+      "nativePackLang": null,
+      "renderingRoute": "custom_ui_rtl_adapter_with_fallback",
+      "fallbackChain": [
+        "ar-IQ",
+        "ar",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "ar-EG",
+      "name": "Egyptian Arabic",
+      "script": "Arabic",
+      "direction": "rtl",
+      "isNativeBedrock": false,
+      "nativePackLang": null,
+      "renderingRoute": "custom_ui_rtl_adapter_with_fallback",
+      "fallbackChain": [
+        "ar-EG",
+        "ar",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    },
+    {
+      "locale": "ar-MA",
+      "name": "Moroccan Darija",
+      "script": "Arabic",
+      "direction": "rtl",
+      "isNativeBedrock": false,
+      "nativePackLang": null,
+      "renderingRoute": "custom_ui_rtl_adapter_with_fallback",
+      "fallbackChain": [
+        "ar-MA",
+        "ar",
+        "en-US"
+      ],
+      "keyCount": 604,
+      "missingKeysCount": 0,
+      "humanReviewRequired": true,
+      "reviewerStatus": "AI_AUTHORED_HUMAN_REVIEW_REQUIRED"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+=== AGENT DX20 (DGX · W4) ===
+Timestamp: 2026-11-04T13:45:12.631Z
+Task: Deterministic packaging, integrity and reproducibility
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: DGX Spark (qwen/qwen3-coder-next, 57.31 tok/s, maxConcurrency=1) | NVIDIA GB10, 580.178.04, 44, 92 % | Total=121GiB Used=102GiB Free=0GiB Available=19GiB
+Branch: minecraft-global/DX20
+Worktree: /home/wael/Code/mv-wt-mcg/DX20
+Agent Commit SHA: c510bf2
+Integration Merge SHA: fd5475f
+Owned Paths: apps/minecraft/tools/distribution/
+Modified Files (1): apps/minecraft/tools/distribution/verify-reproducibility.mjs
+Test Command: node apps/minecraft/tools/distribution/verify-reproducibility.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/distribution/verify-reproducibility.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+DETERMINISTIC_MCADDON_OK {"ok":true,"archivePath":"/home/wael/Code/mv-wt-mcg/DX20/apps/minecraft/dist/miraverse-global.mcaddon","sha256":"265055569df8a2d6280fce6cc7fd222eb319e0e91a73173d4066cbfe756c2b07","fileCount":554,"nativeLanguagesCount":9}
+
+DONE DX20 c510bf2 apps/minecraft/tools/distribution/verify-reproducibility.mjs

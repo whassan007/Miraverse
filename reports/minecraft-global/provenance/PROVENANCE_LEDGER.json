@@ -1,0 +1,762 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-11-04T13:34:06.231Z",
+  "dgxSparkMetrics": {
+    "hardware": "NVIDIA GB10, 580.178.04, 41, 0 % | Total=121GiB Used=51GiB Free=55GiB Available=70GiB",
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 14.92,
+    "elapsedMs": 10722,
+    "maxConcurrencyEnforced": 1
+  },
+  "licensePolicy": "100% repo-authored procedural voxel structures, Blockbench models, 16x16/64x64 deterministic PNG textures, and CC0/authored sound definitions. Zero third-party unattributed stock assets.",
+  "countriesProvenance": [
+    {
+      "countryCode": "LB",
+      "countryName": "Lebanon",
+      "city": "Byblos/Jbeil",
+      "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+      "chapters": [
+        {
+          "chapterId": "LB01",
+          "title": "The Harbor Wakes",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-LB-BYBLOS-MARITIME"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "LB02",
+          "title": "Letters in Stone",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-LB-AHIRAM-ALPHABET"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "LB03",
+          "title": "Teta’s Table",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-LB-CULINARY-MANOUSHE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "LB04",
+          "title": "The Cedar Chest",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-LB-PLUTARCH-OSIRIS-MYTH"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "LB05",
+          "title": "Photographs Across the Sea",
+          "sourceType": "fictional_gameplay",
+          "sourceIds": [
+            "SRC-LB-DIASPORA-ARCHIVE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "LB06",
+          "title": "Festival of Return",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-LB-BYBLOS-MARITIME"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "IQ",
+      "countryName": "Iraq",
+      "city": "Baghdad",
+      "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+      "chapters": [
+        {
+          "chapterId": "IQ01",
+          "title": "Street of Books",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-IQ-MUTANABBI-RESILIENCE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "IQ02",
+          "title": "The House of Wisdom",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-IQ-BAYT-AL-HIKMA"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "IQ03",
+          "title": "Words That Travel",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-IQ-TRANSLATION-MOVEMENT"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "IQ04",
+          "title": "Dates and Kleicha",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-IQ-CULINARY-KLEICHA"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "IQ05",
+          "title": "The Courtyard of Questions",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-IQ-SHANASHEEL-ARCH"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "IQ06",
+          "title": "A Library Across Oceans",
+          "sourceType": "fictional_gameplay",
+          "sourceIds": [
+            "SRC-IQ-MUTANABBI-RESILIENCE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "EG",
+      "countryName": "Egypt",
+      "city": "Cairo",
+      "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+      "chapters": [
+        {
+          "chapterId": "EG01",
+          "title": "A Darkened Courtyard",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-EG-FANOUS-CRAFT"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "EG02",
+          "title": "The Fanous Workshop",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-EG-FANOUS-CRAFT"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "EG03",
+          "title": "The Market at Dusk",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-EG-KOSHARI-HOSPITALITY"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "EG04",
+          "title": "Koshari for Everyone",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-EG-KOSHARI-HOSPITALITY"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "EG05",
+          "title": "Stories of the Lantern",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-EG-FATIMID-TRADITION"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "EG06",
+          "title": "The City of Light",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-EG-FANOUS-CRAFT"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "FR",
+      "countryName": "France",
+      "city": "Vieux Lyon",
+      "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+      "chapters": [
+        {
+          "chapterId": "FR01",
+          "title": "The Passage Map",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-FR-LYON-TRABOULES"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "FR02",
+          "title": "Threads of the City",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-FR-CANUTS-JACQUARD"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "FR03",
+          "title": "At the Mères’ Table",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-FR-MERES-LYONNAISES"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "FR04",
+          "title": "A Market of Flavors",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-FR-MERES-LYONNAISES"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "FR05",
+          "title": "Stone by Stone",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-FR-LYON-TRABOULES"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "FR06",
+          "title": "A Recipe for Home",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-FR-MERES-LYONNAISES"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "countryName": "South Korea",
+      "city": "Jeonju",
+      "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+      "chapters": [
+        {
+          "chapterId": "KR01",
+          "title": "The Hanok Gate",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-KR-JEONJU-HANOK"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "KR02",
+          "title": "Five Colors, Many Meanings",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-KR-OBANGSAEK-PHILOSOPHY"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "KR03",
+          "title": "The Market Morning",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-KR-JEONJU-HANOK"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "KR04",
+          "title": "Jeonju’s Shared Bowl",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-KR-BIBIMBAP-ORIGINS"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "KR05",
+          "title": "Craft of the Courtyard",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-KR-JEONJU-HANOK"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "KR06",
+          "title": "Harmony Feast",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-KR-BIBIMBAP-ORIGINS"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "DE",
+      "countryName": "Germany",
+      "city": "Rhine / symbolic Grail landscape",
+      "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+      "chapters": [
+        {
+          "chapterId": "DE01",
+          "title": "The River’s Bend",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-DE-RHINE-NAVIGATION"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "DE02",
+          "title": "The Enchanted Song",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-DE-LORELEI-LITERATURE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "DE03",
+          "title": "The Navigator’s Choice",
+          "sourceType": "fictional_gameplay",
+          "sourceIds": [
+            "SRC-DE-RHINE-NAVIGATION"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "DE04",
+          "title": "The Quiet Grail Hall",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-DE-PARZIVAL-WOLFRAM"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "DE05",
+          "title": "What Ails You?",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-DE-PARZIVAL-WOLFRAM"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "DE06",
+          "title": "The Garden Returns",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-DE-PARZIVAL-WOLFRAM"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "countryName": "China",
+      "city": "Peach Blossom Spring, Wuling-inspired setting",
+      "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+      "chapters": [
+        {
+          "chapterId": "CN01",
+          "title": "Where the River Turns",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-CN-TAO-YUANMING-PROSE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "CN02",
+          "title": "The Hidden Valley",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-CN-TAO-YUANMING-PROSE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "CN03",
+          "title": "The Calendar of Change",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-CN-SEASONAL-AGRICULTURE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "CN04",
+          "title": "A Path That Moves",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-CN-TAO-YUANMING-PROSE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "CN05",
+          "title": "Moonlight Letters",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-CN-CHANGE-MOON-FOLKLORE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "CN06",
+          "title": "Plant a New Garden",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-CN-TAO-YUANMING-PROSE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "countryName": "Japan",
+      "city": "Bashō’s journey, Tohoku-inspired route",
+      "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+      "chapters": [
+        {
+          "chapterId": "JP01",
+          "title": "The First Step",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "JP02",
+          "title": "Crossing the River",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-JP-TOHOKU-WAYSTATIONS"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "JP03",
+          "title": "Three Lines of Sky",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "JP04",
+          "title": "The Traveler’s Shelter",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-JP-TOHOKU-WAYSTATIONS"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "JP05",
+          "title": "The Changing Path",
+          "sourceType": "literature",
+          "sourceIds": [
+            "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "JP06",
+          "title": "The Road Is Home",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-JP-TOHOKU-WAYSTATIONS"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "countryName": "Russia",
+      "city": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+      "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+      "chapters": [
+        {
+          "chapterId": "RU01",
+          "title": "The Bell at Dawn",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-RU-KITEZH-FOLKLORE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "RU02",
+          "title": "The City in Reflection",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-RU-KITEZH-FOLKLORE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "RU03",
+          "title": "Sadko’s Strings",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-RU-SADKO-BYLINA"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "RU04",
+          "title": "The Water Garden",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-RU-SVETLOYAR-ECOLOGY"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "RU05",
+          "title": "Keepers of Stories",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-RU-KITEZH-FOLKLORE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "RU06",
+          "title": "A Story Above Water",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-RU-SVETLOYAR-ECOLOGY"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "UA",
+      "countryName": "Ukraine",
+      "city": "Kyiv founding hills / community music square",
+      "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+      "chapters": [
+        {
+          "chapterId": "UA01",
+          "title": "The Four Founders",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-UA-KYIV-FOUNDERS-CHRONICLE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "UA02",
+          "title": "The City by the Water",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-UA-TOLOKA-COMMUNITY"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "UA03",
+          "title": "Listen to the Kobzar",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-UA-KOBZAR-BANDURA"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "UA04",
+          "title": "The Dumy Notebook",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-UA-KOBZAR-BANDURA"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "UA05",
+          "title": "The Living Music Hall",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-UA-KOBZAR-BANDURA"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "UA06",
+          "title": "Songs That Travel",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-UA-TOLOKA-COMMUNITY"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    },
+    {
+      "countryCode": "MA",
+      "countryName": "Morocco",
+      "city": "Marrakesh / Jemaa el-Fnaa-inspired square",
+      "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+      "chapters": [
+        {
+          "chapterId": "MA01",
+          "title": "Join the Circle",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-MA-AL-HALQA-UNESCO"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "MA02",
+          "title": "A Tale With Many Voices",
+          "sourceType": "folklore",
+          "sourceIds": [
+            "SRC-MA-AL-HALQA-UNESCO"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "MA03",
+          "title": "Tea and Craft",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-MA-MINT-TEA-HOSPITALITY"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "MA04",
+          "title": "The Story We Change",
+          "sourceType": "fictional_gameplay",
+          "sourceIds": [
+            "SRC-MA-AL-HALQA-UNESCO"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "MA05",
+          "title": "Paths of Wisdom",
+          "sourceType": "historical_context",
+          "sourceIds": [
+            "SRC-MA-MARRAKESH-HERITAGE"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        },
+        {
+          "chapterId": "MA06",
+          "title": "The Circle Travels",
+          "sourceType": "contemporary_tradition",
+          "sourceIds": [
+            "SRC-MA-AL-HALQA-UNESCO"
+          ],
+          "attributionStatus": "VERIFIED_TAGGED",
+          "humanCulturalReviewRecommended": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "code": "DE",
+  "order": 6,
+  "name": "Germany",
+  "nameNative": "Deutschland · Mittelrhein",
+  "city": "Rhine / symbolic Grail landscape",
+  "subtitle": "The Song and the Healing Question",
+  "theme": "Empathy over silent detachment; remembering without becoming trapped in nostalgia",
+  "visualIdentity": "Rhine river bend and cliffs, riverside village, safe boat route, forest trail, mythic Grail hall and renewing garden.",
+  "localLanguage": "de-DE",
+  "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+  "origin": [
+    1200,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      1152,
+      60,
+      -48
+    ],
+    "max": [
+      1248,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    94,
+    128,
+    152
+  ],
+  "accentRgb": [
+    212,
+    172,
+    76
+  ],
+  "customBlocks": [
+    "miraverse:de_rhine_slate_stone",
+    "miraverse:de_half_timber_oak_frame",
+    "miraverse:de_signal_beacon_lantern",
+    "miraverse:de_acoustic_echo_chime",
+    "miraverse:de_grail_hall_column",
+    "miraverse:de_stained_story_glass",
+    "miraverse:de_renewing_garden_trellis",
+    "miraverse:de_river_quay_bollard"
+  ],
+  "capstoneArtifact": {
+    "id": "de_compass_of_compassion",
+    "name": "Compass of Compassion"
+  },
+  "stampId": "de_german_memory_stamp",
+  "stampName": "German Memory Stamp",
+  "learnWords": [
+    {
+      "key": "mitgefuehl",
+      "native": "Mitgefühl",
+      "translit": "mit-guh-fuel",
+      "en": "Compassion and active empathy for others"
+    },
+    {
+      "key": "strom",
+      "native": "Strom",
+      "translit": "shtrohm",
+      "en": "Wide navigable river current"
+    },
+    {
+      "key": "frage",
+      "native": "Frage",
+      "translit": "frah-guh",
+      "en": "A caring question that opens understanding"
+    }
+  ],
+  "chapterIds": [
+    "DE01",
+    "DE02",
+    "DE03",
+    "DE04",
+    "DE05",
+    "DE06"
+  ],
+  "castIds": [
+    "de_navigator_klara",
+    "de_historian_lukas",
+    "de_narrator_lorelei",
+    "de_parzival",
+    "de_gardener_jonas"
+  ]
+}

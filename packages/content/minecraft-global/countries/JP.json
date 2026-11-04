@@ -1,0 +1,90 @@
+{
+  "code": "JP",
+  "order": 8,
+  "name": "Japan",
+  "nameNative": "日本 · みちのくの旅路",
+  "city": "Bashō’s journey, Tohoku-inspired route",
+  "subtitle": "The Narrow Road Home",
+  "theme": "The journey itself can become a form of belonging",
+  "visualIdentity": "Travel roads, river crossings, inns, forest and coastal waystations, gardens, seasonal scenery and poetic viewpoints.",
+  "localLanguage": "ja-JP",
+  "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+  "origin": [
+    1600,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      1552,
+      60,
+      -48
+    ],
+    "max": [
+      1648,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    118,
+    154,
+    132
+  ],
+  "accentRgb": [
+    188,
+    92,
+    84
+  ],
+  "customBlocks": [
+    "miraverse:jp_cedar_waystation_beam",
+    "miraverse:jp_shoji_paper_lattice",
+    "miraverse:jp_kawara_roof_tile",
+    "miraverse:jp_stepping_garden_stone",
+    "miraverse:jp_wooden_footbridge_plank",
+    "miraverse:jp_wayfinding_stone_marker",
+    "miraverse:jp_bamboo_water_spout",
+    "miraverse:jp_poetic_lectern_stand"
+  ],
+  "capstoneArtifact": {
+    "id": "jp_travelers_ink_brush",
+    "name": "Traveler’s Ink Brush"
+  },
+  "stampId": "jp_narrow_road_stamp",
+  "stampName": "Narrow Road Stamp",
+  "learnWords": [
+    {
+      "key": "tabi",
+      "native": "旅",
+      "translit": "tabi",
+      "en": "Journey and mindful travel across seasons"
+    },
+    {
+      "key": "haiku",
+      "native": "俳句",
+      "translit": "haiku",
+      "en": "Short three-line seasonal poem observing nature"
+    },
+    {
+      "key": "kakehashi",
+      "native": "架け橋",
+      "translit": "kakehashi",
+      "en": "Connecting bridge between places and people"
+    }
+  ],
+  "chapterIds": [
+    "JP01",
+    "JP02",
+    "JP03",
+    "JP04",
+    "JP05",
+    "JP06"
+  ],
+  "castIds": [
+    "jp_guide_haruka",
+    "jp_innkeeper_kenji",
+    "jp_bridge_builder_takumi",
+    "jp_poet_aoi",
+    "jp_gardener_ren"
+  ]
+}

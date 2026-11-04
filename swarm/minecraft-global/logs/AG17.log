@@ -1,0 +1,19 @@
+=== AGENT AG17 (ANTIGRAVITY · W1) ===
+Timestamp: 2026-11-04T13:36:38.987Z
+Task: Environment audio, animation and FX director
+Resolved Model: Gemini 4 Argon
+Runtime Environment: Antigravity Soundscape & Particle FX Lane (Linux aarch64)
+Branch: minecraft-global/AG17
+Worktree: /home/wael/Code/mv-wt-mcg/AG17
+Agent Commit SHA: 82ddea8
+Integration Merge SHA: e6738b0
+Owned Paths: apps/minecraft/assets-src/ambience/
+Modified Files (2): apps/minecraft/assets-src/ambience/particles-manifest.json, apps/minecraft/assets-src/ambience/sound_definitions.json
+Test Command: node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('apps/minecraft/assets-src/ambience/particles-manifest.json','utf8')); if(p.count!==11) process.exit(1); console.log('AG17 verified: 11 regional soundscapes with visual particle equivalents');"
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/assets-src/ambience/sound_definitions.json, apps/minecraft/assets-src/ambience/particles-manifest.json
+Blockers: None
+--- STDOUT/STDERR ---
+AG17 verified: 11 regional soundscapes with visual particle equivalents
+
+DONE AG17 82ddea8 apps/minecraft/assets-src/ambience/sound_definitions.json

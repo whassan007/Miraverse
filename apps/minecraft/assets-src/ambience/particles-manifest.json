@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.1.0",
+  "count": 11,
+  "particles": [
+    {
+      "id": "miraverse:lb_glow_motes",
+      "countryCode": "LB",
+      "colorRgb": [
+        30,
+        122,
+        104
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:iq_glow_motes",
+      "countryCode": "IQ",
+      "colorRgb": [
+        212,
+        136,
+        42
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:eg_glow_motes",
+      "countryCode": "EG",
+      "colorRgb": [
+        43,
+        76,
+        126
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:fr_glow_motes",
+      "countryCode": "FR",
+      "colorRgb": [
+        59,
+        110,
+        165
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:kr_glow_motes",
+      "countryCode": "KR",
+      "colorRgb": [
+        204,
+        62,
+        48
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:de_glow_motes",
+      "countryCode": "DE",
+      "colorRgb": [
+        212,
+        172,
+        76
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:cn_glow_motes",
+      "countryCode": "CN",
+      "colorRgb": [
+        68,
+        142,
+        108
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:jp_glow_motes",
+      "countryCode": "JP",
+      "colorRgb": [
+        188,
+        92,
+        84
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:ru_glow_motes",
+      "countryCode": "RU",
+      "colorRgb": [
+        214,
+        162,
+        74
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:ua_glow_motes",
+      "countryCode": "UA",
+      "colorRgb": [
+        238,
+        194,
+        56
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    },
+    {
+      "id": "miraverse:ma_glow_motes",
+      "countryCode": "MA",
+      "colorRgb": [
+        42,
+        148,
+        126
+      ],
+      "purpose": "Accessible visual indicator for ambient soundscape and Explorer 5-7 glow pathing"
+    }
+  ]
+}

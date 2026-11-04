@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "CN",
+  "countryName": "China",
+  "regionName": "Peach Blossom Spring, Wuling-inspired setting",
+  "storyTitle": "The Valley Beyond the Blossoms",
+  "localLocale": "zh-Hans-CN",
+  "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+  "origin": {
+    "x": 1400,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 1400,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 1400,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 1396,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 1430,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "cn_peach_blossom_keepsake",
+    "name": "Peach Blossom Keepsake"
+  },
+  "passportStamp": {
+    "id": "cn_peach_spring_stamp",
+    "name": "Peach Spring Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "cn_mentor_cultural_house",
+      "nameEn": "Peach Blossom Spring, Wuling-inspired setting Mentor Courtyard & Hearth",
+      "nameNative": "中国 · 桃花源",
+      "origin": {
+        "x": 1382,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:cn_peach_blossom_timber",
+      "trimBlock": "miraverse:cn_whitewashed_hui_wall",
+      "roofBlock": "miraverse:cn_grey_curved_roof_tile",
+      "hasInterior": true,
+      "interiorId": "cn_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "cn_story_archive_hall",
+      "nameEn": "Peach Blossom Spring, Wuling-inspired setting Story & Epigraphy Archive",
+      "nameNative": "中国 · 桃花源",
+      "origin": {
+        "x": 1404,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:cn_peach_blossom_timber",
+      "trimBlock": "miraverse:cn_whitewashed_hui_wall",
+      "roofBlock": "miraverse:cn_grey_curved_roof_tile",
+      "hasInterior": true,
+      "interiorId": "cn_interior_story_archive"
+    },
+    {
+      "buildingId": "cn_artisan_craft_guild",
+      "nameEn": "Peach Blossom Spring, Wuling-inspired setting Master Artisan Workshop",
+      "nameNative": "中国 · 桃花源",
+      "origin": {
+        "x": 1380,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:cn_peach_blossom_timber",
+      "trimBlock": "miraverse:cn_whitewashed_hui_wall",
+      "roofBlock": "miraverse:cn_grey_curved_roof_tile",
+      "hasInterior": true,
+      "interiorId": "cn_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "cn_market_bazaar_arcade",
+      "nameEn": "Peach Blossom Spring, Wuling-inspired setting Fair-Trade Market Arcade",
+      "nameNative": "中国 · 桃花源",
+      "origin": {
+        "x": 1406,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:cn_peach_blossom_timber",
+      "trimBlock": "miraverse:cn_whitewashed_hui_wall",
+      "roofBlock": "miraverse:cn_grey_curved_roof_tile",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "cn_heritage_landmark_pavilion",
+      "nameEn": "Peach Blossom Spring, Wuling-inspired setting Community Gathering & Performance Pavilion",
+      "nameNative": "中国 · 桃花源",
+      "origin": {
+        "x": 1394,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:cn_peach_blossom_timber",
+      "trimBlock": "miraverse:cn_whitewashed_hui_wall",
+      "roofBlock": "miraverse:cn_grey_curved_roof_tile",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "cn_interior_mentor_hearth",
+      "buildingId": "cn_mentor_cultural_house",
+      "nameEn": "Peach Blossom Spring, Wuling-inspired setting Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 1388,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "cn_cooking_hearth",
+          "blockId": "miraverse:cn_terrace_water_channel",
+          "offset": {
+            "x": 1388,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "cn_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 1386,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "cn_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 1388,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "cn_interior_story_archive",
+      "buildingId": "cn_story_archive_hall",
+      "nameEn": "Peach Blossom Spring, Wuling-inspired setting Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 1410,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "cn_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 1410,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "cn_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 1412,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "cn_keepsake_display",
+          "blockId": "miraverse:cn_stone_bridge_arch",
+          "offset": {
+            "x": 1408,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Peach Blossom Keepsake"
+        }
+      ]
+    },
+    {
+      "interiorId": "cn_interior_artisan_workshop",
+      "buildingId": "cn_artisan_craft_guild",
+      "nameEn": "Peach Blossom Spring, Wuling-inspired setting Restoration & Craft Studio",
+      "entryPos": {
+        "x": 1386,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "cn_craft_bench",
+          "blockId": "miraverse:cn_moon_pavilion_lantern",
+          "offset": {
+            "x": 1386,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "cn_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 1384,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "cn_elder_lin",
+      "countryCode": "CN",
+      "nameEn": "Village Elder Lin",
+      "nameNative": "林长老",
+      "role": "mentor",
+      "greetingNative": "欢迎来到桃花溪谷！四季流转，记忆与家园也在不断生长。",
+      "spawnPos": {
+        "x": 1376,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "CN01",
+        "CN06"
+      ]
+    },
+    {
+      "npcId": "cn_fisher_zhou",
+      "countryCode": "CN",
+      "nameEn": "Fisher Zhou",
+      "nameNative": "渔夫周叔",
+      "role": "navigator",
+      "greetingNative": "沿着溪水逆流而上，你会看到落英缤纷的桃林。",
+      "spawnPos": {
+        "x": 1388,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "CN02"
+      ]
+    },
+    {
+      "npcId": "cn_orchard_keeper_mei",
+      "countryCode": "CN",
+      "nameEn": "Orchard Keeper Mei",
+      "nameNative": "果园守护者梅姨",
+      "role": "artisan",
+      "greetingNative": "每一棵桃树都随着春去秋来而变化。",
+      "spawnPos": {
+        "x": 1400,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "CN03"
+      ]
+    },
+    {
+      "npcId": "cn_mapmaker_chen",
+      "countryCode": "CN",
+      "nameEn": "Mapmaker Chen",
+      "nameNative": "制图师小陈",
+      "role": "scholar",
+      "greetingNative": "旧地图记下了过去，但河流与山径每天都在更新。",
+      "spawnPos": {
+        "x": 1412,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "CN04"
+      ]
+    },
+    {
+      "npcId": "cn_moon_host_yue",
+      "countryCode": "CN",
+      "nameEn": "Moon Festival Host Yue",
+      "nameNative": "中秋主理人悦姐",
+      "role": "cook",
+      "greetingNative": "来赏月庭院一起制作象征团圆与分享的月饼吧！",
+      "spawnPos": {
+        "x": 1424,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "CN05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "cn_quest_cn01",
+      "chapterId": "CN01",
+      "title": "Where the River Turns",
+      "kind": "exploration_and_discovery",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1370,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:cn_peach_blossom_timber",
+      "rewardArtifactId": "cn_blossom_petal"
+    },
+    {
+      "anchorId": "cn_quest_cn02",
+      "chapterId": "CN02",
+      "title": "The Hidden Valley",
+      "kind": "gathering_and_bridge_repair",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1382,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:cn_whitewashed_hui_wall",
+      "rewardArtifactId": "cn_valley_map"
+    },
+    {
+      "anchorId": "cn_quest_cn03",
+      "chapterId": "CN03",
+      "title": "The Calendar of Change",
+      "kind": "seasonal_comparison",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1394,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:cn_grey_curved_roof_tile",
+      "rewardArtifactId": "cn_season_wheel"
+    },
+    {
+      "anchorId": "cn_quest_cn04",
+      "chapterId": "CN04",
+      "title": "A Path That Moves",
+      "kind": "map_revision_reasoning",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1406,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:cn_bamboo_lattice_screen",
+      "rewardArtifactId": "cn_changing_compass"
+    },
+    {
+      "anchorId": "cn_quest_cn05",
+      "chapterId": "CN05",
+      "title": "Moonlight Letters",
+      "kind": "folklore_and_cooking",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 1418,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:cn_terrace_water_channel",
+      "rewardArtifactId": "cn_moon_letter"
+    },
+    {
+      "anchorId": "cn_quest_cn06",
+      "chapterId": "CN06",
+      "title": "Plant a New Garden",
+      "kind": "cooperative_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1430,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:cn_moon_pavilion_lantern",
+      "rewardArtifactId": "cn_peach_spring_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "cn_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 1400,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "cn_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 1410,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Peach Blossom Spring, Wuling-inspired setting Fair-Trade Stall"
+    },
+    {
+      "anchorId": "cn_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 1376,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:cn_mooncake_hearth_table",
+      "labelEn": "Peach Blossom Spring, Wuling-inspired setting Resource Gathering Spot"
+    },
+    {
+      "anchorId": "cn_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 1396,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:cn_peach_blossom_timber",
+      "labelEn": "Peach Blossom Spring, Wuling-inspired setting Community Restoration Plot"
+    },
+    {
+      "anchorId": "cn_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 1430,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:cn_whitewashed_hui_wall",
+      "labelEn": "Peach Blossom Spring, Wuling-inspired setting Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "taohua",
+      "native": "桃花",
+      "translit": "táohuā",
+      "en": "Peach blossom flower"
+    },
+    {
+      "key": "tuanyuan",
+      "native": "团圆",
+      "translit": "tuányuán",
+      "en": "Warm reunion and gathering together"
+    },
+    {
+      "key": "bianhua",
+      "native": "变化",
+      "translit": "biànhuà",
+      "en": "Natural change and renewal over time"
+    }
+  ]
+}

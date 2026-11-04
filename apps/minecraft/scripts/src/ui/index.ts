@@ -65,3 +65,50 @@ export class BedrockUiFormsV10 {
     };
   }
 }
+
+
+// ============================================================================
+// MiraVerse Global v1.1 — AtlasJournal & ArtifactViewer UI Controllers
+// Owner: CX02 (Wave W2)
+// ============================================================================
+import { LocaleService, type SupportedLocaleId } from '../locales/index.js';
+import { AgeTrackResolver, ObjectiveRegistry, type GlobalAgeTrack, type GlobalChapterProgress } from '../quests/index.js';
+
+export class AtlasJournal {
+  static buildAtlasOverview(
+    localeId: SupportedLocaleId,
+    ageTrack: GlobalAgeTrack,
+    chaptersState: Record<string, GlobalChapterProgress>,
+    earnedKeepsakes: string[],
+    earnedStamps: string[]
+  ) {
+    const completedCount = Object.values(chaptersState).filter((c) => c.lifecycle === 'COMPLETED').length;
+    return {
+      title: LocaleService.translate(localeId, 'ui.hub.title').text,
+      campaignTitle: LocaleService.translate(localeId, 'ui.campaign.title').text,
+      localeId,
+      ageTrack,
+      ageTrackDescription: LocaleService.translate(localeId, `ui.age_track.${ageTrack}`).text,
+      completedChaptersCount: completedCount,
+      totalChaptersCount: 66,
+      earnedKeepsakesCount: earnedKeepsakes.length,
+      earnedStampsCount: earnedStamps.length,
+      circleOfStoriesUnlocked: earnedKeepsakes.length >= 3,
+    };
+  }
+}
+
+export class ArtifactViewer {
+  static inspectChapterSource(chapterId: string, localeId: SupportedLocaleId, ageTrack: GlobalAgeTrack) {
+    const ch = ObjectiveRegistry.getChapterDefinition(chapterId);
+    const variant = AgeTrackResolver.resolveChapterVariant(chapterId, ageTrack);
+    return {
+      chapterId,
+      artifactId: ch.reward.artifactId,
+      artifactName: LocaleService.translate(localeId, `artifact.${ch.reward.artifactId}.name`).text,
+      sourceType: ch.sourceType,
+      sourceNote: LocaleService.translate(localeId, `quest.${chapterId}.source_note`).text,
+      readingLoad: variant.readingLoad,
+    };
+  }
+}

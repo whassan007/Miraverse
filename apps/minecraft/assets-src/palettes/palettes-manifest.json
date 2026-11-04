@@ -1,0 +1,623 @@
+{
+  "schemaVersion": "1.1.0",
+  "totalCustomBlocks": 88,
+  "countriesCount": 11,
+  "blocks": [
+    {
+      "blockId": "miraverse:lb_byblos_limestone",
+      "shortName": "lb_byblos_limestone",
+      "countryCode": "LB",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/LB/lb_byblos_limestone.png",
+      "mapColorHex": "#dac298"
+    },
+    {
+      "blockId": "miraverse:lb_carved_arch_stone",
+      "shortName": "lb_carved_arch_stone",
+      "countryCode": "LB",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/LB/lb_carved_arch_stone.png",
+      "mapColorHex": "#dac298"
+    },
+    {
+      "blockId": "miraverse:lb_terracotta_roof_tile",
+      "shortName": "lb_terracotta_roof_tile",
+      "countryCode": "LB",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/LB/lb_terracotta_roof_tile.png",
+      "mapColorHex": "#dac298"
+    },
+    {
+      "blockId": "miraverse:lb_cedar_shutter",
+      "shortName": "lb_cedar_shutter",
+      "countryCode": "LB",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/LB/lb_cedar_shutter.png",
+      "mapColorHex": "#dac298"
+    },
+    {
+      "blockId": "miraverse:lb_saj_hearth_block",
+      "shortName": "lb_saj_hearth_block",
+      "countryCode": "LB",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/LB/lb_saj_hearth_block.png",
+      "mapColorHex": "#dac298"
+    },
+    {
+      "blockId": "miraverse:lb_harbor_bollard",
+      "shortName": "lb_harbor_bollard",
+      "countryCode": "LB",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/LB/lb_harbor_bollard.png",
+      "mapColorHex": "#dac298"
+    },
+    {
+      "blockId": "miraverse:lb_mosaic_courtyard_tile",
+      "shortName": "lb_mosaic_courtyard_tile",
+      "countryCode": "LB",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/LB/lb_mosaic_courtyard_tile.png",
+      "mapColorHex": "#dac298"
+    },
+    {
+      "blockId": "miraverse:lb_zaatar_drying_rack",
+      "shortName": "lb_zaatar_drying_rack",
+      "countryCode": "LB",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/LB/lb_zaatar_drying_rack.png",
+      "mapColorHex": "#dac298"
+    },
+    {
+      "blockId": "miraverse:iq_shanasheel_oriel_screen",
+      "shortName": "iq_shanasheel_oriel_screen",
+      "countryCode": "IQ",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/IQ/iq_shanasheel_oriel_screen.png",
+      "mapColorHex": "#3aa6b9"
+    },
+    {
+      "blockId": "miraverse:iq_tigris_glazed_brick",
+      "shortName": "iq_tigris_glazed_brick",
+      "countryCode": "IQ",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/IQ/iq_tigris_glazed_brick.png",
+      "mapColorHex": "#3aa6b9"
+    },
+    {
+      "blockId": "miraverse:iq_baghdadi_courtyard_arch",
+      "shortName": "iq_baghdadi_courtyard_arch",
+      "countryCode": "IQ",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/IQ/iq_baghdadi_courtyard_arch.png",
+      "mapColorHex": "#3aa6b9"
+    },
+    {
+      "blockId": "miraverse:iq_kleicha_brick_oven",
+      "shortName": "iq_kleicha_brick_oven",
+      "countryCode": "IQ",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/IQ/iq_kleicha_brick_oven.png",
+      "mapColorHex": "#3aa6b9"
+    },
+    {
+      "blockId": "miraverse:iq_turquoise_muqarnas",
+      "shortName": "iq_turquoise_muqarnas",
+      "countryCode": "IQ",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/IQ/iq_turquoise_muqarnas.png",
+      "mapColorHex": "#3aa6b9"
+    },
+    {
+      "blockId": "miraverse:iq_palm_weave_mat",
+      "shortName": "iq_palm_weave_mat",
+      "countryCode": "IQ",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/IQ/iq_palm_weave_mat.png",
+      "mapColorHex": "#3aa6b9"
+    },
+    {
+      "blockId": "miraverse:iq_copper_samovar_stand",
+      "shortName": "iq_copper_samovar_stand",
+      "countryCode": "IQ",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/IQ/iq_copper_samovar_stand.png",
+      "mapColorHex": "#3aa6b9"
+    },
+    {
+      "blockId": "miraverse:iq_calligraphy_frieze",
+      "shortName": "iq_calligraphy_frieze",
+      "countryCode": "IQ",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/IQ/iq_calligraphy_frieze.png",
+      "mapColorHex": "#3aa6b9"
+    },
+    {
+      "blockId": "miraverse:eg_cairo_mashrabiya",
+      "shortName": "eg_cairo_mashrabiya",
+      "countryCode": "EG",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/EG/eg_cairo_mashrabiya.png",
+      "mapColorHex": "#daa544"
+    },
+    {
+      "blockId": "miraverse:eg_fanous_lantern_block",
+      "shortName": "eg_fanous_lantern_block",
+      "countryCode": "EG",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/EG/eg_fanous_lantern_block.png",
+      "mapColorHex": "#daa544"
+    },
+    {
+      "blockId": "miraverse:eg_khan_arch_stone",
+      "shortName": "eg_khan_arch_stone",
+      "countryCode": "EG",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/EG/eg_khan_arch_stone.png",
+      "mapColorHex": "#daa544"
+    },
+    {
+      "blockId": "miraverse:eg_courtyard_fountain_tile",
+      "shortName": "eg_courtyard_fountain_tile",
+      "countryCode": "EG",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/EG/eg_courtyard_fountain_tile.png",
+      "mapColorHex": "#daa544"
+    },
+    {
+      "blockId": "miraverse:eg_koshari_cauldron_block",
+      "shortName": "eg_koshari_cauldron_block",
+      "countryCode": "EG",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/EG/eg_koshari_cauldron_block.png",
+      "mapColorHex": "#daa544"
+    },
+    {
+      "blockId": "miraverse:eg_carved_cedar_door_frame",
+      "shortName": "eg_carved_cedar_door_frame",
+      "countryCode": "EG",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/EG/eg_carved_cedar_door_frame.png",
+      "mapColorHex": "#daa544"
+    },
+    {
+      "blockId": "miraverse:eg_alabaster_lamp",
+      "shortName": "eg_alabaster_lamp",
+      "countryCode": "EG",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/EG/eg_alabaster_lamp.png",
+      "mapColorHex": "#daa544"
+    },
+    {
+      "blockId": "miraverse:eg_spice_bazaar_canopy",
+      "shortName": "eg_spice_bazaar_canopy",
+      "countryCode": "EG",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/EG/eg_spice_bazaar_canopy.png",
+      "mapColorHex": "#daa544"
+    },
+    {
+      "blockId": "miraverse:fr_lyon_ochre_stucco",
+      "shortName": "fr_lyon_ochre_stucco",
+      "countryCode": "FR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/FR/fr_lyon_ochre_stucco.png",
+      "mapColorHex": "#d8a45c"
+    },
+    {
+      "blockId": "miraverse:fr_mansard_slate_shingle",
+      "shortName": "fr_mansard_slate_shingle",
+      "countryCode": "FR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/FR/fr_mansard_slate_shingle.png",
+      "mapColorHex": "#d8a45c"
+    },
+    {
+      "blockId": "miraverse:fr_carved_oak_shutter",
+      "shortName": "fr_carved_oak_shutter",
+      "countryCode": "FR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/FR/fr_carved_oak_shutter.png",
+      "mapColorHex": "#d8a45c"
+    },
+    {
+      "blockId": "miraverse:fr_traboule_vault_stone",
+      "shortName": "fr_traboule_vault_stone",
+      "countryCode": "FR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/FR/fr_traboule_vault_stone.png",
+      "mapColorHex": "#d8a45c"
+    },
+    {
+      "blockId": "miraverse:fr_boulangerie_wood_oven",
+      "shortName": "fr_boulangerie_wood_oven",
+      "countryCode": "FR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/FR/fr_boulangerie_wood_oven.png",
+      "mapColorHex": "#d8a45c"
+    },
+    {
+      "blockId": "miraverse:fr_wrought_iron_balcony",
+      "shortName": "fr_wrought_iron_balcony",
+      "countryCode": "FR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/FR/fr_wrought_iron_balcony.png",
+      "mapColorHex": "#d8a45c"
+    },
+    {
+      "blockId": "miraverse:fr_gilded_bakery_sign",
+      "shortName": "fr_gilded_bakery_sign",
+      "countryCode": "FR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/FR/fr_gilded_bakery_sign.png",
+      "mapColorHex": "#d8a45c"
+    },
+    {
+      "blockId": "miraverse:fr_cobblestone_paver",
+      "shortName": "fr_cobblestone_paver",
+      "countryCode": "FR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/FR/fr_cobblestone_paver.png",
+      "mapColorHex": "#d8a45c"
+    },
+    {
+      "blockId": "miraverse:kr_giwa_eave_tile",
+      "shortName": "kr_giwa_eave_tile",
+      "countryCode": "KR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/KR/kr_giwa_eave_tile.png",
+      "mapColorHex": "#487660"
+    },
+    {
+      "blockId": "miraverse:kr_hanji_sliding_screen",
+      "shortName": "kr_hanji_sliding_screen",
+      "countryCode": "KR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/KR/kr_hanji_sliding_screen.png",
+      "mapColorHex": "#487660"
+    },
+    {
+      "blockId": "miraverse:kr_ondol_hearth_stone",
+      "shortName": "kr_ondol_hearth_stone",
+      "countryCode": "KR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/KR/kr_ondol_hearth_stone.png",
+      "mapColorHex": "#487660"
+    },
+    {
+      "blockId": "miraverse:kr_onggi_fermentation_jar",
+      "shortName": "kr_onggi_fermentation_jar",
+      "countryCode": "KR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/KR/kr_onggi_fermentation_jar.png",
+      "mapColorHex": "#487660"
+    },
+    {
+      "blockId": "miraverse:kr_pine_beam_bracket",
+      "shortName": "kr_pine_beam_bracket",
+      "countryCode": "KR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/KR/kr_pine_beam_bracket.png",
+      "mapColorHex": "#487660"
+    },
+    {
+      "blockId": "miraverse:kr_songpyeon_steamer_block",
+      "shortName": "kr_songpyeon_steamer_block",
+      "countryCode": "KR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/KR/kr_songpyeon_steamer_block.png",
+      "mapColorHex": "#487660"
+    },
+    {
+      "blockId": "miraverse:kr_stone_pagoda_lantern",
+      "shortName": "kr_stone_pagoda_lantern",
+      "countryCode": "KR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/KR/kr_stone_pagoda_lantern.png",
+      "mapColorHex": "#487660"
+    },
+    {
+      "blockId": "miraverse:kr_courtyard_stepping_stone",
+      "shortName": "kr_courtyard_stepping_stone",
+      "countryCode": "KR",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/KR/kr_courtyard_stepping_stone.png",
+      "mapColorHex": "#487660"
+    },
+    {
+      "blockId": "miraverse:de_rhine_slate_stone",
+      "shortName": "de_rhine_slate_stone",
+      "countryCode": "DE",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/DE/de_rhine_slate_stone.png",
+      "mapColorHex": "#5e8098"
+    },
+    {
+      "blockId": "miraverse:de_half_timber_oak_frame",
+      "shortName": "de_half_timber_oak_frame",
+      "countryCode": "DE",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/DE/de_half_timber_oak_frame.png",
+      "mapColorHex": "#5e8098"
+    },
+    {
+      "blockId": "miraverse:de_signal_beacon_lantern",
+      "shortName": "de_signal_beacon_lantern",
+      "countryCode": "DE",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/DE/de_signal_beacon_lantern.png",
+      "mapColorHex": "#5e8098"
+    },
+    {
+      "blockId": "miraverse:de_acoustic_echo_chime",
+      "shortName": "de_acoustic_echo_chime",
+      "countryCode": "DE",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/DE/de_acoustic_echo_chime.png",
+      "mapColorHex": "#5e8098"
+    },
+    {
+      "blockId": "miraverse:de_grail_hall_column",
+      "shortName": "de_grail_hall_column",
+      "countryCode": "DE",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/DE/de_grail_hall_column.png",
+      "mapColorHex": "#5e8098"
+    },
+    {
+      "blockId": "miraverse:de_stained_story_glass",
+      "shortName": "de_stained_story_glass",
+      "countryCode": "DE",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/DE/de_stained_story_glass.png",
+      "mapColorHex": "#5e8098"
+    },
+    {
+      "blockId": "miraverse:de_renewing_garden_trellis",
+      "shortName": "de_renewing_garden_trellis",
+      "countryCode": "DE",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/DE/de_renewing_garden_trellis.png",
+      "mapColorHex": "#5e8098"
+    },
+    {
+      "blockId": "miraverse:de_river_quay_bollard",
+      "shortName": "de_river_quay_bollard",
+      "countryCode": "DE",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/DE/de_river_quay_bollard.png",
+      "mapColorHex": "#5e8098"
+    },
+    {
+      "blockId": "miraverse:cn_peach_blossom_timber",
+      "shortName": "cn_peach_blossom_timber",
+      "countryCode": "CN",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/CN/cn_peach_blossom_timber.png",
+      "mapColorHex": "#e494a8"
+    },
+    {
+      "blockId": "miraverse:cn_whitewashed_hui_wall",
+      "shortName": "cn_whitewashed_hui_wall",
+      "countryCode": "CN",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/CN/cn_whitewashed_hui_wall.png",
+      "mapColorHex": "#e494a8"
+    },
+    {
+      "blockId": "miraverse:cn_grey_curved_roof_tile",
+      "shortName": "cn_grey_curved_roof_tile",
+      "countryCode": "CN",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/CN/cn_grey_curved_roof_tile.png",
+      "mapColorHex": "#e494a8"
+    },
+    {
+      "blockId": "miraverse:cn_bamboo_lattice_screen",
+      "shortName": "cn_bamboo_lattice_screen",
+      "countryCode": "CN",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/CN/cn_bamboo_lattice_screen.png",
+      "mapColorHex": "#e494a8"
+    },
+    {
+      "blockId": "miraverse:cn_terrace_water_channel",
+      "shortName": "cn_terrace_water_channel",
+      "countryCode": "CN",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/CN/cn_terrace_water_channel.png",
+      "mapColorHex": "#e494a8"
+    },
+    {
+      "blockId": "miraverse:cn_moon_pavilion_lantern",
+      "shortName": "cn_moon_pavilion_lantern",
+      "countryCode": "CN",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/CN/cn_moon_pavilion_lantern.png",
+      "mapColorHex": "#e494a8"
+    },
+    {
+      "blockId": "miraverse:cn_stone_bridge_arch",
+      "shortName": "cn_stone_bridge_arch",
+      "countryCode": "CN",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/CN/cn_stone_bridge_arch.png",
+      "mapColorHex": "#e494a8"
+    },
+    {
+      "blockId": "miraverse:cn_mooncake_hearth_table",
+      "shortName": "cn_mooncake_hearth_table",
+      "countryCode": "CN",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/CN/cn_mooncake_hearth_table.png",
+      "mapColorHex": "#e494a8"
+    },
+    {
+      "blockId": "miraverse:jp_cedar_waystation_beam",
+      "shortName": "jp_cedar_waystation_beam",
+      "countryCode": "JP",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/JP/jp_cedar_waystation_beam.png",
+      "mapColorHex": "#769a84"
+    },
+    {
+      "blockId": "miraverse:jp_shoji_paper_lattice",
+      "shortName": "jp_shoji_paper_lattice",
+      "countryCode": "JP",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/JP/jp_shoji_paper_lattice.png",
+      "mapColorHex": "#769a84"
+    },
+    {
+      "blockId": "miraverse:jp_kawara_roof_tile",
+      "shortName": "jp_kawara_roof_tile",
+      "countryCode": "JP",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/JP/jp_kawara_roof_tile.png",
+      "mapColorHex": "#769a84"
+    },
+    {
+      "blockId": "miraverse:jp_stepping_garden_stone",
+      "shortName": "jp_stepping_garden_stone",
+      "countryCode": "JP",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/JP/jp_stepping_garden_stone.png",
+      "mapColorHex": "#769a84"
+    },
+    {
+      "blockId": "miraverse:jp_wooden_footbridge_plank",
+      "shortName": "jp_wooden_footbridge_plank",
+      "countryCode": "JP",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/JP/jp_wooden_footbridge_plank.png",
+      "mapColorHex": "#769a84"
+    },
+    {
+      "blockId": "miraverse:jp_wayfinding_stone_marker",
+      "shortName": "jp_wayfinding_stone_marker",
+      "countryCode": "JP",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/JP/jp_wayfinding_stone_marker.png",
+      "mapColorHex": "#769a84"
+    },
+    {
+      "blockId": "miraverse:jp_bamboo_water_spout",
+      "shortName": "jp_bamboo_water_spout",
+      "countryCode": "JP",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/JP/jp_bamboo_water_spout.png",
+      "mapColorHex": "#769a84"
+    },
+    {
+      "blockId": "miraverse:jp_poetic_lectern_stand",
+      "shortName": "jp_poetic_lectern_stand",
+      "countryCode": "JP",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/JP/jp_poetic_lectern_stand.png",
+      "mapColorHex": "#769a84"
+    },
+    {
+      "blockId": "miraverse:ru_carved_pine_izba_log",
+      "shortName": "ru_carved_pine_izba_log",
+      "countryCode": "RU",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/RU/ru_carved_pine_izba_log.png",
+      "mapColorHex": "#5686a8"
+    },
+    {
+      "blockId": "miraverse:ru_svetloyar_reflection_prism",
+      "shortName": "ru_svetloyar_reflection_prism",
+      "countryCode": "RU",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/RU/ru_svetloyar_reflection_prism.png",
+      "mapColorHex": "#5686a8"
+    },
+    {
+      "blockId": "miraverse:ru_wooden_belfry_shingle",
+      "shortName": "ru_wooden_belfry_shingle",
+      "countryCode": "RU",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/RU/ru_wooden_belfry_shingle.png",
+      "mapColorHex": "#5686a8"
+    },
+    {
+      "blockId": "miraverse:ru_lakeside_reed_bed",
+      "shortName": "ru_lakeside_reed_bed",
+      "countryCode": "RU",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/RU/ru_lakeside_reed_bed.png",
+      "mapColorHex": "#5686a8"
+    },
+    {
+      "blockId": "miraverse:ru_musical_dock_plank",
+      "shortName": "ru_musical_dock_plank",
+      "countryCode": "RU",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/RU/ru_musical_dock_plank.png",
+      "mapColorHex": "#5686a8"
+    },
+    {
+      "blockId": "miraverse:ru_folklore_archive_shelf",
+      "shortName": "ru_folklore_archive_shelf",
+      "countryCode": "RU",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/RU/ru_folklore_archive_shelf.png",
+      "mapColorHex": "#5686a8"
+    },
+    {
+      "blockId": "miraverse:ru_painted_window_nalichnik",
+      "shortName": "ru_painted_window_nalichnik",
+      "countryCode": "RU",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/RU/ru_painted_window_nalichnik.png",
+      "mapColorHex": "#5686a8"
+    },
+    {
+      "blockId": "miraverse:ru_story_pavilion_arch",
+      "shortName": "ru_story_pavilion_arch",
+      "countryCode": "RU",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/RU/ru_story_pavilion_arch.png",
+      "mapColorHex": "#5686a8"
+    },
+    {
+      "blockId": "miraverse:ua_kyiv_hill_timber",
+      "shortName": "ua_kyiv_hill_timber",
+      "countryCode": "UA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/UA/ua_kyiv_hill_timber.png",
+      "mapColorHex": "#4884c4"
+    },
+    {
+      "blockId": "miraverse:ua_embroidered_rushnyk_banner",
+      "shortName": "ua_embroidered_rushnyk_banner",
+      "countryCode": "UA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/UA/ua_embroidered_rushnyk_banner.png",
+      "mapColorHex": "#4884c4"
+    },
+    {
+      "blockId": "miraverse:ua_bandura_luthier_bench",
+      "shortName": "ua_bandura_luthier_bench",
+      "countryCode": "UA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/UA/ua_bandura_luthier_bench.png",
+      "mapColorHex": "#4884c4"
+    },
+    {
+      "blockId": "miraverse:ua_cobblestone_music_stage",
+      "shortName": "ua_cobblestone_music_stage",
+      "countryCode": "UA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/UA/ua_cobblestone_music_stage.png",
+      "mapColorHex": "#4884c4"
+    },
+    {
+      "blockId": "miraverse:ua_carved_oak_archway",
+      "shortName": "ua_carved_oak_archway",
+      "countryCode": "UA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/UA/ua_carved_oak_archway.png",
+      "mapColorHex": "#4884c4"
+    },
+    {
+      "blockId": "miraverse:ua_sunflower_garden_border",
+      "shortName": "ua_sunflower_garden_border",
+      "countryCode": "UA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/UA/ua_sunflower_garden_border.png",
+      "mapColorHex": "#4884c4"
+    },
+    {
+      "blockId": "miraverse:ua_river_footbridge_stone",
+      "shortName": "ua_river_footbridge_stone",
+      "countryCode": "UA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/UA/ua_river_footbridge_stone.png",
+      "mapColorHex": "#4884c4"
+    },
+    {
+      "blockId": "miraverse:ua_archive_display_case",
+      "shortName": "ua_archive_display_case",
+      "countryCode": "UA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/UA/ua_archive_display_case.png",
+      "mapColorHex": "#4884c4"
+    },
+    {
+      "blockId": "miraverse:ma_marrakesh_terracotta_pise",
+      "shortName": "ma_marrakesh_terracotta_pise",
+      "countryCode": "MA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/MA/ma_marrakesh_terracotta_pise.png",
+      "mapColorHex": "#d06044"
+    },
+    {
+      "blockId": "miraverse:ma_zellij_star_mosaic",
+      "shortName": "ma_zellij_star_mosaic",
+      "countryCode": "MA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/MA/ma_zellij_star_mosaic.png",
+      "mapColorHex": "#d06044"
+    },
+    {
+      "blockId": "miraverse:ma_carved_cedar_arch",
+      "shortName": "ma_carved_cedar_arch",
+      "countryCode": "MA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/MA/ma_carved_cedar_arch.png",
+      "mapColorHex": "#d06044"
+    },
+    {
+      "blockId": "miraverse:ma_halqa_circle_paver",
+      "shortName": "ma_halqa_circle_paver",
+      "countryCode": "MA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/MA/ma_halqa_circle_paver.png",
+      "mapColorHex": "#d06044"
+    },
+    {
+      "blockId": "miraverse:ma_mint_tea_hospitality_table",
+      "shortName": "ma_mint_tea_hospitality_table",
+      "countryCode": "MA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/MA/ma_mint_tea_hospitality_table.png",
+      "mapColorHex": "#d06044"
+    },
+    {
+      "blockId": "miraverse:ma_brass_pierced_lantern",
+      "shortName": "ma_brass_pierced_lantern",
+      "countryCode": "MA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/MA/ma_brass_pierced_lantern.png",
+      "mapColorHex": "#d06044"
+    },
+    {
+      "blockId": "miraverse:ma_riad_courtyard_fountain",
+      "shortName": "ma_riad_courtyard_fountain",
+      "countryCode": "MA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/MA/ma_riad_courtyard_fountain.png",
+      "mapColorHex": "#d06044"
+    },
+    {
+      "blockId": "miraverse:ma_storyteller_stage_canopy",
+      "shortName": "ma_storyteller_stage_canopy",
+      "countryCode": "MA",
+      "texturePath": "apps/minecraft/assets-src/palettes/textures/MA/ma_storyteller_stage_canopy.png",
+      "mapColorHex": "#d06044"
+    }
+  ]
+}

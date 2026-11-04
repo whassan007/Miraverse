@@ -1,0 +1,656 @@
+[
+  {
+    "id": "EG01",
+    "countryCode": "EG",
+    "chapterIndex": 1,
+    "title": "A Darkened Courtyard",
+    "activity": "Follow colored lantern lights and find missing copper panels",
+    "mechanic": "navigation_and_gathering",
+    "scene": "EG/cairo_courtyard",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-FANOUS-CRAFT"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "eg_layla_guide",
+    "supportNpcId": "eg_lantern_maker_amm_adel",
+    "stationAnchorId": "eg_station_eg01",
+    "stationCoords": {
+      "x": 370,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "eg_lantern_frame",
+      "artifactName": "Lantern Frame",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.EG01.title",
+      "summaryKey": "quest.EG01.summary",
+      "greetingKey": "quest.EG01.greeting",
+      "completionKey": "quest.EG01.completion",
+      "sourceNoteKey": "quest.EG01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Color-code glowing lanterns and place pattern pieces. (A Darkened Courtyard)",
+        "objectiveNodes": [
+          "EG01:explorer:step1",
+          "EG01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Build lanterns, barter ingredients and solve short route puzzles. (A Darkened Courtyard)",
+        "objectiveNodes": [
+          "EG01:adventurer:step1",
+          "EG01:adventurer:step2",
+          "EG01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Reason about weighted trades and compare oral histories. (A Darkened Courtyard)",
+        "objectiveNodes": [
+          "EG01:investigator:step1",
+          "EG01:investigator:step2",
+          "EG01:investigator:step3",
+          "EG01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Optimize a safe festival route for access, cost and environmental use. (A Darkened Courtyard)",
+        "objectiveNodes": [
+          "EG01:curator:step1",
+          "EG01:curator:step2",
+          "EG01:curator:step3",
+          "EG01:curator:step4",
+          "EG01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "EG02",
+    "countryCode": "EG",
+    "chapterIndex": 2,
+    "title": "The Fanous Workshop",
+    "activity": "Craft a safe decorative lantern using patterned voxel parts",
+    "mechanic": "craft_and_assembly",
+    "scene": "EG/fanous_workshop",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-FANOUS-CRAFT"
+    ],
+    "prerequisiteChapterId": "EG01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "eg_lantern_maker_amm_adel",
+    "supportNpcId": "eg_market_auntie_nadia",
+    "stationAnchorId": "eg_station_eg02",
+    "stationCoords": {
+      "x": 382,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "eg_glass_star",
+      "artifactName": "Glass Star",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.EG02.title",
+      "summaryKey": "quest.EG02.summary",
+      "greetingKey": "quest.EG02.greeting",
+      "completionKey": "quest.EG02.completion",
+      "sourceNoteKey": "quest.EG02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Color-code glowing lanterns and place pattern pieces. (The Fanous Workshop)",
+        "objectiveNodes": [
+          "EG02:explorer:step1",
+          "EG02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Build lanterns, barter ingredients and solve short route puzzles. (The Fanous Workshop)",
+        "objectiveNodes": [
+          "EG02:adventurer:step1",
+          "EG02:adventurer:step2",
+          "EG02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Reason about weighted trades and compare oral histories. (The Fanous Workshop)",
+        "objectiveNodes": [
+          "EG02:investigator:step1",
+          "EG02:investigator:step2",
+          "EG02:investigator:step3",
+          "EG02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Optimize a safe festival route for access, cost and environmental use. (The Fanous Workshop)",
+        "objectiveNodes": [
+          "EG02:curator:step1",
+          "EG02:curator:step2",
+          "EG02:curator:step3",
+          "EG02:curator:step4",
+          "EG02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "EG03",
+    "countryCode": "EG",
+    "chapterIndex": 3,
+    "title": "The Market at Dusk",
+    "activity": "Trade lentils, rice and vegetables while interpreting weights",
+    "mechanic": "weighted_trade",
+    "scene": "EG/dusk_market",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-KOSHARI-HOSPITALITY"
+    ],
+    "prerequisiteChapterId": "EG02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "eg_market_auntie_nadia",
+    "supportNpcId": "eg_cook_ibrahim",
+    "stationAnchorId": "eg_station_eg03",
+    "stationCoords": {
+      "x": 394,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "eg_market_scale",
+      "artifactName": "Market Scale",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.EG03.title",
+      "summaryKey": "quest.EG03.summary",
+      "greetingKey": "quest.EG03.greeting",
+      "completionKey": "quest.EG03.completion",
+      "sourceNoteKey": "quest.EG03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Color-code glowing lanterns and place pattern pieces. (The Market at Dusk)",
+        "objectiveNodes": [
+          "EG03:explorer:step1",
+          "EG03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Build lanterns, barter ingredients and solve short route puzzles. (The Market at Dusk)",
+        "objectiveNodes": [
+          "EG03:adventurer:step1",
+          "EG03:adventurer:step2",
+          "EG03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Reason about weighted trades and compare oral histories. (The Market at Dusk)",
+        "objectiveNodes": [
+          "EG03:investigator:step1",
+          "EG03:investigator:step2",
+          "EG03:investigator:step3",
+          "EG03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Optimize a safe festival route for access, cost and environmental use. (The Market at Dusk)",
+        "objectiveNodes": [
+          "EG03:curator:step1",
+          "EG03:curator:step2",
+          "EG03:curator:step3",
+          "EG03:curator:step4",
+          "EG03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "EG04",
+    "countryCode": "EG",
+    "chapterIndex": 4,
+    "title": "Koshari for Everyone",
+    "activity": "Sequence food preparation and help serve a community table",
+    "mechanic": "cooking_sequence",
+    "scene": "EG/community_kitchen",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-KOSHARI-HOSPITALITY"
+    ],
+    "prerequisiteChapterId": "EG03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "eg_cook_ibrahim",
+    "supportNpcId": "eg_storyteller_youssef",
+    "stationAnchorId": "eg_station_eg04",
+    "stationCoords": {
+      "x": 406,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "eg_koshari_bowl",
+      "artifactName": "Koshari Bowl",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.EG04.title",
+      "summaryKey": "quest.EG04.summary",
+      "greetingKey": "quest.EG04.greeting",
+      "completionKey": "quest.EG04.completion",
+      "sourceNoteKey": "quest.EG04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Color-code glowing lanterns and place pattern pieces. (Koshari for Everyone)",
+        "objectiveNodes": [
+          "EG04:explorer:step1",
+          "EG04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Build lanterns, barter ingredients and solve short route puzzles. (Koshari for Everyone)",
+        "objectiveNodes": [
+          "EG04:adventurer:step1",
+          "EG04:adventurer:step2",
+          "EG04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Reason about weighted trades and compare oral histories. (Koshari for Everyone)",
+        "objectiveNodes": [
+          "EG04:investigator:step1",
+          "EG04:investigator:step2",
+          "EG04:investigator:step3",
+          "EG04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Optimize a safe festival route for access, cost and environmental use. (Koshari for Everyone)",
+        "objectiveNodes": [
+          "EG04:curator:step1",
+          "EG04:curator:step2",
+          "EG04:curator:step3",
+          "EG04:curator:step4",
+          "EG04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "EG05",
+    "countryCode": "EG",
+    "chapterIndex": 5,
+    "title": "Stories of the Lantern",
+    "activity": "Compare family accounts, label folklore and decorate a public walkway",
+    "mechanic": "folklore_comparison",
+    "scene": "EG/nile_trade_exhibit",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-EG-FATIMID-TRADITION"
+    ],
+    "prerequisiteChapterId": "EG04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "eg_storyteller_youssef",
+    "supportNpcId": "eg_layla_guide",
+    "stationAnchorId": "eg_station_eg05",
+    "stationCoords": {
+      "x": 418,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "eg_story_flame",
+      "artifactName": "Story Flame",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.EG05.title",
+      "summaryKey": "quest.EG05.summary",
+      "greetingKey": "quest.EG05.greeting",
+      "completionKey": "quest.EG05.completion",
+      "sourceNoteKey": "quest.EG05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Color-code glowing lanterns and place pattern pieces. (Stories of the Lantern)",
+        "objectiveNodes": [
+          "EG05:explorer:step1",
+          "EG05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Build lanterns, barter ingredients and solve short route puzzles. (Stories of the Lantern)",
+        "objectiveNodes": [
+          "EG05:adventurer:step1",
+          "EG05:adventurer:step2",
+          "EG05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Reason about weighted trades and compare oral histories. (Stories of the Lantern)",
+        "objectiveNodes": [
+          "EG05:investigator:step1",
+          "EG05:investigator:step2",
+          "EG05:investigator:step3",
+          "EG05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Optimize a safe festival route for access, cost and environmental use. (Stories of the Lantern)",
+        "objectiveNodes": [
+          "EG05:curator:step1",
+          "EG05:curator:step2",
+          "EG05:curator:step3",
+          "EG05:curator:step4",
+          "EG05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "EG06",
+    "countryCode": "EG",
+    "chapterIndex": 6,
+    "title": "The City of Light",
+    "activity": "Design an accessible lantern route and celebrate shared neighborhood traditions",
+    "mechanic": "accessible_route_design",
+    "scene": "EG/rooftop_festival_walk",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-FANOUS-CRAFT"
+    ],
+    "prerequisiteChapterId": "EG05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "eg_layla_guide",
+    "supportNpcId": "eg_lantern_maker_amm_adel",
+    "stationAnchorId": "eg_station_eg06",
+    "stationCoords": {
+      "x": 430,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "eg_cairo_light_stamp",
+      "artifactName": "Cairo Light Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "eg_cairo_light_stamp",
+      "grantsCapstoneKeepsake": "eg_fanous_of_shared_light"
+    },
+    "stringKeys": {
+      "titleKey": "quest.EG06.title",
+      "summaryKey": "quest.EG06.summary",
+      "greetingKey": "quest.EG06.greeting",
+      "completionKey": "quest.EG06.completion",
+      "sourceNoteKey": "quest.EG06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Color-code glowing lanterns and place pattern pieces. (The City of Light)",
+        "objectiveNodes": [
+          "EG06:explorer:step1",
+          "EG06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Build lanterns, barter ingredients and solve short route puzzles. (The City of Light)",
+        "objectiveNodes": [
+          "EG06:adventurer:step1",
+          "EG06:adventurer:step2",
+          "EG06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Reason about weighted trades and compare oral histories. (The City of Light)",
+        "objectiveNodes": [
+          "EG06:investigator:step1",
+          "EG06:investigator:step2",
+          "EG06:investigator:step3",
+          "EG06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Optimize a safe festival route for access, cost and environmental use. (The City of Light)",
+        "objectiveNodes": [
+          "EG06:curator:step1",
+          "EG06:curator:step2",
+          "EG06:curator:step3",
+          "EG06:curator:step4",
+          "EG06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

@@ -1,0 +1,19 @@
+=== AGENT AG18 (ANTIGRAVITY · W1) ===
+Timestamp: 2026-11-04T13:36:39.822Z
+Task: UI, signs, quest journal and Atlas/passport visual director
+Resolved Model: Gemini 4 Argon
+Runtime Environment: Antigravity UI, Signage & Iconography Lane (Linux aarch64)
+Branch: minecraft-global/AG18
+Worktree: /home/wael/Code/mv-wt-mcg/AG18
+Agent Commit SHA: bfc0bc7
+Integration Merge SHA: 62f2895
+Owned Paths: apps/minecraft/assets-src/ui/
+Modified Files (16): apps/minecraft/assets-src/ui/age-tracks/track_11-13.png, apps/minecraft/assets-src/ui/age-tracks/track_14-17.png, apps/minecraft/assets-src/ui/age-tracks/track_5-7.png, apps/minecraft/assets-src/ui/age-tracks/track_8-10.png, apps/minecraft/assets-src/ui/posters/poster_cn.png, apps/minecraft/assets-src/ui/posters/poster_de.png, apps/minecraft/assets-src/ui/posters/poster_eg.png, apps/minecraft/assets-src/ui/posters/poster_fr.png, apps/minecraft/assets-src/ui/posters/poster_iq.png, apps/minecraft/assets-src/ui/posters/poster_jp.png, apps/minecraft/assets-src/ui/posters/poster_kr.png, apps/minecraft/assets-src/ui/posters/poster_lb.png, apps/minecraft/assets-src/ui/posters/poster_ma.png, apps/minecraft/assets-src/ui/posters/poster_ru.png, apps/minecraft/assets-src/ui/posters/poster_ua.png, apps/minecraft/assets-src/ui/ui-assets-manifest.json
+Test Command: node -e "const fs=require('fs'); const u=JSON.parse(fs.readFileSync('apps/minecraft/assets-src/ui/ui-assets-manifest.json','utf8')); if(u.postersCount!==11 || u.ageTrackIconsCount!==4) process.exit(1); console.log('AG18 verified: 11 country posters + 4 age-track icons');"
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/assets-src/ui/ui-assets-manifest.json
+Blockers: None
+--- STDOUT/STDERR ---
+AG18 verified: 11 country posters + 4 age-track icons
+
+DONE AG18 bfc0bc7 apps/minecraft/assets-src/ui/ui-assets-manifest.json

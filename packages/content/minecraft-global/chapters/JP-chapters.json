@@ -1,0 +1,656 @@
+[
+  {
+    "id": "JP01",
+    "countryCode": "JP",
+    "chapterIndex": 1,
+    "title": "The First Step",
+    "activity": "Pack a travel kit, select a wayfinding marker and meet the traveler",
+    "mechanic": "preparation_and_wayfinding",
+    "scene": "JP/departure_gate",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "jp_guide_haruka",
+    "supportNpcId": "jp_innkeeper_kenji",
+    "stationAnchorId": "jp_station_jp01",
+    "stationCoords": {
+      "x": 1570,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "jp_travelers_sandal",
+      "artifactName": "Traveler’s Sandal",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.JP01.title",
+      "summaryKey": "quest.JP01.summary",
+      "greetingKey": "quest.JP01.greeting",
+      "completionKey": "quest.JP01.completion",
+      "sourceNoteKey": "quest.JP01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow animal-shaped waymarkers and choose picture-poem cards. (The First Step)",
+        "objectiveNodes": [
+          "JP01:explorer:step1",
+          "JP01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Gather bridge planks, trade for shelter supplies and complete guided poems. (The First Step)",
+        "objectiveNodes": [
+          "JP01:adventurer:step1",
+          "JP01:adventurer:step2",
+          "JP01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Analyze seasonal observation, compare itinerary constraints and compose an original haiku. (The First Step)",
+        "objectiveNodes": [
+          "JP01:investigator:step1",
+          "JP01:investigator:step2",
+          "JP01:investigator:step3",
+          "JP01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design a sustainable waystation, compare translation choices and interpret impermanence responsibly. (The First Step)",
+        "objectiveNodes": [
+          "JP01:curator:step1",
+          "JP01:curator:step2",
+          "JP01:curator:step3",
+          "JP01:curator:step4",
+          "JP01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "JP02",
+    "countryCode": "JP",
+    "chapterIndex": 2,
+    "title": "Crossing the River",
+    "activity": "Help restore a safe bridge and carry supplies",
+    "mechanic": "bridge_restoration",
+    "scene": "JP/river_crossing",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-JP-TOHOKU-WAYSTATIONS"
+    ],
+    "prerequisiteChapterId": "JP01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "jp_innkeeper_kenji",
+    "supportNpcId": "jp_bridge_builder_takumi",
+    "stationAnchorId": "jp_station_jp02",
+    "stationCoords": {
+      "x": 1582,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "jp_river_bridge_token",
+      "artifactName": "River Bridge Token",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.JP02.title",
+      "summaryKey": "quest.JP02.summary",
+      "greetingKey": "quest.JP02.greeting",
+      "completionKey": "quest.JP02.completion",
+      "sourceNoteKey": "quest.JP02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow animal-shaped waymarkers and choose picture-poem cards. (Crossing the River)",
+        "objectiveNodes": [
+          "JP02:explorer:step1",
+          "JP02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Gather bridge planks, trade for shelter supplies and complete guided poems. (Crossing the River)",
+        "objectiveNodes": [
+          "JP02:adventurer:step1",
+          "JP02:adventurer:step2",
+          "JP02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Analyze seasonal observation, compare itinerary constraints and compose an original haiku. (Crossing the River)",
+        "objectiveNodes": [
+          "JP02:investigator:step1",
+          "JP02:investigator:step2",
+          "JP02:investigator:step3",
+          "JP02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design a sustainable waystation, compare translation choices and interpret impermanence responsibly. (Crossing the River)",
+        "objectiveNodes": [
+          "JP02:curator:step1",
+          "JP02:curator:step2",
+          "JP02:curator:step3",
+          "JP02:curator:step4",
+          "JP02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "JP03",
+    "countryCode": "JP",
+    "chapterIndex": 3,
+    "title": "Three Lines of Sky",
+    "activity": "Observe weather and compose a short seasonal poem using prompts",
+    "mechanic": "poetic_composition",
+    "scene": "JP/poetic_viewpoint",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+    ],
+    "prerequisiteChapterId": "JP02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "jp_bridge_builder_takumi",
+    "supportNpcId": "jp_poet_aoi",
+    "stationAnchorId": "jp_station_jp03",
+    "stationCoords": {
+      "x": 1594,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "jp_haiku_leaf",
+      "artifactName": "Haiku Leaf",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.JP03.title",
+      "summaryKey": "quest.JP03.summary",
+      "greetingKey": "quest.JP03.greeting",
+      "completionKey": "quest.JP03.completion",
+      "sourceNoteKey": "quest.JP03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow animal-shaped waymarkers and choose picture-poem cards. (Three Lines of Sky)",
+        "objectiveNodes": [
+          "JP03:explorer:step1",
+          "JP03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Gather bridge planks, trade for shelter supplies and complete guided poems. (Three Lines of Sky)",
+        "objectiveNodes": [
+          "JP03:adventurer:step1",
+          "JP03:adventurer:step2",
+          "JP03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Analyze seasonal observation, compare itinerary constraints and compose an original haiku. (Three Lines of Sky)",
+        "objectiveNodes": [
+          "JP03:investigator:step1",
+          "JP03:investigator:step2",
+          "JP03:investigator:step3",
+          "JP03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design a sustainable waystation, compare translation choices and interpret impermanence responsibly. (Three Lines of Sky)",
+        "objectiveNodes": [
+          "JP03:curator:step1",
+          "JP03:curator:step2",
+          "JP03:curator:step3",
+          "JP03:curator:step4",
+          "JP03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "JP04",
+    "countryCode": "JP",
+    "chapterIndex": 4,
+    "title": "The Traveler’s Shelter",
+    "activity": "Trade for supplies and repair a small inn roof",
+    "mechanic": "trade_and_roof_repair",
+    "scene": "JP/waystation_inn",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-JP-TOHOKU-WAYSTATIONS"
+    ],
+    "prerequisiteChapterId": "JP03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "jp_poet_aoi",
+    "supportNpcId": "jp_gardener_ren",
+    "stationAnchorId": "jp_station_jp04",
+    "stationCoords": {
+      "x": 1606,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "jp_waystation_lantern",
+      "artifactName": "Waystation Lantern",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.JP04.title",
+      "summaryKey": "quest.JP04.summary",
+      "greetingKey": "quest.JP04.greeting",
+      "completionKey": "quest.JP04.completion",
+      "sourceNoteKey": "quest.JP04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow animal-shaped waymarkers and choose picture-poem cards. (The Traveler’s Shelter)",
+        "objectiveNodes": [
+          "JP04:explorer:step1",
+          "JP04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Gather bridge planks, trade for shelter supplies and complete guided poems. (The Traveler’s Shelter)",
+        "objectiveNodes": [
+          "JP04:adventurer:step1",
+          "JP04:adventurer:step2",
+          "JP04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Analyze seasonal observation, compare itinerary constraints and compose an original haiku. (The Traveler’s Shelter)",
+        "objectiveNodes": [
+          "JP04:investigator:step1",
+          "JP04:investigator:step2",
+          "JP04:investigator:step3",
+          "JP04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design a sustainable waystation, compare translation choices and interpret impermanence responsibly. (The Traveler’s Shelter)",
+        "objectiveNodes": [
+          "JP04:curator:step1",
+          "JP04:curator:step2",
+          "JP04:curator:step3",
+          "JP04:curator:step4",
+          "JP04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "JP05",
+    "countryCode": "JP",
+    "chapterIndex": 5,
+    "title": "The Changing Path",
+    "activity": "Explore a landscape at different times and record what changed",
+    "mechanic": "temporal_comparison",
+    "scene": "JP/coastal_pine_trail",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+    ],
+    "prerequisiteChapterId": "JP04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "jp_gardener_ren",
+    "supportNpcId": "jp_guide_haruka",
+    "stationAnchorId": "jp_station_jp05",
+    "stationCoords": {
+      "x": 1618,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "jp_seasonal_scroll",
+      "artifactName": "Seasonal Scroll",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.JP05.title",
+      "summaryKey": "quest.JP05.summary",
+      "greetingKey": "quest.JP05.greeting",
+      "completionKey": "quest.JP05.completion",
+      "sourceNoteKey": "quest.JP05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow animal-shaped waymarkers and choose picture-poem cards. (The Changing Path)",
+        "objectiveNodes": [
+          "JP05:explorer:step1",
+          "JP05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Gather bridge planks, trade for shelter supplies and complete guided poems. (The Changing Path)",
+        "objectiveNodes": [
+          "JP05:adventurer:step1",
+          "JP05:adventurer:step2",
+          "JP05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Analyze seasonal observation, compare itinerary constraints and compose an original haiku. (The Changing Path)",
+        "objectiveNodes": [
+          "JP05:investigator:step1",
+          "JP05:investigator:step2",
+          "JP05:investigator:step3",
+          "JP05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design a sustainable waystation, compare translation choices and interpret impermanence responsibly. (The Changing Path)",
+        "objectiveNodes": [
+          "JP05:curator:step1",
+          "JP05:curator:step2",
+          "JP05:curator:step3",
+          "JP05:curator:step4",
+          "JP05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "JP06",
+    "countryCode": "JP",
+    "chapterIndex": 6,
+    "title": "The Road Is Home",
+    "activity": "Build a shared rest garden and reflect on belonging during change",
+    "mechanic": "cooperative_garden_build",
+    "scene": "JP/shared_rest_garden",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-JP-TOHOKU-WAYSTATIONS"
+    ],
+    "prerequisiteChapterId": "JP05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "jp_guide_haruka",
+    "supportNpcId": "jp_innkeeper_kenji",
+    "stationAnchorId": "jp_station_jp06",
+    "stationCoords": {
+      "x": 1630,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "jp_narrow_road_stamp",
+      "artifactName": "Narrow Road Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "jp_narrow_road_stamp",
+      "grantsCapstoneKeepsake": "jp_travelers_ink_brush"
+    },
+    "stringKeys": {
+      "titleKey": "quest.JP06.title",
+      "summaryKey": "quest.JP06.summary",
+      "greetingKey": "quest.JP06.greeting",
+      "completionKey": "quest.JP06.completion",
+      "sourceNoteKey": "quest.JP06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow animal-shaped waymarkers and choose picture-poem cards. (The Road Is Home)",
+        "objectiveNodes": [
+          "JP06:explorer:step1",
+          "JP06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Gather bridge planks, trade for shelter supplies and complete guided poems. (The Road Is Home)",
+        "objectiveNodes": [
+          "JP06:adventurer:step1",
+          "JP06:adventurer:step2",
+          "JP06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Analyze seasonal observation, compare itinerary constraints and compose an original haiku. (The Road Is Home)",
+        "objectiveNodes": [
+          "JP06:investigator:step1",
+          "JP06:investigator:step2",
+          "JP06:investigator:step3",
+          "JP06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design a sustainable waystation, compare translation choices and interpret impermanence responsibly. (The Road Is Home)",
+        "objectiveNodes": [
+          "JP06:curator:step1",
+          "JP06:curator:step2",
+          "JP06:curator:step3",
+          "JP06:curator:step4",
+          "JP06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

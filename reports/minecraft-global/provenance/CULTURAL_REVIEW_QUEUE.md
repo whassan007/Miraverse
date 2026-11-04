@@ -1,0 +1,25 @@
+# MiraVerse Global v1.1 — Cultural Provenance & Review Queue (`DX12`)
+
+## 1. DGX Spark Execution Telemetry
+- **Hardware:** `NVIDIA GB10, 580.178.04, 41, 0 % | Total=121GiB Used=51GiB Free=55GiB Available=70GiB`
+- **Model:** `qwen/qwen3-coder-next` (`maxConcurrency = 1`, `14.92 tok/s`)
+- **DGX Audit Summary:** Here are 3 concise cultural provenance and asset licensing rules for your 11-country children’s educational Minecraft Bedrock world: 1. **Local Cultural Authenticity & Sensitivity**: All country-specific content (e.g., landmarks, clothing, festivals, folklore) must be co-developed or reviewed by local cultural experts/educators to ensure accuracy, avoid ster
+
+## 2. Asset License & Provenance Ledger
+- All 88 custom blocks, 66 chapter artifacts, 11 country keepsakes, 12 stamps, 55 NPC models/skins, and 12 `.mcstructure.json` prefabs are deterministically generated from repo-owned source generators under first-party project license.
+- Zero untraceable stock assets or unattributed third-party packs are bundled.
+
+## 3. Cultural Advisory & Sensitivity Queue (11 Destinations)
+| Code | Destination | Cultural Guardrail Enforced | Source Labels Used | Review Status |
+|---|---|---|---|---|
+| `LB` | **Lebanon** (Byblos/Jbeil) | The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets. | `contemporary_tradition`, `historical_context`, `folklore`, `fictional_gameplay` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `IQ` | **Iraq** (Baghdad) | Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today. | `contemporary_tradition`, `historical_context`, `fictional_gameplay` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `EG` | **Egypt** (Cairo) | The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings. | `contemporary_tradition`, `folklore` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `FR` | **France** (Vieux Lyon) | Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth. | `historical_context`, `contemporary_tradition` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `KR` | **South Korea** (Jeonju) | The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets. | `contemporary_tradition`, `historical_context` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `DE` | **Germany** (Rhine / symbolic Grail landscape) | Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing. | `historical_context`, `literature`, `fictional_gameplay`, `contemporary_tradition` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `CN` | **China** (Peach Blossom Spring, Wuling-inspired setting) | Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact. | `literature`, `contemporary_tradition`, `folklore` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `JP` | **Japan** (Bashō’s journey, Tohoku-inspired route) | Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations. | `literature`, `contemporary_tradition` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `RU` | **Russia** (Lake Svetloyar / Kitezh-inspired mythic landscape) | Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations. | `folklore`, `contemporary_tradition` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `UA` | **Ukraine** (Kyiv founding hills / community music square) | The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment. | `folklore`, `contemporary_tradition`, `historical_context` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |
+| `MA` | **Morocco** (Marrakesh / Jemaa el-Fnaa-inspired square) | Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers. | `contemporary_tradition`, `folklore`, `fictional_gameplay`, `historical_context` | `TAGGED_FOR_ADVISORY_SIGN_OFF` |

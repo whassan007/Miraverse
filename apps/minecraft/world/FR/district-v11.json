@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "FR",
+  "countryName": "France",
+  "regionName": "Vieux Lyon",
+  "storyTitle": "The Hidden Passage and the Kitchen",
+  "localLocale": "fr-FR",
+  "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+  "origin": {
+    "x": 1000,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 1000,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 1000,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 996,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 1030,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "fr_meres_lyonnaises_recipe_book",
+    "name": "Mères Lyonnaises Recipe Book"
+  },
+  "passportStamp": {
+    "id": "fr_lyon_heritage_stamp",
+    "name": "Lyon Heritage Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "fr_mentor_cultural_house",
+      "nameEn": "Vieux Lyon Mentor Courtyard & Hearth",
+      "nameNative": "France · Vieux Lyon",
+      "origin": {
+        "x": 982,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "trimBlock": "miraverse:fr_mansard_slate_shingle",
+      "roofBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": true,
+      "interiorId": "fr_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "fr_story_archive_hall",
+      "nameEn": "Vieux Lyon Story & Epigraphy Archive",
+      "nameNative": "France · Vieux Lyon",
+      "origin": {
+        "x": 1004,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "trimBlock": "miraverse:fr_mansard_slate_shingle",
+      "roofBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": true,
+      "interiorId": "fr_interior_story_archive"
+    },
+    {
+      "buildingId": "fr_artisan_craft_guild",
+      "nameEn": "Vieux Lyon Master Artisan Workshop",
+      "nameNative": "France · Vieux Lyon",
+      "origin": {
+        "x": 980,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "trimBlock": "miraverse:fr_mansard_slate_shingle",
+      "roofBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": true,
+      "interiorId": "fr_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "fr_market_bazaar_arcade",
+      "nameEn": "Vieux Lyon Fair-Trade Market Arcade",
+      "nameNative": "France · Vieux Lyon",
+      "origin": {
+        "x": 1006,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "trimBlock": "miraverse:fr_mansard_slate_shingle",
+      "roofBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "fr_heritage_landmark_pavilion",
+      "nameEn": "Vieux Lyon Community Gathering & Performance Pavilion",
+      "nameNative": "France · Vieux Lyon",
+      "origin": {
+        "x": 994,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "trimBlock": "miraverse:fr_mansard_slate_shingle",
+      "roofBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "fr_interior_mentor_hearth",
+      "buildingId": "fr_mentor_cultural_house",
+      "nameEn": "Vieux Lyon Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 988,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "fr_cooking_hearth",
+          "blockId": "miraverse:fr_boulangerie_wood_oven",
+          "offset": {
+            "x": 988,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "fr_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 986,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "fr_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 988,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "fr_interior_story_archive",
+      "buildingId": "fr_story_archive_hall",
+      "nameEn": "Vieux Lyon Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 1010,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "fr_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 1010,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "fr_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 1012,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "fr_keepsake_display",
+          "blockId": "miraverse:fr_gilded_bakery_sign",
+          "offset": {
+            "x": 1008,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Mères Lyonnaises Recipe Book"
+        }
+      ]
+    },
+    {
+      "interiorId": "fr_interior_artisan_workshop",
+      "buildingId": "fr_artisan_craft_guild",
+      "nameEn": "Vieux Lyon Restoration & Craft Studio",
+      "entryPos": {
+        "x": 986,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "fr_craft_bench",
+          "blockId": "miraverse:fr_wrought_iron_balcony",
+          "offset": {
+            "x": 986,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "fr_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 984,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "fr_camille_mamie",
+      "countryCode": "FR",
+      "nameEn": "Camille & Mamie Claire",
+      "nameNative": "Camille et Mamie Claire",
+      "role": "mentor",
+      "greetingNative": "Bienvenue dans le Vieux Lyon ! Explorons les traboules et préparons nos recettes de famille.",
+      "spawnPos": {
+        "x": 976,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "FR01",
+        "FR06"
+      ]
+    },
+    {
+      "npcId": "fr_silk_artisan_henri",
+      "countryCode": "FR",
+      "nameEn": "Silk Artisan Henri",
+      "nameNative": "Henri l’Artisan Canut",
+      "role": "artisan",
+      "greetingNative": "Les métiers Jacquard tissent des motifs de soie avec précision.",
+      "spawnPos": {
+        "x": 988,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "FR02"
+      ]
+    },
+    {
+      "npcId": "fr_chef_marguerite",
+      "countryCode": "FR",
+      "nameEn": "Chef Marguerite",
+      "nameNative": "Cheffe Marguerite",
+      "role": "cook",
+      "greetingNative": "Dans la tradition des Mères Lyonnaises, chaque plat raconte l’entraide.",
+      "spawnPos": {
+        "x": 1000,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "FR03"
+      ]
+    },
+    {
+      "npcId": "fr_guide_luc",
+      "countryCode": "FR",
+      "nameEn": "Local Guide Luc",
+      "nameNative": "Luc le Guide",
+      "role": "navigator",
+      "greetingNative": "Ces passages couverts relient les cours de la Renaissance à la rivière.",
+      "spawnPos": {
+        "x": 1012,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "FR04"
+      ]
+    },
+    {
+      "npcId": "fr_merchant_elise",
+      "countryCode": "FR",
+      "nameEn": "Market Merchant Élise",
+      "nameNative": "Élise du Marché",
+      "role": "merchant",
+      "greetingNative": "Comparez les produits de saison sur les quais de Saône !",
+      "spawnPos": {
+        "x": 1024,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "FR05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "fr_quest_fr01",
+      "chapterId": "FR01",
+      "title": "The Passage Map",
+      "kind": "navigation_and_mapping",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 970,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:fr_lyon_ochre_stucco",
+      "rewardArtifactId": "fr_traboule_key"
+    },
+    {
+      "anchorId": "fr_quest_fr02",
+      "chapterId": "FR02",
+      "title": "Threads of the City",
+      "kind": "pattern_craft",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 982,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:fr_mansard_slate_shingle",
+      "rewardArtifactId": "fr_silk_ribbon"
+    },
+    {
+      "anchorId": "fr_quest_fr03",
+      "chapterId": "FR03",
+      "title": "At the Mères’ Table",
+      "kind": "cooking_sequence",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 994,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:fr_carved_oak_shutter",
+      "rewardArtifactId": "fr_chefs_notebook"
+    },
+    {
+      "anchorId": "fr_quest_fr04",
+      "chapterId": "FR04",
+      "title": "A Market of Flavors",
+      "kind": "trade_and_provenance",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1006,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:fr_traboule_vault_stone",
+      "rewardArtifactId": "fr_market_basket"
+    },
+    {
+      "anchorId": "fr_quest_fr05",
+      "chapterId": "FR05",
+      "title": "Stone by Stone",
+      "kind": "architecture_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1018,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:fr_boulangerie_wood_oven",
+      "rewardArtifactId": "fr_masons_crest"
+    },
+    {
+      "anchorId": "fr_quest_fr06",
+      "chapterId": "FR06",
+      "title": "A Recipe for Home",
+      "kind": "cooperative_feast",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1030,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:fr_wrought_iron_balcony",
+      "rewardArtifactId": "fr_lyon_heritage_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "fr_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 1000,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "fr_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 1010,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Vieux Lyon Fair-Trade Stall"
+    },
+    {
+      "anchorId": "fr_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 976,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:fr_cobblestone_paver",
+      "labelEn": "Vieux Lyon Resource Gathering Spot"
+    },
+    {
+      "anchorId": "fr_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 996,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:fr_lyon_ochre_stucco",
+      "labelEn": "Vieux Lyon Community Restoration Plot"
+    },
+    {
+      "anchorId": "fr_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 1030,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:fr_mansard_slate_shingle",
+      "labelEn": "Vieux Lyon Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "traboule",
+      "native": "traboule",
+      "translit": "trah-bool",
+      "en": "Covered passageway connecting courtyards and streets in Lyon"
+    },
+    {
+      "key": "boulangerie",
+      "native": "boulangerie",
+      "translit": "boo-lahn-zhuh-ree",
+      "en": "Neighborhood bread and pastry bakery"
+    },
+    {
+      "key": "canut",
+      "native": "canut",
+      "translit": "kah-noo",
+      "en": "Historic silk weaver of Lyon"
+    }
+  ]
+}

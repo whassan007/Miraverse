@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "EG",
+  "countryName": "Egypt",
+  "regionName": "Cairo",
+  "storyTitle": "The Lanterns of Cairo",
+  "localLocale": "ar-EG",
+  "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+  "origin": {
+    "x": 400,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 400,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 400,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 396,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 430,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "eg_fanous_of_shared_light",
+    "name": "Fanous of Shared Light"
+  },
+  "passportStamp": {
+    "id": "eg_cairo_light_stamp",
+    "name": "Cairo Light Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "eg_mentor_cultural_house",
+      "nameEn": "Cairo Mentor Courtyard & Hearth",
+      "nameNative": "مصر · القاهرة",
+      "origin": {
+        "x": 382,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:eg_cairo_mashrabiya",
+      "trimBlock": "miraverse:eg_fanous_lantern_block",
+      "roofBlock": "miraverse:eg_khan_arch_stone",
+      "hasInterior": true,
+      "interiorId": "eg_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "eg_story_archive_hall",
+      "nameEn": "Cairo Story & Epigraphy Archive",
+      "nameNative": "مصر · القاهرة",
+      "origin": {
+        "x": 404,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:eg_cairo_mashrabiya",
+      "trimBlock": "miraverse:eg_fanous_lantern_block",
+      "roofBlock": "miraverse:eg_khan_arch_stone",
+      "hasInterior": true,
+      "interiorId": "eg_interior_story_archive"
+    },
+    {
+      "buildingId": "eg_artisan_craft_guild",
+      "nameEn": "Cairo Master Artisan Workshop",
+      "nameNative": "مصر · القاهرة",
+      "origin": {
+        "x": 380,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:eg_cairo_mashrabiya",
+      "trimBlock": "miraverse:eg_fanous_lantern_block",
+      "roofBlock": "miraverse:eg_khan_arch_stone",
+      "hasInterior": true,
+      "interiorId": "eg_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "eg_market_bazaar_arcade",
+      "nameEn": "Cairo Fair-Trade Market Arcade",
+      "nameNative": "مصر · القاهرة",
+      "origin": {
+        "x": 406,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:eg_cairo_mashrabiya",
+      "trimBlock": "miraverse:eg_fanous_lantern_block",
+      "roofBlock": "miraverse:eg_khan_arch_stone",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "eg_heritage_landmark_pavilion",
+      "nameEn": "Cairo Community Gathering & Performance Pavilion",
+      "nameNative": "مصر · القاهرة",
+      "origin": {
+        "x": 394,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:eg_cairo_mashrabiya",
+      "trimBlock": "miraverse:eg_fanous_lantern_block",
+      "roofBlock": "miraverse:eg_khan_arch_stone",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "eg_interior_mentor_hearth",
+      "buildingId": "eg_mentor_cultural_house",
+      "nameEn": "Cairo Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 388,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "eg_cooking_hearth",
+          "blockId": "miraverse:eg_koshari_cauldron_block",
+          "offset": {
+            "x": 388,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "eg_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 386,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "eg_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 388,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "eg_interior_story_archive",
+      "buildingId": "eg_story_archive_hall",
+      "nameEn": "Cairo Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 410,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "eg_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 410,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "eg_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 412,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "eg_keepsake_display",
+          "blockId": "miraverse:eg_alabaster_lamp",
+          "offset": {
+            "x": 408,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Fanous of Shared Light"
+        }
+      ]
+    },
+    {
+      "interiorId": "eg_interior_artisan_workshop",
+      "buildingId": "eg_artisan_craft_guild",
+      "nameEn": "Cairo Restoration & Craft Studio",
+      "entryPos": {
+        "x": 386,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "eg_craft_bench",
+          "blockId": "miraverse:eg_carved_cedar_door_frame",
+          "offset": {
+            "x": 386,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "eg_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 384,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "eg_layla_guide",
+      "countryCode": "EG",
+      "nameEn": "Layla & Teta Samira",
+      "nameNative": "ليلى وتيتا سميرة",
+      "role": "mentor",
+      "greetingNative": "يا هلا بيكم في حارة القاهرة المنوّرة بالفوانيس!",
+      "spawnPos": {
+        "x": 376,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "EG01",
+        "EG06"
+      ]
+    },
+    {
+      "npcId": "eg_lantern_maker_amm_adel",
+      "countryCode": "EG",
+      "nameEn": "Lantern Maker Amm Adel",
+      "nameNative": "عم عادل صانع الفوانيس",
+      "role": "artisan",
+      "greetingNative": "النحاس والزجاج الملوّن بيعملوا أحلى فانوس.",
+      "spawnPos": {
+        "x": 388,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "EG02"
+      ]
+    },
+    {
+      "npcId": "eg_market_auntie_nadia",
+      "countryCode": "EG",
+      "nameEn": "Market Auntie Nadia",
+      "nameNative": "طنط نادية في السوق",
+      "role": "merchant",
+      "greetingNative": "العدس والرز الطازة جاهزين بميزان العدل!",
+      "spawnPos": {
+        "x": 400,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "EG03"
+      ]
+    },
+    {
+      "npcId": "eg_cook_ibrahim",
+      "countryCode": "EG",
+      "nameEn": "Chef Ibrahim",
+      "nameNative": "الشيف إبراهيم",
+      "role": "cook",
+      "greetingNative": "طبق الكشري المصري بيجمع الجيران كلهم عالسفرة.",
+      "spawnPos": {
+        "x": 412,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "EG04"
+      ]
+    },
+    {
+      "npcId": "eg_storyteller_youssef",
+      "countryCode": "EG",
+      "nameEn": "Storyteller Youssef",
+      "nameNative": "الحكواتي يوسف",
+      "role": "storyteller",
+      "greetingNative": "للفانوس حكايات كتير متوارثة في شوارع القاهرة.",
+      "spawnPos": {
+        "x": 424,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "EG05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "eg_quest_eg01",
+      "chapterId": "EG01",
+      "title": "A Darkened Courtyard",
+      "kind": "navigation_and_gathering",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 370,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:eg_cairo_mashrabiya",
+      "rewardArtifactId": "eg_lantern_frame"
+    },
+    {
+      "anchorId": "eg_quest_eg02",
+      "chapterId": "EG02",
+      "title": "The Fanous Workshop",
+      "kind": "craft_and_assembly",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 382,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:eg_fanous_lantern_block",
+      "rewardArtifactId": "eg_glass_star"
+    },
+    {
+      "anchorId": "eg_quest_eg03",
+      "chapterId": "EG03",
+      "title": "The Market at Dusk",
+      "kind": "weighted_trade",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 394,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:eg_khan_arch_stone",
+      "rewardArtifactId": "eg_market_scale"
+    },
+    {
+      "anchorId": "eg_quest_eg04",
+      "chapterId": "EG04",
+      "title": "Koshari for Everyone",
+      "kind": "cooking_sequence",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 406,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:eg_courtyard_fountain_tile",
+      "rewardArtifactId": "eg_koshari_bowl"
+    },
+    {
+      "anchorId": "eg_quest_eg05",
+      "chapterId": "EG05",
+      "title": "Stories of the Lantern",
+      "kind": "folklore_comparison",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 418,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:eg_koshari_cauldron_block",
+      "rewardArtifactId": "eg_story_flame"
+    },
+    {
+      "anchorId": "eg_quest_eg06",
+      "chapterId": "EG06",
+      "title": "The City of Light",
+      "kind": "accessible_route_design",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 430,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:eg_carved_cedar_door_frame",
+      "rewardArtifactId": "eg_cairo_light_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "eg_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 400,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "eg_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 410,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Cairo Fair-Trade Stall"
+    },
+    {
+      "anchorId": "eg_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 376,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:eg_spice_bazaar_canopy",
+      "labelEn": "Cairo Resource Gathering Spot"
+    },
+    {
+      "anchorId": "eg_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 396,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:eg_cairo_mashrabiya",
+      "labelEn": "Cairo Community Restoration Plot"
+    },
+    {
+      "anchorId": "eg_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 430,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:eg_fanous_lantern_block",
+      "labelEn": "Cairo Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "fanous",
+      "native": "فانوس",
+      "translit": "fānūs",
+      "en": "Decorative brass and colored-glass lantern"
+    },
+    {
+      "key": "koshari",
+      "native": "كشري",
+      "translit": "kusharī",
+      "en": "Layered rice, lentils, pasta, tomato sauce, and crispy onions"
+    },
+    {
+      "key": "mashrabiya",
+      "native": "مشربية",
+      "translit": "mashrabiyya",
+      "en": "Turned-wood geometric lattice screen"
+    }
+  ]
+}

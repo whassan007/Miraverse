@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Japan Collectible Passport Stamp">
+  <rect x="14" y="14" width="172" height="172" rx="18" fill="#1F3A33" stroke="#FB7185" stroke-width="5" stroke-dasharray="8 6"/>
+  <rect x="24" y="24" width="152" height="152" rx="12" fill="none" stroke="#FFF8EE" stroke-width="2" opacity="0.65"/>
+  <circle cx="100" cy="84" r="42" fill="#142824" stroke="#FB7185" stroke-width="3"/>
+  <text x="100" y="94" text-anchor="middle" fill="#FECDD3" font-family="Georgia, serif" font-size="28" font-weight="900">JP</text>
+  <text x="100" y="146" text-anchor="middle" fill="#FFF8EE" font-family="Georgia, serif" font-size="13" font-weight="900" letter-spacing="1">NARROW ROAD</text>
+  <text x="100" y="164" text-anchor="middle" fill="#FECDD3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">日本 · みちのくの旅路</text>
+  <text x="100" y="38" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="1.2">ATLAS OF BELONGING · #8</text>
+</svg>

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "DE",
+  "countryName": "Germany",
+  "region": "Rhine / symbolic Grail landscape",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 57.06,
+    "hardware": "NVIDIA GB10, 580.178.04, 46, 0 % | Total=121GiB Used=101GiB Free=2GiB Available=20GiB",
+    "notes": "Here's a concise summary of **Visual Material & Texture QA Checks** for a *Minecraft Bedrock Resource Pack* themed around the **Rhine River and symbolic Grail landscape**, featuring **8 custom blocks** and **6 chapter artifacts**: --- ### 🌄 **Thematic Goals**"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/DE/items/de_compass_of_compassion.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:de_rhine_slate_stone",
+      "shortName": "de_rhine_slate_stone",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/blocks/de_rhine_slate_stone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:de_half_timber_oak_frame",
+      "shortName": "de_half_timber_oak_frame",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/blocks/de_half_timber_oak_frame.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:de_signal_beacon_lantern",
+      "shortName": "de_signal_beacon_lantern",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/blocks/de_signal_beacon_lantern.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:de_acoustic_echo_chime",
+      "shortName": "de_acoustic_echo_chime",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/blocks/de_acoustic_echo_chime.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:de_grail_hall_column",
+      "shortName": "de_grail_hall_column",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/blocks/de_grail_hall_column.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:de_stained_story_glass",
+      "shortName": "de_stained_story_glass",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/blocks/de_stained_story_glass.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:de_renewing_garden_trellis",
+      "shortName": "de_renewing_garden_trellis",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/blocks/de_renewing_garden_trellis.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:de_river_quay_bollard",
+      "shortName": "de_river_quay_bollard",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/blocks/de_river_quay_bollard.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "de_rhine_route_map",
+      "chapterId": "DE01",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/items/de_rhine_route_map.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "de_lorelei_songstone",
+      "chapterId": "DE02",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/items/de_lorelei_songstone.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "de_steady_helm",
+      "chapterId": "DE03",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/items/de_steady_helm.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "de_hall_of_questions_token",
+      "chapterId": "DE04",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/items/de_hall_of_questions_token.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "de_healing_question_scroll",
+      "chapterId": "DE05",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/items/de_healing_question_scroll.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "de_german_memory_stamp",
+      "chapterId": "DE06",
+      "texturePath": "apps/minecraft/assets-src/processed/DE/items/de_german_memory_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}

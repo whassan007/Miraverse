@@ -108,3 +108,57 @@ export function revertPlotToCleanState(
   plot.placedBlocks = [];
   return { ok: true, revertedCount: count, reason: 'PLOT_REVERTED' };
 }
+
+
+// ============================================================================
+// MiraVerse Global v1.1 — 11-Country CoopSession & Plot Protection
+// Owner: CX03 (Wave W2)
+// ============================================================================
+import type { GlobalCountryCode } from '../quests/index.js';
+
+export interface GlobalCoopPlotRecord {
+  plotId: string;
+  countryCode: GlobalCountryCode;
+  ownerPlayerId: string;
+  collaboratorIds: string[];
+  placedBlocks: { x: number; y: number; z: number; blockId: string; placedBy: string }[];
+  quotaLimit: number;
+}
+
+export class CoopSession {
+  private plots = new Map<string, GlobalCoopPlotRecord>();
+
+  claimPlot(countryCode: GlobalCountryCode, ownerPlayerId: string): GlobalCoopPlotRecord {
+    const plotId = `global_plot:${countryCode}:${ownerPlayerId}`;
+    const existing = this.plots.get(plotId);
+    if (existing) return existing;
+    const rec: GlobalCoopPlotRecord = {
+      plotId,
+      countryCode,
+      ownerPlayerId,
+      collaboratorIds: [],
+      placedBlocks: [],
+      quotaLimit: 64,
+    };
+    this.plots.set(plotId, rec);
+    return rec;
+  }
+
+  grantCollaborator(plotId: string, actingPlayerId: string, collaboratorId: string) {
+    const plot = this.plots.get(plotId);
+    if (!plot) return { ok: false, reason: 'PLOT_NOT_FOUND' };
+    if (plot.ownerPlayerId !== actingPlayerId) return { ok: false, reason: 'NOT_OWNER' };
+    if (!plot.collaboratorIds.includes(collaboratorId)) plot.collaboratorIds.push(collaboratorId);
+    return { ok: true, reason: 'COLLABORATOR_ADDED' };
+  }
+
+  placeBlock(plotId: string, actingPlayerId: string, pos: { x: number; y: number; z: number }, blockId: string) {
+    const plot = this.plots.get(plotId);
+    if (!plot) return { ok: false, reason: 'PLOT_NOT_FOUND' };
+    const allowed = plot.ownerPlayerId === actingPlayerId || plot.collaboratorIds.includes(actingPlayerId);
+    if (!allowed) return { ok: false, reason: 'GRIEF_PROTECTION_DENIED' };
+    if (plot.placedBlocks.length >= plot.quotaLimit) return { ok: false, reason: 'QUOTA_REACHED' };
+    plot.placedBlocks.push({ ...pos, blockId, placedBy: actingPlayerId });
+    return { ok: true, reason: 'BLOCK_PLACED', count: plot.placedBlocks.length };
+  }
+}

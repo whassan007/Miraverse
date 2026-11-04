@@ -1,0 +1,19 @@
+=== AGENT AG01 (ANTIGRAVITY · W0) ===
+Timestamp: 2026-11-04T13:33:55.111Z
+Task: Global visual/art director and central portal hub
+Resolved Model: Gemini 4 Argon
+Runtime Environment: Antigravity Visual/Art Direction Lane (Linux aarch64)
+Branch: minecraft-global/AG01
+Worktree: /home/wael/Code/mv-wt-mcg/AG01
+Agent Commit SHA: b1cb605
+Integration Merge SHA: c204c82
+Owned Paths: apps/minecraft/world/hub/, apps/minecraft/assets-src/art-direction/
+Modified Files (4): apps/minecraft/assets-src/art-direction/ART-BIBLE.md, apps/minecraft/assets-src/art-direction/hub-observatory-emblem.png, apps/minecraft/world/hub/hub-layout.json, apps/minecraft/world/hub/structures/hub_atlas_observatory.mcstructure.json
+Test Command: node -e "const fs=require('fs'); const h=JSON.parse(fs.readFileSync('apps/minecraft/world/hub/hub-layout.json','utf8')); const s=JSON.parse(fs.readFileSync('apps/minecraft/world/hub/structures/hub_atlas_observatory.mcstructure.json','utf8')); if(h.portals.length!==11 || s.voxel_count<500) process.exit(1); console.log('AG01 Hub verified: 11 portals, voxels=', s.voxel_count);"
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/world/hub/hub-layout.json, apps/minecraft/world/hub/structures/hub_atlas_observatory.mcstructure.json, apps/minecraft/assets-src/art-direction/ART-BIBLE.md
+Blockers: None
+--- STDOUT/STDERR ---
+AG01 Hub verified: 11 portals, voxels= 10033
+
+DONE AG01 b1cb605 apps/minecraft/world/hub/hub-layout.json

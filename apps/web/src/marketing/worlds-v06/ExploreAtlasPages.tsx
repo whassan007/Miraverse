@@ -22,6 +22,17 @@ import {
 } from '../../../../../packages/contracts/v13/index';
 import { RobloxLaunchBanner } from '../../launch/RobloxLaunchPage';
 import { CulturalEncyclopediaSectionV12 } from '../../features/encyclopedia-v12/CulturalEncyclopediaSectionV12';
+import {
+  GLOBAL_CHAPTERS_CATALOG,
+  GLOBAL_COUNTRIES_CATALOG,
+  GLOBAL_COUNTRIES_ORDERED,
+  GLOBAL_COUNTRY_MAP,
+  GLOBAL_NEW_COUNTRY_CODES,
+  GLOBAL_NPCS_CATALOG,
+  isCoreCountryCode,
+  isGlobalCountryCode,
+  type GlobalCountryCode,
+} from '../../lib/globalCatalog';
 
 export const ExploreAtlasPage: React.FC = () => {
   const [filter, setFilter] = useState<'ALL' | 'FLAGSHIP' | 'STORIES'>('ALL');
@@ -61,7 +72,7 @@ export const ExploreAtlasPage: React.FC = () => {
                 letterSpacing: '1.4px',
               }}
             >
-              MiraVerse v1.3 Cultural Adventure Portal · Five Country Experiences
+              MiraVerse Global Cultural Adventure Portal · 11 Country Experiences · 66 Chapters · 14 Languages
             </span>
             <h1
               style={{
@@ -70,18 +81,18 @@ export const ExploreAtlasPage: React.FC = () => {
                 margin: '6px 0 8px 0',
               }}
             >
-              Explore Five Cultural Worlds (Lebanon, Iraq, Egypt, France &amp; South Korea)
+              Explore All 11 Cultural Worlds (Lebanon, Iraq, Egypt, France, South Korea, Germany, China, Japan, Russia, Ukraine &amp; Morocco)
             </h1>
-            <p style={{ color: '#CBD5E1', margin: 0, maxWidth: '780px', fontSize: '15px', lineHeight: 1.55 }}>
-              Discover real-world geography, 25 illustrated quest maps, 100 age-adapted quest stages, historical timelines, and cultural artifacts across all five destinations.
+            <p style={{ color: '#CBD5E1', margin: 0, maxWidth: '820px', fontSize: '15px', lineHeight: 1.55 }}>
+              Discover real-world geography, 66 connected chapters (264 age-adapted variants across Ages 5–7, 8–10, 11–13, and 14–17), historical timelines, and cultural keepsakes across all eleven destinations in <em>Echoes of Home: The Atlas of Belonging</em>.
             </p>
           </div>
 
           <div role="tablist" aria-label="Filter Destinations" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             {[
-              { id: 'ALL' as const, label: 'All 5 Worlds (1–5)' },
+              { id: 'ALL' as const, label: 'All 11 Worlds (1–11)' },
               { id: 'FLAGSHIP' as const, label: 'Playable Flagship (RC1)' },
-              { id: 'STORIES' as const, label: '15-Scene Stories & Quests' },
+              { id: 'STORIES' as const, label: 'Stories & 66 Chapters' },
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -309,6 +320,121 @@ export const ExploreAtlasPage: React.FC = () => {
             })}
           </div>
         )}
+
+        {/* Global v1.1 Expansion Destinations (6. Germany, 7. China, 8. Japan, 9. Russia, 10. Ukraine, 11. Morocco) */}
+        {filter !== 'FLAGSHIP' && (
+          <div style={{ marginTop: '32px' }}>
+            <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '26px', margin: '0 0 14px 0', color: '#FFE29F' }}>
+              Echoes of Home: Global v1.1 Destinations (6. Germany · 7. China · 8. Japan · 9. Russia · 10. Ukraine · 11. Morocco)
+            </h2>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 360px), 1fr))',
+                gap: '20px',
+              }}
+            >
+              {GLOBAL_NEW_COUNTRY_CODES.map((code) => {
+                const g = GLOBAL_COUNTRY_MAP[code];
+                return (
+                  <article
+                    key={code}
+                    data-testid={`explore-card-${code}`}
+                    style={{
+                      background: `linear-gradient(180deg, ${g.surfaceTintHex} 0%, #131F38 100%)`,
+                      border: `1px solid ${g.primaryColorHex}`,
+                      borderRadius: '20px',
+                      overflow: 'hidden',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                    }}
+                  >
+                    <div>
+                      <div style={{ position: 'relative', aspectRatio: '16 / 10', overflow: 'hidden', background: '#0F172A' }}>
+                        <img
+                          src={g.coverArtUrl}
+                          alt={`${g.order}. ${g.name}: ${g.city}`}
+                          loading="eager"
+                          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                        />
+                      </div>
+
+                      <div style={{ padding: '16px 18px 10px' }}>
+                        <span
+                          data-testid={`availability-badge-${code}`}
+                          style={{
+                            display: 'inline-block',
+                            padding: '4px 10px',
+                            borderRadius: '999px',
+                            fontSize: '11px',
+                            fontWeight: 700,
+                            background: 'rgba(16, 185, 129, 0.16)',
+                            color: '#6EE7B7',
+                            marginBottom: '8px',
+                          }}
+                        >
+                          {g.availabilityBadge}
+                        </span>
+
+                        <h2 style={{ margin: '0 0 6px 0', fontSize: '20px', fontFamily: 'Georgia, serif' }}>
+                          {g.order}. {g.name}: {g.city} (<span lang={g.localLanguage}>{g.nameNative}</span>)
+                        </h2>
+                        <p style={{ fontSize: '13px', color: '#FFE29F', fontWeight: 700, margin: '0 0 6px 0' }}>
+                          {g.subtitle} — {g.theme}
+                        </p>
+                        <p style={{ fontSize: '13px', color: '#CBD5E1', lineHeight: 1.48, marginBottom: '12px' }}>
+                          {g.visualIdentity}
+                        </p>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: '#E2E8F0' }}>
+                          <img src={g.portraitArtUrl} alt={g.mentorName} width={28} height={28} style={{ borderRadius: '50%' }} />
+                          <span>
+                            Mentor: <strong>{g.mentorName}</strong> · Dish: <strong>{g.signatureDish}</strong>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style={{ padding: '12px 18px 18px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                      <Link
+                        to={`/explore/${code}`}
+                        style={{
+                          flex: 1,
+                          textAlign: 'center',
+                          background: '#F4A261',
+                          color: '#0F172A',
+                          textDecoration: 'none',
+                          padding: '9px 12px',
+                          borderRadius: '999px',
+                          fontWeight: 800,
+                          fontSize: '12px',
+                        }}
+                      >
+                        Country Experience (6 Chapters)
+                      </Link>
+                      <Link
+                        to="/minecraft"
+                        style={{
+                          flex: 1,
+                          textAlign: 'center',
+                          background: g.primaryColorHex,
+                          color: '#FFF8EE',
+                          textDecoration: 'none',
+                          padding: '9px 12px',
+                          borderRadius: '999px',
+                          fontWeight: 800,
+                          fontSize: '12px',
+                        }}
+                      >
+                        Bedrock Global Pack
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -316,18 +442,414 @@ export const ExploreAtlasPage: React.FC = () => {
 
 export const ExploreCountryDetailPage: React.FC = () => {
   const { country } = useParams<{ country: string }>();
-  const code = (
-    COUNTRIES.includes((country || '').toUpperCase() as CountryCode)
-      ? (country || '').toUpperCase()
-      : 'LB'
-  ) as CountryCode;
+  const rawUpper = (country || '').toUpperCase();
+  const globalCode: GlobalCountryCode = isGlobalCountryCode(rawUpper) ? rawUpper : 'LB';
+
+  const [selectedAct, setSelectedAct] = useState<1 | 2 | 3 | 4 | 5>(1);
+  const [selectedChapterIdx, setSelectedChapterIdx] = useState<1 | 2 | 3 | 4 | 5 | 6>(1);
+  const [selectedAgeTier, setSelectedAgeTier] = useState<AgeTierId>('8-10');
+
+  // If one of the 6 global expansion countries (DE, CN, JP, RU, UA, MA) is selected, render its full 13-section Global Experience
+  if (!isCoreCountryCode(globalCode)) {
+    const g = GLOBAL_COUNTRY_MAP[globalCode as GlobalCountryCode];
+    const chapters = GLOBAL_CHAPTERS_CATALOG.filter((ch) => ch.countryCode === globalCode);
+    const activeChapter = chapters.find((ch) => ch.chapterIndex === selectedChapterIdx) ?? chapters[0];
+    const activeVariant = activeChapter.ageVariants[selectedAgeTier];
+    const npcs = GLOBAL_NPCS_CATALOG.filter((n) => n.countryCode === globalCode);
+
+    return (
+      <div
+        data-testid={`explore-country-detail-${globalCode}`}
+        style={{
+          minHeight: '88vh',
+          background: '#0B1325',
+          color: '#FFF8EE',
+          padding: '28px clamp(16px, 4vw, 56px) 72px',
+        }}
+      >
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          {/* Top 11-Country Switcher */}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              gap: '12px',
+              marginBottom: '18px',
+            }}
+          >
+            <Link to="/explore" style={{ color: '#FFE29F', textDecoration: 'none', fontSize: '13px', fontWeight: 700 }}>
+              ← Back to All 11 Worlds Library
+            </Link>
+            <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+              {GLOBAL_COUNTRIES_ORDERED.map((cc) => {
+                const item = GLOBAL_COUNTRY_MAP[cc];
+                const isCurrent = cc === globalCode;
+                return (
+                  <Link
+                    key={cc}
+                    to={`/explore/${cc}`}
+                    data-testid={`country-switch-${cc}`}
+                    style={{
+                      background: isCurrent ? '#F4A261' : 'rgba(30, 41, 59, 0.9)',
+                      color: isCurrent ? '#0B1325' : '#FFF8EE',
+                      textDecoration: 'none',
+                      padding: '6px 12px',
+                      borderRadius: '999px',
+                      fontSize: '12px',
+                      fontWeight: 800,
+                      border: '1px solid rgba(244, 162, 97, 0.45)',
+                    }}
+                  >
+                    {item.order}. {item.name}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* SECTION 1 & 2: Cover Artwork + Historical & Cultural Introduction */}
+          <section
+            data-testid="country-section-cover-and-intro"
+            style={{
+              background: `linear-gradient(135deg, ${g.surfaceTintHex} 0%, #131F38 100%)`,
+              borderRadius: '24px',
+              border: `2px solid ${g.primaryColorHex}`,
+              padding: 'clamp(20px, 3vw, 32px)',
+              marginBottom: '28px',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))',
+              gap: '28px',
+              alignItems: 'center',
+            }}
+          >
+            <div style={{ borderRadius: '18px', overflow: 'hidden', aspectRatio: '16 / 10', border: '1px solid rgba(244, 162, 97, 0.5)' }}>
+              <img
+                src={g.coverArtUrl}
+                alt={`${g.name}: ${g.city}`}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
+
+            <div>
+              <span
+                style={{
+                  display: 'inline-block',
+                  background: 'rgba(16, 185, 129, 0.2)',
+                  color: '#6EE7B7',
+                  border: '1px solid #10B981',
+                  padding: '4px 12px',
+                  borderRadius: '999px',
+                  fontSize: '12px',
+                  fontWeight: 800,
+                  marginBottom: '10px',
+                }}
+              >
+                Destination #{g.order} of 11 · Echoes of Home: The Atlas of Belonging
+              </span>
+
+              <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(26px, 3.8vw, 40px)', margin: '4px 0 8px 0' }}>
+                {g.order}. {g.name}: {g.city} (<span lang={g.localLanguage}>{g.nameNative}</span>)
+              </h1>
+              <p style={{ color: '#FFE29F', fontSize: '15px', fontWeight: 700, margin: '0 0 12px 0' }}>
+                {g.subtitle} — {g.theme}
+              </p>
+              <p style={{ color: '#E2E8F0', fontSize: '14px', lineHeight: 1.65, marginBottom: '16px' }}>
+                {g.visualIdentity}
+              </p>
+
+              <div
+                style={{
+                  background: 'rgba(11, 19, 37, 0.78)',
+                  borderRadius: '16px',
+                  padding: '12px 16px',
+                  border: '1px solid rgba(244, 162, 97, 0.4)',
+                  display: 'flex',
+                  gap: '14px',
+                  alignItems: 'center',
+                  marginBottom: '18px',
+                }}
+              >
+                <img src={g.portraitArtUrl} alt={g.mentorName} width={54} height={54} style={{ borderRadius: '50%', flexShrink: 0 }} />
+                <div>
+                  <strong style={{ color: '#FEF08A', fontSize: '14px' }}>
+                    {g.mentorName} · {g.mentorTitle}
+                  </strong>
+                  <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#CBD5E1' }}>
+                    “{g.mentorGreetingEn}”
+                  </p>
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <Link
+                  to="/minecraft"
+                  style={{
+                    background: '#00B06F',
+                    color: '#032215',
+                    textDecoration: 'none',
+                    padding: '11px 20px',
+                    borderRadius: '999px',
+                    fontWeight: 900,
+                    fontSize: '14px',
+                  }}
+                >
+                  ▶ Play in Minecraft Bedrock (miraverse-global.mcaddon)
+                </Link>
+                <Link
+                  to="/atlas"
+                  style={{
+                    background: 'rgba(56, 189, 248, 0.2)',
+                    border: '1px solid #38BDF8',
+                    color: '#BAE6FD',
+                    textDecoration: 'none',
+                    padding: '11px 18px',
+                    borderRadius: '999px',
+                    fontWeight: 800,
+                    fontSize: '14px',
+                  }}
+                >
+                  🗺️ Open 11-Country World Atlas
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          {/* SECTION 2: Cultural Accuracy Warning & Epistemic Framing */}
+          <section
+            data-testid="country-section-cultural-themes"
+            style={{
+              background: '#131F38',
+              borderRadius: '20px',
+              padding: '24px',
+              border: '1px solid rgba(244, 162, 97, 0.35)',
+              marginBottom: '28px',
+            }}
+          >
+            <h2 style={{ marginTop: 0, fontFamily: 'Georgia, serif', fontSize: '24px', color: '#FFE29F' }}>
+              2. Cultural Heritage, Epistemic Classification &amp; Vocabulary ({g.localLanguage})
+            </h2>
+            <p style={{ color: '#FDE68A', fontSize: '14px', lineHeight: 1.6, marginBottom: '16px' }}>
+              <strong>Cultural Accuracy &amp; Source Framing:</strong> {g.culturalWarning}
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '14px' }}>
+              {g.learnWords.map((w) => (
+                <article
+                  key={w.key}
+                  style={{
+                    background: 'rgba(9, 18, 36, 0.85)',
+                    borderRadius: '14px',
+                    padding: '16px',
+                    border: '1px solid rgba(255, 248, 238, 0.12)',
+                  }}
+                >
+                  <span style={{ fontSize: '11px', fontWeight: 800, color: '#7DD3FC' }}>
+                    {g.localLanguage} Vocabulary
+                  </span>
+                  <h3 style={{ margin: '4px 0', fontSize: '18px', color: '#FFF8EE' }}>
+                    {w.native} ({w.translit})
+                  </h3>
+                  <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1' }}>{w.en}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* SECTION 3: Real-World Geographic Map */}
+          <section
+            data-testid="country-section-geographic-map"
+            style={{
+              background: '#131F38',
+              borderRadius: '20px',
+              padding: '24px',
+              border: '1px solid rgba(56, 189, 248, 0.4)',
+              marginBottom: '28px',
+            }}
+          >
+            <h2 style={{ margin: '0 0 8px 0', fontFamily: 'Georgia, serif', fontSize: '24px', color: '#7DD3FC' }}>
+              3. Real-World Geographic Atlas ({g.city}: {g.coordinatesCenter[0].toFixed(4)}°N, {g.coordinatesCenter[1].toFixed(4)}°E)
+            </h2>
+            <p style={{ margin: '0 0 16px 0', fontSize: '13px', color: '#CBD5E1' }}>{g.geographicSummary}</p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '14px' }}>
+              {g.landmarks.map((lm) => (
+                <article
+                  key={lm.landmarkId}
+                  style={{
+                    background: 'rgba(9, 18, 36, 0.88)',
+                    borderRadius: '14px',
+                    padding: '15px',
+                    border: '1px solid rgba(56, 189, 248, 0.3)',
+                  }}
+                >
+                  <div style={{ fontSize: '11px', fontFamily: 'monospace', color: '#7DD3FC', fontWeight: 800, marginBottom: '4px' }}>
+                    WGS84: {lm.coordinates[0].toFixed(4)}°N, {lm.coordinates[1].toFixed(4)}°E
+                  </div>
+                  <h3 style={{ margin: '0 0 6px 0', fontSize: '16px', color: '#FFF8EE' }}>
+                    {lm.name} ({lm.nativeName})
+                  </h3>
+                  <p style={{ margin: '0 0 8px 0', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.5 }}>{lm.summary}</p>
+                  <div style={{ fontSize: '11px', color: '#94A3B8' }}>Ref: {lm.educationalReference}</div>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* SECTIONS 4–6: 6 Connected Chapters & 4 Age Tracks */}
+          <section
+            data-testid="country-section-quests-and-age-tracks"
+            style={{
+              background: '#131F38',
+              borderRadius: '20px',
+              padding: '24px',
+              border: '1px solid rgba(244, 162, 97, 0.45)',
+              marginBottom: '28px',
+            }}
+          >
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: '16px' }}>
+              <div>
+                <h2 style={{ margin: 0, fontFamily: 'Georgia, serif', fontSize: '24px', color: '#FFE29F' }}>
+                  4–6. Six Connected Chapters ({globalCode}01–{globalCode}06) &amp; Four Age-Adapted Tracks
+                </h2>
+                <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#CBD5E1' }}>
+                  Select any of the 6 chapters and switch between Explorer (5–7), Adventurer (8–10), Investigator (11–13), and Architect / Curator (14–17).
+                </p>
+              </div>
+
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                {V13_AGE_TIERS.map((tier) => (
+                  <button
+                    key={tier.id}
+                    type="button"
+                    data-testid={`country-age-tier-${tier.id}`}
+                    onClick={() => setSelectedAgeTier(tier.id)}
+                    style={{
+                      background: selectedAgeTier === tier.id ? '#38BDF8' : 'rgba(9, 18, 36, 0.9)',
+                      color: selectedAgeTier === tier.id ? '#082F49' : '#E2E8F0',
+                      border: '1px solid rgba(56, 189, 248, 0.45)',
+                      borderRadius: '999px',
+                      padding: '6px 13px',
+                      fontSize: '12px',
+                      fontWeight: 800,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {tier.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '18px' }}>
+              {chapters.map((ch) => (
+                <button
+                  key={ch.id}
+                  type="button"
+                  data-testid={`country-quest-act-${ch.chapterIndex}`}
+                  onClick={() => setSelectedChapterIdx(ch.chapterIndex)}
+                  style={{
+                    background: selectedChapterIdx === ch.chapterIndex ? '#F4A261' : 'rgba(9, 18, 36, 0.9)',
+                    color: selectedChapterIdx === ch.chapterIndex ? '#0B1325' : '#FFF8EE',
+                    border: '1px solid rgba(244, 162, 97, 0.45)',
+                    borderRadius: '999px',
+                    padding: '8px 15px',
+                    fontSize: '12px',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                  }}
+                >
+                  {ch.id}: {ch.title}
+                </button>
+              ))}
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(310px, 1fr))', gap: '20px', alignItems: 'start' }}>
+              <div style={{ borderRadius: '16px', overflow: 'hidden', border: '2px solid rgba(244, 162, 97, 0.6)', aspectRatio: '16 / 9' }}>
+                <img
+                  src={g.questMapArtUrl}
+                  alt={`${g.name} Quest Map`}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+
+              <div style={{ background: 'rgba(9, 18, 36, 0.88)', borderRadius: '16px', padding: '18px' }}>
+                <span style={{ fontSize: '11px', color: '#7DD3FC', fontWeight: 800 }}>
+                  Chapter {activeChapter.id} ({activeChapter.chapterIndex} of 6) · Track: Ages {selectedAgeTier} ({activeVariant.track}) · Source: [{activeChapter.sourceType}]
+                </span>
+                <h3 style={{ margin: '4px 0 8px 0', fontSize: '20px', fontFamily: 'Georgia, serif' }}>
+                  {activeChapter.title}
+                </h3>
+                <p style={{ fontSize: '14px', color: '#E2E8F0', lineHeight: 1.55, marginBottom: '10px' }}>
+                  <strong>Core Activity:</strong> {activeChapter.activity}
+                </p>
+                <p style={{ fontSize: '13px', color: '#FDE68A', marginBottom: '10px' }}>
+                  <strong>Age-Track Mechanics ({selectedAgeTier} · {activeVariant.track}):</strong> {activeVariant.activitySummary} ({activeVariant.steps} steps · {activeVariant.recoveryMode})
+                </p>
+                <p style={{ fontSize: '13px', color: '#A7F3D0', marginBottom: '12px' }}>
+                  <strong>Earned Artifact:</strong> {activeChapter.reward.artifactName} (+{activeChapter.reward.storySparks} Story Sparks)
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* SECTIONS 7–9: Cast, Food & Crafts, Capstone Keepsake */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+            <section
+              data-testid="country-section-figures"
+              style={{
+                background: '#131F38',
+                borderRadius: '18px',
+                padding: '20px',
+                border: '1px solid rgba(244, 162, 97, 0.35)',
+              }}
+            >
+              <h2 style={{ marginTop: 0, fontSize: '20px', fontFamily: 'Georgia, serif', color: '#FFE29F' }}>
+                7. Regional Cast &amp; Community Mentors ({npcs.length} NPCs)
+              </h2>
+              {npcs.map((n) => (
+                <div key={n.id} style={{ marginBottom: '12px', paddingBottom: '10px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+                  <strong style={{ color: '#FFF8EE', fontSize: '15px' }}>{n.name}</strong>{' '}
+                  <span style={{ fontSize: '12px', color: '#93C5FD' }}>({n.nameNative})</span>
+                  <div style={{ fontSize: '12px', color: '#F4A261', fontWeight: 700 }}>{n.role}</div>
+                  <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#CBD5E1' }}>{n.greeting}</p>
+                </div>
+              ))}
+            </section>
+
+            <section
+              data-testid="country-section-food-crafts"
+              style={{
+                background: '#131F38',
+                borderRadius: '18px',
+                padding: '20px',
+                border: '1px solid rgba(244, 162, 97, 0.35)',
+              }}
+            >
+              <h2 style={{ marginTop: 0, fontSize: '20px', fontFamily: 'Georgia, serif', color: '#FFE29F' }}>
+                8–13. Culinary Heritage, Craft &amp; Capstone Keepsake
+              </h2>
+              <p style={{ fontSize: '13px', color: '#CBD5E1', lineHeight: 1.55 }}>
+                <strong>Signature Dish:</strong> {g.signatureDish}
+              </p>
+              <p style={{ fontSize: '13px', color: '#CBD5E1', lineHeight: 1.55 }}>
+                <strong>Traditional Craft:</strong> {g.craftName}
+              </p>
+              <p style={{ fontSize: '13px', color: '#6EE7B7', lineHeight: 1.55 }}>
+                <strong>Capstone Keepsake:</strong> {g.capstoneArtifact.name} · <strong>Stamp:</strong> {g.stampName}
+              </p>
+              <img src={g.stampArtUrl} alt={g.stampName} width={96} height={96} style={{ borderRadius: '12px', marginTop: '8px' }} />
+            </section>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  const code = globalCode as CountryCode;
 
   const world = V08_WORLD_VISUAL_MAP[code];
   const v13Exp = V13_COUNTRY_EXPERIENCES[code];
   const countryQuests = V13_QUEST_ENCYCLOPEDIA.filter((q) => q.country === code);
-
-  const [selectedAct, setSelectedAct] = useState<1 | 2 | 3 | 4 | 5>(1);
-  const [selectedAgeTier, setSelectedAgeTier] = useState<AgeTierId>('8-10');
 
   const activeQuest = countryQuests.find((q) => q.actNumber === selectedAct) ?? countryQuests[0];
   const activeStage = activeQuest.ageTiers[selectedAgeTier];
@@ -343,7 +865,7 @@ export const ExploreCountryDetailPage: React.FC = () => {
       }}
     >
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-        {/* Top Country Switcher in Exact v1.3 Order (1. LB, 2. IQ, 3. EG, 4. FR, 5. KR) */}
+        {/* Top Country Switcher across All 11 Countries (1. LB .. 11. MA) */}
         <div
           style={{
             display: 'flex',
@@ -355,11 +877,11 @@ export const ExploreCountryDetailPage: React.FC = () => {
           }}
         >
           <Link to="/explore" style={{ color: '#FFE29F', textDecoration: 'none', fontSize: '13px', fontWeight: 700 }}>
-            ← Back to Five Worlds Library
+            ← Back to All 11 Worlds Library
           </Link>
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {V13_COUNTRIES_ORDERED.map((cc) => {
-              const exp = V13_COUNTRY_EXPERIENCES[cc];
+            {GLOBAL_COUNTRIES_ORDERED.map((cc) => {
+              const gItem = GLOBAL_COUNTRY_MAP[cc];
               const isCurrent = cc === code;
               return (
                 <Link
@@ -377,7 +899,7 @@ export const ExploreCountryDetailPage: React.FC = () => {
                     border: '1px solid rgba(244, 162, 97, 0.45)',
                   }}
                 >
-                  {exp.orderIndex}. {exp.countryNameEn}: {exp.cityName}
+                  {gItem.order}. {gItem.name}: {gItem.city}
                 </Link>
               );
             })}
@@ -1106,20 +1628,16 @@ export const CharactersShowcasePage: React.FC = () => (
           </p>
         </article>
 
-        {V13_COUNTRIES_ORDERED.map((code) => {
-          const w = V08_WORLD_VISUAL_MAP[code];
-          const exp = V13_COUNTRY_EXPERIENCES[code];
-          return (
-            <article key={code} style={{ background: '#131F38', borderRadius: '18px', padding: '20px', border: `1px solid ${w.primaryColorHex}` }}>
-              <img src={w.portraitArtUrl} alt={w.mentorName} width={84} height={84} style={{ borderRadius: '50%', marginBottom: '12px' }} />
-              <h2 style={{ margin: '0 0 4px 0', fontSize: '20px' }}>{w.mentorName}</h2>
-              <div style={{ fontSize: '12px', color: w.accentColorHex, fontWeight: 700, marginBottom: '8px' }}>
-                {exp.orderIndex}. {exp.countryNameEn}: {exp.cityName} · {w.mentorTitle}
-              </div>
-              <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1' }}>“{w.mentorGreetingEn}”</p>
-            </article>
-          );
-        })}
+        {GLOBAL_COUNTRIES_CATALOG.map((g) => (
+          <article key={g.code} style={{ background: '#131F38', borderRadius: '18px', padding: '20px', border: `1px solid ${g.primaryColorHex}` }}>
+            <img src={g.portraitArtUrl} alt={g.mentorName} width={84} height={84} style={{ borderRadius: '50%', marginBottom: '12px' }} />
+            <h2 style={{ margin: '0 0 4px 0', fontSize: '20px' }}>{g.mentorName}</h2>
+            <div style={{ fontSize: '12px', color: g.accentColorHex, fontWeight: 700, marginBottom: '8px' }}>
+              {g.order}. {g.name}: {g.city} · {g.mentorTitle}
+            </div>
+            <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1' }}>“{g.mentorGreetingEn}”</p>
+          </article>
+        ))}
       </div>
     </div>
   </div>

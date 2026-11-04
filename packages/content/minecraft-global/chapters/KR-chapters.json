@@ -1,0 +1,656 @@
+[
+  {
+    "id": "KR01",
+    "countryCode": "KR",
+    "chapterIndex": 1,
+    "title": "The Hanok Gate",
+    "activity": "Trace an entry route and fix a garden path",
+    "mechanic": "navigation_and_restoration",
+    "scene": "KR/hanok_gate_garden",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-JEONJU-HANOK"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "kr_jiwoo_halmeoni",
+    "supportNpcId": "kr_gardener_minho",
+    "stationAnchorId": "kr_station_kr01",
+    "stationCoords": {
+      "x": 770,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "kr_hanok_door_charm",
+      "artifactName": "Hanok Door Charm",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.KR01.title",
+      "summaryKey": "quest.KR01.summary",
+      "greetingKey": "quest.KR01.greeting",
+      "completionKey": "quest.KR01.completion",
+      "sourceNoteKey": "quest.KR01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Place colorful ingredients and follow picture paths. (The Hanok Gate)",
+        "objectiveNodes": [
+          "KR01:explorer:step1",
+          "KR01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Make ingredient trades and assemble a courtyard repair. (The Hanok Gate)",
+        "objectiveNodes": [
+          "KR01:adventurer:step1",
+          "KR01:adventurer:step2",
+          "KR01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Relate colors and seasons, solve kitchen-resource puzzles. (The Hanok Gate)",
+        "objectiveNodes": [
+          "KR01:investigator:step1",
+          "KR01:investigator:step2",
+          "KR01:investigator:step3",
+          "KR01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Evaluate variants of the dish, document cultural context and co-design an accessible courtyard. (The Hanok Gate)",
+        "objectiveNodes": [
+          "KR01:curator:step1",
+          "KR01:curator:step2",
+          "KR01:curator:step3",
+          "KR01:curator:step4",
+          "KR01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "KR02",
+    "countryCode": "KR",
+    "chapterIndex": 2,
+    "title": "Five Colors, Many Meanings",
+    "activity": "Gather and sort ingredients by obangsaek colors",
+    "mechanic": "gathering_and_classification",
+    "scene": "KR/vegetable_garden",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-KR-OBANGSAEK-PHILOSOPHY"
+    ],
+    "prerequisiteChapterId": "KR01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "kr_gardener_minho",
+    "supportNpcId": "kr_carpenter_seojun",
+    "stationAnchorId": "kr_station_kr02",
+    "stationCoords": {
+      "x": 782,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "kr_five_color_palette",
+      "artifactName": "Five-Color Palette",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.KR02.title",
+      "summaryKey": "quest.KR02.summary",
+      "greetingKey": "quest.KR02.greeting",
+      "completionKey": "quest.KR02.completion",
+      "sourceNoteKey": "quest.KR02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Place colorful ingredients and follow picture paths. (Five Colors, Many Meanings)",
+        "objectiveNodes": [
+          "KR02:explorer:step1",
+          "KR02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Make ingredient trades and assemble a courtyard repair. (Five Colors, Many Meanings)",
+        "objectiveNodes": [
+          "KR02:adventurer:step1",
+          "KR02:adventurer:step2",
+          "KR02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Relate colors and seasons, solve kitchen-resource puzzles. (Five Colors, Many Meanings)",
+        "objectiveNodes": [
+          "KR02:investigator:step1",
+          "KR02:investigator:step2",
+          "KR02:investigator:step3",
+          "KR02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Evaluate variants of the dish, document cultural context and co-design an accessible courtyard. (Five Colors, Many Meanings)",
+        "objectiveNodes": [
+          "KR02:curator:step1",
+          "KR02:curator:step2",
+          "KR02:curator:step3",
+          "KR02:curator:step4",
+          "KR02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "KR03",
+    "countryCode": "KR",
+    "chapterIndex": 3,
+    "title": "The Market Morning",
+    "activity": "Trade vegetables and learn polite market exchanges",
+    "mechanic": "polite_trade",
+    "scene": "KR/nambu_market",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-JEONJU-HANOK"
+    ],
+    "prerequisiteChapterId": "KR02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "kr_carpenter_seojun",
+    "supportNpcId": "kr_cook_soyeon",
+    "stationAnchorId": "kr_station_kr03",
+    "stationCoords": {
+      "x": 794,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "kr_market_token",
+      "artifactName": "Market Token",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.KR03.title",
+      "summaryKey": "quest.KR03.summary",
+      "greetingKey": "quest.KR03.greeting",
+      "completionKey": "quest.KR03.completion",
+      "sourceNoteKey": "quest.KR03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Place colorful ingredients and follow picture paths. (The Market Morning)",
+        "objectiveNodes": [
+          "KR03:explorer:step1",
+          "KR03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Make ingredient trades and assemble a courtyard repair. (The Market Morning)",
+        "objectiveNodes": [
+          "KR03:adventurer:step1",
+          "KR03:adventurer:step2",
+          "KR03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Relate colors and seasons, solve kitchen-resource puzzles. (The Market Morning)",
+        "objectiveNodes": [
+          "KR03:investigator:step1",
+          "KR03:investigator:step2",
+          "KR03:investigator:step3",
+          "KR03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Evaluate variants of the dish, document cultural context and co-design an accessible courtyard. (The Market Morning)",
+        "objectiveNodes": [
+          "KR03:curator:step1",
+          "KR03:curator:step2",
+          "KR03:curator:step3",
+          "KR03:curator:step4",
+          "KR03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "KR04",
+    "countryCode": "KR",
+    "chapterIndex": 4,
+    "title": "Jeonju’s Shared Bowl",
+    "activity": "Prepare bibimbap through simulated cooking and layering",
+    "mechanic": "cooking_sequence",
+    "scene": "KR/community_kitchen",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-BIBIMBAP-ORIGINS"
+    ],
+    "prerequisiteChapterId": "KR03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "kr_cook_soyeon",
+    "supportNpcId": "kr_guide_haneul",
+    "stationAnchorId": "kr_station_kr04",
+    "stationCoords": {
+      "x": 806,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "kr_bibimbap_bowl",
+      "artifactName": "Bibimbap Bowl",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.KR04.title",
+      "summaryKey": "quest.KR04.summary",
+      "greetingKey": "quest.KR04.greeting",
+      "completionKey": "quest.KR04.completion",
+      "sourceNoteKey": "quest.KR04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Place colorful ingredients and follow picture paths. (Jeonju’s Shared Bowl)",
+        "objectiveNodes": [
+          "KR04:explorer:step1",
+          "KR04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Make ingredient trades and assemble a courtyard repair. (Jeonju’s Shared Bowl)",
+        "objectiveNodes": [
+          "KR04:adventurer:step1",
+          "KR04:adventurer:step2",
+          "KR04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Relate colors and seasons, solve kitchen-resource puzzles. (Jeonju’s Shared Bowl)",
+        "objectiveNodes": [
+          "KR04:investigator:step1",
+          "KR04:investigator:step2",
+          "KR04:investigator:step3",
+          "KR04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Evaluate variants of the dish, document cultural context and co-design an accessible courtyard. (Jeonju’s Shared Bowl)",
+        "objectiveNodes": [
+          "KR04:curator:step1",
+          "KR04:curator:step2",
+          "KR04:curator:step3",
+          "KR04:curator:step4",
+          "KR04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "KR05",
+    "countryCode": "KR",
+    "chapterIndex": 5,
+    "title": "Craft of the Courtyard",
+    "activity": "Restore a hanok detail using chosen wooden forms",
+    "mechanic": "architecture_restoration",
+    "scene": "KR/hanok_courtyard",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-JEONJU-HANOK"
+    ],
+    "prerequisiteChapterId": "KR04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "kr_guide_haneul",
+    "supportNpcId": "kr_jiwoo_halmeoni",
+    "stationAnchorId": "kr_station_kr05",
+    "stationCoords": {
+      "x": 818,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "kr_joinery_pattern",
+      "artifactName": "Joinery Pattern",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.KR05.title",
+      "summaryKey": "quest.KR05.summary",
+      "greetingKey": "quest.KR05.greeting",
+      "completionKey": "quest.KR05.completion",
+      "sourceNoteKey": "quest.KR05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Place colorful ingredients and follow picture paths. (Craft of the Courtyard)",
+        "objectiveNodes": [
+          "KR05:explorer:step1",
+          "KR05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Make ingredient trades and assemble a courtyard repair. (Craft of the Courtyard)",
+        "objectiveNodes": [
+          "KR05:adventurer:step1",
+          "KR05:adventurer:step2",
+          "KR05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Relate colors and seasons, solve kitchen-resource puzzles. (Craft of the Courtyard)",
+        "objectiveNodes": [
+          "KR05:investigator:step1",
+          "KR05:investigator:step2",
+          "KR05:investigator:step3",
+          "KR05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Evaluate variants of the dish, document cultural context and co-design an accessible courtyard. (Craft of the Courtyard)",
+        "objectiveNodes": [
+          "KR05:curator:step1",
+          "KR05:curator:step2",
+          "KR05:curator:step3",
+          "KR05:curator:step4",
+          "KR05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "KR06",
+    "countryCode": "KR",
+    "chapterIndex": 6,
+    "title": "Harmony Feast",
+    "activity": "Coordinate a cooperative meal and write a story of belonging",
+    "mechanic": "cooperative_feast",
+    "scene": "KR/harmony_pavilion",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-BIBIMBAP-ORIGINS"
+    ],
+    "prerequisiteChapterId": "KR05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "kr_jiwoo_halmeoni",
+    "supportNpcId": "kr_gardener_minho",
+    "stationAnchorId": "kr_station_kr06",
+    "stationCoords": {
+      "x": 830,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "kr_jeonju_harmony_stamp",
+      "artifactName": "Jeonju Harmony Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "kr_jeonju_harmony_stamp",
+      "grantsCapstoneKeepsake": "kr_five_color_bibimbap_bowl"
+    },
+    "stringKeys": {
+      "titleKey": "quest.KR06.title",
+      "summaryKey": "quest.KR06.summary",
+      "greetingKey": "quest.KR06.greeting",
+      "completionKey": "quest.KR06.completion",
+      "sourceNoteKey": "quest.KR06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Place colorful ingredients and follow picture paths. (Harmony Feast)",
+        "objectiveNodes": [
+          "KR06:explorer:step1",
+          "KR06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Make ingredient trades and assemble a courtyard repair. (Harmony Feast)",
+        "objectiveNodes": [
+          "KR06:adventurer:step1",
+          "KR06:adventurer:step2",
+          "KR06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Relate colors and seasons, solve kitchen-resource puzzles. (Harmony Feast)",
+        "objectiveNodes": [
+          "KR06:investigator:step1",
+          "KR06:investigator:step2",
+          "KR06:investigator:step3",
+          "KR06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Evaluate variants of the dish, document cultural context and co-design an accessible courtyard. (Harmony Feast)",
+        "objectiveNodes": [
+          "KR06:curator:step1",
+          "KR06:curator:step2",
+          "KR06:curator:step3",
+          "KR06:curator:step4",
+          "KR06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

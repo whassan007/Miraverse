@@ -1,0 +1,656 @@
+[
+  {
+    "id": "UA01",
+    "countryCode": "UA",
+    "chapterIndex": 1,
+    "title": "The Four Founders",
+    "activity": "Explore three hills and a river while assembling a founding-legend map",
+    "mechanic": "exploration_and_mapping",
+    "scene": "UA/founding_hills_overlook",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-UA-KYIV-FOUNDERS-CHRONICLE"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "ua_guide_lybid",
+    "supportNpcId": "ua_storyteller_taras",
+    "stationAnchorId": "ua_station_ua01",
+    "stationCoords": {
+      "x": 1970,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "ua_founders_river_map",
+      "artifactName": "Founders’ River Map",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.UA01.title",
+      "summaryKey": "quest.UA01.summary",
+      "greetingKey": "quest.UA01.greeting",
+      "completionKey": "quest.UA01.completion",
+      "sourceNoteKey": "quest.UA01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find hill symbols, tap along to rhythms and place musical decorations. (The Four Founders)",
+        "objectiveNodes": [
+          "UA01:explorer:step1",
+          "UA01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Construct a stage, sequence story cards and practice a melody pattern. (The Four Founders)",
+        "objectiveNodes": [
+          "UA01:adventurer:step1",
+          "UA01:adventurer:step2",
+          "UA01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare oral and written accounts, plan resources and document instruments. (The Four Founders)",
+        "objectiveNodes": [
+          "UA01:investigator:step1",
+          "UA01:investigator:step2",
+          "UA01:investigator:step3",
+          "UA01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a culturally reviewed exhibit with accessible music and provenance metadata. (The Four Founders)",
+        "objectiveNodes": [
+          "UA01:curator:step1",
+          "UA01:curator:step2",
+          "UA01:curator:step3",
+          "UA01:curator:step4",
+          "UA01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "UA02",
+    "countryCode": "UA",
+    "chapterIndex": 2,
+    "title": "The City by the Water",
+    "activity": "Gather wood and stone to restore an accessible footbridge",
+    "mechanic": "accessible_bridge_build",
+    "scene": "UA/dnipro_footbridge",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-UA-TOLOKA-COMMUNITY"
+    ],
+    "prerequisiteChapterId": "UA01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ua_storyteller_taras",
+    "supportNpcId": "ua_kobzar_mykola",
+    "stationAnchorId": "ua_station_ua02",
+    "stationCoords": {
+      "x": 1982,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "ua_river_bridge_plaque",
+      "artifactName": "River Bridge Plaque",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.UA02.title",
+      "summaryKey": "quest.UA02.summary",
+      "greetingKey": "quest.UA02.greeting",
+      "completionKey": "quest.UA02.completion",
+      "sourceNoteKey": "quest.UA02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find hill symbols, tap along to rhythms and place musical decorations. (The City by the Water)",
+        "objectiveNodes": [
+          "UA02:explorer:step1",
+          "UA02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Construct a stage, sequence story cards and practice a melody pattern. (The City by the Water)",
+        "objectiveNodes": [
+          "UA02:adventurer:step1",
+          "UA02:adventurer:step2",
+          "UA02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare oral and written accounts, plan resources and document instruments. (The City by the Water)",
+        "objectiveNodes": [
+          "UA02:investigator:step1",
+          "UA02:investigator:step2",
+          "UA02:investigator:step3",
+          "UA02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a culturally reviewed exhibit with accessible music and provenance metadata. (The City by the Water)",
+        "objectiveNodes": [
+          "UA02:curator:step1",
+          "UA02:curator:step2",
+          "UA02:curator:step3",
+          "UA02:curator:step4",
+          "UA02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "UA03",
+    "countryCode": "UA",
+    "chapterIndex": 3,
+    "title": "Listen to the Kobzar",
+    "activity": "Learn a respectful music-listening and call-and-response activity",
+    "mechanic": "call_and_response_music",
+    "scene": "UA/music_square",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-UA-KOBZAR-BANDURA"
+    ],
+    "prerequisiteChapterId": "UA02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ua_kobzar_mykola",
+    "supportNpcId": "ua_maker_solomiya",
+    "stationAnchorId": "ua_station_ua03",
+    "stationCoords": {
+      "x": 1994,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "ua_bandura_string",
+      "artifactName": "Bandura String",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.UA03.title",
+      "summaryKey": "quest.UA03.summary",
+      "greetingKey": "quest.UA03.greeting",
+      "completionKey": "quest.UA03.completion",
+      "sourceNoteKey": "quest.UA03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find hill symbols, tap along to rhythms and place musical decorations. (Listen to the Kobzar)",
+        "objectiveNodes": [
+          "UA03:explorer:step1",
+          "UA03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Construct a stage, sequence story cards and practice a melody pattern. (Listen to the Kobzar)",
+        "objectiveNodes": [
+          "UA03:adventurer:step1",
+          "UA03:adventurer:step2",
+          "UA03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare oral and written accounts, plan resources and document instruments. (Listen to the Kobzar)",
+        "objectiveNodes": [
+          "UA03:investigator:step1",
+          "UA03:investigator:step2",
+          "UA03:investigator:step3",
+          "UA03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a culturally reviewed exhibit with accessible music and provenance metadata. (Listen to the Kobzar)",
+        "objectiveNodes": [
+          "UA03:curator:step1",
+          "UA03:curator:step2",
+          "UA03:curator:step3",
+          "UA03:curator:step4",
+          "UA03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "UA04",
+    "countryCode": "UA",
+    "chapterIndex": 4,
+    "title": "The Dumy Notebook",
+    "activity": "Collect and order story stanzas, separating oral memory from documented events",
+    "mechanic": "oral_vs_documented_history",
+    "scene": "UA/community_archive",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-UA-KOBZAR-BANDURA"
+    ],
+    "prerequisiteChapterId": "UA03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ua_maker_solomiya",
+    "supportNpcId": "ua_curator_kateryna",
+    "stationAnchorId": "ua_station_ua04",
+    "stationCoords": {
+      "x": 2006,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "ua_dumy_page",
+      "artifactName": "Dumy Page",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.UA04.title",
+      "summaryKey": "quest.UA04.summary",
+      "greetingKey": "quest.UA04.greeting",
+      "completionKey": "quest.UA04.completion",
+      "sourceNoteKey": "quest.UA04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find hill symbols, tap along to rhythms and place musical decorations. (The Dumy Notebook)",
+        "objectiveNodes": [
+          "UA04:explorer:step1",
+          "UA04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Construct a stage, sequence story cards and practice a melody pattern. (The Dumy Notebook)",
+        "objectiveNodes": [
+          "UA04:adventurer:step1",
+          "UA04:adventurer:step2",
+          "UA04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare oral and written accounts, plan resources and document instruments. (The Dumy Notebook)",
+        "objectiveNodes": [
+          "UA04:investigator:step1",
+          "UA04:investigator:step2",
+          "UA04:investigator:step3",
+          "UA04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a culturally reviewed exhibit with accessible music and provenance metadata. (The Dumy Notebook)",
+        "objectiveNodes": [
+          "UA04:curator:step1",
+          "UA04:curator:step2",
+          "UA04:curator:step3",
+          "UA04:curator:step4",
+          "UA04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "UA05",
+    "countryCode": "UA",
+    "chapterIndex": 5,
+    "title": "The Living Music Hall",
+    "activity": "Repair a performance venue and display instruments with labels",
+    "mechanic": "venue_restoration",
+    "scene": "UA/instrument_workshop_hall",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-UA-KOBZAR-BANDURA"
+    ],
+    "prerequisiteChapterId": "UA04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ua_curator_kateryna",
+    "supportNpcId": "ua_guide_lybid",
+    "stationAnchorId": "ua_station_ua05",
+    "stationCoords": {
+      "x": 2018,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "ua_carved_music_stand",
+      "artifactName": "Carved Music Stand",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.UA05.title",
+      "summaryKey": "quest.UA05.summary",
+      "greetingKey": "quest.UA05.greeting",
+      "completionKey": "quest.UA05.completion",
+      "sourceNoteKey": "quest.UA05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find hill symbols, tap along to rhythms and place musical decorations. (The Living Music Hall)",
+        "objectiveNodes": [
+          "UA05:explorer:step1",
+          "UA05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Construct a stage, sequence story cards and practice a melody pattern. (The Living Music Hall)",
+        "objectiveNodes": [
+          "UA05:adventurer:step1",
+          "UA05:adventurer:step2",
+          "UA05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare oral and written accounts, plan resources and document instruments. (The Living Music Hall)",
+        "objectiveNodes": [
+          "UA05:investigator:step1",
+          "UA05:investigator:step2",
+          "UA05:investigator:step3",
+          "UA05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a culturally reviewed exhibit with accessible music and provenance metadata. (The Living Music Hall)",
+        "objectiveNodes": [
+          "UA05:curator:step1",
+          "UA05:curator:step2",
+          "UA05:curator:step3",
+          "UA05:curator:step4",
+          "UA05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "UA06",
+    "countryCode": "UA",
+    "chapterIndex": 6,
+    "title": "Songs That Travel",
+    "activity": "Collaborate on an original new tune or rhythm and create a community archive",
+    "mechanic": "cooperative_composition",
+    "scene": "UA/solidarity_garden_stage",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-UA-TOLOKA-COMMUNITY"
+    ],
+    "prerequisiteChapterId": "UA05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ua_guide_lybid",
+    "supportNpcId": "ua_storyteller_taras",
+    "stationAnchorId": "ua_station_ua06",
+    "stationCoords": {
+      "x": 2030,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "ua_ukraine_song_stamp",
+      "artifactName": "Ukraine Song Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "ua_ukraine_song_stamp",
+      "grantsCapstoneKeepsake": "ua_bandura_memory_charm"
+    },
+    "stringKeys": {
+      "titleKey": "quest.UA06.title",
+      "summaryKey": "quest.UA06.summary",
+      "greetingKey": "quest.UA06.greeting",
+      "completionKey": "quest.UA06.completion",
+      "sourceNoteKey": "quest.UA06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find hill symbols, tap along to rhythms and place musical decorations. (Songs That Travel)",
+        "objectiveNodes": [
+          "UA06:explorer:step1",
+          "UA06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Construct a stage, sequence story cards and practice a melody pattern. (Songs That Travel)",
+        "objectiveNodes": [
+          "UA06:adventurer:step1",
+          "UA06:adventurer:step2",
+          "UA06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare oral and written accounts, plan resources and document instruments. (Songs That Travel)",
+        "objectiveNodes": [
+          "UA06:investigator:step1",
+          "UA06:investigator:step2",
+          "UA06:investigator:step3",
+          "UA06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a culturally reviewed exhibit with accessible music and provenance metadata. (Songs That Travel)",
+        "objectiveNodes": [
+          "UA06:curator:step1",
+          "UA06:curator:step2",
+          "UA06:curator:step3",
+          "UA06:curator:step4",
+          "UA06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]
