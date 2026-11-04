@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "10.0.0",
+  "generatedAt": "2026-11-04T06:57:58.804Z",
+  "supportedLocales": [
+    "en_US",
+    "fr_FR",
+    "ar_LB",
+    "ar_EG",
+    "ar_IQ",
+    "ko_KR"
+  ],
+  "humanReviewRequiredForDialectCopy": true,
+  "bidiStressVectors": [
+    {
+      "locale": "ar_LB",
+      "sample": "منقوشة زعتر صاج (Za'atar Man'oushe — Stage 1/3)",
+      "direction": "rtl"
+    },
+    {
+      "locale": "ar_EG",
+      "sample": "كشري مصري و فانوس رمضان (Cairene Koshari — 100 Mira Tokens)",
+      "direction": "rtl"
+    },
+    {
+      "locale": "ar_IQ",
+      "sample": "كليجة بالتمر والهيل في شناشيل بغداد (Baghdad Kleicha)",
+      "direction": "rtl"
+    },
+    {
+      "locale": "ko_KR",
+      "sample": "전주 한옥마을 할머니의 송편 만들기 (Jeonju Songpyeon)",
+      "direction": "ltr"
+    },
+    {
+      "locale": "fr_FR",
+      "sample": "Boulangerie du Vieux Lyon : Galette des Rois & Fève",
+      "direction": "ltr"
+    }
+  ],
+  "missingKeysCount": 0
+}
