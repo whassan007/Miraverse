@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 4,
+  "hubId": "world:HUB",
+  "plazaRadiusMeters": 24,
+  "fountainPosition": [
+    0,
+    0,
+    0
+  ],
+  "spawnPosition": [
+    0,
+    0,
+    -6
+  ],
+  "portals": [
+    {
+      "country": "FR",
+      "label": "Vieux Lyon · France",
+      "position": [
+        0,
+        0,
+        14
+      ],
+      "archStyle": "mansard_limestone"
+    },
+    {
+      "country": "LB",
+      "label": "Byblos Harbor · Lebanon",
+      "position": [
+        -13,
+        0,
+        5
+      ],
+      "archStyle": "byblos_sandstone"
+    },
+    {
+      "country": "EG",
+      "label": "Cairo Courtyard · Egypt",
+      "position": [
+        -8,
+        0,
+        -12
+      ],
+      "archStyle": "mashrabiya_fanous"
+    },
+    {
+      "country": "IQ",
+      "label": "Baghdad Tigris · Iraq",
+      "position": [
+        8,
+        0,
+        -12
+      ],
+      "archStyle": "shanasheel_brick"
+    },
+    {
+      "country": "KR",
+      "label": "Jeonju Hanok · Korea",
+      "position": [
+        13,
+        0,
+        5
+      ],
+      "archStyle": "giwa_pine"
+    }
+  ]
+}
