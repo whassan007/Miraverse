@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "kr_quest_kr01",
+    "chapterId": "KR01",
+    "title": "The Hanok Gate",
+    "kind": "navigation_and_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 770,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:kr_giwa_eave_tile",
+    "rewardArtifactId": "kr_hanok_door_charm"
+  },
+  {
+    "anchorId": "kr_quest_kr02",
+    "chapterId": "KR02",
+    "title": "Five Colors, Many Meanings",
+    "kind": "gathering_and_classification",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 782,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:kr_hanji_sliding_screen",
+    "rewardArtifactId": "kr_five_color_palette"
+  },
+  {
+    "anchorId": "kr_quest_kr03",
+    "chapterId": "KR03",
+    "title": "The Market Morning",
+    "kind": "polite_trade",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 794,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:kr_ondol_hearth_stone",
+    "rewardArtifactId": "kr_market_token"
+  },
+  {
+    "anchorId": "kr_quest_kr04",
+    "chapterId": "KR04",
+    "title": "Jeonju’s Shared Bowl",
+    "kind": "cooking_sequence",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 806,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:kr_onggi_fermentation_jar",
+    "rewardArtifactId": "kr_bibimbap_bowl"
+  },
+  {
+    "anchorId": "kr_quest_kr05",
+    "chapterId": "KR05",
+    "title": "Craft of the Courtyard",
+    "kind": "architecture_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 818,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:kr_pine_beam_bracket",
+    "rewardArtifactId": "kr_joinery_pattern"
+  },
+  {
+    "anchorId": "kr_quest_kr06",
+    "chapterId": "KR06",
+    "title": "Harmony Feast",
+    "kind": "cooperative_feast",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 830,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:kr_songpyeon_steamer_block",
+    "rewardArtifactId": "kr_jeonju_harmony_stamp"
+  }
+]
