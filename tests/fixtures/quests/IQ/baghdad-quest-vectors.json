@@ -1,0 +1,13 @@
+{
+  "countryId": "IQ",
+  "questId": "QUEST_IQ_MAIN_V06",
+  "mentor": "Jiddo Noor",
+  "steps": [
+    "gather",
+    "trade",
+    "cook",
+    "build",
+    "word"
+  ],
+  "totalTokens": 150
+}
