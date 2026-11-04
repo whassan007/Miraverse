@@ -1,0 +1,15 @@
+=== AGENT AG20 (ANTIGRAVITY · W5) ===
+Timestamp: 2026-11-04T07:04:16.525Z
+Resolved Model: gemini-4-argon
+Runtime Environment: Antigravityorchestrator -> gemini-4-argon
+Branch: minecraft-v10/AG20
+Agent Commit SHA: 8bc142a
+Integration Merge SHA: 657f638
+Owned Paths: reports/minecraft-v10/visual/
+Test Command: test -s reports/minecraft-v10/visual/INDEPENDENT_VISUAL_ACCEPTANCE.md
+Test Exit Code: 0
+Evidence Paths: reports/minecraft-v10/visual/INDEPENDENT_VISUAL_ACCEPTANCE.md
+Blockers: MC-V01..MC-V10 live Bedrock client visual capture is BLOCKED on Linux aarch64 and requires a Windows 10/11 Bedrock client.
+--- STDOUT/STDERR ---
+
+DONE AG20 8bc142a reports/minecraft-v10/visual/INDEPENDENT_VISUAL_ACCEPTANCE.md
