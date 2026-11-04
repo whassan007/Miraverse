@@ -8,7 +8,10 @@
  */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { redactGiftCodeInText } from '../../../api/src/gifts/index';
+
+function redactGiftCodeInText(input: string): string {
+  return input.replace(/MVGIFT-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}/gi, 'MVGIFT-REDACTED-XXXX');
+}
 
 export interface ParentPortalProps {
   section?: 'overview' | 'sign-in' | 'dashboard' | 'gifts' | 'redeem' | 'orders' | 'settings' | 'privacy' | 'terms' | 'refunds' | 'support';

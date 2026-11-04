@@ -400,7 +400,7 @@ export const CinematicLandingPage: React.FC = () => {
             return (
               <article
                 key={code}
-                data-testid={`world-card-${code}`}
+                data-testid={`country-card-${code}`}
                 style={{
                   background: 'linear-gradient(180deg, #1E293B 0%, #0F172A 100%)',
                   borderRadius: '18px',
@@ -411,7 +411,7 @@ export const CinematicLandingPage: React.FC = () => {
                   justifyContent: 'space-between',
                 }}
               >
-                <div>
+                <div data-testid={`world-card-${code}`}>
                   <span style={{ fontSize: '11px', fontWeight: 800, color: meta.accentColorHex, textTransform: 'uppercase' }}>
                     {meta.regionName}
                   </span>
@@ -425,6 +425,7 @@ export const CinematicLandingPage: React.FC = () => {
                 <div style={{ display: 'flex', gap: '8px', marginTop: '14px' }}>
                   <Link
                     to={`/play/${code}`}
+                    data-testid={`play-chapter-${code}`}
                     style={{
                       flex: 1,
                       textAlign: 'center',
@@ -441,6 +442,7 @@ export const CinematicLandingPage: React.FC = () => {
                   </Link>
                   <Link
                     to={`/story/${meta.storyLang}`}
+                    data-testid={`read-story-${code}`}
                     style={{
                       flex: 1,
                       textAlign: 'center',

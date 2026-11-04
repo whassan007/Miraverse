@@ -143,6 +143,20 @@ export function buildSculptedWorldScene(
   cameraTarget.position.set(0, 1.25, 0);
   cameraTarget.parent = heroRoot;
 
+  const camera = new BABYLON.ArcRotateCamera(
+    'thirdPersonCamera',
+    -Math.PI / 2,
+    1.12,
+    8.5,
+    new BABYLON.Vector3(spawn[0], spawn[1] + 1.25, spawn[2]),
+    scene
+  );
+  camera.lowerRadiusLimit = 4.0;
+  camera.upperRadiusLimit = 14.0;
+  camera.lowerBetaLimit = 0.65;
+  camera.upperBetaLimit = 1.42;
+  scene.activeCamera = camera;
+
   const npcNodes = new Map<string, BABYLON.TransformNode>();
   const interactableMeshes = new Map<string, BABYLON.AbstractMesh>();
   const restorationMeshes: BABYLON.AbstractMesh[] = [];

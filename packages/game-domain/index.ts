@@ -13,7 +13,7 @@ import {
   type SaveStateV4,
   type UiLang,
 } from '../contracts/index';
-import { encodeStamp, decodeStamp } from '../shared/stamp';
+import { make, verify, type StampRecord } from '../shared/stamp';
 
 export const SAVE_KEY_V4 = 'mv.save.v4';
 export const LEGACY_STAMPS_KEY = 'mv.stamps';
@@ -161,18 +161,20 @@ function syncLegacyStampsIntoState(state: SaveStateV4, store: StorageLike): Save
   if (!rawStamps) return state;
   try {
     const parsed = JSON.parse(rawStamps);
-    // Support both array of stamp strings and Record<CountryCode, string>
+    // Support StampRecord[], string[], and Record<CountryCode, string>
     const codes: string[] = Array.isArray(parsed)
-      ? parsed.filter((x): x is string => typeof x === 'string')
+      ? parsed
+          .map((x) => (typeof x === 'string' ? x : x && typeof x === 'object' && typeof x.code === 'string' ? x.code : null))
+          .filter((x): x is string => typeof x === 'string')
       : parsed && typeof parsed === 'object'
         ? Object.values(parsed).filter((x): x is string => typeof x === 'string')
         : [];
 
     for (const code of codes) {
-      const dec = decodeStamp(code);
+      const dec = verify(code);
       if (dec.valid && dec.country && COUNTRIES.includes(dec.country as CountryCode)) {
         const cc = dec.country as CountryCode;
-        state.stamps[cc] = code;
+        state.stamps[cc] = dec.code;
         if ((state.completedChallenges[cc] || []).length < 5) {
           state.completedChallenges[cc] = [...CHALLENGE_TYPES];
           state.restoredBuildings[cc] = 3;
@@ -191,8 +193,18 @@ export function saveStateAtomically(state: SaveStateV4, storage?: StorageLike): 
   state.updatedAt = new Date().toISOString();
   const serialized = JSON.stringify(state);
   store.setItem(SAVE_KEY_V4, serialized);
-  // Keep mv.stamps synchronized for backward compatibility with Passport stamp reader
-  store.setItem(LEGACY_STAMPS_KEY, JSON.stringify(state.stamps));
+  // Keep mv.stamps synchronized as StampRecord[] for backward compatibility with Passport stamp reader
+  const stampRecords: StampRecord[] = [];
+  for (const code of Object.values(state.stamps)) {
+    if (typeof code === 'string') {
+      const v = verify(code);
+      if (v.valid) {
+        const { valid: _valid, ...rec } = v;
+        stampRecords.push({ ...rec, earnedAt: state.updatedAt });
+      }
+    }
+  }
+  store.setItem(LEGACY_STAMPS_KEY, JSON.stringify(stampRecords));
 }
 
 export class GameDomainController {
@@ -306,7 +318,7 @@ export class GameDomainController {
     if (chapterCompleted) {
       qEntry.status = 'COMPLETED';
       if (!stampCode) {
-        stampCode = encodeStamp(country, 1, 5555);
+        stampCode = make(country, 1, '5555');
         this.state.stamps[country] = stampCode;
         tokensAwarded += 50;
         this.state.guestMiraTokens += 50;
@@ -329,7 +341,7 @@ export class GameDomainController {
   }
 
   redeemOfflineStamp(code: string): { ok: boolean; country?: CountryCode; reason?: string } {
-    const dec = decodeStamp(code.trim());
+    const dec = verify(code.trim());
     if (!dec.valid || !dec.country || !COUNTRIES.includes(dec.country as CountryCode)) {
       return { ok: false, reason: 'INVALID_STAMP' };
     }
@@ -337,7 +349,7 @@ export class GameDomainController {
     if (this.state.stamps[cc]) {
       return { ok: false, country: cc, reason: 'DUPLICATE_STAMP' };
     }
-    this.state.stamps[cc] = code.trim().toUpperCase();
+    this.state.stamps[cc] = dec.code;
     this.state.completedChallenges[cc] = [...CHALLENGE_TYPES];
     this.state.restoredBuildings[cc] = 3;
     this.persist();
