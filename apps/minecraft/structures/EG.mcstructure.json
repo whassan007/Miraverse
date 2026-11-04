@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "structure_id": "miraverse:eg_district",
+  "size": [
+    36,
+    15,
+    36
+  ],
+  "world_origin": [
+    0,
+    64,
+    200
+  ],
+  "palette": [
+    "minecraft:cut_sandstone",
+    "minecraft:acacia_fence",
+    "minecraft:soul_lantern",
+    "minecraft:terracotta"
+  ],
+  "integrity": 1,
+  "single_time_placement_checkpoint": "mv:placed:EG"
+}

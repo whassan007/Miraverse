@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "structure_id": "miraverse:hub_district",
+  "size": [
+    32,
+    12,
+    32
+  ],
+  "world_origin": [
+    0,
+    64,
+    0
+  ],
+  "palette": [
+    "minecraft:stone_bricks",
+    "minecraft:chiseled_stone_bricks",
+    "minecraft:lantern",
+    "minecraft:gold_block"
+  ],
+  "integrity": 1,
+  "single_time_placement_checkpoint": "mv:placed:hub"
+}

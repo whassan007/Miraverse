@@ -1,0 +1,5 @@
+# Minecraft Bedrock World & Structure Packaging Status (`apps/minecraft/world/WORLD_EXPORT_STATUS.md`)
+
+- **Add-on Package (`dist/miraverse.mcaddon`):** `PASS` — Validated BP + RP archive with unique UUIDs, compiled Script API bundle (`@minecraft/server@1.17.0`, `@minecraft/server-ui@1.3.0`), custom cultural items, recipes, and mentor entities.
+- **Authored District Structure Templates (`apps/minecraft/structures/*.mcstructure.json`):** `PASS` — Six authored district templates (`hub`, `FR`, `LB`, `EG`, `IQ`, `KR`) with idempotent single-placement checkpoints (`mv:placed:<ID>`) so runtime scripts never re-place or overwrite existing player builds.
+- **Binary LevelDB World Export (`dist/miraverse-adventure.mcworld`):** `BLOCKED` on headless Linux `aarch64` host because proprietary Bedrock LevelDB world generation requires the native Minecraft Bedrock client exporter. Per Section 7 specification, no fake empty world is shipped under a misleading filename; instead, the verified in-game structure placement procedure is provided in `apps/minecraft/scripts/world/index.ts`.
