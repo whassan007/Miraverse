@@ -1,0 +1,28 @@
+=== AGENT CX05 (CODEX · W5) ===
+Timestamp: 2026-11-04T13:46:46.069Z
+Task: Client verification harness, release integration and signoff
+Resolved Model: gpt-6-astra
+Runtime Environment: Codex Release Packaging & E2E Verification Lane (Linux aarch64)
+Branch: minecraft-global/CX05
+Worktree: /home/wael/Code/mv-wt-mcg/CX05
+Agent Commit SHA: 921b476
+Integration Merge SHA: 9f7312d
+Owned Paths: apps/minecraft/tests/e2e/, reports/minecraft-global/release/, apps/minecraft/dist/
+Modified Files (7): apps/minecraft/dist/global-content-catalog.json, apps/minecraft/dist/global-locales-manifest.json, apps/minecraft/dist/manifest-of-artifacts.json, apps/minecraft/dist/miraverse-global-sources.zip, apps/minecraft/dist/miraverse-global.mcaddon, apps/minecraft/tests/e2e/global-release-deliverables.test.ts, reports/minecraft-global/release/RELEASE-AUDIT.md
+Test Command: npx vitest run apps/minecraft/tests/e2e/global-release-deliverables.test.ts
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/dist/miraverse-global.mcaddon, apps/minecraft/dist/miraverse-global-sources.zip, apps/minecraft/dist/global-content-catalog.json, apps/minecraft/dist/global-locales-manifest.json, apps/minecraft/dist/manifest-of-artifacts.json, apps/minecraft/tests/e2e/global-release-deliverables.test.ts, reports/minecraft-global/release/RELEASE-AUDIT.md
+Blockers: Windows Minecraft Bedrock binary LevelDB `.mcworld` export is `BLOCKED (native runtime missing)` on Linux aarch64 host.
+--- STDOUT/STDERR ---
+
+ RUN  v2.1.9 /home/wael/Code/mv-wt-mcg/CX05
+
+ ✓ apps/minecraft/tests/e2e/global-release-deliverables.test.ts (4 tests) 42ms
+
+ Test Files  1 passed (1)
+      Tests  4 passed (4)
+   Start at  05:46:45
+   Duration  185ms (transform 27ms, setup 0ms, collect 25ms, tests 42ms, environment 0ms, prepare 29ms)
+
+
+DONE CX05 921b476 apps/minecraft/dist/miraverse-global.mcaddon
