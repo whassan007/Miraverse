@@ -1,13 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 /**
  * About MiraVerse - Information for Parents, Educators, and Guardians
  *
  * Details MiraVerse's pedagogical philosophy, cultural dialect stories,
  * strict privacy/child-safety posture, kitchen safety guidelines,
- * and editorial review status.
+ * editorial review status, and parent-gated Stripe Checkout for the
+ * downloadable Minecraft (.mcaddon) and Roblox (.rbxlx) Educator Bundle.
  */
 export default function About(): React.ReactElement {
+  const [adultConfirmed, setAdultConfirmed] = useState(false);
+  const [checkoutStatus, setCheckoutStatus] = useState<string>('');
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+
+  async function handleParentCheckout() {
+    if (!adultConfirmed) {
+      setCheckoutStatus('Please confirm you are a parent, guardian, or educator before continuing.');
+      return;
+    }
+    setCheckoutLoading(true);
+    setCheckoutStatus('');
+    try {
+      const res = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          parentGateConfirmed: true,
+          bundle: 'family_educator_v0_1',
+        }),
+      });
+      const data = (await res.json()) as { url?: string; error?: string };
+      if (res.ok && data.url) {
+        window.location.assign(data.url);
+        return;
+      }
+      setCheckoutStatus(data.error || 'Unable to start Stripe Checkout right now.');
+    } catch {
+      setCheckoutStatus('Stripe Checkout endpoint (/api/checkout) is active once deployed to Cloudflare Pages.');
+    } finally {
+      setCheckoutLoading(false);
+    }
+  }
+
   return (
     <main
       role="main"
@@ -115,6 +149,73 @@ export default function About(): React.ReactElement {
           <dt><code style={{ backgroundColor: '#edf2f7', padding: '0.2rem 0.4rem', borderRadius: '4px', fontWeight: 600 }}>PUBLIC_RELEASE_APPROVED</code></dt>
           <dd style={{ margin: 0 }}>Content has successfully completed human native-speaker cultural review, accessibility audits, and final child-safety compliance certification.</dd>
         </dl>
+      </section>
+
+      {/* Parent & Educator Bundle (Adult-Gated Stripe Checkout) */}
+      <section
+        aria-labelledby="parent-bundle-heading"
+        data-testid="parent-stripe-bundle"
+        style={{
+          marginTop: '2.5rem',
+          padding: '1.75rem',
+          borderRadius: '10px',
+          backgroundColor: '#f0f9ff',
+          border: '2px solid #0284c7',
+        }}
+      >
+        <h2
+          id="parent-bundle-heading"
+          style={{ fontSize: '1.45rem', fontWeight: 800, color: '#0c4a6e', marginTop: 0 }}
+        >
+          Parents &amp; Educators: Downloadable Minecraft &amp; Roblox Pack Bundle
+        </h2>
+        <p style={{ margin: '0.5rem 0 1rem 0', color: '#1e293b' }}>
+          Purchase the offline <strong>MiraVerse Family &amp; Educator Bundle</strong> (includes the packaged{' '}
+          <code>miraverse.mcaddon</code> for Minecraft Bedrock and <code>miraverse.rbxlx</code> for private Roblox
+          Studio classroom servers) via hosted <strong>Stripe Checkout</strong> on <code>miraverse.studio</code>. No
+          payment scripts or cookies are ever loaded inside the child-facing web app.
+        </p>
+        <label
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.6rem',
+            fontWeight: 600,
+            color: '#0f172a',
+            marginBottom: '1rem',
+            cursor: 'pointer',
+          }}
+        >
+          <input
+            type="checkbox"
+            checked={adultConfirmed}
+            onChange={(e) => setAdultConfirmed(e.target.checked)}
+            style={{ width: '1.15rem', height: '1.15rem' }}
+          />
+          <span>I am a parent, legal guardian, or educator (18+) authorizing this purchase.</span>
+        </label>
+        <button
+          type="button"
+          onClick={handleParentCheckout}
+          disabled={checkoutLoading}
+          style={{
+            backgroundColor: '#0284c7',
+            color: '#ffffff',
+            fontWeight: 700,
+            fontSize: '0.98rem',
+            padding: '0.75rem 1.35rem',
+            borderRadius: '8px',
+            border: 'none',
+            cursor: checkoutLoading ? 'wait' : 'pointer',
+          }}
+        >
+          {checkoutLoading ? 'Redirecting to Stripe Checkout…' : 'Purchase Family & Educator Bundle (Stripe)'}
+        </button>
+        {checkoutStatus ? (
+          <p role="status" style={{ marginTop: '0.85rem', marginBottom: 0, color: '#0369a1', fontWeight: 600 }}>
+            {checkoutStatus}
+          </p>
+        ) : null}
       </section>
     </main>
   );
