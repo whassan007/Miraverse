@@ -1,0 +1,198 @@
+{
+  "regionId": "HUB",
+  "titleEn": "MiraVerse Gateway Hub & Astrolabe Rotunda",
+  "origin": {
+    "x": 0,
+    "y": 100,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 0,
+    "y": 101,
+    "z": 0
+  },
+  "tutorialStartPos": {
+    "x": 0,
+    "y": 101,
+    "z": -6
+  },
+  "passportPedestalPos": {
+    "x": 0,
+    "y": 101,
+    "z": 4
+  },
+  "welcomeMentor": {
+    "npcId": "npc:HUB:welcome_guide",
+    "entityTypeId": "miraverse:mentor_lb",
+    "nameEn": "Mira (World Guide)",
+    "spawnPos": {
+      "x": 2,
+      "y": 101,
+      "z": -2
+    },
+    "defaultAnimation": "greeting"
+  },
+  "portals": [
+    {
+      "country": "LB",
+      "portalId": "portal:HUB:LB",
+      "labelEn": "Lebanon · Byblos Harbor (Teta's Summer)",
+      "pos": {
+        "x": -16,
+        "y": 101,
+        "z": 18
+      },
+      "frameBlock": "miraverse:lb_byblos_limestone",
+      "vignetteTheme": "byblos_harbor_arch"
+    },
+    {
+      "country": "EG",
+      "portalId": "portal:HUB:EG",
+      "labelEn": "Egypt · Cairo Lantern Courtyard",
+      "pos": {
+        "x": -8,
+        "y": 101,
+        "z": 22
+      },
+      "frameBlock": "miraverse:eg_cairo_mashrabiya",
+      "vignetteTheme": "cairo_fanous_arch"
+    },
+    {
+      "country": "IQ",
+      "portalId": "portal:HUB:IQ",
+      "labelEn": "Iraq · Baghdad Riverside Shanasheel",
+      "pos": {
+        "x": 0,
+        "y": 101,
+        "z": 24
+      },
+      "frameBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "vignetteTheme": "baghdad_tigris_arch"
+    },
+    {
+      "country": "KR",
+      "portalId": "portal:HUB:KR",
+      "labelEn": "South Korea · Jeonju Hanok Village",
+      "pos": {
+        "x": 8,
+        "y": 101,
+        "z": 22
+      },
+      "frameBlock": "miraverse:kr_giwa_eave_tile",
+      "vignetteTheme": "jeonju_giwa_arch"
+    },
+    {
+      "country": "FR",
+      "portalId": "portal:HUB:FR",
+      "labelEn": "France · Vieux Lyon Boulangerie",
+      "pos": {
+        "x": 16,
+        "y": 101,
+        "z": 18
+      },
+      "frameBlock": "miraverse:fr_lyon_ochre_stucco",
+      "vignetteTheme": "lyon_traboule_arch"
+    }
+  ],
+  "buildings": [
+    {
+      "buildingId": "hub_rotunda",
+      "nameEn": "Compass Rose Rotunda",
+      "nameNative": "MiraVerse Rotunda",
+      "origin": {
+        "x": -12,
+        "y": 100,
+        "z": -12
+      },
+      "size": {
+        "x": 24,
+        "y": 10,
+        "z": 24
+      },
+      "wallBlock": "minecraft:quartz_bricks",
+      "roofBlock": "minecraft:sea_lantern",
+      "trimBlock": "minecraft:gold_block",
+      "hasInterior": true,
+      "interiorId": "hub_hall"
+    },
+    {
+      "buildingId": "hub_tutorial_pavilion",
+      "nameEn": "Explorer Orientation Pavilion",
+      "nameNative": "Orientation",
+      "origin": {
+        "x": -24,
+        "y": 100,
+        "z": -8
+      },
+      "size": {
+        "x": 10,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "minecraft:chiseled_quartz_block",
+      "roofBlock": "minecraft:dark_oak_slab",
+      "trimBlock": "minecraft:stone_bricks",
+      "hasInterior": true,
+      "interiorId": "hub_tutorial_room"
+    },
+    {
+      "buildingId": "hub_passport_gallery",
+      "nameEn": "Souvenir Stamp & Map Gallery",
+      "nameNative": "Passport Gallery",
+      "origin": {
+        "x": 14,
+        "y": 100,
+        "z": -8
+      },
+      "size": {
+        "x": 10,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "minecraft:chiseled_quartz_block",
+      "roofBlock": "minecraft:dark_oak_slab",
+      "trimBlock": "minecraft:stone_bricks",
+      "hasInterior": true,
+      "interiorId": "hub_gallery_room"
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "hub_hall",
+      "buildingId": "hub_rotunda",
+      "nameEn": "Astrolabe Welcome Rotunda Interior",
+      "entryPos": {
+        "x": 0,
+        "y": 101,
+        "z": -12
+      },
+      "furnishings": [
+        {
+          "propId": "hub_astrolabe",
+          "blockId": "minecraft:beacon",
+          "offset": {
+            "x": 0,
+            "y": 102,
+            "z": 0
+          },
+          "labelEn": "Central Compass Astrolabe"
+        },
+        {
+          "propId": "hub_info_board",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": -3,
+            "y": 101,
+            "z": 2
+          },
+          "labelEn": "Chapter Availability & Fast-Travel Board"
+        }
+      ]
+    }
+  ]
+}
