@@ -18,6 +18,7 @@ type Session = {
 	index: number,
 	completed: { [number]: boolean },
 	stamps: { string },
+	stamped: { [string]: boolean },
 	busy: boolean,
 }
 
@@ -77,11 +78,12 @@ function SessionManager.init()
 	local runChallenge = newRemote("RemoteFunction", "RunChallenge") :: RemoteFunction
 	local say = newRemote("RemoteEvent", "Say") :: RemoteEvent
 	local phraseOut = newRemote("RemoteEvent", "PhraseShown") :: RemoteEvent
+	local challengeEnded = newRemote("RemoteEvent", "ChallengeEnded") :: RemoteEvent
 
 	local function sessionOf(player: Player): Session
 		local s = sessions[player]
 		if not s then
-			s = { country = nil, index = 1, completed = {}, stamps = {}, busy = false }
+			s = { country = nil, index = 1, completed = {}, stamps = {}, stamped = {}, busy = false }
 			sessions[player] = s
 		end
 		return s
@@ -128,11 +130,15 @@ function SessionManager.init()
 		if not challenge then
 			return { ok = false, reason = "no-challenge" }
 		end
+		if s.stamped[cc] and s.completed[s.index] then
+			return { ok = false, reason = "complete", state = snapshot(s) }
+		end
 		s.busy = true
 		local okRun, result = pcall(function()
 			return Challenges.run(player, challenge, Packs[cc])
 		end)
 		s.busy = false
+		challengeEnded:FireClient(player)
 		if sessions[player] ~= s or s.country ~= cc then
 			return { ok = false, reason = "changed" }
 		end
@@ -148,9 +154,12 @@ function SessionManager.init()
 				break
 			end
 		end
-		if all then
+		if all and not s.stamped[cc] then
 			stampCode = Stamp.make(cc, 1)
 			table.insert(s.stamps, stampCode)
+			s.stamped[cc] = true
+		elseif all then
+			stampCode = nil
 		elseif s.index < CHALLENGES_PER_CHAPTER then
 			s.index += 1
 		end

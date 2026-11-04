@@ -52,7 +52,7 @@ local modalTitle = UI.label(modal, "Souvenir stamp!", UDim2.fromScale(0.9, 0.25)
 local modalCode = UI.label(modal, "", UDim2.fromScale(0.9, 0.3), UDim2.fromScale(0.05, 0.35))
 modalTitle.ZIndex = 11
 modalCode.ZIndex = 11
-local closeBtn = UI.button(modal, "Close", UDim2.fromScale(0.4, 0.2), UDim2.fromScale(0.3, 0.72), function()
+local closeBtn = UI.button(modal, "Close", UDim2.fromScale(0.4, 0.2), function()
 	modal.Visible = false
 end)
 closeBtn.Position = UDim2.fromScale(0.3, 0.72)
