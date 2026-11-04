@@ -11,6 +11,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { COUNTRIES, type CountryCode } from '../../../../../packages/contracts/index';
 import {
+  P0_PRODUCTION_ART_ASSETS,
   V08_CULTURAL_REVIEW_STATUS,
   V08_QUEST_LOOP_STEPS,
   V08_RELEASE_VERSION,
@@ -65,7 +66,9 @@ export const CinematicLandingPage: React.FC = () => {
           style={{
             position: 'absolute',
             inset: 0,
-            background: `linear-gradient(180deg, rgba(11,19,37,0.35) 0%, rgba(11,19,37,0.92) 100%), radial-gradient(circle at 65% 40%, ${activeWorld.primaryColorHex}44 0%, transparent 70%)`,
+            backgroundImage: `linear-gradient(95deg, rgba(11,19,37,0.94) 0%, rgba(11,19,37,0.84) 48%, rgba(11,19,37,0.58) 100%), url('${P0_PRODUCTION_ART_ASSETS.heroDesktopJpg}')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
             pointerEvents: 'none',
             zIndex: 1,
           }}
@@ -223,72 +226,85 @@ export const CinematicLandingPage: React.FC = () => {
             </p>
           </div>
 
-          {/* Right Column: Art-Directed Multi-Layered Byblos Harbor Illustration Card */}
+          {/* Right Column: Painted Cinematic Byblos Harbor Environment & World Switcher */}
           <div
+            data-testid="hero-visual-frame"
             style={{
               background: '#131F38',
               borderRadius: '24px',
               padding: '12px',
-              border: '2px solid rgba(244, 162, 97, 0.65)',
-              boxShadow: '0 22px 48px rgba(0, 0, 0, 0.55)',
+              border: '2px solid rgba(244, 162, 97, 0.78)',
+              boxShadow: '0 24px 56px rgba(0, 0, 0, 0.65)',
             }}
           >
             <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', aspectRatio: '16 / 9.4', background: '#0B1933' }}>
-              <img
-                src={selectedCountry === 'LB' ? '/art/v08/hero-byblos-scene.svg' : activeWorld.coverArtUrl}
-                alt={`${activeWorld.nameEn} — ${activeWorld.locationLabel} with ${activeWorld.mentorName}`}
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-              {/* Overlay Scene Caption Pill */}
-              <div
+              {selectedCountry === 'LB' ? (
+                <picture>
+                  <source media="(max-width: 640px)" srcSet={P0_PRODUCTION_ART_ASSETS.heroMobileWebp} type="image/webp" />
+                  <source media="(max-width: 640px)" srcSet={P0_PRODUCTION_ART_ASSETS.heroMobileJpg} type="image/jpeg" />
+                  <source srcSet={P0_PRODUCTION_ART_ASSETS.heroDesktopWebp} type="image/webp" />
+                  <img
+                    data-testid="hero-primary-artwork"
+                    src={P0_PRODUCTION_ART_ASSETS.heroDesktopJpg}
+                    alt={`${activeWorld.nameEn} — ${activeWorld.locationLabel} with Mira and ${activeWorld.mentorName}`}
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </picture>
+              ) : (
+                <img
+                  data-testid="hero-primary-artwork"
+                  src={activeWorld.coverArtUrl}
+                  alt={`${activeWorld.nameEn} — ${activeWorld.locationLabel} with ${activeWorld.mentorName}`}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              )}
+            </div>
+
+            {/* Scene Caption Bar Below Hero Artwork (Unobstructed on Mobile & Desktop) */}
+            <div
+              style={{
+                marginTop: '10px',
+                background: 'rgba(11, 19, 37, 0.92)',
+                borderRadius: '14px',
+                padding: '10px 14px',
+                border: '1px solid rgba(244, 162, 97, 0.45)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: '12px',
+                flexWrap: 'wrap',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <img
+                  src={activeWorld.portraitArtUrl}
+                  alt={activeWorld.mentorName}
+                  width={42}
+                  height={42}
+                  style={{ borderRadius: '50%', border: '2px solid #F4A261', flexShrink: 0, objectFit: 'cover' }}
+                />
+                <div>
+                  <strong style={{ fontSize: '14px', color: '#FEF08A', display: 'block' }}>
+                    {activeWorld.nameEn}: {activeWorld.chapterTitle} ({activeWorld.locationLabel})
+                  </strong>
+                  <span style={{ fontSize: '12px', color: '#CBD5E1' }}>
+                    Mentor: <strong>{activeWorld.mentorName}</strong> · Dish: <strong>{activeWorld.signatureDish}</strong>
+                  </span>
+                </div>
+              </div>
+              <span
                 style={{
-                  position: 'absolute',
-                  bottom: '12px',
-                  left: '12px',
-                  right: '12px',
-                  background: 'rgba(11, 19, 37, 0.88)',
-                  backdropFilter: 'blur(8px)',
-                  borderRadius: '14px',
-                  padding: '10px 14px',
-                  border: '1px solid rgba(244, 162, 97, 0.45)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  gap: '12px',
-                  flexWrap: 'wrap',
+                  background: activeWorld.isFlagshipSlice ? 'rgba(16, 185, 129, 0.22)' : 'rgba(244, 162, 97, 0.2)',
+                  color: activeWorld.isFlagshipSlice ? '#6EE7B7' : '#FDE68A',
+                  border: `1px solid ${activeWorld.isFlagshipSlice ? '#10B981' : '#F4A261'}`,
+                  padding: '4px 10px',
+                  borderRadius: '999px',
+                  fontSize: '11px',
+                  fontWeight: 800,
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  <img
-                    src={activeWorld.portraitArtUrl}
-                    alt={activeWorld.mentorName}
-                    width={42}
-                    height={42}
-                    style={{ borderRadius: '50%', border: '2px solid #F4A261', flexShrink: 0 }}
-                  />
-                  <div>
-                    <strong style={{ fontSize: '14px', color: '#FEF08A', display: 'block' }}>
-                      {activeWorld.nameEn}: {activeWorld.chapterTitle} ({activeWorld.locationLabel})
-                    </strong>
-                    <span style={{ fontSize: '12px', color: '#CBD5E1' }}>
-                      Mentor: <strong>{activeWorld.mentorName}</strong> · Dish: <strong>{activeWorld.signatureDish}</strong>
-                    </span>
-                  </div>
-                </div>
-                <span
-                  style={{
-                    background: activeWorld.isFlagshipSlice ? 'rgba(16, 185, 129, 0.22)' : 'rgba(244, 162, 97, 0.2)',
-                    color: activeWorld.isFlagshipSlice ? '#6EE7B7' : '#FDE68A',
-                    border: `1px solid ${activeWorld.isFlagshipSlice ? '#10B981' : '#F4A261'}`,
-                    padding: '4px 10px',
-                    borderRadius: '999px',
-                    fontSize: '11px',
-                    fontWeight: 800,
-                  }}
-                >
-                  {activeWorld.robloxStatusLabel}
-                </span>
-              </div>
+                {activeWorld.robloxStatusLabel}
+              </span>
             </div>
 
             {/* Interactive 5-World Scene Switcher inside Hero Artwork Frame */}
@@ -537,7 +553,7 @@ export const CinematicLandingPage: React.FC = () => {
                     <img
                       src={world.coverArtUrl}
                       alt={`${world.nameEn} — ${world.landmarkName}`}
-                      loading="lazy"
+                      loading="eager"
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
                     <span
@@ -656,7 +672,7 @@ export const CinematicLandingPage: React.FC = () => {
                   <img
                     src={item.sceneIllustrationUrl}
                     alt={item.title}
-                    loading="lazy"
+                    loading="eager"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                   <img
@@ -714,7 +730,13 @@ export const CinematicLandingPage: React.FC = () => {
               alignItems: 'center',
             }}
           >
-            <img src="/art/v08/portraits/mira.svg" alt="Mira" width={68} height={68} style={{ borderRadius: '50%', flexShrink: 0 }} />
+            <img
+              src={P0_PRODUCTION_ART_ASSETS.miraPortraitJpg}
+              alt="Mira"
+              width={68}
+              height={68}
+              style={{ borderRadius: '50%', flexShrink: 0, objectFit: 'cover', border: '2px solid #F4A261' }}
+            />
             <div>
               <span style={{ fontSize: '11px', fontWeight: 800, color: '#FEF08A' }}>PLAYABLE HERO</span>
               <h3 style={{ margin: '2px 0 4px 0', fontSize: '18px' }}>Mira</h3>
@@ -782,6 +804,14 @@ export const CinematicLandingPage: React.FC = () => {
               border: '1px solid rgba(244, 162, 97, 0.45)',
             }}
           >
+            <div style={{ borderRadius: '14px', overflow: 'hidden', marginBottom: '14px', aspectRatio: '16 / 9', border: '1px solid rgba(244, 162, 97, 0.35)' }}>
+              <img
+                src={P0_PRODUCTION_ART_ASSETS.passportDeskJpg}
+                alt="MiraVerse Explorer Passport Desk with Cultural Stamps"
+                loading="eager"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
             <div style={{ display: 'flex', gap: '10px', marginBottom: '14px', overflowX: 'auto' }}>
               {COUNTRIES.map((code) => (
                 <img
@@ -790,7 +820,7 @@ export const CinematicLandingPage: React.FC = () => {
                   alt={`${V08_WORLD_VISUAL_MAP[code].nameEn} Stamp`}
                   width={56}
                   height={56}
-                  loading="lazy"
+                  loading="eager"
                   style={{ borderRadius: '10px', flexShrink: 0 }}
                 />
               ))}
@@ -828,6 +858,24 @@ export const CinematicLandingPage: React.FC = () => {
               border: '1px solid rgba(16, 185, 129, 0.45)',
             }}
           >
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '14px' }}>
+              <div style={{ borderRadius: '12px', overflow: 'hidden', aspectRatio: '16 / 10', border: '1px solid rgba(16, 185, 129, 0.4)' }}>
+                <img
+                  src={P0_PRODUCTION_ART_ASSETS.robloxCoopJpg}
+                  alt="Byblos Co-Op Adventure on Roblox"
+                  loading="eager"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+              <div style={{ borderRadius: '12px', overflow: 'hidden', aspectRatio: '16 / 10', border: '1px solid rgba(245, 158, 11, 0.4)' }}>
+                <img
+                  src={P0_PRODUCTION_ART_ASSETS.minecraftBedrockJpg}
+                  alt="Byblos Harbor Block Companion in Minecraft Bedrock"
+                  loading="eager"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+            </div>
             <span style={{ fontSize: '11px', fontWeight: 800, color: '#6EE7B7', textTransform: 'uppercase' }}>
               Safe Co-Op on Roblox + Minecraft Bedrock Companion
             </span>

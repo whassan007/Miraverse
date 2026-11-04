@@ -1,0 +1,352 @@
+{
+  "directive": "MiraVerse P0: Visual Replacement and Deployment Repair",
+  "totalAgents": 35,
+  "counts": {
+    "Antigravity": 20,
+    "DGX-Spark": 5,
+    "Claude": 5,
+    "Codex": 5
+  },
+  "roster": [
+    {
+      "id": "AG01",
+      "family": "Antigravity",
+      "subagentId": "231c5912-0cdd-41ce-aeee-6bab69cbf33d",
+      "role": "Homepage Selector & Asset Auditor",
+      "artifact": "reports/p0-visual-recovery/PHASE1_ROOT_CAUSE.md",
+      "status": "DONE",
+      "artifactBytes": 6451,
+      "completedAt": "2026-11-04T06:43:14.434Z"
+    },
+    {
+      "id": "AG02",
+      "family": "Antigravity",
+      "subagentId": "5bd61b8e-741d-445f-8087-4c2825a9c49d",
+      "role": "Cylinder Scene & Runtime Auditor",
+      "artifact": "apps/web/src/landing/scene/index.ts",
+      "status": "DONE",
+      "artifactBytes": 795,
+      "completedAt": "2026-11-04T06:43:14.434Z"
+    },
+    {
+      "id": "AG03",
+      "family": "Antigravity",
+      "subagentId": "3ed028ae-268d-4d45-8470-d23ee53e8f64",
+      "role": "Parent & Passport Safety Auditor",
+      "artifact": "apps/web/src/pages/Passport.tsx",
+      "status": "DONE",
+      "artifactBytes": 18200,
+      "completedAt": "2026-11-04T06:43:14.434Z"
+    },
+    {
+      "id": "AG04",
+      "family": "Antigravity",
+      "subagentId": "0f78d888-952d-4d54-93bd-9970b8840f91",
+      "role": "Contracts Visual Map Auditor",
+      "artifact": "packages/contracts/v08/index.ts",
+      "status": "DONE",
+      "artifactBytes": 14468,
+      "completedAt": "2026-11-04T06:43:14.434Z"
+    },
+    {
+      "id": "AG05",
+      "family": "Antigravity",
+      "subagentId": "a1eb6236-0c03-4c87-bbce-50eb98b8bff6",
+      "role": "Hero Desktop Environment Artist (16:9)",
+      "artifact": "apps/web/public/art/p0/hero-byblos-desktop.jpg",
+      "status": "DONE",
+      "artifactBytes": 199758,
+      "completedAt": "2026-11-04T06:43:14.434Z"
+    },
+    {
+      "id": "AG06",
+      "family": "Antigravity",
+      "subagentId": "ad3ea0e6-f967-4bdf-924b-8be0621c0d23",
+      "role": "Hero Mobile Composition Artist (Portrait)",
+      "artifact": "apps/web/public/art/p0/hero-byblos-mobile.jpg",
+      "status": "DONE",
+      "artifactBytes": 179688,
+      "completedAt": "2026-11-04T06:43:14.434Z"
+    },
+    {
+      "id": "AG07",
+      "family": "Antigravity",
+      "subagentId": "d074acb0-17fb-4407-b22a-a966eadc5423",
+      "role": "Lebanon Byblos Harbor Cover Artist",
+      "artifact": "apps/web/public/art/p0/world-cover-LB.jpg",
+      "status": "DONE",
+      "artifactBytes": 267082,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG08",
+      "family": "Antigravity",
+      "subagentId": "5387aebf-d5a3-4060-81ca-f8e5a68a0060",
+      "role": "Egypt Cairo Lantern Market Cover Artist",
+      "artifact": "apps/web/public/art/p0/world-cover-EG.jpg",
+      "status": "DONE",
+      "artifactBytes": 257805,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG09",
+      "family": "Antigravity",
+      "subagentId": "3c8b3810-f7fd-42ea-86dc-e760443ee9e2",
+      "role": "Iraq Baghdad Riverfront Cover Artist",
+      "artifact": "apps/web/public/art/p0/world-cover-IQ.jpg",
+      "status": "DONE",
+      "artifactBytes": 190203,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG10",
+      "family": "Antigravity",
+      "subagentId": "fabd1b2d-9f72-439c-9f20-7a2e91599db6",
+      "role": "South Korea Jeonju Hanok Cover Artist",
+      "artifact": "apps/web/public/art/p0/world-cover-KR.jpg",
+      "status": "DONE",
+      "artifactBytes": 299838,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG11",
+      "family": "Antigravity",
+      "subagentId": "2d76ce50-08db-4f55-8bfe-f65c0b6e1bf1",
+      "role": "France Vieux Lyon Bakery Cover Artist",
+      "artifact": "apps/web/public/art/p0/world-cover-FR.jpg",
+      "status": "DONE",
+      "artifactBytes": 232256,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG12",
+      "family": "Antigravity",
+      "subagentId": "61ae0d9e-0df0-497a-99ce-c377691b1680",
+      "role": "Mira & Teta Nahla Portrait Artist",
+      "artifact": "apps/web/public/art/p0/portrait-mentor-LB.jpg",
+      "status": "DONE",
+      "artifactBytes": 211257,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG13",
+      "family": "Antigravity",
+      "subagentId": "c2945125-b0d0-4428-ba67-56d48418f3d2",
+      "role": "Cairo Mentor Uncle Tariq Portrait Artist",
+      "artifact": "apps/web/public/art/p0/portrait-mentor-EG.jpg",
+      "status": "DONE",
+      "artifactBytes": 169404,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG14",
+      "family": "Antigravity",
+      "subagentId": "d5c21683-9dc9-4721-80cf-72bb1c15a2be",
+      "role": "Baghdad Mentor Ustadh Zayd Portrait Artist",
+      "artifact": "apps/web/public/art/p0/portrait-mentor-IQ.jpg",
+      "status": "DONE",
+      "artifactBytes": 171268,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG15",
+      "family": "Antigravity",
+      "subagentId": "18c9a51d-ca8d-4d40-857f-9c320a562a36",
+      "role": "Jeonju Mentor Halmeoni Seo-Yeon Portrait Artist",
+      "artifact": "apps/web/public/art/p0/portrait-mentor-KR.jpg",
+      "status": "DONE",
+      "artifactBytes": 143605,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG16",
+      "family": "Antigravity",
+      "subagentId": "1b449e46-42de-4196-a824-17dd67dda9b9",
+      "role": "Lyon Mentor Chef Elodie Portrait Artist",
+      "artifact": "apps/web/public/art/p0/portrait-mentor-FR.jpg",
+      "status": "DONE",
+      "artifactBytes": 149188,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG17",
+      "family": "Antigravity",
+      "subagentId": "9bf6ea4c-314e-4f48-b94f-4131d0e0c3b0",
+      "role": "Explorer Passport Desk Illustration Artist",
+      "artifact": "apps/web/public/art/p0/passport-collectible-desk.jpg",
+      "status": "DONE",
+      "artifactBytes": 193471,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG18",
+      "family": "Antigravity",
+      "subagentId": "2726e292-44c2-4f11-b2d1-c3b6bcbb1967",
+      "role": "Roblox Co-Op & Avatar Studio Scene Artist",
+      "artifact": "apps/web/public/art/p0/roblox-coop-byblos.jpg",
+      "status": "DONE",
+      "artifactBytes": 206921,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG19",
+      "family": "Antigravity",
+      "subagentId": "6474e13e-b211-4a21-841c-5944a0b801f2",
+      "role": "Minecraft Bedrock Byblos Voxel Diorama Artist",
+      "artifact": "apps/web/public/art/p0/minecraft-bedrock-byblos.jpg",
+      "status": "DONE",
+      "artifactBytes": 230345,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "AG20",
+      "family": "Antigravity",
+      "subagentId": "962bee4b-3fc3-48e7-94cb-3abe4eac4231",
+      "role": "Byblos Saj Bakery Quest Scene Artist",
+      "artifact": "apps/web/public/art/p0/quest-byblos-saj-bakery.jpg",
+      "status": "DONE",
+      "artifactBytes": 233963,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "DX01",
+      "family": "DGX-Spark",
+      "model": "qwen2.5-coder:7b",
+      "role": "JPEG/WebP Asset Compression & Sizing",
+      "artifact": "apps/web/public/art/p0/hero-byblos-desktop.webp",
+      "status": "DONE",
+      "artifactBytes": 169030,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "DX02",
+      "family": "DGX-Spark",
+      "model": "llama3.1:8b",
+      "role": "Cultural Alt-Text & Caption Verification",
+      "artifact": "packages/contracts/v08/index.ts",
+      "status": "DONE",
+      "artifactBytes": 14468,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "DX03",
+      "family": "DGX-Spark",
+      "model": "qwen2.5-coder:7b",
+      "role": "Multi-Viewport Overflow & Aspect-Ratio Check",
+      "artifact": "reports/p0-visual-recovery/screens/local/home-390x844.png",
+      "status": "DONE",
+      "artifactBytes": 2042872,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "DX04",
+      "family": "DGX-Spark",
+      "model": "deepseek-r1:8b",
+      "role": "DOM Asset Integrity & Zero-Cylinder Audit",
+      "artifact": "tests/web/e2e/v08/v08-website-journeys.test.ts",
+      "status": "DONE",
+      "artifactBytes": 10598,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "DX05",
+      "family": "DGX-Spark",
+      "model": "qwen2.5-coder:7b",
+      "role": "Cloudflare Pages Branch & CDN Cache Verification",
+      "artifact": "reports/p0-visual-recovery/PHASE1_ROOT_CAUSE.md",
+      "status": "DONE",
+      "artifactBytes": 6451,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CL01",
+      "family": "Claude",
+      "role": "Phase 1 Root-Cause & Deployment Investigation Lead",
+      "artifact": "reports/p0-visual-recovery/PHASE1_ROOT_CAUSE.md",
+      "status": "DONE",
+      "artifactBytes": 6451,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CL02",
+      "family": "Claude",
+      "role": "Visual Cohesion & Art Direction Reviewer",
+      "artifact": "reports/p0-visual-recovery/ART_MANIFEST_P0.md",
+      "status": "BLOCKED",
+      "artifactBytes": 0,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CL03",
+      "family": "Claude",
+      "role": "World Card Copy & Honest Platform Availability Reviewer",
+      "artifact": "packages/contracts/v08/index.ts",
+      "status": "DONE",
+      "artifactBytes": 14468,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CL04",
+      "family": "Claude",
+      "role": "Parent Portal, Gift Safety & Passport Continuity Auditor",
+      "artifact": "apps/web/src/pages/Passport.tsx",
+      "status": "DONE",
+      "artifactBytes": 18200,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CL05",
+      "family": "Claude",
+      "role": "Phase 5/6 Visual Comparison & Release Sign-Off Lead",
+      "artifact": "reports/p0-visual-recovery/DEPLOYMENT_AND_VISUAL_PROOF.md",
+      "status": "BLOCKED",
+      "artifactBytes": 0,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CX01",
+      "family": "Codex",
+      "role": "Contracts & Production Asset Path Wiring",
+      "artifact": "packages/contracts/v08/index.ts",
+      "status": "DONE",
+      "artifactBytes": 14468,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CX02",
+      "family": "Codex",
+      "role": "Homepage Hero Replacement & Cylinder Removal",
+      "artifact": "apps/web/src/landing/ui/index.tsx",
+      "status": "DONE",
+      "artifactBytes": 43835,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CX03",
+      "family": "Codex",
+      "role": "Five Illustrated World Discovery Cards Integration",
+      "artifact": "apps/web/src/landing/ui/index.tsx",
+      "status": "DONE",
+      "artifactBytes": 43835,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CX04",
+      "family": "Codex",
+      "role": "Explore Atlas, Passport Desk & Bedrock Companion Integration",
+      "artifact": "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx",
+      "status": "DONE",
+      "artifactBytes": 26266,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    },
+    {
+      "id": "CX05",
+      "family": "Codex",
+      "role": "Playwright E2E Assertions & Production Build Pipeline",
+      "artifact": "tests/web/e2e/v08/v08-website-journeys.test.ts",
+      "status": "DONE",
+      "artifactBytes": 10598,
+      "completedAt": "2026-11-04T06:43:14.435Z"
+    }
+  ]
+}

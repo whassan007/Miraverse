@@ -146,6 +146,22 @@ export const MinecraftCompanionPage: React.FC = () => {
 
         <div
           style={{
+            borderRadius: '18px',
+            overflow: 'hidden',
+            border: '2px solid rgba(245, 158, 11, 0.55)',
+            marginBottom: '24px',
+            aspectRatio: '16 / 9',
+          }}
+        >
+          <img
+            src="/art/p0/minecraft-bedrock-byblos.jpg"
+            alt="Byblos Harbor Block-Building Companion Diorama"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
+
+        <div
+          style={{
             background: 'rgba(15, 23, 42, 0.9)',
             border: '1px solid rgba(244, 162, 97, 0.4)',
             borderRadius: '18px',

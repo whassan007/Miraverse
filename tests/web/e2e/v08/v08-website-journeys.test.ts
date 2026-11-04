@@ -131,13 +131,19 @@ describe('MiraVerse v0.8 — 15 Mandatory E2E Journeys, Art/Truth Gates & Respon
           await expect(page.getByTestId('cta-play-free').isVisible()).resolves.toBe(true);
         }
 
-        // Journey 2: Desktop visitor sees all 5 world cards with original illustrated covers
+        // Journey 2: Desktop visitor sees P0 painted hero and all 5 world cards with original illustrated covers
         await page.setViewportSize({ width: 1440, height: 900 });
+        const heroSrc = await page.getByTestId('hero-primary-artwork').getAttribute('src');
+        expect(heroSrc).toBe('/art/p0/hero-byblos-desktop.jpg');
+        const homeBrokenImages = await page.evaluate(() =>
+          Array.from(document.querySelectorAll('img')).filter((img) => !img.complete || img.naturalWidth === 0).length
+        );
+        expect(homeBrokenImages).toBe(0);
         for (const code of COUNTRIES) {
           const card = page.getByTestId(`country-card-${code}`);
           await expect(card.isVisible()).resolves.toBe(true);
-          const imgCount = await card.locator('img').count();
-          expect(imgCount).toBeGreaterThanOrEqual(1);
+          const firstImgSrc = await card.locator('img').first().getAttribute('src');
+          expect(firstImgSrc).toBe(`/art/p0/world-cover-${code}.jpg`);
         }
 
         // Journey 3 & 4: Explore Worlds (/explore) & World Detail (/explore/LB and /explore/EG)

@@ -197,7 +197,7 @@ export const ExploreAtlasPage: React.FC = () => {
                       <img
                         src={world.coverArtUrl}
                         alt={`${world.nameEn} — ${world.locationLabel}`}
-                        loading="lazy"
+                        loading="eager"
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                       />
                     </div>
@@ -504,7 +504,7 @@ export const ExploreCountryDetailPage: React.FC = () => {
                   <img
                     src={sceneUrl}
                     alt={`${world.nameEn} Scene ${idx + 1}: ${step?.title || ''}`}
-                    loading="lazy"
+                    loading="eager"
                     style={{ width: '100%', aspectRatio: '16 / 10', objectFit: 'cover' }}
                   />
                   <div style={{ padding: '12px' }}>
@@ -623,7 +623,7 @@ export const CharactersShowcasePage: React.FC = () => (
 
       <div className="mv-mentor-grid-6">
         <article style={{ background: '#131F38', borderRadius: '18px', padding: '20px', border: '2px solid #F4A261' }}>
-          <img src="/art/v08/portraits/mira.svg" alt="Mira" width={84} height={84} style={{ borderRadius: '50%', marginBottom: '12px' }} />
+          <img src="/art/p0/portrait-mira.jpg" alt="Mira" width={84} height={84} style={{ borderRadius: '50%', marginBottom: '12px', objectFit: 'cover', border: '2px solid #F4A261' }} />
           <h2 style={{ margin: '0 0 6px 0', fontSize: '20px' }}>Mira · Explorer Hero</h2>
           <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1' }}>
             Travels across all five cultural destinations with her illustrated Passport, learning local greetings and restoring neighborhood landmarks alongside community elders.

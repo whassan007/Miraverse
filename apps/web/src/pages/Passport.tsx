@@ -166,6 +166,22 @@ export default function Passport() {
               Chapter 1 Stamps Collected
             </div>
           </div>
+
+          <div
+            style={{
+              width: '100%',
+              borderRadius: '16px',
+              overflow: 'hidden',
+              border: '1px solid rgba(244, 162, 97, 0.45)',
+              maxHeight: '220px',
+            }}
+          >
+            <img
+              src="/art/p0/passport-collectible-desk.jpg"
+              alt="MiraVerse Collectible Explorer Passport Desk"
+              style={{ width: '100%', height: '220px', objectFit: 'cover', display: 'block' }}
+            />
+          </div>
         </header>
 
         {/* Honest Platform Persistence Notice */}

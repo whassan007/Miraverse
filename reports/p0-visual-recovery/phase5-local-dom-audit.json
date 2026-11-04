@@ -1,0 +1,62 @@
+{
+  "390x844": {
+    "headerCount": 1,
+    "horizontalOverflow": false,
+    "heroSrc": "/art/p0/hero-byblos-desktop.jpg",
+    "robloxCtaText": "▶ Play free on Roblox",
+    "worldCovers": [
+      "/art/p0/world-cover-LB.jpg",
+      "/art/p0/world-cover-EG.jpg",
+      "/art/p0/world-cover-IQ.jpg",
+      "/art/p0/world-cover-KR.jpg",
+      "/art/p0/world-cover-FR.jpg"
+    ],
+    "totalImages": 38,
+    "brokenImages": 0
+  },
+  "768x1024": {
+    "headerCount": 1,
+    "horizontalOverflow": false,
+    "heroSrc": "/art/p0/hero-byblos-desktop.jpg",
+    "robloxCtaText": "▶ Play free on Roblox",
+    "worldCovers": [
+      "/art/p0/world-cover-LB.jpg",
+      "/art/p0/world-cover-EG.jpg",
+      "/art/p0/world-cover-IQ.jpg",
+      "/art/p0/world-cover-KR.jpg",
+      "/art/p0/world-cover-FR.jpg"
+    ],
+    "totalImages": 38,
+    "brokenImages": 0
+  },
+  "1440x900": {
+    "headerCount": 1,
+    "horizontalOverflow": false,
+    "heroSrc": "/art/p0/hero-byblos-desktop.jpg",
+    "robloxCtaText": "▶ Play free on Roblox",
+    "worldCovers": [
+      "/art/p0/world-cover-LB.jpg",
+      "/art/p0/world-cover-EG.jpg",
+      "/art/p0/world-cover-IQ.jpg",
+      "/art/p0/world-cover-KR.jpg",
+      "/art/p0/world-cover-FR.jpg"
+    ],
+    "totalImages": 38,
+    "brokenImages": 0
+  },
+  "1920x1080": {
+    "headerCount": 1,
+    "horizontalOverflow": false,
+    "heroSrc": "/art/p0/hero-byblos-desktop.jpg",
+    "robloxCtaText": "▶ Play free on Roblox",
+    "worldCovers": [
+      "/art/p0/world-cover-LB.jpg",
+      "/art/p0/world-cover-EG.jpg",
+      "/art/p0/world-cover-IQ.jpg",
+      "/art/p0/world-cover-KR.jpg",
+      "/art/p0/world-cover-FR.jpg"
+    ],
+    "totalImages": 38,
+    "brokenImages": 0
+  }
+}
