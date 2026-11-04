@@ -1,0 +1,168 @@
+{
+  "country": "LB",
+  "name_en": "Lebanon",
+  "lang": "ar-LB",
+  "colors": {
+    "primary": "#1E5631",
+    "secondary": "#C97A40"
+  },
+  "regions": [
+    {
+      "id": "byblos",
+      "name_en": "Byblos"
+    },
+    {
+      "id": "mount_lebanon",
+      "name_en": "Mount Lebanon"
+    },
+    {
+      "id": "beirut",
+      "name_en": "Beirut"
+    }
+  ],
+  "mentor": {
+    "name": "Teta Nahla",
+    "greeting_en": "Welcome, habibi! Come into the courtyard—the saj is warming up for fresh manoushe.",
+    "greeting": "أهلا وسهلا يا تيتا! فوت عالحوش، الصاج عم يحمى لنعمل أطيب منقوشة."
+  },
+  "items": [
+    {
+      "id": "flour",
+      "name_en": "Wheat Flour",
+      "color": "#F5ECD7"
+    },
+    {
+      "id": "zaatar",
+      "name_en": "Wild Za'atar Blend",
+      "color": "#556B2F"
+    },
+    {
+      "id": "olive_oil",
+      "name_en": "Mountain Olive Oil",
+      "color": "#B5A642"
+    },
+    {
+      "id": "manoushe",
+      "name_en": "Warm Za'atar Manoushe",
+      "color": "#D99B52"
+    },
+    {
+      "id": "limestone_block",
+      "name_en": "Pale Limestone Block",
+      "color": "#E6DEC8"
+    },
+    {
+      "id": "cedar_beam",
+      "name_en": "Cedar Wood Beam",
+      "color": "#7B4B2A"
+    },
+    {
+      "id": "red_tile",
+      "name_en": "Red Terracotta Roof Tile",
+      "color": "#B84A39"
+    },
+    {
+      "id": "sumac_jar",
+      "name_en": "Jar of Crimson Sumac",
+      "color": "#8B2635"
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "title_en": "Summer at Teta's",
+      "challenges": [
+        {
+          "id": "LB-1-gather",
+          "type": "gather",
+          "title_en": "Pantry & Terrace Harvest",
+          "goal_en": "Gather wild za'atar, mountain olive oil, and wheat flour for Teta Nahla's morning bake.",
+          "needs": [
+            {
+              "item": "zaatar",
+              "count": 2
+            },
+            {
+              "item": "olive_oil",
+              "count": 1
+            },
+            {
+              "item": "flour",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "LB-1-cook",
+          "type": "cook",
+          "title_en": "Bake Saj Manoushe",
+          "goal_en": "Help Teta Nahla shape the dough, brush on olive oil and za'atar, and bake a warm manoushe on the saj.",
+          "recipe": {
+            "inputs": [
+              "flour",
+              "olive_oil",
+              "zaatar"
+            ],
+            "output": "manoushe"
+          }
+        },
+        {
+          "id": "LB-1-build",
+          "type": "build",
+          "title_en": "Restore the Mountain Stone House",
+          "goal_en": "Arrange the red terracotta roof tiles, cedar beams, and pale limestone blocks to repair the courtyard archway.",
+          "blueprint": [
+            "RRRR",
+            "CCCC",
+            "L..L",
+            "LLLL"
+          ],
+          "blueprintLegend": {
+            "R": "red_tile",
+            "L": "limestone_block",
+            "C": "cedar_beam"
+          }
+        },
+        {
+          "id": "LB-1-trade",
+          "type": "trade",
+          "title_en": "Share with the Souk Spice Merchant",
+          "goal_en": "Share a warm manoushe at the Byblos market in exchange for a jar of tangy crimson sumac.",
+          "needs": [
+            {
+              "item": "manoushe",
+              "count": 1
+            }
+          ],
+          "reward": {
+            "item": "sumac_jar",
+            "count": 1
+          }
+        },
+        {
+          "id": "LB-1-word",
+          "type": "word",
+          "title_en": "Words from Teta's Kitchen",
+          "goal_en": "Practice three Lebanese Arabic words with Teta Nahla before breakfast is served.",
+          "words": [
+            {
+              "word": "تيتا",
+              "translit": "tēta",
+              "en": "grandma"
+            },
+            {
+              "word": "منقوشة",
+              "translit": "manʾūshe",
+              "en": "flatbread topped with za'atar and olive oil"
+            },
+            {
+              "word": "صحتين",
+              "translit": "ṣaḥtēn",
+              "en": "bon appétit (double health)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

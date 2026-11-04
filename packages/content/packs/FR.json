@@ -1,0 +1,169 @@
+{
+  "country": "FR",
+  "name_en": "France",
+  "lang": "fr",
+  "colors": {
+    "primary": "#1E3A8A",
+    "secondary": "#E5A93B"
+  },
+  "regions": [
+    {
+      "id": "lyon",
+      "name_en": "Lyon"
+    },
+    {
+      "id": "paris",
+      "name_en": "Paris"
+    },
+    {
+      "id": "marseille",
+      "name_en": "Marseille"
+    }
+  ],
+  "mentor": {
+    "name": "Mamie Claire",
+    "greeting_en": "Welcome to my kitchen in Lyon! Let us bake a warm golden galette des rois together.",
+    "greeting": "Bienvenue dans ma cuisine à Lyon ! Préparons ensemble une belle galette des rois toute dorée."
+  },
+  "items": [
+    {
+      "id": "puff_pastry",
+      "name_en": "Flaky Puff Pastry",
+      "color": "#F3D59B"
+    },
+    {
+      "id": "almond_cream",
+      "name_en": "Sweet Almond Cream",
+      "color": "#FAE8C8"
+    },
+    {
+      "id": "porcelain_feve",
+      "name_en": "Porcelain Fève Charm",
+      "color": "#E0F2FE"
+    },
+    {
+      "id": "galette_des_rois",
+      "name_en": "Galette des Rois",
+      "color": "#D99226"
+    },
+    {
+      "id": "slate_roof",
+      "name_en": "Mansard Slate Roof Tile",
+      "color": "#475569"
+    },
+    {
+      "id": "cut_stone",
+      "name_en": "Lyon Cut Limestone",
+      "color": "#E2D9C8"
+    },
+    {
+      "id": "oak_shutter",
+      "name_en": "Carved Oak Shutter",
+      "color": "#854D0E"
+    },
+    {
+      "id": "paper_crown",
+      "name_en": "Golden Paper Crown",
+      "color": "#FACC15"
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "title_en": "The Golden Galette of Lyon",
+      "challenges": [
+        {
+          "id": "FR-1-gather",
+          "type": "gather",
+          "title_en": "Market Day at Les Halles",
+          "goal_en": "Gather flaky puff pastry, sweet almond cream, and a tiny porcelain fève charm for Mamie Claire.",
+          "needs": [
+            {
+              "item": "puff_pastry",
+              "count": 2
+            },
+            {
+              "item": "almond_cream",
+              "count": 1
+            },
+            {
+              "item": "porcelain_feve",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "FR-1-cook",
+          "type": "cook",
+          "title_en": "Baking the Galette des Rois",
+          "goal_en": "Layer the puff pastry with almond cream, tuck in the porcelain fève, and help Mamie Claire bake the golden galette.",
+          "recipe": {
+            "inputs": [
+              "puff_pastry",
+              "almond_cream",
+              "porcelain_feve"
+            ],
+            "output": "galette_des_rois"
+          }
+        },
+        {
+          "id": "FR-1-build",
+          "type": "build",
+          "title_en": "The Vieux Lyon Bakery Facade",
+          "goal_en": "Restore the neighborhood boulangerie facade with slate roof tiles, limestone walls, and oak shutters.",
+          "blueprint": [
+            ".RRRR.",
+            "RRRRRR",
+            "SOSSOS",
+            "SOSSOS",
+            "SSSSSS"
+          ],
+          "blueprintLegend": {
+            "R": "slate_roof",
+            "S": "cut_stone",
+            "O": "oak_shutter"
+          }
+        },
+        {
+          "id": "FR-1-trade",
+          "type": "trade",
+          "title_en": "Sharing the Epiphany Treat",
+          "goal_en": "Share a warm Galette des Rois with the neighborhood baker in exchange for a festive Golden Paper Crown.",
+          "needs": [
+            {
+              "item": "galette_des_rois",
+              "count": 1
+            }
+          ],
+          "reward": {
+            "item": "paper_crown",
+            "count": 1
+          }
+        },
+        {
+          "id": "FR-1-word",
+          "type": "word",
+          "title_en": "French Bakery Words",
+          "goal_en": "Learn three everyday French words from Mamie Claire's kitchen in Lyon.",
+          "words": [
+            {
+              "word": "la galette",
+              "translit": "la ga-let",
+              "en": "flaky pastry cake"
+            },
+            {
+              "word": "la fève",
+              "translit": "la fev",
+              "en": "hidden porcelain charm"
+            },
+            {
+              "word": "la couronne",
+              "translit": "la koo-ron",
+              "en": "crown"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

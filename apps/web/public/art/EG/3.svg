@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Simmering Ful Mudammas &amp; Crisp Ta&#x27;ameya</title>
+  <desc>Watercolor view of a traditional heavy brass qidra pot gently simmering with fava beans alongside a basket of hot sesame-crusted taameya patties and puffed eish baladi bread.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="qidra-brass" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#fff2aa" />
+      <stop offset="35%" stop-color="#d4af37" />
+      <stop offset="80%" stop-color="#8a6714" />
+      <stop offset="100%" stop-color="#4d3706" />
+    </radialGradient>
+    <radialGradient id="taameya-patty" cx="0.4" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#b8833e" />
+      <stop offset="70%" stop-color="#7a4e1b" />
+      <stop offset="100%" stop-color="#4e2c07" />
+    </radialGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <rect width="800" height="500" fill="#2d1c15" />
+
+  <!-- Traditional Egyptian Ful Qidra (Narrow neck bulbous brass vessel) -->
+  <g transform="translate(180, 120)">
+    <!-- Rim opening -->
+    <ellipse cx="100" cy="50" rx="35" ry="12" fill="#543e09" />
+    <!-- Neck -->
+    <path d="M70,50 L65,110 L135,110 L130,50 Z" fill="url(#qidra-brass)" />
+    <!-- Bulbous Pot Body -->
+    <path d="M65,110 C-10,180 -10,300 100,320 C210,300 210,180 135,110 Z" fill="url(#qidra-brass)" />
+    <!-- Hot brass highlight -->
+    <ellipse cx="75" cy="200" rx="15" ry="40" fill="#fff7cc" opacity="0.4" transform="rotate(-15 75 200)" />
+    <!-- Gentle steam from qidra -->
+    <path d="M95,40 Q90,10 105,-15 Q115,-40 100,-70" stroke="#f0e2d3" stroke-width="4" fill="none" opacity="0.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Woven palm tray with golden Ta'ameya patties -->
+  <g transform="translate(480, 240)">
+    <ellipse cx="90" cy="80" rx="120" ry="60" fill="#c4995a" stroke="#875e24" stroke-width="4" />
+    <!-- Ta'ameya patty 1 -->
+    <circle cx="40" cy="70" r="28" fill="url(#taameya-patty)" />
+    <!-- Sesame seed crust -->
+    <circle cx="35" cy="65" r="2" fill="#fffbe6" />
+    <circle cx="45" cy="62" r="2" fill="#fffbe6" />
+    <circle cx="42" cy="75" r="2" fill="#fffbe6" />
+    <circle cx="32" cy="78" r="2" fill="#fffbe6" />
+    
+    <!-- Ta'ameya patty 2 -->
+    <circle cx="95" cy="60" r="30" fill="url(#taameya-patty)" />
+    <circle cx="90" cy="55" r="2" fill="#fffbe6" />
+    <circle cx="102" cy="58" r="2" fill="#fffbe6" />
+    <circle cx="94" cy="68" r="2" fill="#fffbe6" />
+
+    <!-- Ta'ameya patty 3 -->
+    <circle cx="140" cy="80" r="27" fill="url(#taameya-patty)" />
+    <circle cx="135" cy="75" r="2" fill="#fffbe6" />
+    <circle cx="145" cy="82" r="2" fill="#fffbe6" />
+    <circle cx="138" cy="88" r="2" fill="#fffbe6" />
+  </g>
+
+  <!-- Stack of Egyptian Eish Baladi Flatbread -->
+  <g transform="translate(420, 360)">
+    <ellipse cx="80" cy="30" rx="75" ry="24" fill="#dcb073" stroke="#b28140" stroke-width="2" />
+    <ellipse cx="85" cy="20" rx="72" ry="22" fill="#e5be85" stroke="#b28140" stroke-width="2" />
+    <ellipse cx="82" cy="10" rx="70" ry="21" fill="#f2d29e" stroke="#b28140" stroke-width="2" />
+    <!-- Puffed pocket highlight -->
+    <ellipse cx="90" cy="6" rx="40" ry="10" fill="#fae8cc" opacity="0.7" />
+  </g>
+  
+</svg>

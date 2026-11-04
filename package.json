@@ -1,13 +1,34 @@
 {
   "name": "miraverse",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
-  "workspaces": ["apps/web", "apps/minecraft"],
+  "workspaces": [
+    "apps/web",
+    "apps/minecraft"
+  ],
   "scripts": {
-    "validate": "tsx tools/validate.ts",
+    "validate": "tsx tools/validate.ts --profile=structural",
+    "validate:structural": "tsx tools/validate.ts --profile=structural",
+    "validate:release": "tsx tools/validate.ts --profile=release",
     "compile": "tsx tools/compiler/index.ts",
+    "textures": "node tools/textures/gen.mjs",
+    "pack:mcaddon": "node tools/pack/mcaddon.mjs",
+    "build:roblox": "mkdir -p apps/roblox/dist && rojo build apps/roblox -o apps/roblox/dist/miraverse.rbxlx",
     "check": "npm run validate && npm run compile && npm -w apps/web run build && npm -w apps/minecraft run build && vitest run",
+    "check:release": "npm run validate:release && npm run compile && npm run textures && npm -w apps/web run build && npm -w apps/minecraft run build && npm run build:roblox && npm run pack:mcaddon && vitest run",
+    "build:cloudflare": "npm run compile && npm run textures && npm -w apps/web run build && npm -w apps/minecraft run build && npm run pack:mcaddon && mkdir -p apps/web/dist/downloads && cp apps/minecraft/dist/miraverse.mcaddon apps/web/dist/downloads/",
     "dev": "npm -w apps/web run dev"
   },
-  "devDependencies": { "tsx": "^4", "typescript": "^5", "vitest": "^2" }
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.0",
+    "@types/pngjs": "^6.0.5",
+    "esbuild": "^0.24.0",
+    "jsdom": "^25.0.1",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
+  }
 }

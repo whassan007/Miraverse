@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Dolsot Bibimbap Preparation</title>
+  <desc>Vibrant close-up watercolor view of sizzling Korean stone bowl bibimbap with radiant rings of spinach, carrots, shiitake mushrooms, seasoned bean sprouts, egg yolk, and gochujang.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="dolsot-stone" cx="0.4" cy="0.4" r="0.65">
+      <stop offset="0%" stop-color="#4a4d52" />
+      <stop offset="60%" stop-color="#242629" />
+      <stop offset="100%" stop-color="#121314" />
+    </radialGradient>
+    <radialGradient id="egg-yolk" cx="0.35" cy="0.35" r="0.6">
+      <stop offset="0%" stop-color="#fff275" />
+      <stop offset="50%" stop-color="#ffb703" />
+      <stop offset="100%" stop-color="#fb8500" />
+    </radialGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <rect width="800" height="500" fill="#261e1a" />
+
+  <!-- Wooden base trivet -->
+  <ellipse cx="400" cy="320" rx="270" ry="110" fill="#543823" stroke="#362214" stroke-width="6" />
+
+  <!-- Heavy Granite Stone Bowl (Dolsot) -->
+  <ellipse cx="400" cy="270" rx="240" ry="105" fill="#141517" />
+  <path d="M160,270 C160,400 640,400 640,270 Z" fill="url(#dolsot-stone)" stroke="#383c42" stroke-width="4" />
+  <!-- Bowl inner rim -->
+  <ellipse cx="400" cy="265" rx="220" ry="92" fill="#2d3036" />
+  <ellipse cx="400" cy="260" rx="205" ry="85" fill="#f8f4ec" />
+
+  <!-- Bibimbap Toppings Arranged Radiantly -->
+  <!-- Sauteed Spinach (Green) -->
+  <path d="M400,260 L240,230 C250,210 290,195 340,190 Z" fill="#3a5a2a" />
+  <path d="M400,260 L250,235 C260,215 300,200 350,195 Z" fill="#4d7c38" opacity="0.8" />
+
+  <!-- Julienned Carrots (Orange) -->
+  <path d="M400,260 L340,190 C380,185 430,185 470,192 Z" fill="#f77f00" />
+  <path d="M400,260 L350,195 C390,190 435,190 465,196 Z" fill="#fc9b28" opacity="0.8" />
+
+  <!-- Seasoned Shiitake Mushrooms (Brown) -->
+  <path d="M400,260 L470,192 C515,200 550,215 565,235 Z" fill="#4d3221" />
+
+  <!-- Seasoned Gosari Bracken (Dark Purple/Brown) -->
+  <path d="M400,260 L565,235 C575,255 570,285 550,305 Z" fill="#38262b" />
+
+  <!-- Soybean Sprouts (Kongnamul) (Cream & Yellow) -->
+  <path d="M400,260 L550,305 C530,325 480,340 430,342 Z" fill="#eae2b7" />
+  <circle cx="500" cy="320" r="3" fill="#f4d35e" />
+  <circle cx="470" cy="330" r="3" fill="#f4d35e" />
+
+  <!-- Sauteed Zucchini (Hobak) (Bright Green) -->
+  <path d="M400,260 L430,342 C380,345 320,340 275,320 Z" fill="#70a94d" />
+
+  <!-- Marinated Beef / Tofu strips -->
+  <path d="M400,260 L275,320 C245,300 240,265 240,230 Z" fill="#693b21" />
+
+  <!-- Center Raw Egg Yolk & Gochujang Dollop -->
+  <!-- Crimson Gochujang paste dollop -->
+  <circle cx="390" cy="255" r="36" fill="#ba181b" />
+  <!-- Golden Egg Yolk in center -->
+  <circle cx="410" cy="255" r="26" fill="url(#egg-yolk)" />
+  <!-- Glistening yolk reflection -->
+  <ellipse cx="404" cy="248" rx="6" ry="4" fill="#ffffff" opacity="0.75" />
+
+  <!-- Sprinkled toasted sesame seeds -->
+  <circle cx="370" cy="245" r="1.5" fill="#fdf0d5" />
+  <circle cx="385" cy="235" r="1.5" fill="#fdf0d5" />
+  <circle cx="435" cy="265" r="1.5" fill="#fdf0d5" />
+  <circle cx="380" cy="275" r="1.5" fill="#fdf0d5" />
+
+  <!-- Sizzling Steam Wisps -->
+  <g opacity="0.6">
+    <path d="M330,180 Q310,130 340,90 Q360,50 340,20" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" />
+    <path d="M460,180 Q485,125 455,80 Q435,45 460,15" stroke="#ffffff" stroke-width="4.5" fill="none" stroke-linecap="round" />
+  </g>
+  
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Epiphany Feast Table with Galette &amp; Crown</title>
+  <desc>Festive Epiphany family gathering with a sliced golden Galette des Rois, sparkling Normandy cider glasses, the ornate paper crown, and the lucky porcelain fève charm.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <radialGradient id="candle-ambience" cx="0.5" cy="0.35" r="0.65">
+      <stop offset="0%" stop-color="#fff0c7" />
+      <stop offset="40%" stop-color="#f8c976" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#3d2014" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="linen-cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f5ed" />
+      <stop offset="100%" stop-color="#e3dfd3" />
+    </linearGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <!-- Cozy dining room evening warmth -->
+  <rect width="800" height="500" fill="#2d1911" />
+  <circle cx="400" cy="280" r="300" fill="url(#candle-ambience)" />
+
+  <!-- French rustic dining table with linen tablecloth -->
+  <ellipse cx="400" cy="380" rx="370" ry="140" fill="url(#linen-cloth)" stroke="#c2bcb0" stroke-width="4" />
+
+  <!-- Centerpiece: Porcelain Platter with Sliced Galette -->
+  <g transform="translate(380, 360)">
+    <!-- Vintage scalloped porcelain dish -->
+    <ellipse cx="0" cy="0" rx="140" ry="55" fill="#fdfcf7" stroke="#b0a99a" stroke-width="2" />
+    <!-- Galette des Rois with golden score marks -->
+    <ellipse cx="0" cy="-5" rx="125" ry="46" fill="#f5af38" stroke="#a45d13" stroke-width="2" />
+    <!-- Missing slice showing almond frangipane interior -->
+    <polygon points="0,-5 80,-20 85,25" fill="#fce484" stroke="#874708" stroke-width="2" />
+    <path d="M0,-5 L80,-20" stroke="#522802" stroke-width="2" />
+    <path d="M0,-5 L85,25" stroke="#522802" stroke-width="2" />
+  </g>
+
+  <!-- The Golden Epiphany Crown (La Couronne) proudly on table -->
+  <g transform="translate(180, 290)">
+    <!-- Crown zigzag points -->
+    <polygon points="0,50 20,10 40,40 70,0 100,40 120,10 140,50" fill="#ffd13b" stroke="#b58712" stroke-width="2.5" />
+    <circle cx="70" cy="20" r="4" fill="#ffffff" />
+    <circle cx="35" cy="35" r="3" fill="#ffffff" />
+    <circle cx="105" cy="35" r="3" fill="#ffffff" />
+  </g>
+
+  <!-- Glasses of Sparkling French Apple Cider (Cidre bouché) -->
+  <g transform="translate(590, 310)">
+    <!-- Glass 1 -->
+    <ellipse cx="-25" cy="45" rx="12" ry="5" fill="#baa48b" />
+    <line x1="-25" y1="20" x2="-25" y2="45" stroke="#cfc7b8" stroke-width="3" />
+    <path d="M-37,-15 L-33,20 L-17,20 L-13,-15 Z" fill="#f7ba36" opacity="0.8" stroke="#fcf3d9" stroke-width="1.5" />
+    <ellipse cx="-25" cy="-15" rx="12" ry="4" fill="#fada73" opacity="0.9" />
+    <!-- Tiny fizz bubbles -->
+    <circle cx="-25" cy="5" r="1.5" fill="#fff" />
+    <circle cx="-22" cy="-5" r="1.2" fill="#fff" />
+
+    <!-- Glass 2 -->
+    <ellipse cx="25" cy="50" rx="12" ry="5" fill="#baa48b" />
+    <line x1="25" y1="25" x2="25" y2="50" stroke="#cfc7b8" stroke-width="3" />
+    <path d="M13,-10 L17,25 L33,25 L37,-10 Z" fill="#f7ba36" opacity="0.8" stroke="#fcf3d9" stroke-width="1.5" />
+    <ellipse cx="25" cy="-10" rx="12" ry="4" fill="#fada73" opacity="0.9" />
+    <circle cx="25" cy="10" r="1.5" fill="#fff" />
+    <circle cx="28" cy="0" r="1.2" fill="#fff" />
+  </g>
+
+  <!-- Porcelain dessert plate with the single cut slice & tiny porcelain Fève charm -->
+  <g transform="translate(390, 435)">
+    <ellipse cx="0" cy="0" rx="65" ry="24" fill="#fcfbfa" stroke="#c4beaf" stroke-width="2" />
+    <!-- Slice of galette -->
+    <polygon points="-30,2 15,-10 30,8" fill="#f5af38" stroke="#99500c" stroke-width="1.5" />
+    <polygon points="-30,2 15,-10 5,6" fill="#fae89b" />
+    <!-- Little porcelain king charm fève revealed next to slice -->
+    <ellipse cx="-40" cy="-2" rx="6" ry="4" fill="#ffffff" stroke="#c4beaf" stroke-width="1" />
+    <circle cx="-40" cy="-3" r="2" fill="#ffd13b" />
+  </g>
+  
+</svg>

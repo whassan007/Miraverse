@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "miraverse:mentor_kr",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/mentor_kr" },
+      "geometry": {
+        "default": "geometry.humanoid.custom",
+        "fallback": "geometry.villager_v2"
+      },
+      "render_controllers": ["controller.render.default"],
+      "spawn_egg": { "base_color": "#5b7c8a", "overlay_color": "#d99b26" }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+name = "miraverse"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "apps/web/dist"
+
+[vars]
+PUBLIC_SITE_URL = "https://miraverse.studio"
+
+# Required Cloudflare Pages encrypted secrets (set via `npx wrangler pages secret put <NAME>` or Cloudflare Dashboard):
+# - STRIPE_SECRET_KEY      (sk_live_... or sk_test_...)
+# - STRIPE_PRICE_ID        (price_... for MiraVerse Family & Educator Bundle)
+# - STRIPE_WEBHOOK_SECRET  (whsec_... for /api/webhook signature verification)

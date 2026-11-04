@@ -2,5 +2,13 @@ node_modules
 dist
 **/generated
 **/gen_*
+apps/minecraft/bp/scripts
+apps/minecraft/rp/textures/item_texture.json
+apps/minecraft/rp/texts
+apps/roblox/src/shared/Packs.luau
+swarm/logs
+swarm/.slots
+swarm/.status.lock
+swarm/status.json
 *.mcaddon
 *.rbxlx

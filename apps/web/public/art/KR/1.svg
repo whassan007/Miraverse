@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <title>Jeonju Hanok Village Stone Alleyway</title>
+  <desc>Watercolor view of a tranquil alleyway in Jeonju lined with earthen-and-stone walls, traditional tiled rooflines, and vibrant ripe persimmons heavy on autumn branches.</desc>
+  <defs>
+    <filter id="wc-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fffbee" surfaceScale="1.0" result="light">
+        <feDistantLight azimuth="55" elevation="65" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="kr-day-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5b88b2" />
+      <stop offset="70%" stop-color="#adc8de" />
+      <stop offset="100%" stop-color="#eaf1f7" />
+    </linearGradient>
+    
+  </defs>
+  <rect width="800" height="500" fill="#fffdfa" />
+
+  <rect width="800" height="500" fill="url(#kr-day-sky)" />
+
+  <!-- Hanok Tiled Rooflines along the alley -->
+  <path d="M-20,180 Q160,110 360,160 L360,260 L-20,260 Z" fill="#2d333b" />
+  <path d="M440,160 Q640,100 820,170 L820,270 L440,270 Z" fill="#39414d" />
+
+  <!-- Earthen Stone Wall (Dampyarak) on Left & Right -->
+  <polygon points="0,240 340,240 310,420 0,440" fill="#a48c71" stroke="#685744" stroke-width="4" />
+  <!-- Embedded stones in earthen wall -->
+  <ellipse cx="60" cy="300" rx="25" ry="16" fill="#756754" />
+  <ellipse cx="130" cy="320" rx="30" ry="18" fill="#877663" />
+  <ellipse cx="200" cy="290" rx="22" ry="15" fill="#756754" />
+  <ellipse cx="250" cy="330" rx="28" ry="16" fill="#877663" />
+
+  <!-- Right wall -->
+  <polygon points="460,240 800,240 800,450 490,420" fill="#b0997e" stroke="#685744" stroke-width="4" />
+  <ellipse cx="580" cy="300" rx="28" ry="16" fill="#877663" />
+  <ellipse cx="670" cy="320" rx="32" ry="18" fill="#756754" />
+
+  <!-- Central Cobblestone / Flagstone Alleyway -->
+  <polygon points="310,420 490,420 620,500 180,500" fill="#cfc2b2" />
+  <!-- Stepping flagstones -->
+  <ellipse cx="380" cy="445" rx="30" ry="12" fill="#9e9182" />
+  <ellipse cx="430" cy="470" rx="35" ry="14" fill="#a89b8c" />
+  <ellipse cx="360" cy="485" rx="32" ry="12" fill="#8f8273" />
+
+  <!-- Ripe Orange Persimmon Tree (Gamnamu) Hanging Over Courtyard Wall -->
+  <g transform="translate(180, 80)">
+    <!-- Gnarled branch -->
+    <path d="M0,120 Q60,80 120,40 Q170,20 220,50" stroke="#483321" stroke-width="7" fill="none" stroke-linecap="round" />
+    <path d="M120,40 Q150,70 190,85" stroke="#483321" stroke-width="5" fill="none" stroke-linecap="round" />
+    <!-- Bright orange ripe persimmon fruit -->
+    <g fill="#ff7a00" stroke="#c44d00" stroke-width="1.5">
+      <ellipse cx="90" cy="90" rx="10" ry="9" />
+      <ellipse cx="140" cy="55" rx="11" ry="10" />
+      <ellipse cx="170" cy="40" rx="10" ry="9" />
+      <ellipse cx="195" cy="75" rx="11" ry="10" />
+      <ellipse cx="225" cy="60" rx="10" ry="9" />
+    </g>
+    <!-- Autumn foliage -->
+    <ellipse cx="100" cy="75" rx="15" ry="8" transform="rotate(-15 100 75)" fill="#e59530" />
+    <ellipse cx="155" cy="45" rx="14" ry="7" transform="rotate(20 155 45)" fill="#c94a29" />
+    <ellipse cx="185" cy="65" rx="15" ry="7" transform="rotate(-25 185 65)" fill="#e59530" />
+  </g>
+  
+</svg>
