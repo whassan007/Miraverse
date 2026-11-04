@@ -1,0 +1,20 @@
+.story-reader { max-width: 58rem; margin: 0 auto; padding: clamp(1rem, 4vw, 2.5rem); color: #22342d; background: #fffdf7; line-height: 1.6; }
+.story-reader h1 { margin-bottom: .25rem; line-height: 1.3; }
+.story-english-title { margin-top: 0; color: #475c51; }
+.story-characters, .story-vocab { padding: 0; list-style: none; display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); }
+.story-characters li { border: 1px solid #a5b9aa; border-radius: .75rem; padding: .65rem 1rem; }
+.story-characters span, .story-vocab span { display: block; font-size: .95rem; }
+.story-characters bdi { font-weight: 700; }
+.story-counter { font-weight: 700; }
+.story-illustration { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #edf3e7; border-radius: 1rem; }
+.story-illustration[hidden] { display: none; }
+.story-text { white-space: pre-line; font-size: clamp(1.1rem, 2vw, 1.35rem); line-height: 1.9; overflow-wrap: anywhere; }
+.story-reader button, .story-play { min-height: 44px; padding: .65rem 1rem; border: 2px solid #265e48; border-radius: .65rem; background: #265e48; color: white; font: inherit; font-weight: 600; cursor: pointer; }
+.story-reader button:disabled { background: #e3e9e1; color: #526153; border-color: #a5b9aa; cursor: default; }
+.story-reader :is(button, a, summary):focus-visible { outline: 3px solid #955000; outline-offset: 4px; }
+.story-navigation { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0; }
+.story-review { border-top: 1px solid #a5b9aa; padding-top: 1rem; }
+.story-review summary { cursor: pointer; padding: .75rem .25rem; font-weight: 700; }
+.story-vocab li { padding: 1rem; border-radius: .75rem; background: #edf3e7; overflow-wrap: anywhere; }
+.story-vocab strong { display: block; font-size: 1.35rem; }
+.story-play { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1rem; text-decoration: none; }
