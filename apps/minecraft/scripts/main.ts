@@ -14,9 +14,28 @@ import {
   showPassport,
 } from './core/passport.js';
 import { make } from './core/stamp.js';
+import { MiraVerseBedrockRuntimeV10 } from './src/bootstrap/index.js';
+import { REGIONS_V10 } from './src/regions/index.js';
+import { COUNTRIES_V10 } from './src/contracts/index.js';
+import { claimChapterPassportReward } from './src/passport/index.js';
+import { StructureBuilderV10 } from './src/structures/index.js';
+import { BedrockUiFormsV10 } from './src/ui/index.js';
 import type { CountryId } from '../../../packages/content/schema.js';
 
-export { PACKS, buildWorld, runChallenge, spawnMentor, talk };
+export const runtimeV10 = new MiraVerseBedrockRuntimeV10();
+export {
+  PACKS,
+  buildWorld,
+  runChallenge,
+  spawnMentor,
+  talk,
+  MiraVerseBedrockRuntimeV10,
+  REGIONS_V10,
+  COUNTRIES_V10,
+  claimChapterPassportReward,
+  StructureBuilderV10,
+  BedrockUiFormsV10,
+};
 
 let worldReady = false;
 const busy = new Set<string>();

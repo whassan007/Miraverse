@@ -1,0 +1,868 @@
+{
+  "schemaVersion": "10.0.0",
+  "generatedAt": "2026-11-04T07:05:11.280Z",
+  "totalFiles": 123,
+  "files": [
+    {
+      "path": "apps/minecraft/assets-src/MANIFEST.json",
+      "sizeBytes": 37593,
+      "sha256": "755772ddabfe395a894af7f47deb929d8c1bb83bf23ab90364162486dc2d7deb",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ambience/ambience-manifest.json",
+      "sizeBytes": 1277,
+      "sha256": "3946227ca840ed0b4c16c63a442bdc2862c2e09971bc71c35b31f5aad4cc3cad",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/blocks-kit-manifest.json",
+      "sizeBytes": 12247,
+      "sha256": "815891bcc2ea6056e47532d031b90e088e0552a151c9da9589310f47415cf4eb",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/eg_alabaster_lamp.png",
+      "sizeBytes": 117,
+      "sha256": "bfb17c3a10b6acd2caf30b4a9cfe93dca14d85abefe3c4ff253cab3131a2907c",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/eg_cairo_mashrabiya.png",
+      "sizeBytes": 117,
+      "sha256": "14df17f79e7bba6e6995a6d24ae937a2a32e562f5106eebab2d7928dd4c90b21",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/eg_carved_cedar_door_frame.png",
+      "sizeBytes": 117,
+      "sha256": "3880face8cc7b30be1a0936a26d3271c61b9bc31cd0d2688224a13e14259caf7",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/eg_courtyard_fountain_tile.png",
+      "sizeBytes": 117,
+      "sha256": "8c5e9b1f2ff61942eee3e5b00b97902e6011a736392958ce46823db9d5ad13ee",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/eg_fanous_lantern_block.png",
+      "sizeBytes": 117,
+      "sha256": "00ba99c0d0100b3f9e7aeabc697edfbac603c1495620d4fc3c63b99282c1364b",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/eg_khan_arch_stone.png",
+      "sizeBytes": 117,
+      "sha256": "73a84a673146fb04d10ccab2aa15ec9e04359cc9077659bfc899a7b83914f258",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/eg_koshari_cauldron_block.png",
+      "sizeBytes": 117,
+      "sha256": "1ec2a6477bd437f7ce19b3cc6444f66e7a3b1cc2d0bdd3f51e8fb787e13bf62d",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/eg_spice_bazaar_canopy.png",
+      "sizeBytes": 117,
+      "sha256": "925eaab956e4c159ae148393ecb5cebb5262ea21538f96986ac20eddc2d4df39",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/fr_boulangerie_wood_oven.png",
+      "sizeBytes": 117,
+      "sha256": "dcdf9b29ca61242ade70897c3a419b688c1d3e36c705a019e0bff8bf89f93e2b",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/fr_carved_oak_shutter.png",
+      "sizeBytes": 117,
+      "sha256": "0df1232ff7b180f9f5d46369a7940cb482cae92673c52cb9b58d886cd7ed6da8",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/fr_cobblestone_paver.png",
+      "sizeBytes": 116,
+      "sha256": "134189dd1752d6e0b3c5d21c9ff9ccba9f2ba67469e2ef3dd08bd8622194e7bb",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/fr_gilded_bakery_sign.png",
+      "sizeBytes": 117,
+      "sha256": "b184930973a72b97db83a0594c79cec9ffec681581a45a8c18fdbea177f3af00",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/fr_lyon_ochre_stucco.png",
+      "sizeBytes": 117,
+      "sha256": "f97149ea622d09e28da8ec6c235e34c3382b68206e6c2e55b0b084dbc056a657",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/fr_mansard_slate_shingle.png",
+      "sizeBytes": 117,
+      "sha256": "6ec8783c575c32ad5d0a6c17523d1b9f2dfc4c1b0e96118611d15669ab6ea2c1",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/fr_traboule_vault_stone.png",
+      "sizeBytes": 117,
+      "sha256": "baa5e99ddcf97de1e1b6f32a839f5d3a2a0d5686064a357f120c0330173f76ce",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/fr_wrought_iron_balcony.png",
+      "sizeBytes": 117,
+      "sha256": "3e761462af6c90a4ec6305963f9c7cf123e13f2d47989855f4b95268c746f686",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/iq_baghdadi_courtyard_arch.png",
+      "sizeBytes": 117,
+      "sha256": "f3ea81a1ef7bbd5559cebf2ced183f2a7f42103cbfa4b6c18cf9138e37c84225",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/iq_calligraphy_frieze.png",
+      "sizeBytes": 117,
+      "sha256": "a23dfd0f76d004051431f5b5ab1ab665ab482e15316238705dc3c47bca212e13",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/iq_copper_samovar_stand.png",
+      "sizeBytes": 117,
+      "sha256": "99b8e5b4b75dc877b898ee934ea935cafbd7e41cafc90fe65fc21b9ba8f3ad6a",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/iq_kleicha_brick_oven.png",
+      "sizeBytes": 117,
+      "sha256": "e6108fde681e45454906e9a9bcf97f72214749d5a03b91591e6b0a8ae998a460",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/iq_palm_weave_mat.png",
+      "sizeBytes": 117,
+      "sha256": "d8c8e5bbfe9454447e97b1051a067b8f0a3dbce300637f7362350262f2884402",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/iq_shanasheel_oriel_screen.png",
+      "sizeBytes": 117,
+      "sha256": "961278eb420bf7e17142ac4ea44bbeb33ecff5ad4b71e82dc2674e87ddb63a2d",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/iq_tigris_glazed_brick.png",
+      "sizeBytes": 117,
+      "sha256": "522f99bd8bf1deacbb3bd96945ce84ddfc85f0938dd94a8f2a24d621ab979884",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/iq_turquoise_muqarnas.png",
+      "sizeBytes": 117,
+      "sha256": "e372bf996eb2ac95ee0086464a243f639f1b66478448c552f5cd31e0e8eaf234",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/kr_courtyard_stepping_stone.png",
+      "sizeBytes": 116,
+      "sha256": "57d891e7cfd9dfadd1c1aeac7576481fce7804fa444dd990d4897ea31db250a2",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/kr_giwa_eave_tile.png",
+      "sizeBytes": 116,
+      "sha256": "96927eda1831a3cfba9174d7252074076c81a9beb6e7a5aca10a539c7d7c2241",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/kr_hanji_sliding_screen.png",
+      "sizeBytes": 116,
+      "sha256": "0451621db81824e73650c66888f4029e073714777abae9bd3455014d88bc0401",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/kr_ondol_hearth_stone.png",
+      "sizeBytes": 116,
+      "sha256": "0ce987a036a77dd41f8691515cc38624ad7f2ac2870f63027a2bfaf2161d378b",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/kr_onggi_fermentation_jar.png",
+      "sizeBytes": 116,
+      "sha256": "65cc83f55a6b36b7c6b35e77245015209c0908e50ff5fda8b2ee0d672bbbbd33",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/kr_pine_beam_bracket.png",
+      "sizeBytes": 116,
+      "sha256": "61b69df4799d15a1c1bd4e2d5cb975d7457d8339b29f5e57428576dce7ffd287",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/kr_songpyeon_steamer_block.png",
+      "sizeBytes": 116,
+      "sha256": "d62c1d5af765754040bb28da3ad425e917b28d457ebacb3ead4b4c5a0d00d8ac",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/kr_stone_pagoda_lantern.png",
+      "sizeBytes": 116,
+      "sha256": "ef16f567e08b0b4be4aab5609ad2af0de6b3235d4a4d6ab082f3e6b1278d7e9e",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/lb_byblos_limestone.png",
+      "sizeBytes": 117,
+      "sha256": "d011321c8cd30f89e648152bae81f996094262cf204030de9167daaac0b61140",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/lb_carved_arch_stone.png",
+      "sizeBytes": 117,
+      "sha256": "8a604a27bf23efe2ef62bb18a4a6e63bb95363cd359f079d698081789383ffcf",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/lb_cedar_shutter.png",
+      "sizeBytes": 117,
+      "sha256": "75487658897c0b0b741a261c10ec51a203e1d3122afa3ab3fa435b2e8dfa0c84",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/lb_harbor_bollard.png",
+      "sizeBytes": 117,
+      "sha256": "8d8d9354225aa4316e08e20d1744f2151aafdd10b8ee8d71f75fdc29e416b518",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/lb_mosaic_courtyard_tile.png",
+      "sizeBytes": 117,
+      "sha256": "b3354d79ba03883cfdadcb875f2f5ef9b3459640efc41fd33dffd6baf75c23f8",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/lb_saj_hearth_block.png",
+      "sizeBytes": 117,
+      "sha256": "dd1d828b90651adfa1494bbac875c6822a75634b3d10d03e875c3f17175bbe3b",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/lb_terracotta_roof_tile.png",
+      "sizeBytes": 117,
+      "sha256": "5d1a1df1e71859f01adfb493ba62cc55f03d124e50555b893f421712b56ee3a2",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/blocks/lb_zaatar_drying_rack.png",
+      "sizeBytes": 116,
+      "sha256": "ee5a8d35b86d9d38d01aa2a8434827e283481b68a8d0456345318d9d102a2d92",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_acacia_plank.png",
+      "sizeBytes": 116,
+      "sha256": "1aa11cd2294a085bdce0a177e828b30aebac70b7c648b8573b7155a08c63789b",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_crispy_onions.png",
+      "sizeBytes": 116,
+      "sha256": "a83e7247ec05c78d221dfc86ab5c2788617cd24266e164497efc25064ab64a14",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_date_fruit.png",
+      "sizeBytes": 116,
+      "sha256": "16d3ab6ef22655dbb701fa976cad72a71967584dbdbd52cc78aea25427e62c6d",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_fanous_lantern.png",
+      "sizeBytes": 117,
+      "sha256": "6ec67cb8caadb899729fbe24eedbf6cb004e4c3ee159bacfd7b78fec750c2c2f",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_koshari.png",
+      "sizeBytes": 116,
+      "sha256": "ea63295ba4d2e00759a133051301d14bb82d15d5efabec28941bb4c4c88c3ed7",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_lentils.png",
+      "sizeBytes": 116,
+      "sha256": "1cd67e20f759381adcca6db43022aa65b0abfcdbeb413d0e679f88e71eeedb8b",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_linen_sail.png",
+      "sizeBytes": 117,
+      "sha256": "9ad2c82a334f69ac462ca9850efe8e4e5af51a85bea5e3fbb3c9722c39144b8f",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_rice.png",
+      "sizeBytes": 115,
+      "sha256": "a6764919f50707b108967a41139d7bb4bc9560b182e3ee3a8ecc46ba0e01e481",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_sun_stone.png",
+      "sizeBytes": 117,
+      "sha256": "47b43488c6859f4dcde66ccea57e6db79311348b356e3e5b93c7718913924b40",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/eg_tomato_sauce.png",
+      "sizeBytes": 116,
+      "sha256": "60cf1f30bd933b2ab0666441b9031b1c5135ac569158ee57533c37a1b17321a3",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/food-items-manifest.json",
+      "sizeBytes": 10040,
+      "sha256": "bd0eafd8c7fca97c67af40ab40852711167725d4acf99d2ee8a587eca5f6c913",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_almond_cream.png",
+      "sizeBytes": 117,
+      "sha256": "d787d74dbe1606a5e2f7d1671cf9d6432956e92a87f6ba2342b2e4c1d135de70",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_baguette.png",
+      "sizeBytes": 117,
+      "sha256": "d368f8c3770fec004fc5b472b2da15efa0db25eb2ea3e838060ba4e9b3081d92",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_cut_stone.png",
+      "sizeBytes": 117,
+      "sha256": "33cddc4553cec52096db578b522f9d71c63575ee01a7f476281d68205212f646",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_galette_des_rois.png",
+      "sizeBytes": 117,
+      "sha256": "45a82c94fb8947765f740570efad85516d930c0a63f38dc0a6b5ed4dfb3b472f",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_lavender.png",
+      "sizeBytes": 117,
+      "sha256": "9e7397c47c415a55224c4be17294d0f7bc667a9a50e11624652470c931f8eb12",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_oak_shutter.png",
+      "sizeBytes": 116,
+      "sha256": "20bcad77183542939c275cd01327c3b276893a237900f52810c3eb2730b98f9c",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_paper_crown.png",
+      "sizeBytes": 117,
+      "sha256": "87a93845745429a7f3d8d72cb3c7599c96d7bbe4063d85e67e89f4aa6dd5a417",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_porcelain_feve.png",
+      "sizeBytes": 115,
+      "sha256": "2261d6296ba6f75dd4bd0f42aab5caf48bc951192326a6470bf398a3674f436a",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_puff_pastry.png",
+      "sizeBytes": 117,
+      "sha256": "c08499f3fa93fd0e8dd17c9a3625aa95af02a7bd401b2e0974c2ed103b548c1d",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/fr_slate_roof.png",
+      "sizeBytes": 116,
+      "sha256": "4b56533f3dc6810dc2b53db2687cc086f984f32f4487efbe5771e8c2bac785b7",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_brass_teapot.png",
+      "sizeBytes": 117,
+      "sha256": "8c70d75e367b4a059f8f9beec3c3e65db9fd0144a506037f05ea6f5addb00ce7",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_cardamom.png",
+      "sizeBytes": 117,
+      "sha256": "dcf84f606b4d4e17d3e13815a6ae3b0c53c9bd401417a5aacc7de54cb66b682f",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_date_paste.png",
+      "sizeBytes": 116,
+      "sha256": "48eacfc3bda861ffa39f0d81fe42f259abc631bc0d37c0f2e88aff71b0a50bd0",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_kleicha.png",
+      "sizeBytes": 117,
+      "sha256": "f924010c910370c29323b6fe228944a188bb852416738c8d6ee5853a84c5643f",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_mud_brick.png",
+      "sizeBytes": 117,
+      "sha256": "b429dfc580cd7e71d8cfb58fa546b416faeffa71bf5b251aa9d4608b01bebb48",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_palm_wood.png",
+      "sizeBytes": 116,
+      "sha256": "a480d4e13fcf3a24db2e2cbdd2bd275ff87804b728eff65996d1e0fa765079c0",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_pomegranate.png",
+      "sizeBytes": 116,
+      "sha256": "6da2471487da9ab9a5eed54415071c22151038e35464bd4798b8d59354896901",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_samoon.png",
+      "sizeBytes": 117,
+      "sha256": "b20a00866ce304c61e1fb1c3f2185f4ff34ab3262ddd6956165e6b2ede118096",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_turquoise_tile.png",
+      "sizeBytes": 117,
+      "sha256": "e6108fde681e45454906e9a9bcf97f72214749d5a03b91591e6b0a8ae998a460",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/iq_wheat_dough.png",
+      "sizeBytes": 117,
+      "sha256": "cc9b012d77d2fb496712e4eccae8b5510c2cd61384bfc6b465d3fd3da00e7270",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_celadon_cup.png",
+      "sizeBytes": 117,
+      "sha256": "b77e540ac4453536345e40e37c19bdd1b2327acded983926559e5b863f5f1d0a",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_giwa_tile.png",
+      "sizeBytes": 116,
+      "sha256": "055033c31939338620f300bb5c1cb52fa437b279188cb2a901b1ca2ec08994f9",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_hanji_paper.png",
+      "sizeBytes": 117,
+      "sha256": "29ac9145f6c329405151f07ae0e5cf7b57d33f674b2b4630df7912120d9be759",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_inkstone.png",
+      "sizeBytes": 116,
+      "sha256": "07b0a9a300c11b14a20dcdf0270fb5f22e0d2a9b5426e06d7252412746554256",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_kimchi.png",
+      "sizeBytes": 116,
+      "sha256": "136cbc7d282891b2780caa2f8333e5dbfeb659ede58c9b21dabbac63ee79e842",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_pine_needles.png",
+      "sizeBytes": 116,
+      "sha256": "acce7aa7343c59213b68991e6d79ed79aa9dcaba7b728d0782d2772327be75f7",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_pine_pillar.png",
+      "sizeBytes": 116,
+      "sha256": "ab70b9dec1336280650713462625803480605e6c61673f76ed1458c6b8366daa",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_rice_flour.png",
+      "sizeBytes": 115,
+      "sha256": "46cb3ed69c0717000ce1e3cd2092c6d57de78ae102416df6caa34e95b31b4c80",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_sesame_honey.png",
+      "sizeBytes": 117,
+      "sha256": "98341fb6ec3ad83b6a748b68bd8233b5a9af101939c1a1a15b2dbda33a688164",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/kr_songpyeon.png",
+      "sizeBytes": 117,
+      "sha256": "c4ebf0f42730e5be3f2346aed080c3a1b57c38bfa588a0f2bf0005d9570689b2",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_cedar_beam.png",
+      "sizeBytes": 116,
+      "sha256": "bc6d781eda0cdf9657fb73a258d3b3470d3d2542dee9b9db535e3fe0ce9c452c",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_cedar_sapling.png",
+      "sizeBytes": 116,
+      "sha256": "1b42f4778da0634452c70369463344decbfa056c163766bfc394d5919aa43ed3",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_flour.png",
+      "sizeBytes": 117,
+      "sha256": "d29f8a050873b98277d33bccb16c804ddcce98c16ef8f32feec30ff0ec839a76",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_limestone_block.png",
+      "sizeBytes": 117,
+      "sha256": "7346b3f14b1e3c7986e87d63dfb462c8bd01a47e6acae35cc844064baacfe42a",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_manoushe.png",
+      "sizeBytes": 117,
+      "sha256": "e4a27c5b6d0e4b8dd92086b0785bce31e37b1439d4ac6872fca75dedb1397c1c",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_olive_oil.png",
+      "sizeBytes": 117,
+      "sha256": "c81e472449f89cf4d7efbb51c587eb397861f0487d8ede5463bfd42d0de47935",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_red_tile.png",
+      "sizeBytes": 116,
+      "sha256": "54f73c7ab857a7b6f968e77a177986f2dd84a1c3218c95282efc0dd4212c623f",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_soap.png",
+      "sizeBytes": 117,
+      "sha256": "b23864f42d5a08e521b90e91fc0e7a47b1380878ae85e2eb09918dddf7cc8824",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_sumac_jar.png",
+      "sizeBytes": 116,
+      "sha256": "fa2211fd034426f07ceb2cee12d17ced93d49dd166720a995e6a7602a86afef6",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/items/food/lb_zaatar.png",
+      "sizeBytes": 116,
+      "sha256": "8a0755a513c51e637fca4c5b337752a23ebf96f6366ad2debf59e6c9800f5821",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/EG/cairo-npcs.json",
+      "sizeBytes": 246,
+      "sha256": "7a3ee5e4678be9d32ea9445a63bd253c7b9cef97b3da7a7772a74b511e9274bd",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/EG/mentor_eg.bbmodel",
+      "sizeBytes": 847,
+      "sha256": "4e7f4eb1bcf54fde2fdec36362768feed567b95afb64b0e35f9db831fbc49dae",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/EG/mentor_eg.png",
+      "sizeBytes": 175,
+      "sha256": "3a8df2ae963ad168216542b3d22fc7c5cc041b533eef8f0cc8970ad91682f9ab",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/FR/lyon-npcs.json",
+      "sizeBytes": 247,
+      "sha256": "fc2c98dda684b8851580deaa5ecccb3968c4bbc7bed53e57113d9313f87974ef",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/FR/mentor_fr.bbmodel",
+      "sizeBytes": 847,
+      "sha256": "91e9552a8c13c01f26a741d13f5fdc5ce5390b6668a5867d86dbc8fdaff1fb34",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/FR/mentor_fr.png",
+      "sizeBytes": 175,
+      "sha256": "0b65bd8f2f6729d66128890f8a81b7720d479de4bc910bb147f3dea4bf761fda",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/IQ/baghdad-npcs.json",
+      "sizeBytes": 244,
+      "sha256": "fae87efda1c0406ab69aed530f94abed135444cccec75fe0b072dafd240090a9",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/IQ/mentor_iq.bbmodel",
+      "sizeBytes": 847,
+      "sha256": "d00f33ec0d344095dfb1fde6ae7bfd8ac9b518404f2876369879a7de7fd0b8b8",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/IQ/mentor_iq.png",
+      "sizeBytes": 174,
+      "sha256": "16db3962609a40af431914d7b6737c854bd7484cd844b5a732dc73ea5a91ee9f",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/KR/jeonju-npcs.json",
+      "sizeBytes": 243,
+      "sha256": "4851167bbd24243f3b8b16199460322a5a0ff67abdefd02138b8d024c1fe9862",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/KR/mentor_kr.bbmodel",
+      "sizeBytes": 847,
+      "sha256": "12e1d4a8a347d59cd42904839da440b0376a69b56a615dcd20561ba9de7f7a22",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/KR/mentor_kr.png",
+      "sizeBytes": 173,
+      "sha256": "f714a94f47843a31b533613a3217e34b778f878b5c08d430e9949422b0090e53",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/LB/byblos-npcs.json",
+      "sizeBytes": 275,
+      "sha256": "2f6c45c495a5cdf7b72bdc22c0fc76288423ce9f0ee2dd70cc86087df77259d2",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/LB/mentor_lb.bbmodel",
+      "sizeBytes": 480,
+      "sha256": "f43d41874647ae082e96637f95704ac4726fee91dac997ab1dab9cff793d527a",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/LB/mentor_lb.png",
+      "sizeBytes": 239,
+      "sha256": "4601a38365cac7590b6959726e811a4d8dc3e42648fa31a5eb0f9e52bb537fcc",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/rig/miraverse_npc_base.bbmodel",
+      "sizeBytes": 3549,
+      "sha256": "ecaf922303661b829fdebd15c19c9987f5fcb68ff4f529fc6d94abee84e45c3e",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/mentors/rig/rig-spec.json",
+      "sizeBytes": 427,
+      "sha256": "0e32dbf111807fff7295e9d87f6178abdb404e5c058c52992131054c9c014387",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": true
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/pack_icon.png",
+      "sizeBytes": 239,
+      "sha256": "a8d2173cad75a4075242d7fc1017b4e556c6ef5039fdbbb78653518cf992b72a",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/poster_EG.png",
+      "sizeBytes": 240,
+      "sha256": "a6032794a873f465182a000ccdc5aeb343d89f4e4e9319ca8265c0316079f4f8",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/poster_FR.png",
+      "sizeBytes": 241,
+      "sha256": "1a7e76e3a2d3468910359913885ca29652541a49a699d5f7c3c4485f0b202955",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/poster_IQ.png",
+      "sizeBytes": 239,
+      "sha256": "a4e6d323297ed465484b5828242201dad963233ff9dcf8af5885c2a1c2b96b60",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/poster_KR.png",
+      "sizeBytes": 239,
+      "sha256": "c2c47dac07f3e3aab21b272ea6908bce5047ff5878cbb5abddd6849e1221899e",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/poster_LB.png",
+      "sizeBytes": 239,
+      "sha256": "4601a38365cac7590b6959726e811a4d8dc3e42648fa31a5eb0f9e52bb537fcc",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/stamp_eg.png",
+      "sizeBytes": 144,
+      "sha256": "8feb7708d7853c15afc84fcca187da68e7ac90fca38a169e174b0a54602ff630",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/stamp_fr.png",
+      "sizeBytes": 144,
+      "sha256": "c63492762f04278de56fae7784f815b8987f896d1bcb794c873794c59ca178f3",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/stamp_iq.png",
+      "sizeBytes": 144,
+      "sha256": "44b471ae031198cef8d04270fab8793174ef02089688c9ade329c17059409b78",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/stamp_kr.png",
+      "sizeBytes": 144,
+      "sha256": "cfd003906654df89fb8b47b8584735fc1fecbfcbe12eec849d936e8b4a506953",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/stamp_lb.png",
+      "sizeBytes": 144,
+      "sha256": "b6940839527bd8b723790668622139a51da37e20ad5d18d7646f2fbb08f934c3",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    },
+    {
+      "path": "apps/minecraft/assets-src/ui/ui-assets-manifest.json",
+      "sizeBytes": 631,
+      "sha256": "ba7e673050c6f60a27691ad4fc7f132c7b7c9ceb3c08bd2c876e5313a3adcea0",
+      "license": "MiraVerse Original First-Party Asset (All Rights Reserved)",
+      "humanReviewRequired": false
+    }
+  ]
+}

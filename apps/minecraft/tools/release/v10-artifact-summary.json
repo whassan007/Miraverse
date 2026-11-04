@@ -1,19 +1,19 @@
 {
   "schemaVersion": "10.0.0",
-  "generatedAt": "2026-11-04T07:04:08.531Z",
+  "generatedAt": "2026-11-04T07:05:11.266Z",
   "hostPlatform": "Linux aarch64 (Ubuntu 24.04, NVIDIA GB10)",
   "artifacts": {
     "miraverse.mcaddon": {
       "path": "apps/minecraft/dist/miraverse.mcaddon",
       "status": "READY_AND_VERIFIED",
-      "sizeBytes": 166557,
-      "sha256": "087e81183677741559876c6aeb339a4adbc4d8169c1b86c9f3e83eb5ec1e36fd"
+      "sizeBytes": 198565,
+      "sha256": "2baefc70e9c9ea0c565296abd222e6d880d5389b25c11becbbc1eb9974886fa7"
     },
     "miraverse-sources.zip": {
       "path": "apps/minecraft/dist/miraverse-sources.zip",
       "status": "READY_AND_VERIFIED",
-      "sizeBytes": 90247,
-      "sha256": "5fdfb8c1d258a75160e1206a49b5c1f4d941acf708a89a8aebfc4f85afab1b2c"
+      "sizeBytes": 97202,
+      "sha256": "5cfeafa9fa835831f0741211ae1993cf11dd39d18dec3d825e1137626299d754"
     },
     "miraverse-adventure.mcworld": {
       "path": "apps/minecraft/dist/miraverse-adventure.mcworld",
