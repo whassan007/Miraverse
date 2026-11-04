@@ -1,0 +1,360 @@
+{
+  "country": "LB",
+  "interiors": [
+    {
+      "interiorId": "lb_interior_saj_kitchen",
+      "buildingId": "lb_teta_saj_bakery",
+      "nameEn": "Teta Nahla's Domed Saj Kitchen",
+      "entryPos": {
+        "x": 192,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "lb_saj_dome",
+          "blockId": "miraverse:lb_saj_hearth_block",
+          "offset": {
+            "x": 194,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Domed Iron Saj Griddle (Adult Supervised)"
+        },
+        {
+          "propId": "lb_dough_table",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 191,
+            "y": 65,
+            "z": 7
+          },
+          "labelEn": "Cedar Dough Rolling Table"
+        },
+        {
+          "propId": "lb_zaatar_rack",
+          "blockId": "miraverse:lb_zaatar_drying_rack",
+          "offset": {
+            "x": 195,
+            "y": 66,
+            "z": 6
+          },
+          "labelEn": "Wild Thyme & Sumac Drying Rack"
+        },
+        {
+          "propId": "lb_kitchen_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 193,
+            "y": 68,
+            "z": 7
+          },
+          "labelEn": "Warm Brass Kitchen Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "lb_interior_family_salon",
+      "buildingId": "lb_family_courtyard_house",
+      "nameEn": "Byblos Family Courtyard Salon",
+      "entryPos": {
+        "x": 212,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "lb_mosaic_floor",
+          "blockId": "miraverse:lb_mosaic_courtyard_tile",
+          "offset": {
+            "x": 212,
+            "y": 64,
+            "z": 8
+          },
+          "labelEn": "Levantine Geometric Courtyard Mosaic"
+        },
+        {
+          "propId": "lb_divan_sofa",
+          "blockId": "minecraft:red_wool",
+          "offset": {
+            "x": 214,
+            "y": 65,
+            "z": 10
+          },
+          "labelEn": "Woven Crimson Divan Seating"
+        },
+        {
+          "propId": "lb_story_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 210,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Family Heritage Storybook Stand"
+        }
+      ]
+    },
+    {
+      "interiorId": "lb_interior_souk_workshop",
+      "buildingId": "lb_old_souk_artisan_shop",
+      "nameEn": "Old Souk Olive Oil & Artisan Workshop",
+      "entryPos": {
+        "x": 188,
+        "y": 65,
+        "z": -12
+      },
+      "furnishings": [
+        {
+          "propId": "lb_olive_press",
+          "blockId": "minecraft:cauldron",
+          "offset": {
+            "x": 188,
+            "y": 65,
+            "z": -8
+          },
+          "labelEn": "Pressed Olive Oil Vat"
+        },
+        {
+          "propId": "lb_spice_counter",
+          "blockId": "minecraft:barrel",
+          "offset": {
+            "x": 190,
+            "y": 65,
+            "z": -9
+          },
+          "labelEn": "Sumac & Zaatar Spice Barrels"
+        },
+        {
+          "propId": "lb_discovery_chest",
+          "blockId": "minecraft:chest",
+          "offset": {
+            "x": 186,
+            "y": 65,
+            "z": -10
+          },
+          "labelEn": "Phoenician Keepsake Chest"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "npc:LB:teta_nahla",
+      "entityTypeId": "miraverse:mentor_lb",
+      "country": "LB",
+      "nameEn": "Teta Nahla",
+      "nameNative": "تيتا نهلة",
+      "role": "mentor",
+      "spawnPos": {
+        "x": 193,
+        "y": 65,
+        "z": 3
+      },
+      "defaultAnimation": "greeting",
+      "dialogueGreetingEn": "Ahlan wa sahlan! Welcome to Byblos Harbor, habibi. Let's gather fresh za'atar and bake warm man'oushe on the saj!",
+      "dialogueGreetingNative": "أهلاً وسهلاً في جبيل يا حبيبي! يلا نجمع الزعتر ونخبز منقوشة عالصاج.",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:LB:baker_tariq",
+      "entityTypeId": "miraverse:mentor_lb",
+      "country": "LB",
+      "nameEn": "Merchant Tariq",
+      "nameNative": "العم طارق",
+      "role": "merchant",
+      "spawnPos": {
+        "x": 189,
+        "y": 65,
+        "z": -11
+      },
+      "defaultAnimation": "idle",
+      "dialogueGreetingEn": "Bring me fragrant mountain zaatar and sumac, and I will trade you fine pressed olive oil and wheat flour!",
+      "dialogueGreetingNative": "جيبلي زعتر وسماق بلدي وبعطيك أطيب زيت زيتون وطحين!",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:LB:artisan_nadia",
+      "entityTypeId": "miraverse:mentor_lb",
+      "country": "LB",
+      "nameEn": "Stonemason Nadia",
+      "nameNative": "البنّاءة نادية",
+      "role": "artisan",
+      "spawnPos": {
+        "x": 191,
+        "y": 65,
+        "z": 9
+      },
+      "defaultAnimation": "pointing",
+      "dialogueGreetingEn": "Help me restore the limestone arch and cedar shutters on Teta Nahla’s bakery corner!",
+      "dialogueGreetingNative": "ساعدني بترميم القنطرة الحجرية والدرفات الأرز بفرن تيتا نهلة!",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:LB:cousin_karim",
+      "entityTypeId": "miraverse:mentor_lb",
+      "country": "LB",
+      "nameEn": "Cousin Karim",
+      "nameNative": "ابن العم كريم",
+      "role": "cousin",
+      "spawnPos": {
+        "x": 212,
+        "y": 65,
+        "z": -14
+      },
+      "defaultAnimation": "walk",
+      "dialogueGreetingEn": "Look at the fishing boats along the Byblos sea-wall! Can you spot the three Lebanese Arabic words around the harbor?",
+      "dialogueGreetingNative": "شوف مراكب الصيد على بحر جبيل! بتقدر تلاقي الكلمات التلاتة بالمرفأ؟",
+      "humanReviewRequired": true
+    }
+  ],
+  "anchors": [
+    {
+      "anchorId": "anchor:LB:return_hub",
+      "country": "LB",
+      "kind": "portal",
+      "pos": {
+        "x": 200,
+        "y": 65,
+        "z": -24
+      },
+      "blockId": "miraverse:lb_carved_arch_stone",
+      "labelEn": "Return to MiraVerse Gateway Hub"
+    },
+    {
+      "anchorId": "anchor:LB:gather_zaatar",
+      "country": "LB",
+      "kind": "gather_node",
+      "pos": {
+        "x": 182,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "miraverse:lb_zaatar_drying_rack",
+      "labelEn": "Gather Wild Mountain Zaatar",
+      "labelNative": "زعتر بلدي",
+      "linkedItemId": "miraverse:lb_zaatar"
+    },
+    {
+      "anchorId": "anchor:LB:gather_sumac",
+      "country": "LB",
+      "kind": "gather_node",
+      "pos": {
+        "x": 185,
+        "y": 65,
+        "z": -4
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather Crimson Sumac Jar",
+      "labelNative": "سماق",
+      "linkedItemId": "miraverse:lb_sumac_jar"
+    },
+    {
+      "anchorId": "anchor:LB:trade_stall",
+      "country": "LB",
+      "kind": "trade_stall",
+      "pos": {
+        "x": 189,
+        "y": 65,
+        "z": -10
+      },
+      "blockId": "minecraft:emerald_block",
+      "labelEn": "Trade with Merchant Tariq for Olive Oil & Flour",
+      "linkedItemId": "miraverse:lb_olive_oil"
+    },
+    {
+      "anchorId": "anchor:LB:saj_cooking",
+      "country": "LB",
+      "kind": "cooking_station",
+      "pos": {
+        "x": 194,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:lb_saj_hearth_block",
+      "labelEn": "Teta Nahla's Saj Hearth (Bake Man'oushe)",
+      "labelNative": "صاج المنقوشة",
+      "linkedItemId": "miraverse:lb_manoushe"
+    },
+    {
+      "anchorId": "anchor:LB:restoration_site",
+      "country": "LB",
+      "kind": "restoration_site",
+      "pos": {
+        "x": 192,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:lb_byblos_limestone",
+      "labelEn": "Restore Byblos Saj Bakery Limestone Corner",
+      "linkedItemId": "miraverse:lb_limestone_block"
+    },
+    {
+      "anchorId": "anchor:LB:word_saj",
+      "country": "LB",
+      "kind": "word_object",
+      "pos": {
+        "x": 195,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:lb_saj_hearth_block",
+      "labelEn": "Word Object: Saj (Domed Griddle)",
+      "labelNative": "صاج",
+      "transliteration": "ṣāj"
+    },
+    {
+      "anchorId": "anchor:LB:word_zaatar",
+      "country": "LB",
+      "kind": "word_object",
+      "pos": {
+        "x": 183,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "miraverse:lb_zaatar_drying_rack",
+      "labelEn": "Word Object: Zaatar (Wild Thyme Blend)",
+      "labelNative": "زعتر",
+      "transliteration": "za'tar"
+    },
+    {
+      "anchorId": "anchor:LB:word_bahr",
+      "country": "LB",
+      "kind": "word_object",
+      "pos": {
+        "x": 212,
+        "y": 64,
+        "z": -16
+      },
+      "blockId": "miraverse:lb_harbor_bollard",
+      "labelEn": "Word Object: Bahr (Mediterranean Sea)",
+      "labelNative": "بحر",
+      "transliteration": "baḥr"
+    },
+    {
+      "anchorId": "anchor:LB:private_plot",
+      "country": "LB",
+      "kind": "plot_stone",
+      "pos": {
+        "x": 232,
+        "y": 65,
+        "z": 20
+      },
+      "blockId": "miraverse:lb_mosaic_courtyard_tile",
+      "labelEn": "Byblos Explorer Private Building Plot"
+    },
+    {
+      "anchorId": "anchor:LB:optional_cedar_keepsake",
+      "country": "LB",
+      "kind": "optional_collectible",
+      "pos": {
+        "x": 198,
+        "y": 66,
+        "z": 24
+      },
+      "blockId": "minecraft:chest",
+      "labelEn": "Optional Collectible: Carved Cedar Keepsake",
+      "linkedItemId": "miraverse:lb_cedar_sapling"
+    }
+  ]
+}
