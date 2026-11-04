@@ -1,0 +1,336 @@
+{
+  "lang": "ar-LB",
+  "count": 30,
+  "entries": [
+    {
+      "word": "تيتا",
+      "translit": "tayta",
+      "en": "grandmother",
+      "entryId": "vocab:ar-LB:1",
+      "propBindingId": "prop:ar-LB:vocab_1",
+      "synonymsEn": [
+        "grandmother"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "جَدّو",
+      "translit": "jaddō",
+      "en": "grandfather",
+      "entryId": "vocab:ar-LB:2",
+      "propBindingId": "prop:ar-LB:vocab_2",
+      "synonymsEn": [
+        "grandfather"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "عيلة",
+      "translit": "'ēla",
+      "en": "family",
+      "entryId": "vocab:ar-LB:3",
+      "propBindingId": "prop:ar-LB:vocab_3",
+      "synonymsEn": [
+        "family"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "أبُو",
+      "translit": "abū",
+      "en": "father",
+      "entryId": "vocab:ar-LB:4",
+      "propBindingId": "prop:ar-LB:vocab_4",
+      "synonymsEn": [
+        "father"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "إمّو",
+      "translit": "emmō",
+      "en": "mother",
+      "entryId": "vocab:ar-LB:5",
+      "propBindingId": "prop:ar-LB:vocab_5",
+      "synonymsEn": [
+        "mother"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "أخي",
+      "translit": "akhi",
+      "en": "my brother",
+      "entryId": "vocab:ar-LB:6",
+      "propBindingId": "prop:ar-LB:vocab_6",
+      "synonymsEn": [
+        "my brother"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "أختي",
+      "translit": "ukhti",
+      "en": "my sister",
+      "entryId": "vocab:ar-LB:7",
+      "propBindingId": "prop:ar-LB:vocab_7",
+      "synonymsEn": [
+        "my sister"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "زيت زيتون",
+      "translit": "zayt zaytūn",
+      "en": "olive oil",
+      "entryId": "vocab:ar-LB:8",
+      "propBindingId": "prop:ar-LB:vocab_8",
+      "synonymsEn": [
+        "olive oil"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "زعتر",
+      "translit": "za‘tar",
+      "en": "za'atar (herb blend)",
+      "entryId": "vocab:ar-LB:9",
+      "propBindingId": "prop:ar-LB:vocab_9",
+      "synonymsEn": [
+        "za'atar (herb blend)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "منقوشة",
+      "translit": "manqōsha",
+      "en": "maqluba / upside-down dish",
+      "entryId": "vocab:ar-LB:10",
+      "propBindingId": "prop:ar-LB:vocab_10",
+      "synonymsEn": [
+        "maqluba / upside-down dish"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "صاج",
+      "translit": "sāj",
+      "en": "convex griddle for bread or meat",
+      "entryId": "vocab:ar-LB:11",
+      "propBindingId": "prop:ar-LB:vocab_11",
+      "synonymsEn": [
+        "convex griddle for bread or meat"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "كِسْكِس",
+      "translit": "kiskis",
+      "en": "couscous",
+      "entryId": "vocab:ar-LB:12",
+      "propBindingId": "prop:ar-LB:vocab_12",
+      "synonymsEn": [
+        "couscous"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "فتّة",
+      "translit": "fatta",
+      "en": "bread and yogurt/curd dish",
+      "entryId": "vocab:ar-LB:13",
+      "propBindingId": "prop:ar-LB:vocab_13",
+      "synonymsEn": [
+        "bread and yogurt/curd dish"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "محشي",
+      "translit": "mahshi",
+      "en": "stuffed vegetables (e.g., grape leaves)",
+      "entryId": "vocab:ar-LB:14",
+      "propBindingId": "prop:ar-LB:vocab_14",
+      "synonymsEn": [
+        "stuffed vegetables (e.g., grape leaves)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "بُرْغُول",
+      "translit": "burgūl",
+      "en": "cracked wheat",
+      "entryId": "vocab:ar-LB:15",
+      "propBindingId": "prop:ar-LB:vocab_15",
+      "synonymsEn": [
+        "cracked wheat"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "لبن رايب",
+      "translit": "laban rāyeb",
+      "en": "fermented buttermilk",
+      "entryId": "vocab:ar-LB:16",
+      "propBindingId": "prop:ar-LB:vocab_16",
+      "synonymsEn": [
+        "fermented buttermilk"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "زبادي",
+      "translit": "zabādī",
+      "en": "yogurt",
+      "entryId": "vocab:ar-LB:17",
+      "propBindingId": "prop:ar-LB:vocab_17",
+      "synonymsEn": [
+        "yogurt"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "جبن بحري",
+      "translit": "jibn baḥrī",
+      "en": "white brine cheese (like halloumi)",
+      "entryId": "vocab:ar-LB:18",
+      "propBindingId": "prop:ar-LB:vocab_18",
+      "synonymsEn": [
+        "white brine cheese (like halloumi)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "زيت زعتر",
+      "translit": "zayt za‘tar",
+      "en": "za'atar mixed with olive oil",
+      "entryId": "vocab:ar-LB:19",
+      "propBindingId": "prop:ar-LB:vocab_19",
+      "synonymsEn": [
+        "za'atar mixed with olive oil"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "فتايت",
+      "translit": "fataīt",
+      "en": "small fried dough balls (snack)",
+      "entryId": "vocab:ar-LB:20",
+      "propBindingId": "prop:ar-LB:vocab_20",
+      "synonymsEn": [
+        "small fried dough balls (snack)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "مغلوطة",
+      "translit": "maghlūta",
+      "en": "stuffed vine leaves (dolma)",
+      "entryId": "vocab:ar-LB:21",
+      "propBindingId": "prop:ar-LB:vocab_21",
+      "synonymsEn": [
+        "stuffed vine leaves (dolma)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "كشكة",
+      "translit": "kashka",
+      "en": "fermented wheat and yogurt dip",
+      "entryId": "vocab:ar-LB:22",
+      "propBindingId": "prop:ar-LB:vocab_22",
+      "synonymsEn": [
+        "fermented wheat and yogurt dip"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "بُرّ",
+      "translit": "burr",
+      "en": "wheat berries",
+      "entryId": "vocab:ar-LB:23",
+      "propBindingId": "prop:ar-LB:vocab_23",
+      "synonymsEn": [
+        "wheat berries"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "سُمّاق",
+      "translit": "summāq",
+      "en": "sumac (spice)",
+      "entryId": "vocab:ar-LB:24",
+      "propBindingId": "prop:ar-LB:vocab_24",
+      "synonymsEn": [
+        "sumac (spice)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "قِطْف",
+      "translit": "qiṭf",
+      "en": "grape harvest / picking grapes",
+      "entryId": "vocab:ar-LB:25",
+      "propBindingId": "prop:ar-LB:vocab_25",
+      "synonymsEn": [
+        "grape harvest / picking grapes"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "عنب",
+      "translit": "'inab",
+      "en": "grapes",
+      "entryId": "vocab:ar-LB:26",
+      "propBindingId": "prop:ar-LB:vocab_26",
+      "synonymsEn": [
+        "grapes"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "زيتون",
+      "translit": "zaytūn",
+      "en": "olives",
+      "entryId": "vocab:ar-LB:27",
+      "propBindingId": "prop:ar-LB:vocab_27",
+      "synonymsEn": [
+        "olives"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "مخلل",
+      "translit": "mukhallal",
+      "en": "pickles",
+      "entryId": "vocab:ar-LB:28",
+      "propBindingId": "prop:ar-LB:vocab_28",
+      "synonymsEn": [
+        "pickles"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "بصل",
+      "translit": "baṣal",
+      "en": "onion",
+      "entryId": "vocab:ar-LB:29",
+      "propBindingId": "prop:ar-LB:vocab_29",
+      "synonymsEn": [
+        "onion"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "ثوم",
+      "translit": "thōm",
+      "en": "garlic",
+      "entryId": "vocab:ar-LB:30",
+      "propBindingId": "prop:ar-LB:vocab_30",
+      "synonymsEn": [
+        "garlic"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    }
+  ]
+}

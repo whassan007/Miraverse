@@ -1,0 +1,336 @@
+{
+  "lang": "ar-EG",
+  "count": 30,
+  "entries": [
+    {
+      "word": "تيتا",
+      "translit": "tayta",
+      "en": "grandmother",
+      "entryId": "vocab:ar-EG:1",
+      "propBindingId": "prop:ar-EG:vocab_1",
+      "synonymsEn": [
+        "grandmother"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "جَدّي",
+      "translit": "gaddi",
+      "en": "grandfather",
+      "entryId": "vocab:ar-EG:2",
+      "propBindingId": "prop:ar-EG:vocab_2",
+      "synonymsEn": [
+        "grandfather"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "عيلة",
+      "translit": "'eila",
+      "en": "family",
+      "entryId": "vocab:ar-EG:3",
+      "propBindingId": "prop:ar-EG:vocab_3",
+      "synonymsEn": [
+        "family"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "بابا",
+      "translit": "baba",
+      "en": "dad",
+      "entryId": "vocab:ar-EG:4",
+      "propBindingId": "prop:ar-EG:vocab_4",
+      "synonymsEn": [
+        "dad"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "ماما",
+      "translit": "mama",
+      "en": "mom",
+      "entryId": "vocab:ar-EG:5",
+      "propBindingId": "prop:ar-EG:vocab_5",
+      "synonymsEn": [
+        "mom"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "أخي",
+      "translit": "akhi",
+      "en": "my brother",
+      "entryId": "vocab:ar-EG:6",
+      "propBindingId": "prop:ar-EG:vocab_6",
+      "synonymsEn": [
+        "my brother"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "أختي",
+      "translit": "ukhti",
+      "en": "my sister",
+      "entryId": "vocab:ar-EG:7",
+      "propBindingId": "prop:ar-EG:vocab_7",
+      "synonymsEn": [
+        "my sister"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "كشري",
+      "translit": "kushari",
+      "en": "koshari (rice & lentil dish)",
+      "entryId": "vocab:ar-EG:8",
+      "propBindingId": "prop:ar-EG:vocab_8",
+      "synonymsEn": [
+        "koshari (rice & lentil dish)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "فانوس",
+      "translit": "fanous",
+      "en": "lantern",
+      "entryId": "vocab:ar-EG:9",
+      "propBindingId": "prop:ar-EG:vocab_9",
+      "synonymsEn": [
+        "lantern"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "رمضان",
+      "translit": "Ramadan",
+      "en": "Ramadan",
+      "entryId": "vocab:ar-EG:10",
+      "propBindingId": "prop:ar-EG:vocab_10",
+      "synonymsEn": [
+        "ramadan"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "عدس",
+      "translit": "'adas",
+      "en": "lentils",
+      "entryId": "vocab:ar-EG:11",
+      "propBindingId": "prop:ar-EG:vocab_11",
+      "synonymsEn": [
+        "lentils"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "بصل",
+      "translit": "bassel",
+      "en": "onion",
+      "entryId": "vocab:ar-EG:12",
+      "propBindingId": "prop:ar-EG:vocab_12",
+      "synonymsEn": [
+        "onion"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "ثوم",
+      "translit": "thoom",
+      "en": "garlic",
+      "entryId": "vocab:ar-EG:13",
+      "propBindingId": "prop:ar-EG:vocab_13",
+      "synonymsEn": [
+        "garlic"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "طماطم",
+      "translit": "toma'tem",
+      "en": "tomatoes",
+      "entryId": "vocab:ar-EG:14",
+      "propBindingId": "prop:ar-EG:vocab_14",
+      "synonymsEn": [
+        "tomatoes"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "بطاطس",
+      "translit": "bata'tis",
+      "en": "potatoes",
+      "entryId": "vocab:ar-EG:15",
+      "propBindingId": "prop:ar-EG:vocab_15",
+      "synonymsEn": [
+        "potatoes"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "أرز",
+      "translit": "arez",
+      "en": "rice",
+      "entryId": "vocab:ar-EG:16",
+      "propBindingId": "prop:ar-EG:vocab_16",
+      "synonymsEn": [
+        "rice"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "فول",
+      "translit": "ful",
+      "en": "fava beans",
+      "entryId": "vocab:ar-EG:17",
+      "propBindingId": "prop:ar-EG:vocab_17",
+      "synonymsEn": [
+        "fava beans"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "مسقعة",
+      "translit": "mesa'qa",
+      "en": "moussaka (eggplant dish)",
+      "entryId": "vocab:ar-EG:18",
+      "propBindingId": "prop:ar-EG:vocab_18",
+      "synonymsEn": [
+        "moussaka (eggplant dish)"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "كبدة",
+      "translit": "kibda",
+      "en": "liver",
+      "entryId": "vocab:ar-EG:19",
+      "propBindingId": "prop:ar-EG:vocab_19",
+      "synonymsEn": [
+        "liver"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "سمك",
+      "translit": "smeek",
+      "en": "fish",
+      "entryId": "vocab:ar-EG:20",
+      "propBindingId": "prop:ar-EG:vocab_20",
+      "synonymsEn": [
+        "fish"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "دجاج",
+      "translit": "dajaj",
+      "en": "chicken",
+      "entryId": "vocab:ar-EG:21",
+      "propBindingId": "prop:ar-EG:vocab_21",
+      "synonymsEn": [
+        "chicken"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "عسل",
+      "translit": "'asal",
+      "en": "honey",
+      "entryId": "vocab:ar-EG:22",
+      "propBindingId": "prop:ar-EG:vocab_22",
+      "synonymsEn": [
+        "honey"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "لبن",
+      "translit": "laban",
+      "en": "yogurt/milk",
+      "entryId": "vocab:ar-EG:23",
+      "propBindingId": "prop:ar-EG:vocab_23",
+      "synonymsEn": [
+        "yogurt/milk"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "جبن",
+      "translit": "gibn",
+      "en": "cheese",
+      "entryId": "vocab:ar-EG:24",
+      "propBindingId": "prop:ar-EG:vocab_24",
+      "synonymsEn": [
+        "cheese"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "خبز",
+      "translit": "khubz",
+      "en": "bread",
+      "entryId": "vocab:ar-EG:25",
+      "propBindingId": "prop:ar-EG:vocab_25",
+      "synonymsEn": [
+        "bread"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "فطير",
+      "translit": "fateer",
+      "en": "flaky pastry",
+      "entryId": "vocab:ar-EG:26",
+      "propBindingId": "prop:ar-EG:vocab_26",
+      "synonymsEn": [
+        "flaky pastry"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "مربى",
+      "translit": "murabba",
+      "en": "jam",
+      "entryId": "vocab:ar-EG:27",
+      "propBindingId": "prop:ar-EG:vocab_27",
+      "synonymsEn": [
+        "jam"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "تفاح",
+      "translit": "tuffah",
+      "en": "apple",
+      "entryId": "vocab:ar-EG:28",
+      "propBindingId": "prop:ar-EG:vocab_28",
+      "synonymsEn": [
+        "apple"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "موز",
+      "translit": "mawz",
+      "en": "banana",
+      "entryId": "vocab:ar-EG:29",
+      "propBindingId": "prop:ar-EG:vocab_29",
+      "synonymsEn": [
+        "banana"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    },
+    {
+      "word": "عنب",
+      "translit": "'inab",
+      "en": "grapes",
+      "entryId": "vocab:ar-EG:30",
+      "propBindingId": "prop:ar-EG:vocab_30",
+      "synonymsEn": [
+        "grapes"
+      ],
+      "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW"
+    }
+  ]
+}
