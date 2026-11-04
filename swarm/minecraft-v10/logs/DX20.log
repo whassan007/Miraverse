@@ -1,0 +1,16 @@
+=== AGENT DX20 (DGX · W4) ===
+Timestamp: 2026-11-04T07:02:03.178Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (58.67 tok/s)
+Branch: minecraft-v10/DX20
+Agent Commit SHA: 0eb34dd
+Integration Merge SHA: 0bfa2ae
+Owned Paths: apps/minecraft/tools/reproducibility/
+Test Command: node apps/minecraft/tools/reproducibility/check-reproducibility.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/reproducibility/check-reproducibility.mjs, apps/minecraft/tools/reproducibility/reproducibility-digests.json
+Blockers: None
+--- STDOUT/STDERR ---
+PASS: DX20 verified deterministic SHA-256 digests across 9 core v10 manifests.
+
+DONE DX20 0eb34dd apps/minecraft/tools/reproducibility/check-reproducibility.mjs
