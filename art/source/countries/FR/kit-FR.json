@@ -1,0 +1,71 @@
+{
+  "country": "FR",
+  "region": "Vieux Lyon & Traboules",
+  "architectureKit": [
+    {
+      "propId": "fr_boulangerie_facade",
+      "name": "Boulangerie du Soleil Timber & Ochre Facade",
+      "dimensionsMeters": [
+        8.4,
+        4.6,
+        5.6
+      ],
+      "palette": [
+        "#D9A05B",
+        "#8C3B2B"
+      ]
+    },
+    {
+      "propId": "fr_mansard_slate_roof",
+      "name": "Lyon Mansard Slate Roof",
+      "dimensionsMeters": [
+        9,
+        2.8,
+        6.2
+      ],
+      "palette": [
+        "#3B6EA5",
+        "#475569"
+      ]
+    },
+    {
+      "propId": "fr_carved_oak_shutters",
+      "name": "Carved Vieux Lyon Oak Shutters",
+      "dimensionsMeters": [
+        1.2,
+        1.8,
+        0.15
+      ],
+      "palette": [
+        "#854D0E",
+        "#E8A838"
+      ]
+    },
+    {
+      "propId": "fr_traboule_archway",
+      "name": "Renaissance Traboule Covered Archway",
+      "dimensionsMeters": [
+        3.8,
+        4.2,
+        6
+      ],
+      "palette": [
+        "#E2D9C8",
+        "#C8B6A6"
+      ]
+    },
+    {
+      "propId": "fr_galette_oven",
+      "name": "Wood-Fired Boulangerie Brick Oven",
+      "dimensionsMeters": [
+        2.2,
+        2.1,
+        1.8
+      ],
+      "palette": [
+        "#9A3412",
+        "#F59E0B"
+      ]
+    }
+  ]
+}
