@@ -1,0 +1,542 @@
+{
+  "country": "KR",
+  "titleEn": "Jeonju Hanok Village",
+  "titleNative": "전주 한옥마을 · 대한민국",
+  "origin": {
+    "x": 800,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 800,
+    "y": 65,
+    "z": -18
+  },
+  "returnPortalPos": {
+    "x": 800,
+    "y": 65,
+    "z": -24
+  },
+  "privatePlotOrigin": {
+    "x": 832,
+    "y": 65,
+    "z": 20
+  },
+  "privatePlotRadius": 8,
+  "restorationOrigin": {
+    "x": 792,
+    "y": 65,
+    "z": 8
+  },
+  "restorationRequiredItems": [
+    {
+      "itemId": "miraverse:kr_giwa_tile",
+      "count": 3
+    }
+  ],
+  "exteriors": [
+    {
+      "buildingId": "kr_mentor_kitchen_house",
+      "nameEn": "Halmeoni's Culinary House",
+      "nameNative": "전주 한옥마을 · 대한민국",
+      "origin": {
+        "x": 788,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_pine_beam_bracket",
+      "hasInterior": true,
+      "interiorId": "kr_int_kitchen"
+    },
+    {
+      "buildingId": "kr_family_courtyard",
+      "nameEn": "Jeonju Hanok Village Family Courtyard",
+      "nameNative": "전주 한옥마을 · 대한민국",
+      "origin": {
+        "x": 806,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_pine_beam_bracket",
+      "hasInterior": true,
+      "interiorId": "kr_int_salon"
+    },
+    {
+      "buildingId": "kr_artisan_workshop",
+      "nameEn": "Jeonju Hanok Village Artisan Workshop",
+      "nameNative": "전주 한옥마을 · 대한민국",
+      "origin": {
+        "x": 784,
+        "y": 64,
+        "z": -12
+      },
+      "size": {
+        "x": 10,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_pine_beam_bracket",
+      "hasInterior": true,
+      "interiorId": "kr_int_workshop"
+    },
+    {
+      "buildingId": "kr_market_pavilion",
+      "nameEn": "Jeonju Hanok Village Market Bazaar Pavilion",
+      "nameNative": "전주 한옥마을 · 대한민국",
+      "origin": {
+        "x": 810,
+        "y": 64,
+        "z": -14
+      },
+      "size": {
+        "x": 11,
+        "y": 6,
+        "z": 9
+      },
+      "wallBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_pine_beam_bracket",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "kr_heritage_tower",
+      "nameEn": "Jeonju Hanok Village Heritage Landmark Gate",
+      "nameNative": "전주 한옥마을 · 대한민국",
+      "origin": {
+        "x": 796,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 9,
+        "y": 10,
+        "z": 9
+      },
+      "wallBlock": "miraverse:kr_hanji_sliding_screen",
+      "roofBlock": "miraverse:kr_giwa_eave_tile",
+      "trimBlock": "miraverse:kr_pine_beam_bracket",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "kr_int_kitchen",
+      "buildingId": "kr_mentor_kitchen_house",
+      "nameEn": "Halmeoni's Kitchen Interior",
+      "entryPos": {
+        "x": 792,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "kr_hearth",
+          "blockId": "miraverse:kr_songpyeon_steamer_block",
+          "offset": {
+            "x": 794,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Pine-Steamed Songpyeon Cooking Station"
+        },
+        {
+          "propId": "kr_prep_table",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 791,
+            "y": 65,
+            "z": 7
+          },
+          "labelEn": "Preparation Table"
+        },
+        {
+          "propId": "kr_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 793,
+            "y": 67,
+            "z": 6
+          },
+          "labelEn": "Warm Kitchen Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "kr_int_salon",
+      "buildingId": "kr_family_courtyard",
+      "nameEn": "Jeonju Hanok Village Family Salon Interior",
+      "entryPos": {
+        "x": 812,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "kr_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 810,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Storybook Stand"
+        },
+        {
+          "propId": "kr_carpet",
+          "blockId": "minecraft:red_carpet",
+          "offset": {
+            "x": 811,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Woven Courtyard Rug"
+        }
+      ]
+    },
+    {
+      "interiorId": "kr_int_workshop",
+      "buildingId": "kr_artisan_workshop",
+      "nameEn": "Jeonju Hanok Village Artisan Workshop Interior",
+      "entryPos": {
+        "x": 788,
+        "y": 65,
+        "z": -12
+      },
+      "furnishings": [
+        {
+          "propId": "kr_barrel",
+          "blockId": "minecraft:barrel",
+          "offset": {
+            "x": 790,
+            "y": 65,
+            "z": -9
+          },
+          "labelEn": "Artisan Supply Barrel"
+        },
+        {
+          "propId": "kr_workbench",
+          "blockId": "minecraft:stonecutter_block",
+          "offset": {
+            "x": 789,
+            "y": 65,
+            "z": -8
+          },
+          "labelEn": "Craftsman Workbench"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "npc:KR:mentor",
+      "entityTypeId": "miraverse:mentor_kr",
+      "country": "KR",
+      "nameEn": "Halmeoni",
+      "nameNative": "할머니",
+      "role": "mentor",
+      "spawnPos": {
+        "x": 793,
+        "y": 65,
+        "z": 3
+      },
+      "defaultAnimation": "greeting",
+      "dialogueGreetingEn": "Welcome to Jeonju Hanok Village! Let's gather ingredients, trade at the market, cook Pine-Steamed Songpyeon, restore our landmark, and learn 3 cultural words.",
+      "dialogueGreetingNative": "전주 한옥마을 · 대한민국",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:KR:merchant",
+      "entityTypeId": "miraverse:mentor_kr",
+      "country": "KR",
+      "nameEn": "Jeonju Hanok Village Market Merchant",
+      "nameNative": "할머니",
+      "role": "merchant",
+      "spawnPos": {
+        "x": 789,
+        "y": 65,
+        "z": -11
+      },
+      "defaultAnimation": "idle",
+      "dialogueGreetingEn": "Trade your gathered herbs and ingredients for specialty cooking supplies!",
+      "dialogueGreetingNative": "전주 한옥마을 · 대한민국",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:KR:artisan",
+      "entityTypeId": "miraverse:mentor_kr",
+      "country": "KR",
+      "nameEn": "Jeonju Hanok Village Master Artisan",
+      "nameNative": "할머니",
+      "role": "artisan",
+      "spawnPos": {
+        "x": 791,
+        "y": 65,
+        "z": 9
+      },
+      "defaultAnimation": "pointing",
+      "dialogueGreetingEn": "Place restoration blocks on our damaged landmark to see the before/after transformation!",
+      "dialogueGreetingNative": "전주 한옥마을 · 대한민국",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:KR:cousin",
+      "entityTypeId": "miraverse:mentor_kr",
+      "country": "KR",
+      "nameEn": "Jeonju Hanok Village Cousin Guide",
+      "nameNative": "할머니",
+      "role": "cousin",
+      "spawnPos": {
+        "x": 812,
+        "y": 65,
+        "z": -14
+      },
+      "defaultAnimation": "walk",
+      "dialogueGreetingEn": "Explore the streets and discover the three cultural vocabulary objects!",
+      "dialogueGreetingNative": "전주 한옥마을 · 대한민국",
+      "humanReviewRequired": true
+    }
+  ],
+  "anchors": [
+    {
+      "anchorId": "anchor:KR:return_hub",
+      "country": "KR",
+      "kind": "portal",
+      "pos": {
+        "x": 800,
+        "y": 65,
+        "z": -24
+      },
+      "blockId": "miraverse:kr_pine_beam_bracket",
+      "labelEn": "Return to MiraVerse Gateway Hub"
+    },
+    {
+      "anchorId": "anchor:KR:gather_1",
+      "country": "KR",
+      "kind": "gather_node",
+      "pos": {
+        "x": 782,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather miraverse:kr_rice_flour",
+      "linkedItemId": "miraverse:kr_rice_flour"
+    },
+    {
+      "anchorId": "anchor:KR:gather_2",
+      "country": "KR",
+      "kind": "gather_node",
+      "pos": {
+        "x": 785,
+        "y": 65,
+        "z": -4
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather miraverse:kr_pine_needles",
+      "linkedItemId": "miraverse:kr_pine_needles"
+    },
+    {
+      "anchorId": "anchor:KR:trade_stall",
+      "country": "KR",
+      "kind": "trade_stall",
+      "pos": {
+        "x": 789,
+        "y": 65,
+        "z": -10
+      },
+      "blockId": "minecraft:emerald_block",
+      "labelEn": "Market Trade Stall",
+      "linkedItemId": "miraverse:kr_sesame_honey"
+    },
+    {
+      "anchorId": "anchor:KR:cooking_station",
+      "country": "KR",
+      "kind": "cooking_station",
+      "pos": {
+        "x": 794,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:kr_songpyeon_steamer_block",
+      "labelEn": "Cook Pine-Steamed Songpyeon",
+      "linkedItemId": "miraverse:kr_songpyeon"
+    },
+    {
+      "anchorId": "anchor:KR:restoration_site",
+      "country": "KR",
+      "kind": "restoration_site",
+      "pos": {
+        "x": 792,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:kr_hanji_sliding_screen",
+      "labelEn": "Restore Jeonju Hanok Village Landmark",
+      "linkedItemId": "miraverse:kr_giwa_tile"
+    },
+    {
+      "anchorId": "anchor:KR:word_1",
+      "country": "KR",
+      "kind": "word_object",
+      "pos": {
+        "x": 795,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:kr_songpyeon_steamer_block",
+      "labelEn": "Word: Traditional Korean House",
+      "labelNative": "한옥",
+      "transliteration": "hanok"
+    },
+    {
+      "anchorId": "anchor:KR:word_2",
+      "country": "KR",
+      "kind": "word_object",
+      "pos": {
+        "x": 783,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "miraverse:kr_pine_beam_bracket",
+      "labelEn": "Word: Half-Moon Rice Cake",
+      "labelNative": "송편",
+      "transliteration": "songpyeon"
+    },
+    {
+      "anchorId": "anchor:KR:word_3",
+      "country": "KR",
+      "kind": "word_object",
+      "pos": {
+        "x": 812,
+        "y": 64,
+        "z": -16
+      },
+      "blockId": "miraverse:kr_giwa_eave_tile",
+      "labelEn": "Word: Grandmother",
+      "labelNative": "할머니",
+      "transliteration": "halmeoni"
+    },
+    {
+      "anchorId": "anchor:KR:private_plot",
+      "country": "KR",
+      "kind": "plot_stone",
+      "pos": {
+        "x": 832,
+        "y": 65,
+        "z": 20
+      },
+      "blockId": "miraverse:kr_pine_beam_bracket",
+      "labelEn": "Jeonju Hanok Village Explorer Private Building Plot"
+    },
+    {
+      "anchorId": "anchor:KR:optional_collectible",
+      "country": "KR",
+      "kind": "optional_collectible",
+      "pos": {
+        "x": 798,
+        "y": 66,
+        "z": 24
+      },
+      "blockId": "minecraft:chest",
+      "labelEn": "Optional Keepsake (miraverse:kr_celadon_cup)",
+      "linkedItemId": "miraverse:kr_celadon_cup"
+    }
+  ],
+  "restorationStages": [
+    {
+      "stage": 0,
+      "descriptionEn": "Before Restoration: Damaged masonry and missing architectural trim.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "descriptionEn": "Stage 1 Restoration: Structural walls rebuilt.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:kr_hanji_sliding_screen"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:kr_pine_beam_bracket"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "descriptionEn": "Stage 2 Restoration: Complete roof, shutters, and lanterns restored!",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:kr_hanji_sliding_screen"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:kr_pine_beam_bracket"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "miraverse:kr_giwa_eave_tile"
+        }
+      ]
+    }
+  ]
+}
