@@ -204,7 +204,7 @@ function ByblosWorld.build(parent: Instance, center: Vector3)
 	local souk = model(parent, "lb_souk_market")
 	local spices = { Color3.fromRGB(140, 30, 40), Color3.fromRGB(85, 107, 47), Color3.fromRGB(214, 160, 50) }
 	for i = 0, 5 do
-		stall(souk, at(44, -30 + i * 12, 90 + 180), if i % 2 == 0 then TEAL else ORANGE, spices)
+		stall(souk, at(44, -30 + i * 12, 90), if i % 2 == 0 then TEAL else ORANGE, spices)
 	end
 	local soukGate = arch(souk, "SoukGate", at(40, -38, 90), 12, 10)
 	local lintel = soukGate:FindFirstChild("Lintel")
