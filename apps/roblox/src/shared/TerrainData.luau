@@ -1856,9 +1856,38 @@ TerrainData.RECORDS = {
 	},
 } :: { [string]: TerrainRecord }
 
+-- Legacy compatibility lookup table (TerrainData.DESTINATIONS)
+TerrainData.DESTINATIONS = {
+	LB_byblos = TerrainData.RECORDS.byblos,
+	LB_mount_lebanon = TerrainData.RECORDS.mount_lebanon,
+	LB_beirut = TerrainData.RECORDS.beirut,
+	EG_cairo = TerrainData.RECORDS.cairo,
+	EG_alexandria = TerrainData.RECORDS.alexandria,
+	EG_aswan = TerrainData.RECORDS.aswan,
+	IQ_baghdad = TerrainData.RECORDS.baghdad,
+	IQ_erbil = TerrainData.RECORDS.erbil,
+	IQ_basra = TerrainData.RECORDS.basra,
+	KR_jeonju = TerrainData.RECORDS.jeonju,
+	KR_seoul = TerrainData.RECORDS.seoul,
+	KR_busan = TerrainData.RECORDS.busan,
+	FR_lyon = TerrainData.RECORDS.lyon,
+	FR_paris = TerrainData.RECORDS.paris,
+	FR_marseille = TerrainData.RECORDS.marseille,
+	DE_rhine = TerrainData.RECORDS.rhine_valley,
+	CN_wuling = TerrainData.RECORDS.wuling_valley,
+	JP_tohoru = TerrainData.RECORDS.tohoku_waystation,
+	RU_svetloyar = TerrainData.RECORDS.svetloyar,
+	UA_kyiv = TerrainData.RECORDS.kyiv,
+	MA_marrakesh = TerrainData.RECORDS.marrakesh_atlas,
+} :: { [string]: TerrainRecord }
+
 function TerrainData.getRecord(locationId: string): TerrainRecord?
 	if type(locationId) ~= "string" then
 		return nil
+	end
+	local direct = (TerrainData.DESTINATIONS :: any)[locationId]
+	if direct then
+		return direct
 	end
 	local lower = string.lower(locationId)
 	local aliases: { [string]: string } = {
@@ -1868,5 +1897,7 @@ function TerrainData.getRecord(locationId: string): TerrainRecord?
 	local key = aliases[lower] or lower
 	return TerrainData.RECORDS[key]
 end
+
+TerrainData.get = TerrainData.getRecord
 
 return TerrainData
