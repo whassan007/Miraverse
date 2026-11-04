@@ -18,6 +18,7 @@ export type Save = {
 	lastCountry: string?,
 	lastLocation: string?,
 	countries: { [string]: any },
+	inventory: { [string]: number }?,
 }
 
 local saves: { [number]: Save } = {}

@@ -43,6 +43,7 @@ local hud = UI.panel(gui, UDim2.fromScale(0.3, 0.14), UDim2.fromScale(0.35, 0.02
 hud.Visible = false
 local hudText = UI.label(hud, "", UDim2.fromScale(0.94, 0.5), UDim2.fromScale(0.03, 0.05))
 local playBtn: TextButton
+local lobbyButton: TextButton
 
 -- Stamp modal
 local modal = UI.panel(gui, UDim2.fromScale(0.4, 0.4), UDim2.fromScale(0.3, 0.3))
@@ -70,6 +71,7 @@ local function render(state: any)
 	picker.Visible = false
 	hud.Visible = true
 	playBtn.Visible = not state.hasStations and not state.stamp
+	lobbyButton.Visible = state.hasStations
 	if state.stamp then
 		hudText.Text = "Chapter complete! Stamp: " .. state.stamp
 	elseif state.hasStations and not state.met then
@@ -135,6 +137,11 @@ phraseShown.OnClientEvent:Connect(function(userId: any, text: any)
 		bb:Destroy()
 	end)
 end)
+
+lobbyButton = UI.button(hud, "Back to Lobby", UDim2.fromScale(0.5, 0.34), function()
+	(remotes:WaitForChild("GoToLobby") :: RemoteEvent):FireServer()
+end)
+lobbyButton.Position = UDim2.fromScale(0.25, 0.6)
 
 local stateChanged = remotes:WaitForChild("StateChanged") :: RemoteEvent
 local stationHint = remotes:WaitForChild("StationHint") :: RemoteEvent

@@ -186,6 +186,23 @@ local function nearStation(player: Player, cc: string, kind: string): (boolean, 
 end
 
 -- Runs the player's current challenge. Server-owned: the client can't choose or report it.
+-- Saves made before inventory was saved can lack items earned by completed challenges.
+local function repairInventory(s: Session, cc: string, challenge: any)
+	if challenge.type ~= "trade" then
+		return
+	end
+	local completed = chapterSave(s, cc).completed
+	s.save.inventory = s.save.inventory or {}
+	for _, need in challenge.needs or {} do
+		for _, earlier in getChallenges(cc) do
+			local output = earlier.recipe and earlier.recipe.output
+			if completed[earlier.id] and output == need.item and (s.save.inventory[need.item] or 0) < need.count then
+				s.save.inventory[need.item] = need.count
+			end
+		end
+	end
+end
+
 local function runCurrent(player: Player, requestedKind: string?): any
 	local s = sessionOf(player)
 	local cc = s.country
@@ -207,6 +224,7 @@ local function runCurrent(player: Player, requestedKind: string?): any
 	if not near then
 		return { ok = false, reason = "too-far", state = snapshot(player, s) }
 	end
+	repairInventory(s, cc, challenge)
 	s.busy = true
 	pushState(player, s)
 	local okRun, result = pcall(function()
@@ -294,9 +312,28 @@ function SessionManager.init()
 	stateChanged = newRemote("RemoteEvent", "StateChanged")
 	dialogueShown = newRemote("RemoteEvent", "DialogueShown")
 	stationHint = newRemote("RemoteEvent", "StationHint")
-	remotes.Parent = ReplicatedStorage
 
 	ProgressService.init()
+
+	-- Items live in the save, so leaving mid-chapter cannot strand a player.
+	Challenges.setInventoryProvider({
+		has = function(player: Player, item: string, count: number): boolean
+			local inv = sessionOf(player).save.inventory or {}
+			return (inv[item] or 0) >= count
+		end,
+		add = function(player: Player, item: string, count: number)
+			local save = sessionOf(player).save
+			save.inventory = save.inventory or {}
+			save.inventory[item] = (save.inventory[item] or 0) + count
+			ProgressService.markDirty(player)
+		end,
+		remove = function(player: Player, item: string, count: number)
+			local save = sessionOf(player).save
+			save.inventory = save.inventory or {}
+			save.inventory[item] = math.max(0, (save.inventory[item] or 0) - count)
+			ProgressService.markDirty(player)
+		end,
+	})
 
 	MapBuilder.setHandlers({
 		travel = function(player: Player, cc: string)
@@ -342,6 +379,17 @@ function SessionManager.init()
 		return res
 	end
 
+	local goToLobby = newRemote("RemoteEvent", "GoToLobby") :: RemoteEvent
+	goToLobby.OnServerEvent:Connect(function(player)
+		if limited(player, "GoToLobby") then
+			return
+		end
+		local session = sessionOf(player)
+		if session.country and not session.busy then
+			returnToLobby(player)
+		end
+	end)
+
 	say.OnServerEvent:Connect(function(player, idx)
 		if limited(player, "Say") then
 			return
@@ -351,6 +399,8 @@ function SessionManager.init()
 		end
 		phraseOut:FireAllClients(player.UserId, PHRASES[idx])
 	end)
+
+	remotes.Parent = ReplicatedStorage
 
 	Players.PlayerRemoving:Connect(function(player)
 		sessions[player] = nil
