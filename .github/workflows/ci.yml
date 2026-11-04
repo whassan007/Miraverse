@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:release
+      - run: npm run compile
+      - run: npm run textures
+      - run: npm -w apps/web run build
+      - run: npm -w apps/minecraft run build
+      - run: npx vitest run
+      - run: node tools/pack/mcaddon.mjs
+      - name: Verify Minecraft archive layout
+        shell: bash
+        run: |
+          set -euo pipefail
+          unzip -l apps/minecraft/dist/miraverse.mcaddon | tee "$RUNNER_TEMP/mcaddon-layout.txt"
+          grep -Eq '[[:space:]]bp/manifest\.json$' "$RUNNER_TEMP/mcaddon-layout.txt"
+          grep -Eq '[[:space:]]rp/manifest\.json$' "$RUNNER_TEMP/mcaddon-layout.txt"
+      - name: Upload web build
+        uses: actions/upload-artifact@v4
+        with:
+          name: miraverse-web
+          path: apps/web/dist
+          if-no-files-found: error
+      - name: Upload Minecraft addon
+        uses: actions/upload-artifact@v4
+        with:
+          name: miraverse-minecraft
+          path: apps/minecraft/dist/miraverse.mcaddon
+          if-no-files-found: error
