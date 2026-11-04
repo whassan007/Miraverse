@@ -1,0 +1,34 @@
+{
+  "countryId": "LB",
+  "spawn": [
+    -220,
+    8,
+    0
+  ],
+  "mentorAnchor": {
+    "id": "npc_teta_nahla",
+    "pos": [
+      -212,
+      8,
+      6
+    ],
+    "radiusStuds": 14
+  },
+  "sajStationAnchor": {
+    "id": "lb_saj_station_v06",
+    "pos": [
+      -204,
+      8,
+      -8
+    ],
+    "radiusStuds": 10
+  },
+  "plotBounds": {
+    "minX": -245,
+    "maxX": -195,
+    "minY": 6,
+    "maxY": 32,
+    "minZ": -25,
+    "maxZ": 25
+  }
+}
