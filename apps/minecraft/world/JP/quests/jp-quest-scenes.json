@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "jp_quest_jp01",
+    "chapterId": "JP01",
+    "title": "The First Step",
+    "kind": "preparation_and_wayfinding",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1570,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:jp_cedar_waystation_beam",
+    "rewardArtifactId": "jp_travelers_sandal"
+  },
+  {
+    "anchorId": "jp_quest_jp02",
+    "chapterId": "JP02",
+    "title": "Crossing the River",
+    "kind": "bridge_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1582,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:jp_shoji_paper_lattice",
+    "rewardArtifactId": "jp_river_bridge_token"
+  },
+  {
+    "anchorId": "jp_quest_jp03",
+    "chapterId": "JP03",
+    "title": "Three Lines of Sky",
+    "kind": "poetic_composition",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1594,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:jp_kawara_roof_tile",
+    "rewardArtifactId": "jp_haiku_leaf"
+  },
+  {
+    "anchorId": "jp_quest_jp04",
+    "chapterId": "JP04",
+    "title": "The Traveler’s Shelter",
+    "kind": "trade_and_roof_repair",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1606,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:jp_stepping_garden_stone",
+    "rewardArtifactId": "jp_waystation_lantern"
+  },
+  {
+    "anchorId": "jp_quest_jp05",
+    "chapterId": "JP05",
+    "title": "The Changing Path",
+    "kind": "temporal_comparison",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1618,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:jp_wooden_footbridge_plank",
+    "rewardArtifactId": "jp_seasonal_scroll"
+  },
+  {
+    "anchorId": "jp_quest_jp06",
+    "chapterId": "JP06",
+    "title": "The Road Is Home",
+    "kind": "cooperative_garden_build",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1630,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:jp_wayfinding_stone_marker",
+    "rewardArtifactId": "jp_narrow_road_stamp"
+  }
+]
