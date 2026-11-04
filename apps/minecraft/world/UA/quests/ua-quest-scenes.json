@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "ua_quest_ua01",
+    "chapterId": "UA01",
+    "title": "The Four Founders",
+    "kind": "exploration_and_mapping",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 1970,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:ua_kyiv_hill_timber",
+    "rewardArtifactId": "ua_founders_river_map"
+  },
+  {
+    "anchorId": "ua_quest_ua02",
+    "chapterId": "UA02",
+    "title": "The City by the Water",
+    "kind": "accessible_bridge_build",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1982,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:ua_embroidered_rushnyk_banner",
+    "rewardArtifactId": "ua_river_bridge_plaque"
+  },
+  {
+    "anchorId": "ua_quest_ua03",
+    "chapterId": "UA03",
+    "title": "Listen to the Kobzar",
+    "kind": "call_and_response_music",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1994,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:ua_bandura_luthier_bench",
+    "rewardArtifactId": "ua_bandura_string"
+  },
+  {
+    "anchorId": "ua_quest_ua04",
+    "chapterId": "UA04",
+    "title": "The Dumy Notebook",
+    "kind": "oral_vs_documented_history",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 2006,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:ua_cobblestone_music_stage",
+    "rewardArtifactId": "ua_dumy_page"
+  },
+  {
+    "anchorId": "ua_quest_ua05",
+    "chapterId": "UA05",
+    "title": "The Living Music Hall",
+    "kind": "venue_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 2018,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:ua_carved_oak_archway",
+    "rewardArtifactId": "ua_carved_music_stand"
+  },
+  {
+    "anchorId": "ua_quest_ua06",
+    "chapterId": "UA06",
+    "title": "Songs That Travel",
+    "kind": "cooperative_composition",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 2030,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:ua_sunflower_garden_border",
+    "rewardArtifactId": "ua_ukraine_song_stamp"
+  }
+]
