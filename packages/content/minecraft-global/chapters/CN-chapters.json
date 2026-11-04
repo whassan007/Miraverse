@@ -1,0 +1,656 @@
+[
+  {
+    "id": "CN01",
+    "countryCode": "CN",
+    "chapterIndex": 1,
+    "title": "Where the River Turns",
+    "activity": "Follow the fisherman upstream and discover the blossom grove",
+    "mechanic": "exploration_and_discovery",
+    "scene": "CN/blossom_stream",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-CN-TAO-YUANMING-PROSE"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "cn_elder_lin",
+    "supportNpcId": "cn_fisher_zhou",
+    "stationAnchorId": "cn_station_cn01",
+    "stationCoords": {
+      "x": 1370,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "cn_blossom_petal",
+      "artifactName": "Blossom Petal",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.CN01.title",
+      "summaryKey": "quest.CN01.summary",
+      "greetingKey": "quest.CN01.greeting",
+      "completionKey": "quest.CN01.completion",
+      "sourceNoteKey": "quest.CN01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Collect glowing petals and plant peach trees beside helpful villagers. (Where the River Turns)",
+        "objectiveNodes": [
+          "CN01:explorer:step1",
+          "CN01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Follow a changed path and match seasonal symbols and moon festival items. (Where the River Turns)",
+        "objectiveNodes": [
+          "CN01:adventurer:step1",
+          "CN01:adventurer:step2",
+          "CN01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Use map revisions and oral clues to explain what changed between visits. (Where the River Turns)",
+        "objectiveNodes": [
+          "CN01:investigator:step1",
+          "CN01:investigator:step2",
+          "CN01:investigator:step3",
+          "CN01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Compare versions of a utopian narrative, assess memory bias and design an evolving community plan. (Where the River Turns)",
+        "objectiveNodes": [
+          "CN01:curator:step1",
+          "CN01:curator:step2",
+          "CN01:curator:step3",
+          "CN01:curator:step4",
+          "CN01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "CN02",
+    "countryCode": "CN",
+    "chapterIndex": 2,
+    "title": "The Hidden Valley",
+    "activity": "Meet villagers, gather garden supplies and help repair a bridge",
+    "mechanic": "gathering_and_bridge_repair",
+    "scene": "CN/terraced_valley",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-CN-TAO-YUANMING-PROSE"
+    ],
+    "prerequisiteChapterId": "CN01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "cn_fisher_zhou",
+    "supportNpcId": "cn_orchard_keeper_mei",
+    "stationAnchorId": "cn_station_cn02",
+    "stationCoords": {
+      "x": 1382,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "cn_valley_map",
+      "artifactName": "Valley Map",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.CN02.title",
+      "summaryKey": "quest.CN02.summary",
+      "greetingKey": "quest.CN02.greeting",
+      "completionKey": "quest.CN02.completion",
+      "sourceNoteKey": "quest.CN02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Collect glowing petals and plant peach trees beside helpful villagers. (The Hidden Valley)",
+        "objectiveNodes": [
+          "CN02:explorer:step1",
+          "CN02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Follow a changed path and match seasonal symbols and moon festival items. (The Hidden Valley)",
+        "objectiveNodes": [
+          "CN02:adventurer:step1",
+          "CN02:adventurer:step2",
+          "CN02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Use map revisions and oral clues to explain what changed between visits. (The Hidden Valley)",
+        "objectiveNodes": [
+          "CN02:investigator:step1",
+          "CN02:investigator:step2",
+          "CN02:investigator:step3",
+          "CN02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Compare versions of a utopian narrative, assess memory bias and design an evolving community plan. (The Hidden Valley)",
+        "objectiveNodes": [
+          "CN02:curator:step1",
+          "CN02:curator:step2",
+          "CN02:curator:step3",
+          "CN02:curator:step4",
+          "CN02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "CN03",
+    "countryCode": "CN",
+    "chapterIndex": 3,
+    "title": "The Calendar of Change",
+    "activity": "Compare seasonal crops and signs of time passing",
+    "mechanic": "seasonal_comparison",
+    "scene": "CN/bamboo_terrace",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-CN-SEASONAL-AGRICULTURE"
+    ],
+    "prerequisiteChapterId": "CN02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "cn_orchard_keeper_mei",
+    "supportNpcId": "cn_mapmaker_chen",
+    "stationAnchorId": "cn_station_cn03",
+    "stationCoords": {
+      "x": 1394,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "cn_season_wheel",
+      "artifactName": "Season Wheel",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.CN03.title",
+      "summaryKey": "quest.CN03.summary",
+      "greetingKey": "quest.CN03.greeting",
+      "completionKey": "quest.CN03.completion",
+      "sourceNoteKey": "quest.CN03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Collect glowing petals and plant peach trees beside helpful villagers. (The Calendar of Change)",
+        "objectiveNodes": [
+          "CN03:explorer:step1",
+          "CN03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Follow a changed path and match seasonal symbols and moon festival items. (The Calendar of Change)",
+        "objectiveNodes": [
+          "CN03:adventurer:step1",
+          "CN03:adventurer:step2",
+          "CN03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Use map revisions and oral clues to explain what changed between visits. (The Calendar of Change)",
+        "objectiveNodes": [
+          "CN03:investigator:step1",
+          "CN03:investigator:step2",
+          "CN03:investigator:step3",
+          "CN03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Compare versions of a utopian narrative, assess memory bias and design an evolving community plan. (The Calendar of Change)",
+        "objectiveNodes": [
+          "CN03:curator:step1",
+          "CN03:curator:step2",
+          "CN03:curator:step3",
+          "CN03:curator:step4",
+          "CN03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "CN04",
+    "countryCode": "CN",
+    "chapterIndex": 4,
+    "title": "A Path That Moves",
+    "activity": "Attempt to trace a changing route and discover why a remembered map no longer works",
+    "mechanic": "map_revision_reasoning",
+    "scene": "CN/hidden_pass",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-CN-TAO-YUANMING-PROSE"
+    ],
+    "prerequisiteChapterId": "CN03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "cn_mapmaker_chen",
+    "supportNpcId": "cn_moon_host_yue",
+    "stationAnchorId": "cn_station_cn04",
+    "stationCoords": {
+      "x": 1406,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "cn_changing_compass",
+      "artifactName": "Changing Compass",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.CN04.title",
+      "summaryKey": "quest.CN04.summary",
+      "greetingKey": "quest.CN04.greeting",
+      "completionKey": "quest.CN04.completion",
+      "sourceNoteKey": "quest.CN04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Collect glowing petals and plant peach trees beside helpful villagers. (A Path That Moves)",
+        "objectiveNodes": [
+          "CN04:explorer:step1",
+          "CN04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Follow a changed path and match seasonal symbols and moon festival items. (A Path That Moves)",
+        "objectiveNodes": [
+          "CN04:adventurer:step1",
+          "CN04:adventurer:step2",
+          "CN04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Use map revisions and oral clues to explain what changed between visits. (A Path That Moves)",
+        "objectiveNodes": [
+          "CN04:investigator:step1",
+          "CN04:investigator:step2",
+          "CN04:investigator:step3",
+          "CN04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Compare versions of a utopian narrative, assess memory bias and design an evolving community plan. (A Path That Moves)",
+        "objectiveNodes": [
+          "CN04:curator:step1",
+          "CN04:curator:step2",
+          "CN04:curator:step3",
+          "CN04:curator:step4",
+          "CN04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "CN05",
+    "countryCode": "CN",
+    "chapterIndex": 5,
+    "title": "Moonlight Letters",
+    "activity": "Learn an age-appropriate Chang’e variant and prepare symbolic mooncakes",
+    "mechanic": "folklore_and_cooking",
+    "scene": "CN/moon_viewing_courtyard",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-CN-CHANGE-MOON-FOLKLORE"
+    ],
+    "prerequisiteChapterId": "CN04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "cn_moon_host_yue",
+    "supportNpcId": "cn_elder_lin",
+    "stationAnchorId": "cn_station_cn05",
+    "stationCoords": {
+      "x": 1418,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "cn_moon_letter",
+      "artifactName": "Moon Letter",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.CN05.title",
+      "summaryKey": "quest.CN05.summary",
+      "greetingKey": "quest.CN05.greeting",
+      "completionKey": "quest.CN05.completion",
+      "sourceNoteKey": "quest.CN05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Collect glowing petals and plant peach trees beside helpful villagers. (Moonlight Letters)",
+        "objectiveNodes": [
+          "CN05:explorer:step1",
+          "CN05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Follow a changed path and match seasonal symbols and moon festival items. (Moonlight Letters)",
+        "objectiveNodes": [
+          "CN05:adventurer:step1",
+          "CN05:adventurer:step2",
+          "CN05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Use map revisions and oral clues to explain what changed between visits. (Moonlight Letters)",
+        "objectiveNodes": [
+          "CN05:investigator:step1",
+          "CN05:investigator:step2",
+          "CN05:investigator:step3",
+          "CN05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Compare versions of a utopian narrative, assess memory bias and design an evolving community plan. (Moonlight Letters)",
+        "objectiveNodes": [
+          "CN05:curator:step1",
+          "CN05:curator:step2",
+          "CN05:curator:step3",
+          "CN05:curator:step4",
+          "CN05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "CN06",
+    "countryCode": "CN",
+    "chapterIndex": 6,
+    "title": "Plant a New Garden",
+    "activity": "Build a new community garden rather than copying a vanished past",
+    "mechanic": "cooperative_restoration",
+    "scene": "CN/community_orchard",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-CN-TAO-YUANMING-PROSE"
+    ],
+    "prerequisiteChapterId": "CN05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "cn_elder_lin",
+    "supportNpcId": "cn_fisher_zhou",
+    "stationAnchorId": "cn_station_cn06",
+    "stationCoords": {
+      "x": 1430,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "cn_peach_spring_stamp",
+      "artifactName": "Peach Spring Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "cn_peach_spring_stamp",
+      "grantsCapstoneKeepsake": "cn_peach_blossom_keepsake"
+    },
+    "stringKeys": {
+      "titleKey": "quest.CN06.title",
+      "summaryKey": "quest.CN06.summary",
+      "greetingKey": "quest.CN06.greeting",
+      "completionKey": "quest.CN06.completion",
+      "sourceNoteKey": "quest.CN06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Collect glowing petals and plant peach trees beside helpful villagers. (Plant a New Garden)",
+        "objectiveNodes": [
+          "CN06:explorer:step1",
+          "CN06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Follow a changed path and match seasonal symbols and moon festival items. (Plant a New Garden)",
+        "objectiveNodes": [
+          "CN06:adventurer:step1",
+          "CN06:adventurer:step2",
+          "CN06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Use map revisions and oral clues to explain what changed between visits. (Plant a New Garden)",
+        "objectiveNodes": [
+          "CN06:investigator:step1",
+          "CN06:investigator:step2",
+          "CN06:investigator:step3",
+          "CN06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Compare versions of a utopian narrative, assess memory bias and design an evolving community plan. (Plant a New Garden)",
+        "objectiveNodes": [
+          "CN06:curator:step1",
+          "CN06:curator:step2",
+          "CN06:curator:step3",
+          "CN06:curator:step4",
+          "CN06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

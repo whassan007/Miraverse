@@ -1,0 +1,656 @@
+[
+  {
+    "id": "FR01",
+    "countryCode": "FR",
+    "chapterIndex": 1,
+    "title": "The Passage Map",
+    "activity": "Find hidden-but-safe passages and draw a route between workshops",
+    "mechanic": "navigation_and_mapping",
+    "scene": "FR/traboule_courtyard",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-FR-LYON-TRABOULES"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "fr_camille_mamie",
+    "supportNpcId": "fr_silk_artisan_henri",
+    "stationAnchorId": "fr_station_fr01",
+    "stationCoords": {
+      "x": 970,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "fr_traboule_key",
+      "artifactName": "Traboule Key",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.FR01.title",
+      "summaryKey": "quest.FR01.summary",
+      "greetingKey": "quest.FR01.greeting",
+      "completionKey": "quest.FR01.completion",
+      "sourceNoteKey": "quest.FR01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Navigate a clear picture-map and sort cooking ingredients. (The Passage Map)",
+        "objectiveNodes": [
+          "FR01:explorer:step1",
+          "FR01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Use clue signs, trade produce and recreate fabric patterns. (The Passage Map)",
+        "objectiveNodes": [
+          "FR01:adventurer:step1",
+          "FR01:adventurer:step2",
+          "FR01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Solve route optimization and ingredient-sourcing challenges. (The Passage Map)",
+        "objectiveNodes": [
+          "FR01:investigator:step1",
+          "FR01:investigator:step2",
+          "FR01:investigator:step3",
+          "FR01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Document architectural evidence and design a replicable community food exhibit. (The Passage Map)",
+        "objectiveNodes": [
+          "FR01:curator:step1",
+          "FR01:curator:step2",
+          "FR01:curator:step3",
+          "FR01:curator:step4",
+          "FR01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "FR02",
+    "countryCode": "FR",
+    "chapterIndex": 2,
+    "title": "Threads of the City",
+    "activity": "Gather fibers and weave a repeating silk pattern",
+    "mechanic": "pattern_craft",
+    "scene": "FR/silk_loom_workshop",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-FR-CANUTS-JACQUARD"
+    ],
+    "prerequisiteChapterId": "FR01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "fr_silk_artisan_henri",
+    "supportNpcId": "fr_chef_marguerite",
+    "stationAnchorId": "fr_station_fr02",
+    "stationCoords": {
+      "x": 982,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "fr_silk_ribbon",
+      "artifactName": "Silk Ribbon",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.FR02.title",
+      "summaryKey": "quest.FR02.summary",
+      "greetingKey": "quest.FR02.greeting",
+      "completionKey": "quest.FR02.completion",
+      "sourceNoteKey": "quest.FR02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Navigate a clear picture-map and sort cooking ingredients. (Threads of the City)",
+        "objectiveNodes": [
+          "FR02:explorer:step1",
+          "FR02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Use clue signs, trade produce and recreate fabric patterns. (Threads of the City)",
+        "objectiveNodes": [
+          "FR02:adventurer:step1",
+          "FR02:adventurer:step2",
+          "FR02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Solve route optimization and ingredient-sourcing challenges. (Threads of the City)",
+        "objectiveNodes": [
+          "FR02:investigator:step1",
+          "FR02:investigator:step2",
+          "FR02:investigator:step3",
+          "FR02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Document architectural evidence and design a replicable community food exhibit. (Threads of the City)",
+        "objectiveNodes": [
+          "FR02:curator:step1",
+          "FR02:curator:step2",
+          "FR02:curator:step3",
+          "FR02:curator:step4",
+          "FR02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "FR03",
+    "countryCode": "FR",
+    "chapterIndex": 3,
+    "title": "At the Mères’ Table",
+    "activity": "Collect ingredients and learn a Lyon-inspired family recipe",
+    "mechanic": "cooking_sequence",
+    "scene": "FR/meres_bouchon_kitchen",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-FR-MERES-LYONNAISES"
+    ],
+    "prerequisiteChapterId": "FR02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "fr_chef_marguerite",
+    "supportNpcId": "fr_guide_luc",
+    "stationAnchorId": "fr_station_fr03",
+    "stationCoords": {
+      "x": 994,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "fr_chefs_notebook",
+      "artifactName": "Chef’s Notebook",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.FR03.title",
+      "summaryKey": "quest.FR03.summary",
+      "greetingKey": "quest.FR03.greeting",
+      "completionKey": "quest.FR03.completion",
+      "sourceNoteKey": "quest.FR03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Navigate a clear picture-map and sort cooking ingredients. (At the Mères’ Table)",
+        "objectiveNodes": [
+          "FR03:explorer:step1",
+          "FR03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Use clue signs, trade produce and recreate fabric patterns. (At the Mères’ Table)",
+        "objectiveNodes": [
+          "FR03:adventurer:step1",
+          "FR03:adventurer:step2",
+          "FR03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Solve route optimization and ingredient-sourcing challenges. (At the Mères’ Table)",
+        "objectiveNodes": [
+          "FR03:investigator:step1",
+          "FR03:investigator:step2",
+          "FR03:investigator:step3",
+          "FR03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Document architectural evidence and design a replicable community food exhibit. (At the Mères’ Table)",
+        "objectiveNodes": [
+          "FR03:curator:step1",
+          "FR03:curator:step2",
+          "FR03:curator:step3",
+          "FR03:curator:step4",
+          "FR03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "FR04",
+    "countryCode": "FR",
+    "chapterIndex": 4,
+    "title": "A Market of Flavors",
+    "activity": "Trade for ingredients, read signs and compare seasonal food origins",
+    "mechanic": "trade_and_provenance",
+    "scene": "FR/river_market",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-FR-MERES-LYONNAISES"
+    ],
+    "prerequisiteChapterId": "FR03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "fr_guide_luc",
+    "supportNpcId": "fr_merchant_elise",
+    "stationAnchorId": "fr_station_fr04",
+    "stationCoords": {
+      "x": 1006,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "fr_market_basket",
+      "artifactName": "Market Basket",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.FR04.title",
+      "summaryKey": "quest.FR04.summary",
+      "greetingKey": "quest.FR04.greeting",
+      "completionKey": "quest.FR04.completion",
+      "sourceNoteKey": "quest.FR04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Navigate a clear picture-map and sort cooking ingredients. (A Market of Flavors)",
+        "objectiveNodes": [
+          "FR04:explorer:step1",
+          "FR04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Use clue signs, trade produce and recreate fabric patterns. (A Market of Flavors)",
+        "objectiveNodes": [
+          "FR04:adventurer:step1",
+          "FR04:adventurer:step2",
+          "FR04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Solve route optimization and ingredient-sourcing challenges. (A Market of Flavors)",
+        "objectiveNodes": [
+          "FR04:investigator:step1",
+          "FR04:investigator:step2",
+          "FR04:investigator:step3",
+          "FR04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Document architectural evidence and design a replicable community food exhibit. (A Market of Flavors)",
+        "objectiveNodes": [
+          "FR04:curator:step1",
+          "FR04:curator:step2",
+          "FR04:curator:step3",
+          "FR04:curator:step4",
+          "FR04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "FR05",
+    "countryCode": "FR",
+    "chapterIndex": 5,
+    "title": "Stone by Stone",
+    "activity": "Repair shuttered bakery façade using actual blocks and materials",
+    "mechanic": "architecture_restoration",
+    "scene": "FR/boulangerie_facade",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-FR-LYON-TRABOULES"
+    ],
+    "prerequisiteChapterId": "FR04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "fr_merchant_elise",
+    "supportNpcId": "fr_camille_mamie",
+    "stationAnchorId": "fr_station_fr05",
+    "stationCoords": {
+      "x": 1018,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "fr_masons_crest",
+      "artifactName": "Mason’s Crest",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.FR05.title",
+      "summaryKey": "quest.FR05.summary",
+      "greetingKey": "quest.FR05.greeting",
+      "completionKey": "quest.FR05.completion",
+      "sourceNoteKey": "quest.FR05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Navigate a clear picture-map and sort cooking ingredients. (Stone by Stone)",
+        "objectiveNodes": [
+          "FR05:explorer:step1",
+          "FR05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Use clue signs, trade produce and recreate fabric patterns. (Stone by Stone)",
+        "objectiveNodes": [
+          "FR05:adventurer:step1",
+          "FR05:adventurer:step2",
+          "FR05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Solve route optimization and ingredient-sourcing challenges. (Stone by Stone)",
+        "objectiveNodes": [
+          "FR05:investigator:step1",
+          "FR05:investigator:step2",
+          "FR05:investigator:step3",
+          "FR05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Document architectural evidence and design a replicable community food exhibit. (Stone by Stone)",
+        "objectiveNodes": [
+          "FR05:curator:step1",
+          "FR05:curator:step2",
+          "FR05:curator:step3",
+          "FR05:curator:step4",
+          "FR05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "FR06",
+    "countryCode": "FR",
+    "chapterIndex": 6,
+    "title": "A Recipe for Home",
+    "activity": "Host a cooperative gathering and assemble the community recipe archive",
+    "mechanic": "cooperative_feast",
+    "scene": "FR/renaissance_plaza",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-FR-MERES-LYONNAISES"
+    ],
+    "prerequisiteChapterId": "FR05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "fr_camille_mamie",
+    "supportNpcId": "fr_silk_artisan_henri",
+    "stationAnchorId": "fr_station_fr06",
+    "stationCoords": {
+      "x": 1030,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "fr_lyon_heritage_stamp",
+      "artifactName": "Lyon Heritage Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "fr_lyon_heritage_stamp",
+      "grantsCapstoneKeepsake": "fr_meres_lyonnaises_recipe_book"
+    },
+    "stringKeys": {
+      "titleKey": "quest.FR06.title",
+      "summaryKey": "quest.FR06.summary",
+      "greetingKey": "quest.FR06.greeting",
+      "completionKey": "quest.FR06.completion",
+      "sourceNoteKey": "quest.FR06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Navigate a clear picture-map and sort cooking ingredients. (A Recipe for Home)",
+        "objectiveNodes": [
+          "FR06:explorer:step1",
+          "FR06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Use clue signs, trade produce and recreate fabric patterns. (A Recipe for Home)",
+        "objectiveNodes": [
+          "FR06:adventurer:step1",
+          "FR06:adventurer:step2",
+          "FR06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Solve route optimization and ingredient-sourcing challenges. (A Recipe for Home)",
+        "objectiveNodes": [
+          "FR06:investigator:step1",
+          "FR06:investigator:step2",
+          "FR06:investigator:step3",
+          "FR06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Document architectural evidence and design a replicable community food exhibit. (A Recipe for Home)",
+        "objectiveNodes": [
+          "FR06:curator:step1",
+          "FR06:curator:step2",
+          "FR06:curator:step3",
+          "FR06:curator:step4",
+          "FR06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

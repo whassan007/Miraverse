@@ -1,0 +1,188 @@
+[
+  {
+    "id": "en-US",
+    "name": "English",
+    "nativePackLang": "en_US",
+    "isNativeBedrock": true,
+    "script": "Latin",
+    "direction": "ltr",
+    "fallbackChain": [
+      "en-US"
+    ],
+    "scope": "required baseline"
+  },
+  {
+    "id": "fr-FR",
+    "name": "French (France)",
+    "nativePackLang": "fr_FR",
+    "isNativeBedrock": true,
+    "script": "Latin",
+    "direction": "ltr",
+    "fallbackChain": [
+      "fr-FR",
+      "en-US"
+    ],
+    "scope": "France/secondary global"
+  },
+  {
+    "id": "fr-CA",
+    "name": "French (Canada)",
+    "nativePackLang": "fr_CA",
+    "isNativeBedrock": true,
+    "script": "Latin",
+    "direction": "ltr",
+    "fallbackChain": [
+      "fr-CA",
+      "fr-FR",
+      "en-US"
+    ],
+    "scope": "Canadian-language support"
+  },
+  {
+    "id": "de-DE",
+    "name": "German",
+    "nativePackLang": "de_DE",
+    "isNativeBedrock": true,
+    "script": "Latin",
+    "direction": "ltr",
+    "fallbackChain": [
+      "de-DE",
+      "en-US"
+    ],
+    "scope": "Germany"
+  },
+  {
+    "id": "zh-Hans-CN",
+    "name": "Simplified Chinese",
+    "nativePackLang": "zh_CN",
+    "isNativeBedrock": true,
+    "script": "CJK",
+    "direction": "ltr",
+    "fallbackChain": [
+      "zh-Hans-CN",
+      "en-US"
+    ],
+    "scope": "China"
+  },
+  {
+    "id": "ja-JP",
+    "name": "Japanese",
+    "nativePackLang": "ja_JP",
+    "isNativeBedrock": true,
+    "script": "CJK",
+    "direction": "ltr",
+    "fallbackChain": [
+      "ja-JP",
+      "en-US"
+    ],
+    "scope": "Japan"
+  },
+  {
+    "id": "ru-RU",
+    "name": "Russian",
+    "nativePackLang": "ru_RU",
+    "isNativeBedrock": true,
+    "script": "Cyrillic",
+    "direction": "ltr",
+    "fallbackChain": [
+      "ru-RU",
+      "en-US"
+    ],
+    "scope": "Russia"
+  },
+  {
+    "id": "uk-UA",
+    "name": "Ukrainian",
+    "nativePackLang": "uk_UA",
+    "isNativeBedrock": true,
+    "script": "Cyrillic",
+    "direction": "ltr",
+    "fallbackChain": [
+      "uk-UA",
+      "en-US"
+    ],
+    "scope": "Ukraine"
+  },
+  {
+    "id": "ko-KR",
+    "name": "Korean",
+    "nativePackLang": "ko_KR",
+    "isNativeBedrock": true,
+    "script": "CJK",
+    "direction": "ltr",
+    "fallbackChain": [
+      "ko-KR",
+      "en-US"
+    ],
+    "scope": "South Korea"
+  },
+  {
+    "id": "ar",
+    "name": "Modern Standard Arabic",
+    "nativePackLang": null,
+    "isNativeBedrock": false,
+    "script": "Arabic",
+    "direction": "rtl",
+    "fallbackChain": [
+      "ar",
+      "en-US"
+    ],
+    "scope": "Arabic base"
+  },
+  {
+    "id": "ar-LB",
+    "name": "Lebanese Arabic",
+    "nativePackLang": null,
+    "isNativeBedrock": false,
+    "script": "Arabic",
+    "direction": "rtl",
+    "fallbackChain": [
+      "ar-LB",
+      "ar",
+      "en-US"
+    ],
+    "scope": "Lebanon"
+  },
+  {
+    "id": "ar-IQ",
+    "name": "Iraqi Arabic",
+    "nativePackLang": null,
+    "isNativeBedrock": false,
+    "script": "Arabic",
+    "direction": "rtl",
+    "fallbackChain": [
+      "ar-IQ",
+      "ar",
+      "en-US"
+    ],
+    "scope": "Iraq"
+  },
+  {
+    "id": "ar-EG",
+    "name": "Egyptian Arabic",
+    "nativePackLang": null,
+    "isNativeBedrock": false,
+    "script": "Arabic",
+    "direction": "rtl",
+    "fallbackChain": [
+      "ar-EG",
+      "ar",
+      "en-US"
+    ],
+    "scope": "Egypt"
+  },
+  {
+    "id": "ar-MA",
+    "name": "Moroccan Darija",
+    "nativePackLang": null,
+    "isNativeBedrock": false,
+    "script": "Arabic",
+    "direction": "rtl",
+    "fallbackChain": [
+      "ar-MA",
+      "ar",
+      "en-US"
+    ],
+    "scope": "Morocco"
+  }
+]

@@ -1,0 +1,656 @@
+[
+  {
+    "id": "IQ01",
+    "countryCode": "IQ",
+    "chapterIndex": 1,
+    "title": "Street of Books",
+    "activity": "Open shutters, return scattered books to merchants and map shelves",
+    "mechanic": "exploration_and_organization",
+    "scene": "IQ/mutanabbi_book_market",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-IQ-MUTANABBI-RESILIENCE"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "iq_bibi_amal",
+    "supportNpcId": "iq_merchant_hassan",
+    "stationAnchorId": "iq_station_iq01",
+    "stationCoords": {
+      "x": 570,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "iq_bookseller_seal",
+      "artifactName": "Bookseller Seal",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.IQ01.title",
+      "summaryKey": "quest.IQ01.summary",
+      "greetingKey": "quest.IQ01.greeting",
+      "completionKey": "quest.IQ01.completion",
+      "sourceNoteKey": "quest.IQ01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find illustrated books, match shapes and help Bibi bake without timers. (Street of Books)",
+        "objectiveNodes": [
+          "IQ01:explorer:step1",
+          "IQ01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade ingredients and solve short word-matching and shelving puzzles. (Street of Books)",
+        "objectiveNodes": [
+          "IQ01:adventurer:step1",
+          "IQ01:adventurer:step2",
+          "IQ01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare translations, organize evidence and design a reading-room layout. (Street of Books)",
+        "objectiveNodes": [
+          "IQ01:investigator:step1",
+          "IQ01:investigator:step2",
+          "IQ01:investigator:step3",
+          "IQ01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Build a searchable exhibit taxonomy, evaluate sources and coordinate a multi-role restoration. (Street of Books)",
+        "objectiveNodes": [
+          "IQ01:curator:step1",
+          "IQ01:curator:step2",
+          "IQ01:curator:step3",
+          "IQ01:curator:step4",
+          "IQ01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "IQ02",
+    "countryCode": "IQ",
+    "chapterIndex": 2,
+    "title": "The House of Wisdom",
+    "activity": "Collect mathematical tools and help restore a scholars’ room",
+    "mechanic": "restoration_and_discovery",
+    "scene": "IQ/scholars_hall",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-IQ-BAYT-AL-HIKMA"
+    ],
+    "prerequisiteChapterId": "IQ01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "iq_merchant_hassan",
+    "supportNpcId": "iq_translator_mariam",
+    "stationAnchorId": "iq_station_iq02",
+    "stationCoords": {
+      "x": 582,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "iq_scholars_astrolabe",
+      "artifactName": "Scholar’s Astrolabe",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.IQ02.title",
+      "summaryKey": "quest.IQ02.summary",
+      "greetingKey": "quest.IQ02.greeting",
+      "completionKey": "quest.IQ02.completion",
+      "sourceNoteKey": "quest.IQ02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find illustrated books, match shapes and help Bibi bake without timers. (The House of Wisdom)",
+        "objectiveNodes": [
+          "IQ02:explorer:step1",
+          "IQ02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade ingredients and solve short word-matching and shelving puzzles. (The House of Wisdom)",
+        "objectiveNodes": [
+          "IQ02:adventurer:step1",
+          "IQ02:adventurer:step2",
+          "IQ02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare translations, organize evidence and design a reading-room layout. (The House of Wisdom)",
+        "objectiveNodes": [
+          "IQ02:investigator:step1",
+          "IQ02:investigator:step2",
+          "IQ02:investigator:step3",
+          "IQ02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Build a searchable exhibit taxonomy, evaluate sources and coordinate a multi-role restoration. (The House of Wisdom)",
+        "objectiveNodes": [
+          "IQ02:curator:step1",
+          "IQ02:curator:step2",
+          "IQ02:curator:step3",
+          "IQ02:curator:step4",
+          "IQ02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "IQ03",
+    "countryCode": "IQ",
+    "chapterIndex": 3,
+    "title": "Words That Travel",
+    "activity": "Match Arabic, Greek and Syriac-derived conceptual translations with provenance labels",
+    "mechanic": "source_comparison",
+    "scene": "IQ/manuscript_workshop",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-IQ-TRANSLATION-MOVEMENT"
+    ],
+    "prerequisiteChapterId": "IQ02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "iq_translator_mariam",
+    "supportNpcId": "iq_baker_salim",
+    "stationAnchorId": "iq_station_iq03",
+    "stationCoords": {
+      "x": 594,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "iq_translation_scroll",
+      "artifactName": "Translation Scroll",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.IQ03.title",
+      "summaryKey": "quest.IQ03.summary",
+      "greetingKey": "quest.IQ03.greeting",
+      "completionKey": "quest.IQ03.completion",
+      "sourceNoteKey": "quest.IQ03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find illustrated books, match shapes and help Bibi bake without timers. (Words That Travel)",
+        "objectiveNodes": [
+          "IQ03:explorer:step1",
+          "IQ03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade ingredients and solve short word-matching and shelving puzzles. (Words That Travel)",
+        "objectiveNodes": [
+          "IQ03:adventurer:step1",
+          "IQ03:adventurer:step2",
+          "IQ03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare translations, organize evidence and design a reading-room layout. (Words That Travel)",
+        "objectiveNodes": [
+          "IQ03:investigator:step1",
+          "IQ03:investigator:step2",
+          "IQ03:investigator:step3",
+          "IQ03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Build a searchable exhibit taxonomy, evaluate sources and coordinate a multi-role restoration. (Words That Travel)",
+        "objectiveNodes": [
+          "IQ03:curator:step1",
+          "IQ03:curator:step2",
+          "IQ03:curator:step3",
+          "IQ03:curator:step4",
+          "IQ03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "IQ04",
+    "countryCode": "IQ",
+    "chapterIndex": 4,
+    "title": "Dates and Kleicha",
+    "activity": "Harvest dates, trade spices and complete a family baking sequence",
+    "mechanic": "cooking_and_trade",
+    "scene": "IQ/date_market_kitchen",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-IQ-CULINARY-KLEICHA"
+    ],
+    "prerequisiteChapterId": "IQ03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "iq_baker_salim",
+    "supportNpcId": "iq_astronomer_zaid",
+    "stationAnchorId": "iq_station_iq04",
+    "stationCoords": {
+      "x": 606,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "iq_kleicha_mold",
+      "artifactName": "Kleicha Mold",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.IQ04.title",
+      "summaryKey": "quest.IQ04.summary",
+      "greetingKey": "quest.IQ04.greeting",
+      "completionKey": "quest.IQ04.completion",
+      "sourceNoteKey": "quest.IQ04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find illustrated books, match shapes and help Bibi bake without timers. (Dates and Kleicha)",
+        "objectiveNodes": [
+          "IQ04:explorer:step1",
+          "IQ04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade ingredients and solve short word-matching and shelving puzzles. (Dates and Kleicha)",
+        "objectiveNodes": [
+          "IQ04:adventurer:step1",
+          "IQ04:adventurer:step2",
+          "IQ04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare translations, organize evidence and design a reading-room layout. (Dates and Kleicha)",
+        "objectiveNodes": [
+          "IQ04:investigator:step1",
+          "IQ04:investigator:step2",
+          "IQ04:investigator:step3",
+          "IQ04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Build a searchable exhibit taxonomy, evaluate sources and coordinate a multi-role restoration. (Dates and Kleicha)",
+        "objectiveNodes": [
+          "IQ04:curator:step1",
+          "IQ04:curator:step2",
+          "IQ04:curator:step3",
+          "IQ04:curator:step4",
+          "IQ04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "IQ05",
+    "countryCode": "IQ",
+    "chapterIndex": 5,
+    "title": "The Courtyard of Questions",
+    "activity": "Repair shanasheel and build a reading corner with light and shade",
+    "mechanic": "architecture_restoration",
+    "scene": "IQ/shanasheel_courtyard",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-IQ-SHANASHEEL-ARCH"
+    ],
+    "prerequisiteChapterId": "IQ04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "iq_astronomer_zaid",
+    "supportNpcId": "iq_bibi_amal",
+    "stationAnchorId": "iq_station_iq05",
+    "stationCoords": {
+      "x": 618,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "iq_courtyard_lattice",
+      "artifactName": "Courtyard Lattice",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.IQ05.title",
+      "summaryKey": "quest.IQ05.summary",
+      "greetingKey": "quest.IQ05.greeting",
+      "completionKey": "quest.IQ05.completion",
+      "sourceNoteKey": "quest.IQ05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find illustrated books, match shapes and help Bibi bake without timers. (The Courtyard of Questions)",
+        "objectiveNodes": [
+          "IQ05:explorer:step1",
+          "IQ05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade ingredients and solve short word-matching and shelving puzzles. (The Courtyard of Questions)",
+        "objectiveNodes": [
+          "IQ05:adventurer:step1",
+          "IQ05:adventurer:step2",
+          "IQ05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare translations, organize evidence and design a reading-room layout. (The Courtyard of Questions)",
+        "objectiveNodes": [
+          "IQ05:investigator:step1",
+          "IQ05:investigator:step2",
+          "IQ05:investigator:step3",
+          "IQ05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Build a searchable exhibit taxonomy, evaluate sources and coordinate a multi-role restoration. (The Courtyard of Questions)",
+        "objectiveNodes": [
+          "IQ05:curator:step1",
+          "IQ05:curator:step2",
+          "IQ05:curator:step3",
+          "IQ05:curator:step4",
+          "IQ05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "IQ06",
+    "countryCode": "IQ",
+    "chapterIndex": 6,
+    "title": "A Library Across Oceans",
+    "activity": "Create a bilingual exhibit, share a story with visitors and preserve a catalog",
+    "mechanic": "cooperative_exhibit",
+    "scene": "IQ/tigris_promenade",
+    "sourceType": "fictional_gameplay",
+    "sourceIds": [
+      "SRC-IQ-MUTANABBI-RESILIENCE"
+    ],
+    "prerequisiteChapterId": "IQ05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "iq_bibi_amal",
+    "supportNpcId": "iq_merchant_hassan",
+    "stationAnchorId": "iq_station_iq06",
+    "stationCoords": {
+      "x": 630,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "iq_knowledge_keeper_stamp",
+      "artifactName": "Knowledge Keeper Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "iq_knowledge_keeper_stamp",
+      "grantsCapstoneKeepsake": "iq_house_of_wisdom_book"
+    },
+    "stringKeys": {
+      "titleKey": "quest.IQ06.title",
+      "summaryKey": "quest.IQ06.summary",
+      "greetingKey": "quest.IQ06.greeting",
+      "completionKey": "quest.IQ06.completion",
+      "sourceNoteKey": "quest.IQ06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Find illustrated books, match shapes and help Bibi bake without timers. (A Library Across Oceans)",
+        "objectiveNodes": [
+          "IQ06:explorer:step1",
+          "IQ06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade ingredients and solve short word-matching and shelving puzzles. (A Library Across Oceans)",
+        "objectiveNodes": [
+          "IQ06:adventurer:step1",
+          "IQ06:adventurer:step2",
+          "IQ06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare translations, organize evidence and design a reading-room layout. (A Library Across Oceans)",
+        "objectiveNodes": [
+          "IQ06:investigator:step1",
+          "IQ06:investigator:step2",
+          "IQ06:investigator:step3",
+          "IQ06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Build a searchable exhibit taxonomy, evaluate sources and coordinate a multi-role restoration. (A Library Across Oceans)",
+        "objectiveNodes": [
+          "IQ06:curator:step1",
+          "IQ06:curator:step2",
+          "IQ06:curator:step3",
+          "IQ06:curator:step4",
+          "IQ06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

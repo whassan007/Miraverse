@@ -1,0 +1,656 @@
+[
+  {
+    "id": "RU01",
+    "countryCode": "RU",
+    "chapterIndex": 1,
+    "title": "The Bell at Dawn",
+    "activity": "Find the shoreline sound markers and restore a village bell",
+    "mechanic": "sound_navigation_and_repair",
+    "scene": "RU/shoreline_belfry",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-RU-KITEZH-FOLKLORE"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "ru_keeper_yelena",
+    "supportNpcId": "ru_historian_pavel",
+    "stationAnchorId": "ru_station_ru01",
+    "stationCoords": {
+      "x": 1770,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "ru_lake_bell_fragment",
+      "artifactName": "Lake Bell Fragment",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.RU01.title",
+      "summaryKey": "quest.RU01.summary",
+      "greetingKey": "quest.RU01.greeting",
+      "completionKey": "quest.RU01.completion",
+      "sourceNoteKey": "quest.RU01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow soft bell sounds and match reflection shapes. (The Bell at Dawn)",
+        "objectiveNodes": [
+          "RU01:explorer:step1",
+          "RU01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Solve rhythms, trade for garden resources and assemble a story pavilion. (The Bell at Dawn)",
+        "objectiveNodes": [
+          "RU01:adventurer:step1",
+          "RU01:adventurer:step2",
+          "RU01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two legend variants and organize a source-labeled archive. (The Bell at Dawn)",
+        "objectiveNodes": [
+          "RU01:investigator:step1",
+          "RU01:investigator:step2",
+          "RU01:investigator:step3",
+          "RU01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design an evidence-aware folklore exhibit, weighing conservation and narrative choices. (The Bell at Dawn)",
+        "objectiveNodes": [
+          "RU01:curator:step1",
+          "RU01:curator:step2",
+          "RU01:curator:step3",
+          "RU01:curator:step4",
+          "RU01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "RU02",
+    "countryCode": "RU",
+    "chapterIndex": 2,
+    "title": "The City in Reflection",
+    "activity": "Explore a magical vision that changes with water reflections",
+    "mechanic": "reflection_puzzle",
+    "scene": "RU/svetloyar_mirror_bay",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-RU-KITEZH-FOLKLORE"
+    ],
+    "prerequisiteChapterId": "RU01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ru_historian_pavel",
+    "supportNpcId": "ru_musician_ilya",
+    "stationAnchorId": "ru_station_ru02",
+    "stationCoords": {
+      "x": 1782,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "ru_reflection_prism",
+      "artifactName": "Reflection Prism",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.RU02.title",
+      "summaryKey": "quest.RU02.summary",
+      "greetingKey": "quest.RU02.greeting",
+      "completionKey": "quest.RU02.completion",
+      "sourceNoteKey": "quest.RU02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow soft bell sounds and match reflection shapes. (The City in Reflection)",
+        "objectiveNodes": [
+          "RU02:explorer:step1",
+          "RU02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Solve rhythms, trade for garden resources and assemble a story pavilion. (The City in Reflection)",
+        "objectiveNodes": [
+          "RU02:adventurer:step1",
+          "RU02:adventurer:step2",
+          "RU02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two legend variants and organize a source-labeled archive. (The City in Reflection)",
+        "objectiveNodes": [
+          "RU02:investigator:step1",
+          "RU02:investigator:step2",
+          "RU02:investigator:step3",
+          "RU02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design an evidence-aware folklore exhibit, weighing conservation and narrative choices. (The City in Reflection)",
+        "objectiveNodes": [
+          "RU02:curator:step1",
+          "RU02:curator:step2",
+          "RU02:curator:step3",
+          "RU02:curator:step4",
+          "RU02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "RU03",
+    "countryCode": "RU",
+    "chapterIndex": 3,
+    "title": "Sadko’s Strings",
+    "activity": "Play a rhythm puzzle inspired by the folkloric musician Sadko",
+    "mechanic": "musical_rhythm",
+    "scene": "RU/musical_dock",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-RU-SADKO-BYLINA"
+    ],
+    "prerequisiteChapterId": "RU02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ru_musician_ilya",
+    "supportNpcId": "ru_archivist_vera",
+    "stationAnchorId": "ru_station_ru03",
+    "stationCoords": {
+      "x": 1794,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "ru_gusli_charm",
+      "artifactName": "Gusli Charm",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.RU03.title",
+      "summaryKey": "quest.RU03.summary",
+      "greetingKey": "quest.RU03.greeting",
+      "completionKey": "quest.RU03.completion",
+      "sourceNoteKey": "quest.RU03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow soft bell sounds and match reflection shapes. (Sadko’s Strings)",
+        "objectiveNodes": [
+          "RU03:explorer:step1",
+          "RU03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Solve rhythms, trade for garden resources and assemble a story pavilion. (Sadko’s Strings)",
+        "objectiveNodes": [
+          "RU03:adventurer:step1",
+          "RU03:adventurer:step2",
+          "RU03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two legend variants and organize a source-labeled archive. (Sadko’s Strings)",
+        "objectiveNodes": [
+          "RU03:investigator:step1",
+          "RU03:investigator:step2",
+          "RU03:investigator:step3",
+          "RU03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design an evidence-aware folklore exhibit, weighing conservation and narrative choices. (Sadko’s Strings)",
+        "objectiveNodes": [
+          "RU03:curator:step1",
+          "RU03:curator:step2",
+          "RU03:curator:step3",
+          "RU03:curator:step4",
+          "RU03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "RU04",
+    "countryCode": "RU",
+    "chapterIndex": 4,
+    "title": "The Water Garden",
+    "activity": "Help create a peaceful lakeside garden without damaging the habitat",
+    "mechanic": "ecological_stewardship",
+    "scene": "RU/lakeside_reed_garden",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-RU-SVETLOYAR-ECOLOGY"
+    ],
+    "prerequisiteChapterId": "RU03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ru_archivist_vera",
+    "supportNpcId": "ru_carpenter_maksim",
+    "stationAnchorId": "ru_station_ru04",
+    "stationCoords": {
+      "x": 1806,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "ru_reed_wreath",
+      "artifactName": "Reed Wreath",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.RU04.title",
+      "summaryKey": "quest.RU04.summary",
+      "greetingKey": "quest.RU04.greeting",
+      "completionKey": "quest.RU04.completion",
+      "sourceNoteKey": "quest.RU04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow soft bell sounds and match reflection shapes. (The Water Garden)",
+        "objectiveNodes": [
+          "RU04:explorer:step1",
+          "RU04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Solve rhythms, trade for garden resources and assemble a story pavilion. (The Water Garden)",
+        "objectiveNodes": [
+          "RU04:adventurer:step1",
+          "RU04:adventurer:step2",
+          "RU04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two legend variants and organize a source-labeled archive. (The Water Garden)",
+        "objectiveNodes": [
+          "RU04:investigator:step1",
+          "RU04:investigator:step2",
+          "RU04:investigator:step3",
+          "RU04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design an evidence-aware folklore exhibit, weighing conservation and narrative choices. (The Water Garden)",
+        "objectiveNodes": [
+          "RU04:curator:step1",
+          "RU04:curator:step2",
+          "RU04:curator:step3",
+          "RU04:curator:step4",
+          "RU04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "RU05",
+    "countryCode": "RU",
+    "chapterIndex": 5,
+    "title": "Keepers of Stories",
+    "activity": "Record different variants of the Kitezh story in a local archive",
+    "mechanic": "source_comparison_archive",
+    "scene": "RU/archive_hut",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-RU-KITEZH-FOLKLORE"
+    ],
+    "prerequisiteChapterId": "RU04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ru_carpenter_maksim",
+    "supportNpcId": "ru_keeper_yelena",
+    "stationAnchorId": "ru_station_ru05",
+    "stationCoords": {
+      "x": 1818,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "ru_legend_folio",
+      "artifactName": "Legend Folio",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.RU05.title",
+      "summaryKey": "quest.RU05.summary",
+      "greetingKey": "quest.RU05.greeting",
+      "completionKey": "quest.RU05.completion",
+      "sourceNoteKey": "quest.RU05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow soft bell sounds and match reflection shapes. (Keepers of Stories)",
+        "objectiveNodes": [
+          "RU05:explorer:step1",
+          "RU05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Solve rhythms, trade for garden resources and assemble a story pavilion. (Keepers of Stories)",
+        "objectiveNodes": [
+          "RU05:adventurer:step1",
+          "RU05:adventurer:step2",
+          "RU05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two legend variants and organize a source-labeled archive. (Keepers of Stories)",
+        "objectiveNodes": [
+          "RU05:investigator:step1",
+          "RU05:investigator:step2",
+          "RU05:investigator:step3",
+          "RU05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design an evidence-aware folklore exhibit, weighing conservation and narrative choices. (Keepers of Stories)",
+        "objectiveNodes": [
+          "RU05:curator:step1",
+          "RU05:curator:step2",
+          "RU05:curator:step3",
+          "RU05:curator:step4",
+          "RU05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "RU06",
+    "countryCode": "RU",
+    "chapterIndex": 6,
+    "title": "A Story Above Water",
+    "activity": "Build a storytelling pavilion and distinguish tradition from observed evidence",
+    "mechanic": "cooperative_pavilion_build",
+    "scene": "RU/storytelling_lookout",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-RU-SVETLOYAR-ECOLOGY"
+    ],
+    "prerequisiteChapterId": "RU05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ru_keeper_yelena",
+    "supportNpcId": "ru_historian_pavel",
+    "stationAnchorId": "ru_station_ru06",
+    "stationCoords": {
+      "x": 1830,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "ru_kitezh_memory_stamp",
+      "artifactName": "Kitezh Memory Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "ru_kitezh_memory_stamp",
+      "grantsCapstoneKeepsake": "ru_kitezh_bell"
+    },
+    "stringKeys": {
+      "titleKey": "quest.RU06.title",
+      "summaryKey": "quest.RU06.summary",
+      "greetingKey": "quest.RU06.greeting",
+      "completionKey": "quest.RU06.completion",
+      "sourceNoteKey": "quest.RU06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow soft bell sounds and match reflection shapes. (A Story Above Water)",
+        "objectiveNodes": [
+          "RU06:explorer:step1",
+          "RU06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Solve rhythms, trade for garden resources and assemble a story pavilion. (A Story Above Water)",
+        "objectiveNodes": [
+          "RU06:adventurer:step1",
+          "RU06:adventurer:step2",
+          "RU06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two legend variants and organize a source-labeled archive. (A Story Above Water)",
+        "objectiveNodes": [
+          "RU06:investigator:step1",
+          "RU06:investigator:step2",
+          "RU06:investigator:step3",
+          "RU06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design an evidence-aware folklore exhibit, weighing conservation and narrative choices. (A Story Above Water)",
+        "objectiveNodes": [
+          "RU06:curator:step1",
+          "RU06:curator:step2",
+          "RU06:curator:step3",
+          "RU06:curator:step4",
+          "RU06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

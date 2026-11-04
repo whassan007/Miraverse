@@ -1,0 +1,90 @@
+{
+  "code": "IQ",
+  "order": 2,
+  "name": "Iraq",
+  "nameNative": "العراق · بغداد",
+  "city": "Baghdad",
+  "subtitle": "The Library That Travels",
+  "theme": "Knowledge shared, translated and preserved across generations",
+  "visualIdentity": "Tigris riverside walk, shanasheel houses, book market, manuscript workshop, date market and learning courtyard.",
+  "localLanguage": "ar-IQ",
+  "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+  "origin": [
+    600,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      552,
+      60,
+      -48
+    ],
+    "max": [
+      648,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    58,
+    166,
+    185
+  ],
+  "accentRgb": [
+    212,
+    136,
+    42
+  ],
+  "customBlocks": [
+    "miraverse:iq_shanasheel_oriel_screen",
+    "miraverse:iq_tigris_glazed_brick",
+    "miraverse:iq_baghdadi_courtyard_arch",
+    "miraverse:iq_kleicha_brick_oven",
+    "miraverse:iq_turquoise_muqarnas",
+    "miraverse:iq_palm_weave_mat",
+    "miraverse:iq_copper_samovar_stand",
+    "miraverse:iq_calligraphy_frieze"
+  ],
+  "capstoneArtifact": {
+    "id": "iq_house_of_wisdom_book",
+    "name": "House of Wisdom Book"
+  },
+  "stampId": "iq_knowledge_keeper_stamp",
+  "stampName": "Knowledge Keeper Stamp",
+  "learnWords": [
+    {
+      "key": "shanasheel",
+      "native": "شناشيل",
+      "translit": "shanāshīl",
+      "en": "Carved wooden lattice balcony overhanging the street"
+    },
+    {
+      "key": "kleicha",
+      "native": "كليجة",
+      "translit": "klīcha",
+      "en": "Cardamom-spiced date pastry shared at celebrations"
+    },
+    {
+      "key": "hikma",
+      "native": "حكمة",
+      "translit": "ḥikma",
+      "en": "Wisdom and shared scholarly inquiry"
+    }
+  ],
+  "chapterIds": [
+    "IQ01",
+    "IQ02",
+    "IQ03",
+    "IQ04",
+    "IQ05",
+    "IQ06"
+  ],
+  "castIds": [
+    "iq_bibi_amal",
+    "iq_merchant_hassan",
+    "iq_translator_mariam",
+    "iq_baker_salim",
+    "iq_astronomer_zaid"
+  ]
+}

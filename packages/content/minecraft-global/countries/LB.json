@@ -1,0 +1,90 @@
+{
+  "code": "LB",
+  "order": 1,
+  "name": "Lebanon",
+  "nameNative": "لبنان · جبيل",
+  "city": "Byblos/Jbeil",
+  "subtitle": "The Harbor of Returning Stories",
+  "theme": "Coastlines, trade, alphabets, family memory and return",
+  "visualIdentity": "Stone harbor, docks, narrow souks, cedar motifs, bakeries, family courtyard, storytelling archive and sea cliffs.",
+  "localLanguage": "ar-LB",
+  "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+  "origin": [
+    200,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      152,
+      60,
+      -48
+    ],
+    "max": [
+      248,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    218,
+    194,
+    152
+  ],
+  "accentRgb": [
+    30,
+    122,
+    104
+  ],
+  "customBlocks": [
+    "miraverse:lb_byblos_limestone",
+    "miraverse:lb_carved_arch_stone",
+    "miraverse:lb_terracotta_roof_tile",
+    "miraverse:lb_cedar_shutter",
+    "miraverse:lb_saj_hearth_block",
+    "miraverse:lb_harbor_bollard",
+    "miraverse:lb_mosaic_courtyard_tile",
+    "miraverse:lb_zaatar_drying_rack"
+  ],
+  "capstoneArtifact": {
+    "id": "lb_cedar_sea_memory_chest",
+    "name": "Cedar-and-sea Memory Chest"
+  },
+  "stampId": "lb_harbor_home_stamp",
+  "stampName": "Harbor Home Stamp",
+  "learnWords": [
+    {
+      "key": "saj",
+      "native": "صاج",
+      "translit": "ṣāj",
+      "en": "Domed griddle for baking flatbread"
+    },
+    {
+      "key": "zaatar",
+      "native": "زعتر",
+      "translit": "za'tar",
+      "en": "Fragrant wild thyme, sesame, and sumac blend"
+    },
+    {
+      "key": "mina",
+      "native": "مينا",
+      "translit": "mīnā",
+      "en": "Coastal harbor and stone dock"
+    }
+  ],
+  "chapterIds": [
+    "LB01",
+    "LB02",
+    "LB03",
+    "LB04",
+    "LB05",
+    "LB06"
+  ],
+  "castIds": [
+    "lb_teta_nahla",
+    "lb_archivist_rami",
+    "lb_captain_faris",
+    "lb_baker_tariq",
+    "lb_artisan_nadia"
+  ]
+}

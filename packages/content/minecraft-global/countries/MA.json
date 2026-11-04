@@ -1,0 +1,90 @@
+{
+  "code": "MA",
+  "order": 11,
+  "name": "Morocco",
+  "nameNative": "المغرب · مراكش",
+  "city": "Marrakesh / Jemaa el-Fnaa-inspired square",
+  "subtitle": "The Living Circle",
+  "theme": "Belonging is created together through storytelling and hospitality",
+  "visualIdentity": "Medina-inspired lanes, bustling square, courtyard, craft market, mint garden, story dais and cultural heritage gallery.",
+  "localLanguage": "ar-MA",
+  "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+  "origin": [
+    2200,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      2152,
+      60,
+      -48
+    ],
+    "max": [
+      2248,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    208,
+    96,
+    68
+  ],
+  "accentRgb": [
+    42,
+    148,
+    126
+  ],
+  "customBlocks": [
+    "miraverse:ma_marrakesh_terracotta_pisé",
+    "miraverse:ma_zellij_star_mosaic",
+    "miraverse:ma_carved_cedar_arch",
+    "miraverse:ma_halqa_circle_paver",
+    "miraverse:ma_mint_tea_hospitality_table",
+    "miraverse:ma_brass_pierced_lantern",
+    "miraverse:ma_riad_courtyard_fountain",
+    "miraverse:ma_storyteller_stage_canopy"
+  ],
+  "capstoneArtifact": {
+    "id": "ma_storytellers_circle_drum",
+    "name": "Storyteller’s Circle Drum"
+  },
+  "stampId": "ma_morocco_circle_stamp",
+  "stampName": "Morocco Circle Stamp",
+  "learnWords": [
+    {
+      "key": "halqa",
+      "native": "حلقة",
+      "translit": "ḥalqa",
+      "en": "Interactive audience circle gathered around a storyteller"
+    },
+    {
+      "key": "atay",
+      "native": "أتاي",
+      "translit": "atāy",
+      "en": "Moroccan green tea infused with fresh spearmint"
+    },
+    {
+      "key": "zellij",
+      "native": "زليج",
+      "translit": "zallīj",
+      "en": "Hand-cut geometric glazed tilework"
+    }
+  ],
+  "chapterIds": [
+    "MA01",
+    "MA02",
+    "MA03",
+    "MA04",
+    "MA05",
+    "MA06"
+  ],
+  "castIds": [
+    "ma_hakawati_driss",
+    "ma_tea_host_kenza",
+    "ma_merchant_yassine",
+    "ma_historian_salma",
+    "ma_performer_amine"
+  ]
+}

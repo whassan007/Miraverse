@@ -1,0 +1,728 @@
+[
+  {
+    "id": "src_lb01",
+    "chapterId": "LB01",
+    "countryCode": "LB",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-LB-BYBLOS-MARITIME"
+    ],
+    "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+    "inspectPromptKey": "quest.LB01.source_note"
+  },
+  {
+    "id": "src_lb02",
+    "chapterId": "LB02",
+    "countryCode": "LB",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-LB-AHIRAM-ALPHABET"
+    ],
+    "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+    "inspectPromptKey": "quest.LB02.source_note"
+  },
+  {
+    "id": "src_lb03",
+    "chapterId": "LB03",
+    "countryCode": "LB",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-LB-CULINARY-MANOUSHE"
+    ],
+    "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+    "inspectPromptKey": "quest.LB03.source_note"
+  },
+  {
+    "id": "src_lb04",
+    "chapterId": "LB04",
+    "countryCode": "LB",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-LB-PLUTARCH-OSIRIS-MYTH"
+    ],
+    "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+    "inspectPromptKey": "quest.LB04.source_note"
+  },
+  {
+    "id": "src_lb05",
+    "chapterId": "LB05",
+    "countryCode": "LB",
+    "sourceType": "fictional_gameplay",
+    "sourceIds": [
+      "SRC-LB-DIASPORA-ARCHIVE"
+    ],
+    "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+    "inspectPromptKey": "quest.LB05.source_note"
+  },
+  {
+    "id": "src_lb06",
+    "chapterId": "LB06",
+    "countryCode": "LB",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-LB-BYBLOS-MARITIME"
+    ],
+    "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+    "inspectPromptKey": "quest.LB06.source_note"
+  },
+  {
+    "id": "src_iq01",
+    "chapterId": "IQ01",
+    "countryCode": "IQ",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-IQ-MUTANABBI-RESILIENCE"
+    ],
+    "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+    "inspectPromptKey": "quest.IQ01.source_note"
+  },
+  {
+    "id": "src_iq02",
+    "chapterId": "IQ02",
+    "countryCode": "IQ",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-IQ-BAYT-AL-HIKMA"
+    ],
+    "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+    "inspectPromptKey": "quest.IQ02.source_note"
+  },
+  {
+    "id": "src_iq03",
+    "chapterId": "IQ03",
+    "countryCode": "IQ",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-IQ-TRANSLATION-MOVEMENT"
+    ],
+    "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+    "inspectPromptKey": "quest.IQ03.source_note"
+  },
+  {
+    "id": "src_iq04",
+    "chapterId": "IQ04",
+    "countryCode": "IQ",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-IQ-CULINARY-KLEICHA"
+    ],
+    "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+    "inspectPromptKey": "quest.IQ04.source_note"
+  },
+  {
+    "id": "src_iq05",
+    "chapterId": "IQ05",
+    "countryCode": "IQ",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-IQ-SHANASHEEL-ARCH"
+    ],
+    "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+    "inspectPromptKey": "quest.IQ05.source_note"
+  },
+  {
+    "id": "src_iq06",
+    "chapterId": "IQ06",
+    "countryCode": "IQ",
+    "sourceType": "fictional_gameplay",
+    "sourceIds": [
+      "SRC-IQ-MUTANABBI-RESILIENCE"
+    ],
+    "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+    "inspectPromptKey": "quest.IQ06.source_note"
+  },
+  {
+    "id": "src_eg01",
+    "chapterId": "EG01",
+    "countryCode": "EG",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-FANOUS-CRAFT"
+    ],
+    "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+    "inspectPromptKey": "quest.EG01.source_note"
+  },
+  {
+    "id": "src_eg02",
+    "chapterId": "EG02",
+    "countryCode": "EG",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-FANOUS-CRAFT"
+    ],
+    "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+    "inspectPromptKey": "quest.EG02.source_note"
+  },
+  {
+    "id": "src_eg03",
+    "chapterId": "EG03",
+    "countryCode": "EG",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-KOSHARI-HOSPITALITY"
+    ],
+    "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+    "inspectPromptKey": "quest.EG03.source_note"
+  },
+  {
+    "id": "src_eg04",
+    "chapterId": "EG04",
+    "countryCode": "EG",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-KOSHARI-HOSPITALITY"
+    ],
+    "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+    "inspectPromptKey": "quest.EG04.source_note"
+  },
+  {
+    "id": "src_eg05",
+    "chapterId": "EG05",
+    "countryCode": "EG",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-EG-FATIMID-TRADITION"
+    ],
+    "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+    "inspectPromptKey": "quest.EG05.source_note"
+  },
+  {
+    "id": "src_eg06",
+    "chapterId": "EG06",
+    "countryCode": "EG",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-EG-FANOUS-CRAFT"
+    ],
+    "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+    "inspectPromptKey": "quest.EG06.source_note"
+  },
+  {
+    "id": "src_fr01",
+    "chapterId": "FR01",
+    "countryCode": "FR",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-FR-LYON-TRABOULES"
+    ],
+    "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+    "inspectPromptKey": "quest.FR01.source_note"
+  },
+  {
+    "id": "src_fr02",
+    "chapterId": "FR02",
+    "countryCode": "FR",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-FR-CANUTS-JACQUARD"
+    ],
+    "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+    "inspectPromptKey": "quest.FR02.source_note"
+  },
+  {
+    "id": "src_fr03",
+    "chapterId": "FR03",
+    "countryCode": "FR",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-FR-MERES-LYONNAISES"
+    ],
+    "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+    "inspectPromptKey": "quest.FR03.source_note"
+  },
+  {
+    "id": "src_fr04",
+    "chapterId": "FR04",
+    "countryCode": "FR",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-FR-MERES-LYONNAISES"
+    ],
+    "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+    "inspectPromptKey": "quest.FR04.source_note"
+  },
+  {
+    "id": "src_fr05",
+    "chapterId": "FR05",
+    "countryCode": "FR",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-FR-LYON-TRABOULES"
+    ],
+    "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+    "inspectPromptKey": "quest.FR05.source_note"
+  },
+  {
+    "id": "src_fr06",
+    "chapterId": "FR06",
+    "countryCode": "FR",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-FR-MERES-LYONNAISES"
+    ],
+    "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+    "inspectPromptKey": "quest.FR06.source_note"
+  },
+  {
+    "id": "src_kr01",
+    "chapterId": "KR01",
+    "countryCode": "KR",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-JEONJU-HANOK"
+    ],
+    "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+    "inspectPromptKey": "quest.KR01.source_note"
+  },
+  {
+    "id": "src_kr02",
+    "chapterId": "KR02",
+    "countryCode": "KR",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-KR-OBANGSAEK-PHILOSOPHY"
+    ],
+    "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+    "inspectPromptKey": "quest.KR02.source_note"
+  },
+  {
+    "id": "src_kr03",
+    "chapterId": "KR03",
+    "countryCode": "KR",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-JEONJU-HANOK"
+    ],
+    "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+    "inspectPromptKey": "quest.KR03.source_note"
+  },
+  {
+    "id": "src_kr04",
+    "chapterId": "KR04",
+    "countryCode": "KR",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-BIBIMBAP-ORIGINS"
+    ],
+    "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+    "inspectPromptKey": "quest.KR04.source_note"
+  },
+  {
+    "id": "src_kr05",
+    "chapterId": "KR05",
+    "countryCode": "KR",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-JEONJU-HANOK"
+    ],
+    "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+    "inspectPromptKey": "quest.KR05.source_note"
+  },
+  {
+    "id": "src_kr06",
+    "chapterId": "KR06",
+    "countryCode": "KR",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-KR-BIBIMBAP-ORIGINS"
+    ],
+    "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+    "inspectPromptKey": "quest.KR06.source_note"
+  },
+  {
+    "id": "src_de01",
+    "chapterId": "DE01",
+    "countryCode": "DE",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-DE-RHINE-NAVIGATION"
+    ],
+    "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+    "inspectPromptKey": "quest.DE01.source_note"
+  },
+  {
+    "id": "src_de02",
+    "chapterId": "DE02",
+    "countryCode": "DE",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-DE-LORELEI-LITERATURE"
+    ],
+    "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+    "inspectPromptKey": "quest.DE02.source_note"
+  },
+  {
+    "id": "src_de03",
+    "chapterId": "DE03",
+    "countryCode": "DE",
+    "sourceType": "fictional_gameplay",
+    "sourceIds": [
+      "SRC-DE-RHINE-NAVIGATION"
+    ],
+    "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+    "inspectPromptKey": "quest.DE03.source_note"
+  },
+  {
+    "id": "src_de04",
+    "chapterId": "DE04",
+    "countryCode": "DE",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-DE-PARZIVAL-WOLFRAM"
+    ],
+    "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+    "inspectPromptKey": "quest.DE04.source_note"
+  },
+  {
+    "id": "src_de05",
+    "chapterId": "DE05",
+    "countryCode": "DE",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-DE-PARZIVAL-WOLFRAM"
+    ],
+    "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+    "inspectPromptKey": "quest.DE05.source_note"
+  },
+  {
+    "id": "src_de06",
+    "chapterId": "DE06",
+    "countryCode": "DE",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-DE-PARZIVAL-WOLFRAM"
+    ],
+    "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+    "inspectPromptKey": "quest.DE06.source_note"
+  },
+  {
+    "id": "src_cn01",
+    "chapterId": "CN01",
+    "countryCode": "CN",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-CN-TAO-YUANMING-PROSE"
+    ],
+    "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+    "inspectPromptKey": "quest.CN01.source_note"
+  },
+  {
+    "id": "src_cn02",
+    "chapterId": "CN02",
+    "countryCode": "CN",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-CN-TAO-YUANMING-PROSE"
+    ],
+    "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+    "inspectPromptKey": "quest.CN02.source_note"
+  },
+  {
+    "id": "src_cn03",
+    "chapterId": "CN03",
+    "countryCode": "CN",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-CN-SEASONAL-AGRICULTURE"
+    ],
+    "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+    "inspectPromptKey": "quest.CN03.source_note"
+  },
+  {
+    "id": "src_cn04",
+    "chapterId": "CN04",
+    "countryCode": "CN",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-CN-TAO-YUANMING-PROSE"
+    ],
+    "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+    "inspectPromptKey": "quest.CN04.source_note"
+  },
+  {
+    "id": "src_cn05",
+    "chapterId": "CN05",
+    "countryCode": "CN",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-CN-CHANGE-MOON-FOLKLORE"
+    ],
+    "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+    "inspectPromptKey": "quest.CN05.source_note"
+  },
+  {
+    "id": "src_cn06",
+    "chapterId": "CN06",
+    "countryCode": "CN",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-CN-TAO-YUANMING-PROSE"
+    ],
+    "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+    "inspectPromptKey": "quest.CN06.source_note"
+  },
+  {
+    "id": "src_jp01",
+    "chapterId": "JP01",
+    "countryCode": "JP",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+    ],
+    "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+    "inspectPromptKey": "quest.JP01.source_note"
+  },
+  {
+    "id": "src_jp02",
+    "chapterId": "JP02",
+    "countryCode": "JP",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-JP-TOHOKU-WAYSTATIONS"
+    ],
+    "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+    "inspectPromptKey": "quest.JP02.source_note"
+  },
+  {
+    "id": "src_jp03",
+    "chapterId": "JP03",
+    "countryCode": "JP",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+    ],
+    "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+    "inspectPromptKey": "quest.JP03.source_note"
+  },
+  {
+    "id": "src_jp04",
+    "chapterId": "JP04",
+    "countryCode": "JP",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-JP-TOHOKU-WAYSTATIONS"
+    ],
+    "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+    "inspectPromptKey": "quest.JP04.source_note"
+  },
+  {
+    "id": "src_jp05",
+    "chapterId": "JP05",
+    "countryCode": "JP",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-JP-BASHO-OKU-NO-HOSOMICHI"
+    ],
+    "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+    "inspectPromptKey": "quest.JP05.source_note"
+  },
+  {
+    "id": "src_jp06",
+    "chapterId": "JP06",
+    "countryCode": "JP",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-JP-TOHOKU-WAYSTATIONS"
+    ],
+    "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+    "inspectPromptKey": "quest.JP06.source_note"
+  },
+  {
+    "id": "src_ru01",
+    "chapterId": "RU01",
+    "countryCode": "RU",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-RU-KITEZH-FOLKLORE"
+    ],
+    "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+    "inspectPromptKey": "quest.RU01.source_note"
+  },
+  {
+    "id": "src_ru02",
+    "chapterId": "RU02",
+    "countryCode": "RU",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-RU-KITEZH-FOLKLORE"
+    ],
+    "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+    "inspectPromptKey": "quest.RU02.source_note"
+  },
+  {
+    "id": "src_ru03",
+    "chapterId": "RU03",
+    "countryCode": "RU",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-RU-SADKO-BYLINA"
+    ],
+    "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+    "inspectPromptKey": "quest.RU03.source_note"
+  },
+  {
+    "id": "src_ru04",
+    "chapterId": "RU04",
+    "countryCode": "RU",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-RU-SVETLOYAR-ECOLOGY"
+    ],
+    "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+    "inspectPromptKey": "quest.RU04.source_note"
+  },
+  {
+    "id": "src_ru05",
+    "chapterId": "RU05",
+    "countryCode": "RU",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-RU-KITEZH-FOLKLORE"
+    ],
+    "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+    "inspectPromptKey": "quest.RU05.source_note"
+  },
+  {
+    "id": "src_ru06",
+    "chapterId": "RU06",
+    "countryCode": "RU",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-RU-SVETLOYAR-ECOLOGY"
+    ],
+    "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+    "inspectPromptKey": "quest.RU06.source_note"
+  },
+  {
+    "id": "src_ua01",
+    "chapterId": "UA01",
+    "countryCode": "UA",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-UA-KYIV-FOUNDERS-CHRONICLE"
+    ],
+    "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+    "inspectPromptKey": "quest.UA01.source_note"
+  },
+  {
+    "id": "src_ua02",
+    "chapterId": "UA02",
+    "countryCode": "UA",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-UA-TOLOKA-COMMUNITY"
+    ],
+    "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+    "inspectPromptKey": "quest.UA02.source_note"
+  },
+  {
+    "id": "src_ua03",
+    "chapterId": "UA03",
+    "countryCode": "UA",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-UA-KOBZAR-BANDURA"
+    ],
+    "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+    "inspectPromptKey": "quest.UA03.source_note"
+  },
+  {
+    "id": "src_ua04",
+    "chapterId": "UA04",
+    "countryCode": "UA",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-UA-KOBZAR-BANDURA"
+    ],
+    "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+    "inspectPromptKey": "quest.UA04.source_note"
+  },
+  {
+    "id": "src_ua05",
+    "chapterId": "UA05",
+    "countryCode": "UA",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-UA-KOBZAR-BANDURA"
+    ],
+    "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+    "inspectPromptKey": "quest.UA05.source_note"
+  },
+  {
+    "id": "src_ua06",
+    "chapterId": "UA06",
+    "countryCode": "UA",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-UA-TOLOKA-COMMUNITY"
+    ],
+    "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+    "inspectPromptKey": "quest.UA06.source_note"
+  },
+  {
+    "id": "src_ma01",
+    "chapterId": "MA01",
+    "countryCode": "MA",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-MA-AL-HALQA-UNESCO"
+    ],
+    "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+    "inspectPromptKey": "quest.MA01.source_note"
+  },
+  {
+    "id": "src_ma02",
+    "chapterId": "MA02",
+    "countryCode": "MA",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-MA-AL-HALQA-UNESCO"
+    ],
+    "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+    "inspectPromptKey": "quest.MA02.source_note"
+  },
+  {
+    "id": "src_ma03",
+    "chapterId": "MA03",
+    "countryCode": "MA",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-MA-MINT-TEA-HOSPITALITY"
+    ],
+    "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+    "inspectPromptKey": "quest.MA03.source_note"
+  },
+  {
+    "id": "src_ma04",
+    "chapterId": "MA04",
+    "countryCode": "MA",
+    "sourceType": "fictional_gameplay",
+    "sourceIds": [
+      "SRC-MA-AL-HALQA-UNESCO"
+    ],
+    "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+    "inspectPromptKey": "quest.MA04.source_note"
+  },
+  {
+    "id": "src_ma05",
+    "chapterId": "MA05",
+    "countryCode": "MA",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-MA-MARRAKESH-HERITAGE"
+    ],
+    "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+    "inspectPromptKey": "quest.MA05.source_note"
+  },
+  {
+    "id": "src_ma06",
+    "chapterId": "MA06",
+    "countryCode": "MA",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-MA-AL-HALQA-UNESCO"
+    ],
+    "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+    "inspectPromptKey": "quest.MA06.source_note"
+  }
+]
