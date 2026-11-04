@@ -1094,12 +1094,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX19.md",
       "branch": "minecraft-v10/DX19",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX19",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "a6039e5",
       "test_command": "node apps/minecraft/tools/checks/navigation/check-navigation.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tools/checks/navigation/check-navigation.mjs"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (59.48 tok/s)",
       "blockers": []
     },
     {
