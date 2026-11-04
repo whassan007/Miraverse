@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-11-04T06:48:06.396Z",
+  "customBlocksCount": 40,
+  "entitiesCount": 7,
+  "contentPacks": [],
+  "sampleBlock": {
+    "region": "LB",
+    "blockId": "miraverse:lb_byblos_limestone",
+    "definition": {
+      "format_version": "1.20.80",
+      "minecraft:block": {
+        "description": {
+          "identifier": "miraverse:lb_byblos_limestone",
+          "menu_category": {
+            "category": "construction"
+          }
+        },
+        "components": {
+          "minecraft:destructible_by_mining": {
+            "seconds_to_destroy": 1.5
+          },
+          "minecraft:destructible_by_explosion": {
+            "explosion_resistance": 6
+          },
+          "minecraft:map_color": "#bcae7e"
+        }
+      }
+    }
+  },
+  "sampleEntity": {
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "miraverse:mentor_lb",
+        "materials": {
+          "default": "entity_alphatest"
+        },
+        "textures": {
+          "default": "textures/entity/mentor_lb"
+        },
+        "geometry": {
+          "default": "geometry.miraverse.mentor"
+        },
+        "animations": {
+          "idle": "animation.miraverse.mentor.idle",
+          "greeting": "animation.miraverse.mentor.greeting",
+          "celebrate": "animation.miraverse.mentor.celebrate"
+        },
+        "scripts": {
+          "animate": [
+            "idle"
+          ]
+        },
+        "render_controllers": [
+          "controller.render.miraverse.mentor"
+        ],
+        "spawn_egg": {
+          "base_color": "#D8A24A",
+          "overlay_color": "#2A6B53"
+        }
+      },
+      "metadata": {
+        "country": "LB",
+        "role": "mentor"
+      }
+    }
+  }
+}
