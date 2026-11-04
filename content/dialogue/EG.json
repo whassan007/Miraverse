@@ -1,0 +1,158 @@
+[
+  {
+    "dialogueId": "dlg:EG:teta_samira",
+    "country": "EG",
+    "npcId": "npc:EG:teta_samira",
+    "npcName": "Teta Samira",
+    "role": "mentor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:EG:teta_samira",
+        "speakerName": "Teta Samira",
+        "portraitId": "npc:EG:teta_samira",
+        "emotion": "warm",
+        "gestureClip": "talk_gesture",
+        "textNative": "يا مية أهلاً وسهلاً في القاهرة! يلا نعلّق فوانيس الحارة ونطبخ أحلى كشري.",
+        "textTranslit": "Ya mit ahlan wa sahlan fi el-Qahira! Yalla n-allaq fawanis el-hara...",
+        "textEn": "A hundred welcomes to Cairo! Let's restore the brass fanous lantern arch and layer a warm pot of koshari.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Let's start the chapter quest!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "EG:ch1:lantern:gather"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:EG:teta_samira",
+        "speakerName": "Teta Samira",
+        "portraitId": "npc:EG:teta_samira",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "فانوس",
+        "textTranslit": "fanous",
+        "textEn": "Remember the word \"فانوس\" (traditional brass lantern) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:EG:am_hassan",
+    "country": "EG",
+    "npcId": "npc:EG:am_hassan",
+    "npcName": "Am Hassan",
+    "role": "vendor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:EG:am_hassan",
+        "speakerName": "Am Hassan",
+        "portraitId": "npc:EG:am_hassan",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "عدس أسود، حمص، وبصل مقرمش طازة من السوق!",
+        "textTranslit": "Ads aswad, hommos, w basal meqarmesh taza min el-souq!",
+        "textEn": "Black lentils, chickpeas, and crispy onions fresh from the Cairo market!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "EG:ch1:lantern:trade"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:EG:am_hassan",
+        "speakerName": "Am Hassan",
+        "portraitId": "npc:EG:am_hassan",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "كشري",
+        "textTranslit": "koshari",
+        "textEn": "Remember the word \"كشري\" (lentil, rice & pasta dish) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:EG:karim_artisan",
+    "country": "EG",
+    "npcId": "npc:EG:karim_artisan",
+    "npcName": "Usta Karim",
+    "role": "artisan",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:EG:karim_artisan",
+        "speakerName": "Usta Karim",
+        "portraitId": "npc:EG:karim_artisan",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "النحاس المشغول والزجاج الملون هيخلي الفانوس ينوّر الحوش كله.",
+        "textTranslit": "El-nahas el-mashghoul wel-zogag el-melawwen...",
+        "textEn": "Pierced brass filigree and colored glass panels will make the courtyard fanous arch glow.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "EG:ch1:lantern:build"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:EG:karim_artisan",
+        "speakerName": "Usta Karim",
+        "portraitId": "npc:EG:karim_artisan",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "عدس",
+        "textTranslit": "ads",
+        "textEn": "Remember the word \"عدس\" (lentils) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:EG:nour_neighbor",
+    "country": "EG",
+    "npcId": "npc:EG:nour_neighbor",
+    "npcName": "Nour",
+    "role": "neighbor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:EG:nour_neighbor",
+        "speakerName": "Nour",
+        "portraitId": "npc:EG:nour_neighbor",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "ريحة الدقة والصلصة مالية الحارة كلها!",
+        "textTranslit": "Rihet el-daqqa wel-salsa malya el-hara kollaha!",
+        "textEn": "The aroma of garlic-vinegar daqqa and spiced tomato sauce fills the whole courtyard!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "EG:ch1:lantern:word"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:EG:nour_neighbor",
+        "speakerName": "Nour",
+        "portraitId": "npc:EG:nour_neighbor",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "حارة",
+        "textTranslit": "hara",
+        "textEn": "Remember the word \"حارة\" (neighborhood lane) as you explore!"
+      }
+    ]
+  }
+]

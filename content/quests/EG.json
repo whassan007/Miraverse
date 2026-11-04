@@ -1,0 +1,365 @@
+{
+  "questId": "EG:ch1:lantern:main",
+  "country": "EG",
+  "chapter": 1,
+  "titleEn": "Egypt: Cairo Courtyard Lanterns & Koshari",
+  "titleNative": "مصر · فوانيس الحارة وكشري تيتا سميرة",
+  "synopsis": "A hundred welcomes to Cairo! Let's restore the brass fanous lantern arch and layer a warm pot of koshari.",
+  "mentorId": "npc:EG:teta_samira",
+  "mentorName": "Teta Samira",
+  "landmarkId": "landmark:EG:main",
+  "objectives": [
+    {
+      "objectiveId": "EG:ch1:lantern:gather",
+      "challengeType": "gather",
+      "title": "Pantry on the Corniche",
+      "description": "Collect rice, brown lentils, and spiced tomato sauce from the market stalls for Teta Samira's koshari pot.",
+      "targetNpcId": "npc:EG:teta_samira",
+      "targetStationId": "station:EG:gather",
+      "requiredItems": [
+        {
+          "itemId": "item:EG:rice",
+          "quantity": 1,
+          "labelEn": "Egyptian Short-Grain Rice",
+          "labelNative": "Egyptian Short-Grain Rice"
+        },
+        {
+          "itemId": "item:EG:lentils",
+          "quantity": 1,
+          "labelEn": "Brown Lentils",
+          "labelNative": "Brown Lentils"
+        },
+        {
+          "itemId": "item:EG:tomato_sauce",
+          "quantity": 1,
+          "labelEn": "Spiced Garlic Tomato Sauce",
+          "labelNative": "Spiced Garlic Tomato Sauce"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:EG:gather_badge",
+          "quantity": 1,
+          "labelEn": "Cairene Koshari GATHER Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dear! You have lit up Egypt—come, let's make a warm bowl of koshari and hang the Nile lanterns together.",
+      "vocabWords": [
+        {
+          "word": "فانوس",
+          "translit": "fanous",
+          "en": "traditional brass lantern",
+          "objectId": "prop:EG:fanous_arch"
+        },
+        {
+          "word": "كشري",
+          "translit": "koshari",
+          "en": "lentil, rice & pasta dish",
+          "objectId": "prop:EG:koshari_pot"
+        },
+        {
+          "word": "عدس",
+          "translit": "ads",
+          "en": "lentils",
+          "objectId": "prop:EG:lentil_sack"
+        },
+        {
+          "word": "حارة",
+          "translit": "hara",
+          "en": "neighborhood lane",
+          "objectId": "prop:EG:courtyard_gate"
+        },
+        {
+          "word": "نيل",
+          "translit": "Nil",
+          "en": "River Nile",
+          "objectId": "prop:EG:nile_mural"
+        }
+      ]
+    },
+    {
+      "objectiveId": "EG:ch1:lantern:trade",
+      "challengeType": "trade",
+      "title": "Lanterns of Khan el-Khalili",
+      "description": "Share a warm bowl of homemade koshari with the bazaar artisan in exchange for a brass fanous lantern.",
+      "targetNpcId": "npc:EG:am_hassan",
+      "targetStationId": "station:EG:trade",
+      "requiredItems": [
+        {
+          "itemId": "item:EG:rice",
+          "quantity": 1,
+          "labelEn": "Egyptian Short-Grain Rice",
+          "labelNative": "Egyptian Short-Grain Rice"
+        },
+        {
+          "itemId": "item:EG:lentils",
+          "quantity": 1,
+          "labelEn": "Brown Lentils",
+          "labelNative": "Brown Lentils"
+        },
+        {
+          "itemId": "item:EG:tomato_sauce",
+          "quantity": 1,
+          "labelEn": "Spiced Garlic Tomato Sauce",
+          "labelNative": "Spiced Garlic Tomato Sauce"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:EG:trade_badge",
+          "quantity": 1,
+          "labelEn": "Cairene Koshari TRADE Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dear! You have lit up Egypt—come, let's make a warm bowl of koshari and hang the Nile lanterns together.",
+      "vocabWords": [
+        {
+          "word": "فانوس",
+          "translit": "fanous",
+          "en": "traditional brass lantern",
+          "objectId": "prop:EG:fanous_arch"
+        },
+        {
+          "word": "كشري",
+          "translit": "koshari",
+          "en": "lentil, rice & pasta dish",
+          "objectId": "prop:EG:koshari_pot"
+        },
+        {
+          "word": "عدس",
+          "translit": "ads",
+          "en": "lentils",
+          "objectId": "prop:EG:lentil_sack"
+        },
+        {
+          "word": "حارة",
+          "translit": "hara",
+          "en": "neighborhood lane",
+          "objectId": "prop:EG:courtyard_gate"
+        },
+        {
+          "word": "نيل",
+          "translit": "Nil",
+          "en": "River Nile",
+          "objectId": "prop:EG:nile_mural"
+        }
+      ]
+    },
+    {
+      "objectiveId": "EG:ch1:lantern:build",
+      "challengeType": "build",
+      "title": "Felucca on the Nile",
+      "description": "Assemble a traditional wooden Nile felucca hull with acacia planks and hoist its tall white linen sail.",
+      "targetNpcId": "npc:EG:karim_artisan",
+      "targetStationId": "station:EG:build",
+      "requiredItems": [
+        {
+          "itemId": "item:EG:rice",
+          "quantity": 1,
+          "labelEn": "Egyptian Short-Grain Rice",
+          "labelNative": "Egyptian Short-Grain Rice"
+        },
+        {
+          "itemId": "item:EG:lentils",
+          "quantity": 1,
+          "labelEn": "Brown Lentils",
+          "labelNative": "Brown Lentils"
+        },
+        {
+          "itemId": "item:EG:tomato_sauce",
+          "quantity": 1,
+          "labelEn": "Spiced Garlic Tomato Sauce",
+          "labelNative": "Spiced Garlic Tomato Sauce"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:EG:build_badge",
+          "quantity": 1,
+          "labelEn": "Cairene Koshari BUILD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dear! You have lit up Egypt—come, let's make a warm bowl of koshari and hang the Nile lanterns together.",
+      "vocabWords": [
+        {
+          "word": "فانوس",
+          "translit": "fanous",
+          "en": "traditional brass lantern",
+          "objectId": "prop:EG:fanous_arch"
+        },
+        {
+          "word": "كشري",
+          "translit": "koshari",
+          "en": "lentil, rice & pasta dish",
+          "objectId": "prop:EG:koshari_pot"
+        },
+        {
+          "word": "عدس",
+          "translit": "ads",
+          "en": "lentils",
+          "objectId": "prop:EG:lentil_sack"
+        },
+        {
+          "word": "حارة",
+          "translit": "hara",
+          "en": "neighborhood lane",
+          "objectId": "prop:EG:courtyard_gate"
+        },
+        {
+          "word": "نيل",
+          "translit": "Nil",
+          "en": "River Nile",
+          "objectId": "prop:EG:nile_mural"
+        }
+      ]
+    },
+    {
+      "objectiveId": "EG:ch1:lantern:cook",
+      "challengeType": "cook",
+      "title": "Teta Samira's Koshari",
+      "description": "Layer the rice, lentils, spiced tomato sauce, and golden crispy onions in order to prepare a festive bowl of Egyptian koshari.",
+      "targetNpcId": "npc:EG:teta_samira",
+      "targetStationId": "station:EG:cook",
+      "requiredItems": [
+        {
+          "itemId": "item:EG:rice",
+          "quantity": 1,
+          "labelEn": "Egyptian Short-Grain Rice",
+          "labelNative": "Egyptian Short-Grain Rice"
+        },
+        {
+          "itemId": "item:EG:lentils",
+          "quantity": 1,
+          "labelEn": "Brown Lentils",
+          "labelNative": "Brown Lentils"
+        },
+        {
+          "itemId": "item:EG:tomato_sauce",
+          "quantity": 1,
+          "labelEn": "Spiced Garlic Tomato Sauce",
+          "labelNative": "Spiced Garlic Tomato Sauce"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:EG:cook_badge",
+          "quantity": 1,
+          "labelEn": "Cairene Koshari COOK Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dear! You have lit up Egypt—come, let's make a warm bowl of koshari and hang the Nile lanterns together.",
+      "vocabWords": [
+        {
+          "word": "فانوس",
+          "translit": "fanous",
+          "en": "traditional brass lantern",
+          "objectId": "prop:EG:fanous_arch"
+        },
+        {
+          "word": "كشري",
+          "translit": "koshari",
+          "en": "lentil, rice & pasta dish",
+          "objectId": "prop:EG:koshari_pot"
+        },
+        {
+          "word": "عدس",
+          "translit": "ads",
+          "en": "lentils",
+          "objectId": "prop:EG:lentil_sack"
+        },
+        {
+          "word": "حارة",
+          "translit": "hara",
+          "en": "neighborhood lane",
+          "objectId": "prop:EG:courtyard_gate"
+        },
+        {
+          "word": "نيل",
+          "translit": "Nil",
+          "en": "River Nile",
+          "objectId": "prop:EG:nile_mural"
+        }
+      ]
+    },
+    {
+      "objectiveId": "EG:ch1:lantern:word",
+      "challengeType": "word",
+      "title": "Words from Cairo",
+      "description": "Practice three everyday Cairene Egyptian Arabic words with Teta Samira before the evening river boat sets sail.",
+      "targetNpcId": "npc:EG:teta_samira",
+      "targetStationId": "station:EG:word",
+      "requiredItems": [
+        {
+          "itemId": "item:EG:rice",
+          "quantity": 1,
+          "labelEn": "Egyptian Short-Grain Rice",
+          "labelNative": "Egyptian Short-Grain Rice"
+        },
+        {
+          "itemId": "item:EG:lentils",
+          "quantity": 1,
+          "labelEn": "Brown Lentils",
+          "labelNative": "Brown Lentils"
+        },
+        {
+          "itemId": "item:EG:tomato_sauce",
+          "quantity": 1,
+          "labelEn": "Spiced Garlic Tomato Sauce",
+          "labelNative": "Spiced Garlic Tomato Sauce"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:EG:word_badge",
+          "quantity": 1,
+          "labelEn": "Cairene Koshari WORD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, my dear! You have lit up Egypt—come, let's make a warm bowl of koshari and hang the Nile lanterns together.",
+      "vocabWords": [
+        {
+          "word": "فانوس",
+          "translit": "fanous",
+          "en": "traditional brass lantern",
+          "objectId": "prop:EG:fanous_arch"
+        },
+        {
+          "word": "كشري",
+          "translit": "koshari",
+          "en": "lentil, rice & pasta dish",
+          "objectId": "prop:EG:koshari_pot"
+        },
+        {
+          "word": "عدس",
+          "translit": "ads",
+          "en": "lentils",
+          "objectId": "prop:EG:lentil_sack"
+        },
+        {
+          "word": "حارة",
+          "translit": "hara",
+          "en": "neighborhood lane",
+          "objectId": "prop:EG:courtyard_gate"
+        },
+        {
+          "word": "نيل",
+          "translit": "Nil",
+          "en": "River Nile",
+          "objectId": "prop:EG:nile_mural"
+        }
+      ]
+    }
+  ],
+  "completionReward": {
+    "rewardId": "reward:EG:ch1_keepsake",
+    "keepsakeNameEn": "Khan Courtyard & Fanous Archway Golden Keepsake",
+    "keepsakeNameNative": "مصر · فوانيس الحارة وكشري تيتا سميرة",
+    "miraTokensBonus": 50,
+    "stampChapter": 1
+  }
+}

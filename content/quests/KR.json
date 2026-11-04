@@ -1,0 +1,365 @@
+{
+  "questId": "KR:ch1:hanok:main",
+  "country": "KR",
+  "chapter": 1,
+  "titleEn": "South Korea: Jeonju Hanok & Halmeoni's Songpyeon",
+  "titleNative": "대한민국 · 전주 한옥마을과 할머니의 송편",
+  "synopsis": "Welcome, my sweet grandchild! Let's restore our Jeonju hanok tiled roof and shape half-moon songpyeon for Chuseok.",
+  "mentorId": "npc:KR:halmeoni",
+  "mentorName": "Halmeoni",
+  "landmarkId": "landmark:KR:main",
+  "objectives": [
+    {
+      "objectiveId": "KR:ch1:hanok:gather",
+      "challengeType": "gather",
+      "title": "Chuseok Basket in Jeonju",
+      "description": "Gather freshly milled rice flour, sweet sesame-honey filling, and fragrant pine needles for the courtyard steamer.",
+      "targetNpcId": "npc:KR:halmeoni",
+      "targetStationId": "station:KR:gather",
+      "requiredItems": [
+        {
+          "itemId": "item:KR:rice_flour",
+          "quantity": 1,
+          "labelEn": "Rice Flour",
+          "labelNative": "Rice Flour"
+        },
+        {
+          "itemId": "item:KR:sesame_honey",
+          "quantity": 1,
+          "labelEn": "Sesame & Honey Filling",
+          "labelNative": "Sesame & Honey Filling"
+        },
+        {
+          "itemId": "item:KR:pine_needles",
+          "quantity": 1,
+          "labelEn": "Fresh Pine Needles",
+          "labelNative": "Fresh Pine Needles"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:KR:gather_badge",
+          "quantity": 1,
+          "labelEn": "Chuseok Pine-Steamed Songpyeon GATHER Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, sweet grandchild! Let's shape warm songpyeon together under the bright harvest moon in Jeonju.",
+      "vocabWords": [
+        {
+          "word": "송편",
+          "translit": "songpyeon",
+          "en": "half-moon rice cake",
+          "objectId": "prop:KR:songpyeon_steamer"
+        },
+        {
+          "word": "한옥",
+          "translit": "hanok",
+          "en": "traditional wooden house",
+          "objectId": "prop:KR:hanok_roof"
+        },
+        {
+          "word": "할머니",
+          "translit": "halmeoni",
+          "en": "grandmother",
+          "objectId": "prop:KR:maru_porch"
+        },
+        {
+          "word": "솔잎",
+          "translit": "sol-ip",
+          "en": "pine needles",
+          "objectId": "prop:KR:pine_basket"
+        },
+        {
+          "word": "옹기",
+          "translit": "onggi",
+          "en": "earthenware fermentation jars",
+          "objectId": "prop:KR:onggi_terrace"
+        }
+      ]
+    },
+    {
+      "objectiveId": "KR:ch1:hanok:trade",
+      "challengeType": "trade",
+      "title": "Share Chuseok Songpyeon",
+      "description": "Offer a plate of warm songpyeon to the neighborhood potter and receive an inlaid celadon tea cup in return.",
+      "targetNpcId": "npc:KR:ajusshi_min",
+      "targetStationId": "station:KR:trade",
+      "requiredItems": [
+        {
+          "itemId": "item:KR:rice_flour",
+          "quantity": 1,
+          "labelEn": "Rice Flour",
+          "labelNative": "Rice Flour"
+        },
+        {
+          "itemId": "item:KR:sesame_honey",
+          "quantity": 1,
+          "labelEn": "Sesame & Honey Filling",
+          "labelNative": "Sesame & Honey Filling"
+        },
+        {
+          "itemId": "item:KR:pine_needles",
+          "quantity": 1,
+          "labelEn": "Fresh Pine Needles",
+          "labelNative": "Fresh Pine Needles"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:KR:trade_badge",
+          "quantity": 1,
+          "labelEn": "Chuseok Pine-Steamed Songpyeon TRADE Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, sweet grandchild! Let's shape warm songpyeon together under the bright harvest moon in Jeonju.",
+      "vocabWords": [
+        {
+          "word": "송편",
+          "translit": "songpyeon",
+          "en": "half-moon rice cake",
+          "objectId": "prop:KR:songpyeon_steamer"
+        },
+        {
+          "word": "한옥",
+          "translit": "hanok",
+          "en": "traditional wooden house",
+          "objectId": "prop:KR:hanok_roof"
+        },
+        {
+          "word": "할머니",
+          "translit": "halmeoni",
+          "en": "grandmother",
+          "objectId": "prop:KR:maru_porch"
+        },
+        {
+          "word": "솔잎",
+          "translit": "sol-ip",
+          "en": "pine needles",
+          "objectId": "prop:KR:pine_basket"
+        },
+        {
+          "word": "옹기",
+          "translit": "onggi",
+          "en": "earthenware fermentation jars",
+          "objectId": "prop:KR:onggi_terrace"
+        }
+      ]
+    },
+    {
+      "objectiveId": "KR:ch1:hanok:build",
+      "challengeType": "build",
+      "title": "Restore the Hanok Courtyard Pavilion",
+      "description": "Arrange curved giwa roof tiles above sturdy pine pillars and warm hanji paper doors.",
+      "targetNpcId": "npc:KR:moksu_jihoon",
+      "targetStationId": "station:KR:build",
+      "requiredItems": [
+        {
+          "itemId": "item:KR:rice_flour",
+          "quantity": 1,
+          "labelEn": "Rice Flour",
+          "labelNative": "Rice Flour"
+        },
+        {
+          "itemId": "item:KR:sesame_honey",
+          "quantity": 1,
+          "labelEn": "Sesame & Honey Filling",
+          "labelNative": "Sesame & Honey Filling"
+        },
+        {
+          "itemId": "item:KR:pine_needles",
+          "quantity": 1,
+          "labelEn": "Fresh Pine Needles",
+          "labelNative": "Fresh Pine Needles"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:KR:build_badge",
+          "quantity": 1,
+          "labelEn": "Chuseok Pine-Steamed Songpyeon BUILD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, sweet grandchild! Let's shape warm songpyeon together under the bright harvest moon in Jeonju.",
+      "vocabWords": [
+        {
+          "word": "송편",
+          "translit": "songpyeon",
+          "en": "half-moon rice cake",
+          "objectId": "prop:KR:songpyeon_steamer"
+        },
+        {
+          "word": "한옥",
+          "translit": "hanok",
+          "en": "traditional wooden house",
+          "objectId": "prop:KR:hanok_roof"
+        },
+        {
+          "word": "할머니",
+          "translit": "halmeoni",
+          "en": "grandmother",
+          "objectId": "prop:KR:maru_porch"
+        },
+        {
+          "word": "솔잎",
+          "translit": "sol-ip",
+          "en": "pine needles",
+          "objectId": "prop:KR:pine_basket"
+        },
+        {
+          "word": "옹기",
+          "translit": "onggi",
+          "en": "earthenware fermentation jars",
+          "objectId": "prop:KR:onggi_terrace"
+        }
+      ]
+    },
+    {
+      "objectiveId": "KR:ch1:hanok:cook",
+      "challengeType": "cook",
+      "title": "Steam Half-Moon Songpyeon",
+      "description": "Knead the rice flour dough, fold in the sesame-honey filling, and layer over pine needles so Halmeoni can steam the songpyeon.",
+      "targetNpcId": "npc:KR:halmeoni",
+      "targetStationId": "station:KR:cook",
+      "requiredItems": [
+        {
+          "itemId": "item:KR:rice_flour",
+          "quantity": 1,
+          "labelEn": "Rice Flour",
+          "labelNative": "Rice Flour"
+        },
+        {
+          "itemId": "item:KR:sesame_honey",
+          "quantity": 1,
+          "labelEn": "Sesame & Honey Filling",
+          "labelNative": "Sesame & Honey Filling"
+        },
+        {
+          "itemId": "item:KR:pine_needles",
+          "quantity": 1,
+          "labelEn": "Fresh Pine Needles",
+          "labelNative": "Fresh Pine Needles"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:KR:cook_badge",
+          "quantity": 1,
+          "labelEn": "Chuseok Pine-Steamed Songpyeon COOK Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, sweet grandchild! Let's shape warm songpyeon together under the bright harvest moon in Jeonju.",
+      "vocabWords": [
+        {
+          "word": "송편",
+          "translit": "songpyeon",
+          "en": "half-moon rice cake",
+          "objectId": "prop:KR:songpyeon_steamer"
+        },
+        {
+          "word": "한옥",
+          "translit": "hanok",
+          "en": "traditional wooden house",
+          "objectId": "prop:KR:hanok_roof"
+        },
+        {
+          "word": "할머니",
+          "translit": "halmeoni",
+          "en": "grandmother",
+          "objectId": "prop:KR:maru_porch"
+        },
+        {
+          "word": "솔잎",
+          "translit": "sol-ip",
+          "en": "pine needles",
+          "objectId": "prop:KR:pine_basket"
+        },
+        {
+          "word": "옹기",
+          "translit": "onggi",
+          "en": "earthenware fermentation jars",
+          "objectId": "prop:KR:onggi_terrace"
+        }
+      ]
+    },
+    {
+      "objectiveId": "KR:ch1:hanok:word",
+      "challengeType": "word",
+      "title": "Jeonju Harvest Words",
+      "description": "Learn three Korean words for Chuseok traditions in Jeonju.",
+      "targetNpcId": "npc:KR:halmeoni",
+      "targetStationId": "station:KR:word",
+      "requiredItems": [
+        {
+          "itemId": "item:KR:rice_flour",
+          "quantity": 1,
+          "labelEn": "Rice Flour",
+          "labelNative": "Rice Flour"
+        },
+        {
+          "itemId": "item:KR:sesame_honey",
+          "quantity": 1,
+          "labelEn": "Sesame & Honey Filling",
+          "labelNative": "Sesame & Honey Filling"
+        },
+        {
+          "itemId": "item:KR:pine_needles",
+          "quantity": 1,
+          "labelEn": "Fresh Pine Needles",
+          "labelNative": "Fresh Pine Needles"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:KR:word_badge",
+          "quantity": 1,
+          "labelEn": "Chuseok Pine-Steamed Songpyeon WORD Token"
+        }
+      ],
+      "miraTokenReward": 20,
+      "culturalFact": "Welcome, sweet grandchild! Let's shape warm songpyeon together under the bright harvest moon in Jeonju.",
+      "vocabWords": [
+        {
+          "word": "송편",
+          "translit": "songpyeon",
+          "en": "half-moon rice cake",
+          "objectId": "prop:KR:songpyeon_steamer"
+        },
+        {
+          "word": "한옥",
+          "translit": "hanok",
+          "en": "traditional wooden house",
+          "objectId": "prop:KR:hanok_roof"
+        },
+        {
+          "word": "할머니",
+          "translit": "halmeoni",
+          "en": "grandmother",
+          "objectId": "prop:KR:maru_porch"
+        },
+        {
+          "word": "솔잎",
+          "translit": "sol-ip",
+          "en": "pine needles",
+          "objectId": "prop:KR:pine_basket"
+        },
+        {
+          "word": "옹기",
+          "translit": "onggi",
+          "en": "earthenware fermentation jars",
+          "objectId": "prop:KR:onggi_terrace"
+        }
+      ]
+    }
+  ],
+  "completionReward": {
+    "rewardId": "reward:KR:ch1_keepsake",
+    "keepsakeNameEn": "Giwa Hanok Courtyard & Onggi Terrace Golden Keepsake",
+    "keepsakeNameNative": "대한민국 · 전주 한옥마을과 할머니의 송편",
+    "miraTokensBonus": 50,
+    "stampChapter": 1
+  }
+}

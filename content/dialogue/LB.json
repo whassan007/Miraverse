@@ -1,0 +1,158 @@
+[
+  {
+    "dialogueId": "dlg:LB:teta_nahla",
+    "country": "LB",
+    "npcId": "npc:LB:teta_nahla",
+    "npcName": "Teta Nahla",
+    "role": "mentor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:LB:teta_nahla",
+        "speakerName": "Teta Nahla",
+        "portraitId": "npc:LB:teta_nahla",
+        "emotion": "warm",
+        "gestureClip": "talk_gesture",
+        "textNative": "أهلاً وسهلاً يا عيوني! تعالوا نصلّح قوس الحوش ونخبز منقوشة عالصاج.",
+        "textTranslit": "Ahlan wa sahlan ya ayouni! Ta’alou nsallih qaws el-housh...",
+        "textEn": "Welcome, my dear! Let's restore the limestone harbor arch and bake warm za'atar man'oushe on the domed saj.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Let's start the chapter quest!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "LB:ch1:harbor:gather"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:LB:teta_nahla",
+        "speakerName": "Teta Nahla",
+        "portraitId": "npc:LB:teta_nahla",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "منقوشة",
+        "textTranslit": "man'oushe",
+        "textEn": "Remember the word \"منقوشة\" (thyme flatbread) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:LB:amo_farid",
+    "country": "LB",
+    "npcId": "npc:LB:amo_farid",
+    "npcName": "Amo Farid",
+    "role": "vendor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:LB:amo_farid",
+        "speakerName": "Amo Farid",
+        "portraitId": "npc:LB:amo_farid",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "عندي أطيب زعتر بري وزيت زيتون من جبل لبنان!",
+        "textTranslit": "Andi atyab zaatar barri w zeit zeitoun min Jabal Lubnan!",
+        "textEn": "I have fragrant wild mountain thyme, sumac, and golden olive oil from Mount Lebanon!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "LB:ch1:harbor:trade"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:LB:amo_farid",
+        "speakerName": "Amo Farid",
+        "portraitId": "npc:LB:amo_farid",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "زعتر",
+        "textTranslit": "za'atar",
+        "textEn": "Remember the word \"زعتر\" (wild thyme & sesame blend) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:LB:nadim_builder",
+    "country": "LB",
+    "npcId": "npc:LB:nadim_builder",
+    "npcName": "Usta Nadim",
+    "role": "artisan",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:LB:nadim_builder",
+        "speakerName": "Usta Nadim",
+        "portraitId": "npc:LB:nadim_builder",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "حجر جبيل الرملي وخشب الأرز رح يرجعوا الميناء متل الحلم.",
+        "textTranslit": "Hajar Jbeil el-ramli w khashab el-arz...",
+        "textEn": "Byblos sandstone blocks and cedar beams will make our harbor bakery archway stand proud.",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "LB:ch1:harbor:build"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:LB:nadim_builder",
+        "speakerName": "Usta Nadim",
+        "portraitId": "npc:LB:nadim_builder",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "صاج",
+        "textTranslit": "saj",
+        "textEn": "Remember the word \"صاج\" (domed iron griddle) as you explore!"
+      }
+    ]
+  },
+  {
+    "dialogueId": "dlg:LB:rima_sailor",
+    "country": "LB",
+    "npcId": "npc:LB:rima_sailor",
+    "npcName": "Captain Rima",
+    "role": "neighbor",
+    "nodes": [
+      {
+        "nodeId": "greeting",
+        "speakerId": "npc:LB:rima_sailor",
+        "speakerName": "Captain Rima",
+        "portraitId": "npc:LB:rima_sailor",
+        "emotion": "excited",
+        "gestureClip": "talk_gesture",
+        "textNative": "المراكب بالمينا عم تستنى ريحة المنقوشة الطيبة!",
+        "textTranslit": "El-marakeb bil-mina am testanna rihet el-manoushe!",
+        "textEn": "The fishing boats in Byblos harbor are waiting for the warm scent of fresh man’oushe!",
+        "choices": [
+          {
+            "choiceId": "accept_help",
+            "labelEn": "Show me how I can help!",
+            "nextNodeId": "follow_up",
+            "triggersObjectiveId": "LB:ch1:harbor:word"
+          }
+        ]
+      },
+      {
+        "nodeId": "follow_up",
+        "speakerId": "npc:LB:rima_sailor",
+        "speakerName": "Captain Rima",
+        "portraitId": "npc:LB:rima_sailor",
+        "emotion": "proud",
+        "gestureClip": "celebrate",
+        "textNative": "تيتا",
+        "textTranslit": "teta",
+        "textEn": "Remember the word \"تيتا\" (grandmother) as you explore!"
+      }
+    ]
+  }
+]
