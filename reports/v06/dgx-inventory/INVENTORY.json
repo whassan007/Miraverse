@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "v06.1",
+  "generatedAt": "2026-11-04T05:29:53.852Z",
+  "host": "Linux aarch64 (NVIDIA GB10 Unified Memory)",
+  "dgxTelemetry": {
+    "mode": "dgx-spark-http",
+    "endpoint": "http://localhost:1234/v1",
+    "model": "qwen/qwen3-coder-next",
+    "prompt_tokens": 73,
+    "completion_tokens": 209,
+    "total_tokens": 282,
+    "latency_ms": 3614
+  },
+  "localModelsAvailable": [
+    "qwen/qwen3-coder-next",
+    "qwen3-coder:30b",
+    "qwen2.5-7b-instruct",
+    "gemma-4-26b-a4b-it-qat"
+  ],
+  "installedTools": {
+    "rojo": "/home/wael/.local/bin/rojo (7.7.1)",
+    "robloxMcp": "/home/wael/.local/bin/rbx-studio-mcp",
+    "minecraftMcp": "/home/wael/.local/bin/minecraft-mcp-server (2.0.4)",
+    "playwright": "@playwright/test 1.49.0 (Chromium 156)",
+    "vitest": "2.1.5"
+  },
+  "contentPacks": [
+    "LB",
+    "EG",
+    "IQ",
+    "KR",
+    "FR"
+  ],
+  "glbModels": [
+    "hub.glb",
+    "LB.glb",
+    "EG.glb",
+    "IQ.glb",
+    "KR.glb",
+    "FR.glb"
+  ],
+  "bedrockStructures": [
+    "hub.mcstructure.json",
+    "LB.mcstructure.json",
+    "EG.mcstructure.json",
+    "IQ.mcstructure.json",
+    "KR.mcstructure.json",
+    "FR.mcstructure.json"
+  ]
+}
