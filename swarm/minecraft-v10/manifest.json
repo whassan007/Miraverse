@@ -424,12 +424,15 @@
       "task_card": "swarm/minecraft-v10/cards/AG14.md",
       "branch": "minecraft-v10/AG14",
       "worktree": "/home/wael/Code/mv-wt-mc10/AG14",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "b333d2c",
       "test_command": "test -s apps/minecraft/assets-src/mentors/FR/mentor_fr.bbmodel && test -s apps/minecraft/assets-src/mentors/FR/mentor_fr.png",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/assets-src/mentors/FR/mentor_fr.bbmodel",
+        "apps/minecraft/assets-src/mentors/FR/mentor_fr.png"
+      ],
+      "runtime_environment": "Antigravityorchestrator -> gemini-4-argon",
       "blockers": []
     },
     {
