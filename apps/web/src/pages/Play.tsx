@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Phaser from 'phaser';
 import type { CountryId } from '../../../../packages/content/schema';
 import { loadStamps, make, saveStamp } from '../../../../packages/shared/stamp';
@@ -22,7 +23,9 @@ function scenes(): SceneConstructor[] {
 
 export default function Play() {
   const { lang, dir, t } = useI18n();
-  const [country, setCountry] = useState<CountryId | null>(null);
+  const params = useParams<{ country?: string }>();
+  const initialCountry = PACKS.find(entry => entry.country === params.country)?.country ?? null;
+  const [country, setCountry] = useState<CountryId | null>(initialCountry);
   const [completed, setCompleted] = useState<string[]>([]);
   const [stamp, setStamp] = useState('');
   const [notice, setNotice] = useState('');
