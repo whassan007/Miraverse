@@ -1,0 +1,71 @@
+{
+  "sceneId": "roblox_compass_plaza_hub_v06",
+  "spawnPoint": [
+    0,
+    6,
+    0
+  ],
+  "portals": [
+    {
+      "countryId": "LB",
+      "label": "Lebanon · Summer at Teta's (Playable Flagship)",
+      "position": [
+        -18,
+        6,
+        -24
+      ],
+      "status": "READY"
+    },
+    {
+      "countryId": "EG",
+      "label": "Egypt · Cairo Courtyard",
+      "position": [
+        -9,
+        6,
+        -28
+      ],
+      "status": "EXPANSION_READY"
+    },
+    {
+      "countryId": "IQ",
+      "label": "Iraq · Baghdad Riverside",
+      "position": [
+        0,
+        6,
+        -30
+      ],
+      "status": "EXPANSION_READY"
+    },
+    {
+      "countryId": "KR",
+      "label": "South Korea · Jeonju Hanok",
+      "position": [
+        9,
+        6,
+        -28
+      ],
+      "status": "EXPANSION_READY"
+    },
+    {
+      "countryId": "FR",
+      "label": "France · Vieux Lyon Bakery",
+      "position": [
+        18,
+        6,
+        -24
+      ],
+      "status": "EXPANSION_READY"
+    }
+  ],
+  "lighting": {
+    "clockTime": 16.5,
+    "brightness": 2.4,
+    "atmosphereDensity": 0.28,
+    "shadowSoftness": 0.35
+  },
+  "lowDeviceFallback": {
+    "streamingTargetRadius": 256,
+    "streamingMinRadius": 64,
+    "maxActiveParticleEmitters": 12
+  }
+}
