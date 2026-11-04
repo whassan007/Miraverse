@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "fr_quest_fr01",
+    "chapterId": "FR01",
+    "title": "The Passage Map",
+    "kind": "navigation_and_mapping",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 970,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:fr_lyon_ochre_stucco",
+    "rewardArtifactId": "fr_traboule_key"
+  },
+  {
+    "anchorId": "fr_quest_fr02",
+    "chapterId": "FR02",
+    "title": "Threads of the City",
+    "kind": "pattern_craft",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 982,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:fr_mansard_slate_shingle",
+    "rewardArtifactId": "fr_silk_ribbon"
+  },
+  {
+    "anchorId": "fr_quest_fr03",
+    "chapterId": "FR03",
+    "title": "At the Mères’ Table",
+    "kind": "cooking_sequence",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 994,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:fr_carved_oak_shutter",
+    "rewardArtifactId": "fr_chefs_notebook"
+  },
+  {
+    "anchorId": "fr_quest_fr04",
+    "chapterId": "FR04",
+    "title": "A Market of Flavors",
+    "kind": "trade_and_provenance",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1006,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:fr_traboule_vault_stone",
+    "rewardArtifactId": "fr_market_basket"
+  },
+  {
+    "anchorId": "fr_quest_fr05",
+    "chapterId": "FR05",
+    "title": "Stone by Stone",
+    "kind": "architecture_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1018,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:fr_boulangerie_wood_oven",
+    "rewardArtifactId": "fr_masons_crest"
+  },
+  {
+    "anchorId": "fr_quest_fr06",
+    "chapterId": "FR06",
+    "title": "A Recipe for Home",
+    "kind": "cooperative_feast",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1030,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:fr_wrought_iron_balcony",
+    "rewardArtifactId": "fr_lyon_heritage_stamp"
+  }
+]
