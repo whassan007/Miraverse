@@ -5,6 +5,7 @@ import { COUNTRIES, type Pack } from '../../packages/content/schema.js';
 import compileWeb, { compareText } from './web.js';
 import compileRoblox from './roblox.js';
 import compileMinecraft from './minecraft.js';
+import { compileV04Bundles } from './v04-meta.js';
 
 const packsDir = fileURLToPath(new URL('../../packages/content/packs/', import.meta.url));
 
@@ -47,6 +48,7 @@ async function main(): Promise<void> {
   await compileWeb(packs);
   await compileRoblox(packs);
   await compileMinecraft(packs);
+  await compileV04Bundles(packs);
   console.log(`Compiled ${packs.length} packs.`);
 }
 
