@@ -14,7 +14,7 @@ import math
 import os
 from pathlib import Path
 
-ROOT = Path("/home/wael/Code/Miraverse")
+ROOT = Path(__file__).resolve().parent.parent.parent
 SOURCE_REGISTRY = ROOT / "content/terrain/manifests/source-registry.json"
 OUT_TS = ROOT / "apps/minecraft/scripts/generated/geo-terrain.ts"
 OUT_TERRAIN_DIR = ROOT / "apps/minecraft/world/terrain"

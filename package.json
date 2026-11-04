@@ -14,7 +14,7 @@
     "validate": "tsx tools/validate.ts --profile=structural",
     "validate:structural": "tsx tools/validate.ts --profile=structural",
     "validate:release": "tsx tools/validate.ts --profile=release",
-    "compile": "tsx tools/compiler/index.ts && node tools/v12/compiler/compile-v12.mjs",
+    "compile": "tsx tools/compiler/index.ts && node tools/v12/compiler/compile-v12.mjs && python3 tools/terrain/generate_minecraft_terrain.py",
     "textures": "node tools/textures/gen.mjs",
     "assets:build": "tsx tools/assets/build-glb.ts",
     "pack:mcaddon": "node tools/pack/mcaddon.mjs",

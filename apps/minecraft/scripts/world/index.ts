@@ -250,7 +250,7 @@ export async function buildWorld(): Promise<void> {
         cc,
         ops: buildCountryPlazaOps(cc, idx),
       })),
-      ...buildAll21DestinationsTerrainOps().map((stage) => ({
+      ...buildAll21DestinationsTerrainOps().map((stage: { ops: Array<{ pos: BlockPos; blockId: string }> }) => ({
         ops: stage.ops,
       })),
     ];
