@@ -1,0 +1,762 @@
+[
+  {
+    "id": "quest.qa.01",
+    "countryCode": "QA",
+    "stableCountryId": "country.qa",
+    "actNumber": 1,
+    "canonicalArchetype": "GATHER",
+    "countrySpecificAlias": "GATHER",
+    "titleEn": "The Boatwright's Ledger",
+    "titleAr": "دفتر القلّاف",
+    "titleArabizi": "Daftar il-Qallaf",
+    "settingSubarea": "Historic Doha Dhow Yard & Harbor Pier",
+    "mentorNpcId": "npc.qa.noora_al_qallaf",
+    "mentorNameEn": "Ustadha Noora Al-Sulaiti",
+    "mentorNameAr": "الأستاذة نورة السليطي",
+    "mentorNameArabizi": "Ustadha Noora Al-Sulaiti",
+    "summaryEn": "Explore the harbor workshop, identify jalboot dhow components, woven date-palm rope, and safe deck tools while learning maritime safety and history.",
+    "summaryAr": "استكشف ورشة المرفأ وتعرّف على أجزاء سفينة الجالبوت وحبال ليف النخيل وأدوات السطح الآمنة وتاريخ البحر.",
+    "summaryArabizi": "Yalla niktishif warshat il-marfa, ajza safinat il-jalboot, wa hbal leef il-nakhil bi-aman.",
+    "epistemicCategory": "history",
+    "epistemicWarningEn": "Teaches maritime history and deck safety from shore; never simulates dangerous breath-hold diving.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.qa.01.step1",
+        "descriptionEn": "Greet Ustadha Noora at the Doha boatwright pier and inspect the Qallaf Timber Ledger.",
+        "requiredItemOrAction": "inspect_ledger",
+        "hintEn": "Look for the lantern-lit workbench beside the dry-docked jalboot hull.",
+        "failureRecovery": "Ledger remains pinned on the workbench; Ustadha Noora repeats the visual icon clue."
+      },
+      {
+        "stepId": "quest.qa.01.step2",
+        "descriptionEn": "Gather 3 safe harbor components: teak rib plank, braided date-palm rope (khabt), and woven dayyin deck basket.",
+        "requiredItemOrAction": "gather_harbor_components_3",
+        "hintEn": "Follow the turquoise harbor pennants along the shaded carpentry shed.",
+        "failureRecovery": "Items respawn immediately with no timer or penalty."
+      },
+      {
+        "stepId": "quest.qa.01.step3",
+        "descriptionEn": "Assemble the safe decorative dhow display stand and log the components in the ledger.",
+        "requiredItemOrAction": "complete_dhow_display",
+        "hintEn": "Place the rib plank, rope coil, and basket onto the harbor museum pedestal.",
+        "failureRecovery": "Pedestal highlights matching slots automatically."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.qa.01.harbor_pier",
+      "roleSplitEn": "Player 1 inspects timber ribs while Player 2 traces date-palm rope cordage; both place items on the shared dhow display."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.qa.pearl_basket",
+      "passportMilestoneId": "milestone.qa.01",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.qa.01.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-QA-act1.svg",
+      "markerXPercent": 22,
+      "markerYPercent": 68,
+      "checkpointLabelEn": "Act 1 · Boatwright's Pier",
+      "checkpointLabelAr": "الفصل ١ · رصيف القلّاف",
+      "checkpointLabelArabizi": "Fasla 1 · Rasif il-Qallaf"
+    },
+    "vocabularyIds": [
+      "vocab.qa.jalboot",
+      "vocab.qa.qallaf"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.qa.01.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Match the Boat Parts by the Sea",
+        "titleAr": "طابق أجزاء السفينة عند البحر",
+        "titleArabizi": "Yalla niktishif il-jalboot (Match Boat Parts)",
+        "objectiveEn": "Tap the picture icons to match the wooden hull plank, soft palm rope, and woven basket with Ustadha Noora!",
+        "objectiveAr": "اضغط على الصور لمطابقة لوح الخشب وحبل النخيل والسلة المنسوجة مع الأستاذة نورة!",
+        "objectiveArabizi": "Yalla niktishif il-khashab wal-habl wal-salla ma3 Ustadha Noora!",
+        "puzzleMechanicsEn": "3-icon visual matching tray with spoken/captioned prompts, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "scaffoldingAndHintEn": "Glowing golden outlines show where each harbor tool belongs.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Touch-friendly ProximityPrompt with large pictorial billboard icons at the Doha dock.",
+        "bedrockAdapterMechanics": " Craft/place 3 decorative blocks on the glowing harbor display stand using ActionFormData icon buttons."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.qa.01.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "The Qallaf's Three-Step Harbor Kit",
+        "titleAr": "عدة القلّاف في ثلاث خطوات",
+        "titleArabizi": "3iddat il-Qallaf fil-Marfa",
+        "objectiveEn": "Interview Ustadha Noora, collect the teak plank, palm-fiber rope, and dayyin basket, and label each tool in Arabic and English.",
+        "objectiveAr": "حاور الأستاذة نورة واجمع لوح الساج وحبل الليف وسلة الديين وسمِّ كل أداة بالعربية والإنجليزية.",
+        "objectiveArabizi": "Ijma3 lawh il-saj wa habl il-leef wa sallat il-dayyin wa ta3allam اسماءها.",
+        "puzzleMechanicsEn": "3-step collection and picture-word bilingual card pairing between tool function and Qatari maritime terms.",
+        "scaffoldingAndHintEn": "Ledger checklist highlights the next uncollected harbor station.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Tagged prop collection around Doha Harbor with bilingual UI card flip.",
+        "bedrockAdapterMechanics": "Shapeless recipe assembly of decorative dhow display + bilingual ledger dialog."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.qa.01.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Investigating Indian Ocean Timber & Cordage Routes",
+        "titleAr": "تحقيق مسارات أخشاب وحبال المحيط الهندي",
+        "titleArabizi": "Tahqiq Masarat الأخشاب wal-Hibal (3alam Mira)",
+        "objectiveEn": "Work in two-player roles to trace why Qatari shipwrights imported Malabar teak while braiding local date-palm fiber, then organize the harbor safety exhibit.",
+        "objectiveAr": "تعاون لتتبع سبب استيراد القلافين لخشب الساج مع جدل ألياف النخيل المحلية وتنظيم معرض سلامة المرفأ.",
+        "objectiveArabizi": "Ta3awan li-tatabbu3 masadir khashab il-saj wa leef il-nakhil fil-marfa.",
+        "puzzleMechanicsEn": "Multi-step resource-origin sorting puzzle comparing local oasis fibers vs maritime timber imports.",
+        "scaffoldingAndHintEn": "Map table shows trade wind arrows between the Gulf and Malabar coast.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Co-op two-station inventory verification and harbor safety inspection checklist.",
+        "bedrockAdapterMechanics": "Multi-station chest inspection and decorative dhow blueprint placement."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.qa.01.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Source-Critical Archiving: Maritime Labor, Ecology & Museum Provenance",
+        "titleAr": "التوثيق النقدي: العمل البحري والبيئة وتاريخ المقتنيات",
+        "titleArabizi": "Tawthiq Naqdi: 3amal il-Bahr wa Provenance il-Mat7af",
+        "objectiveEn": "Analyze primary and museum provenance records from Al Zubarah (UNESCO #1402) and Doha harbor to curate an ethically framed exhibit on dhow craftsmanship and crew safety.",
+        "objectiveAr": "حلل سجلات موقع الزبارة (اليونسكو #1402) ومرفأ الدوحة لإعداد معرض توثيقي أمين حول صناعة المحامل وسلامة البحارة.",
+        "objectiveArabizi": "Hallil sijillat Al-Zubarah (UNESCO #1402) wa marfa il-Doha li-tasmin ma3rad tawthiqi.",
+        "puzzleMechanicsEn": "Provenance verification challenge distinguishing corroborated archaeological evidence from unverified oral anecdotes.",
+        "scaffoldingAndHintEn": "Provenance drawer provides direct citations to UNESCO #1402 and museum catalogs.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Curatorial terminal where players assign epistemic badges and resource trade ratios.",
+        "bedrockAdapterMechanics": "Provenance lectern inspection + multi-stage harbor exhibit construction."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "QatarAct1BoatwrightLedger",
+      "interactionType": "mentor_interview_and_tagged_prop_gather",
+      "zoneAnchorName": "QA_DohaHarbor_BoatwrightPier",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runQatarAct1BoatwrightLedger",
+      "structureTemplateId": "miraverse:qa_doha_boatwright_pier",
+      "customBlocksAndItems": [
+        "miraverse:qa_teak_plank",
+        "miraverse:qa_palm_rope",
+        "miraverse:qa_dayyin_basket"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.qa.02",
+    "countryCode": "QA",
+    "stableCountryId": "country.qa",
+    "actNumber": 2,
+    "canonicalArchetype": "TRADE",
+    "countrySpecificAlias": "TRADE",
+    "titleEn": "The Pearl Market",
+    "titleAr": "سوق الطواشين",
+    "titleArabizi": "Souq il-Tawashin",
+    "settingSubarea": "Al Zubarah-Inspired Merchant Courtyard & Souq",
+    "mentorNpcId": "npc.qa.noora_al_qallaf",
+    "mentorNameEn": "Ustadha Noora Al-Sulaiti",
+    "mentorNameAr": "الأستاذة نورة السليطي",
+    "mentorNameArabizi": "Ustadha Noora Al-Sulaiti",
+    "summaryEn": "Practice fair exchange in an old merchant courtyard; distinguish natural pearls, brass sieves (tasa), and supplies without pretending modern currency prices are historical.",
+    "summaryAr": "مارس التبادل العادل في ساحة السوق القديمة، وميّز بين اللؤلؤ الطبيعي وطاسات الفرز والمؤن دون افتراض أسعار عملات حديثة.",
+    "summaryArabizi": "Ta3allam il-tabadul il-3adil fi souq il-lulu bi-istikhdam il-tasa wal-mithqal.",
+    "epistemicCategory": "history",
+    "epistemicWarningEn": "Uses non-monetary quest barter tokens and traditional sieve sizes; avoids fabricating historical cash prices.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.qa.02.step1",
+        "descriptionEn": "Sort sample pearl replicas through the 3 brass tasa sieves by size (Dana, Hasbah, Bdla).",
+        "requiredItemOrAction": "sort_tasa_sieves",
+        "hintEn": "Largest pearls rest in the top sieve; smaller pearls pass to the lower sieve.",
+        "failureRecovery": "Sieves gently re-sort with visual size rings."
+      },
+      {
+        "stepId": "quest.qa.02.step2",
+        "descriptionEn": "Complete a fair community barter exchanging harbor cordage and fresh water jars for winter dates and woven mats.",
+        "requiredItemOrAction": "complete_fair_barter",
+        "hintEn": "Ensure both the boat crew and the oasis caravan merchant receive balanced supplies.",
+        "failureRecovery": "Barter scale shows a friendly balance indicator."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.qa.02.pearl_market",
+      "roleSplitEn": "One player grades pearl sizes with the tasa sieves while the partner balances caravan supply baskets."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.qa.tasa_pearl_sieve",
+      "passportMilestoneId": "milestone.qa.02",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.qa.02.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-QA-act2.svg",
+      "markerXPercent": 42,
+      "markerYPercent": 52,
+      "checkpointLabelEn": "Act 2 · Tawash Courtyard",
+      "checkpointLabelAr": "الفصل ٢ · ساحة الطواش",
+      "checkpointLabelArabizi": "Fasla 2 · Sahat il-Tawash"
+    },
+    "vocabularyIds": [
+      "vocab.qa.lulu",
+      "vocab.qa.tawash"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.qa.02.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Big Pearl, Little Pearl Sieve Game",
+        "titleAr": "لعبة فرز اللؤلؤ الكبير والصغير",
+        "titleArabizi": "Yalla nafriz il-lulu bil-tasa",
+        "objectiveEn": "Drop the big, medium, and small pearl tokens into the matching brass bowls and share date baskets fairly!",
+        "objectiveAr": "ضع حبات اللؤلؤ الكبيرة والمتوسطة والصغيرة في الطاسات النحاسية المناسبة وشارك سلال التمر!",
+        "objectiveArabizi": "Hut il-lulu il-kabir wal-saghir fil-tasa wa sharik silal il-tamr!",
+        "puzzleMechanicsEn": "Size-sorting visual puzzle with 3 brass bowls and friendly sharing icons.",
+        "scaffoldingAndHintEn": "Each bowl rim glows to match the pearl size.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Click-to-sort brass sieve UI with cheerful chime feedback.",
+        "bedrockAdapterMechanics": "Village barter simulation trading quest tokens at the Tawash stall."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.qa.02.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Fair Exchange at the Tawash Stall",
+        "titleAr": "التبادل العادل في دكان الطواش",
+        "titleArabizi": "Tabadul 3adil3ind il-Tawash",
+        "objectiveEn": "Grade three pearl classes with the brass tasa and balance a fair barter of dates, water jars, and palm rope.",
+        "objectiveAr": "افرز ثلاث درجات من اللؤلؤ بالطاسة النحاسية ووازن مقايضة عادلة من التمر والجرار والحبال.",
+        "objectiveArabizi": "Ifriz il-lulu bil-tasa wa wazin muqayada 3adila min il-tamr wal-hibal.",
+        "puzzleMechanicsEn": "2-step sieve grading + fair barter scale puzzle.",
+        "scaffoldingAndHintEn": "Scale needle points green when both families' needs are met.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Role-based negotiation UI with transparent supply equivalences.",
+        "bedrockAdapterMechanics": "Custom non-monetary barter exchange with the merchant NPC."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.qa.02.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Al Zubarah Trade Networks & Metrology",
+        "titleAr": "شبكات تجارة الزبارة وأدوات القياس",
+        "titleArabizi": "Shabakat Tijarat Al-Zubarah wal-Mithqal",
+        "objectiveEn": "Investigate how Al Zubarah merchants used agate weights and brass sieves to connect Gulf pearl banks with regional caravan trade.",
+        "objectiveAr": "ابحث في كيفية استخدام تجار الزبارة لأوزان العقيق والطاسات لربط مغاصات الخليج بتجارة القوافل.",
+        "objectiveArabizi": "Ibhath fi kayfiyat istikhdam tujjar Al-Zubarah li-awzan il-3aqiq wal-tasat.",
+        "puzzleMechanicsEn": "Multi-party trade route allocation puzzle balancing harbor and inland settlement supplies.",
+        "scaffoldingAndHintEn": "Ledger notes explain why historical barter differed from modern cash pricing.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Two-player merchant & boatwright supply chain coordination.",
+        "bedrockAdapterMechanics": "Multi-stall barter chain across Al Zubarah courtyard."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.qa.02.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Economic History & Methodological Humility in Historical Pricing",
+        "titleAr": "التاريخ الاقتصادي ومنهجية توثيق التبادل القديم",
+        "titleArabizi": "Tarikh Iqtisadi: Tawthiq Souq il-Lulu",
+        "objectiveEn": "Evaluate archaeological evidence from Al Zubarah (excavated weights, ceramics, and pearl chests) and explain why historians avoid projecting modern currency values onto 18th-century barter.",
+        "objectiveAr": "قيّم الأدلة الأثرية من الزبارة واشرح لماذا يتجنب المؤرخون إسقاط أسعار العملات الحديثة على التبادل التاريخي.",
+        "objectiveArabizi": "Qayyim il-adilla il-athariya min Al-Zubarah حول التبادل التجاري القديم.",
+        "puzzleMechanicsEn": "Source analysis comparing archaeological weight finds against anachronistic price claims.",
+        "scaffoldingAndHintEn": "UNESCO #1402 excavation notes provided in the reference drawer.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Historical economics simulation with provenance citation checks.",
+        "bedrockAdapterMechanics": "Archival ledger audit and fair-trade contract completion."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "QatarAct2PearlMarket",
+      "interactionType": "role_based_fair_trade_negotiation",
+      "zoneAnchorName": "QA_AlZubarah_MerchantCourtyard",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runQatarAct2PearlMarket",
+      "structureTemplateId": "miraverse:qa_zubarah_market_courtyard",
+      "customBlocksAndItems": [
+        "miraverse:qa_tasa_sieve",
+        "miraverse:qa_mithqal_scale",
+        "miraverse:qa_pearl_token"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.qa.03",
+    "countryCode": "QA",
+    "stableCountryId": "country.qa",
+    "actNumber": 3,
+    "canonicalArchetype": "BUILD",
+    "countrySpecificAlias": "BUILD",
+    "titleEn": "Restore the Harbor Workshop",
+    "titleAr": "ترميم ورشة المرفأ",
+    "titleArabizi": "Tarmim Warshat il-Marfa",
+    "settingSubarea": "Fictional Doha Heritage Dock Exhibit Pavilion",
+    "mentorNpcId": "npc.qa.noora_al_qallaf",
+    "mentorNameEn": "Ustadha Noora Al-Sulaiti",
+    "mentorNameAr": "الأستاذة نورة السليطي",
+    "mentorNameArabizi": "Ustadha Noora Al-Sulaiti",
+    "summaryEn": "Repair a fictional dockside heritage exhibit informed by traditional Qatari limestone, mangrove roof poles (danshal), and carved wooden doors.",
+    "summaryAr": "رمم جناح معرض تعليمي تخيلي على الرصيف مستلهماً الحجر الجيري القطري وأعمدة الدنشل والأبواب الخشبية المنقوشة.",
+    "summaryArabizi": "Rammim ma3rad il-marfa il-ta3limi bi-istikhdam il-hajar il-jiri wa a3midat il-danshal.",
+    "epistemicCategory": "archaeology",
+    "epistemicWarningEn": "Clearly distinguishes our fictional dock exhibit workshop from protected UNESCO archaeological ruins at Al Zubarah.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.qa.03.step1",
+        "descriptionEn": "Place pale limestone wall blocks along the workshop courtyard perimeter.",
+        "requiredItemOrAction": "place_limestone_walls",
+        "hintEn": "Follow the 4x4 blueprint outline on the dock pavilion floor.",
+        "failureRecovery": "Misplaced blocks return automatically to your toolkit without penalty."
+      },
+      {
+        "stepId": "quest.qa.03.step2",
+        "descriptionEn": "Set the shading danshal timber roof beams and mount the carved Qatari courtyard door.",
+        "requiredItemOrAction": "mount_roof_and_carved_door",
+        "hintEn": "Align the carved rosette lintel facing the sea breeze.",
+        "failureRecovery": "Blueprint preview snaps the door frame into orientation."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.qa.03.harbor_workshop",
+      "roleSplitEn": "Shared construction checkpoints allow one builder to lay limestone courses while the partner installs danshal shade beams."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.qa.mangroor_door_panel",
+      "passportMilestoneId": "milestone.qa.03",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.qa.03.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-QA-act3.svg",
+      "markerXPercent": 58,
+      "markerYPercent": 60,
+      "checkpointLabelEn": "Act 3 · Heritage Dock Workshop",
+      "checkpointLabelAr": "الفصل ٣ · ورشة الرصيف التراثية",
+      "checkpointLabelArabizi": "Fasla 3 · Warshat il-Rasif"
+    },
+    "vocabularyIds": [
+      "vocab.qa.qallaf",
+      "vocab.qa.jalboot"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.qa.03.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Snap the Sunny Courtyard Roof & Door",
+        "titleAr": "ركّب سقف الفناء والباب المنقوش",
+        "titleArabizi": "Yalla نبني saqf il-warsha wal-bab",
+        "objectiveEn": "Tap the glowing spots to place the warm stone blocks, shade beams, and carved wooden door!",
+        "objectiveAr": "اضغط على النقاط المضيئة لوضع أحجار الجدار وعوارض الظل والباب الخشبي المنقوش!",
+        "objectiveArabizi": "Hut il-hajar wa a3midat il-zill wal-bab il-khashabi fil-makan il-mudi!",
+        "puzzleMechanicsEn": "Guided 3-piece snap-blueprint with instant visual celebration.",
+        "scaffoldingAndHintEn": "Color-coded silhouettes show stone, wood beam, and door.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "One-tap shared construction checkpoint placement.",
+        "bedrockAdapterMechanics": "Protected blueprint block placement with auto-orientation."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.qa.03.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Building with Limestone & Danshal Beams",
+        "titleAr": "البناء بالحجر الجيري وأعمدة الدنشل",
+        "titleArabizi": "Bina bil-Hajar il-Jiri wa A3midat il-Danshal",
+        "objectiveEn": "Follow the 4x4 courtyard blueprint to restore the harbor workshop walls, woven mat ceiling, and carved door.",
+        "objectiveAr": "اتبع المخطط الهندسي لترميم جدران الورشة وسقف الدنشل والباب المنقوش.",
+        "objectiveArabizi": "Ittabi3 il-mukhattat li-tarmim jidran il-warsha wa saqf il-danshal.",
+        "puzzleMechanicsEn": "Rectangular grid blueprint restoration using limestone, timber beams, and carved door tiles.",
+        "scaffoldingAndHintEn": "Blueprint legend maps L = Limestone, D = Danshal Beam, M = Carved Door.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Multi-checkpoint collaborative building grid.",
+        "bedrockAdapterMechanics": "In-world block restoration verified against protected structure template."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.qa.03.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Coastal Thermal Comfort & Shaded Liwan Design",
+        "titleAr": "التبريد الطبيعي وتصميم الليوان المظلل",
+        "titleArabizi": "Tasmim il-Liwan il-Muzallal fil-Sahil",
+        "objectiveEn": "Configure thick gypsum-plastered walls, recessed window screens, and shaded liwan verandas to keep the harbor exhibit cool in coastal summer heat.",
+        "objectiveAr": "صمم الجدران السميكة المكسوة بالجص والليوان المظلل للحفاظ على برودة المعرض في صيف الساحل.",
+        "objectiveArabizi": "Sammim il-jidran wal-liwan il-muzallal li-tabrid il-ma3rad.",
+        "puzzleMechanicsEn": "Architectural shade-and-breeze optimization puzzle.",
+        "scaffoldingAndHintEn": "Sun-angle indicator shows how the liwan overhang blocks midday glare.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Co-op structural assembly with shade coverage meter.",
+        "bedrockAdapterMechanics": "Multi-layer voxel restoration with shade/light level verification."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.qa.03.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Heritage Conservation Ethics: Authentic Sites vs Interpretive Exhibits",
+        "titleAr": "أخلاقيات الحفاظ العمراني: المواقع الأصيلة مقابل المعارض التعليمية",
+        "titleArabizi": "Akhlaqiyat Hifz il-Turath: Al-Zubarah wal-Ma3ارض",
+        "objectiveEn": "Compare UNESCO earthen-masonry conservation protocols at Al Zubarah with the design of new interpretive museum pavilions so visitors never confuse modern reconstructions with ancient ruins.",
+        "objectiveAr": "قارن بين بروتوكولات الحفاظ على العمارة الترابية في الزبارة وتصميم أجنحة العرض الحديثة لعدم الخلط بين الأثر الأصلي والبناء التعليمي.",
+        "objectiveArabizi": "Qarin bayn hifz il-athar il-asliya fi Al-Zubarah wa bina il-ma3arid il-ta3limiya.",
+        "puzzleMechanicsEn": "Conservation zoning & material-labeling challenge.",
+        "scaffoldingAndHintEn": "Conservation charter notes explain reversible vs intrusive repairs.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Architectural conservation planner with interpretive signage placement.",
+        "bedrockAdapterMechanics": "Structure restoration + heritage plaque attribution."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "QatarAct3HarborWorkshopBuild",
+      "interactionType": "shared_construction_checkpoints",
+      "zoneAnchorName": "QA_DohaHarbor_WorkshopPavilion",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runQatarAct3HarborWorkshopBuild",
+      "structureTemplateId": "miraverse:qa_harbor_workshop_pavilion",
+      "customBlocksAndItems": [
+        "miraverse:qa_limestone_block",
+        "miraverse:qa_danshal_beam",
+        "miraverse:qa_carved_door"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.qa.04",
+    "countryCode": "QA",
+    "stableCountryId": "country.qa",
+    "actNumber": 4,
+    "canonicalArchetype": "COOK_OR_STORY",
+    "countrySpecificAlias": "STORY/COOK",
+    "titleEn": "The Fisaikra Story Circle",
+    "titleAr": "حلقة حكاية الفسيفكرة",
+    "titleArabizi": "Halqat Hikayat Al-Fisaikra",
+    "settingSubarea": "Lantern-Lit Courtyard Liwan & Family Hearth",
+    "mentorNpcId": "npc.qa.noora_al_qallaf",
+    "mentorNameEn": "Ustadha Noora Al-Sulaiti",
+    "mentorNameAr": "الأستاذة نورة السليطي",
+    "mentorNameArabizi": "Ustadha Noora Al-Sulaiti",
+    "summaryEn": "Gather in the courtyard story circle to explore the Qatari folktale of Al Fisaikra, choose kindness and compassion, and prepare a family-friendly cardamom-saffron hospitality dish (or woven palm craft alternative) with full allergy substitutions.",
+    "summaryAr": "اجتمع في حلقة الحكايات للتعرف على الحكاية الشعبية القطرية «الفسيفكرة»، واختر قيم اللطف والرحمة، وحضّر طبق ضيافة عائلي بالهيل والزعفران (أو حرفة سعف النخيل) مع بدائل آمنة للحساسية.",
+    "summaryArabizi": "Ijtami3 fi halqat il-hikayat li-sama3 qissat Al-Fisaikra (folklore) wa tahdir tabaq diyafa 3aili amin.",
+    "epistemicCategory": "folklore",
+    "epistemicWarningEn": "Al Fisaikra is labeled explicitly as Qatari/Gulf coastal folklore (pending corroboration of regional variants), never as literal historical fact. Zero compulsory religious elements.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.qa.04.step1",
+        "descriptionEn": "Listen to Ustadha Noora introduce Al Fisaikra as a traditional coastal folktale and choose compassionate responses in the story circle.",
+        "requiredItemOrAction": "complete_fisaikra_story_choices",
+        "hintEn": "Choose empathy, patience, and fair sharing when the sea-fish guardian asks how to treat neighbors.",
+        "failureRecovery": "Story circle allows re-listening to any scene at your own pace."
+      },
+      {
+        "stepId": "quest.qa.04.step2",
+        "descriptionEn": "Prepare the courtyard hospitality tray (choose standard Saffron-Cardamom Sweet Vermicelli, Gluten-Free/Egg-Free Date-Oat Bites, or Non-Food Khous Palm-Weaving Coaster).",
+        "requiredItemOrAction": "prepare_qa_hospitality_or_craft",
+        "hintEn": "Select your preferred dietary or craft path at the courtyard table.",
+        "failureRecovery": "All three dietary/craft options award the full quest milestone."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.qa.04.story_circle",
+      "roleSplitEn": "Players take turns choosing kind story responses and arranging hospitality trays around the courtyard carpet."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.qa.fisaikra_story_fish_charm",
+      "passportMilestoneId": "milestone.qa.04",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.qa.04.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-QA-act4.svg",
+      "markerXPercent": 72,
+      "markerYPercent": 44,
+      "checkpointLabelEn": "Act 4 · Fisaikra Story Courtyard",
+      "checkpointLabelAr": "الفصل ٤ · فناء حكاية الفسيفكرة",
+      "checkpointLabelArabizi": "Fasla 4 · Fina Hikayat Al-Fisaikra"
+    },
+    "vocabularyIds": [
+      "vocab.qa.fisaikra"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.qa.04.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "The Kind Sea-Fish Story & Sweet Tray",
+        "titleAr": "حكاية السمكة الطيبة وصينية الضيافة",
+        "titleArabizi": "Qissat il-Samaka il-Tayyiba (Al-Fisaikra)",
+        "objectiveEn": "Help the kind storyteller arrange the shimmering fish storybook and pick safe, yummy treats (or woven coasters) for friends!",
+        "objectiveAr": "ساعد الراوية في ترتيب صور حكاية السمكة اللطيفة واختيار ضيافة آمنة أو سلال منسوجة للأصدقاء!",
+        "objectiveArabizi": "Sa3id Ustadha Noora fi tartib suwar hikayat Al-Fisaikra wa siniyat il-diyafa!",
+        "puzzleMechanicsEn": "3-scene picture storybook ordering + allergy-safe hospitality tray selection.",
+        "scaffoldingAndHintEn": "Heart icons highlight kind choices; allergy-free and craft options are clearly pictured.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Interactive story cushion circle with picture cards.",
+        "bedrockAdapterMechanics": "Story lectern + safe hospitality crafting table."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.qa.04.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Folklore vs History in the Story Circle",
+        "titleAr": "الحكاية الشعبية والتاريخ في مجلس السمر",
+        "titleArabizi": "Al-Fisaikra: Turath Sha3bi wa Diyafa",
+        "objectiveEn": "Explore how Al Fisaikra teaches kindness through coastal folklore, then prepare an allergy-safe Qatari hospitality platter or palm-leaf craft.",
+        "objectiveAr": "اكتشف كيف تعلم حكاية الفسيفكرة قيم اللطف، ثم حضّر طبق ضيافة قطري آمن للحساسية أو حرفة خوص.",
+        "objectiveArabizi": "Iktishif qيم il-lutf fi hikayat Al-Fisaikra wa haddir siniyat diyafa amina.",
+        "puzzleMechanicsEn": "Story choice branching + 3-ingredient recipe/craft assembly with dietary toggle.",
+        "scaffoldingAndHintEn": "Badge reminder shows why magical talking fish belong to folklore while harbor tools belong to history.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Dialogue choice tree + courtyard kitchen/craft station.",
+        "bedrockAdapterMechanics": "ActionFormData story choices + custom recipe/craft completion."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.qa.04.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Comparative Oral Folklore Across the Gulf Coast",
+        "titleAr": "مقارنة الحكايات الشفهية على ساحل الخليج",
+        "titleArabizi": "Muqaranat il-Hikayat il-Sha3biya fil-Khalij",
+        "objectiveEn": "Compare the Qatari tale of Al Fisaikra with marine Cinderella-type folktale motifs across maritime cultures while hosting an inclusive community table.",
+        "objectiveAr": "قارن بين حكاية الفسيفكرة القطرية ونظائرها من الحكايات البحرية الشعبية مع تنظيم مائدة مجتمعية شاملة.",
+        "objectiveArabizi": "Qarin bayn hikayat Al-Fisaikra wa nazairiha fil-turath il-bahri.",
+        "puzzleMechanicsEn": "Folklore motif comparison board + inclusive menu planner.",
+        "scaffoldingAndHintEn": "Highlights shared themes (kindness, sea ecology, patience) vs local Gulf coastal details.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Story motif comparison table + co-op hospitality station.",
+        "bedrockAdapterMechanics": "Comparative folklore book puzzle + inclusive feast table setup."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.qa.04.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Archiving Intangible Cultural Heritage & Oral Variant Provenance",
+        "titleAr": "توثيق التراث الثقافي غير المادي وتعدد الروايات الشفهية",
+        "titleArabizi": "Tawthiq il-Turath Ghayr il-Maddi: Al-Fisaikra",
+        "objectiveEn": "Examine how national folklore inventories (such as the Qatar Ministry of Culture catalog) record multiple oral variants without freezing a single \"official\" text or mistaking folklore for history.",
+        "objectiveAr": "ادرس كيف توثق سجلات التراث الوطني الروايات الشفهية المتعددة دون تجميدها في نص واحد أو الخلط بينها وبين التاريخ.",
+        "objectiveArabizi": "Idris kayfa tuwaththiq sijillat il-thaqafa il-riwayat il-shafahiya il-muta3addida.",
+        "puzzleMechanicsEn": "Archival annotation challenge tagging oral variants, narrator notes, and epistemic status.",
+        "scaffoldingAndHintEn": "Links to Qatar Ministry of Culture folklore inventory framework.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Folklore archive curation desk with variant comparison.",
+        "bedrockAdapterMechanics": "Archival provenance classification terminal."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "QatarAct4FisaikraStoryCircle",
+      "interactionType": "story_circle_and_inclusive_cook_or_craft",
+      "zoneAnchorName": "QA_DohaHarbor_StoryCourtyard",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runQatarAct4FisaikraStoryCircle",
+      "structureTemplateId": "miraverse:qa_fisaikra_story_courtyard",
+      "customBlocksAndItems": [
+        "miraverse:qa_fisaikra_storybook",
+        "miraverse:qa_hospitality_platter",
+        "miraverse:qa_khous_coaster"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.qa.05",
+    "countryCode": "QA",
+    "stableCountryId": "country.qa",
+    "actNumber": 5,
+    "canonicalArchetype": "WORD_FINALE",
+    "countrySpecificAlias": "WORD/FINALE",
+    "titleEn": "Al Qaffal: Coming Home",
+    "titleAr": "القفّال: فرحة العودة إلى الديار",
+    "titleArabizi": "Al-Qaffal: Farhat il-3awda",
+    "settingSubarea": "Doha Bay Shoreline & Homecoming Promenade",
+    "mentorNpcId": "npc.qa.noora_al_qallaf",
+    "mentorNameEn": "Ustadha Noora Al-Sulaiti",
+    "mentorNameAr": "الأستاذة نورة السليطي",
+    "mentorNameArabizi": "Ustadha Noora Al-Sulaiti",
+    "summaryEn": "Learn Qatari and Gulf return-home vocabulary, raise the Al Qaffal shoreline welcome banners, and assemble a non-recorded family story postcard celebrating heritage across distance.",
+    "summaryAr": "تعلّم مفردات العودة البحرية، وارفع رايات استقبال القفال على الشاطئ، وصمّم بطاقة حكاية عائلية تحتفي بالتراث عبر المسافات.",
+    "summaryArabizi": "Ta3allam kalلمات Al-Qaffal, irfa3 rayat il-istiqbal, wa sammim bitaqat dhikra 3ailiya.",
+    "epistemicCategory": "history",
+    "epistemicWarningEn": "Celebrates safe shoreline homecoming and diaspora continuity; never exposes children to perilous diving reenactments or collects personal family data.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.qa.05.step1",
+        "descriptionEn": "Match 6 Qatari maritime & homecoming vocabulary terms across Arabic, Arabizi, and English.",
+        "requiredItemOrAction": "match_qa_vocabulary_6",
+        "hintEn": "Review Lulu, Jalboot, Qallaf, Tawash, Al-Fisaikra, and Al-Qaffal in your glossary.",
+        "failureRecovery": "Audio/phonetic hints replay on tap."
+      },
+      {
+        "stepId": "quest.qa.05.step2",
+        "descriptionEn": "Raise the maroon-and-gold Al Qaffal welcome banners along the pier and complete your Qatar Passport Stamp.",
+        "requiredItemOrAction": "raise_qaffal_banners_and_stamp",
+        "hintEn": "Coordinate with your co-op partner or Ustadha Noora at the harbor arch.",
+        "failureRecovery": "Harbor arch stays active for replay at any time."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.qa.05.al_qaffal_shore",
+      "roleSplitEn": "Both players hoist the shoreline welcome pennants together to trigger the Al Qaffal homecoming celebration."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.qa.al_qaffal_welcome_banner",
+      "passportMilestoneId": "milestone.qa.05",
+      "miraTokensEarned": 40,
+      "idempotencyKey": "reward.quest.qa.05.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-QA-act5.svg",
+      "markerXPercent": 86,
+      "markerYPercent": 30,
+      "checkpointLabelEn": "Act 5 · Al Qaffal Homecoming Pier",
+      "checkpointLabelAr": "الفصل ٥ · سيف استقبال القفّال",
+      "checkpointLabelArabizi": "Fasla 5 · Seef Al-Qaffal"
+    },
+    "vocabularyIds": [
+      "vocab.qa.lulu",
+      "vocab.qa.jalboot",
+      "vocab.qa.qallaf",
+      "vocab.qa.tawash",
+      "vocab.qa.fisaikra",
+      "vocab.qa.al_qaffal"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.qa.05.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Wave the Welcome Flags for the Boats!",
+        "titleAr": "لوّح برايات الترحيب لعودة السفن!",
+        "titleArabizi": "Yalla نرحب بالبحارة في القفال!",
+        "objectiveEn": "Match 3 picture words (Lulu, Jalboot, Al-Qaffal) and wave the maroon welcome flags as the boats sail home!",
+        "objectiveAr": "طابق ٣ كلمات مصورة (لؤلؤ، جالبوت، القفال) ولوّح بالرايات العنابية عند عودة السفن!",
+        "objectiveArabizi": "Tabiq 3 kalimat (Lulu, Jalboot, Al-Qaffal) wa irfa3 rayat il-terhib!",
+        "puzzleMechanicsEn": "3-card picture-word match + celebratory flag-raising button.",
+        "scaffoldingAndHintEn": "Spoken phonetic prompts guide every word.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Co-op shoreline banner hoist + confetti celebration.",
+        "bedrockAdapterMechanics": "Raise maroon wool/banner blocks + earn Qatar Passport stamp."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.qa.05.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Al Qaffal Signals & Family Postcard",
+        "titleAr": "إشارات القفّال وبطاقة العائلة",
+        "titleArabizi": "Isharat Al-Qaffal wa Bitaqat il-3aila",
+        "objectiveEn": "Complete the 6-word Qatari harbor glossary challenge, arrange the shoreline welcome lanterns, and compose a pre-set cultural postcard.",
+        "objectiveAr": "أكمل تحدي مفردات المرفأ الست، ورتب فوانيس الشاطئ، وصمم بطاقة بريدية ثقافية.",
+        "objectiveArabizi": "Akmil tahaddi 6 kalimat Qatariya wa rattib fawanis il-seef.",
+        "puzzleMechanicsEn": "6-word bilingual match + pre-set template postcard builder (zero free-text PII).",
+        "scaffoldingAndHintEn": "Glossary cards show Arabic script, Arabizi, and English side by side.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Vocabulary matching board + co-op harbor signal sequence.",
+        "bedrockAdapterMechanics": "6-term ActionFormData quiz + shoreline beacon activation."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.qa.05.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Keeping Maritime Memory Across Distance",
+        "titleAr": "حفظ الذاكرة البحرية عبر المسافات",
+        "titleArabizi": "Hifz il-Dhakira il-Bahriya fil-Mahjar",
+        "objectiveEn": "Coordinate the multi-stage Al Qaffal harbor welcome and curate a bilingual exhibit explaining how Qatari diaspora students connect with coastal heritage.",
+        "objectiveAr": "نسّق احتفالية استقبال القفال وصمم معرضاً ثنائي اللغة يشرح كيف يرتبط أبناء المهجر بالتراث الساحلي.",
+        "objectiveArabizi": "Nassiq ihtifal Al-Qaffal wa sammim ma3radan thuna'i il-lugha.",
+        "puzzleMechanicsEn": "Co-op signal relay + bilingual exhibit captioning challenge.",
+        "scaffoldingAndHintEn": "Shows how dialect terms (ar-QA) complement Modern Standard Arabic (ar).",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Two-player synchronized harbor bell & pennant finale.",
+        "bedrockAdapterMechanics": "Redstone lamp harbor signal sequence + Passport stamp ceremony."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.qa.05.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Transnational Identity, Dialect Register & Cultural Continuity",
+        "titleAr": "الهوية العابرة للحدود ومستويات اللغة واستمرارية التراث",
+        "titleArabizi": "Il-Hawiya wal-Lahja il-Qatariya عبر الأجيال",
+        "objectiveEn": "Synthesize historical, archaeological, and folkloric evidence from Qatar into a complete digital Passport portfolio, distinguishing local Qatari Arabic register from MSA.",
+        "objectiveAr": "اجمع الأدلة التاريخية والأثرية والشعبية في ملف جواز سفر رقمي متكامل مع التمييز بين اللهجة القطرية والفصحى.",
+        "objectiveArabizi": "Ijma3 il-adilla il-tarikhiya wal-athariya wal-sha3biya fi milaff Jawaz il-Safar.",
+        "puzzleMechanicsEn": "Capstone synthesis challenge verifying epistemic labels, dialect register, and provenance citations.",
+        "scaffoldingAndHintEn": "Full source registry and UNESCO/MoC references accessible.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Capstone curator presentation & co-op harbor finale.",
+        "bedrockAdapterMechanics": "Master archivist verification & Qatar Passport stamp completion."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "QatarAct5AlQaffalFinale",
+      "interactionType": "bilingual_vocabulary_and_coop_homecoming_signals",
+      "zoneAnchorName": "QA_DohaHarbor_AlQaffalPromenade",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runQatarAct5AlQaffalFinale",
+      "structureTemplateId": "miraverse:qa_al_qaffal_promenade",
+      "customBlocksAndItems": [
+        "miraverse:qa_qaffal_banner",
+        "miraverse:qa_story_postcard",
+        "miraverse:qa_passport_stamp"
+      ],
+      "status": "TEST BUILD"
+    }
+  }
+]

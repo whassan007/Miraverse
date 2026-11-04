@@ -101,6 +101,14 @@ export function buildGlobalMcaddon() {
     fs.cpSync(path.join(MC_DIR, 'bp'), path.join(staging, 'bp'), { recursive: true });
     fs.cpSync(path.join(MC_DIR, 'rp'), path.join(staging, 'rp'), { recursive: true });
 
+    // Copy v1.7.0 21-destination GIS terrain mcfunction into staged BP functions/miraverse_terrain.mcfunction
+    const mcfuncSrc = path.join(MC_DIR, 'world/terrain/server-commands.mcfunction');
+    if (fs.existsSync(mcfuncSrc)) {
+      const fnDir = path.join(staging, 'bp/functions');
+      fs.mkdirSync(fnDir, { recursive: true });
+      fs.copyFileSync(mcfuncSrc, path.join(fnDir, 'miraverse_terrain.mcfunction'));
+    }
+
     // Add 89 Global v1.1 artifact/keepsake/stamp items and 16x16 textures into staged BP & RP
     const itemTexPath = path.join(staging, 'rp/textures/item_texture.json');
     const itemTexJson = JSON.parse(fs.readFileSync(itemTexPath, 'utf-8'));

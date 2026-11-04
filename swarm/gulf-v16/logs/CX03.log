@@ -1,0 +1,17 @@
+=== AGENT CX03 (CODEX · W0) ===
+Timestamp: 2026-11-04T18:41:36.516Z
+Title: Roblox Game Integrator: Luau mechanics, content imports, ar-001 localization integration, savegame and co-op tests
+Resolved Model: gpt-6-astra
+Runtime Environment: Codex Roblox Luau & ar-001 Localization Integrator (Node v22.22.3 + Rojo)
+Branch: gulf-v16/CX03
+Worktree: /home/wael/Code/mv-wt-gulf16/CX03
+Agent Commit SHA: d9c1176
+Owned Paths: apps/roblox/src/shared/GulfV16.luau, apps/roblox/src/server/GulfWorldsV16.luau, apps/roblox/localization/gulf-v16/
+Modified Files (3): apps/roblox/localization/gulf-v16/ar-001-localization-table.json, apps/roblox/src/server/GulfWorldsV16.luau, apps/roblox/src/shared/GulfV16.luau
+Test Command: node -e "const fs=require('fs'); const t=JSON.parse(fs.readFileSync('./apps/roblox/localization/gulf-v16/ar-001-localization-table.json')); if(t.robloxSupportedLocale!=='ar-001' || t.entriesCount<35) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: apps/roblox/src/shared/GulfV16.luau, apps/roblox/src/server/GulfWorldsV16.luau, apps/roblox/localization/gulf-v16/ar-001-localization-table.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE CX03 d9c1176 apps/roblox/src/shared/GulfV16.luau

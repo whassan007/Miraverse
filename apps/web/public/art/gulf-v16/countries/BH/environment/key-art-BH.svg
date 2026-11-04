@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Bahrain — The Library of Dilmun">
+  <defs>
+    <linearGradient id="bg-BH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1C1624"/>
+      <stop offset="55%" stop-color="#B91C1C"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <radialGradient id="glow-BH" cx="75%" cy="22%" r="45%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg-BH)"/>
+  <rect width="1280" height="720" fill="url(#glow-BH)"/>
+  <rect x="24" y="24" width="1232" height="672" rx="24" fill="none" stroke="#F59E0B" stroke-width="3" opacity="0.75"/>
+  <rect x="110" y="360" width="430" height="115" fill="#A16207" stroke="#F59E0B" stroke-width="3"/>
+         <rect x="145" y="285" width="360" height="75" fill="#CA8A04" stroke="#F59E0B" stroke-width="3"/>
+         <circle cx="325" cy="220" r="48" fill="#F59E0B" stroke="#B91C1C" stroke-width="5"/>
+         <rect x="700" y="275" width="410" height="195" rx="8" fill="#E2E8F0" stroke="#B91C1C" stroke-width="4"/>
+  <rect x="0" y="475" width="1280" height="245" fill="#09111E" opacity="0.84"/>
+  <text x="64" y="100" fill="#F59E0B" font-family="Georgia, serif" font-size="22" font-weight="bold">عالم يرا · Mira's World — Gulf Diaspora Expansion v1.6 (country.bh)</text>
+  <text x="64" y="158" fill="#FFF8EE" font-family="Georgia, serif" font-size="46" font-weight="bold">Bahrain (BH) — The Library of Dilmun</text>
+  <text x="64" y="208" fill="#FDE68A" font-family="sans-serif" font-size="30" font-weight="bold">مملكة البحرين — مكتبة دلمون وطريق اللؤلؤ</text>
+  <text x="64" y="545" fill="#E2E8F0" font-family="sans-serif" font-size="22">Mentor: Dr. Layla Al-Arrayedh &amp; Ustadha Ameena (Fictional Mentors) · Dialect: ar-BH</text>
+  <text x="64" y="585" fill="#94A3B8" font-family="sans-serif" font-size="18">Added as a first-class sixth Gulf destination because the research explicitly covers Dilmun and Bahrain&apos;s heritage: fe...</text>
+  <text x="64" y="640" fill="#F59E0B" font-family="monospace" font-size="17">5 Canonical Acts × 4 Age Tracks (5–7, 8–10, 11–13, 14–17) · العربية / Arabizi / English</text>
+</svg>

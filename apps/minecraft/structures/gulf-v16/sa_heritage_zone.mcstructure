@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "size": [
+    24,
+    14,
+    24
+  ],
+  "country_id": "country.sa",
+  "country_code": "SA",
+  "structures": [
+    {
+      "id": "miraverse:sa_najd_poetry_terrace",
+      "act_id": "quest.sa.01",
+      "title_en": "A Poet's First Words",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:sa_wadi_caravan_station",
+      "act_id": "quest.sa.02",
+      "title_en": "The Caravan's Choices",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:sa_najd_market_arcade",
+      "act_id": "quest.sa.03",
+      "title_en": "The Honor of Fair Trade",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:sa_najd_story_courtyard",
+      "act_id": "quest.sa.04",
+      "title_en": "Build the Story Courtyard",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:sa_najd_majlis_finale",
+      "act_id": "quest.sa.05",
+      "title_en": "The Voice That Travels Home",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    }
+  ]
+}

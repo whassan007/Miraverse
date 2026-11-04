@@ -1,0 +1,85 @@
+{
+  "locationId": "byblos",
+  "countryId": "LB",
+  "displayName": "Byblos",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N34_00_E035_00_DEM/Copernicus_DSM_COG_10_N34_00_E035_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    35.628,
+    34.108,
+    35.668,
+    34.138
+  ],
+  "regionalBoundingBox": [
+    35.6,
+    34.08,
+    35.72,
+    34.17
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32636",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    -0.09,
+    238.5
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 15.0155,
+    "metersPerStudZ": 13.1672,
+    "studsPerMeter": 0.0666
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 7.9529,
+    "verticalExaggeration": 1.15,
+    "robloxYRangeStuds": [
+      4.0,
+      36.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      800,
+      10,
+      0
+    ],
+    "robloxSpawn": [
+      800,
+      10.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        660,
+        -25,
+        -210
+      ],
+      "max": [
+        940,
+        95,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      743801.39,
+      3778950.48
+    ]
+  },
+  "terrainChecksum": "3711ed226649d6428196bfa00fdf2850d840aa2514270c40e1ac6c72691edb2d",
+  "generatedAssetPaths": [
+    "data/geography/processed/byblos.json",
+    "apps/roblox/terrain/countries/LB/byblos_terrain.json",
+    "reports/terrain/heightmaps/byblos_heightmap.png",
+    "apps/roblox/terrain/countries/LB/byblos_heightmap.png",
+    "reports/terrain/hillshades/byblos_hillshade.png",
+    "reports/terrain/comparisons/byblos_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/LB.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:26.418572+00:00"
+}

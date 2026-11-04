@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Oman — The Waterkeepers of the Mountains">
+  <defs>
+    <linearGradient id="bg-OM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F221D"/>
+      <stop offset="55%" stop-color="#15803D"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <radialGradient id="glow-OM" cx="75%" cy="22%" r="45%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg-OM)"/>
+  <rect width="1280" height="720" fill="url(#glow-OM)"/>
+  <rect x="24" y="24" width="1232" height="672" rx="24" fill="none" stroke="#D97706" stroke-width="3" opacity="0.75"/>
+  <polygon points="60,480 280,190 520,480" fill="#3F6212" opacity="0.8"/>
+         <polygon points="360,480 620,160 880,480" fill="#14532D" opacity="0.85"/>
+         <path d="M260 360 Q540 410 1080 465" stroke="#38BDF8" stroke-width="22" fill="none"/>
+         <rect x="740" y="310" width="320" height="150" rx="10" fill="#D6C7B2" stroke="#D97706" stroke-width="4"/>
+  <rect x="0" y="475" width="1280" height="245" fill="#09111E" opacity="0.84"/>
+  <text x="64" y="100" fill="#D97706" font-family="Georgia, serif" font-size="22" font-weight="bold">عالم يرا · Mira's World — Gulf Diaspora Expansion v1.6 (country.om)</text>
+  <text x="64" y="158" fill="#FFF8EE" font-family="Georgia, serif" font-size="46" font-weight="bold">Oman (OM) — The Waterkeepers of the Mountains</text>
+  <text x="64" y="208" fill="#FDE68A" font-family="sans-serif" font-size="30" font-weight="bold">سلطنة عُمان — حُماة المياه في الجبال</text>
+  <text x="64" y="545" fill="#E2E8F0" font-family="sans-serif" font-size="22">Mentor: Arif Salim &amp; Mazoon Al-Harthi (Fictional Mentors) · Dialect: ar-OM</text>
+  <text x="64" y="585" fill="#94A3B8" font-family="sans-serif" font-size="18">A well-researched Omani mountain oasis village and terraced date/pomegranate garden irrigated by UNESCO-listed aflaj g...</text>
+  <text x="64" y="640" fill="#D97706" font-family="monospace" font-size="17">5 Canonical Acts × 4 Age Tracks (5–7, 8–10, 11–13, 14–17) · العربية / Arabizi / English</text>
+</svg>

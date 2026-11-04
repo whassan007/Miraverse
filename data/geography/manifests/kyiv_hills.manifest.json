@@ -1,0 +1,85 @@
+{
+  "locationId": "kyiv_hills",
+  "countryId": "UA",
+  "displayName": "Kyiv Hills & Dnipro River Overlook",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N50_00_E030_00_DEM/Copernicus_DSM_COG_10_N50_00_E030_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    30.485,
+    50.435,
+    30.555,
+    50.48
+  ],
+  "regionalBoundingBox": [
+    30.42,
+    50.39,
+    30.62,
+    50.52
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32636",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    90.0,
+    210.29
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 21.3964,
+    "metersPerStudZ": 20.1537,
+    "studsPerMeter": 0.04674
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 3.1657,
+    "verticalExaggeration": 1.2,
+    "robloxYRangeStuds": [
+      8.16,
+      43.48
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      8000,
+      18,
+      0
+    ],
+    "robloxSpawn": [
+      8000,
+      18.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        7860,
+        -20,
+        -165
+      ],
+      "max": [
+        8140,
+        95,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      323828.26,
+      5592498.68
+    ]
+  },
+  "terrainChecksum": "6d605f0585a4979fb92d478a0fd46f541d71b8d183c6dc295a039eef96276442",
+  "generatedAssetPaths": [
+    "data/geography/processed/kyiv_hills.json",
+    "apps/roblox/terrain/countries/UA/kyiv_hills_terrain.json",
+    "reports/terrain/heightmaps/kyiv_hills_heightmap.png",
+    "apps/roblox/terrain/countries/UA/kyiv_hills_heightmap.png",
+    "reports/terrain/hillshades/kyiv_hills_hillshade.png",
+    "reports/terrain/comparisons/kyiv_hills_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/UA.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:31.308440+00:00"
+}

@@ -1,0 +1,293 @@
+{
+  "program": "Miraverse Phoenician Historical World Reconstruction",
+  "ratio": "DGX Spark : Gemini/Antigravity : Codex : Claude = 4 : 4 : 1 : 1",
+  "totalWorkers": 40,
+  "allocationBreakdown": {
+    "DGX_Spark": 16,
+    "Gemini_Antigravity": 16,
+    "Codex": 4,
+    "Claude": 4
+  },
+  "agents": [
+    {
+      "agentId": "DGX-01",
+      "backend": "DGX Spark",
+      "assignment": "Complete archaeological content extraction & source synthesis",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/sources/source-registry.json"
+    },
+    {
+      "agentId": "DGX-02",
+      "backend": "DGX Spark",
+      "assignment": "Historical chronology, competing claims and source validation",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/chronology/chronology.json"
+    },
+    {
+      "agentId": "DGX-03",
+      "backend": "DGX Spark",
+      "assignment": "Geographic coordinates, ancient shorelines and GIS data",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/sites/sites.json"
+    },
+    {
+      "agentId": "DGX-04",
+      "backend": "DGX Spark",
+      "assignment": "Shared monument metadata and dimension validation",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json"
+    },
+    {
+      "agentId": "DGX-05",
+      "backend": "DGX Spark",
+      "assignment": "Byblos temple architecture and reconstruction data (26 obelisks, L-Temple)",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/shared/historical-worlds/HistoricalMonumentRegistry.luau"
+    },
+    {
+      "agentId": "DGX-06",
+      "backend": "DGX Spark",
+      "assignment": "Byblos harbor, alphabet and artifact models",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/artifacts/artifacts.json"
+    },
+    {
+      "agentId": "DGX-07",
+      "backend": "DGX Spark",
+      "assignment": "Ancient Tyre island and defensive city data",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/sites/sites.json#hist_tyre"
+    },
+    {
+      "agentId": "DGX-08",
+      "backend": "DGX Spark",
+      "assignment": "Tyre harbor, shipyard and coastal engineering data",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#tyre_twin_harbors"
+    },
+    {
+      "agentId": "DGX-09",
+      "backend": "DGX Spark",
+      "assignment": "Sidon Temple of Eshmun and sacred architecture",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#sidon_temple_eshmun"
+    },
+    {
+      "agentId": "DGX-10",
+      "backend": "DGX Spark",
+      "assignment": "Carthage Byrsa, fortifications and urban layout",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#carthage_byrsa_acropolis"
+    },
+    {
+      "agentId": "DGX-11",
+      "backend": "DGX Spark",
+      "assignment": "Carthage Magon Quarter and domestic architecture",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#carthage_magon_quarter"
+    },
+    {
+      "agentId": "DGX-12",
+      "backend": "DGX Spark",
+      "assignment": "Carthage Cothon and maritime structures",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#carthage_cothon_harbor"
+    },
+    {
+      "agentId": "DGX-13",
+      "backend": "DGX Spark",
+      "assignment": "Motya city architecture and maritime setting",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#motya_submerged_causeway"
+    },
+    {
+      "agentId": "DGX-14",
+      "backend": "DGX Spark",
+      "assignment": "Ships, shipbuilding, joinery and artifact metadata",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/ships/ships.json"
+    },
+    {
+      "agentId": "DGX-15",
+      "backend": "DGX Spark",
+      "assignment": "Workshops, industrial heritage, coins and inscriptions",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/workshops/workshops.json"
+    },
+    {
+      "agentId": "DGX-16",
+      "backend": "DGX Spark",
+      "assignment": "Generated geometry, asset integrity and deterministic tests",
+      "status": "COMPLETED",
+      "deliverable": "tests/roblox/historical-worlds/phoenician-historical-worlds.test.ts"
+    },
+    {
+      "agentId": "AG-01",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Existing Roblox world and Studio baseline audit",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/server/MapBuilder.luau baseline validation"
+    },
+    {
+      "agentId": "AG-02",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Ancient Byblos environment ground layout & precinct",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/server/historical-worlds/ByblosHistoricalWorld.luau"
+    },
+    {
+      "agentId": "AG-03",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Temple of the Obelisks and archaeological layers",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/server/historical-worlds/HistoricalMonumentBuilder.luau#buildTempleOfObelisks"
+    },
+    {
+      "agentId": "AG-04",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Ahiram exhibit and ancient Byblos harbor",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/server/historical-worlds/HistoricalMonumentBuilder.luau#buildAhiramSarcophagus"
+    },
+    {
+      "agentId": "AG-05",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Ancient Tyre island reconstruction specifications",
+      "status": "PREPARED_FOR_WAVE3",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#tyre_island_citadel"
+    },
+    {
+      "agentId": "AG-06",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Tyre harbors, walls and port districts layout",
+      "status": "PREPARED_FOR_WAVE3",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#tyre_twin_harbors"
+    },
+    {
+      "agentId": "AG-07",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Tyre historical geography transformation exhibit",
+      "status": "PREPARED_FOR_WAVE3",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#tyre_alexander_causeway_exhibit"
+    },
+    {
+      "agentId": "AG-08",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Sidon and Temple of Eshmun terrace design",
+      "status": "PREPARED_FOR_WAVE3",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#sidon_temple_eshmun"
+    },
+    {
+      "agentId": "AG-09",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Carthage Byrsa and defensive city specifications",
+      "status": "PREPARED_FOR_WAVE4",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#carthage_byrsa_acropolis"
+    },
+    {
+      "agentId": "AG-10",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Carthage Magon Quarter residential modeling",
+      "status": "PREPARED_FOR_WAVE4",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#carthage_magon_quarter"
+    },
+    {
+      "agentId": "AG-11",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Carthage Cothon and circular shipyards",
+      "status": "PREPARED_FOR_WAVE4",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#carthage_cothon_harbor"
+    },
+    {
+      "agentId": "AG-12",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Motya historical city and causeway",
+      "status": "PREPARED_FOR_WAVE4",
+      "deliverable": "content/historical-worlds/phoenician/monuments/monuments.json#motya_submerged_causeway"
+    },
+    {
+      "agentId": "AG-13",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Ships, workshops and industrial exhibits implementation",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/server/historical-worlds/HistoricalMonumentBuilder.luau#buildAncientHarbor"
+    },
+    {
+      "agentId": "AG-14",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Monument interactions and educational gameplay",
+      "status": "COMPLETED",
+      "deliverable": "content/historical-worlds/phoenician/questions/educational-questions.json"
+    },
+    {
+      "agentId": "AG-15",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Mobile performance, navigation and streaming",
+      "status": "COMPLETED",
+      "deliverable": "StreamingEnabled verification across Z >= 1600 cell coordinates"
+    },
+    {
+      "agentId": "AG-16",
+      "backend": "Gemini / Antigravity",
+      "assignment": "Full visual QA, gameplay screenshots and walkthrough evidence",
+      "status": "COMPLETED",
+      "deliverable": "reports/phoenician-world/screenshots/studio_byblos_benchmark.png"
+    },
+    {
+      "agentId": "CODEX-01",
+      "backend": "Codex",
+      "assignment": "Historical World Architecture (Locations, Period Selection, Scene Registry)",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/shared/historical-worlds/PhoenicianWorldRegistry.luau"
+    },
+    {
+      "agentId": "CODEX-02",
+      "backend": "Codex",
+      "assignment": "Monument Generation (Procedural stone architecture, podiums, quays)",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/server/historical-worlds/HistoricalMonumentBuilder.luau"
+    },
+    {
+      "agentId": "CODEX-03",
+      "backend": "Codex",
+      "assignment": "Gameplay and Persistence (Server-authoritative travel, prompts, dialogue)",
+      "status": "COMPLETED",
+      "deliverable": "apps/roblox/src/shared/WorldRegistry.luau & apps/roblox/src/server/MapBuilder.luau"
+    },
+    {
+      "agentId": "CODEX-04",
+      "backend": "Codex",
+      "assignment": "Build and Testing (Automated monument coverage, compile pipeline, vitest)",
+      "status": "COMPLETED",
+      "deliverable": "tests/roblox/historical-worlds/phoenician-historical-worlds.test.ts"
+    },
+    {
+      "agentId": "CLAUDE-01",
+      "backend": "Claude",
+      "assignment": "Historical Reconstruction Architect (Accuracy, chronology, archaeological uncertainty)",
+      "status": "COMPLETED",
+      "deliverable": "reports/phoenician-world/historical-accuracy.md & chronology-review.md"
+    },
+    {
+      "agentId": "CLAUDE-02",
+      "backend": "Claude",
+      "assignment": "World and Gameplay Architect (Unified architecture, zero duplicate registries)",
+      "status": "COMPLETED",
+      "deliverable": "reports/phoenician-world/geographic-accuracy.md"
+    },
+    {
+      "agentId": "CLAUDE-03",
+      "backend": "Claude",
+      "assignment": "Educational and Cultural Reviewer (Child comprehension, non-violent ethics, localization)",
+      "status": "COMPLETED",
+      "deliverable": "reports/phoenician-world/content-review.md"
+    },
+    {
+      "agentId": "CLAUDE-04",
+      "backend": "Claude",
+      "assignment": "Independent Quality Reviewer (Audit evidence, PR readiness, gate decisions)",
+      "status": "COMPLETED",
+      "deliverable": "reports/phoenician-world/executive-summary.md"
+    }
+  ]
+}

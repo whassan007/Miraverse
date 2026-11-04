@@ -1,0 +1,428 @@
+{
+  "schemaVersion": "1.6.0",
+  "robloxSupportedLocale": "ar-001",
+  "inAppScriptPreferences": [
+    "Arab",
+    "Latn",
+    "en"
+  ],
+  "inAppDialectModes": [
+    "ar-QA",
+    "ar-AE",
+    "ar-KW",
+    "ar-SA",
+    "ar-OM",
+    "ar-BH",
+    "ar",
+    "en"
+  ],
+  "entriesCount": 37,
+  "entries": [
+    {
+      "key": "ui.brand.title",
+      "source": "Mira's World",
+      "context": "Brand Identity Header (Distinguished from interface translation)",
+      "translations": {
+        "ar-001": "عالم يرا",
+        "en-us": "Mira's World"
+      },
+      "arabizi": "3alam Mira (Mira's World)"
+    },
+    {
+      "key": "country.qa.mentor.greeting",
+      "source": "Hayyakum Allah by the Doha harbor! Let us explore the boatwrights' ledger and the stories of the pearl coast.",
+      "context": "Qatar (ar-QA) fictional mentor greeting",
+      "translations": {
+        "ar-001": "حياكم الله على سيف الدوحة! يلا نكتشف دفتر القلاف وحكايات ساحل اللؤلؤ.",
+        "en-us": "Hayyakum Allah by the Doha harbor! Let us explore the boatwrights' ledger and the stories of the pearl coast."
+      },
+      "dialectVariant": "ar-QA",
+      "arabizi": "Hayyakum Allah 3ala seef il-Doha! Yalla niktishif il-lulu wa daftar il-qallaf."
+    },
+    {
+      "key": "quest.qa.01.title",
+      "source": "The Boatwright's Ledger",
+      "context": "Qatar Act 1",
+      "translations": {
+        "ar-001": "دفتر القلّاف",
+        "en-us": "The Boatwright's Ledger"
+      },
+      "dialectVariant": "ar-QA",
+      "arabizi": "Daftar il-Qallaf"
+    },
+    {
+      "key": "quest.qa.02.title",
+      "source": "The Pearl Market",
+      "context": "Qatar Act 2",
+      "translations": {
+        "ar-001": "سوق الطواشين",
+        "en-us": "The Pearl Market"
+      },
+      "dialectVariant": "ar-QA",
+      "arabizi": "Souq il-Tawashin"
+    },
+    {
+      "key": "quest.qa.03.title",
+      "source": "Restore the Harbor Workshop",
+      "context": "Qatar Act 3",
+      "translations": {
+        "ar-001": "ترميم ورشة المرفأ",
+        "en-us": "Restore the Harbor Workshop"
+      },
+      "dialectVariant": "ar-QA",
+      "arabizi": "Tarmim Warshat il-Marfa"
+    },
+    {
+      "key": "quest.qa.04.title",
+      "source": "The Fisaikra Story Circle",
+      "context": "Qatar Act 4",
+      "translations": {
+        "ar-001": "حلقة حكاية الفسيفكرة",
+        "en-us": "The Fisaikra Story Circle"
+      },
+      "dialectVariant": "ar-QA",
+      "arabizi": "Halqat Hikayat Al-Fisaikra"
+    },
+    {
+      "key": "quest.qa.05.title",
+      "source": "Al Qaffal: Coming Home",
+      "context": "Qatar Act 5",
+      "translations": {
+        "ar-001": "القفّال: فرحة العودة إلى الديار",
+        "en-us": "Al Qaffal: Coming Home"
+      },
+      "dialectVariant": "ar-QA",
+      "arabizi": "Al-Qaffal: Farhat il-3awda"
+    },
+    {
+      "key": "country.ae.mentor.greeting",
+      "source": "Marhaba الساع! From the coastal dhow creek to the shaded falaj of Al Ain, let us chart the routes of sea and oasis.",
+      "context": "United Arab Emirates (ar-AE) fictional mentor greeting",
+      "translations": {
+        "ar-001": "مرحبا الساع! من خور المحامل الساحلي إلى ظلال أفلاج العين، يلا نرسم مسارات البحر والواحة.",
+        "en-us": "Marhaba الساع! From the coastal dhow creek to the shaded falaj of Al Ain, let us chart the routes of sea and oasis."
+      },
+      "dialectVariant": "ar-AE",
+      "arabizi": "Marhaba il-sa3! Min khor il-mahamil ila wahat Al-3ain, yalla naktashif il-bahr wal-waha."
+    },
+    {
+      "key": "quest.ae.01.title",
+      "source": "Sails at Sunrise",
+      "context": "United Arab Emirates Act 1",
+      "translations": {
+        "ar-001": "أشرعة عند الشروق",
+        "en-us": "Sails at Sunrise"
+      },
+      "dialectVariant": "ar-AE",
+      "arabizi": "Ashri3a 3ind il-Shuruq"
+    },
+    {
+      "key": "quest.ae.02.title",
+      "source": "The Souk of Many Routes",
+      "context": "United Arab Emirates Act 2",
+      "translations": {
+        "ar-001": "سوق المسارات المتعددة",
+        "en-us": "The Souk of Many Routes"
+      },
+      "dialectVariant": "ar-AE",
+      "arabizi": "Souq il-Masarat il-Muta3addida"
+    },
+    {
+      "key": "quest.ae.03.title",
+      "source": "Wind Tower Workshop",
+      "context": "United Arab Emirates Act 3",
+      "translations": {
+        "ar-001": "ورشة البارجيل والظل",
+        "en-us": "Wind Tower Workshop"
+      },
+      "dialectVariant": "ar-AE",
+      "arabizi": "Warshat il-Barjeel wal-Zill"
+    },
+    {
+      "key": "quest.ae.04.title",
+      "source": "Oasis Table",
+      "context": "United Arab Emirates Act 4",
+      "translations": {
+        "ar-001": "مائدة الواحة والضيافة",
+        "en-us": "Oasis Table"
+      },
+      "dialectVariant": "ar-AE",
+      "arabizi": "Ma'idat il-Waha wal-Diyafa"
+    },
+    {
+      "key": "quest.ae.05.title",
+      "source": "Sea to Oasis Memory Map",
+      "context": "United Arab Emirates Act 5",
+      "translations": {
+        "ar-001": "خريطة ذاكرة البحر والواحة",
+        "en-us": "Sea to Oasis Memory Map"
+      },
+      "dialectVariant": "ar-AE",
+      "arabizi": "Kharitat Dhakirat il-Bahr wal-Waha"
+    },
+    {
+      "key": "country.kw.mentor.greeting",
+      "source": "Ya hala bil-ghalyin! Welcome to the Naq'ah harbor of Kuwait—where every Boom dhow carries a story and every lantern guides friends home.",
+      "context": "Kuwait (ar-KW) fictional mentor greeting",
+      "translations": {
+        "ar-001": "يا هلا بالغاليين! حياكم في نقعة الكويت، حيث يحمل كل بوم حكاية ويهدي كل فنر الأحباب إلى الديرة.",
+        "en-us": "Ya hala bil-ghalyin! Welcome to the Naq'ah harbor of Kuwait—where every Boom dhow carries a story and every lantern guides friends home."
+      },
+      "dialectVariant": "ar-KW",
+      "arabizi": "Ya hala bil-ghalyin! Hayyakum fi naq3at il-Kuwait, hayth yahmil kull boom hikaya."
+    },
+    {
+      "key": "quest.kw.01.title",
+      "source": "The Sailor's Kit",
+      "context": "Kuwait Act 1",
+      "translations": {
+        "ar-001": "عدّة البحار والمؤونة",
+        "en-us": "The Sailor's Kit"
+      },
+      "dialectVariant": "ar-KW",
+      "arabizi": "3iddat il-Bahhar wal-Ma'una"
+    },
+    {
+      "key": "quest.kw.02.title",
+      "source": "The Merchant's Promise",
+      "context": "Kuwait Act 2",
+      "translations": {
+        "ar-001": "كلمة التاجر وميثاق الأمانة",
+        "en-us": "The Merchant's Promise"
+      },
+      "dialectVariant": "ar-KW",
+      "arabizi": "Kalimat il-Tajir wa Mithaq il-Amana"
+    },
+    {
+      "key": "quest.kw.03.title",
+      "source": "Rescue the Model Dhow",
+      "context": "Kuwait Act 3",
+      "translations": {
+        "ar-001": "إنقاذ وترميم سفينة البوم",
+        "en-us": "Rescue the Model Dhow"
+      },
+      "dialectVariant": "ar-KW",
+      "arabizi": "Inqadh wa Tarmim Safinat il-Boom"
+    },
+    {
+      "key": "quest.kw.04.title",
+      "source": "Who Makes the Night Sounds?",
+      "context": "Kuwait Act 4",
+      "translations": {
+        "ar-001": "من يصدر أصوات الليل في الميناء؟",
+        "en-us": "Who Makes the Night Sounds?"
+      },
+      "dialectVariant": "ar-KW",
+      "arabizi": "Man Yusdir Aswat il-Layl fil-Mina?"
+    },
+    {
+      "key": "quest.kw.05.title",
+      "source": "Songs of Safe Return",
+      "context": "Kuwait Act 5",
+      "translations": {
+        "ar-001": "أهازيج العودة السالمة (القفال)",
+        "en-us": "Songs of Safe Return"
+      },
+      "dialectVariant": "ar-KW",
+      "arabizi": "Ahazij il-3awda il-Salima (Il-Quffal)"
+    },
+    {
+      "key": "country.sa.mentor.greeting",
+      "source": "Ya marhaba wa ahlan! In our Najdi courtyard by the caravan road, every verse carries wisdom and every traveler is honored.",
+      "context": "Saudi Arabia (ar-SA) fictional mentor greeting",
+      "translations": {
+        "ar-001": "يا مرحبا وأهلاً! في فنائنا النجدي على طريق القوافل، يحمل كل بيت شعر حكمة ويُكرم كل عابر سبيل.",
+        "en-us": "Ya marhaba wa ahlan! In our Najdi courtyard by the caravan road, every verse carries wisdom and every traveler is honored."
+      },
+      "dialectVariant": "ar-SA",
+      "arabizi": "Ya marhaba wa ahlan! Fi fina'ina il-Najdi 3ala tariq il-qawafil, kull bayt shi3r yahmil hikma."
+    },
+    {
+      "key": "quest.sa.01.title",
+      "source": "A Poet's First Words",
+      "context": "Saudi Arabia Act 1",
+      "translations": {
+        "ar-001": "كلمات الشاعر الأولى وميزان البيان",
+        "en-us": "A Poet's First Words"
+      },
+      "dialectVariant": "ar-SA",
+      "arabizi": "Kalimat il-Sha3ir il-Ula wa Mizan il-Bayan"
+    },
+    {
+      "key": "quest.sa.02.title",
+      "source": "The Caravan's Choices",
+      "context": "Saudi Arabia Act 2",
+      "translations": {
+        "ar-001": "خيارات القافلة وأمان الطريق",
+        "en-us": "The Caravan's Choices"
+      },
+      "dialectVariant": "ar-SA",
+      "arabizi": "Khiyarat il-Qafila wa Aman il-Tariq"
+    },
+    {
+      "key": "quest.sa.03.title",
+      "source": "The Honor of Fair Trade",
+      "context": "Saudi Arabia Act 3",
+      "translations": {
+        "ar-001": "شرف التجارة العادلة وميزان القسط",
+        "en-us": "The Honor of Fair Trade"
+      },
+      "dialectVariant": "ar-SA",
+      "arabizi": "Sharaf il-Tijara il-3adila wa Mizan il-Qist"
+    },
+    {
+      "key": "quest.sa.04.title",
+      "source": "Build the Story Courtyard",
+      "context": "Saudi Arabia Act 4",
+      "translations": {
+        "ar-001": "بناء فناء القصيد والمجلس النجدي",
+        "en-us": "Build the Story Courtyard"
+      },
+      "dialectVariant": "ar-SA",
+      "arabizi": "Bina' Fina' il-Qasid wal-Majlis il-Najdi"
+    },
+    {
+      "key": "quest.sa.05.title",
+      "source": "The Voice That Travels Home",
+      "context": "Saudi Arabia Act 5",
+      "translations": {
+        "ar-001": "الصوت الذي يسافر إلى الديار",
+        "en-us": "The Voice That Travels Home"
+      },
+      "dialectVariant": "ar-SA",
+      "arabizi": "Il-Sawt illi Yusafir ila il-Diyar"
+    },
+    {
+      "key": "country.om.mentor.greeting",
+      "source": "Hayyakum Allah in the mountain oasis! Follow the clear sound of the falaj channel and see how water brings every garden to life.",
+      "context": "Oman (ar-OM) fictional mentor greeting",
+      "translations": {
+        "ar-001": "حياكم الله في واحة الجبل! اتبعوا خرير مياه الفلج الصافية لنرى كيف تحيا البساتين بالعدل والتعاون.",
+        "en-us": "Hayyakum Allah in the mountain oasis! Follow the clear sound of the falaj channel and see how water brings every garden to life."
+      },
+      "dialectVariant": "ar-OM",
+      "arabizi": "Hayyakum Allah fi wahat il-jabal! Ittabi3u miyah il-falaj il-safiya."
+    },
+    {
+      "key": "quest.om.01.title",
+      "source": "Follow the Water",
+      "context": "Oman Act 1",
+      "translations": {
+        "ar-001": "تتبّع مسار الماء",
+        "en-us": "Follow the Water"
+      },
+      "dialectVariant": "ar-OM",
+      "arabizi": "Tatabba3 Masar il-Ma"
+    },
+    {
+      "key": "quest.om.02.title",
+      "source": "The Frankincense Route",
+      "context": "Oman Act 2",
+      "translations": {
+        "ar-001": "طريق اللبان الظفاري",
+        "en-us": "The Frankincense Route"
+      },
+      "dialectVariant": "ar-OM",
+      "arabizi": "Tariq il-Luban il-Dhofari"
+    },
+    {
+      "key": "quest.om.03.title",
+      "source": "Repair the Falaj",
+      "context": "Oman Act 3",
+      "translations": {
+        "ar-001": "ترميم قناة الفلج",
+        "en-us": "Repair the Falaj"
+      },
+      "dialectVariant": "ar-OM",
+      "arabizi": "Tarmim Qanat il-Falaj"
+    },
+    {
+      "key": "quest.om.04.title",
+      "source": "The Oasis Family Table",
+      "context": "Oman Act 4",
+      "translations": {
+        "ar-001": "مائدة عائلة الواحة",
+        "en-us": "The Oasis Family Table"
+      },
+      "dialectVariant": "ar-OM",
+      "arabizi": "Ma'idat 3ailat il-Waha"
+    },
+    {
+      "key": "quest.om.05.title",
+      "source": "Share the Water, Share the Story",
+      "context": "Oman Act 5",
+      "translations": {
+        "ar-001": "تقاسَم الماء وشارك الحكاية",
+        "en-us": "Share the Water, Share the Story"
+      },
+      "dialectVariant": "ar-OM",
+      "arabizi": "Taqasam il-Ma wa Sharik il-Hikaya"
+    },
+    {
+      "key": "country.bh.mentor.greeting",
+      "source": "Ya hala wa marhaba in Bahrain! Let us read the archaeological layers of Dilmun at Qal'at al-Bahrain and then visit the pearling houses of Muharraq.",
+      "context": "Bahrain (ar-BH) fictional mentor greeting",
+      "translations": {
+        "ar-001": "يا هلا ومرحبا في البحرين! يلا نقرأ طبقات تاريخ دلمون في قلعة البحرين ثم نزور بيوت اللؤلؤ في المحرق.",
+        "en-us": "Ya hala wa marhaba in Bahrain! Let us read the archaeological layers of Dilmun at Qal'at al-Bahrain and then visit the pearling houses of Muharraq."
+      },
+      "dialectVariant": "ar-BH",
+      "arabizi": "Ya hala wa marhaba fil-Bahrain! Yalla naqra tabaqat Dilmun thumma nazur buyut il-Muharraq."
+    },
+    {
+      "key": "quest.bh.01.title",
+      "source": "The Archaeologist's Layers",
+      "context": "Bahrain Act 1",
+      "translations": {
+        "ar-001": "طبقات عالم الآثار",
+        "en-us": "The Archaeologist's Layers"
+      },
+      "dialectVariant": "ar-BH",
+      "arabizi": "Tabaqat 3alim il-Athar"
+    },
+    {
+      "key": "quest.bh.02.title",
+      "source": "The Harbor's Exchange",
+      "context": "Bahrain Act 2",
+      "translations": {
+        "ar-001": "تبادل ميناء دلمون",
+        "en-us": "The Harbor's Exchange"
+      },
+      "dialectVariant": "ar-BH",
+      "arabizi": "Tabadul Mina Dilmun"
+    },
+    {
+      "key": "quest.bh.03.title",
+      "source": "Preserve the Heritage Site",
+      "context": "Bahrain Act 3",
+      "translations": {
+        "ar-001": "حماية الموقع التراثي وترميم جناح العرض",
+        "en-us": "Preserve the Heritage Site"
+      },
+      "dialectVariant": "ar-BH",
+      "arabizi": "7imayat il-Mawqi3 il-Turathi"
+    },
+    {
+      "key": "quest.bh.04.title",
+      "source": "Pearling Stories and Dates",
+      "context": "Bahrain Act 4",
+      "translations": {
+        "ar-001": "حكايات اللؤلؤ والضيافة في المحرق",
+        "en-us": "Pearling Stories and Dates"
+      },
+      "dialectVariant": "ar-BH",
+      "arabizi": "Hikayat il-Lulu wal-Diyafa fil-Muharraq"
+    },
+    {
+      "key": "quest.bh.05.title",
+      "source": "The Dilmun Memory Chest",
+      "context": "Bahrain Act 5",
+      "translations": {
+        "ar-001": "صندوق ذاكرة دلمون والبحرين",
+        "en-us": "The Dilmun Memory Chest"
+      },
+      "dialectVariant": "ar-BH",
+      "arabizi": "Sunduq Dhakirat Dilmun wal-Bahrain"
+    }
+  ]
+}

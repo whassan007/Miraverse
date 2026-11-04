@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="United Arab Emirates — The Dhow and the Oasis">
+  <defs>
+    <linearGradient id="bg-AE" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111C2D"/>
+      <stop offset="55%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <radialGradient id="glow-AE" cx="75%" cy="22%" r="45%">
+      <stop offset="0%" stop-color="#D97706" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg-AE)"/>
+  <rect width="1280" height="720" fill="url(#glow-AE)"/>
+  <rect x="24" y="24" width="1232" height="672" rx="24" fill="none" stroke="#D97706" stroke-width="3" opacity="0.75"/>
+  <rect x="140" y="210" width="110" height="270" fill="#D9B99B" stroke="#D97706" stroke-width="4"/>
+         <line x1="155" y1="220" x2="235" y2="290" stroke="#0F766E" stroke-width="4"/>
+         <line x1="235" y1="220" x2="155" y2="290" stroke="#0F766E" stroke-width="4"/>
+         <path d="M640 480 Q780 410 1120 450" stroke="#38BDF8" stroke-width="18" fill="none"/>
+         <circle cx="820" cy="310" r="65" fill="#15803D" opacity="0.85"/>
+         <rect x="812" y="360" width="16" height="110" fill="#78350F"/>
+  <rect x="0" y="475" width="1280" height="245" fill="#09111E" opacity="0.84"/>
+  <text x="64" y="100" fill="#D97706" font-family="Georgia, serif" font-size="22" font-weight="bold">عالم يرا · Mira's World — Gulf Diaspora Expansion v1.6 (country.ae)</text>
+  <text x="64" y="158" fill="#FFF8EE" font-family="Georgia, serif" font-size="46" font-weight="bold">United Arab Emirates (AE) — The Dhow and the Oasis</text>
+  <text x="64" y="208" fill="#FDE68A" font-family="sans-serif" font-size="30" font-weight="bold">الإمارات العربية المتحدة — المحمل والواحة</text>
+  <text x="64" y="545" fill="#E2E8F0" font-family="sans-serif" font-size="22">Mentor: Captain Rashid &amp; Halima Al-Nuaimi (Fictional Mentors) · Dialect: ar-AE</text>
+  <text x="64" y="585" fill="#94A3B8" font-family="sans-serif" font-size="18">Two contrasting researched Emirati environments: a historic coastal creek &amp; dhow quarter informed by Dubai, Sharjah, a...</text>
+  <text x="64" y="640" fill="#D97706" font-family="monospace" font-size="17">5 Canonical Acts × 4 Age Tracks (5–7, 8–10, 11–13, 14–17) · العربية / Arabizi / English</text>
+</svg>

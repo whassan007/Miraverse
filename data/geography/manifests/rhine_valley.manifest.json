@@ -1,0 +1,85 @@
+{
+  "locationId": "rhine_valley",
+  "countryId": "DE",
+  "displayName": "Upper Middle Rhine & Lorelei Gorge",
+  "geographicClass": "verified_real_world_with_separate_story_layer",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N50_00_E007_00_DEM/Copernicus_DSM_COG_10_N50_00_E007_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    7.69,
+    50.115,
+    7.765,
+    50.165
+  ],
+  "regionalBoundingBox": [
+    7.6,
+    50.05,
+    7.85,
+    50.25
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32632",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    64.0,
+    411.93
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 22.7248,
+    "metersPerStudZ": 22.7823,
+    "studsPerMeter": 0.044
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 7.5638,
+    "verticalExaggeration": 1.25,
+    "robloxYRangeStuds": [
+      8.0,
+      56.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      4800,
+      14,
+      0
+    ],
+    "robloxSpawn": [
+      4800,
+      14.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        4660,
+        -20,
+        -165
+      ],
+      "max": [
+        4940,
+        110,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      409090.37,
+      5554904.81
+    ]
+  },
+  "terrainChecksum": "43c0959c161ecb5175f645c5e71a7c0ea78945ee189586897ba52eb45d64a698",
+  "generatedAssetPaths": [
+    "data/geography/processed/rhine_valley.json",
+    "apps/roblox/terrain/countries/DE/rhine_valley_terrain.json",
+    "reports/terrain/heightmaps/rhine_valley_heightmap.png",
+    "apps/roblox/terrain/countries/DE/rhine_valley_heightmap.png",
+    "reports/terrain/hillshades/rhine_valley_hillshade.png",
+    "reports/terrain/comparisons/rhine_valley_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/DE.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:30.248506+00:00"
+}

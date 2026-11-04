@@ -1,0 +1,7 @@
+environment,coordinateCell,primitivePartCount,voxelMemoryMb,streamingTargetDistance,mobileTargetFps,runtimeMeasuredFps
+Phoenician_Heritage_Hub,"(0, 10, 1600)",18,0.2,120,60,60
+Ancient_Byblos_Benchmark,"(800, 10, 1600)",84,0.4,120,60,60
+Ancient_Tyre_Citadel,"(800, 10, 2400)",0 (Planned Wave 3),0.0,120,60,60 (Projected)
+Ancient_Sidon_Eshmun,"(800, 10, 3200)",0 (Planned Wave 3),0.0,120,60,60 (Projected)
+Punic_Carthage_Cothon,"(800, 10, 4000)",0 (Planned Wave 4),0.0,120,60,60 (Projected)
+Ancient_Motya_Lagoon,"(800, 10, 4800)",0 (Planned Wave 4),0.0,120,60,60 (Projected)

@@ -1,0 +1,61 @@
+{
+  "version": "1.2.0",
+  "topic": "Tyre Mentors: The Rock of Melqart",
+  "agent_id": "AG18",
+  "generated_at": "2026-11-04T18:51:00.000Z",
+  "child_privacy_guardrail": "All dialogues use scripted interactive choices only; zero microphone recording or PII collection.",
+  "mentors": [
+    {
+      "npc_id": "npc-lb-king-hiram",
+      "country": "LB",
+      "name": "King Hiram I of Tyre",
+      "role": "Master Architect, Statesman & Solomonic Ally",
+      "dialect_locale": "ar-LB",
+      "portrait_url": "/art/v12/portraits/LB-hiram.svg",
+      "epistemic_framing_lines": {
+        "historical_claim": "Welcome to our island citadel, traveller! Our stonemasons fit 2.25-meter ashlar blocks into the sea to tame the waves, while our Ships of Tarshish sail from Ezion-Geber to Ophir.",
+        "diplomacy_and_peace": "Strength lies not in walls alone, but in equitable trade—cedar logs for Jerusalem's First Temple in return for wheat and oil to nourish our island families.",
+        "maritime_navigation": "Observe the southern and northern harbors: no matter which way the Mediterranean storm blows, our cedar galleys find safe anchorage."
+      }
+    },
+    {
+      "npc_id": "npc-lb-queen-elissa",
+      "country": "LB",
+      "name": "Queen Elissa (Dido)",
+      "role": "Founder of Carthage & Maritime Strategist",
+      "dialect_locale": "ar-LB",
+      "portrait_url": "/art/v12/portraits/LB-elissa.svg",
+      "epistemic_framing_lines": {
+        "historical_claim": "In 814 BCE, we sailed west from Tyre's harbor to seed a new home across the Mediterranean: Qart-hadasht, the 'New City' of Carthage.",
+        "wisdom_and_courage": "When King Iarbas offered only as much land as an oxhide could encompass, we cut the hide into the thinnest threads to encircle the Byrsa hill. Intelligence bridges all horizons.",
+        "cultural_continuity": "Even far from our mother rock of Tyre, our Phoenician alphabet, maritime charts, and sacred hearths endured for generations."
+      }
+    },
+    {
+      "npc_id": "npc-lb-engineer-baalsillem",
+      "country": "LB",
+      "name": "Engineer Baalsillem",
+      "role": "Chief Mason of the Sidonian Breakwater & Fireship Architect",
+      "dialect_locale": "ar-LB",
+      "portrait_url": "/art/v12/portraits/LB-baalsillem.svg",
+      "epistemic_framing_lines": {
+        "engineering_science": "Look at these header stones: when laid perpendicular to incoming swells, the friction of each 2.25-meter block dissipates the kinetic energy of ocean rollers.",
+        "defensive_tactics": "During the siege, we loaded our old horse transport with pitch, sulfur, and cauldrons of combustible oil—turning a simple vessel into a defensive fireship that saved our sea gates.",
+        "material_stewardship": "Every cedar tree felled in Mount Lebanon must be squared true and pinned with seasoned oak trunnels."
+      }
+    },
+    {
+      "npc_id": "npc-lb-scribe-bodashtart",
+      "country": "LB",
+      "name": "Bodashtart of the Temple of Melqart",
+      "role": "Keeper of the Sacred Flame & Cuneiform Diplomat",
+      "dialect_locale": "ar-LB",
+      "portrait_url": "/art/v12/portraits/LB-bodashtart.svg",
+      "epistemic_framing_lines": {
+        "mythology_and_faith": "Before you stand the twin pillars of refined gold and glowing emerald stone—symbols not of a mortal statue, but of Melqart's eternal renewal.",
+        "epistemic_curation": "Here on clay is the 672 BCE Vassal Treaty of Esarhaddon. The Assyrian king sought to seize our shipwrecks, invoking our own gods Melqart and Eshmun in curses—yet our ink and spirit outlived his empire.",
+        "numismatic_integrity": "These silver Shekels of Tyre carry ninety-five percent pure silver—trusted by merchants in Alexandria, Babylon, and the Jerusalem Temple alike."
+      }
+    }
+  ]
+}

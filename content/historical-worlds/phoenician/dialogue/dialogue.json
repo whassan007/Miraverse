@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "historicalGuides": [
+    {
+      "guideId": "guide_ilu_milku",
+      "name": "Ilu-milku the Byblian Scribe",
+      "nativeName": "إيلو-ميلكو الكاتب الجبيلي",
+      "siteId": "hist_byblos",
+      "role": "Master Epigrapher & Temple Architect",
+      "dialogues": {
+        "greeting": "Peace upon you, traveler! I am Ilu-milku, scribe of the house of Resheph. You stand in ancient Gebal, where our craftsmen first carved the 22 sounds of speech into everlasting stone.",
+        "about_temple_obelisks": "Look upon these 26 standing stones—each one is a baetyl, a marker raised by seafaring captains returning safely from the Aegean and the Nile. Touch the podium and you will see the older temple that rested beneath our feet.",
+        "about_alphabet": "Before our King Ahiram, men had to memorize hundreds of pictorial signs. We simplified the wisdom of the earth into 22 letters. Every book and scroll you will ever read was born on these very quays.",
+        "farewell": "May the winds of the Great Sea guide your keel! Walk down to the harbor and inspect the cedar timbers prepared for the pharaohs."
+      }
+    },
+    {
+      "guideId": "guide_hiram_shipwright",
+      "name": "Hiram the Master Shipwright",
+      "nativeName": "حيرام كبير بناة السفن الصوري",
+      "siteId": "hist_tyre",
+      "role": "Chief Naval Architect of Tyre",
+      "dialogues": {
+        "greeting": "Hail! I am Hiram. On this island rock of Melqart, we fear neither open water nor storm. Our twin harbors welcome vessels from all four quarters of the world.",
+        "about_harbors": "To your north lies our Sidonian harbor, calm when southern gales howl. To your south lies the Egyptian harbor, directly greeting the trade winds from Alexandria.",
+        "farewell": "Remember: an island does not yield to the waves—it teaches men how to build breakwaters that outlast kings."
+      }
+    },
+    {
+      "guideId": "guide_hanno_navigator",
+      "name": "Hanno the Carthage Navigator",
+      "nativeName": "حانون الملاح القرطاجي",
+      "siteId": "hist_carthage",
+      "role": "Admiral of the Western Seas",
+      "dialogues": {
+        "greeting": "Welcome to Qart-ḥadašt, the New City of Queen Elissa! Climb the steps of Byrsa or gaze into our circular Cothon where our fleet sleeps in readiness.",
+        "about_cothon": "From the open sea, you see only quiet merchant quays. But slip through the inner passage, and you will find 220 dry docks ringed around the Admiral's island.",
+        "farewell": "Keep your eyes on the stars—the Phoenicians were the first to steer by the North Star across the open deep!"
+      }
+    }
+  ]
+}

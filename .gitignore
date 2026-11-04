@@ -1,6 +1,7 @@
 node_modules
 dist
 **/generated
+!apps/minecraft/scripts/generated/geo-terrain.ts
 **/gen_*
 apps/minecraft/bp/scripts
 apps/minecraft/rp/textures/item_texture.json
@@ -22,3 +23,6 @@ swarm/status.json
 .env.*
 .dev.vars
 .wrangler
+content/dem_cache/
+__pycache__/
+*.pyc

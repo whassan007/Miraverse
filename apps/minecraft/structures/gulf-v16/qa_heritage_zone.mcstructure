@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "size": [
+    24,
+    14,
+    24
+  ],
+  "country_id": "country.qa",
+  "country_code": "QA",
+  "structures": [
+    {
+      "id": "miraverse:qa_doha_boatwright_pier",
+      "act_id": "quest.qa.01",
+      "title_en": "The Boatwright's Ledger",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:qa_zubarah_market_courtyard",
+      "act_id": "quest.qa.02",
+      "title_en": "The Pearl Market",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:qa_harbor_workshop_pavilion",
+      "act_id": "quest.qa.03",
+      "title_en": "Restore the Harbor Workshop",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:qa_fisaikra_story_courtyard",
+      "act_id": "quest.qa.04",
+      "title_en": "The Fisaikra Story Circle",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:qa_al_qaffal_promenade",
+      "act_id": "quest.qa.05",
+      "title_en": "Al Qaffal: Coming Home",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    }
+  ]
+}

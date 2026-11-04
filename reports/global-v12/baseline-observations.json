@@ -1,0 +1,3447 @@
+{
+  "schemaVersion": "1.2.0",
+  "kind": "BASELINE_OBSERVATIONS_NOT_RELEASE_APPROVAL",
+  "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+  "workingTree": "M apps/minecraft/world/hub/hub-layout.json\n M packages/content/minecraft-global/countries/MA.json\n M packages/content/minecraft-global/registry.json\n M swarm/minecraft-global/catalog-data.mjs\n?? reports/global-v12/\n?? swarm/minecraft-global/run-wave0.mjs\n?? swarm/minecraft-global/run-wave1.mjs\n?? swarm/minecraft-global/run-wave2-3.mjs\n?? swarm/minecraft-global/swarm-lib.mjs\n?? tools/global-v12/",
+  "hardware": "linux/arm64",
+  "expected": {
+    "countries": 27,
+    "chapters": 162,
+    "ageVariants": 648,
+    "platforms": 2
+  },
+  "activeLegacyPacks": [
+    {
+      "country": "EG",
+      "chapters": 1,
+      "path": "packages/content/packs/EG.json",
+      "bytes": 4439,
+      "sha256": "6357ee245aed0099e22c8c9ad880ca5f8a2bb2f8da2a0a92caa73d400d358b2f",
+      "nativeVerified": false
+    },
+    {
+      "country": "FR",
+      "chapters": 1,
+      "path": "packages/content/packs/FR.json",
+      "bytes": 4311,
+      "sha256": "839ebf9b4428b5cefd9ddc79478ced813460952b68b253c4eaacdceba3bc0783",
+      "nativeVerified": false
+    },
+    {
+      "country": "IQ",
+      "chapters": 1,
+      "path": "packages/content/packs/IQ.json",
+      "bytes": 4244,
+      "sha256": "7b4ce989e66ebab54100e1c22d9de8dd6d68a93746c44b3cf7dd8ea73b05ae23",
+      "nativeVerified": false
+    },
+    {
+      "country": "KR",
+      "chapters": 1,
+      "path": "packages/content/packs/KR.json",
+      "bytes": 4287,
+      "sha256": "a56ddd4529e3acfef1438ae900155b2ff6670570a8e74565333bc0e1b055c3e3",
+      "nativeVerified": false
+    },
+    {
+      "country": "LB",
+      "chapters": 1,
+      "path": "packages/content/packs/LB.json",
+      "bytes": 4256,
+      "sha256": "8b4d5426171efa4feda62e0a90b85cad87c0b0b2200efc31e602ae038f782e63",
+      "nativeVerified": false
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "apps/roblox/dist/MCPStudioPlugin.rbxm",
+      "bytes": 11648,
+      "sha256": "417152a0a6151fb43ac2a7548a63f6a5e5dc94a1d3c6f3ee5bf9f59ba78267bb",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/roblox/dist/miraverse.rbxlx",
+      "bytes": 583921,
+      "sha256": "15d3b04a5c3f1d89dec7c266da075b2ca6d73fe3912902a9cc7f0408329013be",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/minecraft/dist/manifest-of-artifacts.json",
+      "bytes": 1162,
+      "sha256": "c61331b49505e144027685c62e82bfa76d29628f62abaa59687b4f44ac57c5e2",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/minecraft/dist/miraverse-sources.zip",
+      "bytes": 97202,
+      "sha256": "5cfeafa9fa835831f0741211ae1993cf11dd39d18dec3d825e1137626299d754",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/minecraft/dist/miraverse.mcaddon",
+      "bytes": 198565,
+      "sha256": "2baefc70e9c9ea0c565296abd222e6d880d5389b25c11becbbc1eb9974886fa7",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/EG/1.svg",
+      "bytes": 3623,
+      "sha256": "96ca50ed761730be868800c6ede83e2678777fadb84b47f80393539414322716",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/EG/2.svg",
+      "bytes": 3573,
+      "sha256": "b1a7b82931d88f31a34bd595c23cd686b670346f393022b34c7778ddd83e110a",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/EG/3.svg",
+      "bytes": 3979,
+      "sha256": "2027432036a25682d3ca31bf7699d0537e3745010530ccc3b7f600ac1afc3dc9",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/EG/4.svg",
+      "bytes": 3583,
+      "sha256": "b2b355af0ddac5328ae03f99de17d0ad6a2bade0b4fa31159101c9445e8cb8e3",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/EG/5.svg",
+      "bytes": 4109,
+      "sha256": "938cfbbe0c171f159069c4b08caec73e9bb3b80a623d1493fe07a546d05017e3",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/EG/cover.svg",
+      "bytes": 5922,
+      "sha256": "95c0374004349069068493b87ea2cc7e7e77ca8f55a3d6888f22aa2b0ec5e1fa",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/FR/1.svg",
+      "bytes": 3523,
+      "sha256": "b7a47ca779fb6370a1ea2858271d5db48f3735286b7603f2cba3cc0fe2a898ef",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/FR/2.svg",
+      "bytes": 3700,
+      "sha256": "ad98ab8c5ed554ec4b72ce66cd6e78ad6166b27bab63786938f9cafd2ecbabb9",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/FR/3.svg",
+      "bytes": 3493,
+      "sha256": "f9fca7b5e6f2057b70a219fb7885223381679c96d1be6533662a4d0375aa89c1",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/FR/4.svg",
+      "bytes": 3638,
+      "sha256": "0444ecadd8cb93c701c460297048430fba6a031b5181e8ef3857010d8243f35a",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/FR/5.svg",
+      "bytes": 4691,
+      "sha256": "61e6dcaa05ec98627096caca68e181b36b64fe8e7700dc60f1ad51970dfb8033",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/FR/cover.svg",
+      "bytes": 6435,
+      "sha256": "88fb6d3d581ac14099da18a69373c37a5aa38da2616273702627c0eb4dc27c82",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/IQ/1.svg",
+      "bytes": 3669,
+      "sha256": "77da3959076c02952edb78d328f9e45b9bc8eb275a4fad3cb624a89fd20453ff",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/IQ/2.svg",
+      "bytes": 3867,
+      "sha256": "00fe6c4e5aba9caa635dc4269f4b4bba03ce17cac4bd4e93132350a7d92bb260",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/IQ/3.svg",
+      "bytes": 3680,
+      "sha256": "75295711e40543553c3b0f39e9d4065e37097867088b3ac67b0b6547c24a0b06",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/IQ/4.svg",
+      "bytes": 3579,
+      "sha256": "c3ab0edca9cdb477b08f967e53b95ea9de22e0e462528b01d28a98273840c39f",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/IQ/5.svg",
+      "bytes": 4955,
+      "sha256": "6eec2f5b205a57e869a66eb44647f4f56e3672affca1abdf793b5a8d42c3c217",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/IQ/cover.svg",
+      "bytes": 5652,
+      "sha256": "3e46f7351d7953decc9d73b6166a90e7db97c4a1c7e6db6f0d5ac30ce862767f",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/KR/1.svg",
+      "bytes": 3688,
+      "sha256": "55e424b2d5df0db99b3e4313cd46e77387c8d9bef3d48c51d36ba0e9753be855",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/KR/2.svg",
+      "bytes": 4032,
+      "sha256": "61303b2e0128c49e4dde731a78d037392192341e4576e749a08560d870f2e7e4",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/KR/3.svg",
+      "bytes": 4229,
+      "sha256": "fbe0882383f95215ef1468a5f941eac2870f348e8a4b239ee56695b8a6fda880",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/KR/4.svg",
+      "bytes": 4059,
+      "sha256": "ae564ae7b8ea6d20ca5416ce8eed6e9daf0c5baffd06c8a9e136b004c2b0776e",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/KR/5.svg",
+      "bytes": 4537,
+      "sha256": "fc6b2b3677fcd26724f57fdc4f101263251586c2e30de7eb7112da569160a99f",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/KR/cover.svg",
+      "bytes": 5401,
+      "sha256": "0c45b91e093398613b3ca42fda414d800a58f0958a8bf5fd5e41a924076c8a52",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/LB/1.svg",
+      "bytes": 4497,
+      "sha256": "b2c4f5d02b97872e614f75bfa3246929eaec81c1c279a7ba4666c9c4b27cba51",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/LB/2.svg",
+      "bytes": 4266,
+      "sha256": "0908adffa2b5bf174665d4ba4b1850bf7f89ce09ab47954d4301ce4fbe47d31e",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/LB/3.svg",
+      "bytes": 3749,
+      "sha256": "e208fada4b2e2c2baecb5b5906c266cee151c86e1a597fa23ddf780775c36070",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/LB/4.svg",
+      "bytes": 3924,
+      "sha256": "471d0265e5784b764d74f17ce2628e3253255b4de2e01e201ac8d871615faa79",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/LB/5.svg",
+      "bytes": 5075,
+      "sha256": "f752702d04a930d022eb8c862e0d94c402e709841be21992d4dce74622c28b5d",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/LB/cover.svg",
+      "bytes": 7767,
+      "sha256": "e8a78d49c670944677d943068e849ab6864f2f826589d3b0c2dbc2fe30bc46af",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/hero-byblos-desktop.jpg",
+      "bytes": 199758,
+      "sha256": "9d63d6b931d04e85090ea70a36c3f2e8db93def5ad416eecd1dd72c69eed5ec7",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/hero-byblos-desktop.webp",
+      "bytes": 169030,
+      "sha256": "015dbb37ede05e014640a1b96b5a9e5ab49f6e4429a6daf6e04a63e7cf9338de",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/hero-byblos-mobile.jpg",
+      "bytes": 179688,
+      "sha256": "8f1e335beaebd9ed9a3c8fc02744a22aafe8d2ebbd71e255f325dc695c385fa5",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/hero-byblos-mobile.webp",
+      "bytes": 149152,
+      "sha256": "0079543207f253a4524e6f5115e7af04a9bfc57178bd2ea25ad76029e50ea0fa",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/minecraft-bedrock-byblos.jpg",
+      "bytes": 230345,
+      "sha256": "69883faf14cf3d769a3bf14fd06a5b4ee66e3d8297edd9367ba139edb83433be",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/minecraft-bedrock-byblos.webp",
+      "bytes": 195200,
+      "sha256": "21ce890b83b9ccbda68162d8ce8d3e53927353b1575a417af4d5d3d99017bb81",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/passport-collectible-desk.jpg",
+      "bytes": 193471,
+      "sha256": "c32011a8cb92d3995f17555824a50fc4ab6ea942c3dd9d09e3500db39e07b003",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/passport-collectible-desk.webp",
+      "bytes": 171150,
+      "sha256": "92be7292e1571afbe31494879015e2c971d858eef1e072f0583c10abfea1f1bb",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-EG.jpg",
+      "bytes": 169404,
+      "sha256": "eda67df9f42883dae613c0ca6ca55f9ba9c73b9060833924b31535d2eba65470",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-EG.webp",
+      "bytes": 155522,
+      "sha256": "b427ff7c963479e1fbebaf1f970822577e05da502ac352368f26134defdb9d2b",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-FR.jpg",
+      "bytes": 149188,
+      "sha256": "76afeee9de06a8bcd7f69543076d15bb8313e5f4ff9a2a5badf2974d6f1cd0b0",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-FR.webp",
+      "bytes": 121678,
+      "sha256": "827d632cdb28e734276148fca56cdfde0b4959d31bec7615ab7cd5946491d738",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-IQ.jpg",
+      "bytes": 171268,
+      "sha256": "75db77cc6838b1e3f54d37023b42d64a12ab142307ca6a988633b2180bdaafb0",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-IQ.webp",
+      "bytes": 149360,
+      "sha256": "b487e513293a23c03db9ae9d94cf80819b8c9b36b4c9f6a170d6ea2b11a66934",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-KR.jpg",
+      "bytes": 143605,
+      "sha256": "c0beec4108ca59cc7b3d5aae29f4ab37c648c941b27d66197b5817aeb80e78cf",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-KR.webp",
+      "bytes": 108254,
+      "sha256": "a9a3b2faf0f8287f859f22eb0d8b461b9e0e863e8078dcfdbea9cf7f10dc6085",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-LB.jpg",
+      "bytes": 211257,
+      "sha256": "e8104debeab9317de5a076001ff4eb9dd0da5e65698275f378c2d64e9942e48f",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mentor-LB.webp",
+      "bytes": 188238,
+      "sha256": "1db8f00d8d56b3f9fde835ad3d2b0400fae16e323ff73a3efa3d43455d9a2930",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mira.jpg",
+      "bytes": 211257,
+      "sha256": "e8104debeab9317de5a076001ff4eb9dd0da5e65698275f378c2d64e9942e48f",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/portrait-mira.webp",
+      "bytes": 188238,
+      "sha256": "1db8f00d8d56b3f9fde835ad3d2b0400fae16e323ff73a3efa3d43455d9a2930",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/quest-byblos-saj-bakery.jpg",
+      "bytes": 233963,
+      "sha256": "20590340d17ad0e3487e8529b2456542b21b053a36cbcb4c8c3140bfae8fc547",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/quest-byblos-saj-bakery.webp",
+      "bytes": 208038,
+      "sha256": "231afd4fc5ab988fda88c14c76a2d29913e39f4db8542edc4c544562992507e1",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/roblox-coop-byblos.jpg",
+      "bytes": 206921,
+      "sha256": "1cc31223c57e93f6fa6337f50ad6a77360ab2b29d2f1d230db48a9efa15c988f",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/roblox-coop-byblos.webp",
+      "bytes": 175286,
+      "sha256": "698933f81400bdf75e2183a9ad840ba7cc836541ee0217e09ba265dd7c07a16c",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-EG.jpg",
+      "bytes": 257805,
+      "sha256": "c5f4c2a52dcb25b2d29fde0e66e9601827ef5f55445c68baa103c5ec7ffc2788",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-EG.webp",
+      "bytes": 227244,
+      "sha256": "a32fb34404b7f557836638ff219835a0004439d50c43eeca2ac2b690c2255191",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-FR.jpg",
+      "bytes": 232256,
+      "sha256": "8124bbe52d6a42bf07ae85616d05ce55e73769952ed995fcb7c46d87358c64b4",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-FR.webp",
+      "bytes": 204468,
+      "sha256": "a25ff0d80545223ac1be8144abce025983cb8a79d84b8f2d6ead00b795ff4242",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-IQ.jpg",
+      "bytes": 190203,
+      "sha256": "ab51ec78eb7bcc258a7ebb919a6af3c59b8577c670cbe2eb8e780825ad449a78",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-IQ.webp",
+      "bytes": 165626,
+      "sha256": "1f1713ece08ea9d2c37f4d0848b25ff2cd6ad4273586f2b62ae7ea0308c88d8c",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-KR.jpg",
+      "bytes": 299838,
+      "sha256": "d96204ee9747f5a9cac3177f63bc7f6941b579bb90191b4b3cb31e9033b0c4b0",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-KR.webp",
+      "bytes": 267460,
+      "sha256": "6a7ba97a60fcebc330d783dca59676e76267b416bfd8a1cf9542b5b68e075bdb",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-LB.jpg",
+      "bytes": 267082,
+      "sha256": "fc82260a6217010bdd76ae8b073b849fea4313ac978aeb897b7bf222720768c9",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/p0/world-cover-LB.webp",
+      "bytes": 240040,
+      "sha256": "99432eec40995aa212afbb5ab42c333a51c725fe3372bc06f3d4a32e703087ff",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/brand-crest.svg",
+      "bytes": 1240,
+      "sha256": "115167726c1cd3262b0f47e652f6bbe270c11eaeb8f63a5ec8327e50f95dc3c8",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/commerce/gift-keepsake-card.svg",
+      "bytes": 1152,
+      "sha256": "cee496d436259e247c8a40d6748bb9eed1a482a6f71eaaea3093be6960d70942",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/commerce/parent-trust-shield.svg",
+      "bytes": 400,
+      "sha256": "2a252891d275312ed4301b9ddf31e6e0eaa80fed6a0eb0b71eac3e3815983fda",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/hero-byblos-scene.svg",
+      "bytes": 11710,
+      "sha256": "9458b8e42aba04f0125709995a61db82d23a0547a877fa625a7ef18dca680dbf",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/icons/quest-build.svg",
+      "bytes": 301,
+      "sha256": "db425976f0fd33aeb73d14cde20e95ba49f4856d1b422b05b68b5709d3e476eb",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/icons/quest-cook.svg",
+      "bytes": 380,
+      "sha256": "c8951ed2b46de756b97da6651492545bbde33abc2ea68081e33148df441ce2c1",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/icons/quest-gather.svg",
+      "bytes": 346,
+      "sha256": "986035d53f69e976362d80d4983025747b42e950359353b3cb545bf3164a3c74",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/icons/quest-trade.svg",
+      "bytes": 310,
+      "sha256": "3a0fd6bbdc9b87b89c74152cdc0453dfe62a867a23087fc62d3d00b04c562ffd",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/icons/quest-word.svg",
+      "bytes": 370,
+      "sha256": "2d821497d3424127fe2b99c4d02c49c9a463a113821385751ab421fa321fb059",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/portraits/mentor-EG.svg",
+      "bytes": 1459,
+      "sha256": "981f594b782e94ea504098a66795feca21d59fb34a89a16c04e0fc5bdc1a1335",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/portraits/mentor-FR.svg",
+      "bytes": 1440,
+      "sha256": "1a861b08c4d8260014e63e58e1c836888cbebbd8d3e53dd59c070e274e5a2dce",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/portraits/mentor-IQ.svg",
+      "bytes": 1461,
+      "sha256": "e4210d82e5cf5426b57ea45e262235852503b417481c55159e3496a22ca11548",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/portraits/mentor-KR.svg",
+      "bytes": 1535,
+      "sha256": "2383c9f17ea965c8a8725ad5ef6fe0fd10da7a43df642b4af78a3528a1770a40",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/portraits/mentor-LB.svg",
+      "bytes": 1462,
+      "sha256": "36271f11f82cfd872cbc75ced62cb9fdef04f13600a25f2560acb59f9e2ce826",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/portraits/mira.svg",
+      "bytes": 1344,
+      "sha256": "cfabd61f18312055b10af5eedcf5de95cb3d551fd941e82251a64f9be4ff0e59",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/stamps/stamp-EG.svg",
+      "bytes": 1124,
+      "sha256": "fcf04037e70a3fc32b973ee44eed93895ed1811f895373fd8bc7e6b1052632c9",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/stamps/stamp-FR.svg",
+      "bytes": 1104,
+      "sha256": "373377b11b29358d766fcb19ac37a737bd84cfd060faf23974616577b99fd908",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/stamps/stamp-IQ.svg",
+      "bytes": 1257,
+      "sha256": "8a89a2371e9aa638424d85106c996ba3ad41bed46e756dfdac745ea88bf4427e",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/stamps/stamp-KR.svg",
+      "bytes": 1122,
+      "sha256": "e0bcf68282b38f8292d7ce1e8245b9df62c2aa027141784d7d939671f6cc8481",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v08/stamps/stamp-LB.svg",
+      "bytes": 1147,
+      "sha256": "3bde178ccb8917bc04d97743d5ba895219169a9009436ba1437c87be179e0635",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/EG/craft/fanous-craft-and-origins.svg",
+      "bytes": 3260,
+      "sha256": "23f2cb243e169bbfa6a17093609108c9a0dd0e57cd4b8a0e150a4a6098fbd49e",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/EG/craft/khayamiya-geometric-star.svg",
+      "bytes": 2215,
+      "sha256": "481c9f73d2cb96ef25dc42eb6854a566ec795eee6a0b8b669c3484965f958dbf",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/EG/festival/cairo-courtyard-festival-route.svg",
+      "bytes": 3237,
+      "sha256": "1bf2a651f277d09ad2b7f9690db82db24331d3406775b6c04c9b37b84763e850",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/FR/kitchen/jacquard-and-meres-lyonnaises.svg",
+      "bytes": 3519,
+      "sha256": "4eb759975a4a74e45a2ba136d50586b2212728f21058f697deafd861433dd47c",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/FR/traboules/lyon-traboules-cour-des-voraces.svg",
+      "bytes": 3453,
+      "sha256": "c4e3b6a1ec2c74f31c90cc650f1232983cfff8379028992e8417ad10edc2e027",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/IQ/bookstreet/al-mutanabbi-book-street.svg",
+      "bytes": 3474,
+      "sha256": "e99015eec41b78139ef82393c09c688870cf66940fd2bff43e267adda1cca521",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/IQ/bookstreet/kleicha-diaspora-table.svg",
+      "bytes": 1922,
+      "sha256": "bee21de9fcd6d40267f6d2fb15e4f56789c46296000093c30f20231a42079ea7",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/IQ/library/banu-musa-float-valve.svg",
+      "bytes": 2496,
+      "sha256": "0cfb102cdbf8643b849d059c9c23b019d11f02dd1f371f8c5d0023969a5eaa29",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/IQ/library/bayt-al-hikma-routing-map.svg",
+      "bytes": 3735,
+      "sha256": "808a3e249606e4ba8acf1b03208719e9d4cc19173074dea474024d1a13b05512",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/KR/hanok/jeonju-hanok-and-jangdokdae.svg",
+      "bytes": 3474,
+      "sha256": "f46cb82fcc1ed2410332b93997fa94f08cd1315235d4e92a9bbe5e5d4d904929",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg",
+      "bytes": 4330,
+      "sha256": "810c2a77dd45a7273dd711ca7e57679564b6bf66c52f85cd4f1752db926a0c7c",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/LB/phoenician-alphabet-comparison.svg",
+      "bytes": 4004,
+      "sha256": "a8be266e8882ea4b7c9abc4f9a3aa80403907b51a4c4c630b006d03f81b29b24",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v12/passport/v12-passport-collectible-stamps.svg",
+      "bytes": 3009,
+      "sha256": "1bfc0c9ebfef38120abd9f50d0dbfa1b17baa5aee27c9f97e683c43e447b3c9d",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/cultural-artifacts-treasury.jpg",
+      "bytes": 138761,
+      "sha256": "eec77e2c3e226b409927f913ecdecc01f044d67d98dd6c0d0dd79c01defef246",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/cultural-artifacts-treasury.webp",
+      "bytes": 115568,
+      "sha256": "e5a934408740309ba8f65272a17223df6e0c28738b4551fde4a75fc1afa9964f",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/mentors-ensemble.jpg",
+      "bytes": 199524,
+      "sha256": "e424d09f2bed6834797b58f23e25e5dc9365fde8309b50535a00cacfd3ffa1ac",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/mentors-ensemble.webp",
+      "bytes": 174616,
+      "sha256": "9e76a0d8033f29f9f43179a9aff905a27ea150d147aa39b8a7548df74853a662",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-EG.jpg",
+      "bytes": 332938,
+      "sha256": "a31ef3296dacd096a4731e102b94a634fddbe1d28910e3b21842835b3270b2d6",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-EG.webp",
+      "bytes": 307118,
+      "sha256": "a3835f07ae328d9becfb5498433820c0737b1f23b8fa4fdcbfd43dea6dac9c16",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-FR.jpg",
+      "bytes": 381884,
+      "sha256": "652e34faf22dbe4f18b6c70f713bdf295e44b834e41458dc8b11c0e1f0c4853b",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-FR.webp",
+      "bytes": 376588,
+      "sha256": "8cb183e81d49a546ae39bbe87407af49e037751484e03516b1d09fd8cc8dd559",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-IQ.jpg",
+      "bytes": 281020,
+      "sha256": "63b641089fe160dac4df2288566e2e2243fa72d507e1386af63712cc9444214e",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-IQ.webp",
+      "bytes": 256512,
+      "sha256": "16038d0e3492e471c80e22c7894d4b85940b5f11f40644f1f372c799c112af3c",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-KR.jpg",
+      "bytes": 348259,
+      "sha256": "3409dd67419b2f92021ffff3347f9cce73bbf1a8df7801b2b23cfe2d1536d063",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-KR.webp",
+      "bytes": 336148,
+      "sha256": "10c93c3dc7fdfcf34034c51a944a26d951be7a277598649342eff7f96a95b7ce",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-LB.jpg",
+      "bytes": 319891,
+      "sha256": "61a14424a1f3efbaf13f5fa43238a3280945e0919bb9d6173d583920ee149f49",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v13/quest-map-LB.webp",
+      "bytes": 297974,
+      "sha256": "16d4e0bcf9a2943ac14a10ef3ec0fe487be54889f7a995245512da26b831fddc",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v14/hero-overlays/overlay-EG.svg",
+      "bytes": 16047,
+      "sha256": "5556310b8404198b2a173edf85da69e09c6bc93ca25f3d40169473b84deb1fcb",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v14/hero-overlays/overlay-FR.svg",
+      "bytes": 24512,
+      "sha256": "7098652b28364c14d56a96e362deabe91a5afcee7d35af8b55d14ec57c820c8c",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v14/hero-overlays/overlay-IQ.svg",
+      "bytes": 22207,
+      "sha256": "f6d930ce670c9069fe65afe0eee4fcb7bb8a2a3085bbc35098b27fac77a54efe",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v14/hero-overlays/overlay-KR.svg",
+      "bytes": 15488,
+      "sha256": "7a162359d3e5cfb04fde73bc11ab0afa9e4e73365dd46932140f1b7cd7c302d8",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/art/v14/hero-overlays/overlay-LB.svg",
+      "bytes": 16477,
+      "sha256": "ddf6de3d82855e3a489950bf84f7c57d7d9d0c20e6097d08188f439a22854f92",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/basisTextureLoader-Dyi9PdwU.js",
+      "bytes": 1185,
+      "sha256": "2f8062f1af0aff4690ab08bbc6426cd196e21101e4e973be6e5cda1ee9790ce8",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/ddsTextureLoader-BwfMbOKV.js",
+      "bytes": 1223,
+      "sha256": "8f50890ef0b215ef04a5f1afed33ab964f487086c42cbb730a4299c9fe03a53b",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/envTextureLoader-DKeTABMK.js",
+      "bytes": 567,
+      "sha256": "b18664176050bbb78d558804fc7600425199265b5894ce09783c29397d1148ca",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/exrTextureLoader-WwKp95Oy.js",
+      "bytes": 6523,
+      "sha256": "7962063c4822b9653cd6b6ec32f85355ce38a6a1044e05b8dff8ccc5e8c6f381",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/hdrTextureLoader-EDMUOWAu.js",
+      "bytes": 529,
+      "sha256": "6f54e6f1a08d46f7917aaa610c35330dad2306c83611e84901f3663795d57fac",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/index-CvlnWRtS.css",
+      "bytes": 6481,
+      "sha256": "8339a876becc2205fc89892dec2903fb145ce36ace86093bd71f1d7674da361a",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/index-DRBXVaTP.js",
+      "bytes": 5800496,
+      "sha256": "915126ede45b87f6e9c2f3f52a2f1771cde12ec6b86c95bdc551352a5c3adb38",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/ktxTextureLoader-CeGhGj66.js",
+      "bytes": 1378,
+      "sha256": "223383c51be1de3c01b12f157bc68c99f7b31c2b6dafc7f00dc1ee9d250a2625",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/hero_mira.glb",
+      "bytes": 1616,
+      "sha256": "c50932bb691b33da83b918b6dbdf694756d71f24d80c7bd9e6085e603699c0c6",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/landing_diorama.glb",
+      "bytes": 1480,
+      "sha256": "f6333d0a16d2920618b8a4b3113d05c94aef5a84037c5f2dfd5c4512aac4fe43",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/manifest.json",
+      "bytes": 4389,
+      "sha256": "5abbc280c35bd6ef484a53c152c7f78b6f85f74da9f3aaae06033acc95218bb9",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/npc_mentor.glb",
+      "bytes": 1624,
+      "sha256": "c743758ca900306a9f5814467c4116eb310be5a4107e90c4d9770940068d0de0",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/world_EG.glb",
+      "bytes": 1444,
+      "sha256": "044b2a89f46dfced6f359c86cb3b43fce267d8acc31e328939e421bda81b6b08",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/world_FR.glb",
+      "bytes": 1448,
+      "sha256": "39fbbdcaf2d1acf9ecdb95b3d0fbc0294caf70bb12c4c0c6b4056d1b133bd164",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/world_IQ.glb",
+      "bytes": 1448,
+      "sha256": "3da191750803696a7db93dd777e538b8ffe62ea5ccc7b658c576dba84e6412fc",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/world_KR.glb",
+      "bytes": 1448,
+      "sha256": "5e0021315eaeae2b0ed09113c0e9f1a12d85a206e278d972591517405249ec34",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/world_LB.glb",
+      "bytes": 1444,
+      "sha256": "96eb705ebda508614cf8b314519764d09f3ae1423ef729a2ade31e0df5db619e",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/models/world_hub.glb",
+      "bytes": 1452,
+      "sha256": "25c882580d7f474b842ef5e2e2f313408031401be07a5f9c54b577adf3c39fdb",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/assets/tgaTextureLoader-Doz9CFp3.js",
+      "bytes": 312,
+      "sha256": "6a1562c5dfb693dbf325db14e658a9533bb675ba1dac3d1f79dcc2fcc48e3e2f",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/fonts/local.css",
+      "bytes": 365,
+      "sha256": "7537dde7b85df63f7f47b217bf0c09256e38532dfb1f606cd024329180812345",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/web/dist/index.html",
+      "bytes": 406,
+      "sha256": "04aa009df520d84087d84b96830e2a4cb234df8c1428cbb084c6ebb483285a69",
+      "nativeVerified": false
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "path": "swarm/minecraft-global/manifest.json",
+      "bytes": 105547,
+      "sha256": "1e198dd67c4e1b18c60ab4c75911f99138d9c539d67b9f1bbd05eb313dc4cd45",
+      "nativeVerified": false
+    },
+    {
+      "path": "swarm/minecraft-global/catalog-data.mjs",
+      "bytes": 66258,
+      "sha256": "bb69bccd454ab06192f69959dacd5fa052fe07edfe9b74a5d8d534ecd21fa828",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/roblox/default.project.json",
+      "bytes": 758,
+      "sha256": "b23866f09a4a4c7c75229c927d3e17e7ea322b6321a5ee1d83b748c51c525640",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/roblox/src/server/Main.server.luau",
+      "bytes": 171,
+      "sha256": "02196dcf14e9598f00c798261995f67bf60ac6940cff96e75131d424124837f5",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/roblox/src/server/MapBuilder.luau",
+      "bytes": 15551,
+      "sha256": "ae013fd3140fcca7bc6ec4dc2e1046e5dbf656eb94fb55ea834a0e19531fad19",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/roblox/src/server/world/WorldBuilder.server.luau",
+      "bytes": 3782,
+      "sha256": "aeeb1f15deeddbc3fa47f656cb59beb66e27b7b66a894944dc66b08f2a3e0e7e",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/minecraft/scripts/main.ts",
+      "bytes": 4597,
+      "sha256": "ffaf694039cdabd284126d9f38b84a3fbff11c7fc2e3e11226b483a573fc994c",
+      "nativeVerified": false
+    },
+    {
+      "path": "apps/minecraft/package.json",
+      "bytes": 341,
+      "sha256": "c7e2cfba868f9ed3c61429976c4c8cd47c49e20cf2f58ea2d813749ed3d38de3",
+      "nativeVerified": false
+    },
+    {
+      "path": "tools/compiler/index.ts",
+      "bytes": 2300,
+      "sha256": "a15154a9fe649405208dface91b12a0ed77defe6b6c04016427d97764e1693c0",
+      "nativeVerified": false
+    }
+  ],
+  "countryPlatformBaseline": [
+    {
+      "country": "LB",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "LB01",
+        "LB02",
+        "LB03",
+        "LB04",
+        "LB05",
+        "LB06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "LB",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "LB01",
+        "LB02",
+        "LB03",
+        "LB04",
+        "LB05",
+        "LB06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "IQ",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "IQ01",
+        "IQ02",
+        "IQ03",
+        "IQ04",
+        "IQ05",
+        "IQ06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "IQ",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "IQ01",
+        "IQ02",
+        "IQ03",
+        "IQ04",
+        "IQ05",
+        "IQ06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "EG",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "EG01",
+        "EG02",
+        "EG03",
+        "EG04",
+        "EG05",
+        "EG06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "EG",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "EG01",
+        "EG02",
+        "EG03",
+        "EG04",
+        "EG05",
+        "EG06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "FR",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "FR01",
+        "FR02",
+        "FR03",
+        "FR04",
+        "FR05",
+        "FR06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "FR",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "FR01",
+        "FR02",
+        "FR03",
+        "FR04",
+        "FR05",
+        "FR06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "KR",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "KR01",
+        "KR02",
+        "KR03",
+        "KR04",
+        "KR05",
+        "KR06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "KR",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "KR01",
+        "KR02",
+        "KR03",
+        "KR04",
+        "KR05",
+        "KR06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "DE",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "DE01",
+        "DE02",
+        "DE03",
+        "DE04",
+        "DE05",
+        "DE06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "DE",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "DE01",
+        "DE02",
+        "DE03",
+        "DE04",
+        "DE05",
+        "DE06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "CN",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "CN01",
+        "CN02",
+        "CN03",
+        "CN04",
+        "CN05",
+        "CN06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "CN",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "CN01",
+        "CN02",
+        "CN03",
+        "CN04",
+        "CN05",
+        "CN06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "JP",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "JP01",
+        "JP02",
+        "JP03",
+        "JP04",
+        "JP05",
+        "JP06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "JP",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "JP01",
+        "JP02",
+        "JP03",
+        "JP04",
+        "JP05",
+        "JP06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "RU",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "RU01",
+        "RU02",
+        "RU03",
+        "RU04",
+        "RU05",
+        "RU06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "RU",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "RU01",
+        "RU02",
+        "RU03",
+        "RU04",
+        "RU05",
+        "RU06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "UA",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "UA01",
+        "UA02",
+        "UA03",
+        "UA04",
+        "UA05",
+        "UA06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "UA",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "UA01",
+        "UA02",
+        "UA03",
+        "UA04",
+        "UA05",
+        "UA06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "MA",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "MA01",
+        "MA02",
+        "MA03",
+        "MA04",
+        "MA05",
+        "MA06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "MA",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "MA01",
+        "MA02",
+        "MA03",
+        "MA04",
+        "MA05",
+        "MA06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "MX",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "MX01",
+        "MX02",
+        "MX03",
+        "MX04",
+        "MX05",
+        "MX06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "MX",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "MX01",
+        "MX02",
+        "MX03",
+        "MX04",
+        "MX05",
+        "MX06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "GT",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "GT01",
+        "GT02",
+        "GT03",
+        "GT04",
+        "GT05",
+        "GT06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "GT",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "GT01",
+        "GT02",
+        "GT03",
+        "GT04",
+        "GT05",
+        "GT06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "SV",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "SV01",
+        "SV02",
+        "SV03",
+        "SV04",
+        "SV05",
+        "SV06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "SV",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "SV01",
+        "SV02",
+        "SV03",
+        "SV04",
+        "SV05",
+        "SV06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "DO",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "DO01",
+        "DO02",
+        "DO03",
+        "DO04",
+        "DO05",
+        "DO06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "DO",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "DO01",
+        "DO02",
+        "DO03",
+        "DO04",
+        "DO05",
+        "DO06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "CU",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "CU01",
+        "CU02",
+        "CU03",
+        "CU04",
+        "CU05",
+        "CU06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "CU",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "CU01",
+        "CU02",
+        "CU03",
+        "CU04",
+        "CU05",
+        "CU06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "JM",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "JM01",
+        "JM02",
+        "JM03",
+        "JM04",
+        "JM05",
+        "JM06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "JM",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "JM01",
+        "JM02",
+        "JM03",
+        "JM04",
+        "JM05",
+        "JM06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "SY",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "SY01",
+        "SY02",
+        "SY03",
+        "SY04",
+        "SY05",
+        "SY06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "SY",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "SY01",
+        "SY02",
+        "SY03",
+        "SY04",
+        "SY05",
+        "SY06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "IR",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "IR01",
+        "IR02",
+        "IR03",
+        "IR04",
+        "IR05",
+        "IR06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "IR",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "IR01",
+        "IR02",
+        "IR03",
+        "IR04",
+        "IR05",
+        "IR06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "PL",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "PL01",
+        "PL02",
+        "PL03",
+        "PL04",
+        "PL05",
+        "PL06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "PL",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "PL01",
+        "PL02",
+        "PL03",
+        "PL04",
+        "PL05",
+        "PL06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "RO",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "RO01",
+        "RO02",
+        "RO03",
+        "RO04",
+        "RO05",
+        "RO06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "RO",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "RO01",
+        "RO02",
+        "RO03",
+        "RO04",
+        "RO05",
+        "RO06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "GB",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "GB01",
+        "GB02",
+        "GB03",
+        "GB04",
+        "GB05",
+        "GB06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "GB",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "GB01",
+        "GB02",
+        "GB03",
+        "GB04",
+        "GB05",
+        "GB06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "VN",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "VN01",
+        "VN02",
+        "VN03",
+        "VN04",
+        "VN05",
+        "VN06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "VN",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "VN01",
+        "VN02",
+        "VN03",
+        "VN04",
+        "VN05",
+        "VN06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "PK",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "PK01",
+        "PK02",
+        "PK03",
+        "PK04",
+        "PK05",
+        "PK06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "PK",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "PK01",
+        "PK02",
+        "PK03",
+        "PK04",
+        "PK05",
+        "PK06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "IN",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "IN01",
+        "IN02",
+        "IN03",
+        "IN04",
+        "IN05",
+        "IN06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "IN",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "IN01",
+        "IN02",
+        "IN03",
+        "IN04",
+        "IN05",
+        "IN06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "PH",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "PH01",
+        "PH02",
+        "PH03",
+        "PH04",
+        "PH05",
+        "PH06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "PH",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "PH01",
+        "PH02",
+        "PH03",
+        "PH04",
+        "PH05",
+        "PH06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "IT",
+      "platform": "roblox",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "IT01",
+        "IT02",
+        "IT03",
+        "IT04",
+        "IT05",
+        "IT06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    },
+    {
+      "country": "IT",
+      "platform": "minecraft-bedrock",
+      "commit": "d2b816821afaf6c8c023ad02999bc5ba2fbf073f",
+      "platformVersion": null,
+      "hardware": null,
+      "status": "NOT_RUN",
+      "stages": {
+        "ART_READY": "NOT_RUN",
+        "ROUTE_READY": "NOT_RUN",
+        "QUESTS_READY": "NOT_RUN",
+        "LOCALIZATION_READY": "NOT_RUN",
+        "NATIVE_TESTED": "NOT_RUN",
+        "RELEASED": "NOT_RUN"
+      },
+      "culturalReview": "CULTURAL_REVIEW_PENDING",
+      "screenshot": null,
+      "video": null,
+      "questIds": [
+        "IT01",
+        "IT02",
+        "IT03",
+        "IT04",
+        "IT05",
+        "IT06"
+      ],
+      "artifactIds": null,
+      "nativeTestMethod": null,
+      "owner": null
+    }
+  ],
+  "localeBaseline": [
+    {
+      "locale": "en-US",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-US",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-GB",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-GB",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-JM",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-JM",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-IN",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-IN",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-PH",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "en-PH",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "fr-FR",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "fr-FR",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "fr-CA",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "fr-CA",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-MX",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-MX",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-GT",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-GT",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-SV",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-SV",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-DO",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-DO",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-CU",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-CU",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-419",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "es-419",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-001",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-001",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-LB",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-LB",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-IQ",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-IQ",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-EG",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-EG",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-MA",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-MA",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-SY",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ar-SY",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "de-DE",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "de-DE",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "zh-Hans-CN",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "zh-Hans-CN",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ja-JP",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ja-JP",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ru-RU",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ru-RU",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "uk-UA",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "uk-UA",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ko-KR",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ko-KR",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "fa-IR",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "fa-IR",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "pl-PL",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "pl-PL",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ro-RO",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ro-RO",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "vi-VN",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "vi-VN",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ur-PK",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "ur-PK",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "hi-IN",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "hi-IN",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "fil-PH",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "fil-PH",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "it-IT",
+      "platform": "roblox",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "it-IT",
+      "platform": "minecraft-bedrock",
+      "tier": "full",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "quc-GT",
+      "platform": "roblox",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "quc-GT",
+      "platform": "minecraft-bedrock",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "nah-MX",
+      "platform": "roblox",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "nah-MX",
+      "platform": "minecraft-bedrock",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "jam-JM",
+      "platform": "roblox",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "jam-JM",
+      "platform": "minecraft-bedrock",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "tzm-Tfng-MA",
+      "platform": "roblox",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "tzm-Tfng-MA",
+      "platform": "minecraft-bedrock",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "sd-Arab-PK",
+      "platform": "roblox",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "sd-Arab-PK",
+      "platform": "minecraft-bedrock",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "pa-Arab-PK",
+      "platform": "roblox",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    },
+    {
+      "locale": "pa-Arab-PK",
+      "platform": "minecraft-bedrock",
+      "tier": "learning",
+      "status": "NOT_RUN",
+      "coverageStatus": "BLOCKED",
+      "reason": "No current native rendering evidence or human sign-off audited",
+      "nativeLocaleId": null,
+      "reviewer": null,
+      "screenshot": null
+    }
+  ]
+}

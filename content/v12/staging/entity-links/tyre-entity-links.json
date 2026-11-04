@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX03",
+  "topic": "Tyre Entity Links & Reconciliation",
+  "total_records": 10,
+  "records": [
+    {
+      "record_id": "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+      "country": "LB",
+      "title_en": "Tyre (Sour) Island Fortress & Dual Harbors",
+      "entity_type": "place",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "ashlar_header_stone",
+        "cedar_galley_rib",
+        "sandstone_breakwater"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:build",
+        "LB:tyre:ch1:gather"
+      ]
+    },
+    {
+      "record_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+      "country": "LB",
+      "title_en": "The Tyrian Purple Murex Monopoly & Biochemistry",
+      "entity_type": "practice",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "hexaplex_murex_shell",
+        "dibromoindigo_vial",
+        "lead_tin_vat",
+        "royal_purple_textile"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:cook",
+        "LB:tyre:ch1:gather"
+      ]
+    },
+    {
+      "record_id": "LB-KB-MYTH-TEMPLE-OF-MELQART",
+      "country": "LB",
+      "title_en": "The Sanctuary of Melqart & The Twin Pillars",
+      "entity_type": "myth",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "golden_pillar_fragment",
+        "emerald_smaragdus_stone",
+        "eternal_flame_vessel"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:word"
+      ]
+    },
+    {
+      "record_id": "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE",
+      "country": "LB",
+      "title_en": "King Hiram I & The Solomonic Maritime Alliance",
+      "entity_type": "event",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "cedar_beam",
+        "ophir_gold_ingot",
+        "tarshish_compass_rose"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:trade"
+      ]
+    },
+    {
+      "record_id": "LB-KB-EVENT-CARTHAGE-FOUNDATION-DIDO",
+      "country": "LB",
+      "title_en": "Queen Elissa (Dido) & The Foundation of Carthage",
+      "entity_type": "event",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "elissa_fleet_banner",
+        "byrsa_oxhide_parchment"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:trade"
+      ]
+    },
+    {
+      "record_id": "LB-KB-TREATY-ESARHADDON-BAAL",
+      "country": "LB",
+      "title_en": "The Vassal Treaty of Esarhaddon & King Ba'al I",
+      "entity_type": "event",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "cuneiform_vassal_tablet",
+        "assyrian_deputy_seal"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:word"
+      ]
+    },
+    {
+      "record_id": "LB-KB-EVENT-NEBUCHADNEZZAR-THIRTEEN-YEAR-SIEGE",
+      "country": "LB",
+      "title_en": "The Thirteen-Year Babylonian Siege & Shoftim Era",
+      "entity_type": "event",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "shoftim_magistrate_tally",
+        "carthaginian_grain_amphora"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:gather",
+        "LB:tyre:ch1:word"
+      ]
+    },
+    {
+      "record_id": "LB-KB-EVENT-ALEXANDER-SIEGE-MOLE",
+      "country": "LB",
+      "title_en": "Alexander's Mole & The Tyrian Fireship Defense",
+      "entity_type": "event",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "fireship_sulfur_cauldron",
+        "pitch_pine_faggot",
+        "catapult_counterweight"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:build"
+      ]
+    },
+    {
+      "record_id": "LB-KB-GEO-TOMBOLO-SEDIMENTATION",
+      "country": "LB",
+      "title_en": "The Tyrian Tombolo: Hydrodynamics & Sediment Accretion",
+      "entity_type": "place",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "tombolo_sand_core_sample",
+        "roman_bath_ramleh_tile"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:build"
+      ]
+    },
+    {
+      "record_id": "LB-KB-ARTIFACT-SHEKEL-OF-TYRE",
+      "country": "LB",
+      "title_en": "The Silver Shekel of Tyre & Temple Numismatics",
+      "entity_type": "artifact",
+      "coverage_classification": "enrichment",
+      "requires_human_review": false,
+      "linked_pack_items": [
+        "silver_shekel_of_tyre",
+        "moneyer_balance_scale"
+      ],
+      "linked_quest_objectives": [
+        "LB:tyre:ch1:trade"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "locationId": "wuling_valley",
+  "countryId": "CN",
+  "displayName": "Wuling-Inspired Peach Blossom Valley",
+  "geographicClass": "fictional_literary_with_real_topographic_inspiration",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N28_00_E111_00_DEM/Copernicus_DSM_COG_10_N28_00_E111_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    111.45,
+    28.875,
+    111.525,
+    28.93
+  ],
+  "regionalBoundingBox": [
+    111.38,
+    28.8,
+    111.6,
+    29.0
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32649",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    25.35,
+    152.81
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 30.3622,
+    "metersPerStudZ": 25.5151,
+    "studsPerMeter": 0.03294
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 3.0348,
+    "verticalExaggeration": 1.2,
+    "robloxYRangeStuds": [
+      8.0,
+      52.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      5600,
+      14,
+      0
+    ],
+    "robloxSpawn": [
+      5600,
+      14.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        5460,
+        -20,
+        -165
+      ],
+      "max": [
+        5740,
+        105,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      547576.24,
+      3197226.06
+    ]
+  },
+  "terrainChecksum": "e0f9c324961f50c77c9770fab3eb78cc3b4d47db3c911872391d70c640d54be1",
+  "generatedAssetPaths": [
+    "data/geography/processed/wuling_valley.json",
+    "apps/roblox/terrain/countries/CN/wuling_valley_terrain.json",
+    "reports/terrain/heightmaps/wuling_valley_heightmap.png",
+    "apps/roblox/terrain/countries/CN/wuling_valley_heightmap.png",
+    "reports/terrain/hillshades/wuling_valley_hillshade.png",
+    "reports/terrain/comparisons/wuling_valley_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/CN.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:30.500463+00:00"
+}

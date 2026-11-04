@@ -1,0 +1,85 @@
+{
+  "locationId": "mount_lebanon",
+  "countryId": "LB",
+  "displayName": "Mount Lebanon",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N34_00_E035_00_DEM/Copernicus_DSM_COG_10_N34_00_E035_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    35.86,
+    34.045,
+    35.92,
+    34.095
+  ],
+  "regionalBoundingBox": [
+    35.75,
+    34.0,
+    36.05,
+    34.25
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32636",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    787.64,
+    2004.28
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 22.4254,
+    "metersPerStudZ": 28.5163,
+    "studsPerMeter": 0.04459
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 17.3806,
+    "verticalExaggeration": 1.25,
+    "robloxYRangeStuds": [
+      26.0,
+      96.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      800,
+      38,
+      260
+    ],
+    "robloxSpawn": [
+      800,
+      38.5,
+      288
+    ],
+    "spatialBounds": {
+      "min": [
+        660,
+        10,
+        175
+      ],
+      "max": [
+        940,
+        140,
+        390
+      ]
+    },
+    "projectedCenterMeters": [
+      766768.34,
+      3773533.82
+    ]
+  },
+  "terrainChecksum": "dde650c0fff96974fa0a75c4e18118a5bb71e10ffa9dbb3217162987f1000588",
+  "generatedAssetPaths": [
+    "data/geography/processed/mount_lebanon.json",
+    "apps/roblox/terrain/countries/LB/mount_lebanon_terrain.json",
+    "reports/terrain/heightmaps/mount_lebanon_heightmap.png",
+    "apps/roblox/terrain/countries/LB/mount_lebanon_heightmap.png",
+    "reports/terrain/hillshades/mount_lebanon_hillshade.png",
+    "reports/terrain/comparisons/mount_lebanon_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/LB.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:26.684782+00:00"
+}

@@ -1,0 +1,305 @@
+{
+  "questId": "LB:tyre:ch1:rock_of_melqart:main",
+  "country": "LB",
+  "chapter": 2,
+  "titleEn": "Lebanon: The Rock of Melqart & The Isle of Tyre",
+  "titleNative": "لبنان · صخرة ملقارت وجزيرة صور الفينيقية",
+  "synopsis": "Journey to the ancient island fortress of Tyre! Dive for Murex sea snails, navigate Ships of Tarshish with King Hiram I, engineer ashlar breakwaters and fireships, brew Imperial purple dibromoindigo, and decipher the Vassal Treaty of Esarhaddon in the Temple of Melqart.",
+  "mentorId": "npc:LB:tyre:king_hiram",
+  "mentorName": "King Hiram I & Master Harbor Engineers",
+  "landmarkId": "landmark:LB:tyre:citadel",
+  "objectives": [
+    {
+      "objectiveId": "LB:tyre:ch1:gather",
+      "challengeType": "gather",
+      "title": "Murex Mollusk Deep-Diving & Cedar Harvester",
+      "description": "Gather Hexaplex trunculus mollusks with baited wicker baskets from the offshore reef and harvest seasoned Mount Lebanon cedar beams.",
+      "targetNpcId": "npc:LB:tyre:master_harvester",
+      "targetStationId": "station:LB:tyre:gather_reef",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:murex_snails",
+          "quantity": 10,
+          "labelEn": "Hexaplex Trunculus Mollusks",
+          "labelNative": "أصداف الموريكس الفينيقية"
+        },
+        {
+          "itemId": "item:LB:lebanon_cedar_timber",
+          "quantity": 3,
+          "labelEn": "Mount Lebanon Cedar Beams",
+          "labelNative": "خشب أرز جبل لبنان"
+        },
+        {
+          "itemId": "item:LB:baited_wicker_trap",
+          "quantity": 2,
+          "labelEn": "Baited Mollusk Wicker Traps",
+          "labelNative": "سلال الخيزران لصيد الأصداف"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:tyre:murex_gather_token",
+          "quantity": 1,
+          "labelEn": "Tyrian Murex Harvester Token"
+        }
+      ],
+      "miraTokenReward": 25,
+      "culturalFact": "Producing a single gram of pure Tyrian purple dye required gathering roughly 10,000 predatory Hexaplex trunculus and Bolinus brandaris snails from the sandstone reefs of offshore Tyre.",
+      "vocabWords": [
+        {
+          "word": "أرجوان",
+          "translit": "urjuwan",
+          "en": "Tyrian purple dye",
+          "objectId": "prop:LB:tyre:purple_cloth"
+        },
+        {
+          "word": "صدف",
+          "translit": "sadaf",
+          "en": "sea snail shell",
+          "objectId": "prop:LB:tyre:murex_basket"
+        },
+        {
+          "word": "أرز",
+          "translit": "arz",
+          "en": "fragrant cedar timber",
+          "objectId": "prop:LB:tyre:cedar_pile"
+        }
+      ]
+    },
+    {
+      "objectiveId": "LB:tyre:ch1:trade",
+      "challengeType": "trade",
+      "title": "Ships of Tarshish & Shekel Exchange",
+      "description": "Trade Tyrian purple textiles and navigate silver Shekel exchange rates with King Solomon's merchant fleet returning from Ophir via Ezion-Geber.",
+      "targetNpcId": "npc:LB:tyre:king_hiram",
+      "targetStationId": "station:LB:tyre:trade_quay",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:tyre:purple_textile",
+          "quantity": 2,
+          "labelEn": "Royal Tyrian Purple Textile",
+          "labelNative": "قماش أرجواني ملكي"
+        },
+        {
+          "itemId": "item:LB:tyre:silver_shekel",
+          "quantity": 5,
+          "labelEn": "High-Purity Silver Shekel of Tyre",
+          "labelNative": "شيكل صور الفضي النقي"
+        },
+        {
+          "itemId": "item:LB:tyre:ophir_gold",
+          "quantity": 1,
+          "labelEn": "Ophir Gold Ingot",
+          "labelNative": "سبيكة ذهب أوفير"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:tyre:trade_token",
+          "quantity": 1,
+          "labelEn": "Tarshish Voyager & Merchant Token"
+        }
+      ],
+      "miraTokenReward": 25,
+      "culturalFact": "King Hiram I partnered with King Solomon to operate joint deep-hulled 'ships of Tarshish' from the Red Sea port of Ezion-Geber to Ophir, returning every three years with gold, silver, ivory, apes, and peacocks.",
+      "vocabWords": [
+        {
+          "word": "شيكل",
+          "translit": "shekel",
+          "en": "Tyrian silver coin",
+          "objectId": "prop:LB:tyre:silver_scales"
+        },
+        {
+          "word": "تجارة",
+          "translit": "tijara",
+          "en": "maritime commerce",
+          "objectId": "prop:LB:tyre:trade_ledger"
+        },
+        {
+          "word": "سفينة",
+          "translit": "safina",
+          "en": "ocean-going galley",
+          "objectId": "prop:LB:tyre:tarshish_galley"
+        }
+      ]
+    },
+    {
+      "objectiveId": "LB:tyre:ch1:build",
+      "challengeType": "build",
+      "title": "Ashlar Breakwater & Fireship Engineering",
+      "description": "Position 2.25-meter limestone header blocks along the Sidonian harbor jetty and assemble the sulfur-and-pitch fireship to repel hostile siege towers.",
+      "targetNpcId": "npc:LB:tyre:engineer_baalsillem",
+      "targetStationId": "station:LB:tyre:build_breakwater",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:tyre:ashlar_header_stone",
+          "quantity": 4,
+          "labelEn": "2.25m Ashlar Limestone Header Blocks",
+          "labelNative": "حجارة الرباط الضخمة (أشلار)"
+        },
+        {
+          "itemId": "item:LB:tyre:pitch_and_sulfur",
+          "quantity": 2,
+          "labelEn": "Pitch & Volatile Sulfur Compound",
+          "labelNative": "القطران والكبريت سريع الاشتعال"
+        },
+        {
+          "itemId": "item:LB:tyre:suspended_cauldrons",
+          "quantity": 2,
+          "labelEn": "Dual-Mast Suspended Oil Cauldrons",
+          "labelNative": "قدور الزيت المعلقة على السواري"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:tyre:build_token",
+          "quantity": 1,
+          "labelEn": "Tyrian Master Builder & Defender Token"
+        }
+      ],
+      "miraTokenReward": 25,
+      "culturalFact": "Tyrian engineers used submerged limestone ashlar blocks up to 2.25m long laid in header formation to absorb wave energy. During the 332 BCE siege, they launched a twin-masted fireship with oil cauldrons that burned Alexander's siege towers to the waterline.",
+      "vocabWords": [
+        {
+          "word": "حجر",
+          "translit": "hajar",
+          "en": "ashlar building stone",
+          "objectId": "prop:LB:tyre:ashlar_crane"
+        },
+        {
+          "word": "كاسر الأمواج",
+          "translit": "kasir al-amwaj",
+          "en": "harbor breakwater",
+          "objectId": "prop:LB:tyre:breakwater_wall"
+        },
+        {
+          "word": "حراقة",
+          "translit": "harraqa",
+          "en": "defensive fireship",
+          "objectId": "prop:LB:tyre:fireship_hull"
+        }
+      ]
+    },
+    {
+      "objectiveId": "LB:tyre:ch1:cook",
+      "challengeType": "cook",
+      "title": "Imperial Purple Dye Vat & Melqart's Fire",
+      "description": "Crush molluscan hypobranchial glands, steep in alkaline solution with wood ash and salt in lead vats, and simmer for ten days to synthesize dibromoindigo.",
+      "targetNpcId": "npc:LB:tyre:dye_master_adoni",
+      "targetStationId": "station:LB:tyre:cook_dye_vat",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:tyre:hypobranchial_glands",
+          "quantity": 12,
+          "labelEn": "Murex Hypobranchial Glands",
+          "labelNative": "غدد الحلزون المفرزة للون"
+        },
+        {
+          "itemId": "item:LB:tyre:alkaline_ash_brine",
+          "quantity": 3,
+          "labelEn": "Wood Ash & Sea Salt Alkaline Brine",
+          "labelNative": "محلول الرماد القلوي والملح"
+        },
+        {
+          "itemId": "item:LB:tyre:lead_tin_vat",
+          "quantity": 1,
+          "labelEn": "Lead-Tin Simmering Vat",
+          "labelNative": "مرجل الرصاص والقصدير"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:tyre:cook_token",
+          "quantity": 1,
+          "labelEn": "Imperial Dibromoindigo Alchemist Token"
+        }
+      ],
+      "miraTokenReward": 25,
+      "culturalFact": "The biological chromogens in Murex snails turned into dibromoindigo only after exposure to sunlight, air, and ten days of gentle simmering in lead vats. Because of the pungent odor, dye vats were placed downwind along the coastal outskirts.",
+      "vocabWords": [
+        {
+          "word": "قدر",
+          "translit": "qidr",
+          "en": "simmering cauldron",
+          "objectId": "prop:LB:tyre:dye_cauldron"
+        },
+        {
+          "word": "صباغ",
+          "translit": "sabagh",
+          "en": "royal purple dye",
+          "objectId": "prop:LB:tyre:purple_vat"
+        },
+        {
+          "word": "شمس",
+          "translit": "shams",
+          "en": "sunlight oxidation",
+          "objectId": "prop:LB:tyre:drying_racks"
+        }
+      ]
+    },
+    {
+      "objectiveId": "LB:tyre:ch1:word",
+      "challengeType": "word",
+      "title": "Council of Melqart & Deciphering Esarhaddon's Treaty",
+      "description": "Decipher the 22-letter Phoenician abjad and cuneiform treaty tablets, protect shipwreck salvage rights, and formulate council strategy.",
+      "targetNpcId": "npc:LB:tyre:scribe_bodashtart",
+      "targetStationId": "station:LB:tyre:word_temple",
+      "requiredItems": [
+        {
+          "itemId": "item:LB:tyre:cuneiform_tablet",
+          "quantity": 1,
+          "labelEn": "Cuneiform Treaty of Esarhaddon Tablet",
+          "labelNative": "لوح معاهدة أسرحدون المسماري"
+        },
+        {
+          "itemId": "item:LB:tyre:phoenician_abjad_scroll",
+          "quantity": 1,
+          "labelEn": "22-Letter Inscribed Phoenician Scroll",
+          "labelNative": "مخطوط الأبجدية الفينيقية الصورية"
+        },
+        {
+          "itemId": "item:LB:tyre:temple_seal",
+          "quantity": 1,
+          "labelEn": "Temple of Melqart Golden Seal",
+          "labelNative": "ختم معبد ملقارت الذهبي"
+        }
+      ],
+      "rewardItems": [
+        {
+          "itemId": "item:LB:tyre:word_token",
+          "quantity": 1,
+          "labelEn": "Council of Melqart Statesman Token"
+        }
+      ],
+      "miraTokenReward": 25,
+      "culturalFact": "In the 672 BCE Vassal Treaty of Esarhaddon, Assyria claimed all Tyrian shipwrecked cargo along the coast and invoked Melqart, Eshmun, and Ba'al-Saphon in terrifying curses. Tyrian magistrates and shoftim later governed the city through wisdom and naval diplomacy.",
+      "vocabWords": [
+        {
+          "word": "معاهدة",
+          "translit": "mu'ahada",
+          "en": "diplomatic treaty",
+          "objectId": "prop:LB:tyre:clay_treaty"
+        },
+        {
+          "word": "ملكارت",
+          "translit": "melqart",
+          "en": "King of the City tutelary god",
+          "objectId": "prop:LB:tyre:twin_pillars"
+        },
+        {
+          "word": "قاضي",
+          "translit": "qadi",
+          "en": "shoftim magistrate",
+          "objectId": "prop:LB:tyre:council_seat"
+        }
+      ]
+    }
+  ],
+  "completionReward": {
+    "rewardId": "reward:LB:tyre_keepsake",
+    "keepsakeNameEn": "The Rock of Melqart & Tyrian Imperial Purple Keepsake",
+    "keepsakeNameNative": "لبنان · صخرة ملقارت وأرجوان صور الإمبراطوري",
+    "miraTokensBonus": 60,
+    "stampChapter": 2
+  }
+}

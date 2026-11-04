@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.6.0",
+  "countryCode": "BH",
+  "stableId": "country.bh",
+  "nameEn": "Bahrain",
+  "nameAr": "مملكة البحرين",
+  "storyArcTitleEn": "The Library of Dilmun",
+  "mentorNpc": "npc.bh.dr_layla_al_arrayedh",
+  "actsCount": 5,
+  "structures": [
+    {
+      "actId": "quest.bh.01",
+      "structureTemplateId": "miraverse:bh_qalat_stratigraphy_pavilion",
+      "origin": [
+        1200,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:bh_dilmun_seal",
+        "miraverse:bh_stratigraphy_column"
+      ]
+    },
+    {
+      "actId": "quest.bh.02",
+      "structureTemplateId": "miraverse:bh_dilmun_sea_gate_warehouse",
+      "origin": [
+        1232,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:bh_copper_ingot",
+        "miraverse:bh_chert_weights"
+      ]
+    },
+    {
+      "actId": "quest.bh.03",
+      "structureTemplateId": "miraverse:bh_conservation_walkway_pavilion",
+      "origin": [
+        1264,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:bh_walkway_plank",
+        "miraverse:bh_exhibit_canopy",
+        "miraverse:bh_heritage_plaque"
+      ]
+    },
+    {
+      "actId": "quest.bh.04",
+      "structureTemplateId": "miraverse:bh_muharraq_pearling_courtyard",
+      "origin": [
+        1296,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:bh_bishtakhta_chest",
+        "miraverse:bh_halwa_dish",
+        "miraverse:bh_kurar_frame"
+      ]
+    },
+    {
+      "actId": "quest.bh.05",
+      "structureTemplateId": "miraverse:bh_dilmun_memory_chest_hall",
+      "origin": [
+        1328,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:bh_kawkab_spring_model",
+        "miraverse:bh_memory_chest",
+        "miraverse:bh_passport_stamp"
+      ]
+    }
+  ]
+}

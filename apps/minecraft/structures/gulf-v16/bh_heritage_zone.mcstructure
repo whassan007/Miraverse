@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "size": [
+    24,
+    14,
+    24
+  ],
+  "country_id": "country.bh",
+  "country_code": "BH",
+  "structures": [
+    {
+      "id": "miraverse:bh_qalat_stratigraphy_pavilion",
+      "act_id": "quest.bh.01",
+      "title_en": "The Archaeologist's Layers",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:bh_dilmun_sea_gate_warehouse",
+      "act_id": "quest.bh.02",
+      "title_en": "The Harbor's Exchange",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:bh_conservation_walkway_pavilion",
+      "act_id": "quest.bh.03",
+      "title_en": "Preserve the Heritage Site",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:bh_muharraq_pearling_courtyard",
+      "act_id": "quest.bh.04",
+      "title_en": "Pearling Stories and Dates",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:bh_dilmun_memory_chest_hall",
+      "act_id": "quest.bh.05",
+      "title_en": "The Dilmun Memory Chest",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    }
+  ]
+}

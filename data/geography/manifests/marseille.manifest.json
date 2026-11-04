@@ -1,0 +1,85 @@
+{
+  "locationId": "marseille",
+  "countryId": "FR",
+  "displayName": "Marseille",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N43_00_E005_00_DEM/Copernicus_DSM_COG_10_N43_00_E005_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    5.34,
+    43.275,
+    5.405,
+    43.315
+  ],
+  "regionalBoundingBox": [
+    5.28,
+    43.21,
+    5.48,
+    43.36
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32631",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    0.0,
+    141.01
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 23.394,
+    "metersPerStudZ": 27.013,
+    "studsPerMeter": 0.04275
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 3.9169,
+    "verticalExaggeration": 1.2,
+    "robloxYRangeStuds": [
+      6.0,
+      42.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      4000,
+      12,
+      -280
+    ],
+    "robloxSpawn": [
+      4000,
+      12.5,
+      -252
+    ],
+    "spatialBounds": {
+      "min": [
+        3860,
+        -20,
+        -390
+      ],
+      "max": [
+        4140,
+        90,
+        -185
+      ]
+    },
+    "projectedCenterMeters": [
+      692230.47,
+      4796468.51
+    ]
+  },
+  "terrainChecksum": "636841f0884b5c9cec14e7bb4e362cec84d8c3dcd71881ac091099ba50a8058e",
+  "generatedAssetPaths": [
+    "data/geography/processed/marseille.json",
+    "apps/roblox/terrain/countries/FR/marseille_terrain.json",
+    "reports/terrain/heightmaps/marseille_heightmap.png",
+    "apps/roblox/terrain/countries/FR/marseille_heightmap.png",
+    "reports/terrain/hillshades/marseille_hillshade.png",
+    "reports/terrain/comparisons/marseille_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/FR.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:29.995577+00:00"
+}

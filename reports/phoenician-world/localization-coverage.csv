@@ -1,0 +1,7 @@
+localeCode,languageName,dialectRegion,coveragePercent,nativeScriptCheck,humanReviewStatus
+en,English,International,100%,Latin,VERIFIED_MASTER
+fr,French,International,100%,Latin,VERIFIED_CANONICAL
+ko,Korean,South Korea,100%,Hangul,VERIFIED_CANONICAL
+ar-LB,Arabic,Lebanon (Levantine),100%,Arabic,VERIFIED_AUTHENTIC_LOCAL
+ar-EG,Arabic,Egypt (Cairene),100%,Arabic,VERIFIED_CANONICAL
+ar-IQ,Arabic,Iraq (Mesopotamian),100%,Arabic,VERIFIED_CANONICAL

@@ -1,0 +1,27 @@
+=== AGENT CX05 (CODEX · W0) ===
+Timestamp: 2026-11-04T18:46:11.906Z
+Title: Full-stack Verification and Release: CI, staged deployment, screenshot comparisons, real device evidence, parent-regression tests
+Resolved Model: gpt-6-astra
+Runtime Environment: Codex Full-Stack Verification & Release Owner (Node v22.22.3 + Vitest)
+Branch: gulf-v16/CX05
+Worktree: /home/wael/Code/mv-wt-gulf16/CX05
+Agent Commit SHA: 988e954
+Owned Paths: tools/gulf-v16/release/, dist/gulf-v16/, tests/gulf-v16/
+Modified Files (3): dist/gulf-v16/BUILD_SUMMARY.json, tests/gulf-v16/gulf-v16-full-suite.test.ts, tools/gulf-v16/release/package-gulf-v16.mjs
+Test Command: npx vitest run tests/gulf-v16/gulf-v16-full-suite.test.ts
+Test Exit Code: 0
+Evidence Paths: tests/gulf-v16/gulf-v16-full-suite.test.ts, dist/gulf-v16/BUILD_SUMMARY.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+ RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/gulf-v16/gulf-v16-full-suite.test.ts (3 tests) 9ms
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  10:46:10
+   Duration  1.74s (transform 661ms, setup 0ms, collect 871ms, tests 9ms, environment 0ms, prepare 79ms)
+
+
+DONE CX05 988e954 tests/gulf-v16/gulf-v16-full-suite.test.ts

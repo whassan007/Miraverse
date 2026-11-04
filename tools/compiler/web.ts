@@ -4,6 +4,8 @@ import { fileURLToPath } from 'node:url';
 import type { Pack } from '../../packages/content/schema.js';
 
 const outPath = fileURLToPath(new URL('../../apps/web/src/generated/packs.json', import.meta.url));
+const gulfBundlePath = fileURLToPath(new URL('../../packages/content/gulf-v16/gulf-bundle-v16.json', import.meta.url));
+const gulfOutPath = fileURLToPath(new URL('../../apps/web/src/generated/gulfV16.json', import.meta.url));
 
 export function compareText(a: string, b: string): number {
   return a < b ? -1 : a > b ? 1 : 0;
@@ -50,4 +52,10 @@ export async function writeAtomic(destination: string, content: string): Promise
 
 export default async function compileWeb(packs: Pack[]): Promise<void> {
   await writeAtomic(outPath, JSON.stringify(stableValue(normalizePacks(packs)), null, 2) + '\n');
+  try {
+    const gulfContent = await fs.readFile(gulfBundlePath, 'utf8');
+    await writeAtomic(gulfOutPath, gulfContent);
+  } catch {
+    // If gulf bundle is not present, skip
+  }
 }

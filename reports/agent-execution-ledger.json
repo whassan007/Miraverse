@@ -1,0 +1,1151 @@
+{
+  "wave": "read-only reports",
+  "snapshot": "/private/tmp/claude-501/-Users-wael-Code-Miraverse/aea78164-cdca-46b5-b396-2abe6e5bab73/scratchpad/snapshot",
+  "agents": [
+    {
+      "id": "AG-01",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Roblox Studio baseline: what can be verified, and exact test procedure",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-01.md",
+      "startedAt": "2026-11-04T16:36:06.543Z",
+      "finishedAt": "2026-11-04T16:37:37.368Z"
+    },
+    {
+      "id": "AG-02",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Global lobby and world map design",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-02.md",
+      "startedAt": "2026-11-04T16:37:44.850Z",
+      "finishedAt": "2026-11-04T16:39:55.298Z"
+    },
+    {
+      "id": "AG-03",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Country and destination selection flow",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-03.md",
+      "startedAt": "2026-11-04T16:37:44.853Z",
+      "finishedAt": "2026-11-04T16:40:14.597Z"
+    },
+    {
+      "id": "AG-04",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Byblos benchmark world",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-04.md",
+      "startedAt": "2026-11-04T16:37:44.854Z",
+      "finishedAt": "2026-11-04T16:39:07.723Z"
+    },
+    {
+      "id": "AG-05",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Beirut",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-05.md",
+      "startedAt": "2026-11-04T16:53:38.321Z",
+      "finishedAt": "2026-11-04T16:56:26.449Z"
+    },
+    {
+      "id": "AG-06",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Mount Lebanon as a regional destination",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-06.md",
+      "startedAt": "2026-11-04T16:37:44.854Z",
+      "finishedAt": "2026-11-04T16:39:22.992Z"
+    },
+    {
+      "id": "AG-07",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Cairo",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-07.md",
+      "startedAt": "2026-11-04T16:37:44.855Z",
+      "finishedAt": "2026-11-04T16:40:54.825Z"
+    },
+    {
+      "id": "AG-08",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Alexandria",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-08.md",
+      "startedAt": "2026-11-04T16:37:44.856Z",
+      "finishedAt": "2026-11-04T16:40:00.698Z"
+    },
+    {
+      "id": "AG-09",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Aswan",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-09.md",
+      "startedAt": "2026-11-04T16:37:44.856Z",
+      "finishedAt": "2026-11-04T16:41:34.617Z"
+    },
+    {
+      "id": "AG-10",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Baghdad",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-10.md",
+      "startedAt": "2026-11-04T16:39:07.724Z",
+      "finishedAt": "2026-11-04T16:43:13.631Z"
+    },
+    {
+      "id": "AG-11",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Erbil",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-11.md",
+      "startedAt": "2026-11-04T16:39:22.992Z",
+      "finishedAt": "2026-11-04T16:43:01.536Z"
+    },
+    {
+      "id": "AG-12",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Basra",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-12.md",
+      "startedAt": "2026-11-04T16:39:55.298Z",
+      "finishedAt": "2026-11-04T16:42:16.357Z"
+    },
+    {
+      "id": "AG-13",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Jeonju",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-13.md",
+      "startedAt": "2026-11-04T16:40:00.698Z",
+      "finishedAt": "2026-11-04T16:42:46.931Z"
+    },
+    {
+      "id": "AG-14",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Seoul",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-14.md",
+      "startedAt": "2026-11-04T16:40:14.598Z",
+      "finishedAt": "2026-11-04T16:48:11.103Z"
+    },
+    {
+      "id": "AG-15",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Busan",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-15.md",
+      "startedAt": "2026-11-04T16:40:54.826Z",
+      "finishedAt": "2026-11-04T16:43:07.165Z"
+    },
+    {
+      "id": "AG-16",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Lyon",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-16.md",
+      "startedAt": "2026-11-04T16:41:34.617Z",
+      "finishedAt": "2026-11-04T16:44:59.653Z"
+    },
+    {
+      "id": "AG-17",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Paris",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-17.md",
+      "startedAt": "2026-11-04T16:42:16.358Z",
+      "finishedAt": "2026-11-04T16:46:25.457Z"
+    },
+    {
+      "id": "AG-18",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Marseille",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-18.md",
+      "startedAt": "2026-11-04T17:03:32.983Z",
+      "finishedAt": "2026-11-04T17:07:24.956Z"
+    },
+    {
+      "id": "AG-19",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Germany Rhine/Grail story environment",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-19.md",
+      "startedAt": "2026-11-04T16:43:01.537Z",
+      "finishedAt": "2026-11-04T16:46:41.843Z"
+    },
+    {
+      "id": "AG-20",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "China Peach Blossom Spring literary environment",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-20.md",
+      "startedAt": "2026-11-04T16:43:07.166Z",
+      "finishedAt": "2026-11-04T16:46:06.793Z"
+    },
+    {
+      "id": "AG-21",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Japan Basho journey route",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-21.md",
+      "startedAt": "2026-11-04T16:56:39.733Z",
+      "finishedAt": "2026-11-04T16:58:58.173Z"
+    },
+    {
+      "id": "AG-22",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Russia Svetloyar/Kitezh legend environment",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-22.md",
+      "startedAt": "2026-11-04T16:43:47.500Z",
+      "finishedAt": "2026-11-04T16:46:43.563Z"
+    },
+    {
+      "id": "AG-23",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Ukraine Kyiv campaign",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-23.md",
+      "startedAt": "2026-11-04T16:44:59.653Z",
+      "finishedAt": "2026-11-04T16:46:40.722Z"
+    },
+    {
+      "id": "AG-24",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Morocco Marrakesh campaign",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-24.md",
+      "startedAt": "2026-11-04T16:46:06.793Z",
+      "finishedAt": "2026-11-04T16:49:07.996Z"
+    },
+    {
+      "id": "AG-25",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Original five Build challenges",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-25.md",
+      "startedAt": "2026-11-04T16:46:25.458Z",
+      "finishedAt": "2026-11-04T16:49:29.656Z"
+    },
+    {
+      "id": "AG-26",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Original five Cook challenges",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-26.md",
+      "startedAt": "2026-11-04T16:56:39.733Z",
+      "finishedAt": "2026-11-04T16:58:59.170Z"
+    },
+    {
+      "id": "AG-27",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Original five Gather challenges",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-27.md",
+      "startedAt": "2026-11-04T16:56:39.734Z",
+      "finishedAt": "2026-11-04T17:00:29.243Z"
+    },
+    {
+      "id": "AG-28",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Original five Trade challenges",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-28.md",
+      "startedAt": "2026-11-04T16:46:43.564Z",
+      "finishedAt": "2026-11-04T16:49:45.665Z"
+    },
+    {
+      "id": "AG-29",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Original five Word challenges",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-29.md",
+      "startedAt": "2026-11-04T16:46:48.401Z",
+      "finishedAt": "2026-11-04T16:50:07.107Z"
+    },
+    {
+      "id": "AG-30",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "25 enrichment acts: interactive test plan",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-30.md",
+      "startedAt": "2026-11-04T16:46:48.925Z",
+      "finishedAt": "2026-11-04T16:49:33.383Z"
+    },
+    {
+      "id": "AG-31",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "66 chapters: gameplay flow verification plan",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-31.md",
+      "startedAt": "2026-11-04T16:47:02.795Z",
+      "finishedAt": "2026-11-04T16:49:35.016Z"
+    },
+    {
+      "id": "AG-32",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Mentor and NPC interactions",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-32.md",
+      "startedAt": "2026-11-04T16:48:05.356Z",
+      "finishedAt": "2026-11-04T16:52:20.648Z"
+    },
+    {
+      "id": "AG-33",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Travel, spawn and teleport verification",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-33.md",
+      "startedAt": "2026-11-04T16:48:11.104Z",
+      "finishedAt": "2026-11-04T16:50:10.276Z"
+    },
+    {
+      "id": "AG-34",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Save/rejoin and progression test plan",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-34.md",
+      "startedAt": "2026-11-04T16:49:07.996Z",
+      "finishedAt": "2026-11-04T16:52:28.030Z"
+    },
+    {
+      "id": "AG-35",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "English/French localization",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-35.md",
+      "startedAt": "2026-11-04T16:49:29.656Z",
+      "finishedAt": "2026-11-04T16:51:57.536Z"
+    },
+    {
+      "id": "AG-36",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Arabic dialect localization and RTL",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-36.md",
+      "startedAt": "2026-11-04T16:49:33.383Z",
+      "finishedAt": "2026-11-04T16:52:40.984Z"
+    },
+    {
+      "id": "AG-37",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Korean and other Asian localization",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-37.md",
+      "startedAt": "2026-11-04T16:53:38.326Z",
+      "finishedAt": "2026-11-04T16:56:26.269Z"
+    },
+    {
+      "id": "AG-38",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Other catalog locales and fallback",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-38.md",
+      "startedAt": "2026-11-04T16:49:45.665Z",
+      "finishedAt": "2026-11-04T16:51:02.638Z"
+    },
+    {
+      "id": "AG-39",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Mobile, streaming, accessibility and performance",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-39.md",
+      "startedAt": "2026-11-04T16:50:07.107Z",
+      "finishedAt": "2026-11-04T16:53:16.306Z"
+    },
+    {
+      "id": "AG-40",
+      "backend": "antigravity",
+      "model": "gemini-3.8-flash-low",
+      "scope": "Full-world regression and evidence plan",
+      "status": "COMPLETED",
+      "output": "reports/agents/AG-40.md",
+      "startedAt": "2026-11-04T16:50:10.276Z",
+      "finishedAt": "2026-11-04T16:52:53.681Z"
+    },
+    {
+      "id": "DGX-01",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Full 11-country content inventory",
+      "inputs": [
+        "swarm/minecraft-global/catalog-data.mjs"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-01.md",
+      "startedAt": "2026-11-04T16:37:44.856Z",
+      "finishedAt": "2026-11-04T16:38:23.207Z"
+    },
+    {
+      "id": "DGX-02",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Cities, regions and settings registry",
+      "inputs": [
+        "apps/roblox/src/shared/Packs.luau"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-02.md",
+      "startedAt": "2026-11-04T16:53:38.326Z",
+      "finishedAt": "2026-11-04T16:53:56.250Z"
+    },
+    {
+      "id": "DGX-03",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Five main quests and 25 challenges",
+      "inputs": [
+        "content/quests/LB.json",
+        "content/quests/EG.json",
+        "content/quests/IQ.json",
+        "content/quests/KR.json",
+        "content/quests/FR.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-03.md",
+      "startedAt": "2026-11-04T16:37:44.896Z",
+      "finishedAt": "2026-11-04T16:38:05.736Z"
+    },
+    {
+      "id": "DGX-04",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "All 25 v1.2 acts inventory",
+      "inputs": [
+        "content/v12/quest-enrichment/quest-acts-v12.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-04.md",
+      "startedAt": "2026-11-04T16:37:44.897Z",
+      "finishedAt": "2026-11-04T16:39:04.558Z"
+    },
+    {
+      "id": "DGX-05",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "All 66 chapters inventory",
+      "inputs": [
+        "swarm/minecraft-global/catalog-data.mjs"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-05.md",
+      "startedAt": "2026-11-04T16:37:44.909Z",
+      "finishedAt": "2026-11-04T16:38:40.789Z"
+    },
+    {
+      "id": "DGX-06",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Question and vocabulary inventory",
+      "inputs": [
+        "content/dialogue/LB.json",
+        "content/dialogue/EG.json",
+        "content/dialogue/IQ.json",
+        "content/dialogue/KR.json",
+        "content/dialogue/FR.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-06.md",
+      "startedAt": "2026-11-04T16:38:05.738Z",
+      "finishedAt": "2026-11-04T16:39:24.094Z"
+    },
+    {
+      "id": "DGX-07",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Localization and provenance",
+      "inputs": [
+        "content/v12/locales/fr-ko/fr-ko-localization.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-07.md",
+      "startedAt": "2026-11-04T16:38:23.207Z",
+      "finishedAt": "2026-11-04T16:39:33.834Z"
+    },
+    {
+      "id": "DGX-08",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Terrain generation engine spec",
+      "inputs": [
+        "apps/roblox/src/server/MapBuilder.luau"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-08.md",
+      "startedAt": "2026-11-04T16:33:34.987Z",
+      "finishedAt": "2026-11-04T16:33:55.714Z"
+    },
+    {
+      "id": "DGX-09",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Reusable architecture generator spec",
+      "inputs": [
+        "apps/roblox/src/server/MapBuilder.luau"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-09.md",
+      "startedAt": "2026-11-04T16:38:40.790Z",
+      "finishedAt": "2026-11-04T16:39:47.916Z"
+    },
+    {
+      "id": "DGX-10",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Landmark and prop generator spec",
+      "inputs": [
+        "art/source/countries/LB/LB_KIT.md"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-10.md",
+      "startedAt": "2026-11-04T16:39:04.559Z",
+      "finishedAt": "2026-11-04T16:39:57.730Z"
+    },
+    {
+      "id": "DGX-11",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Road, path, bridge and travel graph",
+      "inputs": [
+        "apps/roblox/src/server/MapBuilder.luau"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-11.md",
+      "startedAt": "2026-11-04T16:39:24.094Z",
+      "finishedAt": "2026-11-04T16:40:12.837Z"
+    },
+    {
+      "id": "DGX-12",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Lebanon location data",
+      "inputs": [
+        "content/quests/LB.json",
+        "content/dialogue/LB.json",
+        "art/source/countries/LB/LB_KIT.md"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-12.md",
+      "startedAt": "2026-11-04T16:39:33.834Z",
+      "finishedAt": "2026-11-04T16:40:37.517Z"
+    },
+    {
+      "id": "DGX-13",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Egypt location data",
+      "inputs": [
+        "content/quests/EG.json",
+        "content/dialogue/EG.json",
+        "art/source/countries/EG/EG_KIT.md"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-13.md",
+      "startedAt": "2026-11-04T16:39:47.916Z",
+      "finishedAt": "2026-11-04T16:40:55.612Z"
+    },
+    {
+      "id": "DGX-14",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Iraq location data",
+      "inputs": [
+        "content/quests/IQ.json",
+        "content/dialogue/IQ.json",
+        "art/source/countries/IQ/IQ_KIT.md"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-14.md",
+      "startedAt": "2026-11-04T16:39:57.730Z",
+      "finishedAt": "2026-11-04T16:41:15.422Z"
+    },
+    {
+      "id": "DGX-15",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "South Korea location data",
+      "inputs": [
+        "content/quests/KR.json",
+        "content/dialogue/KR.json",
+        "art/source/countries/KR/KR_KIT.md"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-15.md",
+      "startedAt": "2026-11-04T16:40:12.838Z",
+      "finishedAt": "2026-11-04T16:41:32.206Z"
+    },
+    {
+      "id": "DGX-16",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "France location data",
+      "inputs": [
+        "content/quests/FR.json",
+        "content/dialogue/FR.json",
+        "art/source/countries/FR/FR_KIT.md"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-16.md",
+      "startedAt": "2026-11-04T16:40:37.519Z",
+      "finishedAt": "2026-11-04T16:41:46.610Z"
+    },
+    {
+      "id": "DGX-17",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Germany setting and chapter data",
+      "inputs": [
+        "swarm/minecraft-global/catalog-data.mjs"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-17.md",
+      "startedAt": "2026-11-04T16:40:55.613Z",
+      "finishedAt": "2026-11-04T16:42:31.885Z"
+    },
+    {
+      "id": "DGX-18",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "China setting and chapter data",
+      "inputs": [
+        "swarm/minecraft-global/catalog-data.mjs"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-18.md",
+      "startedAt": "2026-11-04T16:41:15.424Z",
+      "finishedAt": "2026-11-04T16:43:08.677Z"
+    },
+    {
+      "id": "DGX-19",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Japan setting and chapter data",
+      "inputs": [
+        "swarm/minecraft-global/catalog-data.mjs"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-19.md",
+      "startedAt": "2026-11-04T16:41:32.208Z",
+      "finishedAt": "2026-11-04T16:43:44.596Z"
+    },
+    {
+      "id": "DGX-20",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Russia setting and chapter data",
+      "inputs": [
+        "swarm/minecraft-global/catalog-data.mjs"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-20.md",
+      "startedAt": "2026-11-04T16:41:46.612Z",
+      "finishedAt": "2026-11-04T16:43:59.443Z"
+    },
+    {
+      "id": "DGX-21",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Ukraine setting and chapter data",
+      "inputs": [
+        "swarm/minecraft-global/catalog-data.mjs"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-21.md",
+      "startedAt": "2026-11-04T16:42:31.888Z",
+      "finishedAt": "2026-11-04T16:44:36.340Z"
+    },
+    {
+      "id": "DGX-22",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Morocco setting and chapter data",
+      "inputs": [
+        "swarm/minecraft-global/catalog-data.mjs"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-22.md",
+      "startedAt": "2026-11-04T16:43:08.679Z",
+      "finishedAt": "2026-11-04T16:44:55.961Z"
+    },
+    {
+      "id": "DGX-23",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Dynamic quest placement and world binding",
+      "inputs": [
+        "content/quests/LB.json",
+        "apps/roblox/src/server/MapBuilder.luau"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-23.md",
+      "startedAt": "2026-11-04T16:43:44.598Z",
+      "finishedAt": "2026-11-04T16:45:13.540Z"
+    },
+    {
+      "id": "DGX-24",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Question distribution and answer validation",
+      "inputs": [
+        "content/dialogue/LB.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-24.md",
+      "startedAt": "2026-11-04T16:43:59.445Z",
+      "finishedAt": "2026-11-04T16:45:23.195Z"
+    },
+    {
+      "id": "DGX-25",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "NPC and mentor dialogue pipeline",
+      "inputs": [
+        "content/v12/npc-enrichment/npc-mentor-dialogues-v12.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-25.md",
+      "startedAt": "2026-11-04T16:44:36.341Z",
+      "finishedAt": "2026-11-04T16:45:36.039Z"
+    },
+    {
+      "id": "DGX-26",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Arabic dialect and RTL validation",
+      "inputs": [
+        "content/v12/locales/ar-LB/lebanese-dialect-qa.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-26.md",
+      "startedAt": "2026-11-04T16:44:55.962Z",
+      "finishedAt": "2026-11-04T16:45:45.411Z"
+    },
+    {
+      "id": "DGX-27",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "East Asian language and font validation",
+      "inputs": [
+        "apps/web/src/i18n/locales/ko.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-27.md",
+      "startedAt": "2026-11-04T16:45:13.541Z",
+      "finishedAt": "2026-11-04T16:45:55.916Z"
+    },
+    {
+      "id": "DGX-28",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "European language and fallback validation",
+      "inputs": [
+        "apps/web/src/i18n/locales/fr.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-28.md",
+      "startedAt": "2026-11-04T16:45:23.198Z",
+      "finishedAt": "2026-11-04T16:46:06.454Z"
+    },
+    {
+      "id": "DGX-29",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Streaming, optimization and mobile budgets",
+      "inputs": [
+        "apps/roblox/default.project.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-29.md",
+      "startedAt": "2026-11-04T16:45:36.041Z",
+      "finishedAt": "2026-11-04T16:46:12.967Z"
+    },
+    {
+      "id": "DGX-30",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Source integrity and compiler tests",
+      "inputs": [
+        "tools/compiler/roblox.ts"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-30.md",
+      "startedAt": "2026-11-04T16:45:45.412Z",
+      "finishedAt": "2026-11-04T16:46:22.825Z"
+    },
+    {
+      "id": "DGX-31",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Lebanon dialogue audit for missing keys and inconsistencies",
+      "inputs": [
+        "content/dialogue/LB.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-31.md",
+      "startedAt": "2026-11-04T16:45:55.918Z",
+      "finishedAt": "2026-11-04T16:46:32.563Z"
+    },
+    {
+      "id": "DGX-32",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Egypt dialogue audit for missing keys and inconsistencies",
+      "inputs": [
+        "content/dialogue/EG.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-32.md",
+      "startedAt": "2026-11-04T16:46:06.455Z",
+      "finishedAt": "2026-11-04T16:46:45.664Z"
+    },
+    {
+      "id": "DGX-33",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Iraq dialogue audit for missing keys and inconsistencies",
+      "inputs": [
+        "content/dialogue/IQ.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-33.md",
+      "startedAt": "2026-11-04T16:46:12.968Z",
+      "finishedAt": "2026-11-04T16:46:58.131Z"
+    },
+    {
+      "id": "DGX-34",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "South Korea dialogue audit for missing keys and inconsistencies",
+      "inputs": [
+        "content/dialogue/KR.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-34.md",
+      "startedAt": "2026-11-04T16:46:22.826Z",
+      "finishedAt": "2026-11-04T16:47:11.911Z"
+    },
+    {
+      "id": "DGX-35",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "France dialogue audit for missing keys and inconsistencies",
+      "inputs": [
+        "content/dialogue/FR.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-35.md",
+      "startedAt": "2026-11-04T16:46:32.565Z",
+      "finishedAt": "2026-11-04T16:47:25.485Z"
+    },
+    {
+      "id": "DGX-36",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Lebanon v1.2 act-to-quest ID reconciliation",
+      "inputs": [
+        "content/v12/quest-enrichment/quest-acts-v12.json",
+        "content/quests/LB.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-36.md",
+      "startedAt": "2026-11-04T16:46:45.664Z",
+      "finishedAt": "2026-11-04T16:47:43.782Z"
+    },
+    {
+      "id": "DGX-37",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Egypt v1.2 act-to-quest ID reconciliation",
+      "inputs": [
+        "content/v12/quest-enrichment/quest-acts-v12.json",
+        "content/quests/EG.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-37.md",
+      "startedAt": "2026-11-04T16:46:58.131Z",
+      "finishedAt": "2026-11-04T16:48:00.761Z"
+    },
+    {
+      "id": "DGX-38",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "Iraq v1.2 act-to-quest ID reconciliation",
+      "inputs": [
+        "content/v12/quest-enrichment/quest-acts-v12.json",
+        "content/quests/IQ.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-38.md",
+      "startedAt": "2026-11-04T16:47:11.913Z",
+      "finishedAt": "2026-11-04T16:48:17.616Z"
+    },
+    {
+      "id": "DGX-39",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "South Korea v1.2 act-to-quest ID reconciliation",
+      "inputs": [
+        "content/v12/quest-enrichment/quest-acts-v12.json",
+        "content/quests/KR.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-39.md",
+      "startedAt": "2026-11-04T16:47:25.487Z",
+      "finishedAt": "2026-11-04T16:48:42.490Z"
+    },
+    {
+      "id": "DGX-40",
+      "backend": "dgx",
+      "model": "qwen3-coder:30b",
+      "scope": "France v1.2 act-to-quest ID reconciliation",
+      "inputs": [
+        "content/v12/quest-enrichment/quest-acts-v12.json",
+        "content/quests/FR.json"
+      ],
+      "status": "COMPLETED",
+      "output": "reports/agents/DGX-40.md",
+      "startedAt": "2026-11-04T16:47:43.784Z",
+      "finishedAt": "2026-11-04T16:49:00.604Z"
+    },
+    {
+      "id": "CODEX-01",
+      "backend": "codex",
+      "model": "default",
+      "scope": "World-generation framework and registries",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-01.md",
+      "startedAt": "2026-11-04T16:37:44.899Z",
+      "finishedAt": "2026-11-04T16:38:45.446Z"
+    },
+    {
+      "id": "CODEX-02",
+      "backend": "codex",
+      "model": "default",
+      "scope": "Terrain, navigation, spawn and travel integration",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-02.md",
+      "startedAt": "2026-11-04T16:37:44.900Z",
+      "finishedAt": "2026-11-04T16:39:00.493Z"
+    },
+    {
+      "id": "CODEX-03",
+      "backend": "codex",
+      "model": "default",
+      "scope": "Quest state machine and challenge correctness",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-03.md",
+      "startedAt": "2026-11-04T16:37:44.901Z",
+      "finishedAt": "2026-11-04T16:38:58.056Z"
+    },
+    {
+      "id": "CODEX-04",
+      "backend": "codex",
+      "model": "default",
+      "scope": "25 act and 66 chapter orchestration",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-04.md",
+      "startedAt": "2026-11-04T16:37:44.901Z",
+      "finishedAt": "2026-11-04T16:38:45.144Z"
+    },
+    {
+      "id": "CODEX-05",
+      "backend": "codex",
+      "model": "default",
+      "scope": "Question engine and answer randomization",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-05.md",
+      "startedAt": "2026-11-04T16:33:35.022Z",
+      "finishedAt": "2026-11-04T16:34:35.962Z"
+    },
+    {
+      "id": "CODEX-06",
+      "backend": "codex",
+      "model": "default",
+      "scope": "NPC and mentor services",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-06.md",
+      "startedAt": "2026-11-04T16:38:45.144Z",
+      "finishedAt": "2026-11-04T16:39:45.080Z"
+    },
+    {
+      "id": "CODEX-07",
+      "backend": "codex",
+      "model": "default",
+      "scope": "DataStore persistence and migrations",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-07.md",
+      "startedAt": "2026-11-04T16:38:45.446Z",
+      "finishedAt": "2026-11-04T16:39:43.607Z"
+    },
+    {
+      "id": "CODEX-08",
+      "backend": "codex",
+      "model": "default",
+      "scope": "Server authority and exploit prevention",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-08.md",
+      "startedAt": "2026-11-04T16:38:58.057Z",
+      "finishedAt": "2026-11-04T16:40:15.591Z"
+    },
+    {
+      "id": "CODEX-09",
+      "backend": "codex",
+      "model": "default",
+      "scope": "Localization runtime and key checks",
+      "status": "COMPLETED",
+      "output": "reports/agents/CODEX-09.md",
+      "startedAt": "2026-11-04T16:39:00.494Z",
+      "finishedAt": "2026-11-04T16:39:58.140Z"
+    },
+    {
+      "id": "CODEX-10",
+      "backend": "codex",
+      "model": "default",
+      "scope": "Tests, CI, checksums and the 7 existing test failures",
+      "status": "FAILED",
+      "output": "reports/agents/CODEX-10.md",
+      "startedAt": "2026-11-04T17:03:32.990Z",
+      "finishedAt": "2026-11-04T17:04:39.048Z",
+      "error": "au\n-rw-r--r--@ 1 wael  wheel   26565 Nov  4 08:53 apps/roblox/src/shared/Packs.luau\nls: apps/minecraft/dist: No such file or directory\nls: apps/roblox/dist: No such file or directory\nls: apps/web/dist: No such file or directory\nls: apps/web/src/generated/knowledgeV12.json: No such file or directory\nls: node_modules: No such file or directory\n\nERROR: Selected model is at capacity. Please try a different model.\nERROR: Selected model is at capacity. Please try a different model.\ntokens used\n27,127\n"
+    },
+    {
+      "id": "CLAUDE-01",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Principal world architecture",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-01.md",
+      "startedAt": "2026-11-04T16:37:44.902Z",
+      "finishedAt": "2026-11-04T16:38:42.114Z"
+    },
+    {
+      "id": "CLAUDE-02",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Roblox/Minecraft contracts and Minecraft audit of the 66 chapters",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-02.md",
+      "startedAt": "2026-11-04T16:37:44.903Z",
+      "finishedAt": "2026-11-04T16:39:47.082Z"
+    },
+    {
+      "id": "CLAUDE-03",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Geographic and cultural integrity: real, literary and legendary settings",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-03.md",
+      "startedAt": "2026-11-04T16:33:35.023Z",
+      "finishedAt": "2026-11-04T16:35:21.338Z"
+    },
+    {
+      "id": "CLAUDE-04",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Narrative review: Lebanon, Egypt, Iraq, France, South Korea",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-04.md",
+      "startedAt": "2026-11-04T16:37:44.904Z",
+      "finishedAt": "2026-11-04T16:39:12.352Z"
+    },
+    {
+      "id": "CLAUDE-05",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Narrative review: Germany, China, Japan, Russia, Ukraine, Morocco",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-05.md",
+      "startedAt": "2026-11-04T16:37:44.904Z",
+      "finishedAt": "2026-11-04T16:38:48.551Z"
+    },
+    {
+      "id": "CLAUDE-06",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Quest design and progression architecture",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-06.md",
+      "startedAt": "2026-11-04T16:37:44.905Z",
+      "finishedAt": "2026-11-04T16:39:20.335Z"
+    },
+    {
+      "id": "CLAUDE-07",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Question pedagogy and content correctness",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-07.md",
+      "startedAt": "2026-11-04T17:03:32.991Z",
+      "finishedAt": "2026-11-04T17:05:35.531Z"
+    },
+    {
+      "id": "CLAUDE-08",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Multilingual content architecture for 14 locales",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-08.md",
+      "startedAt": "2026-11-04T16:38:48.552Z",
+      "finishedAt": "2026-11-04T16:42:04.432Z"
+    },
+    {
+      "id": "CLAUDE-09",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Child safety, privacy and security, including the UnGroup incident",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-09.md",
+      "startedAt": "2026-11-04T17:03:32.991Z",
+      "finishedAt": "2026-11-04T17:05:15.723Z"
+    },
+    {
+      "id": "CLAUDE-10",
+      "backend": "claude",
+      "model": "sonnet",
+      "scope": "Performance, release architecture and independent evidence standard",
+      "status": "COMPLETED",
+      "output": "reports/agents/CLAUDE-10.md",
+      "startedAt": "2026-11-04T16:39:20.335Z",
+      "finishedAt": "2026-11-04T16:40:26.714Z"
+    }
+  ]
+}

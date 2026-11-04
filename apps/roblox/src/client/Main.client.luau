@@ -39,10 +39,11 @@ local picker = UI.panel(gui, UDim2.fromScale(0.5, 0.6), UDim2.fromScale(0.25, 0.
 UI.label(picker, "Choose a country!", UDim2.fromScale(0.9, 0.14), UDim2.fromScale(0.05, 0.03))
 
 -- HUD
-local hud = UI.panel(gui, UDim2.fromScale(0.3, 0.14), UDim2.fromScale(0.35, 0.02))
+local hud = UI.panel(gui, UDim2.fromScale(0.28, 0.14), UDim2.fromScale(0.01, 0.02))
 hud.Visible = false
 local hudText = UI.label(hud, "", UDim2.fromScale(0.94, 0.5), UDim2.fromScale(0.03, 0.05))
 local playBtn: TextButton
+local lobbyButton: TextButton
 
 -- Stamp modal
 local modal = UI.panel(gui, UDim2.fromScale(0.4, 0.4), UDim2.fromScale(0.3, 0.3))
@@ -52,19 +53,42 @@ local modalTitle = UI.label(modal, "Souvenir stamp!", UDim2.fromScale(0.9, 0.25)
 local modalCode = UI.label(modal, "", UDim2.fromScale(0.9, 0.3), UDim2.fromScale(0.05, 0.35))
 modalTitle.ZIndex = 11
 modalCode.ZIndex = 11
-local closeBtn = UI.button(modal, "Close", UDim2.fromScale(0.4, 0.2), UDim2.fromScale(0.3, 0.72), function()
+local closeBtn = UI.button(modal, "Close", UDim2.fromScale(0.4, 0.2), function()
 	modal.Visible = false
 end)
 closeBtn.Position = UDim2.fromScale(0.3, 0.72)
 closeBtn.ZIndex = 11
 
 local function render(state: any)
-	if not state or not state.country then
+	if not state then
+		return
+	end
+	if not state.country then
+		picker.Visible = true
+		hud.Visible = false
 		return
 	end
 	picker.Visible = false
 	hud.Visible = true
-	hudText.Text = string.format("%s - challenge %d of %d (%d done)", state.country, state.index, state.total, state.done)
+	local isRegion = state.locationType == "region"
+	playBtn.Visible = (state.canRunChallenge == true) and not state.hasStations and not isRegion and not state.stamp
+	lobbyButton.Visible = state.country ~= nil
+	if isRegion then
+		local regionTitle = state.locationName or "Mount Lebanon"
+		if state.stamp then
+			hudText.Text = string.format("%s (%s) · Stamp: %s", regionTitle, state.country, state.stamp)
+		else
+			hudText.Text = string.format("%s (%s) — Explore the mountain terraces", regionTitle, state.country)
+		end
+	elseif state.stamp then
+		hudText.Text = "Chapter complete! Stamp: " .. state.stamp
+	elseif state.hasStations and not state.met then
+		hudText.Text = "Go and talk to your mentor"
+	elseif state.hasStations and state.nextLabel then
+		hudText.Text = string.format("Next: %s (%d of %d done)", state.nextLabel, state.done, state.total)
+	else
+		hudText.Text = string.format("%s - challenge %d of %d (%d done)", state.country, state.index, state.total, state.done)
+	end
 end
 
 for i, c in COUNTRIES do
@@ -120,6 +144,21 @@ phraseShown.OnClientEvent:Connect(function(userId: any, text: any)
 	task.delay(3, function()
 		bb:Destroy()
 	end)
+end)
+
+lobbyButton = UI.button(hud, "Back to Lobby", UDim2.fromScale(0.5, 0.34), function()
+	(remotes:WaitForChild("GoToLobby") :: RemoteEvent):FireServer()
+end)
+lobbyButton.Position = UDim2.fromScale(0.25, 0.6)
+
+local stateChanged = remotes:WaitForChild("StateChanged") :: RemoteEvent
+local stationHint = remotes:WaitForChild("StationHint") :: RemoteEvent
+stateChanged.OnClientEvent:Connect(render)
+stationHint.OnClientEvent:Connect(function(kind: any, detail: any)
+	if kind == "stamp" and type(detail) == "string" then
+		modalCode.Text = detail
+		modal.Visible = true
+	end
 end)
 
 task.spawn(function()

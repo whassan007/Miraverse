@@ -1,0 +1,457 @@
+{
+  "agentId": "DX10",
+  "dialects": [
+    "ar-QA",
+    "ar-AE",
+    "ar-KW",
+    "ar-SA",
+    "ar-OM",
+    "ar-BH"
+  ],
+  "glossaryByCountry": {
+    "ar-QA": [
+      {
+        "termId": "vocab.qa.lulu",
+        "countryCode": "QA",
+        "dialectVariant": "ar-QA",
+        "arabicScript": "لؤلؤ (قماش)",
+        "msaEquivalent": "لؤلؤ",
+        "arabiziPhonetic5To7": "lulu (qimash)",
+        "arabiziStandard11To17": "lu'lu' (qimash)",
+        "englishGloss": "Natural sea pearls (traditionally called qimash in Gulf pearl trade)",
+        "culturalNote": "In historic Qatari and Gulf usage, natural pearls were affectionately termed qimash alongside lulu.",
+        "audioPhoneticHint": "LOO-loo / qi-MAASH"
+      },
+      {
+        "termId": "vocab.qa.jalboot",
+        "countryCode": "QA",
+        "dialectVariant": "ar-QA",
+        "arabicScript": "جالبوت",
+        "msaEquivalent": "سفينة شراعية تقليدية",
+        "arabiziPhonetic5To7": "jalboot",
+        "arabiziStandard11To17": "jalboot",
+        "englishGloss": "Traditional flat-transom wooden dhow with a vertical bow used along Qatar's coast",
+        "culturalNote": "Built and maintained by master shipwrights (qallaf) along Doha Bay.",
+        "audioPhoneticHint": "jal-BOOT"
+      },
+      {
+        "termId": "vocab.qa.qallaf",
+        "countryCode": "QA",
+        "dialectVariant": "ar-QA",
+        "arabicScript": "قلّاف",
+        "msaEquivalent": "صانع السفن الخشبية",
+        "arabiziPhonetic5To7": "qallaf",
+        "arabiziStandard11To17": "qallaf",
+        "englishGloss": "Master wooden dhow shipwright",
+        "culturalNote": "Uses palm-fiber rope, wooden mallets, and shark-liver/plant oils to seal hull planks.",
+        "audioPhoneticHint": "qal-LAAF"
+      },
+      {
+        "termId": "vocab.qa.tawash",
+        "countryCode": "QA",
+        "dialectVariant": "ar-QA",
+        "arabicScript": "طوّاش",
+        "msaEquivalent": "تاجر اللؤلؤ",
+        "arabiziPhonetic5To7": "tawash",
+        "arabiziStandard11To17": "tawash",
+        "englishGloss": "Pearl merchant who grades pearls by size, luster, and weight",
+        "culturalNote": "Uses brass sieves (tasa) and mithqal scales in fair harbor exchange.",
+        "audioPhoneticHint": "ta-WAASH"
+      },
+      {
+        "termId": "vocab.qa.fisaikra",
+        "countryCode": "QA",
+        "dialectVariant": "ar-QA",
+        "arabicScript": "الفسيفكرة",
+        "msaEquivalent": "حكاية الفسيفكرة الشعبية",
+        "arabiziPhonetic5To7": "Al-Fisaikra",
+        "arabiziStandard11To17": "Al-Fisaikra",
+        "englishGloss": "Qatari coastal folktale of a kind young woman aided by a magical sea fish (Folklore)",
+        "culturalNote": "Explicitly classified as folklore pending regional variant corroboration.",
+        "audioPhoneticHint": "al-fi-SAYK-ra"
+      },
+      {
+        "termId": "vocab.qa.al_qaffal",
+        "countryCode": "QA",
+        "dialectVariant": "ar-QA",
+        "arabicScript": "القفّال",
+        "msaEquivalent": "موسم العودة إلى الديار",
+        "arabiziPhonetic5To7": "Al-Qaffal",
+        "arabiziStandard11To17": "Al-Qaffal",
+        "englishGloss": "The joyous coastal homecoming marking the safe return of pearl boats to shore",
+        "culturalNote": "Celebrates family reunion, gratitude, and shoreline welcome signals.",
+        "audioPhoneticHint": "al-qaf-FAAL"
+      }
+    ],
+    "ar-AE": [
+      {
+        "termId": "vocab.ae.barjeel",
+        "countryCode": "AE",
+        "dialectVariant": "ar-AE",
+        "arabicScript": "بارجيل",
+        "msaEquivalent": "ملقف هواء",
+        "arabiziPhonetic5To7": "barjeel",
+        "arabiziStandard11To17": "barjeel",
+        "englishGloss": "Traditional wind-catcher tower that funnels cool breezes into courtyard rooms",
+        "culturalNote": "Found in historic coastal quarters of Dubai and Sharjah.",
+        "audioPhoneticHint": "bar-JEEL"
+      },
+      {
+        "termId": "vocab.ae.falaj",
+        "countryCode": "AE",
+        "dialectVariant": "ar-AE",
+        "arabicScript": "فلج",
+        "msaEquivalent": "قناة ري تقليدية",
+        "arabiziPhonetic5To7": "falaj",
+        "arabiziStandard11To17": "falaj",
+        "englishGloss": "Gravity-fed water channel irrigating inland oases like Al Ain",
+        "culturalNote": "Documented at UNESCO World Heritage Site #1343 in Al Ain.",
+        "audioPhoneticHint": "FA-laj"
+      },
+      {
+        "termId": "vocab.ae.khor",
+        "countryCode": "AE",
+        "dialectVariant": "ar-AE",
+        "arabicScript": "خور",
+        "msaEquivalent": "لسان بحري / مرسى طبيعي",
+        "arabiziPhonetic5To7": "khor",
+        "arabiziStandard11To17": "khor",
+        "englishGloss": "Natural saltwater creek or inlet sheltering trading dhows",
+        "culturalNote": "Central to coastal settlements in Dubai, Sharjah, and Abu Dhabi.",
+        "audioPhoneticHint": "KHOR"
+      },
+      {
+        "termId": "vocab.ae.al_jadi",
+        "countryCode": "AE",
+        "dialectVariant": "ar-AE",
+        "arabicScript": "الجدي (نجم القطب)",
+        "msaEquivalent": "النجم القطبي",
+        "arabiziPhonetic5To7": "Al-Jadi",
+        "arabiziStandard11To17": "Al-Jadi",
+        "englishGloss": "Polaris (the North Star), used by Gulf navigators to find northern bearings",
+        "culturalNote": "Paired with southern star Suhayl (Canopus) in traditional star compasses.",
+        "audioPhoneticHint": "al-JA-dee"
+      },
+      {
+        "termId": "vocab.ae.talli",
+        "countryCode": "AE",
+        "dialectVariant": "ar-AE",
+        "arabicScript": "التلّي",
+        "msaEquivalent": "نسيج التطريز المجدول",
+        "arabiziPhonetic5To7": "Al-Talli",
+        "arabiziStandard11To17": "Al-Talli",
+        "englishGloss": "Traditional Emirati hand-braided textile craft woven on a kajooja cushion",
+        "culturalNote": "UNESCO-listed intangible cultural heritage.",
+        "audioPhoneticHint": "at-TAL-lee"
+      },
+      {
+        "termId": "vocab.ae.marhaba_ilsaa",
+        "countryCode": "AE",
+        "dialectVariant": "ar-AE",
+        "arabicScript": "مرحبا الساع",
+        "msaEquivalent": "أهلاً وسهلاً بكم في كل وقت",
+        "arabiziPhonetic5To7": "Marhaba il-sa",
+        "arabiziStandard11To17": "Mar7aba il-sa3",
+        "englishGloss": "Warm Emirati greeting meaning \"Welcome at this very hour\"",
+        "culturalNote": "Characteristic expression of Emirati hospitality.",
+        "audioPhoneticHint": "MAR-ha-ba is-SAA"
+      }
+    ],
+    "ar-KW": [
+      {
+        "termId": "vocab.kw.boom",
+        "countryCode": "KW",
+        "dialectVariant": "ar-KW",
+        "arabicScript": "بوم",
+        "msaEquivalent": "سفينة شراعية كويتية ذات مقدمة ومؤخرة مدببة",
+        "arabiziPhonetic5To7": "boom",
+        "arabiziStandard11To17": "boom",
+        "englishGloss": "Large double-ended Kuwaiti dhow famous for long-distance cargo and water transport",
+        "culturalNote": "A national symbol of Kuwaiti maritime craftsmanship.",
+        "audioPhoneticHint": "BOOM"
+      },
+      {
+        "termId": "vocab.kw.nakhuda",
+        "countryCode": "KW",
+        "dialectVariant": "ar-KW",
+        "arabicScript": "نوخذة",
+        "msaEquivalent": "ربان السفينة وقائدها",
+        "arabiziPhonetic5To7": "nakhuda",
+        "arabiziStandard11To17": "nakhuda",
+        "englishGloss": "Dhow captain responsible for navigation, crew welfare, and fair harbor trade",
+        "culturalNote": "Central leadership role in historic Kuwaiti seafaring.",
+        "audioPhoneticHint": "NA-khu-da"
+      },
+      {
+        "termId": "vocab.kw.bu_darya",
+        "countryCode": "KW",
+        "dialectVariant": "ar-KW",
+        "arabicScript": "بو درياه",
+        "msaEquivalent": "شخصية أسطورية بحرية في الفلكلور الخليجي",
+        "arabiziPhonetic5To7": "Bu Darya",
+        "arabiziStandard11To17": "Bu Darya",
+        "englishGloss": "Legendary sea figure from Gulf maritime folklore associated with night winds and waves",
+        "culturalNote": "Explicitly presented as folklore; interpreted gently through natural harbor acoustics for younger players.",
+        "audioPhoneticHint": "boo DAR-ya"
+      },
+      {
+        "termId": "vocab.kw.nahham",
+        "countryCode": "KW",
+        "dialectVariant": "ar-KW",
+        "arabicScript": "نهّام",
+        "msaEquivalent": "منشد السفينة الذي يحدو للبحارة",
+        "arabiziPhonetic5To7": "nahham",
+        "arabiziStandard11To17": "na77am",
+        "englishGloss": "Maritime vocalist who leads call-and-response work songs (nahma) aboard a dhow",
+        "culturalNote": "Kept crew morale high and synchronized heavy rope-pulling tasks.",
+        "audioPhoneticHint": "nah-HAAM"
+      },
+      {
+        "termId": "vocab.kw.naqah",
+        "countryCode": "KW",
+        "dialectVariant": "ar-KW",
+        "arabicScript": "نقعة",
+        "msaEquivalent": "مرسى ساحلي محاط بحاجز حجري",
+        "arabiziPhonetic5To7": "naq-ah",
+        "arabiziStandard11To17": "naq3a",
+        "englishGloss": "Tidal stone-walled harbor basin sheltering dhows along the Kuwait City shore",
+        "culturalNote": "Historic examples include Naq'at Al-Shamlan along Kuwait Bay.",
+        "audioPhoneticHint": "NAQ-ah"
+      },
+      {
+        "termId": "vocab.kw.qallaf_kw",
+        "countryCode": "KW",
+        "dialectVariant": "ar-KW",
+        "arabicScript": "قلّاف",
+        "msaEquivalent": "صانع السفن الخشبية التقليدية",
+        "arabiziPhonetic5To7": "qallaf",
+        "arabiziStandard11To17": "qallaf",
+        "englishGloss": "Master shipwright skilled in shaping and caulking wooden dhow hulls",
+        "culturalNote": "Kuwaiti qallaf guilds built some of the largest Boom dhows in the Gulf.",
+        "audioPhoneticHint": "qal-LAAF"
+      }
+    ],
+    "ar-SA": [
+      {
+        "termId": "vocab.sa.qasida",
+        "countryCode": "SA",
+        "dialectVariant": "ar-SA",
+        "arabicScript": "قصيدة",
+        "msaEquivalent": "قصيدة شعرية عربية موزونة ومقفاة",
+        "arabiziPhonetic5To7": "qasida",
+        "arabiziStandard11To17": "qasida",
+        "englishGloss": "Classical Arabic ode structured with balanced meter and rhyme",
+        "culturalNote": "Central poetic form of the Arabian Peninsula from pre-Islamic times to today.",
+        "audioPhoneticHint": "qa-SEE-da"
+      },
+      {
+        "termId": "vocab.sa.muallaqat",
+        "countryCode": "SA",
+        "dialectVariant": "ar-SA",
+        "arabicScript": "المعلّقات",
+        "msaEquivalent": "القصائد السبع أو العشر المشهورة في الشعر الجاهلي",
+        "arabiziPhonetic5To7": "Al-Mu-alla-qat",
+        "arabiziStandard11To17": "Al-Mu3allaqat",
+        "englishGloss": "Celebrated anthology of pre-Islamic Arabic odes, including the poem of Antarah ibn Shaddad",
+        "culturalNote": "The story that they were hung in gold letters on the Kaaba is explicitly noted as a famous, debated literary tradition.",
+        "audioPhoneticHint": "al-mu-al-la-QAAT"
+      },
+      {
+        "termId": "vocab.sa.qafila",
+        "countryCode": "SA",
+        "dialectVariant": "ar-SA",
+        "arabicScript": "قافلة",
+        "msaEquivalent": "جماعة المسافرين والتجار عبر الصحراء",
+        "arabiziPhonetic5To7": "qafila",
+        "arabiziStandard11To17": "qafila",
+        "englishGloss": "Desert caravan traveling together for mutual safety, shared water, and trade",
+        "culturalNote": "Connected Arabian oases such as Najd, Al-Ula/Hegra, and coastal ports.",
+        "audioPhoneticHint": "QAA-fi-la"
+      },
+      {
+        "termId": "vocab.sa.majlis",
+        "countryCode": "SA",
+        "dialectVariant": "ar-SA",
+        "arabicScript": "مجلس",
+        "msaEquivalent": "مكان الجلوس والضيافة وتبادل الحديث والشعر",
+        "arabiziPhonetic5To7": "majlis",
+        "arabiziStandard11To17": "majlis",
+        "englishGloss": "Traditional sitting room or courtyard space for welcoming guests, sharing poetry, and community counsel",
+        "culturalNote": "UNESCO-recognized cultural space across Saudi Arabia and the Gulf.",
+        "audioPhoneticHint": "MAJ-lis"
+      },
+      {
+        "termId": "vocab.sa.sadu",
+        "countryCode": "SA",
+        "dialectVariant": "ar-SA",
+        "arabicScript": "سدو",
+        "msaEquivalent": "نسيج البادية التقليدي ذو الزخارف الهندسية",
+        "arabiziPhonetic5To7": "sadu",
+        "arabiziStandard11To17": "sadu",
+        "englishGloss": "Traditional horizontal-loom geometric weaving crafted from desert wool",
+        "culturalNote": "Inscribed by UNESCO (2020) as Intangible Cultural Heritage.",
+        "audioPhoneticHint": "SA-doo"
+      },
+      {
+        "termId": "vocab.sa.murua",
+        "countryCode": "SA",
+        "dialectVariant": "ar-SA",
+        "arabicScript": "مروءة",
+        "msaEquivalent": "مكارم الأخلاق والشهامة ونصرة الضعيف",
+        "arabiziPhonetic5To7": "muru-a",
+        "arabiziStandard11To17": "muru'a",
+        "englishGloss": "Moral courage, magnanimity, keeping one's word, and protecting the dignity of others",
+        "culturalNote": "Core ethical ideal celebrated in Antarah's poetry—rooted in character rather than force.",
+        "audioPhoneticHint": "mu-ROO-ah"
+      }
+    ],
+    "ar-OM": [
+      {
+        "termId": "vocab.om.aflaj",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "أفلاج (مفردها فلج)",
+        "msaEquivalent": "قنوات ري تقليدية بالجاذبية",
+        "arabiziPhonetic5To7": "aflaj (falaj)",
+        "arabiziStandard11To17": "aflaj (falaj)",
+        "englishGloss": "Gravity-fed water channels carrying mountain spring or groundwater to villages and gardens",
+        "culturalNote": "Five representative Omani aflaj are inscribed on the UNESCO World Heritage List (#1207).",
+        "audioPhoneticHint": "af-LAAJ / FA-laj"
+      },
+      {
+        "termId": "vocab.om.arif",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "عريف الفلج",
+        "msaEquivalent": "المشرف على توزيع مياه الفلج",
+        "arabiziPhonetic5To7": "Arif il-falaj",
+        "arabiziStandard11To17": "3arif il-falaj",
+        "englishGloss": "Trusted community water master who coordinates falaj maintenance and fair time-shares",
+        "culturalNote": "Uses sundials (lamad) by day and guiding stars by night.",
+        "audioPhoneticHint": "aa-REEF il-FA-laj"
+      },
+      {
+        "termId": "vocab.om.athar",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "أثر",
+        "msaEquivalent": "حصة زمنية لمياه الري (نحو ٣٠ دقيقة)",
+        "arabiziPhonetic5To7": "athar",
+        "arabiziStandard11To17": "athar",
+        "englishGloss": "Traditional 30-minute time unit of irrigation water (48 athar in a 24-hour day)",
+        "culturalNote": "Ensures water is shared by measured time rather than upstream monopoly.",
+        "audioPhoneticHint": "A-thar"
+      },
+      {
+        "termId": "vocab.om.luban",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "لبان حوجري",
+        "msaEquivalent": "صمغ اللبان العطري",
+        "arabiziPhonetic5To7": "luban Hojari",
+        "arabiziStandard11To17": "luban 7ojari",
+        "englishGloss": "Aromatic frankincense resin harvested from Boswellia sacra trees in Dhofar",
+        "culturalNote": "UNESCO World Heritage #1010 (Land of Frankincense).",
+        "audioPhoneticHint": "lu-BAAN ho-JA-ree"
+      },
+      {
+        "termId": "vocab.om.sarooj",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "صاروج",
+        "msaEquivalent": "ملاط طيني كلسي مقاوم للماء",
+        "arabiziPhonetic5To7": "sarooj",
+        "arabiziStandard11To17": "sarooj",
+        "englishGloss": "Traditional waterproof Omani mortar used to line falaj channels and cisterns",
+        "culturalNote": "Prepared by firing local clay and lime.",
+        "audioPhoneticHint": "sa-ROOJ"
+      },
+      {
+        "termId": "vocab.om.sharia_water",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "شريعة الفلج",
+        "msaEquivalent": "نقطة السقيا الأولى في مدخل القرية",
+        "arabiziPhonetic5To7": "shari-at il-falaj",
+        "arabiziStandard11To17": "shari3at il-falaj",
+        "englishGloss": "The first open-air basin where a falaj enters the village, reserved for clean drinking water",
+        "culturalNote": "Demonstrates community hygiene and water-priority engineering.",
+        "audioPhoneticHint": "sha-REE-at il-FA-laj"
+      }
+    ],
+    "ar-BH": [
+      {
+        "termId": "vocab.bh.dilmun",
+        "countryCode": "BH",
+        "dialectVariant": "ar-BH",
+        "arabicScript": "دلمون",
+        "msaEquivalent": "حضارة دلمون في العصر البرونزي",
+        "arabiziPhonetic5To7": "Dilmun",
+        "arabiziStandard11To17": "Dilmun",
+        "englishGloss": "Bronze Age civilization and trade hub centered on Bahrain (Qal'at al-Bahrain, UNESCO #1192)",
+        "culturalNote": "Known archaeologically from circular seals and city strata, and separately in Mesopotamian mythology.",
+        "audioPhoneticHint": "DIL-mun"
+      },
+      {
+        "termId": "vocab.bh.qalat_al_bahrain",
+        "countryCode": "BH",
+        "dialectVariant": "ar-BH",
+        "arabicScript": "قلعة البحرين",
+        "msaEquivalent": "موقع قلعة البحرين الأثري",
+        "arabiziPhonetic5To7": "Qalat il-Bahrain",
+        "arabiziStandard11To17": "Qal3at il-Ba7rain",
+        "englishGloss": "Ancient Harbour and Capital of Dilmun archaeological tell on Bahrain's northern coast",
+        "culturalNote": "UNESCO World Heritage Site #1192.",
+        "audioPhoneticHint": "QAL-at il-bah-RAYN"
+      },
+      {
+        "termId": "vocab.bh.kawkab",
+        "countryCode": "BH",
+        "dialectVariant": "ar-BH",
+        "arabicScript": "كوكب (عين ماء عذب في البحر)",
+        "msaEquivalent": "نبع ماء عذب تحت قاع البحر",
+        "arabiziPhonetic5To7": "kawkab",
+        "arabiziStandard11To17": "kawkab",
+        "englishGloss": "Freshwater submarine spring bubbling up beneath the salty sea around Bahrain",
+        "culturalNote": "Connected to the name Al-Bahrain (\"The Two Seas\": sweet water and salt water).",
+        "audioPhoneticHint": "KAW-kab"
+      },
+      {
+        "termId": "vocab.bh.bishtakhta",
+        "countryCode": "BH",
+        "dialectVariant": "ar-BH",
+        "arabicScript": "بشتختة",
+        "msaEquivalent": "صندوق مكتب تاجر اللؤلؤ",
+        "arabiziPhonetic5To7": "bishtakhta",
+        "arabiziStandard11To17": "bishtakhta",
+        "englishGloss": "Compartmented wooden chest used by 19th–20th century Muharraq pearl merchants",
+        "culturalNote": "Part of the Muharraq Pearling Path (UNESCO #1364).",
+        "audioPhoneticHint": "bish-TAKH-ta"
+      },
+      {
+        "termId": "vocab.bh.kurar",
+        "countryCode": "BH",
+        "dialectVariant": "ar-BH",
+        "arabicScript": "الكورار",
+        "msaEquivalent": "حرفة نسج الأشرطة المطرزة الجماعية",
+        "arabiziPhonetic5To7": "Al-Kurar",
+        "arabiziStandard11To17": "Il-Kurar",
+        "englishGloss": "Cooperative Bahraini embroidery craft where weavers braid metallic threads together",
+        "culturalNote": "Practiced in Muharraq heritage houses.",
+        "audioPhoneticHint": "al-ku-RAAR"
+      },
+      {
+        "termId": "vocab.bh.tabaqat_athariya",
+        "countryCode": "BH",
+        "dialectVariant": "ar-BH",
+        "arabicScript": "طبقات أثرية",
+        "msaEquivalent": "علم الطبقات الأثرية (الستراتيغرافيا)",
+        "arabiziPhonetic5To7": "tabaqat athariya",
+        "arabiziStandard11To17": "tabaqat athariya",
+        "englishGloss": "Archaeological layers (stratigraphy) showing different historical time periods in order",
+        "culturalNote": "Prevents collapsing ancient Dilmun and modern pearling into a single era.",
+        "audioPhoneticHint": "ta-ba-QAAT a-tha-REE-ya"
+      }
+    ]
+  }
+}

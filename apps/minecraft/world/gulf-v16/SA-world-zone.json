@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.6.0",
+  "countryCode": "SA",
+  "stableId": "country.sa",
+  "nameEn": "Saudi Arabia",
+  "nameAr": "المملكة العربية السعودية",
+  "storyArcTitleEn": "Antarah's Voice and the Caravan",
+  "mentorNpc": "npc.sa.rawiya_salma_al_najdiya",
+  "actsCount": 5,
+  "structures": [
+    {
+      "actId": "quest.sa.01",
+      "structureTemplateId": "miraverse:sa_najd_poetry_terrace",
+      "origin": [
+        800,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:sa_muallaqat_scroll",
+        "miraverse:sa_sadu_tapestry"
+      ]
+    },
+    {
+      "actId": "quest.sa.02",
+      "structureTemplateId": "miraverse:sa_wadi_caravan_station",
+      "origin": [
+        832,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:sa_water_satchel",
+        "miraverse:sa_route_cairn"
+      ]
+    },
+    {
+      "actId": "quest.sa.03",
+      "structureTemplateId": "miraverse:sa_najd_market_arcade",
+      "origin": [
+        864,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:sa_fair_scales",
+        "miraverse:sa_wooden_sa_measure"
+      ]
+    },
+    {
+      "actId": "quest.sa.04",
+      "structureTemplateId": "miraverse:sa_najd_story_courtyard",
+      "origin": [
+        896,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:sa_najdi_furjat_block",
+        "miraverse:sa_tamarisk_beam",
+        "miraverse:sa_dallah_set"
+      ]
+    },
+    {
+      "actId": "quest.sa.05",
+      "structureTemplateId": "miraverse:sa_najd_majlis_finale",
+      "origin": [
+        928,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:sa_sirat_antar_codex",
+        "miraverse:sa_dignity_emblem",
+        "miraverse:sa_passport_stamp"
+      ]
+    }
+  ]
+}

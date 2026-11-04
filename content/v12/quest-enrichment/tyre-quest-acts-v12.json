@@ -1,0 +1,650 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "CL03",
+  "topic": "Tyre Quest Acts & 4-Tier Age Adaptation",
+  "total_acts": 5,
+  "total_age_variations": 20,
+  "acts": [
+    {
+      "act_id": "LB-TYRE-A01",
+      "country": "LB",
+      "act_number": 1,
+      "challenge_type": "gather",
+      "title": {
+        "en": "Reefs of the Murex: Deep-Sea Mollusk Harvesting",
+        "fr": "Les récifs du Murex : Récolte des coquillages pourpres",
+        "ar-LB": "شعاب الموريكس وصيد الأصداف الملكية",
+        "ar-EG": "صيد أصداف الموريكس في صور",
+        "ar-IQ": "جمع أصداف الموريكس في مياه صور",
+        "ko": "무렉스의 암초: 심해 고둥 수확"
+      },
+      "legacy_quest_id": "LB:tyre:ch1:rock_of_melqart:main",
+      "legacy_objective_id": "LB:tyre:ch1:gather",
+      "mentor_id": "npc-lb-king-hiram",
+      "mentor_name": "King Hiram I of Tyre",
+      "supporting_npc_id": "npc:LB:tyre:master_harvester",
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+        "LB-KB-INDUSTRY-MUREX-PURPLE-DYE"
+      ],
+      "enrichment_hook": "Investigate how Tyrian divers trapped Hexaplex trunculus mollusks with baited wicker baskets along the offshore sandstone reefs.",
+      "free_knowledge_unlock": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+      "paid_reward_required": false,
+      "safety_flags": [
+        "virtual_deep_diving_only",
+        "marine_biodiversity_conservation"
+      ],
+      "variations": {
+        "5-7": {
+          "learning_objective": "Discover how ancient Tyrian divers collected colorful sea snails from offshore reefs using gentle wicker baskets.",
+          "narrative_hook": "Splash into the calm harbor shallows to find purple sea shells resting on the sunlit rocks!",
+          "npc_lines": {
+            "mentor_greeting_en": "Ahlan, young diver! Look into the clear water—see the bumpy sea shells waiting on the reef?",
+            "mentor_greeting_native": "أهلاً يا بطل! شوف الأصداف الحلوة عم تلمع تحت المي الصافية."
+          },
+          "player_actions": [
+            "Spot 3 shining sea shells on the sandy seafloor",
+            "Place each shell carefully in the woven wicker basket",
+            "Bring the basket back to King Hiram's harbor quay"
+          ],
+          "hint_ladder": [
+            "Look for the purple sparkle near the sea grass",
+            "Tap on the wicker basket to collect your shells"
+          ],
+          "completion_criteria": "Collect 3 sea shells and deliver them to the harbor dock.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+            "stamp_id": "stamp-lb-tyre-murex",
+            "free_earned": true
+          },
+          "historical_notes": "Early learners explore marine life and Phoenician coastal fishing techniques safely through visual storytelling."
+        },
+        "8-10": {
+          "learning_objective": "Understand the ecological habitats of Hexaplex trunculus and how baited mesh traps harvested dye snails sustainably.",
+          "narrative_hook": "Bait the wicker mesh traps with fresh cockles and lower them into the rocky reefs facing the Sidonian harbor.",
+          "npc_lines": {
+            "mentor_greeting_en": "Marhaban! In Tyre we place our woven baskets where the waves break against the sandstone reefs.",
+            "mentor_greeting_native": "مرحبا! منرمي السلال بين الصخور حتى نجمع أصداف الموريكس من مية البحر."
+          },
+          "player_actions": [
+            "Equip bait inside 2 woven wicker mollusk baskets",
+            "Lower baskets along the northern reef margin",
+            "Harvest 10 Hexaplex trunculus mollusks and 3 cedar beams for drying frames"
+          ],
+          "hint_ladder": [
+            "The snails feed primarily on rocky surfaces in moderate currents",
+            "Check both sides of the sandstone reef"
+          ],
+          "completion_criteria": "Harvest 10 mollusks and assemble the drying frame on the quay.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+            "stamp_id": "stamp-lb-tyre-murex",
+            "free_earned": true
+          },
+          "historical_notes": "Pliny the Elder documented that Phoenician snail traps used open-weave wicker mesh baited with small fish."
+        },
+        "11-13": {
+          "learning_objective": "Calculate the industrial scale of Tyrian dye production: 10,000 snails per gram of dye and its environmental footprint.",
+          "narrative_hook": "Survey the offshore sandstone reefs and analyze why ancient Tyrians developed offshore harvesting fleets to meet global Mediterranean demand.",
+          "npc_lines": {
+            "mentor_greeting_en": "Welcome, explorer! It requires 10,000 snails to dye the border of a single royal cloak. Let us measure our harvest.",
+            "mentor_greeting_native": "أهلاً بك! صناعة غرام واحد من الأرجوان بتحتاج عشرة آلاف صدفة، خلينا نحسب المحصول بدقة."
+          },
+          "player_actions": [
+            "Calculate mollusk density along the 1-hectare southern harbor basin",
+            "Sort predatory Hexaplex trunculus from non-dye marine species",
+            "Deliver harvest quotas to the designated downwind processing quarter"
+          ],
+          "hint_ladder": [
+            "Hexaplex trunculus features distinctive spiral whorls and spines",
+            "Industrial workshops are situated downwind to avoid residential contamination"
+          ],
+          "completion_criteria": "Sort 10 valid dye specimens and position processing stations downwind.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+            "stamp_id": "stamp-lb-tyre-murex",
+            "free_earned": true
+          },
+          "historical_notes": "Experimental archaeology shows 12,000 snails yield approximately 1.4 grams of pure dibromoindigo."
+        },
+        "14-17": {
+          "learning_objective": "Evaluate the geoarchaeological evidence of Tyrian marine exploitation, shell mounds, and Iron Age luxury monopolies.",
+          "narrative_hook": "Investigate stratified mollusk mounds at Tyre and Sidon, correlating zooarchaeological data with Mediterranean luxury trade monopolies.",
+          "npc_lines": {
+            "mentor_greeting_en": "Greetings, scholar. The massive shell mounds of our coastline testify to an industrial monopoly that fueled our civilization for two millennia.",
+            "mentor_greeting_native": "تحياتي يا باحث. تلال الأصداف الصورية شاهد أثري على أضخم احتكار صناعي بالبحر المتوسط."
+          },
+          "player_actions": [
+            "Correlate stratigraphy of crushed Murex shell layers with Iron Age chronology",
+            "Analyze biological taxonomy of Bolinus brandaris vs Hexaplex trunculus",
+            "Synthesize environmental trade-offs between odor-intensive industrial zones and civic elite quarters"
+          ],
+          "hint_ladder": [
+            "Bolinus brandaris produces pure purple, while Hexaplex trunculus yields bluish-purple hues",
+            "Examine the 40-meter shell mound excavated at Sidon as comparative benchmark"
+          ],
+          "completion_criteria": "Complete stratigraphic analysis and publish findings to the Tyre Research Archive.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+            "stamp_id": "stamp-lb-tyre-murex",
+            "free_earned": true
+          },
+          "historical_notes": "Chemical chromatography (HPLC) has confirmed dibromoindigo markers on elite textiles across Near Eastern royal burials."
+        }
+      }
+    },
+    {
+      "act_id": "LB-TYRE-A02",
+      "country": "LB",
+      "act_number": 2,
+      "challenge_type": "trade",
+      "title": {
+        "en": "Ships of Tarshish: Ophir Expeditions & Silver Shekel Assays",
+        "fr": "Les vaisseaux de Tarsis : Expéditions d'Ophir et sicles d'argent",
+        "ar-LB": "سفن ترشيش ورحلات أوفير وتجارة الشيكل",
+        "ar-EG": "سفن ترشيش ورحلات بلاد أوفير",
+        "ar-IQ": "أسطول سفن ترشيش وتجارة الفضة والذهب",
+        "ko": "다시스의 배: 오피르 원정과 은 셰켈 교역"
+      },
+      "legacy_quest_id": "LB:tyre:ch1:rock_of_melqart:main",
+      "legacy_objective_id": "LB:tyre:ch1:trade",
+      "mentor_id": "npc-lb-king-hiram",
+      "mentor_name": "King Hiram I of Tyre",
+      "supporting_npc_id": "npc:LB:tyre:king_hiram",
+      "linked_knowledge_ids": [
+        "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE",
+        "LB-KB-ARTIFACT-SHEKEL-OF-TYRE"
+      ],
+      "enrichment_hook": "Chart the joint Tyrian-Solomonic expeditions from Ezion-Geber to Ophir and master the metallurgical assay of the silver Shekel of Tyre.",
+      "free_knowledge_unlock": "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE",
+      "paid_reward_required": false,
+      "safety_flags": [
+        "fair_trade_education",
+        "anti_exploitation_historical_framing"
+      ],
+      "variations": {
+        "5-7": {
+          "learning_objective": "Learn how friendly sailors loaded big wooden boats with shiny silver coins and purple blankets to trade with neighbors.",
+          "narrative_hook": "Help King Hiram load the grand sailing ship with warm purple cloth and shiny coins!",
+          "npc_lines": {
+            "mentor_greeting_en": "Welcome aboard! Let us count our trade blankets and shiny silver tokens together.",
+            "mentor_greeting_native": "أهلاً فيك على السفينة! تعال نعد الأقمشة البنفسجية والقطع الفضية سوا."
+          },
+          "player_actions": [
+            "Stack 2 bundles of purple cloth in the ship hold",
+            "Count 5 silver coins into the merchant pouch",
+            "Wave farewell as the ship sets sail"
+          ],
+          "hint_ladder": [
+            "Put the soft cloth near the center mast",
+            "Coins belong in the velvet pouch"
+          ],
+          "completion_criteria": "Load all cargo items and complete the trade count.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE",
+            "stamp_id": "stamp-lb-tyre-tarshish",
+            "free_earned": true
+          },
+          "historical_notes": "Introduces basic counting and Mediterranean maritime cooperation."
+        },
+        "8-10": {
+          "learning_objective": "Trace the 3-year voyage of Ships of Tarshish from Ezion-Geber to Ophir and understand currency barter.",
+          "narrative_hook": "Negotiate trade terms for gold, peacock feathers, and ivory from Ophir using Tyrian purple and silver shekels.",
+          "npc_lines": {
+            "mentor_greeting_en": "Our deep-sea galleys return every three years with wondrous goods. Let us balance the scales!",
+            "mentor_greeting_native": "سفننا بترجع كل تلات سنين حاملة الذهب والعاج، خلينا نوزن البضائع بالميزان."
+          },
+          "player_actions": [
+            "Weigh silver shekels on the balance scale",
+            "Exchange 5 shekels and 2 purple robes for 1 Ophir gold ingot",
+            "Log the transaction in the harbor ledger"
+          ],
+          "hint_ladder": [
+            "Ensure the balance scale indicators align horizontally",
+            "Record the exchange rate in King Hiram's ledger"
+          ],
+          "completion_criteria": "Balance the trade scale and record the ledger entry.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE",
+            "stamp_id": "stamp-lb-tyre-tarshish",
+            "free_earned": true
+          },
+          "historical_notes": "Biblical 1 Kings 10:22 records joint Hiramic-Solomonic expeditions returning every three years with exotic goods."
+        },
+        "11-13": {
+          "learning_objective": "Analyze the dual-monopoly of Tyre: controlling Atlantic/Mediterranean routes to Tarshish and Red Sea routes to Ophir.",
+          "narrative_hook": "Plan the logistics of a joint expedition sailing from the Gulf of Aqaba (Ezion-Geber) through the Red Sea.",
+          "npc_lines": {
+            "mentor_greeting_en": "By partnering with Solomon, Tyre secured access to the southern oceans without needing an overland conquest.",
+            "mentor_greeting_native": "بالتحالف مع سليمان، صور فتحت خطوط التجارة للمحيط الهندي بدون حروب."
+          },
+          "player_actions": [
+            "Chart seasonal monsoon winds across the Red Sea and Arabian Sea",
+            "Calculate cargo capacity for deep-hulled Ships of Tarshish",
+            "Validate 95% silver assay purity of Tyrian shekels against Near Eastern standards"
+          ],
+          "hint_ladder": [
+            "Summer winds blow southward down the Red Sea, aiding outbound voyages",
+            "Assay testing requires measuring specific gravity in water"
+          ],
+          "completion_criteria": "Plot the navigation course and verify the bullion assay purity.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE",
+            "stamp_id": "stamp-lb-tyre-tarshish",
+            "free_earned": true
+          },
+          "historical_notes": "'Ships of Tarshish' was a technical Phoenician term for heavy open-water ore-carriers, not just ships bound for Tartessos."
+        },
+        "14-17": {
+          "learning_objective": "Critique the geopolitical economics of the Tyrian shekel as the mandatory temple currency in Second Temple Jerusalem.",
+          "narrative_hook": "Investigate why Jewish authorities in Jerusalem mandated pagan coins bearing Melqart's image for the sacred half-shekel temple tax.",
+          "npc_lines": {
+            "mentor_greeting_en": "Consider the historical irony: our patron god Melqart's face was accepted in the Jerusalem Temple because our silver purity never wavered.",
+            "mentor_greeting_native": "تأمل المفارقة التاريخية: نقاوة الفضة الصورية خلت عملة صور مقدسة بكل أسواق ومعابد الشرق."
+          },
+          "player_actions": [
+            "Compare metallurgical assays of Roman imperial denarii (declining silver) with Tyrian shekels (constant 94-98%)",
+            "Read Mishnah Bekhorot 8:7 regarding the halakhic mandate for Tyrian silver",
+            "Trace the historical transmission from Solomon's temple artisans to Hellenistic coin production"
+          ],
+          "hint_ladder": [
+            "Roman denarii were progressively debased with copper, whereas Tyrian shekels maintained 95% fine silver",
+            "Refer to numismatic catalogs of the British Museum and National Museum of Beirut"
+          ],
+          "completion_criteria": "Submit comparative numismatic report explaining temple tax monetary mandates.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-ARTIFACT-SHEKEL-OF-TYRE",
+            "stamp_id": "stamp-lb-tyre-shekel",
+            "free_earned": true
+          },
+          "historical_notes": "The high silver content of Tyrian shekels explains why they were required for the Temple tax and were the thirty pieces of silver."
+        }
+      }
+    },
+    {
+      "act_id": "LB-TYRE-A03",
+      "country": "LB",
+      "act_number": 3,
+      "challenge_type": "build",
+      "title": {
+        "en": "Harbor Breakwaters & Fireship Engineering",
+        "fr": "Brise-lames portuaires et ingénierie du brûlot",
+        "ar-LB": "كواسر أمواج الميناء وهندسة الحراقة البحرية",
+        "ar-EG": "بناء كواسر أمواج صور وهندسة سفينة النار",
+        "ar-IQ": "بناء كواسر الأمواج وتكتيكات سفينة النار",
+        "ko": "항구 방파제와 화선(불배) 공학"
+      },
+      "legacy_quest_id": "LB:tyre:ch1:rock_of_melqart:main",
+      "legacy_objective_id": "LB:tyre:ch1:build",
+      "mentor_id": "npc-lb-engineer-baalsillem",
+      "mentor_name": "Engineer Baalsillem",
+      "supporting_npc_id": "npc-lb-engineer-baalsillem",
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+        "LB-KB-EVENT-ALEXANDER-SIEGE-MOLE"
+      ],
+      "enrichment_hook": "Construct submerged ashlar breakwaters with 2.25-meter header blocks and design the combustible fireship counter-tactic.",
+      "free_knowledge_unlock": "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+      "paid_reward_required": false,
+      "safety_flags": [
+        "engineering_simulation_safety",
+        "zero_hazardous_chemistry"
+      ],
+      "variations": {
+        "5-7": {
+          "learning_objective": "Discover how strong stone blocks fit together like building bricks to protect boats from giant waves.",
+          "narrative_hook": "Stack big golden stones in the harbor water to make a peaceful pool for your wooden boat!",
+          "npc_lines": {
+            "mentor_greeting_en": "Hello, little builder! Let us place heavy stones side by side so the crashing waves turn gentle.",
+            "mentor_greeting_native": "مرحبا يا شاطر! تعال نحط الأحجار الكبيرة حداً لبعض حتى نوقف الموج القوي."
+          },
+          "player_actions": [
+            "Pick up 3 stone blocks with the harbor crane",
+            "Fit the blocks into the breakwater outline",
+            "Watch the rough water turn calm behind your new wall"
+          ],
+          "hint_ladder": [
+            "Rotate the block until it snaps into the green outline",
+            "Fit all three blocks to complete the harbor wall"
+          ],
+          "completion_criteria": "Complete the breakwater puzzle and test wave calmness.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+            "stamp_id": "stamp-lb-tyre-breakwater",
+            "free_earned": true
+          },
+          "historical_notes": "Teaches fundamental structural stability and harbor protection concepts."
+        },
+        "8-10": {
+          "learning_objective": "Understand ashlar header masonry and the physics of the Tyrian fireship counter-measure.",
+          "narrative_hook": "Lay 2.25-meter header stones along the Sidonian jetty and outfit a defensive vessel with suspended oil cauldrons.",
+          "npc_lines": {
+            "mentor_greeting_en": "Headers absorb kinetic wave energy. And when enemy towers threaten, our fireship uses wind and pitch to defend our walls!",
+            "mentor_greeting_native": "أحجار الرباط بتمتص قوة الموج. ووقت الخطر، الحراقة البحرية بتحمي أسوارنا!"
+          },
+          "player_actions": [
+            "Place 4 ashlar header blocks perpendicular to wave direction",
+            "Ballast the stern of the horse transport vessel to raise its bow",
+            "Suspend dual oil cauldrons from the main masts"
+          ],
+          "hint_ladder": [
+            "Adding stone ballast to the stern tilts the front of the ship upward",
+            "Suspended cauldrons must hang over the bow to ignite targets upon impact"
+          ],
+          "completion_criteria": "Construct the jetty section and configure the fireship payload.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-EVENT-ALEXANDER-SIEGE-MOLE",
+            "stamp_id": "stamp-lb-tyre-breakwater",
+            "free_earned": true
+          },
+          "historical_notes": "Arrian describes Tyrian engineers weighting the fireship's stern with sand and ballast to lift its bow over Macedonian barriers."
+        },
+        "11-13": {
+          "learning_objective": "Analyze naval siege mechanics: Macedonian artillery towers versus Tyrian kinetic fireship strikes in 332 BCE.",
+          "narrative_hook": "Simulate the hydrodynamics of Alexander's 60-meter-wide mole and calculate the burn radius of the Tyrian fireship.",
+          "npc_lines": {
+            "mentor_greeting_en": "Alexander built siege towers covered in hides against our arrows. But he did not anticipate our naval chemistry!",
+            "mentor_greeting_native": "الإسكندر بنى أبراج ضخمة مكسية بالجلد ضد السهام، بس ما كان حاسب حساب الكيمياء البحرية الصورية!"
+          },
+          "player_actions": [
+            "Calculate thermal output of sulfur, pitch, and volatile oil mixtures",
+            "Adjust fireship sail orientation to catch south-westerly offshore breezes",
+            "Simulate mast fracture releasing liquid fire directly onto siege engines"
+          ],
+          "hint_ladder": [
+            "Fireship launch requires favorable prevailing winds blowing toward the mole",
+            "Dual cauldrons snap forward when the hull strikes the wooden causeway piers"
+          ],
+          "completion_criteria": "Achieve successful fireship collision trajectory and neutralize siege engines.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-EVENT-ALEXANDER-SIEGE-MOLE",
+            "stamp_id": "stamp-lb-tyre-breakwater",
+            "free_earned": true
+          },
+          "historical_notes": "The destruction of Alexander's siege towers halted work on the mole until he assembled an allied fleet at Sidon."
+        },
+        "14-17": {
+          "learning_objective": "Evaluate maritime structural engineering: submerged header breakwaters, acoustic wave dissipation, and mole-driven tombolo formation.",
+          "narrative_hook": "Investigate underwater archaeological surveys of the Sidonian and Egyptian harbors and model the geomorphological effects of Alexander's mole.",
+          "npc_lines": {
+            "mentor_greeting_en": "Observe how human engineering reshaped geology: Alexander built a mole to conquer us, and nature responded by burying our southern harbor in sand.",
+            "mentor_greeting_native": "تأمل كيف غيرت الهندسة وجه الجيولوجيا: الإسكندر بنى السد ليحاصرنا، والبحر دفن الميناء الجنوبي بالرمل للأبد."
+          },
+          "player_actions": [
+            "Analyze underwater header block dimensions (2.25m x 0.45m) discovered in northern harbor surveys",
+            "Model longshore sediment drift interruption and 30,000–50,000 m³/year sand accumulation",
+            "Map Roman bath construction atop the silted Egyptian harbor basin"
+          ],
+          "hint_ladder": [
+            "Header stones interlock perpendicular to the shoreline to prevent lateral displacement",
+            "Refer to Marriner et al. (PNAS 2007) for bathymetric core data"
+          ],
+          "completion_criteria": "Publish 3D geoarchaeological reconstruction of pre- and post-siege Tyre.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-GEO-TOMBOLO-SEDIMENTATION",
+            "stamp_id": "stamp-lb-tyre-tombolo",
+            "free_earned": true
+          },
+          "historical_notes": "Alexander's 60m mole permanently transformed an offshore island half a mile out into a mainland peninsula."
+        }
+      }
+    },
+    {
+      "act_id": "LB-TYRE-A04",
+      "country": "LB",
+      "act_number": 4,
+      "challenge_type": "cook",
+      "title": {
+        "en": "The Imperial Dye Vats: Synthesizing Dibromoindigo",
+        "fr": "Les cuves impériales : Synthèse du dibromoindigo",
+        "ar-LB": "أحواض الصباغ الإمبراطوري وتخليق الأرجوان",
+        "ar-EG": "أحواض صناعة الأرجوان الصوري الكيميائية",
+        "ar-IQ": "مراجل استخلاص صباغ الأرجوان في صور",
+        "ko": "황실 염색 가마: 디브로모인디고 합성"
+      },
+      "legacy_quest_id": "LB:tyre:ch1:rock_of_melqart:main",
+      "legacy_objective_id": "LB:tyre:ch1:cook",
+      "mentor_id": "npc-lb-scribe-bodashtart",
+      "mentor_name": "Bodashtart of the Temple of Melqart",
+      "supporting_npc_id": "npc:LB:tyre:dye_master_adoni",
+      "linked_knowledge_ids": [
+        "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+        "LB-KB-MYTH-TEMPLE-OF-MELQART"
+      ],
+      "enrichment_hook": "Follow Pliny the Elder's 10-day chemical recipe to extract chromogens and brew authentic dibromoindigo in lead vats.",
+      "free_knowledge_unlock": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+      "paid_reward_required": false,
+      "safety_flags": [
+        "historical_chemistry_safety",
+        "virtual_dye_process_only"
+      ],
+      "variations": {
+        "5-7": {
+          "learning_objective": "See how sunlight and warm pots magically turn colorless sea shell juice into radiant purple paint.",
+          "narrative_hook": "Put your sea shells out in the sunshine and watch the colors change like a sunset!",
+          "npc_lines": {
+            "mentor_greeting_en": "Look closely! As the warm sunshine touches the shell drop, it turns from pale yellow to bright royal purple!",
+            "mentor_greeting_native": "شوف كيف لما تدق الشمس بنقطة الصدفة بتتحول للون بنفسجي ملكي ساحر!"
+          },
+          "player_actions": [
+            "Place 3 droplet samples onto the sunlit stone table",
+            "Watch the colors transition: yellow -> green -> blue -> deep purple",
+            "Dip a white linen cloth into the purple bowl"
+          ],
+          "hint_ladder": [
+            "Sunshine activates the color transformation",
+            "Leave the cloth in the bowl until the purple glows"
+          ],
+          "completion_criteria": "Complete the color transformation sequence and dye 1 linen cloth.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+            "stamp_id": "stamp-lb-tyre-purple-vat",
+            "free_earned": true
+          },
+          "historical_notes": "Introduces photochemical color synthesis through visual discovery."
+        },
+        "8-10": {
+          "learning_objective": "Understand the 10-day simmering process documented by Pliny: alkaline ash, salt brine, and lead pots.",
+          "narrative_hook": "Manage the temperature of the coastal dye vat and mix the wood-ash brine without overheating.",
+          "npc_lines": {
+            "mentor_greeting_en": "Patience is our greatest secret: the mixture must simmer gently for ten days in our lead cauldron.",
+            "mentor_greeting_native": "سر الأرجوان بالصبر: الخليط لازم يغلي على نار هادية عشر إيام بمرجل الرصاص."
+          },
+          "player_actions": [
+            "Add crushed gland extract to the lead vat",
+            "Pour in wood ash and sea salt solution",
+            "Maintain simmering flame indicator between 60°C and 80°C for 10 virtual days"
+          ],
+          "hint_ladder": [
+            "Do not let the flame turn red or the dye will scorch",
+            "Stir the cauldron when steam rises"
+          ],
+          "completion_criteria": "Simmer the dye vat to optimal saturation and dye 2 royal textiles.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+            "stamp_id": "stamp-lb-tyre-purple-vat",
+            "free_earned": true
+          },
+          "historical_notes": "Pliny the Elder noted lead vats were preferred over bronze because tin/lead did not discolor the purple hue."
+        },
+        "11-13": {
+          "learning_objective": "Examine the organic chemistry of 6,6'-dibromoindigo and why oxidation is required to produce color.",
+          "narrative_hook": "Follow the molecular chain reaction from colorless indoxyl precursors to insoluble purple pigment crystals.",
+          "npc_lines": {
+            "mentor_greeting_en": "The living snail has no purple inside; only when its secret juices meet air and sun does Melqart's purple awaken.",
+            "mentor_greeting_native": "الحلزون ما عنده لون بنفسجي وهو عايش؛ بس لما تلتقي المادة بالهوا والشمس بيولد الأرجوان."
+          },
+          "player_actions": [
+            "Monitor enzymatic hydrolysis of tyrindoxyl sulfate into tyrindoxyl",
+            "Introduce oxygen to stimulate photochemical oxidation into tyriverdin",
+            "Synthesize pure 6,6'-dibromoindigo through alkaline reduction and aeration"
+          ],
+          "hint_ladder": [
+            "Enzymes require neutral pH before alkaline steeping",
+            "Sunlight is crucial to convert green intermediates into purple"
+          ],
+          "completion_criteria": "Achieve 98% dye purity and stabilize the pigment on cedar mordant.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+            "stamp_id": "stamp-lb-tyre-purple-vat",
+            "free_earned": true
+          },
+          "historical_notes": "Dibromoindigo (C16H8Br2N2O2) is one of the earliest chemically synthesized natural organohalogen pigments."
+        },
+        "14-17": {
+          "learning_objective": "Critique Pliny's Naturalis Historia Book IX, analyzing ancient industrial zoning and olfactory regulations in Tyre.",
+          "narrative_hook": "Evaluate urban planning in island Tyre: why industrial dye vats were strictly zoned along coastal margins downwind from residential estates.",
+          "npc_lines": {
+            "mentor_greeting_en": "Tyre was the wealthiest city in the Levant, but Strabo wrote that its dye vats made it foul to live in. Let us investigate ancient industrial zoning.",
+            "mentor_greeting_native": "كانت صور أغنى مدن الشرق، بس المؤرخين كتبوا إن ريحة الصباغ كانت صعبة، عشان هيك عزلوا المعامل على أطراف البحر."
+          },
+          "player_actions": [
+            "Translate passage from Pliny Natural History IX.60–65 regarding lead vat simmering",
+            "Overlay prevailing wind rose data against Tyre's archaeological residential quarters",
+            "Draft ancient civic sanitation proposal balancing industrial wealth with public comfort"
+          ],
+          "hint_ladder": [
+            "Mediterranean westerlies and south-westerlies blow toward the mainland during daytime",
+            "Industrial workshops were located on the southern and eastern rocky fringes"
+          ],
+          "completion_criteria": "Submit urban zoning audit resolving industrial emissions and economic output.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+            "stamp_id": "stamp-lb-tyre-purple-vat",
+            "free_earned": true
+          },
+          "historical_notes": "Strabo (Geography XVI.2.23) remarked that Tyre's dye works made the city unpleasant to visit, yet created unparalleled civic wealth."
+        }
+      }
+    },
+    {
+      "act_id": "LB-TYRE-A05",
+      "country": "LB",
+      "act_number": 5,
+      "challenge_type": "word",
+      "title": {
+        "en": "The Council of Melqart: Deciphering the Vassal Treaty",
+        "fr": "Le Conseil de Melqart : Décryptage du traité de vassalité",
+        "ar-LB": "مجلس ملقارت وفك رموز معاهدة أسرحدون",
+        "ar-EG": "مجلس معبد ملقارت وفك رموز معاهدة صور",
+        "ar-IQ": "مجلس ملقارت وفك نصوص معاهدة أسرحدون المسمارية",
+        "ko": "멜카르트 평의회: 에사르하돈 조약 해독"
+      },
+      "legacy_quest_id": "LB:tyre:ch1:rock_of_melqart:main",
+      "legacy_objective_id": "LB:tyre:ch1:word",
+      "mentor_id": "npc-lb-scribe-bodashtart",
+      "mentor_name": "Bodashtart of the Temple of Melqart",
+      "supporting_npc_id": "npc-lb-queen-elissa",
+      "linked_knowledge_ids": [
+        "LB-KB-MYTH-TEMPLE-OF-MELQART",
+        "LB-KB-TREATY-ESARHADDON-BAAL",
+        "LB-KB-EVENT-CARTHAGE-FOUNDATION-DIDO"
+      ],
+      "enrichment_hook": "Decipher the cuneiform clauses of the 672 BCE Vassal Treaty of Esarhaddon, protect shipwreck salvage rights, and formulate council policy.",
+      "free_knowledge_unlock": "LB-KB-TREATY-ESARHADDON-BAAL",
+      "paid_reward_required": false,
+      "safety_flags": [
+        "epistemic_primary_source_integrity",
+        "child_safe_scripted_deliberation"
+      ],
+      "variations": {
+        "5-7": {
+          "learning_objective": "Match ancient letter symbols and learn that words helped ancient leaders make peaceful agreements.",
+          "narrative_hook": "Help Bodashtart match Phoenician letter symbols on the stone tablet to unlock the temple gates!",
+          "npc_lines": {
+            "mentor_greeting_en": "Welcome to the grand hall! Can you help me find the letter that looks like an ox head and water waves?",
+            "mentor_greeting_native": "أهلاً بك بالمعبد الكبير! فيك تساعدني لاقي حرف الألف والميم المنقوشين عالصخر؟"
+          },
+          "player_actions": [
+            "Match 3 Phoenician letters: Aleph (Ox), Mem (Water), Resh (Head)",
+            "Stamp the clay seal with King Hiram's insignia",
+            "Open the temple archive chest"
+          ],
+          "hint_ladder": [
+            "Aleph looks like horns pointing up",
+            "Mem has zigzag waves like the blue sea"
+          ],
+          "completion_criteria": "Match 3 letter symbols and stamp the clay seal.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-MYTH-TEMPLE-OF-MELQART",
+            "stamp_id": "stamp-lb-tyre-council",
+            "free_earned": true
+          },
+          "historical_notes": "Connects Phoenician pictographic origins to early alphabetic phonetics."
+        },
+        "8-10": {
+          "learning_objective": "Read translated clauses of Esarhaddon's treaty and explore how the Phoenician pantheon guaranteed agreements.",
+          "narrative_hook": "Read the clay treaty to see why the Assyrian king invoked Melqart and Eshmun to watch over ship agreements.",
+          "npc_lines": {
+            "mentor_greeting_en": "On this clay tablet, King Esarhaddon wrote that if our ships were wrecked, his officers would take the cargo. We must know our rights!",
+            "mentor_greeting_native": "بهاللوح الفخاري، كتب أسرحدون شروط قاسية عن السفن الغارقة، لازم نعرف كل كلمة مكتوبة."
+          },
+          "player_actions": [
+            "Translate 3 treaty clauses regarding coastal road access and shipwreck salvage",
+            "Identify Phoenician deities: Melqart, Eshmun, and Ba'al-Saphon",
+            "Advise King Ba'al I on maritime trade protections"
+          ],
+          "hint_ladder": [
+            "Pilistu refers to the southern coastal regions along the Levant",
+            "Ba'al-Saphon was the lord of sea storms and mountain tempests"
+          ],
+          "completion_criteria": "Correctly identify treaty clauses and record council advice.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-TREATY-ESARHADDON-BAAL",
+            "stamp_id": "stamp-lb-tyre-council",
+            "free_earned": true
+          },
+          "historical_notes": "The Vassal Treaty of Esarhaddon (SAA II, 5) explicitly lists Tyre's Phoenician pantheon alongside Assyrian gods."
+        },
+        "11-13": {
+          "learning_objective": "Analyze diplomatic leverage in ancient siege crises: shoftim governance versus hereditary monarchy.",
+          "narrative_hook": "Evaluate how Tyre transitioned from kingly rule to elected judges (shoftim) after surviving Nebuchadnezzar's 13-year siege.",
+          "npc_lines": {
+            "mentor_greeting_en": "After thirteen years of siege, our people chose judges—shoftim—to govern alongside our council of elders.",
+            "mentor_greeting_native": "بعد تلطاشر سنة حصار، أهل صور اختاروا قضاة شرفاء (شوفطيم) ليديروا المدينة بالعدل والشورى."
+          },
+          "player_actions": [
+            "Compare the Tyrian shoftim system with Carthaginian suffetes",
+            "Review Ezekiel 26–29 contemporary accounts of the Babylonian stalemate",
+            "Debate Alexander's sacrificial ultimatum in the Assembly of Elders"
+          ],
+          "hint_ladder": [
+            "Shoftim were civil magistrates elected for one-to-seven year terms",
+            "Sacrificing in the island temple symbolized accepting Macedonian suzerainty"
+          ],
+          "completion_criteria": "Resolve the council deliberation vote and record the consensus.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-EVENT-NEBUCHADNEZZAR-THIRTEEN-YEAR-SIEGE",
+            "stamp_id": "stamp-lb-tyre-council",
+            "free_earned": true
+          },
+          "historical_notes": "The Phoenician term 'shofet' (plural shoftim) is cognate with Hebrew shophet (judge) and Punic suffete."
+        },
+        "14-17": {
+          "learning_objective": "Conduct epigraphic and historiographical synthesis of Near Eastern vassal treaties, royal annals, and Hellenistic Casus Belli.",
+          "narrative_hook": "Critique the legal rhetoric of the Vassal Treaty of Esarhaddon and analyze the diplomatic Casus Belli of Alexander's 332 BCE siege.",
+          "npc_lines": {
+            "mentor_greeting_en": "Sovereignty is defined at the intersection of religion, law, and physical geography. Let us analyze why Azemilcus refused Alexander entry.",
+            "mentor_greeting_native": "السيادة بتتقرر بالقانون والدبلوماسية والجغرافيا. تعوا نحلل ليش صور رفضت فتح أبواب المعبد للإسكندر."
+          },
+          "player_actions": [
+            "Analyze cuneiform transcription of SAA II, Text 5 lines IV.1–15 (salvage rights and embedded qepu deputy)",
+            "Evaluate Heracles-Melqart syncretism and the theological pretext of Alexander's sacrifice",
+            "Author a diplomatic white paper on Tyrian geopolitical neutrality during Persian-Hellenistic wars"
+          ],
+          "hint_ladder": [
+            "The Assyrian 'qepu' acted as a resident imperial commissioner overseeing foreign correspondence",
+            "Admitting Alexander to Melqart's shrine constituted de jure surrender of independent island sovereignty"
+          ],
+          "completion_criteria": "Complete peer-reviewed diplomatic synthesis and archive in the Melqart Temple Codex.",
+          "reward": {
+            "knowledge_unlock_id": "LB-KB-TREATY-ESARHADDON-BAAL",
+            "stamp_id": "stamp-lb-tyre-treaty",
+            "free_earned": true
+          },
+          "historical_notes": "Recovered from Nineveh, Esarhaddon's treaty with Ba'al of Tyre is one of the most complete legal instruments of ancient Near Eastern imperialism."
+        }
+      }
+    }
+  ]
+}

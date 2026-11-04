@@ -1,0 +1,235 @@
+{
+  "agentId": "DX14",
+  "noInventedCoordinates": true,
+  "pinsCount": 12,
+  "pins": [
+    {
+      "siteId": "site.qa.al_zubarah",
+      "countryCode": "QA",
+      "nameEn": "Al Zubarah Archaeological Site (UNESCO #1402)",
+      "nameAr": "موقع الزبارة الأثري (اليونسكو #1402)",
+      "nameArabizi": "Mawqi3 Al-Zubarah il-Athari (UNESCO #1402)",
+      "coordinates": [
+        25.9769,
+        51.0264
+      ],
+      "uncertaintyMeters": 50,
+      "era": "18th–19th Century CE Fortified Coastal Town",
+      "category": "archaeology",
+      "summaryEn": "Walled coastal merchant and pearl-trading town preserved under desert sands on Qatar's northwest coast.",
+      "summaryAr": "مدينة ساحلية محصنة لتجارة اللؤلؤ والتبادل البحري على الساحل الشمالي الغربي لقطر.",
+      "summaryArabizi": "Madina sahiliya muhassana li-tijarat il-lulu fi shamal gharb Qatar.",
+      "attributionSource": "UNESCO World Heritage List #1402",
+      "sourceUrl": "https://whc.unesco.org/en/list/1402"
+    },
+    {
+      "siteId": "site.qa.doha_historic_harbor",
+      "countryCode": "QA",
+      "nameEn": "Historic Doha Dhow Harbor & Souq Waqif Quarter",
+      "nameAr": "مرفأ المحامل التقليدي وسوق واقف في الدوحة",
+      "nameArabizi": "Marfa il-Mahamil wa Souq Waqif fil-Doha",
+      "coordinates": [
+        25.2867,
+        51.5333
+      ],
+      "uncertaintyMeters": 80,
+      "era": "19th–21st Century CE Living Maritime & Market Quarter",
+      "category": "history",
+      "summaryEn": "Traditional shoreline market and dhow anchorage along Doha Bay where merchants traded pearls, timber, and spices.",
+      "summaryAr": "سوق ساحلي تقليدي ومرسى للمحامل الخشبية على خليج الدوحة لتبادل اللؤلؤ والأخشاب والتوابل.",
+      "summaryArabizi": "Souq sahili taqlidi wa marsa lil-mahamil 3ala khalij il-Doha.",
+      "attributionSource": "Qatar Museums & Municipal Geographic Survey",
+      "sourceUrl": "https://qm.org.qa/en/"
+    },
+    {
+      "siteId": "site.ae.al_ain_oasis",
+      "countryCode": "AE",
+      "nameEn": "Cultural Sites of Al Ain: Hili & Al Ain Oasis (UNESCO #1343)",
+      "nameAr": "المواقع الثقافية في العين: هيلي وواحة العين (اليونسكو #1343)",
+      "nameArabizi": "Mawaqi3 Al-3ain il-Thaqafiya (UNESCO #1343)",
+      "coordinates": [
+        24.2169,
+        55.7658
+      ],
+      "uncertaintyMeters": 60,
+      "era": "Bronze Age (c. 2500 BCE) to Living Oasis System",
+      "category": "archaeology",
+      "summaryEn": "Inland desert-edge oasis irrigated by ancient falaj water channels beneath date-palm canopies in the Emirate of Abu Dhabi.",
+      "summaryAr": "واحة داخلية تُروى بقنوات الأفلاج التقليدية تحت ظلال النخيل في إمارة أبوظبي.",
+      "summaryArabizi": "Waha dakhiliya turwa bi-qanawat il-falaj taht zilal il-nakhil.",
+      "attributionSource": "UNESCO World Heritage List #1343",
+      "sourceUrl": "https://whc.unesco.org/en/list/1343"
+    },
+    {
+      "siteId": "site.ae.historic_creek_sharjah_dubai",
+      "countryCode": "AE",
+      "nameEn": "Historic Creek & Coral-Stone Courtyard Quarters (Dubai / Sharjah Maritime Coast)",
+      "nameAr": "أحياء الخور التاريخية وبيوت الحجر المرجاني (دبي والشارقة)",
+      "nameArabizi": "Ahya il-Khor wal-Buyut il-Marjaniya (Dubai / Sharjah)",
+      "coordinates": [
+        25.2637,
+        55.2972
+      ],
+      "uncertaintyMeters": 90,
+      "era": "19th–20th Century CE Coastal Trade & Wind-Tower Architecture",
+      "category": "history",
+      "summaryEn": "Coastal creek anchorage where dhows unloaded timber, spices, and pearls alongside coral-stone courtyards and wind towers (barjeel).",
+      "summaryAr": "مرسى ساحلي للمحامل التقليدية تحيط به البيوت المرجانية وأبراج الهواء (البارجيل).",
+      "summaryArabizi": "Marsa sahili lil-mahamil ma3 buyut il-marjan wa abraj il-barjeel.",
+      "attributionSource": "UAE Heritage & Municipal Architectural Survey",
+      "sourceUrl": "https://whc.unesco.org/en/tentativelists/"
+    },
+    {
+      "siteId": "site.kw.kuwait_maritime_harbor",
+      "countryCode": "KW",
+      "nameEn": "Historic Kuwait Bay Dhow Harbors (Naq'at Al-Shamlans & Sief Coast)",
+      "nameAr": "نقع الكويت التاريخية وساحل السيف (نقعة الشملان ومتحف الكويت البحري)",
+      "nameArabizi": "Naq3at Al-Shamlan wa Sahil il-Sief (Kuwait Bay)",
+      "coordinates": [
+        29.3797,
+        47.9734
+      ],
+      "uncertaintyMeters": 65,
+      "era": "18th–20th Century CE Maritime Trade & Dhow Shipbuilding Era",
+      "category": "history",
+      "summaryEn": "Tidal stone-enclosed dhow harbors (naq'ah) and shipwright yards along Kuwait Bay where deep-sea Boom vessels were built and moored.",
+      "summaryAr": "المرافئ الحجرية الساحلية (النقع) وساحات صناعة السفن على جون الكويت حيث بُنيت ورست سفن البوم.",
+      "summaryArabizi": "Il-naq3at il-bahriya wa ساحات sina3at il-boom 3ala Jun il-Kuwait.",
+      "attributionSource": "National Council for Culture, Arts and Letters (NCCAL) & Kuwait Maritime Museum",
+      "sourceUrl": "https://whc.unesco.org/en/statesparties/kw"
+    },
+    {
+      "siteId": "site.kw.failaka_island_heritage",
+      "countryCode": "KW",
+      "nameEn": "Failaka Island Bronze Age & Maritime Crossroads",
+      "nameAr": "جزيرة فيلكا: ملتقى الحضارات البحرية والعصر البرونزي",
+      "nameArabizi": "Jazirat Failaka il-Athariya",
+      "coordinates": [
+        29.4397,
+        48.3328
+      ],
+      "uncertaintyMeters": 85,
+      "era": "Dilmun Bronze Age (c. 2000 BCE) through Hellenistic & Islamic Maritime Eras",
+      "category": "archaeology",
+      "summaryEn": "Island at the entrance of Kuwait Bay preserving Bronze Age Dilmun stamp seals, Hellenistic foundations, and centuries of Gulf navigation.",
+      "summaryAr": "جزيرة عند مدخل جون الكويت تضم آثار دلمون من العصر البرونزي والأختام الدائرية وموانئ الملاحة التاريخية.",
+      "summaryArabizi": "Jazira 3ind madkhal Jun il-Kuwait tadumm athar Dilmun wal-milaha.",
+      "attributionSource": "UNESCO Tentative List (Sa'ad and Sae'ed Area in Failaka Island)",
+      "sourceUrl": "https://whc.unesco.org/en/tentativelists/5800/"
+    },
+    {
+      "siteId": "site.sa.at_turaif_diriyah",
+      "countryCode": "SA",
+      "nameEn": "At-Turaif District in ad-Dir'iyah (UNESCO #1329)",
+      "nameAr": "حي الطريف في الدرعية (اليونسكو #1329)",
+      "nameArabizi": "Hayy At-Turaif fil-Dir3iya (UNESCO #1329)",
+      "coordinates": [
+        24.7336,
+        46.5728
+      ],
+      "uncertaintyMeters": 50,
+      "era": "15th–18th Century CE Najdi Mudbrick & Limestone Architecture",
+      "category": "archaeology",
+      "summaryEn": "Historic Najdi oasis citadel along Wadi Hanifah showcasing distinctive adobe walls, triangular ventilation openings (furjat), and shaded majlis courtyards.",
+      "summaryAr": "حاضرة نجدية تاريخية على ضفاف وادي حنيفة تبرز عمارة الطين اللبن والحجر الجيري والفرجات المثلثة والأفنية المظللة.",
+      "summaryArabizi": "Hadira Najdiya 3ala ضفاف Wadi Hanifah tubriz 3imarat il-tin wal-furjat il-muthallatha.",
+      "attributionSource": "UNESCO World Heritage List #1329",
+      "sourceUrl": "https://whc.unesco.org/en/list/1329"
+    },
+    {
+      "siteId": "site.sa.al_hijr_caravan_route",
+      "countryCode": "SA",
+      "nameEn": "Hegra / Al-Hijr Archaeological Caravan Crossroads (UNESCO #1293)",
+      "nameAr": "موقع الحِجر الأثري وتقاطع طرق القوافل (اليونسكو #1293)",
+      "nameArabizi": "Mawqi3 Al-Hijr il-Athari wa Turuq il-Qawafil (UNESCO #1293)",
+      "coordinates": [
+        26.7917,
+        37.9528
+      ],
+      "uncertaintyMeters": 75,
+      "era": "1st Century BCE – Pre-Islamic & Early Islamic Caravan Era",
+      "category": "archaeology",
+      "summaryEn": "Major Arabian caravan crossroads with ancient stone-lined wells, water conservation channels, and multilingual inscriptions connecting desert trade routes.",
+      "summaryAr": "ملتقى رئيسي لطرق القوافل في الجزيرة العربية يضم آباراً حجرية تاريخية ونقوشاً قديمة ربطت مسارات التجارة.",
+      "summaryArabizi": "Multaqa طرق il-qawafil ma3 abar hajariya wa nuqush qadima (UNESCO #1293).",
+      "attributionSource": "UNESCO World Heritage List #1293",
+      "sourceUrl": "https://whc.unesco.org/en/list/1293"
+    },
+    {
+      "siteId": "site.om.falaj_daris_nizwa",
+      "countryCode": "OM",
+      "nameEn": "Aflaj Irrigation Systems of Oman — Falaj Daris & Al-Khatmeen (UNESCO #1207)",
+      "nameAr": "أنظمة الري بالأفلاج في عُمان — فلج دارس والخطمين (اليونسكو #1207)",
+      "nameArabizi": "Anzimat il-Rayy bil-Aflaj: Falaj Daris (UNESCO #1207)",
+      "coordinates": [
+        22.9964,
+        57.5489
+      ],
+      "uncertaintyMeters": 50,
+      "era": "Iron Age Foundations to Living Community Water System",
+      "category": "archaeology",
+      "summaryEn": "Gravity-fed water channels carrying mountain spring water to Dakhiliyah oasis villages under communal time-sharing governance.",
+      "summaryAr": "قنوات ري تعتمد على الجاذبية لنقل مياه الينابيع الجبلية إلى قرى وبساتين الداخلية وفق نظام تقسيم زمني عادل.",
+      "summaryArabizi": "Qanawat rayy تنقل miyah il-jibal ila basatin Nizwa wa Birkat il-Mouz.",
+      "attributionSource": "UNESCO World Heritage List #1207",
+      "sourceUrl": "https://whc.unesco.org/en/list/1207"
+    },
+    {
+      "siteId": "site.om.land_of_frankincense_dhofar",
+      "countryCode": "OM",
+      "nameEn": "Land of Frankincense — Wadi Dawkah & Khor Rori (UNESCO #1010)",
+      "nameAr": "أرض اللبان — وادي دوكة وخور روري (اليونسكو #1010)",
+      "nameArabizi": "Ard il-Luban: Wadi Dawkah wa Khor Rori (UNESCO #1010)",
+      "coordinates": [
+        17.3333,
+        54.0667
+      ],
+      "uncertaintyMeters": 100,
+      "era": "Antiquity to Present Botanical & Maritime Trade Heritage",
+      "category": "archaeology",
+      "summaryEn": "Boswellia sacra frankincense groves in Dhofar and ancient coastal trading ports linking Oman with the Indian Ocean and Mediterranean.",
+      "summaryAr": "محمية أشجار اللبان في ظفار والموانئ التاريخية التي ربطت عُمان بطرق التجارة القديمة.",
+      "summaryArabizi": "Ashjar il-luban fi Dhofar wal-mawani il-tarikhiya (UNESCO #1010).",
+      "attributionSource": "UNESCO World Heritage List #1010",
+      "sourceUrl": "https://whc.unesco.org/en/list/1010"
+    },
+    {
+      "siteId": "site.bh.qalat_al_bahrain",
+      "countryCode": "BH",
+      "nameEn": "Qal'at al-Bahrain — Ancient Harbour and Capital of Dilmun (UNESCO #1192)",
+      "nameAr": "قلعة البحرين — الميناء القديم وعاصمة دلمون (اليونسكو #1192)",
+      "nameArabizi": "Qal3at il-Bahrain — 3asimat Dilmun (UNESCO #1192)",
+      "coordinates": [
+        26.2336,
+        50.5206
+      ],
+      "uncertaintyMeters": 45,
+      "era": "c. 2300 BCE (Bronze Age Dilmun) through Islamic & 16th Century CE Layers",
+      "category": "archaeology",
+      "summaryEn": "Multi-layered archaeological tell (12-meter mound) preserving the Bronze Age capital of Dilmun, Kassite, Tylos, and Islamic-era harbor fortifications.",
+      "summaryAr": "تل أثري متراكم الطبقات يضم عاصمة حضارة دلمون في العصر البرونزي وتحصينات الميناء عبر العصور المتعاقبة.",
+      "summaryArabizi": "Tall athari يضم طبقات عاصمة دلمون في العصر البرونزي (UNESCO #1192).",
+      "attributionSource": "UNESCO World Heritage List #1192",
+      "sourceUrl": "https://whc.unesco.org/en/list/1192/"
+    },
+    {
+      "siteId": "site.bh.muharraq_pearling_path",
+      "countryCode": "BH",
+      "nameEn": "Pearling, Testimony of an Island Economy — Muharraq & Bu Maher Shore (UNESCO #1364)",
+      "nameAr": "طريق اللؤلؤ في المحرق وقلعة بو ماهر (اليونسكو #1364)",
+      "nameArabizi": "Tariq il-Lulu fil-Muharraq wa Bu Maher (UNESCO #1364)",
+      "coordinates": [
+        26.2422,
+        50.6136
+      ],
+      "uncertaintyMeters": 55,
+      "era": "19th–Early 20th Century CE Island Pearling Economy",
+      "category": "history",
+      "summaryEn": "Urban heritage trail in Muharraq connecting historic timber merchants' houses, dhow stores, and the southern tip of Qal'at Bu Maher.",
+      "summaryAr": "مسار تراثي عمراني في المحرق يربط بيوت تجار اللؤلؤ والمخازن الساحلية بقلعة بو ماهر.",
+      "summaryArabizi": "Masar turathi fil-Muharraq yarbut buyut il-lulu bi-Qal3at Bu Maher (UNESCO #1364).",
+      "attributionSource": "UNESCO World Heritage List #1364",
+      "sourceUrl": "https://whc.unesco.org/en/list/1364"
+    }
+  ]
+}

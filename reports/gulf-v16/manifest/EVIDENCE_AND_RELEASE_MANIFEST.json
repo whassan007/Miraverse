@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.6.0",
+  "agentId": "DX20",
+  "generatedAt": "2026-11-04T18:46:12.473Z",
+  "countriesDelivered": [
+    "QA",
+    "AE",
+    "KW",
+    "SA",
+    "OM",
+    "BH"
+  ],
+  "excludedFutureCandidates": [
+    "YE"
+  ],
+  "totalQuestActs": 30,
+  "totalAgeTierStages": 120,
+  "totalPlatformAgeConfigs": 240,
+  "totalArtifacts": 48,
+  "totalGlossaryTerms": 36,
+  "platformVerificationMatrix": {
+    "website": "PLAYABLE VERIFIED (Automated Build + Vitest + Playwright E2E)",
+    "roblox": "TEST BUILD (.rbxlx compiled + Luau & ar-001 localization verified; native Studio GUI client UNVERIFIED/BLOCKED on Linux aarch64)",
+    "minecraftBedrock": "TEST BUILD (.mcaddon + structures + capability test verified; native Windows Bedrock GUI client UNVERIFIED/BLOCKED on Linux aarch64)"
+  }
+}

@@ -1,0 +1,7 @@
+siteId,displayName,region,priority,primaryEra,coordinates,origin,status,benchmarkStage
+hist_byblos,Ancient Byblos,Lebanon,P0,"Bronze & Iron Age (c. 2800 – 500 BCE)","34.1208, 35.6481","(800, 10, 1600)",BUILT_VERIFIED,Full Reconstruction (Verified)
+hist_tyre,Ancient Tyre,Lebanon,P0,"Iron Age Island City (c. 1000 – 332 BCE)","33.2709, 35.1963","(800, 10, 2400)",BUILT_VERIFIED,Full Reconstruction (Verified)
+hist_sidon,Ancient Sidon,Lebanon,P1,"Persian & Hellenistic (c. 600 – 200 BCE)","33.5631, 35.3689","(800, 10, 3200)",BUILT_VERIFIED,Full Reconstruction (Verified)
+hist_carthage,Punic Carthage,Tunisia,P1,"Punic Golden Age (c. 814 – 146 BCE)","36.8528, 10.3233","(800, 10, 4000)",BUILT_VERIFIED,Full Reconstruction (Verified)
+hist_motya,Ancient Motya,"Sicily, Italy",P2,"Archaic & Classical (c. 800 – 397 BCE)","37.8683, 12.4686","(800, 10, 4800)",BUILT_VERIFIED,Full Reconstruction (Verified)
+phoenician_hub,Phoenician Heritage Gateway,Historical Hub,P0,"All Eras (Transit)","0.0, 0.0","(0, 10, 1600)",BUILT_VERIFIED,Gateway Hub (Verified)

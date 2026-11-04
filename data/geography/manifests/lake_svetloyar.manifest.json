@@ -1,0 +1,85 @@
+{
+  "locationId": "lake_svetloyar",
+  "countryId": "RU",
+  "displayName": "Lake Svetloyar & Kitezh Folklore Reserve",
+  "geographicClass": "verified_real_world_with_folklore_overlay",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N56_00_E045_00_DEM/Copernicus_DSM_COG_10_N56_00_E045_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    45.18,
+    56.805,
+    45.23,
+    56.835
+  ],
+  "regionalBoundingBox": [
+    45.12,
+    56.76,
+    45.28,
+    56.88
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32638",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    114.95,
+    152.11
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 12.6751,
+    "metersPerStudZ": 13.9521,
+    "studsPerMeter": 0.07889
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 1.858,
+    "verticalExaggeration": 1.15,
+    "robloxYRangeStuds": [
+      6.0,
+      27.97
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      7200,
+      12,
+      0
+    ],
+    "robloxSpawn": [
+      7200,
+      12.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        7060,
+        -20,
+        -165
+      ],
+      "max": [
+        7340,
+        80,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      512531.88,
+      6297301.46
+    ]
+  },
+  "terrainChecksum": "bac51ec3eba9573fcf8f9408cd43da4616e37f652eaab6b58fde2cef20091df5",
+  "generatedAssetPaths": [
+    "data/geography/processed/lake_svetloyar.json",
+    "apps/roblox/terrain/countries/RU/lake_svetloyar_terrain.json",
+    "reports/terrain/heightmaps/lake_svetloyar_heightmap.png",
+    "apps/roblox/terrain/countries/RU/lake_svetloyar_heightmap.png",
+    "reports/terrain/hillshades/lake_svetloyar_hillshade.png",
+    "reports/terrain/comparisons/lake_svetloyar_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/RU.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:31.018842+00:00"
+}

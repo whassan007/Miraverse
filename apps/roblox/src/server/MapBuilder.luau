@@ -1,8 +1,42 @@
 --!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
+local ReplicatedStorageShared = game:GetService("ReplicatedStorage"):WaitForChild("Shared")
+local WorldRegistry = require(ReplicatedStorageShared:WaitForChild("WorldRegistry"))
+local ByblosWorld = require(script.Parent.world.ByblosWorld)
+local MountLebanonWorld = require(script.Parent.world.MountLebanonWorld)
+local BeirutWorld = require(script.Parent.world.BeirutWorld)
+local RegionalTerrainBuilder = require(script.Parent.world.RegionalTerrainBuilder)
+local MentorCharacter = require(script.Parent.world.MentorCharacter)
+local PhoenicianHeritageHub = require(script.Parent["historical-worlds"].PhoenicianHeritageHub)
+local ByblosHistoricalWorld = require(script.Parent["historical-worlds"].ByblosHistoricalWorld)
+local TyreHistoricalWorld = require(script.Parent["historical-worlds"].TyreHistoricalWorld)
+local SidonHistoricalWorld = require(script.Parent["historical-worlds"].SidonHistoricalWorld)
+local CarthageHistoricalWorld = require(script.Parent["historical-worlds"].CarthageHistoricalWorld)
+local MotyaHistoricalWorld = require(script.Parent["historical-worlds"].MotyaHistoricalWorld)
 
 local MapBuilder = {}
+
+type Handlers = {
+	travel: (Player, string) -> (),
+	travelLocation: ((Player, string) -> ())?,
+	lobby: (Player) -> (),
+	mentor: (Player, string) -> (),
+	station: (Player, string, string) -> (),
+}
+local handlers: Handlers? = nil
+
+function MapBuilder.setHandlers(h: Handlers)
+	handlers = h
+end
+
+local function onPrompt(prompt: ProximityPrompt, fn: (Handlers, Player) -> ())
+	prompt.Triggered:Connect(function(player: Player)
+		if handlers then
+			fn(handlers, player)
+		end
+	end)
+end
 
 export type CountryId = "LB" | "EG" | "IQ" | "KR" | "FR"
 
@@ -23,7 +57,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "Lebanon",
 		primary = "#CE1126",
 		secondary = "#00A651",
-		mentorName = "Teta Salwa",
+		mentorName = "Teta Nahla",
 		mentorGreeting = "Ahlan wa sahlan! Welcome to Byblos.",
 	},
 	EG = {
@@ -31,7 +65,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "Egypt",
 		primary = "#C09300",
 		secondary = "#CE1126",
-		mentorName = "Ammo Karim",
+		mentorName = "Teta Samira",
 		mentorGreeting = "Marhaba! Welcome to Cairo.",
 	},
 	IQ = {
@@ -39,7 +73,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "Iraq",
 		primary = "#1E5AA8",
 		secondary = "#D4AF37",
-		mentorName = "Bibi Nadia",
+		mentorName = "Bibi Amal",
 		mentorGreeting = "Hala! Welcome to Baghdad.",
 	},
 	KR = {
@@ -47,7 +81,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "South Korea",
 		primary = "#0047A0",
 		secondary = "#CD2E3A",
-		mentorName = "Halmeoni Sunja",
+		mentorName = "Halmeoni",
 		mentorGreeting = "Annyeonghaseyo! Welcome to Jeonju.",
 	},
 	FR = {
@@ -55,7 +89,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "France",
 		primary = "#0055A4",
 		secondary = "#EF4135",
-		mentorName = "Mamie Colette",
+		mentorName = "Mamie Claire",
 		mentorGreeting = "Bonjour! Welcome to Lyon.",
 	},
 }
@@ -81,7 +115,7 @@ local function loadContentPacks(): { [string]: any }
 	if not sharedFolder then
 		return {}
 	end
-	local contentMod = sharedFolder:FindFirstChild("ContentData") or sharedFolder:FindFirstChild("Content")
+	local contentMod = sharedFolder:FindFirstChild("Packs")
 	if contentMod and contentMod:IsA("ModuleScript") then
 		local ok, data = pcall(require, contentMod)
 		if ok and type(data) == "table" then
@@ -192,12 +226,14 @@ local function createBillboardLabel(parent: Instance, titleText: string, subtitl
 	return billboard
 end
 
+local buildLebanonPeople: (Folder, Vector3, CountryMeta) -> ()
+
 local function buildTravelLobby(mapFolder: Folder, metas: { [string]: CountryMeta })
 	local lobbyFolder = Instance.new("Folder")
 	lobbyFolder.Name = "TravelLobby"
 	lobbyFolder.Parent = mapFolder
 
-	local lobbyCenter = Vector3.new(0, 10, 0)
+	local lobbyCenter = WorldRegistry.LOBBY
 
 	local platform = Instance.new("Part")
 	platform.Name = "LobbyPlatform"
@@ -275,26 +311,57 @@ local function buildTravelLobby(mapFolder: Folder, metas: { [string]: CountryMet
 		prompt.RequiresLineOfSight = false
 		prompt.Parent = portalPart
 
-		prompt.Triggered:Connect(function(player: Player)
-			local targetSpawn = MapBuilder.getSpawn(cc)
-			local character = player.Character
-			if targetSpawn and character then
-				character:PivotTo(targetSpawn.CFrame + Vector3.new(0, 3.5, 0))
-			end
+		onPrompt(prompt, function(h, player)
+			h.travel(player, cc)
 		end)
 
 		createBillboardLabel(portalPart, meta.name_en, "Portal · " .. cc, secondaryColor)
 	end
+
+	-- Dedicated Historical Gateway Portal to Phoenician Worlds
+	local histPortalPos = lobbyCenter + Vector3.new(0, 4.5, 24)
+	local histPortalPart = Instance.new("Part")
+	histPortalPart.Name = "Portal_PhoenicianHeritage"
+	histPortalPart.Anchored = true
+	histPortalPart.CanCollide = true
+	histPortalPart.Size = Vector3.new(7, 9.5, 1.5)
+	histPortalPart.Position = histPortalPos
+	histPortalPart.Color = Color3.fromRGB(240, 190, 50)
+	histPortalPart.Material = Enum.Material.Neon
+	histPortalPart.Parent = lobbyFolder
+
+	local histPrompt = Instance.new("ProximityPrompt")
+	histPrompt.Name = "TravelPrompt"
+	histPrompt.ActionText = "Travel to Phoenician Worlds"
+	histPrompt.ObjectText = "Phoenician Heritage Gateway"
+	histPrompt.HoldDuration = 0
+	histPrompt.MaxActivationDistance = 12
+	histPrompt.RequiresLineOfSight = false
+	histPrompt.Parent = histPortalPart
+
+	onPrompt(histPrompt, function(h, player)
+		if h.travelLocation then
+			h.travelLocation(player, "phoenician_hub")
+		else
+			h.travel(player, "LB")
+		end
+	end)
+
+	createBillboardLabel(histPortalPart, "Phoenician Heritage", "Historical Gateway · Ancient Worlds", Color3.fromRGB(255, 215, 0))
 end
 
-local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId, meta: CountryMeta)
-	local plazaCenter = Vector3.new(index * 160, 10, 0)
+local function buildCountryPlaza(mapFolder: Folder, cc: CountryId, meta: CountryMeta)
+	local plazaCenter = WorldRegistry.origin(cc) :: Vector3
 	local primaryColor = hexToColor3(meta.primary, Color3.fromRGB(80, 140, 210))
 	local secondaryColor = hexToColor3(meta.secondary, Color3.fromRGB(220, 180, 80))
+
+	local defaultLoc = WorldRegistry.defaultLocation(cc)
+	local defaultLocationId = if defaultLoc then defaultLoc.locationId else string.lower(cc)
 
 	local plazaFolder = Instance.new("Folder")
 	plazaFolder.Name = "Plaza_" .. cc
 	plazaFolder:SetAttribute("Country", cc)
+	plazaFolder:SetAttribute("LocationId", defaultLocationId)
 	plazaFolder.Parent = mapFolder
 
 	local basePart = Instance.new("Part")
@@ -308,6 +375,7 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	basePart.TopSurface = Enum.SurfaceType.Smooth
 	basePart.BottomSurface = Enum.SurfaceType.Smooth
 	basePart:SetAttribute("Country", cc)
+	basePart:SetAttribute("LocationId", defaultLocationId)
 	basePart.Parent = plazaFolder
 
 	local borderPart = Instance.new("Part")
@@ -319,6 +387,7 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	borderPart.Color = secondaryColor
 	borderPart.Material = Enum.Material.SmoothPlastic
 	borderPart:SetAttribute("Country", cc)
+	borderPart:SetAttribute("LocationId", defaultLocationId)
 	borderPart.Parent = plazaFolder
 
 	local spawnPart = Instance.new("Part")
@@ -332,6 +401,7 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	spawnPart.TopSurface = Enum.SurfaceType.Smooth
 	spawnPart.BottomSurface = Enum.SurfaceType.Smooth
 	spawnPart:SetAttribute("Country", cc)
+	spawnPart:SetAttribute("LocationId", defaultLocationId)
 	spawnPart.Parent = plazaFolder
 
 	local mentorPart = Instance.new("Part")
@@ -356,6 +426,9 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	mentorPrompt.MaxActivationDistance = 14
 	mentorPrompt.RequiresLineOfSight = false
 	mentorPrompt.Parent = mentorPart
+	onPrompt(mentorPrompt, function(h, player)
+		h.mentor(player, cc)
+	end)
 
 	createBillboardLabel(mentorPart, meta.mentorName, meta.name_en, primaryColor)
 
@@ -392,10 +465,180 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	returnPrompt.RequiresLineOfSight = false
 	returnPrompt.Parent = returnPortal
 
-	returnPrompt.Triggered:Connect(function(player: Player)
-		local character = player.Character
-		if character then
-			character:PivotTo(CFrame.new(0, 14, 0))
+	onPrompt(returnPrompt, function(h, player)
+		h.lobby(player)
+	end)
+end
+
+-- Teta Nahla and the five physical challenge stations.
+buildLebanonPeople = function(plaza: Folder, center: Vector3, meta: CountryMeta)
+	local anchor = plaza:FindFirstChild("Mentor_LB")
+	if anchor and anchor:IsA("BasePart") then
+		anchor.Transparency = 1
+		anchor.CanCollide = false
+		MentorCharacter.build(plaza, meta.mentorName, CFrame.lookAt(anchor.Position - Vector3.new(0, 3, 0), center + Vector3.new(0, 0, 28)), {
+			skin = Color3.fromRGB(214, 170, 135),
+			dress = Color3.fromRGB(30, 110, 96),
+			apron = Color3.fromRGB(217, 123, 56),
+			scarf = Color3.fromRGB(245, 238, 222),
+		})
+	end
+	for kind, station in WorldRegistry.STATIONS.LB do
+		local pad = Instance.new("Part")
+		pad.Name = "Station_" .. kind
+		pad.Anchored = true
+		pad.Size = Vector3.new(6, 0.4, 6)
+		pad.Position = center + Vector3.new(station.x, 0.2, station.z)
+		pad.Color = Color3.fromRGB(217, 123, 56)
+		pad.Material = Enum.Material.Neon
+		pad.Parent = plaza
+		local prompt = Instance.new("ProximityPrompt")
+		prompt.ActionText = "Start"
+		prompt.ObjectText = station.label
+		prompt.HoldDuration = 0
+		prompt.MaxActivationDistance = 12
+		prompt.RequiresLineOfSight = false
+		prompt.Parent = pad
+		onPrompt(prompt, function(h, player)
+			h.station(player, "LB", kind)
+		end)
+	end
+
+	-- Travel station from Byblos to Mount Lebanon (in front of arrival spawn at +34, 0, +14)
+	local trailStation = Instance.new("Model")
+	trailStation.Name = "TravelStation_ToMountLebanon"
+	trailStation.Parent = plaza
+
+	local trailPos = center + Vector3.new(34, 0, 14)
+
+	local trailBase = Instance.new("Part")
+	trailBase.Name = "TrailBase"
+	trailBase.Anchored = true
+	trailBase.CanCollide = true
+	trailBase.Size = Vector3.new(9, 1, 6)
+	trailBase.Position = trailPos + Vector3.new(0, 0.5, 0)
+	trailBase.Color = Color3.fromHex("D8C5A3")
+	trailBase.Material = Enum.Material.Limestone
+	trailBase.Parent = trailStation
+
+	local leftPost = Instance.new("Part")
+	leftPost.Name = "TrailPostL"
+	leftPost.Anchored = true
+	leftPost.CanCollide = true
+	leftPost.Size = Vector3.new(1.4, 9, 1.4)
+	leftPost.Position = trailPos + Vector3.new(-3.2, 5, 0)
+	leftPost.Color = Color3.fromHex("6B4423")
+	leftPost.Material = Enum.Material.WoodPlanks
+	leftPost.Parent = trailStation
+
+	local rightPost = Instance.new("Part")
+	rightPost.Name = "TrailPostR"
+	rightPost.Anchored = true
+	rightPost.CanCollide = true
+	rightPost.Size = Vector3.new(1.4, 9, 1.4)
+	rightPost.Position = trailPos + Vector3.new(3.2, 5, 0)
+	rightPost.Color = Color3.fromHex("6B4423")
+	rightPost.Material = Enum.Material.WoodPlanks
+	rightPost.Parent = trailStation
+
+	local lintel = Instance.new("Part")
+	lintel.Name = "TrailLintel"
+	lintel.Anchored = true
+	lintel.CanCollide = true
+	lintel.Size = Vector3.new(8.8, 1.4, 2)
+	lintel.Position = trailPos + Vector3.new(0, 9.8, 0)
+	lintel.Color = Color3.fromHex("1E5631")
+	lintel.Material = Enum.Material.SmoothPlastic
+	lintel.Parent = trailStation
+
+	local portalToMountLebanon = Instance.new("Part")
+	portalToMountLebanon.Name = "Portal_byblos_to_mount_lebanon"
+	portalToMountLebanon.Anchored = true
+	portalToMountLebanon.CanCollide = true
+	portalToMountLebanon.Size = Vector3.new(4.8, 7.6, 1.2)
+	portalToMountLebanon.Position = trailPos + Vector3.new(0, 4.8, 0)
+	portalToMountLebanon.Color = Color3.fromHex("1E5631")
+	portalToMountLebanon.Material = Enum.Material.Neon
+	portalToMountLebanon:SetAttribute("Country", "LB")
+	portalToMountLebanon:SetAttribute("SourceLocation", "byblos")
+	portalToMountLebanon:SetAttribute("TargetLocation", "mount_lebanon")
+	portalToMountLebanon.Parent = trailStation
+
+	createBillboardLabel(
+		portalToMountLebanon,
+		"Trail to Mount Lebanon",
+		"Cedar & Olive Terraces (Al-Jall)",
+		Color3.fromHex("00A651")
+	)
+
+	local trailPrompt = Instance.new("ProximityPrompt")
+	trailPrompt.Name = "TravelToMountLebanonPrompt"
+	trailPrompt.ActionText = "Travel to Mount Lebanon"
+	trailPrompt.ObjectText = "Mount Lebanon Region"
+	trailPrompt.HoldDuration = 0
+	trailPrompt.MaxActivationDistance = 14
+	trailPrompt.RequiresLineOfSight = false
+	trailPrompt.Parent = portalToMountLebanon
+
+	onPrompt(trailPrompt, function(h, player)
+		if h.travelLocation then
+			h.travelLocation(player, "mount_lebanon")
+		else
+			h.travel(player, "mount_lebanon")
+		end
+	end)
+
+	-- Travel station from Byblos to Beirut (coastal road portal at -34, 0, +14)
+	local beirutStation = Instance.new("Model")
+	beirutStation.Name = "TravelStation_ToBeirut"
+	beirutStation.Parent = plaza
+
+	local beirutPos = center + Vector3.new(-34, 0, 14)
+
+	local beirutBase = Instance.new("Part")
+	beirutBase.Name = "BeirutTrailBase"
+	beirutBase.Anchored = true
+	beirutBase.CanCollide = true
+	beirutBase.Size = Vector3.new(9, 1, 6)
+	beirutBase.Position = beirutPos + Vector3.new(0, 0.5, 0)
+	beirutBase.Color = Color3.fromHex("D8C5A3")
+	beirutBase.Material = Enum.Material.Limestone
+	beirutBase.Parent = beirutStation
+
+	local portalToBeirut = Instance.new("Part")
+	portalToBeirut.Name = "Portal_byblos_to_beirut"
+	portalToBeirut.Anchored = true
+	portalToBeirut.CanCollide = true
+	portalToBeirut.Size = Vector3.new(4.8, 7.6, 1.2)
+	portalToBeirut.Position = beirutPos + Vector3.new(0, 4.8, 0)
+	portalToBeirut.Color = Color3.fromRGB(36, 122, 168)
+	portalToBeirut.Material = Enum.Material.Neon
+	portalToBeirut:SetAttribute("Country", "LB")
+	portalToBeirut:SetAttribute("SourceLocation", "byblos")
+	portalToBeirut:SetAttribute("TargetLocation", "beirut")
+	portalToBeirut.Parent = beirutStation
+
+	createBillboardLabel(
+		portalToBeirut,
+		"Coastal Road to Beirut",
+		"Ras Beirut Promontory & Corniche",
+		Color3.fromRGB(36, 122, 168)
+	)
+
+	local beirutPrompt = Instance.new("ProximityPrompt")
+	beirutPrompt.Name = "TravelToBeirutPrompt"
+	beirutPrompt.ActionText = "Travel to Beirut"
+	beirutPrompt.ObjectText = "Beirut Coastal City"
+	beirutPrompt.HoldDuration = 0
+	beirutPrompt.MaxActivationDistance = 14
+	beirutPrompt.RequiresLineOfSight = false
+	beirutPrompt.Parent = portalToBeirut
+
+	onPrompt(beirutPrompt, function(h, player)
+		if h.travelLocation then
+			h.travelLocation(player, "beirut")
+		else
+			h.travel(player, "beirut")
 		end
 	end)
 end
@@ -426,6 +669,13 @@ function MapBuilder.build(): Folder
 				break
 			end
 		end
+		if
+			not existing:FindFirstChild("Spawn_mount_lebanon", true)
+			or not existing:FindFirstChild("Portal_byblos_to_mount_lebanon", true)
+			or not existing:FindFirstChild("Portal_mount_lebanon_to_byblos", true)
+		then
+			allPresent = false
+		end
 		if allPresent and existing:FindFirstChild("SpawnLocation", true) then
 			return existing
 		end
@@ -445,25 +695,131 @@ function MapBuilder.build(): Folder
 
 	buildTravelLobby(mapFolder, metas)
 
-	for i, cc in ipairs(COUNTRIES) do
-		buildCountryPlaza(mapFolder, i, cc, metas[cc])
+	for _, cc in ipairs(COUNTRIES) do
+		buildCountryPlaza(mapFolder, cc, metas[cc])
+		local plaza = mapFolder:FindFirstChild("Plaza_" .. cc)
+		local center = WorldRegistry.origin(cc)
+		local defaultLocId = WorldRegistry.defaultLocationId(cc)
+		local travelCallbacks = {
+			travelToLocation = function(player: Player, targetLocationId: string)
+				if handlers then
+					if handlers.travelLocation then
+						handlers.travelLocation(player, targetLocationId)
+					else
+						handlers.travel(player, targetLocationId)
+					end
+				end
+			end,
+			returnToLobby = function(player: Player)
+				if handlers then
+					handlers.lobby(player)
+				end
+			end,
+		}
+		if cc == "LB" then
+			if plaza and center then
+				ByblosWorld.build(plaza, center)
+				buildLebanonPeople(plaza :: Folder, center, metas[cc])
+				RegionalTerrainBuilder.augmentCityPlaza(plaza :: Folder, "byblos", center, travelCallbacks)
+			end
+			local mountLebanonLoc = WorldRegistry.getLocation("mount_lebanon")
+			if mountLebanonLoc then
+				MountLebanonWorld.build(mapFolder, mountLebanonLoc.origin, travelCallbacks)
+			end
+			local beirutLoc = WorldRegistry.getLocation("beirut")
+			if beirutLoc then
+				BeirutWorld.build(mapFolder, beirutLoc.origin, travelCallbacks)
+			end
+		elseif plaza and center and defaultLocId then
+			RegionalTerrainBuilder.augmentCityPlaza(plaza :: Folder, defaultLocId, center, travelCallbacks)
+			for _, locDef in ipairs(WorldRegistry.locationsForCountry(cc)) do
+				if locDef.locationId ~= defaultLocId then
+					RegionalTerrainBuilder.buildRegionalScene(mapFolder, locDef.locationId, travelCallbacks)
+				end
+			end
+		end
 	end
+
+	-- Build the 6 Global Catalog country scenes (DE, CN, JP, RU, UA, MA) from the shared DEM pipeline
+	local globalTravelCallbacks = {
+		travelToLocation = function(player: Player, targetLocationId: string)
+			if handlers then
+				if handlers.travelLocation then
+					handlers.travelLocation(player, targetLocationId)
+				else
+					handlers.travel(player, targetLocationId)
+				end
+			end
+		end,
+		returnToLobby = function(player: Player)
+			if handlers then
+				handlers.lobby(player)
+			end
+		end,
+	}
+	for _, globalCc in ipairs({ "DE", "CN", "JP", "RU", "UA", "MA" }) do
+		for _, locDef in ipairs(WorldRegistry.locationsForCountry(globalCc)) do
+			RegionalTerrainBuilder.buildRegionalScene(mapFolder, locDef.locationId, globalTravelCallbacks)
+		end
+	end
+
+	-- Build the 5 Phoenician Historical Worlds & Heritage Hub (Z >= 1600)
+	local histTravelCallback = function(player: Player, destination: string, targetPos: Vector3)
+		if handlers then
+			if handlers.travelLocation then
+				handlers.travelLocation(player, destination)
+			else
+				handlers.travel(player, destination)
+			end
+		end
+	end
+
+	PhoenicianHeritageHub.build(mapFolder, histTravelCallback)
+	ByblosHistoricalWorld.build(mapFolder, histTravelCallback)
+	TyreHistoricalWorld.build(mapFolder, histTravelCallback)
+	SidonHistoricalWorld.build(mapFolder, histTravelCallback)
+	CarthageHistoricalWorld.build(mapFolder, histTravelCallback)
+	MotyaHistoricalWorld.build(mapFolder, histTravelCallback)
 
 	mapFolder.Parent = Workspace
 	return mapFolder
+end
+
+function MapBuilder.getLocationSpawn(locationId: string): BasePart?
+	if type(locationId) ~= "string" then
+		return nil
+	end
+	local loc = WorldRegistry.getLocation(locationId)
+	local canonicalId = if loc then loc.locationId else string.lower(locationId)
+	if canonicalId == "mount_lebanon" then
+		return findMapPart("Spawn_mount_lebanon")
+	elseif canonicalId == "byblos" then
+		return findMapPart("Spawn_LB")
+	end
+	local direct = findMapPart("Spawn_" .. canonicalId)
+	if direct then
+		return direct
+	end
+	local rawDirect = findMapPart("Spawn_" .. string.lower(locationId))
+	if rawDirect then
+		return rawDirect
+	end
+	if loc then
+		return findMapPart("Spawn_" .. loc.countryId)
+	end
+	return nil
 end
 
 function MapBuilder.getSpawn(country: string): BasePart?
 	if type(country) ~= "string" then
 		return nil
 	end
-	local cc = string.upper(country)
-	local part = findMapPart("Spawn_" .. cc)
-	if not part and FALLBACK_META[cc] then
-		MapBuilder.build()
-		part = findMapPart("Spawn_" .. cc)
+	local byLoc = MapBuilder.getLocationSpawn(country)
+	if byLoc then
+		return byLoc
 	end
-	return part
+	local cc = string.upper(country)
+	return findMapPart("Spawn_" .. cc)
 end
 
 function MapBuilder.getMentorSpot(country: string): BasePart?
@@ -471,12 +827,7 @@ function MapBuilder.getMentorSpot(country: string): BasePart?
 		return nil
 	end
 	local cc = string.upper(country)
-	local part = findMapPart("Mentor_" .. cc)
-	if not part and FALLBACK_META[cc] then
-		MapBuilder.build()
-		part = findMapPart("Mentor_" .. cc)
-	end
-	return part
+	return findMapPart("Mentor_" .. cc)
 end
 
 function MapBuilder.getBuildOrigin(country: string): BasePart?
@@ -484,12 +835,7 @@ function MapBuilder.getBuildOrigin(country: string): BasePart?
 		return nil
 	end
 	local cc = string.upper(country)
-	local part = findMapPart("BuildOrigin_" .. cc)
-	if not part and FALLBACK_META[cc] then
-		MapBuilder.build()
-		part = findMapPart("BuildOrigin_" .. cc)
-	end
-	return part
+	return findMapPart("BuildOrigin_" .. cc)
 end
 
 return MapBuilder

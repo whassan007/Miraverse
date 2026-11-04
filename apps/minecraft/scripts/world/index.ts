@@ -1,5 +1,26 @@
 import { world, system } from '@minecraft/server';
 import { COUNTRIES, type CountryId } from '../../../../packages/content/schema.js';
+import {
+  MINECRAFT_ALL_COUNTRIES,
+  MINECRAFT_COUNTRY_DESTINATIONS,
+  MINECRAFT_GEO_DESTINATIONS,
+  getMinecraftGeoDestination,
+  canTravelMinecraft,
+  buildDestinationTerrainOps,
+  buildAll21DestinationsTerrainOps,
+  type MinecraftGeoDestination,
+} from '../generated/geo-terrain.js';
+
+export {
+  MINECRAFT_ALL_COUNTRIES,
+  MINECRAFT_COUNTRY_DESTINATIONS,
+  MINECRAFT_GEO_DESTINATIONS,
+  getMinecraftGeoDestination,
+  canTravelMinecraft,
+  buildDestinationTerrainOps,
+  buildAll21DestinationsTerrainOps,
+  type MinecraftGeoDestination,
+};
 
 export interface BlockPos {
   x: number;
@@ -228,6 +249,9 @@ export async function buildWorld(): Promise<void> {
       ...COUNTRIES.map((cc, idx) => ({
         cc,
         ops: buildCountryPlazaOps(cc, idx),
+      })),
+      ...buildAll21DestinationsTerrainOps().map((stage: { ops: Array<{ pos: BlockPos; blockId: string }> }) => ({
+        ops: stage.ops,
       })),
     ];
 

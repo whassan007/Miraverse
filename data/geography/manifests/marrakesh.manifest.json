@@ -1,0 +1,85 @@
+{
+  "locationId": "marrakesh",
+  "countryId": "MA",
+  "displayName": "Marrakesh Medina & Haouz Horizon",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_W008_00_DEM/Copernicus_DSM_COG_10_N31_00_W008_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    -8.025,
+    31.6,
+    -7.955,
+    31.655
+  ],
+  "regionalBoundingBox": [
+    -8.15,
+    31.15,
+    -7.75,
+    31.72
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32629",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    438.95,
+    490.53
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 27.4274,
+    "metersPerStudZ": 25.6574,
+    "studsPerMeter": 0.03646
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 2.2427,
+    "verticalExaggeration": 1.1,
+    "robloxYRangeStuds": [
+      9.0,
+      32.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      8800,
+      12,
+      0
+    ],
+    "robloxSpawn": [
+      8800,
+      12.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        8660,
+        -20,
+        -165
+      ],
+      "max": [
+        8940,
+        95,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      595872.92,
+      3499403.19
+    ]
+  },
+  "terrainChecksum": "9de802c72dccdb96bee1a387ae2b418f0c9075ee99c20ae6d89956e49ff2cd18",
+  "generatedAssetPaths": [
+    "data/geography/processed/marrakesh.json",
+    "apps/roblox/terrain/countries/MA/marrakesh_terrain.json",
+    "reports/terrain/heightmaps/marrakesh_heightmap.png",
+    "apps/roblox/terrain/countries/MA/marrakesh_heightmap.png",
+    "reports/terrain/hillshades/marrakesh_hillshade.png",
+    "reports/terrain/comparisons/marrakesh_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/MA.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:31.562528+00:00"
+}

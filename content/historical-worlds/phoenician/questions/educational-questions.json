@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "questions": [
+    {
+      "questionId": "q_byblos_alphabet",
+      "monumentId": "byblos_ahiram_sarcophagus",
+      "question": "Which major cultural innovation was first carved on the sarcophagus of King Ahiram in Byblos?",
+      "options": [
+        "A 22-letter linear phonetic alphabet where each sign represents a consonant sound",
+        "A system of 800 pictorial hieroglyphic symbols borrowed directly from Egypt",
+        "A set of astronomical constellations used solely for desert caravan navigation",
+        "A system of numeric tally marks exclusively for counting silver trade coins"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "King Ahiram's sarcophagus (c. 1000 BCE) preserves the earliest fully formed 22-letter linear Phoenician alphabet, which eliminated complicated ideograms and became the ancestor of Greek, Latin, Arabic, and Hebrew alphabets."
+    },
+    {
+      "questionId": "q_byblos_temple_layers",
+      "monumentId": "byblos_l_shaped_temple",
+      "question": "Why did archaeologists carefully dismantle and move the Temple of the Obelisks in Byblos during the 1930s?",
+      "options": [
+        "To uncover and study the older 3rd-millennium BCE L-Shaped Temple buried directly beneath it",
+        "To protect the stone pillars from modern highway construction along the Mediterranean coast",
+        "Because ancient Phoenicians had built it on floating wooden rafts that needed replacement",
+        "To rotate the orientation of the courtyard so it faced Mount Lebanon rather than the sea"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "Maurice Dunand moved the Temple of the Obelisks stone-by-stone 100 meters to the east so archaeologists could excavate the earlier Bronze Age L-Shaped Temple resting beneath its foundations without destroying either monument."
+    },
+    {
+      "questionId": "q_tyre_alexander_mole",
+      "monumentId": "tyre_alexander_causeway_exhibit",
+      "question": "How did Alexander the Great's military causeway permanently transform the geography of Tyre?",
+      "options": [
+        "It blocked coastal water currents, trapping 30 million m³ of sand that fused island Tyre into a peninsula",
+        "It dug a deep undersea channel that separated Tyre farther into the Mediterranean Sea",
+        "It created a freshwater volcanic geyser that flooded the southern Egyptian harbor",
+        "It caused the entire limestone island of Tyre to sink beneath modern sea level"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "The 60-meter-wide stone causeway built during the 332 BCE siege interrupted the northward longshore sediment drift along the Levantine coast, gradually accumulating a sand tombolo that permanently attached the offshore island to the mainland."
+    },
+    {
+      "questionId": "q_carthage_cothon",
+      "monumentId": "carthage_cothon_harbor",
+      "question": "What ingenious feature allowed the naval commanders of Carthage to monitor their fleet inside the circular Cothon?",
+      "options": [
+        "A central island pavilion (Ilot de l'Amirauté) with 360-degree views across all 220 warship slipways",
+        "A network of underwater acoustic listening tubes stretching to Sicily",
+        "A 100-meter lighthouse burning cedar resin imported directly from Byblos",
+        "An artificial glass dome covering the harbor to shelter rowers from rain"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "At the center of Carthage's circular military port stood the Ilot de l'Amirauté, an artificial island housing the Admiral's headquarters with panoramic sightlines over all radial ship sheds while shielding the war fleet from view from the open sea."
+    },
+    {
+      "questionId": "q_shipbuilding_mortise",
+      "monumentId": "byblos_ancient_harbor",
+      "question": "How were ancient Phoenician and Punic ship planks joined together to create watertight ocean-going hulls?",
+      "options": [
+        "Through mortise-and-tenon joints locked tightly with wooden peg dowels (treenails)",
+        "By binding overlapping boards together with soaked animal leather straps",
+        "By melting heavy sheets of iron over wooden logs with volcanic sulfur",
+        "Using sticky tree gum without any interior wooden framework or ribs"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "Phoenician shipwrights used shell-first construction where each plank edge had mortises cut into it and was joined to its neighbor with wooden tenons locked by wooden pegs, forming a rigid, resilient hull before internal frames were inserted."
+    }
+  ]
+}

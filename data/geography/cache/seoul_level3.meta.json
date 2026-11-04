@@ -1,0 +1,26 @@
+{
+  "dataset": "COP-DEM_GLO-30",
+  "tileId": "Copernicus_DSM_COG_10_N37_00_E126_00_DEM",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_E126_00_DEM/Copernicus_DSM_COG_10_N37_00_E126_00_DEM.tif",
+  "crs": "EPSG:4326",
+  "tileShape": [
+    3600,
+    3600
+  ],
+  "window": [
+    3366,
+    1422,
+    234,
+    324
+  ],
+  "extractedShape": [
+    324,
+    234
+  ],
+  "noDataReplaced": 0,
+  "minElevationM": 2.644,
+  "maxElevationM": 339.803,
+  "meanElevationM": 67.051,
+  "stdElevationM": 60.568,
+  "retrievedAt": "2026-11-04T19:45:36.705038+00:00"
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.6.0",
+  "generatedAt": "2026-11-04T13:48:27.830Z",
+  "agentId": "DX01",
+  "hostHardware": "NVIDIA GB10, 580.178.04, 42, 0 % | Total=121GiB Used=102GiB Free=1GiB Available=19GiB",
+  "dgxSparkEndpoint": "http://localhost:1234/v1/chat/completions",
+  "dgxModel": "qwen/qwen3-coder-next",
+  "dgxProbeResult": {
+    "ok": true,
+    "model": "qwen/qwen3-coder-next",
+    "content": "{\"status\":\"READY\",\"maxConcurrency\":1}",
+    "usage": {
+      "prompt_tokens": 55,
+      "completion_tokens": 11,
+      "total_tokens": 66,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "tokensPerSec": 26.32,
+    "elapsedMs": 418
+  },
+  "v15ExpansionMergedInMain": false,
+  "actualRepositoryCounts": {
+    "legacyActiveCountries": [
+      "LB",
+      "IQ",
+      "EG",
+      "FR",
+      "KR"
+    ],
+    "legacyActiveCount": 5,
+    "minecraftGlobalStagedCatalogOnly": [
+      "DE",
+      "CN",
+      "JP",
+      "RU",
+      "UA",
+      "MA"
+    ],
+    "minecraftGlobalStagedOnlyCount": 6,
+    "gulfV16MandatoryCountries": [
+      "QA",
+      "AE",
+      "KW",
+      "SA",
+      "OM"
+    ],
+    "gulfV16SixthAddedCountry": "BH",
+    "gulfV16TotalCountries": 6,
+    "totalActiveWebPortalCountriesAfterV16": 11,
+    "hypotheticalTargetIfV15WereMerged": 33,
+    "futureUnreleasedCandidates": [
+      {
+        "code": "YE",
+        "name": "Yemen",
+        "status": "POTENTIAL_FUTURE_DESTINATION_NOT_RELEASED",
+        "note": "Explicitly excluded from v1.6 release; requires dedicated research and human Yemeni cultural review."
+      }
+    ]
+  },
+  "platformCapabilityBaseline": {
+    "website": {
+      "status": "PLAYABLE_PORTAL_READY",
+      "rtlSupport": "Native CSS dir=\"rtl\" + Arabic shaping + Arabizi LTR + English LTR"
+    },
+    "roblox": {
+      "status": "TEST_BUILD_COMPILED_ROJO",
+      "localizationSupport": "Roblox LocalizationTable supports ar-001 + in-app Gulf dialect / MSA / Arabizi / English selector",
+      "nativeStudioClientVerificationOnLinuxHost": "UNVERIFIED/BLOCKED (Linux aarch64 host cannot run macOS/Windows Roblox Studio GUI)"
+    },
+    "minecraftBedrock": {
+      "status": "TEST_BUILD_PACKAGED",
+      "packLanguagesJsonInspect": "apps/minecraft/rp/texts/ contains en_US.lang and fr_FR.lang; Microsoft Bedrock standard pack language catalog does not list ar_SA/ar_001 as a built-in pack locale code.",
+      "capabilityTestStrategy": "Non-destructive capability test fixture evaluating RawMessage, @minecraft/server-ui ActionFormData/MessageFormData, signs, books, NPC nametags, actionbar, titles, and item names across Arabic UTF-8 and Arabizi Latin fallback.",
+      "nativeBedrockClientVerificationOnLinuxHost": "UNVERIFIED/BLOCKED (Linux aarch64 host cannot run Windows Minecraft Bedrock GUI client)"
+    }
+  }
+}

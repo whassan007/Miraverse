@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0.0",
+  "ships": [
+    {
+      "shipClassId": "ship_phoenician_gaulos",
+      "name": "Phoenician Merchantman (Gaulos / Round Ship)",
+      "nativeName": "سفينة غاولوس التجارية الفينيقية (سفينة الخيل / هيبوس)",
+      "role": "Deep-Sea Maritime Merchant Cargo Transport",
+      "historicalPeriod": "Late Bronze Age to Persian Era (c. 1400 – 400 BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "dimensions": { "lengthStuds": 36, "beamStuds": 14, "draftStuds": 6, "cargoCapacityAmphorae": 400 },
+      "hullFeatures": [
+        "Symmetrical convex hull with high curved stem and stern",
+        "Carved horse head figurehead (hippos) on the prow",
+        "Single central cedar mast with broad square linen sail",
+        "Dual side steering oars (quarter rudders)",
+        "Deep cargo hold fitted with amphora racks and timber lashings"
+      ],
+      "constructionMethod": "Shell-first mortise-and-tenon jointing with internal ribbing inserted afterward",
+      "gameplayInteraction": "interactive:ship_cargo_loading_puzzle"
+    },
+    {
+      "shipClassId": "ship_punic_warship",
+      "name": "Punic War Galley (Trireme / Quinquereme)",
+      "nativeName": "البارجة الحربية البونية ثلاثية المجاديف",
+      "role": "Naval Defense, Ramming Warfare, and Fleet Superiority",
+      "historicalPeriod": "Classical & Hellenistic Era (c. 500 – 146 BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "dimensions": { "lengthStuds": 64, "beamStuds": 12, "draftStuds": 4, "rowerCount": 170 },
+      "hullFeatures": [
+        "Long slender waterline optimized for high-speed ramming acceleration",
+        "Bronze-sheathed underwater rostrum (ram) fitted directly to the keel",
+        "Outrigger frames (parexeiresia) supporting upper tier oar tholes",
+        "Painted Phoenician carpenter letters on timbers for prefabricated mass assembly",
+        "Protective lead sheathing on underwater hull to deter marine shipworm (*Teredo navalis*)"
+      ],
+      "constructionMethod": "Prefabricated modular components verified by the Marsala shipwreck excavation",
+      "gameplayInteraction": "interactive:mortise_and_tenon_joinery_puzzle"
+    }
+  ]
+}

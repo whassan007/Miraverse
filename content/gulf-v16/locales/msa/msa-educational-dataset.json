@@ -1,0 +1,187 @@
+{
+  "agentId": "DX09",
+  "dgxNote": "The Modern Standard Arabic (MSA) educational clarity rule—prioritizing standardized grammar, vocabulary, and pronunciation for formal instruction—differs significantly from Gulf dialects, which feature distinct phonological shifts (e.g., *qāf* pronounced as /g/), simplified verb conjugations, and localized lexicon, making them less mutually intelligible in formal educational contexts.",
+  "recordsCount": 120,
+  "glossaryMsaTerms": [
+    {
+      "id": "vocab.qa.lulu",
+      "msa": "لؤلؤ",
+      "en": "Natural sea pearls (traditionally called qimash in Gulf pearl trade)"
+    },
+    {
+      "id": "vocab.qa.jalboot",
+      "msa": "سفينة شراعية تقليدية",
+      "en": "Traditional flat-transom wooden dhow with a vertical bow used along Qatar's coast"
+    },
+    {
+      "id": "vocab.qa.qallaf",
+      "msa": "صانع السفن الخشبية",
+      "en": "Master wooden dhow shipwright"
+    },
+    {
+      "id": "vocab.qa.tawash",
+      "msa": "تاجر اللؤلؤ",
+      "en": "Pearl merchant who grades pearls by size, luster, and weight"
+    },
+    {
+      "id": "vocab.qa.fisaikra",
+      "msa": "حكاية الفسيفكرة الشعبية",
+      "en": "Qatari coastal folktale of a kind young woman aided by a magical sea fish (Folklore)"
+    },
+    {
+      "id": "vocab.qa.al_qaffal",
+      "msa": "موسم العودة إلى الديار",
+      "en": "The joyous coastal homecoming marking the safe return of pearl boats to shore"
+    },
+    {
+      "id": "vocab.ae.barjeel",
+      "msa": "ملقف هواء",
+      "en": "Traditional wind-catcher tower that funnels cool breezes into courtyard rooms"
+    },
+    {
+      "id": "vocab.ae.falaj",
+      "msa": "قناة ري تقليدية",
+      "en": "Gravity-fed water channel irrigating inland oases like Al Ain"
+    },
+    {
+      "id": "vocab.ae.khor",
+      "msa": "لسان بحري / مرسى طبيعي",
+      "en": "Natural saltwater creek or inlet sheltering trading dhows"
+    },
+    {
+      "id": "vocab.ae.al_jadi",
+      "msa": "النجم القطبي",
+      "en": "Polaris (the North Star), used by Gulf navigators to find northern bearings"
+    },
+    {
+      "id": "vocab.ae.talli",
+      "msa": "نسيج التطريز المجدول",
+      "en": "Traditional Emirati hand-braided textile craft woven on a kajooja cushion"
+    },
+    {
+      "id": "vocab.ae.marhaba_ilsaa",
+      "msa": "أهلاً وسهلاً بكم في كل وقت",
+      "en": "Warm Emirati greeting meaning \"Welcome at this very hour\""
+    },
+    {
+      "id": "vocab.kw.boom",
+      "msa": "سفينة شراعية كويتية ذات مقدمة ومؤخرة مدببة",
+      "en": "Large double-ended Kuwaiti dhow famous for long-distance cargo and water transport"
+    },
+    {
+      "id": "vocab.kw.nakhuda",
+      "msa": "ربان السفينة وقائدها",
+      "en": "Dhow captain responsible for navigation, crew welfare, and fair harbor trade"
+    },
+    {
+      "id": "vocab.kw.bu_darya",
+      "msa": "شخصية أسطورية بحرية في الفلكلور الخليجي",
+      "en": "Legendary sea figure from Gulf maritime folklore associated with night winds and waves"
+    },
+    {
+      "id": "vocab.kw.nahham",
+      "msa": "منشد السفينة الذي يحدو للبحارة",
+      "en": "Maritime vocalist who leads call-and-response work songs (nahma) aboard a dhow"
+    },
+    {
+      "id": "vocab.kw.naqah",
+      "msa": "مرسى ساحلي محاط بحاجز حجري",
+      "en": "Tidal stone-walled harbor basin sheltering dhows along the Kuwait City shore"
+    },
+    {
+      "id": "vocab.kw.qallaf_kw",
+      "msa": "صانع السفن الخشبية التقليدية",
+      "en": "Master shipwright skilled in shaping and caulking wooden dhow hulls"
+    },
+    {
+      "id": "vocab.sa.qasida",
+      "msa": "قصيدة شعرية عربية موزونة ومقفاة",
+      "en": "Classical Arabic ode structured with balanced meter and rhyme"
+    },
+    {
+      "id": "vocab.sa.muallaqat",
+      "msa": "القصائد السبع أو العشر المشهورة في الشعر الجاهلي",
+      "en": "Celebrated anthology of pre-Islamic Arabic odes, including the poem of Antarah ibn Shaddad"
+    },
+    {
+      "id": "vocab.sa.qafila",
+      "msa": "جماعة المسافرين والتجار عبر الصحراء",
+      "en": "Desert caravan traveling together for mutual safety, shared water, and trade"
+    },
+    {
+      "id": "vocab.sa.majlis",
+      "msa": "مكان الجلوس والضيافة وتبادل الحديث والشعر",
+      "en": "Traditional sitting room or courtyard space for welcoming guests, sharing poetry, and community counsel"
+    },
+    {
+      "id": "vocab.sa.sadu",
+      "msa": "نسيج البادية التقليدي ذو الزخارف الهندسية",
+      "en": "Traditional horizontal-loom geometric weaving crafted from desert wool"
+    },
+    {
+      "id": "vocab.sa.murua",
+      "msa": "مكارم الأخلاق والشهامة ونصرة الضعيف",
+      "en": "Moral courage, magnanimity, keeping one's word, and protecting the dignity of others"
+    },
+    {
+      "id": "vocab.om.aflaj",
+      "msa": "قنوات ري تقليدية بالجاذبية",
+      "en": "Gravity-fed water channels carrying mountain spring or groundwater to villages and gardens"
+    },
+    {
+      "id": "vocab.om.arif",
+      "msa": "المشرف على توزيع مياه الفلج",
+      "en": "Trusted community water master who coordinates falaj maintenance and fair time-shares"
+    },
+    {
+      "id": "vocab.om.athar",
+      "msa": "حصة زمنية لمياه الري (نحو ٣٠ دقيقة)",
+      "en": "Traditional 30-minute time unit of irrigation water (48 athar in a 24-hour day)"
+    },
+    {
+      "id": "vocab.om.luban",
+      "msa": "صمغ اللبان العطري",
+      "en": "Aromatic frankincense resin harvested from Boswellia sacra trees in Dhofar"
+    },
+    {
+      "id": "vocab.om.sarooj",
+      "msa": "ملاط طيني كلسي مقاوم للماء",
+      "en": "Traditional waterproof Omani mortar used to line falaj channels and cisterns"
+    },
+    {
+      "id": "vocab.om.sharia_water",
+      "msa": "نقطة السقيا الأولى في مدخل القرية",
+      "en": "The first open-air basin where a falaj enters the village, reserved for clean drinking water"
+    },
+    {
+      "id": "vocab.bh.dilmun",
+      "msa": "حضارة دلمون في العصر البرونزي",
+      "en": "Bronze Age civilization and trade hub centered on Bahrain (Qal'at al-Bahrain, UNESCO #1192)"
+    },
+    {
+      "id": "vocab.bh.qalat_al_bahrain",
+      "msa": "موقع قلعة البحرين الأثري",
+      "en": "Ancient Harbour and Capital of Dilmun archaeological tell on Bahrain's northern coast"
+    },
+    {
+      "id": "vocab.bh.kawkab",
+      "msa": "نبع ماء عذب تحت قاع البحر",
+      "en": "Freshwater submarine spring bubbling up beneath the salty sea around Bahrain"
+    },
+    {
+      "id": "vocab.bh.bishtakhta",
+      "msa": "صندوق مكتب تاجر اللؤلؤ",
+      "en": "Compartmented wooden chest used by 19th–20th century Muharraq pearl merchants"
+    },
+    {
+      "id": "vocab.bh.kurar",
+      "msa": "حرفة نسج الأشرطة المطرزة الجماعية",
+      "en": "Cooperative Bahraini embroidery craft where weavers braid metallic threads together"
+    },
+    {
+      "id": "vocab.bh.tabaqat_athariya",
+      "msa": "علم الطبقات الأثرية (الستراتيغرافيا)",
+      "en": "Archaeological layers (stratigraphy) showing different historical time periods in order"
+    }
+  ]
+}

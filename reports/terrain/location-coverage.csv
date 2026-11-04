@@ -1,0 +1,22 @@
+countryId,countryName,locationId,displayName,locationType,geographicClass,sourceDataset,sourceCRS,targetCRS,minElevM,maxElevM,robloxMinY,robloxMaxY,verticalExaggeration,checksum,status
+LB,Lebanon,byblos,Byblos,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32636,-0.09,238.5,4.0,36.0,1.15,3711ed226649d642,PASS
+LB,Lebanon,mount_lebanon,Mount Lebanon,region,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32636,787.64,2004.28,26.0,96.0,1.25,dde650c0fff96974,PASS
+LB,Lebanon,beirut,Beirut,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32636,-0.45,105.37,6.0,38.0,1.2,d5a42a3364405974,PASS
+EG,Egypt,cairo,Cairo,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32636,13.5,209.08,4.0,28.0,1.15,720fee0a39083e3c,PASS
+EG,Egypt,alexandria,Alexandria,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32635,-11.7,35.79,4.0,18.0,1.1,51fe7371da807d8e,PASS
+EG,Egypt,aswan,Aswan,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32636,82.0,193.89,10.0,38.0,1.2,2aa15dc34cb3b426,PASS
+IQ,Iraq,baghdad,Baghdad,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32638,27.0,82.1,4.0,16.0,1.05,fe9db7172caa8b41,PASS
+IQ,Iraq,erbil,Erbil,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32638,402.1,454.13,18.0,52.0,1.2,4ed954bd4ca128d3,PASS
+IQ,Iraq,basra,Basra,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32638,-0.0,13.92,3.0,13.0,1.05,31a2b22410d0d100,PASS
+KR,South Korea,jeonju,Jeonju,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32652,29.54,303.97,4.0,42.0,1.2,afcace14a437e7da,PASS
+KR,South Korea,seoul,Seoul,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32652,3.0,315.37,8.0,56.0,1.2,2a4db6ade4b21f99,PASS
+KR,South Korea,busan,Busan,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32652,0.0,535.78,6.0,48.0,1.2,468a7f2a6b23aeef,PASS
+FR,France,lyon,Lyon,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32631,160.5,310.94,4.0,36.0,1.2,c034846c88b2f669,PASS
+FR,France,paris,Paris,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32631,26.0,131.57,4.0,24.0,1.15,7f932c6a98f54ade,PASS
+FR,France,marseille,Marseille,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32631,0.0,141.01,6.0,42.0,1.2,636841f0884b5c9c,PASS
+DE,Germany,rhine_valley,Upper Middle Rhine & Lorelei Gorge,region,verified_real_world_with_separate_story_layer,COP-DEM_GLO-30,EPSG:4326,EPSG:32632,64.0,411.93,8.0,56.0,1.25,43c0959c161ecb51,PASS
+CN,China,wuling_valley,Wuling-Inspired Peach Blossom Valley,region,fictional_literary_with_real_topographic_inspiration,COP-DEM_GLO-30,EPSG:4326,EPSG:32649,25.35,152.81,8.0,52.0,1.2,e0f9c324961f50c7,PASS
+JP,Japan,tohoku_route,Bashō Tohoku Route (Yamadera to Matsushima),region,verified_real_world_multi_segment_route,COP-DEM_GLO-30,EPSG:4326,EPSG:32654,158.54,806.3,8.0,58.0,1.2,a51c1799e4d9a1fa,PASS
+RU,Russia,lake_svetloyar,Lake Svetloyar & Kitezh Folklore Reserve,region,verified_real_world_with_folklore_overlay,COP-DEM_GLO-30,EPSG:4326,EPSG:32638,114.95,152.11,6.0,27.97,1.15,bac51ec3eba9573f,PASS
+UA,Ukraine,kyiv_hills,Kyiv Hills & Dnipro River Overlook,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32636,90.0,210.29,8.16,43.48,1.2,6d605f0585a4979f,PASS
+MA,Morocco,marrakesh,Marrakesh Medina & Haouz Horizon,city,verified_real_world,COP-DEM_GLO-30,EPSG:4326,EPSG:32629,438.95,490.53,9.0,32.0,1.1,9de802c72dccdb96,PASS

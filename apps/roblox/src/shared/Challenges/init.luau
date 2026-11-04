@@ -135,6 +135,9 @@ local function buildContext(session)
 	}
 
 	function ctx.origin()
+		if session.origin then
+			return session.origin
+		end
 		local char = player.Character
 		local root = char and char:FindFirstChild("HumanoidRootPart")
 		if root then
@@ -257,7 +260,7 @@ end
 
 -- Blocks the calling thread until the challenge completes (true) or is
 -- abandoned (false). Returns success, results.
-function Challenges.run(player, challenge, pack)
+function Challenges.run(player, challenge, pack, originOverride)
 	if typeof(player) ~= "Instance" or not player:IsA("Player") or player.Parent ~= Players then
 		return false, {}
 	end
@@ -282,6 +285,7 @@ function Challenges.run(player, challenge, pack)
 		results = {},
 		done = false,
 		busy = false,
+		origin = originOverride,
 		finished = Instance.new("BindableEvent"),
 	}
 	active[player] = session

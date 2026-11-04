@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.6.0",
+  "generatedAt": "2026-11-04T13:48:31.211Z",
+  "agentId": "DX02",
+  "dgxModelUsed": "qwen/qwen3-coder-next",
+  "dgxSummaryNote": "The epistemic distinction among these mythic narratives lies in their foundational truth claims: Al Fisaikra (QA), Bu Darya (KW), Antarah/Mu’allaqat (SA), and the Solomon/jinn aflaj & Ubar (OM) traditions are rooted in *historical-legendary* frameworks—blending oral history, genealogical memory, and semi-mythical accounts of pre-Islamic or early Islamic Arabia, where figures like Antarah or Ubar’s king are presented as quasi-historical actors within a real-world setting. In contrast, the Dilmun paradise myths (BH) operate in a *theological-cosmological* register—depicting Dilmun as an eternal, sacred realm of primordial purity and divine",
+  "sources": [
+    {
+      "sourceId": "SRC-V16-GULF-MYTHIC-ANCHORS-001",
+      "title": "Mythic Anchors in the Diaspora: How Cultural Quests and Legends Shape Transnational Identity — Section: The Arabian Peninsula and the Gulf: Desert Epics, Pearl Divers, and the Ancient Sea",
+      "preservedPath": "content/gulf-v16/source-registry/gulf_arabian_peninsula_source.txt",
+      "sha256": "ec61b521813687e1f471ceb122d2a3de4621daba1f723d2cf83a51f9744005c3",
+      "bytes": 7033,
+      "ingestedAt": "2026-11-04T13:48:31.211Z",
+      "author": "unknown",
+      "publisher": "unknown",
+      "sourceType": "user_supplied_research",
+      "rightsReuseStatus": "review_required",
+      "usagePolicy": "paraphrase_only_no_verbatim_player_copy",
+      "countriesCovered": [
+        "QA",
+        "AE",
+        "KW",
+        "SA",
+        "OM",
+        "BH"
+      ],
+      "excludedFutureCandidates": [
+        "YE"
+      ]
+    },
+    {
+      "sourceId": "SRC-V16-UNESCO-AL-ZUBARAH-1402",
+      "title": "UNESCO World Heritage List #1402 — Al Zubarah Archaeological Site (Qatar)",
+      "url": "https://whc.unesco.org/en/list/1402",
+      "sourceType": "authoritative_institution",
+      "verified": true
+    },
+    {
+      "sourceId": "SRC-V16-QATAR-MOC-FOLKTALES",
+      "title": "Qatar Ministry of Culture — National Folklore Inventory (Folk Tales)",
+      "url": "https://moc.gov.qa/en/inventory/folk-tales/",
+      "sourceType": "authoritative_institution",
+      "verified": true
+    },
+    {
+      "sourceId": "SRC-V16-UNESCO-AL-AIN-1343",
+      "title": "UNESCO World Heritage List #1343 — Cultural Sites of Al Ain (Hafit, Hili, Bidaa Bint Saud and Oases Areas, UAE)",
+      "url": "https://whc.unesco.org/en/list/1343",
+      "sourceType": "authoritative_institution",
+      "verified": true
+    },
+    {
+      "sourceId": "SRC-V16-UNESCO-OMAN-AFLAJ-1207",
+      "title": "UNESCO World Heritage List #1207 — Aflaj Irrigation Systems of Oman",
+      "url": "https://whc.unesco.org/en/list/1207",
+      "sourceType": "authoritative_institution",
+      "verified": true
+    },
+    {
+      "sourceId": "SRC-V16-UNESCO-QALAT-AL-BAHRAIN-1192",
+      "title": "UNESCO World Heritage List #1192 — Qal'at al-Bahrain – Ancient Harbour and Capital of Dilmun",
+      "url": "https://whc.unesco.org/en/list/1192/",
+      "sourceType": "authoritative_institution",
+      "verified": true
+    },
+    {
+      "sourceId": "SRC-V16-UNESCO-MUHARRAQ-PEARLING-1364",
+      "title": "UNESCO World Heritage List #1364 — Pearling, Testimony of an Island Economy (Muharraq, Bahrain)",
+      "url": "https://whc.unesco.org/en/list/1364",
+      "sourceType": "authoritative_institution",
+      "verified": true
+    }
+  ]
+}

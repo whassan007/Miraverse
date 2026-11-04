@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.2.0",
+  "generated_at": "2026-11-04T18:49:00.000Z",
+  "agent_id": "DX01",
+  "source": {
+    "source_id": "SRC-V12-TYRE-MELQART-001",
+    "title": "The Rock of Melqart: The Ascendancy, Engineering, and Enduring Sieges of Phoenician Tyre",
+    "original_filename": "The Rock of Melqart.txt",
+    "preserved_path": "content/v12/source-registry/tyre_rock_of_melqart_source.txt",
+    "sha256": "d838273209bd6a2ce35327f219fadcaf17cc33b307ba62061e6f497294e6a922",
+    "bytes": 32566,
+    "ingested_at": "2026-11-04T18:49:00.000Z",
+    "author": "MiraVerse Cultural & Historical Research Team",
+    "publisher": "MiraVerse Research Compendium",
+    "source_type": "historical_geoarchaeological_synthesis",
+    "rights_reuse_status": "review_required",
+    "usage_policy": "paraphrase_only_no_verbatim_player_copy",
+    "passage_count": 12,
+    "countries_covered": ["LB"]
+  },
+  "passages": [
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P01",
+      "country": "LB",
+      "section_title": "Dual-Geography & Amarna Antecedents",
+      "excerpt_summary": "Tyre (Phoenician ṣūr) developed as an offshore fortified island complemented by mainland Ushu (Palaetyrus), transcending 14th-century BCE Amarna-era shortages.",
+      "key_entities": ["Tyre", "Ushu", "Palaetyrus", "Abimilki", "Amarna Letters"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P02",
+      "country": "LB",
+      "section_title": "The Sidonian and Egyptian Harbors",
+      "excerpt_summary": "Geoarchaeological engineering created northern Sidonian and southern Egyptian harbors with 2.25m header limestone blocks and 1-hectare southern basin.",
+      "key_entities": ["Sidonian Harbor", "Egyptian Harbor", "Ashlar Masonry", "Breakwaters"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P03",
+      "country": "LB",
+      "section_title": "The Chemistry and Economics of Tyrian Purple",
+      "excerpt_summary": "Extracting dibromoindigo from Hexaplex trunculus and Bolinus brandaris required 10,000 snails per gram and 10 days of alkaline heating, leaving 40m shell mounds.",
+      "key_entities": ["Hexaplex trunculus", "Bolinus brandaris", "Dibromoindigo", "Murex", "Tyrian Purple"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P04",
+      "country": "LB",
+      "section_title": "Hiram I and the Solomonic Alliance",
+      "excerpt_summary": "King Hiram I built the Temple of Melqart with twin gold/emerald pillars and partnered with Solomon on Ships of Tarshish from Ezion-Geber to Ophir.",
+      "key_entities": ["King Hiram I", "Temple of Melqart", "Solomon", "Ships of Tarshish", "Ophir"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P05",
+      "country": "LB",
+      "section_title": "Dynastic Crisis & The Foundation of Carthage",
+      "excerpt_summary": "Following Pygmalion's murder of Sychaeus, Queen Elissa fled Tyre in 814 BCE to found Carthage (Qart-hadasht) using the Byrsa oxhide diplomacy.",
+      "key_entities": ["Queen Elissa", "Dido", "Pygmalion", "Sychaeus", "Carthage", "Byrsa"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P06",
+      "country": "LB",
+      "section_title": "Assyrian Subjugation & The Vassal Treaty of Esarhaddon",
+      "excerpt_summary": "The 672 BCE treaty with King Ba'al I stripped Tyre of shipwreck salvage rights and invoked divine curses from Phoenician deities (Melqart, Eshmun, Ba'al-samem).",
+      "key_entities": ["Esarhaddon", "Ba'al I", "Vassal Treaty", "Melqart", "Eshmun", "Ashurbanipal"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P07",
+      "country": "LB",
+      "section_title": "The Babylonian Cataclysm: The Thirteen-Year Siege",
+      "excerpt_summary": "Nebuchadnezzar II destroyed mainland Ushu but stalemated against the island for 13 years (586–573 BCE); Ezekiel recorded Babylonian exhaustion; rule transitioned to shoftim.",
+      "key_entities": ["Nebuchadnezzar II", "Ithobaal III", "Ezekiel", "Shoftim", "Judges"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P08",
+      "country": "LB",
+      "section_title": "The Persian Era & Salamis Naval Flank",
+      "excerpt_summary": "Tyre served as the naval core of the Achaemenid fleet, fighting on the right wing at Salamis (480 BCE) under King Mattan IV and later navigating Evagoras's rebellion.",
+      "key_entities": ["Persian Empire", "Battle of Salamis", "King Mattan IV", "Evagoras of Salamis"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P09",
+      "country": "LB",
+      "section_title": "Alexander the Great: Pretext & The 332 BCE Siege",
+      "excerpt_summary": "Alexander's demand to sacrifice to Heracles-Melqart inside island Tyre was refused by Azemilcus; envoys were executed; Alexander initiated a 7-month siege.",
+      "key_entities": ["Alexander the Great", "Azemilcus", "Melqart", "Heracles", "Envoys"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P10",
+      "country": "LB",
+      "section_title": "The Engineering of the Mole & The Tyrian Fireship",
+      "excerpt_summary": "Alexander built a 60m-wide mole using Palaetyrus rubble and cedar timbers; Tyrians countered with a sulfur/pitch fireship destroying siege towers before naval blockade.",
+      "key_entities": ["The Mole", "Fireship", "Siege Towers", "Ballistae", "Cypriot Fleet"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P11",
+      "country": "LB",
+      "section_title": "Geoarchaeological Legacy: Formation of the Tombolo",
+      "excerpt_summary": "The 60m mole trapped longshore sediment, accumulating 30 million m³ of sand (30,000–50,000 m³/yr) to form a permanent tombolo and bury the Egyptian harbor beneath Roman baths.",
+      "key_entities": ["Tombolo", "Longshore Drift", "Sedimentation", "Egyptian Harbor", "Roman Baths"]
+    },
+    {
+      "source_id": "SRC-V12-TYRE-MELQART-001",
+      "passage_locator": "LB-TYRE-P12",
+      "country": "LB",
+      "section_title": "Hellenistic & Roman Numismatics: The Shekel of Tyre",
+      "excerpt_summary": "Tyrian silver shekels with Heracles-Melqart and eagle on ship's prow became the Levant standard and the mandated currency for the Jerusalem Temple tax.",
+      "key_entities": ["Shekel of Tyre", "Heracles-Melqart", "Second Temple Tax", "Thirty Pieces of Silver"]
+    }
+  ]
+}

@@ -90,11 +90,51 @@ import { StateStore, RewardLedger, type GlobalPlayerSaveStateV11 } from '../stat
 import { CoopSession } from '../multiplayer/index.js';
 import { StructureRestore } from '../building/index.js';
 import { AtlasJournal, ArtifactViewer } from '../ui/index.js';
+import {
+  MINECRAFT_ALL_COUNTRIES,
+  MINECRAFT_COUNTRY_DESTINATIONS,
+  MINECRAFT_GEO_DESTINATIONS,
+  getMinecraftGeoDestination,
+  canTravelMinecraft,
+} from '../../generated/geo-terrain.js';
 
 export class MiraVerseGlobalRuntimeV11 {
   readonly coop = new CoopSession();
   readonly restore = new StructureRestore();
+  readonly geoDestinations = MINECRAFT_GEO_DESTINATIONS;
+  readonly countryDestinations = MINECRAFT_COUNTRY_DESTINATIONS;
   private readonly players = new Map<string, GlobalPlayerSaveStateV11>();
+  private readonly playerLocation = new Map<string, string>();
+
+  getDestination(locationId: string) {
+    return getMinecraftGeoDestination(locationId);
+  }
+
+  travelToDestination(playerId: string, toDestinationId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    const currentLoc = this.playerLocation.get(playerId) ?? 'LOBBY';
+    if (!canTravelMinecraft(currentLoc, toDestinationId)) {
+      return { ok: false, reason: 'TRAVEL_CONNECTION_NOT_AVAILABLE', from: currentLoc, to: toDestinationId };
+    }
+    if (toDestinationId === 'LOBBY') {
+      this.playerLocation.set(playerId, 'LOBBY');
+      return { ok: true, destinationId: 'LOBBY', countryId: null, spawn: { x: 0, y: 100, z: 0 } };
+    }
+    const dest = getMinecraftGeoDestination(toDestinationId)!;
+    this.playerLocation.set(playerId, dest.locationId);
+    return {
+      ok: true,
+      destinationId: dest.locationId,
+      countryId: dest.countryId as GlobalCountryCode,
+      displayName: dest.displayName,
+      spawn: dest.spawn,
+      origin: dest.origin,
+      waterFeature: dest.waterFeature,
+      biome: dest.biome,
+      landmarks: dest.landmarks,
+      playerLocale: p.locale,
+    };
+  }
 
   getOrCreatePlayer(
     playerId: string,

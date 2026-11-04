@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "size": [
+    24,
+    14,
+    24
+  ],
+  "country_id": "country.ae",
+  "country_code": "AE",
+  "structures": [
+    {
+      "id": "miraverse:ae_creek_sunrise_pier",
+      "act_id": "quest.ae.01",
+      "title_en": "Sails at Sunrise",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:ae_covered_creek_souk",
+      "act_id": "quest.ae.02",
+      "title_en": "The Souk of Many Routes",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:ae_barjeel_courtyard_workshop",
+      "act_id": "quest.ae.03",
+      "title_en": "Wind Tower Workshop",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:ae_al_ain_oasis_table",
+      "act_id": "quest.ae.04",
+      "title_en": "Oasis Table",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:ae_sea_to_oasis_lookout",
+      "act_id": "quest.ae.05",
+      "title_en": "Sea to Oasis Memory Map",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "size": [
+    24,
+    14,
+    24
+  ],
+  "country_id": "country.kw",
+  "country_code": "KW",
+  "structures": [
+    {
+      "id": "miraverse:kw_naqah_boom_pier",
+      "act_id": "quest.kw.01",
+      "title_en": "The Sailor's Kit",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:kw_sikak_ledger_alley",
+      "act_id": "quest.kw.02",
+      "title_en": "The Merchant's Promise",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:kw_qallaf_shipyard",
+      "act_id": "quest.kw.03",
+      "title_en": "Rescue the Model Dhow",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:kw_lantern_story_courtyard",
+      "act_id": "quest.kw.04",
+      "title_en": "Who Makes the Night Sounds?",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:kw_sief_finale_pier",
+      "act_id": "quest.kw.05",
+      "title_en": "Songs of Safe Return",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    }
+  ]
+}

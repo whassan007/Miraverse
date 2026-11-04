@@ -17,7 +17,7 @@ function Build.start(ctx)
 		cols = 0,
 	}, Build)
 	local legend = ch.blueprintLegend or {}
-	local origin = ctx.origin() * CFrame.new(0, 0, -14)
+	local origin = ctx.origin() * CFrame.new(0, 0, -24)
 	self.origin = origin
 
 	for r, line in ipairs(ch.blueprint) do

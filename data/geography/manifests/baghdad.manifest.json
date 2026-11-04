@@ -1,0 +1,85 @@
+{
+  "locationId": "baghdad",
+  "countryId": "IQ",
+  "displayName": "Baghdad",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N33_00_E044_00_DEM/Copernicus_DSM_COG_10_N33_00_E044_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    44.35,
+    33.31,
+    44.42,
+    33.37
+  ],
+  "regionalBoundingBox": [
+    44.28,
+    33.24,
+    44.49,
+    33.42
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32638",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    27.0,
+    82.1
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 29.7878,
+    "metersPerStudZ": 30.0622,
+    "studsPerMeter": 0.03357
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 6.1228,
+    "verticalExaggeration": 1.05,
+    "robloxYRangeStuds": [
+      4.0,
+      16.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      2400,
+      10,
+      0
+    ],
+    "robloxSpawn": [
+      2400,
+      10.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        2260,
+        -20,
+        -165
+      ],
+      "max": [
+        2540,
+        75,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      443040.45,
+      3689214.15
+    ]
+  },
+  "terrainChecksum": "fe9db7172caa8b412bcf71a796d25115ffb06555218d44b8ff9d495f4e9b881c",
+  "generatedAssetPaths": [
+    "data/geography/processed/baghdad.json",
+    "apps/roblox/terrain/countries/IQ/baghdad_terrain.json",
+    "reports/terrain/heightmaps/baghdad_heightmap.png",
+    "apps/roblox/terrain/countries/IQ/baghdad_heightmap.png",
+    "reports/terrain/hillshades/baghdad_hillshade.png",
+    "reports/terrain/comparisons/baghdad_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/IQ.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:27.940585+00:00"
+}

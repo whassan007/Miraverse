@@ -1,0 +1,85 @@
+{
+  "locationId": "beirut",
+  "countryId": "LB",
+  "displayName": "Beirut",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N33_00_E035_00_DEM/Copernicus_DSM_COG_10_N33_00_E035_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    35.468,
+    33.878,
+    35.535,
+    33.912
+  ],
+  "regionalBoundingBox": [
+    35.45,
+    33.84,
+    35.6,
+    33.95
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32636",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    -0.45,
+    105.37
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 27.7513,
+    "metersPerStudZ": 24.5134,
+    "studsPerMeter": 0.03603
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 3.3069,
+    "verticalExaggeration": 1.2,
+    "robloxYRangeStuds": [
+      6.0,
+      38.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      800,
+      14,
+      -290
+    ],
+    "robloxSpawn": [
+      800,
+      14.5,
+      -262
+    ],
+    "spatialBounds": {
+      "min": [
+        660,
+        -20,
+        -395
+      ],
+      "max": [
+        940,
+        95,
+        -215
+      ]
+    },
+    "projectedCenterMeters": [
+      731350.94,
+      3753198.59
+    ]
+  },
+  "terrainChecksum": "d5a42a3364405974b6c9352bfecbeb36b386cbf2120bbebf8ea56a732e71522b",
+  "generatedAssetPaths": [
+    "data/geography/processed/beirut.json",
+    "apps/roblox/terrain/countries/LB/beirut_terrain.json",
+    "reports/terrain/heightmaps/beirut_heightmap.png",
+    "apps/roblox/terrain/countries/LB/beirut_heightmap.png",
+    "reports/terrain/hillshades/beirut_hillshade.png",
+    "reports/terrain/comparisons/beirut_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/LB.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:26.923166+00:00"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "code": "QA",
+    "palette": {
+      "primary": "#8A1538",
+      "secondary": "#E2C07D",
+      "accent": "#0E7490",
+      "surfaceBg": "#161F33"
+    }
+  },
+  {
+    "code": "AE",
+    "palette": {
+      "primary": "#0F766E",
+      "secondary": "#D97706",
+      "accent": "#B45309",
+      "surfaceBg": "#111C2D"
+    }
+  },
+  {
+    "code": "KW",
+    "palette": {
+      "primary": "#1D4ED8",
+      "secondary": "#D97706",
+      "accent": "#0D9488",
+      "surfaceBg": "#0F172A"
+    }
+  },
+  {
+    "code": "SA",
+    "palette": {
+      "primary": "#B45309",
+      "secondary": "#15803D",
+      "accent": "#7C2D12",
+      "surfaceBg": "#1C1917"
+    }
+  },
+  {
+    "code": "OM",
+    "palette": {
+      "primary": "#15803D",
+      "secondary": "#D97706",
+      "accent": "#0284C7",
+      "surfaceBg": "#0F221D"
+    }
+  },
+  {
+    "code": "BH",
+    "palette": {
+      "primary": "#B91C1C",
+      "secondary": "#F59E0B",
+      "accent": "#0D9488",
+      "surfaceBg": "#1C1624"
+    }
+  }
+]
