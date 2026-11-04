@@ -381,13 +381,21 @@
       "acceptance": "Kitezh-inspired lake scenes, archive and 6 locations",
       "branch": "minecraft-global/AG10",
       "worktree": "/home/wael/Code/mv-wt-mcg/AG10",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "7e0499d",
+      "integration_sha": "99b6421",
+      "runtime_environment": "Antigravity World District Lead (RU · Lake Svetloyar / Kitezh-inspired mythic landscape)",
+      "modified_files": [
+        "apps/minecraft/world/RU/district-v11.json",
+        "apps/minecraft/world/RU/quests/ru-quest-scenes.json",
+        "apps/minecraft/world/RU/structures/ru_district_v11.mcstructure.json"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/world/RU/district-v11.json",
+        "apps/minecraft/world/RU/structures/ru_district_v11.mcstructure.json",
+        "apps/minecraft/world/RU/quests/ru-quest-scenes.json"
+      ],
       "report_path": "reports/minecraft-global/agents/AG10.md",
       "log_path": "swarm/minecraft-global/logs/AG10.log",
       "blockers": []
