@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.1.0",
+  "product": "MiraVerse Global v1.1 Minecraft Bedrock Companion",
+  "campaignTitle": "Echoes of Home: The Atlas of Belonging",
+  "targetBedrockVersion": "1.21.50+",
+  "scriptModuleDependencies": {
+    "@minecraft/server": "1.17.0",
+    "@minecraft/server-ui": "1.3.0"
+  },
+  "hostEnvironment": "Linux aarch64 (Ubuntu 24.04, NVIDIA GB10 128GB Unified Memory)",
+  "releaseStatus": "SOURCE_AND_MCADDON_VERIFIED_WINDOWS_MCWORLD_EXPORT_PENDING_NATIVE_HOST",
+  "deliverables": {
+    "apps/minecraft/dist/miraverse-global.mcworld": {
+      "status": "BLOCKED (native runtime missing on Linux aarch64 host; Windows Bedrock Editor/client required for binary LevelDB .mcworld export)",
+      "handoffScript": "apps/minecraft/editor/export-windows-mcworld.ps1",
+      "sha256": null
+    },
+    "apps/minecraft/dist/miraverse-global.mcaddon": {
+      "status": "VERIFIED",
+      "sha256": "265055569df8a2d6280fce6cc7fd222eb319e0e91a73173d4066cbfe756c2b07",
+      "bytes": 2797495
+    },
+    "apps/minecraft/dist/miraverse-global-sources.zip": {
+      "status": "VERIFIED",
+      "sha256": "107a3fae56fdf68d122408399c681c11076ecb3a3f6efa08feaf1ebe8b2d42ac",
+      "bytes": 12237306
+    },
+    "apps/minecraft/dist/global-content-catalog.json": {
+      "status": "VERIFIED",
+      "sha256": "7e53e2665de43ab6ef667a51f750590c86cf22f8978f3bebbbbb0a3d749a7de8",
+      "bytes": 381402
+    },
+    "apps/minecraft/dist/global-locales-manifest.json": {
+      "status": "VERIFIED",
+      "sha256": "d68168f47ed5659d1f74330069bbd7bc8577d6a5d6da9fea4836426d6511b77e",
+      "bytes": 6486
+    }
+  }
+}
