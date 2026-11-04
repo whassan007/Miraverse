@@ -1,0 +1,16 @@
+{
+  "countryId": "EG",
+  "chapterTitle": "Egypt: Lanterns of the Courtyard",
+  "mentorId": "npc_layla_cairo",
+  "worldOrigin": [
+    0,
+    8,
+    220
+  ],
+  "landmarks": [
+    "cairo_mashrabiya_courtyard",
+    "khan_fanous_workshop",
+    "koshari_kitchen_pavilion"
+  ],
+  "dish": "Koshari"
+}
