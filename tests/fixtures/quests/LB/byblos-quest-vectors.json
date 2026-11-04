@@ -1,0 +1,16 @@
+{
+  "countryId": "LB",
+  "questId": "QUEST_LB_MAIN_V06",
+  "steps": [
+    "gather",
+    "trade",
+    "cook",
+    "build",
+    "word"
+  ],
+  "stepTokenReward": 20,
+  "completionBonusTokens": 50,
+  "totalChapterTokens": 150,
+  "unlockedCosmetic": "cosmetic_lb_heritage_outfit",
+  "replayDuplicateEventAward": 0
+}
