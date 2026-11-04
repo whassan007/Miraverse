@@ -1038,12 +1038,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX17.md",
       "branch": "minecraft-v10/DX17",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX17",
-      "status": "FAILED",
-      "attempts": 1,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 2,
+      "commit_sha": "8092d14",
       "test_command": "node apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (59.77 tok/s)",
       "blockers": []
     },
     {

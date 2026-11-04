@@ -1,0 +1,16 @@
+=== AGENT DX17 (DGX · W1) ===
+Timestamp: 2026-11-04T06:55:03.232Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (59.77 tok/s)
+Branch: minecraft-v10/DX17
+Agent Commit SHA: 8092d14
+Integration Merge SHA: 1251723
+Owned Paths: apps/minecraft/tools/assets/atlas-and-blocks/
+Test Command: node apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+PASS: DX17 verified 90 item and terrain texture atlas references.
+
+DONE DX17 8092d14 apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs
