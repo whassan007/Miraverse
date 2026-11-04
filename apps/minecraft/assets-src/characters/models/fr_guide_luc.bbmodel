@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "format_version": "4.9",
+    "model_format": "bedrock",
+    "box_uv": true
+  },
+  "name": "geometry.miraverse.fr_guide_luc",
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "head",
+      "from": [
+        -4,
+        24,
+        -4
+      ],
+      "to": [
+        4,
+        32,
+        4
+      ],
+      "uv_offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "body",
+      "from": [
+        -4,
+        12,
+        -2
+      ],
+      "to": [
+        4,
+        24,
+        2
+      ],
+      "uv_offset": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "rightArm",
+      "from": [
+        -8,
+        12,
+        -2
+      ],
+      "to": [
+        -4,
+        24,
+        2
+      ],
+      "uv_offset": [
+        40,
+        16
+      ]
+    },
+    {
+      "name": "leftArm",
+      "from": [
+        4,
+        12,
+        -2
+      ],
+      "to": [
+        8,
+        24,
+        2
+      ],
+      "uv_offset": [
+        32,
+        48
+      ]
+    },
+    {
+      "name": "rightLeg",
+      "from": [
+        -4,
+        0,
+        -2
+      ],
+      "to": [
+        0,
+        12,
+        2
+      ],
+      "uv_offset": [
+        0,
+        16
+      ]
+    },
+    {
+      "name": "leftLeg",
+      "from": [
+        0,
+        0,
+        -2
+      ],
+      "to": [
+        4,
+        12,
+        2
+      ],
+      "uv_offset": [
+        16,
+        48
+      ]
+    },
+    {
+      "name": "culturalGarmentLayer",
+      "from": [
+        -4.5,
+        10,
+        -2.5
+      ],
+      "to": [
+        4.5,
+        24.5,
+        2.5
+      ],
+      "uv_offset": [
+        16,
+        32
+      ]
+    }
+  ],
+  "animations": [
+    "animation.miraverse.npc.idle",
+    "animation.miraverse.npc.wave",
+    "animation.miraverse.npc.guide_point"
+  ]
+}

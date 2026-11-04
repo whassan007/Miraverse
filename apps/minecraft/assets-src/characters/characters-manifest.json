@@ -1,0 +1,776 @@
+{
+  "schemaVersion": "1.1.0",
+  "count": 55,
+  "characters": [
+    {
+      "id": "lb_teta_nahla",
+      "countryCode": "LB",
+      "nameEn": "Teta Nahla",
+      "nameNative": "تيتا نهلة",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/lb_teta_nahla.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/lb_teta_nahla.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "lb_archivist_rami",
+      "countryCode": "LB",
+      "nameEn": "Young Archivist Rami",
+      "nameNative": "الأرشيفي رامي",
+      "role": "archivist",
+      "modelPath": "apps/minecraft/assets-src/characters/models/lb_archivist_rami.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/lb_archivist_rami.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "lb_captain_faris",
+      "countryCode": "LB",
+      "nameEn": "Harbor Captain Faris",
+      "nameNative": "القبطان فارس",
+      "role": "navigator",
+      "modelPath": "apps/minecraft/assets-src/characters/models/lb_captain_faris.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/lb_captain_faris.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "lb_baker_tariq",
+      "countryCode": "LB",
+      "nameEn": "Baker Tariq",
+      "nameNative": "الخبّاز طارق",
+      "role": "merchant",
+      "modelPath": "apps/minecraft/assets-src/characters/models/lb_baker_tariq.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/lb_baker_tariq.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "lb_artisan_nadia",
+      "countryCode": "LB",
+      "nameEn": "Script Artisan Nadia",
+      "nameNative": "الحرفية نادية",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/lb_artisan_nadia.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/lb_artisan_nadia.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "iq_bibi_amal",
+      "countryCode": "IQ",
+      "nameEn": "Bibi Amal",
+      "nameNative": "بيبي أمل",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/iq_bibi_amal.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/iq_bibi_amal.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "iq_merchant_hassan",
+      "countryCode": "IQ",
+      "nameEn": "Book Merchant Hassan",
+      "nameNative": "الكتبي حسان",
+      "role": "merchant",
+      "modelPath": "apps/minecraft/assets-src/characters/models/iq_merchant_hassan.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/iq_merchant_hassan.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "iq_translator_mariam",
+      "countryCode": "IQ",
+      "nameEn": "Translator Mariam",
+      "nameNative": "المترجمة مريم",
+      "role": "scholar",
+      "modelPath": "apps/minecraft/assets-src/characters/models/iq_translator_mariam.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/iq_translator_mariam.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "iq_baker_salim",
+      "countryCode": "IQ",
+      "nameEn": "Baker Salim",
+      "nameNative": "الخبّاز سليم",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/iq_baker_salim.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/iq_baker_salim.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "iq_astronomer_zaid",
+      "countryCode": "IQ",
+      "nameEn": "Apprentice Astronomer Zaid",
+      "nameNative": "الفلكي زيد",
+      "role": "cousin",
+      "modelPath": "apps/minecraft/assets-src/characters/models/iq_astronomer_zaid.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/iq_astronomer_zaid.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "eg_layla_guide",
+      "countryCode": "EG",
+      "nameEn": "Layla & Teta Samira",
+      "nameNative": "ليلى وتيتا سميرة",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/eg_layla_guide.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/eg_layla_guide.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "eg_lantern_maker_amm_adel",
+      "countryCode": "EG",
+      "nameEn": "Lantern Maker Amm Adel",
+      "nameNative": "عم عادل صانع الفوانيس",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/eg_lantern_maker_amm_adel.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/eg_lantern_maker_amm_adel.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "eg_market_auntie_nadia",
+      "countryCode": "EG",
+      "nameEn": "Market Auntie Nadia",
+      "nameNative": "طنط نادية في السوق",
+      "role": "merchant",
+      "modelPath": "apps/minecraft/assets-src/characters/models/eg_market_auntie_nadia.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/eg_market_auntie_nadia.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "eg_cook_ibrahim",
+      "countryCode": "EG",
+      "nameEn": "Chef Ibrahim",
+      "nameNative": "الشيف إبراهيم",
+      "role": "cook",
+      "modelPath": "apps/minecraft/assets-src/characters/models/eg_cook_ibrahim.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/eg_cook_ibrahim.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "eg_storyteller_youssef",
+      "countryCode": "EG",
+      "nameEn": "Storyteller Youssef",
+      "nameNative": "الحكواتي يوسف",
+      "role": "storyteller",
+      "modelPath": "apps/minecraft/assets-src/characters/models/eg_storyteller_youssef.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/eg_storyteller_youssef.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "fr_camille_mamie",
+      "countryCode": "FR",
+      "nameEn": "Camille & Mamie Claire",
+      "nameNative": "Camille et Mamie Claire",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/fr_camille_mamie.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/fr_camille_mamie.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "fr_silk_artisan_henri",
+      "countryCode": "FR",
+      "nameEn": "Silk Artisan Henri",
+      "nameNative": "Henri l’Artisan Canut",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/fr_silk_artisan_henri.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/fr_silk_artisan_henri.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "fr_chef_marguerite",
+      "countryCode": "FR",
+      "nameEn": "Chef Marguerite",
+      "nameNative": "Cheffe Marguerite",
+      "role": "cook",
+      "modelPath": "apps/minecraft/assets-src/characters/models/fr_chef_marguerite.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/fr_chef_marguerite.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "fr_guide_luc",
+      "countryCode": "FR",
+      "nameEn": "Local Guide Luc",
+      "nameNative": "Luc le Guide",
+      "role": "navigator",
+      "modelPath": "apps/minecraft/assets-src/characters/models/fr_guide_luc.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/fr_guide_luc.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "fr_merchant_elise",
+      "countryCode": "FR",
+      "nameEn": "Market Merchant Élise",
+      "nameNative": "Élise du Marché",
+      "role": "merchant",
+      "modelPath": "apps/minecraft/assets-src/characters/models/fr_merchant_elise.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/fr_merchant_elise.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "kr_jiwoo_halmeoni",
+      "countryCode": "KR",
+      "nameEn": "Ji-woo & Halmeoni",
+      "nameNative": "지우와 할머니",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/kr_jiwoo_halmeoni.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/kr_jiwoo_halmeoni.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "kr_gardener_minho",
+      "countryCode": "KR",
+      "nameEn": "Market Gardener Min-ho",
+      "nameNative": "농부 민호",
+      "role": "merchant",
+      "modelPath": "apps/minecraft/assets-src/characters/models/kr_gardener_minho.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/kr_gardener_minho.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "kr_carpenter_seojun",
+      "countryCode": "KR",
+      "nameEn": "Hanok Carpenter Seo-jun",
+      "nameNative": "대목장 서준",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/kr_carpenter_seojun.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/kr_carpenter_seojun.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "kr_cook_soyeon",
+      "countryCode": "KR",
+      "nameEn": "Community Cook So-yeon",
+      "nameNative": "요리사 소연",
+      "role": "cook",
+      "modelPath": "apps/minecraft/assets-src/characters/models/kr_cook_soyeon.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/kr_cook_soyeon.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "kr_guide_haneul",
+      "countryCode": "KR",
+      "nameEn": "Archivist Ha-neul",
+      "nameNative": "학예사 하늘",
+      "role": "scholar",
+      "modelPath": "apps/minecraft/assets-src/characters/models/kr_guide_haneul.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/kr_guide_haneul.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "de_navigator_klara",
+      "countryCode": "DE",
+      "nameEn": "River Navigator Klara",
+      "nameNative": "Flusslotsin Klara",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/de_navigator_klara.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/de_navigator_klara.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "de_historian_lukas",
+      "countryCode": "DE",
+      "nameEn": "Historian Lukas",
+      "nameNative": "Historiker Lukas",
+      "role": "scholar",
+      "modelPath": "apps/minecraft/assets-src/characters/models/de_historian_lukas.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/de_historian_lukas.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "de_narrator_lorelei",
+      "countryCode": "DE",
+      "nameEn": "Storyteller Marlene",
+      "nameNative": "Erzählerin Marlene",
+      "role": "storyteller",
+      "modelPath": "apps/minecraft/assets-src/characters/models/de_narrator_lorelei.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/de_narrator_lorelei.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "de_parzival",
+      "countryCode": "DE",
+      "nameEn": "Traveler Parzival",
+      "nameNative": "Wanderer Parzival",
+      "role": "cousin",
+      "modelPath": "apps/minecraft/assets-src/characters/models/de_parzival.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/de_parzival.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "de_gardener_jonas",
+      "countryCode": "DE",
+      "nameEn": "Gardener Jonas",
+      "nameNative": "Gärtner Jonas",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/de_gardener_jonas.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/de_gardener_jonas.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "cn_elder_lin",
+      "countryCode": "CN",
+      "nameEn": "Village Elder Lin",
+      "nameNative": "林长老",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/cn_elder_lin.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/cn_elder_lin.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "cn_fisher_zhou",
+      "countryCode": "CN",
+      "nameEn": "Fisher Zhou",
+      "nameNative": "渔夫周叔",
+      "role": "navigator",
+      "modelPath": "apps/minecraft/assets-src/characters/models/cn_fisher_zhou.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/cn_fisher_zhou.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "cn_orchard_keeper_mei",
+      "countryCode": "CN",
+      "nameEn": "Orchard Keeper Mei",
+      "nameNative": "果园守护者梅姨",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/cn_orchard_keeper_mei.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/cn_orchard_keeper_mei.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "cn_mapmaker_chen",
+      "countryCode": "CN",
+      "nameEn": "Mapmaker Chen",
+      "nameNative": "制图师小陈",
+      "role": "scholar",
+      "modelPath": "apps/minecraft/assets-src/characters/models/cn_mapmaker_chen.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/cn_mapmaker_chen.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "cn_moon_host_yue",
+      "countryCode": "CN",
+      "nameEn": "Moon Festival Host Yue",
+      "nameNative": "中秋主理人悦姐",
+      "role": "cook",
+      "modelPath": "apps/minecraft/assets-src/characters/models/cn_moon_host_yue.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/cn_moon_host_yue.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "jp_guide_haruka",
+      "countryCode": "JP",
+      "nameEn": "Traveler Guide Haruka",
+      "nameNative": "旅の案内人 はるか",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/jp_guide_haruka.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/jp_guide_haruka.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "jp_innkeeper_kenji",
+      "countryCode": "JP",
+      "nameEn": "Innkeeper Kenji",
+      "nameNative": "宿の主人 けんじ",
+      "role": "merchant",
+      "modelPath": "apps/minecraft/assets-src/characters/models/jp_innkeeper_kenji.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/jp_innkeeper_kenji.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "jp_bridge_builder_takumi",
+      "countryCode": "JP",
+      "nameEn": "Bridge Builder Takumi",
+      "nameNative": "橋大工 たくみ",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/jp_bridge_builder_takumi.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/jp_bridge_builder_takumi.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "jp_poet_aoi",
+      "countryCode": "JP",
+      "nameEn": "Poet Aoi",
+      "nameNative": "俳人 あおい",
+      "role": "scholar",
+      "modelPath": "apps/minecraft/assets-src/characters/models/jp_poet_aoi.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/jp_poet_aoi.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "jp_gardener_ren",
+      "countryCode": "JP",
+      "nameEn": "Gardener Ren",
+      "nameNative": "庭師 れん",
+      "role": "cousin",
+      "modelPath": "apps/minecraft/assets-src/characters/models/jp_gardener_ren.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/jp_gardener_ren.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ru_keeper_yelena",
+      "countryCode": "RU",
+      "nameEn": "Lake Keeper Yelena",
+      "nameNative": "Хранительница озера Елена",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ru_keeper_yelena.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ru_keeper_yelena.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ru_historian_pavel",
+      "countryCode": "RU",
+      "nameEn": "Village Historian Pavel",
+      "nameNative": "Историк Павел",
+      "role": "scholar",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ru_historian_pavel.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ru_historian_pavel.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ru_musician_ilya",
+      "countryCode": "RU",
+      "nameEn": "Musical Traveler Ilya",
+      "nameNative": "Музыкант Илья",
+      "role": "storyteller",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ru_musician_ilya.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ru_musician_ilya.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ru_archivist_vera",
+      "countryCode": "RU",
+      "nameEn": "Archivist Vera",
+      "nameNative": "Архивист Вера",
+      "role": "archivist",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ru_archivist_vera.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ru_archivist_vera.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ru_carpenter_maksim",
+      "countryCode": "RU",
+      "nameEn": "Carpenter Maksim",
+      "nameNative": "Плотник Максим",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ru_carpenter_maksim.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ru_carpenter_maksim.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ua_guide_lybid",
+      "countryCode": "UA",
+      "nameEn": "Guide Olena (Lybid Route)",
+      "nameNative": "Провідниця Олена",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ua_guide_lybid.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ua_guide_lybid.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ua_storyteller_taras",
+      "countryCode": "UA",
+      "nameEn": "Historical Storyteller Taras",
+      "nameNative": "Оповідач Тарас",
+      "role": "scholar",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ua_storyteller_taras.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ua_storyteller_taras.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ua_kobzar_mykola",
+      "countryCode": "UA",
+      "nameEn": "Musician Mykola",
+      "nameNative": "Кобзар Микола",
+      "role": "storyteller",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ua_kobzar_mykola.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ua_kobzar_mykola.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ua_maker_solomiya",
+      "countryCode": "UA",
+      "nameEn": "Instrument Maker Solomiya",
+      "nameNative": "Майстриня Соломія",
+      "role": "artisan",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ua_maker_solomiya.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ua_maker_solomiya.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ua_curator_kateryna",
+      "countryCode": "UA",
+      "nameEn": "Curator Kateryna",
+      "nameNative": "Кураторка Катерина",
+      "role": "archivist",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ua_curator_kateryna.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ua_curator_kateryna.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ma_hakawati_driss",
+      "countryCode": "MA",
+      "nameEn": "Hakawati Master Driss",
+      "nameNative": "الحكواتي المعلم إدريس",
+      "role": "mentor",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ma_hakawati_driss.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ma_hakawati_driss.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ma_tea_host_kenza",
+      "countryCode": "MA",
+      "nameEn": "Tea Host Kenza",
+      "nameNative": "لالة كنزة مضيفة أتاي",
+      "role": "cook",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ma_tea_host_kenza.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ma_tea_host_kenza.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ma_merchant_yassine",
+      "countryCode": "MA",
+      "nameEn": "Craft Merchant Yassine",
+      "nameNative": "الصانع ياسين",
+      "role": "merchant",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ma_merchant_yassine.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ma_merchant_yassine.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ma_historian_salma",
+      "countryCode": "MA",
+      "nameEn": "Historian Salma",
+      "nameNative": "المؤرخة سلمى",
+      "role": "scholar",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ma_historian_salma.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ma_historian_salma.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    },
+    {
+      "id": "ma_performer_amine",
+      "countryCode": "MA",
+      "nameEn": "Young Performer Amine",
+      "nameNative": "الفنان الشاب أمين",
+      "role": "cousin",
+      "modelPath": "apps/minecraft/assets-src/characters/models/ma_performer_amine.bbmodel",
+      "skinPath": "apps/minecraft/assets-src/characters/skins/ma_performer_amine.png",
+      "animations": [
+        "animation.miraverse.npc.idle",
+        "animation.miraverse.npc.wave",
+        "animation.miraverse.npc.guide_point"
+      ]
+    }
+  ]
+}

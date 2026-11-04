@@ -1,0 +1,109 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.miraverse.npc.idle": {
+      "loop": true,
+      "animation_length": 4,
+      "bones": {
+        "head": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "2.0": [
+              2.5,
+              0,
+              0
+            ],
+            "4.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              2
+            ],
+            "2.0": [
+              0,
+              0,
+              5
+            ],
+            "4.0": [
+              0,
+              0,
+              2
+            ]
+          }
+        }
+      }
+    },
+    "animation.miraverse.npc.wave": {
+      "loop": false,
+      "animation_length": 1.5,
+      "bones": {
+        "rightArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              -130,
+              0,
+              20
+            ],
+            "1.0": [
+              -130,
+              0,
+              -15
+            ],
+            "1.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.miraverse.npc.guide_point": {
+      "loop": false,
+      "animation_length": 2,
+      "bones": {
+        "leftArm": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.6": [
+              -85,
+              15,
+              0
+            ],
+            "1.6": [
+              -85,
+              15,
+              0
+            ],
+            "2.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}
