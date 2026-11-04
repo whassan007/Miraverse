@@ -1,0 +1,7 @@
+=== STAGE CX07 (AGENT CX07) ===
+Commit: 1d8e9f0
+Owned Paths: apps/web/src/game3d/performance
+Test Command: npx tsx -e "import { PerformanceMonitor } from './apps/web/src/game3d/performance/index.ts'; const p = new PerformanceMonitor(); p.recordFrame(16.2); if (p.getSummary().fps < 50) process.exit(1);"
+Test Exit: 0
+
+DONE CX07 1d8e9f0 apps/web/src/game3d/performance/index.ts

@@ -1,0 +1,7 @@
+=== STAGE V4-07 (AGENT CX09) ===
+Commit: ad092e6
+Owned Paths: apps/api/src/auth,apps/api/src/billing,apps/api/src/catalog,apps/api/src/orders
+Test Command: npx tsx -e "import { AdultAuthService } from './apps/api/src/auth/index.ts'; import { OrderService } from './apps/api/src/orders/index.ts'; import { BillingService, signWebhookPayloadForTest } from './apps/api/src/billing/index.ts'; const auth = new AdultAuthService(); const { account } = auth.signInWithVerifiedPasskeyOrLink('parent@miraverse.studio'); const ordSvc = new OrderService(); const bill = new BillingService(ordSvc); const { order } = bill.createTestCheckoutSession({ adultAccountId: account.accountId, sku: 'SKU_GIFT_EXPLORER_BUNDLE', clientTamperedPriceCents: 1 }); if (order.unitAmountCents !== 1400) process.exit(1); const body = JSON.stringify({ id: 'evt_1', type: 'checkout.session.completed', data: { object: { id: order.stripeCheckoutSessionId, payment_status: 'paid', amount_total: 1400, currency: 'USD' } } }); const sig = signWebhookPayloadForTest(body, 'whsec_test_miraverse_v04_secret'); const res = bill.handleWebhookRaw(body, sig); if (!res.ok || res.status !== 'FULFILLED') process.exit(1);"
+Test Exit: 0
+
+DONE V4-07 ad092e6 apps/api/src/billing/index.ts

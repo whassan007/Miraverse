@@ -1,0 +1,7 @@
+=== STAGE V4-03 (AGENT AG26) ===
+Commit: ad092e6
+Owned Paths: apps/web/src/landing/ui
+Test Command: test -f apps/web/src/landing/ui/index.tsx
+Test Exit: 0
+
+DONE V4-03 ad092e6 apps/web/src/landing/ui/index.tsx

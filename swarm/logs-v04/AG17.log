@@ -1,0 +1,7 @@
+=== STAGE AG17 (AGENT AG17) ===
+Commit: bfb6914
+Owned Paths: apps/web/src/ui/hud
+Test Command: test -f apps/web/src/ui/hud/index.tsx
+Test Exit: 0
+
+DONE AG17 bfb6914 apps/web/src/ui/hud/index.tsx

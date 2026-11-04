@@ -1,0 +1,7 @@
+=== STAGE V4-02 (AGENT AG11) ===
+Commit: a80904d
+Owned Paths: art/source/landing
+Test Command: node -e "const d=JSON.parse(require('fs').readFileSync('art/source/landing/diorama-timeline.json')); if(d.vignettes.length!==5) process.exit(1);"
+Test Exit: 0
+
+DONE V4-02 a80904d art/source/landing/diorama-timeline.json

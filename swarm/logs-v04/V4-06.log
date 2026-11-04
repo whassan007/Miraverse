@@ -1,0 +1,7 @@
+=== STAGE V4-06 (AGENT CX01) ===
+Commit: 3e429c1
+Owned Paths: packages/contracts/commerce,apps/api/db
+Test Command: npx tsx -e "import { canTransitionOrder } from './packages/contracts/commerce/index.ts'; import { loadCommerceSchemaSql } from './apps/api/db/index.ts'; if (!canTransitionOrder('PAID', 'FULFILLED') || canTransitionOrder('CREATED', 'FULFILLED') || !loadCommerceSchemaSql().includes('token_ledger')) process.exit(1);"
+Test Exit: 0
+
+DONE V4-06 3e429c1 packages/contracts/commerce/index.ts

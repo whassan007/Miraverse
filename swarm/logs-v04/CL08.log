@@ -1,0 +1,8 @@
+=== STAGE CL08 (AGENT CL08) ===
+Commit: 2b1eed4
+Owned Paths: apps/minecraft/scripts
+Telemetry: {"provider":"claude","elapsedMs":0}
+Test Command: npx tsx -e "import { assertBedrockLocalRewardOnly } from './apps/minecraft/scripts/core/commerce-boundary.ts'; if (assertBedrockLocalRewardOnly('WEB_STRIPE') || !assertBedrockLocalRewardOnly('BEDROCK_QUEST')) process.exit(1);"
+Test Exit: 0
+
+DONE CL08 2b1eed4 apps/minecraft/scripts/core/commerce-boundary.ts

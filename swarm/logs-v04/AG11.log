@@ -1,0 +1,7 @@
+=== STAGE AG11 (AGENT AG11) ===
+Commit: 11361f6
+Owned Paths: art/source/hub
+Test Command: node -e "const h=JSON.parse(require('fs').readFileSync('art/source/hub/hub-layout.json')); if(h.portals.length!==5) process.exit(1);"
+Test Exit: 0
+
+DONE AG11 11361f6 art/source/hub/hub-layout.json

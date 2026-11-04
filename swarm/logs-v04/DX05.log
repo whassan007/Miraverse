@@ -1,0 +1,8 @@
+=== STAGE DX05 (AGENT DX05) ===
+Commit: be9b221
+Owned Paths: reports/assets
+Telemetry: {"provider":"dgx","model":"qwen/qwen3-coder-next","elapsedMs":1355,"usage":{"prompt_tokens":70,"completion_tokens":68,"total_tokens":138,"completion_tokens_details":{"reasoning_tokens":0}}}
+Test Command: node -e "const r=JSON.parse(require('fs').readFileSync('reports/assets/glb-audit.json')); if(!r.allValid) process.exit(1);"
+Test Exit: 0
+
+DONE DX05 be9b221 reports/assets/GLB_VALIDATION_REPORT.md

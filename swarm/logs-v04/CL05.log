@@ -1,0 +1,7 @@
+=== STAGE CL05 (AGENT CL05) ===
+Commit: 4d68bed
+Owned Paths: apps/roblox/src/client,apps/roblox/src/shared/npc
+Test Command: test -f apps/roblox/src/shared/npc/NpcAnimator.luau && test -f apps/roblox/src/client/AdventureClient.client.luau
+Test Exit: 0
+
+DONE CL05 4d68bed apps/roblox/src/shared/npc/NpcAnimator.luau

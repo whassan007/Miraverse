@@ -1,0 +1,7 @@
+=== STAGE V4-01 (AGENT AG29) ===
+Commit: b1c369d
+Owned Paths: art/branding/landing
+Test Command: test -f art/branding/landing/hero-poster.svg && test -f art/branding/landing/LANDING_ART.md
+Test Exit: 0
+
+DONE V4-01 b1c369d art/branding/landing/hero-poster.svg

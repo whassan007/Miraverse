@@ -1,0 +1,7 @@
+=== STAGE CX05 (AGENT CX05) ===
+Commit: c5904b4
+Owned Paths: apps/web/src/game3d/interactions
+Test Command: npx tsx -e "import { InteractionManager } from './apps/web/src/game3d/interactions/index.ts'; const m = new InteractionManager(); m.registerNode({ interactableId: 'i1', kind: 'gather_prop', labelEn: 'Flour', labelNative: 'Farine', position: [0,0,1], interactionRadius: 3 }); if (!m.getNearestInteractable([0,0,0])) process.exit(1);"
+Test Exit: 0
+
+DONE CX05 c5904b4 apps/web/src/game3d/interactions/index.ts

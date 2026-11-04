@@ -1,0 +1,7 @@
+=== STAGE AG09 (AGENT AG09) ===
+Commit: f300da7
+Owned Paths: art/source/countries/IQ
+Test Command: test -f art/source/countries/IQ/kit-IQ.json
+Test Exit: 0
+
+DONE AG09 f300da7 art/source/countries/IQ/kit-IQ.json

@@ -1,0 +1,8 @@
+=== STAGE CX03 (AGENT CX03) ===
+Commit: 415eb12
+Owned Paths: apps/web/src/game3d/player
+Test Command: npx tsx -e "import * as B from '@babylonjs/core'; import { ThirdPersonController } from './apps/web/src/game3d/player/index.ts'; const eng = new B.NullEngine(); const sc = new B.Scene(eng); const n = new B.TransformNode('h', sc); const c = new ThirdPersonController(n); c.update(0.016, { moveX: 0, moveZ: 1, sprint: false, jump: false, interact: false }); if (c.getCurrentClip() !== 'walk') process.exit(1);"
+Test Exit: 0
+BJS - [18:21:33]: Babylon.js v7.34.2 - Null engine
+
+DONE CX03 415eb12 apps/web/src/game3d/player/index.ts

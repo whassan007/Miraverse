@@ -1,0 +1,7 @@
+=== STAGE AG24 (AGENT AG24) ===
+Commit: 81d921c
+Owned Paths: reports/culture/IQ.md
+Test Command: test -f reports/culture/IQ.md
+Test Exit: 0
+
+DONE AG24 81d921c reports/culture/IQ.md

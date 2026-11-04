@@ -1,0 +1,2063 @@
+{
+  "release": "MiraVerse v0.4 Release Candidate",
+  "branch": "integration/miraverse-v0.4",
+  "generatedAt": "2026-11-04T02:57:19.790Z",
+  "headCommit": "e192794",
+  "counts": {
+    "totalNamedAgents": 58,
+    "antigravityAgents": 30,
+    "codexAgents": 10,
+    "claudeAgents": 10,
+    "dgxAgents": 8,
+    "totalStageAssignments": 70,
+    "completedStageAssignments": 70
+  },
+  "dgxSparkTelemetry": {
+    "endpoint": "http://localhost:1234/v1",
+    "model": "qwen/qwen3-coder-next",
+    "hardware": "NVIDIA GB10 Unified Memory (128 GB)",
+    "maxConcurrentJobs": 1,
+    "averageThroughputTokensPerSec": 48.6,
+    "failureRate": 0
+  },
+  "agents": [
+    {
+      "agentId": "CX01",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX01",
+        "V4-06"
+      ],
+      "primaryCommitSha": "3e429c1",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX04",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX04",
+        "V4-09"
+      ],
+      "primaryCommitSha": "ad092e6",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL01",
+      "provider": "claude",
+      "resolvedModel": "claude-opus-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL01"
+      ],
+      "primaryCommitSha": "750e204",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG01",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG01"
+      ],
+      "primaryCommitSha": "ef0daf6",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG02",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG02"
+      ],
+      "primaryCommitSha": "2d4c765",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG03",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG03"
+      ],
+      "primaryCommitSha": "2e791e8",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG04",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG04"
+      ],
+      "primaryCommitSha": "4e72bd1",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG05",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG05"
+      ],
+      "primaryCommitSha": "560bf70",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG29",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG29",
+        "V4-01"
+      ],
+      "primaryCommitSha": "b1c369d",
+      "status": "DONE"
+    },
+    {
+      "agentId": "DX01",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "stagesCompleted": [
+        "DX01"
+      ],
+      "primaryCommitSha": "c266adf",
+      "status": "DONE"
+    },
+    {
+      "agentId": "DX02",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "stagesCompleted": [
+        "DX02"
+      ],
+      "primaryCommitSha": "bd64a60",
+      "status": "DONE"
+    },
+    {
+      "agentId": "DX03",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "stagesCompleted": [
+        "DX03"
+      ],
+      "primaryCommitSha": "0d56399",
+      "status": "DONE"
+    },
+    {
+      "agentId": "DX04",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "stagesCompleted": [
+        "DX04"
+      ],
+      "primaryCommitSha": "7464505",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX06",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX06"
+      ],
+      "primaryCommitSha": "bd5b7d0",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX02",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX02"
+      ],
+      "primaryCommitSha": "f84bc5a",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX03",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX03"
+      ],
+      "primaryCommitSha": "415eb12",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX05",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX05"
+      ],
+      "primaryCommitSha": "c5904b4",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG11",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG11",
+        "V4-02"
+      ],
+      "primaryCommitSha": "a80904d",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG17",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG17",
+        "V4-04"
+      ],
+      "primaryCommitSha": "f5a1667",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG18",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG18",
+        "V4-05"
+      ],
+      "primaryCommitSha": "8634d93",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG19",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG19"
+      ],
+      "primaryCommitSha": "5349005",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG06",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG06"
+      ],
+      "primaryCommitSha": "fb0705b",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG12",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG12"
+      ],
+      "primaryCommitSha": "a89566d",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL02",
+      "provider": "claude",
+      "resolvedModel": "claude-opus-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL02"
+      ],
+      "primaryCommitSha": "1e88394",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX10",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX10",
+        "V4-08"
+      ],
+      "primaryCommitSha": "ad092e6",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL03",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL03"
+      ],
+      "primaryCommitSha": "f81ca43",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL04",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL04"
+      ],
+      "primaryCommitSha": "e9ecd13",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL05",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL05"
+      ],
+      "primaryCommitSha": "4d68bed",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL06",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL06"
+      ],
+      "primaryCommitSha": "28b8696",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL07",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL07"
+      ],
+      "primaryCommitSha": "04363f9",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL08",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL08"
+      ],
+      "primaryCommitSha": "2b1eed4",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL09",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL09"
+      ],
+      "primaryCommitSha": "0163180",
+      "status": "DONE"
+    },
+    {
+      "agentId": "DX05",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "stagesCompleted": [
+        "DX05"
+      ],
+      "primaryCommitSha": "be9b221",
+      "status": "DONE"
+    },
+    {
+      "agentId": "DX07",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "stagesCompleted": [
+        "DX07"
+      ],
+      "primaryCommitSha": "193d677",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG07",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG07"
+      ],
+      "primaryCommitSha": "18497d7",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG08",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG08"
+      ],
+      "primaryCommitSha": "fc17dd9",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG09",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG09"
+      ],
+      "primaryCommitSha": "f300da7",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG10",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG10"
+      ],
+      "primaryCommitSha": "c89ad66",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG13",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG13"
+      ],
+      "primaryCommitSha": "9652114",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG14",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG14"
+      ],
+      "primaryCommitSha": "a4fc1ae",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG15",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG15"
+      ],
+      "primaryCommitSha": "8a51bd0",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG16",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG16"
+      ],
+      "primaryCommitSha": "bdf0829",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG20",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG20"
+      ],
+      "primaryCommitSha": "0e006de",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG21",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG21"
+      ],
+      "primaryCommitSha": "f335e8d",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG22",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG22"
+      ],
+      "primaryCommitSha": "28fc954",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG23",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG23"
+      ],
+      "primaryCommitSha": "5baa527",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG24",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG24"
+      ],
+      "primaryCommitSha": "81d921c",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG25",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG25"
+      ],
+      "primaryCommitSha": "dc20591",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG26",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG26",
+        "V4-03"
+      ],
+      "primaryCommitSha": "ad092e6",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX07",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX07"
+      ],
+      "primaryCommitSha": "1d8e9f0",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX09",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX09",
+        "V4-07"
+      ],
+      "primaryCommitSha": "ad092e6",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG27",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG27"
+      ],
+      "primaryCommitSha": "8634d93",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CL10",
+      "provider": "claude",
+      "resolvedModel": "claude-opus-5-5",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CL10",
+        "V4-10"
+      ],
+      "primaryCommitSha": "8634d93",
+      "status": "DONE"
+    },
+    {
+      "agentId": "DX06",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "stagesCompleted": [
+        "DX06"
+      ],
+      "primaryCommitSha": "37f20b6",
+      "status": "DONE"
+    },
+    {
+      "agentId": "CX08",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "stagesCompleted": [
+        "CX08",
+        "V4-11"
+      ],
+      "primaryCommitSha": "eddc982",
+      "status": "DONE"
+    },
+    {
+      "agentId": "DX08",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "stagesCompleted": [
+        "DX08",
+        "V4-12"
+      ],
+      "primaryCommitSha": "cb8a935",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG28",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG28"
+      ],
+      "primaryCommitSha": "3e7afa6",
+      "status": "DONE"
+    },
+    {
+      "agentId": "AG30",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "stagesCompleted": [
+        "AG30"
+      ],
+      "primaryCommitSha": "e192794",
+      "status": "DONE"
+    }
+  ],
+  "stages": [
+    {
+      "stageId": "CX01",
+      "agentId": "CX01",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "packages/contracts",
+        "packages/content/migrations",
+        "tests/contracts"
+      ],
+      "testCommand": "npx vitest run tests/contracts/contracts.test.ts",
+      "summary": "Shared contracts v3/v4, semantic ID scheme (country:chapter:quest:objective), content migration adapters, item/challenge/quest schemas, versioned save contract tests",
+      "commitSha": "65df953",
+      "telemetry": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "elapsedMs": 0
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX04",
+      "agentId": "CX04",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "packages/game-domain"
+      ],
+      "testCommand": "node -e \"import('./packages/game-domain/index.ts')\" || npx tsx -e \"import { GameDomainController } from './packages/game-domain/index.ts'; const c = new GameDomainController(); console.log(c.getState().version);\"",
+      "summary": "Pure quest/inventory/progression/save domain, mv.save.v4 state machine with automatic migration from mv.stamps/v1/v2/v3, localStorage transactional safeguards",
+      "commitSha": "65df953",
+      "telemetry": {
+        "provider": "codex",
+        "model": "gpt-6-astra",
+        "elapsedMs": 1
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL01",
+      "agentId": "CL01",
+      "provider": "claude",
+      "resolvedModel": "claude-opus-5-5",
+      "costTier": "high-reasoning",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "content/quests",
+        "content/dialogue",
+        "docs/design"
+      ],
+      "testCommand": "node -e \"const fs=require('fs'); for(const c of ['FR','LB','EG','IQ','KR']){ JSON.parse(fs.readFileSync('content/quests/'+c+'.json')); JSON.parse(fs.readFileSync('content/dialogue/'+c+'.json')); }\"",
+      "summary": "Five chapter quest scripts (FR, LB, EG, IQ, KR), authored NPC dialogue trees, cutscene camera beats, non-commercial reward economy and progression",
+      "commitSha": "750e204",
+      "telemetry": {
+        "provider": "claude",
+        "model": "claude-opus-5-5",
+        "elapsedMs": 1
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG01",
+      "agentId": "AG01",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/direction"
+      ],
+      "testCommand": "test -f art/direction/STYLE_BIBLE.md && test -f art/direction/palettes.json",
+      "summary": "Art director: STYLE_BIBLE.md, original stylized 3D storybook look, per-country palette, composition, scale in meters, camera, lighting, asset quality rubric",
+      "commitSha": "ef0daf6",
+      "telemetry": {
+        "provider": "ag",
+        "model": "gemini-4-argon-high",
+        "elapsedMs": 0
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG02",
+      "agentId": "AG02",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/game3d/lookdev"
+      ],
+      "testCommand": "npx tsx -e \"import { getLookdevPreset } from './apps/web/src/game3d/lookdev/index.ts'; if (!getLookdevPreset('FR')) process.exit(1);\"",
+      "summary": "Web shader/look-dev: painterly PBR/toon hybrid material presets, shadows, atmospheric fog/depth, color grading, per-country sky/lighting presets",
+      "commitSha": "2d4c765",
+      "telemetry": {
+        "provider": "ag",
+        "model": "gemini-4-argon-high",
+        "elapsedMs": 0
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG03",
+      "agentId": "AG03",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/characters/hero"
+      ],
+      "testCommand": "test -f art/source/characters/hero/hero-mira-spec.json && test -f art/source/characters/hero/mira-portrait.svg",
+      "summary": "Hero character (Mira): design sheets, procedural mesh/rig geometry spec, SVG/PNG portraits, silhouettes",
+      "commitSha": "2e791e8",
+      "telemetry": {
+        "provider": "ag",
+        "model": "gemini-4-argon-medium",
+        "elapsedMs": 1
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG04",
+      "agentId": "AG04",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/characters/npcs"
+      ],
+      "testCommand": "test -f art/source/characters/npcs/npc-kits.json && test -f art/source/characters/npcs/mamie_claire.svg",
+      "summary": "NPC character kits for 5 cultures (Mamie Claire, Teta Nahla, Teta Samira, Bibi Amal, Halmeoni + townsfolk), reusable rigs, face styles, costume variants",
+      "commitSha": "4e72bd1",
+      "telemetry": {
+        "provider": "ag",
+        "model": "gemini-4-argon-medium",
+        "elapsedMs": 1
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG05",
+      "agentId": "AG05",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/animations"
+      ],
+      "testCommand": "node -e \"const a=JSON.parse(require('fs').readFileSync('art/source/animations/animation-clips.json')); if(a.clips.length < 12) process.exit(1);\"",
+      "summary": "Animation direction: 12 required skeletal clips (idle, idle_var, walk, run, turn, interact, pickup, talk, celebrate, sit, cook, build), blending specs, timing sheets",
+      "commitSha": "560bf70",
+      "telemetry": {
+        "provider": "ag",
+        "model": "gemini-4-argon-medium",
+        "elapsedMs": 1
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG29",
+      "agentId": "AG29",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/branding"
+      ],
+      "testCommand": "test -f art/branding/miraverse-wordmark.svg && test -f art/branding/card-FR.svg",
+      "summary": "Original game title screen artwork, iconography, loading cards, 5 destination cover art SVGs",
+      "commitSha": "125d662",
+      "telemetry": {
+        "provider": "ag",
+        "model": "gemini-4-argon-medium",
+        "elapsedMs": 0
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "DX01",
+      "agentId": "DX01",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "content/locales/drafts"
+      ],
+      "testCommand": "node -e \"for(const l of ['en','fr','ar-LB','ar-EG','ar-IQ','ko']) JSON.parse(require('fs').readFileSync('content/locales/drafts/'+l+'.json'));\"",
+      "summary": "Native-language UI strings in 6 locales (en, fr, ar-LB, ar-EG, ar-IQ, ko) for 3D HUD, landing page, and parent portal, flagged for native human review",
+      "commitSha": "c266adf",
+      "telemetry": {
+        "provider": "dgx",
+        "model": "qwen/qwen3-coder-next",
+        "elapsedMs": 1742,
+        "usage": {
+          "prompt_tokens": 75,
+          "completion_tokens": 92,
+          "total_tokens": 167,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "DX02",
+      "agentId": "DX02",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "content/vocab/enriched"
+      ],
+      "testCommand": "node -e \"for(const l of ['fr','ar-LB','ar-EG','ar-IQ','ko']) JSON.parse(require('fs').readFileSync('content/vocab/enriched/'+l+'.json'));\"",
+      "summary": "Enriched vocabulary lexicons, transliterations, item synonyms, and 3D prop bindings with linguistic validation",
+      "commitSha": "bd64a60",
+      "telemetry": {
+        "provider": "dgx",
+        "model": "qwen/qwen3-coder-next",
+        "elapsedMs": 2617,
+        "usage": {
+          "prompt_tokens": 62,
+          "completion_tokens": 147,
+          "total_tokens": 209,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "DX03",
+      "agentId": "DX03",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/audio/metadata"
+      ],
+      "testCommand": "node -e \"const c=JSON.parse(require('fs').readFileSync('art/audio/metadata/cues.json')); if(c.cues.length<8) process.exit(1);\"",
+      "summary": "Sound cue metadata, subtitle timing tables, spatial audio zone tags, license-safe procedural audio specs",
+      "commitSha": "0d56399",
+      "telemetry": {
+        "provider": "dgx",
+        "model": "qwen/qwen3-coder-next",
+        "elapsedMs": 3418,
+        "usage": {
+          "prompt_tokens": 61,
+          "completion_tokens": 196,
+          "total_tokens": 257,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "DX04",
+      "agentId": "DX04",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 1,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "tools/procedural-props"
+      ],
+      "testCommand": "node -e \"JSON.parse(require('fs').readFileSync('tools/procedural-props/recipes.json'));\"",
+      "summary": "Parametric 3D prop and building kit assembly recipes for deterministic glTF/GLB generation",
+      "commitSha": "7464505",
+      "telemetry": {
+        "provider": "dgx",
+        "model": "qwen/qwen3-coder-next",
+        "elapsedMs": 3302,
+        "usage": {
+          "prompt_tokens": 63,
+          "completion_tokens": 193,
+          "total_tokens": 256,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX06",
+      "agentId": "CX06",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "tools/assets",
+        "assets/LICENSES.json",
+        "apps/web/public/assets/models"
+      ],
+      "testCommand": "npx tsx tools/assets/build-glb.ts && test -f assets/LICENSES.json && test -f apps/web/public/assets/models/hero_mira.glb",
+      "summary": "glTF 2.0 / GLB binary asset generator and validator pipeline, skeletal animation GLBs, environment kit GLBs, assets manifest, assets/LICENSES.json audit",
+      "commitSha": "bd5b7d0",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX02",
+      "agentId": "CX02",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/game3d/runtime",
+        "apps/web/src/landing/scene"
+      ],
+      "testCommand": "npx tsx -e \"import { createBabylonEngine, buildSculptedWorldScene } from './apps/web/src/game3d/runtime/index.ts'; const { engine } = createBabylonEngine(null); const s = buildSculptedWorldScene(engine, 'FR'); s.dispose();\"",
+      "summary": "Babylon.js 3D bootstrap, scene lifecycle & disposal, GLB streaming with progress/cancel, React typed event bridge, WebGL2/NullEngine fallback, and landing 3D panorama scene",
+      "commitSha": "f84bc5a",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX03",
+      "agentId": "CX03",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/game3d/player"
+      ],
+      "testCommand": "npx tsx -e \"import * as B from '@babylonjs/core'; import { ThirdPersonController } from './apps/web/src/game3d/player/index.ts'; const eng = new B.NullEngine(); const sc = new B.Scene(eng); const n = new B.TransformNode('h', sc); const c = new ThirdPersonController(n); c.update(0.016, { moveX: 0, moveZ: 1, sprint: false, jump: false, interact: false }); if (c.getCurrentClip() !== 'walk') process.exit(1);\"",
+      "summary": "Third-person character controller, follow/orbit camera with occlusion avoidance, WASD/arrows/touch/gamepad input, collision, skeletal animation state machine",
+      "commitSha": "415eb12",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX05",
+      "agentId": "CX05",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/game3d/interactions"
+      ],
+      "testCommand": "npx tsx -e \"import { InteractionManager } from './apps/web/src/game3d/interactions/index.ts'; const m = new InteractionManager(); m.registerNode({ interactableId: 'i1', kind: 'gather_prop', labelEn: 'Flour', labelNative: 'Farine', position: [0,0,1], interactionRadius: 3 }); if (!m.getNearestInteractable([0,0,0])) process.exit(1);\"",
+      "summary": "3D world interaction system: NPC proximity detection, pickable objects, interactable prompts (canInteract, interact, state, visualState), quest objective tracker",
+      "commitSha": "c5904b4",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG11",
+      "agentId": "AG11",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/hub"
+      ],
+      "testCommand": "node -e \"const h=JSON.parse(require('fs').readFileSync('art/source/hub/hub-layout.json')); if(h.portals.length!==5) process.exit(1);\"",
+      "summary": "3D World Hub plaza layout, arrival set dressing, 5 country portal arches, signposts, transition storyboards",
+      "commitSha": "11361f6",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG17",
+      "agentId": "AG17",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/ui/hud"
+      ],
+      "testCommand": "test -f apps/web/src/ui/hud/index.tsx",
+      "summary": "Web 3D edge HUD: top-left quest tracker, top-right minimap/compass with waypoint, bottom-center inventory bar, contextual interact prompt, earned Mira Token counter",
+      "commitSha": "bfb6914",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG18",
+      "agentId": "AG18",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/ui/menus"
+      ],
+      "testCommand": "test -f apps/web/src/ui/menus/index.tsx",
+      "summary": "Web menus: 3D hub world picker overlay, pause/settings modal (audio, quality tier, reduced motion), Passport collectible viewer, chapter reward celebration",
+      "commitSha": "b789a3b",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG19",
+      "agentId": "AG19",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/ui/dialogue"
+      ],
+      "testCommand": "test -f apps/web/src/ui/dialogue/index.tsx",
+      "summary": "NPC portrait panels, typewriter dialogue with instant skip, RTL Arabic and Korean typography layout, storybook modal, cinematic captions",
+      "commitSha": "5349005",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG06",
+      "agentId": "AG06",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/countries/FR"
+      ],
+      "testCommand": "node -e \"JSON.parse(require('fs').readFileSync('art/source/countries/FR/kit-FR.json'));\"",
+      "summary": "France (Vieux Lyon) unique architecture/prop kit: boulangerie facade, slate mansard roof, oak shutters, limestone walls, traboules, market stall",
+      "commitSha": "fb0705b",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG12",
+      "agentId": "AG12",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 2,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "content/levels/web/FR"
+      ],
+      "testCommand": "node -e \"const l=JSON.parse(require('fs').readFileSync('content/levels/web/FR/level.json')); if(l.country!=='FR' || l.npcs.length<4) process.exit(1);\"",
+      "summary": "France 3D level manifest: Vieux Lyon street layout, nav/collision bounds, Mamie Claire + 4 NPC placements, quest waypoints, repairable bakery landmark",
+      "commitSha": "a89566d",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-01",
+      "agentId": "AG29",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "wave": 2,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "art/branding/landing"
+      ],
+      "testCommand": "test -f art/branding/landing/hero-poster.svg && test -f art/branding/landing/LANDING_ART.md",
+      "summary": "V4-01 Cinematic hero art: original 3D hero poster assets, 5 destination vignette illustrations, MiraVerse wordmark, static fallback hero",
+      "commitSha": "b1c369d",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-02",
+      "agentId": "AG11",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 2,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "art/source/landing"
+      ],
+      "testCommand": "node -e \"const d=JSON.parse(require('fs').readFileSync('art/source/landing/diorama-timeline.json')); if(d.vignettes.length!==5) process.exit(1);\"",
+      "summary": "V4-02 Landing panorama scene descriptors, camera choreography timeline, reduced-motion static camera presets, 5 world preview vignette configs",
+      "commitSha": "a80904d",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-06",
+      "agentId": "CX01",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 2,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "packages/contracts/commerce",
+        "apps/api/db"
+      ],
+      "testCommand": "npx tsx -e \"import { canTransitionOrder } from './packages/contracts/commerce/index.ts'; import { loadCommerceSchemaSql } from './apps/api/db/index.ts'; if (!canTransitionOrder('PAID', 'FULFILLED') || canTransitionOrder('CREATED', 'FULFILLED') || !loadCommerceSchemaSql().includes('token_ledger')) process.exit(1);\"",
+      "summary": "V4-06 Commerce contracts and relational schema/migrations: adult_accounts, adult_sessions, consent_records, child_profiles, products, prices, orders, payment_events, entitlements, gift_codes, token_ledger",
+      "commitSha": "3e429c1",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL02",
+      "agentId": "CL02",
+      "provider": "claude",
+      "resolvedModel": "claude-opus-5-5",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/game3d/challenges"
+      ],
+      "testCommand": "test -f apps/web/src/game3d/challenges/index.tsx",
+      "summary": "Reusable 3D web implementations of Gather, Trade, Build (staged before/after mesh restoration), Cook (3D station sequence), and Word (diegetic cultural object/word discovery), plus France end-to-end celebration",
+      "commitSha": "1e88394",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX10",
+      "agentId": "CX10",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "tools/compiler"
+      ],
+      "testCommand": "npx tsx tools/compiler/index.ts && test -f apps/web/src/generated/v04-bundle.json && npx vitest run tests/compiler.test.ts",
+      "summary": "Shared compilers v4: deterministic quest/pack/level exports with sourceContentHash, compilerVersion, schemaVersion for Babylon Web, Roblox Luau, and Minecraft Bedrock",
+      "commitSha": "4cdbbd3",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL03",
+      "agentId": "CL03",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/roblox/src/server/world",
+        "apps/roblox/default.project.json"
+      ],
+      "testCommand": "rojo build apps/roblox -o /tmp/test-cl03.rbxlx && rm -f /tmp/test-cl03.rbxlx",
+      "summary": "Roblox lead: Rojo project architecture, native 3D World Hub, 5 distinctive stylized towns, cross-country portal teleport, spawn protection",
+      "commitSha": "f81ca43",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL04",
+      "agentId": "CL04",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/roblox/src/server/challenges"
+      ],
+      "testCommand": "test -f apps/roblox/src/server/challenges/ChallengeService.luau",
+      "summary": "Roblox server-authoritative challenges: Gather, Trade, Build (staged mesh part restoration), Cook, Word mapped from shared quest data",
+      "commitSha": "e9ecd13",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL05",
+      "agentId": "CL05",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/roblox/src/client",
+        "apps/roblox/src/shared/npc"
+      ],
+      "testCommand": "test -f apps/roblox/src/shared/npc/NpcAnimator.luau && test -f apps/roblox/src/client/AdventureClient.client.luau",
+      "summary": "Roblox client HUD, ProximityPrompt NPC dialogue with portraits, R15 Animator track playback (idle/walk/interact/cook/repair/celebrate), camera and touch/gamepad bindings",
+      "commitSha": "4d68bed",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL06",
+      "agentId": "CL06",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/roblox/src/server/core",
+        "tests/roblox"
+      ],
+      "testCommand": "npx vitest run tests/roblox/roblox-v04.test.ts && rojo build apps/roblox -o /tmp/test-cl06.rbxlx && rm -f /tmp/test-cl06.rbxlx",
+      "summary": "Roblox persistence (DataStore + session fallback), remotes validation & anti-replay, experience chat disabled, optional MarketplaceService module disabled by default, Luau security tests",
+      "commitSha": "28b8696",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL07",
+      "agentId": "CL07",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/minecraft/world",
+        "apps/minecraft/structures"
+      ],
+      "testCommand": "test -f apps/minecraft/world/world-layout.json && test -f apps/minecraft/structures/FR.mcstructure.json",
+      "summary": "Minecraft world creator: arrival hub and 5 authored voxel district .mcstructure templates (FR Vieux Lyon, LB Byblos, EG Cairo, IQ Baghdad, KR Jeonju) + .mcworld builder",
+      "commitSha": "04363f9",
+      "telemetry": {
+        "provider": "claude",
+        "elapsedMs": 1
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL08",
+      "agentId": "CL08",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/minecraft/scripts"
+      ],
+      "testCommand": "npx tsx -e \"import { assertBedrockLocalRewardOnly } from './apps/minecraft/scripts/core/commerce-boundary.ts'; if (assertBedrockLocalRewardOnly('WEB_STRIPE') || !assertBedrockLocalRewardOnly('BEDROCK_QUEST')) process.exit(1);\"",
+      "summary": "Minecraft Bedrock Script API (@minecraft/server 1.17.0, @minecraft/server-ui 1.3.0): quests, Gather/Trade/Build/Cook/Word mechanics, dynamic property persistence, portal travel",
+      "commitSha": "2b1eed4",
+      "telemetry": {
+        "provider": "claude",
+        "elapsedMs": 0
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL09",
+      "agentId": "CL09",
+      "provider": "claude",
+      "resolvedModel": "claude-sonnet-5-5",
+      "costTier": "high-reasoning",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/minecraft/bp",
+        "apps/minecraft/rp"
+      ],
+      "testCommand": "node -e \"JSON.parse(require('fs').readFileSync('apps/minecraft/rp/animations/mentor.animation.json')); JSON.parse(require('fs').readFileSync('apps/minecraft/rp/animation_controllers/mentor.animation_controllers.json'));\"",
+      "summary": "Minecraft BP/RP: custom mentor entities, geometry, animation controllers, cultural food items & recipes, repairable building blocks, manifest UUIDs",
+      "commitSha": "0163180",
+      "telemetry": {
+        "provider": "claude",
+        "elapsedMs": 0
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "DX05",
+      "agentId": "DX05",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/assets"
+      ],
+      "testCommand": "node -e \"const r=JSON.parse(require('fs').readFileSync('reports/assets/glb-audit.json')); if(!r.allValid) process.exit(1);\"",
+      "summary": "Deterministic validation report of all generated glTF/GLB meshes, UVs, skeletal animation clips, materials, triangle counts, and size budgets",
+      "commitSha": "be9b221",
+      "telemetry": {
+        "provider": "dgx",
+        "model": "qwen/qwen3-coder-next",
+        "elapsedMs": 1355,
+        "usage": {
+          "prompt_tokens": 70,
+          "completion_tokens": 68,
+          "total_tokens": 138,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "DX07",
+      "agentId": "DX07",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 3,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/content-sync"
+      ],
+      "testCommand": "node -e \"const r=JSON.parse(require('fs').readFileSync('reports/content-sync/sync-audit.json')); if(!r.hashParityVerified) process.exit(1);\"",
+      "summary": "Structured content conversion and semantic ID parity verification report across Web, Roblox, and Minecraft targets",
+      "commitSha": "193d677",
+      "telemetry": {
+        "provider": "dgx",
+        "model": "qwen/qwen3-coder-next",
+        "elapsedMs": 1458,
+        "usage": {
+          "prompt_tokens": 85,
+          "completion_tokens": 75,
+          "total_tokens": 160,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG07",
+      "agentId": "AG07",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/countries/LB"
+      ],
+      "testCommand": "test -f art/source/countries/LB/kit-LB.json",
+      "summary": "Lebanon (Byblos Harbor) unique architecture/prop kit: coastal limestone houses, saj bakery dome, cedar market stalls, fishing boat, harbor lanterns",
+      "commitSha": "18497d7",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG08",
+      "agentId": "AG08",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/countries/EG"
+      ],
+      "testCommand": "test -f art/source/countries/EG/kit-EG.json",
+      "summary": "Egypt (Cairo Market Courtyard) unique architecture/prop kit: mashrabiya courtyard, brass fanous lanterns, spice/grain market stalls, Nile arched gateway",
+      "commitSha": "fc17dd9",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG09",
+      "agentId": "AG09",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/countries/IQ"
+      ],
+      "testCommand": "test -f art/source/countries/IQ/kit-IQ.json",
+      "summary": "Iraq (Baghdad Riverfront) unique architecture/prop kit: carved wooden shanasheel balconies, brick courtyard archway, Tigris riverfront terrace, kleicha oven",
+      "commitSha": "f300da7",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG10",
+      "agentId": "AG10",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/source/countries/KR"
+      ],
+      "testCommand": "test -f art/source/countries/KR/kit-KR.json",
+      "summary": "Korea (Jeonju Hanok Village) unique architecture/prop kit: curved giwa tiled roofs, wooden maru porch, onggi earthenware courtyard, stone garden",
+      "commitSha": "c89ad66",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG13",
+      "agentId": "AG13",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "content/levels/web/LB"
+      ],
+      "testCommand": "node -e \"const l=JSON.parse(require('fs').readFileSync('content/levels/web/LB/level.json')); if(l.country!=='LB') process.exit(1);\"",
+      "summary": "Lebanon 3D level assembly: Byblos harbor layout, Teta Nahla + NPCs, manoushe saj station, harbor archway restoration site, quest route",
+      "commitSha": "9652114",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG14",
+      "agentId": "AG14",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "content/levels/web/EG"
+      ],
+      "testCommand": "node -e \"const l=JSON.parse(require('fs').readFileSync('content/levels/web/EG/level.json')); if(l.country!=='EG') process.exit(1);\"",
+      "summary": "Egypt 3D level assembly: Cairo courtyard layout, Teta Samira + NPCs, koshari kitchen, fanous lantern arch restoration site, quest route",
+      "commitSha": "a4fc1ae",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG15",
+      "agentId": "AG15",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "content/levels/web/IQ"
+      ],
+      "testCommand": "node -e \"const l=JSON.parse(require('fs').readFileSync('content/levels/web/IQ/level.json')); if(l.country!=='IQ') process.exit(1);\"",
+      "summary": "Iraq 3D level assembly: Baghdad courtyard & Tigris bank layout, Bibi Amal + NPCs, kleicha bakery, shanasheel balcony restoration site, quest route",
+      "commitSha": "8a51bd0",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG16",
+      "agentId": "AG16",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "content/levels/web/KR"
+      ],
+      "testCommand": "node -e \"const l=JSON.parse(require('fs').readFileSync('content/levels/web/KR/level.json')); if(l.country!=='KR') process.exit(1);\"",
+      "summary": "Korea 3D level assembly: Jeonju hanok village layout, Halmeoni + NPCs, songpyeon steamer station, hanok roof/maru restoration site, quest route",
+      "commitSha": "bdf0829",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG20",
+      "agentId": "AG20",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "art/audio"
+      ],
+      "testCommand": "test -f art/audio/soundscape.ts",
+      "summary": "Audio direction & WebAudio procedural synthesizer: user-gesture gated spatial ambience (harbor, market, courtyard, bakery), Foley cues, celebration fanfare",
+      "commitSha": "0e006de",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG21",
+      "agentId": "AG21",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/culture/FR.md"
+      ],
+      "testCommand": "test -f reports/culture/FR.md",
+      "summary": "France cultural, architectural, and linguistic accuracy review (Vieux Lyon, traboules, galette des rois)",
+      "commitSha": "f335e8d",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG22",
+      "agentId": "AG22",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/culture/LB.md"
+      ],
+      "testCommand": "test -f reports/culture/LB.md",
+      "summary": "Lebanon cultural, architectural, and Levantine Arabic dialect review (Byblos, saj manoushe, Teta Nahla)",
+      "commitSha": "28fc954",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG23",
+      "agentId": "AG23",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/culture/EG.md"
+      ],
+      "testCommand": "test -f reports/culture/EG.md",
+      "summary": "Egypt cultural, architectural, and Egyptian Arabic dialect review (Cairo courtyard, Ramadan fanous, koshari)",
+      "commitSha": "5baa527",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG24",
+      "agentId": "AG24",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/culture/IQ.md"
+      ],
+      "testCommand": "test -f reports/culture/IQ.md",
+      "summary": "Iraq cultural, architectural, and Mesopotamian Arabic dialect review (Baghdad shanasheel, Tigris, kleicha)",
+      "commitSha": "81d921c",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG25",
+      "agentId": "AG25",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/culture/KR.md"
+      ],
+      "testCommand": "test -f reports/culture/KR.md",
+      "summary": "Korea cultural, architectural, and Korean language specificity review (Jeonju hanok, Chuseok, songpyeon)",
+      "commitSha": "dc20591",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG26",
+      "agentId": "AG26",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/ui/mobile"
+      ],
+      "testCommand": "test -f apps/web/src/ui/mobile/index.tsx",
+      "summary": "Responsive web touch controls: virtual twin-stick joystick, action button, camera drag zone, mobile/tablet HUD scaling",
+      "commitSha": "b4cd416",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX07",
+      "agentId": "CX07",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "apps/web/src/game3d/performance"
+      ],
+      "testCommand": "npx tsx -e \"import { PerformanceMonitor } from './apps/web/src/game3d/performance/index.ts'; const p = new PerformanceMonitor(); p.recordFrame(16.2); if (p.getSummary().fps < 50) process.exit(1);\"",
+      "summary": "Web 3D performance manager: mesh LOD, instancing, frustum culling, quality tier auto-adaptation (low/medium/high), frame-time & memory profiler",
+      "commitSha": "1d8e9f0",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX09",
+      "agentId": "CX09",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 4,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        ".github/workflows",
+        "tools/release"
+      ],
+      "testCommand": "node tools/release/package-v04.mjs && test -f .github/workflows/ci-v04.yml",
+      "summary": "CI workflows and reproducible release packaging scripts for Web, Roblox .rbxlx, and Minecraft .mcaddon/.mcworld",
+      "commitSha": "5fb65c2",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-03",
+      "agentId": "AG26",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "apps/web/src/landing/ui"
+      ],
+      "testCommand": "test -f apps/web/src/landing/ui/index.tsx",
+      "summary": "V4-03 Public cinematic landing UI (/): full-bleed 3D hero integration + static poster fallback, Play Free primary CTA, Explore Worlds interactive 5-world showcase, character intros, For Parents link, responsive 360px-1920px",
+      "commitSha": "ad092e6",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-04",
+      "agentId": "AG17",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 4,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "apps/web/src/storefront"
+      ],
+      "testCommand": "test -f apps/web/src/storefront/index.tsx",
+      "summary": "V4-04 Adult-only storefront UI (/parents/shop): server-driven cosmetic bundle & gift catalog, unambiguous Parent Purchase vs Earned in Game badges, order summary, Stripe test Checkout launch",
+      "commitSha": "f5a1667",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-07",
+      "agentId": "CX09",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 4,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "apps/api/src/auth",
+        "apps/api/src/billing",
+        "apps/api/src/catalog",
+        "apps/api/src/orders"
+      ],
+      "testCommand": "npx tsx -e \"import { AdultAuthService } from './apps/api/src/auth/index.ts'; import { OrderService } from './apps/api/src/orders/index.ts'; import { BillingService, signWebhookPayloadForTest } from './apps/api/src/billing/index.ts'; const auth = new AdultAuthService(); const { account } = auth.signInWithVerifiedPasskeyOrLink('parent@miraverse.studio'); const ordSvc = new OrderService(); const bill = new BillingService(ordSvc); const { order } = bill.createTestCheckoutSession({ adultAccountId: account.accountId, sku: 'SKU_GIFT_EXPLORER_BUNDLE', clientTamperedPriceCents: 1 }); if (order.unitAmountCents !== 1400) process.exit(1); const body = JSON.stringify({ id: 'evt_1', type: 'checkout.session.completed', data: { object: { id: order.stripeCheckoutSessionId, payment_status: 'paid', amount_total: 1400, currency: 'USD' } } }); const sig = signWebhookPayloadForTest(body, 'whsec_test_miraverse_v04_secret'); const res = bill.handleWebhookRaw(body, sig); if (!res.ok || res.status !== 'FULFILLED') process.exit(1);\"",
+      "summary": "V4-07 Parent passwordless/passkey auth (HttpOnly SameSite cookies, CSRF), server-owned test catalog, orders state machine, Stripe test Checkout Session & raw-body verified webhook with event + fulfillment deduplication",
+      "commitSha": "ad092e6",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-08",
+      "agentId": "CX10",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 4,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "apps/api/src/gifts",
+        "apps/api/src/entitlements"
+      ],
+      "testCommand": "npx tsx -e \"import { EntitlementService } from './apps/api/src/entitlements/index.ts'; import { GiftService } from './apps/api/src/gifts/index.ts'; const ent = new EntitlementService(); const g = new GiftService(ent); const issued = g.issueGiftForPaidOrder({ orderId: 'o1', purchaserAccountId: 'a1', sku: 'SKU_GIFT_EXPLORER_BUNDLE' }); const r1 = g.redeemGiftCodeAtomically({ rawCode: issued.rawCodeOnce!, recipientAdultAccountId: 'a2' }); const r2 = g.redeemGiftCodeAtomically({ rawCode: issued.rawCodeOnce!, recipientAdultAccountId: 'a3' }); if (!r1.ok || r2.ok || r2.status !== 'REDEEMED') process.exit(1);\"",
+      "summary": "V4-08 High-entropy single-use gift codes (>=128-bit entropy, keyed SHA-256 digest storage, zero raw code logs), atomic single-winner redemption, states ISSUED/REDEEMED/EXPIRED/REVOKED/REFUND_REVIEW, adult entitlements",
+      "commitSha": "ad092e6",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-09",
+      "agentId": "CX04",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 4,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "apps/api/src/wallet",
+        "apps/api/src/profiles",
+        "apps/api/src/consent",
+        "packages/game-domain/rewards"
+      ],
+      "testCommand": "npx tsx -e \"import { ConsentService } from './apps/api/src/consent/index.ts'; import { ChildProfileService } from './apps/api/src/profiles/index.ts'; import { MiraTokenWalletService } from './apps/api/src/wallet/index.ts'; const c = new ConsentService(); const cr = c.recordParentalConsent('a1'); const p = new ChildProfileService(c); const prof = p.createPseudonymousProfile({ adultAccountId: 'a1', consentId: cr.consentId, nickname: 'MiraExplorer' }); const w = new MiraTokenWalletService(p); const e1 = w.awardQuestCompletion({ profileId: prof.profileId, adultAccountId: 'a1', questEventKey: 'FR:ch1:bakery:gather' }); const e2 = w.awardQuestCompletion({ profileId: prof.profileId, adultAccountId: 'a1', questEventKey: 'FR:ch1:bakery:gather' }); if (e1.balance !== 20 || !e2.deduplicated || e2.balance !== 20) process.exit(1);\"",
+      "summary": "V4-09 Append-only Mira Token ledger (QUEST_EARN, COSMETIC_SPEND, ADMIN_CORRECTION), nonnegative balance invariant, idempotent quest reward claims, pseudonymous child profiles with consent provenance & export/delete",
+      "commitSha": "ad092e6",
+      "telemetry": {},
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-05",
+      "agentId": "AG18",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "wave": 5,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "apps/web/src/parent"
+      ],
+      "testCommand": "test -f apps/web/src/parent/index.tsx",
+      "summary": "V4-05 Parent portal & dashboard (/parents, /parents/sign-in, /parents/dashboard, /parents/gifts, /parents/gifts/redeem, /parents/orders, /parents/settings, /privacy, /terms, /refunds, /support)",
+      "commitSha": "8634d93",
+      "telemetry": {
+        "provider": "ag",
+        "elapsedMs": 0
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG27",
+      "agentId": "AG27",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 5,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/accessibility"
+      ],
+      "testCommand": "test -f reports/accessibility/ACCESSIBILITY_AND_RTL_REPORT.md",
+      "summary": "Accessibility, keyboard navigation, contrast, RTL Arabic shaping, Korean typography, and reduced-motion verification report",
+      "commitSha": "8634d93",
+      "telemetry": {
+        "provider": "ag",
+        "elapsedMs": 0
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "CL10",
+      "agentId": "CL10",
+      "provider": "claude",
+      "resolvedModel": "claude-opus-5-5",
+      "costTier": "high-reasoning",
+      "wave": 5,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "tests/cross-platform",
+        "reports/PLATFORM_QA.md",
+        "reports/PARITY_MATRIX.md"
+      ],
+      "testCommand": "npx vitest run tests/cross-platform/parity.test.ts && test -f reports/PARITY_MATRIX.md",
+      "summary": "Cross-platform equivalence test suite, 75-cell (5x5x3) parity matrix, exploit/security review, and human playtest procedures",
+      "commitSha": "8634d93",
+      "telemetry": {
+        "provider": "claude",
+        "elapsedMs": 1
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-10",
+      "agentId": "CL10",
+      "provider": "claude",
+      "resolvedModel": "claude-opus-5-5",
+      "costTier": "high-reasoning",
+      "wave": 5,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "reports/commerce",
+        "docs/policy/commerce"
+      ],
+      "testCommand": "test -f reports/commerce/THREAT_MODEL_AND_COMPLIANCE.md && test -f docs/policy/commerce/COMMERCE_POLICY_V04.md",
+      "summary": "V4-10 Commerce threat model, COPPA/privacy assessment, cross-platform commerce boundary matrix, and live-commerce signoff blockers",
+      "commitSha": "8634d93",
+      "telemetry": {
+        "provider": "claude",
+        "elapsedMs": 1
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "DX06",
+      "agentId": "DX06",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 5,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "tests/fixtures/generated"
+      ],
+      "testCommand": "node -e \"JSON.parse(require('fs').readFileSync('tests/fixtures/generated/commerce/edge-cases.json'));\"",
+      "summary": "Edge-case test fixtures for 3D save migrations, webhook replay/out-of-order events, concurrent gift redemptions, and ledger invariants",
+      "commitSha": "37f20b6",
+      "telemetry": {
+        "provider": "dgx",
+        "model": "qwen/qwen3-coder-next",
+        "elapsedMs": 717,
+        "usage": {
+          "prompt_tokens": 69,
+          "completion_tokens": 37,
+          "total_tokens": 106,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "CX08",
+      "agentId": "CX08",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 5,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "tests/e2e/web"
+      ],
+      "testCommand": "npx vitest run tests/e2e/web/web-3d-adventure.test.ts",
+      "summary": "Playwright Web 3D E2E suite: landing->Play Free->Hub->France full walkthrough, all 5 countries, persistence reload, mobile touch controls, FPS/frame-time sampling",
+      "commitSha": "5ca73ea",
+      "telemetry": {
+        "model": "gpt-5.3-codex"
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-11",
+      "agentId": "CX08",
+      "provider": "codex",
+      "resolvedModel": "gpt-6-astra",
+      "costTier": "high-reasoning",
+      "wave": 5,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "tests/e2e/commerce"
+      ],
+      "testCommand": "npx vitest run tests/e2e/commerce/commerce-c01-c20.test.ts",
+      "summary": "V4-11 Commerce red-team & E2E acceptance test suite covering C01 through C20 (webhook forgery/dedup, parallel gift redeem race, IDOR, child-route isolation, backend outage resilience)",
+      "commitSha": "eddc982",
+      "telemetry": {
+        "model": "gpt-5.3-codex"
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "DX08",
+      "agentId": "DX08",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 5,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "docs/operations"
+      ],
+      "testCommand": "test -f docs/operations/BUILD_AND_PLAYTEST_MANUAL.md",
+      "summary": "Reproducible build manuals and device playtest scripts for Web, Roblox Studio, and Minecraft Bedrock",
+      "commitSha": "5d7a669",
+      "telemetry": {
+        "model": "qwen/qwen3-coder-next",
+        "latencyMs": 7657,
+        "usage": {
+          "prompt_tokens": 74,
+          "completion_tokens": 450,
+          "total_tokens": 524,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "V4-12",
+      "agentId": "DX08",
+      "provider": "dgx",
+      "resolvedModel": "qwen/qwen3-coder-next",
+      "costTier": "local-dgx",
+      "wave": 5,
+      "workstream": "v0.4-commerce-homepage",
+      "ownedPaths": [
+        "docs/operations/commerce"
+      ],
+      "testCommand": "test -f docs/operations/commerce/COMMERCE_OPERATIONS_RUNBOOK.md",
+      "summary": "V4-12 Commerce operator runbooks: Stripe webhook operations, reconciliation CLI, rollback, refund/dispute handling, and incident response",
+      "commitSha": "cb8a935",
+      "telemetry": {
+        "model": "qwen/qwen3-coder-next",
+        "latencyMs": 7513,
+        "usage": {
+          "prompt_tokens": 64,
+          "completion_tokens": 450,
+          "total_tokens": 514,
+          "completion_tokens_details": {
+            "reasoning_tokens": 0
+          }
+        }
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG28",
+      "agentId": "AG28",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-medium",
+      "costTier": "multimodal-creative",
+      "wave": 5,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/screens"
+      ],
+      "testCommand": "test -f reports/screens/v0.4/france-3d-1440x900.png && test -f reports/screens/commerce/parents-shop-1440x900.png && test -f reports/screens/BEFORE_AFTER_COMPARISON.md",
+      "summary": "Multi-viewport screenshot capture (360x800, 390x844, 768x1024, 1440x900, 1920x1080) of cinematic homepage, 3D World Hub, 5 countries, and parent commerce portal, plus before/after visual comparison",
+      "commitSha": "3e7afa6",
+      "telemetry": {
+        "model": "Antigravity-Native"
+      },
+      "status": "DONE"
+    },
+    {
+      "stageId": "AG30",
+      "agentId": "AG30",
+      "provider": "ag",
+      "resolvedModel": "gemini-4-argon-high",
+      "costTier": "multimodal-creative",
+      "wave": 5,
+      "workstream": "core-3d-multiplatform",
+      "ownedPaths": [
+        "reports/ART_QA.md",
+        "reports/V04_COMMERCE_QA.md"
+      ],
+      "testCommand": "test -f reports/ART_QA.md && test -f reports/V04_COMMERCE_QA.md",
+      "summary": "Independent art, animation, homepage (35-pt rubric), 3D gameplay (50-pt rubric), and commerce QA reviewer; zero implementation changes",
+      "commitSha": "e192794",
+      "telemetry": {
+        "model": "Antigravity-Native"
+      },
+      "status": "DONE"
+    }
+  ]
+}

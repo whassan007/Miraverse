@@ -1,0 +1,16 @@
+=== STAGE CX09 (AGENT CX09) ===
+Commit: 5fb65c2
+Owned Paths: .github/workflows,tools/release
+Test Command: node tools/release/package-v04.mjs && test -f .github/workflows/ci-v04.yml
+Test Exit: 0
+{
+  "version": "0.4.0",
+  "packagedAt": "2026-11-04T02:30:42.389Z",
+  "artifacts": {
+    "webDist": false,
+    "robloxPlace": false,
+    "minecraftAddon": false
+  }
+}
+
+DONE CX09 5fb65c2 .github/workflows/ci-v04.yml

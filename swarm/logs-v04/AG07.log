@@ -1,0 +1,7 @@
+=== STAGE AG07 (AGENT AG07) ===
+Commit: 18497d7
+Owned Paths: art/source/countries/LB
+Test Command: test -f art/source/countries/LB/kit-LB.json
+Test Exit: 0
+
+DONE AG07 18497d7 art/source/countries/LB/kit-LB.json

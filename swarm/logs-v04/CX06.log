@@ -1,0 +1,8 @@
+=== STAGE CX06 (AGENT CX06) ===
+Commit: bd5b7d0
+Owned Paths: tools/assets,assets/LICENSES.json,apps/web/public/assets/models
+Test Command: npx tsx tools/assets/build-glb.ts && test -f assets/LICENSES.json && test -f apps/web/public/assets/models/hero_mira.glb
+Test Exit: 0
+Generated 9 binary .glb assets.
+
+DONE CX06 bd5b7d0 apps/web/public/assets/models/manifest.json

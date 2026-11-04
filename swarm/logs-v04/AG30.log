@@ -1,0 +1,6 @@
+=== STAGE AG30 (AGENT AG30) ===
+Commit: e192794
+Owned Paths: reports/ART_QA.md,reports/V04_COMMERCE_QA.md
+Telemetry: {"model":"Antigravity-Native"}
+Test Command: test -f reports/ART_QA.md && test -f reports/V04_COMMERCE_QA.md
+Test Exit: 0

@@ -1,0 +1,7 @@
+=== STAGE AG06 (AGENT AG06) ===
+Commit: fb0705b
+Owned Paths: art/source/countries/FR
+Test Command: node -e "JSON.parse(require('fs').readFileSync('art/source/countries/FR/kit-FR.json'));"
+Test Exit: 0
+
+DONE AG06 fb0705b art/source/countries/FR/kit-FR.json

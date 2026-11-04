@@ -1,0 +1,24 @@
+=== STAGE CX08 (AGENT CX08) ===
+Commit: 5ca73ea
+Owned Paths: tests/e2e/web
+Telemetry: {"model":"gpt-5.3-codex"}
+Test Command: npx vitest run tests/e2e/web/web-3d-adventure.test.ts
+Test Exit: 0
+
+ RUN  v2.1.9 /home/wael/Code/mv-wt/CX08
+
+stdout | tests/e2e/web/web-3d-adventure.test.ts > CX08 — Web 3D Adventure Runtime, France Vertical Slice & 5-World Save Persistence > constructs sculpted 3D Babylon.js scenes for HUB and all 5 countries with Hero rig, NPCs, and restorable landmarks
+BJS - [18:55:38]: Babylon.js v7.34.2 - Null engine
+BJS - [18:55:38]: Babylon.js v7.34.2 - Null engine
+BJS - [18:55:38]: Babylon.js v7.34.2 - Null engine
+BJS - [18:55:38]: Babylon.js v7.34.2 - Null engine
+BJS - [18:55:38]: Babylon.js v7.34.2 - Null engine
+BJS - [18:55:38]: Babylon.js v7.34.2 - Null engine
+
+ ✓ tests/e2e/web/web-3d-adventure.test.ts (2 tests) 45ms
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  18:55:37
+   Duration  528ms (transform 87ms, setup 0ms, collect 361ms, tests 45ms, environment 0ms, prepare 27ms)
+

@@ -1,0 +1,7 @@
+=== STAGE V4-04 (AGENT AG17) ===
+Commit: f5a1667
+Owned Paths: apps/web/src/storefront
+Test Command: test -f apps/web/src/storefront/index.tsx
+Test Exit: 0
+
+DONE V4-04 f5a1667 apps/web/src/storefront/index.tsx

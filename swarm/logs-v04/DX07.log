@@ -1,0 +1,8 @@
+=== STAGE DX07 (AGENT DX07) ===
+Commit: 193d677
+Owned Paths: reports/content-sync
+Telemetry: {"provider":"dgx","model":"qwen/qwen3-coder-next","elapsedMs":1458,"usage":{"prompt_tokens":85,"completion_tokens":75,"total_tokens":160,"completion_tokens_details":{"reasoning_tokens":0}}}
+Test Command: node -e "const r=JSON.parse(require('fs').readFileSync('reports/content-sync/sync-audit.json')); if(!r.hashParityVerified) process.exit(1);"
+Test Exit: 0
+
+DONE DX07 193d677 reports/content-sync/CONTENT_SYNC_REPORT.md

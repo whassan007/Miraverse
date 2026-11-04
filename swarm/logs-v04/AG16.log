@@ -1,0 +1,7 @@
+=== STAGE AG16 (AGENT AG16) ===
+Commit: bdf0829
+Owned Paths: content/levels/web/KR
+Test Command: node -e "const l=JSON.parse(require('fs').readFileSync('content/levels/web/KR/level.json')); if(l.country!=='KR') process.exit(1);"
+Test Exit: 0
+
+DONE AG16 bdf0829 content/levels/web/KR/level.json
