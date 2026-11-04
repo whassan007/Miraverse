@@ -1,0 +1,651 @@
+{
+  "schemaVersion": "1.1.0",
+  "hubId": "HUB_ATLAS_OBSERVATORY",
+  "name": "The Atlas Observatory",
+  "origin": [
+    0,
+    100,
+    0
+  ],
+  "bounds": {
+    "min": [
+      -48,
+      96,
+      -48
+    ],
+    "max": [
+      48,
+      128,
+      48
+    ]
+  },
+  "recommendedOrder": [
+    "LB",
+    "IQ",
+    "EG",
+    "FR",
+    "KR",
+    "DE",
+    "CN",
+    "JP",
+    "RU",
+    "UA",
+    "MA"
+  ],
+  "finaleUnlockMinKeepsakes": 3,
+  "portals": [
+    {
+      "portalId": "portal_lb",
+      "countryCode": "LB",
+      "countryName": "Lebanon",
+      "destinationCity": "Byblos/Jbeil",
+      "hubCoords": {
+        "x": 28,
+        "y": 101,
+        "z": 0
+      },
+      "targetSpawn": {
+        "x": 200,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:lb_byblos_limestone",
+        "miraverse:lb_carved_arch_stone",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "LB01"
+    },
+    {
+      "portalId": "portal_iq",
+      "countryCode": "IQ",
+      "countryName": "Iraq",
+      "destinationCity": "Baghdad",
+      "hubCoords": {
+        "x": 24,
+        "y": 101,
+        "z": 15
+      },
+      "targetSpawn": {
+        "x": 600,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:iq_shanasheel_oriel_screen",
+        "miraverse:iq_tigris_glazed_brick",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "IQ01"
+    },
+    {
+      "portalId": "portal_eg",
+      "countryCode": "EG",
+      "countryName": "Egypt",
+      "destinationCity": "Cairo",
+      "hubCoords": {
+        "x": 12,
+        "y": 101,
+        "z": 25
+      },
+      "targetSpawn": {
+        "x": 400,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:eg_cairo_mashrabiya",
+        "miraverse:eg_fanous_lantern_block",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "EG01"
+    },
+    {
+      "portalId": "portal_fr",
+      "countryCode": "FR",
+      "countryName": "France",
+      "destinationCity": "Vieux Lyon",
+      "hubCoords": {
+        "x": -4,
+        "y": 101,
+        "z": 28
+      },
+      "targetSpawn": {
+        "x": 1000,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:fr_lyon_ochre_stucco",
+        "miraverse:fr_mansard_slate_shingle",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "FR01"
+    },
+    {
+      "portalId": "portal_kr",
+      "countryCode": "KR",
+      "countryName": "South Korea",
+      "destinationCity": "Jeonju",
+      "hubCoords": {
+        "x": -18,
+        "y": 101,
+        "z": 21
+      },
+      "targetSpawn": {
+        "x": 800,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:kr_giwa_eave_tile",
+        "miraverse:kr_hanji_sliding_screen",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "KR01"
+    },
+    {
+      "portalId": "portal_de",
+      "countryCode": "DE",
+      "countryName": "Germany",
+      "destinationCity": "Rhine / symbolic Grail landscape",
+      "hubCoords": {
+        "x": -27,
+        "y": 101,
+        "z": 8
+      },
+      "targetSpawn": {
+        "x": 1200,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:de_rhine_slate_stone",
+        "miraverse:de_half_timber_oak_frame",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "DE01"
+    },
+    {
+      "portalId": "portal_cn",
+      "countryCode": "CN",
+      "countryName": "China",
+      "destinationCity": "Peach Blossom Spring, Wuling-inspired setting",
+      "hubCoords": {
+        "x": -27,
+        "y": 101,
+        "z": -8
+      },
+      "targetSpawn": {
+        "x": 1400,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:cn_peach_blossom_timber",
+        "miraverse:cn_whitewashed_hui_wall",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "CN01"
+    },
+    {
+      "portalId": "portal_jp",
+      "countryCode": "JP",
+      "countryName": "Japan",
+      "destinationCity": "Bashō’s journey, Tohoku-inspired route",
+      "hubCoords": {
+        "x": -18,
+        "y": 101,
+        "z": -21
+      },
+      "targetSpawn": {
+        "x": 1600,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:jp_cedar_waystation_beam",
+        "miraverse:jp_shoji_paper_lattice",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "JP01"
+    },
+    {
+      "portalId": "portal_ru",
+      "countryCode": "RU",
+      "countryName": "Russia",
+      "destinationCity": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+      "hubCoords": {
+        "x": -4,
+        "y": 101,
+        "z": -28
+      },
+      "targetSpawn": {
+        "x": 1800,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:ru_carved_pine_izba_log",
+        "miraverse:ru_svetloyar_reflection_prism",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "RU01"
+    },
+    {
+      "portalId": "portal_ua",
+      "countryCode": "UA",
+      "countryName": "Ukraine",
+      "destinationCity": "Kyiv founding hills / community music square",
+      "hubCoords": {
+        "x": 12,
+        "y": 101,
+        "z": -25
+      },
+      "targetSpawn": {
+        "x": 2000,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:ua_kyiv_hill_timber",
+        "miraverse:ua_embroidered_rushnyk_banner",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "UA01"
+    },
+    {
+      "portalId": "portal_ma",
+      "countryCode": "MA",
+      "countryName": "Morocco",
+      "destinationCity": "Marrakesh / Jemaa el-Fnaa-inspired square",
+      "hubCoords": {
+        "x": 24,
+        "y": 101,
+        "z": -15
+      },
+      "targetSpawn": {
+        "x": 2200,
+        "y": 65,
+        "z": 0
+      },
+      "frameBlocks": [
+        "miraverse:ma_marrakesh_terracotta_pisé",
+        "miraverse:ma_zellij_star_mosaic",
+        "minecraft:sea_lantern"
+      ],
+      "chapter1AvailableImmediately": true,
+      "chapter1Id": "MA01"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "hub_atlas_rotunda",
+      "name": "The Atlas Observatory Dome",
+      "origin": {
+        "x": -16,
+        "y": 100,
+        "z": -16
+      },
+      "size": {
+        "x": 32,
+        "y": 14,
+        "z": 32
+      },
+      "wallBlock": "minecraft:quartz_bricks",
+      "trimBlock": "minecraft:chiseled_quartz_block",
+      "roofBlock": "minecraft:tinted_glass"
+    },
+    {
+      "id": "hub_circle_of_stories_hall",
+      "name": "Circle of Stories Exhibition Gallery",
+      "origin": {
+        "x": -14,
+        "y": 100,
+        "z": 20
+      },
+      "size": {
+        "x": 28,
+        "y": 10,
+        "z": 18
+      },
+      "wallBlock": "minecraft:smooth_quartz",
+      "trimBlock": "minecraft:gold_block",
+      "roofBlock": "minecraft:sea_lantern"
+    },
+    {
+      "id": "hub_cartographer_arch",
+      "name": "Wayfinder & Accessibility Pavilion",
+      "origin": {
+        "x": -36,
+        "y": 100,
+        "z": -10
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 20
+      },
+      "wallBlock": "minecraft:stone_bricks",
+      "trimBlock": "minecraft:dark_oak_planks",
+      "roofBlock": "minecraft:spruce_stairs"
+    }
+  ],
+  "interiors": [
+    {
+      "id": "hub_interior_atlas_pedestal",
+      "name": "Central Missing-Pages Atlas Pedestal Room",
+      "furnishings": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 101,
+            "z": 0
+          },
+          "blockId": "minecraft:lectern"
+        },
+        {
+          "offset": {
+            "x": 2,
+            "y": 101,
+            "z": 0
+          },
+          "blockId": "minecraft:cartography_table"
+        },
+        {
+          "offset": {
+            "x": -2,
+            "y": 101,
+            "z": 0
+          },
+          "blockId": "minecraft:enchanting_table"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 102,
+            "z": 0
+          },
+          "blockId": "minecraft:lantern"
+        }
+      ]
+    },
+    {
+      "id": "hub_interior_circle_exhibition",
+      "name": "Circle of Stories Keepsake Plinths (11 Plinths, 3+ Required for Finale)",
+      "furnishings": [
+        {
+          "offset": {
+            "x": -10,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "lb_cedar_sea_memory_chest"
+        },
+        {
+          "offset": {
+            "x": -8,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "iq_house_of_wisdom_book"
+        },
+        {
+          "offset": {
+            "x": -6,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "eg_fanous_of_shared_light"
+        },
+        {
+          "offset": {
+            "x": -4,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "fr_meres_lyonnaises_recipe_book"
+        },
+        {
+          "offset": {
+            "x": -2,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "kr_five_color_bibimbap_bowl"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "de_compass_of_compassion"
+        },
+        {
+          "offset": {
+            "x": 2,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "cn_peach_blossom_keepsake"
+        },
+        {
+          "offset": {
+            "x": 4,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "jp_travelers_ink_brush"
+        },
+        {
+          "offset": {
+            "x": 6,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "ru_kitezh_bell"
+        },
+        {
+          "offset": {
+            "x": 8,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "ua_bandura_memory_charm"
+        },
+        {
+          "offset": {
+            "x": 10,
+            "y": 101,
+            "z": 28
+          },
+          "blockId": "minecraft:chiseled_quartz_block",
+          "keepsakeId": "ma_storytellers_circle_drum"
+        }
+      ]
+    }
+  ],
+  "interactiveAnchors": [
+    {
+      "anchorId": "hub_atlas_journal_pedestal",
+      "type": "atlas_journal",
+      "coords": {
+        "x": 0,
+        "y": 101,
+        "z": 0
+      },
+      "stationBlockId": "minecraft:lectern"
+    },
+    {
+      "anchorId": "hub_language_switcher_kiosk",
+      "type": "language_switcher",
+      "coords": {
+        "x": 6,
+        "y": 101,
+        "z": -4
+      },
+      "stationBlockId": "minecraft:cartography_table"
+    },
+    {
+      "anchorId": "hub_age_profile_selector",
+      "type": "age_selector",
+      "coords": {
+        "x": -6,
+        "y": 101,
+        "z": -4
+      },
+      "stationBlockId": "minecraft:smithing_table"
+    },
+    {
+      "anchorId": "hub_accessible_route_beacon",
+      "type": "accessibility_guide",
+      "coords": {
+        "x": 0,
+        "y": 101,
+        "z": -10
+      },
+      "stationBlockId": "minecraft:beacon"
+    },
+    {
+      "anchorId": "hub_circle_of_stories_altar",
+      "type": "finale_exhibition",
+      "coords": {
+        "x": 0,
+        "y": 101,
+        "z": 28
+      },
+      "stationBlockId": "minecraft:lodestone"
+    },
+    {
+      "anchorId": "portal_lb",
+      "type": "country_portal",
+      "coords": {
+        "x": 28,
+        "y": 101,
+        "z": 0
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_iq",
+      "type": "country_portal",
+      "coords": {
+        "x": 24,
+        "y": 101,
+        "z": 15
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_eg",
+      "type": "country_portal",
+      "coords": {
+        "x": 12,
+        "y": 101,
+        "z": 25
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_fr",
+      "type": "country_portal",
+      "coords": {
+        "x": -4,
+        "y": 101,
+        "z": 28
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_kr",
+      "type": "country_portal",
+      "coords": {
+        "x": -18,
+        "y": 101,
+        "z": 21
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_de",
+      "type": "country_portal",
+      "coords": {
+        "x": -27,
+        "y": 101,
+        "z": 8
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_cn",
+      "type": "country_portal",
+      "coords": {
+        "x": -27,
+        "y": 101,
+        "z": -8
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_jp",
+      "type": "country_portal",
+      "coords": {
+        "x": -18,
+        "y": 101,
+        "z": -21
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_ru",
+      "type": "country_portal",
+      "coords": {
+        "x": -4,
+        "y": 101,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_ua",
+      "type": "country_portal",
+      "coords": {
+        "x": 12,
+        "y": 101,
+        "z": -25
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    },
+    {
+      "anchorId": "portal_ma",
+      "type": "country_portal",
+      "coords": {
+        "x": 24,
+        "y": 101,
+        "z": -15
+      },
+      "stationBlockId": "minecraft:sea_lantern"
+    }
+  ]
+}
