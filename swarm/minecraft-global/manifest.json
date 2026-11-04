@@ -1917,13 +1917,17 @@
       "acceptance": "Manifest inventory, content hashes and repeatable builds",
       "branch": "minecraft-global/DX20",
       "worktree": "/home/wael/Code/mv-wt-mcg/DX20",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "c510bf2",
+      "integration_sha": "fd5475f",
+      "runtime_environment": "DGX Spark (qwen/qwen3-coder-next, 57.31 tok/s, maxConcurrency=1) | NVIDIA GB10, 580.178.04, 44, 92 % | Total=121GiB Used=102GiB Free=0GiB Available=19GiB",
+      "modified_files": [
+        "apps/minecraft/tools/distribution/verify-reproducibility.mjs"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/tools/distribution/verify-reproducibility.mjs"
+      ],
       "report_path": "reports/minecraft-global/agents/DX20.md",
       "log_path": "swarm/minecraft-global/logs/DX20.log",
       "blockers": []
