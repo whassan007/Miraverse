@@ -11,7 +11,6 @@ import {
   type QuestObjectiveSpec,
   type QuestSemanticSpec,
 } from '../../contracts/index';
-import type { PackFile } from '../schema';
 
 export function migratePackToQuestSpec(pack: Record<string, any>): QuestSemanticSpec {
   const country = pack.country as CountryCode;
