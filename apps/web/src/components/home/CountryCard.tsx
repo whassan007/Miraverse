@@ -25,8 +25,8 @@ export const CountryCard: React.FC<CountryCardProps> = ({ pack, story }) => {
   const primaryColor = pack.colors?.primary || '#1d4ed8';
   const secondaryColor = pack.colors?.secondary || '#d97706';
   const coverSrc = `/art/${pack.country}/cover.svg`;
-  const storyHref = `/story/${pack.lang}`;
-  const playHref = `/play/${pack.country}`;
+  const storyHref = `#/story/${pack.lang}`;
+  const playHref = `#/play/${pack.country}`;
   const isPackLangRtl = RTL.includes(pack.lang);
   const localizedCountryName =
     copy.countryNames[pack.country] || pack.name_en;

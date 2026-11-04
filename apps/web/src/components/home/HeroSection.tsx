@@ -96,7 +96,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           }}
         >
           <a
-            href="/passport"
+            href="#/passport"
             data-testid="hero-cta-passport"
             style={{
               display: 'inline-flex',
@@ -122,7 +122,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </a>
 
           <a
-            href="/about"
+            href="#/about"
             data-testid="hero-cta-about"
             style={{
               display: 'inline-flex',
