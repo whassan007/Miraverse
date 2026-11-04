@@ -1,0 +1,251 @@
+{
+  "levelId": "level:web:EG",
+  "country": "EG",
+  "titleEn": "EG · Cairo Lantern Courtyard",
+  "titleNative": "حوش القاهرة وبوابة الفوانيس",
+  "glbAssetPath": "/assets/models/world_EG.glb",
+  "spawnPosition": [
+    0,
+    0,
+    -8
+  ],
+  "spawnRotationY": 0,
+  "returnPortalPosition": [
+    0,
+    0,
+    -12
+  ],
+  "bounds": {
+    "minX": -24,
+    "maxX": 24,
+    "minZ": -24,
+    "maxZ": 24
+  },
+  "npcs": [
+    {
+      "npcId": "npc:EG:teta_samira",
+      "name": "Teta Samira",
+      "role": "mentor",
+      "dialogueId": "dlg:EG:teta_samira",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "rotationY": 0,
+      "costumeVariant": "mentor",
+      "primaryColorHex": "#2B4C7E",
+      "accentColorHex": "#F0B429"
+    },
+    {
+      "npcId": "npc:EG:am_hassan",
+      "name": "Am Hassan",
+      "role": "vendor",
+      "dialogueId": "dlg:EG:am_hassan",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "rotationY": -0.5,
+      "costumeVariant": "vendor",
+      "primaryColorHex": "#F0B429",
+      "accentColorHex": "#2B4C7E"
+    },
+    {
+      "npcId": "npc:EG:karim_artisan",
+      "name": "Usta Karim",
+      "role": "artisan",
+      "dialogueId": "dlg:EG:karim_artisan",
+      "position": [
+        -5.2,
+        0,
+        1.8
+      ],
+      "rotationY": 0.5,
+      "costumeVariant": "artisan",
+      "primaryColorHex": "#2B4C7E",
+      "accentColorHex": "#F4F1DE"
+    },
+    {
+      "npcId": "npc:EG:nour_neighbor",
+      "name": "Nour",
+      "role": "neighbor",
+      "dialogueId": "dlg:EG:nour_neighbor",
+      "position": [
+        2.2,
+        0,
+        -3.5
+      ],
+      "rotationY": 2.2,
+      "costumeVariant": "neighbor",
+      "primaryColorHex": "#588157",
+      "accentColorHex": "#F0B429"
+    }
+  ],
+  "interactables": [
+    {
+      "interactableId": "npc:EG:teta_samira",
+      "kind": "npc",
+      "labelEn": "Talk to Teta Samira",
+      "labelNative": "حوش القاهرة وبوابة الفوانيس",
+      "position": [
+        -2.4,
+        0,
+        3.2
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "EG:ch1:lantern:gather"
+    },
+    {
+      "interactableId": "station:EG:gather",
+      "kind": "gather_prop",
+      "labelEn": "Gather Ingredients for Cairene Koshari",
+      "labelNative": "حوش القاهرة وبوابة الفوانيس",
+      "position": [
+        3.2,
+        0,
+        -1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "EG:ch1:lantern:gather"
+    },
+    {
+      "interactableId": "station:EG:trade",
+      "kind": "trade_stall",
+      "labelEn": "Trade with Am Hassan",
+      "labelNative": "حوش القاهرة وبوابة الفوانيس",
+      "position": [
+        4.8,
+        0,
+        1.5
+      ],
+      "interactionRadius": 3.5,
+      "linkedObjectiveId": "EG:ch1:lantern:trade"
+    },
+    {
+      "interactableId": "station:EG:build",
+      "kind": "build_site",
+      "labelEn": "Restore Khan Courtyard & Fanous Archway",
+      "labelNative": "حوش القاهرة وبوابة الفوانيس",
+      "position": [
+        0,
+        0,
+        6.5
+      ],
+      "interactionRadius": 4.5,
+      "linkedObjectiveId": "EG:ch1:lantern:build"
+    },
+    {
+      "interactableId": "station:EG:cook",
+      "kind": "cook_station",
+      "labelEn": "Prepare Cairene Koshari",
+      "labelNative": "حوش القاهرة وبوابة الفوانيس",
+      "position": [
+        -3.5,
+        0,
+        5.2
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "EG:ch1:lantern:cook"
+    },
+    {
+      "interactableId": "station:EG:word",
+      "kind": "word_prop",
+      "labelEn": "Discover Cultural Words in Cairo Lantern Courtyard",
+      "labelNative": "فانوس",
+      "position": [
+        1.8,
+        0,
+        4
+      ],
+      "interactionRadius": 3.8,
+      "linkedObjectiveId": "EG:ch1:lantern:word",
+      "vocabEntry": {
+        "word": "فانوس",
+        "translit": "fanous",
+        "en": "brass Ramadan lantern"
+      }
+    },
+    {
+      "interactableId": "portal:HUB",
+      "kind": "portal",
+      "labelEn": "Return to 3D World Hub",
+      "labelNative": "World Hub",
+      "position": [
+        0,
+        0,
+        -12
+      ],
+      "interactionRadius": 3.2
+    }
+  ],
+  "restorationLandmark": {
+    "landmarkId": "landmark:EG:fanous_arch",
+    "nameEn": "Khan Courtyard & Fanous Archway",
+    "nameNative": "حوش القاهرة وبوابة الفوانيس",
+    "position": [
+      0,
+      0,
+      8
+    ],
+    "components": [
+      {
+        "componentId": "comp:EG:base",
+        "labelEn": "Khan Courtyard & Fanous Archway Walls",
+        "labelNative": "حوش القاهرة وبوابة الفوانيس",
+        "materialId": "mat:EG:base",
+        "positionOffset": [
+          0,
+          2.3,
+          0
+        ],
+        "scale": [
+          8.4,
+          4.6,
+          5.6
+        ],
+        "damagedColorHex": "#6B655E",
+        "restoredColorHex": "#F0B429"
+      },
+      {
+        "componentId": "comp:EG:roof",
+        "labelEn": "Khan Courtyard & Fanous Archway Roof",
+        "labelNative": "حوش القاهرة وبوابة الفوانيس",
+        "materialId": "mat:EG:roof",
+        "positionOffset": [
+          0,
+          5.9,
+          0
+        ],
+        "scale": [
+          9,
+          2.8,
+          6.2
+        ],
+        "damagedColorHex": "#52525B",
+        "restoredColorHex": "#2B4C7E"
+      },
+      {
+        "componentId": "comp:EG:trim",
+        "labelEn": "Khan Courtyard & Fanous Archway Woodwork",
+        "labelNative": "حوش القاهرة وبوابة الفوانيس",
+        "materialId": "mat:EG:trim",
+        "positionOffset": [
+          0,
+          2.6,
+          0
+        ],
+        "scale": [
+          8.8,
+          1.6,
+          6
+        ],
+        "damagedColorHex": "#57534E",
+        "restoredColorHex": "#F0B429"
+      }
+    ]
+  },
+  "lookdevPresetId": "lookdev:EG",
+  "ambientAudioCueId": "audio:EG:ambience"
+}
