@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "v06.1",
+  "targetDesktopFps": 60,
+  "targetMobileFps": 30,
+  "maxPlotPartsPerPlayer": 20,
+  "maxCoopPlayersPerByblosSession": 2,
+  "maxAvatarTextureResolution": "1024x1024",
+  "runtimeProfilingStatus": "STATIC_BUDGETS_VERIFIED_LIVE_DEVICE_CAPTURE_BLOCKED_ON_LINUX_ARM64",
+  "fabricatedLiveFpsClaims": false
+}
