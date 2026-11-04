@@ -542,7 +542,7 @@ run_provider_queue() {
     fi
 
     wait_for_slot "$provider"
-    run_single_agent "$id" "$provider" "$wave" "$write_paths" "$reads" "$task_card" "$model_tier" &
+    run_single_agent "$id" "$provider" "$wave" "$write_paths" "$reads" "$task_card" "$model_tier" < /dev/null &
     pids+=("$!")
     sleep 0.5
   done < "$ROOT/swarm/agents.tsv"
