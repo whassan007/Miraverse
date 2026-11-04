@@ -1,0 +1,15 @@
+=== AGENT DX11 (DGX · W2) ===
+Timestamp: 2026-11-04T06:57:58.887Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (59.73 tok/s)
+Branch: minecraft-v10/DX11
+Agent Commit SHA: 4ba5f59
+Integration Merge SHA: 9dc5270
+Owned Paths: apps/minecraft/tests/fixtures/locales/
+Test Command: test -s apps/minecraft/tests/fixtures/locales/bedrock-locales-audit.json
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tests/fixtures/locales/bedrock-locales-audit.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE DX11 4ba5f59 apps/minecraft/tests/fixtures/locales/bedrock-locales-audit.json
