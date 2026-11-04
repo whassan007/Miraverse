@@ -1,0 +1,19 @@
+monumentId,siteId,name,period,confidence,materials,runtimeBuilt,verifiedEvidence
+byblos_temple_obelisks,hist_byblos,Temple of the Obelisks,c. 1900–1600 BCE,archaeologically_documented,"limestone_ashlar, hewn_monoliths",YES,26 standing obelisks & podium verified in Studio
+byblos_l_shaped_temple,hist_byblos,Earlier L-Shaped Temple,c. 2600–2200 BCE,archaeologically_documented,"unworked_limestone, mudbrick_core",YES,Lower excavation stratum & grid markers verified
+byblos_ahiram_sarcophagus,hist_byblos,Ahiram Sarcophagus & Epigraphy,c. 1000 BCE,archaeologically_documented,"carved_white_limestone, bronze",YES,4 lion bases & 22-letter linear alphabet station verified
+byblos_ancient_harbor,hist_byblos,Ancient Bronze Age Harbour & Quays,c. 2500–500 BCE,archaeologically_documented,"sandstone_blocks, cedar_bollards",YES,Stone pier & moored Phoenician gaulos ship verified
+tyre_island_citadel,hist_tyre,Pre-332 BCE Island Citadel,c. 950–332 BCE,scholarly_reconstruction,"header_stretcher_limestone",YES,Offshore island bedrock & multi-tier sea walls built
+tyre_twin_harbors,hist_tyre,Tyre Twin Harbors,c. 1000–332 BCE,archaeologically_documented,"submerged_ashlar_moles",YES,Sidonian & Egyptian dual basins with breakwaters built
+tyre_alexander_causeway_exhibit,hist_tyre,Alexander's Mole Geology Exhibit,332 BCE – Present,archaeologically_documented,"quarried_stone, coastal_sand",YES,Tombolo coastal sedimentation dynamics & sediment strata built
+tyre_purple_workshop,hist_tyre,Tyrian Purple Murex Workshop,c. 1200–332 BCE,archaeologically_documented,"crushed_shells, lead_vats",YES,Murex shell middens & lead vat fermentation interactive stand built
+sidon_temple_eshmun,hist_sidon,Sanctuary of Eshmun & Podium,c. 550–332 BCE,archaeologically_documented,"megalithic_ashlar, conduits",YES,Bostan esh-Sheikh terrace & Bodashtart drafted ashlar podium built
+sidon_throne_astarte,hist_sidon,Empty Throne of Astarte,c. 4th–3rd century BCE,archaeologically_documented,"sculpted_limestone",YES,Winged sphinx monolithic empty throne built
+sidon_glass_atelier,hist_sidon,Sidon Core-Formed Glass Atelier,c. 5th–1st century BCE,archaeologically_documented,"silica_furnaces, clay_cores",YES,Oven furnaces & core-formed glass amphoriskos workshop built
+carthage_byrsa_acropolis,hist_carthage,Byrsa Acropolis & Citadel,c. 3rd–2nd century BCE,archaeologically_documented,"sandstone_opus_africanum",YES,Elevated citadel plateau & multi-story bastions built
+carthage_magon_quarter,hist_carthage,Magon Quarter & Opus Africanum,c. 4th–2nd century BCE,archaeologically_documented,"opus_africanum_piers, lime_mortar",YES,Peristyle residential grid & masonry puzzle stand built
+carthage_cothon_harbor,hist_carthage,Punic Circular Military Cothon,c. 220–146 BCE,archaeologically_documented,"ashlar_quays, timber_slipways",YES,Radial military basin & Admiral island dockyard built
+carthage_tophet_exhibit,hist_carthage,Tophet Stelae Gallery,c. 8th–2nd century BCE,archaeologically_documented,"limestone_votive_markers",YES,Non-graphic archaeological debate & Tanit symbol gallery built
+motya_submerged_causeway,hist_motya,Motya Submerged Causeway to Birgi,c. 6th century–397 BCE,archaeologically_documented,"basalt_slabs, underwater_stone",YES,1.7km shallow lagoon basalt road built
+motya_cothon_basin,hist_motya,Motya Kothon & Sacred Basin,c. 6th century BCE,archaeologically_documented,"ashlar_borders, spring_conduit",YES,Rectangular stone-lined freshwater sacred basin built
+motya_punic_galley,hist_motya,Punic War Galley (Marsala Shipwreck),c. 241 BCE,archaeologically_documented,"pinewood_keel, bronze_ram",YES,Slender trireme hull with bronze rostrum ram & mortise-tenon joinery built

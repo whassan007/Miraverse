@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifacts": [
+    {
+      "artifactId": "art:phoe:ahiram_sarcophagus",
+      "name": "Ahiram Sarcophagus Linear Inscription",
+      "nativeName": "نقش ناووس أحيرام الأبجدي",
+      "siteId": "hist_byblos",
+      "materialAndPeriod": "Carved Limestone · Iron Age I (c. 1000 BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "description": "38-word inscription carved on the rim and lid in the early Phoenician phonetic linear alphabet, warning grave robbers and preserving the father of modern alphabets.",
+      "provenance": "National Museum of Beirut (Inv. 1923-Montet-TombV)"
+    },
+    {
+      "artifactId": "art:phoe:byblos_bronze_votives",
+      "name": "Temple of the Obelisks Gilded Bronze Figurines",
+      "nativeName": "تماثيل البرونز المذهبة في معبد المسلات",
+      "siteId": "hist_byblos",
+      "materialAndPeriod": "Cast Bronze & Gold Leaf · Middle Bronze Age (c. 1800 BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "description": "Distinctive conical-headdress figurines deposited in stone jars under the courtyard floor, representing Phoenician deity Resheph and worshippers.",
+      "provenance": "National Museum of Beirut & Louvre Museum"
+    },
+    {
+      "artifactId": "art:phoe:tyrian_silver_shekel",
+      "name": "Silver Shekel (Tetradrachm) of Melqart",
+      "nativeName": "شيكل صور الفضي - ملقرت والحصان المجنح",
+      "siteId": "hist_tyre",
+      "materialAndPeriod": "High-Purity Cast Silver (95%) · Hellenistic / Iron Standard (c. 126 BCE – 66 CE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "description": "Laureate head of Heracles-Melqart riding a winged sea-horse over waves, reverse showing Egyptian eagle and ship's prow.",
+      "provenance": "American University of Beirut Museum & British Museum"
+    },
+    {
+      "artifactId": "art:phoe:marsala_ship_timbers",
+      "name": "Marsala Punic Warship Joinery & Ram",
+      "nativeName": "أخشاب سفينة مرسى علي البونية ونظام اللسان والنقرة",
+      "siteId": "hist_motya",
+      "materialAndPeriod": "Pine & Oak with Bronze Nails · 3rd century BCE (c. 241 BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "description": "Intact warship stern and keel exhibiting precision mortise-and-tenon joints, dunnage markings in painted Phoenician letters, and lead hull sheathing.",
+      "provenance": "Museo Archeologico Baglio Anselmi, Marsala, Sicily"
+    },
+    {
+      "artifactId": "art:phoe:core_formed_amphoriskos",
+      "name": "Sidonian Core-Formed Glass Amphoriskos",
+      "nativeName": "قارورة زجاجية صيدونية مشكلة على قالب طيني",
+      "siteId": "hist_sidon",
+      "materialAndPeriod": "Cobalt Blue Glass with Yellow/White Thread · Persian Period (c. 5th century BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "description": "Dark blue perfume vessel decorated with combed festoon chevrons, crafted by trailing molten glass around a removable organic sand core.",
+      "provenance": "The Metropolitan Museum of Art & Louvre Museum"
+    },
+    {
+      "artifactId": "art:phoe:tyrian_purple_skein",
+      "name": "Imperial Tyrian Purple Dyed Wool Skein",
+      "nativeName": "خيط الصوف الأرجواني الصوري الملكي",
+      "siteId": "hist_tyre",
+      "materialAndPeriod": "Spun Wool Dyed with 6,6'-dibromoindigo · Iron Age Luxury",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "description": "Non-fading imperial crimson-purple dyed wool extracted from hypobranchial glands of Hexaplex trunculus mollusks, prized above gold across ancient royalty.",
+      "provenance": "Attested in Ugaritic and Assyrian tribute texts; dye installations excavated at Minet el-Faouqar, Tyre."
+    }
+  ]
+}

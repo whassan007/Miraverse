@@ -8,6 +8,12 @@ local MountLebanonWorld = require(script.Parent.world.MountLebanonWorld)
 local BeirutWorld = require(script.Parent.world.BeirutWorld)
 local RegionalTerrainBuilder = require(script.Parent.world.RegionalTerrainBuilder)
 local MentorCharacter = require(script.Parent.world.MentorCharacter)
+local PhoenicianHeritageHub = require(script.Parent["historical-worlds"].PhoenicianHeritageHub)
+local ByblosHistoricalWorld = require(script.Parent["historical-worlds"].ByblosHistoricalWorld)
+local TyreHistoricalWorld = require(script.Parent["historical-worlds"].TyreHistoricalWorld)
+local SidonHistoricalWorld = require(script.Parent["historical-worlds"].SidonHistoricalWorld)
+local CarthageHistoricalWorld = require(script.Parent["historical-worlds"].CarthageHistoricalWorld)
+local MotyaHistoricalWorld = require(script.Parent["historical-worlds"].MotyaHistoricalWorld)
 
 local MapBuilder = {}
 
@@ -311,6 +317,37 @@ local function buildTravelLobby(mapFolder: Folder, metas: { [string]: CountryMet
 
 		createBillboardLabel(portalPart, meta.name_en, "Portal · " .. cc, secondaryColor)
 	end
+
+	-- Dedicated Historical Gateway Portal to Phoenician Worlds
+	local histPortalPos = lobbyCenter + Vector3.new(0, 4.5, 24)
+	local histPortalPart = Instance.new("Part")
+	histPortalPart.Name = "Portal_PhoenicianHeritage"
+	histPortalPart.Anchored = true
+	histPortalPart.CanCollide = true
+	histPortalPart.Size = Vector3.new(7, 9.5, 1.5)
+	histPortalPart.Position = histPortalPos
+	histPortalPart.Color = Color3.fromRGB(240, 190, 50)
+	histPortalPart.Material = Enum.Material.Neon
+	histPortalPart.Parent = lobbyFolder
+
+	local histPrompt = Instance.new("ProximityPrompt")
+	histPrompt.Name = "TravelPrompt"
+	histPrompt.ActionText = "Travel to Phoenician Worlds"
+	histPrompt.ObjectText = "Phoenician Heritage Gateway"
+	histPrompt.HoldDuration = 0
+	histPrompt.MaxActivationDistance = 12
+	histPrompt.RequiresLineOfSight = false
+	histPrompt.Parent = histPortalPart
+
+	onPrompt(histPrompt, function(h, player)
+		if h.travelLocation then
+			h.travelLocation(player, "phoenician_hub")
+		else
+			h.travel(player, "LB")
+		end
+	end)
+
+	createBillboardLabel(histPortalPart, "Phoenician Heritage", "Historical Gateway · Ancient Worlds", Color3.fromRGB(255, 215, 0))
 end
 
 local function buildCountryPlaza(mapFolder: Folder, cc: CountryId, meta: CountryMeta)
@@ -725,6 +762,24 @@ function MapBuilder.build(): Folder
 			RegionalTerrainBuilder.buildRegionalScene(mapFolder, locDef.locationId, globalTravelCallbacks)
 		end
 	end
+
+	-- Build the 5 Phoenician Historical Worlds & Heritage Hub (Z >= 1600)
+	local histTravelCallback = function(player: Player, destination: string, targetPos: Vector3)
+		if handlers then
+			if handlers.travelLocation then
+				handlers.travelLocation(player, destination)
+			else
+				handlers.travel(player, destination)
+			end
+		end
+	end
+
+	PhoenicianHeritageHub.build(mapFolder, histTravelCallback)
+	ByblosHistoricalWorld.build(mapFolder, histTravelCallback)
+	TyreHistoricalWorld.build(mapFolder, histTravelCallback)
+	SidonHistoricalWorld.build(mapFolder, histTravelCallback)
+	CarthageHistoricalWorld.build(mapFolder, histTravelCallback)
+	MotyaHistoricalWorld.build(mapFolder, histTravelCallback)
 
 	mapFolder.Parent = Workspace
 	return mapFolder

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0.0",
+  "registryTitle": "Miraverse Phoenician Archaeological and Historical Source Registry",
+  "verifiedSources": [
+    {
+      "sourceId": "src:unesco:byblos_295",
+      "title": "UNESCO World Heritage Centre — Byblos (Site #295)",
+      "url": "https://whc.unesco.org/en/list/295/",
+      "citation": "UNESCO (1984), World Heritage List: Byblos, Lebanon. Criteria (iii), (iv), (vi).",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Temple of the Obelisks, L-Shaped Temple, Royal Necropolis, and Bronze Age harbour."
+    },
+    {
+      "sourceId": "src:unesco:tyre_299",
+      "title": "UNESCO World Heritage Centre — Tyre (Site #299)",
+      "url": "https://whc.unesco.org/en/list/299/",
+      "citation": "UNESCO (1984), World Heritage List: Tyre, Lebanon. Criteria (iii), (vi).",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Phoenician island acropolis, submerged twin breakwaters, Sidonian and Egyptian harbours."
+    },
+    {
+      "sourceId": "src:unesco:carthage_37",
+      "title": "UNESCO World Heritage Centre — Archaeological Site of Carthage (Site #37)",
+      "url": "https://whc.unesco.org/en/list/37/",
+      "citation": "UNESCO (1979), World Heritage List: Archaeological Site of Carthage, Tunisia. Criteria (ii), (iii), (vi).",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Byrsa acropolis, Magon residential quarter, Opus Africanum architecture, Punic Cothon."
+    },
+    {
+      "sourceId": "src:dunand:byblos_fouilles",
+      "title": "Fouilles de Byblos (1926–1938, 1939–1958)",
+      "author": "Maurice Dunand",
+      "citation": "Dunand, M. (1939, 1954, 1958). Fouilles de Byblos, Volumes I & II. Librairie Orientaliste Paul Geuthner, Paris.",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Excavation records of Temple of the Obelisks, numbering of 26 limestone obelisks, and relocation above the L-Shaped Temple."
+    },
+    {
+      "sourceId": "src:montet:byblos_ahiram",
+      "title": "Byblos et l'Égypte: Quatre Campagnes de Fouilles à Gebeil",
+      "author": "Pierre Montet",
+      "citation": "Montet, P. (1928). Byblos et l'Égypte: Quatre Campagnes de Fouilles à Gebeil 1921-1922-1923-1924. Paris.",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Discovery and photographic documentation of Royal Tomb V, Ahiram Sarcophagus and linear Phoenician inscription."
+    },
+    {
+      "sourceId": "src:marriner:tyre_geoarch",
+      "title": "Holocene Coastal Dynamics and Geoarchaeology of Tyre Harbours",
+      "author": "Nick Marriner, Christophe Morhange, Michel Boudagher-Fadel",
+      "citation": "Marriner, N., Morhange, C., & Boudagher-Fadel, M. (2007). Geoarchaeology of Tyre's ancient harbours, Phoenicia. Journal of Archaeological Science, 35(5), 1281-1310.",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Subsurface cores and sonar evidence for island isolation prior to Alexander's 332 BCE mole and subsequent tombolo formation."
+    },
+    {
+      "sourceId": "src:frost:marsala_ship",
+      "title": "The Punic Ship: Final Excavation Report",
+      "author": "Honor Frost et al.",
+      "citation": "Frost, H. et al. (1981). Notizie degli Scavi di Antichità, Serie VIII, Vol. XXX. Accademia Nazionale dei Lincei, Rome.",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Punic warship hull construction, mortise-and-tenon joints, Phoenician dunnage letters, ship ram morphology."
+    },
+    {
+      "sourceId": "src:tusa:motya_excavations",
+      "title": "Mozia: Scavi e Ricerche Archeologiche",
+      "author": "Vincenzo Tusa & Sebastiano Tusa",
+      "citation": "Tusa, V. (1978). La Civiltà Punica in Italia: Mozia. Accademia Nazionale dei Lincei.",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Island topography, submerged causeway to Birgi, rectangular Kothon basin, North Gate battlements."
+    },
+    {
+      "sourceId": "src:renan:mission_phenicie",
+      "title": "Mission de Phénicie",
+      "author": "Ernest Renan",
+      "citation": "Renan, E. (1864). Mission de Phénicie. Imprimerie Impériale, Paris.",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Epigraphy and initial surveys of Temple of Eshmun at Bostan esh-Sheikh and Sidon coastal necropolises."
+    },
+    {
+      "sourceId": "src:stager:carthage_cothon",
+      "title": "The Punic Ports at Carthage",
+      "author": "Lawrence E. Stager & Henry Hurst",
+      "citation": "Hurst, H. (1994). Excavations at Carthage: The British Mission, Vol. II, 1: The Circular Harbour (Cothon). Oxford University Press.",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "relevance": "Circular military harbor, dry docks for 220 vessels, central island admiral pavilion, rectangular commercial port."
+    }
+  ]
+}

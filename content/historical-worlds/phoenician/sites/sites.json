@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "historicalHub": {
+    "hubId": "phoenician_heritage_hub",
+    "name": "Phoenician Heritage Gateway",
+    "displayName": "Phoenician Heritage Gateway",
+    "coordinates": null,
+    "robloxOrigin": [0, 10, 1600],
+    "spawn": [0, 10.5, 1600],
+    "description": "Historical central transit courtyard connecting players to the 5 major Phoenician and Punic architectural environments without modifying the modern world registry."
+  },
+  "sites": [
+    {
+      "siteId": "hist_byblos",
+      "name": "Ancient Byblos (Gebal / Gubla)",
+      "displayName": "Ancient Byblos",
+      "nativeName": "جُبَيْل الفينيقية القديمة / 𐤂𐤁𐤋",
+      "region": "Lebanon",
+      "latitude": 34.1208,
+      "longitude": 35.6481,
+      "primaryEra": "Bronze & Iron Age (c. 2800 – 500 BCE)",
+      "robloxOrigin": [800, 10, 1600],
+      "spawn": [800, 10.5, 1628],
+      "priority": "P0",
+      "unescoSiteId": 295,
+      "summary": "Foremost Canaanite/Phoenician maritime port, continuous habitation from 5000 BCE, exporter of cedarwood, papyrus trade, origin of the linear alphabet."
+    },
+    {
+      "siteId": "hist_tyre",
+      "name": "Ancient Tyre (Ṣūr)",
+      "displayName": "Ancient Tyre",
+      "nativeName": "صُور الفينيقية / 𐤑𐤓",
+      "region": "Lebanon",
+      "latitude": 33.2709,
+      "longitude": 35.1963,
+      "primaryEra": "Iron Age Island City (c. 1000 – 332 BCE)",
+      "robloxOrigin": [800, 10, 2400],
+      "spawn": [800, 10.5, 2428],
+      "priority": "P0",
+      "unescoSiteId": 299,
+      "summary": "Fortified Phoenician offshore island citadel, twin harbors (Sidonian & Egyptian), imperial Tyrian purple dye center, and Alexander's 332 BCE mole."
+    },
+    {
+      "siteId": "hist_sidon",
+      "name": "Ancient Sidon (Ṣaydūn)",
+      "displayName": "Ancient Sidon",
+      "nativeName": "صَيْدا الفينيقية / 𐤑𐤃𐤍",
+      "region": "Lebanon",
+      "latitude": 33.5631,
+      "longitude": 35.3689,
+      "primaryEra": "Persian & Hellenistic Era (c. 600 – 200 BCE)",
+      "robloxOrigin": [800, 10, 3200],
+      "spawn": [800, 10.5, 3228],
+      "priority": "P1",
+      "unescoSiteId": null,
+      "summary": "Celebrated coastal artisan metropolis renowned for core-formed glass ateliers, purple dye industry, and the monumental healing sanctuary of Eshmun at Bostan esh-Sheikh."
+    },
+    {
+      "siteId": "hist_carthage",
+      "name": "Punic Carthage (Qart-ḥadašt)",
+      "displayName": "Punic Carthage",
+      "nativeName": "قرطاج البونية / 𐤒𐤓𐤕 𐤇𐤃𐤔𐤕",
+      "region": "Tunisia (North Africa)",
+      "latitude": 36.8528,
+      "longitude": 10.3233,
+      "primaryEra": "Punic Golden Age (c. 814 – 146 BCE)",
+      "robloxOrigin": [800, 10, 4000],
+      "spawn": [800, 10.5, 4028],
+      "priority": "P1",
+      "unescoSiteId": 37,
+      "summary": "Magnificent Western Mediterranean Phoenician metropolis: Byrsa citadel, Magon residential district with Opus Africanum architecture, and twin naval/commercial Cothon harbor."
+    },
+    {
+      "siteId": "hist_motya",
+      "name": "Ancient Motya (Mozia)",
+      "displayName": "Ancient Motya",
+      "nativeName": "موتيا الفينيقية / 𐤌𐤕𐤅𐤀",
+      "region": "Sicily, Italy",
+      "latitude": 37.8683,
+      "longitude": 12.4686,
+      "primaryEra": "Archaic & Classical Phoenician (c. 800 – 397 BCE)",
+      "robloxOrigin": [800, 10, 4800],
+      "spawn": [800, 10.5, 4828],
+      "priority": "P2",
+      "unescoSiteId": null,
+      "summary": "Protected lagoon island stronghold in western Sicily, featuring an engineered submerged causeway to Birgi, fortified bastions, artificial Kothon basin, and the 397 BCE siege."
+    }
+  ]
+}

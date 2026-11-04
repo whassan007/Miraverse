@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "workshops": [
+    {
+      "workshopId": "workshop_tyrian_purple",
+      "name": "Tyrian Royal Purple Dye Installation",
+      "nativeName": "ورشة صباغة الأرجوان الصوري الإمبراطوري",
+      "siteId": "hist_tyre",
+      "craft": "Enzymatic biochemical pigment synthesis and luxury textile dyeing",
+      "historicalPeriod": "Iron Age (c. 1200 – 300 BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "pedagogicalSafety": "Child-safe color chemistry and pigment matching; zero animal cruelty depicted or required",
+      "exhibitComponents": [
+        "Lead boiling vats and stone crushing basins for mollusk shells",
+        "Salt crystallization and sunlight photo-oxidation drying racks",
+        "Color spectrum display: yellow precursor turning green, then vibrant deep dibromoindigo crimson under sunlight",
+        "Textile swatches of royal robes, linen tunics, and Phoenician merchant sails"
+      ],
+      "learningObjective": "Understand how sunlight converts pale snail secretions into the ancient world's most lightfast and valuable imperial dye."
+    },
+    {
+      "workshopId": "workshop_sidon_glass",
+      "name": "Sidonian Core-Formed Glass Atelier",
+      "nativeName": "مشغل صيدا لتشكيل الزجاج على القوالب الرملية",
+      "siteId": "hist_sidon",
+      "craft": "Hot-glass manipulation, core-forming, and thread trailing",
+      "historicalPeriod": "Persian to Hellenistic (c. 5th – 2nd century BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "pedagogicalSafety": "Safe styling puzzle using colored vitreous filaments; non-hazardous simulation",
+      "exhibitComponents": [
+        "Clay and dung core on a metal mandrel",
+        "Crucibles of cobalt, copper, and manganese fluxed molten glass",
+        "Feathered combing tools creating zigzag chevron patterns",
+        "Cooling lehr pit for controlled annealing"
+      ],
+      "learningObjective": "Discover how Sidon artisans invented vessel making prior to the blowpipe by dragging molten colored threads across revolving clay cores."
+    },
+    {
+      "workshopId": "workshop_phoenician_numismatics",
+      "name": "Phoenician Weighing & Exchange Bureau",
+      "nativeName": "دار أوزان وتبادل العملات الفينيقية",
+      "siteId": "hist_byblos",
+      "craft": "Metrology, balances, and numismatic standards",
+      "historicalPeriod": "Persian & Hellenistic (c. 5th – 1st century BCE)",
+      "classification": "ARCHAEOLOGICAL_RECORD",
+      "pedagogicalSafety": "Mathematical balance and trade fraction mechanics",
+      "exhibitComponents": [
+        "Dual-pan bronze scale with bronze lion and dome stone weights",
+        "Phoenician shekel (7.6g) and mina (50 shekels) metric converters",
+        "Silver bullion ingots (hacksilver) and minted tetradrachms",
+        "Maritime trade ledger in Phoenician cursive script"
+      ],
+      "learningObjective": "Learn how the Mediterranean's first international currency system used standardized precious metal weights before uniform coins were struck."
+    }
+  ]
+}

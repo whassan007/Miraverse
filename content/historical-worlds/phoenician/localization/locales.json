@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "translations": {
+    "en": {
+      "hub_title": "Phoenician Heritage Gateway",
+      "hub_desc": "Explore the ancient maritime cities, monumental architecture, and engineering feats of the Phoenician and Punic world.",
+      "byblos_name": "Ancient Byblos",
+      "tyre_name": "Ancient Tyre",
+      "sidon_name": "Ancient Sidon",
+      "carthage_name": "Punic Carthage",
+      "motya_name": "Ancient Motya",
+      "interact_examine": "Examine Monument",
+      "interact_solve": "Solve Reconstruction Puzzle",
+      "interact_speak": "Speak with Guide",
+      "return_hub": "Return to Phoenician Gateway",
+      "return_miraverse": "Return to Miraverse Central Lobby"
+    },
+    "fr": {
+      "hub_title": "Portail du Patrimoine Phénicien",
+      "hub_desc": "Explorez les anciennes cités maritimes, l'architecture monumentale et les prouesses techniques du monde phénicien et punique.",
+      "byblos_name": "Byblos Antique",
+      "tyre_name": "Tyr Antique",
+      "sidon_name": "Sidon Antique",
+      "carthage_name": "Carthage Punique",
+      "motya_name": "Motyé Antique",
+      "interact_examine": "Examiner le Monument",
+      "interact_solve": "Résoudre l'Énigme Archéologique",
+      "interact_speak": "Parler au Guide",
+      "return_hub": "Retour au Portail Phénicien",
+      "return_miraverse": "Retour au Salon Central Miraverse"
+    },
+    "ko": {
+      "hub_title": "페니키아 유산 관문",
+      "hub_desc": "페니키아와 포에니 세계의 고대 해양 도시, 기념비적 건축, 공학 기술을 탐험하세요.",
+      "byblos_name": "고대 비블로스",
+      "tyre_name": "고대 티레",
+      "sidon_name": "고대 시돈",
+      "carthage_name": "포에니 카르타고",
+      "motya_name": "고대 모티아",
+      "interact_examine": "유적 조사하기",
+      "interact_solve": "복원 퍼즐 풀기",
+      "interact_speak": "가이드와 대화하기",
+      "return_hub": "페니키아 관문으로 돌아가기",
+      "return_miraverse": "미라버스 중앙 로비로 돌아가기"
+    },
+    "ar-LB": {
+      "hub_title": "بوابة التراث الفينيقي",
+      "hub_desc": "اكتشف المدن البحرية القديمة والعمارة الأثرية والهندسة المتقدمة في العالم الفينيقي والبوني.",
+      "byblos_name": "جُبيل الفينيقية القديمة",
+      "tyre_name": "صُور الفينيقية القديمة",
+      "sidon_name": "صَيدا الفينيقية القديمة",
+      "carthage_name": "قرطاج البونية",
+      "motya_name": "موتيا الفينيقية القديمة",
+      "interact_examine": "معاينة المعلم الأثري",
+      "interact_solve": "حل لغز إعادة البناء الأثري",
+      "interact_speak": "تحدث مع المرشد التاريخي",
+      "return_hub": "العودة إلى بوابة التراث الفينيقي",
+      "return_miraverse": "العودة إلى البهو المركزي لميرافيرس"
+    },
+    "ar-EG": {
+      "hub_title": "بوابة التراث الفينيقي",
+      "hub_desc": "استكشف المدن البحرية والعمارة والهندسة في الحضارة الفينيقية والبونية القديمة.",
+      "byblos_name": "بيبلوس القديمة (جبيل)",
+      "tyre_name": "صور القديمة",
+      "sidon_name": "صيدا القديمة",
+      "carthage_name": "قرطاج البونية",
+      "motya_name": "موتيا القديمة",
+      "interact_examine": "معاينة الأثر",
+      "interact_solve": "حل لغز الترميم",
+      "interact_speak": "التحدث مع المرشد",
+      "return_hub": "الرجوع لبوابة فينيقيا",
+      "return_miraverse": "الرجوع للبهو الرئيسي"
+    },
+    "ar-IQ": {
+      "hub_title": "بوابة التراث الفينيقي",
+      "hub_desc": "استكشف المدن البحرية العريقة والصروح المعمارية والهندسية في العالم الفينيقي والبوني.",
+      "byblos_name": "جبيل الفينيقية القديمة",
+      "tyre_name": "صور الفينيقية القديمة",
+      "sidon_name": "صيدا الفينيقية القديمة",
+      "carthage_name": "قرطاج البونية",
+      "motya_name": "موتيا الفينيقية القديمة",
+      "interact_examine": "فحص المعلم الأثري",
+      "interact_solve": "حل لغز البناء",
+      "interact_speak": "التحدث مع المرشد",
+      "return_hub": "العودة إلى بوابة فينيقيا",
+      "return_miraverse": "العودة إلى البهو العام"
+    }
+  }
+}

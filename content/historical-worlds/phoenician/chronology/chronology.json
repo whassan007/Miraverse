@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "historicalEras": [
+    {
+      "eraId": "era_bronze_age",
+      "name": "Early & Middle Bronze Age",
+      "dateRange": "c. 3000 – 1200 BCE",
+      "keyDevelopments": [
+        "Byblos established as Egypt's chief cedar timber and resin supplier",
+        "Construction of Byblos L-Shaped Temple (c. 2600 BCE)",
+        "Construction of Temple of the Obelisks (c. 1900 BCE)",
+        "Early proto-Sinaitic / Canaanite alphabetic experiments"
+      ]
+    },
+    {
+      "eraId": "era_iron_age_expansion",
+      "name": "Iron Age Phoenician Golden Age & Colonization",
+      "dateRange": "c. 1200 – 539 BCE",
+      "keyDevelopments": [
+        "Hiram I of Tyre develops island city and Melqart precinct",
+        "Royal inscription of King Ahiram at Byblos establishes 22-letter linear alphabet (c. 1000 BCE)",
+        "Foundation of Carthage by Tyrian settlers (c. 814 BCE)",
+        "West Mediterranean trading stations established at Motya, Gadir (Cádiz), and Tharros"
+      ]
+    },
+    {
+      "eraId": "era_persian_classical",
+      "name": "Persian Rule & Western Punic Hegemony",
+      "dateRange": "c. 539 – 332 BCE",
+      "keyDevelopments": [
+        "Sidon becomes flagship fleet commander for Achaemenid Empire",
+        "Temple of Eshmun expanded with grand podium by King Bodashtart",
+        "Siege of Motya by Dionysius I of Syracuse (397 BCE); engineering of siege towers and catamarans",
+        "Phoenician fleet participates in Battle of Salamis (480 BCE)"
+      ]
+    },
+    {
+      "eraId": "era_hellenistic_punic_wars",
+      "name": "Alexander's Conquest & The Punic Wars",
+      "dateRange": "c. 332 – 146 BCE",
+      "keyDevelopments": [
+        "Alexander's 7-month siege of Tyre (332 BCE); construction of the 60m mole permanently creating the tombolo peninsula",
+        "Punic naval supremacy contested in First Punic War; Battle of the Aegates (241 BCE) and Marsala warship loss",
+        "Engineering of the circular military Cothon at Carthage for 220 warships (c. 220 BCE)",
+        "Fall of Punic Carthage (146 BCE)"
+      ]
+    }
+  ],
+  "exhibitEvents": [
+    {
+      "eventId": "event_siege_of_tyre_332",
+      "title": "The Geoarchaeological Siege of Tyre (332 BCE)",
+      "siteId": "hist_tyre",
+      "focus": "Civil engineering, causeway construction, and coastal sedimentation dynamics",
+      "pedagogicalApproach": "Non-violent architectural logistics and physical geography demonstration"
+    },
+    {
+      "eventId": "event_siege_of_motya_397",
+      "title": "The Siege of Island Motya (397 BCE)",
+      "siteId": "hist_motya",
+      "focus": "Lagoon geography, causeway assault, and four-story defensive wheeled siege towers",
+      "pedagogicalApproach": "Problem-solving analysis of island fortifications and shallow-water logistics"
+    },
+    {
+      "eventId": "event_battle_aegates_241",
+      "title": "Naval Architecture of the Aegates Islands (241 BCE)",
+      "siteId": "hist_motya",
+      "focus": "Forensic archaeology of bronze warship rams and prefabricated hull construction from the Marsala wreck",
+      "pedagogicalApproach": "Nautical archaeology puzzle examining hull timbers and bilingual markings"
+    }
+  ]
+}
