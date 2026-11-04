@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "structureId": "miraverse:eg_district",
+  "size": [
+    96,
+    32,
+    96
+  ],
+  "origin": [
+    400,
+    64,
+    0
+  ],
+  "palette": [
+    "miraverse:eg_khan_arch_stone",
+    "miraverse:eg_cairo_mashrabiya",
+    "miraverse:eg_spice_bazaar_canopy",
+    "miraverse:eg_koshari_cauldron_block"
+  ]
+}
