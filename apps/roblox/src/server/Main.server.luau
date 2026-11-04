@@ -1,3 +1,6 @@
--- Phase 1 scaffold (replaced by C6)
+--!strict
 local MapBuilder = require(script.Parent.MapBuilder)
+local SessionManager = require(script.Parent.Core.SessionManager)
+
 MapBuilder.build()
+SessionManager.init()
