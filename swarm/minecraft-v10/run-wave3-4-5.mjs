@@ -214,7 +214,7 @@ describe('MiraVerse v1.0 Minecraft Bedrock — 5-Country Quest, Cooking, Restora
       expect(claim1.ok).toBe(true);
       expect(claim1.deduplicated).toBe(false);
       expect(claim1.tokensAwarded).toBe(50);
-      expect(claim1.stampCode).toMatch(new RegExp(\`^MV-\${country}-1-\`));
+      expect(claim1.stampCode).toMatch(new RegExp(\`^MV-\${country}1-\`));
 
       const claim2 = claimChapterPassportReward(worldState, playerState, country);
       expect(claim2.ok).toBe(true);
