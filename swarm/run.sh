@@ -196,6 +196,7 @@ clean_forbidden_worktree_changes() {
     [ -z "$f" ] && continue
     if ! is_path_allowed "$f" "$write_paths" "$id"; then
       git -C "$wt_dir" checkout -q "$base_sha" -- "$f" 2>/dev/null || rm -rf "$wt_dir/$f"
+      git -C "$wt_dir" reset -q HEAD -- "$f" 2>/dev/null || true
     fi
   done <<< "$modified"
 
@@ -250,7 +251,7 @@ prepare_worktree() {
     local tmp
     tmp="$(mktemp)"
     jq --arg id "$id" --arg ws "$wt_dir" --arg base "$base_sha" \
-      'if .agents[$id].baseSha == "" then .agents[$id].baseSha = $base else . end | .agents[$id].workspace = $ws' \
+      '.agents[$id].baseSha = $base | .agents[$id].workspace = $ws' \
       "$STATUS_FILE" > "$tmp" && mv "$tmp" "$STATUS_FILE"
   ) 200>"$LOCK_FILE"
 
