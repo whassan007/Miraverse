@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "v06.1",
+  "styleBibleRef": "art/v06/direction/STYLE_BIBLE_V06.md",
+  "license": "CC-BY-4.0 / Original MiraVerse First-Party Studio Source",
+  "heroAndMentors": [
+    {
+      "id": "char_mira",
+      "name": "Mira",
+      "role": "Player Companion / Hero",
+      "rig": "R15_Stylized_Kid",
+      "attachmentPoints": [
+        "HatAttachment",
+        "HairAttachment",
+        "UpperTorso",
+        "RightGripAttachment"
+      ]
+    },
+    {
+      "id": "npc_teta_nahla",
+      "name": "Teta Nahla",
+      "countryId": "LB",
+      "role": "Byblos Mentor",
+      "rig": "R15_Stylized_Elder"
+    },
+    {
+      "id": "npc_layla_cairo",
+      "name": "Auntie Layla",
+      "countryId": "EG",
+      "role": "Cairo Mentor",
+      "rig": "R15_Stylized_Adult"
+    },
+    {
+      "id": "npc_noor_baghdad",
+      "name": "Jiddo Noor",
+      "countryId": "IQ",
+      "role": "Baghdad Mentor",
+      "rig": "R15_Stylized_Elder"
+    },
+    {
+      "id": "npc_jiwoo_jeonju",
+      "name": "Halmeoni Ji-woo",
+      "countryId": "KR",
+      "role": "Jeonju Mentor",
+      "rig": "R15_Stylized_Elder"
+    },
+    {
+      "id": "npc_camille_lyon",
+      "name": "Chef Camille",
+      "countryId": "FR",
+      "role": "Vieux Lyon Mentor",
+      "rig": "R15_Stylized_Adult"
+    }
+  ],
+  "avatarMarketplaceCollection": [
+    {
+      "itemId": "lb_byblos_apron_vest",
+      "countryId": "LB",
+      "category": "LayeredClothing_Jacket",
+      "status": "experience_only",
+      "triangleCount": 2840,
+      "maxTextureSize": "1024x1024",
+      "caged": true,
+      "humanApprovalRequiredToPublish": true
+    },
+    {
+      "itemId": "lb_cedar_explorer_satchel",
+      "countryId": "LB",
+      "category": "RigidAccessory_Back",
+      "status": "marketplace_candidate",
+      "triangleCount": 1920,
+      "maxTextureSize": "1024x1024",
+      "attachment": "BodyBackAttachment",
+      "caged": false,
+      "humanApprovalRequiredToPublish": true
+    },
+    {
+      "itemId": "eg_fanous_star_backpack",
+      "countryId": "EG",
+      "category": "RigidAccessory_Back",
+      "status": "marketplace_candidate",
+      "triangleCount": 2150,
+      "maxTextureSize": "1024x1024",
+      "attachment": "BodyBackAttachment",
+      "caged": false,
+      "humanApprovalRequiredToPublish": true
+    },
+    {
+      "itemId": "iq_tigris_woven_hat",
+      "countryId": "IQ",
+      "category": "RigidAccessory_Hat",
+      "status": "experience_only",
+      "triangleCount": 1480,
+      "maxTextureSize": "1024x1024",
+      "attachment": "HatAttachment",
+      "caged": false,
+      "humanApprovalRequiredToPublish": true
+    },
+    {
+      "itemId": "kr_jeonju_hanbok_jacket",
+      "countryId": "KR",
+      "category": "LayeredClothing_Jacket",
+      "status": "marketplace_candidate",
+      "triangleCount": 3120,
+      "maxTextureSize": "1024x1024",
+      "caged": true,
+      "humanApprovalRequiredToPublish": true
+    },
+    {
+      "itemId": "fr_lyon_patissier_beret",
+      "countryId": "FR",
+      "category": "RigidAccessory_Hat",
+      "status": "marketplace_candidate",
+      "triangleCount": 1320,
+      "maxTextureSize": "1024x1024",
+      "attachment": "HatAttachment",
+      "caged": false,
+      "humanApprovalRequiredToPublish": true
+    }
+  ]
+}
