@@ -6,7 +6,11 @@ apps/minecraft/bp/scripts
 apps/minecraft/rp/textures/item_texture.json
 apps/minecraft/rp/texts
 apps/roblox/src/shared/Packs.luau
+apps/roblox/src/shared/V04Bundle.luau
 swarm/logs
+swarm/logs-v04
+swarm/notes-v04
+swarm/*-runner.mjs
 swarm/.slots
 swarm/.status.lock
 swarm/status.json
