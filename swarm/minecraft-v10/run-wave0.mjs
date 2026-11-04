@@ -84,6 +84,12 @@ export function writeWtFile(wtDir, relPath, content) {
   fs.writeFileSync(full, content, 'utf-8');
 }
 
+export function isAgentDone(agentId) {
+  const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf-8'));
+  const rec = manifest.agents.find((a) => a.id === agentId);
+  return rec && (rec.status === 'VERIFIED' || rec.status === 'INTEGRATED');
+}
+
 export function finalizeAgent(agentId, wtDir, ownedPaths, testCommand, evidencePaths, runtimeEnv, blockers = []) {
   const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf-8'));
   const rec = manifest.agents.find((a) => a.id === agentId);
@@ -745,7 +751,9 @@ async function main() {
   console.log('=== WAVE W0 COMPLETE (5/5 AGENTS COMMITTED & MERGED) ===');
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

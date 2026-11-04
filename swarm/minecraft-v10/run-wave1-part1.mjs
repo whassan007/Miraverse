@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
-import { prepareWorktree, writeWtFile, finalizeAgent } from './run-wave0.mjs';
+import { prepareWorktree, writeWtFile, finalizeAgent, isAgentDone } from './run-wave0.mjs';
 
 function crc32(buf) {
   let c = 0xffffffff;
@@ -1700,17 +1700,26 @@ export function revertPlotToCleanState(
 }
 
 async function main() {
-  await runAG02();
-  await runAG03();
-  await runAG04();
-  await runAG09();
-  await runAG10();
-  await runAG15();
-  await runAG16();
-  await runAG17();
-  await runCL02();
-  await runCL03();
-  await runCL04();
+  const fns = [
+    ['AG02', runAG02],
+    ['AG03', runAG03],
+    ['AG04', runAG04],
+    ['AG09', runAG09],
+    ['AG10', runAG10],
+    ['AG15', runAG15],
+    ['AG16', runAG16],
+    ['AG17', runAG17],
+    ['CL02', runCL02],
+    ['CL03', runCL03],
+    ['CL04', runCL04],
+  ];
+  for (const [id, fn] of fns) {
+    if (!isAgentDone(id)) {
+      await fn();
+    } else {
+      console.log(`SKIP ${id} (already completed)`);
+    }
+  }
   console.log('=== WAVE W1 PART 1 COMPLETE (11/11 AGENTS COMMITTED & MERGED) ===');
 }
 
