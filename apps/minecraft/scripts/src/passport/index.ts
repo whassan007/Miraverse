@@ -5,9 +5,9 @@
  * Sole authority for chapter completion stamp issuance and local token grants.
  * Strictly isolated from Robux, Minecoins, or Web Stripe entitlements.
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import { CHALLENGE_ORDER_V10, type PlayerSaveStateV10, type WorldSaveStateV10 } from '../contracts/index.js';
-import { make, verify } from '../../../core/stamp.js';
+import { make, verify } from '../../core/stamp.js';
 
 export function claimChapterPassportReward(
   worldState: WorldSaveStateV10,

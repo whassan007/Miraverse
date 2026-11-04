@@ -3,7 +3,7 @@
  * (`apps/minecraft/scripts/src/state/index.ts`)
  * Owner: CL04 (Wave W1–W3)
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import {
   COUNTRIES_V10,
   MC_V10_PLAYER_STATE_PREFIX,

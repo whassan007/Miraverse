@@ -173,9 +173,10 @@ async function runCX03() {
  * StructureBuilderV10 — Chunk-safe multi-tick structure placement & 3-stage landmark restoration
  * Owner: CX03
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
-import type { RestorationStageIndex } from '../contracts/index.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import { REGIONS_V10 } from '../regions/index.js';
+
+export type RestorationStageIndex = 0 | 1 | 2;
 
 export interface BlockPlacementOp {
   x: number;
@@ -239,7 +240,7 @@ export class StructureBuilderV10 {
  * Native Bedrock @minecraft/server-ui Forms & HUD Coordinator
  * Owner: CX03
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import { COUNTRIES_V10, type PlayerSaveStateV10 } from '../contracts/index.js';
 import { REGIONS_V10 } from '../regions/index.js';
 
@@ -310,16 +311,16 @@ export class BedrockUiFormsV10 {
  * MiraVerse v1.0 Bedrock Runtime Bootstrap
  * Owner: CX03
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import type { PlayerSaveStateV10, WorldSaveStateV10 } from '../contracts/index.js';
 import { createDefaultPlayerStateV10, createDefaultWorldStateV10 } from '../state/index.js';
 import { interactWithNpcV10 } from '../npc/index.js';
 import {
   performGatherAnchor,
-  performTradeAnchor,
+  performMarketTrade,
   performCookingStep,
-  performRestorationStep,
-  performWordObjectDiscovery,
+  performRestorationStageStep,
+  performWordDiscovery,
 } from '../challenges/index.js';
 import { claimOrGetPrivatePlot } from '../multiplayer/index.js';
 import { StructureBuilderV10 } from '../structures/index.js';
@@ -356,24 +357,24 @@ export class MiraVerseBedrockRuntimeV10 {
   }
 
   trade(playerId: string, country: CountryId) {
-    return performTradeAnchor(this.getOrCreatePlayer(playerId), country);
+    return performMarketTrade(this.getOrCreatePlayer(playerId), country);
   }
 
-  cookStep(playerId: string, country: CountryId, stepIndex: number) {
-    return performCookingStep(this.getOrCreatePlayer(playerId), country, stepIndex);
+  cookStep(playerId: string, country: CountryId, ingredientItemId: string) {
+    return performCookingStep(this.getOrCreatePlayer(playerId), country, ingredientItemId);
   }
 
-  restoreStep(playerId: string, country: CountryId) {
-    const res = performRestorationStep(this.getOrCreatePlayer(playerId), country);
+  restoreStep(playerId: string, country: CountryId, materialItemId: string) {
+    const res = performRestorationStageStep(this.getOrCreatePlayer(playerId), country, materialItemId);
     if (res.ok) {
       this.structures.applyRestorationStage(country, res.newStage);
-      this.worldState.restorationStageByCountry[country] = res.newStage;
+      this.worldState.restorationStagesByCountry[country] = res.newStage;
     }
     return res;
   }
 
   discoverWord(playerId: string, country: CountryId, anchorId: string) {
-    return performWordObjectDiscovery(this.getOrCreatePlayer(playerId), country, anchorId);
+    return performWordDiscovery(this.getOrCreatePlayer(playerId), country, anchorId);
   }
 
   claimPlot(playerId: string, country: CountryId) {
@@ -391,7 +392,7 @@ export class MiraVerseBedrockRuntimeV10 {
       'apps/minecraft/scripts/src/structures/',
       'apps/minecraft/scripts/src/ui/',
     ],
-    'npx tsc -p apps/minecraft/tsconfig.json --noEmit',
+    'npx esbuild apps/minecraft/scripts/src/bootstrap/index.ts --bundle --format=esm --outfile=/tmp/cx03-bundle.js',
     [
       'apps/minecraft/scripts/src/bootstrap/index.ts',
       'apps/minecraft/scripts/src/structures/index.ts',

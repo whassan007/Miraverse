@@ -6,7 +6,7 @@
  * with deterministic objective order (Gather -> Trade -> Cook -> Build -> Word),
  * late-join/reload safety, and chapter replay support.
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import {
   CHALLENGE_ORDER_V10,
   type ChallengeKindV10,

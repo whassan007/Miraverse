@@ -5,7 +5,7 @@
  * Enforces protected heritage districts vs. player-owned private building plots,
  * collaborator grant/revoke, block quota limits, accidental damage revert, and disconnect safety.
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import type { PlotOwnershipRecordV10, Vec3, WorldSaveStateV10 } from '../contracts/index.js';
 import { REGIONS_V10 } from '../regions/index.js';
 

@@ -5,7 +5,7 @@
  * Implements physical Gather, atomic Trade, 5-dish ordered Cook sequence,
  * 3-stage physical Block Restoration, and 3-object Word discovery.
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import type { PlayerSaveStateV10 } from '../contracts/index.js';
 import { REGIONS_V10 } from '../regions/index.js';
 import { createInitialQuestRecord, recordChallengeObjectiveCompleted } from '../quests/index.js';

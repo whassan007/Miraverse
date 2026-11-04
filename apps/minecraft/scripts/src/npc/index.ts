@@ -3,7 +3,7 @@
  * (`apps/minecraft/scripts/src/npc/index.ts`)
  * Owner: CL02 (Wave W1–W2)
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import type { NpcPlacementSpec, PlayerSaveStateV10 } from '../contracts/index.js';
 import { REGIONS_V10 } from '../regions/index.js';
 import { acceptCountryQuest } from '../quests/index.js';

@@ -161,6 +161,7 @@ export function finalizeAgent(agentId, wtDir, ownedPaths, testCommand, evidenceP
   fs.writeFileSync(path.join(LOGS_DIR, `${agentId}.log`), logContent + '\n', 'utf-8');
   fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + '\n', 'utf-8');
   sh(`git add swarm/minecraft-v10/manifest.json "swarm/minecraft-v10/logs/${agentId}.log" && git commit -m "minecraft-v10-orchestrator: record ${agentId} completion (${agentSha})"`, ROOT);
+  try { sh('git branch -f integration/minecraft-v10 HEAD', ROOT); } catch {}
 
   console.log(`DONE ${agentId} -> commit ${agentSha} (merged at ${mergedSha})`);
 }

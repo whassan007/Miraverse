@@ -3,7 +3,7 @@
  * (`apps/minecraft/scripts/src/regions/index.ts`)
  * Owner: CL02 (Wave W1–W2)
  */
-import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { CountryId } from '../../../../../packages/content/schema.js';
 import type { RegionDistrictContract } from '../contracts/index.js';
 
 function makeDistrict(
