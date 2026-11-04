@@ -1,0 +1,12 @@
+{
+  "country": "EG",
+  "mentorNameEn": "Teta Samira",
+  "entityTypeId": "miraverse:mentor_eg",
+  "texturePath": "apps/minecraft/assets-src/mentors/EG/mentor_eg.png",
+  "variants": [
+    "mentor",
+    "merchant",
+    "artisan",
+    "cousin"
+  ]
+}
