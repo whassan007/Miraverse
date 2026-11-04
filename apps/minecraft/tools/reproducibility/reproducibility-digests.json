@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-11-04T07:02:03.028Z",
+  "fileCount": 9,
+  "digests": {
+    "apps/minecraft/art-direction/v10/palettes.json": "3a4003c907414278b70173c0a308c1b58bf8d15ff6fd1345dc827a5d0e6ab725",
+    "apps/minecraft/assets-src/blocks/blocks-kit-manifest.json": "815891bcc2ea6056e47532d031b90e088e0552a151c9da9589310f47415cf4eb",
+    "apps/minecraft/assets-src/items/food/food-items-manifest.json": "bd0eafd8c7fca97c67af40ab40852711167725d4acf99d2ee8a587eca5f6c913",
+    "apps/minecraft/world/hub/hub-district.json": "e0d4d1c3c4864a7a31138a85a56c311aa9f3aa6f1f358190b367862bcf1227ac",
+    "apps/minecraft/world/LB/exteriors/byblos-exteriors.json": "de137e5e92e00d331ce83fb5eb1cb9906031828940ca8b4076cb54b51a4e2644",
+    "apps/minecraft/world/EG/cairo-district.json": "1f5c2922b45da02ee1d314d84e9802fef768eb5824ed74934b53de30c9ec2144",
+    "apps/minecraft/world/IQ/baghdad-district.json": "c760bf80737e17c0017ca7c3e9cfd5510b0a0c320d73beb0c978d9cef199f0c4",
+    "apps/minecraft/world/KR/jeonju-district.json": "633425607af414465e88665122cc1b61ddefcdda02613e618b8bd9ffa6cc91bf",
+    "apps/minecraft/world/FR/lyon-district.json": "ce91c7430090dbd9fc93fbd775c5adf20fd862ceaf8ef0a4f1103a2e5900b945"
+  }
+}
