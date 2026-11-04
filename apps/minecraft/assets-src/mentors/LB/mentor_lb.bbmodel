@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "bedrock",
+    "box_uv": true
+  },
+  "name": "mentor_lb_teta_nahla",
+  "geometry_name": "geometry.miraverse.mentor_lb",
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "bones": [
+    "root",
+    "waist",
+    "body",
+    "head",
+    "rightArm",
+    "leftArm",
+    "rightLeg",
+    "leftLeg"
+  ],
+  "animations": [
+    "idle",
+    "walk",
+    "greeting",
+    "pointing",
+    "celebrate",
+    "working"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "country": "LB",
+  "mentorId": "miraverse:mentor_lb",
+  "geometryId": "geometry.miraverse.mentor_lb",
+  "texturePath": "textures/entity/mentor_lb",
+  "npcs": [
+    "npc:LB:teta_nahla",
+    "npc:LB:baker_tariq",
+    "npc:LB:artisan_nadia",
+    "npc:LB:cousin_karim"
+  ]
+}
