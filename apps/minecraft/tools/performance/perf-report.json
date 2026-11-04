@@ -1,0 +1,9 @@
+{
+  "measuredAt": "2026-11-04T07:01:41.247Z",
+  "maxBlocksPerTickBudget": 64,
+  "customBlocksRegistered": 40,
+  "customItemsRegistered": 50,
+  "manifestLoadAndValidationMs": 0.12,
+  "within20HzTickBudget": true,
+  "liveClientFpsStatus": "BLOCKED_REQUIRES_WINDOWS_BEDROCK_CLIENT"
+}
