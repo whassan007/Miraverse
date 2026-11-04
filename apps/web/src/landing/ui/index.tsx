@@ -262,6 +262,23 @@ export const CinematicLandingPage: React.FC = () => {
               Play in Minecraft Bedrock
             </Link>
 
+            <Link
+              to="/play/FR"
+              data-testid="cta-preview-fr"
+              style={{
+                background: 'rgba(255, 255, 255, 0.08)',
+                color: '#CBD5E1',
+                textDecoration: 'none',
+                padding: '12px 18px',
+                borderRadius: '999px',
+                fontSize: '14px',
+                fontWeight: 600,
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+              }}
+            >
+              Preview Vieux Lyon (FR)
+            </Link>
+
             <button
               type="button"
               data-testid="toggle-reduced-motion"
