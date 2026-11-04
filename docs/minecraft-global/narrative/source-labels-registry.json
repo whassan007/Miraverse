@@ -1,0 +1,574 @@
+{
+  "schemaVersion": "1.1.0",
+  "campaignTitle": "Echoes of Home: The Atlas of Belonging",
+  "allowedSourceLabels": [
+    "folklore",
+    "literature",
+    "historical_context",
+    "contemporary_tradition",
+    "fictional_gameplay"
+  ],
+  "countries": [
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "city": "Byblos/Jbeil",
+      "subtitle": "The Harbor of Returning Stories",
+      "culturalWarning": "The Isis/Osiris journey to Byblos is mythology, not evidence of the historical events; Phoenician writing should be contextualized, not called the single uncontested origin of all alphabets.",
+      "chapters": [
+        {
+          "id": "LB01",
+          "title": "The Harbor Wakes",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "lb_harbor_compass",
+          "artifactName": "Harbor Compass"
+        },
+        {
+          "id": "LB02",
+          "title": "Letters in Stone",
+          "sourceType": "historical_context",
+          "artifactId": "lb_alphabet_tile",
+          "artifactName": "Alphabet Tile"
+        },
+        {
+          "id": "LB03",
+          "title": "Teta’s Table",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "lb_family_recipe_card",
+          "artifactName": "Family Recipe Card"
+        },
+        {
+          "id": "LB04",
+          "title": "The Cedar Chest",
+          "sourceType": "folklore",
+          "artifactId": "lb_cedar_token",
+          "artifactName": "Cedar Token"
+        },
+        {
+          "id": "LB05",
+          "title": "Photographs Across the Sea",
+          "sourceType": "fictional_gameplay",
+          "artifactId": "lb_archive_album",
+          "artifactName": "Archive Album"
+        },
+        {
+          "id": "LB06",
+          "title": "Festival of Return",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "lb_harbor_home_stamp",
+          "artifactName": "Harbor Home Stamp"
+        }
+      ]
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "city": "Baghdad",
+      "subtitle": "The Library That Travels",
+      "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+      "chapters": [
+        {
+          "id": "IQ01",
+          "title": "Street of Books",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "iq_bookseller_seal",
+          "artifactName": "Bookseller Seal"
+        },
+        {
+          "id": "IQ02",
+          "title": "The House of Wisdom",
+          "sourceType": "historical_context",
+          "artifactId": "iq_scholars_astrolabe",
+          "artifactName": "Scholar’s Astrolabe"
+        },
+        {
+          "id": "IQ03",
+          "title": "Words That Travel",
+          "sourceType": "historical_context",
+          "artifactId": "iq_translation_scroll",
+          "artifactName": "Translation Scroll"
+        },
+        {
+          "id": "IQ04",
+          "title": "Dates and Kleicha",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "iq_kleicha_mold",
+          "artifactName": "Kleicha Mold"
+        },
+        {
+          "id": "IQ05",
+          "title": "The Courtyard of Questions",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "iq_courtyard_lattice",
+          "artifactName": "Courtyard Lattice"
+        },
+        {
+          "id": "IQ06",
+          "title": "A Library Across Oceans",
+          "sourceType": "fictional_gameplay",
+          "artifactId": "iq_knowledge_keeper_stamp",
+          "artifactName": "Knowledge Keeper Stamp"
+        }
+      ]
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "city": "Cairo",
+      "subtitle": "The Lanterns of Cairo",
+      "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+      "chapters": [
+        {
+          "id": "EG01",
+          "title": "A Darkened Courtyard",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "eg_lantern_frame",
+          "artifactName": "Lantern Frame"
+        },
+        {
+          "id": "EG02",
+          "title": "The Fanous Workshop",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "eg_glass_star",
+          "artifactName": "Glass Star"
+        },
+        {
+          "id": "EG03",
+          "title": "The Market at Dusk",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "eg_market_scale",
+          "artifactName": "Market Scale"
+        },
+        {
+          "id": "EG04",
+          "title": "Koshari for Everyone",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "eg_koshari_bowl",
+          "artifactName": "Koshari Bowl"
+        },
+        {
+          "id": "EG05",
+          "title": "Stories of the Lantern",
+          "sourceType": "folklore",
+          "artifactId": "eg_story_flame",
+          "artifactName": "Story Flame"
+        },
+        {
+          "id": "EG06",
+          "title": "The City of Light",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "eg_cairo_light_stamp",
+          "artifactName": "Cairo Light Stamp"
+        }
+      ]
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "city": "Vieux Lyon",
+      "subtitle": "The Hidden Passage and the Kitchen",
+      "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+      "chapters": [
+        {
+          "id": "FR01",
+          "title": "The Passage Map",
+          "sourceType": "historical_context",
+          "artifactId": "fr_traboule_key",
+          "artifactName": "Traboule Key"
+        },
+        {
+          "id": "FR02",
+          "title": "Threads of the City",
+          "sourceType": "historical_context",
+          "artifactId": "fr_silk_ribbon",
+          "artifactName": "Silk Ribbon"
+        },
+        {
+          "id": "FR03",
+          "title": "At the Mères’ Table",
+          "sourceType": "historical_context",
+          "artifactId": "fr_chefs_notebook",
+          "artifactName": "Chef’s Notebook"
+        },
+        {
+          "id": "FR04",
+          "title": "A Market of Flavors",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "fr_market_basket",
+          "artifactName": "Market Basket"
+        },
+        {
+          "id": "FR05",
+          "title": "Stone by Stone",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "fr_masons_crest",
+          "artifactName": "Mason’s Crest"
+        },
+        {
+          "id": "FR06",
+          "title": "A Recipe for Home",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "fr_lyon_heritage_stamp",
+          "artifactName": "Lyon Heritage Stamp"
+        }
+      ]
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "city": "Jeonju",
+      "subtitle": "The Five Colors of Jeonju",
+      "culturalWarning": "The historical origin of bibimbap is debated; five-color symbolism is an interpretation and should be marked as such. Do not substitute generic Japanese or Chinese assets.",
+      "chapters": [
+        {
+          "id": "KR01",
+          "title": "The Hanok Gate",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "kr_hanok_door_charm",
+          "artifactName": "Hanok Door Charm"
+        },
+        {
+          "id": "KR02",
+          "title": "Five Colors, Many Meanings",
+          "sourceType": "historical_context",
+          "artifactId": "kr_five_color_palette",
+          "artifactName": "Five-Color Palette"
+        },
+        {
+          "id": "KR03",
+          "title": "The Market Morning",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "kr_market_token",
+          "artifactName": "Market Token"
+        },
+        {
+          "id": "KR04",
+          "title": "Jeonju’s Shared Bowl",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "kr_bibimbap_bowl",
+          "artifactName": "Bibimbap Bowl"
+        },
+        {
+          "id": "KR05",
+          "title": "Craft of the Courtyard",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "kr_joinery_pattern",
+          "artifactName": "Joinery Pattern"
+        },
+        {
+          "id": "KR06",
+          "title": "Harmony Feast",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "kr_jeonju_harmony_stamp",
+          "artifactName": "Jeonju Harmony Stamp"
+        }
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "city": "Rhine / symbolic Grail landscape",
+      "subtitle": "The Song and the Healing Question",
+      "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+      "chapters": [
+        {
+          "id": "DE01",
+          "title": "The River’s Bend",
+          "sourceType": "historical_context",
+          "artifactId": "de_rhine_route_map",
+          "artifactName": "Rhine Route Map"
+        },
+        {
+          "id": "DE02",
+          "title": "The Enchanted Song",
+          "sourceType": "literature",
+          "artifactId": "de_lorelei_songstone",
+          "artifactName": "Lorelei Songstone"
+        },
+        {
+          "id": "DE03",
+          "title": "The Navigator’s Choice",
+          "sourceType": "fictional_gameplay",
+          "artifactId": "de_steady_helm",
+          "artifactName": "Steady Helm"
+        },
+        {
+          "id": "DE04",
+          "title": "The Quiet Grail Hall",
+          "sourceType": "literature",
+          "artifactId": "de_hall_of_questions_token",
+          "artifactName": "Hall of Questions Token"
+        },
+        {
+          "id": "DE05",
+          "title": "What Ails You?",
+          "sourceType": "literature",
+          "artifactId": "de_healing_question_scroll",
+          "artifactName": "Healing Question Scroll"
+        },
+        {
+          "id": "DE06",
+          "title": "The Garden Returns",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "de_german_memory_stamp",
+          "artifactName": "German Memory Stamp"
+        }
+      ]
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "city": "Peach Blossom Spring, Wuling-inspired setting",
+      "subtitle": "The Valley Beyond the Blossoms",
+      "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+      "chapters": [
+        {
+          "id": "CN01",
+          "title": "Where the River Turns",
+          "sourceType": "literature",
+          "artifactId": "cn_blossom_petal",
+          "artifactName": "Blossom Petal"
+        },
+        {
+          "id": "CN02",
+          "title": "The Hidden Valley",
+          "sourceType": "literature",
+          "artifactId": "cn_valley_map",
+          "artifactName": "Valley Map"
+        },
+        {
+          "id": "CN03",
+          "title": "The Calendar of Change",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "cn_season_wheel",
+          "artifactName": "Season Wheel"
+        },
+        {
+          "id": "CN04",
+          "title": "A Path That Moves",
+          "sourceType": "literature",
+          "artifactId": "cn_changing_compass",
+          "artifactName": "Changing Compass"
+        },
+        {
+          "id": "CN05",
+          "title": "Moonlight Letters",
+          "sourceType": "folklore",
+          "artifactId": "cn_moon_letter",
+          "artifactName": "Moon Letter"
+        },
+        {
+          "id": "CN06",
+          "title": "Plant a New Garden",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "cn_peach_spring_stamp",
+          "artifactName": "Peach Spring Stamp"
+        }
+      ]
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "city": "Bashō’s journey, Tohoku-inspired route",
+      "subtitle": "The Narrow Road Home",
+      "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+      "chapters": [
+        {
+          "id": "JP01",
+          "title": "The First Step",
+          "sourceType": "literature",
+          "artifactId": "jp_travelers_sandal",
+          "artifactName": "Traveler’s Sandal"
+        },
+        {
+          "id": "JP02",
+          "title": "Crossing the River",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "jp_river_bridge_token",
+          "artifactName": "River Bridge Token"
+        },
+        {
+          "id": "JP03",
+          "title": "Three Lines of Sky",
+          "sourceType": "literature",
+          "artifactId": "jp_haiku_leaf",
+          "artifactName": "Haiku Leaf"
+        },
+        {
+          "id": "JP04",
+          "title": "The Traveler’s Shelter",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "jp_waystation_lantern",
+          "artifactName": "Waystation Lantern"
+        },
+        {
+          "id": "JP05",
+          "title": "The Changing Path",
+          "sourceType": "literature",
+          "artifactId": "jp_seasonal_scroll",
+          "artifactName": "Seasonal Scroll"
+        },
+        {
+          "id": "JP06",
+          "title": "The Road Is Home",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "jp_narrow_road_stamp",
+          "artifactName": "Narrow Road Stamp"
+        }
+      ]
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "city": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+      "subtitle": "The Bells Beneath the Lake",
+      "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+      "chapters": [
+        {
+          "id": "RU01",
+          "title": "The Bell at Dawn",
+          "sourceType": "folklore",
+          "artifactId": "ru_lake_bell_fragment",
+          "artifactName": "Lake Bell Fragment"
+        },
+        {
+          "id": "RU02",
+          "title": "The City in Reflection",
+          "sourceType": "folklore",
+          "artifactId": "ru_reflection_prism",
+          "artifactName": "Reflection Prism"
+        },
+        {
+          "id": "RU03",
+          "title": "Sadko’s Strings",
+          "sourceType": "folklore",
+          "artifactId": "ru_gusli_charm",
+          "artifactName": "Gusli Charm"
+        },
+        {
+          "id": "RU04",
+          "title": "The Water Garden",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ru_reed_wreath",
+          "artifactName": "Reed Wreath"
+        },
+        {
+          "id": "RU05",
+          "title": "Keepers of Stories",
+          "sourceType": "folklore",
+          "artifactId": "ru_legend_folio",
+          "artifactName": "Legend Folio"
+        },
+        {
+          "id": "RU06",
+          "title": "A Story Above Water",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ru_kitezh_memory_stamp",
+          "artifactName": "Kitezh Memory Stamp"
+        }
+      ]
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "city": "Kyiv founding hills / community music square",
+      "subtitle": "The Guardian of Songs",
+      "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+      "chapters": [
+        {
+          "id": "UA01",
+          "title": "The Four Founders",
+          "sourceType": "folklore",
+          "artifactId": "ua_founders_river_map",
+          "artifactName": "Founders’ River Map"
+        },
+        {
+          "id": "UA02",
+          "title": "The City by the Water",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ua_river_bridge_plaque",
+          "artifactName": "River Bridge Plaque"
+        },
+        {
+          "id": "UA03",
+          "title": "Listen to the Kobzar",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ua_bandura_string",
+          "artifactName": "Bandura String"
+        },
+        {
+          "id": "UA04",
+          "title": "The Dumy Notebook",
+          "sourceType": "historical_context",
+          "artifactId": "ua_dumy_page",
+          "artifactName": "Dumy Page"
+        },
+        {
+          "id": "UA05",
+          "title": "The Living Music Hall",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ua_carved_music_stand",
+          "artifactName": "Carved Music Stand"
+        },
+        {
+          "id": "UA06",
+          "title": "Songs That Travel",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ua_ukraine_song_stamp",
+          "artifactName": "Ukraine Song Stamp"
+        }
+      ]
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "city": "Marrakesh / Jemaa el-Fnaa-inspired square",
+      "subtitle": "The Living Circle",
+      "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+      "chapters": [
+        {
+          "id": "MA01",
+          "title": "Join the Circle",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ma_circle_invitation",
+          "artifactName": "Circle Invitation"
+        },
+        {
+          "id": "MA02",
+          "title": "A Tale With Many Voices",
+          "sourceType": "folklore",
+          "artifactId": "ma_hakawati_token",
+          "artifactName": "Hakawati Token"
+        },
+        {
+          "id": "MA03",
+          "title": "Tea and Craft",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ma_mint_tea_tray",
+          "artifactName": "Mint Tea Tray"
+        },
+        {
+          "id": "MA04",
+          "title": "The Story We Change",
+          "sourceType": "fictional_gameplay",
+          "artifactId": "ma_story_thread",
+          "artifactName": "Story Thread"
+        },
+        {
+          "id": "MA05",
+          "title": "Paths of Wisdom",
+          "sourceType": "historical_context",
+          "artifactId": "ma_heritage_map",
+          "artifactName": "Heritage Map"
+        },
+        {
+          "id": "MA06",
+          "title": "The Circle Travels",
+          "sourceType": "contemporary_tradition",
+          "artifactId": "ma_morocco_circle_stamp",
+          "artifactName": "Morocco Circle Stamp"
+        }
+      ]
+    }
+  ]
+}
