@@ -21,6 +21,7 @@ import {
   type AgeTierId,
 } from '../../../../../packages/contracts/v13/index';
 import { RobloxLaunchBanner } from '../../launch/RobloxLaunchPage';
+import { CulturalEncyclopediaSectionV12 } from '../../features/encyclopedia-v12/CulturalEncyclopediaSectionV12';
 
 export const ExploreAtlasPage: React.FC = () => {
   const [filter, setFilter] = useState<'ALL' | 'FLAGSHIP' | 'STORIES'>('ALL');
@@ -974,6 +975,9 @@ export const ExploreCountryDetailPage: React.FC = () => {
           </div>
           <RobloxLaunchBanner countryCode={code} />
         </section>
+
+        {/* SECTION 14: Source-Grounded Cultural Knowledge Encyclopedia & Provenance Atlas (v1.2) */}
+        <CulturalEncyclopediaSectionV12 countryFilter={code} />
       </div>
     </div>
   );

@@ -9,6 +9,7 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import type { CountryCode } from '../../../../../packages/contracts/index';
+import { CulturalEncyclopediaSectionV12 } from '../../features/encyclopedia-v12/CulturalEncyclopediaSectionV12';
 import {
   EPISTEMIC_BADGE_LABELS,
   V13_AGE_TIERS,
@@ -546,6 +547,9 @@ export const InteractiveWorldAtlasPage: React.FC = () => {
             </div>
           </section>
         )}
+
+        {/* Source-Grounded Cultural Knowledge Encyclopedia & Dual-Layer Provenance Atlas (v1.2) */}
+        <CulturalEncyclopediaSectionV12 countryFilter="ALL" />
       </div>
     </div>
   );

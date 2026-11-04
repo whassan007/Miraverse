@@ -124,7 +124,6 @@ export const KnowledgeCardV12: React.FC<{
           <img
             src={record.svg_asset}
             alt={record.title.en}
-            loading="lazy"
             style={{ width: '100%', height: 'auto', display: 'block' }}
           />
         </div>
