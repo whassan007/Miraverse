@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 110" role="img" aria-label="MiraVerse Wordmark">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE29F"/>
+      <stop offset="50%" stop-color="#F4A261"/>
+      <stop offset="100%" stop-color="#E76F51"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="10" width="90" height="90" rx="22" fill="#1D3557" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="51" cy="55" r="28" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <polygon points="51,22 59,48 85,55 59,62 51,88 43,62 17,55 43,48" fill="url(#gold)"/>
+  <text x="116" y="68" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="bold" fill="#FFF8EE" letter-spacing="1.5">MiraVerse</text>
+  <text x="118" y="94" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#F4A261" letter-spacing="3.5">WORLD OF STORIES &amp; ADVENTURE</text>
+</svg>
