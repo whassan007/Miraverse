@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "JP",
+  "countryName": "Japan",
+  "regionName": "Bashō’s journey, Tohoku-inspired route",
+  "storyTitle": "The Narrow Road Home",
+  "localLocale": "ja-JP",
+  "culturalWarning": "Bashō’s journey is historical literature; distinguish reconstructed poetic scenes from verified route facts. Haiku examples must be newly authored or rights-cleared translations.",
+  "origin": {
+    "x": 1600,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 1600,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 1600,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 1596,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 1630,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "jp_travelers_ink_brush",
+    "name": "Traveler’s Ink Brush"
+  },
+  "passportStamp": {
+    "id": "jp_narrow_road_stamp",
+    "name": "Narrow Road Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "jp_mentor_cultural_house",
+      "nameEn": "Bashō’s journey, Tohoku-inspired route Mentor Courtyard & Hearth",
+      "nameNative": "日本 · みちのくの旅路",
+      "origin": {
+        "x": 1582,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:jp_cedar_waystation_beam",
+      "trimBlock": "miraverse:jp_shoji_paper_lattice",
+      "roofBlock": "miraverse:jp_kawara_roof_tile",
+      "hasInterior": true,
+      "interiorId": "jp_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "jp_story_archive_hall",
+      "nameEn": "Bashō’s journey, Tohoku-inspired route Story & Epigraphy Archive",
+      "nameNative": "日本 · みちのくの旅路",
+      "origin": {
+        "x": 1604,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:jp_cedar_waystation_beam",
+      "trimBlock": "miraverse:jp_shoji_paper_lattice",
+      "roofBlock": "miraverse:jp_kawara_roof_tile",
+      "hasInterior": true,
+      "interiorId": "jp_interior_story_archive"
+    },
+    {
+      "buildingId": "jp_artisan_craft_guild",
+      "nameEn": "Bashō’s journey, Tohoku-inspired route Master Artisan Workshop",
+      "nameNative": "日本 · みちのくの旅路",
+      "origin": {
+        "x": 1580,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:jp_cedar_waystation_beam",
+      "trimBlock": "miraverse:jp_shoji_paper_lattice",
+      "roofBlock": "miraverse:jp_kawara_roof_tile",
+      "hasInterior": true,
+      "interiorId": "jp_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "jp_market_bazaar_arcade",
+      "nameEn": "Bashō’s journey, Tohoku-inspired route Fair-Trade Market Arcade",
+      "nameNative": "日本 · みちのくの旅路",
+      "origin": {
+        "x": 1606,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:jp_cedar_waystation_beam",
+      "trimBlock": "miraverse:jp_shoji_paper_lattice",
+      "roofBlock": "miraverse:jp_kawara_roof_tile",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "jp_heritage_landmark_pavilion",
+      "nameEn": "Bashō’s journey, Tohoku-inspired route Community Gathering & Performance Pavilion",
+      "nameNative": "日本 · みちのくの旅路",
+      "origin": {
+        "x": 1594,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:jp_cedar_waystation_beam",
+      "trimBlock": "miraverse:jp_shoji_paper_lattice",
+      "roofBlock": "miraverse:jp_kawara_roof_tile",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "jp_interior_mentor_hearth",
+      "buildingId": "jp_mentor_cultural_house",
+      "nameEn": "Bashō’s journey, Tohoku-inspired route Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 1588,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "jp_cooking_hearth",
+          "blockId": "miraverse:jp_wooden_footbridge_plank",
+          "offset": {
+            "x": 1588,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "jp_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 1586,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "jp_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 1588,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "jp_interior_story_archive",
+      "buildingId": "jp_story_archive_hall",
+      "nameEn": "Bashō’s journey, Tohoku-inspired route Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 1610,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "jp_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 1610,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "jp_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 1612,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "jp_keepsake_display",
+          "blockId": "miraverse:jp_bamboo_water_spout",
+          "offset": {
+            "x": 1608,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Traveler’s Ink Brush"
+        }
+      ]
+    },
+    {
+      "interiorId": "jp_interior_artisan_workshop",
+      "buildingId": "jp_artisan_craft_guild",
+      "nameEn": "Bashō’s journey, Tohoku-inspired route Restoration & Craft Studio",
+      "entryPos": {
+        "x": 1586,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "jp_craft_bench",
+          "blockId": "miraverse:jp_wayfinding_stone_marker",
+          "offset": {
+            "x": 1586,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "jp_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 1584,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "jp_guide_haruka",
+      "countryCode": "JP",
+      "nameEn": "Traveler Guide Haruka",
+      "nameNative": "旅の案内人 はるか",
+      "role": "mentor",
+      "greetingNative": "みちのくの旅路へようこそ。歩く道そのものが、心のふるさとになります。",
+      "spawnPos": {
+        "x": 1576,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "JP01",
+        "JP06"
+      ]
+    },
+    {
+      "npcId": "jp_innkeeper_kenji",
+      "countryCode": "JP",
+      "nameEn": "Innkeeper Kenji",
+      "nameNative": "宿の主人 けんじ",
+      "role": "merchant",
+      "greetingNative": "旅の疲れを癒やす温かいお茶と宿の備えをどうぞ。",
+      "spawnPos": {
+        "x": 1588,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "JP02"
+      ]
+    },
+    {
+      "npcId": "jp_bridge_builder_takumi",
+      "countryCode": "JP",
+      "nameEn": "Bridge Builder Takumi",
+      "nameNative": "橋大工 たくみ",
+      "role": "artisan",
+      "greetingNative": "川を安全に渡れるよう、木の橋を一緒に整えましょう。",
+      "spawnPos": {
+        "x": 1600,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "JP03"
+      ]
+    },
+    {
+      "npcId": "jp_poet_aoi",
+      "countryCode": "JP",
+      "nameEn": "Poet Aoi",
+      "nameNative": "俳人 あおい",
+      "role": "scholar",
+      "greetingNative": "季節の風や空の色を、短い言葉に込めてみましょう。",
+      "spawnPos": {
+        "x": 1612,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "JP04"
+      ]
+    },
+    {
+      "npcId": "jp_gardener_ren",
+      "countryCode": "JP",
+      "nameEn": "Gardener Ren",
+      "nameNative": "庭師 れん",
+      "role": "cousin",
+      "greetingNative": "旅人がいつでも休める共有の庭を手入れしています。",
+      "spawnPos": {
+        "x": 1624,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "JP05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "jp_quest_jp01",
+      "chapterId": "JP01",
+      "title": "The First Step",
+      "kind": "preparation_and_wayfinding",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1570,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:jp_cedar_waystation_beam",
+      "rewardArtifactId": "jp_travelers_sandal"
+    },
+    {
+      "anchorId": "jp_quest_jp02",
+      "chapterId": "JP02",
+      "title": "Crossing the River",
+      "kind": "bridge_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1582,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:jp_shoji_paper_lattice",
+      "rewardArtifactId": "jp_river_bridge_token"
+    },
+    {
+      "anchorId": "jp_quest_jp03",
+      "chapterId": "JP03",
+      "title": "Three Lines of Sky",
+      "kind": "poetic_composition",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1594,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:jp_kawara_roof_tile",
+      "rewardArtifactId": "jp_haiku_leaf"
+    },
+    {
+      "anchorId": "jp_quest_jp04",
+      "chapterId": "JP04",
+      "title": "The Traveler’s Shelter",
+      "kind": "trade_and_roof_repair",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1606,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:jp_stepping_garden_stone",
+      "rewardArtifactId": "jp_waystation_lantern"
+    },
+    {
+      "anchorId": "jp_quest_jp05",
+      "chapterId": "JP05",
+      "title": "The Changing Path",
+      "kind": "temporal_comparison",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1618,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:jp_wooden_footbridge_plank",
+      "rewardArtifactId": "jp_seasonal_scroll"
+    },
+    {
+      "anchorId": "jp_quest_jp06",
+      "chapterId": "JP06",
+      "title": "The Road Is Home",
+      "kind": "cooperative_garden_build",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1630,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:jp_wayfinding_stone_marker",
+      "rewardArtifactId": "jp_narrow_road_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "jp_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 1600,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "jp_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 1610,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Bashō’s journey, Tohoku-inspired route Fair-Trade Stall"
+    },
+    {
+      "anchorId": "jp_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 1576,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:jp_poetic_lectern_stand",
+      "labelEn": "Bashō’s journey, Tohoku-inspired route Resource Gathering Spot"
+    },
+    {
+      "anchorId": "jp_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 1596,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:jp_cedar_waystation_beam",
+      "labelEn": "Bashō’s journey, Tohoku-inspired route Community Restoration Plot"
+    },
+    {
+      "anchorId": "jp_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 1630,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:jp_shoji_paper_lattice",
+      "labelEn": "Bashō’s journey, Tohoku-inspired route Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "tabi",
+      "native": "旅",
+      "translit": "tabi",
+      "en": "Journey and mindful travel across seasons"
+    },
+    {
+      "key": "haiku",
+      "native": "俳句",
+      "translit": "haiku",
+      "en": "Short three-line seasonal poem observing nature"
+    },
+    {
+      "key": "kakehashi",
+      "native": "架け橋",
+      "translit": "kakehashi",
+      "en": "Connecting bridge between places and people"
+    }
+  ]
+}
