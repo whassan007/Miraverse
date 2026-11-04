@@ -1,0 +1,18 @@
+name: MiraVerse Global v1.1 Minecraft Bedrock CI
+on:
+  push:
+    branches: [main, integration/minecraft-global-v1.1]
+  pull_request:
+jobs:
+  verify-minecraft-global:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: node apps/minecraft/tools/content-compiler/compile-global.mjs
+      - run: node apps/minecraft/tools/rtl/verify-rtl-locales.mjs
+      - run: node apps/minecraft/tools/build/build-global-mcaddon.mjs
+      - run: npx vitest run

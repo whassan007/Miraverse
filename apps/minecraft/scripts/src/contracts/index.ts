@@ -156,3 +156,27 @@ export interface WorldSaveStateV10 {
   plots: Record<string, PlotOwnershipRecordV10>;
   processedRewardKeys: string[];
 }
+
+
+// ============================================================================
+// MiraVerse Global v1.1 — 11-Country, 66-Chapter, 14-Locale Contracts
+// Owner: CX04 (Wave W4)
+// ============================================================================
+export const COUNTRIES_GLOBAL_V11 = ['LB', 'IQ', 'EG', 'FR', 'KR', 'DE', 'CN', 'JP', 'RU', 'UA', 'MA'] as const;
+export const AGE_TRACKS_GLOBAL_V11 = ['5-7', '8-10', '11-13', '14-17'] as const;
+export const LOCALES_GLOBAL_V11 = [
+  'en-US',
+  'fr-FR',
+  'fr-CA',
+  'de-DE',
+  'zh-Hans-CN',
+  'ja-JP',
+  'ru-RU',
+  'uk-UA',
+  'ko-KR',
+  'ar',
+  'ar-LB',
+  'ar-IQ',
+  'ar-EG',
+  'ar-MA',
+] as const;
