@@ -1,0 +1,648 @@
+{
+  "project": "MiraVerse Minecraft Bedrock Global",
+  "version": "1.1.0",
+  "waves": {
+    "W0": [
+      {
+        "id": "AG01",
+        "runtime": "antigravity",
+        "depends_on": [],
+        "owned_paths": [
+          "apps/minecraft/world/hub/",
+          "apps/minecraft/assets-src/art-direction/"
+        ]
+      },
+      {
+        "id": "DX12",
+        "runtime": "dgx",
+        "depends_on": [],
+        "owned_paths": [
+          "reports/minecraft-global/provenance/"
+        ]
+      },
+      {
+        "id": "CL01",
+        "runtime": "claude",
+        "depends_on": [],
+        "owned_paths": [
+          "docs/minecraft-global/narrative/"
+        ]
+      },
+      {
+        "id": "CL02",
+        "runtime": "claude",
+        "depends_on": [],
+        "owned_paths": [
+          "docs/minecraft-global/age-design/"
+        ]
+      },
+      {
+        "id": "CL03",
+        "runtime": "claude",
+        "depends_on": [],
+        "owned_paths": [
+          "docs/minecraft-global/localization/"
+        ]
+      },
+      {
+        "id": "CL04",
+        "runtime": "claude",
+        "depends_on": [],
+        "owned_paths": [
+          "docs/minecraft-global/systems/"
+        ]
+      },
+      {
+        "id": "CL05",
+        "runtime": "claude",
+        "depends_on": [],
+        "owned_paths": [
+          "docs/minecraft-global/safety/"
+        ]
+      },
+      {
+        "id": "CX01",
+        "runtime": "codex",
+        "depends_on": [],
+        "owned_paths": [
+          "apps/minecraft/tools/content-compiler/",
+          "packages/content/minecraft-global/"
+        ]
+      }
+    ],
+    "W1": [
+      {
+        "id": "AG14",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG01",
+          "CL01"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/characters/"
+        ]
+      },
+      {
+        "id": "AG15",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG01",
+          "CL01"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/palettes/"
+        ]
+      },
+      {
+        "id": "AG16",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG01",
+          "CL01"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/artifacts/"
+        ]
+      },
+      {
+        "id": "AG17",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG01",
+          "CL01"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/ambience/"
+        ]
+      },
+      {
+        "id": "AG18",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG01",
+          "CL03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/ui/"
+        ]
+      },
+      {
+        "id": "AG19",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG01",
+          "CL02",
+          "CL05"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/accessibility/"
+        ]
+      },
+      {
+        "id": "DX13",
+        "runtime": "dgx",
+        "depends_on": [
+          "CL01",
+          "CL03",
+          "CX01"
+        ],
+        "owned_paths": [
+          "packages/content/locales/en-US/",
+          "packages/content/locales/fr-FR/",
+          "packages/content/locales/fr-CA/",
+          "packages/content/locales/de-DE/"
+        ]
+      },
+      {
+        "id": "DX14",
+        "runtime": "dgx",
+        "depends_on": [
+          "CL01",
+          "CL03",
+          "CX01"
+        ],
+        "owned_paths": [
+          "packages/content/locales/zh-Hans-CN/",
+          "packages/content/locales/ja-JP/",
+          "packages/content/locales/ko-KR/"
+        ]
+      },
+      {
+        "id": "DX15",
+        "runtime": "dgx",
+        "depends_on": [
+          "CL01",
+          "CL03",
+          "CX01"
+        ],
+        "owned_paths": [
+          "packages/content/locales/ru-RU/",
+          "packages/content/locales/uk-UA/"
+        ]
+      },
+      {
+        "id": "DX16",
+        "runtime": "dgx",
+        "depends_on": [
+          "CL01",
+          "CL03",
+          "CX01"
+        ],
+        "owned_paths": [
+          "packages/content/locales/ar/",
+          "packages/content/locales/ar-LB/",
+          "packages/content/locales/ar-IQ/",
+          "packages/content/locales/ar-EG/",
+          "packages/content/locales/ar-MA/"
+        ]
+      },
+      {
+        "id": "DX17",
+        "runtime": "dgx",
+        "depends_on": [
+          "DX13",
+          "DX14",
+          "DX15",
+          "DX16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/tools/rtl/"
+        ]
+      }
+    ],
+    "W2": [
+      {
+        "id": "AG02",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG01",
+          "AG14",
+          "AG15",
+          "AG16",
+          "CX01"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/LB/"
+        ]
+      },
+      {
+        "id": "DX01",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG02",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/LB/"
+        ]
+      },
+      {
+        "id": "CX02",
+        "runtime": "codex",
+        "depends_on": [
+          "CX01",
+          "CL01",
+          "CL02",
+          "CL03",
+          "DX13",
+          "DX14",
+          "DX15",
+          "DX16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/scripts/src/quests/",
+          "apps/minecraft/scripts/src/ui/",
+          "apps/minecraft/scripts/src/locales/"
+        ]
+      },
+      {
+        "id": "CX03",
+        "runtime": "codex",
+        "depends_on": [
+          "CX01",
+          "CL04",
+          "CL05"
+        ],
+        "owned_paths": [
+          "apps/minecraft/scripts/src/state/",
+          "apps/minecraft/scripts/src/multiplayer/",
+          "apps/minecraft/scripts/src/building/"
+        ]
+      }
+    ],
+    "W3": [
+      {
+        "id": "AG03",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/IQ/"
+        ]
+      },
+      {
+        "id": "AG04",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/EG/"
+        ]
+      },
+      {
+        "id": "AG05",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/FR/"
+        ]
+      },
+      {
+        "id": "AG06",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/KR/"
+        ]
+      },
+      {
+        "id": "AG07",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/DE/"
+        ]
+      },
+      {
+        "id": "AG08",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/CN/"
+        ]
+      },
+      {
+        "id": "AG09",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/JP/"
+        ]
+      },
+      {
+        "id": "AG10",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/RU/"
+        ]
+      },
+      {
+        "id": "AG11",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/UA/"
+        ]
+      },
+      {
+        "id": "AG12",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG02",
+          "CX02",
+          "CX03"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/MA/"
+        ]
+      },
+      {
+        "id": "DX02",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG03",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/IQ/"
+        ]
+      },
+      {
+        "id": "DX03",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG04",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/EG/"
+        ]
+      },
+      {
+        "id": "DX04",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG05",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/FR/"
+        ]
+      },
+      {
+        "id": "DX05",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG06",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/KR/"
+        ]
+      },
+      {
+        "id": "DX06",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG07",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/DE/"
+        ]
+      },
+      {
+        "id": "DX07",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG08",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/CN/"
+        ]
+      },
+      {
+        "id": "DX08",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG09",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/JP/"
+        ]
+      },
+      {
+        "id": "DX09",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG10",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/RU/"
+        ]
+      },
+      {
+        "id": "DX10",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG11",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/UA/"
+        ]
+      },
+      {
+        "id": "DX11",
+        "runtime": "dgx",
+        "depends_on": [
+          "AG12",
+          "AG14",
+          "AG15",
+          "AG16"
+        ],
+        "owned_paths": [
+          "apps/minecraft/assets-src/processed/MA/"
+        ]
+      }
+    ],
+    "W4": [
+      {
+        "id": "AG13",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG01",
+          "AG02",
+          "AG03",
+          "AG04",
+          "AG05",
+          "AG06",
+          "AG07",
+          "AG08",
+          "AG09",
+          "AG10",
+          "AG11",
+          "AG12"
+        ],
+        "owned_paths": [
+          "apps/minecraft/world/integration/"
+        ]
+      },
+      {
+        "id": "DX18",
+        "runtime": "dgx",
+        "depends_on": [
+          "CX01",
+          "CX02",
+          "CX03",
+          "AG13"
+        ],
+        "owned_paths": [
+          "apps/minecraft/tests/quests/"
+        ]
+      },
+      {
+        "id": "DX19",
+        "runtime": "dgx",
+        "depends_on": [
+          "DX01",
+          "DX02",
+          "DX03",
+          "DX04",
+          "DX05",
+          "DX06",
+          "DX07",
+          "DX08",
+          "DX09",
+          "DX10",
+          "DX11"
+        ],
+        "owned_paths": [
+          "apps/minecraft/tools/optimize/"
+        ]
+      },
+      {
+        "id": "DX20",
+        "runtime": "dgx",
+        "depends_on": [
+          "CX04",
+          "DX18",
+          "DX19"
+        ],
+        "owned_paths": [
+          "apps/minecraft/tools/distribution/"
+        ]
+      },
+      {
+        "id": "CX04",
+        "runtime": "codex",
+        "depends_on": [
+          "CX01",
+          "CX02",
+          "CX03",
+          "AG13",
+          "DX19"
+        ],
+        "owned_paths": [
+          "apps/minecraft/tools/build/",
+          ".github/workflows/minecraft-global.yml",
+          "apps/minecraft/bp/",
+          "apps/minecraft/rp/",
+          "apps/minecraft/scripts/src/contracts/",
+          "apps/minecraft/scripts/src/bootstrap/",
+          "apps/minecraft/scripts/main.ts"
+        ]
+      }
+    ],
+    "W5": [
+      {
+        "id": "AG20",
+        "runtime": "antigravity",
+        "depends_on": [
+          "AG13",
+          "DX18",
+          "DX19",
+          "DX20",
+          "CX04"
+        ],
+        "owned_paths": [
+          "apps/minecraft/editor/",
+          "reports/minecraft-global/client-captures/"
+        ]
+      },
+      {
+        "id": "CX05",
+        "runtime": "codex",
+        "depends_on": [
+          "CX04",
+          "DX18",
+          "DX20",
+          "AG20"
+        ],
+        "owned_paths": [
+          "apps/minecraft/tests/e2e/",
+          "reports/minecraft-global/release/",
+          "apps/minecraft/dist/"
+        ]
+      }
+    ]
+  }
+}
