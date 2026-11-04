@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Pack } from '../../packages/content/schema.js';
+import { COUNTRIES, type Pack } from '../../packages/content/schema.js';
 
 const root = fileURLToPath(new URL('../../apps/minecraft/', import.meta.url));
 const compareText = (a: string, b: string): number => a < b ? -1 : a > b ? 1 : 0;
@@ -34,6 +34,11 @@ function itemDefinition(id: string): object {
 const langValue = (value: string): string => value.replace(/[\r\n\t]+/g, ' ');
 
 export default async function compileMinecraft(packs: Pack[]): Promise<void> {
+  for (const pack of packs) {
+    if (!COUNTRIES.includes(pack.country)) {
+      throw new Error(`Invalid Minecraft country: ${pack.country}`);
+    }
+  }
   const sorted = [...packs].sort((a, b) => compareText(a.country, b.country))
     .map(pack => ({ ...pack, items: [...pack.items].sort((a, b) => compareText(a.id, b.id)) }));
   const files = new Map<string, string>();
@@ -67,7 +72,10 @@ export default async function compileMinecraft(packs: Pack[]): Promise<void> {
     names[`entity.miraverse:mentor_${pack.country.toLowerCase()}.name`] = pack.mentor.name;
     for (const chapter of pack.chapters) {
       for (const challenge of chapter.challenges) {
-        if (challenge.type !== 'cook' || !challenge.recipe) continue;
+        if (challenge.type !== 'cook') continue;
+        if (!challenge.recipe) {
+          throw new Error(`Missing Minecraft cooking recipe: ${challenge.id}`);
+        }
         const { inputs, output } = challenge.recipe;
         if (inputs.length === 0 || inputs.length > 9 || !ids.has(output)
           || inputs.some(input => !ids.has(input))) {
@@ -97,7 +105,7 @@ export default async function compileMinecraft(packs: Pack[]): Promise<void> {
       .map(key => `${key}=${langValue(localized[key])}`).join('\n') + '\n');
   }
   files.set('scripts/generated/packs.ts',
-    `// GENERATED FILE - DO NOT EDIT\nimport type { Pack } from '../../../../../packages/content/schema.js';\n\n`
+    `// GENERATED FILE - DO NOT EDIT\nimport type { Pack } from '../../../../packages/content/schema.js';\n\n`
     + `export const PACKS: Pack[] = ${stableJson(sorted)};\n\n`
     + 'export function getMinecraftItemId(country: string, itemId: string): string {\n'
     + '  return `miraverse:${country.toLowerCase()}_${itemId}`;\n}\n');
