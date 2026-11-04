@@ -1,0 +1,16 @@
+=== AGENT DX07 (DGX · W2) ===
+Timestamp: 2026-11-04T06:57:44.753Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (60.24 tok/s)
+Branch: minecraft-v10/DX07
+Agent Commit SHA: ff8531d
+Integration Merge SHA: 8688a9e
+Owned Paths: apps/minecraft/tools/checks/KR/
+Test Command: node apps/minecraft/tools/checks/KR/check-kr.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/checks/KR/check-kr.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+PASS: DX07 verified KR district exteriors (5), interiors (3), NPCs (4), anchors (11), and restoration (3 stages).
+
+DONE DX07 ff8531d apps/minecraft/tools/checks/KR/check-kr.mjs

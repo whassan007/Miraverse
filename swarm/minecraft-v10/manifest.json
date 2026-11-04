@@ -794,12 +794,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX07.md",
       "branch": "minecraft-v10/DX07",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX07",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "ff8531d",
       "test_command": "node apps/minecraft/tools/checks/KR/check-kr.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tools/checks/KR/check-kr.mjs"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (60.24 tok/s)",
       "blockers": []
     },
     {
