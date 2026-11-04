@@ -501,7 +501,7 @@ fs.mkdirSync(distDir, { recursive: true });
 // Ensure content & pack build is fresh if dist/miraverse.mcaddon is missing
 const mcaddonPath = path.join(distDir, 'miraverse.mcaddon');
 if (!fs.existsSync(mcaddonPath)) {
-  execSync('node tools/generate-content.mjs && npm --prefix apps/minecraft run build && node apps/minecraft/tools/release/package.mjs', { cwd: root, stdio: 'inherit' });
+  execSync('npm run compile && npm run textures && npm -w apps/minecraft run build && npm run pack:mcaddon', { cwd: root, stdio: 'inherit' });
 }
 
 // Package miraverse-sources.zip containing world/, assets-src/, art-direction/, and scripts/src/
