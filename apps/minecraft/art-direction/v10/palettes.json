@@ -1,0 +1,272 @@
+{
+  "schemaVersion": "10.0.0",
+  "districtFootprintBlocks": [
+    96,
+    32,
+    96
+  ],
+  "minimumsPerCountry": {
+    "buildingExteriors": 5,
+    "enterableFurnishedInteriors": 3,
+    "functionalNpcs": 4,
+    "interactiveLocations": 8,
+    "customItems": 10,
+    "customBlocks": 8
+  },
+  "regions": {
+    "HUB": {
+      "name": "MiraVerse Gateway Hub",
+      "origin": [
+        0,
+        100,
+        0
+      ],
+      "bounds": {
+        "min": [
+          -48,
+          96,
+          -48
+        ],
+        "max": [
+          48,
+          128,
+          48
+        ]
+      },
+      "primaryBlocks": [
+        "minecraft:quartz_bricks",
+        "minecraft:chiseled_quartz_block",
+        "minecraft:stone_brick_slab",
+        "minecraft:sea_lantern",
+        "minecraft:dark_oak_planks"
+      ],
+      "accentBlocks": [
+        "minecraft:gold_block",
+        "minecraft:tinted_glass",
+        "minecraft:lantern",
+        "minecraft:AZALEA_LEAVES"
+      ],
+      "focalLandmark": "Compass Rose Astrolabe Rotunda & Five Cultural Portal Arches"
+    },
+    "LB": {
+      "name": "Byblos Harbor · Summer at Teta's",
+      "origin": [
+        200,
+        64,
+        0
+      ],
+      "bounds": {
+        "min": [
+          152,
+          60,
+          -48
+        ],
+        "max": [
+          248,
+          96,
+          48
+        ]
+      },
+      "primaryBlocks": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:sandstone_stairs",
+        "minecraft:spruce_planks",
+        "minecraft:brick_stairs"
+      ],
+      "customBlocks": [
+        "miraverse:lb_byblos_limestone",
+        "miraverse:lb_carved_arch_stone",
+        "miraverse:lb_terracotta_roof_tile",
+        "miraverse:lb_cedar_shutter",
+        "miraverse:lb_saj_hearth_block",
+        "miraverse:lb_harbor_bollard",
+        "miraverse:lb_mosaic_courtyard_tile",
+        "miraverse:lb_zaatar_drying_rack"
+      ],
+      "accentBlocks": [
+        "minecraft:prismarine_bricks",
+        "minecraft:lantern",
+        "minecraft:flowering_azalea_leaves",
+        "minecraft:campfire"
+      ],
+      "restorationTarget": "Teta Nahla Saj Bakery & Limestone Harbor Corner"
+    },
+    "EG": {
+      "name": "Cairo Lantern Courtyard",
+      "origin": [
+        400,
+        64,
+        0
+      ],
+      "bounds": {
+        "min": [
+          352,
+          60,
+          -48
+        ],
+        "max": [
+          448,
+          96,
+          48
+        ]
+      },
+      "primaryBlocks": [
+        "minecraft:chiseled_sandstone",
+        "minecraft:smooth_red_sandstone",
+        "minecraft:dark_oak_trapdoor",
+        "minecraft:terracotta",
+        "minecraft:Jungle_planks"
+      ],
+      "customBlocks": [
+        "miraverse:eg_cairo_mashrabiya",
+        "miraverse:eg_fanous_lantern_block",
+        "miraverse:eg_khan_arch_stone",
+        "miraverse:eg_courtyard_fountain_tile",
+        "miraverse:eg_koshari_cauldron_block",
+        "miraverse:eg_carved_cedar_door_frame",
+        "miraverse:eg_alabaster_lamp",
+        "miraverse:eg_spice_bazaar_canopy"
+      ],
+      "accentBlocks": [
+        "minecraft:shroomlight",
+        "minecraft:gold_block",
+        "minecraft:cyan_glazed_terracotta",
+        "minecraft:lantern"
+      ],
+      "restorationTarget": "Khan el-Khalili Fanous Archway & Courtyard Stall"
+    },
+    "IQ": {
+      "name": "Baghdad Riverside & Shanasheel",
+      "origin": [
+        600,
+        64,
+        0
+      ],
+      "bounds": {
+        "min": [
+          552,
+          60,
+          -48
+        ],
+        "max": [
+          648,
+          96,
+          48
+        ]
+      },
+      "primaryBlocks": [
+        "minecraft:mud_bricks",
+        "minecraft:packed_mud",
+        "minecraft:dark_oak_planks",
+        "minecraft:cyan_terracotta",
+        "minecraft:spruce_fence"
+      ],
+      "customBlocks": [
+        "miraverse:iq_shanasheel_oriel_screen",
+        "miraverse:iq_tigris_glazed_brick",
+        "miraverse:iq_baghdadi_courtyard_arch",
+        "miraverse:iq_kleicha_brick_oven",
+        "miraverse:iq_turquoise_muqarnas",
+        "miraverse:iq_palm_weave_mat",
+        "miraverse:iq_copper_samovar_stand",
+        "miraverse:iq_calligraphy_frieze"
+      ],
+      "accentBlocks": [
+        "minecraft:light_blue_glazed_terracotta",
+        "minecraft:lantern",
+        "minecraft:mangrove_planks",
+        "minecraft:water"
+      ],
+      "restorationTarget": "Tigris Shanasheel Balcony & Courtyard Arcade"
+    },
+    "KR": {
+      "name": "Jeonju Hanok Village",
+      "origin": [
+        800,
+        64,
+        0
+      ],
+      "bounds": {
+        "min": [
+          752,
+          60,
+          -48
+        ],
+        "max": [
+          848,
+          96,
+          48
+        ]
+      },
+      "primaryBlocks": [
+        "minecraft:dark_prismarine_stairs",
+        "minecraft:spruce_planks",
+        "minecraft:stripped_spruce_log",
+        "minecraft:white_concrete",
+        "minecraft:stone_bricks"
+      ],
+      "customBlocks": [
+        "miraverse:kr_giwa_eave_tile",
+        "miraverse:kr_hanji_sliding_screen",
+        "miraverse:kr_ondol_hearth_stone",
+        "miraverse:kr_onggi_fermentation_jar",
+        "miraverse:kr_pine_beam_bracket",
+        "miraverse:kr_songpyeon_steamer_block",
+        "miraverse:kr_stone_pagoda_lantern",
+        "miraverse:kr_courtyard_stepping_stone"
+      ],
+      "accentBlocks": [
+        "minecraft:bamboo_mosaic",
+        "minecraft:cherry_leaves",
+        "minecraft:lantern",
+        "minecraft:moss_carpet"
+      ],
+      "restorationTarget": "Halmeoni Giwa Roof Eaves & Hanji Courtyard Pavilion"
+    },
+    "FR": {
+      "name": "Vieux Lyon Bakery & Traboules",
+      "origin": [
+        1000,
+        64,
+        0
+      ],
+      "bounds": {
+        "min": [
+          952,
+          60,
+          -48
+        ],
+        "max": [
+          1048,
+          96,
+          48
+        ]
+      },
+      "primaryBlocks": [
+        "minecraft:polished_deepslate_stairs",
+        "minecraft:ochre_froglight",
+        "minecraft:smooth_stone",
+        "minecraft:bricks",
+        "minecraft:oak_trapdoor"
+      ],
+      "customBlocks": [
+        "miraverse:fr_lyon_ochre_stucco",
+        "miraverse:fr_mansard_slate_shingle",
+        "miraverse:fr_carved_oak_shutter",
+        "miraverse:fr_traboule_vault_stone",
+        "miraverse:fr_boulangerie_wood_oven",
+        "miraverse:fr_wrought_iron_balcony",
+        "miraverse:fr_gilded_bakery_sign",
+        "miraverse:fr_cobblestone_paver"
+      ],
+      "accentBlocks": [
+        "minecraft:lantern",
+        "minecraft:cut_copper_stairs",
+        "minecraft:spruce_door",
+        "minecraft:flower_pot"
+      ],
+      "restorationTarget": "Boulangerie du Soleil Facade, Mansard Roof & Shutters"
+    }
+  }
+}
