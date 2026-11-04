@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "10.0.0",
+  "generatedAt": "2026-11-04T07:00:20.110Z",
+  "regions": {
+    "HUB": {
+      "ambientLoop": "miraverse.hub.portal_chime",
+      "particles": [
+        "minecraft:endrod",
+        "minecraft:villager_happy"
+      ]
+    },
+    "LB": {
+      "ambientLoop": "miraverse.lb.saj_sizzle",
+      "particles": [
+        "minecraft:camp_fire_smoke",
+        "minecraft:villager_happy"
+      ]
+    },
+    "EG": {
+      "ambientLoop": "miraverse.eg.bazaar_lantern",
+      "particles": [
+        "minecraft:basic_flame_particle",
+        "minecraft:villager_happy"
+      ]
+    },
+    "IQ": {
+      "ambientLoop": "miraverse.iq.tigris_breeze",
+      "particles": [
+        "minecraft:water_splash_particle",
+        "minecraft:villager_happy"
+      ]
+    },
+    "KR": {
+      "ambientLoop": "miraverse.kr.hanok_chime",
+      "particles": [
+        "minecraft:cherry_leaves_particle",
+        "minecraft:villager_happy"
+      ]
+    },
+    "FR": {
+      "ambientLoop": "miraverse.fr.bakery_bell",
+      "particles": [
+        "minecraft:camp_fire_smoke",
+        "minecraft:villager_happy"
+      ]
+    }
+  },
+  "provenance": "100% original/Bedrock-native sound definitions and particle identifiers; moderated for ages 8-12 with zero scary or startling cues."
+}
