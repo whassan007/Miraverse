@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 4,
+  "license": "CC0-1.0-Procedural-MiraVerse",
+  "cues": [
+    {
+      "cueId": "audio:hub:plaza_breeze",
+      "world": "HUB",
+      "category": "ambience",
+      "loop": true,
+      "baseFreqHz": 220,
+      "description": "Warm plaza fountain & gentle wind chime ambience"
+    },
+    {
+      "cueId": "audio:FR:lyon_bakery",
+      "world": "FR",
+      "category": "ambience",
+      "loop": true,
+      "baseFreqHz": 261.6,
+      "description": "Vieux Lyon cobblestone lane & crackling bakery oven warmth"
+    },
+    {
+      "cueId": "audio:LB:byblos_harbor",
+      "world": "LB",
+      "category": "ambience",
+      "loop": true,
+      "baseFreqHz": 293.7,
+      "description": "Mediterranean harbor waves, seagulls & saj crackle"
+    },
+    {
+      "cueId": "audio:EG:cairo_courtyard",
+      "world": "EG",
+      "category": "ambience",
+      "loop": true,
+      "baseFreqHz": 329.6,
+      "description": "Cairo evening courtyard murmur & gentle oud harmonics"
+    },
+    {
+      "cueId": "audio:IQ:tigris_river",
+      "world": "IQ",
+      "category": "ambience",
+      "loop": true,
+      "baseFreqHz": 349.2,
+      "description": "Tigris river breeze & courtyard fountain trickle"
+    },
+    {
+      "cueId": "audio:KR:jeonju_hanok",
+      "world": "KR",
+      "category": "ambience",
+      "loop": true,
+      "baseFreqHz": 392,
+      "description": "Autumn breeze through pine needles & distant gayageum tone"
+    },
+    {
+      "cueId": "audio:sfx:pickup",
+      "world": "SHARED",
+      "category": "sfx",
+      "loop": false,
+      "baseFreqHz": 523.25,
+      "description": "Diegetic item pickup chime"
+    },
+    {
+      "cueId": "audio:sfx:build_snap",
+      "world": "SHARED",
+      "category": "sfx",
+      "loop": false,
+      "baseFreqHz": 440,
+      "description": "Architectural restoration placement thud & sparkle"
+    },
+    {
+      "cueId": "audio:sfx:cook_sizzle",
+      "world": "SHARED",
+      "category": "sfx",
+      "loop": false,
+      "baseFreqHz": 369.99,
+      "description": "Warm culinary sizzle & completion chime"
+    },
+    {
+      "cueId": "audio:sfx:celebrate",
+      "world": "SHARED",
+      "category": "sfx",
+      "loop": false,
+      "baseFreqHz": 659.25,
+      "description": "Chapter restoration fanfare & Passport stamp award"
+    }
+  ]
+}
