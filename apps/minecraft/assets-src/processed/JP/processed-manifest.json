@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "JP",
+  "countryName": "Japan",
+  "region": "Bashō’s journey, Tohoku-inspired route",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 56.9,
+    "hardware": "NVIDIA GB10, 580.178.04, 47, 0 % | Total=121GiB Used=101GiB Free=1GiB Available=20GiB",
+    "notes": "Here's a concise summary of **Visual Material & Texture QA Checks** for a *Minecraft Bedrock* resource pack inspired by Bashō’s *Oku no Hosomichi* (The Narrow Road to the Deep North), with a Tohoku-inspired route—featuring 8 custom blocks and 6 chapter artifac"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/JP/items/jp_travelers_ink_brush.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:jp_cedar_waystation_beam",
+      "shortName": "jp_cedar_waystation_beam",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/blocks/jp_cedar_waystation_beam.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:jp_shoji_paper_lattice",
+      "shortName": "jp_shoji_paper_lattice",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/blocks/jp_shoji_paper_lattice.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:jp_kawara_roof_tile",
+      "shortName": "jp_kawara_roof_tile",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/blocks/jp_kawara_roof_tile.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:jp_stepping_garden_stone",
+      "shortName": "jp_stepping_garden_stone",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/blocks/jp_stepping_garden_stone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:jp_wooden_footbridge_plank",
+      "shortName": "jp_wooden_footbridge_plank",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/blocks/jp_wooden_footbridge_plank.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:jp_wayfinding_stone_marker",
+      "shortName": "jp_wayfinding_stone_marker",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/blocks/jp_wayfinding_stone_marker.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:jp_bamboo_water_spout",
+      "shortName": "jp_bamboo_water_spout",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/blocks/jp_bamboo_water_spout.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:jp_poetic_lectern_stand",
+      "shortName": "jp_poetic_lectern_stand",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/blocks/jp_poetic_lectern_stand.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "jp_travelers_sandal",
+      "chapterId": "JP01",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/items/jp_travelers_sandal.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "jp_river_bridge_token",
+      "chapterId": "JP02",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/items/jp_river_bridge_token.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "jp_haiku_leaf",
+      "chapterId": "JP03",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/items/jp_haiku_leaf.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "jp_waystation_lantern",
+      "chapterId": "JP04",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/items/jp_waystation_lantern.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "jp_seasonal_scroll",
+      "chapterId": "JP05",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/items/jp_seasonal_scroll.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "jp_narrow_road_stamp",
+      "chapterId": "JP06",
+      "texturePath": "apps/minecraft/assets-src/processed/JP/items/jp_narrow_road_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}
