@@ -8,8 +8,8 @@ import { describe, expect, it } from 'vitest';
 import { COUNTRIES, STORY_LANGS, UI_LANGS, type Pack } from '../../packages/content/schema.js';
 import { GOLDEN_VECTORS } from '../../packages/shared/stamp.js';
 import { make as mcMake, verify as mcVerify } from '../../apps/minecraft/scripts/core/stamp.js';
-import { onRequestPost as checkoutPost } from '../../functions/api/checkout.js';
-import { verifyStripeWebhookSignature } from '../../functions/api/webhook.js';
+import { onRequestPost as checkoutPost, resolveTierPriceMap } from '../../functions/api/checkout.js';
+import { onRequestPost as webhookPost, verifyStripeWebhookSignature } from '../../functions/api/webhook.js';
 import { validateWorkspace } from '../../tools/validate.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -427,5 +427,41 @@ describe('Cloudflare Pages Stripe Checkout & Webhook Functions', () => {
     await expect(verifyStripeWebhookSignature(rawPayload, sigHeader, secret, ts + 10)).resolves.toBe(true);
     await expect(verifyStripeWebhookSignature(rawPayload, sigHeader, 'wrong_secret', ts + 10)).resolves.toBe(false);
     await expect(verifyStripeWebhookSignature(rawPayload, sigHeader, secret, ts + 999)).resolves.toBe(false);
+
+    const tierMap = resolveTierPriceMap({
+      STRIPE_PRICE_ID_BASIC: 'price_basic',
+      STRIPE_PRICE_ID_STANDARD: 'price_standard',
+      STRIPE_PRICE_ID_PLUS: 'price_plus',
+    });
+    expect(tierMap).toEqual({
+      basic: 'price_basic',
+      standard: 'price_standard',
+      plus: 'price_plus',
+    });
+
+    const nowTs = Math.floor(Date.now() / 1000);
+    for (const [eventType, expectedStatus] of [
+      ['checkout.session.completed', 'fulfilled'],
+      ['invoice.paid', 'renewed'],
+      ['customer.subscription.deleted', 'revoked'],
+    ] as const) {
+      const bodyStr = JSON.stringify({
+        id: `evt_${eventType}`,
+        type: eventType,
+        data: { object: { id: 'obj_1', payment_status: 'paid', subscription: 'sub_1', customer: 'cus_1' } },
+      });
+      const sig = `t=${nowTs},v1=${crypto.createHmac('sha256', secret).update(`${nowTs}.${bodyStr}`).digest('hex')}`;
+      const res = await webhookPost({
+        request: new Request('https://miraverse.studio/api/webhook', {
+          method: 'POST',
+          headers: { 'stripe-signature': sig },
+          body: bodyStr,
+        }),
+        env: { STRIPE_WEBHOOK_SECRET: secret },
+      });
+      expect(res.status).toBe(200);
+      const json = (await res.json()) as { status: string };
+      expect(json.status).toBe(expectedStatus);
+    }
   });
 });

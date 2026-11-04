@@ -10,6 +10,7 @@ import React, { useState } from 'react';
  */
 export default function About(): React.ReactElement {
   const [adultConfirmed, setAdultConfirmed] = useState(false);
+  const [selectedTier, setSelectedTier] = useState<'basic' | 'standard' | 'plus'>('standard');
   const [checkoutStatus, setCheckoutStatus] = useState<string>('');
   const [checkoutLoading, setCheckoutLoading] = useState(false);
 
@@ -26,6 +27,7 @@ export default function About(): React.ReactElement {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           parentGateConfirmed: true,
+          tier: selectedTier,
           bundle: 'family_educator_v0_1',
         }),
       });
@@ -36,7 +38,7 @@ export default function About(): React.ReactElement {
       }
       setCheckoutStatus(data.error || 'Unable to start Stripe Checkout right now.');
     } catch {
-      setCheckoutStatus('Stripe Checkout endpoint (/api/checkout) is active once deployed to Cloudflare Pages.');
+      setCheckoutStatus('Unable to reach /api/checkout. Please try again in a moment.');
     } finally {
       setCheckoutLoading(false);
     }
@@ -175,6 +177,34 @@ export default function About(): React.ReactElement {
           Studio classroom servers) via hosted <strong>Stripe Checkout</strong> on <code>miraverse.studio</code>. No
           payment scripts or cookies are ever loaded inside the child-facing web app.
         </p>
+        <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+          {(['basic', 'standard', 'plus'] as const).map((tier) => (
+            <label
+              key={tier}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+                padding: '0.45rem 0.85rem',
+                borderRadius: '6px',
+                border: selectedTier === tier ? '2px solid #0284c7' : '1px solid #cbd5e1',
+                backgroundColor: selectedTier === tier ? '#e0f2fe' : '#ffffff',
+                fontWeight: 600,
+                cursor: 'pointer',
+                textTransform: 'capitalize',
+              }}
+            >
+              <input
+                type="radio"
+                name="miraverse-tier"
+                value={tier}
+                checked={selectedTier === tier}
+                onChange={() => setSelectedTier(tier)}
+              />
+              <span>{tier} Plan</span>
+            </label>
+          ))}
+        </div>
         <label
           style={{
             display: 'flex',

@@ -4,8 +4,10 @@ pages_build_output_dir = "apps/web/dist"
 
 [vars]
 PUBLIC_SITE_URL = "https://miraverse.studio"
+STRIPE_PRICE_ID_BASIC = "price_1UXtIt4rFfCFZRzhZxxJepU9"
+STRIPE_PRICE_ID_STANDARD = "price_1UXtIt4rFfCFZRzhMkpQ2dDJ"
+STRIPE_PRICE_ID_PLUS = "price_1UXtIt4rFfCFZRzh7uix3IyJ"
 
-# Required Cloudflare Pages encrypted secrets (set via `npx wrangler pages secret put <NAME>` or Cloudflare Dashboard):
+# Required Cloudflare Pages encrypted secrets (set via Cloudflare Dashboard or Pages API):
 # - STRIPE_SECRET_KEY      (sk_live_... or sk_test_...)
-# - STRIPE_PRICE_ID        (price_... for MiraVerse Family & Educator Bundle)
 # - STRIPE_WEBHOOK_SECRET  (whsec_... for /api/webhook signature verification)

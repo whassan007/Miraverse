@@ -2,7 +2,10 @@
  * Cloudflare Pages Function: POST /api/webhook
  *
  * Verifies Stripe webhook signatures (HMAC-SHA256 via Web Crypto API) and processes
- * `checkout.session.completed` events for miraverse.studio.
+ * subscription lifecycle events for miraverse.studio:
+ * - `checkout.session.completed` (initial subscription checkout fulfillment)
+ * - `invoice.paid` (monthly subscription renewal)
+ * - `customer.subscription.deleted` (subscription cancellation / access revocation)
  */
 
 export interface Env {
@@ -89,26 +92,43 @@ export const onRequestPost = async (context: { request: Request; env: Env }): Pr
     });
   }
 
-  const event = JSON.parse(rawBody) as {
+  let event: {
     id: string;
     type: string;
     data?: {
       object?: {
         id?: string;
+        customer?: string;
+        subscription?: string;
+        status?: string;
         payment_status?: string;
         metadata?: Record<string, string>;
       };
     };
   };
 
+  try {
+    event = JSON.parse(rawBody);
+  } catch {
+    return new Response(JSON.stringify({ error: 'Invalid JSON webhook payload.' }), {
+      status: 400,
+      headers: JSON_HEADERS,
+    });
+  }
+
+  const obj = event.data?.object;
+
   if (event.type === 'checkout.session.completed') {
-    const session = event.data?.object;
-    if (session?.payment_status === 'paid') {
+    if (obj?.payment_status === 'paid' || obj?.status === 'complete') {
       return new Response(
         JSON.stringify({
           received: true,
           eventId: event.id,
-          sessionId: session.id,
+          type: event.type,
+          sessionId: obj.id,
+          subscriptionId: obj.subscription || null,
+          customerId: obj.customer || null,
+          tier: obj.metadata?.tier || 'standard',
           status: 'fulfilled',
         }),
         { status: 200, headers: JSON_HEADERS }
@@ -116,7 +136,36 @@ export const onRequestPost = async (context: { request: Request; env: Env }): Pr
     }
   }
 
-  return new Response(JSON.stringify({ received: true, eventId: event.id }), {
+  if (event.type === 'invoice.paid') {
+    return new Response(
+      JSON.stringify({
+        received: true,
+        eventId: event.id,
+        type: event.type,
+        invoiceId: obj?.id || null,
+        subscriptionId: obj?.subscription || null,
+        customerId: obj?.customer || null,
+        status: 'renewed',
+      }),
+      { status: 200, headers: JSON_HEADERS }
+    );
+  }
+
+  if (event.type === 'customer.subscription.deleted') {
+    return new Response(
+      JSON.stringify({
+        received: true,
+        eventId: event.id,
+        type: event.type,
+        subscriptionId: obj?.id || null,
+        customerId: obj?.customer || null,
+        status: 'revoked',
+      }),
+      { status: 200, headers: JSON_HEADERS }
+    );
+  }
+
+  return new Response(JSON.stringify({ received: true, eventId: event.id, type: event.type }), {
     status: 200,
     headers: JSON_HEADERS,
   });
