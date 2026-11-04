@@ -1,0 +1,16 @@
+=== AGENT DX06 (DGX · W2) ===
+Timestamp: 2026-11-04T06:57:37.587Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (59.81 tok/s)
+Branch: minecraft-v10/DX06
+Agent Commit SHA: ac9e9b0
+Integration Merge SHA: 2e526fc
+Owned Paths: apps/minecraft/tools/checks/IQ/
+Test Command: node apps/minecraft/tools/checks/IQ/check-iq.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/checks/IQ/check-iq.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+PASS: DX06 verified IQ district exteriors (5), interiors (3), NPCs (4), anchors (11), and restoration (3 stages).
+
+DONE DX06 ac9e9b0 apps/minecraft/tools/checks/IQ/check-iq.mjs
