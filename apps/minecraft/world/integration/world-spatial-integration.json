@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.1.0",
+  "worldName": "MiraVerse Global: Echoes of Home — The Atlas of Belonging",
+  "hub": {
+    "id": "HUB_ATLAS_OBSERVATORY",
+    "origin": [
+      0,
+      100,
+      0
+    ],
+    "boundingBox": {
+      "min": [
+        -48,
+        96,
+        -48
+      ],
+      "max": [
+        48,
+        128,
+        48
+      ]
+    },
+    "structurePath": "apps/minecraft/world/hub/structures/hub_atlas_observatory.mcstructure.json"
+  },
+  "districtCount": 11,
+  "nonOverlappingVerified": true,
+  "minimumSeparationBlocksX": 200,
+  "districts": [
+    {
+      "countryCode": "LB",
+      "countryName": "Lebanon",
+      "region": "Byblos/Jbeil",
+      "origin": [
+        200,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          152,
+          60,
+          -48
+        ],
+        "max": [
+          248,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        200,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        200,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_lb",
+      "structurePath": "apps/minecraft/world/LB/structures/lb_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/LB/district-v11.json"
+    },
+    {
+      "countryCode": "IQ",
+      "countryName": "Iraq",
+      "region": "Baghdad",
+      "origin": [
+        600,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          552,
+          60,
+          -48
+        ],
+        "max": [
+          648,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        600,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        600,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_iq",
+      "structurePath": "apps/minecraft/world/IQ/structures/iq_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/IQ/district-v11.json"
+    },
+    {
+      "countryCode": "EG",
+      "countryName": "Egypt",
+      "region": "Cairo",
+      "origin": [
+        400,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          352,
+          60,
+          -48
+        ],
+        "max": [
+          448,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        400,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        400,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_eg",
+      "structurePath": "apps/minecraft/world/EG/structures/eg_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/EG/district-v11.json"
+    },
+    {
+      "countryCode": "FR",
+      "countryName": "France",
+      "region": "Vieux Lyon",
+      "origin": [
+        1000,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          952,
+          60,
+          -48
+        ],
+        "max": [
+          1048,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        1000,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        1000,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_fr",
+      "structurePath": "apps/minecraft/world/FR/structures/fr_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/FR/district-v11.json"
+    },
+    {
+      "countryCode": "KR",
+      "countryName": "South Korea",
+      "region": "Jeonju",
+      "origin": [
+        800,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          752,
+          60,
+          -48
+        ],
+        "max": [
+          848,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        800,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        800,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_kr",
+      "structurePath": "apps/minecraft/world/KR/structures/kr_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/KR/district-v11.json"
+    },
+    {
+      "countryCode": "DE",
+      "countryName": "Germany",
+      "region": "Rhine / symbolic Grail landscape",
+      "origin": [
+        1200,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          1152,
+          60,
+          -48
+        ],
+        "max": [
+          1248,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        1200,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        1200,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_de",
+      "structurePath": "apps/minecraft/world/DE/structures/de_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/DE/district-v11.json"
+    },
+    {
+      "countryCode": "CN",
+      "countryName": "China",
+      "region": "Peach Blossom Spring, Wuling-inspired setting",
+      "origin": [
+        1400,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          1352,
+          60,
+          -48
+        ],
+        "max": [
+          1448,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        1400,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        1400,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_cn",
+      "structurePath": "apps/minecraft/world/CN/structures/cn_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/CN/district-v11.json"
+    },
+    {
+      "countryCode": "JP",
+      "countryName": "Japan",
+      "region": "Bashō’s journey, Tohoku-inspired route",
+      "origin": [
+        1600,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          1552,
+          60,
+          -48
+        ],
+        "max": [
+          1648,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        1600,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        1600,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_jp",
+      "structurePath": "apps/minecraft/world/JP/structures/jp_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/JP/district-v11.json"
+    },
+    {
+      "countryCode": "RU",
+      "countryName": "Russia",
+      "region": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+      "origin": [
+        1800,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          1752,
+          60,
+          -48
+        ],
+        "max": [
+          1848,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        1800,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        1800,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_ru",
+      "structurePath": "apps/minecraft/world/RU/structures/ru_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/RU/district-v11.json"
+    },
+    {
+      "countryCode": "UA",
+      "countryName": "Ukraine",
+      "region": "Kyiv founding hills / community music square",
+      "origin": [
+        2000,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          1952,
+          60,
+          -48
+        ],
+        "max": [
+          2048,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        2000,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        2000,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_ua",
+      "structurePath": "apps/minecraft/world/UA/structures/ua_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/UA/district-v11.json"
+    },
+    {
+      "countryCode": "MA",
+      "countryName": "Morocco",
+      "region": "Marrakesh / Jemaa el-Fnaa-inspired square",
+      "origin": [
+        2200,
+        64,
+        0
+      ],
+      "boundingBox": {
+        "min": [
+          2152,
+          60,
+          -48
+        ],
+        "max": [
+          2248,
+          96,
+          48
+        ]
+      },
+      "spawnPos": [
+        2200,
+        65,
+        -22
+      ],
+      "returnPortalPos": [
+        2200,
+        65,
+        -28
+      ],
+      "hubTargetPortalId": "portal_ma",
+      "structurePath": "apps/minecraft/world/MA/structures/ma_district_v11.mcstructure.json",
+      "districtManifestPath": "apps/minecraft/world/MA/district-v11.json"
+    }
+  ]
+}
