@@ -1108,12 +1108,15 @@
       "task_card": "swarm/minecraft-v10/cards/CL01.md",
       "branch": "minecraft-v10/CL01",
       "worktree": "/home/wael/Code/mv-wt-mc10/CL01",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "0f78dad",
       "test_command": "test -s apps/minecraft/scripts/src/contracts/index.ts && test -s reports/minecraft-v10/architecture/BEDROCK_ARCHITECTURE_V10.md",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/scripts/src/contracts/index.ts",
+        "reports/minecraft-v10/architecture/BEDROCK_ARCHITECTURE_V10.md"
+      ],
+      "runtime_environment": "Claude Sonnet 4.6 (worktree execution)",
       "blockers": []
     },
     {
