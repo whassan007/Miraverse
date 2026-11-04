@@ -822,12 +822,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX08.md",
       "branch": "minecraft-v10/DX08",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX08",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "a20628f",
       "test_command": "node apps/minecraft/tools/checks/FR/check-fr.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tools/checks/FR/check-fr.mjs"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (60.34 tok/s)",
       "blockers": []
     },
     {

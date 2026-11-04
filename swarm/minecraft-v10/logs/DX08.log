@@ -1,0 +1,16 @@
+=== AGENT DX08 (DGX · W2) ===
+Timestamp: 2026-11-04T06:57:51.798Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (60.34 tok/s)
+Branch: minecraft-v10/DX08
+Agent Commit SHA: a20628f
+Integration Merge SHA: ecf6d49
+Owned Paths: apps/minecraft/tools/checks/FR/
+Test Command: node apps/minecraft/tools/checks/FR/check-fr.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/checks/FR/check-fr.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+PASS: DX08 verified FR district exteriors (5), interiors (3), NPCs (4), anchors (11), and restoration (3 stages).
+
+DONE DX08 a20628f apps/minecraft/tools/checks/FR/check-fr.mjs
