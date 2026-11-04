@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "IQ",
+  "countryName": "Iraq",
+  "regionName": "Baghdad",
+  "storyTitle": "The Library That Travels",
+  "localLocale": "ar-IQ",
+  "culturalWarning": "Present Bayt al-Hikma as historical scholarship with limits of reconstruction. Modern Al-Mutanabbi Street events must be handled sensitively; avoid violent reenactments and conflating Abbasid Baghdad with today.",
+  "origin": {
+    "x": 600,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 600,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 600,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 596,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 630,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "iq_house_of_wisdom_book",
+    "name": "House of Wisdom Book"
+  },
+  "passportStamp": {
+    "id": "iq_knowledge_keeper_stamp",
+    "name": "Knowledge Keeper Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "iq_mentor_cultural_house",
+      "nameEn": "Baghdad Mentor Courtyard & Hearth",
+      "nameNative": "العراق · بغداد",
+      "origin": {
+        "x": 582,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "trimBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_baghdadi_courtyard_arch",
+      "hasInterior": true,
+      "interiorId": "iq_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "iq_story_archive_hall",
+      "nameEn": "Baghdad Story & Epigraphy Archive",
+      "nameNative": "العراق · بغداد",
+      "origin": {
+        "x": 604,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "trimBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_baghdadi_courtyard_arch",
+      "hasInterior": true,
+      "interiorId": "iq_interior_story_archive"
+    },
+    {
+      "buildingId": "iq_artisan_craft_guild",
+      "nameEn": "Baghdad Master Artisan Workshop",
+      "nameNative": "العراق · بغداد",
+      "origin": {
+        "x": 580,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "trimBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_baghdadi_courtyard_arch",
+      "hasInterior": true,
+      "interiorId": "iq_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "iq_market_bazaar_arcade",
+      "nameEn": "Baghdad Fair-Trade Market Arcade",
+      "nameNative": "العراق · بغداد",
+      "origin": {
+        "x": 606,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "trimBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_baghdadi_courtyard_arch",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "iq_heritage_landmark_pavilion",
+      "nameEn": "Baghdad Community Gathering & Performance Pavilion",
+      "nameNative": "العراق · بغداد",
+      "origin": {
+        "x": 594,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "trimBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_baghdadi_courtyard_arch",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "iq_interior_mentor_hearth",
+      "buildingId": "iq_mentor_cultural_house",
+      "nameEn": "Baghdad Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 588,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "iq_cooking_hearth",
+          "blockId": "miraverse:iq_turquoise_muqarnas",
+          "offset": {
+            "x": 588,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "iq_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 586,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "iq_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 588,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "iq_interior_story_archive",
+      "buildingId": "iq_story_archive_hall",
+      "nameEn": "Baghdad Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 610,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "iq_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 610,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "iq_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 612,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "iq_keepsake_display",
+          "blockId": "miraverse:iq_copper_samovar_stand",
+          "offset": {
+            "x": 608,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "House of Wisdom Book"
+        }
+      ]
+    },
+    {
+      "interiorId": "iq_interior_artisan_workshop",
+      "buildingId": "iq_artisan_craft_guild",
+      "nameEn": "Baghdad Restoration & Craft Studio",
+      "entryPos": {
+        "x": 586,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "iq_craft_bench",
+          "blockId": "miraverse:iq_palm_weave_mat",
+          "offset": {
+            "x": 586,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "iq_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 584,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "iq_bibi_amal",
+      "countryCode": "IQ",
+      "nameEn": "Bibi Amal",
+      "nameNative": "بيبي أمل",
+      "role": "mentor",
+      "greetingNative": "هلا بيكم ببغداد على شط دجلة! العلم والحكايات تسافر ويّانا.",
+      "spawnPos": {
+        "x": 576,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "IQ01",
+        "IQ06"
+      ]
+    },
+    {
+      "npcId": "iq_merchant_hassan",
+      "countryCode": "IQ",
+      "nameEn": "Book Merchant Hassan",
+      "nameNative": "الكتبي حسان",
+      "role": "merchant",
+      "greetingNative": "شارع المتنبي عامر بالكتب والقراء المتحابين.",
+      "spawnPos": {
+        "x": 588,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "IQ02"
+      ]
+    },
+    {
+      "npcId": "iq_translator_mariam",
+      "countryCode": "IQ",
+      "nameEn": "Translator Mariam",
+      "nameNative": "المترجمة مريم",
+      "role": "scholar",
+      "greetingNative": "الترجمة بين السريانية واليونانية والعربية حفظت العلوم.",
+      "spawnPos": {
+        "x": 600,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "IQ03"
+      ]
+    },
+    {
+      "npcId": "iq_baker_salim",
+      "countryCode": "IQ",
+      "nameEn": "Baker Salim",
+      "nameNative": "الخبّاز سليم",
+      "role": "artisan",
+      "greetingNative": "ريحة الهيل والتمر بالكليجة تجمع العائلة.",
+      "spawnPos": {
+        "x": 612,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "IQ04"
+      ]
+    },
+    {
+      "npcId": "iq_astronomer_zaid",
+      "countryCode": "IQ",
+      "nameEn": "Apprentice Astronomer Zaid",
+      "nameNative": "الفلكي زيد",
+      "role": "cousin",
+      "greetingNative": "الأصطرلاب يساعدنا نقيس النجوم ونفهم السماء.",
+      "spawnPos": {
+        "x": 624,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "IQ05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "iq_quest_iq01",
+      "chapterId": "IQ01",
+      "title": "Street of Books",
+      "kind": "exploration_and_organization",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 570,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:iq_shanasheel_oriel_screen",
+      "rewardArtifactId": "iq_bookseller_seal"
+    },
+    {
+      "anchorId": "iq_quest_iq02",
+      "chapterId": "IQ02",
+      "title": "The House of Wisdom",
+      "kind": "restoration_and_discovery",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 582,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:iq_tigris_glazed_brick",
+      "rewardArtifactId": "iq_scholars_astrolabe"
+    },
+    {
+      "anchorId": "iq_quest_iq03",
+      "chapterId": "IQ03",
+      "title": "Words That Travel",
+      "kind": "source_comparison",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 594,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:iq_baghdadi_courtyard_arch",
+      "rewardArtifactId": "iq_translation_scroll"
+    },
+    {
+      "anchorId": "iq_quest_iq04",
+      "chapterId": "IQ04",
+      "title": "Dates and Kleicha",
+      "kind": "cooking_and_trade",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 606,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:iq_kleicha_brick_oven",
+      "rewardArtifactId": "iq_kleicha_mold"
+    },
+    {
+      "anchorId": "iq_quest_iq05",
+      "chapterId": "IQ05",
+      "title": "The Courtyard of Questions",
+      "kind": "architecture_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 618,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:iq_turquoise_muqarnas",
+      "rewardArtifactId": "iq_courtyard_lattice"
+    },
+    {
+      "anchorId": "iq_quest_iq06",
+      "chapterId": "IQ06",
+      "title": "A Library Across Oceans",
+      "kind": "cooperative_exhibit",
+      "sourceType": "fictional_gameplay",
+      "coords": {
+        "x": 630,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:iq_palm_weave_mat",
+      "rewardArtifactId": "iq_knowledge_keeper_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "iq_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 600,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "iq_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 610,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Baghdad Fair-Trade Stall"
+    },
+    {
+      "anchorId": "iq_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 576,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:iq_calligraphy_frieze",
+      "labelEn": "Baghdad Resource Gathering Spot"
+    },
+    {
+      "anchorId": "iq_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 596,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:iq_shanasheel_oriel_screen",
+      "labelEn": "Baghdad Community Restoration Plot"
+    },
+    {
+      "anchorId": "iq_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 630,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:iq_tigris_glazed_brick",
+      "labelEn": "Baghdad Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "shanasheel",
+      "native": "شناشيل",
+      "translit": "shanāshīl",
+      "en": "Carved wooden lattice balcony overhanging the street"
+    },
+    {
+      "key": "kleicha",
+      "native": "كليجة",
+      "translit": "klīcha",
+      "en": "Cardamom-spiced date pastry shared at celebrations"
+    },
+    {
+      "key": "hikma",
+      "native": "حكمة",
+      "translit": "ḥikma",
+      "en": "Wisdom and shared scholarly inquiry"
+    }
+  ]
+}
