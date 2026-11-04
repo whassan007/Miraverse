@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX12",
+  "dgx_note": "All 25 MiraVerse v1.2 records exhibit consistent canonical spellings for named entities, transliterations, and historical dates.",
+  "checked_entities": 12,
+  "entities": [
+    {
+      "canonical_name": "Byblos (Jbeil)",
+      "variants_accepted": [
+        "Byblos",
+        "Jbeil",
+        "جبيل"
+      ],
+      "country": "LB",
+      "date_anchor": "c. 3000 BCE – Present"
+    },
+    {
+      "canonical_name": "King Ahiram",
+      "variants_accepted": [
+        "Ahiram",
+        "أحيرام"
+      ],
+      "country": "LB",
+      "date_anchor": "c. 1000 BCE"
+    },
+    {
+      "canonical_name": "Bayt al-Hikma",
+      "variants_accepted": [
+        "House of Wisdom",
+        "بيت الحكمة"
+      ],
+      "country": "IQ",
+      "date_anchor": "9th Century CE (Abbasid Era)"
+    },
+    {
+      "canonical_name": "Muhammad ibn Musa al-Khwarizmi",
+      "variants_accepted": [
+        "al-Khwarizmi",
+        "الخوارزمي"
+      ],
+      "country": "IQ",
+      "date_anchor": "9th Century CE"
+    },
+    {
+      "canonical_name": "Hunayn ibn Ishaq",
+      "variants_accepted": [
+        "Hunayn",
+        "حنين بن إسحاق"
+      ],
+      "country": "IQ",
+      "date_anchor": "809–873 CE"
+    },
+    {
+      "canonical_name": "Banu Musa Brothers",
+      "variants_accepted": [
+        "Banu Musa",
+        "بنو موسى"
+      ],
+      "country": "IQ",
+      "date_anchor": "9th Century CE"
+    },
+    {
+      "canonical_name": "Al-Mutanabbi Street",
+      "variants_accepted": [
+        "Shari al-Mutanabbi",
+        "شارع المتنبي"
+      ],
+      "country": "IQ",
+      "date_anchor": "10th Century Poet / 2007 Solidarity Rebuild"
+    },
+    {
+      "canonical_name": "Caliph al-Mu’izz li-Din Allah",
+      "variants_accepted": [
+        "al-Muizz",
+        "المعز لدين الله"
+      ],
+      "country": "EG",
+      "date_anchor": "972 CE (362 AH) contested fanous anecdote"
+    },
+    {
+      "canonical_name": "Khayamiya",
+      "variants_accepted": [
+        "الخيامية",
+        "Tentmakers Appliqué"
+      ],
+      "country": "EG",
+      "date_anchor": "Medieval – Present"
+    },
+    {
+      "canonical_name": "Cour des Voraces",
+      "variants_accepted": [
+        "9 Place Colbert"
+      ],
+      "country": "FR",
+      "date_anchor": "c. 1840 construction (distinct from 1831/1834 revolts)"
+    },
+    {
+      "canonical_name": "Eugénie Brazier",
+      "variants_accepted": [
+        "La Mère Brazier"
+      ],
+      "country": "FR",
+      "date_anchor": "1895–1977 (1921 Rue Royale, 1933 six Michelin stars claim)"
+    },
+    {
+      "canonical_name": "Obangsaek (오방색)",
+      "variants_accepted": [
+        "Obangsaek",
+        "오방색"
+      ],
+      "country": "KR",
+      "date_anchor": "Traditional Korean Five-Direction Color System"
+    }
+  ]
+}

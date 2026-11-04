@@ -1,13 +1,14 @@
 /**
- * MiraVerse v0.7 (Option A) — Official Roblox Launch & Minecraft Bedrock Companion Pages (`CX08`)
- * - Truthful "Play free on Roblox" launcher with non-secret destination hints (LB, EG, IQ, KR, FR)
- * - Neutral Roblox account/app requirement guidance and fallback
- * - Never claims browser cookies or localStorage reflect Roblox DataStoreService state
+ * MiraVerse v1.3 (Option A) — Official Roblox Launch, Minecraft Bedrock Companion & Admin Diagnostics (`CX01`, `P7`)
+ * - Truthful "Play free on Roblox" launcher with non-secret destination hints (LB, IQ, EG, FR, KR)
+ * - Child-friendly platform requirements on public pages (no internal build paths on child-facing routes)
+ * - AdminDiagnosticsPage at `/admin/diagnostics` for internal build, place-ID, and deployment diagnostics
  */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { COUNTRIES, COUNTRY_META, type CountryCode } from '../../../../packages/contracts/index';
 import { V06_WORLD_AVAILABILITY } from '../../../../packages/contracts/v06/index';
+import { V13_COUNTRIES_ORDERED, V13_COUNTRY_EXPERIENCES, V13_RELEASE_VERSION } from '../../../../packages/contracts/v13/index';
 
 export interface RobloxLaunchConfig {
   configuredPlaceId: string | null;
@@ -43,6 +44,7 @@ export function buildRobloxLaunchInfo(countryHint?: string, config = DEFAULT_ROB
 export const RobloxLaunchBanner: React.FC<{ countryCode?: CountryCode }> = ({ countryCode = 'LB' }) => {
   const info = buildRobloxLaunchInfo(countryCode);
   const meta = COUNTRY_META[info.targetCountry];
+  const v13Country = V13_COUNTRY_EXPERIENCES[info.targetCountry];
 
   return (
     <section
@@ -73,12 +75,14 @@ export const RobloxLaunchBanner: React.FC<{ countryCode?: CountryCode }> = ({ co
               marginBottom: '8px',
             }}
           >
-            Flagship Experience · Play free on Roblox · Destination: {meta.nameEn} ({info.availability.release_wave})
+            {v13Country.platformInfo.robloxPlayableNow
+              ? 'RC1 Flagship · Playable on Roblox'
+              : 'RC3 Roblox World Planned · Web Companion Ready'} · Destination: {meta.nameEn} ({meta.regionName})
           </span>
           <h2 style={{ margin: '0 0 6px 0', fontSize: '22px', fontFamily: 'Georgia, serif' }}>
             Launch MiraVerse on Roblox — {info.availability.chapter_title}
           </h2>
-          <p style={{ margin: 0, fontSize: '14px', color: '#CBD5E1', maxWidth: '680px' }}>
+          <p style={{ margin: 0, fontSize: '14px', color: '#CBD5E1', maxWidth: '680px', lineHeight: 1.55 }}>
             Requires the free Roblox app (Windows, macOS, iOS, Android, Console) and a Roblox account. In-game quest progress, Passport stamps, and earned Mira Tokens are saved inside Roblox DataStoreService and are never fabricated by website cookies.
           </p>
         </div>
@@ -102,7 +106,9 @@ export const RobloxLaunchBanner: React.FC<{ countryCode?: CountryCode }> = ({ co
             ▶ Play free on Roblox ({meta.nameEn})
           </a>
           <span data-testid="roblox-publish-status" style={{ fontSize: '12px', color: '#FCD34D' }}>
-            Build: apps/roblox/dist/miraverse.rbxlx (Verified) · Public Place ID: Pending Creator Publish Approval
+            {info.targetCountry === 'LB'
+              ? 'Flagship RC1 World Ready · Free Roblox App Required'
+              : 'RC3 Roblox World Expansion Planned · Explore Web Quests & Bedrock Add-On Today'}
           </span>
         </div>
       </div>
@@ -138,10 +144,10 @@ export const MinecraftCompanionPage: React.FC = () => {
           Companion Edition · Play in Minecraft Bedrock
         </span>
         <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(28px, 4vw, 44px)', margin: '0 0 12px 0' }}>
-          MiraVerse for Minecraft Bedrock Edition — Byblos Block-Building Companion
+          MiraVerse for Minecraft Bedrock Edition — Cultural Restoration Companion
         </h1>
         <p style={{ color: '#CBD5E1', fontSize: '16px', lineHeight: 1.6, marginBottom: '24px' }}>
-          Requires a licensed copy of <strong>Minecraft Bedrock Edition (v1.21.50+)</strong> on Windows, iOS, Android, Xbox, PlayStation, or Nintendo Switch. This companion focuses on hands-on block restoration of Teta Nahla’s Byblos stone courtyard and harbor market, with independent Bedrock-local progression. It does not run in a web browser.
+          Requires a licensed copy of <strong>Minecraft Bedrock Edition (v1.21.50+)</strong> on Windows, iOS, Android, Xbox, PlayStation, or Nintendo Switch. This companion focuses on hands-on block restoration of historic courtyards, libraries, lanterns, silk workshops, and hanok roofs across all 5 destinations, with independent Bedrock-local progression. It does not run in a web browser.
         </p>
 
         <div
@@ -169,10 +175,10 @@ export const MinecraftCompanionPage: React.FC = () => {
             marginBottom: '24px',
           }}
         >
-          <h2 style={{ marginTop: 0, color: '#FFE29F' }}>Verified Companion Artifacts &amp; Compatibility</h2>
+          <h2 style={{ marginTop: 0, color: '#FFE29F' }}>Verified Companion Add-On &amp; Installation Guide</h2>
           <ul style={{ lineHeight: 1.8, color: '#E2E8F0' }}>
             <li>
-              <strong>Behavior &amp; Resource Add-On (`miraverse.mcaddon`):</strong> Verified stable `@minecraft/server@1.17.0` &amp; `@minecraft/server-ui@1.3.0` package with 6 authored `.mcstructure` templates (`hub`, `LB`, `FR`, `EG`, `IQ`, `KR`).
+              <strong>Behavior &amp; Resource Add-On (`miraverse.mcaddon`):</strong> Verified `@minecraft/server@1.17.0` &amp; `@minecraft/server-ui@1.3.0` package with 6 authored `.mcstructure` cultural templates (`hub`, `LB`, `IQ`, `EG`, `FR`, `KR`).
             </li>
             <li>
               <strong>Download Add-On Package:</strong>{' '}
@@ -181,14 +187,114 @@ export const MinecraftCompanionPage: React.FC = () => {
               </a>
             </li>
             <li>
-              <strong>Binary LevelDB World (`.mcworld`):</strong> Template manifest &amp; structure placement scripts verified; native Bedrock GUI LevelDB export is marked <code>BUILD VERIFIED / RUNTIME BLOCKED</code> on headless Linux ARM64 CI until exported from a Windows/mobile Bedrock client.
+              <strong>How to Import:</strong> Download <code>miraverse.mcaddon</code> on a device with Minecraft Bedrock Edition installed, open the file to trigger automatic pack import, and activate both the MiraVerse Behavior Pack and Resource Pack on your world.
             </li>
           </ul>
         </div>
 
         <Link to="/play/LB" style={{ color: '#F4A261', fontWeight: 700 }}>
-          ← Return to Roblox Flagship Launch Page
+          ← Return to Platform Launch &amp; Cultural Quest Companion
         </Link>
+      </div>
+    </div>
+  );
+};
+
+export const AdminDiagnosticsPage: React.FC = () => {
+  return (
+    <div
+      data-testid="admin-diagnostics-page"
+      style={{
+        minHeight: '85vh',
+        background: '#090D16',
+        color: '#E2E8F0',
+        padding: '36px clamp(16px, 4vw, 56px)',
+        fontFamily: 'system-ui, sans-serif',
+      }}
+    >
+      <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+        <span
+          style={{
+            display: 'inline-block',
+            background: 'rgba(239, 68, 68, 0.16)',
+            border: '1px solid rgba(239, 68, 68, 0.45)',
+            color: '#FCA5A5',
+            padding: '4px 12px',
+            borderRadius: '999px',
+            fontSize: '12px',
+            fontWeight: 700,
+            marginBottom: '12px',
+          }}
+        >
+          Internal Release &amp; Publishing Diagnostics (Admin Only · Removed from Child-Facing Routes)
+        </span>
+        <h1 style={{ margin: '0 0 12px 0', fontSize: '28px', color: '#FFF8EE' }}>
+          MiraVerse v{V13_RELEASE_VERSION} — Platform Build &amp; Publishing Diagnostics
+        </h1>
+        <p style={{ color: '#94A3B8', lineHeight: 1.6, marginBottom: '24px' }}>
+          Internal diagnostic strings, build artifact paths, and publishing approval gates are isolated on this route so child-facing discovery and launch pages remain clean.
+        </p>
+
+        <div
+          style={{
+            background: '#111827',
+            border: '1px solid rgba(148, 163, 184, 0.25)',
+            borderRadius: '14px',
+            padding: '20px',
+            marginBottom: '20px',
+          }}
+        >
+          <h2 style={{ marginTop: 0, fontSize: '18px', color: '#6EE7B7' }}>Roblox Build &amp; Publishing Gate</h2>
+          <p style={{ margin: '6px 0', fontFamily: 'monospace', fontSize: '13px' }}>
+            Build: apps/roblox/dist/miraverse.rbxlx (Verified) · Public Place ID: Pending Creator Publish Approval
+          </p>
+          <p style={{ margin: '6px 0', fontSize: '13px', color: '#CBD5E1' }}>
+            Publishing Status: <code>STAGING_UNPUBLISHED_HUMAN_APPROVAL_REQUIRED</code> (Creator-controlled human gate)
+          </p>
+        </div>
+
+        <div
+          style={{
+            background: '#111827',
+            border: '1px solid rgba(148, 163, 184, 0.25)',
+            borderRadius: '14px',
+            padding: '20px',
+            marginBottom: '20px',
+          }}
+        >
+          <h2 style={{ marginTop: 0, fontSize: '18px', color: '#FDE68A' }}>Minecraft Bedrock Build Diagnostics</h2>
+          <p style={{ margin: '6px 0', fontFamily: 'monospace', fontSize: '13px' }}>
+            Add-On Artifact: public/downloads/miraverse.mcaddon (Verified @minecraft/server@1.17.0 &amp; @minecraft/server-ui@1.3.0)
+          </p>
+          <p style={{ margin: '6px 0', fontSize: '13px', color: '#CBD5E1' }}>
+            Binary LevelDB World (<code>.mcworld</code>): Template manifest verified; native LevelDB world export requires Windows/mobile Bedrock client.
+          </p>
+        </div>
+
+        <div
+          style={{
+            background: '#111827',
+            border: '1px solid rgba(148, 163, 184, 0.25)',
+            borderRadius: '14px',
+            padding: '20px',
+          }}
+        >
+          <h2 style={{ marginTop: 0, fontSize: '18px', color: '#93C5FD' }}>Destination Release Matrix (v1.3 Order)</h2>
+          <ul style={{ margin: 0, paddingLeft: '20px', lineHeight: 1.8, fontSize: '14px' }}>
+            {V13_COUNTRIES_ORDERED.map((cc) => {
+              const exp = V13_COUNTRY_EXPERIENCES[cc];
+              return (
+                <li key={cc}>
+                  <strong>
+                    {exp.orderIndex}. {exp.countryNameEn}: {exp.cityName} ({cc})
+                  </strong>{' '}
+                  — Roblox: <code>{exp.platformInfo.robloxPlayableNow ? 'RC1_PLAYABLE' : 'RC3_PLANNED'}</code> · Minecraft:{' '}
+                  <code>{exp.platformInfo.minecraftAddonReady ? 'MCADDON_READY' : 'PENDING'}</code>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );

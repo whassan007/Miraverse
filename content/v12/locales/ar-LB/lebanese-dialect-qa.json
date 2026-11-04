@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX14",
+  "locale": "ar-LB",
+  "direction": "rtl",
+  "review_status": "draft_ai_pending_native_review",
+  "historical_language_note": "Historical 1000 BCE Byblos figures (such as King Ahiram) spoke ancient Phoenician (a Northwest Semitic language), whereas modern in-game characters (Teta Nahla, Mira, Amo Farid) speak contemporary Lebanese Arabic (ar-LB).",
+  "dialect_preserved_terms": [
+    {
+      "term_native": "تيتا",
+      "translit": "tēta",
+      "en": "grandmother (Levantine dialect; never replace with MSA جدة in dialogue)",
+      "age_tier": "5-7"
+    },
+    {
+      "term_native": "منقوشة عالصاج",
+      "translit": "manʾūshe ʿaṣ-ṣāj",
+      "en": "za’atar flatbread baked on a domed iron griddle",
+      "age_tier": "5-7"
+    },
+    {
+      "term_native": "حوش الحجر",
+      "translit": "ḥōsh el-ḥajar",
+      "en": "stone courtyard",
+      "age_tier": "8-10"
+    },
+    {
+      "term_native": "مينا جبيل",
+      "translit": "mīna Jbeil",
+      "en": "Byblos harbor",
+      "age_tier": "8-10"
+    },
+    {
+      "term_native": "أبجدية فينيقية",
+      "translit": "abjadiyye fīnīqiyye",
+      "en": "Phoenician consonantal alphabet (22 letters)",
+      "age_tier": "11-13"
+    },
+    {
+      "term_native": "أرشيف متنقل",
+      "translit": "arshīf mutanaqqil",
+      "en": "portable cultural archive",
+      "age_tier": "14-17"
+    }
+  ],
+  "dgx_note": "Yes—اللّفظ اللبناني الأصيل (مثل \"تيتا\"، \"منقوشة\"، \"حوش\"، و\"مينا جبيل\") محفوظ بدقة دون تسوية إلى الفصحى أو اللهجات العامة."
+}

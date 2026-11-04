@@ -1,0 +1,121 @@
+{
+  "version": "1.2.0",
+  "agent_id": "DX16",
+  "generated_at": "2026-11-04T07:37:31.853Z",
+  "dgx_spark_metrics": {
+    "ok": true,
+    "model": "qwen/qwen3-coder-next",
+    "content": "```json\n{\n  \"French_Lyonnais\": {\n    \"traboule\": {\n      \"definition\": \"Secret passageway through buildings connecting streets or courtyards in Lyon, historically used by silk workers.\",\n      \"etymology\": \"From Old French *trabouler* (to hurry, slip through).\"\n    },\n    \"canut\": {\n      \"definition\": \"Historically, a silk weaver in Lyon; later, a worker in the silk industry. Also refers to the Lyonnais working class culture.\",\n      \"etymology\": \"From *canne* (silk thread) + suffix *-ut*, possibly influenced by *canot* (small boat), referencing workers' transport on canals.\"\n    },\n    \"Mères Lyonnaises\": {\n      \"definition\": \"Traditional female cooks in Lyon who prepared hearty, regional dishes; considered guardians of Lyonnaise cuisine.\",\n      \"etymology\": \"French: *mère* (mother) + *Lyonnaises* (feminine plural of Lyonnais).\"\n    }\n  },\n  \"Korean_HangulRR_terms\": {\n    \"전주 비빔밥\": {\n      \"hangul\": \"전주 비빔밥\",",
+    "usage": {
+      "prompt_tokens": 71,
+      "completion_tokens": 260,
+      "total_tokens": 331,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "tokensPerSec": 59.09,
+    "elapsedMs": 4400
+  },
+  "french_lyon_glossary": [
+    {
+      "term_id": "fr-term-01",
+      "term": "Traboule / Trabouler",
+      "locale": "fr-FR",
+      "note": "From Latin transambulare ('to walk through'); covered Lyon passageway connecting streets through interior courtyards."
+    },
+    {
+      "term_id": "fr-term-02",
+      "term": "Les Canuts",
+      "locale": "fr-FR",
+      "note": "Master silk weavers of the Croix-Rousse hill in 19th-century Lyon."
+    },
+    {
+      "term_id": "fr-term-03",
+      "term": "Bistanclaque-pan",
+      "locale": "fr-FR",
+      "note": "Lyonnais onomatopoeia imitating the rhythmic clatter of a wooden shuttle and Jacquard loom."
+    },
+    {
+      "term_id": "fr-term-04",
+      "term": "Cour des Voraces",
+      "locale": "fr-FR",
+      "note": "Iconic 1840 six-story courtyard staircase at 9 Place Colbert / 29 Rue Imbert-Colomès."
+    },
+    {
+      "term_id": "fr-term-05",
+      "term": "Les Mères Lyonnaises & Bouchons",
+      "locale": "fr-FR",
+      "note": "Women chef-proprietors such as Eugénie Brazier who shaped Lyon's culinary excellence."
+    }
+  ],
+  "korean_jeonju_glossary": [
+    {
+      "term_id": "kr-term-01",
+      "hangul": "전주 비빔밥",
+      "revised_romanization": "Jeonju Bibimbap",
+      "locale": "ko-KR",
+      "note": "Mixed rice bowl of Jeonju prepared with broth-steamed rice and seasonal namul."
+    },
+    {
+      "term_id": "kr-term-02",
+      "hangul": "오방색",
+      "revised_romanization": "Obangsaek",
+      "locale": "ko-KR",
+      "note": "Traditional Korean five-direction color spectrum: Cheong (Blue/Green), Jeok (Red), Hwang (Yellow), Baek (White), Heuk (Black)."
+    },
+    {
+      "term_id": "kr-term-03",
+      "hangul": "시의전서 (골동반)",
+      "revised_romanization": "Siuijeonseo (Goldongban)",
+      "locale": "ko-KR",
+      "note": "Late-19th-century Korean cookbook containing the earliest known written hangul recipe for bibimbap."
+    },
+    {
+      "term_id": "kr-term-04",
+      "hangul": "전주 한옥마을 · 온돌 · 대청마루",
+      "revised_romanization": "Jeonju Hanok Maeul · Ondol · Daecheong Maru",
+      "locale": "ko-KR",
+      "note": "Traditional tiled-roof house village with underfloor heating and open wooden breeze hall."
+    },
+    {
+      "term_id": "kr-term-05",
+      "hangul": "장독대 (옹기)",
+      "revised_romanization": "Jangdokdae (Onggi)",
+      "locale": "ko-KR",
+      "note": "Sunlit courtyard terrace of breathable earthenware crocks for fermenting gochujang, doenjang, and ganjang."
+    }
+  ],
+  "localized_record_titles": {
+    "fr-v12-traboules-vieux-lyon-croix-rousse": {
+      "fr": "Les traboules du Vieux Lyon et de la Croix-Rousse : passages couverts et étymologie"
+    },
+    "fr-v12-canuts-jacquard-silk-history": {
+      "fr": "Les Canuts, le métier Jacquard (1804) et l'histoire ouvrière de la soie"
+    },
+    "fr-v12-cour-des-voraces-civic-memory": {
+      "fr": "La Cour des Voraces (9 place Colbert) : architecture des pentes et solidarité civique"
+    },
+    "fr-v12-meres-lyonnaises-eugenie-brazier": {
+      "fr": "Les Mères lyonnaises et Eugénie Brazier : entrepreneuriat culinaire et transmission"
+    },
+    "fr-v12-bouchons-community-recipe-archive": {
+      "fr": "Les bouchons lyonnais et les cahiers de recettes familiales en diaspora"
+    },
+    "kr-v12-bibimbap-competing-origins": {
+      "ko": "비빔밥(골동반)의 기원 가설과 『시의전서』 기록 비교"
+    },
+    "kr-v12-jeonju-regional-variants": {
+      "ko": "전주·진주·통영·안동 비빔밥의 지역별 조리 전통과 안전한 식재료 대체"
+    },
+    "kr-v12-obangsaek-five-color-harmony": {
+      "ko": "오방색(五方色)의 문화적 상징과 비빔밥 고명의 조화"
+    },
+    "kr-v12-jeonju-hanok-jangdokdae-setting": {
+      "ko": "전주 한옥마을의 기와·온돌·대청마루와 장독대 발효 문화"
+    },
+    "kr-v12-diaspora-food-continuity": {
+      "ko": "재외동포 식문화의 연속성과 알레르기 안전 비빔밥 나눔"
+    }
+  }
+}

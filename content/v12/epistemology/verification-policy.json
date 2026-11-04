@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "CL02",
+  "policy_name": "MiraVerse v1.2 Epistemic Verification & Reviewer Workflow Policy",
+  "rules": [
+    {
+      "rule_id": "EPIST-01",
+      "title": "No Automatic Confidence Upgrade from Essay Tone",
+      "description": "Assertions in the uploaded essay (Pasted text(1).txt) start as source_asserted_unverified or disputed with confidence low/medium unless corroborated by an independent reference."
+    },
+    {
+      "rule_id": "EPIST-02",
+      "title": "Strict Myth / Landscape vs Historical Claim Separation",
+      "description": "Isis/Osiris at Byblos and Adonis/Afqa red river sediment are classified as mythology or interpretation, never literal historical events."
+    },
+    {
+      "rule_id": "EPIST-03",
+      "title": "Numerical & Anecdotal Claim Quarantine",
+      "description": "Gold-weight translation payments, 1258 river-of-ink tropes, 972 CE fanous single-origin stories, exact Lyon traboule counts (~400-500), and competing bibimbap origin theories are explicitly flagged as contested_history or source_asserted_unverified."
+    },
+    {
+      "rule_id": "EPIST-04",
+      "title": "Bibliographic Candidates vs Verified Citations",
+      "description": "Named books and authors in the essay (Amin Maalouf, Rabih Alameddine, Kahlil Gibran, Beau Beausoleil, Michelle Zauner, Siuijeonseo) are stored as entity_type=work/person with rights.text=paraphrase_only and verified=false until original editions are examined."
+    },
+    {
+      "rule_id": "EPIST-05",
+      "title": "Child Safety, Religious Neutrality & Trauma Prevention",
+      "description": "No graphic depiction of the 2007 Al-Mutanabbi attack or WWII persecution; no forced religious observance in Ramadan/Chuseok/Epiphany activities; no collection of real child voice recordings or family PII; virtual cooking safety flags for heat and raw ingredients."
+    }
+  ],
+  "reviewer_workflow": {
+    "states": [
+      "pending",
+      "approved",
+      "changes_requested",
+      "rejected"
+    ],
+    "roles": [
+      "historian_reviewer",
+      "native_dialect_reviewer",
+      "child_safety_reviewer"
+    ],
+    "machine_readable_queue_path": "reports/v12/CONFLICTS_AND_VERIFICATION_QUEUE.md"
+  }
+}

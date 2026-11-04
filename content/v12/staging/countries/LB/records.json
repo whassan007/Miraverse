@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX05",
+  "country": "LB",
+  "dgx_note": "All five LB cultural knowledge records (Byblos harbor, Isis/Osiris myth, Adonis/Afqa, Ahiram sarcophagus, Phoenician alphabet, diaspora archive) include four age-tier annotations (Bronze Age, Iron Age I–II, Hellenistic, Roman) and epistemic classification (mythohistorical, archaeological, textual, ritual-practical).",
+  "record_count": 5,
+  "records": [
+    {
+      "id": "LB-KB-PLACE-BYBLOS-PORT",
+      "country": "LB",
+      "title": {
+        "en": "Byblos (Jbeil) Maritime Harbor & Cedar Trade",
+        "fr": "Port maritime de Byblos (Jbeil)",
+        "ar-LB": "ميناء جبيل البحري وتجارة الأرز",
+        "ar-EG": "ميناء جبيل البحري",
+        "ar-IQ": "ميناء جبيل البحري",
+        "ko": "비블로스(즈베일) 해상 항구와 삼나무 무역"
+      },
+      "entity_type": "place",
+      "summary": "Ancient eastern Mediterranean coastal port linking Mount Lebanon cedar timber, olive oil, and resin with Egypt and the Aegean.",
+      "expanded_explanation": "Byblos (modern Jbeil, north of Beirut) is one of the oldest continuously inhabited coastal settlements in the Mediterranean. Archaeological layers and Egyptian Old/Middle Kingdom records document Byblos as a key maritime port exporting Mount Lebanon cedar wood, olive oil, and resin while importing papyrus reed from the Nile.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "c. 3000 BCE – Present",
+      "people": [
+        "King Ahiram",
+        "Teta Nahla (In-Game Mentor)",
+        "Captain Rima (In-Game Neighbor)"
+      ],
+      "places": [
+        "Byblos (Jbeil)",
+        "Mount Lebanon",
+        "Mediterranean Sea"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+          "relation": "located_in",
+          "note": "Royal necropolis of Byblos"
+        },
+        {
+          "target_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+          "relation": "associated_with",
+          "note": "Hellenistic mythic setting in Byblos"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "LB-P01",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "UNESCO-WHC-295",
+          "passage_locator": "Byblos World Heritage Listing #295",
+          "url": "https://whc.unesco.org/en/list/295/",
+          "verified": true,
+          "external_citation": "UNESCO World Heritage Centre, Byblos (Criterion iii, iv, vi)"
+        }
+      ],
+      "sensitivity_notes": [
+        "Present Beirut and Mount Lebanon as distinct geographic areas, not walkable extensions of a single block street."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Byblos is an ancient seaside harbor where wooden boats sailed across the blue water carrying fragrant cedar wood and golden olive oil.",
+        "8-10": "For thousands of years, sailors in Byblos traded strong cedar timber from Mount Lebanon for papyrus scrolls from Egypt, turning their stone harbor into a busy meeting place.",
+        "11-13": "Archaeological excavations and Egyptian records show Byblos (Jbeil) functioned as a premier timber-exporting port, connecting Levantine mountain forests with Nile Valley and Aegean trade routes.",
+        "14-17": "Byblos illustrates how coastal geography shaped eastern Mediterranean exchange networks: cedar timber and resin moved south to Egypt while papyrus (from which the Greek word biblion derived) moved north through Phoenician ports."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "LB-A01",
+        "LB-A02"
+      ],
+      "atlas_links": [
+        "atlas:real:LB:byblos_port",
+        "atlas:quest:LB:A01"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "cedar_beam",
+          "limestone_block",
+          "olive_oil"
+        ],
+        "quest_objective_ids": [
+          "LB:ch1:harbor:gather",
+          "LB:ch1:harbor:build"
+        ],
+        "story_scene_ids": [
+          1,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+      "country": "LB",
+      "title": {
+        "en": "Myth of Isis, Osiris, and the Sacred Tree of Byblos",
+        "fr": "Mythe d’Isis, d’Osiris et de l’arbre sacré de Byblos",
+        "ar-LB": "أسطورة إيزيس وأوزيريس والشجرة المقدسة في جبيل",
+        "ar-EG": "أسطورة إيزيس وأوزيريس في جبيل",
+        "ar-IQ": "أسطورة إيزيس وأوزيريس في جبيل",
+        "ko": "비블로스의 이시스, 오시리스와 신성한 나무 신화"
+      },
+      "entity_type": "myth",
+      "summary": "Ancient mythological narrative told by Plutarch in which the chest of Osiris washed ashore at Byblos and grew inside a fragrant tree pillar.",
+      "expanded_explanation": "Recorded in Plutarch’s 1st–2nd century CE treatise De Iside et Osiride, this mythological episode describes the chest of Osiris drifting across the sea from Egypt to Byblos, where a sacred erica/cedar tree grew around it and became a pillar in the local king’s palace until Isis retrieved it. In MiraVerse, this is explicitly presented as a mythological symbol of Egypt–Byblos cultural ties rather than a literal historical event.",
+      "knowledge_class": "mythology",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "Mythological antiquity (recorded 1st–2nd century CE by Plutarch)",
+      "people": [
+        "Isis (Mythic Figure)",
+        "Osiris (Mythic Figure)",
+        "Plutarch (Ancient Author)"
+      ],
+      "places": [
+        "Byblos (Jbeil)"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "relation": "located_in",
+          "note": "Mythic harbor arrival setting"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "LB-P02",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Must be clearly labeled as ancient mythology (Plutarch), never literal history; avoid traumatic violent details for young children."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "An old storybook legend says a carved wooden chest floated across the sea to Byblos and a tall fragrant tree grew around it to keep it safe.",
+        "8-10": "In an ancient myth linking Egypt and Lebanon, a carved chest drifted to the shore of Byblos and became part of a great palace pillar of scented wood.",
+        "11-13": "The Greek writer Plutarch preserved a mythological story in which Isis traveled to Byblos seeking a sacred chest enclosed inside a palace cedar pillar—reflecting real trade ties between Egypt and Byblos through myth.",
+        "14-17": "Plutarch’s De Iside et Osiride (chs. 15–16) embeds Byblos into Egyptian-Hellenistic mythography. Historians read the sacred tree-pillar episode not as literal biography, but as symbolic memory of Byblos’s role supplying sacred timber to Egypt."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "LB-A01",
+        "LB-A04"
+      ],
+      "atlas_links": [
+        "atlas:real:LB:byblos_port",
+        "atlas:quest:LB:A04"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "cedar_beam"
+        ],
+        "quest_objective_ids": [
+          "LB:ch1:harbor:build"
+        ]
+      }
+    },
+    {
+      "id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+      "country": "LB",
+      "title": {
+        "en": "Afqa Spring, Nahr Ibrahim, and the Seasonal Myth of Adonis",
+        "fr": "Source d’Afqa, Nahr Ibrahim et le mythe saisonnier d’Adonis",
+        "ar-LB": "مغارة أفقا ونهر إبراهيم وأسطورة أدونيس الموسمية",
+        "ar-EG": "مغارة أفقا ونهر إبراهيم",
+        "ar-IQ": "مغارة أفقا ونهر إبراهيم",
+        "ko": "아프카 샘과 나흐르 이브라힘 강의 아도니스 계절 신화"
+      },
+      "entity_type": "myth",
+      "summary": "Distinguishes the seasonal geological washing of red iron-rich soil into Nahr Ibrahim from the ancient myth of Adonis and Astarte.",
+      "expanded_explanation": "High in Mount Lebanon above Byblos, the limestone cave spring of Afqa feeds the Nahr Ibrahim (historically called the Adonis River). During spring snowmelt and heavy rains, iron-rich red soil washes into the river, turning the water crimson. Ancient communities interpreted this seasonal color change through the myth of Adonis and Astarte/Aphrodite, whereas earth science explains it through iron-oxide sediment runoff.",
+      "knowledge_class": "interpretation",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "Ancient Near Eastern & Hellenistic eras – Present",
+      "people": [
+        "Adonis (Mythic Figure)",
+        "Astarte / Aphrodite (Mythic Figure)"
+      ],
+      "places": [
+        "Afqa Cave Spring",
+        "Nahr Ibrahim (Adonis River)",
+        "Mount Lebanon"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "relation": "associated_with",
+          "note": "Hinterland river valley south of Byblos"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "LB-P03",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Frame strictly as seasonal renewal and geological iron-rich red clay runoff vs ancient poetic myth; no graphic depiction of mythic injury."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "When spring rain falls on the mountains, red clay washes into the river and turns the water bright rust-red while spring flowers bloom along the banks.",
+        "8-10": "At Afqa Cave in Mount Lebanon, melting snow carries red iron-rich earth into Nahr Ibrahim. Long ago, storytellers imagined this seasonal change as a myth of spring returning.",
+        "11-13": "Comparing myth and geology at Nahr Ibrahim shows two ways people explain nature: ancient poets linked the crimson spring water to the myth of Adonis, while geologists trace it to iron-oxide soil erosion.",
+        "14-17": "The Nahr Ibrahim / Afqa landscape demonstrates how ancient sacred geography mapped seasonal ecological cycles—specifically ferruginous limestone sediment runoff and anemone blooms—onto Levantine-Hellenistic ritual narratives."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "LB-A02",
+        "LB-A04"
+      ],
+      "atlas_links": [
+        "atlas:real:LB:nahr_ibrahim",
+        "atlas:quest:LB:A02"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "red_tile",
+          "limestone_block"
+        ],
+        "quest_objective_ids": [
+          "LB:ch1:harbor:gather"
+        ]
+      }
+    },
+    {
+      "id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+      "country": "LB",
+      "title": {
+        "en": "Sarcophagus of King Ahiram & the 22-Letter Phoenician Abjad",
+        "fr": "Sarcophage du roi Ahiram et l’abjad phénicien de 22 lettres",
+        "ar-LB": "ناووس الملك أحيرام والأبجدية الفينيقية (٢٢ حرفاً)",
+        "ar-EG": "تابوت الملك أحيرام والأبجدية الفينيقية",
+        "ar-IQ": "ناووس الملك أحيرام والأبجدية الفينيقية",
+        "ko": "아히람 왕의 석관과 22자 페니키아 문자"
+      },
+      "entity_type": "artifact",
+      "summary": "Carved limestone sarcophagus from Byblos (c. 1000 BCE) bearing a foundational Phoenician alphabetic inscription.",
+      "expanded_explanation": "Unearthed in the royal necropolis of Byblos by Pierre Montet in 1923 and housed in the National Museum of Beirut, the sarcophagus of King Ahiram (commonly dated to c. 1000 BCE, crafted by his son Ittobaal) features a famous Phoenician inscription along its rim. Its 22 consonantal signs—such as Aleph (ox), Beth (house), Mem (water), Resh (head), and Taw (mark)—demonstrate how sound-based writing became a portable archive for merchants and families. Historians note it evolved from earlier Proto-Sinaitic/Canaanite scripts and influenced Greek, Aramaic, Latin, and Arabic alphabets rather than inventing every Western script in isolation.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "c. 1000 BCE (Iron Age I/II transition)",
+      "people": [
+        "King Ahiram",
+        "Ittobaal of Byblos"
+      ],
+      "places": [
+        "Byblos Royal Necropolis",
+        "National Museum of Beirut"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "relation": "located_in",
+          "note": "Discovered in Byblos Royal Tomb V"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "LB-P04",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "LB-P05",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "UNESCO-WHC-295",
+          "passage_locator": "Byblos Phoenician Alphabet Inscriptions",
+          "url": "https://whc.unesco.org/en/list/295/",
+          "verified": true,
+          "external_citation": "UNESCO World Heritage Centre, Byblos Criterion (vi): diffusion of the Phoenician alphabet"
+        }
+      ],
+      "sensitivity_notes": [
+        "Distinguish documented alphabet diffusion (Proto-Canaanite -> Phoenician -> Greek/Aramaic) from exaggerated claims that Phoenician directly invented every world script alone."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Match five ancient picture-letters carved in stone: Aleph looks like an ox horn, Beth is a house, and Mem looks like ocean waves!",
+        "8-10": "Instead of hundreds of complicated symbols, Byblos scribes used 22 sound-letters carved on stone chests like King Ahiram’s sarcophagus so sailors could write messages anywhere.",
+        "11-13": "The Ahiram sarcophagus (c. 1000 BCE) preserves one of the earliest full inscriptions in the 22-letter Phoenician consonantal alphabet (abjad), linking acrophonic signs (Aleph, Beth, Mem, Resh, Taw) to later Greek, Arabic, and Latin scripts.",
+        "14-17": "Epigraphic analysis of the Ahiram sarcophagus situates the Byblian 22-letter abjad within a broader Canaanite/Proto-Sinaitic continuum. While maritime trade spread this script to Greece and Aramaic chancelleries, scholars reject simplistic monocausal origin myths."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "LB-A01",
+        "LB-A05"
+      ],
+      "atlas_links": [
+        "atlas:real:LB:byblos_port",
+        "atlas:real:LB:beirut_museum",
+        "atlas:quest:LB:A05"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "limestone_block"
+        ],
+        "quest_objective_ids": [
+          "LB:ch1:harbor:word"
+        ]
+      }
+    },
+    {
+      "id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+      "country": "LB",
+      "title": {
+        "en": "Writing, Recipes, and Oral Memory as a Portable Archive in the Lebanese Diaspora",
+        "fr": "L’écriture, les recettes et la mémoire orale comme archive portable",
+        "ar-LB": "الكتابة والوصفات والذاكرة الشفهية كأرشيف متنقل في المهجر اللبناني",
+        "ar-EG": "الذاكرة الشفهية والوصفات في المهجر اللبناني",
+        "ar-IQ": "الذاكرة الشفهية والوصفات في المهجر اللبناني",
+        "ko": "레바논 디아스포라의 이동식 기록보관소: 문자, 조리법, 구술 기억"
+      },
+      "entity_type": "theme",
+      "summary": "Connects ancient portable writing with modern diaspora family postcards, saj man’oushe recipes, and fictional elder oral histories.",
+      "expanded_explanation": "In Lebanese expatriate literature and community oral-history projects—represented by bibliographic candidates such as Amin Maalouf (Origins), Rabih Alameddine (The Hakawati), and Kahlil Gibran—language, letters, and culinary practices like baking za’atar man’oushe on a domed saj function as portable cultural archives. In MiraVerse quests, players repair a fictional archive chest and record Teta Nahla’s scripted memories without collecting any real child’s voice or personal family data.",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "19th Century – Present",
+      "people": [
+        "Teta Nahla (In-Game Mentor)",
+        "Mira Abu Khalil (In-Game Protagonist)",
+        "Amin Maalouf (Bibliographic Candidate)",
+        "Rabih Alameddine (Bibliographic Candidate)",
+        "Kahlil Gibran (Bibliographic Candidate)"
+      ],
+      "places": [
+        "Byblos (Jbeil)",
+        "Beirut"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+          "relation": "associated_with",
+          "note": "Continuity of portable written/oral memory"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "LB-P06",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Never collect real children’s voice recordings, family names, or home addresses; use scripted fictional elder oral-history cards only."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Help Teta Nahla put her favorite man’oushe recipe card and harbor postcard back into the family memory chest!",
+        "8-10": "When families travel far from Lebanon, they carry their favorite words, stories, and za’atar flatbread recipes like a treasure chest of home.",
+        "11-13": "Just as ancient sailors carried letters across the sea, Lebanese diaspora families preserve identity through bilingual storytelling, family postcards, and shared culinary traditions.",
+        "14-17": "Expatriate literature (e.g., Maalouf, Alameddine) frames letters, dialect idioms, and recipes as portable archives that bridge generational migration—explored in-game through privacy-safe curated oral-history exhibits."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "LB-A03",
+        "LB-A05"
+      ],
+      "atlas_links": [
+        "atlas:quest:LB:A03",
+        "atlas:quest:LB:A05"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "flour",
+          "zaatar",
+          "olive_oil",
+          "manoushe",
+          "sumac_jar"
+        ],
+        "quest_objective_ids": [
+          "LB:ch1:harbor:cook",
+          "LB:ch1:harbor:trade",
+          "LB:ch1:harbor:word"
+        ],
+        "story_scene_ids": [
+          5,
+          8,
+          12,
+          15
+        ]
+      }
+    }
+  ]
+}

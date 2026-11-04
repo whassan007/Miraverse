@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <rect width="900" height="420" rx="18" fill="#102430" stroke="#C97A40" stroke-width="3"/>
+  <text x="36" y="48" fill="#FFF8EE" font-family="Georgia, serif" font-size="22" font-weight="bold">Byblos &amp; Ahiram Sarcophagus — Selected Phoenician Abjad Comparisons (AG03)</text>
+  <text x="36" y="74" fill="#CBD5E1" font-family="sans-serif" font-size="13">Acrophonic consonantal letters (c. 1000 BCE) compared with Arabic, Greek, and Latin descendants · Paraphrase-Only Original Art</text>
+  <g transform="translate(36, 100)">
+    <rect width="156" height="280" rx="12" fill="#173344" stroke="#60A5FA"/>
+    <text x="20" y="34" fill="#60A5FA" font-family="sans-serif" font-size="15" font-weight="bold">1. ALEPH (ʾ)</text>
+    <text x="20" y="56" fill="#94A3B8" font-family="sans-serif" font-size="12">Meaning: Ox Head</text>
+    <path d="M55 125 L100 95 L85 150 M48 110 L108 135" stroke="#FBBF24" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="20" y="200" fill="#FFF8EE" font-family="sans-serif" font-size="14">Arabic: أ (Alif)</text>
+    <text x="20" y="226" fill="#FFF8EE" font-family="sans-serif" font-size="14">Greek/Latin: Α / A</text>
+  </g>
+  <g transform="translate(204, 100)">
+    <rect width="156" height="280" rx="12" fill="#173344" stroke="#60A5FA"/>
+    <text x="20" y="34" fill="#60A5FA" font-family="sans-serif" font-size="15" font-weight="bold">2. BETH (b)</text>
+    <text x="20" y="56" fill="#94A3B8" font-family="sans-serif" font-size="12">Meaning: House (Bayt)</text>
+    <path d="M55 95 L102 95 L102 130 L55 130 L55 155 L95 155" stroke="#FBBF24" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="20" y="200" fill="#FFF8EE" font-family="sans-serif" font-size="14">Arabic: ب (Bāʾ)</text>
+    <text x="20" y="226" fill="#FFF8EE" font-family="sans-serif" font-size="14">Greek/Latin: Β / B</text>
+  </g>
+  <g transform="translate(372, 100)">
+    <rect width="156" height="280" rx="12" fill="#173344" stroke="#60A5FA"/>
+    <text x="20" y="34" fill="#60A5FA" font-family="sans-serif" font-size="15" font-weight="bold">3. MEM (m)</text>
+    <text x="20" y="56" fill="#94A3B8" font-family="sans-serif" font-size="12">Meaning: Water Waves</text>
+    <path d="M42 125 L56 100 L70 125 L84 100 L98 125 L98 158" stroke="#38BDF8" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="20" y="200" fill="#FFF8EE" font-family="sans-serif" font-size="14">Arabic: م (Mīm)</text>
+    <text x="20" y="226" fill="#FFF8EE" font-family="sans-serif" font-size="14">Greek/Latin: Μ / M</text>
+  </g>
+  <g transform="translate(540, 100)">
+    <rect width="156" height="280" rx="12" fill="#173344" stroke="#60A5FA"/>
+    <text x="20" y="34" fill="#60A5FA" font-family="sans-serif" font-size="15" font-weight="bold">4. RESH (r)</text>
+    <text x="20" y="56" fill="#94A3B8" font-family="sans-serif" font-size="12">Meaning: Head (Raʾs)</text>
+    <path d="M88 95 L52 115 L88 132 L88 160" stroke="#FBBF24" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="20" y="200" fill="#FFF8EE" font-family="sans-serif" font-size="14">Arabic: ر (Rāʾ)</text>
+    <text x="20" y="226" fill="#FFF8EE" font-family="sans-serif" font-size="14">Greek/Latin: Ρ / R</text>
+  </g>
+  <g transform="translate(708, 100)">
+    <rect width="156" height="280" rx="12" fill="#173344" stroke="#60A5FA"/>
+    <text x="20" y="34" fill="#60A5FA" font-family="sans-serif" font-size="15" font-weight="bold">5. TAW (t)</text>
+    <text x="20" y="56" fill="#94A3B8" font-family="sans-serif" font-size="12">Meaning: Mark / Sign</text>
+    <path d="M55 102 L102 148 M102 102 L55 148" stroke="#F4A261" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="20" y="200" fill="#FFF8EE" font-family="sans-serif" font-size="14">Arabic: ت (Tāʾ)</text>
+    <text x="20" y="226" fill="#FFF8EE" font-family="sans-serif" font-size="14">Greek/Latin: Τ / T</text>
+  </g>
+</svg>

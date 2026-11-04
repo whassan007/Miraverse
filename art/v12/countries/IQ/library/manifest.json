@@ -1,0 +1,19 @@
+{
+  "agent_id": "AG04",
+  "country": "IQ",
+  "kit": "library",
+  "assets": [
+    {
+      "id": "iq-svg-bayt-al-hikma",
+      "path": "/art/v12/IQ/library/bayt-al-hikma-routing-map.svg",
+      "map_type": "in_game_quest_map",
+      "scale_disclaimer": "in-game map / not to geographic scale"
+    },
+    {
+      "id": "iq-svg-banu-musa",
+      "path": "/art/v12/IQ/library/banu-musa-float-valve.svg",
+      "map_type": "educational_diagram",
+      "epistemic_badge": "Historical Claim"
+    }
+  ]
+}

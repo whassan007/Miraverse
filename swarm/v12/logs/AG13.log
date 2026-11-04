@@ -1,0 +1,16 @@
+=== AGENT AG13 (Antigravity · W4) ===
+Timestamp: 2026-11-04T07:41:42.161Z
+Resolved Model: Gemini 4 Argon
+Runtime Environment: host_agy_orchestrator
+Branch: v12/AG13
+Agent Commit SHA: 10355d2
+Integration Merge SHA: e5fb830
+Owned Paths: apps/web/src/features/atlas-dual-map/
+Modified Files (1): apps/web/src/features/atlas-dual-map/AtlasDualMapV12.tsx
+Test Command: node -e "const fs=require('fs'); const s=fs.readFileSync('apps/web/src/features/atlas-dual-map/AtlasDualMapV12.tsx','utf8'); if(!s.includes('in-game map / not to geographic scale')) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: apps/web/src/features/atlas-dual-map/AtlasDualMapV12.tsx
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE AG13 10355d2 apps/web/src/features/atlas-dual-map/AtlasDualMapV12.tsx

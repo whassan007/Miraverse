@@ -1,0 +1,18 @@
+=== AGENT CX01 (Codex · W0) ===
+Timestamp: 2026-11-04T07:15:09.779Z
+Resolved Model: gpt-6-astra
+Runtime Environment: Codex CLI Migration & Snapshot Verifier (Node v22.22.3)
+Branch: v12/CX01
+Agent Commit SHA: 8e9ab3c
+Integration Merge SHA: 5e10064
+Owned Paths: tools/v12/migration/
+Modified Files (4): tools/v12/migration/baseline-snapshot.json, tools/v12/migration/inventory.mjs, tools/v12/migration/rollback.mjs, tools/v12/migration/verify-non-destructive.mjs
+Test Command: node tools/v12/migration/inventory.mjs && node tools/v12/migration/verify-non-destructive.mjs
+Test Exit Code: 0
+Evidence Paths: tools/v12/migration/baseline-snapshot.json, tools/v12/migration/verify-non-destructive.mjs, tools/v12/migration/rollback.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+CX01 baseline snapshot generated for LB -> IQ -> EG -> FR -> KR
+CX01 non-destructive integrity check PASSED across all 21 canonical baseline files.
+
+DONE CX01 8e9ab3c tools/v12/migration/baseline-snapshot.json

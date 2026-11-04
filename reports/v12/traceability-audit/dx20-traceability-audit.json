@@ -1,0 +1,30 @@
+{
+  "version": "1.2.0",
+  "agent_id": "DX20",
+  "audited_at": "2026-11-04T07:48:03.878Z",
+  "dgx_spark_metrics": {
+    "ok": true,
+    "model": "qwen/qwen3-coder-next",
+    "content": "{\n  \"source_passages\": 27,\n  \"extracted_claims\": 28,\n  \"provenance_links\": 36,\n  \"canonical_records\": 25,\n  \"quest_acts\": 25,\n  \"age_tier_vectors\": 100,\n  \"traceability_status\": \"consistent\"\n}",
+    "usage": {
+      "prompt_tokens": 56,
+      "completion_tokens": 75,
+      "total_tokens": 131,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "tokensPerSec": 51.94,
+    "elapsedMs": 1444
+  },
+  "traceability_counts": {
+    "source_passages": 27,
+    "provenance_jsonl_rows": 36,
+    "canonical_records": 25,
+    "quest_acts": 25,
+    "age_tier_vectors": 100,
+    "unlinked_records": 0,
+    "high_confidence_unverified_records": 0
+  },
+  "verdict": "TRACEABILITY_COMPLETE_ZERO_ORPHANS"
+}

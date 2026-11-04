@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX11",
+  "dgx_note": "I am DX11, flagging contested historical claims, origin anecdotes, and numerical assertions across LB, IQ, EG, FR, and KR for human historian verification—please review the flagged items with appropriate scholarly rigor.",
+  "total_flags": 12,
+  "flags": [
+    {
+      "flag_id": "FLAG-LB-01",
+      "country": "LB",
+      "record_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+      "passage_locator": "LB-P02",
+      "issue_type": "myth_vs_history_boundary",
+      "source_assertion": "Plutarch’s account of Osiris’s chest enclosed in a sacred cedar/erica pillar at Byblos.",
+      "epistemic_treatment": "Classified as knowledge_class=mythology; never presented as a literal archaeological event.",
+      "verification_action_required": "Classical/Near Eastern historian sign-off on age-tier wording."
+    },
+    {
+      "flag_id": "FLAG-LB-02",
+      "country": "LB",
+      "record_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+      "passage_locator": "LB-P03",
+      "issue_type": "myth_vs_geology_boundary",
+      "source_assertion": "Seasonal red coloring of Nahr Ibrahim linked in antiquity to Adonis.",
+      "epistemic_treatment": "Classified as knowledge_class=interpretation; pairs iron-oxide sediment geology with ancient myth.",
+      "verification_action_required": "Earth-science & Levantine folklore educator review."
+    },
+    {
+      "flag_id": "FLAG-LB-03",
+      "country": "LB",
+      "record_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+      "passage_locator": "LB-P05",
+      "issue_type": "oversimplified_diffusion_claim",
+      "source_assertion": "Claims that the Phoenician alphabet single-handedly invented all Western scripts.",
+      "epistemic_treatment": "Qualified to acknowledge Proto-Sinaitic/Canaanite predecessors and regional Greek/Aramaic adaptations.",
+      "verification_action_required": "Semitic epigrapher review."
+    },
+    {
+      "flag_id": "FLAG-IQ-01",
+      "country": "IQ",
+      "record_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+      "passage_locator": "IQ-P01",
+      "issue_type": "institutional_charter_debate",
+      "source_assertion": "Portrayal of Bayt al-Hikma as a formal modern university vs caliphal palace library and translation bureau.",
+      "epistemic_treatment": "Classified as knowledge_class=contested_history with explicit historiographical note (Gutas / Saliba debates).",
+      "verification_action_required": "Abbasid historian review."
+    },
+    {
+      "flag_id": "FLAG-IQ-02",
+      "country": "IQ",
+      "record_id": "IQ-KB-EVENT-GOLD-AND-1258-TROPES",
+      "passage_locator": "IQ-P03",
+      "issue_type": "numerical_and_chronicler_trope",
+      "source_assertion": "Caliph al-Ma’mun paying Hunayn ibn Ishaq the weight of books in gold; Tigris running black with ink in 1258.",
+      "epistemic_treatment": "Classified as claim_status=disputed, confidence=low; explained as 13th–15th century literary topoi.",
+      "verification_action_required": "Historian review of chronicler attribution (Ibn Abi Usaybi’a)."
+    },
+    {
+      "flag_id": "FLAG-EG-01",
+      "country": "EG",
+      "record_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+      "passage_locator": "EG-P01",
+      "issue_type": "competing_origin_narratives",
+      "source_assertion": "972 CE nighttime arrival of Caliph al-Mu’izz vs Caliph al-Hakim street-lamp decrees vs Coptic lamp traditions.",
+      "epistemic_treatment": "Classified as knowledge_class=contested_history, claim_status=disputed; all three narratives presented as competing traditions.",
+      "verification_action_required": "Fatimid/Cairene cultural historian review."
+    },
+    {
+      "flag_id": "FLAG-EG-02",
+      "country": "EG",
+      "record_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+      "passage_locator": "EG-P05",
+      "issue_type": "contemporary_legislative_citation",
+      "source_assertion": "Ontario Egyptian Heritage Month Act, 2019 designating July as Egyptian Heritage Month.",
+      "epistemic_treatment": "Kept as claim_status=source_asserted_unverified until official Ontario Legislative Assembly statute record is attached.",
+      "verification_action_required": "Verify Bill 106 / S.O. 2019 statutory citation."
+    },
+    {
+      "flag_id": "FLAG-FR-01",
+      "country": "FR",
+      "record_id": "FR-KB-PLACE-TRABOULES-LYON",
+      "passage_locator": "FR-P01",
+      "issue_type": "numerical_count_and_etymology",
+      "source_assertion": "Approximately 400–500 traboules in Lyon (~40 public) and transambulare etymology.",
+      "epistemic_treatment": "Flagged as approximate municipal range rather than fixed census; distinguishes public passages from private residences.",
+      "verification_action_required": "Grand Lyon municipal heritage verification."
+    },
+    {
+      "flag_id": "FLAG-FR-02",
+      "country": "FR",
+      "record_id": "FR-KB-PLACE-COUR-DES-VORACES",
+      "passage_locator": "FR-P03",
+      "issue_type": "chronology_and_wartime_sensitivity",
+      "source_assertion": "Cour des Voraces (built c. 1840) conflated with 1831/1834 Canut revolts and WWII Resistance anecdotes.",
+      "epistemic_treatment": "Classified as knowledge_class=contested_history; clarifies 1831/1834 vs 1840/1848 chronology and prohibits chase/combat trivialization of WWII.",
+      "verification_action_required": "19th/20th-century Lyon labor historian review."
+    },
+    {
+      "flag_id": "FLAG-FR-03",
+      "country": "FR",
+      "record_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+      "passage_locator": "FR-P05",
+      "issue_type": "biographical_and_michelin_dates",
+      "source_assertion": "Eugénie Brazier opening 12 Rue Royale (1921) and earning six Michelin stars simultaneously (1933).",
+      "epistemic_treatment": "Kept as claim_status=source_asserted_unverified pending primary Michelin Guide 1933 archival verification.",
+      "verification_action_required": "Culinary historian verification."
+    },
+    {
+      "flag_id": "FLAG-KR-01",
+      "country": "KR",
+      "record_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+      "passage_locator": "KR-P02",
+      "issue_type": "competing_origin_narratives",
+      "source_assertion": "Four competing origin theories for bibimbap: Eumbok ancestral rites, royal court, harvest field meal (nongbap), Lunar New Year’s Eve.",
+      "epistemic_treatment": "Classified as knowledge_class=contested_history, claim_status=disputed; presents all four without flattening into one fact.",
+      "verification_action_required": "Korean food historian review."
+    },
+    {
+      "flag_id": "FLAG-KR-02",
+      "country": "KR",
+      "record_id": "KR-KB-THEME-OBANGSAEK-FIVE-COLORS",
+      "passage_locator": "KR-P04",
+      "issue_type": "cultural_symbolism_vs_science",
+      "source_assertion": "Obangsaek five-color associations with directions and elements.",
+      "epistemic_treatment": "Classified as knowledge_class=interpretation; explicitly framed as a cultural/culinary aesthetic, not a scientific law.",
+      "verification_action_required": "Korean cultural educator review."
+    }
+  ]
+}

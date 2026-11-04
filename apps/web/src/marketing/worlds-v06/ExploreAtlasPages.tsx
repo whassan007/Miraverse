@@ -1,7 +1,9 @@
 /**
- * MiraVerse v0.8 — World Library (/explore), World Detail (/explore/:country),
+ * MiraVerse v1.3 (`CX02`, `P2`, `P5`) — World Library (/explore), 13-Section Country Experience (/explore/:country),
  * Adventures (/adventures), and Characters (/characters) Pages
- * Owners: AG12, AG13, AG14, CL05, CX05
+ * - Enforces exact v1.3 country sequence: 1. Lebanon: Byblos (LB), 2. Iraq: Baghdad (IQ), 3. Egypt: Cairo (EG),
+ *   4. France: Lyon (FR), 5. South Korea: Jeonju (KR).
+ * - Renders all 13 mandatory P2 cultural, geographic, quest-map, age-tier, timeline, artifact, and citation sections.
  */
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
@@ -10,12 +12,22 @@ import {
   V08_QUEST_LOOP_STEPS,
   V08_WORLD_VISUAL_MAP,
 } from '../../../../../packages/contracts/v08/index';
+import {
+  EPISTEMIC_BADGE_LABELS,
+  V13_AGE_TIERS,
+  V13_COUNTRIES_ORDERED,
+  V13_COUNTRY_EXPERIENCES,
+  V13_QUEST_ENCYCLOPEDIA,
+  type AgeTierId,
+} from '../../../../../packages/contracts/v13/index';
 import { RobloxLaunchBanner } from '../../launch/RobloxLaunchPage';
 
 export const ExploreAtlasPage: React.FC = () => {
   const [filter, setFilter] = useState<'ALL' | 'FLAGSHIP' | 'STORIES'>('ALL');
   const byblos = V08_WORLD_VISUAL_MAP.LB;
-  const expansionCodes: CountryCode[] = ['EG', 'IQ', 'KR', 'FR'];
+  const byblosV13 = V13_COUNTRY_EXPERIENCES.LB;
+  // Exact v1.3 expansion sequence: 2. Iraq (IQ), 3. Egypt (EG), 4. France (FR), 5. South Korea (KR)
+  const expansionCodes: CountryCode[] = ['IQ', 'EG', 'FR', 'KR'];
 
   return (
     <div
@@ -28,25 +40,47 @@ export const ExploreAtlasPage: React.FC = () => {
       }}
     >
       <div style={{ maxWidth: '1320px', margin: '0 auto' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '16px', marginBottom: '28px' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'flex-end',
+            flexWrap: 'wrap',
+            gap: '16px',
+            marginBottom: '28px',
+          }}
+        >
           <div>
-            <span style={{ fontSize: '12px', fontWeight: 800, color: '#F4A261', textTransform: 'uppercase', letterSpacing: '1.4px' }}>
-              MiraVerse World Library · Option A Release Matrix
+            <span
+              style={{
+                fontSize: '12px',
+                fontWeight: 800,
+                color: '#F4A261',
+                textTransform: 'uppercase',
+                letterSpacing: '1.4px',
+              }}
+            >
+              MiraVerse v1.3 Cultural Adventure Portal · Five Country Experiences
             </span>
-            <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(28px, 4vw, 44px)', margin: '6px 0 8px 0' }}>
-              Explore Five Cultural Worlds
+            <h1
+              style={{
+                fontFamily: 'Georgia, serif',
+                fontSize: 'clamp(28px, 4vw, 44px)',
+                margin: '6px 0 8px 0',
+              }}
+            >
+              Explore Five Cultural Worlds (Lebanon, Iraq, Egypt, France &amp; South Korea)
             </h1>
-            <p style={{ color: '#CBD5E1', margin: 0, maxWidth: '720px', fontSize: '15px' }}>
-              Begin your flagship 3D adventure in <strong>Byblos, Lebanon</strong> on Roblox and the Minecraft Bedrock companion, or read and preview all five 15-scene bilingual stories.
+            <p style={{ color: '#CBD5E1', margin: 0, maxWidth: '780px', fontSize: '15px', lineHeight: 1.55 }}>
+              Discover real-world geography, 25 illustrated quest maps, 100 age-adapted quest stages, historical timelines, and cultural artifacts across all five destinations.
             </p>
           </div>
 
-          {/* Helpful Destination Filter Tabs */}
           <div role="tablist" aria-label="Filter Destinations" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
             {[
-              { id: 'ALL' as const, label: 'All 5 Worlds' },
+              { id: 'ALL' as const, label: 'All 5 Worlds (1–5)' },
               { id: 'FLAGSHIP' as const, label: 'Playable Flagship (RC1)' },
-              { id: 'STORIES' as const, label: '15-Scene Stories & Preview' },
+              { id: 'STORIES' as const, label: '15-Scene Stories & Quests' },
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -70,7 +104,7 @@ export const ExploreAtlasPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Featured Byblos Flagship Hero Card (Always shown) */}
+        {/* 1. Lebanon: Byblos Flagship Card */}
         <article
           data-testid="explore-card-LB"
           style={{
@@ -88,7 +122,7 @@ export const ExploreAtlasPage: React.FC = () => {
           <div style={{ borderRadius: '16px', overflow: 'hidden', aspectRatio: '16 / 10', border: '1px solid rgba(244, 162, 97, 0.45)' }}>
             <img
               src={byblos.coverArtUrl}
-              alt={`${byblos.nameEn} — ${byblos.locationLabel}`}
+              alt={`1. ${byblosV13.countryNameEn}: ${byblosV13.cityName}`}
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
@@ -108,15 +142,15 @@ export const ExploreAtlasPage: React.FC = () => {
                 marginBottom: '10px',
               }}
             >
-              RC1 Flagship · Available First on Roblox &amp; Minecraft Bedrock
+              1. RC1 Flagship · Available First on Roblox &amp; Minecraft Bedrock
             </span>
 
             <h2 style={{ margin: '0 0 8px 0', fontSize: 'clamp(22px, 3vw, 30px)', fontFamily: 'Georgia, serif' }}>
-              {byblos.nameEn} · {byblos.locationLabel} (<span lang="ar-LB">{byblos.nameNative}</span>)
+              1. {byblosV13.countryNameEn}: {byblosV13.cityName} (<span lang="ar-LB">{byblos.nameNative}</span>)
             </h2>
 
             <p style={{ fontSize: '15px', color: '#E2E8F0', lineHeight: 1.55, marginBottom: '14px' }}>
-              {byblos.adventureHook}
+              {byblosV13.heroTagline} — {byblos.adventureHook}
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '18px' }}>
@@ -127,20 +161,6 @@ export const ExploreAtlasPage: React.FC = () => {
             </div>
 
             <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-              <Link
-                to="/play/LB"
-                style={{
-                  background: '#00B06F',
-                  color: '#032215',
-                  textDecoration: 'none',
-                  padding: '10px 20px',
-                  borderRadius: '999px',
-                  fontWeight: 900,
-                  fontSize: '14px',
-                }}
-              >
-                ▶ Play free on Roblox
-              </Link>
               <Link
                 to="/explore/LB"
                 style={{
@@ -153,7 +173,21 @@ export const ExploreAtlasPage: React.FC = () => {
                   fontSize: '14px',
                 }}
               >
-                World Details &amp; Gallery
+                Explore Lebanon Experience (13 Sections)
+              </Link>
+              <Link
+                to="/play/LB"
+                style={{
+                  background: '#00B06F',
+                  color: '#032215',
+                  textDecoration: 'none',
+                  padding: '10px 20px',
+                  borderRadius: '999px',
+                  fontWeight: 900,
+                  fontSize: '14px',
+                }}
+              >
+                ▶ Launch &amp; Quest Map
               </Link>
               <Link
                 to="/story/ar-LB"
@@ -173,11 +207,12 @@ export const ExploreAtlasPage: React.FC = () => {
           </div>
         </article>
 
-        {/* Symmetrical 4-Column Expansion Grid (EG, IQ, KR, FR — Zero 4+1 Orphan Layout!) */}
+        {/* Symmetrical 4-Column Grid in Exact v1.3 Order: 2. Iraq (IQ), 3. Egypt (EG), 4. France (FR), 5. South Korea (KR) */}
         {filter !== 'FLAGSHIP' && (
           <div className="mv-world-grid-4">
             {expansionCodes.map((code) => {
               const world = V08_WORLD_VISUAL_MAP[code];
+              const v13Exp = V13_COUNTRY_EXPERIENCES[code];
               return (
                 <article
                   key={code}
@@ -196,7 +231,7 @@ export const ExploreAtlasPage: React.FC = () => {
                     <div style={{ position: 'relative', aspectRatio: '16 / 10', overflow: 'hidden', background: '#0F172A' }}>
                       <img
                         src={world.coverArtUrl}
-                        alt={`${world.nameEn} — ${world.locationLabel}`}
+                        alt={`${v13Exp.orderIndex}. ${v13Exp.countryNameEn}: ${v13Exp.cityName}`}
                         loading="eager"
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                       />
@@ -216,14 +251,14 @@ export const ExploreAtlasPage: React.FC = () => {
                           marginBottom: '8px',
                         }}
                       >
-                        RC3 Expansion World · Story &amp; Preview Live
+                        {v13Exp.orderIndex}. RC3 Expansion World · Cultural Portal &amp; Bedrock Add-On Ready
                       </span>
 
                       <h2 style={{ margin: '0 0 6px 0', fontSize: '20px', fontFamily: 'Georgia, serif' }}>
-                        {world.nameEn} · {world.locationLabel}
+                        {v13Exp.orderIndex}. {v13Exp.countryNameEn}: {v13Exp.cityName}
                       </h2>
                       <p style={{ fontSize: '13px', color: '#CBD5E1', lineHeight: 1.48, marginBottom: '12px' }}>
-                        {world.adventureHook}
+                        {v13Exp.heroTagline}
                       </p>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: '#E2E8F0' }}>
                         <img src={world.portraitArtUrl} alt={world.mentorName} width={28} height={28} style={{ borderRadius: '50%' }} />
@@ -249,7 +284,7 @@ export const ExploreAtlasPage: React.FC = () => {
                         fontSize: '12px',
                       }}
                     >
-                      World Details
+                      Country Experience
                     </Link>
                     <Link
                       to={`/play/${code}`}
@@ -265,7 +300,7 @@ export const ExploreAtlasPage: React.FC = () => {
                         fontSize: '12px',
                       }}
                     >
-                      Preview &amp; Launch
+                      Quest Map &amp; Launch
                     </Link>
                   </div>
                 </article>
@@ -285,7 +320,16 @@ export const ExploreCountryDetailPage: React.FC = () => {
       ? (country || '').toUpperCase()
       : 'LB'
   ) as CountryCode;
+
   const world = V08_WORLD_VISUAL_MAP[code];
+  const v13Exp = V13_COUNTRY_EXPERIENCES[code];
+  const countryQuests = V13_QUEST_ENCYCLOPEDIA.filter((q) => q.country === code);
+
+  const [selectedAct, setSelectedAct] = useState<1 | 2 | 3 | 4 | 5>(1);
+  const [selectedAgeTier, setSelectedAgeTier] = useState<AgeTierId>('8-10');
+
+  const activeQuest = countryQuests.find((q) => q.actNumber === selectedAct) ?? countryQuests[0];
+  const activeStage = activeQuest.ageTiers[selectedAgeTier];
 
   return (
     <div
@@ -294,18 +338,54 @@ export const ExploreCountryDetailPage: React.FC = () => {
         minHeight: '88vh',
         background: '#0B1325',
         color: '#FFF8EE',
-        padding: '28px clamp(16px, 4vw, 56px) 64px',
+        padding: '28px clamp(16px, 4vw, 56px) 72px',
       }}
     >
-      <div style={{ maxWidth: '1160px', margin: '0 auto' }}>
-        <div style={{ marginBottom: '16px' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {/* Top Country Switcher in Exact v1.3 Order (1. LB, 2. IQ, 3. EG, 4. FR, 5. KR) */}
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '12px',
+            marginBottom: '18px',
+          }}
+        >
           <Link to="/explore" style={{ color: '#FFE29F', textDecoration: 'none', fontSize: '13px', fontWeight: 700 }}>
             ← Back to Five Worlds Library
           </Link>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            {V13_COUNTRIES_ORDERED.map((cc) => {
+              const exp = V13_COUNTRY_EXPERIENCES[cc];
+              const isCurrent = cc === code;
+              return (
+                <Link
+                  key={cc}
+                  to={`/explore/${cc}`}
+                  data-testid={`country-switch-${cc}`}
+                  style={{
+                    background: isCurrent ? '#F4A261' : 'rgba(30, 41, 59, 0.9)',
+                    color: isCurrent ? '#0B1325' : '#FFF8EE',
+                    textDecoration: 'none',
+                    padding: '6px 13px',
+                    borderRadius: '999px',
+                    fontSize: '12px',
+                    fontWeight: 800,
+                    border: '1px solid rgba(244, 162, 97, 0.45)',
+                  }}
+                >
+                  {exp.orderIndex}. {exp.countryNameEn}: {exp.cityName}
+                </Link>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Art-Directed World Hero Card */}
+        {/* SECTION 1 & 2: Original Cover Artwork + Historical & Cultural Introduction */}
         <section
+          data-testid="country-section-cover-and-intro"
           style={{
             background: `linear-gradient(135deg, ${world.surfaceTintHex} 0%, #131F38 100%)`,
             borderRadius: '24px',
@@ -320,8 +400,8 @@ export const ExploreCountryDetailPage: React.FC = () => {
         >
           <div style={{ borderRadius: '18px', overflow: 'hidden', aspectRatio: '16 / 10', border: '1px solid rgba(244, 162, 97, 0.5)' }}>
             <img
-              src={world.coverArtUrl}
-              alt={`${world.nameEn} — ${world.landmarkName}`}
+              src={v13Exp.coverArtUrl}
+              alt={`${v13Exp.countryNameEn}: ${v13Exp.cityName}`}
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
           </div>
@@ -340,33 +420,36 @@ export const ExploreCountryDetailPage: React.FC = () => {
                 marginBottom: '10px',
               }}
             >
-              {world.isFlagshipSlice ? 'RC1 Flagship Destination · Roblox & Bedrock' : 'RC3 Expansion Destination · Story & Preview Live'}
+              Destination #{v13Exp.orderIndex} of 5 ·{' '}
+              {v13Exp.platformInfo.robloxPlayableNow ? 'RC1 Flagship Playable' : 'RC3 Expansion World'}
             </span>
 
-            <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(28px, 4vw, 42px)', margin: '4px 0 10px 0' }}>
-              {world.chapterTitle} ({world.nameEn} · <span lang={world.storyLang}>{world.nameNative}</span>)
+            <h1 style={{ fontFamily: 'Georgia, serif', fontSize: 'clamp(26px, 3.8vw, 40px)', margin: '4px 0 8px 0' }}>
+              {v13Exp.orderIndex}. {v13Exp.countryNameEn}: {v13Exp.cityName} (<span lang={world.storyLang}>{v13Exp.countryNameNative}</span>)
             </h1>
-
-            <p style={{ color: '#E2E8F0', fontSize: '16px', lineHeight: 1.6, marginBottom: '16px' }}>
-              {world.adventureHook}
+            <p style={{ color: '#FFE29F', fontSize: '15px', fontWeight: 700, margin: '0 0 12px 0' }}>
+              {v13Exp.heroTagline}
+            </p>
+            <p style={{ color: '#E2E8F0', fontSize: '14px', lineHeight: 1.65, marginBottom: '16px' }}>
+              {v13Exp.historicalIntroduction}
             </p>
 
-            {/* Mentor Greeting Box */}
+            {/* Mentor Greeting */}
             <div
               style={{
                 background: 'rgba(11, 19, 37, 0.78)',
                 borderRadius: '16px',
-                padding: '14px 16px',
+                padding: '12px 16px',
                 border: '1px solid rgba(244, 162, 97, 0.4)',
                 display: 'flex',
                 gap: '14px',
                 alignItems: 'center',
-                marginBottom: '20px',
+                marginBottom: '18px',
               }}
             >
-              <img src={world.portraitArtUrl} alt={world.mentorName} width={56} height={56} style={{ borderRadius: '50%', flexShrink: 0 }} />
+              <img src={v13Exp.mentorPortraitUrl} alt={world.mentorName} width={54} height={54} style={{ borderRadius: '50%', flexShrink: 0 }} />
               <div>
-                <strong style={{ color: '#FEF08A', fontSize: '15px' }}>
+                <strong style={{ color: '#FEF08A', fontSize: '14px' }}>
                   {world.mentorName} · {world.mentorTitle}
                 </strong>
                 <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#CBD5E1' }}>
@@ -375,35 +458,35 @@ export const ExploreCountryDetailPage: React.FC = () => {
               </div>
             </div>
 
-            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
               <Link
                 to={`/play/${code}`}
                 style={{
                   background: '#00B06F',
                   color: '#032215',
                   textDecoration: 'none',
-                  padding: '12px 24px',
+                  padding: '11px 20px',
                   borderRadius: '999px',
                   fontWeight: 900,
-                  fontSize: '15px',
+                  fontSize: '14px',
                 }}
               >
-                ▶ Play free on Roblox ({world.nameEn})
+                ▶ Launch Platform &amp; Quest Map ({v13Exp.cityName})
               </Link>
               <Link
-                to="/minecraft"
+                to="/atlas"
                 style={{
-                  background: 'rgba(245, 158, 11, 0.22)',
-                  border: '1px solid #F59E0B',
-                  color: '#FDE68A',
+                  background: 'rgba(56, 189, 248, 0.2)',
+                  border: '1px solid #38BDF8',
+                  color: '#BAE6FD',
                   textDecoration: 'none',
-                  padding: '12px 22px',
+                  padding: '11px 18px',
                   borderRadius: '999px',
                   fontWeight: 800,
                   fontSize: '14px',
                 }}
               >
-                Play in Minecraft Bedrock
+                🗺️ Open World Atlas
               </Link>
               <Link
                 to={`/story/${world.storyLang}`}
@@ -411,112 +494,485 @@ export const ExploreCountryDetailPage: React.FC = () => {
                   background: 'rgba(255,255,255,0.1)',
                   color: '#FFF8EE',
                   textDecoration: 'none',
-                  padding: '12px 20px',
+                  padding: '11px 18px',
                   borderRadius: '999px',
                   fontWeight: 700,
                   fontSize: '14px',
                 }}
               >
-                Read Illustrated Story ({world.storyLang})
+                Read 15-Scene Story
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Official Roblox Launch Status Banner */}
-        <RobloxLaunchBanner countryCode={code} />
+        {/* Cultural Knowledge Themes (Historical vs Mythological Epistemic Badges) */}
+        <section
+          data-testid="country-section-cultural-themes"
+          style={{
+            background: '#131F38',
+            borderRadius: '20px',
+            padding: '24px',
+            border: '1px solid rgba(244, 162, 97, 0.35)',
+            marginBottom: '28px',
+          }}
+        >
+          <h2 style={{ marginTop: 0, fontFamily: 'Georgia, serif', fontSize: '24px', color: '#FFE29F' }}>
+            2. Cultural Heritage, History &amp; Epistemic Classification
+          </h2>
+          <p style={{ color: '#CBD5E1', fontSize: '14px', lineHeight: 1.6, marginBottom: '18px' }}>
+            {v13Exp.geographicSummary}
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '14px' }}>
+            {v13Exp.culturalThemes.map((theme) => (
+              <article
+                key={theme.title}
+                style={{
+                  background: 'rgba(9, 18, 36, 0.85)',
+                  borderRadius: '14px',
+                  padding: '16px',
+                  border: '1px solid rgba(255, 248, 238, 0.12)',
+                }}
+              >
+                <span
+                  style={{
+                    display: 'inline-block',
+                    background: 'rgba(56, 189, 248, 0.16)',
+                    border: '1px solid #38BDF8',
+                    color: '#BAE6FD',
+                    padding: '2px 8px',
+                    borderRadius: '999px',
+                    fontSize: '10px',
+                    fontWeight: 800,
+                    marginBottom: '8px',
+                  }}
+                >
+                  {EPISTEMIC_BADGE_LABELS[theme.classification]}
+                </span>
+                <h3 style={{ margin: '0 0 6px 0', fontSize: '16px', color: '#FFF8EE' }}>{theme.title}</h3>
+                <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1', lineHeight: 1.55 }}>{theme.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
 
-        {/* Architectural Cues & Collectible Stamp Showcase */}
+        {/* SECTION 3: Interactive Real-World Geographic Map */}
+        <section
+          data-testid="country-section-geographic-map"
+          style={{
+            background: '#131F38',
+            borderRadius: '20px',
+            padding: '24px',
+            border: '1px solid rgba(56, 189, 248, 0.4)',
+            marginBottom: '28px',
+          }}
+        >
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: '16px' }}>
+            <div>
+              <h2 style={{ margin: 0, fontFamily: 'Georgia, serif', fontSize: '24px', color: '#7DD3FC' }}>
+                3. Real-World Geographic Atlas ({v13Exp.cityName}: {v13Exp.coordinatesCenter[0].toFixed(4)}°N, {v13Exp.coordinatesCenter[1].toFixed(4)}°E)
+              </h2>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#94A3B8' }}>
+                Verified WGS84 coordinates and archaeological/architectural landmarks — separated from fictional adventure checkpoints.
+              </p>
+            </div>
+            <Link to="/atlas" style={{ color: '#7DD3FC', fontWeight: 800, fontSize: '13px' }}>
+              Open Full Interactive World Atlas →
+            </Link>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '14px' }}>
+            {v13Exp.landmarks.map((lm) => (
+              <article
+                key={lm.landmarkId}
+                style={{
+                  background: 'rgba(9, 18, 36, 0.88)',
+                  borderRadius: '14px',
+                  padding: '15px',
+                  border: '1px solid rgba(56, 189, 248, 0.3)',
+                }}
+              >
+                <div style={{ fontSize: '11px', fontFamily: 'monospace', color: '#7DD3FC', fontWeight: 800, marginBottom: '4px' }}>
+                  WGS84: {lm.coordinates[0].toFixed(4)}°N, {lm.coordinates[1].toFixed(4)}°E
+                </div>
+                <h3 style={{ margin: '0 0 6px 0', fontSize: '16px', color: '#FFF8EE' }}>
+                  {lm.name} ({lm.nativeName})
+                </h3>
+                <p style={{ margin: '0 0 8px 0', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.5 }}>
+                  {lm.summary}
+                </p>
+                <div style={{ fontSize: '11px', color: '#94A3B8' }}>Ref: {lm.educationalReference}</div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        {/* SECTIONS 4, 5 & 6: 5 Illustrated Quest Maps + 5 Quest Acts + 4 Age-Specific Difficulty Tracks */}
+        <section
+          data-testid="country-section-quests-and-age-tracks"
+          style={{
+            background: '#131F38',
+            borderRadius: '20px',
+            padding: '24px',
+            border: '1px solid rgba(244, 162, 97, 0.45)',
+            marginBottom: '28px',
+          }}
+        >
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: '16px' }}>
+            <div>
+              <h2 style={{ margin: 0, fontFamily: 'Georgia, serif', fontSize: '24px', color: '#FFE29F' }}>
+                4–6. Five Illustrated Quest Maps, Five Quest Acts &amp; Four Age-Adapted Learning Tracks
+              </h2>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#CBD5E1' }}>
+                Select any of the 5 quest acts and switch between Ages 5–7, 8–10, 11–13, and 14–17.
+              </p>
+            </div>
+
+            {/* 4 Age-Specific Difficulty Tracks */}
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+              {V13_AGE_TIERS.map((tier) => (
+                <button
+                  key={tier.id}
+                  type="button"
+                  data-testid={`country-age-tier-${tier.id}`}
+                  onClick={() => setSelectedAgeTier(tier.id)}
+                  style={{
+                    background: selectedAgeTier === tier.id ? '#38BDF8' : 'rgba(9, 18, 36, 0.9)',
+                    color: selectedAgeTier === tier.id ? '#082F49' : '#E2E8F0',
+                    border: '1px solid rgba(56, 189, 248, 0.45)',
+                    borderRadius: '999px',
+                    padding: '6px 13px',
+                    fontSize: '12px',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                  }}
+                >
+                  {tier.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* 5 Quest Act Selector */}
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '18px' }}>
+            {countryQuests.map((q) => (
+              <button
+                key={q.questId}
+                type="button"
+                data-testid={`country-quest-act-${q.actNumber}`}
+                onClick={() => setSelectedAct(q.actNumber)}
+                style={{
+                  background: selectedAct === q.actNumber ? '#F4A261' : 'rgba(9, 18, 36, 0.9)',
+                  color: selectedAct === q.actNumber ? '#0B1325' : '#FFF8EE',
+                  border: '1px solid rgba(244, 162, 97, 0.45)',
+                  borderRadius: '999px',
+                  padding: '8px 15px',
+                  fontSize: '12px',
+                  fontWeight: 800,
+                  cursor: 'pointer',
+                }}
+              >
+                Act {q.actNumber}: {q.titleEn}
+              </button>
+            ))}
+          </div>
+
+          {/* Active Illustrated Quest Map + 5 Quest Acts Overview */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(310px, 1fr))', gap: '20px', alignItems: 'start' }}>
+            <div
+              style={{
+                position: 'relative',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                border: '2px solid rgba(244, 162, 97, 0.6)',
+                aspectRatio: '16 / 9',
+              }}
+            >
+              <img
+                src={activeQuest.questMapImageUrl}
+                alt={activeQuest.questMapZoneLabel}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+              {activeQuest.waypoints.map((wp) => (
+                <div
+                  key={wp.waypointId}
+                  style={{
+                    position: 'absolute',
+                    left: `${wp.xPct}%`,
+                    top: `${wp.yPct}%`,
+                    transform: 'translate(-50%, -50%)',
+                    background: wp.kind === 'START' ? '#38BDF8' : wp.kind === 'NPC' ? '#F4A261' : '#10B981',
+                    color: '#0B1325',
+                    padding: '4px 9px',
+                    borderRadius: '999px',
+                    fontSize: '11px',
+                    fontWeight: 900,
+                    border: '2px solid #FFF8EE',
+                  }}
+                >
+                  {wp.kind}: {wp.label}
+                </div>
+              ))}
+            </div>
+
+            <div style={{ background: 'rgba(9, 18, 36, 0.88)', borderRadius: '16px', padding: '18px' }}>
+              <span style={{ fontSize: '11px', color: '#7DD3FC', fontWeight: 800 }}>
+                Act {activeQuest.actNumber} of 5 · Track: Ages {selectedAgeTier} · {EPISTEMIC_BADGE_LABELS[activeQuest.epistemicClassification]}
+              </span>
+              <h3 style={{ margin: '4px 0 8px 0', fontSize: '20px', fontFamily: 'Georgia, serif' }}>
+                {activeQuest.titleEn} ({activeQuest.titleNative})
+              </h3>
+              <p style={{ fontSize: '14px', color: '#E2E8F0', lineHeight: 1.55, marginBottom: '10px' }}>
+                {activeQuest.narrativeIntro}
+              </p>
+              <p style={{ fontSize: '13px', color: '#FDE68A', marginBottom: '10px' }}>
+                <strong>Activity ({selectedAgeTier} · {activeStage.focusTitle}):</strong> {activeStage.guidedActivity} — {activeStage.challengePrompt}
+              </p>
+              <p style={{ fontSize: '13px', color: '#A7F3D0', marginBottom: '12px' }}>
+                <strong>Cultural Knowledge:</strong> {activeQuest.culturalKnowledgeSummary} ({activeStage.historicalReflection})
+              </p>
+              <Link
+                to={`/quests/${activeQuest.questId}`}
+                style={{ color: '#F4A261', fontWeight: 800, fontSize: '13px' }}
+              >
+                Open Full Quest Entry in Encyclopedia →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTIONS 7, 8 & 9: Important People & Cultural Figures + Architecture & Landmarks + Food & Traditional Crafts */}
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
-            gap: '22px',
-            marginTop: '28px',
-            marginBottom: '32px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: '20px',
+            marginBottom: '28px',
           }}
         >
+          {/* 7. Important People & Cultural Figures */}
           <section
+            data-testid="country-section-figures"
             style={{
               background: '#131F38',
               borderRadius: '18px',
-              padding: '22px',
+              padding: '20px',
               border: '1px solid rgba(244, 162, 97, 0.35)',
             }}
           >
-            <h2 style={{ marginTop: 0, fontSize: '20px', fontFamily: 'Georgia, serif', color: '#FEF08A' }}>
-              Authentic Architectural &amp; Cultural Details
+            <h2 style={{ marginTop: 0, fontSize: '20px', fontFamily: 'Georgia, serif', color: '#FFE29F' }}>
+              7. Important People &amp; Cultural Figures
             </h2>
-            <ul style={{ margin: 0, paddingLeft: '20px', color: '#E2E8F0', fontSize: '14px', lineHeight: 1.7 }}>
-              {world.architecturalCues.map((cue) => (
-                <li key={cue}>{cue}</li>
+            {v13Exp.importantFigures.map((fig) => (
+              <div key={fig.id} style={{ marginBottom: '14px', paddingBottom: '12px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+                <strong style={{ color: '#FFF8EE', fontSize: '15px' }}>{fig.name}</strong>{' '}
+                <span style={{ fontSize: '12px', color: '#93C5FD' }}>({fig.era})</span>
+                <div style={{ fontSize: '12px', color: '#F4A261', fontWeight: 700, marginBottom: '4px' }}>{fig.role}</div>
+                <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1', lineHeight: 1.5 }}>{fig.contribution}</p>
+              </div>
+            ))}
+          </section>
+
+          {/* 8. Architecture & Landmarks */}
+          <section
+            data-testid="country-section-architecture"
+            style={{
+              background: '#131F38',
+              borderRadius: '18px',
+              padding: '20px',
+              border: '1px solid rgba(244, 162, 97, 0.35)',
+            }}
+          >
+            <h2 style={{ marginTop: 0, fontSize: '20px', fontFamily: 'Georgia, serif', color: '#FFE29F' }}>
+              8. Architecture &amp; Landmarks
+            </h2>
+            <ul style={{ margin: 0, paddingLeft: '18px', color: '#E2E8F0', fontSize: '13px', lineHeight: 1.7 }}>
+              {v13Exp.architectureAndLandmarksSummary.map((item) => (
+                <li key={item} style={{ marginBottom: '8px' }}>
+                  {item}
+                </li>
               ))}
-              <li>
-                Signature Culinary Tradition: <strong>{world.signatureDish}</strong>
-              </li>
             </ul>
           </section>
 
+          {/* 9. Food & Traditional Crafts */}
           <section
+            data-testid="country-section-food-crafts"
             style={{
               background: '#131F38',
               borderRadius: '18px',
-              padding: '22px',
+              padding: '20px',
               border: '1px solid rgba(244, 162, 97, 0.35)',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '18px',
             }}
           >
-            <img src={world.stampArtUrl} alt={`${world.nameEn} Passport Stamp`} width={96} height={96} style={{ flexShrink: 0 }} />
-            <div>
-              <h2 style={{ margin: '0 0 6px 0', fontSize: '20px', fontFamily: 'Georgia, serif', color: '#FEF08A' }}>
-                Chapter 1 Collectible Stamp
-              </h2>
-              <p style={{ margin: '0 0 10px 0', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.5 }}>
-                Complete all five cultural quests (Gather, Trade, Build, Cook, and Word) to earn the {world.nameEn} souvenir stamp in your Passport.
+            <h2 style={{ marginTop: 0, fontSize: '20px', fontFamily: 'Georgia, serif', color: '#FFE29F' }}>
+              9. Food &amp; Traditional Crafts
+            </h2>
+            <div style={{ marginBottom: '14px', paddingBottom: '12px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+              <span style={{ fontSize: '11px', fontWeight: 800, color: '#F4A261' }}>[CULINARY HERITAGE]</span>{' '}
+              <strong style={{ color: '#FFF8EE', fontSize: '15px' }}>{v13Exp.foodAndCrafts.dishName}</strong>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.5 }}>
+                {v13Exp.foodAndCrafts.dishDescription}
               </p>
-              <Link to="/passport" style={{ color: '#6EE7B7', fontWeight: 800, fontSize: '13px' }}>
-                View in My Passport →
-              </Link>
+            </div>
+            <div>
+              <span style={{ fontSize: '11px', fontWeight: 800, color: '#6EE7B7' }}>[ARTISAN CRAFT]</span>{' '}
+              <strong style={{ color: '#FFF8EE', fontSize: '15px' }}>{v13Exp.foodAndCrafts.craftName}</strong>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.5 }}>
+                {v13Exp.foodAndCrafts.craftDescription}
+              </p>
             </div>
           </section>
         </div>
 
-        {/* 5 Illustrated Story & Quest Scene Cards */}
-        <section>
-          <h2 style={{ fontFamily: 'Georgia, serif', fontSize: '24px', marginBottom: '14px' }}>
-            Illustrated Chapter Scenes ({world.nameEn})
+        {/* SECTION 10: Historical Timeline */}
+        <section
+          data-testid="country-section-timeline"
+          style={{
+            background: '#131F38',
+            borderRadius: '20px',
+            padding: '24px',
+            border: '1px solid rgba(244, 162, 97, 0.35)',
+            marginBottom: '28px',
+          }}
+        >
+          <h2 style={{ marginTop: 0, fontFamily: 'Georgia, serif', fontSize: '24px', color: '#FFE29F' }}>
+            10. Interactive Historical Timeline ({v13Exp.countryNameEn})
           </h2>
-          <div className="mv-quest-grid-5">
-            {world.sceneArtUrls.map((sceneUrl, idx) => {
-              const step = V08_QUEST_LOOP_STEPS[idx];
-              return (
-                <article
-                  key={sceneUrl}
-                  style={{
-                    background: '#131F38',
-                    borderRadius: '16px',
-                    overflow: 'hidden',
-                    border: '1px solid rgba(255,255,255,0.12)',
-                  }}
-                >
-                  <img
-                    src={sceneUrl}
-                    alt={`${world.nameEn} Scene ${idx + 1}: ${step?.title || ''}`}
-                    loading="eager"
-                    style={{ width: '100%', aspectRatio: '16 / 10', objectFit: 'cover' }}
-                  />
-                  <div style={{ padding: '12px' }}>
-                    <strong style={{ fontSize: '13px', color: '#FEF08A', display: 'block' }}>
-                      {idx + 1}. {step?.title}
-                    </strong>
-                    <span style={{ fontSize: '12px', color: '#CBD5E1' }}>{step?.badge}</span>
-                  </div>
-                </article>
-              );
-            })}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '14px' }}>
+            {v13Exp.timeline.map((ev) => (
+              <article
+                key={ev.title}
+                style={{
+                  background: 'rgba(9, 18, 36, 0.88)',
+                  borderRadius: '14px',
+                  padding: '16px',
+                  borderLeft: '4px solid #F4A261',
+                }}
+              >
+                <div style={{ fontSize: '13px', fontWeight: 900, color: '#F4A261', marginBottom: '4px' }}>
+                  {ev.era}
+                </div>
+                <h3 style={{ margin: '0 0 6px 0', fontSize: '16px', color: '#FFF8EE' }}>{ev.title}</h3>
+                <p style={{ margin: '0 0 8px 0', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.5 }}>{ev.description}</p>
+                <span style={{ fontSize: '10px', color: '#7DD3FC', fontWeight: 800 }}>
+                  {EPISTEMIC_BADGE_LABELS[ev.classification]}
+                </span>
+              </article>
+            ))}
           </div>
+        </section>
+
+        {/* SECTION 11 & 12: Cultural Artifact Gallery + Verified Learning References */}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+            gap: '20px',
+            marginBottom: '28px',
+          }}
+        >
+          {/* 11. Artifact Gallery */}
+          <section
+            data-testid="country-section-artifacts"
+            style={{
+              background: '#131F38',
+              borderRadius: '20px',
+              padding: '22px',
+              border: '1px solid rgba(244, 162, 97, 0.35)',
+            }}
+          >
+            <h2 style={{ marginTop: 0, fontFamily: 'Georgia, serif', fontSize: '22px', color: '#FFE29F' }}>
+              11. Collectible Cultural Artifacts Gallery
+            </h2>
+            <img
+              src="/art/v13/cultural-artifacts-treasury.jpg"
+              alt="MiraVerse Cultural Artifacts Treasury"
+              style={{ width: '100%', borderRadius: '12px', aspectRatio: '16 / 9', objectFit: 'cover', marginBottom: '14px' }}
+            />
+            {v13Exp.artifacts.map((art) => (
+              <div key={art.artifactId} style={{ marginBottom: '12px', paddingBottom: '10px', borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+                <strong style={{ color: '#FFF8EE', fontSize: '15px' }}>
+                  {art.name} ({art.nativeName})
+                </strong>{' '}
+                <span style={{ fontSize: '12px', color: '#93C5FD' }}>· {art.materialAndPeriod}</span>
+                <p style={{ margin: '4px 0', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.5 }}>
+                  {art.description}
+                </p>
+              </div>
+            ))}
+          </section>
+
+          {/* 12. Verified Learning References */}
+          <section
+            data-testid="country-section-references"
+            style={{
+              background: '#131F38',
+              borderRadius: '20px',
+              padding: '22px',
+              border: '1px solid rgba(56, 189, 248, 0.35)',
+            }}
+          >
+            <h2 style={{ marginTop: 0, fontFamily: 'Georgia, serif', fontSize: '22px', color: '#7DD3FC' }}>
+              12. Verified Learning References &amp; Citations
+            </h2>
+            <p style={{ fontSize: '13px', color: '#CBD5E1', marginBottom: '14px' }}>
+              Every cultural, archaeological, and historical lesson in {v13Exp.countryNameEn} is grounded in verified museum and heritage documentation:
+            </p>
+            {v13Exp.verifiedReferences.map((ref) => (
+              <div
+                key={ref.title}
+                style={{
+                  background: 'rgba(9, 18, 36, 0.85)',
+                  borderRadius: '12px',
+                  padding: '14px',
+                  marginBottom: '12px',
+                }}
+              >
+                <strong style={{ color: '#FFF8EE', fontSize: '14px', display: 'block' }}>{ref.title}</strong>
+                <div style={{ fontSize: '12px', color: '#F4A261', fontWeight: 700, margin: '2px 0 6px' }}>
+                  Source: {ref.source}
+                </div>
+                <div style={{ fontSize: '11px', color: '#7DD3FC' }}>
+                  Classification: {EPISTEMIC_BADGE_LABELS[ref.classification]}
+                </div>
+              </div>
+            ))}
+          </section>
+        </div>
+
+        {/* SECTION 13: Truthful Roblox & Minecraft Quest Information */}
+        <section
+          data-testid="country-section-platform-info"
+          style={{
+            background: '#131F38',
+            borderRadius: '20px',
+            padding: '24px',
+            border: '1px solid rgba(0, 176, 111, 0.4)',
+          }}
+        >
+          <h2 style={{ marginTop: 0, fontFamily: 'Georgia, serif', fontSize: '24px', color: '#6EE7B7' }}>
+            13. Verified Roblox &amp; Minecraft Bedrock Quest Information
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px', marginBottom: '16px' }}>
+            <div style={{ background: 'rgba(9, 18, 36, 0.85)', padding: '16px', borderRadius: '14px' }}>
+              <strong style={{ color: '#6EE7B7', fontSize: '15px', display: 'block', marginBottom: '6px' }}>
+                Roblox Social Adventure ({v13Exp.platformInfo.robloxPlayableNow ? 'RC1 Playable Now' : 'RC3 Expansion Planned'})
+              </strong>
+              <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1', lineHeight: 1.55 }}>
+                {v13Exp.platformInfo.robloxSummary}
+              </p>
+            </div>
+            <div style={{ background: 'rgba(9, 18, 36, 0.85)', padding: '16px', borderRadius: '14px' }}>
+              <strong style={{ color: '#FDE68A', fontSize: '15px', display: 'block', marginBottom: '6px' }}>
+                Minecraft Bedrock Companion ({v13Exp.platformInfo.minecraftAddonReady ? 'RC2 .mcaddon Ready' : 'Planned'})
+              </strong>
+              <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1', lineHeight: 1.55 }}>
+                {v13Exp.platformInfo.minecraftSummary}
+              </p>
+            </div>
+          </div>
+          <RobloxLaunchBanner countryCode={code} />
         </section>
       </div>
     </div>
@@ -535,7 +991,7 @@ export const AdventuresCatalogPage: React.FC = () => (
   >
     <div style={{ maxWidth: '1240px', margin: '0 auto' }}>
       <span style={{ fontSize: '12px', fontWeight: 800, color: '#6EE7B7', textTransform: 'uppercase', letterSpacing: '1.4px' }}>
-        How to Play MiraVerse · Ages 8–12
+        How to Play MiraVerse · Ages 5–17 (4 Age-Adapted Tracks)
       </span>
       <h1 style={{ fontFamily: 'Georgia, serif', margin: '6px 0 12px 0' }}>
         Five Hands-On Cultural Quest Mechanics
@@ -570,7 +1026,7 @@ export const AdventuresCatalogPage: React.FC = () => (
 
       <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
         <Link
-          to="/play/LB"
+          to="/quests"
           style={{
             background: '#00B06F',
             color: '#032215',
@@ -580,7 +1036,7 @@ export const AdventuresCatalogPage: React.FC = () => (
             textDecoration: 'none',
           }}
         >
-          ▶ Play free on Roblox (Byblos)
+          📖 Open 25-Quest Encyclopedia
         </Link>
         <Link
           to="/explore"
@@ -615,11 +1071,27 @@ export const CharactersShowcasePage: React.FC = () => (
         Original Character Cast &amp; Earned Wardrobe
       </span>
       <h1 style={{ fontFamily: 'Georgia, serif', margin: '6px 0 12px 0' }}>
-        Meet Mira, Our Elder Mentors &amp; the Roblox Avatar Studio
+        Meet Mira, Our Five Cultural Mentors &amp; the Roblox Avatar Studio
       </h1>
-      <p style={{ color: '#CBD5E1', marginBottom: '28px', maxWidth: '760px' }}>
+      <p style={{ color: '#CBD5E1', marginBottom: '20px', maxWidth: '760px' }}>
         Customize your hero inside the Roblox Avatar Studio using earned-only Mira Tokens: equip the Byblos Artisan Heritage Vest, Cedar Explorer Satchel, Cairo Fanous Daypack, Baghdad Sun-Weave Hat, Jeonju Durumagi Jacket, and Vieux Lyon Boulangerie Beret.
       </p>
+
+      <div
+        style={{
+          borderRadius: '20px',
+          overflow: 'hidden',
+          border: '2px solid rgba(244, 162, 97, 0.5)',
+          aspectRatio: '16 / 9',
+          marginBottom: '28px',
+        }}
+      >
+        <img
+          src="/art/v13/mentors-ensemble.jpg"
+          alt="Mira and the Five Cultural Mentors Ensemble"
+          style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+        />
+      </div>
 
       <div className="mv-mentor-grid-6">
         <article style={{ background: '#131F38', borderRadius: '18px', padding: '20px', border: '2px solid #F4A261' }}>
@@ -630,14 +1102,15 @@ export const CharactersShowcasePage: React.FC = () => (
           </p>
         </article>
 
-        {COUNTRIES.map((code) => {
+        {V13_COUNTRIES_ORDERED.map((code) => {
           const w = V08_WORLD_VISUAL_MAP[code];
+          const exp = V13_COUNTRY_EXPERIENCES[code];
           return (
             <article key={code} style={{ background: '#131F38', borderRadius: '18px', padding: '20px', border: `1px solid ${w.primaryColorHex}` }}>
               <img src={w.portraitArtUrl} alt={w.mentorName} width={84} height={84} style={{ borderRadius: '50%', marginBottom: '12px' }} />
               <h2 style={{ margin: '0 0 4px 0', fontSize: '20px' }}>{w.mentorName}</h2>
               <div style={{ fontSize: '12px', color: w.accentColorHex, fontWeight: 700, marginBottom: '8px' }}>
-                {w.nameEn} · {w.mentorTitle}
+                {exp.orderIndex}. {exp.countryNameEn}: {exp.cityName} · {w.mentorTitle}
               </div>
               <p style={{ margin: 0, fontSize: '13px', color: '#CBD5E1' }}>“{w.mentorGreetingEn}”</p>
             </article>

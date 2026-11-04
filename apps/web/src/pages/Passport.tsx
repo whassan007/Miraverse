@@ -10,15 +10,20 @@ import { useState, type FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { clearStamps, loadStamps, saveStamp, verify } from '../../../../packages/shared/stamp';
 import { V08_WORLD_VISUAL_MAP } from '../../../../packages/contracts/v08/index';
+import {
+  V13_AGE_TIERS,
+  V13_COUNTRIES_ORDERED,
+  V13_COUNTRY_EXPERIENCES,
+} from '../../../../packages/contracts/v13/index';
 import type { CountryCode } from '../../../../packages/contracts/index';
 import { useI18n } from '../i18n';
 
 const COUNTRIES: Array<{ id: CountryCode; name: string; colors: [string, string] }> = [
-  { id: 'LB', name: 'Lebanon', colors: ['#0D9488', '#F4A261'] },
-  { id: 'EG', name: 'Egypt', colors: ['#D97706', '#FBBF24'] },
-  { id: 'IQ', name: 'Iraq', colors: ['#0284C7', '#38BDF8'] },
-  { id: 'KR', name: 'South Korea', colors: ['#4F46E5', '#A5B4FC'] },
-  { id: 'FR', name: 'France', colors: ['#2563EB', '#F59E0B'] },
+  { id: 'LB', name: '1. Lebanon: Byblos', colors: ['#0D9488', '#F4A261'] },
+  { id: 'IQ', name: '2. Iraq: Baghdad', colors: ['#0284C7', '#38BDF8'] },
+  { id: 'EG', name: '3. Egypt: Cairo', colors: ['#D97706', '#FBBF24'] },
+  { id: 'FR', name: '4. France: Lyon', colors: ['#2563EB', '#F59E0B'] },
+  { id: 'KR', name: '5. South Korea: Jeonju', colors: ['#4F46E5', '#A5B4FC'] },
 ];
 
 export default function Passport() {
@@ -324,6 +329,97 @@ export default function Passport() {
             );
           })}
         </ul>
+
+        {/* v1.3 Collected Cultural Artifacts, Historical Discoveries & Age-Adapted Learning Milestones */}
+        <section
+          data-testid="passport-artifacts-and-milestones"
+          aria-label="Cultural Artifacts, Historical Discoveries, and Learning Milestones"
+          style={{
+            background: '#131F38',
+            borderRadius: '22px',
+            padding: '24px',
+            border: '1px solid rgba(244, 162, 97, 0.45)',
+            marginBottom: '28px',
+          }}
+        >
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '22px', alignItems: 'start', marginBottom: '22px' }}>
+            <div>
+              <span style={{ fontSize: '11px', fontWeight: 800, color: '#F4A261', textTransform: 'uppercase' }}>
+                Passport Treasury · 10 Cultural Artifacts &amp; Discoveries
+              </span>
+              <h2 style={{ margin: '4px 0 8px 0', fontSize: '24px', fontFamily: 'Georgia, serif', color: '#FEF08A' }}>
+                Collected Cultural Artifacts &amp; Historical Discoveries
+              </h2>
+              <p style={{ margin: '0 0 14px 0', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.55 }}>
+                Each country stamp unlocks two regional cultural artifacts and historical discoveries in your Explorer Passport album, spanning Phoenician maritime trade, Baghdad’s House of Wisdom, Fatimid Cairo fanous craft, Lyon silk weaving, and Jeonju Obangsaek harmony.
+              </p>
+              <div style={{ borderRadius: '14px', overflow: 'hidden', border: '1px solid rgba(244, 162, 97, 0.4)', aspectRatio: '16 / 9' }}>
+                <img
+                  src="/art/v13/cultural-artifacts-treasury.jpg"
+                  alt="MiraVerse Cultural Artifacts Treasury"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+            </div>
+
+            <div>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: '18px', color: '#7DD3FC', fontFamily: 'Georgia, serif' }}>
+                Age-Adapted Learning Milestones (Ages 5–17)
+              </h3>
+              <div style={{ display: 'grid', gap: '10px', marginBottom: '16px' }}>
+                {V13_AGE_TIERS.map((tier) => (
+                  <div
+                    key={tier.id}
+                    data-testid={`passport-milestone-${tier.id}`}
+                    style={{
+                      background: 'rgba(11, 19, 37, 0.85)',
+                      borderRadius: '12px',
+                      padding: '12px 14px',
+                      border: '1px solid rgba(56, 189, 248, 0.3)',
+                    }}
+                  >
+                    <div style={{ fontSize: '13px', fontWeight: 800, color: '#BAE6FD' }}>
+                      {tier.label} · {tier.readingLevel}
+                    </div>
+                    <div style={{ fontSize: '12px', color: '#CBD5E1', marginTop: '3px' }}>
+                      {tier.pedagogyFocus}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* 10 Regional Cultural Artifacts Grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px' }}>
+            {V13_COUNTRIES_ORDERED.flatMap((cc) => {
+              const exp = V13_COUNTRY_EXPERIENCES[cc];
+              const unlocked = stamps.some((s) => s.country === cc && s.chapter === 1);
+              return exp.artifacts.map((art) => (
+                <article
+                  key={art.artifactId}
+                  data-testid={`passport-artifact-${art.artifactId}`}
+                  style={{
+                    background: unlocked ? 'rgba(16, 185, 129, 0.14)' : 'rgba(11, 19, 37, 0.78)',
+                    borderRadius: '12px',
+                    padding: '12px',
+                    border: unlocked ? '1px solid #10B981' : '1px solid rgba(255,255,255,0.12)',
+                  }}
+                >
+                  <div style={{ fontSize: '10px', fontWeight: 800, color: unlocked ? '#6EE7B7' : '#94A3B8' }}>
+                    {exp.orderIndex}. {exp.countryNameEn} · {unlocked ? 'UNLOCKED IN PASSPORT' : 'EARN STAMP TO UNLOCK'}
+                  </div>
+                  <strong style={{ fontSize: '14px', color: '#FFF8EE', display: 'block', margin: '4px 0' }}>
+                    {art.name} ({art.nativeName})
+                  </strong>
+                  <p style={{ margin: 0, fontSize: '12px', color: '#CBD5E1', lineHeight: 1.45 }}>
+                    {art.description}
+                  </p>
+                </article>
+              ));
+            })}
+          </div>
+        </section>
 
         {/* Two-Column Bottom Row: Redeem Souvenir Code Card + Safe Storage Settings Card */}
         <div

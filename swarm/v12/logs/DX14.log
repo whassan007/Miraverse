@@ -1,0 +1,16 @@
+=== AGENT DX14 (DGX Spark · W2) ===
+Timestamp: 2026-11-04T07:27:27.198Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: Local DGX Spark (qwen/qwen3-coder-next, 50.09 tok/s)
+Branch: v12/DX14
+Agent Commit SHA: acf86bd
+Integration Merge SHA: bb28b41
+Owned Paths: content/v12/locales/ar-LB/
+Modified Files (1): content/v12/locales/ar-LB/lebanese-dialect-qa.json
+Test Command: node -e "const g=JSON.parse(require(\"fs\").readFileSync(\"content/v12/locales/ar-LB/lebanese-dialect-qa.json\",\"utf8\")); if(g.locale!==\"ar-LB\" || g.dialect_preserved_terms.length < 6) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: content/v12/locales/ar-LB/lebanese-dialect-qa.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE DX14 acf86bd content/v12/locales/ar-LB/lebanese-dialect-qa.json

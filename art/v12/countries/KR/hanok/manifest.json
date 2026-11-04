@@ -1,0 +1,13 @@
+{
+  "agent_id": "AG11",
+  "country": "KR",
+  "kit": "hanok",
+  "assets": [
+    {
+      "id": "kr-svg-hanok",
+      "path": "/art/v12/KR/hanok/jeonju-hanok-and-jangdokdae.svg",
+      "map_type": "in_game_quest_map",
+      "scale_disclaimer": "in-game map / not to geographic scale"
+    }
+  ]
+}

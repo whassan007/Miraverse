@@ -1,0 +1,146 @@
+{
+  "version": "1.2.0",
+  "agent_id": "DX15",
+  "generated_at": "2026-11-04T07:37:26.813Z",
+  "dgx_spark_metrics": {
+    "ok": true,
+    "model": "qwen/qwen3-coder-next",
+    "content": "{\n  \"iraqi_terms\": [\"شلونك\", \"كليجة\"],\n  \"egyptian_terms\": [\"فانوس\", \"خيمية\"],\n  \"historical_note\": \"Historical Abbasid and Fatimid scholars used Classical Arabic (fuṣḥā), not regional dialects like Iraqi or Egyptian Arabic, which developed later.\"\n}",
+    "usage": {
+      "prompt_tokens": 66,
+      "completion_tokens": 75,
+      "total_tokens": 141,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "tokensPerSec": 51.87,
+    "elapsedMs": 1446
+  },
+  "dialect_policy": {
+    "preserve_regional_greetings": true,
+    "no_modern_slang_on_historical_scholars": true,
+    "rtl_direction": "rtl",
+    "supported_locales": [
+      "ar",
+      "ar-IQ",
+      "ar-EG"
+    ]
+  },
+  "glossary_ar_IQ": [
+    {
+      "term_id": "iq-term-01",
+      "transliteration": "Shlonak / Shlonich",
+      "arabic": "شلونك / شلونچ",
+      "register": "contemporary_baghdadi_greeting",
+      "usage": "Contemporary Al-Mutanabbi Street & diaspora festival mentors only; never used by 9th-century Abbasid scholars."
+    },
+    {
+      "term_id": "iq-term-02",
+      "transliteration": "Bayt al-Hikma",
+      "arabic": "بيت الحكمة",
+      "register": "classical_and_modern_standard",
+      "usage": "House of Wisdom translation and research library in Baghdad."
+    },
+    {
+      "term_id": "iq-term-03",
+      "transliteration": "Kitab al-Hiyal",
+      "arabic": "كتاب الحيل",
+      "register": "classical_scientific",
+      "usage": "Book of Ingenious Devices by the Banu Musa brothers (c. 850 CE)."
+    },
+    {
+      "term_id": "iq-term-04",
+      "transliteration": "Shari' al-Mutanabbi",
+      "arabic": "شارع المتنبي",
+      "register": "contemporary_literary",
+      "usage": "Baghdad's historic street of booksellers and outdoor Friday book tables."
+    },
+    {
+      "term_id": "iq-term-05",
+      "transliteration": "Kleicha bil-Tamr wal-Heil",
+      "arabic": "كليچة بالتمر والهيل",
+      "register": "iraqi_culinary_heritage",
+      "usage": "Stamped date-and-cardamom pastry wheel shared across Iraqi communities."
+    }
+  ],
+  "glossary_ar_EG": [
+    {
+      "term_id": "eg-term-01",
+      "transliteration": "Ahlan wa Sahlan / Izzayak",
+      "arabic": "أهلاً وسهلاً / إزيك",
+      "register": "contemporary_cairo_greeting",
+      "usage": "Warm contemporary Cairo courtyard greeting for Master Hassan."
+    },
+    {
+      "term_id": "eg-term-02",
+      "transliteration": "Fanous / Fawanees",
+      "arabic": "فانوس / فوانيس",
+      "register": "egyptian_heritage_craft",
+      "usage": "Traditional tin-and-colored-glass Cairo lantern (singular/plural)."
+    },
+    {
+      "term_id": "eg-term-03",
+      "transliteration": "Shari'a al-Khayamiya",
+      "arabic": "شارع الخيامية",
+      "register": "historic_cairo_toponym",
+      "usage": "Street of the Tentmakers at the covered Qasaba of Radwan Bey near Bab Zuweila."
+    },
+    {
+      "term_id": "eg-term-04",
+      "transliteration": "Musaharati / Bazaza",
+      "arabic": "مسحراتي / طبلة البزازة",
+      "register": "cultural_practice",
+      "usage": "Pre-dawn neighborhood drummer calling neighbors by name with gentle rhythm."
+    },
+    {
+      "term_id": "eg-term-05",
+      "transliteration": "Taht al-Rab'",
+      "arabic": "تحت الربع",
+      "register": "historic_cairo_toponym",
+      "usage": "Historic lantern-making quarter near Bab Zuweila."
+    }
+  ],
+  "localized_record_titles": {
+    "iq-v12-bayt-al-hikma-tradition": {
+      "ar": "بيت الحكمة وحركة الترجمة العباسية في بغداد",
+      "ar-IQ": "بيت الحكمة وحركة الترجمة ببغداد المدورة"
+    },
+    "iq-v12-scholars-translation-circle": {
+      "ar": "رواد العلم: الخوارزمي والكندي وحنين بن إسحاق وثابت بن قرة",
+      "ar-IQ": "علماء بغداد: الخوارزمي والكندي وحنين بن إسحاق وثابت بن قرة"
+    },
+    "iq-v12-banu-musa-ingenious-devices": {
+      "ar": "بنو موسى وكتاب الحيل والآلات الذاتية الحركة",
+      "ar-IQ": "أولاد موسى بن شاكر وكتاب الحيل والساعات المائية"
+    },
+    "iq-v12-al-mutanabbi-book-street": {
+      "ar": "شارع المتنبي ومقهى الشابندر وتضامن القراء العالمي",
+      "ar-IQ": "شارع المتنبي ومقهى الشابندر بجمعة الكتب ببغداد"
+    },
+    "iq-v12-plural-iraqi-diaspora-memory": {
+      "ar": "التراث العراقي المتعدد وكليچة العيد في المهجر",
+      "ar-IQ": "تراث العراق المتنوع وكليچة التمر والهيل بالمهجر"
+    },
+    "eg-v12-fanous-competing-origins": {
+      "ar": "فانوس القاهرة: الروايات التاريخية المتعددة لنشأته",
+      "ar-EG": "فانوس القاهرة الفاطمية: أربع حكايات تاريخية عن البداية"
+    },
+    "eg-v12-tin-glass-lantern-craft": {
+      "ar": "حرفة صناعة الفوانيس من الصفيح والزجاج الملون في تحت الربع",
+      "ar-EG": "صنعة الفانوس الصاج والزجاج الملون في حارة تحت الربع"
+    },
+    "eg-v12-khayamiya-tentmakers-art": {
+      "ar": "فن الخيامية الهندسي في قصبة رضوان بك قرب باب زويلة",
+      "ar-EG": "فن الخيامية والزخارف المخيطة باليد في شارع الخيامية"
+    },
+    "eg-v12-musaharati-neighborhood-rhythm": {
+      "ar": "المسحراتي وإيقاعات الحارة القاهرية",
+      "ar-EG": "المسحراتي وطبلة البزازة وزينة الحارة المصرية"
+    },
+    "eg-v12-diaspora-egyptian-heritage-month": {
+      "ar": "الفانوس في المهجر وشهر التراث المصري في أونتاريو",
+      "ar-EG": "فوانيس المهجر والاحتفال بشهر التراث المصري"
+    }
+  }
+}

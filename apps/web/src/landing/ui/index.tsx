@@ -17,8 +17,12 @@ import {
   V08_RELEASE_VERSION,
   V08_WORLD_VISUAL_MAP,
 } from '../../../../../packages/contracts/v08/index';
+import {
+  V13_COUNTRIES_ORDERED,
+  V13_COUNTRY_EXPERIENCES,
+} from '../../../../../packages/contracts/v13/index';
 
-const EXPANSION_COUNTRIES: CountryCode[] = ['EG', 'IQ', 'KR', 'FR'];
+const EXPANSION_COUNTRIES: CountryCode[] = ['IQ', 'EG', 'FR', 'KR'];
 
 export const CinematicLandingPage: React.FC = () => {
   const [selectedCountry, setSelectedCountry] = useState<CountryCode>('LB');
@@ -323,8 +327,9 @@ export const CinematicLandingPage: React.FC = () => {
               }}
             >
               <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }} role="tablist" aria-label="Five Cultural Worlds">
-                {COUNTRIES.map((code) => {
+                {V13_COUNTRIES_ORDERED.map((code) => {
                   const w = V08_WORLD_VISUAL_MAP[code];
+                  const v13Exp = V13_COUNTRY_EXPERIENCES[code];
                   const active = selectedCountry === code;
                   return (
                     <button
@@ -346,7 +351,7 @@ export const CinematicLandingPage: React.FC = () => {
                         cursor: 'pointer',
                       }}
                     >
-                      {w.nameEn} · <span lang={w.storyLang}>{w.nameNative.split('·').pop()?.trim()}</span>
+                      {v13Exp.orderIndex}. {v13Exp.countryNameEn}: {v13Exp.cityName}
                     </button>
                   );
                 })}
@@ -529,10 +534,11 @@ export const CinematicLandingPage: React.FC = () => {
           </div>
         </article>
 
-        {/* Balanced 4-Column Shelf for Cairo, Baghdad, Jeonju, and Vieux Lyon (Never 4+1 Orphan!) */}
+        {/* Balanced 4-Column Shelf in Exact v1.3 Order: 2. Iraq: Baghdad, 3. Egypt: Cairo, 4. France: Lyon, 5. South Korea: Jeonju */}
         <div className="mv-world-grid-4">
           {EXPANSION_COUNTRIES.map((code) => {
             const world = V08_WORLD_VISUAL_MAP[code];
+            const v13Exp = V13_COUNTRY_EXPERIENCES[code];
             return (
               <article
                 key={code}
@@ -552,7 +558,7 @@ export const CinematicLandingPage: React.FC = () => {
                   <div style={{ position: 'relative', aspectRatio: '16 / 10', overflow: 'hidden', background: '#0F172A' }}>
                     <img
                       src={world.coverArtUrl}
-                      alt={`${world.nameEn} — ${world.landmarkName}`}
+                      alt={`${v13Exp.orderIndex}. ${v13Exp.countryNameEn}: ${v13Exp.cityName}`}
                       loading="eager"
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
@@ -570,19 +576,19 @@ export const CinematicLandingPage: React.FC = () => {
                         fontWeight: 800,
                       }}
                     >
-                      {world.robloxStatusLabel}
+                      {v13Exp.orderIndex}. {world.robloxStatusLabel}
                     </span>
                   </div>
 
                   <div data-testid={`world-card-${code}`} style={{ padding: '16px 18px 10px' }}>
                     <div style={{ fontSize: '11px', fontWeight: 800, color: world.accentColorHex, textTransform: 'uppercase' }}>
-                      {world.locationLabel}
+                      {v13Exp.orderIndex}. {v13Exp.countryNameEn}: {v13Exp.cityName}
                     </div>
                     <h3 style={{ margin: '4px 0 6px 0', fontSize: '20px', fontFamily: 'Georgia, serif' }}>
                       {world.nameEn} · <span lang={world.storyLang}>{world.nameNative.split('·').pop()?.trim()}</span>
                     </h3>
                     <p style={{ fontSize: '13px', color: '#CBD5E1', lineHeight: 1.48, margin: '0 0 12px 0' }}>
-                      {world.adventureHook}
+                      {v13Exp.heroTagline}
                     </p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: '#E2E8F0' }}>
                       <img src={world.portraitArtUrl} alt={world.mentorName} width={28} height={28} style={{ borderRadius: '50%' }} />
@@ -592,6 +598,22 @@ export const CinematicLandingPage: React.FC = () => {
                 </div>
 
                 <div style={{ padding: '12px 18px 18px', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                  <Link
+                    to={`/explore/${code}`}
+                    style={{
+                      flex: 1,
+                      textAlign: 'center',
+                      background: '#F4A261',
+                      color: '#0F172A',
+                      textDecoration: 'none',
+                      padding: '9px 10px',
+                      borderRadius: '10px',
+                      fontSize: '12px',
+                      fontWeight: 800,
+                    }}
+                  >
+                    Country Guide
+                  </Link>
                   <Link
                     to={`/play/${code}`}
                     data-testid={`play-chapter-${code}`}
@@ -607,7 +629,7 @@ export const CinematicLandingPage: React.FC = () => {
                       fontWeight: 800,
                     }}
                   >
-                    Preview &amp; Launch
+                    Quest Map
                   </Link>
                   <Link
                     to={`/story/${world.storyLang}`}
@@ -630,6 +652,143 @@ export const CinematicLandingPage: React.FC = () => {
               </article>
             );
           })}
+        </div>
+
+        {/* v1.3 Featured Cultural Discoveries: Interactive World Atlas, 25 Quest Maps & Treasury */}
+        <div
+          data-testid="v13-featured-cultural-discoveries"
+          style={{
+            marginTop: '32px',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 360px), 1fr))',
+            gap: '22px',
+          }}
+        >
+          <article
+            style={{
+              background: 'rgba(19, 31, 56, 0.94)',
+              borderRadius: '20px',
+              border: '1px solid rgba(56, 189, 248, 0.45)',
+              padding: '22px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}
+          >
+            <div>
+              <div style={{ borderRadius: '14px', overflow: 'hidden', aspectRatio: '16 / 9', marginBottom: '14px', border: '1px solid rgba(56, 189, 248, 0.35)' }}>
+                <img
+                  src="/art/v13/quest-map-LB.jpg"
+                  alt="Byblos Harbor Illustrated Adventure Quest Map"
+                  loading="eager"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+              <span style={{ fontSize: '11px', fontWeight: 800, color: '#7DD3FC', textTransform: 'uppercase' }}>
+                Interactive World Atlas &amp; 25 Quest Maps
+              </span>
+              <h3 style={{ margin: '6px 0 8px 0', fontSize: '21px', fontFamily: 'Georgia, serif' }}>
+                Real-World WGS84 Geography + Illustrated Adventure Maps
+              </h3>
+              <p style={{ fontSize: '13px', color: '#CBD5E1', lineHeight: 1.55, margin: '0 0 16px 0' }}>
+                Explore verified real-world coordinates and UNESCO landmarks alongside 25 illustrated adventure quest maps and 100 age-adapted quest stages (Ages 5–7, 8–10, 11–13, and 14–17).
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+              <Link
+                to="/atlas"
+                data-testid="home-cta-atlas"
+                style={{
+                  background: '#38BDF8',
+                  color: '#082F49',
+                  textDecoration: 'none',
+                  padding: '10px 18px',
+                  borderRadius: '999px',
+                  fontWeight: 800,
+                  fontSize: '13px',
+                }}
+              >
+                🗺️ Open Interactive Atlas
+              </Link>
+              <Link
+                to="/quests"
+                data-testid="home-cta-quests"
+                style={{
+                  background: '#F4A261',
+                  color: '#0B1325',
+                  textDecoration: 'none',
+                  padding: '10px 18px',
+                  borderRadius: '999px',
+                  fontWeight: 800,
+                  fontSize: '13px',
+                }}
+              >
+                📖 25-Quest Encyclopedia
+              </Link>
+            </div>
+          </article>
+
+          <article
+            style={{
+              background: 'rgba(19, 31, 56, 0.94)',
+              borderRadius: '20px',
+              border: '1px solid rgba(244, 162, 97, 0.45)',
+              padding: '22px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}
+          >
+            <div>
+              <div style={{ borderRadius: '14px', overflow: 'hidden', aspectRatio: '16 / 9', marginBottom: '14px', border: '1px solid rgba(244, 162, 97, 0.35)' }}>
+                <img
+                  src="/art/v13/cultural-artifacts-treasury.jpg"
+                  alt="MiraVerse Cultural Artifacts Treasury"
+                  loading="eager"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+              </div>
+              <span style={{ fontSize: '11px', fontWeight: 800, color: '#FFE29F', textTransform: 'uppercase' }}>
+                Featured Cultural Discoveries &amp; Artifacts
+              </span>
+              <h3 style={{ margin: '6px 0 8px 0', fontSize: '21px', fontFamily: 'Georgia, serif' }}>
+                Phoenician Script, House of Wisdom, Fanous, Traboules &amp; Obangsaek
+              </h3>
+              <p style={{ fontSize: '13px', color: '#CBD5E1', lineHeight: 1.55, margin: '0 0 16px 0' }}>
+                Every destination distinguishes verified archaeological and historical records from living traditions and regional folklore, with citations from UNESCO and world museums.
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+              <Link
+                to="/passport"
+                style={{
+                  background: '#10B981',
+                  color: '#052E16',
+                  textDecoration: 'none',
+                  padding: '10px 18px',
+                  borderRadius: '999px',
+                  fontWeight: 800,
+                  fontSize: '13px',
+                }}
+              >
+                🛂 View Artifacts in Passport
+              </Link>
+              <Link
+                to="/explore/LB"
+                style={{
+                  background: 'rgba(255,255,255,0.1)',
+                  color: '#FFF8EE',
+                  textDecoration: 'none',
+                  padding: '10px 18px',
+                  borderRadius: '999px',
+                  fontWeight: 700,
+                  fontSize: '13px',
+                }}
+              >
+                Explore Lebanon Guide →
+              </Link>
+            </div>
+          </article>
         </div>
       </section>
 

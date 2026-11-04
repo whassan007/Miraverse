@@ -3,7 +3,7 @@ import { HashRouter, Link, NavLink, Route, Routes, useLocation } from 'react-rou
 import { UI_LANGS, type Lang } from '../../../packages/content/schema';
 import { I18nProvider, useI18n } from './i18n';
 import { CinematicLandingPage } from './landing/ui/index';
-import { MinecraftCompanionPage } from './launch/RobloxLaunchPage';
+import { AdminDiagnosticsPage, MinecraftCompanionPage } from './launch/RobloxLaunchPage';
 import {
   AdventuresCatalogPage,
   CharactersShowcasePage,
@@ -11,10 +11,15 @@ import {
   ExploreCountryDetailPage,
 } from './marketing/worlds-v06/ExploreAtlasPages';
 import About from './pages/About';
+import LegacyBrowser3DGame from './pages/LegacyBrowser3DGame';
 import Passport from './pages/Passport';
 import Play from './pages/Play';
 import Story from './pages/Story';
 import { ParentPortalPage } from './parent/index';
+import {
+  InteractiveWorldAtlasPage,
+  QuestEncyclopediaPage,
+} from './portal/v13/CulturalPortalPages';
 import { AdultStorefront } from './storefront/index';
 
 const languageNames: Record<Lang, string> = {
@@ -86,8 +91,11 @@ function Shell() {
           <NavLink to="/explore">
             Explore Worlds
           </NavLink>
-          <NavLink to="/adventures">
-            Adventures
+          <NavLink to="/atlas">
+            World Atlas
+          </NavLink>
+          <NavLink to="/quests">
+            Quests (25)
           </NavLink>
           <NavLink to="/passport">
             {t('nav.passport', 'Passport')}
@@ -141,10 +149,16 @@ function Shell() {
           <Route path="/" element={<CinematicLandingPage />} />
           <Route path="/explore" element={<ExploreAtlasPage />} />
           <Route path="/explore/:country" element={<ExploreCountryDetailPage />} />
+          <Route path="/atlas" element={<InteractiveWorldAtlasPage />} />
+          <Route path="/quests" element={<QuestEncyclopediaPage />} />
+          <Route path="/quests/:questId" element={<QuestEncyclopediaPage />} />
           <Route path="/adventures" element={<AdventuresCatalogPage />} />
           <Route path="/characters" element={<CharactersShowcasePage />} />
           <Route path="/play" element={<Play />} />
           <Route path="/play/:country" element={<Play />} />
+          <Route path="/dev/legacy-3d-game" element={<LegacyBrowser3DGame />} />
+          <Route path="/dev/legacy-3d-game/:country" element={<LegacyBrowser3DGame />} />
+          <Route path="/admin/diagnostics" element={<AdminDiagnosticsPage />} />
           <Route path="/legacy-game" element={<Play />} />
           <Route path="/minecraft" element={<MinecraftCompanionPage />} />
           <Route path="/story/:lang" element={<Story />} />

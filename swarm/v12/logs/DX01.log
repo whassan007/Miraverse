@@ -1,0 +1,16 @@
+=== AGENT DX01 (DGX Spark · W0) ===
+Timestamp: 2026-11-04T07:15:07.026Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: Local DGX Spark (qwen/qwen3-coder-next, 41.67 tok/s)
+Branch: v12/DX01
+Agent Commit SHA: 6922c4e
+Integration Merge SHA: 73772e5
+Owned Paths: content/v12/source-registry/, swarm/v12/dgx/
+Modified Files (4): content/v12/source-registry/SOURCE_REGISTRY.json, content/v12/source-registry/passages.json, content/v12/source-registry/transnational_quest_for_home_source.txt, swarm/v12/dgx/scheduler.json
+Test Command: node -e "const r=JSON.parse(require(\"fs\").readFileSync(\"content/v12/source-registry/SOURCE_REGISTRY.json\",\"utf8\")); const p=JSON.parse(require(\"fs\").readFileSync(\"content/v12/source-registry/passages.json\",\"utf8\")); if(r.sources[0].source_type!==\"user_supplied_research\" || p.length!==27) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: content/v12/source-registry/SOURCE_REGISTRY.json, content/v12/source-registry/passages.json, swarm/v12/dgx/scheduler.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE DX01 6922c4e content/v12/source-registry/SOURCE_REGISTRY.json

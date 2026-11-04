@@ -1,0 +1,419 @@
+{
+  "version": "1.2.0",
+  "agent_id": "DX17",
+  "generated_at": "2026-11-04T07:37:33.888Z",
+  "dgx_spark_metrics": {
+    "ok": true,
+    "model": "qwen/qwen3-coder-next",
+    "content": "{\n  \"Byblos\": true,\n  \"Afqa\": true,\n  \"Baghdad_Al-Mutanabbi\": true,\n  \"Cairo_Bab_Zuweila\": true,\n  \"Lyon_Cour_des_Voraces\": true,\n  \"Jeonju_Hanok_Village\": true\n}",
+    "usage": {
+      "prompt_tokens": 156,
+      "completion_tokens": 70,
+      "total_tokens": 226,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "tokensPerSec": 49.05,
+    "elapsedMs": 1427
+  },
+  "no_invented_coordinates_assertion": true,
+  "real_world_places": [
+    {
+      "place_id": "place-lb-byblos-harbor",
+      "country": "LB",
+      "name": {
+        "en": "Byblos (Jbeil) Ancient Port & Citadel",
+        "ar": "ميناء وقلعة جبيل القديمة"
+      },
+      "latitude": 34.123,
+      "longitude": 35.6435,
+      "coordinate_source": "UNESCO World Heritage List #295 (Byblos) & MiraVerse v1.1 Baseline",
+      "uncertainty_meters": 50,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T06:00:00Z",
+      "linked_records": [
+        "lb-v12-byblos-maritime-archive",
+        "lb-v12-isis-osiris-byblos-myth",
+        "lb-v12-ahiram-sarcophagus-inscriptions",
+        "lb-v12-aleph-beth-evolution"
+      ]
+    },
+    {
+      "place_id": "place-lb-afqa-grotto",
+      "country": "LB",
+      "name": {
+        "en": "Afqa Spring & Nahr Ibrahim Headwaters",
+        "ar": "نبع أفقا ووادي نهر إبراهيم"
+      },
+      "latitude": 34.0686,
+      "longitude": 35.8906,
+      "coordinate_source": "Lebanese Ministry of Environment / Mount Lebanon Hydrological Survey",
+      "uncertainty_meters": 120,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T06:00:00Z",
+      "linked_records": [
+        "lb-v12-adonis-afqa-river-myth",
+        "lb-v12-mahjar-diaspora-memory"
+      ]
+    },
+    {
+      "place_id": "place-iq-baghdad-mutanabbi",
+      "country": "IQ",
+      "name": {
+        "en": "Al-Mutanabbi Street & Historic Tigris Book Quarter, Baghdad",
+        "ar": "شارع المتنبي وضفاف دجلة التاريخية"
+      },
+      "latitude": 33.3406,
+      "longitude": 44.3879,
+      "coordinate_source": "Baghdad Rusafa Municipal Survey & MiraVerse v1.1 Baseline",
+      "uncertainty_meters": 40,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T06:00:00Z",
+      "linked_records": [
+        "iq-v12-al-mutanabbi-book-street",
+        "iq-v12-plural-iraqi-diaspora-memory"
+      ]
+    },
+    {
+      "place_id": "place-iq-baghdad-abbasid-core",
+      "country": "IQ",
+      "name": {
+        "en": "Historic Abbasid Baghdad Scholarly Quarter (Approximate District)",
+        "ar": "حاضرة بغداد العباسية وبيت الحكمة (موقع تقريبي)"
+      },
+      "latitude": 33.3485,
+      "longitude": 44.366,
+      "coordinate_source": "Historical Atlas of Abbasid Baghdad (Karkh/Rusafa district centroid; exact 9th-century building unexcavated)",
+      "uncertainty_meters": 1500,
+      "status": "verified_approximate_district_centroid",
+      "review_timestamp": "2026-11-04T06:00:00Z",
+      "linked_records": [
+        "iq-v12-bayt-al-hikma-tradition",
+        "iq-v12-scholars-translation-circle",
+        "iq-v12-banu-musa-ingenious-devices"
+      ]
+    },
+    {
+      "place_id": "place-eg-cairo-bab-zuweila-khayamiya",
+      "country": "EG",
+      "name": {
+        "en": "Bab Zuweila, Shari'a al-Khayamiya & Taht al-Rab' (Historic Cairo)",
+        "ar": "باب زويلة وشارع الخيامية وتحت الربع"
+      },
+      "latitude": 30.0426,
+      "longitude": 31.2578,
+      "coordinate_source": "UNESCO Historic Cairo #89 (Qasaba of Radwan Bey / Bab Zuweila)",
+      "uncertainty_meters": 35,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T06:00:00Z",
+      "linked_records": [
+        "eg-v12-fanous-competing-origins",
+        "eg-v12-tin-glass-lantern-craft",
+        "eg-v12-khayamiya-tentmakers-art",
+        "eg-v12-musaharati-neighborhood-rhythm",
+        "eg-v12-diaspora-egyptian-heritage-month"
+      ]
+    },
+    {
+      "place_id": "place-fr-lyon-cour-des-voraces",
+      "country": "FR",
+      "name": {
+        "en": "Cour des Voraces (9 Place Colbert, Croix-Rousse, Lyon)",
+        "fr": "Cour des Voraces (9 place Colbert, Croix-Rousse)"
+      },
+      "latitude": 45.7726,
+      "longitude": 4.8347,
+      "coordinate_source": "Patrimoine Grand Lyon / UNESCO Historic Site of Lyon #872",
+      "uncertainty_meters": 20,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T06:00:00Z",
+      "linked_records": [
+        "fr-v12-traboules-vieux-lyon-croix-rousse",
+        "fr-v12-canuts-jacquard-silk-history",
+        "fr-v12-cour-des-voraces-civic-memory"
+      ]
+    },
+    {
+      "place_id": "place-fr-lyon-vieux-lyon-bouchons",
+      "country": "FR",
+      "name": {
+        "en": "Vieux Lyon & Presqu'île Culinary Quarter (Rue Royale / Rue Saint-Jean)",
+        "fr": "Vieux Lyon et Presqu’île gourmande"
+      },
+      "latitude": 45.7622,
+      "longitude": 4.8273,
+      "coordinate_source": "UNESCO Historic Site of Lyon #872 & MiraVerse v1.1 Baseline",
+      "uncertainty_meters": 45,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T06:00:00Z",
+      "linked_records": [
+        "fr-v12-meres-lyonnaises-eugenie-brazier",
+        "fr-v12-bouchons-community-recipe-archive"
+      ]
+    },
+    {
+      "place_id": "place-kr-jeonju-hanok-village",
+      "country": "KR",
+      "name": {
+        "en": "Jeonju Hanok Village & Traditional Bibimbap Quarter",
+        "ko": "전주 한옥마을"
+      },
+      "latitude": 35.8147,
+      "longitude": 127.1526,
+      "coordinate_source": "Korea Tourism Organization / Jeonju City Geoportal & MiraVerse v1.1 Baseline",
+      "uncertainty_meters": 40,
+      "status": "verified_real_world_wgs84",
+      "review_timestamp": "2026-11-04T06:00:00Z",
+      "linked_records": [
+        "kr-v12-bibimbap-competing-origins",
+        "kr-v12-jeonju-regional-variants",
+        "kr-v12-obangsaek-five-color-harmony",
+        "kr-v12-jeonju-hanok-jangdokdae-setting",
+        "kr-v12-diaspora-food-continuity"
+      ]
+    }
+  ],
+  "in_game_quest_markers": [
+    {
+      "marker_id": "qm-lb-act1",
+      "country": "LB",
+      "world_id": "byblos_harbor_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 22,
+      "svg_y_pct": 64,
+      "roblox_pos": [
+        120,
+        14,
+        -85
+      ],
+      "bedrock_pos": [
+        40,
+        65,
+        -28
+      ],
+      "act_id": "lb-v12-act-1",
+      "level": 1,
+      "unlock_rule": "open_on_arrival",
+      "asset_reference": "/art/v12/LB/phoenician-alphabet-comparison.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-lb-act3",
+      "country": "LB",
+      "world_id": "byblos_harbor_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 54,
+      "svg_y_pct": 42,
+      "roblox_pos": [
+        165,
+        18,
+        -40
+      ],
+      "bedrock_pos": [
+        55,
+        67,
+        -14
+      ],
+      "act_id": "lb-v12-act-3",
+      "level": 3,
+      "unlock_rule": "after_lb_v12_act_2",
+      "asset_reference": "/art/v12/LB/phoenician-alphabet-comparison.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-iq-act1",
+      "country": "IQ",
+      "world_id": "baghdad_scholar_court_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 50,
+      "svg_y_pct": 52,
+      "roblox_pos": [
+        0,
+        20,
+        0
+      ],
+      "bedrock_pos": [
+        0,
+        68,
+        0
+      ],
+      "act_id": "iq-v12-act-1",
+      "level": 1,
+      "unlock_rule": "open_on_arrival",
+      "asset_reference": "/art/v12/IQ/library/bayt-al-hikma-routing-map.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-iq-act4",
+      "country": "IQ",
+      "world_id": "baghdad_scholar_court_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 78,
+      "svg_y_pct": 36,
+      "roblox_pos": [
+        95,
+        16,
+        60
+      ],
+      "bedrock_pos": [
+        32,
+        65,
+        20
+      ],
+      "act_id": "iq-v12-act-4",
+      "level": 4,
+      "unlock_rule": "after_iq_v12_act_3",
+      "asset_reference": "/art/v12/IQ/bookstreet/al-mutanabbi-book-street.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-eg-act1",
+      "country": "EG",
+      "world_id": "cairo_lantern_alley_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 28,
+      "svg_y_pct": 58,
+      "roblox_pos": [
+        -60,
+        15,
+        45
+      ],
+      "bedrock_pos": [
+        -20,
+        65,
+        15
+      ],
+      "act_id": "eg-v12-act-1",
+      "level": 1,
+      "unlock_rule": "open_on_arrival",
+      "asset_reference": "/art/v12/EG/craft/fanous-craft-and-origins.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-eg-act4",
+      "country": "EG",
+      "world_id": "cairo_lantern_alley_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 68,
+      "svg_y_pct": 48,
+      "roblox_pos": [
+        30,
+        15,
+        90
+      ],
+      "bedrock_pos": [
+        10,
+        65,
+        30
+      ],
+      "act_id": "eg-v12-act-4",
+      "level": 4,
+      "unlock_rule": "after_eg_v12_act_3",
+      "asset_reference": "/art/v12/EG/festival/cairo-courtyard-festival-route.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-fr-act1",
+      "country": "FR",
+      "world_id": "lyon_traboules_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 34,
+      "svg_y_pct": 44,
+      "roblox_pos": [
+        -40,
+        42,
+        -30
+      ],
+      "bedrock_pos": [
+        -14,
+        78,
+        -10
+      ],
+      "act_id": "fr-v12-act-1",
+      "level": 1,
+      "unlock_rule": "open_on_arrival",
+      "asset_reference": "/art/v12/FR/traboules/lyon-traboules-cour-des-voraces.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-fr-act4",
+      "country": "FR",
+      "world_id": "lyon_traboules_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 72,
+      "svg_y_pct": 66,
+      "roblox_pos": [
+        55,
+        16,
+        40
+      ],
+      "bedrock_pos": [
+        18,
+        65,
+        14
+      ],
+      "act_id": "fr-v12-act-4",
+      "level": 4,
+      "unlock_rule": "after_fr_v12_act_3",
+      "asset_reference": "/art/v12/FR/kitchen/jacquard-and-meres-lyonnaises.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-kr-act1",
+      "country": "KR",
+      "world_id": "jeonju_hanok_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 42,
+      "svg_y_pct": 52,
+      "roblox_pos": [
+        15,
+        18,
+        -25
+      ],
+      "bedrock_pos": [
+        5,
+        66,
+        -8
+      ],
+      "act_id": "kr-v12-act-1",
+      "level": 1,
+      "unlock_rule": "open_on_arrival",
+      "asset_reference": "/art/v12/KR/hanok/jeonju-hanok-and-jangdokdae.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    },
+    {
+      "marker_id": "qm-kr-act3",
+      "country": "KR",
+      "world_id": "jeonju_hanok_v12",
+      "platform": "web_roblox_minecraft",
+      "in_game_coordinate_system": "illustrated_svg_percent_and_3d_studs",
+      "svg_x_pct": 66,
+      "svg_y_pct": 38,
+      "roblox_pos": [
+        60,
+        18,
+        20
+      ],
+      "bedrock_pos": [
+        20,
+        66,
+        7
+      ],
+      "act_id": "kr-v12-act-3",
+      "level": 3,
+      "unlock_rule": "after_kr_v12_act_2",
+      "asset_reference": "/art/v12/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg",
+      "scale_label": "in-game map / not to geographic scale"
+    }
+  ]
+}

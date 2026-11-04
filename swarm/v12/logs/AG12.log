@@ -1,0 +1,16 @@
+=== AGENT AG12 (Antigravity · W4) ===
+Timestamp: 2026-11-04T07:41:41.686Z
+Resolved Model: Gemini 4 Argon
+Runtime Environment: host_agy_orchestrator
+Branch: v12/AG12
+Agent Commit SHA: 21b0baf
+Integration Merge SHA: 3bc763e
+Owned Paths: apps/web/src/features/knowledge-cards/
+Modified Files (1): apps/web/src/features/knowledge-cards/KnowledgeCardV12.tsx
+Test Command: node -e "const fs=require('fs'); const s=fs.readFileSync('apps/web/src/features/knowledge-cards/KnowledgeCardV12.tsx','utf8'); if(!s.includes('EPISTEMIC_META') || !s.includes('paraphrase_only')) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: apps/web/src/features/knowledge-cards/KnowledgeCardV12.tsx
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE AG12 21b0baf apps/web/src/features/knowledge-cards/KnowledgeCardV12.tsx

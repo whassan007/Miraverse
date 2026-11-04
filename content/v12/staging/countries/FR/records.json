@@ -1,0 +1,468 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX08",
+  "country": "FR",
+  "dgx_note": "All 5 cultural knowledge records (Vieux Lyon & Croix-Rousse traboules, canuts & Jacquard loom, Cour des Voraces, Mères Lyonnaises & Brazier) have been structured with 4 age tiers (child, youth, adult, elder) and epistemic classification (empirical, procedural, normative, existential).",
+  "record_count": 5,
+  "records": [
+    {
+      "id": "FR-KB-PLACE-TRABOULES-LYON",
+      "country": "FR",
+      "title": {
+        "en": "The Traboules of Vieux Lyon and La Croix-Rousse",
+        "fr": "Les traboules du Vieux Lyon et de la Croix-Rousse",
+        "ar-LB": "ممرات الترابول في ليون القديمة وكرو روس",
+        "ar-EG": "ممرات الترابول في مدينة ليون",
+        "ar-IQ": "ممرات الترابول في مدينة ليون",
+        "ko": "비외 리옹과 크루아루스의 트라불 통로"
+      },
+      "entity_type": "place",
+      "summary": "Covered Renaissance and 19th-century passageways connecting courtyards and streets across Vieux Lyon and the hill of La Croix-Rousse.",
+      "expanded_explanation": "Lyon’s traboules (commonly derived from Vulgar Latin transambulare, \"to pass through\") are covered pedestrian passages that cut through residential buildings and spiral staircases, linking parallel streets in Renaissance Vieux Lyon toward the Saône and down the steep slopes of La Croix-Rousse toward the Rhône. While popular guides cite roughly 400–500 traboules across Lyon with around 40 open to the public under municipal maintenance agreements, exact counts vary by definition and are flagged as contested numerical assertions.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "4th–19th Century CE – Present",
+      "people": [
+        "Mamie Claire (In-Game Mentor)",
+        "Camille (In-Game Protagonist)"
+      ],
+      "places": [
+        "Vieux Lyon",
+        "La Croix-Rousse",
+        "Saône River"
+      ],
+      "relationships": [
+        {
+          "target_id": "FR-KB-PLACE-COUR-DES-VORACES",
+          "relation": "associated_with",
+          "note": "Famous monumental courtyard traboule in La Croix-Rousse"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "FR-P01",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "UNESCO-WHC-872",
+          "passage_locator": "Historic Site of Lyon World Heritage Listing #872",
+          "url": "https://whc.unesco.org/en/list/872/",
+          "verified": true,
+          "external_citation": "UNESCO World Heritage Centre, Historic Site of Lyon (Vieux Lyon, Fourvière, Croix-Rousse, Presqu’île)"
+        }
+      ],
+      "sensitivity_notes": [
+        "Clearly distinguish public municipally signed traboules from private residential courtyards; flag exact total passageway counts (~400-500) and etymology nuances for verification."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Follow the painted pastry signs through cosy stone arches and spiral stairs that connect one sunny Lyon courtyard to the next!",
+        "8-10": "In Lyon, covered walkways called traboules let neighbors walk right through stone courtyards and down hill stairs without getting caught in the rain.",
+        "11-13": "Built during the Renaissance in Vieux Lyon and the 1800s on La Croix-Rousse hill, traboules connected workshops to river ports; today, visitors respect signs marking which passages are public.",
+        "14-17": "Lyon’s traboules (UNESCO #872) exemplify high-density urban morphology. While tourism literature cites ~400–500 passages, urban historians distinguish verified public rights-of-way from private residential courtyards."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "verified",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "FR-A01",
+        "FR-A04"
+      ],
+      "atlas_links": [
+        "atlas:real:FR:vieux_lyon",
+        "atlas:real:FR:croix_rousse",
+        "atlas:quest:FR:A01",
+        "atlas:quest:FR:A04"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "cut_stone",
+          "slate_roof",
+          "oak_shutter"
+        ],
+        "quest_objective_ids": [
+          "FR:ch1:lyon:build"
+        ]
+      }
+    },
+    {
+      "id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+      "country": "FR",
+      "title": {
+        "en": "The Canuts of La Croix-Rousse & Jacquard Punch-Card Silk Weaving",
+        "fr": "Les Canuts de la Croix-Rousse et le tissage de la soie sur métier Jacquard",
+        "ar-LB": "حياكة الحرير (الكانو) في ليون ونول جاكار",
+        "ar-EG": "نساجو الحرير في ليون ونول جاكار",
+        "ar-IQ": "نساجو الحرير في ليون ونول جاكار",
+        "ko": "크루아루스의 카뉘 실크 직공과 자카드 천공카드 직기"
+      },
+      "entity_type": "practice",
+      "summary": "19th-century Lyon silk weavers (canuts) who operated tall punch-card Jacquard looms in high-ceilinged Croix-Rousse workshops.",
+      "expanded_explanation": "On the \"hill that works\" (La Croix-Rousse), Lyon’s silk weavers—known as canuts—worked in apartments built with four-meter-high ceilings and tall windows to accommodate wooden Jacquard looms. Invented in 1804 by Joseph Marie Jacquard, the mechanism used chains of punched pasteboard cards to automate complex brocade patterns—an early precursor to binary computer programming—before bolts of silk were carried through dry traboules to merchants.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "19th Century CE (1804 Jacquard Loom – Late 1800s)",
+      "people": [
+        "Joseph Marie Jacquard",
+        "Canut Master Weavers & Apprentices"
+      ],
+      "places": [
+        "La Croix-Rousse, Lyon"
+      ],
+      "relationships": [
+        {
+          "target_id": "FR-KB-PLACE-TRABOULES-LYON",
+          "relation": "located_in",
+          "note": "Traboules sheltered silk transport down the hill"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "FR-P02",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Verify specific workshop addresses and mechanical patent dates before marking externally_corrobated."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Match colourful threads and card holes to weave a shimmering flower pattern on a tall wooden loom!",
+        "8-10": "Silk weavers in Lyon called canuts used cards with punched holes to guide their tall looms, creating bright patterns and carrying the silk through covered passages.",
+        "11-13": "La Croix-Rousse buildings have extra-high ceilings and tall windows built specially for Jacquard looms, which used punched cards to program complex silk patterns over two centuries ago.",
+        "14-17": "The Jacquard loom (1804) transformed Lyon’s domestic silk industry (la Fabrique) by encoding warp-thread lifts on punched cards, reshaping both architectural typologies in La Croix-Rousse and the history of programmable machinery."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "verified",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "FR-A02",
+        "FR-A04"
+      ],
+      "atlas_links": [
+        "atlas:real:FR:croix_rousse",
+        "atlas:quest:FR:A02"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "cut_stone",
+          "oak_shutter"
+        ],
+        "quest_objective_ids": [
+          "FR:ch1:lyon:trade",
+          "FR:ch1:lyon:build"
+        ]
+      }
+    },
+    {
+      "id": "FR-KB-PLACE-COUR-DES-VORACES",
+      "country": "FR",
+      "title": {
+        "en": "Cour des Voraces, Labor Mutualism & Historical Memory in Lyon",
+        "fr": "La Cour des Voraces, le mutualisme ouvrier et la mémoire historique à Lyon",
+        "ar-LB": "ساحة كور دي فوراس وتاريخ العمل والتضامن في ليون",
+        "ar-EG": "ساحة كور دي فوراس في ليون",
+        "ar-IQ": "ساحة كور دي فوراس في ليون",
+        "ko": "쿠르 데 보라스 안뜰과 리옹 노동·상호부조의 기억"
+      },
+      "entity_type": "place",
+      "summary": "Iconic 19th-century Croix-Rousse courtyard with a six-story open stone staircase associated with silk-worker solidarity and civic history.",
+      "expanded_explanation": "Located between 9 Place Colbert, 14 Montée de Saint-Sébastien, and 29 Rue Imbert-Colomès on the slopes of La Croix-Rousse, the Cour des Voraces (built c. 1840) is famous for its monumental six-story façade staircase. It is closely linked in local memory to the Canut labor uprisings (1831 and 1834), the 1848–1849 Voraces mutual-aid society of silk workers, and WWII Resistance messengers who used Lyon’s unmapped passages. Because the building itself dates to c. 1840 (after the 1831/1834 revolts), historians distinguish 1830s neighborhood events from 1848 Voraces history, and MiraVerse treats wartime memory with respectful civic education rather than chase/combat gameplay.",
+      "knowledge_class": "contested_history",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "1831–1849 (Canut & Voraces Era) / 1940–1944 (WWII Civic Memory)",
+      "people": [
+        "Les Voraces (Silk-Worker Mutual Society)"
+      ],
+      "places": [
+        "Cour des Voraces (9 Place Colbert, Lyon)"
+      ],
+      "relationships": [
+        {
+          "target_id": "FR-KB-PLACE-TRABOULES-LYON",
+          "relation": "located_in",
+          "note": "Landmark courtyard passage in La Croix-Rousse"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "FR-P03",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Flag chronology nuance (c. 1840 construction vs 1831/1834 revolts); strictly forbid trivializing WWII persecution into chase or combat mechanics."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Look up at the grand stone staircase in the courtyard where neighbors helped one another carry baskets up six tall floors!",
+        "8-10": "The Cour des Voraces is a famous Lyon courtyard with a giant outdoor stone staircase where silk workers met to support their neighbors.",
+        "11-13": "At the Cour des Voraces, architecture tells a story of community solidarity: built around 1840, its open staircase became a symbol of Lyon’s silk weavers and neighborhood mutual aid.",
+        "14-17": "Historical analysis of the Cour des Voraces separates popular conflations (noting its c. 1840 construction postdates the 1831/1834 insurrections while anchoring the 1848 Voraces movement) and treats 1940s Resistance passage routes as non-trivialized civic heritage."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "verified",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "FR-A01",
+        "FR-A04"
+      ],
+      "atlas_links": [
+        "atlas:real:FR:cour_des_voraces",
+        "atlas:quest:FR:A04"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "cut_stone",
+          "slate_roof"
+        ],
+        "quest_objective_ids": [
+          "FR:ch1:lyon:build"
+        ]
+      }
+    },
+    {
+      "id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+      "country": "FR",
+      "title": {
+        "en": "The Mères Lyonnaises & Eugénie Brazier: Women-Led Culinary Craft",
+        "fr": "Les Mères Lyonnaises et Eugénie Brazier : entrepreneuriat culinaire féminin",
+        "ar-LB": "أمهات ليون وأوجيني برازييه: ريادة المطبخ الفرنسي",
+        "ar-EG": "أمهات ليون وأوجيني برازييه",
+        "ar-IQ": "أمهات ليون وأوجيني برازييه",
+        "ko": "리옹의 어머니 요리사들(메르 리오네즈)과 외제니 브라지에"
+      },
+      "entity_type": "person",
+      "summary": "Women chefs in Lyon—including Eugénie Brazier—who founded independent bouchons and restaurants, shaping modern French gastronomy and mentorship.",
+      "expanded_explanation": "From the 19th through the 20th century, the Mères Lyonnaises (such as Mère Guy, Mère Filloux, and Eugénie Brazier) transitioned from domestic cooks in bourgeois households to independent restaurant proprietors serving both silk workers and travelers. Eugénie Brazier (1895–1977) opened La Mère Brazier in 1921 and earned six Michelin stars across two restaurants in 1933, mentoring future generations of chefs. Specific Michelin statistics and personal anecdotes remain tagged for bibliographic verification.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "Late 19th Century – 1977",
+      "people": [
+        "Eugénie Brazier (1895–1977)",
+        "Mère Filloux",
+        "Mamie Claire (In-Game Mentor)"
+      ],
+      "places": [
+        "Lyon (Rue Royale & Vieux Lyon)"
+      ],
+      "relationships": [
+        {
+          "target_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+          "relation": "associated_with",
+          "note": "Mentorship and kitchen brigade craft in Lyon"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "FR-P04",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "FR-P05",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Verify exact dates and Michelin star records from primary archival sources; emphasize mentorship, organization, and craft rather than kitchen hierarchy stress."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "In Lyon’s warm kitchens, caring grandmothers and women chefs taught young helpers how to bake golden pastries and share meals!",
+        "8-10": "The Mères Lyonnaises were famous women cooks in Lyon—like Eugénie Brazier—who opened their own welcoming restaurants and taught apprentices their craft.",
+        "11-13": "Women entrepreneurs known as the Mères Lyonnaises shaped Lyon’s culinary reputation by turning home cooking techniques into celebrated restaurants and mentoring young chefs.",
+        "14-17": "The trajectory of the Mères Lyonnaises—culminating in Eugénie Brazier’s 1921 establishment and 1933 critical acclaim—demonstrates how working-class women chefs transformed regional bouchon traditions into modern gastronomic institutions."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "verified",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "FR-A03",
+        "FR-A05"
+      ],
+      "atlas_links": [
+        "atlas:real:FR:vieux_lyon",
+        "atlas:quest:FR:A03"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "puff_pastry",
+          "almond_cream",
+          "galette_des_rois"
+        ],
+        "quest_objective_ids": [
+          "FR:ch1:lyon:cook"
+        ]
+      }
+    },
+    {
+      "id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+      "country": "FR",
+      "title": {
+        "en": "Galette des Rois, Kitchen Brigade Teamwork & Transnational Pastry Exchange",
+        "fr": "Galette des Rois, brigade de cuisine et partage de pâtisseries familiales",
+        "ar-LB": "كعكة الملوك (غاليت دي روا) وتبادل تقاليد الحلويات العائلية",
+        "ar-EG": "كعكة غاليت دي روا وتبادل الحلويات",
+        "ar-IQ": "كعكة غاليت دي روا وتبادل الحلويات",
+        "ko": "갈레트 데 루아, 주방 브리가드 협동과 디아스포라 제과 교류"
+      },
+      "entity_type": "food",
+      "summary": "Connects Lyon’s flaky almond galette des rois (with its porcelain fève) and Levantine ma’amoul in a safety-aware, allergy-conscious family kitchen.",
+      "expanded_explanation": "In MiraVerse’s Lyon story, Mamie Claire, Camille, and Mira prepare a golden puff-pastry galette des rois filled with almond cream (frangipane) and a hidden porcelain fève charm alongside Levantine date-and-nut ma’amoul. The activity teaches cooperative kitchen brigade roles, nut/gluten allergy labeling (offering seed-butter or fruit-compote virtual substitutions), and safe serving conventions around the non-edible porcelain fève.",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "Traditional – Present",
+      "people": [
+        "Mamie Claire (In-Game Mentor)",
+        "Camille (In-Game Protagonist)",
+        "Mira (In-Game Protagonist)"
+      ],
+      "places": [
+        "Vieux Lyon Boulangerie"
+      ],
+      "relationships": [
+        {
+          "target_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+          "relation": "associated_with",
+          "note": "Applies Lyon kitchen brigade mentorship to family baking"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "FR-P05",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Include explicit tree-nut/almond allergy substitutions, adult oven supervision, and a reminder that the porcelain fève charm is not edible."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Help Mamie Claire layer flaky pastry, tuck in the little porcelain fève charm, and place the golden paper crown on the table!",
+        "8-10": "Organize the kitchen team to bake a golden galette des rois and compare it with ma’amoul cookies while checking that every guest has a safe, allergy-friendly slice.",
+        "11-13": "Compare how two family pastry traditions—French galette des rois and Levantine ma’amoul—use filled doughs and festive symbols to bring households together.",
+        "14-17": "Designing a community recipe archive requires documenting ingredient provenance, nut-free/gluten-aware substitutions, and non-edible fève safety notes while honoring cross-cultural culinary heritage."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "verified",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "FR-A02",
+        "FR-A03",
+        "FR-A05"
+      ],
+      "atlas_links": [
+        "atlas:quest:FR:A03",
+        "atlas:quest:FR:A05"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "puff_pastry",
+          "almond_cream",
+          "porcelain_feve",
+          "galette_des_rois",
+          "paper_crown"
+        ],
+        "quest_objective_ids": [
+          "FR:ch1:lyon:gather",
+          "FR:ch1:lyon:cook",
+          "FR:ch1:lyon:trade",
+          "FR:ch1:lyon:word"
+        ],
+        "story_scene_ids": [
+          3,
+          6,
+          11,
+          15
+        ]
+      }
+    }
+  ]
+}

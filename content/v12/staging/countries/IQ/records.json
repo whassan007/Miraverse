@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX06",
+  "country": "IQ",
+  "dgx_note": "All five cultural knowledge records (Abbasid Baghdad, Bayt al-Hikma, scholars, contested chronicles, Al-Mutanabbi Street, kleicha/shanasheel) include four age-tier annotations (e.g., foundational, classical, medieval, modern) and epistemic classifications (e.g., empirical, hermeneutic, normative, speculative).",
+  "record_count": 5,
+  "records": [
+    {
+      "id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+      "country": "IQ",
+      "title": {
+        "en": "Bayt al-Hikma (House of Wisdom) & Abbasid Translation Tradition",
+        "fr": "Bayt al-Hikma (Maison de la Sagesse) et la tradition de traduction abbasside",
+        "ar-IQ": "بيت الحكمة وحركة الترجمة في بغداد العباسية",
+        "ar-LB": "بيت الحكمة في بغداد",
+        "ar-EG": "بيت الحكمة في بغداد",
+        "ko": "바이트 알히크마(지혜의 집)와 압바스 왕조 번역 전통"
+      },
+      "entity_type": "organization",
+      "summary": "Abbasid-era caliphal library and translation tradition in Baghdad where Greek, Syriac, Persian, and Sanskrit works were studied in Arabic.",
+      "expanded_explanation": "Associated with the Abbasid caliphs Harun al-Rashid and al-Ma’mun in 9th-century Baghdad, Bayt al-Hikma (the House of Wisdom) represents a major library repository and multilingual translation movement connecting Greek, Syriac, Pahlavi (Middle Persian), Sanskrit, and Arabic scholarship. Modern historians note that while the translation movement is richly documented, specific institutional details—such as whether Bayt al-Hikma operated as a formal modern university—remain subject to scholarly debate and verification.",
+      "knowledge_class": "contested_history",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "8th–13th Century CE (Abbasid Caliphate)",
+      "people": [
+        "Harun al-Rashid",
+        "Caliph al-Ma’mun",
+        "Al-Khwarizmi",
+        "Al-Kindi",
+        "Hunayn ibn Ishaq",
+        "Thabit ibn Qurra",
+        "Banu Musa Brothers"
+      ],
+      "places": [
+        "Historic Baghdad",
+        "Tigris River"
+      ],
+      "relationships": [
+        {
+          "target_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+          "relation": "associated_with",
+          "note": "Scholars active in Baghdad circles"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "IQ-P01",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Flag exact institutional charter claims for historian verification; highlight pluralistic contributions (Muslim, Christian/Syriac, Sabian, Jewish, Persian scholars)."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "In old Baghdad by the river, scholars gathered colourful scrolls and books to share stories and star maps with friends from many lands.",
+        "8-10": "At Baghdad’s House of Wisdom, translators worked together to turn books from Greek, Syriac, Persian, and Sanskrit into Arabic so everyone could learn from them.",
+        "11-13": "During the 9th century, Baghdad’s Bayt al-Hikma library and translation circles connected scholars of diverse faiths and languages, preserving and expanding mathematics, medicine, and astronomy.",
+        "14-17": "While Bayt al-Hikma symbolizes the Abbasid translation movement, historians distinguish the well-documented network of court-sponsored translators from later idealized accounts treating the palace library as a modern university."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "IQ-A01",
+        "IQ-A02"
+      ],
+      "atlas_links": [
+        "atlas:real:IQ:tigris_baghdad",
+        "atlas:quest:IQ:A01"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "turquoise_tile",
+          "mud_brick"
+        ],
+        "quest_objective_ids": [
+          "IQ:ch1:tigris:gather"
+        ]
+      }
+    },
+    {
+      "id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+      "country": "IQ",
+      "title": {
+        "en": "Scholars of Baghdad: Al-Khwarizmi, Al-Kindi, Hunayn ibn Ishaq, Thabit ibn Qurra & Banu Musa",
+        "fr": "Savants de Bagdad : Al-Khwarizmi, Al-Kindi, Hunayn, Thabit et Banu Musa",
+        "ar-IQ": "علماء بغداد: الخوارزمي والكندي وحنين بن إسحاق وثابت بن قرة وبنو موسى",
+        "ar-LB": "علماء بغداد في العصر العباسي",
+        "ar-EG": "علماء بغداد في العصر العباسي",
+        "ko": "바그다드의 학자들: 알콰리즈미, 알킨디, 후나인, 사비트, 바누 무사 형제"
+      },
+      "entity_type": "person",
+      "summary": "Pioneering mathematicians, translators, and engineers in 9th-century Baghdad who advanced algebra, optics, medicine, and mechanical devices.",
+      "expanded_explanation": "Abbasid Baghdad brought together polymaths from diverse cultural backgrounds: Muhammad ibn Musa al-Khwarizmi (whose Kitab al-Jabr gave algebra its name), Ya’qub ibn Ishaq al-Kindi (optics and cryptanalysis), Hunayn ibn Ishaq (an East Syriac Christian physician-translator who developed rigorous text-collation methods), Thabit ibn Qurra (a Sabian mathematician from Harran), and the three Banu Musa brothers (authors of Kitab al-Hiyal / The Book of Ingenious Devices describing water clocks, fountains, and self-trimming lamps).",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "9th Century CE",
+      "people": [
+        "Muhammad ibn Musa al-Khwarizmi",
+        "Ya’qub ibn Ishaq al-Kindi",
+        "Hunayn ibn Ishaq",
+        "Thabit ibn Qurra",
+        "Banu Musa Brothers (Muhammad, Ahmad, al-Hasan)"
+      ],
+      "places": [
+        "Baghdad"
+      ],
+      "relationships": [
+        {
+          "target_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+          "relation": "associated_with",
+          "note": "Active in Baghdad scientific and translation networks"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "IQ-P02",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Verify individual treatise titles and biographical dates before upgrading from source_asserted_unverified."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Meet the clever inventors of Baghdad who built playful water fountains, mechanical lamps, and number games!",
+        "8-10": "Scholars like al-Khwarizmi studied numbers and stars, Hunayn translated medical books, and the Banu Musa brothers designed clever water-powered machines.",
+        "11-13": "Baghdad’s scholarly community united al-Khwarizmi (algebra), al-Kindi (optics), Hunayn ibn Ishaq (multilingual medical translation), Thabit ibn Qurra (geometry), and the Banu Musa engineers.",
+        "14-17": "The collaboration among al-Khwarizmi, al-Kindi, Hunayn ibn Ishaq, Thabit ibn Qurra, and the Banu Musa illustrates how philological translation (collating Greek and Syriac manuscripts) directly fueled experimental mechanics and algebraic theory."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "IQ-A01",
+        "IQ-A04"
+      ],
+      "atlas_links": [
+        "atlas:real:IQ:tigris_baghdad",
+        "atlas:quest:IQ:A04"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "brass_teapot",
+          "turquoise_tile"
+        ],
+        "quest_objective_ids": [
+          "IQ:ch1:tigris:build"
+        ]
+      }
+    },
+    {
+      "id": "IQ-KB-EVENT-GOLD-AND-1258-TROPES",
+      "country": "IQ",
+      "title": {
+        "en": "Contested Chronicles: Weight-in-Gold Payments & 1258 River-of-Ink Accounts",
+        "fr": "Chroniques contestées : paiement au poids de l’or et récits de 1258",
+        "ar-IQ": "الروايات التاريخية قيد التدقيق: وزن الكتب ذهباً وروايات ١٢٥٨",
+        "ar-LB": "الروايات التاريخية حول بيت الحكمة",
+        "ar-EG": "الروايات التاريخية حول بيت الحكمة",
+        "ko": "검증이 필요한 연대기 일화: 금 무게만큼의 번역료와 1258년 강물 이야기"
+      },
+      "entity_type": "event",
+      "summary": "Famous historical anecdotes—such as paying translators the weight of books in gold or the Tigris running black with ink—require source criticism.",
+      "expanded_explanation": "Two famous narratives appear frequently in popular accounts of Baghdad: Ibn Abi Usaybi’a’s 13th-century anecdote that Caliph al-Ma’mun paid Hunayn ibn Ishaq the weight of translated manuscripts in gold dinars, and later Mamluk-era chronicles claiming the Tigris turned black from the ink of books thrown into the river during the 1258 siege. Historians treat these as vivid literary motifs emphasizing the value of books and the shock of 1258 rather than verified quantitative facts.",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "confidence": "low",
+      "time_period": "9th Century – 1258 CE (recorded in 13th–15th Century chronicles)",
+      "people": [
+        "Hunayn ibn Ishaq",
+        "Caliph al-Ma’mun",
+        "Ibn Abi Usaybi’a (Chronicler)"
+      ],
+      "places": [
+        "Baghdad",
+        "Tigris River"
+      ],
+      "relationships": [
+        {
+          "target_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+          "relation": "associated_with",
+          "note": "Historiographical evaluation of Abbasid chronicles"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "IQ-P03",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Must never be presented as verified statistical history; no graphic siege violence for children."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "People in Baghdad loved books so much that storytellers said a good book was as precious as shining gold!",
+        "8-10": "Old stories say translators were paid the weight of their books in gold—showing how much Baghdad’s people treasured learning, even if the story was exaggerated!",
+        "11-13": "Historians compare sources carefully: stories about paying translators in gold or rivers turning black with ink were written centuries later to express how precious books were.",
+        "14-17": "Source criticism distinguishes primary 9th-century evidence from 13th–15th century literary topoi (such as Ibn Abi Usaybi’a’s gold-weight anecdote or later river-of-ink accounts of 1258), teaching players how historians evaluate chroniclers’ claims."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "IQ-A02",
+        "IQ-A05"
+      ],
+      "atlas_links": [
+        "atlas:real:IQ:tigris_baghdad",
+        "atlas:quest:IQ:A02"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "brass_teapot"
+        ],
+        "quest_objective_ids": [
+          "IQ:ch1:tigris:trade"
+        ]
+      }
+    },
+    {
+      "id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+      "country": "IQ",
+      "title": {
+        "en": "Al-Mutanabbi Street, Shabandar Café & the International Book Solidarity Archive",
+        "fr": "Rue Al-Mutanabbi, Café Shabandar et l’archive de solidarité du livre",
+        "ar-IQ": "شارع المتنبي ومقهى الشابندر وأرشيف التضامن الثقافي",
+        "ar-LB": "شارع المتنبي في بغداد",
+        "ar-EG": "شارع المتنبي في بغداد",
+        "ko": "알무타나비 거리와 세계 도서 연대 아카이브"
+      },
+      "entity_type": "place",
+      "summary": "Baghdad’s historic booksellers’ street by the Tigris, celebrating plural cultural memory, book preservation, and global artistic solidarity.",
+      "expanded_explanation": "Named after the 10th-century poet Abu al-Tayyib al-Mutanabbi, Al-Mutanabbi Street near the Tigris and the adjacent Al-Qishla clocktower has long anchored Baghdad’s printing, bookselling, and literary café culture, reflecting Iraq’s plural Muslim, Christian, Syriac, Kurdish, Mandaean, and Jewish communities. After a 2007 attack, local booksellers rebuilt the market and international artists created the Al-Mutanabbi Street Starts Here archive. In MiraVerse, this is honored through cooperative book-care and literary festival quests without any graphic depiction of violence.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "10th Century (Poet) / 20th–21st Century (Book Market & Solidarity Project)",
+      "people": [
+        "Abu al-Tayyib al-Mutanabbi",
+        "Bibi Amal (In-Game Mentor)",
+        "Noor (In-Game Protagonist)",
+        "Beau Beausoleil (Bibliographic Candidate)"
+      ],
+      "places": [
+        "Al-Mutanabbi Street",
+        "Al-Qishla",
+        "Baghdad"
+      ],
+      "relationships": [
+        {
+          "target_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+          "relation": "associated_with",
+          "note": "Shared Friday cultural gathering route in Baghdad"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "IQ-P04",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "IQ-P05",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "UNESCO-CREATIVE-BAGHDAD",
+          "passage_locator": "Baghdad UNESCO City of Literature (2015)",
+          "url": "https://www.unesco.org/en/creative-cities/baghdad",
+          "verified": true,
+          "external_citation": "UNESCO Creative Cities Network: Baghdad City of Literature (Al-Mutanabbi Street)"
+        }
+      ],
+      "sensitivity_notes": [
+        "Age-sensitive handling mandatory: 5–7 and 8–10 focus strictly on bookshops, poetry, and community care; 11–13 and 14–17 mention post-2007 rebuilding and the international solidarity archive non-graphically, never reenacting violence."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Walk down Baghdad’s book street where friendly shopkeepers stack colourful storybooks on tables beside the river!",
+        "8-10": "On Al-Mutanabbi Street, neighbors gather every week to browse books, sip cardamom tea, and share poems from all of Iraq’s communities.",
+        "11-13": "Al-Mutanabbi Street is the historic heart of Baghdad’s literary life. When the street needed rebuilding in 2007, Iraqi booksellers and artists worldwide united to protect its book culture.",
+        "14-17": "Al-Mutanabbi Street and the Al-Mutanabbi Street Starts Here artist-book archive exemplify cultural resilience: preserving Iraq’s pluralistic intellectual heritage across Baghdad and the global diaspora after 2007."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "IQ-A01",
+        "IQ-A02",
+        "IQ-A05"
+      ],
+      "atlas_links": [
+        "atlas:real:IQ:al_mutanabbi_street",
+        "atlas:real:IQ:al_qishla",
+        "atlas:quest:IQ:A05"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "brass_teapot"
+        ],
+        "quest_objective_ids": [
+          "IQ:ch1:tigris:trade",
+          "IQ:ch1:tigris:word"
+        ],
+        "story_scene_ids": [
+          3,
+          7,
+          14
+        ]
+      }
+    },
+    {
+      "id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+      "country": "IQ",
+      "title": {
+        "en": "Cardamom Date Kleicha, Shanasheel Courtyards & Plural Diaspora Memory",
+        "fr": "Kleicha aux dattes, cours à shanasheel et mémoire de la diaspora irakienne",
+        "ar-IQ": "الكليچة العراقية والشناشيل وذاكرة العائلة المتنوعة",
+        "ar-LB": "الكليجة العراقية والشناشيل",
+        "ar-EG": "الكليجة العراقية والشناشيل",
+        "ko": "카다몸 대추야자 클레이차, 샤나실 안뜰과 이라크 디아스포라의 기억"
+      },
+      "entity_type": "food",
+      "summary": "Spiced date-filled kleicha pastries and carved wooden shanasheel balconies sustain intergenerational hospitality in Baghdad and the diaspora.",
+      "expanded_explanation": "Across Iraq’s diverse communities and diaspora households, baking kleicha (spiced pastry wheels stuffed with date paste, walnuts, or cardamom) and caring for shaded courtyard houses with projecting latticework balconies (shanasheel) anchor seasonal holidays and literary gatherings. In MiraVerse, Bibi Amal guides players through virtual kleicha shaping and shanasheel restoration.",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "Traditional – Present",
+      "people": [
+        "Bibi Amal (In-Game Mentor)",
+        "Noor (In-Game Protagonist)",
+        "Khalo Salam (In-Game Cast)"
+      ],
+      "places": [
+        "Baghdad Courtyard",
+        "Erbil",
+        "Basra"
+      ],
+      "relationships": [
+        {
+          "target_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "relation": "associated_with",
+          "note": "Hospitality shared during Baghdadi literary gatherings"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "IQ-P06",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Adult NPCs operate virtual ovens; provide nut-free/gluten-aware notes in recipe cards; represent Iraq’s plural communities inclusively."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Roll sweet date paste and fragrant green cardamom into pinwheel kleicha cookies with Bibi Amal in the sunny courtyard!",
+        "8-10": "Help Bibi Amal stamp patterns onto date-filled kleicha cookies and repair the carved wooden shanasheel balcony that shades the courtyard.",
+        "11-13": "Shanasheel lattice screens cool Baghdadi courtyards naturally while kleicha recipes—passed down with family variations in fillings and spices—bring relatives and neighbors together.",
+        "14-17": "Material culture in the Iraqi diaspora links architectural conservation (shaded shanasheel microclimates) and culinary heritage (regional kleicha variations across plural Iraqi communities) to intergenerational memory."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "IQ-A03",
+        "IQ-A04",
+        "IQ-A05"
+      ],
+      "atlas_links": [
+        "atlas:quest:IQ:A03",
+        "atlas:quest:IQ:A04"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "wheat_dough",
+          "date_paste",
+          "cardamom",
+          "kleicha",
+          "palm_wood",
+          "mud_brick",
+          "turquoise_tile"
+        ],
+        "quest_objective_ids": [
+          "IQ:ch1:tigris:cook",
+          "IQ:ch1:tigris:build",
+          "IQ:ch1:tigris:word"
+        ],
+        "story_scene_ids": [
+          5,
+          9,
+          11,
+          15
+        ]
+      }
+    }
+  ]
+}

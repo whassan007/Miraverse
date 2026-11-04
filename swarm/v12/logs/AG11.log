@@ -1,0 +1,16 @@
+=== AGENT AG11 (Antigravity · W3) ===
+Timestamp: 2026-11-04T07:37:24.996Z
+Resolved Model: Gemini 4 Argon
+Runtime Environment: host_agy_orchestrator
+Branch: v12/AG11
+Agent Commit SHA: ae44f4e
+Integration Merge SHA: 783311c
+Owned Paths: art/v12/countries/KR/hanok, apps/web/public/art/v12/KR/hanok
+Modified Files (3): apps/web/public/art/v12/KR/hanok/jeonju-hanok-and-jangdokdae.svg, art/v12/countries/KR/hanok/jeonju-hanok-and-jangdokdae.svg, art/v12/countries/KR/hanok/manifest.json
+Test Command: node -e "const fs=require('fs'); const s=fs.readFileSync('art/v12/countries/KR/hanok/jeonju-hanok-and-jangdokdae.svg','utf8'); if(!s.includes('not to geographic scale')) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: art/v12/countries/KR/hanok/jeonju-hanok-and-jangdokdae.svg
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE AG11 ae44f4e art/v12/countries/KR/hanok/jeonju-hanok-and-jangdokdae.svg

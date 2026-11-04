@@ -1,0 +1,17 @@
+=== AGENT CX05 (Codex · W5) ===
+Timestamp: 2026-11-04T07:48:05.755Z
+Resolved Model: gpt-6-astra
+Runtime Environment: host_agy_orchestrator
+Branch: v12/CX05
+Agent Commit SHA: 9e2c991
+Integration Merge SHA: c1e628c
+Owned Paths: tools/v12/release/
+Modified Files (2): tools/v12/release/release-manifest-v12.json, tools/v12/release/verify-release-gate.mjs
+Test Command: node tools/v12/release/verify-release-gate.mjs
+Test Exit Code: 0
+Evidence Paths: tools/v12/release/verify-release-gate.mjs, tools/v12/release/release-manifest-v12.json
+Blockers: Native Roblox Studio GUI and Minecraft Bedrock client GUI are unavailable on Linux aarch64 host; CLI artifacts (.rbxl and .mcaddon) built and verified.
+--- STDOUT/STDERR ---
+MiraVerse v1.2 Release Gate: ALL REQUIRED ARTIFACTS PRESENT.
+
+DONE CX05 9e2c991 tools/v12/release/verify-release-gate.mjs

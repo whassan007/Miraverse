@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "AG02",
+  "country": "LB",
+  "acts_covered": [
+    "LB-A01",
+    "LB-A02",
+    "LB-A03",
+    "LB-A04",
+    "LB-A05"
+  ],
+  "license": "CC0-1.0-Procedural-MiraVerse"
+}

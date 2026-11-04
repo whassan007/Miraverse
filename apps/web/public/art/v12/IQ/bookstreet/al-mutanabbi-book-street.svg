@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-labelledby="iq-mut-title iq-mut-desc">
+  <title id="iq-mut-title">Al-Mutanabbi Street Friday Book Market &amp; Shabandar Café</title>
+  <desc id="iq-mut-desc">Respectful non-graphic illustration of Al-Mutanabbi Street bookstalls in Baghdad and the international Al-Mutanabbi Street Starts Here solidarity print archive.</desc>
+  <rect width="800" height="360" fill="#1E1B18" rx="14"/>
+  <text x="32" y="42" fill="#FEF3C7" font-family="Inter, sans-serif" font-size="18" font-weight="700">Al-Mutanabbi Street Book Market &amp; Solidarity Print Archive</text>
+  <rect x="520" y="22" width="248" height="26" rx="13" fill="#0F766E"/>
+  <text x="644" y="39" text-anchor="middle" fill="#F0FDFA" font-family="Inter, sans-serif" font-size="11" font-weight="700">Contemporary Practice · Verified</text>
+  <g transform="translate(40,75)">
+    <rect x="0" y="0" width="215" height="215" rx="12" fill="#292524" stroke="#F59E0B" stroke-width="2"/>
+    <path d="M35,195 L35,95 A72,72 0 0,1 180,95 L180,195 Z" fill="#451A03" stroke="#FBBF24" stroke-width="2"/>
+    <text x="108" y="125" text-anchor="middle" fill="#FDE68A" font-family="Inter, sans-serif" font-size="13" font-weight="700">Friday Book Tables</text>
+    <text x="108" y="148" text-anchor="middle" fill="#FCD34D" font-family="Inter, sans-serif" font-size="11">“Books stay outside;</text>
+    <text x="108" y="165" text-anchor="middle" fill="#FCD34D" font-family="Inter, sans-serif" font-size="11">readers do not steal”</text>
+  </g>
+  <g transform="translate(292,75)">
+    <rect x="0" y="0" width="215" height="215" rx="12" fill="#292524" stroke="#38BDF8" stroke-width="2"/>
+    <text x="108" y="48" text-anchor="middle" fill="#E0F2FE" font-family="Inter, sans-serif" font-size="14" font-weight="700">Shabandar Café</text>
+    <rect x="35" y="72" width="145" height="90" rx="8" fill="#1E293B" stroke="#7DD3FC" stroke-width="1.5"/>
+    <text x="108" y="112" text-anchor="middle" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="12">Poets, Historians &amp;</text>
+    <text x="108" y="132" text-anchor="middle" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="12">Lemon Tea Conversations</text>
+    <text x="108" y="190" text-anchor="middle" fill="#94A3B8" font-family="Inter, sans-serif" font-size="11">Est. 1917 · Community Hub</text>
+  </g>
+  <g transform="translate(545,75)">
+    <rect x="0" y="0" width="215" height="215" rx="12" fill="#292524" stroke="#A78BFA" stroke-width="2"/>
+    <text x="108" y="48" text-anchor="middle" fill="#EDE9FE" font-family="Inter, sans-serif" font-size="14" font-weight="700">Solidarity Broadsides</text>
+    <rect x="42" y="72" width="130" height="95" rx="6" fill="#312E81" stroke="#C4B5FD" stroke-width="1.5"/>
+    <text x="108" y="110" text-anchor="middle" fill="#F5F3FF" font-family="Inter, sans-serif" font-size="11">“Al-Mutanabbi Street</text>
+    <text x="108" y="128" text-anchor="middle" fill="#F5F3FF" font-family="Inter, sans-serif" font-size="11">Starts Here” (Est. 2007)</text>
+    <text x="108" y="190" text-anchor="middle" fill="#C4B5FD" font-family="Inter, sans-serif" font-size="10">Non-graphic civic remembrance</text>
+  </g>
+  <text x="400" y="330" text-anchor="middle" fill="#D6D3D1" font-family="Inter, sans-serif" font-size="12">Named after 10th-century poet Abu al-Tayyib al-Mutanabbi · Celebrated across Baghdad and global diaspora book festivals</text>
+</svg>

@@ -1,0 +1,16 @@
+=== AGENT AG10 (Antigravity · W3) ===
+Timestamp: 2026-11-04T07:37:24.000Z
+Resolved Model: Gemini 4 Argon
+Runtime Environment: host_agy_orchestrator
+Branch: v12/AG10
+Agent Commit SHA: 34475fd
+Integration Merge SHA: fc3bc4c
+Owned Paths: art/v12/countries/KR/obangsaek, apps/web/public/art/v12/KR/obangsaek
+Modified Files (3): apps/web/public/art/v12/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg, art/v12/countries/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg, art/v12/countries/KR/obangsaek/manifest.json
+Test Command: node -e "const fs=require('fs'); const s=fs.readFileSync('art/v12/countries/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg','utf8'); if(!s.includes('Obangsaek')) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: art/v12/countries/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE AG10 34475fd art/v12/countries/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg

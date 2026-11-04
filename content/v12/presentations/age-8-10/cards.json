@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "AG15",
+  "age_tier": "8-10",
+  "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+  "total_cards": 25,
+  "cards": [
+    {
+      "record_id": "LB-KB-PLACE-BYBLOS-PORT",
+      "country": "LB",
+      "age_tier": "8-10",
+      "title_en": "Byblos (Jbeil) Maritime Harbor & Cedar Trade",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "For thousands of years, sailors in Byblos traded strong cedar timber from Mount Lebanon for papyrus scrolls from Egypt, turning their stone harbor into a busy meeting place.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A02"
+      ]
+    },
+    {
+      "record_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+      "country": "LB",
+      "age_tier": "8-10",
+      "title_en": "Myth of Isis, Osiris, and the Sacred Tree of Byblos",
+      "knowledge_class": "mythology",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "In an ancient myth linking Egypt and Lebanon, a carved chest drifted to the shore of Byblos and became part of a great palace pillar of scented wood.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A04"
+      ]
+    },
+    {
+      "record_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+      "country": "LB",
+      "age_tier": "8-10",
+      "title_en": "Afqa Spring, Nahr Ibrahim, and the Seasonal Myth of Adonis",
+      "knowledge_class": "interpretation",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "At Afqa Cave in Mount Lebanon, melting snow carries red iron-rich earth into Nahr Ibrahim. Long ago, storytellers imagined this seasonal change as a myth of spring returning.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "LB-A02",
+        "LB-A04"
+      ]
+    },
+    {
+      "record_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+      "country": "LB",
+      "age_tier": "8-10",
+      "title_en": "Sarcophagus of King Ahiram & the 22-Letter Phoenician Abjad",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Instead of hundreds of complicated symbols, Byblos scribes used 22 sound-letters carved on stone chests like King Ahiram’s sarcophagus so sailors could write messages anywhere.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A05"
+      ]
+    },
+    {
+      "record_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+      "country": "LB",
+      "age_tier": "8-10",
+      "title_en": "Writing, Recipes, and Oral Memory as a Portable Archive in the Lebanese Diaspora",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "When families travel far from Lebanon, they carry their favorite words, stories, and za’atar flatbread recipes like a treasure chest of home.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "LB-A03",
+        "LB-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+      "country": "IQ",
+      "age_tier": "8-10",
+      "title_en": "Bayt al-Hikma (House of Wisdom) & Abbasid Translation Tradition",
+      "knowledge_class": "contested_history",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "At Baghdad’s House of Wisdom, translators worked together to turn books from Greek, Syriac, Persian, and Sanskrit into Arabic so everyone could learn from them.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A02"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+      "country": "IQ",
+      "age_tier": "8-10",
+      "title_en": "Scholars of Baghdad: Al-Khwarizmi, Al-Kindi, Hunayn ibn Ishaq, Thabit ibn Qurra & Banu Musa",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Scholars like al-Khwarizmi studied numbers and stars, Hunayn translated medical books, and the Banu Musa brothers designed clever water-powered machines.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A04"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-EVENT-GOLD-AND-1258-TROPES",
+      "country": "IQ",
+      "age_tier": "8-10",
+      "title_en": "Contested Chronicles: Weight-in-Gold Payments & 1258 River-of-Ink Accounts",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "Old stories say translators were paid the weight of their books in gold—showing how much Baghdad’s people treasured learning, even if the story was exaggerated!",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "IQ-A02",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+      "country": "IQ",
+      "age_tier": "8-10",
+      "title_en": "Al-Mutanabbi Street, Shabandar Café & the International Book Solidarity Archive",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "On Al-Mutanabbi Street, neighbors gather every week to browse books, sip cardamom tea, and share poems from all of Iraq’s communities.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A02",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+      "country": "IQ",
+      "age_tier": "8-10",
+      "title_en": "Cardamom Date Kleicha, Shanasheel Courtyards & Plural Diaspora Memory",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Help Bibi Amal stamp patterns onto date-filled kleicha cookies and repair the carved wooden shanasheel balcony that shades the courtyard.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "IQ-A03",
+        "IQ-A04",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+      "country": "EG",
+      "age_tier": "8-10",
+      "title_en": "Egyptian Fanous Lanterns & Competing Fatimid/Coptic Origin Narratives",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "How did Cairo’s fanous tradition begin? Some stories tell of a starry welcome parade over a thousand years ago, while others point to old streetlamps that lit up the city at night.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "EG-A01",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+      "country": "EG",
+      "age_tier": "8-10",
+      "title_en": "Cairo Lantern Metalwork, Stained Glass & Khayamiya Tentmaker Appliqué",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Cairo artisans fit coloured glass into brass frames to make fanous lanterns and stitch geometric flower patterns onto khayamiya cloth.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "EG-A01",
+        "EG-A04"
+      ]
+    },
+    {
+      "record_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+      "country": "EG",
+      "age_tier": "8-10",
+      "title_en": "Neighborhood Soundscapes: The Musaharati Drummer & Festive Cairo Chants",
+      "knowledge_class": "folklore",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "In Cairo neighborhoods, the musaharati taps a small drum and greets families by name while children swing glowing lanterns.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "EG-A02",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+      "country": "EG",
+      "age_tier": "8-10",
+      "title_en": "Teta Samira’s Koshari & Inclusive Courtyard Hospitality",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "externally_corrobated",
+      "explanation": "Layer fluffy rice, lentils, pasta, tangy tomato sauce, and crispy onions in order to serve warm bowls of Egyptian koshari to the neighbors.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "EG-A02",
+        "EG-A03"
+      ]
+    },
+    {
+      "record_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+      "country": "EG",
+      "age_tier": "8-10",
+      "title_en": "Egyptian Diaspora Celebrations & Ontario Egyptian Heritage Month Candidate Fact",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "In diaspora neighborhoods, Egyptian families host heritage days where friends fold paper fanous lanterns and learn Arabic words together.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "EG-A04",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PLACE-TRABOULES-LYON",
+      "country": "FR",
+      "age_tier": "8-10",
+      "title_en": "The Traboules of Vieux Lyon and La Croix-Rousse",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "In Lyon, covered walkways called traboules let neighbors walk right through stone courtyards and down hill stairs without getting caught in the rain.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "FR-A01",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+      "country": "FR",
+      "age_tier": "8-10",
+      "title_en": "The Canuts of La Croix-Rousse & Jacquard Punch-Card Silk Weaving",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Silk weavers in Lyon called canuts used cards with punched holes to guide their tall looms, creating bright patterns and carrying the silk through covered passages.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "FR-A02",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PLACE-COUR-DES-VORACES",
+      "country": "FR",
+      "age_tier": "8-10",
+      "title_en": "Cour des Voraces, Labor Mutualism & Historical Memory in Lyon",
+      "knowledge_class": "contested_history",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "The Cour des Voraces is a famous Lyon courtyard with a giant outdoor stone staircase where silk workers met to support their neighbors.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "FR-A01",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+      "country": "FR",
+      "age_tier": "8-10",
+      "title_en": "The Mères Lyonnaises & Eugénie Brazier: Women-Led Culinary Craft",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "The Mères Lyonnaises were famous women cooks in Lyon—like Eugénie Brazier—who opened their own welcoming restaurants and taught apprentices their craft.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "FR-A03",
+        "FR-A05"
+      ]
+    },
+    {
+      "record_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+      "country": "FR",
+      "age_tier": "8-10",
+      "title_en": "Galette des Rois, Kitchen Brigade Teamwork & Transnational Pastry Exchange",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Organize the kitchen team to bake a golden galette des rois and compare it with ma’amoul cookies while checking that every guest has a safe, allergy-friendly slice.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "FR-A02",
+        "FR-A03",
+        "FR-A05"
+      ]
+    },
+    {
+      "record_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+      "country": "KR",
+      "age_tier": "8-10",
+      "title_en": "Bibimbap (Goldongban) & Regional Variants: Jeonju, Jinju, Tongyeong & Andong",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Across Korea, different towns make bibimbap in their own way: Jeonju uses yellow mung-bean jelly and bean sprouts, Tongyeong adds ocean greens, and Andong seasons with mild soy sauce.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "KR-A02",
+        "KR-A03"
+      ]
+    },
+    {
+      "record_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+      "country": "KR",
+      "age_tier": "8-10",
+      "title_en": "Competing Origin Narratives of Bibimbap: Ritual, Court, Agriculture & Lunar New Year",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "Why did people start mixing rice and vegetables together? Some stories point to busy harvest picnics in the fields, while others point to New Year’s Eve family dinners.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "KR-A03",
+        "KR-A05"
+      ]
+    },
+    {
+      "record_id": "KR-KB-THEME-OBANGSAEK-FIVE-COLORS",
+      "country": "KR",
+      "age_tier": "8-10",
+      "title_en": "Obangsaek (오방색): Five-Color Cultural Symbolism & Harmony of the Bowl",
+      "knowledge_class": "interpretation",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Korean cooks and artists use five traditional colours called Obangsaek—green/blue, red, yellow, white, and black—to make every bowl and hanbok look balanced and bright.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "KR-A01",
+        "KR-A02",
+        "KR-A03"
+      ]
+    },
+    {
+      "record_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+      "country": "KR",
+      "age_tier": "8-10",
+      "title_en": "Jeonju Hanok Village, Giwa Roofs, Nambu Market & Pungnammun Gate",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "In Jeonju Hanok Village, hundreds of wooden homes with curved giwa roofs and paper screens stand near the busy Nambu Market and Pungnammun Gate.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "KR-A01",
+        "KR-A04"
+      ]
+    },
+    {
+      "record_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+      "country": "KR",
+      "age_tier": "8-10",
+      "title_en": "Shared Bowls, Chuseok Songpyeon & Korean Diaspora Cultural Continuity",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Whether in Jeonju or far away, families steam half-moon songpyeon over pine needles and share colourful bowls around the table to celebrate together.",
+      "interaction_style": "short_dialogue_collection_sorting_guided_craft",
+      "max_words_budget": 65,
+      "linked_quests": [
+        "KR-A03",
+        "KR-A05"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": "1.2.0",
+  "agent_id": "AG19",
+  "collectibles": [
+    {
+      "id": "stamp-v12-lb",
+      "country": "LB",
+      "title": "Byblos Consonantal Script Seal",
+      "svg": "/art/v12/passport/v12-passport-collectible-stamps.svg",
+      "unlocked_by_act": "lb-v12-act-5"
+    },
+    {
+      "id": "stamp-v12-iq",
+      "country": "IQ",
+      "title": "Baghdad Banu Musa Astrolabe & Book Seal",
+      "svg": "/art/v12/passport/v12-passport-collectible-stamps.svg",
+      "unlocked_by_act": "iq-v12-act-5"
+    },
+    {
+      "id": "stamp-v12-eg",
+      "country": "EG",
+      "title": "Cairo Khayamiya Lotus & Fanous Seal",
+      "svg": "/art/v12/passport/v12-passport-collectible-stamps.svg",
+      "unlocked_by_act": "eg-v12-act-5"
+    },
+    {
+      "id": "stamp-v12-fr",
+      "country": "FR",
+      "title": "Lyon Jacquard Punch-Card & Traboule Seal",
+      "svg": "/art/v12/passport/v12-passport-collectible-stamps.svg",
+      "unlocked_by_act": "fr-v12-act-5"
+    },
+    {
+      "id": "stamp-v12-kr",
+      "country": "KR",
+      "title": "Jeonju Obangsaek Harmony Bowl Seal",
+      "svg": "/art/v12/passport/v12-passport-collectible-stamps.svg",
+      "unlocked_by_act": "kr-v12-act-5"
+    }
+  ]
+}

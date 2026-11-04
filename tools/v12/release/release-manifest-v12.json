@@ -1,0 +1,22 @@
+{
+  "version": "1.2.0",
+  "agent_id": "CX05",
+  "generated_at": "2026-11-04T07:48:05.319Z",
+  "artifacts": {
+    "roblox_luau_module": "apps/roblox/src/shared/KnowledgeV12.luau",
+    "roblox_rbxl_binary": "dist/roblox/MiraVerse.rbxl",
+    "minecraft_bedrock_ts": "apps/minecraft/scripts/generated/knowledgeV12.ts",
+    "minecraft_mcaddon": "dist/minecraft/MiraVerse-Byblos-Companion-v0.8.0.mcaddon",
+    "web_knowledge_bundle": "apps/web/src/generated/knowledgeV12.json",
+    "web_encyclopedia_ui": "apps/web/src/features/encyclopedia-v12/CulturalEncyclopediaSectionV12.tsx"
+  },
+  "host_environment_truthfulness": {
+    "host_arch": "linux_aarch64_nvidia_gb10",
+    "web_vite_build": "PASS",
+    "vitest_v12_suite": "PASS",
+    "rojo_rbxl_build": "PASS",
+    "bedrock_mcaddon_pack": "PASS",
+    "roblox_studio_gui_runtime": "NOT_RUN_ON_LINUX_AARCH64_HOST",
+    "minecraft_bedrock_client_gui_runtime": "NOT_RUN_ON_LINUX_AARCH64_HOST"
+  }
+}

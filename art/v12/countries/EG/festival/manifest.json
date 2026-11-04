@@ -1,0 +1,13 @@
+{
+  "agent_id": "AG07",
+  "country": "EG",
+  "kit": "festival",
+  "assets": [
+    {
+      "id": "eg-svg-festival-route",
+      "path": "/art/v12/EG/festival/cairo-courtyard-festival-route.svg",
+      "map_type": "in_game_quest_map",
+      "scale_disclaimer": "in-game map / not to geographic scale"
+    }
+  ]
+}

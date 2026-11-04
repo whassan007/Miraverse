@@ -1,0 +1,24 @@
+{
+  "version": "1.2.0",
+  "agent_id": "AG20",
+  "reviewer_role": "Independent Visual & Cultural-Appropriateness Reviewer",
+  "reviewed_at": "2026-11-04T07:48:01.790Z",
+  "verdict": "APPROVED_WITH_EPISTEMIC_AND_SAFETY_LABELS",
+  "svg_assets_reviewed": 13,
+  "checks": {
+    "no_stereotypes_or_orientalist_caricatures": true,
+    "no_sacred_iconography_misuse": true,
+    "no_forced_religious_observance_in_ui": true,
+    "non_graphic_civic_remembrance_for_2007_baghdad_and_wwii_lyon": true,
+    "in_game_maps_carry_not_to_geographic_scale_badge": true,
+    "epistemic_badges_neutral_and_non_gamified": true,
+    "allergen_and_cooking_heat_warnings_visible": true
+  },
+  "country_notes": {
+    "LB": "Byblos harbor and Phoenician script diagrams clearly separate Isis/Osiris and Adonis/Afqa mythology from the ~1000 BCE Ahiram consonantal abjad.",
+    "IQ": "Bayt al-Hikma routing diagram and Al-Mutanabbi Street broadside art honor Iraq’s plural Muslim, Syriac Christian, Sabian, Jewish, and Persian heritage without graphic violence.",
+    "EG": "Fanous craft and khayamiya geometric star diagrams present four competing origin narratives neutrally and frame Ramadan courtyard light as inclusive hospitality.",
+    "FR": "Cour des Voraces cutaway and Jacquard/Mères Lyonnaises diagrams highlight mutual-aid labor and women-led culinary entrepreneurship with non-graphic WWII courier history.",
+    "KR": "Obangsaek five-color wheel and Jeonju Hanok jangdokdae diagrams frame five-color harmony as cultural tradition and provide cooked vegetarian/allergen-safe bowl defaults."
+  }
+}

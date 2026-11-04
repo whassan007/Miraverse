@@ -1,0 +1,471 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX07",
+  "country": "EG",
+  "dgx_note": "All 5 EG cultural knowledge records (Fanous competing origins, metalwork/stained glass/khayamiya, musaharati, koshari, diaspora heritage) include 4 age-tier annotations (child, youth, adult, elder) and explicit epistemic classifications (empirical, experiential, traditional, speculative).",
+  "record_count": 5,
+  "records": [
+    {
+      "id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+      "country": "EG",
+      "title": {
+        "en": "Egyptian Fanous Lanterns & Competing Fatimid/Coptic Origin Narratives",
+        "fr": "Les lanternes Fanous égyptiennes et les récits d’origine concurrents",
+        "ar-EG": "فانوس رمضان وتعدد الروايات التاريخية لنشأته في مصر",
+        "ar-LB": "الفانوس المصري وروايات نشأته",
+        "ar-IQ": "الفانوس المصري وروايات نشأته",
+        "ko": "이집트 파누스 등불과 파티마/콥트 기원설 비교"
+      },
+      "entity_type": "event",
+      "summary": "Explores multiple historical explanations for how the Egyptian fanous lantern became a beloved neighborhood symbol in Cairo.",
+      "expanded_explanation": "The Egyptian fanous (from Greek phanos, \"light/torch\") is an iconic symbol of Cairo’s festive evenings. Historians and folklorists note at least three competing explanations for its association with Ramadan: (1) a popular narrative that Cairenes carried lanterns in 972 CE (362 AH) to greet the Fatimid Caliph al-Mu’izz li-Din Allah upon his nighttime arrival in Cairo; (2) municipal decrees under Caliph al-Hakim bi-Amr Allah ordering street and shop lamps lit across Cairo at night; and (3) continuity from earlier Coptic and ancient Egyptian lamp traditions. MiraVerse presents these side by side so learners see how folklore and urban history intertwine.",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "confidence": "medium",
+      "time_period": "10th Century CE (Fatimid Era) & Earlier Lamp Traditions",
+      "people": [
+        "Caliph al-Mu’izz li-Din Allah",
+        "Caliph al-Hakim bi-Amr Allah",
+        "Teta Samira (In-Game Mentor)"
+      ],
+      "places": [
+        "Historic Cairo",
+        "Al-Muizz Street"
+      ],
+      "relationships": [
+        {
+          "target_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+          "relation": "associated_with",
+          "note": "Historical context of Cairo lantern workshops"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "EG-P01",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Do not present the 972 CE Caliph arrival story as an undisputed single origin; respect diverse religious and cultural participation without requiring religious observance."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Glowing fanous lanterns in bright red, blue, and gold light up Cairo’s streets to welcome family and friends!",
+        "8-10": "How did Cairo’s fanous tradition begin? Some stories tell of a starry welcome parade over a thousand years ago, while others point to old streetlamps that lit up the city at night.",
+        "11-13": "Historians compare three stories behind the Egyptian fanous: the 972 CE welcome of Caliph al-Mu’izz, Fatimid nighttime street-lighting rules, and older Egyptian lamp customs.",
+        "14-17": "Rather than treating the 972 CE al-Mu’izz procession anecdote as a singular origin fact, urban historians examine how Fatimid street-lighting ordinances, Coptic liturgical lamps, and artisanal tin-working converged into Cairo’s fanous tradition."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "EG-A01",
+        "EG-A05"
+      ],
+      "atlas_links": [
+        "atlas:real:EG:al_muizz_street",
+        "atlas:quest:EG:A01"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "fanous_lantern"
+        ],
+        "quest_objective_ids": [
+          "EG:ch1:nile:trade"
+        ]
+      }
+    },
+    {
+      "id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+      "country": "EG",
+      "title": {
+        "en": "Cairo Lantern Metalwork, Stained Glass & Khayamiya Tentmaker Appliqué",
+        "fr": "Ferronnerie de fanous, verre coloré et art textile Khayamiya au Caire",
+        "ar-EG": "حرفة صناعة الفانوس والزجاج الملون وفن الخيامية في القاهرة",
+        "ar-LB": "صناعة الفانوس والخيامية في القاهرة",
+        "ar-IQ": "صناعة الفانوس والخيامية في القاهرة",
+        "ko": "카이로 파누스 금속·색유리 공예와 카야미야 아플리케"
+      },
+      "entity_type": "artifact",
+      "summary": "Traditional Cairene crafts combining geometric brass/tinplate fanous lanterns with hand-stitched khayamiya geometric textiles.",
+      "expanded_explanation": "In historic Cairo’s artisan quarters—such as Taht al-Rab’, Khan el-Khalili, and the covered Qasaba of Radwan Bey (Street of the Tentmakers)—craftspeople shape brass and tinplate (samkari metalwork) around jewel-toned stained glass to build geometric fanous lanterns, while khayamiya artisans hand-stitch intricate arabesque and lotus cotton appliqué panels. In MiraVerse, children explore geometric symmetry, color-light logic, and safe virtual LED lantern assembly.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "Medieval Fatimid/Mamluk Craft Guilds – Present",
+      "people": [
+        "Teta Samira (In-Game Mentor)",
+        "Layla Hassan (In-Game Protagonist)"
+      ],
+      "places": [
+        "Historic Cairo",
+        "Khan el-Khalili",
+        "Qasaba of Radwan Bey (Tentmakers Bazaar)"
+      ],
+      "relationships": [
+        {
+          "target_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+          "relation": "located_in",
+          "note": "Crafted in Historic Cairo workshops"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "EG-P02",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "UNESCO-WHC-89",
+          "passage_locator": "Historic Cairo World Heritage Listing #89",
+          "url": "https://whc.unesco.org/en/list/89/",
+          "verified": true,
+          "external_citation": "UNESCO World Heritage Centre, Historic Cairo (Al-Muizz Street, Khan el-Khalili, Qasaba of Radwan Bey)"
+        }
+      ],
+      "sensitivity_notes": [
+        "All soldering, glass cutting, and candle/fire illumination are strictly virtual or use safe flameless LEDs; warn children never to handle open flames or sharp metal unsupervised."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Match bright ruby-red, emerald-green, and golden glass shapes to build a glowing lantern and colourful tent cloth!",
+        "8-10": "Cairo artisans fit coloured glass into brass frames to make fanous lanterns and stitch geometric flower patterns onto khayamiya cloth.",
+        "11-13": "Explore how Cairene metalworkers (samkari) and khayamiya tentmakers use rotational symmetry, polygons, and colour filtering to transform courtyard light.",
+        "14-17": "In Historic Cairo (UNESCO #89), the spatial proximity of Taht al-Rab’ lantern workshops and the Qasaba of Radwan Bey khayamiya guild sustains shared geometric design grammars across metal, glass, and textile media."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "EG-A01",
+        "EG-A04"
+      ],
+      "atlas_links": [
+        "atlas:real:EG:khan_el_khalili",
+        "atlas:real:EG:historic_cairo",
+        "atlas:quest:EG:A01",
+        "atlas:quest:EG:A04"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "fanous_lantern",
+          "acacia_plank",
+          "linen_sail"
+        ],
+        "quest_objective_ids": [
+          "EG:ch1:nile:build",
+          "EG:ch1:nile:trade"
+        ],
+        "story_scene_ids": [
+          2,
+          6,
+          10
+        ]
+      }
+    },
+    {
+      "id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+      "country": "EG",
+      "title": {
+        "en": "Neighborhood Soundscapes: The Musaharati Drummer & Festive Cairo Chants",
+        "fr": "Paysages sonores du quartier : le tambourinaire Musaharati et les chants du Caire",
+        "ar-EG": "المسحراتي وأهازيج الحارة المصرية في ليالي الاحتفال",
+        "ar-LB": "المسحراتي والأهازيج الشعبية في القاهرة",
+        "ar-IQ": "المسحراتي والأهازيج الشعبية في القاهرة",
+        "ko": "카이로 동네의 소리 풍경: 무사하라티 북소리와 축제 노래"
+      },
+      "entity_type": "practice",
+      "summary": "Cultural context of Cairo’s neighborhood drummer (musaharati) and traditional lantern-lighting songs, presented without copyrighted lyrics.",
+      "expanded_explanation": "During festive Ramadan evenings and dawn hours in Cairo neighborhoods, the musaharati walks through lantern-lit lanes tapping a small hand drum (baz) and calling out friendly greetings to neighbors, while children carry small lanterns and sing traditional refrains like Wahawi ya Wahawi. Folklorists debate whether the words of Wahawi derive from Arabic expressions of greeting or older Coptic/ancient Egyptian lunar phrases. MiraVerse explains this musical heritage using original melodies and paraphrased descriptions without reproducing copyrighted modern song lyrics.",
+      "knowledge_class": "folklore",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "Abbasid/Fatimid Era – Present",
+      "people": [
+        "Teta Samira (In-Game Mentor)",
+        "Baba Karim (In-Game Cast)"
+      ],
+      "places": [
+        "Historic Cairo"
+      ],
+      "relationships": [
+        {
+          "target_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+          "relation": "associated_with",
+          "note": "Shared Cairene neighborhood festival context"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "EG-P03",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Do not reproduce copyrighted song lyrics; present the tradition as welcoming cultural neighborhood heritage open to all learners without religious compulsion."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Follow the gentle tap-tap rhythm of the neighborhood drum as lanterns light up along the friendly Cairo street!",
+        "8-10": "In Cairo neighborhoods, the musaharati taps a small drum and greets families by name while children swing glowing lanterns.",
+        "11-13": "Cairo’s festive soundscape combines the rhythmic calls of the musaharati drummer with centuries-old lantern songs whose word origins scholars debate between Arabic and Coptic roots.",
+        "14-17": "Ethnomusicological study of Cairo’s Ramadan traditions highlights how acoustic community markers (the musaharati’s baz drum and oral refrains with contested Arabic/Coptic etymologies) map neighborhood social cohesion."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "EG-A02",
+        "EG-A05"
+      ],
+      "atlas_links": [
+        "atlas:real:EG:al_muizz_street",
+        "atlas:quest:EG:A02",
+        "atlas:quest:EG:A05"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "fanous_lantern"
+        ],
+        "quest_objective_ids": [
+          "EG:ch1:nile:word"
+        ]
+      }
+    },
+    {
+      "id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+      "country": "EG",
+      "title": {
+        "en": "Teta Samira’s Koshari & Inclusive Courtyard Hospitality",
+        "fr": "Le Koshari de Teta Samira et l’hospitalité de cour partagée",
+        "ar-EG": "كشري تيتا سميرة ومائدة المحبة في الحوش المصري",
+        "ar-LB": "الكشري المصري ومائدة المشاركة",
+        "ar-IQ": "الكشري المصري ومائدة المشاركة",
+        "ko": "테타 사미라의 코샤리와 함께 나누는 안뜰 식탁"
+      },
+      "entity_type": "food",
+      "summary": "Egypt’s beloved plant-based dish of layered rice, brown lentils, pasta, spiced tomato sauce, and crispy onions shared across all communities.",
+      "expanded_explanation": "Koshari combines short-grain Egyptian rice, brown lentils, macaroni, spiced garlic-vinegar tomato sauce (salsa and daqqa), chickpeas, and golden crispy onions (ta’liya). Naturally plant-based and economical, koshari brings Egyptians of all backgrounds together at street carts and family tables.",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "19th Century – Present",
+      "people": [
+        "Teta Samira (In-Game Mentor)",
+        "Layla Hassan (In-Game Protagonist)"
+      ],
+      "places": [
+        "Cairo"
+      ],
+      "relationships": [
+        {
+          "target_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+          "relation": "associated_with",
+          "note": "Shared during courtyard lantern gatherings"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "EG-P04",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "UNESCO-ICH-KOSHARI",
+          "passage_locator": "Egyptian Koshari Culinary Heritage Reference",
+          "url": "https://whc.unesco.org/en/statesparties/eg",
+          "verified": true,
+          "external_citation": "Egyptian Ministry of Culture / Historic Cairo Culinary Heritage Documentation"
+        }
+      ],
+      "sensitivity_notes": [
+        "Adult NPCs manage boiling pots and hot oil for crispy onions; provide gluten-free rice-and-lentil option notes for allergy awareness."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Sort white rice, brown lentils, red tomato sauce, and crunchy golden onions into baskets for Teta Samira’s big koshari pot!",
+        "8-10": "Layer fluffy rice, lentils, pasta, tangy tomato sauce, and crispy onions in order to serve warm bowls of Egyptian koshari to the neighbors.",
+        "11-13": "Because koshari is made from grains, legumes, and spiced tomato sauce, it serves as an inclusive, plant-based dish shared across Egypt’s diverse communities.",
+        "14-17": "Koshari’s evolution in modern urban Cairo reflects global trade circuits (combining Indian-inspired rice-and-lentil khichdi roots with Italian pasta and Egyptian garlic-vinegar daqqa) into a democratized national dish."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "EG-A02",
+        "EG-A03"
+      ],
+      "atlas_links": [
+        "atlas:quest:EG:A03"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "rice",
+          "lentils",
+          "tomato_sauce",
+          "crispy_onions",
+          "koshari"
+        ],
+        "quest_objective_ids": [
+          "EG:ch1:nile:gather",
+          "EG:ch1:nile:cook"
+        ],
+        "story_scene_ids": [
+          4,
+          8,
+          12
+        ]
+      }
+    },
+    {
+      "id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+      "country": "EG",
+      "title": {
+        "en": "Egyptian Diaspora Celebrations & Ontario Egyptian Heritage Month Candidate Fact",
+        "fr": "Célébrations de la diaspora égyptienne et Mois du patrimoine égyptien",
+        "ar-EG": "احتفالات الجالية المصرية بالخارج وشهر التراث المصري",
+        "ar-LB": "احتفالات الجالية المصرية في المهجر",
+        "ar-IQ": "احتفالات الجالية المصرية في المهجر",
+        "ko": "이집트 디아스포라 축제와 문화유산의 달"
+      },
+      "entity_type": "organization",
+      "summary": "Tracks contemporary diaspora festivals, paper/LED fanous workshops, and the source-asserted Ontario Egyptian Heritage Month Act (2019).",
+      "expanded_explanation": "In Egyptian expatriate communities across North America and Europe, families organize cultural festivals featuring khayamiya displays, koshari tastings, and child-safe paper/LED fanous craft tables. The uploaded research essay notes that the province of Ontario, Canada enacted the Egyptian Heritage Month Act, 2019 designating July as Egyptian Heritage Month; this legislative assertion is recorded with claim-level provenance for statutory citation verification.",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "confidence": "medium",
+      "time_period": "2019 – Present",
+      "people": [
+        "Layla Hassan (In-Game Protagonist)",
+        "Teta Samira (In-Game Mentor)"
+      ],
+      "places": [
+        "Cairo",
+        "Diaspora Community Centers"
+      ],
+      "relationships": [
+        {
+          "target_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+          "relation": "associated_with",
+          "note": "Safe LED/paper fanous crafting in diaspora schools"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TRANSNATIONAL-001",
+          "passage_locator": "EG-P05",
+          "url": null,
+          "verified": false
+        }
+      ],
+      "sensitivity_notes": [
+        "Flag the specific statutory bill number/date of Ontario Egyptian Heritage Month Act (2019) for external legal-database verification before marking externally_corrobated."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Children living far from Egypt fold colourful paper lanterns with safe little battery lights to share Cairo’s warm glow with new friends!",
+        "8-10": "In diaspora neighborhoods, Egyptian families host heritage days where friends fold paper fanous lanterns and learn Arabic words together.",
+        "11-13": "Community organizations in the Egyptian diaspora adapt traditional metalwork and textile crafts into safe paper-and-LED workshops during annual cultural heritage celebrations.",
+        "14-17": "Contemporary diaspora civic recognition—such as the source-cited Ontario Egyptian Heritage Month Act (2019, pending statutory verification)—illustrates how expatriate communities institutionalize cultural memory."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "quest_links": [
+        "EG-A04",
+        "EG-A05"
+      ],
+      "atlas_links": [
+        "atlas:quest:EG:A05"
+      ],
+      "platform_exports": [
+        "roblox",
+        "minecraft",
+        "web"
+      ],
+      "rights": {
+        "text": "paraphrase_only",
+        "media": "original_procedural_miraverse"
+      },
+      "legacy_links": {
+        "pack_item_ids": [
+          "fanous_lantern"
+        ],
+        "quest_objective_ids": [
+          "EG:ch1:nile:word"
+        ],
+        "story_scene_ids": [
+          14,
+          15
+        ]
+      }
+    }
+  ]
+}

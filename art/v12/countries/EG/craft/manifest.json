@@ -1,0 +1,17 @@
+{
+  "agent_id": "AG06",
+  "country": "EG",
+  "kit": "craft",
+  "assets": [
+    {
+      "id": "eg-svg-fanous-craft",
+      "path": "/art/v12/EG/craft/fanous-craft-and-origins.svg",
+      "epistemic_badge": "Contested History"
+    },
+    {
+      "id": "eg-svg-khayamiya",
+      "path": "/art/v12/EG/craft/khayamiya-geometric-star.svg",
+      "epistemic_badge": "Historical Claim"
+    }
+  ]
+}

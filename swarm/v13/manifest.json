@@ -1,0 +1,229 @@
+{
+  "releaseVersion": "1.3.0",
+  "directive": "MiraVerse v1.3: 30-Agent Website Transformation and Visual Recovery",
+  "productArchitecture": {
+    "website": "Cultural Adventure, Education & Discovery Portal (Interactive World Atlas, 5 Country Experiences, 25 Quest Maps, 100 Age-Tier Stages, Collectible Passport, Parent Portal)",
+    "roblox": "Social Adventure Flagship (RC1 Byblos playable, RC3 Iraq/Egypt/France/Korea planned)",
+    "minecraftBedrock": "Creative Adventure Companion (miraverse.mcaddon with 6 cultural structure templates)"
+  },
+  "countryOrder": ["LB", "IQ", "EG", "FR", "KR"],
+  "totalAssignments": 30,
+  "executionGroups": {
+    "antigravity": 10,
+    "dgxSpark": 10,
+    "codex": 5,
+    "claude": 5
+  },
+  "assignments": [
+    {
+      "id": "AG01",
+      "group": "Antigravity",
+      "role": "Visual Art Director",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts", "reports/v13/PRODUCTION_ROUTE_AUDIT.md"]
+    },
+    {
+      "id": "AG02",
+      "group": "Antigravity",
+      "role": "Homepage Transformation",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/landing/ui/index.tsx", "apps/web/public/art/p0/hero-byblos-desktop.jpg"]
+    },
+    {
+      "id": "AG03",
+      "group": "Antigravity",
+      "role": "Lebanon Experience",
+      "status": "DONE",
+      "artifacts": ["apps/web/public/art/v13/quest-map-LB.jpg", "apps/web/public/art/p0/world-cover-LB.jpg"]
+    },
+    {
+      "id": "AG04",
+      "group": "Antigravity",
+      "role": "Iraq Experience",
+      "status": "DONE",
+      "artifacts": ["apps/web/public/art/v13/quest-map-IQ.jpg", "apps/web/public/art/p0/world-cover-IQ.jpg"]
+    },
+    {
+      "id": "AG05",
+      "group": "Antigravity",
+      "role": "Egypt Experience",
+      "status": "DONE",
+      "artifacts": ["apps/web/public/art/v13/quest-map-EG.jpg", "apps/web/public/art/p0/world-cover-EG.jpg"]
+    },
+    {
+      "id": "AG06",
+      "group": "Antigravity",
+      "role": "France Experience",
+      "status": "DONE",
+      "artifacts": ["apps/web/public/art/v13/quest-map-FR.jpg", "apps/web/public/art/p0/world-cover-FR.jpg"]
+    },
+    {
+      "id": "AG07",
+      "group": "Antigravity",
+      "role": "South Korea Experience",
+      "status": "DONE",
+      "artifacts": ["apps/web/public/art/v13/quest-map-KR.jpg", "apps/web/public/art/p0/world-cover-KR.jpg"]
+    },
+    {
+      "id": "AG08",
+      "group": "Antigravity",
+      "role": "Passport and Collectibles",
+      "status": "DONE",
+      "artifacts": ["apps/web/public/art/v13/cultural-artifacts-treasury.jpg", "apps/web/src/pages/Passport.tsx"]
+    },
+    {
+      "id": "AG09",
+      "group": "Antigravity",
+      "role": "Character and NPC Illustrations",
+      "status": "DONE",
+      "artifacts": ["apps/web/public/art/v13/mentors-ensemble.jpg", "apps/web/public/art/p0/portrait-mira.jpg"]
+    },
+    {
+      "id": "AG10",
+      "group": "Antigravity",
+      "role": "Responsive Design and Motion",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/styles/global.css", "tests/web/e2e/v13/v13-portal-transformation.test.ts"]
+    },
+    {
+      "id": "DX01",
+      "group": "DGX Spark",
+      "role": "Cultural Knowledge Processing",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts"]
+    },
+    {
+      "id": "DX02",
+      "group": "DGX Spark",
+      "role": "Lebanon and Iraq Content",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts"]
+    },
+    {
+      "id": "DX03",
+      "group": "DGX Spark",
+      "role": "Egypt, France, and Korea Content",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts"]
+    },
+    {
+      "id": "DX04",
+      "group": "DGX Spark",
+      "role": "Age-Adaptive Learning (5-7, 8-10, 11-13, 14-17)",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts"]
+    },
+    {
+      "id": "DX05",
+      "group": "DGX Spark",
+      "role": "Geographic Data (WGS84 Coordinates & Landmarks)",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts"]
+    },
+    {
+      "id": "DX06",
+      "group": "DGX Spark",
+      "role": "Quest Map Data (25 Quest Maps & Waypoints)",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts"]
+    },
+    {
+      "id": "DX07",
+      "group": "DGX Spark",
+      "role": "Asset Processing (JPG + WebP Optimization)",
+      "status": "DONE",
+      "artifacts": ["apps/web/public/art/v13/quest-map-LB.webp", "apps/web/public/art/v13/cultural-artifacts-treasury.webp"]
+    },
+    {
+      "id": "DX08",
+      "group": "DGX Spark",
+      "role": "Localization (en, fr, ar-LB, ar-EG, ar-IQ, ko)",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/i18n.tsx", "packages/contracts/v13/index.ts"]
+    },
+    {
+      "id": "DX09",
+      "group": "DGX Spark",
+      "role": "Automated Visual Comparison",
+      "status": "DONE",
+      "artifacts": ["tests/web/e2e/v13/v13-portal-transformation.test.ts"]
+    },
+    {
+      "id": "DX10",
+      "group": "DGX Spark",
+      "role": "Content and Asset QA",
+      "status": "DONE",
+      "artifacts": ["reports/v13/ASSET_AND_SOURCE_MANIFEST.md"]
+    },
+    {
+      "id": "CX01",
+      "group": "Codex",
+      "role": "Routing and Browser Game Removal",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/pages/Play.tsx", "apps/web/src/pages/LegacyBrowser3DGame.tsx", "apps/web/src/App.tsx"]
+    },
+    {
+      "id": "CX02",
+      "group": "Codex",
+      "role": "Homepage and Country Pages",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/landing/ui/index.tsx", "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx"]
+    },
+    {
+      "id": "CX03",
+      "group": "Codex",
+      "role": "Interactive World Atlas",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/portal/v13/CulturalPortalPages.tsx"]
+    },
+    {
+      "id": "CX04",
+      "group": "Codex",
+      "role": "Quest Encyclopedia and Passport",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/portal/v13/CulturalPortalPages.tsx", "apps/web/src/pages/Passport.tsx"]
+    },
+    {
+      "id": "CX05",
+      "group": "Codex",
+      "role": "Integration, Testing, and Deployment",
+      "status": "DONE",
+      "artifacts": ["tests/web/e2e/v13/v13-portal-transformation.test.ts", "reports/v13/DEPLOYMENT_VERIFICATION.md"]
+    },
+    {
+      "id": "CL01",
+      "group": "Claude",
+      "role": "Architecture and Integration Contracts",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts"]
+    },
+    {
+      "id": "CL02",
+      "group": "Claude",
+      "role": "Educational and Cultural Review",
+      "status": "DONE",
+      "artifacts": ["packages/contracts/v13/index.ts", "reports/v13/ASSET_AND_SOURCE_MANIFEST.md"]
+    },
+    {
+      "id": "CL03",
+      "group": "Claude",
+      "role": "Quest and Platform Consistency",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/launch/RobloxLaunchPage.tsx", "apps/web/src/pages/Play.tsx"]
+    },
+    {
+      "id": "CL04",
+      "group": "Claude",
+      "role": "Privacy, Safety, and Accessibility",
+      "status": "DONE",
+      "artifacts": ["apps/web/src/parent/index.tsx", "apps/web/src/storefront/index.tsx"]
+    },
+    {
+      "id": "CL05",
+      "group": "Claude",
+      "role": "Independent Release Auditor",
+      "status": "DONE",
+      "artifacts": ["reports/v13/RELEASE_READINESS_V13.md"]
+    }
+  ]
+}

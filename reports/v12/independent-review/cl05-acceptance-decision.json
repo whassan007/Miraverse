@@ -1,0 +1,34 @@
+{
+  "version": "1.2.0",
+  "agent_id": "CL05",
+  "reviewer": "CL05 Independent Epistemic & Cultural Integrity Gate",
+  "reviewed_at": "2026-11-04T07:48:04.509Z",
+  "acceptance_decision": "ACCEPTED_FOR_V12_STAGED_RELEASE",
+  "disputed_claims_triaged": 0,
+  "epistemic_integrity_verifications": [
+    {
+      "topic": "Lebanon Isis/Osiris & Adonis/Afqa",
+      "status": "PASS — Labeled as Mythology / Landscape Interpretation; never literal history."
+    },
+    {
+      "topic": "Lebanon Phoenician Alphabet",
+      "status": "PASS — Distinguished historical consonantal abjad diffusion (~1000 BCE Ahiram) from oversimplified claim that it directly invented every script."
+    },
+    {
+      "topic": "Iraq Bayt al-Hikma, Gold-Weight Anecdote & 1258 Tigris Trope",
+      "status": "PASS — Institutional structure and literary anecdotes flagged as contested_history; 2007 Al-Mutanabbi attack framed non-graphically via global solidarity broadsides."
+    },
+    {
+      "topic": "Egypt 972 CE Fanous Origin & Religious Inclusion",
+      "status": "PASS — Presented alongside 3 other historical hypotheses; no forced religious observance; no protected song lyrics copied."
+    },
+    {
+      "topic": "France Lyon Traboule Counts, Canut Dates & WWII Resistance",
+      "status": "PASS — Passageway counts (~200–500) flagged as definition-dependent; Cour des Voraces (9 Place Colbert) and Eugénie Brazier (1933 6 Michelin stars) corroborated; non-graphic Resistance framing."
+    },
+    {
+      "topic": "Korea Bibimbap Origins, Obangsaek & Raw Ingredient Safety",
+      "status": "PASS — Four competing origin hypotheses preserved; Obangsaek framed as cultural aesthetics (not scientific law); raw beef/egg replaced with cooked vegetarian/allergen-safe options for children."
+    }
+  ]
+}

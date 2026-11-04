@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.2.0",
+  "generated_at": "2026-11-04T07:15:06.773Z",
+  "agent_id": "DX01",
+  "sources": [
+    {
+      "source_id": "SRC-V12-TRANSNATIONAL-001",
+      "title": "The Transnational Quest for Home: Myth, Memory, and Cultural Heritage in the Expatriate Experience",
+      "original_filename": "Pasted text(1).txt",
+      "preserved_path": "content/v12/source-registry/transnational_quest_for_home_source.txt",
+      "sha256": "92cebc10882f9c44ede3e7e79b525ce6de367a4f14dd8f85a9d416dbc5880c4a",
+      "bytes": 11816,
+      "ingested_at": "2026-11-03T23:12:00-08:00",
+      "author": "unknown",
+      "publisher": "unknown",
+      "source_type": "user_supplied_research",
+      "rights_reuse_status": "review_required",
+      "usage_policy": "paraphrase_only_no_verbatim_player_copy",
+      "passage_count": 27,
+      "countries_covered": [
+        "LB",
+        "IQ",
+        "EG",
+        "FR",
+        "KR"
+      ]
+    },
+    {
+      "source_id": "SRC-V11-MIRAVERSE-SPEC",
+      "title": "MiraVerse v1.1 Five-Country, Ages 5–17 Quest Universe + Interactive Website Atlas Specification",
+      "original_filename": "reports/v11/BASELINE.md",
+      "preserved_path": "reports/v11/BASELINE.md",
+      "sha256": "48733a95b4a840adbdff25410416e3a2f319c00973a3679678bc66b904647bde",
+      "bytes": 12346,
+      "ingested_at": "2026-11-03T22:45:55-08:00",
+      "author": "MiraVerse Architecture Team",
+      "publisher": "MiraVerse Monorepo Internal",
+      "source_type": "internal_specification",
+      "rights_reuse_status": "approved_internal",
+      "usage_policy": "canonical_quest_and_atlas_contract",
+      "passage_count": 25,
+      "countries_covered": [
+        "LB",
+        "IQ",
+        "EG",
+        "FR",
+        "KR"
+      ]
+    }
+  ]
+}

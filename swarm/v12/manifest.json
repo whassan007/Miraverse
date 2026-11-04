@@ -1,0 +1,1682 @@
+{
+  "version": "1.2.0",
+  "directive": "MiraVerse v1.2 | Source-Grounded Cultural Knowledge Enrichment",
+  "source_document": "The Transnational Quest for Home: Myth, Memory, and Cultural Heritage in the Expatriate Experience (Pasted text(1).txt)",
+  "country_sequence": [
+    "LB",
+    "IQ",
+    "EG",
+    "FR",
+    "KR"
+  ],
+  "age_tiers": [
+    "5-7",
+    "8-10",
+    "11-13",
+    "14-17"
+  ],
+  "integration_branch": "integration/miraverse-v1.2",
+  "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+  "created_at": "2026-11-04T07:11:03.582Z",
+  "counts": {
+    "total": 50,
+    "antigravity": 20,
+    "dgx": 20,
+    "claude": 5,
+    "codex": 5
+  },
+  "dgx_concurrency_limit": 1,
+  "agents": [
+    {
+      "id": "AG01",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W0",
+      "title": "Country visual knowledge-system art direction",
+      "depends_on": [],
+      "owned_paths": [
+        "art/v12/direction/"
+      ],
+      "branch": "v12/AG01",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG01",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "ca30239",
+      "integration_sha": "d7a9584",
+      "runtime_environment": "Antigravity Creative Direction Verifier (Gemini 4 Argon)",
+      "modified_files": [
+        "art/v12/direction/STYLE_GUIDE_V12.md",
+        "art/v12/direction/epistemic-labels-legend.svg",
+        "art/v12/direction/visual-knowledge-system.json"
+      ],
+      "evidence_paths": [
+        "art/v12/direction/visual-knowledge-system.json",
+        "art/v12/direction/epistemic-labels-legend.svg",
+        "art/v12/direction/STYLE_GUIDE_V12.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG01.log"
+    },
+    {
+      "id": "AG02",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W2",
+      "title": "Lebanon storyboards (Byblos harbor, myth vs history, coastal memory)",
+      "depends_on": [
+        "AG01",
+        "CL01",
+        "DX05"
+      ],
+      "owned_paths": [
+        "art/v12/countries/LB/storyboards/"
+      ],
+      "branch": "v12/AG02",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG02",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "3e42225",
+      "integration_sha": "11955e8",
+      "runtime_environment": "Antigravity Visual Storyboard Generator (Gemini 4 Argon)",
+      "modified_files": [
+        "art/v12/countries/LB/storyboards/byblos-five-act-storyboard.svg",
+        "art/v12/countries/LB/storyboards/storyboard-manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/LB/storyboards/byblos-five-act-storyboard.svg",
+        "art/v12/countries/LB/storyboards/storyboard-manifest.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG02.log"
+    },
+    {
+      "id": "AG03",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W2",
+      "title": "Lebanon artifacts/alphabet illustrations (Ahiram sarcophagus, Aleph/Beth/Mem/Resh/Taw)",
+      "depends_on": [
+        "AG01",
+        "DX05"
+      ],
+      "owned_paths": [
+        "art/v12/countries/LB/artifacts/",
+        "apps/web/public/art/v12/LB/"
+      ],
+      "branch": "v12/AG03",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG03",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "1f3a70a",
+      "integration_sha": "3c186d9",
+      "runtime_environment": "Antigravity Artifact & Alphabet Illustrator (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/v12/LB/phoenician-alphabet-comparison.svg",
+        "art/v12/countries/LB/artifacts/phoenician-alphabet-comparison.svg"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/LB/artifacts/phoenician-alphabet-comparison.svg",
+        "apps/web/public/art/v12/LB/phoenician-alphabet-comparison.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG03.log"
+    },
+    {
+      "id": "AG04",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Iraq library/translation visual kit (Bayt al-Hikma scholarly tradition, astrolabe, Banu Musa)",
+      "depends_on": [
+        "AG01",
+        "DX06"
+      ],
+      "owned_paths": [
+        "art/v12/countries/IQ/library/",
+        "apps/web/public/art/v12/IQ/library/"
+      ],
+      "branch": "v12/AG04",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG04",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "0264536",
+      "integration_sha": "23f2d40",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/IQ/library/banu-musa-float-valve.svg",
+        "apps/web/public/art/v12/IQ/library/bayt-al-hikma-routing-map.svg",
+        "art/v12/countries/IQ/library/banu-musa-float-valve.svg",
+        "art/v12/countries/IQ/library/bayt-al-hikma-routing-map.svg",
+        "art/v12/countries/IQ/library/manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/IQ/library/bayt-al-hikma-routing-map.svg",
+        "art/v12/countries/IQ/library/banu-musa-float-valve.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG04.log"
+    },
+    {
+      "id": "AG05",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Iraq bookstreet/diaspora visual kit (Al-Mutanabbi Street, kleicha, plural community memory)",
+      "depends_on": [
+        "AG01",
+        "DX06"
+      ],
+      "owned_paths": [
+        "art/v12/countries/IQ/bookstreet/",
+        "apps/web/public/art/v12/IQ/bookstreet/"
+      ],
+      "branch": "v12/AG05",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG05",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "2065a71",
+      "integration_sha": "81f72cd",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/IQ/bookstreet/al-mutanabbi-book-street.svg",
+        "apps/web/public/art/v12/IQ/bookstreet/kleicha-diaspora-table.svg",
+        "art/v12/countries/IQ/bookstreet/al-mutanabbi-book-street.svg",
+        "art/v12/countries/IQ/bookstreet/kleicha-diaspora-table.svg",
+        "art/v12/countries/IQ/bookstreet/manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/IQ/bookstreet/al-mutanabbi-book-street.svg",
+        "art/v12/countries/IQ/bookstreet/kleicha-diaspora-table.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG05.log"
+    },
+    {
+      "id": "AG06",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Egypt lantern craft visual kit (fanous metalwork, colored glass, khayamiya)",
+      "depends_on": [
+        "AG01",
+        "DX07"
+      ],
+      "owned_paths": [
+        "art/v12/countries/EG/craft/",
+        "apps/web/public/art/v12/EG/craft/"
+      ],
+      "branch": "v12/AG06",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG06",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "012935e",
+      "integration_sha": "1bb9c92",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/EG/craft/fanous-craft-and-origins.svg",
+        "apps/web/public/art/v12/EG/craft/khayamiya-geometric-star.svg",
+        "art/v12/countries/EG/craft/fanous-craft-and-origins.svg",
+        "art/v12/countries/EG/craft/khayamiya-geometric-star.svg",
+        "art/v12/countries/EG/craft/manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/EG/craft/fanous-craft-and-origins.svg",
+        "art/v12/countries/EG/craft/khayamiya-geometric-star.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG06.log"
+    },
+    {
+      "id": "AG07",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Egypt festival visual kit (Ramadan neighborhood celebration, musaharati, diaspora heritage)",
+      "depends_on": [
+        "AG01",
+        "DX07"
+      ],
+      "owned_paths": [
+        "art/v12/countries/EG/festival/",
+        "apps/web/public/art/v12/EG/festival/"
+      ],
+      "branch": "v12/AG07",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG07",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "1c179b4",
+      "integration_sha": "decd63f",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/EG/festival/cairo-courtyard-festival-route.svg",
+        "art/v12/countries/EG/festival/cairo-courtyard-festival-route.svg",
+        "art/v12/countries/EG/festival/manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/EG/festival/cairo-courtyard-festival-route.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG07.log"
+    },
+    {
+      "id": "AG08",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "France traboules map/architecture art (Vieux Lyon, Croix-Rousse, Cour des Voraces)",
+      "depends_on": [
+        "AG01",
+        "DX08"
+      ],
+      "owned_paths": [
+        "art/v12/countries/FR/traboules/",
+        "apps/web/public/art/v12/FR/traboules/"
+      ],
+      "branch": "v12/AG08",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG08",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "3302351",
+      "integration_sha": "53d17ac",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/FR/traboules/lyon-traboules-cour-des-voraces.svg",
+        "art/v12/countries/FR/traboules/lyon-traboules-cour-des-voraces.svg",
+        "art/v12/countries/FR/traboules/manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/FR/traboules/lyon-traboules-cour-des-voraces.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG08.log"
+    },
+    {
+      "id": "AG09",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "France silk/kitchen visual kit (canuts jacquard loom, Mères Lyonnaises, Eugénie Brazier)",
+      "depends_on": [
+        "AG01",
+        "DX08"
+      ],
+      "owned_paths": [
+        "art/v12/countries/FR/kitchen/",
+        "apps/web/public/art/v12/FR/kitchen/"
+      ],
+      "branch": "v12/AG09",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG09",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "ff2a86e",
+      "integration_sha": "53527d4",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/FR/kitchen/jacquard-and-meres-lyonnaises.svg",
+        "art/v12/countries/FR/kitchen/jacquard-and-meres-lyonnaises.svg",
+        "art/v12/countries/FR/kitchen/manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/FR/kitchen/jacquard-and-meres-lyonnaises.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG09.log"
+    },
+    {
+      "id": "AG10",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Korea bibimbap/Obangsaek visual kit (five-color harmony, regional bowls, safe ingredients)",
+      "depends_on": [
+        "AG01",
+        "DX09"
+      ],
+      "owned_paths": [
+        "art/v12/countries/KR/obangsaek/",
+        "apps/web/public/art/v12/KR/obangsaek/"
+      ],
+      "branch": "v12/AG10",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG10",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "34475fd",
+      "integration_sha": "fc3bc4c",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg",
+        "art/v12/countries/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg",
+        "art/v12/countries/KR/obangsaek/manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG10.log"
+    },
+    {
+      "id": "AG11",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Korea hanok/market visual kit (Jeonju Hanok Village, Nambu Market, communal table)",
+      "depends_on": [
+        "AG01",
+        "DX09"
+      ],
+      "owned_paths": [
+        "art/v12/countries/KR/hanok/",
+        "apps/web/public/art/v12/KR/hanok/"
+      ],
+      "branch": "v12/AG11",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG11",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "ae44f4e",
+      "integration_sha": "783311c",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/KR/hanok/jeonju-hanok-and-jangdokdae.svg",
+        "art/v12/countries/KR/hanok/jeonju-hanok-and-jangdokdae.svg",
+        "art/v12/countries/KR/hanok/manifest.json"
+      ],
+      "evidence_paths": [
+        "art/v12/countries/KR/hanok/jeonju-hanok-and-jangdokdae.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG11.log"
+    },
+    {
+      "id": "AG12",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W4",
+      "title": "Website knowledge-card UX (epistemic labels, provenance drawer, age filter)",
+      "depends_on": [
+        "CL01",
+        "CL02",
+        "AG01"
+      ],
+      "owned_paths": [
+        "apps/web/src/features/knowledge-cards/"
+      ],
+      "branch": "v12/AG12",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG12",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "21b0baf",
+      "integration_sha": "3bc763e",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/src/features/knowledge-cards/KnowledgeCardV12.tsx"
+      ],
+      "evidence_paths": [
+        "apps/web/src/features/knowledge-cards/KnowledgeCardV12.tsx"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG12.log"
+    },
+    {
+      "id": "AG13",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W4",
+      "title": "Real-map vs quest-map UX (verified GeoJSON vs in-game map / not to geographic scale)",
+      "depends_on": [
+        "CL04",
+        "DX17"
+      ],
+      "owned_paths": [
+        "apps/web/src/features/atlas-dual-map/"
+      ],
+      "branch": "v12/AG13",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG13",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "10355d2",
+      "integration_sha": "e5fb830",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/src/features/atlas-dual-map/AtlasDualMapV12.tsx"
+      ],
+      "evidence_paths": [
+        "apps/web/src/features/atlas-dual-map/AtlasDualMapV12.tsx"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG13.log"
+    },
+    {
+      "id": "AG14",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W2",
+      "title": "Age 5–7 narrative presentation (pictorial, low-reading-load, 1–3 min pattern recognition)",
+      "depends_on": [
+        "CL03"
+      ],
+      "owned_paths": [
+        "content/v12/presentations/age-5-7/"
+      ],
+      "branch": "v12/AG14",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG14",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "a156448",
+      "integration_sha": "c467ee9",
+      "runtime_environment": "Antigravity Age 5-7 Narrative Presentation Engine (Gemini 4 Argon)",
+      "modified_files": [
+        "content/v12/presentations/age-5-7/cards.json"
+      ],
+      "evidence_paths": [
+        "content/v12/presentations/age-5-7/cards.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG14.log"
+    },
+    {
+      "id": "AG15",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W2",
+      "title": "Age 8–10 narrative presentation (short dialogue, sorting, guided multi-step craft)",
+      "depends_on": [
+        "CL03"
+      ],
+      "owned_paths": [
+        "content/v12/presentations/age-8-10/"
+      ],
+      "branch": "v12/AG15",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG15",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "c6ab990",
+      "integration_sha": "d9a0e23",
+      "runtime_environment": "Antigravity Age 8-10 Narrative Presentation Engine (Gemini 4 Argon)",
+      "modified_files": [
+        "content/v12/presentations/age-8-10/cards.json"
+      ],
+      "evidence_paths": [
+        "content/v12/presentations/age-8-10/cards.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG15.log"
+    },
+    {
+      "id": "AG16",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W2",
+      "title": "Age 11–13 evidence interactions (evidence comparison, maps, timelines, multiple interpretations)",
+      "depends_on": [
+        "CL03"
+      ],
+      "owned_paths": [
+        "content/v12/presentations/age-11-13/"
+      ],
+      "branch": "v12/AG16",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG16",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "2a024b2",
+      "integration_sha": "524b0b1",
+      "runtime_environment": "Antigravity Age 11-13 Narrative Presentation Engine (Gemini 4 Argon)",
+      "modified_files": [
+        "content/v12/presentations/age-11-13/cards.json"
+      ],
+      "evidence_paths": [
+        "content/v12/presentations/age-11-13/cards.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG16.log"
+    },
+    {
+      "id": "AG17",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W2",
+      "title": "Age 14–17 source-critical interactions (provenance, contested history, diaspora tradeoffs)",
+      "depends_on": [
+        "CL02",
+        "CL03"
+      ],
+      "owned_paths": [
+        "content/v12/presentations/age-14-17/"
+      ],
+      "branch": "v12/AG17",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG17",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "9650369",
+      "integration_sha": "a3c6809",
+      "runtime_environment": "Antigravity Age 14-17 Narrative Presentation Engine (Gemini 4 Argon)",
+      "modified_files": [
+        "content/v12/presentations/age-14-17/cards.json"
+      ],
+      "evidence_paths": [
+        "content/v12/presentations/age-14-17/cards.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG17.log"
+    },
+    {
+      "id": "AG18",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W4",
+      "title": "NPC dialogue and mentor visual consistency across 5 countries & 4 age tiers",
+      "depends_on": [
+        "CL03",
+        "CL04"
+      ],
+      "owned_paths": [
+        "content/v12/npc-enrichment/"
+      ],
+      "branch": "v12/AG18",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG18",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "05f5d4d",
+      "integration_sha": "3e1c724",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "content/v12/npc-enrichment/npc-mentor-dialogues-v12.json"
+      ],
+      "evidence_paths": [
+        "content/v12/npc-enrichment/npc-mentor-dialogues-v12.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG18.log"
+    },
+    {
+      "id": "AG19",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W4",
+      "title": "Original collectible artifacts and Passport presentation",
+      "depends_on": [
+        "AG03",
+        "AG04",
+        "AG06",
+        "AG09",
+        "AG10"
+      ],
+      "owned_paths": [
+        "art/v12/passport/",
+        "apps/web/public/art/v12/passport/"
+      ],
+      "branch": "v12/AG19",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG19",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "3c13a3d",
+      "integration_sha": "158615a",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/public/art/v12/passport/v12-passport-collectible-stamps.svg",
+        "art/v12/passport/passport-artifacts-v12.json",
+        "art/v12/passport/v12-passport-collectible-stamps.svg"
+      ],
+      "evidence_paths": [
+        "art/v12/passport/v12-passport-collectible-stamps.svg",
+        "art/v12/passport/passport-artifacts-v12.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG19.log"
+    },
+    {
+      "id": "AG20",
+      "family": "Antigravity",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W5",
+      "title": "Independent visual and cultural-appropriateness review",
+      "depends_on": [
+        "AG12",
+        "AG13",
+        "AG19",
+        "CX03"
+      ],
+      "owned_paths": [
+        "reports/v12/visual-review/"
+      ],
+      "branch": "v12/AG20",
+      "worktree": "/home/wael/Code/mv-wt-v12/AG20",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "37bdaa2",
+      "integration_sha": "135d9f7",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "reports/v12/visual-review/ag20-visual-cultural-review.json"
+      ],
+      "evidence_paths": [
+        "reports/v12/visual-review/ag20-visual-cultural-review.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/AG20.log"
+    },
+    {
+      "id": "DX01",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W0",
+      "title": "Input segmentation and checksum (source registry & passage locators)",
+      "depends_on": [],
+      "owned_paths": [
+        "content/v12/source-registry/",
+        "swarm/v12/dgx/"
+      ],
+      "branch": "v12/DX01",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX01",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "6922c4e",
+      "integration_sha": "73772e5",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 41.67 tok/s)",
+      "modified_files": [
+        "content/v12/source-registry/SOURCE_REGISTRY.json",
+        "content/v12/source-registry/passages.json",
+        "content/v12/source-registry/transnational_quest_for_home_source.txt",
+        "swarm/v12/dgx/scheduler.json"
+      ],
+      "evidence_paths": [
+        "content/v12/source-registry/SOURCE_REGISTRY.json",
+        "content/v12/source-registry/passages.json",
+        "swarm/v12/dgx/scheduler.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX01.log"
+    },
+    {
+      "id": "DX02",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Claim extraction from segmented source passages",
+      "depends_on": [
+        "DX01",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/v12/staging/claims/"
+      ],
+      "branch": "v12/DX02",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX02",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "e10b250",
+      "integration_sha": "87c1620",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 45.15 tok/s)",
+      "modified_files": [
+        "content/v12/staging/claims/extracted-claims.json"
+      ],
+      "evidence_paths": [
+        "content/v12/staging/claims/extracted-claims.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX02.log"
+    },
+    {
+      "id": "DX03",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Entity linking and deduplication against existing v0.8/v1.1 KB",
+      "depends_on": [
+        "DX02",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/v12/staging/entity-links/"
+      ],
+      "branch": "v12/DX03",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX03",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "d9b327a",
+      "integration_sha": "fd8595d",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 48.94 tok/s)",
+      "modified_files": [
+        "content/v12/staging/entity-links/entity-links-and-dedup.json"
+      ],
+      "evidence_paths": [
+        "content/v12/staging/entity-links/entity-links-and-dedup.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX03.log"
+    },
+    {
+      "id": "DX04",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Source-to-claim provenance indexing (CLAIM_PROVENANCE.jsonl)",
+      "depends_on": [
+        "DX02",
+        "DX03"
+      ],
+      "owned_paths": [
+        "content/v12/staging/provenance/"
+      ],
+      "branch": "v12/DX04",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX04",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "439f479",
+      "integration_sha": "fb7cec2",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 47.82 tok/s)",
+      "modified_files": [
+        "content/v12/staging/provenance/CLAIM_PROVENANCE.jsonl",
+        "content/v12/staging/provenance/index-summary.json"
+      ],
+      "evidence_paths": [
+        "content/v12/staging/provenance/CLAIM_PROVENANCE.jsonl",
+        "content/v12/staging/provenance/index-summary.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX04.log"
+    },
+    {
+      "id": "DX05",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Lebanon structured extraction (Byblos, Isis/Osiris, Adonis/Afqa, Ahiram, Phoenician alphabet)",
+      "depends_on": [
+        "DX04",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/v12/staging/countries/LB/"
+      ],
+      "branch": "v12/DX05",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX05",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "2db0b9f",
+      "integration_sha": "a715161",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 52.19 tok/s)",
+      "modified_files": [
+        "content/v12/staging/countries/LB/records.json"
+      ],
+      "evidence_paths": [
+        "content/v12/staging/countries/LB/records.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX05.log"
+    },
+    {
+      "id": "DX06",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Iraq structured extraction (Baghdad, Bayt al-Hikma, scholars, Al-Mutanabbi Street, diaspora)",
+      "depends_on": [
+        "DX04",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/v12/staging/countries/IQ/"
+      ],
+      "branch": "v12/DX06",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX06",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "de7b5ba",
+      "integration_sha": "2e2865a",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 51.96 tok/s)",
+      "modified_files": [
+        "content/v12/staging/countries/IQ/records.json"
+      ],
+      "evidence_paths": [
+        "content/v12/staging/countries/IQ/records.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX06.log"
+    },
+    {
+      "id": "DX07",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Egypt structured extraction (fanous origins, metalwork/glass/khayamiya, musaharati, heritage month)",
+      "depends_on": [
+        "DX04",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/v12/staging/countries/EG/"
+      ],
+      "branch": "v12/DX07",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX07",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "aee2627",
+      "integration_sha": "922c55f",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 51.28 tok/s)",
+      "modified_files": [
+        "content/v12/staging/countries/EG/records.json"
+      ],
+      "evidence_paths": [
+        "content/v12/staging/countries/EG/records.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX07.log"
+    },
+    {
+      "id": "DX08",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "France structured extraction (traboules, canuts, Cour des Voraces, Mères Lyonnaises, Eugénie Brazier)",
+      "depends_on": [
+        "DX04",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/v12/staging/countries/FR/"
+      ],
+      "branch": "v12/DX08",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX08",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "768b16a",
+      "integration_sha": "3933de7",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 51.51 tok/s)",
+      "modified_files": [
+        "content/v12/staging/countries/FR/records.json"
+      ],
+      "evidence_paths": [
+        "content/v12/staging/countries/FR/records.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX08.log"
+    },
+    {
+      "id": "DX09",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Korea structured extraction (bibimbap variants, competing origins, Obangsaek, hanok village)",
+      "depends_on": [
+        "DX04",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/v12/staging/countries/KR/"
+      ],
+      "branch": "v12/DX09",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX09",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "412f6ce",
+      "integration_sha": "78ae3ac",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 51.53 tok/s)",
+      "modified_files": [
+        "content/v12/staging/countries/KR/records.json"
+      ],
+      "evidence_paths": [
+        "content/v12/staging/countries/KR/records.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX09.log"
+    },
+    {
+      "id": "DX10",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Historical/myth/folklore classification audit across all canonical records",
+      "depends_on": [
+        "DX05",
+        "DX06",
+        "DX07",
+        "DX08",
+        "DX09",
+        "CL02"
+      ],
+      "owned_paths": [
+        "content/v12/qa/epistemic-classes/"
+      ],
+      "branch": "v12/DX10",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX10",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "ac58132",
+      "integration_sha": "f47d798",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 53.35 tok/s)",
+      "modified_files": [
+        "content/v12/qa/epistemic-classes/classification-audit.json"
+      ],
+      "evidence_paths": [
+        "content/v12/qa/epistemic-classes/classification-audit.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX10.log"
+    },
+    {
+      "id": "DX11",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Contested claim and numerical assertion flags (gold weights, dates, counts, origin anecdotes)",
+      "depends_on": [
+        "DX10",
+        "CL02"
+      ],
+      "owned_paths": [
+        "content/v12/qa/contested-flags/"
+      ],
+      "branch": "v12/DX11",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX11",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "080ed7f",
+      "integration_sha": "80cdf61",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 48.81 tok/s)",
+      "modified_files": [
+        "content/v12/qa/contested-flags/contested-verification-queue.json"
+      ],
+      "evidence_paths": [
+        "content/v12/qa/contested-flags/contested-verification-queue.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX11.log"
+    },
+    {
+      "id": "DX12",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W2",
+      "title": "Named-entity spelling, transliteration, and date consistency checks",
+      "depends_on": [
+        "DX11"
+      ],
+      "owned_paths": [
+        "content/v12/qa/entity-consistency/"
+      ],
+      "branch": "v12/DX12",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX12",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "8c34684",
+      "integration_sha": "5762c78",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 40.96 tok/s)",
+      "modified_files": [
+        "content/v12/qa/entity-consistency/entity-date-audit.json"
+      ],
+      "evidence_paths": [
+        "content/v12/qa/entity-consistency/entity-date-audit.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX12.log"
+    },
+    {
+      "id": "DX13",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W2",
+      "title": "Age-tier language linting (reading load, non-graphic safety, no child PII prompts)",
+      "depends_on": [
+        "AG14",
+        "AG15",
+        "AG16",
+        "AG17"
+      ],
+      "owned_paths": [
+        "content/v12/qa/age-lint/"
+      ],
+      "branch": "v12/DX13",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX13",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "a2b188a",
+      "integration_sha": "6d612d5",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 44.25 tok/s)",
+      "modified_files": [
+        "content/v12/qa/age-lint/age-tier-lint-report.json"
+      ],
+      "evidence_paths": [
+        "content/v12/qa/age-lint/age-tier-lint-report.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX13.log"
+    },
+    {
+      "id": "DX14",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W2",
+      "title": "Lebanese Arabic (ar-LB) localization & dialect preservation checks",
+      "depends_on": [
+        "DX05",
+        "CL04"
+      ],
+      "owned_paths": [
+        "content/v12/locales/ar-LB/"
+      ],
+      "branch": "v12/DX14",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX14",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "acf86bd",
+      "integration_sha": "bb28b41",
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 50.09 tok/s)",
+      "modified_files": [
+        "content/v12/locales/ar-LB/lebanese-dialect-qa.json"
+      ],
+      "evidence_paths": [
+        "content/v12/locales/ar-LB/lebanese-dialect-qa.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX14.log"
+    },
+    {
+      "id": "DX15",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W3",
+      "title": "Egyptian (ar-EG) and Iraqi Arabic (ar-IQ) localization & dialect preservation checks",
+      "depends_on": [
+        "DX06",
+        "DX07",
+        "CL04"
+      ],
+      "owned_paths": [
+        "content/v12/locales/ar-EG-IQ/"
+      ],
+      "branch": "v12/DX15",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX15",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "2bf54b6",
+      "integration_sha": "7e08466",
+      "runtime_environment": "local_dgx_spark_gb10",
+      "modified_files": [
+        "content/v12/locales/ar-EG-IQ/ar-EG-IQ-localization.json"
+      ],
+      "evidence_paths": [
+        "content/v12/locales/ar-EG-IQ/ar-EG-IQ-localization.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX15.log"
+    },
+    {
+      "id": "DX16",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W3",
+      "title": "French (fr) and Korean (ko) localization & cultural terminology checks",
+      "depends_on": [
+        "DX08",
+        "DX09",
+        "CL04"
+      ],
+      "owned_paths": [
+        "content/v12/locales/fr-ko/"
+      ],
+      "branch": "v12/DX16",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX16",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "e5eabad",
+      "integration_sha": "8272b3c",
+      "runtime_environment": "local_dgx_spark_gb10",
+      "modified_files": [
+        "content/v12/locales/fr-ko/fr-ko-localization.json"
+      ],
+      "evidence_paths": [
+        "content/v12/locales/fr-ko/fr-ko-localization.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX16.log"
+    },
+    {
+      "id": "DX17",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W3",
+      "title": "Atlas coordinate validation and no-invention boundary checks",
+      "depends_on": [
+        "DX05",
+        "DX06",
+        "DX07",
+        "DX08",
+        "DX09"
+      ],
+      "owned_paths": [
+        "content/v12/geo/"
+      ],
+      "branch": "v12/DX17",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX17",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "0df0894",
+      "integration_sha": "e837f8f",
+      "runtime_environment": "local_dgx_spark_gb10",
+      "modified_files": [
+        "content/v12/geo/atlas-v12-geodata.json"
+      ],
+      "evidence_paths": [
+        "content/v12/geo/atlas-v12-geodata.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX17.log"
+    },
+    {
+      "id": "DX18",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W4",
+      "title": "Media rights, metadata, paraphrase-only text enforcement, and asset optimization",
+      "depends_on": [
+        "AG03",
+        "AG04",
+        "AG05",
+        "AG06",
+        "AG07",
+        "AG08",
+        "AG09",
+        "AG10",
+        "AG11",
+        "AG19"
+      ],
+      "owned_paths": [
+        "content/v12/qa/media-rights/"
+      ],
+      "branch": "v12/DX18",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX18",
+      "status": "VERIFIED",
+      "attempts": 2,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "9b59914",
+      "integration_sha": "ce71c7a",
+      "runtime_environment": "local_dgx_spark_gb10",
+      "modified_files": [
+        "content/v12/qa/media-rights/media-rights-audit.json"
+      ],
+      "evidence_paths": [
+        "content/v12/qa/media-rights/media-rights-audit.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX18.log"
+    },
+    {
+      "id": "DX19",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W4",
+      "title": "Quest-knowledge coverage matrix and regression vectors (25 acts × 4 tiers)",
+      "depends_on": [
+        "CL03",
+        "CX02"
+      ],
+      "owned_paths": [
+        "tests/v12/vectors/"
+      ],
+      "branch": "v12/DX19",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX19",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "e908694",
+      "integration_sha": "1e0de21",
+      "runtime_environment": "local_dgx_spark_gb10",
+      "modified_files": [
+        "tests/v12/vectors/quest-age-tier-vectors.json"
+      ],
+      "evidence_paths": [
+        "tests/v12/vectors/quest-age-tier-vectors.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX19.log"
+    },
+    {
+      "id": "DX20",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W5",
+      "title": "Independent final source traceability and artifact audit",
+      "depends_on": [
+        "DX18",
+        "DX19",
+        "CX04"
+      ],
+      "owned_paths": [
+        "reports/v12/traceability-audit/"
+      ],
+      "branch": "v12/DX20",
+      "worktree": "/home/wael/Code/mv-wt-v12/DX20",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "b2f1b82",
+      "integration_sha": "842e8f2",
+      "runtime_environment": "local_dgx_spark_gb10",
+      "modified_files": [
+        "reports/v12/traceability-audit/dx20-traceability-audit.json"
+      ],
+      "evidence_paths": [
+        "reports/v12/traceability-audit/dx20-traceability-audit.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/DX20.log"
+    },
+    {
+      "id": "CL01",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W0",
+      "title": "Knowledge ontology, reversible merge policy, and canonical IDs",
+      "depends_on": [],
+      "owned_paths": [
+        "packages/knowledge-v12/"
+      ],
+      "branch": "v12/CL01",
+      "worktree": "/home/wael/Code/mv-wt-v12/CL01",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "2c4758f",
+      "integration_sha": "a517c8e",
+      "runtime_environment": "Claude Architecture Contract Verifier (Node v22.22.3 + tsx)",
+      "modified_files": [
+        "packages/knowledge-v12/ONTOLOGY.md",
+        "packages/knowledge-v12/index.ts",
+        "packages/knowledge-v12/package.json"
+      ],
+      "evidence_paths": [
+        "packages/knowledge-v12/index.ts",
+        "packages/knowledge-v12/ONTOLOGY.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CL01.log"
+    },
+    {
+      "id": "CL02",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W0",
+      "title": "Historical epistemology, claim-verification policy, and reviewer workflow",
+      "depends_on": [
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/v12/epistemology/"
+      ],
+      "branch": "v12/CL02",
+      "worktree": "/home/wael/Code/mv-wt-v12/CL02",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "34be041",
+      "integration_sha": "95ee57a",
+      "runtime_environment": "Claude Epistemic Policy Verifier (Node v22.22.3)",
+      "modified_files": [
+        "content/v12/epistemology/EPISTEMIC_POLICY.md",
+        "content/v12/epistemology/verification-policy.json"
+      ],
+      "evidence_paths": [
+        "content/v12/epistemology/verification-policy.json",
+        "content/v12/epistemology/EPISTEMIC_POLICY.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CL02.log"
+    },
+    {
+      "id": "CL03",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W2",
+      "title": "Age-tier educational design and five-act quest alignment across LB, IQ, EG, FR, KR",
+      "depends_on": [
+        "CL01",
+        "CL02",
+        "DX05",
+        "DX06",
+        "DX07",
+        "DX08",
+        "DX09"
+      ],
+      "owned_paths": [
+        "content/v12/quest-enrichment/"
+      ],
+      "branch": "v12/CL03",
+      "worktree": "/home/wael/Code/mv-wt-v12/CL03",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "2d977e8",
+      "integration_sha": "aac1651",
+      "runtime_environment": "Claude Educational Progression & 25-Act Alignment Verifier",
+      "modified_files": [
+        "content/v12/quest-enrichment/quest-acts-v12.json"
+      ],
+      "evidence_paths": [
+        "content/v12/quest-enrichment/quest-acts-v12.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CL03.log"
+    },
+    {
+      "id": "CL04",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W2",
+      "title": "Cross-platform content contracts and localization/safety constraints",
+      "depends_on": [
+        "CL01",
+        "CL03"
+      ],
+      "owned_paths": [
+        "packages/contracts/v12/"
+      ],
+      "branch": "v12/CL04",
+      "worktree": "/home/wael/Code/mv-wt-v12/CL04",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "1dd63e0",
+      "integration_sha": "a1be7b2",
+      "runtime_environment": "Claude Cross-Platform Contract Verifier (Node v22.22.3 + tsx)",
+      "modified_files": [
+        "packages/contracts/v12/index.ts"
+      ],
+      "evidence_paths": [
+        "packages/contracts/v12/index.ts"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CL04.log"
+    },
+    {
+      "id": "CL05",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W5",
+      "title": "Independent content integrity review, disputed-claim triage, and acceptance decision",
+      "depends_on": [
+        "AG20",
+        "DX20",
+        "CX04"
+      ],
+      "owned_paths": [
+        "reports/v12/independent-review/"
+      ],
+      "branch": "v12/CL05",
+      "worktree": "/home/wael/Code/mv-wt-v12/CL05",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "466d582",
+      "integration_sha": "7d052ae",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "reports/v12/independent-review/cl05-acceptance-decision.json"
+      ],
+      "evidence_paths": [
+        "reports/v12/independent-review/cl05-acceptance-decision.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CL05.log"
+    },
+    {
+      "id": "CX01",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W0",
+      "title": "Repository inventory, non-destructive migrations, schema, diff preview, and rollback",
+      "depends_on": [
+        "CL01"
+      ],
+      "owned_paths": [
+        "tools/v12/migration/"
+      ],
+      "branch": "v12/CX01",
+      "worktree": "/home/wael/Code/mv-wt-v12/CX01",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "8e9ab3c",
+      "integration_sha": "5e10064",
+      "runtime_environment": "Codex CLI Migration & Snapshot Verifier (Node v22.22.3)",
+      "modified_files": [
+        "tools/v12/migration/baseline-snapshot.json",
+        "tools/v12/migration/inventory.mjs",
+        "tools/v12/migration/rollback.mjs",
+        "tools/v12/migration/verify-non-destructive.mjs"
+      ],
+      "evidence_paths": [
+        "tools/v12/migration/baseline-snapshot.json",
+        "tools/v12/migration/verify-non-destructive.mjs",
+        "tools/v12/migration/rollback.mjs"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CX01.log"
+    },
+    {
+      "id": "CX02",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W2",
+      "title": "Content compiler for Roblox Luau and Minecraft Bedrock JS/JSON",
+      "depends_on": [
+        "CL03",
+        "CL04",
+        "CX01"
+      ],
+      "owned_paths": [
+        "tools/v12/compiler/",
+        "apps/roblox/src/shared/KnowledgeV12.luau",
+        "apps/minecraft/scripts/generated/knowledgeV12.ts"
+      ],
+      "branch": "v12/CX02",
+      "worktree": "/home/wael/Code/mv-wt-v12/CX02",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "a790976",
+      "integration_sha": "cc24b6d",
+      "runtime_environment": "Codex CLI Content Compiler Verifier (Node v22.22.3)",
+      "modified_files": [
+        "apps/minecraft/scripts/generated/knowledgeV12.ts",
+        "apps/roblox/src/shared/KnowledgeV12.luau",
+        "tools/v12/compiler/compile-v12.mjs"
+      ],
+      "evidence_paths": [
+        "tools/v12/compiler/compile-v12.mjs",
+        "apps/roblox/src/shared/KnowledgeV12.luau",
+        "apps/minecraft/scripts/generated/knowledgeV12.ts"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CX02.log"
+    },
+    {
+      "id": "CX03",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W4",
+      "title": "Website atlas, encyclopedia, and quest map integration",
+      "depends_on": [
+        "AG12",
+        "AG13",
+        "CX02",
+        "DX17"
+      ],
+      "owned_paths": [
+        "apps/web/src/features/encyclopedia-v12/",
+        "apps/web/src/generated/knowledgeV12.json"
+      ],
+      "branch": "v12/CX03",
+      "worktree": "/home/wael/Code/mv-wt-v12/CX03",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "ed088bf",
+      "integration_sha": "dc70e1b",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "apps/web/src/features/encyclopedia-v12/CulturalEncyclopediaSectionV12.tsx",
+        "apps/web/src/generated/knowledgeV12.json"
+      ],
+      "evidence_paths": [
+        "apps/web/src/generated/knowledgeV12.json",
+        "apps/web/src/features/encyclopedia-v12/CulturalEncyclopediaSectionV12.tsx"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CX03.log"
+    },
+    {
+      "id": "CX04",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W4",
+      "title": "Automated tests for provenance, localization, map coordinates, schemas, and quest regression",
+      "depends_on": [
+        "CX02",
+        "CX03",
+        "DX19"
+      ],
+      "owned_paths": [
+        "tests/v12/suite/"
+      ],
+      "branch": "v12/CX04",
+      "worktree": "/home/wael/Code/mv-wt-v12/CX04",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "3f0c934",
+      "integration_sha": "2c9994e",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "tests/v12/suite/v12-enrichment.test.ts"
+      ],
+      "evidence_paths": [
+        "tests/v12/suite/v12-enrichment.test.ts"
+      ],
+      "blockers": [],
+      "log_path": "swarm/v12/logs/CX04.log"
+    },
+    {
+      "id": "CX05",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W5",
+      "title": "CI, staged deployment, artifact manifest, release gate, and reconciliation",
+      "depends_on": [
+        "CX04",
+        "AG20",
+        "DX20",
+        "CL05"
+      ],
+      "owned_paths": [
+        "tools/v12/release/"
+      ],
+      "branch": "v12/CX05",
+      "worktree": "/home/wael/Code/mv-wt-v12/CX05",
+      "status": "INTEGRATED",
+      "attempts": 1,
+      "base_sha": "24a94f7fb6742dba4e601bd857678dc02eae0e97",
+      "commit_sha": "9e2c991",
+      "integration_sha": "c1e628c",
+      "runtime_environment": "host_agy_orchestrator",
+      "modified_files": [
+        "tools/v12/release/release-manifest-v12.json",
+        "tools/v12/release/verify-release-gate.mjs"
+      ],
+      "evidence_paths": [
+        "tools/v12/release/verify-release-gate.mjs",
+        "tools/v12/release/release-manifest-v12.json"
+      ],
+      "blockers": [
+        "Native Roblox Studio GUI and Minecraft Bedrock client GUI are unavailable on Linux aarch64 host; CLI artifacts (.rbxl and .mcaddon) built and verified."
+      ],
+      "log_path": "swarm/v12/logs/CX05.log"
+    }
+  ]
+}

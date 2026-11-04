@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX04",
+  "dgx_note": "Passage-locator indexing prevents unverified essay assertions from being mistaken for verified facts by explicitly linking each claim to its supporting evidence passage and flagging any assertion lacking such a verifiable, source-aligned passage as unverified.",
+  "total_provenance_links": 36
+}

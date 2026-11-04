@@ -1,0 +1,16 @@
+=== AGENT AG20 (Antigravity · W5) ===
+Timestamp: 2026-11-04T07:48:02.040Z
+Resolved Model: Gemini 4 Argon
+Runtime Environment: host_agy_orchestrator
+Branch: v12/AG20
+Agent Commit SHA: 37bdaa2
+Integration Merge SHA: 135d9f7
+Owned Paths: reports/v12/visual-review/
+Modified Files (1): reports/v12/visual-review/ag20-visual-cultural-review.json
+Test Command: node -e "const fs=require('fs'); const r=JSON.parse(fs.readFileSync('reports/v12/visual-review/ag20-visual-cultural-review.json','utf8')); if(r.verdict!=='APPROVED_WITH_EPISTEMIC_AND_SAFETY_LABELS') process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: reports/v12/visual-review/ag20-visual-cultural-review.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE AG20 37bdaa2 reports/v12/visual-review/ag20-visual-cultural-review.json

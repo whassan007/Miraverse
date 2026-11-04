@@ -1,0 +1,12 @@
+{
+  "agent_id": "AG09",
+  "country": "FR",
+  "kit": "kitchen",
+  "assets": [
+    {
+      "id": "fr-svg-silk-kitchen",
+      "path": "/art/v12/FR/kitchen/jacquard-and-meres-lyonnaises.svg",
+      "epistemic_badge": "Historical Claim"
+    }
+  ]
+}

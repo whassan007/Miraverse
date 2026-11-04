@@ -1,0 +1,4109 @@
+{
+  "version": "1.2.0",
+  "agent_id": "DX19",
+  "generated_at": "2026-11-04T07:45:14.710Z",
+  "dgx_spark_metrics": {
+    "ok": true,
+    "model": "qwen/qwen3-coder-next",
+    "content": "```json\n{\n  \"summary\": \"Confirmed: 25 quest acts × 4 age tiers = 100 regression vectors.\",\n  \"dimensions\": [\"LB\", \"IQ\", \"EG\", \"FR\", \"KR\"],\n  \"total_vectors\": 100,\n  \"breakdown\": {\n    \"quest_acts\": 25,\n    \"age_tiers\": 4\n  }\n}\n```",
+    "usage": {
+      "prompt_tokens": 42,
+      "completion_tokens": 88,
+      "total_tokens": 130,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "tokensPerSec": 56.63,
+    "elapsedMs": 1554
+  },
+  "total_acts": 25,
+  "total_age_tiers": 4,
+  "total_vectors": 100,
+  "vectors": [
+    {
+      "vector_id": "LB-A01__5-7",
+      "act_id": "LB-A01",
+      "country": "LB",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-BYBLOS-PORT",
+        "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+        "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Recognize Byblos harbor objects (cedar beam, olive oil jar, sailboat) using pictorial icons in a 1–3 minute guided loop.",
+        "narrative_hook": "Teta Nahla and Captain Rima wave from the sunny pier—let’s match three harbor pictures to welcome the boats!",
+        "npc_lines": {
+          "mentor_greeting_en": "Ahlan ya habibi! Tap the three glowing seashell pictures to bring the cedar wood and olive jar to the harbor sign.",
+          "mentor_greeting_native": "أهلا يا حبيبي! إكبس عالصور التلاتة لنرتب لوحة مينا جبيل."
+        },
+        "player_actions": [
+          "Follow glowing seashell trail",
+          "Match 3 pictorial harbor icons (cedar, olive jar, boat)",
+          "Snap welcome sign into place"
+        ],
+        "hint_ladder": [
+          "Icon glow pulse after 8s",
+          "Teta points directly to the matching basket",
+          "Auto-snap assist on touch"
+        ],
+        "completion_criteria": "3 harbor icons matched and welcome sign placed (no reading or timer required).",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "stamp_id": "stamp:LB:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Byblos harbor traded cedar wood and olive oil across the Mediterranean."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "no_child_pii",
+        "myth_clearly_labeled_not_history"
+      ]
+    },
+    {
+      "vector_id": "LB-A01__8-10",
+      "act_id": "LB-A01",
+      "country": "LB",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-BYBLOS-PORT",
+        "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+        "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Sort coastal trade goods and distinguish historical harbor trade from the ancient myth of the sacred tree.",
+        "narrative_hook": "The harbor notice board lost its route tags! Help Captain Rima sort what sailed out of Byblos and what arrived from Egypt.",
+        "npc_lines": {
+          "mentor_greeting_en": "Welcome to Jbeil! Ask Captain Rima which goods came from Mount Lebanon and which arrived by sea.",
+          "mentor_greeting_native": "أهلا وسهلا بجبيل! اسأل القبطان ريما شو كان يسافر من جبل لبنان بالبحر."
+        },
+        "player_actions": [
+          "Collect 4 route tags along the pier",
+          "Sort Mount Lebanon cedar/olive oil vs Egyptian papyrus",
+          "Assemble 3-piece harbor map board"
+        ],
+        "hint_ladder": [
+          "Show picture clue on tag",
+          "Highlight Mount Lebanon vs Nile ports on mini-map",
+          "Captain Rima explains the match"
+        ],
+        "completion_criteria": "All 4 goods sorted and 3-piece harbor route map restored.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+          "stamp_id": "stamp:LB:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Separates real timber/papyrus trade from Plutarch’s mythological sacred-tree story."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "no_child_pii",
+        "myth_clearly_labeled_not_history"
+      ]
+    },
+    {
+      "vector_id": "LB-A01__11-13",
+      "act_id": "LB-A01",
+      "country": "LB",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-BYBLOS-PORT",
+        "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+        "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Compare archaeological trade evidence with mythological narratives (Isis/Osiris chest story) on the Byblos harbor map.",
+        "narrative_hook": "Two scrolls washed up in the harbor workshop: one is a merchant cargo list, the other is a myth recorded by Plutarch. Can you classify both?",
+        "npc_lines": {
+          "mentor_greeting_en": "Let’s compare the harbor cargo ledger with the ancient myth of the sacred cedar pillar so visitors know how history and legend connect.",
+          "mentor_greeting_native": "خلينا نقارن دفتر تجارة المينا مع أسطورة الشجرة المقدسة لنوضح الفرق بين التاريخ والأسطورة."
+        },
+        "player_actions": [
+          "Inspect 3 cargo manifests and 2 mythic reliefs",
+          "Plot maritime route between Byblos and the Nile Delta",
+          "Label each panel as Historical Record or Mythology"
+        ],
+        "hint_ladder": [
+          "Check the source date on each scroll",
+          "Compare timber shipping lists with Plutarch’s story",
+          "Review epistemic badge guide"
+        ],
+        "completion_criteria": "Route plotted and all 5 harbor panels accurately labeled by knowledge class.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "stamp_id": "stamp:LB:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Plutarch’s De Iside et Osiride symbolizes Egypt–Byblos timber ties through myth."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "no_child_pii",
+        "myth_clearly_labeled_not_history"
+      ]
+    },
+    {
+      "vector_id": "LB-A01__14-17",
+      "act_id": "LB-A01",
+      "country": "LB",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-BYBLOS-PORT",
+        "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+        "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Analyze primary/secondary provenance connecting Levantine cedar exports, Egyptian papyrus imports, and Hellenistic mythography.",
+        "narrative_hook": "Curate the Byblos Port interpretive board: evaluate why Greek writers connected papyrus (biblion) to Byblos and separate corroborated archaeology from unverified claims.",
+        "npc_lines": {
+          "mentor_greeting_en": "Our visitors want rigorous provenance. Cross-check the UNESCO archaeological summary against the research essay’s mythological claims.",
+          "mentor_greeting_native": "زوارنا بيحبوا الدقة التاريخية؛ قارن الأدلة الأثرية الموثقة مع الروايات الأسطورية."
+        },
+        "player_actions": [
+          "Audit 4 source passages (LB-P01, LB-P02, UNESCO #295)",
+          "Assign claim_status and confidence levels",
+          "Design bilingual harbor signage with dialect notes"
+        ],
+        "hint_ladder": [
+          "Verify whether an independent citation exists",
+          "Flag Plutarch’s narrative as mythology rather than historical_claim",
+          "Confirm no confidence=high on unverified claims"
+        ],
+        "completion_criteria": "Signage curated with 100% accurate epistemic tags and provenance links.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+          "stamp_id": "stamp:LB:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Demonstrates source criticism on ancient Mediterranean trade and myth."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "no_child_pii",
+        "myth_clearly_labeled_not_history"
+      ]
+    },
+    {
+      "vector_id": "LB-A02__5-7",
+      "act_id": "LB-A02",
+      "country": "LB",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+        "LB-KB-PLACE-BYBLOS-PORT"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match red sumac, green za’atar, and golden olive oil baskets at Amo Farid’s souk stall.",
+        "narrative_hook": "Amo Farid’s spice baskets need sorting by colour and shape before the family breakfast!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match the crimson sumac jar, green za’atar, and golden olive oil to my market baskets!",
+          "mentor_greeting_native": "رتّب مرطبان السماق الأحمر والزعتر الأخضر وزيت الزيتون بالسلات!"
+        },
+        "player_actions": [
+          "Tap 3 spice baskets by colour/icon",
+          "Hand warm man’oushe to Amo Farid",
+          "Receive crimson sumac jar"
+        ],
+        "hint_ladder": [
+          "Colour ring glows around matching basket",
+          "Amo Farid holds up the matching jar",
+          "Guided tap completion"
+        ],
+        "completion_criteria": "3 baskets matched and fair trade completed.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+          "stamp_id": "stamp:LB:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Introduces Mount Lebanon herbs, sumac, and red earth colours gently."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "non_graphic_seasonal_myth",
+        "geology_vs_myth_distinction"
+      ]
+    },
+    {
+      "vector_id": "LB-A02__8-10",
+      "act_id": "LB-A02",
+      "country": "LB",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+        "LB-KB-PLACE-BYBLOS-PORT"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Complete a fair souk trade and learn why Nahr Ibrahim turns red after spring mountain rains.",
+        "narrative_hook": "Amo Farid brings herbs from the mountains near Afqa—discover the science and the old story behind the red river!",
+        "npc_lines": {
+          "mentor_greeting_en": "When spring rain washes red iron clay down into Nahr Ibrahim, the river turns crimson like sumac!",
+          "mentor_greeting_native": "لما بتشتي بالربيع عالجبل، التراب الأحمر بيلوّن نهر إبراهيم متل لون السماق!"
+        },
+        "player_actions": [
+          "Gather 5 market items",
+          "Complete 2 fair trades with Amo Farid",
+          "Sort geological red-clay card vs ancient spring-myth card"
+        ],
+        "hint_ladder": [
+          "Check quantity icons on stall",
+          "Read Amo Farid’s clue about iron-rich mountain soil",
+          "Place geology card on left, myth card on right"
+        ],
+        "completion_criteria": "Trades completed and river cards sorted accurately.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+          "stamp_id": "stamp:LB:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Distinguishes iron-oxide sediment runoff from the ancient Adonis myth."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "non_graphic_seasonal_myth",
+        "geology_vs_myth_distinction"
+      ]
+    },
+    {
+      "vector_id": "LB-A02__11-13",
+      "act_id": "LB-A02",
+      "country": "LB",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+        "LB-KB-PLACE-BYBLOS-PORT"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Compare geological explanations (ferruginous limestone sediment) and ancient mythological interpretations of Nahr Ibrahim.",
+        "narrative_hook": "Repair the damaged market archive chest and match mountain provenance notes from Afqa and Jbeil.",
+        "npc_lines": {
+          "mentor_greeting_en": "Help me repair this cedar archive chest and organize the cards explaining how geology and ancient myth both described Nahr Ibrahim.",
+          "mentor_greeting_native": "ساعدني نصلّح صندوق الأرشيف الخشبي ونرتّب بطاقات الجيولوجيا والأسطورة عن نهر إبراهيم."
+        },
+        "player_actions": [
+          "Repair 3 cedar chest hinges",
+          "Balance souk supply exchange across 3 stalls",
+          "Link Afqa sediment data vs Hellenistic Adonis myth"
+        ],
+        "hint_ladder": [
+          "Inspect hinge blueprint",
+          "Check seasonal snowmelt timeline",
+          "Tag interpretation class on the Afqa record"
+        ],
+        "completion_criteria": "Archive chest repaired and landscape interpretation cards verified.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+          "stamp_id": "stamp:LB:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Shows how seasonal ecology inspired ancient Near Eastern myth."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "non_graphic_seasonal_myth",
+        "geology_vs_myth_distinction"
+      ]
+    },
+    {
+      "vector_id": "LB-A02__14-17",
+      "act_id": "LB-A02",
+      "country": "LB",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+        "LB-KB-PLACE-BYBLOS-PORT"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Evaluate sacred landscape interpretation vs empirical hydrology and document ingredient provenance.",
+        "narrative_hook": "Audit the Nahr Ibrahim / Afqa archive dossier: separate verifiable hydrological sediment transport from literary mythography.",
+        "npc_lines": {
+          "mentor_greeting_en": "In our heritage archive, we never present seasonal myth as literal history—review passage LB-P03 and classify each claim.",
+          "mentor_greeting_native": "بأرشيفنا الثقافي منفرّق بوضوح بين الظواهر الجيولوجية والرموز الأسطورية القديمة."
+        },
+        "player_actions": [
+          "Analyze passage LB-P03 provenance",
+          "Optimize multi-stall resource trade with zero waste",
+          "Write provenance annotation distinguishing myth from geology"
+        ],
+        "hint_ladder": [
+          "Verify knowledge_class is set to interpretation",
+          "Check Mount Lebanon elevation and river flow",
+          "Confirm paraphrase-only text compliance"
+        ],
+        "completion_criteria": "Provenance dossier approved with zero conflation of myth and history.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+          "stamp_id": "stamp:LB:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Models scholarly landscape interpretation for teen researchers."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "non_graphic_seasonal_myth",
+        "geology_vs_myth_distinction"
+      ]
+    },
+    {
+      "vector_id": "LB-A03__5-7",
+      "act_id": "LB-A03",
+      "country": "LB",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Sequence dough, olive oil, and za’atar in a safe guided virtual saj bake where Teta Nahla handles the warm griddle.",
+        "narrative_hook": "Tap the dough, brush on golden olive oil, and sprinkle green za’atar while Teta Nahla bakes our man’oushe!",
+        "npc_lines": {
+          "mentor_greeting_en": "Step back from the warm saj, habibi—you brush the oil and za’atar, and Teta will bake it golden!",
+          "mentor_greeting_native": "خليك بعيد عن الصاج الحامي يا حبيبي، إنت حط الزيت والزعتر وتيتا بتخبزها!"
+        },
+        "player_actions": [
+          "Tap wheat dough circle",
+          "Brush olive oil and sprinkle za’atar",
+          "Watch Teta Nahla bake on the domed saj"
+        ],
+        "hint_ladder": [
+          "Highlight bowl 1 (dough), bowl 2 (oil), bowl 3 (za’atar)",
+          "Visual hand icon shows brushing motion",
+          "Automatic safe completion"
+        ],
+        "completion_criteria": "Virtual man’oushe prepared safely with adult NPC handling the heat.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+          "stamp_id": "stamp:LB:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Traditional domed saj flatbread baking in Lebanese courtyards."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "adult_npc_operates_hot_saj",
+        "sesame_and_gluten_allergy_notes"
+      ]
+    },
+    {
+      "vector_id": "LB-A03__8-10",
+      "act_id": "LB-A03",
+      "country": "LB",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Reconstruct Teta’s missing recipe postcard and learn how recipes travel with families across the diaspora.",
+        "narrative_hook": "Cousin Karim sent a family memory postcard from abroad—let’s match the recipe steps and bake man’oushe!",
+        "npc_lines": {
+          "mentor_greeting_en": "When cousins travel far away, a handwritten man’oushe recipe postcard brings the scent of our courtyard to their kitchen.",
+          "mentor_greeting_native": "لما يسافروا ولاد العم لبعيد، بطاقة وصفة المنقوشة بتحمل ريحة حوشنا لمطبخهم."
+        },
+        "player_actions": [
+          "Gather flour, olive oil, and za’atar",
+          "Place 4 recipe steps in order on the family postcard",
+          "Select sesame-free herb substitution option for a guest"
+        ],
+        "hint_ladder": [
+          "Check the numbered corners of the postcard",
+          "Dough comes before oil and za’atar",
+          "Use pure thyme-and-sumac blend for sesame allergy"
+        ],
+        "completion_criteria": "Recipe postcard restored and allergy-friendly batch baked.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+          "stamp_id": "stamp:LB:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Recipes act as portable cultural archives in expatriate families."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "adult_npc_operates_hot_saj",
+        "sesame_and_gluten_allergy_notes"
+      ]
+    },
+    {
+      "vector_id": "LB-A03__11-13",
+      "act_id": "LB-A03",
+      "country": "LB",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Compare mountain vs coastal Lebanese man’oushe variations and design an allergy-aware community baking plan.",
+        "narrative_hook": "Compare Teta Nahla’s Byblos za’atar blend with Mount Lebanon kishk/herb variations and prepare the courtyard feast table.",
+        "npc_lines": {
+          "mentor_greeting_en": "Every village blends its za’atar differently—let’s compare our coastal sumac-rich blend with mountain thyme recipes.",
+          "mentor_greeting_native": "كل ضيعة بلبنان إلها خلطتها؛ تعال نقارن خلطة الساحل بالسماق مع خلطة الجبل."
+        },
+        "player_actions": [
+          "Compare 2 regional recipe cards",
+          "Scale ingredient quantities for 8 guests",
+          "Tag gluten-aware and sesame-free options"
+        ],
+        "hint_ladder": [
+          "Check sumac ratio in coastal vs mountain cards",
+          "Multiply base recipe by 2",
+          "Attach clear allergen labels to each platter"
+        ],
+        "completion_criteria": "Regional comparison completed and labeled community platters prepared.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+          "stamp_id": "stamp:LB:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Connects culinary variation to micro-regions and diaspora adaptation."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "adult_npc_operates_hot_saj",
+        "sesame_and_gluten_allergy_notes"
+      ]
+    },
+    {
+      "vector_id": "LB-A03__14-17",
+      "act_id": "LB-A03",
+      "country": "LB",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Examine how diaspora literature (e.g., Maalouf, Alameddine) treats culinary memory and letters as portable archives.",
+        "narrative_hook": "Curate the Diaspora Kitchen Archive: link Teta’s recipe postcard to literary themes of transnational memory while verifying bibliographic status.",
+        "npc_lines": {
+          "mentor_greeting_en": "Writers in the Lebanese diaspora describe recipes and letters as portable homes—let’s catalog these works honestly as bibliographic candidates pending edition review.",
+          "mentor_greeting_native": "أدباء المهجر شافوا بالوصفة والرسالة بيت متنقل؛ خلينا نوثّق هالمصادر بأمانة علمية."
+        },
+        "player_actions": [
+          "Review passage LB-P06 bibliographic candidates",
+          "Design scalable community meal workflow with allergen & heat-safety protocols",
+          "Verify paraphrase-only text compliance"
+        ],
+        "hint_ladder": [
+          "Keep bibliographic citations marked verified=false until original books are checked",
+          "Include sesame/gluten substitution matrix",
+          "Confirm adult supervision note on real-world cooking"
+        ],
+        "completion_criteria": "Diaspora culinary archive curated with full epistemic and safety compliance.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+          "stamp_id": "stamp:LB:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Separates research essay bibliographic mentions from verified primary editions."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "adult_npc_operates_hot_saj",
+        "sesame_and_gluten_allergy_notes"
+      ]
+    },
+    {
+      "vector_id": "LB-A04__5-7",
+      "act_id": "LB-A04",
+      "country": "LB",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-BYBLOS-PORT",
+        "LB-KB-MYTH-ISIS-OSIRIS-TREE"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Snap 4 large pale limestone blocks, cedar beams, and red roof tiles into glowing silhouettes.",
+        "narrative_hook": "Help Usta Nadim place the big stone blocks and red roof tiles so Teta’s courtyard shines!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match the pale stone blocks at the bottom, the brown cedar beam in the middle, and the red roof tiles on top!",
+          "mentor_greeting_native": "حط حجر الرمل الفاتح تحت، وجسر خشب الأرز بالنص، والقرميد الأحمر فوق!"
+        },
+        "player_actions": [
+          "Snap 2 limestone pillar blocks",
+          "Place 1 cedar lintel beam",
+          "Place red terracotta roof tiles"
+        ],
+        "hint_ladder": [
+          "Outline glows in matching colour",
+          "Piece floats toward target on tap",
+          "Instant celebration chime"
+        ],
+        "completion_criteria": "4 courtyard pieces snapped into place; courtyard visually transforms.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "stamp_id": "stamp:LB:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Traditional Lebanese coastal stone houses combine limestone walls, cedar beams, and red tile roofs."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "accessible_courtyard_ramp",
+        "conservation_ethics"
+      ]
+    },
+    {
+      "vector_id": "LB-A04__8-10",
+      "act_id": "LB-A04",
+      "country": "LB",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-BYBLOS-PORT",
+        "LB-KB-MYTH-ISIS-OSIRIS-TREE"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Follow Usta Nadim’s 4x4 blueprint (RRRR / CCCC / L..L / LLLL) to repair the courtyard archway and archive chest alcove.",
+        "narrative_hook": "Use the mason’s blueprint to rebuild the limestone arch and create a dry alcove for the neighborhood story chest!",
+        "npc_lines": {
+          "mentor_greeting_en": "Follow the blueprint legend—L for limestone, C for cedar beam, and R for red roof tile!",
+          "mentor_greeting_native": "امشي عالخريطة الهندسية: حجر كلسي، خشب أرز، وقرميد أحمر!"
+        },
+        "player_actions": [
+          "Gather limestone, cedar beams, and red tiles",
+          "Complete the 4x4 archway blueprint",
+          "Place the repaired archive chest in the sheltered alcove"
+        ],
+        "hint_ladder": [
+          "Show row-by-row blueprint overlay",
+          "Highlight missing tile position",
+          "Usta Nadim checks structural balance"
+        ],
+        "completion_criteria": "Blueprint 100% matched and archive chest sheltered.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "stamp_id": "stamp:LB:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Preserves canonical LB-1-build blueprint while adding archive alcove context."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "accessible_courtyard_ramp",
+        "conservation_ethics"
+      ]
+    },
+    {
+      "vector_id": "LB-A04__11-13",
+      "act_id": "LB-A04",
+      "country": "LB",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-BYBLOS-PORT",
+        "LB-KB-MYTH-ISIS-OSIRIS-TREE"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Plan courtyard restoration satisfying visitor accessibility, shade, and material conservation constraints.",
+        "narrative_hook": "Usta Nadim needs a restoration layout that keeps elders comfortable in the shade and provides step-free courtyard access.",
+        "npc_lines": {
+          "mentor_greeting_en": "Good restoration respects old stone while making sure everyone—including elders and wheelchairs—can enter the courtyard easily.",
+          "mentor_greeting_native": "الترميم الصح بيحترم الحجر القديم وبيأمّن مدخل مريح لكل الزوار والكبار بالعمر."
+        },
+        "player_actions": [
+          "Complete archway structure",
+          "Add step-free limestone threshold ramp",
+          "Position cedar pergola shade over the story bench"
+        ],
+        "hint_ladder": [
+          "Check slope angle on threshold",
+          "Align cedar beams with afternoon sun direction",
+          "Verify clear walkway width"
+        ],
+        "completion_criteria": "Courtyard arch, accessible ramp, and shade pergola verified.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "stamp_id": "stamp:LB:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Connects traditional Levantine courtyard architecture with inclusive design."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "accessible_courtyard_ramp",
+        "conservation_ethics"
+      ]
+    },
+    {
+      "vector_id": "LB-A04__14-17",
+      "act_id": "LB-A04",
+      "country": "LB",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "LB-KB-PLACE-BYBLOS-PORT",
+        "LB-KB-MYTH-ISIS-OSIRIS-TREE"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Distinguish original historic masonry fabric from modern reversible conservation additions under budget constraints.",
+        "narrative_hook": "Draft the Byblos Courtyard Conservation Proposal: document which stones are historic fabric and justify reversible modern supports.",
+        "npc_lines": {
+          "mentor_greeting_en": "In heritage conservation (Venice Charter principles), new additions must be distinguishable and reversible—never fake antiquity.",
+          "mentor_greeting_native": "بهندسة الترميم التراثي، الإضافات الجديدة لازم تكون واضحة وقابلة للإزالة بدون ما نزيّف التاريخ."
+        },
+        "player_actions": [
+          "Map original sandstone blocks vs new lime-mortar repairs",
+          "Balance material budget across arch, roof, and accessibility ramp",
+          "Attach conservation provenance note"
+        ],
+        "hint_ladder": [
+          "Use breathable lime mortar rather than rigid cement on sandstone",
+          "Mark new cedar timbers with restoration year",
+          "Verify accessible circulation route"
+        ],
+        "completion_criteria": "Conservation plan meets structural, accessibility, and reversibility criteria.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-PLACE-BYBLOS-PORT",
+          "stamp_id": "stamp:LB:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Applies architectural conservation ethics to coastal Levantine masonry."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "accessible_courtyard_ramp",
+        "conservation_ethics"
+      ]
+    },
+    {
+      "vector_id": "LB-A05__5-7",
+      "act_id": "LB-A05",
+      "country": "LB",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+        "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match 3 spoken/pictorial Lebanese Arabic words (tēta, manʾūshe, ṣaḥtēn) and 3 ancient picture-letters (Aleph, Beth, Mem).",
+        "narrative_hook": "Lanterns glow by the sea wall! Match the friendly Lebanese words and ancient wave-letters with Teta Nahla to earn your Byblos stamp!",
+        "npc_lines": {
+          "mentor_greeting_en": "Listen and match: tēta (grandma), manʾūshe (flatbread), and Mem—the ancient wave letter of the sea!",
+          "mentor_greeting_native": "اسمع ووصّل الكلمات: تيتا، منقوشة، وصحتين، وحرف الميم اللي بيشبه موج البحر!"
+        },
+        "player_actions": [
+          "Match 3 Lebanese Arabic word cards with pictures",
+          "Match Aleph (ox), Beth (house), and Mem (water) letter tiles",
+          "Collect Lebanon Chapter Stamp"
+        ],
+        "hint_ladder": [
+          "Tap speaker icon for clear pronunciation",
+          "Mem looks like wavy blue water",
+          "Celebration fireworks light the harbor"
+        ],
+        "completion_criteria": "3 Lebanese words and 3 letter shapes matched; stamp awarded.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+          "stamp_id": "stamp:LB:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Connects living Lebanese dialect greetings with ancient Byblos acrophonic letters."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "fictional_elder_audio_only_no_child_voice_collection",
+        "no_monocausal_script_invention_claim"
+      ]
+    },
+    {
+      "vector_id": "LB-A05__8-10",
+      "act_id": "LB-A05",
+      "country": "LB",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+        "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Compare 5 Phoenician letters (Aleph, Beth, Mem, Resh, Taw) and record Teta Nahla’s scripted fictional harbor memory into the archive book.",
+        "narrative_hook": "Help Mira archive Teta Nahla’s harbor memory using our scripted story cards and match five ancient Phoenician letters!",
+        "npc_lines": {
+          "mentor_greeting_en": "Choose my story cards to save our fictional family memory in the harbor album—no microphone or personal info needed!",
+          "mentor_greeting_native": "اختار بطاقات الحكاية لنحفظ ذكريات المينا بدفتر العيلة بأمان!"
+        },
+        "player_actions": [
+          "Match Aleph, Beth, Mem, Resh, and Taw to their meanings and modern Arabic/Latin cousins",
+          "Practice 5 Lebanese Arabic vocab words",
+          "Assemble Teta Nahla’s 3-part scripted oral-history card"
+        ],
+        "hint_ladder": [
+          "Beth means house (bayt)",
+          "Resh means head (ra’s)",
+          "Select the scripted harbor memory cards in chronological order"
+        ],
+        "completion_criteria": "5 letter comparisons and scripted elder oral-history card completed.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+          "stamp_id": "stamp:LB:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Demonstrates acrophonic principle (Aleph/Beth/Mem/Resh/Taw) safely without recording child voice data."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "fictional_elder_audio_only_no_child_voice_collection",
+        "no_monocausal_script_invention_claim"
+      ]
+    },
+    {
+      "vector_id": "LB-A05__11-13",
+      "act_id": "LB-A05",
+      "country": "LB",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+        "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Trace how the 22-letter Phoenician consonantal abjad on the Ahiram sarcophagus diffused across Mediterranean scripts while preserving dialect nuances.",
+        "narrative_hook": "Set up the Harbor Festival Exhibit comparing the Ahiram sarcophagus inscription (c. 1000 BCE) with modern Lebanese Arabic (`ar-LB`) and French/English signage.",
+        "npc_lines": {
+          "mentor_greeting_en": "Show our visitors how the 22 consonantal letters from Byblos traveled by sea—and why spoken Lebanese Arabic has its own warm expressions.",
+          "mentor_greeting_native": "فرجي الزوار كيف انتقلت حروف جبيل عبر البحر، وليش اللهجة اللبنانية المحكية إلها نكهتها الخاصة."
+        },
+        "player_actions": [
+          "Compare Ahiram sarcophagus letterforms with Greek/Aramaic/Arabic cognates",
+          "Distinguish spoken Lebanese dialect (`ar-LB`) from Modern Standard Arabic",
+          "Curate 4-panel festival story trail"
+        ],
+        "hint_ladder": [
+          "Check the c. 1000 BCE date on the Ahiram sarcophagus card",
+          "Note that ancient Phoenician is a distinct Northwest Semitic language from modern ar-LB",
+          "Place dialect audio/text cards at the courtyard entrance"
+        ],
+        "completion_criteria": "Exhibit panels accurately trace script diffusion and dialect distinction.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+          "stamp_id": "stamp:LB:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Clarifies that historical characters in 1000 BCE spoke Phoenician, while modern characters speak Lebanese Arabic (`ar-LB`)."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "fictional_elder_audio_only_no_child_voice_collection",
+        "no_monocausal_script_invention_claim"
+      ]
+    },
+    {
+      "vector_id": "LB-A05__14-17",
+      "act_id": "LB-A05",
+      "country": "LB",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+        "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Conduct a full epistemic and privacy-safe curation of Byblos’s epigraphic and diaspora heritage.",
+        "narrative_hook": "Finalize the Byblos Community Curatorial Review: verify that alphabet diffusion claims avoid monocausal exaggeration and that oral-history mechanics collect zero personal data.",
+        "npc_lines": {
+          "mentor_greeting_en": "A true cultural archivist protects both historical accuracy and community privacy. Review our final Byblos exhibit before the festival opens.",
+          "mentor_greeting_native": "الأمين الثقافي الحقيقي بيحمي الدقة التاريخية وخصوصية الناس سوا؛ راجع معرض جبيل قبل الافتتاح."
+        },
+        "player_actions": [
+          "Verify Proto-Sinaitic/Canaanite predecessor context on the Ahiram exhibit",
+          "Audit bibliographic diaspora references as paraphrase_only",
+          "Confirm oral-history station uses 100% scripted fictional elder cards"
+        ],
+        "hint_ladder": [
+          "Reject any label claiming Phoenician invented every script without predecessors",
+          "Verify UNESCO #295 external corroboration link",
+          "Check privacy flag: zero microphone/free-text input"
+        ],
+        "completion_criteria": "Curatorial audit passed with 100% provenance and privacy compliance.",
+        "reward": {
+          "knowledge_unlock_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+          "stamp_id": "stamp:LB:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Synthesizes epigraphy, diaspora memory, and privacy-by-design."
+      },
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "safety_flags": [
+        "fictional_elder_audio_only_no_child_voice_collection",
+        "no_monocausal_script_invention_claim"
+      ]
+    },
+    {
+      "vector_id": "IQ-A01__5-7",
+      "act_id": "IQ-A01",
+      "country": "IQ",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "IQ-KB-ORG-BAYT-AL-HIKMA",
+        "IQ-KB-PERSON-ABBASID-SCHOLARS"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match 3 colourful scroll and star-tool icons by the Tigris walkway with Bibi Amal.",
+        "narrative_hook": "Bibi Amal invites you for a quick, friendly picture activity in Footprints by the Tigris & Translation Workshop!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match 3 colourful scroll and star-tool icons by the Tigris walkway with Bibi Amal.",
+          "mentor_greeting_native": "هلا بيكم يا عيوني! تعالوا نرتب المخطوطات وأدوات الفلك على شاطئ دجلة."
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Bibi Amal points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+          "stamp_id": "stamp:IQ:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for IQ-A01."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "pluralistic_community_representation",
+        "institutional_origin_flagged_for_verification"
+      ]
+    },
+    {
+      "vector_id": "IQ-A01__8-10",
+      "act_id": "IQ-A01",
+      "country": "IQ",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "IQ-KB-ORG-BAYT-AL-HIKMA",
+        "IQ-KB-PERSON-ABBASID-SCHOLARS"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Route Greek, Syriac, Persian, and Sanskrit manuscripts to their translation desks in Baghdad.",
+        "narrative_hook": "Help Bibi Amal complete the multi-step neighborhood task in Footprints by the Tigris & Translation Workshop!",
+        "npc_lines": {
+          "mentor_greeting_en": "Route Greek, Syriac, Persian, and Sanskrit manuscripts to their translation desks in Baghdad.",
+          "mentor_greeting_native": "هلا بيكم يا عيوني! تعالوا نرتب المخطوطات وأدوات الفلك على شاطئ دجلة."
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Bibi Amal gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+          "stamp_id": "stamp:IQ:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for IQ-A01."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "pluralistic_community_representation",
+        "institutional_origin_flagged_for_verification"
+      ]
+    },
+    {
+      "vector_id": "IQ-A01__11-13",
+      "act_id": "IQ-A01",
+      "country": "IQ",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "IQ-KB-ORG-BAYT-AL-HIKMA",
+        "IQ-KB-PERSON-ABBASID-SCHOLARS"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Compare how Hunayn ibn Ishaq, al-Khwarizmi, and Thabit ibn Qurra collaborated across languages and faiths.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Bibi Amal in Footprints by the Tigris & Translation Workshop.",
+        "npc_lines": {
+          "mentor_greeting_en": "Compare how Hunayn ibn Ishaq, al-Khwarizmi, and Thabit ibn Qurra collaborated across languages and faiths.",
+          "mentor_greeting_native": "هلا بيكم يا عيوني! تعالوا نرتب المخطوطات وأدوات الفلك على شاطئ دجلة."
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+          "stamp_id": "stamp:IQ:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for IQ-A01."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "pluralistic_community_representation",
+        "institutional_origin_flagged_for_verification"
+      ]
+    },
+    {
+      "vector_id": "IQ-A01__14-17",
+      "act_id": "IQ-A01",
+      "country": "IQ",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "IQ-KB-ORG-BAYT-AL-HIKMA",
+        "IQ-KB-PERSON-ABBASID-SCHOLARS"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Evaluate the historiography of Bayt al-Hikma: distinguish documented translation circles from unverified modern-university analogies.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Footprints by the Tigris & Translation Workshop.",
+        "npc_lines": {
+          "mentor_greeting_en": "Evaluate the historiography of Bayt al-Hikma: distinguish documented translation circles from unverified modern-university analogies.",
+          "mentor_greeting_native": "هلا بيكم يا عيوني! تعالوا نرتب المخطوطات وأدوات الفلك على شاطئ دجلة."
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+          "stamp_id": "stamp:IQ:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for IQ-A01."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "pluralistic_community_representation",
+        "institutional_origin_flagged_for_verification"
+      ]
+    },
+    {
+      "vector_id": "IQ-A02__5-7",
+      "act_id": "IQ-A02",
+      "country": "IQ",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+        "IQ-KB-EVENT-GOLD-AND-1258-TROPES"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Collect 3 date baskets and stack colourful storybooks on the Al-Mutanabbi bookstall table.",
+        "narrative_hook": "Khalo Salam invites you for a quick, friendly picture activity in Dates, Al-Mutanabbi Booksellers & Chronicler Tales!",
+        "npc_lines": {
+          "mentor_greeting_en": "Collect 3 date baskets and stack colourful storybooks on the Al-Mutanabbi bookstall table.",
+          "mentor_greeting_native": "أهلاً بيكم بشارع المتنبي! الكتب هنا أغلى من الذهب بقلوب أهل بغداد."
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Khalo Salam points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "stamp_id": "stamp:IQ:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for IQ-A02."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "non_graphic_resilience_framing",
+        "anecdotes_labeled_contested"
+      ]
+    },
+    {
+      "vector_id": "IQ-A02__8-10",
+      "act_id": "IQ-A02",
+      "country": "IQ",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+        "IQ-KB-EVENT-GOLD-AND-1258-TROPES"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Share warm kleicha for a polished brass teapot and learn why storytellers said books were worth their weight in gold.",
+        "narrative_hook": "Help Khalo Salam complete the multi-step neighborhood task in Dates, Al-Mutanabbi Booksellers & Chronicler Tales!",
+        "npc_lines": {
+          "mentor_greeting_en": "Share warm kleicha for a polished brass teapot and learn why storytellers said books were worth their weight in gold.",
+          "mentor_greeting_native": "أهلاً بيكم بشارع المتنبي! الكتب هنا أغلى من الذهب بقلوب أهل بغداد."
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Khalo Salam gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "stamp_id": "stamp:IQ:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for IQ-A02."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "non_graphic_resilience_framing",
+        "anecdotes_labeled_contested"
+      ]
+    },
+    {
+      "vector_id": "IQ-A02__11-13",
+      "act_id": "IQ-A02",
+      "country": "IQ",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+        "IQ-KB-EVENT-GOLD-AND-1258-TROPES"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Preserve a neighborhood book collection on Al-Mutanabbi Street and compare chronicler exaggerations vs historical evidence.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Khalo Salam in Dates, Al-Mutanabbi Booksellers & Chronicler Tales.",
+        "npc_lines": {
+          "mentor_greeting_en": "Preserve a neighborhood book collection on Al-Mutanabbi Street and compare chronicler exaggerations vs historical evidence.",
+          "mentor_greeting_native": "أهلاً بيكم بشارع المتنبي! الكتب هنا أغلى من الذهب بقلوب أهل بغداد."
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "stamp_id": "stamp:IQ:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for IQ-A02."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "non_graphic_resilience_framing",
+        "anecdotes_labeled_contested"
+      ]
+    },
+    {
+      "vector_id": "IQ-A02__14-17",
+      "act_id": "IQ-A02",
+      "country": "IQ",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+        "IQ-KB-EVENT-GOLD-AND-1258-TROPES"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Analyze Ibn Abi Usaybi’a’s weight-in-gold payment anecdote and 1258 river-of-ink tropes as literary motifs rather than verified statistics.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Dates, Al-Mutanabbi Booksellers & Chronicler Tales.",
+        "npc_lines": {
+          "mentor_greeting_en": "Analyze Ibn Abi Usaybi’a’s weight-in-gold payment anecdote and 1258 river-of-ink tropes as literary motifs rather than verified statistics.",
+          "mentor_greeting_native": "أهلاً بيكم بشارع المتنبي! الكتب هنا أغلى من الذهب بقلوب أهل بغداد."
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "stamp_id": "stamp:IQ:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for IQ-A02."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "non_graphic_resilience_framing",
+        "anecdotes_labeled_contested"
+      ]
+    },
+    {
+      "vector_id": "IQ-A03__5-7",
+      "act_id": "IQ-A03",
+      "country": "IQ",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match wheat dough, sweet date paste, and green cardamom pods so Bibi Amal can bake golden kleicha wheels!",
+        "narrative_hook": "Bibi Amal invites you for a quick, friendly picture activity in Bibi’s Kleicha Notebook & Plural Family Recipes!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match wheat dough, sweet date paste, and green cardamom pods so Bibi Amal can bake golden kleicha wheels!",
+          "mentor_greeting_native": "تعالوا نلف عجينة الكليچة بالتمر والهيل، وبيبي أمل تخبزها بالفرن بأمان!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Bibi Amal points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+          "stamp_id": "stamp:IQ:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for IQ-A03."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "adult_npc_operates_oven",
+        "nut_free_date_filling_option"
+      ]
+    },
+    {
+      "vector_id": "IQ-A03__8-10",
+      "act_id": "IQ-A03",
+      "country": "IQ",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Complete 4 recipe steps in Bibi’s notebook and stamp wooden mold patterns onto date-filled kleicha.",
+        "narrative_hook": "Help Bibi Amal complete the multi-step neighborhood task in Bibi’s Kleicha Notebook & Plural Family Recipes!",
+        "npc_lines": {
+          "mentor_greeting_en": "Complete 4 recipe steps in Bibi’s notebook and stamp wooden mold patterns onto date-filled kleicha.",
+          "mentor_greeting_native": "تعالوا نلف عجينة الكليچة بالتمر والهيل، وبيبي أمل تخبزها بالفرن بأمان!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Bibi Amal gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+          "stamp_id": "stamp:IQ:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for IQ-A03."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "adult_npc_operates_oven",
+        "nut_free_date_filling_option"
+      ]
+    },
+    {
+      "vector_id": "IQ-A03__11-13",
+      "act_id": "IQ-A03",
+      "country": "IQ",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Compare date-filled vs cardamom-sugar kleicha variations across Iraqi communities and label nut-free trays.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Bibi Amal in Bibi’s Kleicha Notebook & Plural Family Recipes.",
+        "npc_lines": {
+          "mentor_greeting_en": "Compare date-filled vs cardamom-sugar kleicha variations across Iraqi communities and label nut-free trays.",
+          "mentor_greeting_native": "تعالوا نلف عجينة الكليچة بالتمر والهيل، وبيبي أمل تخبزها بالفرن بأمان!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+          "stamp_id": "stamp:IQ:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for IQ-A03."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "adult_npc_operates_oven",
+        "nut_free_date_filling_option"
+      ]
+    },
+    {
+      "vector_id": "IQ-A03__14-17",
+      "act_id": "IQ-A03",
+      "country": "IQ",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Document how Iraqi diaspora families preserve plural culinary traditions (Muslim, Christian, Kurdish, Mandaean, Yazidi holiday pastries) with inclusive dietary notes.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Bibi’s Kleicha Notebook & Plural Family Recipes.",
+        "npc_lines": {
+          "mentor_greeting_en": "Document how Iraqi diaspora families preserve plural culinary traditions (Muslim, Christian, Kurdish, Mandaean, Yazidi holiday pastries) with inclusive dietary notes.",
+          "mentor_greeting_native": "تعالوا نلف عجينة الكليچة بالتمر والهيل، وبيبي أمل تخبزها بالفرن بأمان!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+          "stamp_id": "stamp:IQ:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for IQ-A03."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "adult_npc_operates_oven",
+        "nut_free_date_filling_option"
+      ]
+    },
+    {
+      "vector_id": "IQ-A04__5-7",
+      "act_id": "IQ-A04",
+      "country": "IQ",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "IQ-KB-PERSON-ABBASID-SCHOLARS",
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Snap turquoise glazed tiles, mud-brick walls, and palm-wood beams into the courtyard outline and turn on the gentle courtyard fountain!",
+        "narrative_hook": "Khalo Salam invites you for a quick, friendly picture activity in Shanasheel Courtyard & Banu Musa Water-Device Puzzle!",
+        "npc_lines": {
+          "mentor_greeting_en": "Snap turquoise glazed tiles, mud-brick walls, and palm-wood beams into the courtyard outline and turn on the gentle courtyard fountain!",
+          "mentor_greeting_native": "خشب الشناشيل والكاشي الفيروزي يبرّدون الحوش، ونافورة بني موسى تشتغل بتوازن المي!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Khalo Salam points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+          "stamp_id": "stamp:IQ:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for IQ-A04."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "accessible_courtyard_circulation"
+      ]
+    },
+    {
+      "vector_id": "IQ-A04__8-10",
+      "act_id": "IQ-A04",
+      "country": "IQ",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "IQ-KB-PERSON-ABBASID-SCHOLARS",
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Follow the 4x5 courtyard blueprint (TTTTT / BPPPB / B...B / BB.BB) and connect 3 pipes on a Banu Musa fountain puzzle.",
+        "narrative_hook": "Help Khalo Salam complete the multi-step neighborhood task in Shanasheel Courtyard & Banu Musa Water-Device Puzzle!",
+        "npc_lines": {
+          "mentor_greeting_en": "Follow the 4x5 courtyard blueprint (TTTTT / BPPPB / B...B / BB.BB) and connect 3 pipes on a Banu Musa fountain puzzle.",
+          "mentor_greeting_native": "خشب الشناشيل والكاشي الفيروزي يبرّدون الحوش، ونافورة بني موسى تشتغل بتوازن المي!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Khalo Salam gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+          "stamp_id": "stamp:IQ:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for IQ-A04."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "accessible_courtyard_circulation"
+      ]
+    },
+    {
+      "vector_id": "IQ-A04__11-13",
+      "act_id": "IQ-A04",
+      "country": "IQ",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "IQ-KB-PERSON-ABBASID-SCHOLARS",
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Balance courtyard shade using shanasheel wooden lattice screens and solve a two-valve Banu Musa water-clock flow puzzle.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Khalo Salam in Shanasheel Courtyard & Banu Musa Water-Device Puzzle.",
+        "npc_lines": {
+          "mentor_greeting_en": "Balance courtyard shade using shanasheel wooden lattice screens and solve a two-valve Banu Musa water-clock flow puzzle.",
+          "mentor_greeting_native": "خشب الشناشيل والكاشي الفيروزي يبرّدون الحوش، ونافورة بني موسى تشتغل بتوازن المي!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+          "stamp_id": "stamp:IQ:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for IQ-A04."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "accessible_courtyard_circulation"
+      ]
+    },
+    {
+      "vector_id": "IQ-A04__14-17",
+      "act_id": "IQ-A04",
+      "country": "IQ",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "IQ-KB-PERSON-ABBASID-SCHOLARS",
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Analyze passive solar cooling in Baghdadi shanasheel architecture alongside the pneumatic/hydraulic principles of the Banu Musa’s Kitab al-Hiyal.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Shanasheel Courtyard & Banu Musa Water-Device Puzzle.",
+        "npc_lines": {
+          "mentor_greeting_en": "Analyze passive solar cooling in Baghdadi shanasheel architecture alongside the pneumatic/hydraulic principles of the Banu Musa’s Kitab al-Hiyal.",
+          "mentor_greeting_native": "خشب الشناشيل والكاشي الفيروزي يبرّدون الحوش، ونافورة بني موسى تشتغل بتوازن المي!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+          "stamp_id": "stamp:IQ:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for IQ-A04."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "accessible_courtyard_circulation"
+      ]
+    },
+    {
+      "vector_id": "IQ-A05__5-7",
+      "act_id": "IQ-A05",
+      "country": "IQ",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match 3 Baghdadi words (kleicha, bibi, shaku maku) with pictures as lanterns light the family courtyard!",
+        "narrative_hook": "Bibi Amal invites you for a quick, friendly picture activity in The Gathering of Generations & Cooperative Literary Festival!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match 3 Baghdadi words (kleicha, bibi, shaku maku) with pictures as lanterns light the family courtyard!",
+          "mentor_greeting_native": "شكو ماكو يا أحباب؟ تعالوا نحتفل بمهرجان القراءة والكليچة بحوش بيبي أمل!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Bibi Amal points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "stamp_id": "stamp:IQ:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for IQ-A05."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "preserve_baghdadi_arabic_dialect_not_msa",
+        "non_graphic_solidarity_focus"
+      ]
+    },
+    {
+      "vector_id": "IQ-A05__8-10",
+      "act_id": "IQ-A05",
+      "country": "IQ",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Complete a 5-stop courtyard book-and-tea trail using authentic Baghdadi Arabic greetings.",
+        "narrative_hook": "Help Bibi Amal complete the multi-step neighborhood task in The Gathering of Generations & Cooperative Literary Festival!",
+        "npc_lines": {
+          "mentor_greeting_en": "Complete a 5-stop courtyard book-and-tea trail using authentic Baghdadi Arabic greetings.",
+          "mentor_greeting_native": "شكو ماكو يا أحباب؟ تعالوا نحتفل بمهرجان القراءة والكليچة بحوش بيبي أمل!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Bibi Amal gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "stamp_id": "stamp:IQ:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for IQ-A05."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "preserve_baghdadi_arabic_dialect_not_msa",
+        "non_graphic_solidarity_focus"
+      ]
+    },
+    {
+      "vector_id": "IQ-A05__11-13",
+      "act_id": "IQ-A05",
+      "country": "IQ",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Coordinate a cooperative courtyard literary festival celebrating Iraq’s plural communities and the global book-solidarity archive.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Bibi Amal in The Gathering of Generations & Cooperative Literary Festival.",
+        "npc_lines": {
+          "mentor_greeting_en": "Coordinate a cooperative courtyard literary festival celebrating Iraq’s plural communities and the global book-solidarity archive.",
+          "mentor_greeting_native": "شكو ماكو يا أحباب؟ تعالوا نحتفل بمهرجان القراءة والكليچة بحوش بيبي أمل!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "stamp_id": "stamp:IQ:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for IQ-A05."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "preserve_baghdadi_arabic_dialect_not_msa",
+        "non_graphic_solidarity_focus"
+      ]
+    },
+    {
+      "vector_id": "IQ-A05__14-17",
+      "act_id": "IQ-A05",
+      "country": "IQ",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+        "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Curate an exhibition connecting 9th-century translation circles, Al-Mutanabbi Street’s modern solidarity archive, and Baghdadi dialect preservation.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for The Gathering of Generations & Cooperative Literary Festival.",
+        "npc_lines": {
+          "mentor_greeting_en": "Curate an exhibition connecting 9th-century translation circles, Al-Mutanabbi Street’s modern solidarity archive, and Baghdadi dialect preservation.",
+          "mentor_greeting_native": "شكو ماكو يا أحباب؟ تعالوا نحتفل بمهرجان القراءة والكليچة بحوش بيبي أمل!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+          "stamp_id": "stamp:IQ:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for IQ-A05."
+      },
+      "legacy_quest_id": "IQ:ch1:tigris:main",
+      "safety_flags": [
+        "preserve_baghdadi_arabic_dialect_not_msa",
+        "non_graphic_solidarity_focus"
+      ]
+    },
+    {
+      "vector_id": "EG-A01__5-7",
+      "act_id": "EG-A01",
+      "country": "EG",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+        "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match ruby-red, emerald-green, and amber-gold glass shapes into the brass fanous outline!",
+        "narrative_hook": "Teta Samira invites you for a quick, friendly picture activity in The Missing Fanous Patterns & Light-Color Logic!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match ruby-red, emerald-green, and amber-gold glass shapes into the brass fanous outline!",
+          "mentor_greeting_native": "نوّرتوا مصر يا حبايبي! تعالوا نركّب قزاز الفانوس الملون ونفهم حكاياته التاريخية."
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Teta Samira points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+          "stamp_id": "stamp:EG:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for EG-A01."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "virtual_led_no_open_flame",
+        "972_arrival_not_single_undisputed_origin"
+      ]
+    },
+    {
+      "vector_id": "EG-A01__8-10",
+      "act_id": "EG-A01",
+      "country": "EG",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+        "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Collect 4 geometric fanous pattern pieces and compare two stories of how Cairo’s lanterns began.",
+        "narrative_hook": "Help Teta Samira complete the multi-step neighborhood task in The Missing Fanous Patterns & Light-Color Logic!",
+        "npc_lines": {
+          "mentor_greeting_en": "Collect 4 geometric fanous pattern pieces and compare two stories of how Cairo’s lanterns began.",
+          "mentor_greeting_native": "نوّرتوا مصر يا حبايبي! تعالوا نركّب قزاز الفانوس الملون ونفهم حكاياته التاريخية."
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Teta Samira gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+          "stamp_id": "stamp:EG:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for EG-A01."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "virtual_led_no_open_flame",
+        "972_arrival_not_single_undisputed_origin"
+      ]
+    },
+    {
+      "vector_id": "EG-A01__11-13",
+      "act_id": "EG-A01",
+      "country": "EG",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+        "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Solve a rotational symmetry and colour-filtering puzzle for a brass fanous while comparing Fatimid and Coptic lamp histories.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Teta Samira in The Missing Fanous Patterns & Light-Color Logic.",
+        "npc_lines": {
+          "mentor_greeting_en": "Solve a rotational symmetry and colour-filtering puzzle for a brass fanous while comparing Fatimid and Coptic lamp histories.",
+          "mentor_greeting_native": "نوّرتوا مصر يا حبايبي! تعالوا نركّب قزاز الفانوس الملون ونفهم حكاياته التاريخية."
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+          "stamp_id": "stamp:EG:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for EG-A01."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "virtual_led_no_open_flame",
+        "972_arrival_not_single_undisputed_origin"
+      ]
+    },
+    {
+      "vector_id": "EG-A01__14-17",
+      "act_id": "EG-A01",
+      "country": "EG",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+        "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Design an original geometric fanous & khayamiya pattern and write a source note explaining why the 972 CE Caliph arrival story is one of several competing accounts.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for The Missing Fanous Patterns & Light-Color Logic.",
+        "npc_lines": {
+          "mentor_greeting_en": "Design an original geometric fanous & khayamiya pattern and write a source note explaining why the 972 CE Caliph arrival story is one of several competing accounts.",
+          "mentor_greeting_native": "نوّرتوا مصر يا حبايبي! تعالوا نركّب قزاز الفانوس الملون ونفهم حكاياته التاريخية."
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+          "stamp_id": "stamp:EG:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for EG-A01."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "virtual_led_no_open_flame",
+        "972_arrival_not_single_undisputed_origin"
+      ]
+    },
+    {
+      "vector_id": "EG-A02__5-7",
+      "act_id": "EG-A02",
+      "country": "EG",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+        "EG-KB-FOOD-KOSHARI-SHARED-TABLE"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Collect rice, brown lentils, and red tomato sauce from 3 market stalls along the lantern-lit lane!",
+        "narrative_hook": "Teta Samira invites you for a quick, friendly picture activity in The Cairo Market Route & Musaharati Rhythm!",
+        "npc_lines": {
+          "mentor_greeting_en": "Collect rice, brown lentils, and red tomato sauce from 3 market stalls along the lantern-lit lane!",
+          "mentor_greeting_native": "امشوا على دقة طبلة المسحراتي الهادية وهاتوا الرز والعدس من السوق!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Teta Samira points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+          "stamp_id": "stamp:EG:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for EG-A02."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "no_copyrighted_song_lyrics",
+        "no_religious_observance_required"
+      ]
+    },
+    {
+      "vector_id": "EG-A02__8-10",
+      "act_id": "EG-A02",
+      "country": "EG",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+        "EG-KB-FOOD-KOSHARI-SHARED-TABLE"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Follow the gentle drumbeat route puzzle through the market to gather koshari ingredients and khayamiya thread.",
+        "narrative_hook": "Help Teta Samira complete the multi-step neighborhood task in The Cairo Market Route & Musaharati Rhythm!",
+        "npc_lines": {
+          "mentor_greeting_en": "Follow the gentle drumbeat route puzzle through the market to gather koshari ingredients and khayamiya thread.",
+          "mentor_greeting_native": "امشوا على دقة طبلة المسحراتي الهادية وهاتوا الرز والعدس من السوق!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Teta Samira gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+          "stamp_id": "stamp:EG:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for EG-A02."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "no_copyrighted_song_lyrics",
+        "no_religious_observance_required"
+      ]
+    },
+    {
+      "vector_id": "EG-A02__11-13",
+      "act_id": "EG-A02",
+      "country": "EG",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+        "EG-KB-FOOD-KOSHARI-SHARED-TABLE"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Plan a multi-stall market route between Al-Muizz Street and the Tentmakers Bazaar while exploring the history of the musaharati drummer.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Teta Samira in The Cairo Market Route & Musaharati Rhythm.",
+        "npc_lines": {
+          "mentor_greeting_en": "Plan a multi-stall market route between Al-Muizz Street and the Tentmakers Bazaar while exploring the history of the musaharati drummer.",
+          "mentor_greeting_native": "امشوا على دقة طبلة المسحراتي الهادية وهاتوا الرز والعدس من السوق!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+          "stamp_id": "stamp:EG:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for EG-A02."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "no_copyrighted_song_lyrics",
+        "no_religious_observance_required"
+      ]
+    },
+    {
+      "vector_id": "EG-A02__14-17",
+      "act_id": "EG-A02",
+      "country": "EG",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+        "EG-KB-FOOD-KOSHARI-SHARED-TABLE"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Optimize a zero-waste neighborhood market supply route and examine the debated Arabic vs Coptic etymologies of traditional Cairene lantern chants without reproducing protected lyrics.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for The Cairo Market Route & Musaharati Rhythm.",
+        "npc_lines": {
+          "mentor_greeting_en": "Optimize a zero-waste neighborhood market supply route and examine the debated Arabic vs Coptic etymologies of traditional Cairene lantern chants without reproducing protected lyrics.",
+          "mentor_greeting_native": "امشوا على دقة طبلة المسحراتي الهادية وهاتوا الرز والعدس من السوق!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+          "stamp_id": "stamp:EG:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for EG-A02."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "no_copyrighted_song_lyrics",
+        "no_religious_observance_required"
+      ]
+    },
+    {
+      "vector_id": "EG-A03__5-7",
+      "act_id": "EG-A03",
+      "country": "EG",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "EG-KB-FOOD-KOSHARI-SHARED-TABLE"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Sort white rice, brown lentils, red sauce, and golden crispy onions into baskets while Teta Samira cooks on the stove!",
+        "narrative_hook": "Teta Samira invites you for a quick, friendly picture activity in Teta Samira’s Koshari Kitchen & Inclusive Feast!",
+        "npc_lines": {
+          "mentor_greeting_en": "Sort white rice, brown lentils, red sauce, and golden crispy onions into baskets while Teta Samira cooks on the stove!",
+          "mentor_greeting_native": "خلّي البوتاجاز والزيت السخن على تيتا سميرة، وإنتو رتّبوا طبقات الكشري بالترتيب!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Teta Samira points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+          "stamp_id": "stamp:EG:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for EG-A03."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "adult_npc_manages_boiling_pots_and_oil",
+        "gluten_free_koshari_layer_option"
+      ]
+    },
+    {
+      "vector_id": "EG-A03__8-10",
+      "act_id": "EG-A03",
+      "country": "EG",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "EG-KB-FOOD-KOSHARI-SHARED-TABLE"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Layer rice, lentils, pasta, spiced garlic tomato sauce, and crispy onions in order to serve warm koshari bowls.",
+        "narrative_hook": "Help Teta Samira complete the multi-step neighborhood task in Teta Samira’s Koshari Kitchen & Inclusive Feast!",
+        "npc_lines": {
+          "mentor_greeting_en": "Layer rice, lentils, pasta, spiced garlic tomato sauce, and crispy onions in order to serve warm koshari bowls.",
+          "mentor_greeting_native": "خلّي البوتاجاز والزيت السخن على تيتا سميرة، وإنتو رتّبوا طبقات الكشري بالترتيب!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Teta Samira gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+          "stamp_id": "stamp:EG:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for EG-A03."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "adult_npc_manages_boiling_pots_and_oil",
+        "gluten_free_koshari_layer_option"
+      ]
+    },
+    {
+      "vector_id": "EG-A03__11-13",
+      "act_id": "EG-A03",
+      "country": "EG",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "EG-KB-FOOD-KOSHARI-SHARED-TABLE"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Manage quantities for 10 neighbors, prepare a gluten-free rice-and-lentil bowl option, and explain why plant-based koshari welcomes everyone.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Teta Samira in Teta Samira’s Koshari Kitchen & Inclusive Feast.",
+        "npc_lines": {
+          "mentor_greeting_en": "Manage quantities for 10 neighbors, prepare a gluten-free rice-and-lentil bowl option, and explain why plant-based koshari welcomes everyone.",
+          "mentor_greeting_native": "خلّي البوتاجاز والزيت السخن على تيتا سميرة، وإنتو رتّبوا طبقات الكشري بالترتيب!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+          "stamp_id": "stamp:EG:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for EG-A03."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "adult_npc_manages_boiling_pots_and_oil",
+        "gluten_free_koshari_layer_option"
+      ]
+    },
+    {
+      "vector_id": "EG-A03__14-17",
+      "act_id": "EG-A03",
+      "country": "EG",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "EG-KB-FOOD-KOSHARI-SHARED-TABLE"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Trace the global trade history of koshari’s ingredients and design an efficient, allergy-labeled community kitchen workflow.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Teta Samira’s Koshari Kitchen & Inclusive Feast.",
+        "npc_lines": {
+          "mentor_greeting_en": "Trace the global trade history of koshari’s ingredients and design an efficient, allergy-labeled community kitchen workflow.",
+          "mentor_greeting_native": "خلّي البوتاجاز والزيت السخن على تيتا سميرة، وإنتو رتّبوا طبقات الكشري بالترتيب!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+          "stamp_id": "stamp:EG:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for EG-A03."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "adult_npc_manages_boiling_pots_and_oil",
+        "gluten_free_koshari_layer_option"
+      ]
+    },
+    {
+      "vector_id": "EG-A04__5-7",
+      "act_id": "EG-A04",
+      "country": "EG",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Snap the wooden planks, white linen sail, and glowing LED fanous garland onto the courtyard stand!",
+        "narrative_hook": "Usta Hassan invites you for a quick, friendly picture activity in Safe Virtual Lantern Craft, Felucca Sail & Courtyard Arch!",
+        "npc_lines": {
+          "mentor_greeting_en": "Snap the wooden planks, white linen sail, and glowing LED fanous garland onto the courtyard stand!",
+          "mentor_greeting_native": "بنركّب الفوانيس بنور LED آمن ونفرد قماش الخيامية المبهج في الحوش!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Usta Hassan points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+          "stamp_id": "stamp:EG:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for EG-A04."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "virtual_only_heat_and_metalwork",
+        "safe_led_illumination"
+      ]
+    },
+    {
+      "vector_id": "EG-A04__8-10",
+      "act_id": "EG-A04",
+      "country": "EG",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Complete the 4x5 felucca blueprint (..S.. / .SSS. / ..S.. / PPPPP) and hang geometric khayamiya banners in the courtyard.",
+        "narrative_hook": "Help Usta Hassan complete the multi-step neighborhood task in Safe Virtual Lantern Craft, Felucca Sail & Courtyard Arch!",
+        "npc_lines": {
+          "mentor_greeting_en": "Complete the 4x5 felucca blueprint (..S.. / .SSS. / ..S.. / PPPPP) and hang geometric khayamiya banners in the courtyard.",
+          "mentor_greeting_native": "بنركّب الفوانيس بنور LED آمن ونفرد قماش الخيامية المبهج في الحوش!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Usta Hassan gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+          "stamp_id": "stamp:EG:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for EG-A04."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "virtual_only_heat_and_metalwork",
+        "safe_led_illumination"
+      ]
+    },
+    {
+      "vector_id": "EG-A04__11-13",
+      "act_id": "EG-A04",
+      "country": "EG",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Construct a symmetrical courtyard lantern canopy using constrained brass, stained-glass, and khayamiya textile panels.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Usta Hassan in Safe Virtual Lantern Craft, Felucca Sail & Courtyard Arch.",
+        "npc_lines": {
+          "mentor_greeting_en": "Construct a symmetrical courtyard lantern canopy using constrained brass, stained-glass, and khayamiya textile panels.",
+          "mentor_greeting_native": "بنركّب الفوانيس بنور LED آمن ونفرد قماش الخيامية المبهج في الحوش!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+          "stamp_id": "stamp:EG:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for EG-A04."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "virtual_only_heat_and_metalwork",
+        "safe_led_illumination"
+      ]
+    },
+    {
+      "vector_id": "EG-A04__14-17",
+      "act_id": "EG-A04",
+      "country": "EG",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Solve structural, accessible circulation, and low-energy LED illumination tradeoffs while preserving traditional Cairene geometric proportions.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Safe Virtual Lantern Craft, Felucca Sail & Courtyard Arch.",
+        "npc_lines": {
+          "mentor_greeting_en": "Solve structural, accessible circulation, and low-energy LED illumination tradeoffs while preserving traditional Cairene geometric proportions.",
+          "mentor_greeting_native": "بنركّب الفوانيس بنور LED آمن ونفرد قماش الخيامية المبهج في الحوش!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+          "stamp_id": "stamp:EG:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for EG-A04."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "virtual_only_heat_and_metalwork",
+        "safe_led_illumination"
+      ]
+    },
+    {
+      "vector_id": "EG-A05__5-7",
+      "act_id": "EG-A05",
+      "country": "EG",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+        "EG-KB-HIST-FANOUS-COMPETING-ORIGINS"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match 3 Cairene Egyptian words (koshari, fanous, felucca) with glowing pictures along the courtyard path!",
+        "narrative_hook": "Teta Samira invites you for a quick, friendly picture activity in Evening of Light, Cairene Words & Diaspora Storytelling!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match 3 Cairene Egyptian words (koshari, fanous, felucca) with glowing pictures along the courtyard path!",
+          "mentor_greeting_native": "يا أحلى لمة في الحوش! تعالوا نتعلّم كلامنا المصري الجميل ونشوف إزاي الفانوس بينوّر في كل مكان."
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Teta Samira points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+          "stamp_id": "stamp:EG:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for EG-A05."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "preserve_cairene_ar_EG_dialect",
+        "no_child_pii_collection"
+      ]
+    },
+    {
+      "vector_id": "EG-A05__8-10",
+      "act_id": "EG-A05",
+      "country": "EG",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+        "EG-KB-HIST-FANOUS-COMPETING-ORIGINS"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Complete a 5-word Egyptian Arabic lantern hunt and read how families abroad celebrate with paper fanous crafts.",
+        "narrative_hook": "Help Teta Samira complete the multi-step neighborhood task in Evening of Light, Cairene Words & Diaspora Storytelling!",
+        "npc_lines": {
+          "mentor_greeting_en": "Complete a 5-word Egyptian Arabic lantern hunt and read how families abroad celebrate with paper fanous crafts.",
+          "mentor_greeting_native": "يا أحلى لمة في الحوش! تعالوا نتعلّم كلامنا المصري الجميل ونشوف إزاي الفانوس بينوّر في كل مكان."
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Teta Samira gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+          "stamp_id": "stamp:EG:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for EG-A05."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "preserve_cairene_ar_EG_dialect",
+        "no_child_pii_collection"
+      ]
+    },
+    {
+      "vector_id": "EG-A05__11-13",
+      "act_id": "EG-A05",
+      "country": "EG",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+        "EG-KB-HIST-FANOUS-COMPETING-ORIGINS"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Link artisan stories from Khan el-Khalili and the Tentmakers Bazaar to diaspora community celebrations.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Teta Samira in Evening of Light, Cairene Words & Diaspora Storytelling.",
+        "npc_lines": {
+          "mentor_greeting_en": "Link artisan stories from Khan el-Khalili and the Tentmakers Bazaar to diaspora community celebrations.",
+          "mentor_greeting_native": "يا أحلى لمة في الحوش! تعالوا نتعلّم كلامنا المصري الجميل ونشوف إزاي الفانوس بينوّر في كل مكان."
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+          "stamp_id": "stamp:EG:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for EG-A05."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "preserve_cairene_ar_EG_dialect",
+        "no_child_pii_collection"
+      ]
+    },
+    {
+      "vector_id": "EG-A05__14-17",
+      "act_id": "EG-A05",
+      "country": "EG",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+        "EG-KB-HIST-FANOUS-COMPETING-ORIGINS"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Curate a neighborhood craft exhibition distinguishing corroborated Historic Cairo facts (UNESCO #89) from contested 972 CE anecdotes and pending statutory citations (Ontario 2019).",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Evening of Light, Cairene Words & Diaspora Storytelling.",
+        "npc_lines": {
+          "mentor_greeting_en": "Curate a neighborhood craft exhibition distinguishing corroborated Historic Cairo facts (UNESCO #89) from contested 972 CE anecdotes and pending statutory citations (Ontario 2019).",
+          "mentor_greeting_native": "يا أحلى لمة في الحوش! تعالوا نتعلّم كلامنا المصري الجميل ونشوف إزاي الفانوس بينوّر في كل مكان."
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+          "stamp_id": "stamp:EG:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for EG-A05."
+      },
+      "legacy_quest_id": "EG:ch1:nile:main",
+      "safety_flags": [
+        "preserve_cairene_ar_EG_dialect",
+        "no_child_pii_collection"
+      ]
+    },
+    {
+      "vector_id": "FR-A01__5-7",
+      "act_id": "FR-A01",
+      "country": "FR",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "FR-KB-PLACE-TRABOULES-LYON",
+        "FR-KB-PLACE-COUR-DES-VORACES"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Follow the golden croissant and star signs through the cosy stone archway to place Mamie Claire’s bakery sign!",
+        "narrative_hook": "Mamie Claire invites you for a quick, friendly picture activity in The Bakery’s Lost Sign & Traboule Passageway Maze!",
+        "npc_lines": {
+          "mentor_greeting_en": "Follow the golden croissant and star signs through the cosy stone archway to place Mamie Claire’s bakery sign!",
+          "mentor_greeting_native": "Bienvenue à Lyon ! Suivons les passages couverts des traboules pour retrouver l’enseigne de notre boulangerie."
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Mamie Claire points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PLACE-TRABOULES-LYON",
+          "stamp_id": "stamp:FR:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for FR-A01."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "respect_public_vs_private_passages",
+        "no_wartime_chase_combat_trivialization"
+      ]
+    },
+    {
+      "vector_id": "FR-A01__8-10",
+      "act_id": "FR-A01",
+      "country": "FR",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "FR-KB-PLACE-TRABOULES-LYON",
+        "FR-KB-PLACE-COUR-DES-VORACES"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Navigate a gentle 3-courtyard traboule path, talk to 2 neighbors, and restore the bilingual boulangerie sign.",
+        "narrative_hook": "Help Mamie Claire complete the multi-step neighborhood task in The Bakery’s Lost Sign & Traboule Passageway Maze!",
+        "npc_lines": {
+          "mentor_greeting_en": "Navigate a gentle 3-courtyard traboule path, talk to 2 neighbors, and restore the bilingual boulangerie sign.",
+          "mentor_greeting_native": "Bienvenue à Lyon ! Suivons les passages couverts des traboules pour retrouver l’enseigne de notre boulangerie."
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Mamie Claire gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PLACE-TRABOULES-LYON",
+          "stamp_id": "stamp:FR:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for FR-A01."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "respect_public_vs_private_passages",
+        "no_wartime_chase_combat_trivialization"
+      ]
+    },
+    {
+      "vector_id": "FR-A01__11-13",
+      "act_id": "FR-A01",
+      "country": "FR",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "FR-KB-PLACE-TRABOULES-LYON",
+        "FR-KB-PLACE-COUR-DES-VORACES"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Use a courtyard map to navigate public traboules between Vieux Lyon and La Croix-Rousse while respecting private resident gates.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Mamie Claire in The Bakery’s Lost Sign & Traboule Passageway Maze.",
+        "npc_lines": {
+          "mentor_greeting_en": "Use a courtyard map to navigate public traboules between Vieux Lyon and La Croix-Rousse while respecting private resident gates.",
+          "mentor_greeting_native": "Bienvenue à Lyon ! Suivons les passages couverts des traboules pour retrouver l’enseigne de notre boulangerie."
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PLACE-TRABOULES-LYON",
+          "stamp_id": "stamp:FR:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for FR-A01."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "respect_public_vs_private_passages",
+        "no_wartime_chase_combat_trivialization"
+      ]
+    },
+    {
+      "vector_id": "FR-A01__14-17",
+      "act_id": "FR-A01",
+      "country": "FR",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "FR-KB-PLACE-TRABOULES-LYON",
+        "FR-KB-PLACE-COUR-DES-VORACES"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Evaluate competing claims about Lyon’s traboule counts (~400–500 total vs ~40 public) and design respectful visitor signage for Cour des Voraces.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for The Bakery’s Lost Sign & Traboule Passageway Maze.",
+        "npc_lines": {
+          "mentor_greeting_en": "Evaluate competing claims about Lyon’s traboule counts (~400–500 total vs ~40 public) and design respectful visitor signage for Cour des Voraces.",
+          "mentor_greeting_native": "Bienvenue à Lyon ! Suivons les passages couverts des traboules pour retrouver l’enseigne de notre boulangerie."
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PLACE-TRABOULES-LYON",
+          "stamp_id": "stamp:FR:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for FR-A01."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "respect_public_vs_private_passages",
+        "no_wartime_chase_combat_trivialization"
+      ]
+    },
+    {
+      "vector_id": "FR-A02__5-7",
+      "act_id": "FR-A02",
+      "country": "FR",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+        "FR-KB-PLACE-TRABOULES-LYON"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match 3 bright silk ribbons and pastry baskets at the market stall and keep the silk dry under the covered arch!",
+        "narrative_hook": "Artisan Luc invites you for a quick, friendly picture activity in Canut Silk Delivery & Punch-Card Weaving Pattern!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match 3 bright silk ribbons and pastry baskets at the market stall and keep the silk dry under the covered arch!",
+          "mentor_greeting_native": "Les canuts utilisaient des cartes perforées pour tisser la soie et les traboules pour la protéger de la pluie !"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Artisan Luc points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+          "stamp_id": "stamp:FR:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for FR-A02."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "safe_non_timed_delivery"
+      ]
+    },
+    {
+      "vector_id": "FR-A02__8-10",
+      "act_id": "FR-A02",
+      "country": "FR",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+        "FR-KB-PLACE-TRABOULES-LYON"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Deliver a bolt of silk through a covered traboule away from the rain and match a 4-hole Jacquard punch-card pattern.",
+        "narrative_hook": "Help Artisan Luc complete the multi-step neighborhood task in Canut Silk Delivery & Punch-Card Weaving Pattern!",
+        "npc_lines": {
+          "mentor_greeting_en": "Deliver a bolt of silk through a covered traboule away from the rain and match a 4-hole Jacquard punch-card pattern.",
+          "mentor_greeting_native": "Les canuts utilisaient des cartes perforées pour tisser la soie et les traboules pour la protéger de la pluie !"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Artisan Luc gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+          "stamp_id": "stamp:FR:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for FR-A02."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "safe_non_timed_delivery"
+      ]
+    },
+    {
+      "vector_id": "FR-A02__11-13",
+      "act_id": "FR-A02",
+      "country": "FR",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+        "FR-KB-PLACE-TRABOULES-LYON"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Program a 2-row binary punch-card pattern for a Jacquard silk loom and plan a dry delivery + bakery ingredient route.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Artisan Luc in Canut Silk Delivery & Punch-Card Weaving Pattern.",
+        "npc_lines": {
+          "mentor_greeting_en": "Program a 2-row binary punch-card pattern for a Jacquard silk loom and plan a dry delivery + bakery ingredient route.",
+          "mentor_greeting_native": "Les canuts utilisaient des cartes perforées pour tisser la soie et les traboules pour la protéger de la pluie !"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+          "stamp_id": "stamp:FR:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for FR-A02."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "safe_non_timed_delivery"
+      ]
+    },
+    {
+      "vector_id": "FR-A02__14-17",
+      "act_id": "FR-A02",
+      "country": "FR",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+        "FR-KB-PLACE-TRABOULES-LYON"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Analyze how Joseph Marie Jacquard’s 1804 punch-card loom reshaped La Croix-Rousse workshop architecture and prefigured binary computing.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Canut Silk Delivery & Punch-Card Weaving Pattern.",
+        "npc_lines": {
+          "mentor_greeting_en": "Analyze how Joseph Marie Jacquard’s 1804 punch-card loom reshaped La Croix-Rousse workshop architecture and prefigured binary computing.",
+          "mentor_greeting_native": "Les canuts utilisaient des cartes perforées pour tisser la soie et les traboules pour la protéger de la pluie !"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+          "stamp_id": "stamp:FR:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for FR-A02."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "safe_non_timed_delivery"
+      ]
+    },
+    {
+      "vector_id": "FR-A03__5-7",
+      "act_id": "FR-A03",
+      "country": "FR",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+        "FR-KB-FOOD-GALETTE-SHARED-PASTRY"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match flaky puff pastry, sweet cream, and the tiny porcelain fève charm while Mamie Claire bakes the golden galette!",
+        "narrative_hook": "Mamie Claire invites you for a quick, friendly picture activity in Mamie Claire’s Kitchen Brigade, Mères Lyonnaises & Galette!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match flaky puff pastry, sweet cream, and the tiny porcelain fève charm while Mamie Claire bakes the golden galette!",
+          "mentor_greeting_native": "Comme les célèbres Mères Lyonnaises, préparons notre galette en équipe avec soin et générosité !"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Mamie Claire points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+          "stamp_id": "stamp:FR:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for FR-A03."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "adult_npc_operates_oven",
+        "tree_nut_almond_allergy_substitutions",
+        "non_edible_porcelain_feve_warning"
+      ]
+    },
+    {
+      "vector_id": "FR-A03__8-10",
+      "act_id": "FR-A03",
+      "country": "FR",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+        "FR-KB-FOOD-GALETTE-SHARED-PASTRY"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Organize 3 kitchen helper stations (pastry, filling, scoring) inspired by Lyon’s women chefs and bake a golden galette des rois.",
+        "narrative_hook": "Help Mamie Claire complete the multi-step neighborhood task in Mamie Claire’s Kitchen Brigade, Mères Lyonnaises & Galette!",
+        "npc_lines": {
+          "mentor_greeting_en": "Organize 3 kitchen helper stations (pastry, filling, scoring) inspired by Lyon’s women chefs and bake a golden galette des rois.",
+          "mentor_greeting_native": "Comme les célèbres Mères Lyonnaises, préparons notre galette en équipe avec soin et générosité !"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Mamie Claire gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+          "stamp_id": "stamp:FR:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for FR-A03."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "adult_npc_operates_oven",
+        "tree_nut_almond_allergy_substitutions",
+        "non_edible_porcelain_feve_warning"
+      ]
+    },
+    {
+      "vector_id": "FR-A03__11-13",
+      "act_id": "FR-A03",
+      "country": "FR",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+        "FR-KB-FOOD-GALETTE-SHARED-PASTRY"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Compare French almond frangipane galette and Levantine ma’amoul in a cooperative brigade while preparing a nut-free apple-compote variant.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Mamie Claire in Mamie Claire’s Kitchen Brigade, Mères Lyonnaises & Galette.",
+        "npc_lines": {
+          "mentor_greeting_en": "Compare French almond frangipane galette and Levantine ma’amoul in a cooperative brigade while preparing a nut-free apple-compote variant.",
+          "mentor_greeting_native": "Comme les célèbres Mères Lyonnaises, préparons notre galette en équipe avec soin et générosité !"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+          "stamp_id": "stamp:FR:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for FR-A03."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "adult_npc_operates_oven",
+        "tree_nut_almond_allergy_substitutions",
+        "non_edible_porcelain_feve_warning"
+      ]
+    },
+    {
+      "vector_id": "FR-A03__14-17",
+      "act_id": "FR-A03",
+      "country": "FR",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+        "FR-KB-FOOD-GALETTE-SHARED-PASTRY"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Restore a community recipe archive honoring the Mères Lyonnaises (including Eugénie Brazier’s 1921/1933 career, tagged for archival verification) with complete allergen & fève safety protocols.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Mamie Claire’s Kitchen Brigade, Mères Lyonnaises & Galette.",
+        "npc_lines": {
+          "mentor_greeting_en": "Restore a community recipe archive honoring the Mères Lyonnaises (including Eugénie Brazier’s 1921/1933 career, tagged for archival verification) with complete allergen & fève safety protocols.",
+          "mentor_greeting_native": "Comme les célèbres Mères Lyonnaises, préparons notre galette en équipe avec soin et générosité !"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+          "stamp_id": "stamp:FR:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for FR-A03."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "adult_npc_operates_oven",
+        "tree_nut_almond_allergy_substitutions",
+        "non_edible_porcelain_feve_warning"
+      ]
+    },
+    {
+      "vector_id": "FR-A04__5-7",
+      "act_id": "FR-A04",
+      "country": "FR",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "FR-KB-PLACE-COUR-DES-VORACES",
+        "FR-KB-PLACE-TRABOULES-LYON"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Snap slate roof tiles, cut limestone blocks, and carved oak shutters onto the bakery facade!",
+        "narrative_hook": "Artisan Luc invites you for a quick, friendly picture activity in Vieux Lyon Facade & Cour des Voraces Staircase Restoration!",
+        "npc_lines": {
+          "mentor_greeting_en": "Snap slate roof tiles, cut limestone blocks, and carved oak shutters onto the bakery facade!",
+          "mentor_greeting_native": "Posons les pierres de taille, les volets en chêne et les ardoises pour redonner vie à la façade lyonnaise !"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Artisan Luc points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PLACE-COUR-DES-VORACES",
+          "stamp_id": "stamp:FR:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for FR-A04."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "chronology_1831_vs_1840_clarified",
+        "step_free_bakery_access"
+      ]
+    },
+    {
+      "vector_id": "FR-A04__8-10",
+      "act_id": "FR-A04",
+      "country": "FR",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "FR-KB-PLACE-COUR-DES-VORACES",
+        "FR-KB-PLACE-TRABOULES-LYON"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Complete the 5-row Vieux Lyon blueprint (.RRRR. / RRRRRR / SOSSOS / SOSSOS / SSSSSS) and light the courtyard arch.",
+        "narrative_hook": "Help Artisan Luc complete the multi-step neighborhood task in Vieux Lyon Facade & Cour des Voraces Staircase Restoration!",
+        "npc_lines": {
+          "mentor_greeting_en": "Complete the 5-row Vieux Lyon blueprint (.RRRR. / RRRRRR / SOSSOS / SOSSOS / SSSSSS) and light the courtyard arch.",
+          "mentor_greeting_native": "Posons les pierres de taille, les volets en chêne et les ardoises pour redonner vie à la façade lyonnaise !"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Artisan Luc gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PLACE-COUR-DES-VORACES",
+          "stamp_id": "stamp:FR:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for FR-A04."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "chronology_1831_vs_1840_clarified",
+        "step_free_bakery_access"
+      ]
+    },
+    {
+      "vector_id": "FR-A04__11-13",
+      "act_id": "FR-A04",
+      "country": "FR",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "FR-KB-PLACE-COUR-DES-VORACES",
+        "FR-KB-PLACE-TRABOULES-LYON"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Restore the boulangerie facade and courtyard passage while keeping the high-ceilinged canut windows and accessible ground entrance clear.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Artisan Luc in Vieux Lyon Facade & Cour des Voraces Staircase Restoration.",
+        "npc_lines": {
+          "mentor_greeting_en": "Restore the boulangerie facade and courtyard passage while keeping the high-ceilinged canut windows and accessible ground entrance clear.",
+          "mentor_greeting_native": "Posons les pierres de taille, les volets en chêne et les ardoises pour redonner vie à la façade lyonnaise !"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PLACE-COUR-DES-VORACES",
+          "stamp_id": "stamp:FR:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for FR-A04."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "chronology_1831_vs_1840_clarified",
+        "step_free_bakery_access"
+      ]
+    },
+    {
+      "vector_id": "FR-A04__14-17",
+      "act_id": "FR-A04",
+      "country": "FR",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "FR-KB-PLACE-COUR-DES-VORACES",
+        "FR-KB-PLACE-TRABOULES-LYON"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Draft a heritage conservation plan for a Croix-Rousse / Vieux Lyon courtyard that accurately dates c. 1840 Voraces masonry relative to 1831/1834 labor history.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Vieux Lyon Facade & Cour des Voraces Staircase Restoration.",
+        "npc_lines": {
+          "mentor_greeting_en": "Draft a heritage conservation plan for a Croix-Rousse / Vieux Lyon courtyard that accurately dates c. 1840 Voraces masonry relative to 1831/1834 labor history.",
+          "mentor_greeting_native": "Posons les pierres de taille, les volets en chêne et les ardoises pour redonner vie à la façade lyonnaise !"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-PLACE-COUR-DES-VORACES",
+          "stamp_id": "stamp:FR:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for FR-A04."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "chronology_1831_vs_1840_clarified",
+        "step_free_bakery_access"
+      ]
+    },
+    {
+      "vector_id": "FR-A05__5-7",
+      "act_id": "FR-A05",
+      "country": "FR",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+        "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match 3 French words (la galette, la fève, la couronne) with pictures and place the golden paper crown on the celebration table!",
+        "narrative_hook": "Mamie Claire invites you for a quick, friendly picture activity in A Shared Table: French Words & Community Recipe Archive!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match 3 French words (la galette, la fève, la couronne) with pictures and place the golden paper crown on the celebration table!",
+          "mentor_greeting_native": "Autour de notre table partagée, la galette des rois et le ma’amoul racontent l’amitié entre nos familles !"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Mamie Claire points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+          "stamp_id": "stamp:FR:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for FR-A05."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "no_cultural_stereotypes",
+        "allergen_labels_visible"
+      ]
+    },
+    {
+      "vector_id": "FR-A05__8-10",
+      "act_id": "FR-A05",
+      "country": "FR",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+        "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Complete a 5-word French bakery discovery trail and set the shared table with both galette des rois and ma’amoul.",
+        "narrative_hook": "Help Mamie Claire complete the multi-step neighborhood task in A Shared Table: French Words & Community Recipe Archive!",
+        "npc_lines": {
+          "mentor_greeting_en": "Complete a 5-word French bakery discovery trail and set the shared table with both galette des rois and ma’amoul.",
+          "mentor_greeting_native": "Autour de notre table partagée, la galette des rois et le ma’amoul racontent l’amitié entre nos familles !"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Mamie Claire gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+          "stamp_id": "stamp:FR:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for FR-A05."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "no_cultural_stereotypes",
+        "allergen_labels_visible"
+      ]
+    },
+    {
+      "vector_id": "FR-A05__11-13",
+      "act_id": "FR-A05",
+      "country": "FR",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+        "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Trace how Camille’s and Mira’s households combine French and Levantine pastry traditions in an annotated neighborhood recipe album.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Mamie Claire in A Shared Table: French Words & Community Recipe Archive.",
+        "npc_lines": {
+          "mentor_greeting_en": "Trace how Camille’s and Mira’s households combine French and Levantine pastry traditions in an annotated neighborhood recipe album.",
+          "mentor_greeting_native": "Autour de notre table partagée, la galette des rois et le ma’amoul racontent l’amitié entre nos familles !"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+          "stamp_id": "stamp:FR:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for FR-A05."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "no_cultural_stereotypes",
+        "allergen_labels_visible"
+      ]
+    },
+    {
+      "vector_id": "FR-A05__14-17",
+      "act_id": "FR-A05",
+      "country": "FR",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+        "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Curate a bilingual culinary & architectural exhibit on Lyon (traboules, canuts, Mères Lyonnaises) with verified UNESCO #872 coordinates and source-criticism notes.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for A Shared Table: French Words & Community Recipe Archive.",
+        "npc_lines": {
+          "mentor_greeting_en": "Curate a bilingual culinary & architectural exhibit on Lyon (traboules, canuts, Mères Lyonnaises) with verified UNESCO #872 coordinates and source-criticism notes.",
+          "mentor_greeting_native": "Autour de notre table partagée, la galette des rois et le ma’amoul racontent l’amitié entre nos familles !"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+          "stamp_id": "stamp:FR:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for FR-A05."
+      },
+      "legacy_quest_id": "FR:ch1:lyon:main",
+      "safety_flags": [
+        "no_cultural_stereotypes",
+        "allergen_labels_visible"
+      ]
+    },
+    {
+      "vector_id": "KR-A01__5-7",
+      "act_id": "KR-A01",
+      "country": "KR",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Follow the five colourful ribbons (blue/green, red, yellow, white, dark charcoal) to place Halmeoni’s courtyard welcome board!",
+        "narrative_hook": "Halmeoni invites you for a quick, friendly picture activity in The Hanok Courtyard Invitation & Five-Direction Colours!",
+        "npc_lines": {
+          "mentor_greeting_en": "Follow the five colourful ribbons (blue/green, red, yellow, white, dark charcoal) to place Halmeoni’s courtyard welcome board!",
+          "mentor_greeting_native": "어서 오렴! 오방색 고운 빛깔을 따라 우리 전주 한옥 마당의 초대장을 맞추어 보자꾸나."
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Halmeoni points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+          "stamp_id": "stamp:KR:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for KR-A01."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "obangsaek_framed_as_cultural_tradition_not_scientific_law",
+        "respect_resident_privacy"
+      ]
+    },
+    {
+      "vector_id": "KR-A01__8-10",
+      "act_id": "KR-A01",
+      "country": "KR",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Gather 4 hanji paper invitation cards and classify the five Obangsaek colours by their seasonal directions.",
+        "narrative_hook": "Help Halmeoni complete the multi-step neighborhood task in The Hanok Courtyard Invitation & Five-Direction Colours!",
+        "npc_lines": {
+          "mentor_greeting_en": "Gather 4 hanji paper invitation cards and classify the five Obangsaek colours by their seasonal directions.",
+          "mentor_greeting_native": "어서 오렴! 오방색 고운 빛깔을 따라 우리 전주 한옥 마당의 초대장을 맞추어 보자꾸나."
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Halmeoni gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+          "stamp_id": "stamp:KR:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for KR-A01."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "obangsaek_framed_as_cultural_tradition_not_scientific_law",
+        "respect_resident_privacy"
+      ]
+    },
+    {
+      "vector_id": "KR-A01__11-13",
+      "act_id": "KR-A01",
+      "country": "KR",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Decode a Jeonju Hanok Village map distinguishing public landmarks (Pungnammun, Gyeonggijeon) from private family courtyards while matching Obangsaek colour symbolism.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Halmeoni in The Hanok Courtyard Invitation & Five-Direction Colours.",
+        "npc_lines": {
+          "mentor_greeting_en": "Decode a Jeonju Hanok Village map distinguishing public landmarks (Pungnammun, Gyeonggijeon) from private family courtyards while matching Obangsaek colour symbolism.",
+          "mentor_greeting_native": "어서 오렴! 오방색 고운 빛깔을 따라 우리 전주 한옥 마당의 초대장을 맞추어 보자꾸나."
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+          "stamp_id": "stamp:KR:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for KR-A01."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "obangsaek_framed_as_cultural_tradition_not_scientific_law",
+        "respect_resident_privacy"
+      ]
+    },
+    {
+      "vector_id": "KR-A01__14-17",
+      "act_id": "KR-A01",
+      "country": "KR",
+      "act_number": 1,
+      "linked_knowledge_ids": [
+        "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Design bilingual visitor guidance for Jeonju Hanok Village that protects resident privacy and explains Obangsaek as a traditional East Asian aesthetic rather than empirical science.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for The Hanok Courtyard Invitation & Five-Direction Colours.",
+        "npc_lines": {
+          "mentor_greeting_en": "Design bilingual visitor guidance for Jeonju Hanok Village that protects resident privacy and explains Obangsaek as a traditional East Asian aesthetic rather than empirical science.",
+          "mentor_greeting_native": "어서 오렴! 오방색 고운 빛깔을 따라 우리 전주 한옥 마당의 초대장을 맞추어 보자꾸나."
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+          "stamp_id": "stamp:KR:A01",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for KR-A01."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "obangsaek_framed_as_cultural_tradition_not_scientific_law",
+        "respect_resident_privacy"
+      ]
+    },
+    {
+      "vector_id": "KR-A02__5-7",
+      "act_id": "KR-A02",
+      "country": "KR",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match white rice flour, golden honey-sesame, green pine needles, and yellow mung-bean jelly at the market stalls!",
+        "narrative_hook": "Uncle Min invites you for a quick, friendly picture activity in Nambu Harvest Market & Regional Ingredients Puzzle!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match white rice flour, golden honey-sesame, green pine needles, and yellow mung-bean jelly at the market stalls!",
+          "mentor_greeting_native": "남부시장에서 전주 콩나물과 황포묵, 솔잎과 햅쌀가루를 고루 모아 보자!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Uncle Min points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+          "stamp_id": "stamp:KR:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for KR-A02."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "allergen_aware_sesame_soy_options",
+        "cooked_vegetarian_ingredients"
+      ]
+    },
+    {
+      "vector_id": "KR-A02__8-10",
+      "act_id": "KR-A02",
+      "country": "KR",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Solve a 3-stall seasonal market puzzle at Nambu Market to gather ingredients for Jeonju bibimbap and Chuseok songpyeon.",
+        "narrative_hook": "Help Uncle Min complete the multi-step neighborhood task in Nambu Harvest Market & Regional Ingredients Puzzle!",
+        "npc_lines": {
+          "mentor_greeting_en": "Solve a 3-stall seasonal market puzzle at Nambu Market to gather ingredients for Jeonju bibimbap and Chuseok songpyeon.",
+          "mentor_greeting_native": "남부시장에서 전주 콩나물과 황포묵, 솔잎과 햅쌀가루를 고루 모아 보자!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Uncle Min gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+          "stamp_id": "stamp:KR:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for KR-A02."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "allergen_aware_sesame_soy_options",
+        "cooked_vegetarian_ingredients"
+      ]
+    },
+    {
+      "vector_id": "KR-A02__11-13",
+      "act_id": "KR-A02",
+      "country": "KR",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Compare regional ingredient baskets from Jeonju (bean sprouts & hwangpomuk), Tongyeong (coastal kelp), and Andong (mild soy seasoning) under a fair-trade budget.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Uncle Min in Nambu Harvest Market & Regional Ingredients Puzzle.",
+        "npc_lines": {
+          "mentor_greeting_en": "Compare regional ingredient baskets from Jeonju (bean sprouts & hwangpomuk), Tongyeong (coastal kelp), and Andong (mild soy seasoning) under a fair-trade budget.",
+          "mentor_greeting_native": "남부시장에서 전주 콩나물과 황포묵, 솔잎과 햅쌀가루를 고루 모아 보자!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+          "stamp_id": "stamp:KR:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for KR-A02."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "allergen_aware_sesame_soy_options",
+        "cooked_vegetarian_ingredients"
+      ]
+    },
+    {
+      "vector_id": "KR-A02__14-17",
+      "act_id": "KR-A02",
+      "country": "KR",
+      "act_number": 2,
+      "linked_knowledge_ids": [
+        "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Plan a zero-waste seasonal market sourcing strategy that accommodates soy/sesame allergies and explains regional ecological adaptations across Korean provinces.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Nambu Harvest Market & Regional Ingredients Puzzle.",
+        "npc_lines": {
+          "mentor_greeting_en": "Plan a zero-waste seasonal market sourcing strategy that accommodates soy/sesame allergies and explains regional ecological adaptations across Korean provinces.",
+          "mentor_greeting_native": "남부시장에서 전주 콩나물과 황포묵, 솔잎과 햅쌀가루를 고루 모아 보자!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+          "stamp_id": "stamp:KR:A02",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for KR-A02."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "allergen_aware_sesame_soy_options",
+        "cooked_vegetarian_ingredients"
+      ]
+    },
+    {
+      "vector_id": "KR-A03__5-7",
+      "act_id": "KR-A03",
+      "country": "KR",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+        "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Arrange five bright cooked vegetables by colour into the warm rice bowl and shape half-moon songpyeon over green pine needles!",
+        "narrative_hook": "Halmeoni invites you for a quick, friendly picture activity in Harmony of the Bowl & Songpyeon Kitchen Together!",
+        "npc_lines": {
+          "mentor_greeting_en": "Arrange five bright cooked vegetables by colour into the warm rice bowl and shape half-moon songpyeon over green pine needles!",
+          "mentor_greeting_native": "따뜻한 밥 위에 오방색 나물과 잘 익힌 버섯·두부를 올리고, 솔잎 향 가득한 송편을 함께 찐단다!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Halmeoni points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+          "stamp_id": "stamp:KR:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for KR-A03."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "no_raw_beef_or_raw_egg_for_children_use_cooked_tofu_mushroom",
+        "adult_npc_operates_steamer",
+        "competing_origins_not_flattened"
+      ]
+    },
+    {
+      "vector_id": "KR-A03__8-10",
+      "act_id": "KR-A03",
+      "country": "KR",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+        "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Prepare a balanced five-color virtual Jeonju bowl (using cooked mushrooms, tofu, bean sprouts, carrots, and yellow jelly) and steam songpyeon safely with Halmeoni.",
+        "narrative_hook": "Help Halmeoni complete the multi-step neighborhood task in Harmony of the Bowl & Songpyeon Kitchen Together!",
+        "npc_lines": {
+          "mentor_greeting_en": "Prepare a balanced five-color virtual Jeonju bowl (using cooked mushrooms, tofu, bean sprouts, carrots, and yellow jelly) and steam songpyeon safely with Halmeoni.",
+          "mentor_greeting_native": "따뜻한 밥 위에 오방색 나물과 잘 익힌 버섯·두부를 올리고, 솔잎 향 가득한 송편을 함께 찐단다!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Halmeoni gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+          "stamp_id": "stamp:KR:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for KR-A03."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "no_raw_beef_or_raw_egg_for_children_use_cooked_tofu_mushroom",
+        "adult_npc_operates_steamer",
+        "competing_origins_not_flattened"
+      ]
+    },
+    {
+      "vector_id": "KR-A03__11-13",
+      "act_id": "KR-A03",
+      "country": "KR",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+        "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Compare the four competing origin stories of bibimbap (harvest field meal, Lunar New Year’s Eve, court lunch, and holiday sharing) while preparing vegetarian and sesame-free bowls.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Halmeoni in Harmony of the Bowl & Songpyeon Kitchen Together.",
+        "npc_lines": {
+          "mentor_greeting_en": "Compare the four competing origin stories of bibimbap (harvest field meal, Lunar New Year’s Eve, court lunch, and holiday sharing) while preparing vegetarian and sesame-free bowls.",
+          "mentor_greeting_native": "따뜻한 밥 위에 오방색 나물과 잘 익힌 버섯·두부를 올리고, 솔잎 향 가득한 송편을 함께 찐단다!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+          "stamp_id": "stamp:KR:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for KR-A03."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "no_raw_beef_or_raw_egg_for_children_use_cooked_tofu_mushroom",
+        "adult_npc_operates_steamer",
+        "competing_origins_not_flattened"
+      ]
+    },
+    {
+      "vector_id": "KR-A03__14-17",
+      "act_id": "KR-A03",
+      "country": "KR",
+      "act_number": 3,
+      "linked_knowledge_ids": [
+        "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+        "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Critically evaluate late-Joseon culinary records (Siuijeonseo’s goldongban) alongside the four competing origin hypotheses, designing an inclusive workshop with cooked/allergen-safe substitutions.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Harmony of the Bowl & Songpyeon Kitchen Together.",
+        "npc_lines": {
+          "mentor_greeting_en": "Critically evaluate late-Joseon culinary records (Siuijeonseo’s goldongban) alongside the four competing origin hypotheses, designing an inclusive workshop with cooked/allergen-safe substitutions.",
+          "mentor_greeting_native": "따뜻한 밥 위에 오방색 나물과 잘 익힌 버섯·두부를 올리고, 솔잎 향 가득한 송편을 함께 찐단다!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+          "stamp_id": "stamp:KR:A03",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for KR-A03."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "no_raw_beef_or_raw_egg_for_children_use_cooked_tofu_mushroom",
+        "adult_npc_operates_steamer",
+        "competing_origins_not_flattened"
+      ]
+    },
+    {
+      "vector_id": "KR-A04__5-7",
+      "act_id": "KR-A04",
+      "country": "KR",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "KR-KB-PLACE-JEONJU-HANOK-VILLAGE"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Snap the curved dark giwa roof tiles, red pine pillars, and warm hanji paper doors onto the courtyard pavilion!",
+        "narrative_hook": "Uncle Min invites you for a quick, friendly picture activity in Care for the Hanok Roof, Pine Pillars & Hanji Screens!",
+        "npc_lines": {
+          "mentor_greeting_en": "Snap the curved dark giwa roof tiles, red pine pillars, and warm hanji paper doors onto the courtyard pavilion!",
+          "mentor_greeting_native": "굽은 기와지붕이 빗물을 모으고 한지 창호가 부드러운 햇살을 들일 수 있게 마루를 고쳐 보자!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Uncle Min points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+          "stamp_id": "stamp:KR:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for KR-A04."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "step_free_courtyard_path"
+      ]
+    },
+    {
+      "vector_id": "KR-A04__8-10",
+      "act_id": "KR-A04",
+      "country": "KR",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "KR-KB-PLACE-JEONJU-HANOK-VILLAGE"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Follow the 3x4 hanok blueprint (GGGG / PHHP / PHHP) to repair the courtyard pavilion roof and sliding paper screens.",
+        "narrative_hook": "Help Uncle Min complete the multi-step neighborhood task in Care for the Hanok Roof, Pine Pillars & Hanji Screens!",
+        "npc_lines": {
+          "mentor_greeting_en": "Follow the 3x4 hanok blueprint (GGGG / PHHP / PHHP) to repair the courtyard pavilion roof and sliding paper screens.",
+          "mentor_greeting_native": "굽은 기와지붕이 빗물을 모으고 한지 창호가 부드러운 햇살을 들일 수 있게 마루를 고쳐 보자!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Uncle Min gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+          "stamp_id": "stamp:KR:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for KR-A04."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "step_free_courtyard_path"
+      ]
+    },
+    {
+      "vector_id": "KR-A04__11-13",
+      "act_id": "KR-A04",
+      "country": "KR",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "KR-KB-PLACE-JEONJU-HANOK-VILLAGE"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Solve a courtyard rainwater-drainage and natural ventilation puzzle while restoring the giwa roof eaves and maru wooden porch.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Uncle Min in Care for the Hanok Roof, Pine Pillars & Hanji Screens.",
+        "npc_lines": {
+          "mentor_greeting_en": "Solve a courtyard rainwater-drainage and natural ventilation puzzle while restoring the giwa roof eaves and maru wooden porch.",
+          "mentor_greeting_native": "굽은 기와지붕이 빗물을 모으고 한지 창호가 부드러운 햇살을 들일 수 있게 마루를 고쳐 보자!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+          "stamp_id": "stamp:KR:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for KR-A04."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "step_free_courtyard_path"
+      ]
+    },
+    {
+      "vector_id": "KR-A04__14-17",
+      "act_id": "KR-A04",
+      "country": "KR",
+      "act_number": 4,
+      "linked_knowledge_ids": [
+        "KR-KB-PLACE-JEONJU-HANOK-VILLAGE"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Analyze architectural conservation tradeoffs in Jeonju Hanok Village: balancing traditional timber joinery, weather resilience, step-free visitor access, and material reuse.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for Care for the Hanok Roof, Pine Pillars & Hanji Screens.",
+        "npc_lines": {
+          "mentor_greeting_en": "Analyze architectural conservation tradeoffs in Jeonju Hanok Village: balancing traditional timber joinery, weather resilience, step-free visitor access, and material reuse.",
+          "mentor_greeting_native": "굽은 기와지붕이 빗물을 모으고 한지 창호가 부드러운 햇살을 들일 수 있게 마루를 고쳐 보자!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+          "stamp_id": "stamp:KR:A04",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for KR-A04."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "step_free_courtyard_path"
+      ]
+    },
+    {
+      "vector_id": "KR-A05__5-7",
+      "act_id": "KR-A05",
+      "country": "KR",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "5-7",
+      "variation": {
+        "learning_objective": "Match 3 Korean words (songpyeon, hanok, chuseok) with pictures and share the colourful harvest table in the garden!",
+        "narrative_hook": "Halmeoni invites you for a quick, friendly picture activity in The Communal Feast, Korean Words & Diaspora Continuity!",
+        "npc_lines": {
+          "mentor_greeting_en": "Match 3 Korean words (songpyeon, hanok, chuseok) with pictures and share the colourful harvest table in the garden!",
+          "mentor_greeting_native": "송편과 한옥, 추석의 따뜻한 마음을 담아 온 가족이 함께 나누는 잔치상을 완성했구나!"
+        },
+        "player_actions": [
+          "Follow glowing pictorial markers",
+          "Match 3 visual icons (1–3 min untimed)",
+          "Watch celebratory courtyard animation"
+        ],
+        "hint_ladder": [
+          "Gentle icon glow after 8s",
+          "Halmeoni points to the matching target",
+          "Guided tap assist"
+        ],
+        "completion_criteria": "3 visual matches completed with zero reading pressure or failure penalty.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+          "stamp_id": "stamp:KR:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 5–7 pictorial adaptation for KR-A05."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "no_child_pii_collection",
+        "paraphrase_only_bibliographic_candidates"
+      ]
+    },
+    {
+      "vector_id": "KR-A05__8-10",
+      "act_id": "KR-A05",
+      "country": "KR",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "8-10",
+      "variation": {
+        "learning_objective": "Complete a 5-word Korean harvest exploration and arrange a welcoming communal feast table for relatives and neighbors.",
+        "narrative_hook": "Help Halmeoni complete the multi-step neighborhood task in The Communal Feast, Korean Words & Diaspora Continuity!",
+        "npc_lines": {
+          "mentor_greeting_en": "Complete a 5-word Korean harvest exploration and arrange a welcoming communal feast table for relatives and neighbors.",
+          "mentor_greeting_native": "송편과 한옥, 추석의 따뜻한 마음을 담아 온 가족이 함께 나누는 잔치상을 완성했구나!"
+        },
+        "player_actions": [
+          "Collect 4 neighborhood items",
+          "Sort items by cultural clue card",
+          "Complete guided assembly/exchange"
+        ],
+        "hint_ladder": [
+          "Show short clue card",
+          "Highlight station on quest map",
+          "Halmeoni gives step-by-step guidance"
+        ],
+        "completion_criteria": "All 4 items sorted and guided craft/trade step completed.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+          "stamp_id": "stamp:KR:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 8–10 guided cause-and-effect adaptation for KR-A05."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "no_child_pii_collection",
+        "paraphrase_only_bibliographic_candidates"
+      ]
+    },
+    {
+      "vector_id": "KR-A05__11-13",
+      "act_id": "KR-A05",
+      "country": "KR",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "11-13",
+      "variation": {
+        "learning_objective": "Curate a family story trail showing how Korean dishes like bibimbap and songpyeon connect generations in Jeonju and abroad.",
+        "narrative_hook": "Compare historical clues, maps, and multiple interpretations with Halmeoni in The Communal Feast, Korean Words & Diaspora Continuity.",
+        "npc_lines": {
+          "mentor_greeting_en": "Curate a family story trail showing how Korean dishes like bibimbap and songpyeon connect generations in Jeonju and abroad.",
+          "mentor_greeting_native": "송편과 한옥, 추석의 따뜻한 마음을 담아 온 가족이 함께 나누는 잔치상을 완성했구나!"
+        },
+        "player_actions": [
+          "Compare 2–3 evidence cards or regional variations",
+          "Plan cooperative route/layout under constraints",
+          "Verify epistemic class labels"
+        ],
+        "hint_ladder": [
+          "Inspect timeline & map coordinates",
+          "Compare competing interpretations side by side",
+          "Check cultural context glossary"
+        ],
+        "completion_criteria": "Evidence comparison and constrained planning objective verified.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+          "stamp_id": "stamp:KR:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 11–13 evidence-comparison adaptation for KR-A05."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "no_child_pii_collection",
+        "paraphrase_only_bibliographic_candidates"
+      ]
+    },
+    {
+      "vector_id": "KR-A05__14-17",
+      "act_id": "KR-A05",
+      "country": "KR",
+      "act_number": 5,
+      "linked_knowledge_ids": [
+        "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+        "KR-KB-THEME-OBANGSAEK-FIVE-COLORS"
+      ],
+      "age_tier": "14-17",
+      "variation": {
+        "learning_objective": "Design a community heritage exhibit with full epistemic labels—distinguishing UNESCO gastronomy records, competing bibimbap origin theories, and diaspora literary reflections.",
+        "narrative_hook": "Conduct source criticism, provenance verification, and design tradeoff analysis for The Communal Feast, Korean Words & Diaspora Continuity.",
+        "npc_lines": {
+          "mentor_greeting_en": "Design a community heritage exhibit with full epistemic labels—distinguishing UNESCO gastronomy records, competing bibimbap origin theories, and diaspora literary reflections.",
+          "mentor_greeting_native": "송편과 한옥, 추석의 따뜻한 마음을 담아 온 가족이 함께 나누는 잔치상을 완성했구나!"
+        },
+        "player_actions": [
+          "Audit source passage locators & claim_status",
+          "Resolve conservation/dietary/accessibility tradeoffs",
+          "Publish neutral epistemic labels"
+        ],
+        "hint_ladder": [
+          "Verify whether independent external corroboration exists",
+          "Separate mythology/folklore/chronicler tropes from verified data",
+          "Confirm privacy & safety guardrails"
+        ],
+        "completion_criteria": "Source-critical dossier and design challenge completed with 100% epistemic accuracy.",
+        "reward": {
+          "knowledge_unlock_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+          "stamp_id": "stamp:KR:A05",
+          "free_earned": true
+        },
+        "historical_notes": "Age 14–17 source-critical adaptation for KR-A05."
+      },
+      "legacy_quest_id": "KR:ch1:jeonju:main",
+      "safety_flags": [
+        "no_child_pii_collection",
+        "paraphrase_only_bibliographic_candidates"
+      ]
+    }
+  ]
+}

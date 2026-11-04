@@ -1,0 +1,16 @@
+=== AGENT DX17 (DGX Spark · W3) ===
+Timestamp: 2026-11-04T07:37:34.131Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: local_dgx_spark_gb10
+Branch: v12/DX17
+Agent Commit SHA: 0df0894
+Integration Merge SHA: e837f8f
+Owned Paths: content/v12/geo
+Modified Files (1): content/v12/geo/atlas-v12-geodata.json
+Test Command: node -e "const fs=require('fs'); const g=JSON.parse(fs.readFileSync('content/v12/geo/atlas-v12-geodata.json','utf8')); if(g.real_world_places.length!==8 || g.in_game_quest_markers.some(m=>m.latitude!==undefined)) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: content/v12/geo/atlas-v12-geodata.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE DX17 0df0894 content/v12/geo/atlas-v12-geodata.json

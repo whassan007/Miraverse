@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX13",
+  "dgx_note": "Yes—DX13 confirms that all 5–7 age-tier strings avoid traumatic detail and complex prose, using only simple, concrete language appropriate for early childhood comprehension.",
+  "total_records_linted": 25,
+  "all_passed": true,
+  "results": [
+    {
+      "record_id": "LB-KB-PLACE-BYBLOS-PORT",
+      "words_5_7": 22,
+      "words_8_10": 28,
+      "words_11_13": 25,
+      "words_14_17": 32,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+      "words_5_7": 27,
+      "words_8_10": 28,
+      "words_11_13": 33,
+      "words_14_17": 34,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+      "words_5_7": 26,
+      "words_8_10": 28,
+      "words_11_13": 33,
+      "words_14_17": 25,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+      "words_5_7": 23,
+      "words_8_10": 25,
+      "words_11_13": 35,
+      "words_14_17": 33,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+      "words_5_7": 18,
+      "words_8_10": 22,
+      "words_11_13": 23,
+      "words_14_17": 24,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+      "words_5_7": 23,
+      "words_8_10": 25,
+      "words_11_13": 25,
+      "words_14_17": 28,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+      "words_5_7": 16,
+      "words_8_10": 20,
+      "words_11_13": 23,
+      "words_14_17": 31,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "IQ-KB-EVENT-GOLD-AND-1258-TROPES",
+      "words_5_7": 19,
+      "words_8_10": 25,
+      "words_11_13": 26,
+      "words_14_17": 31,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+      "words_5_7": 16,
+      "words_8_10": 21,
+      "words_11_13": 28,
+      "words_14_17": 26,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+      "words_5_7": 19,
+      "words_8_10": 20,
+      "words_11_13": 22,
+      "words_14_17": 25,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+      "words_5_7": 18,
+      "words_8_10": 32,
+      "words_11_13": 24,
+      "words_14_17": 32,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+      "words_5_7": 17,
+      "words_8_10": 20,
+      "words_11_13": 19,
+      "words_14_17": 32,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+      "words_5_7": 18,
+      "words_8_10": 19,
+      "words_11_13": 25,
+      "words_14_17": 26,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+      "words_5_7": 20,
+      "words_8_10": 23,
+      "words_11_13": 23,
+      "words_14_17": 27,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+      "words_5_7": 22,
+      "words_8_10": 19,
+      "words_11_13": 21,
+      "words_14_17": 22,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "FR-KB-PLACE-TRABOULES-LYON",
+      "words_5_7": 21,
+      "words_8_10": 23,
+      "words_11_13": 29,
+      "words_14_17": 24,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+      "words_5_7": 17,
+      "words_8_10": 26,
+      "words_11_13": 27,
+      "words_14_17": 31,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "FR-KB-PLACE-COUR-DES-VORACES",
+      "words_5_7": 21,
+      "words_8_10": 23,
+      "words_11_13": 29,
+      "words_14_17": 35,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+      "words_5_7": 20,
+      "words_8_10": 21,
+      "words_11_13": 23,
+      "words_14_17": 27,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+      "words_5_7": 22,
+      "words_8_10": 27,
+      "words_11_13": 21,
+      "words_14_17": 21,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+      "words_5_7": 17,
+      "words_8_10": 29,
+      "words_11_13": 22,
+      "words_14_17": 30,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+      "words_5_7": 19,
+      "words_8_10": 28,
+      "words_11_13": 25,
+      "words_14_17": 27,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "KR-KB-THEME-OBANGSAEK-FIVE-COLORS",
+      "words_5_7": 18,
+      "words_8_10": 24,
+      "words_11_13": 28,
+      "words_14_17": 31,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+      "words_5_7": 20,
+      "words_8_10": 24,
+      "words_11_13": 27,
+      "words_14_17": 26,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    },
+    {
+      "record_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+      "words_5_7": 19,
+      "words_8_10": 23,
+      "words_11_13": 21,
+      "words_14_17": 24,
+      "trauma_free_5_7": true,
+      "distinct_tiers": true
+    }
+  ]
+}

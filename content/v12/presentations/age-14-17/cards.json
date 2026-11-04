@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "AG17",
+  "age_tier": "14-17",
+  "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+  "total_cards": 25,
+  "cards": [
+    {
+      "record_id": "LB-KB-PLACE-BYBLOS-PORT",
+      "country": "LB",
+      "age_tier": "14-17",
+      "title_en": "Byblos (Jbeil) Maritime Harbor & Cedar Trade",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Byblos illustrates how coastal geography shaped eastern Mediterranean exchange networks: cedar timber and resin moved south to Egypt while papyrus (from which the Greek word biblion derived) moved north through Phoenician ports.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A02"
+      ]
+    },
+    {
+      "record_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+      "country": "LB",
+      "age_tier": "14-17",
+      "title_en": "Myth of Isis, Osiris, and the Sacred Tree of Byblos",
+      "knowledge_class": "mythology",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Plutarch’s De Iside et Osiride (chs. 15–16) embeds Byblos into Egyptian-Hellenistic mythography. Historians read the sacred tree-pillar episode not as literal biography, but as symbolic memory of Byblos’s role supplying sacred timber to Egypt.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A04"
+      ]
+    },
+    {
+      "record_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+      "country": "LB",
+      "age_tier": "14-17",
+      "title_en": "Afqa Spring, Nahr Ibrahim, and the Seasonal Myth of Adonis",
+      "knowledge_class": "interpretation",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "The Nahr Ibrahim / Afqa landscape demonstrates how ancient sacred geography mapped seasonal ecological cycles—specifically ferruginous limestone sediment runoff and anemone blooms—onto Levantine-Hellenistic ritual narratives.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "LB-A02",
+        "LB-A04"
+      ]
+    },
+    {
+      "record_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+      "country": "LB",
+      "age_tier": "14-17",
+      "title_en": "Sarcophagus of King Ahiram & the 22-Letter Phoenician Abjad",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Epigraphic analysis of the Ahiram sarcophagus situates the Byblian 22-letter abjad within a broader Canaanite/Proto-Sinaitic continuum. While maritime trade spread this script to Greece and Aramaic chancelleries, scholars reject simplistic monocausal origin myths.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A05"
+      ]
+    },
+    {
+      "record_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+      "country": "LB",
+      "age_tier": "14-17",
+      "title_en": "Writing, Recipes, and Oral Memory as a Portable Archive in the Lebanese Diaspora",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Expatriate literature (e.g., Maalouf, Alameddine) frames letters, dialect idioms, and recipes as portable archives that bridge generational migration—explored in-game through privacy-safe curated oral-history exhibits.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "LB-A03",
+        "LB-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+      "country": "IQ",
+      "age_tier": "14-17",
+      "title_en": "Bayt al-Hikma (House of Wisdom) & Abbasid Translation Tradition",
+      "knowledge_class": "contested_history",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "While Bayt al-Hikma symbolizes the Abbasid translation movement, historians distinguish the well-documented network of court-sponsored translators from later idealized accounts treating the palace library as a modern university.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A02"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+      "country": "IQ",
+      "age_tier": "14-17",
+      "title_en": "Scholars of Baghdad: Al-Khwarizmi, Al-Kindi, Hunayn ibn Ishaq, Thabit ibn Qurra & Banu Musa",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "The collaboration among al-Khwarizmi, al-Kindi, Hunayn ibn Ishaq, Thabit ibn Qurra, and the Banu Musa illustrates how philological translation (collating Greek and Syriac manuscripts) directly fueled experimental mechanics and algebraic theory.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A04"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-EVENT-GOLD-AND-1258-TROPES",
+      "country": "IQ",
+      "age_tier": "14-17",
+      "title_en": "Contested Chronicles: Weight-in-Gold Payments & 1258 River-of-Ink Accounts",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "Source criticism distinguishes primary 9th-century evidence from 13th–15th century literary topoi (such as Ibn Abi Usaybi’a’s gold-weight anecdote or later river-of-ink accounts of 1258), teaching players how historians evaluate chroniclers’ claims.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "IQ-A02",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+      "country": "IQ",
+      "age_tier": "14-17",
+      "title_en": "Al-Mutanabbi Street, Shabandar Café & the International Book Solidarity Archive",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Al-Mutanabbi Street and the Al-Mutanabbi Street Starts Here artist-book archive exemplify cultural resilience: preserving Iraq’s pluralistic intellectual heritage across Baghdad and the global diaspora after 2007.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A02",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+      "country": "IQ",
+      "age_tier": "14-17",
+      "title_en": "Cardamom Date Kleicha, Shanasheel Courtyards & Plural Diaspora Memory",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Material culture in the Iraqi diaspora links architectural conservation (shaded shanasheel microclimates) and culinary heritage (regional kleicha variations across plural Iraqi communities) to intergenerational memory.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "IQ-A03",
+        "IQ-A04",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+      "country": "EG",
+      "age_tier": "14-17",
+      "title_en": "Egyptian Fanous Lanterns & Competing Fatimid/Coptic Origin Narratives",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "Rather than treating the 972 CE al-Mu’izz procession anecdote as a singular origin fact, urban historians examine how Fatimid street-lighting ordinances, Coptic liturgical lamps, and artisanal tin-working converged into Cairo’s fanous tradition.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "EG-A01",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+      "country": "EG",
+      "age_tier": "14-17",
+      "title_en": "Cairo Lantern Metalwork, Stained Glass & Khayamiya Tentmaker Appliqué",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "In Historic Cairo (UNESCO #89), the spatial proximity of Taht al-Rab’ lantern workshops and the Qasaba of Radwan Bey khayamiya guild sustains shared geometric design grammars across metal, glass, and textile media.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "EG-A01",
+        "EG-A04"
+      ]
+    },
+    {
+      "record_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+      "country": "EG",
+      "age_tier": "14-17",
+      "title_en": "Neighborhood Soundscapes: The Musaharati Drummer & Festive Cairo Chants",
+      "knowledge_class": "folklore",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Ethnomusicological study of Cairo’s Ramadan traditions highlights how acoustic community markers (the musaharati’s baz drum and oral refrains with contested Arabic/Coptic etymologies) map neighborhood social cohesion.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "EG-A02",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+      "country": "EG",
+      "age_tier": "14-17",
+      "title_en": "Teta Samira’s Koshari & Inclusive Courtyard Hospitality",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "externally_corrobated",
+      "explanation": "Koshari’s evolution in modern urban Cairo reflects global trade circuits (combining Indian-inspired rice-and-lentil khichdi roots with Italian pasta and Egyptian garlic-vinegar daqqa) into a democratized national dish.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "EG-A02",
+        "EG-A03"
+      ]
+    },
+    {
+      "record_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+      "country": "EG",
+      "age_tier": "14-17",
+      "title_en": "Egyptian Diaspora Celebrations & Ontario Egyptian Heritage Month Candidate Fact",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Contemporary diaspora civic recognition—such as the source-cited Ontario Egyptian Heritage Month Act (2019, pending statutory verification)—illustrates how expatriate communities institutionalize cultural memory.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "EG-A04",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PLACE-TRABOULES-LYON",
+      "country": "FR",
+      "age_tier": "14-17",
+      "title_en": "The Traboules of Vieux Lyon and La Croix-Rousse",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Lyon’s traboules (UNESCO #872) exemplify high-density urban morphology. While tourism literature cites ~400–500 passages, urban historians distinguish verified public rights-of-way from private residential courtyards.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "FR-A01",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+      "country": "FR",
+      "age_tier": "14-17",
+      "title_en": "The Canuts of La Croix-Rousse & Jacquard Punch-Card Silk Weaving",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "The Jacquard loom (1804) transformed Lyon’s domestic silk industry (la Fabrique) by encoding warp-thread lifts on punched cards, reshaping both architectural typologies in La Croix-Rousse and the history of programmable machinery.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "FR-A02",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PLACE-COUR-DES-VORACES",
+      "country": "FR",
+      "age_tier": "14-17",
+      "title_en": "Cour des Voraces, Labor Mutualism & Historical Memory in Lyon",
+      "knowledge_class": "contested_history",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Historical analysis of the Cour des Voraces separates popular conflations (noting its c. 1840 construction postdates the 1831/1834 insurrections while anchoring the 1848 Voraces movement) and treats 1940s Resistance passage routes as non-trivialized civic heritage.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "FR-A01",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+      "country": "FR",
+      "age_tier": "14-17",
+      "title_en": "The Mères Lyonnaises & Eugénie Brazier: Women-Led Culinary Craft",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "The trajectory of the Mères Lyonnaises—culminating in Eugénie Brazier’s 1921 establishment and 1933 critical acclaim—demonstrates how working-class women chefs transformed regional bouchon traditions into modern gastronomic institutions.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "FR-A03",
+        "FR-A05"
+      ]
+    },
+    {
+      "record_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+      "country": "FR",
+      "age_tier": "14-17",
+      "title_en": "Galette des Rois, Kitchen Brigade Teamwork & Transnational Pastry Exchange",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Designing a community recipe archive requires documenting ingredient provenance, nut-free/gluten-aware substitutions, and non-edible fève safety notes while honoring cross-cultural culinary heritage.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "FR-A02",
+        "FR-A03",
+        "FR-A05"
+      ]
+    },
+    {
+      "record_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+      "country": "KR",
+      "age_tier": "14-17",
+      "title_en": "Bibimbap (Goldongban) & Regional Variants: Jeonju, Jinju, Tongyeong & Andong",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Textual attestation in late-Joseon cookbooks (Siuijeonseo’s goldongban) and regional specialization across Jeonju, Jinju, Tongyeong, and Andong demonstrate how a shared mixed-rice grammar adapts to local ecology and modern food-safety/allergen standards.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "KR-A02",
+        "KR-A03"
+      ]
+    },
+    {
+      "record_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+      "country": "KR",
+      "age_tier": "14-17",
+      "title_en": "Competing Origin Narratives of Bibimbap: Ritual, Court, Agriculture & Lunar New Year",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "Historiographical analysis of bibimbap rejects single-origin essentialism: Eumbok ritual sharing,农번기 (nongbeongi) agrarian field meals, courtly goldongban, and seotdal geumeum household practices likely converged into modern regional forms.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "KR-A03",
+        "KR-A05"
+      ]
+    },
+    {
+      "record_id": "KR-KB-THEME-OBANGSAEK-FIVE-COLORS",
+      "country": "KR",
+      "age_tier": "14-17",
+      "title_en": "Obangsaek (오방색): Five-Color Cultural Symbolism & Harmony of the Bowl",
+      "knowledge_class": "interpretation",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Obangsaek reflects East Asian cosmological aesthetics applied to Korean textile, architectural (dancheong), and culinary arts—understood by historians as a symbolic cultural framework for visual and nutritional variety rather than empirical science.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "KR-A01",
+        "KR-A02",
+        "KR-A03"
+      ]
+    },
+    {
+      "record_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+      "country": "KR",
+      "age_tier": "14-17",
+      "title_en": "Jeonju Hanok Village, Giwa Roofs, Nambu Market & Pungnammun Gate",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Jeonju Hanok Village illustrates urban heritage stewardship: maintaining over 700 timber-and-giwa structures alongside active civic spaces (Nambu Market, Pungnammun Gate) requires balancing tourism with resident privacy.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "KR-A01",
+        "KR-A04"
+      ]
+    },
+    {
+      "record_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+      "country": "KR",
+      "age_tier": "14-17",
+      "title_en": "Shared Bowls, Chuseok Songpyeon & Korean Diaspora Cultural Continuity",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Contemporary diaspora literature frames Korean foodways—from sourcing namul ingredients in expatriate grocery aisles to steaming Chuseok songpyeon—as living practices of cultural continuity and adaptation.",
+      "interaction_style": "source_criticism_provenance_contested_history_tradeoffs",
+      "max_words_budget": 160,
+      "linked_quests": [
+        "KR-A03",
+        "KR-A05"
+      ]
+    }
+  ]
+}

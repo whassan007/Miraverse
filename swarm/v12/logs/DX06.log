@@ -1,0 +1,16 @@
+=== AGENT DX06 (DGX Spark · W1) ===
+Timestamp: 2026-11-04T07:20:56.637Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: Local DGX Spark (qwen/qwen3-coder-next, 51.96 tok/s)
+Branch: v12/DX06
+Agent Commit SHA: de7b5ba
+Integration Merge SHA: 2e2865a
+Owned Paths: content/v12/staging/countries/IQ/
+Modified Files (1): content/v12/staging/countries/IQ/records.json
+Test Command: npx tsx -e 'import fs from "node:fs"; import { validateKnowledgeRecordV12 } from "./packages/knowledge-v12/index.ts"; const data = JSON.parse(fs.readFileSync("content/v12/staging/countries/IQ/records.json", "utf8")); if (data.records.length !== 5) process.exit(1); for (const r of data.records) { const res = validateKnowledgeRecordV12(r); if (!res.valid) { console.error(res.errors); process.exit(1); } }'
+Test Exit Code: 0
+Evidence Paths: content/v12/staging/countries/IQ/records.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE DX06 de7b5ba content/v12/staging/countries/IQ/records.json

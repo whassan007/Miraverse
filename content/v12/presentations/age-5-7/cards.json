@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "AG14",
+  "age_tier": "5-7",
+  "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+  "total_cards": 25,
+  "cards": [
+    {
+      "record_id": "LB-KB-PLACE-BYBLOS-PORT",
+      "country": "LB",
+      "age_tier": "5-7",
+      "title_en": "Byblos (Jbeil) Maritime Harbor & Cedar Trade",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Byblos is an ancient seaside harbor where wooden boats sailed across the blue water carrying fragrant cedar wood and golden olive oil.",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A02"
+      ]
+    },
+    {
+      "record_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+      "country": "LB",
+      "age_tier": "5-7",
+      "title_en": "Myth of Isis, Osiris, and the Sacred Tree of Byblos",
+      "knowledge_class": "mythology",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "An old storybook legend says a carved wooden chest floated across the sea to Byblos and a tall fragrant tree grew around it to keep it safe.",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A04"
+      ]
+    },
+    {
+      "record_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+      "country": "LB",
+      "age_tier": "5-7",
+      "title_en": "Afqa Spring, Nahr Ibrahim, and the Seasonal Myth of Adonis",
+      "knowledge_class": "interpretation",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "When spring rain falls on the mountains, red clay washes into the river and turns the water bright rust-red while spring flowers bloom along the banks.",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "LB-A02",
+        "LB-A04"
+      ]
+    },
+    {
+      "record_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+      "country": "LB",
+      "age_tier": "5-7",
+      "title_en": "Sarcophagus of King Ahiram & the 22-Letter Phoenician Abjad",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Match five ancient picture-letters carved in stone: Aleph looks like an ox horn, Beth is a house, and Mem looks like ocean waves!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "LB-A01",
+        "LB-A05"
+      ]
+    },
+    {
+      "record_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+      "country": "LB",
+      "age_tier": "5-7",
+      "title_en": "Writing, Recipes, and Oral Memory as a Portable Archive in the Lebanese Diaspora",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Help Teta Nahla put her favorite man’oushe recipe card and harbor postcard back into the family memory chest!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "LB-A03",
+        "LB-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+      "country": "IQ",
+      "age_tier": "5-7",
+      "title_en": "Bayt al-Hikma (House of Wisdom) & Abbasid Translation Tradition",
+      "knowledge_class": "contested_history",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "In old Baghdad by the river, scholars gathered colourful scrolls and books to share stories and star maps with friends from many lands.",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A02"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+      "country": "IQ",
+      "age_tier": "5-7",
+      "title_en": "Scholars of Baghdad: Al-Khwarizmi, Al-Kindi, Hunayn ibn Ishaq, Thabit ibn Qurra & Banu Musa",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Meet the clever inventors of Baghdad who built playful water fountains, mechanical lamps, and number games!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A04"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-EVENT-GOLD-AND-1258-TROPES",
+      "country": "IQ",
+      "age_tier": "5-7",
+      "title_en": "Contested Chronicles: Weight-in-Gold Payments & 1258 River-of-Ink Accounts",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "People in Baghdad loved books so much that storytellers said a good book was as precious as shining gold!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "IQ-A02",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+      "country": "IQ",
+      "age_tier": "5-7",
+      "title_en": "Al-Mutanabbi Street, Shabandar Café & the International Book Solidarity Archive",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Walk down Baghdad’s book street where friendly shopkeepers stack colourful storybooks on tables beside the river!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "IQ-A01",
+        "IQ-A02",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+      "country": "IQ",
+      "age_tier": "5-7",
+      "title_en": "Cardamom Date Kleicha, Shanasheel Courtyards & Plural Diaspora Memory",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Roll sweet date paste and fragrant green cardamom into pinwheel kleicha cookies with Bibi Amal in the sunny courtyard!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "IQ-A03",
+        "IQ-A04",
+        "IQ-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+      "country": "EG",
+      "age_tier": "5-7",
+      "title_en": "Egyptian Fanous Lanterns & Competing Fatimid/Coptic Origin Narratives",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "Glowing fanous lanterns in bright red, blue, and gold light up Cairo’s streets to welcome family and friends!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "EG-A01",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+      "country": "EG",
+      "age_tier": "5-7",
+      "title_en": "Cairo Lantern Metalwork, Stained Glass & Khayamiya Tentmaker Appliqué",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Match bright ruby-red, emerald-green, and golden glass shapes to build a glowing lantern and colourful tent cloth!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "EG-A01",
+        "EG-A04"
+      ]
+    },
+    {
+      "record_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+      "country": "EG",
+      "age_tier": "5-7",
+      "title_en": "Neighborhood Soundscapes: The Musaharati Drummer & Festive Cairo Chants",
+      "knowledge_class": "folklore",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Follow the gentle tap-tap rhythm of the neighborhood drum as lanterns light up along the friendly Cairo street!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "EG-A02",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+      "country": "EG",
+      "age_tier": "5-7",
+      "title_en": "Teta Samira’s Koshari & Inclusive Courtyard Hospitality",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "externally_corrobated",
+      "explanation": "Sort white rice, brown lentils, red tomato sauce, and crunchy golden onions into baskets for Teta Samira’s big koshari pot!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "EG-A02",
+        "EG-A03"
+      ]
+    },
+    {
+      "record_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+      "country": "EG",
+      "age_tier": "5-7",
+      "title_en": "Egyptian Diaspora Celebrations & Ontario Egyptian Heritage Month Candidate Fact",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Children living far from Egypt fold colourful paper lanterns with safe little battery lights to share Cairo’s warm glow with new friends!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "EG-A04",
+        "EG-A05"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PLACE-TRABOULES-LYON",
+      "country": "FR",
+      "age_tier": "5-7",
+      "title_en": "The Traboules of Vieux Lyon and La Croix-Rousse",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Follow the painted pastry signs through cosy stone arches and spiral stairs that connect one sunny Lyon courtyard to the next!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "FR-A01",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+      "country": "FR",
+      "age_tier": "5-7",
+      "title_en": "The Canuts of La Croix-Rousse & Jacquard Punch-Card Silk Weaving",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Match colourful threads and card holes to weave a shimmering flower pattern on a tall wooden loom!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "FR-A02",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PLACE-COUR-DES-VORACES",
+      "country": "FR",
+      "age_tier": "5-7",
+      "title_en": "Cour des Voraces, Labor Mutualism & Historical Memory in Lyon",
+      "knowledge_class": "contested_history",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Look up at the grand stone staircase in the courtyard where neighbors helped one another carry baskets up six tall floors!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "FR-A01",
+        "FR-A04"
+      ]
+    },
+    {
+      "record_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+      "country": "FR",
+      "age_tier": "5-7",
+      "title_en": "The Mères Lyonnaises & Eugénie Brazier: Women-Led Culinary Craft",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "In Lyon’s warm kitchens, caring grandmothers and women chefs taught young helpers how to bake golden pastries and share meals!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "FR-A03",
+        "FR-A05"
+      ]
+    },
+    {
+      "record_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+      "country": "FR",
+      "age_tier": "5-7",
+      "title_en": "Galette des Rois, Kitchen Brigade Teamwork & Transnational Pastry Exchange",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Help Mamie Claire layer flaky pastry, tuck in the little porcelain fève charm, and place the golden paper crown on the table!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "FR-A02",
+        "FR-A03",
+        "FR-A05"
+      ]
+    },
+    {
+      "record_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+      "country": "KR",
+      "age_tier": "5-7",
+      "title_en": "Bibimbap (Goldongban) & Regional Variants: Jeonju, Jinju, Tongyeong & Andong",
+      "knowledge_class": "historical_claim",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Arrange warm rice, crunchy bean sprouts, yellow mung-bean jelly, and cooked mushrooms into a colourful Jeonju bowl!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "KR-A02",
+        "KR-A03"
+      ]
+    },
+    {
+      "record_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+      "country": "KR",
+      "age_tier": "5-7",
+      "title_en": "Competing Origin Narratives of Bibimbap: Ritual, Court, Agriculture & Lunar New Year",
+      "knowledge_class": "contested_history",
+      "claim_status": "disputed",
+      "explanation": "Families, farmers in the fields, and festival guests all loved mixing colourful vegetables with warm rice in one bowl!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "KR-A03",
+        "KR-A05"
+      ]
+    },
+    {
+      "record_id": "KR-KB-THEME-OBANGSAEK-FIVE-COLORS",
+      "country": "KR",
+      "age_tier": "5-7",
+      "title_en": "Obangsaek (오방색): Five-Color Cultural Symbolism & Harmony of the Bowl",
+      "knowledge_class": "interpretation",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Sort five bright colours into the bowl: green spinach, red carrots, yellow jelly, white rice, and dark mushrooms!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "KR-A01",
+        "KR-A02",
+        "KR-A03"
+      ]
+    },
+    {
+      "record_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+      "country": "KR",
+      "age_tier": "5-7",
+      "title_en": "Jeonju Hanok Village, Giwa Roofs, Nambu Market & Pungnammun Gate",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "explanation": "Place curved dark roof tiles, sturdy pine wood pillars, and warm paper doors to care for Halmeoni’s cosy hanok courtyard!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "KR-A01",
+        "KR-A04"
+      ]
+    },
+    {
+      "record_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+      "country": "KR",
+      "age_tier": "5-7",
+      "title_en": "Shared Bowls, Chuseok Songpyeon & Korean Diaspora Cultural Continuity",
+      "knowledge_class": "contemporary_practice",
+      "claim_status": "source_asserted_unverified",
+      "explanation": "Fold half-moon songpyeon rice cakes over fragrant green pine needles and share a happy harvest feast in the garden!",
+      "interaction_style": "pictorial_narrated_low_reading_load_1_to_3_min",
+      "max_words_budget": 35,
+      "linked_quests": [
+        "KR-A03",
+        "KR-A05"
+      ]
+    }
+  ]
+}

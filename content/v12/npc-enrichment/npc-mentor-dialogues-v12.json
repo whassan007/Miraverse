@@ -1,0 +1,74 @@
+{
+  "version": "1.2.0",
+  "agent_id": "AG18",
+  "generated_at": "2026-11-04T07:41:42.539Z",
+  "non_destructive_guarantee": "Extends existing mentor roster (Teta Yasmine, Archivist Tariq, Master Hassan, Chef Seo-yeon, Grand-mère Colette) without altering preexisting v0.8/v1.1 dialogue IDs.",
+  "child_privacy_guardrail": "All oral-history and recipe-memory exchanges use scripted choices only; zero microphone recording or free-text personal data input.",
+  "mentors": [
+    {
+      "npc_id": "npc-lb-teta-yasmine",
+      "country": "LB",
+      "name": "Teta Yasmine",
+      "role": "Byblos Coastal Archivist & Cedar Storykeeper",
+      "dialect_locale": "ar-LB",
+      "portrait_url": "/art/v08/portraits/LB-mentor.svg",
+      "epistemic_framing_lines": {
+        "mythology": "Close your eyes and listen to the sea breeze, habibi: this is an ancient Mediterranean myth of Isis and Adonis, a poetic story people told about grief and spring—not a literal court chronicle.",
+        "historical_claim": "Look at the carved limestone rim of the Ahiram sarcophagus (~1000 BCE): twenty-two consonantal letters that sailors could carry on a single papyrus roll.",
+        "privacy_safe_oral_history": "Choose one of my scripted family memory postcards from Byblos to São Paulo—we keep your own private family details safe offline."
+      }
+    },
+    {
+      "npc_id": "npc-iq-archivist-tariq",
+      "country": "IQ",
+      "name": "Archivist Tariq",
+      "role": "Baghdad Manuscript Curator & Al-Mutanabbi Bookkeeper",
+      "dialect_locale": "ar-IQ",
+      "portrait_url": "/art/v08/portraits/IQ-mentor.svg",
+      "epistemic_framing_lines": {
+        "contested_history": "Shlonak, young scholar! Chroniclers loved the story that Hunayn ibn Ishaq was paid the weight of his translations in gold—historians today treat that as an exaggerated tribute to how deeply Baghdad valued books.",
+        "historical_claim": "Here in the translation circles, Muslim, Syriac Christian, Sabian, Jewish, and Persian scholars worked side by side on algebra, optics, and Banu Musa water-clocks.",
+        "civic_remembrance": "On Al-Mutanabbi Street, booksellers leave volumes outside because readers honor shared knowledge—and printers worldwide stand in peaceful solidarity with our street of books."
+      }
+    },
+    {
+      "npc_id": "npc-eg-master-hassan",
+      "country": "EG",
+      "name": "Master Hassan",
+      "role": "Taht al-Rab’ Lantern Artisan & Khayamiya Pattern Master",
+      "dialect_locale": "ar-EG",
+      "portrait_url": "/art/v08/portraits/EG-mentor.svg",
+      "epistemic_framing_lines": {
+        "contested_history": "Ahlan wa sahlan! In Cairo you will hear four different stories of how the fanous began—from welcoming Caliph al-Mu’izz in 972 CE to al-Hakim’s street-lamp rules and older Coptic copper lamps.",
+        "inclusive_hospitality": "Our courtyard lantern string welcomes every neighbor and guest—no one is required to practice a religion to enjoy the artistry of Egyptian light and khayamiya geometry.",
+        "craft_safety": "I handle all hot tin soldering at my workbench while you design the colored glass and folded cotton symmetry safely!"
+      }
+    },
+    {
+      "npc_id": "npc-fr-grandmere-colette",
+      "country": "FR",
+      "name": "Grand-mère Colette",
+      "role": "Croix-Rousse Silk Historian & Bouchon Mentor",
+      "dialect_locale": "fr",
+      "portrait_url": "/art/v08/portraits/FR-mentor.svg",
+      "epistemic_framing_lines": {
+        "contested_history": "Bonjour! Depending on whether you count private courtyards or open passageways, Lyon has between 200 and 500 traboules—our verified anchor is the six-story Cour des Voraces at 9 Place Colbert.",
+        "historical_claim": "Listen to the bistanclaque-pan of the 1804 Jacquard loom and taste the culinary legacy of Eugénie Brazier, who earned six Michelin stars in 1933.",
+        "allergy_and_kitchen_safety": "In our virtual bouchon, we flag dairy, eggs, and tree nuts (praline), and I tend the hot copper pans myself."
+      }
+    },
+    {
+      "npc_id": "npc-kr-chef-seoyeon",
+      "country": "KR",
+      "name": "Chef Seo-yeon",
+      "role": "Jeonju Hanok Culinary Scholar & Fermentation Keeper",
+      "dialect_locale": "ko",
+      "portrait_url": "/art/v08/portraits/KR-mentor.svg",
+      "epistemic_framing_lines": {
+        "contested_history": "Annyeonghaseyo! Food historians debate whether bibimbap grew from ancestral eumbok rites, harvest field meals, Lunar New Year’s Eve leftovers, or palace lunches—all four traditions enriched the bowl.",
+        "cultural_interpretation": "We arrange five Obangsaek colors—black, green, red, white, and yellow—as a traditional Korean cultural aesthetic of harmony, not a scientific law.",
+        "food_and_allergen_safety": "For our youth table, we use cooked tofu, shiitake, or golden hwangpomuk jelly instead of raw beef or raw egg, with sesame-free and soy-free dressing options ready."
+      }
+    }
+  ]
+}

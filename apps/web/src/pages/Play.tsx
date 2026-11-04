@@ -1,703 +1,800 @@
 /**
- * MiraVerse v0.4 Full-Viewport 3D Adventure Experience (`apps/web/src/pages/Play.tsx`)
- * Replaces the legacy v0.1 2D Phaser grid mini-game with a free-roaming Babylon.js 3D world
- * supporting the 3D World Hub (/play) and all 5 Cultural Destinations (/play/:country).
+ * MiraVerse v1.3 (`CX01`, `P0`, `P7`) — Platform Launch & Interactive Cultural Quest Companion (`/play` & `/play/:country`)
+ * - Removes the unfinished browser-based 3D Babylon scene, primitive geometry, cylinder NPCs, virtual joystick,
+ *   ACT button, overlapping labels, duplicate country tabs, and internal build diagnostics from public routes.
+ * - Preserves the legacy 3D browser prototype exclusively at `/dev/legacy-3d-game` (`LegacyBrowser3DGame.tsx`).
+ * - Provides verified Roblox Social Adventure & Minecraft Bedrock Creative Adventure launch options,
+ *   interactive illustrated quest maps (`/art/v13/quest-map-{CC}.jpg`), age-adapted quest stages (`5-7`, `8-10`, `11-13`, `14-17`),
+ *   and interactive web quest completion with Passport stamp issuance (`#chapter-progress` + `<output>`).
  */
 import React, { useEffect, useRef, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { SoundscapeController } from '../../../../art/audio/soundscape';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
   CHALLENGE_TYPES,
   COUNTRIES,
   COUNTRY_META,
   type ChallengeType,
   type CountryCode,
-  type DialogueNodeSpec,
 } from '../../../../packages/contracts/index';
+import {
+  EPISTEMIC_BADGE_LABELS,
+  V13_AGE_TIERS,
+  V13_COUNTRIES_ORDERED,
+  V13_COUNTRY_EXPERIENCES,
+  V13_QUEST_ENCYCLOPEDIA,
+  type AgeTierId,
+} from '../../../../packages/contracts/v13/index';
 import { GameDomainController } from '../../../../packages/game-domain/index';
 import { loadStamps, make, saveStamp } from '../../../../packages/shared/stamp';
-import { ChallengeStationOverlay } from '../game3d/challenges/index';
-import { InteractionManager } from '../game3d/interactions/index';
-import { ThirdPersonController } from '../game3d/player/index';
-import { buildSculptedWorldScene, createBabylonEngine } from '../game3d/runtime/index';
-import { useI18n } from '../i18n';
 import { RobloxLaunchBanner } from '../launch/RobloxLaunchPage';
 import { PACKS } from '../lib/content';
-import { DialoguePanel } from '../ui/dialogue/index';
-import { AdventureHud } from '../ui/hud/index';
-import { HubPortalRibbon, SettingsModal } from '../ui/menus/index';
-import { MobileTouchControls } from '../ui/mobile/index';
 
 export default function Play() {
-  const { dir, t } = useI18n();
   const navigate = useNavigate();
   const params = useParams<{ country?: string }>();
 
   const resolvedParam = params.country?.toUpperCase() as CountryCode | undefined;
-  const initialWorld: CountryCode | 'HUB' =
-    resolvedParam && COUNTRIES.includes(resolvedParam) ? resolvedParam : 'HUB';
+  const activeCountryCode: CountryCode =
+    resolvedParam && COUNTRIES.includes(resolvedParam) ? resolvedParam : 'LB';
 
   const domainRef = useRef<GameDomainController | null>(null);
   if (!domainRef.current) {
     domainRef.current = new GameDomainController();
   }
-  const soundRef = useRef<SoundscapeController | null>(null);
-  if (!soundRef.current) {
-    soundRef.current = new SoundscapeController();
-  }
 
-  const [activeWorld, setActiveWorld] = useState<CountryCode | 'HUB'>(initialWorld);
   const [saveState, setSaveState] = useState(() => domainRef.current!.getState());
-  const [playerPos, setPlayerPos] = useState<[number, number, number]>([0, 0, -6]);
-  const [activeChallengeModal, setActiveChallengeModal] = useState<ChallengeType | null>(null);
-  const [dialogueOpen, setDialogueOpen] = useState(false);
-  const [settingsOpen, setSettingsOpen] = useState(false);
-  const [notice, setNotice] = useState('');
-  const [rendererMode, setRendererMode] = useState<'WebGL2' | 'WebGL1' | 'FallbackCanvas2D'>('FallbackCanvas2D');
+  const [selectedAgeTier, setSelectedAgeTier] = useState<AgeTierId>('8-10');
+  const [selectedActNumber, setSelectedActNumber] = useState<1 | 2 | 3 | 4 | 5>(1);
+  const [completionFeedback, setCompletionFeedback] = useState<string>('');
 
-  const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const playerCtrlRef = useRef<ThirdPersonController | null>(null);
-  const interactionRef = useRef<InteractionManager | null>(null);
-
-  // Synchronize URL param changes with activeWorld
   useEffect(() => {
-    const nextWorld: CountryCode | 'HUB' =
-      resolvedParam && COUNTRIES.includes(resolvedParam) ? resolvedParam : 'HUB';
-    setActiveWorld(nextWorld);
-    domainRef.current?.setActiveCountry(nextWorld);
+    domainRef.current?.setActiveCountry(activeCountryCode);
     setSaveState({ ...domainRef.current!.getState() });
-  }, [resolvedParam]);
+    setSelectedActNumber(1);
+    setCompletionFeedback('');
+  }, [activeCountryCode]);
 
-  const activeCountryCode: CountryCode = activeWorld === 'HUB' ? 'FR' : activeWorld;
+  const countryExp = V13_COUNTRY_EXPERIENCES[activeCountryCode];
+  const meta = COUNTRY_META[activeCountryCode];
+  const countryQuests = V13_QUEST_ENCYCLOPEDIA.filter((q) => q.country === activeCountryCode);
+  const activeQuest =
+    countryQuests.find((q) => q.actNumber === selectedActNumber) ?? countryQuests[0];
+  const activeStage = activeQuest.ageTiers[selectedAgeTier];
+  const primaryNpc = activeQuest.npcs[0] ?? { name: meta.mentorName, role: 'Cultural Mentor' };
+
   const pack = PACKS.find((entry) => entry.country === activeCountryCode) ?? PACKS[0];
   const challenges = pack?.chapters[0]?.challenges ?? [];
-  const completedTypes: ChallengeType[] =
-    activeWorld === 'HUB' ? [] : saveState.completedChallenges[activeWorld] || [];
+  const completedTypes: ChallengeType[] = saveState.completedChallenges[activeCountryCode] || [];
   const currentChallengeIdx = completedTypes.length;
   const currentPackChallenge = challenges[currentChallengeIdx];
-  const restoredStage = activeWorld === 'HUB' ? 3 : saveState.restoredBuildings[activeWorld] || 0;
-  const currentStamp = activeWorld === 'HUB' ? '' : saveState.stamps[activeWorld] || '';
+  const currentStamp = saveState.stamps[activeCountryCode] || '';
 
-  // Mount & dispose Babylon.js 3D scene on world change
-  useEffect(() => {
-    const { engine, mode } = createBabylonEngine(canvasRef.current);
-    setRendererMode(mode);
-    const handles = buildSculptedWorldScene(
-      engine,
-      activeWorld,
-      undefined,
-      activeWorld === 'HUB' ? 3 : domainRef.current?.getState().restoredBuildings[activeWorld] || 0
-    );
+  function completeQuestAct(idx: number) {
+    if (!domainRef.current) return;
+    const targetChallenge = challenges[idx];
+    if (!targetChallenge) return;
+    const cType = CHALLENGE_TYPES[idx] ?? 'gather';
+    const dom = domainRef.current;
 
-    const tpc = new ThirdPersonController(handles.heroRoot);
-    tpc.setPosition(0, 0, -6);
-    playerCtrlRef.current = tpc;
-
-    const im = new InteractionManager();
-    if (activeWorld === 'HUB') {
-      COUNTRIES.forEach((cc) => {
-        const meta = COUNTRY_META[cc];
-        im.registerNode({
-          interactableId: `portal:${cc}`,
-          kind: 'portal',
-          labelEn: `Enter ${meta.nameEn} (${meta.regionName})`,
-          labelNative: meta.nameNative,
-          position: meta.hubPortalPosition,
-          interactionRadius: 4.5,
-        });
-      });
-    } else {
-      const meta = COUNTRY_META[activeWorld];
-      im.registerNode({
-        interactableId: meta.mentorId,
-        kind: 'npc',
-        labelEn: `Speak with ${meta.mentorName}`,
-        labelNative: meta.nameNative,
-        position: [-2.5, 0, 3.2],
-        interactionRadius: 4.2,
-      });
-      im.registerNode({
-        interactableId: `station:${activeWorld}:build`,
-        kind: 'build_site',
-        labelEn: `Restore ${meta.landmarkName}`,
-        labelNative: meta.landmarkName,
-        position: [0, 0, 5.5],
-        interactionRadius: 4.5,
-      });
-    }
-    interactionRef.current = im;
-    soundRef.current?.playCue('portal');
-
-    // Keyboard movement listener (WASD / Arrows / E)
-    const keys = new Set<string>();
-    const onKeyDown = (e: KeyboardEvent) => {
-      keys.add(e.key.toLowerCase());
-      if (e.key.toLowerCase() === 'e') {
-        handleTriggerInteract();
-      }
-      stepMovementFromKeys();
-    };
-    const onKeyUp = (e: KeyboardEvent) => {
-      keys.delete(e.key.toLowerCase());
-    };
-    const stepMovementFromKeys = () => {
-      let mx = 0;
-      let mz = 0;
-      if (keys.has('w') || keys.has('arrowup')) mz += 1;
-      if (keys.has('s') || keys.has('arrowdown')) mz -= 1;
-      if (keys.has('a') || keys.has('arrowleft')) mx -= 1;
-      if (keys.has('d') || keys.has('arrowright')) mx += 1;
-      if (mx !== 0 || mz !== 0) {
-        tpc.update(0.12, { moveX: mx, moveZ: mz, sprint: keys.has('shift'), jump: false, interact: false });
-        const pos = tpc.getPosition();
-        setPlayerPos(pos);
-      }
-    };
-
-    window.addEventListener('keydown', onKeyDown);
-    window.addEventListener('keyup', onKeyUp);
-
-    if (mode !== 'FallbackCanvas2D') {
-      engine.runRenderLoop(() => {
-        handles.scene.render();
-      });
-    } else {
-      handles.scene.render();
+    if (cType === 'gather') {
+      dom.addItem(`${activeCountryCode.toLowerCase()}:ingredient_primary`, 2);
+    } else if (cType === 'trade') {
+      dom.addItem(`${activeCountryCode.toLowerCase()}:artisan_spice`, 1);
     }
 
-    return () => {
-      window.removeEventListener('keydown', onKeyDown);
-      window.removeEventListener('keyup', onKeyUp);
-      handles.dispose();
-    };
-  }, [activeWorld]);
+    const res = dom.completeChallenge(activeCountryCode, cType);
+    const updatedCompleted = dom.getState().completedChallenges[activeCountryCode] || [];
 
-  function selectWorld(next: CountryCode | 'HUB') {
-    setActiveWorld(next);
-    setDialogueOpen(false);
-    setActiveChallengeModal(null);
-    domainRef.current?.setActiveCountry(next);
-    setSaveState({ ...domainRef.current!.getState() });
-    if (next === 'HUB') {
-      navigate('/play');
-    } else {
-      navigate(`/play/${next}`);
-    }
-  }
-
-  function handleMoveStep(dx: number, dz: number) {
-    if (!playerCtrlRef.current) return;
-    playerCtrlRef.current.update(0.16, {
-      moveX: dx,
-      moveZ: dz,
-      sprint: false,
-      jump: false,
-      interact: false,
-    });
-    const pos = playerCtrlRef.current.getPosition();
-    setPlayerPos(pos);
-    domainRef.current?.updatePlayerPosition(activeWorld, pos);
-  }
-
-  function handleCompleteChallengeType(chType: ChallengeType) {
-    const targetCountry: CountryCode = activeWorld === 'HUB' ? 'FR' : activeWorld;
-    const dom = domainRef.current!;
-
-    if (chType === 'gather') {
-      dom.addItem(`${targetCountry.toLowerCase()}:ingredient_primary`, 2);
-      soundRef.current?.playCue('pickup');
-    } else if (chType === 'trade') {
-      dom.addItem(`${targetCountry.toLowerCase()}:artisan_spice`, 1);
-      soundRef.current?.playCue('pickup');
-    } else if (chType === 'build') {
-      soundRef.current?.playCue('build');
-    } else if (chType === 'cook') {
-      soundRef.current?.playCue('cook');
-    }
-
-    const res = dom.completeChallenge(targetCountry, chType);
-
-    // Ensure v0.1 stamp persistence in localStorage (`mv.stamps`) is also updated when all 5 finish
-    if (res.chapterCompleted) {
-      const existing = loadStamps().find((r) => r.country === targetCountry && r.chapter === 1);
-      const code = existing?.code ?? res.stampCode ?? make(targetCountry, 1);
-      const saved = existing !== undefined || saveStamp(code);
-      dom.getState().stamps[targetCountry] = code;
-      soundRef.current?.playCue('celebrate');
-      setNotice(
-        saved
-          ? t('play.stampSaved', 'Your souvenir stamp is saved on this device.')
-          : t('play.stampUnsaved', 'Your stamp is ready. Device storage is unavailable; copy the code to keep it.')
+    if (res.chapterCompleted || updatedCompleted.length >= 5) {
+      const existing = loadStamps().find((r) => r.country === activeCountryCode && r.chapter === 1);
+      const code = existing?.code ?? res.stampCode ?? make(activeCountryCode, 1);
+      saveStamp(code);
+      dom.getState().stamps[activeCountryCode] = code;
+      setCompletionFeedback(
+        `All 5 cultural quest acts in ${countryExp.cityName} complete! Passport Stamp ${code} saved to your Web Passport.`
       );
     } else {
-      setNotice(`Completed ${chType.toUpperCase()} quest in ${COUNTRY_META[targetCountry].nameEn}! (+${res.tokensAwarded} Mira Tokens)`);
+      const nextAct = Math.min(5, updatedCompleted.length + 1) as 1 | 2 | 3 | 4 | 5;
+      setSelectedActNumber(nextAct);
+      setCompletionFeedback(
+        `Completed Act ${idx + 1}: ${targetChallenge.title_en} (${updatedCompleted.length}/5 acts complete).`
+      );
     }
-
     setSaveState({ ...dom.getState() });
-    setActiveChallengeModal(null);
   }
-
-  function handleCompleteNextSequentialChallenge() {
-    if (activeWorld === 'HUB') {
-      selectWorld('FR');
-      return;
-    }
-    const nextType =
-      (currentPackChallenge?.type as ChallengeType | undefined) ||
-      CHALLENGE_TYPES.find((c) => !completedTypes.includes(c));
-    if (nextType) {
-      handleCompleteChallengeType(nextType);
-    }
-  }
-
-  function handleTriggerInteract() {
-    if (activeWorld === 'HUB') {
-      selectWorld('FR');
-      return;
-    }
-    setDialogueOpen(true);
-  }
-
-  const meta = activeWorld === 'HUB' ? COUNTRY_META.FR : COUNTRY_META[activeWorld];
-  const nearestPrompt =
-    activeWorld === 'HUB'
-      ? {
-          id: 'portal:FR',
-          labelEn: 'Enter France Portal (Vieux Lyon)',
-          labelNative: 'فرنسا · ليون',
-          kind: 'portal',
-        }
-      : {
-          id: meta.mentorId,
-          labelEn: `Speak with ${meta.mentorName} at ${meta.landmarkName}`,
-          labelNative: meta.nameNative,
-          kind: 'npc',
-        };
-
-  const dialogueNode: DialogueNodeSpec | null = dialogueOpen
-    ? {
-        nodeId: `dlg:${activeCountryCode}:mentor`,
-        speakerId: meta.mentorId,
-        speakerName: meta.mentorName,
-        portraitId: `portrait:${activeCountryCode}:mentor`,
-        emotion: 'warm',
-        gestureClip: 'talk_gesture',
-        textNative: `${meta.nameNative} · ${meta.landmarkName}`,
-        textTranslit: `${meta.regionName} — ${meta.signatureDish}`,
-        textEn: `Welcome to ${meta.landmarkName} in ${meta.regionName}! Together we will restore our neighborhood heritage and prepare ${meta.signatureDish}.`,
-        choices: CHALLENGE_TYPES.map((ch) => ({
-          choiceId: ch,
-          labelEn: `Start ${ch.toUpperCase()} Quest`,
-          nextNodeId: ch,
-          triggersObjectiveId: ch,
-        })),
-      }
-    : null;
 
   return (
-    <div dir={dir} style={{ background: '#0B1325' }}>
-      <RobloxLaunchBanner countryCode={activeCountryCode} />
-      <div
-        data-testid="play-3d-viewport"
-        style={{
-          position: 'relative',
-          width: '100%',
-          height: 'calc(100vh - 54px)',
-          minHeight: '640px',
-          overflow: 'hidden',
-          background: '#0F172A',
-          color: '#FFF8EE',
-          userSelect: 'none',
-        }}
-      >
-      {/* Stylized 3D Storybook Perspective Scene Backdrop (Always visible under WebGL canvas & in headless software mode) */}
-      <svg
-        viewBox="0 0 1600 900"
-        preserveAspectRatio="xMidYMid slice"
-        aria-hidden="true"
-        style={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: 1,
-          pointerEvents: 'none',
-        }}
-      >
-        <defs>
-          <linearGradient id="skyGrad3D" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor={activeWorld === 'HUB' ? '#1E3A8A' : meta.primaryColorHex} />
-            <stop offset="52%" stopColor="#3B82F6" />
-            <stop offset="100%" stopColor="#FDE68A" />
-          </linearGradient>
-          <radialGradient id="plazaFloorGrad" cx="50%" cy="65%" r="60%">
-            <stop offset="0%" stopColor="#E9C46A" stopOpacity="0.92" />
-            <stop offset="55%" stopColor="#8D7B68" stopOpacity="0.95" />
-            <stop offset="100%" stopColor="#1E293B" stopOpacity="1" />
-          </radialGradient>
-        </defs>
+    <div
+      data-testid="v13-platform-launch-companion"
+      style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(180deg, #091224 0%, #0F172A 48%, #091224 100%)',
+        color: '#FFF8EE',
+        padding: '28px clamp(16px, 4vw, 48px) 64px',
+      }}
+    >
+      <div style={{ maxWidth: '1220px', margin: '0 auto' }}>
+        {/* Header & Single Destination Selector (Ordered LB, IQ, EG, FR, KR) */}
+        <header style={{ marginBottom: '20px' }}>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'flex-start',
+              flexWrap: 'wrap',
+              gap: '16px',
+              marginBottom: '16px',
+            }}
+          >
+            <div>
+              <span
+                style={{
+                  display: 'inline-block',
+                  background: 'rgba(244, 162, 97, 0.16)',
+                  border: '1px solid rgba(244, 162, 97, 0.5)',
+                  color: '#F4A261',
+                  padding: '4px 12px',
+                  borderRadius: '999px',
+                  fontSize: '12px',
+                  fontWeight: 800,
+                  marginBottom: '8px',
+                }}
+              >
+                Platform Launch &amp; Cultural Quest Companion · Destination #{countryExp.orderIndex} of 5
+              </span>
+              <h1
+                style={{
+                  margin: '0 0 6px 0',
+                  fontFamily: 'Georgia, serif',
+                  fontSize: 'clamp(26px, 3.8vw, 40px)',
+                }}
+              >
+                {countryExp.countryNameEn}: {countryExp.cityName} ({countryExp.countryNameNative})
+              </h1>
+              <p style={{ margin: 0, color: '#CBD5E1', fontSize: '15px', maxWidth: '760px', lineHeight: 1.55 }}>
+                {countryExp.heroTagline} — Launch the native social adventure on <strong>Roblox</strong>, import the{' '}
+                <strong>Minecraft Bedrock</strong> building companion, or complete the 5 illustrated cultural quest acts right here to earn your Web Passport stamp.
+              </p>
+            </div>
 
-        {/* Atmospheric 3D Sky Dome & Sun */}
-        <rect width="1600" height="540" fill="url(#skyGrad3D)" />
-        <circle cx="1220" cy="175" r="88" fill="#FFF3B0" opacity="0.88" />
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+              <Link
+                to={`/explore/${activeCountryCode}`}
+                style={{
+                  background: 'rgba(30, 41, 59, 0.9)',
+                  border: '1px solid rgba(244, 162, 97, 0.55)',
+                  color: '#FFE29F',
+                  textDecoration: 'none',
+                  padding: '10px 16px',
+                  borderRadius: '999px',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                }}
+              >
+                📖 Country Encyclopedia ({countryExp.cityName})
+              </Link>
+              <Link
+                to="/atlas"
+                style={{
+                  background: 'rgba(30, 41, 59, 0.9)',
+                  border: '1px solid rgba(96, 165, 250, 0.55)',
+                  color: '#93C5FD',
+                  textDecoration: 'none',
+                  padding: '10px 16px',
+                  borderRadius: '999px',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                }}
+              >
+                🗺️ Interactive World Atlas
+              </Link>
+            </div>
+          </div>
 
-        {/* Distant Hills / Horizon Silhouette */}
-        <path
-          d="M0,520 Q260,410 540,485 T1080,455 T1600,505 L1600,560 L0,560 Z"
-          fill="#1E293B"
-          opacity="0.72"
-        />
-
-        {/* 3D Perspective Cobblestone Ground Plane & Promenade */}
-        <polygon points="0,530 1600,530 1600,900 0,900" fill="url(#plazaFloorGrad)" />
-        <ellipse cx="800" cy="710" rx="520" ry="135" fill="#F4F1DE" opacity="0.28" stroke="#F4A261" strokeWidth="3" />
-        <line x1="800" y1="530" x2="220" y2="900" stroke="#475569" strokeWidth="2" opacity="0.35" />
-        <line x1="800" y1="530" x2="1380" y2="900" stroke="#475569" strokeWidth="2" opacity="0.35" />
-
-        {activeWorld === 'HUB' ? (
-          /* 3D World Hub: Central Compass Fountain + 5 Glowing Cultural Portal Arches */
-          <g>
-            {/* Central Compass Fountain */}
-            <ellipse cx="800" cy="685" rx="145" ry="42" fill="#2A9D8F" stroke="#FFF8EE" strokeWidth="4" />
-            <polygon points="775,680 800,485 825,680" fill="#F4A261" stroke="#FFF8EE" strokeWidth="3" />
-            <circle cx="800" cy="475" r="22" fill="#FFE29F" />
-
-            {/* 5 Portal Arches in Semi-Circle */}
-            {COUNTRIES.map((cc, idx) => {
-              const cMeta = COUNTRY_META[cc];
-              const cx = 250 + idx * 275;
-              const cy = idx % 2 === 0 ? 545 : 510;
+          {/* Single Destination Switcher (Ordered 1..5: LB, IQ, EG, FR, KR) */}
+          <nav
+            aria-label="Select Cultural Destination"
+            data-testid="play-destination-selector"
+            style={{
+              display: 'flex',
+              gap: '10px',
+              flexWrap: 'wrap',
+              background: 'rgba(15, 23, 42, 0.85)',
+              padding: '10px 14px',
+              borderRadius: '16px',
+              border: '1px solid rgba(255, 248, 238, 0.14)',
+            }}
+          >
+            {V13_COUNTRIES_ORDERED.map((cc) => {
+              const exp = V13_COUNTRY_EXPERIENCES[cc];
+              const isSelected = cc === activeCountryCode;
               return (
-                <g key={cc} transform={`translate(${cx}, ${cy})`}>
-                  <rect x="-58" y="-150" width="24" height="150" rx="4" fill={cMeta.primaryColorHex} stroke="#FFF8EE" strokeWidth="2" />
-                  <rect x="34" y="-150" width="24" height="150" rx="4" fill={cMeta.primaryColorHex} stroke="#FFF8EE" strokeWidth="2" />
-                  <rect x="-70" y="-174" width="140" height="30" rx="8" fill={cMeta.accentColorHex} stroke="#FFF8EE" strokeWidth="2" />
-                  <ellipse cx="0" cy="-75" rx="32" ry="62" fill={cMeta.accentColorHex} opacity="0.55" />
-                  <text x="0" y="-154" textAnchor="middle" fill="#0F172A" fontSize="14" fontWeight="900">
-                    {cMeta.nameEn.toUpperCase()}
-                  </text>
-                </g>
+                <button
+                  key={cc}
+                  type="button"
+                  data-testid={`select-play-country-${cc}`}
+                  onClick={() => navigate(`/play/${cc}`)}
+                  style={{
+                    background: isSelected ? '#F4A261' : 'rgba(30, 41, 59, 0.9)',
+                    color: isSelected ? '#0B1325' : '#FFF8EE',
+                    border: isSelected
+                      ? '1px solid #F4A261'
+                      : '1px solid rgba(255, 248, 238, 0.2)',
+                    borderRadius: '999px',
+                    padding: '8px 16px',
+                    fontSize: '13px',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                  }}
+                >
+                  {exp.orderIndex}. {exp.countryNameEn}: {exp.cityName}
+                </button>
               );
             })}
-          </g>
-        ) : (
-          /* Country 3D Town Plaza: Flanking Townhouses, Restorable Landmark & Animated NPCs */
-          <g>
-            {/* Left Townhouse Row */}
-            <g transform="translate(210, 320)">
-              <rect x="0" y="30" width="220" height="210" rx="6" fill={meta.primaryColorHex} stroke="#FFF8EE" strokeWidth="2" />
-              <polygon points="-15,30 110,-45 235,30" fill="#E76F51" />
-              <rect x="35" y="70" width="48" height="58" rx="4" fill="#FFE29F" />
-              <rect x="130" y="70" width="48" height="58" rx="4" fill="#FFE29F" />
-              <rect x="82" y="150" width="56" height="90" rx="6" fill="#451A03" />
-            </g>
+          </nav>
+        </header>
 
-            {/* Right Market Arcade & Townhouse */}
-            <g transform="translate(1160, 330)">
-              <rect x="0" y="20" width="230" height="210" rx="6" fill="#E9C46A" stroke="#0F172A" strokeWidth="2" />
-              <polygon points="-15,20 115,-50 245,20" fill={meta.primaryColorHex} />
-              <rect x="28" y="135" width="175" height="95" rx="8" fill={meta.accentColorHex} />
-              <text x="115" y="110" textAnchor="middle" fill="#0F172A" fontSize="15" fontWeight="800">
-                MARKET BAZAAR
-              </text>
-            </g>
+        {/* Official Roblox Launch Banner */}
+        <RobloxLaunchBanner countryCode={activeCountryCode} />
 
-            {/* Centerpiece Cultural Landmark (Visualizes 3-Stage Restoration!) */}
-            <g transform="translate(610, 235)">
-              <rect
-                x="0"
-                y="65"
-                width="380"
-                height="245"
-                rx="10"
-                fill={restoredStage >= 1 ? '#FFF8EE' : '#64748B'}
-                stroke={meta.primaryColorHex}
-                strokeWidth="5"
+        {/* Dual Native Platform Cards: Roblox Social Adventure + Minecraft Bedrock Creative Adventure */}
+        <section
+          aria-label="Verified Native Game Platforms"
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(310px, 1fr))',
+            gap: '20px',
+            margin: '20px 0 28px',
+          }}
+        >
+          {/* Roblox Card */}
+          <article
+            data-testid="platform-card-roblox"
+            style={{
+              background: 'rgba(15, 23, 42, 0.92)',
+              border: '1px solid rgba(0, 176, 111, 0.45)',
+              borderRadius: '18px',
+              overflow: 'hidden',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div style={{ aspectRatio: '16 / 9', overflow: 'hidden', position: 'relative' }}>
+              <img
+                src={
+                  activeCountryCode === 'LB'
+                    ? '/art/p0/roblox-coop-byblos.jpg'
+                    : countryExp.coverArtUrl
+                }
+                alt={`${countryExp.cityName} Roblox Social Adventure`}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
-              <polygon
-                points="-25,65 190,-55 405,65"
-                fill={restoredStage >= 2 ? meta.primaryColorHex : '#475569'}
-                stroke="#FFF8EE"
-                strokeWidth="3"
+              <span
+                style={{
+                  position: 'absolute',
+                  top: '12px',
+                  left: '12px',
+                  background: 'rgba(5, 46, 22, 0.92)',
+                  border: '1px solid #00B06F',
+                  color: '#6EE7B7',
+                  padding: '4px 10px',
+                  borderRadius: '999px',
+                  fontSize: '11px',
+                  fontWeight: 800,
+                }}
+              >
+                {countryExp.platformInfo.robloxPlayableNow
+                  ? 'RC1 Flagship · Playable on Roblox'
+                  : 'RC3 Roblox World Planned'}
+              </span>
+            </div>
+            <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <h2 style={{ margin: '0 0 8px 0', fontSize: '20px', color: '#6EE7B7', fontFamily: 'Georgia, serif' }}>
+                  Roblox: Social Adventure ({countryExp.cityName})
+                </h2>
+                <p style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#E2E8F0', lineHeight: 1.55 }}>
+                  {countryExp.platformInfo.robloxSummary}
+                </p>
+                <ul style={{ margin: '0 0 16px 0', paddingLeft: '18px', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.65 }}>
+                  <li><strong>Mentor NPC:</strong> {meta.mentorName}</li>
+                  <li><strong>Platform Requirements:</strong> Free Roblox app + account on Windows, macOS, iOS, Android, or Console</li>
+                  <li><strong>Progression:</strong> Saved natively in Roblox DataStoreService (independent of browser storage)</li>
+                </ul>
+              </div>
+              <a
+                href="https://www.roblox.com/download"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-block',
+                  textAlign: 'center',
+                  background: '#00B06F',
+                  color: '#052E16',
+                  textDecoration: 'none',
+                  padding: '11px 18px',
+                  borderRadius: '999px',
+                  fontWeight: 900,
+                  fontSize: '14px',
+                }}
+              >
+                ▶ Open in Roblox App ({countryExp.countryNameEn})
+              </a>
+            </div>
+          </article>
+
+          {/* Minecraft Bedrock Card */}
+          <article
+            data-testid="platform-card-minecraft"
+            style={{
+              background: 'rgba(15, 23, 42, 0.92)',
+              border: '1px solid rgba(245, 158, 11, 0.45)',
+              borderRadius: '18px',
+              overflow: 'hidden',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <div style={{ aspectRatio: '16 / 9', overflow: 'hidden', position: 'relative' }}>
+              <img
+                src="/art/p0/minecraft-bedrock-byblos.jpg"
+                alt={`${countryExp.cityName} Minecraft Bedrock Creative Companion`}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
-              <rect
-                x="45"
-                y="100"
-                width="75"
-                height="75"
-                rx="6"
-                fill={restoredStage >= 3 ? '#FDE68A' : '#334155'}
-                stroke={meta.accentColorHex}
-                strokeWidth="4"
-              />
-              <rect
-                x="260"
-                y="100"
-                width="75"
-                height="75"
-                rx="6"
-                fill={restoredStage >= 3 ? '#FDE68A' : '#334155'}
-                stroke={meta.accentColorHex}
-                strokeWidth="4"
-              />
-              <rect x="145" y="185" width="90" height="125" rx="12" fill={meta.primaryColorHex} stroke="#F4A261" strokeWidth="3" />
-              <rect x="65" y="45" width="250" height="36" rx="8" fill="#0F172A" stroke="#F4A261" strokeWidth="2" />
-              <text x="190" y="69" textAnchor="middle" fill="#FFE29F" fontSize="16" fontWeight="900">
-                {meta.landmarkName.toUpperCase()} {restoredStage >= 3 ? '★ RESTORED' : `(STAGE ${restoredStage}/3)`}
-              </text>
-            </g>
+              <span
+                style={{
+                  position: 'absolute',
+                  top: '12px',
+                  left: '12px',
+                  background: 'rgba(69, 26, 3, 0.92)',
+                  border: '1px solid #F59E0B',
+                  color: '#FDE68A',
+                  padding: '4px 10px',
+                  borderRadius: '999px',
+                  fontSize: '11px',
+                  fontWeight: 800,
+                }}
+              >
+                {countryExp.platformInfo.minecraftAddonReady
+                  ? 'RC2 Companion · .mcaddon Ready'
+                  : 'Planned Companion'}
+              </span>
+            </div>
+            <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div>
+                <h2 style={{ margin: '0 0 8px 0', fontSize: '20px', color: '#FDE68A', fontFamily: 'Georgia, serif' }}>
+                  Minecraft Bedrock: Creative Companion
+                </h2>
+                <p style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#E2E8F0', lineHeight: 1.55 }}>
+                  {countryExp.platformInfo.minecraftSummary}
+                </p>
+                <ul style={{ margin: '0 0 16px 0', paddingLeft: '18px', fontSize: '13px', color: '#CBD5E1', lineHeight: 1.65 }}>
+                  <li><strong>Add-On Structure:</strong> Includes <code>{activeCountryCode.toLowerCase()}</code> cultural structure template inside <code>miraverse.mcaddon</code></li>
+                  <li><strong>Platform Requirements:</strong> Minecraft Bedrock Edition v1.21.50+</li>
+                  <li><strong>Progression:</strong> Saved locally inside your Minecraft Bedrock world</li>
+                </ul>
+              </div>
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <a
+                  href="/downloads/miraverse.mcaddon"
+                  style={{
+                    flex: 1,
+                    textAlign: 'center',
+                    background: '#F59E0B',
+                    color: '#0B1325',
+                    textDecoration: 'none',
+                    padding: '11px 16px',
+                    borderRadius: '999px',
+                    fontWeight: 900,
+                    fontSize: '14px',
+                  }}
+                >
+                  ⬇ Download .mcaddon
+                </a>
+                <Link
+                  to="/minecraft"
+                  style={{
+                    textAlign: 'center',
+                    background: 'rgba(30, 41, 59, 0.9)',
+                    border: '1px solid rgba(245, 158, 11, 0.5)',
+                    color: '#FDE68A',
+                    textDecoration: 'none',
+                    padding: '11px 16px',
+                    borderRadius: '999px',
+                    fontWeight: 800,
+                    fontSize: '14px',
+                  }}
+                >
+                  Setup Guide
+                </Link>
+              </div>
+            </div>
+          </article>
+        </section>
 
-            {/* Mentor NPC Character */}
-            <g transform="translate(565, 595)">
-              <ellipse cx="0" cy="68" rx="34" ry="12" fill="#000" opacity="0.35" />
-              <rect x="-22" y="10" width="44" height="58" rx="16" fill={meta.primaryColorHex} stroke="#FFF8EE" strokeWidth="2" />
-              <circle cx="0" cy="-10" r="20" fill="#E0AC69" stroke="#FFF8EE" strokeWidth="2" />
-              <rect x="-65" y="-52" width="130" height="24" rx="12" fill="#0F172A" stroke="#F4A261" strokeWidth="1.5" />
-              <text x="0" y="-36" textAnchor="middle" fill="#FFE29F" fontSize="12" fontWeight="800">
-                ★ {meta.mentorName}
-              </text>
-            </g>
+        {/* Interactive Web Cultural Quest Companion & Illustrated Quest Map */}
+        <section
+          aria-label="Interactive Web Cultural Quest Companion"
+          data-testid="web-quest-companion-section"
+          style={{
+            background: 'rgba(15, 23, 42, 0.94)',
+            border: '1px solid rgba(244, 162, 97, 0.45)',
+            borderRadius: '22px',
+            padding: 'clamp(18px, 3vw, 28px)',
+          }}
+        >
+          {/* Progress Bar & Quick-Complete Challenge Action for E2E & Web Companion */}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              gap: '16px',
+              paddingBottom: '18px',
+              marginBottom: '20px',
+              borderBottom: '1px solid rgba(255, 248, 238, 0.14)',
+            }}
+          >
+            <div>
+              <span
+                id="chapter-progress"
+                data-testid="chapter-progress"
+                style={{
+                  display: 'inline-block',
+                  background: 'rgba(244, 162, 97, 0.2)',
+                  border: '1px solid #F4A261',
+                  color: '#FFE29F',
+                  padding: '5px 14px',
+                  borderRadius: '999px',
+                  fontSize: '13px',
+                  fontWeight: 800,
+                  marginBottom: '6px',
+                }}
+              >
+                Web Quest Companion Progress: {completedTypes.length}/5 Acts Completed ({countryExp.cityName})
+              </span>
+              <h2 style={{ margin: 0, fontSize: 'clamp(20px, 2.8vw, 28px)', fontFamily: 'Georgia, serif' }}>
+                Illustrated Quest Map &amp; 5-Act Cultural Expedition
+              </h2>
+            </div>
 
-            {/* Market Vendor NPC Character */}
-            <g transform="translate(1045, 610)">
-              <ellipse cx="0" cy="64" rx="32" ry="11" fill="#000" opacity="0.35" />
-              <rect x="-20" y="10" width="40" height="54" rx="14" fill="#2A9D8F" stroke="#FFF8EE" strokeWidth="2" />
-              <circle cx="0" cy="-8" r="18" fill="#C68642" stroke="#FFF8EE" strokeWidth="2" />
-              <rect x="-58" y="-48" width="116" height="22" rx="10" fill="#0F172A" />
-              <text x="0" y="-33" textAnchor="middle" fill="#E2E8F0" fontSize="11" fontWeight="700">
-                Market Vendor
-              </text>
-            </g>
-          </g>
-        )}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+              {currentPackChallenge && completedTypes.length < 5 && (
+                <button
+                  type="button"
+                  data-testid="quick-complete-challenge-btn"
+                  onClick={() => void completeQuestAct(currentChallengeIdx)}
+                  style={{
+                    background: 'linear-gradient(135deg, #F4A261 0%, #E76F51 100%)',
+                    color: '#0B1325',
+                    border: 'none',
+                    borderRadius: '999px',
+                    padding: '12px 22px',
+                    fontWeight: 900,
+                    fontSize: '14px',
+                    cursor: 'pointer',
+                    boxShadow: '0 6px 18px rgba(231, 111, 81, 0.35)',
+                  }}
+                >
+                  Complete challenge: {currentPackChallenge.title_en}
+                </button>
+              )}
 
-        {/* Hero Character (Mira) in 3rd-Person Foreground (moves with playerPos) */}
-        <g transform={`translate(${800 + playerPos[0] * 18}, ${725 - (playerPos[2] + 6) * 10})`}>
-          <ellipse cx="0" cy="75" rx="42" ry="15" fill="#0F172A" opacity="0.5" />
-          <path d="M-28,15 L28,15 L36,72 L-36,72 Z" fill="#2A6F97" stroke="#FFF8EE" strokeWidth="2.5" />
-          <ellipse cx="0" cy="18" rx="28" ry="10" fill="#F4A261" />
-          <circle cx="0" cy="-8" r="22" fill="#D99B78" stroke="#FFF8EE" strokeWidth="2" />
-          <path d="M-22,-12 Q0,-36 22,-12 Z" fill="#2B2118" />
-          <rect x="-48" y="-54" width="96" height="22" rx="11" fill="#F4A261" />
-          <text x="0" y="-39" textAnchor="middle" fill="#0F172A" fontSize="12" fontWeight="900">
-            MIRA (HERO)
-          </text>
-        </g>
-      </svg>
-
-      {/* Live Babylon.js 3D WebGL Canvas */}
-      <canvas
-        ref={canvasRef}
-        data-testid="babylon-3d-canvas"
-        aria-hidden="true"
-        tabIndex={-1}
-        style={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: 2,
-          opacity: rendererMode === 'FallbackCanvas2D' ? 0.02 : 0.88,
-        }}
-      />
-
-      {/* Edge-Aligned 3D Adventure HUD */}
-      <AdventureHud
-        activeWorld={activeWorld}
-        playerPosition={playerPos}
-        completedChallenges={completedTypes}
-        activeObjectiveTitle={
-          activeWorld === 'HUB'
-            ? '3D World Hub: Choose a Cultural Portal'
-            : currentPackChallenge
-              ? `${meta.nameEn}: ${currentPackChallenge.title_en}`
-              : `${meta.nameEn}: Chapter Complete!`
-        }
-        activeObjectiveDesc={
-          activeWorld === 'HUB'
-            ? 'Walk Mira into any glowing cultural portal arch or select a destination below.'
-            : currentPackChallenge
-              ? currentPackChallenge.goal_en
-              : `All 5 cultural quests in ${meta.regionName} are complete! Your Souvenir Stamp is ready.`
-        }
-        inventory={saveState.inventory}
-        guestMiraTokens={saveState.guestMiraTokens}
-        nearestPrompt={nearestPrompt}
-        onTriggerInteract={handleTriggerInteract}
-        onSelectChallengeStep={(ch) => setActiveChallengeModal(ch)}
-        onReturnToHub={() => selectWorld('HUB')}
-        onOpenPassport={() => navigate('/passport')}
-        onOpenSettings={() => setSettingsOpen(true)}
-        onOpenStorybook={() => navigate(`/story/${meta.storyLang}`)}
-      />
-
-      {/* World Hub Portal Ribbon when in HUB */}
-      <HubPortalRibbon
-        activeWorld={activeWorld}
-        stamps={saveState.stamps}
-        onEnterCountryPortal={(cc) => selectWorld(cc)}
-      />
-
-      {/* Accessible Diegetic Quest Dock (Supports Keyboard, Screen Readers & E2E Challenge Progression) */}
-      <aside
-        aria-label={t('play.progress', 'Chapter progress')}
-        data-testid="diegetic-quest-dock"
-        style={{
-          position: 'absolute',
-          bottom: '16px',
-          left: '140px',
-          zIndex: 18,
-          background: 'rgba(15, 23, 42, 0.9)',
-          backdropFilter: 'blur(8px)',
-          border: '1px solid rgba(244, 162, 97, 0.55)',
-          borderRadius: '14px',
-          padding: '10px 14px',
-          maxWidth: '340px',
-          boxShadow: '0 8px 20px rgba(0,0,0,0.45)',
-        }}
-      >
-        <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap', marginBottom: '6px' }} role="group" aria-label={t('play.countries', 'Choose a country')}>
-          {COUNTRIES.map((cc) => (
-            <button
-              key={cc}
-              type="button"
-              aria-pressed={activeWorld === cc}
-              data-testid={`switch-world-${cc}`}
-              onClick={() => selectWorld(cc)}
-              style={{
-                padding: '3px 8px',
-                fontSize: '11px',
-                fontWeight: 700,
-                borderRadius: '6px',
-                border: activeWorld === cc ? '2px solid #F4A261' : '1px solid rgba(255,255,255,0.2)',
-                background: activeWorld === cc ? COUNTRY_META[cc].primaryColorHex : 'rgba(255,255,255,0.08)',
-                color: '#FFF8EE',
-                cursor: 'pointer',
-              }}
-            >
-              {COUNTRY_META[cc].nameEn}
-            </button>
-          ))}
-        </div>
-
-        <label htmlFor="chapter-progress" style={{ fontSize: '12px', fontWeight: 700, color: '#FFE29F', display: 'block' }}>
-          {completedTypes.length} / {challenges.length || 5} {t('play.completed', 'challenges complete')}
-        </label>
-        <progress
-          id="chapter-progress"
-          value={completedTypes.length}
-          max={challenges.length || 5}
-          style={{ width: '100%', height: '8px', margin: '4px 0 8px 0' }}
-        />
-
-        {currentPackChallenge ? (
-          <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-            <button
-              type="button"
-              data-testid="quick-complete-challenge-btn"
-              onClick={handleCompleteNextSequentialChallenge}
-              style={{
-                background: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
-                color: '#06281E',
-                fontWeight: 800,
-                fontSize: '12px',
-                border: 'none',
-                borderRadius: '8px',
-                padding: '7px 12px',
-                cursor: 'pointer',
-              }}
-            >
-              {t('play.completeChallenge', 'Complete challenge')}: {currentPackChallenge.title_en}
-            </button>
-            <button
-              type="button"
-              data-testid="open-3d-station-btn"
-              onClick={() => setActiveChallengeModal(currentPackChallenge.type as ChallengeType)}
-              style={{
-                background: 'rgba(255,255,255,0.14)',
-                color: '#FFF8EE',
-                fontWeight: 700,
-                fontSize: '11px',
-                border: '1px solid rgba(255,255,255,0.3)',
-                borderRadius: '8px',
-                padding: '6px 10px',
-                cursor: 'pointer',
-              }}
-            >
-              3D Station
-            </button>
+              {currentStamp && (
+                <div
+                  style={{
+                    background: 'rgba(0, 176, 111, 0.18)',
+                    border: '1px solid #00B06F',
+                    borderRadius: '14px',
+                    padding: '10px 16px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    flexWrap: 'wrap',
+                  }}
+                >
+                  <span style={{ fontSize: '13px', color: '#6EE7B7', fontWeight: 700 }}>
+                    Issued Passport Stamp:
+                  </span>
+                  <output
+                    data-testid="issued-stamp-output"
+                    style={{
+                      fontFamily: 'monospace',
+                      fontWeight: 900,
+                      fontSize: '14px',
+                      color: '#FFF8EE',
+                      background: 'rgba(5, 46, 22, 0.85)',
+                      padding: '4px 10px',
+                      borderRadius: '8px',
+                    }}
+                  >
+                    {currentStamp}
+                  </output>
+                  <Link
+                    to="/passport"
+                    style={{ color: '#FFE29F', fontSize: '13px', fontWeight: 800 }}
+                  >
+                    Open Passport →
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
-        ) : (
-          <p style={{ margin: '4px 0', fontSize: '12px', color: '#34D399', fontWeight: 700 }}>
-            {t('play.chapterComplete', 'Chapter complete!')}
-          </p>
-        )}
 
-        {currentStamp && (
-          <p style={{ margin: '6px 0 0 0', fontSize: '12px', color: '#FFE29F' }}>
-            {t('play.souvenir', 'Souvenir stamp')}: <output data-testid="issued-stamp-output">{currentStamp}</output>
-          </p>
-        )}
-        {notice && (
-          <p role="status" style={{ margin: '4px 0 0 0', fontSize: '11px', color: '#CBD5E1' }}>
-            {notice}
-          </p>
-        )}
-      </aside>
+          {completionFeedback && (
+            <div
+              role="status"
+              style={{
+                background: 'rgba(16, 185, 129, 0.16)',
+                border: '1px solid rgba(16, 185, 129, 0.5)',
+                color: '#A7F3D0',
+                padding: '12px 16px',
+                borderRadius: '12px',
+                marginBottom: '18px',
+                fontSize: '14px',
+                fontWeight: 700,
+              }}
+            >
+              {completionFeedback}
+            </div>
+          )}
 
-      {/* Mobile Dual-Thumb Touch Controls */}
-      <MobileTouchControls
-        onMoveInput={handleMoveStep}
-        onActionPress={handleTriggerInteract}
-      />
+          {/* Age-Tier Difficulty Track Selector (5-7, 8-10, 11-13, 14-17) */}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              gap: '12px',
+              marginBottom: '18px',
+            }}
+          >
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
+              <span style={{ fontSize: '13px', color: '#94A3B8', fontWeight: 700 }}>
+                Age-Adapted Learning Track:
+              </span>
+              {V13_AGE_TIERS.map((tier) => {
+                const active = selectedAgeTier === tier.id;
+                return (
+                  <button
+                    key={tier.id}
+                    type="button"
+                    data-testid={`play-age-tier-${tier.id}`}
+                    onClick={() => setSelectedAgeTier(tier.id)}
+                    style={{
+                      background: active ? '#38BDF8' : 'rgba(30, 41, 59, 0.9)',
+                      color: active ? '#082F49' : '#E2E8F0',
+                      border: active ? '1px solid #38BDF8' : '1px solid rgba(148, 163, 184, 0.35)',
+                      borderRadius: '999px',
+                      padding: '6px 14px',
+                      fontSize: '12px',
+                      fontWeight: 800,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {tier.label}
+                  </button>
+                );
+              })}
+            </div>
 
-      {/* NPC Typewriter Dialogue Panel */}
-      <DialoguePanel
-        node={dialogueNode}
-        lang={meta.storyLang}
-        reducedMotion={saveState.settings.reducedMotion}
-        onSelectChoice={(choiceId) => {
-          setDialogueOpen(false);
-          setActiveChallengeModal(choiceId as ChallengeType);
-        }}
-        onClose={() => setDialogueOpen(false)}
-      />
+            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+              {countryQuests.map((q) => {
+                const isDone = completedTypes.length >= q.actNumber;
+                const isSelected = selectedActNumber === q.actNumber;
+                return (
+                  <button
+                    key={q.questId}
+                    type="button"
+                    data-testid={`play-select-act-${q.actNumber}`}
+                    onClick={() => setSelectedActNumber(q.actNumber)}
+                    style={{
+                      background: isSelected
+                        ? '#F4A261'
+                        : isDone
+                          ? 'rgba(0, 176, 111, 0.22)'
+                          : 'rgba(30, 41, 59, 0.9)',
+                      color: isSelected ? '#0B1325' : isDone ? '#6EE7B7' : '#FFF8EE',
+                      border: isSelected
+                        ? '1px solid #F4A261'
+                        : isDone
+                          ? '1px solid #00B06F'
+                          : '1px solid rgba(255, 248, 238, 0.2)',
+                      borderRadius: '999px',
+                      padding: '7px 14px',
+                      fontSize: '12px',
+                      fontWeight: 800,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    {isDone ? '✓ ' : ''}Act {q.actNumber}: {q.challengeType.toUpperCase()}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
-      {/* Diegetic 3D Challenge Station Overlay */}
-      <ChallengeStationOverlay
-        country={activeCountryCode}
-        activeChallenge={activeChallengeModal}
-        objective={null}
-        isCompleted={activeChallengeModal ? completedTypes.includes(activeChallengeModal) : false}
-        restorationStage={restoredStage}
-        onAdvanceRestoration={(stage) => {
-          domainRef.current!.getState().restoredBuildings[activeCountryCode] = stage;
-          setSaveState({ ...domainRef.current!.getState() });
-        }}
-        onCompleteChallenge={(ch) => handleCompleteChallengeType(ch)}
-        onClose={() => setActiveChallengeModal(null)}
-      />
+          {/* Illustrated Quest Map + Active Quest Stage Details */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gap: '22px',
+              alignItems: 'start',
+            }}
+          >
+            {/* Illustrated Bird's-Eye Quest Map with Waypoint Pins */}
+            <div>
+              <div
+                data-testid={`illustrated-quest-map-${activeCountryCode}`}
+                style={{
+                  position: 'relative',
+                  borderRadius: '18px',
+                  overflow: 'hidden',
+                  border: '2px solid rgba(244, 162, 97, 0.6)',
+                  aspectRatio: '16 / 9',
+                  background: '#091224',
+                }}
+              >
+                <img
+                  src={activeQuest.questMapImageUrl}
+                  alt={activeQuest.questMapZoneLabel}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+                {activeQuest.waypoints.map((wp) => (
+                  <div
+                    key={wp.waypointId}
+                    title={`${wp.label}: ${wp.detail}`}
+                    style={{
+                      position: 'absolute',
+                      left: `${wp.xPct}%`,
+                      top: `${wp.yPct}%`,
+                      transform: 'translate(-50%, -50%)',
+                      background:
+                        wp.kind === 'START'
+                          ? '#38BDF8'
+                          : wp.kind === 'NPC'
+                            ? '#F4A261'
+                            : '#10B981',
+                      color: '#0B1325',
+                      padding: '4px 9px',
+                      borderRadius: '999px',
+                      fontSize: '11px',
+                      fontWeight: 900,
+                      border: '2px solid #FFF8EE',
+                      boxShadow: '0 4px 12px rgba(0,0,0,0.65)',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    {wp.kind}: {wp.label}
+                  </div>
+                ))}
+              </div>
+              <p style={{ margin: '8px 0 0 0', fontSize: '12px', color: '#94A3B8' }}>
+                <strong>Illustrated Adventure Map ({activeQuest.questMapZoneLabel}):</strong> Fictional gameplay checkpoints for Act {activeQuest.actNumber}. Real-world WGS84 geographic coordinates are shown separately in the{' '}
+                <Link to="/atlas" style={{ color: '#93C5FD' }}>
+                  Geographic Atlas
+                </Link>
+                .
+              </p>
+            </div>
 
-      {/* Settings & Save Reset Modal */}
-      <SettingsModal
-        open={settingsOpen}
-        muted={saveState.settings.muted}
-        reducedMotion={saveState.settings.reducedMotion}
-        qualityTier={saveState.settings.qualityTier}
-        onUpdate={(patch) => {
-          domainRef.current?.updateSettings(patch);
-          if (typeof patch.muted === 'boolean' && soundRef.current) {
-            soundRef.current.muted = patch.muted;
-          }
-          setSaveState({ ...domainRef.current!.getState() });
-        }}
-        onResetSave={() => {
-          const fresh = domainRef.current!.resetSave();
-          setSaveState({ ...fresh });
-          setSettingsOpen(false);
-        }}
-        onClose={() => setSettingsOpen(false)}
-      />
+            {/* Active Quest Stage Card */}
+            <div
+              data-testid="active-quest-stage-card"
+              style={{
+                background: 'rgba(9, 18, 36, 0.88)',
+                border: '1px solid rgba(255, 248, 238, 0.16)',
+                borderRadius: '18px',
+                padding: '20px',
+              }}
+            >
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '10px' }}>
+                <span
+                  style={{
+                    background: 'rgba(244, 162, 97, 0.2)',
+                    border: '1px solid #F4A261',
+                    color: '#FFE29F',
+                    padding: '3px 10px',
+                    borderRadius: '999px',
+                    fontSize: '11px',
+                    fontWeight: 800,
+                  }}
+                >
+                  Act {activeQuest.actNumber} of 5 · Ages {selectedAgeTier}
+                </span>
+                <span
+                  style={{
+                    background: 'rgba(56, 189, 248, 0.16)',
+                    border: '1px solid #38BDF8',
+                    color: '#BAE6FD',
+                    padding: '3px 10px',
+                    borderRadius: '999px',
+                    fontSize: '11px',
+                    fontWeight: 800,
+                  }}
+                >
+                  {EPISTEMIC_BADGE_LABELS[activeQuest.epistemicClassification]}
+                </span>
+              </div>
+
+              <h3 style={{ margin: '0 0 6px 0', fontSize: '22px', fontFamily: 'Georgia, serif', color: '#FFF8EE' }}>
+                {activeQuest.titleEn} ({activeQuest.titleNative})
+              </h3>
+              <p style={{ margin: '0 0 12px 0', fontSize: '13px', color: '#F4A261', fontWeight: 700 }}>
+                Guided by {primaryNpc.name} — {primaryNpc.role}
+              </p>
+
+              <p style={{ margin: '0 0 14px 0', fontSize: '14px', color: '#E2E8F0', lineHeight: 1.6 }}>
+                {activeQuest.narrativeIntro}
+              </p>
+
+              <div
+                style={{
+                  background: 'rgba(30, 41, 59, 0.65)',
+                  borderRadius: '12px',
+                  padding: '12px 14px',
+                  marginBottom: '12px',
+                }}
+              >
+                <div style={{ fontSize: '12px', fontWeight: 800, color: '#93C5FD', marginBottom: '4px' }}>
+                  Activity &amp; Challenge ({activeStage.focusTitle})
+                </div>
+                <div style={{ fontSize: '13px', color: '#FFF8EE', lineHeight: 1.5 }}>
+                  {activeStage.guidedActivity} — {activeStage.challengePrompt}
+                </div>
+              </div>
+
+              <div
+                style={{
+                  background: 'rgba(30, 41, 59, 0.65)',
+                  borderRadius: '12px',
+                  padding: '12px 14px',
+                  marginBottom: '14px',
+                }}
+              >
+                <div style={{ fontSize: '12px', fontWeight: 800, color: '#FDE68A', marginBottom: '4px' }}>
+                  Cultural Knowledge &amp; Historical Reflection
+                </div>
+                <div style={{ fontSize: '13px', color: '#E2E8F0', lineHeight: 1.5 }}>
+                  {activeQuest.culturalKnowledgeSummary} ({activeStage.historicalReflection})
+                </div>
+              </div>
+
+              <div style={{ fontSize: '12px', color: '#CBD5E1', lineHeight: 1.6, marginBottom: '14px' }}>
+                <div>
+                  <strong>Reward Artifact:</strong> {activeQuest.rewardArtifactId} (+{activeQuest.rewardTokens} Mira Tokens)
+                </div>
+                <div>
+                  <strong>Roblox Mechanics:</strong> {activeQuest.robloxMechanics}
+                </div>
+                <div>
+                  <strong>Minecraft Mechanics:</strong> {activeQuest.minecraftMechanics}
+                </div>
+              </div>
+
+              <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                <Link
+                  to={`/quests/${activeQuest.questId}`}
+                  style={{
+                    background: 'rgba(56, 189, 248, 0.18)',
+                    border: '1px solid #38BDF8',
+                    color: '#BAE6FD',
+                    textDecoration: 'none',
+                    padding: '9px 16px',
+                    borderRadius: '999px',
+                    fontSize: '13px',
+                    fontWeight: 800,
+                  }}
+                >
+                  Open in Quest Encyclopedia →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

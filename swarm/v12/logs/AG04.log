@@ -1,0 +1,16 @@
+=== AGENT AG04 (Antigravity · W3) ===
+Timestamp: 2026-11-04T07:37:18.130Z
+Resolved Model: Gemini 4 Argon
+Runtime Environment: host_agy_orchestrator
+Branch: v12/AG04
+Agent Commit SHA: 0264536
+Integration Merge SHA: 23f2d40
+Owned Paths: art/v12/countries/IQ/library, apps/web/public/art/v12/IQ/library
+Modified Files (5): apps/web/public/art/v12/IQ/library/banu-musa-float-valve.svg, apps/web/public/art/v12/IQ/library/bayt-al-hikma-routing-map.svg, art/v12/countries/IQ/library/banu-musa-float-valve.svg, art/v12/countries/IQ/library/bayt-al-hikma-routing-map.svg, art/v12/countries/IQ/library/manifest.json
+Test Command: node -e "const fs=require('fs'); const s=fs.readFileSync('art/v12/countries/IQ/library/bayt-al-hikma-routing-map.svg','utf8'); if(!s.includes('not to geographic scale')) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: art/v12/countries/IQ/library/bayt-al-hikma-routing-map.svg, art/v12/countries/IQ/library/banu-musa-float-valve.svg
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE AG04 0264536 art/v12/countries/IQ/library/bayt-al-hikma-routing-map.svg

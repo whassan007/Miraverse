@@ -1,0 +1,16 @@
+=== AGENT DX15 (DGX Spark · W3) ===
+Timestamp: 2026-11-04T07:37:27.067Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: local_dgx_spark_gb10
+Branch: v12/DX15
+Agent Commit SHA: 2bf54b6
+Integration Merge SHA: 7e08466
+Owned Paths: content/v12/locales/ar-EG-IQ
+Modified Files (1): content/v12/locales/ar-EG-IQ/ar-EG-IQ-localization.json
+Test Command: node -e "const fs=require('fs'); const d=JSON.parse(fs.readFileSync('content/v12/locales/ar-EG-IQ/ar-EG-IQ-localization.json','utf8')); if(d.glossary_ar_IQ.length<5 || d.glossary_ar_EG.length<5) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: content/v12/locales/ar-EG-IQ/ar-EG-IQ-localization.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE DX15 2bf54b6 content/v12/locales/ar-EG-IQ/ar-EG-IQ-localization.json

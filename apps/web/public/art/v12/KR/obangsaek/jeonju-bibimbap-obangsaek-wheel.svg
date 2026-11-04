@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="kr-ob-title kr-ob-desc">
+  <title id="kr-ob-title">Jeonju Bibimbap Obangsaek Five-Color Wheel &amp; Safe Alternatives</title>
+  <desc id="kr-ob-desc">Cultural diagram of Obangsaek five-color symbolism in Jeonju bibimbap with competing origin theories and vegetarian/cooked safety options.</desc>
+  <rect width="800" height="400" fill="#111827" rx="14"/>
+  <text x="32" y="42" fill="#F8FAFC" font-family="Inter, sans-serif" font-size="18" font-weight="700">Jeonju Bibimbap: Obangsaek Five-Color Cultural Harmony Wheel</text>
+  <rect x="495" y="22" width="275" height="26" rx="13" fill="#6D28D9"/>
+  <text x="632" y="39" text-anchor="middle" fill="#F5F3FF" font-family="Inter, sans-serif" font-size="11" font-weight="700">Cultural Interpretation · Non-Scientific</text>
+  <g transform="translate(205,215)" font-family="Inter, sans-serif">
+    <circle cx="0" cy="0" r="125" fill="#1F2937" stroke="#D97706" stroke-width="4"/>
+    <circle cx="0" cy="-82" r="32" fill="#1E293B" stroke="#94A3B8" stroke-width="2"/>
+    <text x="0" y="-85" text-anchor="middle" fill="#F8FAFC" font-size="10" font-weight="700">Black (North)</text>
+    <text x="0" y="-71" text-anchor="middle" fill="#CBD5E1" font-size="9">Shiitake / Fern</text>
+    <circle cx="0" cy="82" r="32" fill="#DC2626" stroke="#FCA5A5" stroke-width="2"/>
+    <text x="0" y="79" text-anchor="middle" fill="#FEF2F2" font-size="10" font-weight="700">Red (South)</text>
+    <text x="0" y="93" text-anchor="middle" fill="#FECACA" font-size="9">Carrot / Gochujang</text>
+    <circle cx="82" cy="0" r="32" fill="#059669" stroke="#6EE7B7" stroke-width="2"/>
+    <text x="82" y="-3" text-anchor="middle" fill="#ECFDF5" font-size="10" font-weight="700">Green (East)</text>
+    <text x="82" y="11" text-anchor="middle" fill="#A7F3D0" font-size="9">Minari / Spinach</text>
+    <circle cx="-82" cy="0" r="32" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+    <text x="-82" y="-3" text-anchor="middle" fill="#0F172A" font-size="10" font-weight="700">White (West)</text>
+    <text x="-82" y="11" text-anchor="middle" fill="#334155" font-size="9">Bean Sprouts</text>
+    <circle cx="0" cy="0" r="34" fill="#FACC15" stroke="#CA8A04" stroke-width="2.5"/>
+    <text x="0" y="-3" text-anchor="middle" fill="#422006" font-size="10" font-weight="700">Yellow (Center)</text>
+    <text x="0" y="11" text-anchor="middle" fill="#713F12" font-size="9">Hwangpomuk</text>
+  </g>
+  <g transform="translate(375,72)" font-family="Inter, sans-serif">
+    <rect x="0" y="0" width="385" height="142" rx="10" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
+    <text x="18" y="28" fill="#FDE68A" font-size="14" font-weight="700">Competing Origin Hypotheses (Siuijeonseo, late 1800s)</text>
+    <text x="18" y="52" fill="#CBD5E1" font-size="11">• Theory 1 (Eumbok): Sharing ancestral-rite offerings in one bowl</text>
+    <text x="18" y="72" fill="#CBD5E1" font-size="11">• Theory 2 (Nongbap): Cooperative harvest field meals for farmers</text>
+    <text x="18" y="92" fill="#CBD5E1" font-size="11">• Theory 3 (Seotdal Geumeum): Lunar New Year's Eve pantry clearing</text>
+    <text x="18" y="112" fill="#CBD5E1" font-size="11">• Theory 4 (Royal Court): Palace seasonal lunch tables</text>
+    <text x="18" y="130" fill="#FBBF24" font-size="10">[Contested History: Presented as multiple hypotheses, never a single flat fact]</text>
+
+    <rect x="0" y="156" width="385" height="145" rx="10" fill="#064E3B" stroke="#10B981" stroke-width="2"/>
+    <text x="18" y="184" fill="#D1FAE5" font-size="14" font-weight="700">Food Safety &amp; Allergen-Aware Virtual Bowl</text>
+    <text x="18" y="208" fill="#A7F3D0" font-size="11">• Raw beef (yukhoe) &amp; raw egg yolk flagged: cooked tofu, braised</text>
+    <text x="28" y="226" fill="#A7F3D0" font-size="11">mushrooms, or golden mung-bean jelly (hwangpomuk) offered by default</text>
+    <text x="18" y="248" fill="#A7F3D0" font-size="11">• Allergens labeled: Soy, Sesame, Egg (gluten-free &amp; sesame-free</text>
+    <text x="28" y="266" fill="#A7F3D0" font-size="11">perilla/rice-syrup dressing toggle available in quest)</text>
+    <text x="18" y="288" fill="#FEF3C7" font-size="11">• Heated stone dolsot handled only by adult chef NPC</text>
+  </g>
+</svg>

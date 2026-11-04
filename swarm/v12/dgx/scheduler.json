@@ -1,0 +1,54 @@
+{
+  "agentId": "DX01",
+  "version": "1.2.0",
+  "measuredAt": "2026-11-04T07:15:06.774Z",
+  "hardware": "NVIDIA GB10, 580.178.04, 47, 28.74 W",
+  "unifiedMemoryGiB": 121.7,
+  "primaryEndpoint": "http://localhost:1234/v1",
+  "primaryModel": "qwen/qwen3-coder-next",
+  "ollamaEndpoint": "http://localhost:11434",
+  "ollamaModelsAvailable": [
+    "qwen3.6:35b-a3b-q8_0",
+    "qwen3-coder:30b",
+    "qwen2.5vl:72b",
+    "gemma4:26b",
+    "qwen3.8:27b"
+  ],
+  "benchmark": {
+    "ok": true,
+    "elapsedMs": 768,
+    "tokensPerSec": 41.67,
+    "usage": {
+      "prompt_tokens": 67,
+      "completion_tokens": 32,
+      "total_tokens": 99,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "sampleOutput": "Input segmentation, SHA-256 checksum registration, and sequential FIFO queue scheduling (maxConcurrency=1) on NVIDIA GB10 are all active."
+  },
+  "maxConcurrency": 1,
+  "queueOrder": [
+    "DX01",
+    "DX02",
+    "DX03",
+    "DX04",
+    "DX05",
+    "DX06",
+    "DX07",
+    "DX08",
+    "DX09",
+    "DX10",
+    "DX11",
+    "DX12",
+    "DX13",
+    "DX14",
+    "DX15",
+    "DX16",
+    "DX17",
+    "DX18",
+    "DX19",
+    "DX20"
+  ]
+}

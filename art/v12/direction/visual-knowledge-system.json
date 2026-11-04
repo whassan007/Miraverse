@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "AG01",
+  "title": "MiraVerse v1.2 Visual Knowledge-System Art Direction",
+  "epistemic_badge_tokens": {
+    "historical_claim": {
+      "label": "Historical Record",
+      "bg": "#1E3A5F",
+      "border": "#60A5FA",
+      "text": "#DBEAFE"
+    },
+    "mythology": {
+      "label": "Mythology & Sacred Narrative",
+      "bg": "#3B1F4E",
+      "border": "#C084FC",
+      "text": "#F3E8FF"
+    },
+    "folklore": {
+      "label": "Cultural Folklore",
+      "bg": "#3B2F1E",
+      "border": "#FBBF24",
+      "text": "#FEF3C7"
+    },
+    "interpretation": {
+      "label": "Landscape & Cultural Interpretation",
+      "bg": "#1B3B36",
+      "border": "#34D399",
+      "text": "#D1FAE5"
+    },
+    "contested_history": {
+      "label": "Contested / Multiple Accounts",
+      "bg": "#4A2511",
+      "border": "#FB923C",
+      "text": "#FFEDD5"
+    },
+    "contemporary_practice": {
+      "label": "Living Heritage & Diaspora",
+      "bg": "#1F3A2E",
+      "border": "#4ADE80",
+      "text": "#DCFCE7"
+    },
+    "fictional_game_content": {
+      "label": "In-Game Quest Content",
+      "bg": "#2D2A4A",
+      "border": "#818CF8",
+      "text": "#E0E7FF"
+    }
+  },
+  "country_palettes": {
+    "LB": {
+      "primary": "#1E5631",
+      "secondary": "#C97A40",
+      "accent": "#38BDF8",
+      "surface": "#102430",
+      "motif": "Byblos sandstone, Mediterranean azure, Phoenician script ochre"
+    },
+    "IQ": {
+      "primary": "#1A7B88",
+      "secondary": "#D4882A",
+      "accent": "#FBBF24",
+      "surface": "#11252D",
+      "motif": "Turquoise glazed brick, Tigris mud-brick gold, shanasheel cedar lattice"
+    },
+    "EG": {
+      "primary": "#1E5B88",
+      "secondary": "#D99B26",
+      "accent": "#F43F5E",
+      "surface": "#141E33",
+      "motif": "Brass fanous filigree, stained glass ruby/emerald/amber, khayamiya indigo"
+    },
+    "FR": {
+      "primary": "#1E3A8A",
+      "secondary": "#E5A93B",
+      "accent": "#F97316",
+      "surface": "#161F35",
+      "motif": "Vieux Lyon ochre limestone, Croix-Rousse slate, jacquard crimson silk"
+    },
+    "KR": {
+      "primary": "#2E7D6F",
+      "secondary": "#C84B31",
+      "accent": "#EAB308",
+      "surface": "#122428",
+      "motif": "Obangsaek five-direction spectrum (Blue/Green, Red, Yellow, White, Black) & giwa charcoal"
+    }
+  }
+}

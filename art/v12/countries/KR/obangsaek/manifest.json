@@ -1,0 +1,12 @@
+{
+  "agent_id": "AG10",
+  "country": "KR",
+  "kit": "obangsaek",
+  "assets": [
+    {
+      "id": "kr-svg-obangsaek",
+      "path": "/art/v12/KR/obangsaek/jeonju-bibimbap-obangsaek-wheel.svg",
+      "epistemic_badge": "Cultural Interpretation"
+    }
+  ]
+}

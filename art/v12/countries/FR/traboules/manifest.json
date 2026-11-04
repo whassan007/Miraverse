@@ -1,0 +1,13 @@
+{
+  "agent_id": "AG08",
+  "country": "FR",
+  "kit": "traboules",
+  "assets": [
+    {
+      "id": "fr-svg-traboules",
+      "path": "/art/v12/FR/traboules/lyon-traboules-cour-des-voraces.svg",
+      "map_type": "in_game_quest_map",
+      "scale_disclaimer": "in-game map / not to geographic scale"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "generated_at": "2026-11-04T07:15:09.367Z",
+  "owner": "CX01",
+  "country_sequence": [
+    "LB",
+    "IQ",
+    "EG",
+    "FR",
+    "KR"
+  ],
+  "preserved_files": {
+    "packages/content/schema.ts": {
+      "sha256": "d675683c9914fb3f6c24e934dc4370954502045ba541a9c1d7502af62ee561cf",
+      "exists": true
+    },
+    "packages/content/packs/LB.json": {
+      "sha256": "8b4d5426171efa4feda62e0a90b85cad87c0b0b2200efc31e602ae038f782e63",
+      "exists": true
+    },
+    "packages/content/packs/IQ.json": {
+      "sha256": "7b4ce989e66ebab54100e1c22d9de8dd6d68a93746c44b3cf7dd8ea73b05ae23",
+      "exists": true
+    },
+    "packages/content/packs/EG.json": {
+      "sha256": "6357ee245aed0099e22c8c9ad880ca5f8a2bb2f8da2a0a92caa73d400d358b2f",
+      "exists": true
+    },
+    "packages/content/packs/FR.json": {
+      "sha256": "839ebf9b4428b5cefd9ddc79478ced813460952b68b253c4eaacdceba3bc0783",
+      "exists": true
+    },
+    "packages/content/packs/KR.json": {
+      "sha256": "a56ddd4529e3acfef1438ae900155b2ff6670570a8e74565333bc0e1b055c3e3",
+      "exists": true
+    },
+    "content/quests/LB.json": {
+      "sha256": "44bd3bda88f48fbc2cf2549a82af98bcbdc19220cf2b25855186cd78b062766f",
+      "exists": true
+    },
+    "content/quests/IQ.json": {
+      "sha256": "f1b8c7adee11454ee0ebab21e06ef5f1ef30b6e04f42300bc945a102556b1b2d",
+      "exists": true
+    },
+    "content/quests/EG.json": {
+      "sha256": "9b016c48e992e06d4d8872e7006cf3d5680771fbaa1d13fedf3f459ca6934a67",
+      "exists": true
+    },
+    "content/quests/FR.json": {
+      "sha256": "46fe8c8cae3d4d798bc0a625548b7c1e5c7e10a42947def558af7dbb0d1d1c45",
+      "exists": true
+    },
+    "content/quests/KR.json": {
+      "sha256": "ae088a32ddd955216d0feb1a429d69395dcc8884e479e663d1d197dfdbe14760",
+      "exists": true
+    },
+    "content/dialogue/LB.json": {
+      "sha256": "9ca119e9be87b1e062b63593a507d9a52b57f2e20044903895ffc638265fc6c7",
+      "exists": true
+    },
+    "content/dialogue/IQ.json": {
+      "sha256": "27e1a8fa108daf6e28b3f29036d47d32eccb969832a059f4e3097b55670df802",
+      "exists": true
+    },
+    "content/dialogue/EG.json": {
+      "sha256": "c0c930f78a50a3dc3c37b0e6941cc978b65792ab8641267b5e0cb35a9704fc77",
+      "exists": true
+    },
+    "content/dialogue/FR.json": {
+      "sha256": "bfeff2f5d9deef11d4dae217e5bc5ded666f47632ec9efb1721ff77c6dcd7877",
+      "exists": true
+    },
+    "content/dialogue/KR.json": {
+      "sha256": "6407fd4b5bbd24dce1d9647871e018e5b161bc30502d61bb6e7525b298644480",
+      "exists": true
+    },
+    "packages/content/stories/ar-LB.json": {
+      "sha256": "807dc064fe5dcb5c0f2a534fc4f2e08ace5903e22ffc8781ec62d409dd5943b4",
+      "exists": true
+    },
+    "packages/content/stories/ar-IQ.json": {
+      "sha256": "c65035936279900d4db89c6810ae656ee493ad4ff82003bb5395daec40befdd4",
+      "exists": true
+    },
+    "packages/content/stories/ar-EG.json": {
+      "sha256": "1917b8d6912e02d2c420f218bb6250d246c8b2fdb4a5a3380de4963c33916efb",
+      "exists": true
+    },
+    "packages/content/stories/fr.json": {
+      "sha256": "e82cb6f40da7a3962ae82f6d761e547008c4a74713d99fc447707c36fa95c6fe",
+      "exists": true
+    },
+    "packages/content/stories/ko.json": {
+      "sha256": "4398b99d710f08d9e82f9b076a7482f31cbb8041ab43e6507c4236d8bbaec6e1",
+      "exists": true
+    }
+  },
+  "country_summary": {
+    "LB": {
+      "name_en": "Lebanon",
+      "lang": "ar-LB",
+      "mentor": "Teta Nahla",
+      "legacy_quest_id": "LB:ch1:harbor:main",
+      "pack_item_ids": [
+        "flour",
+        "zaatar",
+        "olive_oil",
+        "manoushe",
+        "limestone_block",
+        "cedar_beam",
+        "red_tile",
+        "sumac_jar"
+      ],
+      "pack_challenge_ids": [
+        "LB-1-gather",
+        "LB-1-cook",
+        "LB-1-build",
+        "LB-1-trade",
+        "LB-1-word"
+      ],
+      "quest_objective_ids": [
+        "LB:ch1:harbor:gather",
+        "LB:ch1:harbor:trade",
+        "LB:ch1:harbor:build",
+        "LB:ch1:harbor:cook",
+        "LB:ch1:harbor:word"
+      ],
+      "npc_ids": [
+        "npc:LB:teta_nahla",
+        "npc:LB:amo_farid",
+        "npc:LB:nadim_builder",
+        "npc:LB:rima_sailor"
+      ],
+      "regions": [
+        "byblos",
+        "mount_lebanon",
+        "beirut"
+      ]
+    },
+    "IQ": {
+      "name_en": "Iraq",
+      "lang": "ar-IQ",
+      "mentor": "Bibi Amal",
+      "legacy_quest_id": "IQ:ch1:shanasheel:main",
+      "pack_item_ids": [
+        "wheat_dough",
+        "date_paste",
+        "cardamom",
+        "kleicha",
+        "mud_brick",
+        "turquoise_tile",
+        "palm_wood",
+        "brass_teapot"
+      ],
+      "pack_challenge_ids": [
+        "IQ-1-gather",
+        "IQ-1-cook",
+        "IQ-1-build",
+        "IQ-1-trade",
+        "IQ-1-word"
+      ],
+      "quest_objective_ids": [
+        "IQ:ch1:shanasheel:gather",
+        "IQ:ch1:shanasheel:trade",
+        "IQ:ch1:shanasheel:build",
+        "IQ:ch1:shanasheel:cook",
+        "IQ:ch1:shanasheel:word"
+      ],
+      "npc_ids": [
+        "npc:IQ:bibi_amal",
+        "npc:IQ:abu_zaid",
+        "npc:IQ:sinan_carpenter",
+        "npc:IQ:mariam_poet"
+      ],
+      "regions": [
+        "baghdad",
+        "erbil",
+        "basra"
+      ]
+    },
+    "EG": {
+      "name_en": "Egypt",
+      "lang": "ar-EG",
+      "mentor": "Teta Samira",
+      "legacy_quest_id": "EG:ch1:lantern:main",
+      "pack_item_ids": [
+        "rice",
+        "lentils",
+        "tomato_sauce",
+        "crispy_onions",
+        "koshari",
+        "acacia_plank",
+        "linen_sail",
+        "fanous_lantern"
+      ],
+      "pack_challenge_ids": [
+        "EG-1-gather",
+        "EG-1-cook",
+        "EG-1-build",
+        "EG-1-trade",
+        "EG-1-word"
+      ],
+      "quest_objective_ids": [
+        "EG:ch1:lantern:gather",
+        "EG:ch1:lantern:trade",
+        "EG:ch1:lantern:build",
+        "EG:ch1:lantern:cook",
+        "EG:ch1:lantern:word"
+      ],
+      "npc_ids": [
+        "npc:EG:teta_samira",
+        "npc:EG:am_hassan",
+        "npc:EG:karim_artisan",
+        "npc:EG:nour_neighbor"
+      ],
+      "regions": [
+        "cairo",
+        "alexandria",
+        "aswan"
+      ]
+    },
+    "FR": {
+      "name_en": "France",
+      "lang": "fr",
+      "mentor": "Mamie Claire",
+      "legacy_quest_id": "FR:ch1:bakery:main",
+      "pack_item_ids": [
+        "puff_pastry",
+        "almond_cream",
+        "porcelain_feve",
+        "galette_des_rois",
+        "slate_roof",
+        "cut_stone",
+        "oak_shutter",
+        "paper_crown"
+      ],
+      "pack_challenge_ids": [
+        "FR-1-gather",
+        "FR-1-cook",
+        "FR-1-build",
+        "FR-1-trade",
+        "FR-1-word"
+      ],
+      "quest_objective_ids": [
+        "FR:ch1:bakery:gather",
+        "FR:ch1:bakery:trade",
+        "FR:ch1:bakery:build",
+        "FR:ch1:bakery:cook",
+        "FR:ch1:bakery:word"
+      ],
+      "npc_ids": [
+        "npc:FR:mamie_claire",
+        "npc:FR:monsieur_henri",
+        "npc:FR:camille_mason",
+        "npc:FR:lucas_musician"
+      ],
+      "regions": [
+        "lyon",
+        "paris",
+        "marseille"
+      ]
+    },
+    "KR": {
+      "name_en": "South Korea",
+      "lang": "ko",
+      "mentor": "Halmeoni",
+      "legacy_quest_id": "KR:ch1:hanok:main",
+      "pack_item_ids": [
+        "rice_flour",
+        "sesame_honey",
+        "pine_needles",
+        "songpyeon",
+        "giwa_tile",
+        "pine_pillar",
+        "hanji_paper",
+        "celadon_cup"
+      ],
+      "pack_challenge_ids": [
+        "KR-1-gather",
+        "KR-1-cook",
+        "KR-1-build",
+        "KR-1-trade",
+        "KR-1-word"
+      ],
+      "quest_objective_ids": [
+        "KR:ch1:hanok:gather",
+        "KR:ch1:hanok:trade",
+        "KR:ch1:hanok:build",
+        "KR:ch1:hanok:cook",
+        "KR:ch1:hanok:word"
+      ],
+      "npc_ids": [
+        "npc:KR:halmeoni",
+        "npc:KR:ajusshi_min",
+        "npc:KR:moksu_jihoon",
+        "npc:KR:soomin_musician"
+      ],
+      "regions": [
+        "seoul",
+        "jeonju",
+        "busan"
+      ]
+    }
+  }
+}

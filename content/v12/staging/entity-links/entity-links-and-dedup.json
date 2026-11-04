@@ -1,0 +1,547 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX03",
+  "dgx_note": "All existing v0.8/v1.1 country pack IDs (LB, IQ, EG, FR, KR) have been non-destructively linked to corresponding v1.2 cultural concepts via stable cross-version entity identifiers without altering their original records or metadata.",
+  "total_records": 25,
+  "records": [
+    {
+      "record_id": "LB-KB-PLACE-BYBLOS-PORT",
+      "country": "LB",
+      "title_en": "Byblos (Jbeil) Maritime Harbor & Cedar Trade",
+      "entity_type": "place",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "cedar_beam",
+        "limestone_block",
+        "olive_oil"
+      ],
+      "linked_quest_objectives": [
+        "LB:ch1:harbor:gather",
+        "LB:ch1:harbor:build"
+      ],
+      "linked_v11_acts": [
+        "LB-A01",
+        "LB-A02"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "LB-KB-MYTH-ISIS-OSIRIS-TREE",
+      "country": "LB",
+      "title_en": "Myth of Isis, Osiris, and the Sacred Tree of Byblos",
+      "entity_type": "myth",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "cedar_beam"
+      ],
+      "linked_quest_objectives": [
+        "LB:ch1:harbor:build"
+      ],
+      "linked_v11_acts": [
+        "LB-A01",
+        "LB-A04"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "LB-KB-MYTH-ADONIS-AFQA-RIVER",
+      "country": "LB",
+      "title_en": "Afqa Spring, Nahr Ibrahim, and the Seasonal Myth of Adonis",
+      "entity_type": "myth",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "red_tile",
+        "limestone_block"
+      ],
+      "linked_quest_objectives": [
+        "LB:ch1:harbor:gather"
+      ],
+      "linked_v11_acts": [
+        "LB-A02",
+        "LB-A04"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS",
+      "country": "LB",
+      "title_en": "Sarcophagus of King Ahiram & the 22-Letter Phoenician Abjad",
+      "entity_type": "artifact",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "limestone_block"
+      ],
+      "linked_quest_objectives": [
+        "LB:ch1:harbor:word"
+      ],
+      "linked_v11_acts": [
+        "LB-A01",
+        "LB-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA",
+      "country": "LB",
+      "title_en": "Writing, Recipes, and Oral Memory as a Portable Archive in the Lebanese Diaspora",
+      "entity_type": "theme",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "flour",
+        "zaatar",
+        "olive_oil",
+        "manoushe",
+        "sumac_jar"
+      ],
+      "linked_quest_objectives": [
+        "LB:ch1:harbor:cook",
+        "LB:ch1:harbor:trade",
+        "LB:ch1:harbor:word"
+      ],
+      "linked_v11_acts": [
+        "LB-A03",
+        "LB-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "IQ-KB-ORG-BAYT-AL-HIKMA",
+      "country": "IQ",
+      "title_en": "Bayt al-Hikma (House of Wisdom) & Abbasid Translation Tradition",
+      "entity_type": "organization",
+      "coverage_classification": "conflict",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "turquoise_tile",
+        "mud_brick"
+      ],
+      "linked_quest_objectives": [
+        "IQ:ch1:tigris:gather"
+      ],
+      "linked_v11_acts": [
+        "IQ-A01",
+        "IQ-A02"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "IQ-KB-PERSON-ABBASID-SCHOLARS",
+      "country": "IQ",
+      "title_en": "Scholars of Baghdad: Al-Khwarizmi, Al-Kindi, Hunayn ibn Ishaq, Thabit ibn Qurra & Banu Musa",
+      "entity_type": "person",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "brass_teapot",
+        "turquoise_tile"
+      ],
+      "linked_quest_objectives": [
+        "IQ:ch1:tigris:build"
+      ],
+      "linked_v11_acts": [
+        "IQ-A01",
+        "IQ-A04"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "IQ-KB-EVENT-GOLD-AND-1258-TROPES",
+      "country": "IQ",
+      "title_en": "Contested Chronicles: Weight-in-Gold Payments & 1258 River-of-Ink Accounts",
+      "entity_type": "event",
+      "coverage_classification": "conflict",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "brass_teapot"
+      ],
+      "linked_quest_objectives": [
+        "IQ:ch1:tigris:trade"
+      ],
+      "linked_v11_acts": [
+        "IQ-A02",
+        "IQ-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "IQ-KB-PLACE-AL-MUTANABBI-STREET",
+      "country": "IQ",
+      "title_en": "Al-Mutanabbi Street, Shabandar Café & the International Book Solidarity Archive",
+      "entity_type": "place",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "brass_teapot"
+      ],
+      "linked_quest_objectives": [
+        "IQ:ch1:tigris:trade",
+        "IQ:ch1:tigris:word"
+      ],
+      "linked_v11_acts": [
+        "IQ-A01",
+        "IQ-A02",
+        "IQ-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "IQ-KB-PRACTICE-KLEICHA-SHANASHEEL",
+      "country": "IQ",
+      "title_en": "Cardamom Date Kleicha, Shanasheel Courtyards & Plural Diaspora Memory",
+      "entity_type": "food",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "wheat_dough",
+        "date_paste",
+        "cardamom",
+        "kleicha",
+        "palm_wood",
+        "mud_brick",
+        "turquoise_tile"
+      ],
+      "linked_quest_objectives": [
+        "IQ:ch1:tigris:cook",
+        "IQ:ch1:tigris:build",
+        "IQ:ch1:tigris:word"
+      ],
+      "linked_v11_acts": [
+        "IQ-A03",
+        "IQ-A04",
+        "IQ-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "EG-KB-HIST-FANOUS-COMPETING-ORIGINS",
+      "country": "EG",
+      "title_en": "Egyptian Fanous Lanterns & Competing Fatimid/Coptic Origin Narratives",
+      "entity_type": "event",
+      "coverage_classification": "conflict",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "fanous_lantern"
+      ],
+      "linked_quest_objectives": [
+        "EG:ch1:nile:trade"
+      ],
+      "linked_v11_acts": [
+        "EG-A01",
+        "EG-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "EG-KB-ARTIFACT-FANOUS-KHAYAMIYA-CRAFT",
+      "country": "EG",
+      "title_en": "Cairo Lantern Metalwork, Stained Glass & Khayamiya Tentmaker Appliqué",
+      "entity_type": "artifact",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "fanous_lantern",
+        "acacia_plank",
+        "linen_sail"
+      ],
+      "linked_quest_objectives": [
+        "EG:ch1:nile:build",
+        "EG:ch1:nile:trade"
+      ],
+      "linked_v11_acts": [
+        "EG-A01",
+        "EG-A04"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "EG-KB-PRACTICE-MUSAHARATI-AND-SONGS",
+      "country": "EG",
+      "title_en": "Neighborhood Soundscapes: The Musaharati Drummer & Festive Cairo Chants",
+      "entity_type": "practice",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "fanous_lantern"
+      ],
+      "linked_quest_objectives": [
+        "EG:ch1:nile:word"
+      ],
+      "linked_v11_acts": [
+        "EG-A02",
+        "EG-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "EG-KB-FOOD-KOSHARI-SHARED-TABLE",
+      "country": "EG",
+      "title_en": "Teta Samira’s Koshari & Inclusive Courtyard Hospitality",
+      "entity_type": "food",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "rice",
+        "lentils",
+        "tomato_sauce",
+        "crispy_onions",
+        "koshari"
+      ],
+      "linked_quest_objectives": [
+        "EG:ch1:nile:gather",
+        "EG:ch1:nile:cook"
+      ],
+      "linked_v11_acts": [
+        "EG-A02",
+        "EG-A03"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "EG-KB-ORG-DIASPORA-HERITAGE-MONTH",
+      "country": "EG",
+      "title_en": "Egyptian Diaspora Celebrations & Ontario Egyptian Heritage Month Candidate Fact",
+      "entity_type": "organization",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "fanous_lantern"
+      ],
+      "linked_quest_objectives": [
+        "EG:ch1:nile:word"
+      ],
+      "linked_v11_acts": [
+        "EG-A04",
+        "EG-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "FR-KB-PLACE-TRABOULES-LYON",
+      "country": "FR",
+      "title_en": "The Traboules of Vieux Lyon and La Croix-Rousse",
+      "entity_type": "place",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "cut_stone",
+        "slate_roof",
+        "oak_shutter"
+      ],
+      "linked_quest_objectives": [
+        "FR:ch1:lyon:build"
+      ],
+      "linked_v11_acts": [
+        "FR-A01",
+        "FR-A04"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "FR-KB-PRACTICE-CANUTS-SILK-LOOMS",
+      "country": "FR",
+      "title_en": "The Canuts of La Croix-Rousse & Jacquard Punch-Card Silk Weaving",
+      "entity_type": "practice",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "cut_stone",
+        "oak_shutter"
+      ],
+      "linked_quest_objectives": [
+        "FR:ch1:lyon:trade",
+        "FR:ch1:lyon:build"
+      ],
+      "linked_v11_acts": [
+        "FR-A02",
+        "FR-A04"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "FR-KB-PLACE-COUR-DES-VORACES",
+      "country": "FR",
+      "title_en": "Cour des Voraces, Labor Mutualism & Historical Memory in Lyon",
+      "entity_type": "place",
+      "coverage_classification": "conflict",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "cut_stone",
+        "slate_roof"
+      ],
+      "linked_quest_objectives": [
+        "FR:ch1:lyon:build"
+      ],
+      "linked_v11_acts": [
+        "FR-A01",
+        "FR-A04"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "FR-KB-PERSON-MERES-LYONNAISES-BRAZIER",
+      "country": "FR",
+      "title_en": "The Mères Lyonnaises & Eugénie Brazier: Women-Led Culinary Craft",
+      "entity_type": "person",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "puff_pastry",
+        "almond_cream",
+        "galette_des_rois"
+      ],
+      "linked_quest_objectives": [
+        "FR:ch1:lyon:cook"
+      ],
+      "linked_v11_acts": [
+        "FR-A03",
+        "FR-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "FR-KB-FOOD-GALETTE-SHARED-PASTRY",
+      "country": "FR",
+      "title_en": "Galette des Rois, Kitchen Brigade Teamwork & Transnational Pastry Exchange",
+      "entity_type": "food",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "puff_pastry",
+        "almond_cream",
+        "porcelain_feve",
+        "galette_des_rois",
+        "paper_crown"
+      ],
+      "linked_quest_objectives": [
+        "FR:ch1:lyon:gather",
+        "FR:ch1:lyon:cook",
+        "FR:ch1:lyon:trade",
+        "FR:ch1:lyon:word"
+      ],
+      "linked_v11_acts": [
+        "FR-A02",
+        "FR-A03",
+        "FR-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "KR-KB-FOOD-BIBIMBAP-REGIONAL-VARIANTS",
+      "country": "KR",
+      "title_en": "Bibimbap (Goldongban) & Regional Variants: Jeonju, Jinju, Tongyeong & Andong",
+      "entity_type": "food",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "rice_flour",
+        "sesame_honey",
+        "songpyeon"
+      ],
+      "linked_quest_objectives": [
+        "KR:ch1:jeonju:gather",
+        "KR:ch1:jeonju:cook"
+      ],
+      "linked_v11_acts": [
+        "KR-A02",
+        "KR-A03"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "KR-KB-HIST-BIBIMBAP-COMPETING-ORIGINS",
+      "country": "KR",
+      "title_en": "Competing Origin Narratives of Bibimbap: Ritual, Court, Agriculture & Lunar New Year",
+      "entity_type": "event",
+      "coverage_classification": "conflict",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "songpyeon"
+      ],
+      "linked_quest_objectives": [
+        "KR:ch1:jeonju:cook"
+      ],
+      "linked_v11_acts": [
+        "KR-A03",
+        "KR-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "KR-KB-THEME-OBANGSAEK-FIVE-COLORS",
+      "country": "KR",
+      "title_en": "Obangsaek (오방색): Five-Color Cultural Symbolism & Harmony of the Bowl",
+      "entity_type": "theme",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "rice_flour",
+        "sesame_honey",
+        "pine_needles",
+        "songpyeon"
+      ],
+      "linked_quest_objectives": [
+        "KR:ch1:jeonju:gather",
+        "KR:ch1:jeonju:cook"
+      ],
+      "linked_v11_acts": [
+        "KR-A01",
+        "KR-A02",
+        "KR-A03"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "KR-KB-PLACE-JEONJU-HANOK-VILLAGE",
+      "country": "KR",
+      "title_en": "Jeonju Hanok Village, Giwa Roofs, Nambu Market & Pungnammun Gate",
+      "entity_type": "place",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "giwa_tile",
+        "pine_pillar",
+        "hanji_paper",
+        "celadon_cup"
+      ],
+      "linked_quest_objectives": [
+        "KR:ch1:jeonju:build",
+        "KR:ch1:jeonju:trade"
+      ],
+      "linked_v11_acts": [
+        "KR-A01",
+        "KR-A04"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    },
+    {
+      "record_id": "KR-KB-PRACTICE-DIASPORA-FEAST-CONTINUITY",
+      "country": "KR",
+      "title_en": "Shared Bowls, Chuseok Songpyeon & Korean Diaspora Cultural Continuity",
+      "entity_type": "practice",
+      "coverage_classification": "enrichment",
+      "requires_human_review": true,
+      "linked_pack_items": [
+        "rice_flour",
+        "sesame_honey",
+        "pine_needles",
+        "songpyeon",
+        "celadon_cup"
+      ],
+      "linked_quest_objectives": [
+        "KR:ch1:jeonju:cook",
+        "KR:ch1:jeonju:trade",
+        "KR:ch1:jeonju:word"
+      ],
+      "linked_v11_acts": [
+        "KR-A03",
+        "KR-A05"
+      ],
+      "deduplication_action": "link_to_existing_pack_and_quest_ids"
+    }
+  ]
+}

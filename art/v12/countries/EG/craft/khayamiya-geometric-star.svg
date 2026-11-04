@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" role="img" aria-labelledby="eg-kh-title eg-kh-desc">
+  <title id="eg-kh-title">Shari'a al-Khayamiya Geometric Appliqué Textile Symmetry</title>
+  <desc id="eg-kh-desc">Eight-fold lotus and star geometric symmetry from the Street of the Tentmakers outside Bab Zuweila in Historic Cairo.</desc>
+  <rect width="800" height="320" fill="#1A1215" rx="14"/>
+  <text x="32" y="42" fill="#FDE68A" font-family="Inter, sans-serif" font-size="18" font-weight="700">Shari'a al-Khayamiya (Qasaba of Radwan Bey, c. 1650 CE)</text>
+  <rect x="520" y="22" width="248" height="26" rx="13" fill="#0F766E"/>
+  <text x="644" y="39" text-anchor="middle" fill="#F0FDFA" font-family="Inter, sans-serif" font-size="11" font-weight="700">Historical Claim · Verified</text>
+  <g transform="translate(175,175)">
+    <rect x="-85" y="-85" width="170" height="170" fill="#991B1B" stroke="#FDE68A" stroke-width="3" rx="8"/>
+    <rect x="-56" y="-56" width="112" height="112" fill="#0F766E" stroke="#FDE047" stroke-width="2.5"/>
+    <rect x="-56" y="-56" width="112" height="112" fill="#1D4ED8" fill-opacity="0.7" stroke="#FDE047" stroke-width="2.5" transform="rotate(45)"/>
+    <circle cx="0" cy="0" r="24" fill="#FDE68A"/>
+  </g>
+  <rect x="310" y="85" width="450" height="175" rx="12" fill="#291D22" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="335" y="118" fill="#FEF3C7" font-family="Inter, sans-serif" font-size="15" font-weight="700">Hand-Stitched Appliqué Art near Bab Zuweila</text>
+  <text x="335" y="146" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="12">• Canvas backing with hand-folded cotton arabesques and lotus medallions</text>
+  <text x="335" y="172" fill="#E2E8F0" font-family="Inter, sans-serif" font-size="12">• Only covered medieval market street surviving for tentmakers in Cairo</text>
+  <text x="335" y="198" fill="#6EE7B7" font-family="Inter, sans-serif" font-size="12" font-weight="700">• Child-Safe Craft Hook: Fold &amp; mirror geometric paper/digital tiles</text>
+  <text x="347" y="218" fill="#6EE7B7" font-family="Inter, sans-serif" font-size="12">(no hot soldering irons or sharp metal shears for young learners)</text>
+</svg>

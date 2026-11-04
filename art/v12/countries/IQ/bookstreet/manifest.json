@@ -1,0 +1,17 @@
+{
+  "agent_id": "AG05",
+  "country": "IQ",
+  "kit": "bookstreet",
+  "assets": [
+    {
+      "id": "iq-svg-mutanabbi",
+      "path": "/art/v12/IQ/bookstreet/al-mutanabbi-book-street.svg",
+      "epistemic_badge": "Contemporary Practice"
+    },
+    {
+      "id": "iq-svg-kleicha",
+      "path": "/art/v12/IQ/bookstreet/kleicha-diaspora-table.svg",
+      "epistemic_badge": "Contemporary Practice"
+    }
+  ]
+}

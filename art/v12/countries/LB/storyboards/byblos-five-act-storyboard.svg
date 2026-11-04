@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <rect width="960" height="540" fill="#0B192C"/>
+  <rect x="24" y="24" width="912" height="492" rx="18" fill="#102430" stroke="#C97A40" stroke-width="2"/>
+  <text x="48" y="64" fill="#FFF8EE" font-family="Georgia, serif" font-size="24" font-weight="bold">Lebanon Reference Slice — Five-Act Cultural Storyboard (AG02)</text>
+  <text x="48" y="90" fill="#94A3B8" font-family="sans-serif" font-size="14">Byblos Maritime Trade · Isis/Osiris Myth vs History · Afqa/Nahr Ibrahim · Saj Kitchen · Ahiram Abjad</text>
+  <g transform="translate(48, 118)">
+    <rect width="164" height="360" rx="12" fill="#163242" stroke="#38BDF8"/>
+    <text x="14" y="32" fill="#38BDF8" font-family="sans-serif" font-size="14" font-weight="bold">Act 1 · LB-A01</text>
+    <text x="14" y="56" fill="#FFF8EE" font-family="sans-serif" font-size="13">Harbor Welcome</text>
+    <circle cx="82" cy="140" r="42" fill="#1E5631" stroke="#F4A261" stroke-width="2"/>
+    <path d="M52 150 Q82 120 112 150" stroke="#FFF8EE" stroke-width="3" fill="none"/>
+    <text x="14" y="230" fill="#CBD5E1" font-family="sans-serif" font-size="11">Cedar &amp; Papyrus Routes</text>
+    <text x="14" y="250" fill="#C084FC" font-family="sans-serif" font-size="11">[Myth Label: Sacred Tree]</text>
+  </g>
+  <g transform="translate(226, 118)">
+    <rect width="164" height="360" rx="12" fill="#163242" stroke="#34D399"/>
+    <text x="14" y="32" fill="#34D399" font-family="sans-serif" font-size="14" font-weight="bold">Act 2 · LB-A02</text>
+    <text x="14" y="56" fill="#FFF8EE" font-family="sans-serif" font-size="13">Souk &amp; Red River</text>
+    <circle cx="82" cy="140" r="42" fill="#8B2635" stroke="#F4A261" stroke-width="2"/>
+    <text x="14" y="230" fill="#CBD5E1" font-family="sans-serif" font-size="11">Afqa Iron Sediment</text>
+    <text x="14" y="250" fill="#34D399" font-family="sans-serif" font-size="11">[Geology vs Myth]</text>
+  </g>
+  <g transform="translate(404, 118)">
+    <rect width="164" height="360" rx="12" fill="#163242" stroke="#F4A261"/>
+    <text x="14" y="32" fill="#F4A261" font-family="sans-serif" font-size="14" font-weight="bold">Act 3 · LB-A03</text>
+    <text x="14" y="56" fill="#FFF8EE" font-family="sans-serif" font-size="13">Teta’s Saj Kitchen</text>
+    <circle cx="82" cy="140" r="42" fill="#D99B52" stroke="#FFF8EE" stroke-width="2"/>
+    <text x="14" y="230" fill="#CBD5E1" font-family="sans-serif" font-size="11">Portable Recipe Postcard</text>
+    <text x="14" y="250" fill="#4ADE80" font-family="sans-serif" font-size="11">[Adult Handles Heat]</text>
+  </g>
+  <g transform="translate(582, 118)">
+    <rect width="164" height="360" rx="12" fill="#163242" stroke="#E6DEC8"/>
+    <text x="14" y="32" fill="#E6DEC8" font-family="sans-serif" font-size="14" font-weight="bold">Act 4 · LB-A04</text>
+    <text x="14" y="56" fill="#FFF8EE" font-family="sans-serif" font-size="13">Stone Courtyard</text>
+    <rect x="44" y="102" width="76" height="76" rx="8" fill="#7B4B2A" stroke="#E6DEC8" stroke-width="2"/>
+    <text x="14" y="230" fill="#CBD5E1" font-family="sans-serif" font-size="11">Limestone &amp; Cedar Arch</text>
+    <text x="14" y="250" fill="#60A5FA" font-family="sans-serif" font-size="11">[Step-Free Access]</text>
+  </g>
+  <g transform="translate(760, 118)">
+    <rect width="152" height="360" rx="12" fill="#163242" stroke="#FBBF24"/>
+    <text x="14" y="32" fill="#FBBF24" font-family="sans-serif" font-size="14" font-weight="bold">Act 5 · LB-A05</text>
+    <text x="14" y="56" fill="#FFF8EE" font-family="sans-serif" font-size="13">22-Letter Abjad</text>
+    <text x="42" y="152" fill="#FBBF24" font-family="serif" font-size="36" font-weight="bold">𐤀 𐤁 𐤌</text>
+    <text x="14" y="230" fill="#CBD5E1" font-family="sans-serif" font-size="11">Ahiram Inscription</text>
+    <text x="14" y="250" fill="#4ADE80" font-family="sans-serif" font-size="11">[Zero Child Voice PII]</text>
+  </g>
+</svg>
