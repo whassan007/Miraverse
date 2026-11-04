@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Teta Samira">
+  <circle cx="120" cy="120" r="112" fill="#2B4C7E" stroke="#F0B429" stroke-width="6"/>
+  <path d="M52 216 C64 158, 176 158, 188 216 Z" fill="#F4E4C1"/>
+  <circle cx="120" cy="108" r="44" fill="#C98E63"/>
+  <path d="M74 98 C78 56, 162 56, 166 98 Z" fill="#BFBFBF"/>
+  <circle cx="104" cy="108" r="5" fill="#2B2118"/>
+  <circle cx="136" cy="108" r="5" fill="#2B2118"/>
+  <path d="M104 128 Q120 138 136 128" fill="none" stroke="#5A3825" stroke-width="4" stroke-linecap="round"/>
+</svg>
