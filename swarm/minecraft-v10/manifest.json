@@ -1009,12 +1009,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX16.md",
       "branch": "minecraft-v10/DX16",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX16",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "02af34b",
       "test_command": "node apps/minecraft/tools/assets/optimize-textures/verify-pngs.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tools/assets/optimize-textures/verify-pngs.mjs"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (59.68 tok/s)",
       "blockers": []
     },
     {
