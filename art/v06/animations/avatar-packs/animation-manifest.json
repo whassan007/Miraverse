@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "v06.1",
+  "rigType": "R15",
+  "transitionBlendSeconds": 0.18,
+  "coreClips": [
+    {
+      "clipId": "mv_idle_calm",
+      "durationSec": 3.2,
+      "looped": true,
+      "priority": "Idle",
+      "preventsTpose": true
+    },
+    {
+      "clipId": "mv_walk_explorer",
+      "durationSec": 1,
+      "looped": true,
+      "priority": "Movement",
+      "preventsFootSkate": true
+    },
+    {
+      "clipId": "mv_run_breeze",
+      "durationSec": 0.72,
+      "looped": true,
+      "priority": "Movement",
+      "preventsFootSkate": true
+    },
+    {
+      "clipId": "mv_jump_arc",
+      "durationSec": 0.65,
+      "looped": false,
+      "priority": "Action"
+    },
+    {
+      "clipId": "mv_interact_gather",
+      "durationSec": 1.25,
+      "looped": false,
+      "priority": "Action"
+    },
+    {
+      "clipId": "mv_cook_saj_fold",
+      "durationSec": 2.1,
+      "looped": false,
+      "priority": "Action"
+    },
+    {
+      "clipId": "mv_build_place_stone",
+      "durationSec": 1.4,
+      "looped": false,
+      "priority": "Action"
+    },
+    {
+      "clipId": "mv_celebrate_stamp",
+      "durationSec": 2.8,
+      "looped": false,
+      "priority": "Action4"
+    }
+  ],
+  "coopAndAvatarClips": [
+    {
+      "clipId": "mv_coop_high_five_wave",
+      "durationSec": 2.2,
+      "looped": false,
+      "status": "experience_only"
+    },
+    {
+      "clipId": "mv_avatar_studio_turn",
+      "durationSec": 3,
+      "looped": true,
+      "status": "experience_only"
+    }
+  ]
+}
