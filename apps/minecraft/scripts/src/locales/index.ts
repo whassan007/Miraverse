@@ -35,7 +35,21 @@ export type SupportedLocaleId =
   | 'ar-EG'
   | 'ar-MA';
 
-const CATALOGS: Record<SupportedLocaleId, typeof enUS> = {
+export interface LocaleCatalogRecord {
+  schemaVersion: string;
+  locale: string;
+  name: string;
+  script: string;
+  direction: string;
+  isNativeBedrock: boolean;
+  nativePackLang: string | null;
+  fallbackChain: string[];
+  humanReviewRequired: boolean;
+  keyCount: number;
+  strings: Record<string, string>;
+}
+
+const CATALOGS: Record<SupportedLocaleId, LocaleCatalogRecord> = {
   'en-US': enUS,
   'fr-FR': frFR,
   'fr-CA': frCA,
