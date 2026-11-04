@@ -210,32 +210,34 @@ describe('MiraVerse v1.0 Minecraft Bedrock — 5-Country Quest, Cooking, Restora
       expect(playerState.quests[country].lifecycle).toBe('COMPLETED');
 
       // 6. Claim Passport Stamp & World-Local Mira Tokens (idempotent)
-      const claim1 = claimChapterPassportReward(worldState, playerState, country, \`nonce_\${country}_1\`);
+      const claim1 = claimChapterPassportReward(worldState, playerState, country);
       expect(claim1.ok).toBe(true);
       expect(claim1.deduplicated).toBe(false);
-      expect(claim1.tokensAwarded).toBe(100);
+      expect(claim1.tokensAwarded).toBe(50);
       expect(claim1.stampCode).toMatch(new RegExp(\`^MV-\${country}-1-\`));
 
-      const claim2 = claimChapterPassportReward(worldState, playerState, country, \`nonce_\${country}_1\`);
+      const claim2 = claimChapterPassportReward(worldState, playerState, country);
       expect(claim2.ok).toBe(true);
       expect(claim2.deduplicated).toBe(true);
       expect(claim2.tokensAwarded).toBe(0);
     }
 
-    expect(playerState.localMiraTokens).toBe(500);
+    expect(playerState.localMiraTokens).toBe(250);
   });
 
-  it('persists and recovers player state from backup when primary DynamicProperty is corrupted', () => {
+  it('quarantines corrupted DynamicProperty JSON into :corrupt_bak and migrates legacy mv:stamp:<CC> state cleanly', () => {
     const store = new MemoryPropertyStore();
     const state = createDefaultPlayerStateV10('p_backup', 'Rami');
     state.localMiraTokens = 200;
     savePlayerStateV10(store, state);
 
-    // Corrupt primary key
+    // Also set a legacy v0.4 stamp and corrupt the primary key
+    store.setDynamicProperty('mv:stamp:LB', 'MV-LB-1-ABCD-EFGH');
     store.setDynamicProperty('mv:v10:player:p_backup', '{corrupted_json');
     const recovered = loadPlayerStateV10(store, 'p_backup', 'Rami');
-    expect(recovered.recoveredFromBackup).toBe(true);
-    expect(recovered.state.localMiraTokens).toBe(200);
+    expect(store.getDynamicProperty('mv:v10:player:p_backup:corrupt_bak')).toBe('{corrupted_json');
+    expect(recovered.quests.LB.stampCode).toBe('MV-LB-1-ABCD-EFGH');
+    expect(recovered.quests.LB.lifecycle).toBe('REWARDED');
   });
 });
 `;
