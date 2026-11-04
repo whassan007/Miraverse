@@ -14,12 +14,26 @@ local CHAPTER = 1
 local CHALLENGES_PER_CHAPTER = 5
 local STATION_REACH = 16
 local PHRASES = { "Hello!", "Great job!", "Follow me!", "Thank you!" }
-local VALID = { LB = true, EG = true, IQ = true, KR = true, FR = true }
+local VALID = {
+	LB = true,
+	EG = true,
+	IQ = true,
+	KR = true,
+	FR = true,
+	DE = true,
+	CN = true,
+	JP = true,
+	RU = true,
+	UA = true,
+	MA = true,
+}
 
 type Session = {
 	country: string?,
+	location: string?,
 	index: number,
 	busy: boolean,
+	traveling: boolean?,
 	met: { [string]: boolean },
 	save: any,
 }
@@ -71,19 +85,30 @@ end
 
 local function snapshot(player: Player, s: Session)
 	local cc = s.country
+	local loc = if s.location
+		then Registry.getLocation(s.location)
+		elseif cc then Registry.defaultLocation(cc)
+		else nil
 	local done, stampCode, nextKind, nextLabel, hasStations = 0, nil, nil, nil, false
+	local isRegionWithoutChallenges = false
 	if cc then
 		local chapter = chapterSave(s, cc)
 		for _ in chapter.completed do
 			done += 1
 		end
 		stampCode = chapter.stamp
-		hasStations = Registry.STATIONS[cc] ~= nil
-		local nextChallenge = getChallenges(cc)[s.index]
-		if nextChallenge then
-			nextKind = nextChallenge.type
-			local station = Registry.station(cc, nextChallenge.type)
-			nextLabel = station and station.label
+		local locStations = loc and loc.stations or nil
+		hasStations = locStations ~= nil and next(locStations) ~= nil
+		isRegionWithoutChallenges = loc ~= nil and loc.locationType == "region" and not hasStations
+		if not isRegionWithoutChallenges then
+			local nextChallenge = getChallenges(cc)[s.index]
+			if nextChallenge then
+				nextKind = nextChallenge.type
+				local station = if loc
+					then Registry.locationStation(loc.locationId, nextChallenge.type)
+					else Registry.station(cc, nextChallenge.type)
+				nextLabel = station and station.label
+			end
 		end
 	end
 	local stamps = {}
@@ -94,8 +119,22 @@ local function snapshot(player: Player, s: Session)
 			end
 		end
 	end
+	local visitedLocations = {}
+	if type(s.save.visitedLocations) == "table" then
+		for locId, visited in s.save.visitedLocations do
+			if visited then
+				table.insert(visitedLocations, locId)
+			end
+		end
+		table.sort(visitedLocations)
+	end
 	return {
 		country = cc,
+		location = loc and loc.locationId or nil,
+		locationName = loc and loc.displayName or nil,
+		locationType = loc and loc.locationType or nil,
+		visitedLocations = visitedLocations,
+		canRunChallenge = cc ~= nil and not hasStations and not isRegionWithoutChallenges,
 		index = math.min(s.index, CHALLENGES_PER_CHAPTER),
 		done = done,
 		total = CHALLENGES_PER_CHAPTER,
@@ -113,7 +152,15 @@ local function sessionOf(player: Player): Session
 	local s = sessions[player]
 	if not s then
 		local save = ProgressService.load(player)
-		s = { country = nil, index = 1, busy = false, met = {}, save = save }
+		s = {
+			country = nil,
+			location = nil,
+			index = 1,
+			busy = false,
+			traveling = false,
+			met = {},
+			save = save,
+		}
 		for cc, country in save.countries do
 			if country.metMentor then
 				s.met[cc] = true
@@ -140,37 +187,95 @@ local function moveTo(player: Player, target: CFrame)
 	character:PivotTo(target)
 end
 
--- The only way players change location.
-local function enterCountry(player: Player, cc: string): boolean
-	if not VALID[cc] then
-		return false
+-- The single server-authoritative travel function for Lobby, countries, and regional locations.
+local function travelTo(player: Player, destination: string): (boolean, string?)
+	if type(destination) ~= "string" or #destination == 0 then
+		return false, "invalid-destination"
 	end
 	local s = sessionOf(player)
-	s.country = cc
-	s.index = firstIncomplete(s, cc)
-	s.save.lastCountry = cc
+	if s.busy or s.traveling then
+		return false, "busy"
+	end
+
+	if string.upper(destination) == "LOBBY" then
+		if not s.country and not s.location then
+			return false, "already-at-lobby"
+		end
+		s.traveling = true
+		s.country = nil
+		s.location = nil
+		moveTo(player, CFrame.new(Registry.LOBBY + Vector3.new(0, 4, 0)))
+		s.traveling = false
+		pushState(player, s)
+		return true, nil
+	end
+
+	local targetLoc = Registry.getLocation(destination)
+	local isCountryRequest = false
+	if not targetLoc and VALID[string.upper(destination)] then
+		targetLoc = Registry.defaultLocation(string.upper(destination))
+		isCountryRequest = true
+	end
+	if not targetLoc then
+		return false, "invalid-destination"
+	end
+
+	if s.country == targetLoc.countryId and s.location == targetLoc.locationId then
+		return false, "already-there"
+	end
+
+	-- Validate travel graph transitions for explicit location travel
+	local currentFrom = if s.location then s.location else "LOBBY"
+	if not isCountryRequest and not Registry.canTravel(currentFrom, targetLoc.locationId) then
+		return false, "invalid-transition"
+	end
+
+	local spawn = MapBuilder.getLocationSpawn(targetLoc.locationId) or MapBuilder.getSpawn(targetLoc.countryId)
+	s.traveling = true
+	s.country = targetLoc.countryId
+	s.location = targetLoc.locationId
+	s.index = firstIncomplete(s, targetLoc.countryId)
+	ProgressService.recordLocationVisit(s.save, targetLoc.countryId, targetLoc.locationId)
 	ProgressService.markDirty(player)
-	local spawn = MapBuilder.getSpawn(cc)
 	if spawn then
 		moveTo(player, spawn.CFrame + Vector3.new(0, 4, 0))
+	else
+		moveTo(player, CFrame.new(targetLoc.spawn + Vector3.new(0, 4, 0)))
 	end
+	s.traveling = false
 	pushState(player, s)
-	return true
+	return true, nil
 end
 
-local function returnToLobby(player: Player)
-	local s = sessionOf(player)
-	s.country = nil
-	moveTo(player, CFrame.new(Registry.LOBBY + Vector3.new(0, 4, 0)))
-	pushState(player, s)
+local function enterCountry(player: Player, cc: string): boolean
+	if type(cc) ~= "string" or not VALID[string.upper(cc)] then
+		return false
+	end
+	local ok = travelTo(player, string.upper(cc))
+	return ok
 end
 
-local function nearStation(player: Player, cc: string, kind: string): (boolean, CFrame?)
-	local station = Registry.station(cc, kind)
+local function enterLocation(player: Player, locationId: string): (boolean, string?)
+	return travelTo(player, locationId)
+end
+
+local function returnToLobby(player: Player): boolean
+	local ok = travelTo(player, "LOBBY")
+	return ok
+end
+
+local function nearStation(player: Player, cc: string, kind: string, locationId: string?): (boolean, CFrame?)
+	local loc = if locationId then Registry.getLocation(locationId) else Registry.defaultLocation(cc)
+	if loc and loc.locationType == "region" then
+		return false, nil
+	end
+	local station = if loc
+		then Registry.locationStation(loc.locationId, kind)
+		else Registry.station(cc, kind)
 	if not station then
 		return true, nil -- This country has no placed stations yet.
 	end
-	local origin = Registry.origin(cc)
+	local origin = if loc then loc.origin else Registry.origin(cc)
 	local at = origin + Vector3.new(station.x, 0, station.z)
 	local face = origin + Vector3.new(station.faceX, 0, station.faceZ)
 	local character = player.Character
@@ -209,18 +314,25 @@ local function runCurrent(player: Player, requestedKind: string?): any
 	if not cc or s.busy then
 		return { ok = false, reason = "not-ready" }
 	end
+	local currentLoc = if s.location then Registry.getLocation(s.location) else Registry.defaultLocation(cc)
+	local startLocationId = if currentLoc then currentLoc.locationId else s.location
+	if currentLoc and currentLoc.locationType == "region" then
+		return { ok = false, reason = "wrong-location", state = snapshot(player, s) }
+	end
 	local list = getChallenges(cc)
 	local challenge = list[s.index]
 	if not challenge then
 		return { ok = false, reason = "complete", state = snapshot(player, s) }
 	end
-	if Registry.STATIONS[cc] and not s.met[cc] then
+	local locStations = currentLoc and currentLoc.stations or nil
+	local hasPlacedStations = locStations ~= nil and next(locStations) ~= nil
+	if hasPlacedStations and not s.met[cc] then
 		return { ok = false, reason = "meet-mentor", state = snapshot(player, s) }
 	end
 	if requestedKind and requestedKind ~= challenge.type then
 		return { ok = false, reason = "wrong-station", state = snapshot(player, s) }
 	end
-	local near, origin = nearStation(player, cc, challenge.type)
+	local near, origin = nearStation(player, cc, challenge.type, startLocationId)
 	if not near then
 		return { ok = false, reason = "too-far", state = snapshot(player, s) }
 	end
@@ -234,7 +346,7 @@ local function runCurrent(player: Player, requestedKind: string?): any
 	if not okRun then
 		warn("[Session] challenge error: " .. tostring(result))
 	end
-	if sessions[player] ~= s or s.country ~= cc then
+	if sessions[player] ~= s or s.country ~= cc or s.location ~= startLocationId then
 		return { ok = false, reason = "changed" }
 	end
 	if not okRun or result ~= true then
@@ -269,7 +381,8 @@ end
 
 local function talkToMentor(player: Player, cc: string)
 	local s = sessionOf(player)
-	if s.country ~= cc then
+	local defaultLocId = Registry.defaultLocationId(cc)
+	if s.country ~= cc or (defaultLocId and s.location ~= defaultLocId) then
 		enterCountry(player, cc)
 	end
 	s.met[cc] = true
@@ -305,6 +418,7 @@ function SessionManager.init()
 
 	local getState = newRemote("RemoteFunction", "GetState") :: RemoteFunction
 	local selectCountry = newRemote("RemoteFunction", "SelectCountry") :: RemoteFunction
+	local travelToLocation = newRemote("RemoteFunction", "TravelToLocation") :: RemoteFunction
 	local runChallenge = newRemote("RemoteFunction", "RunChallenge") :: RemoteFunction
 	local say = newRemote("RemoteEvent", "Say") :: RemoteEvent
 	local phraseOut = newRemote("RemoteEvent", "PhraseShown") :: RemoteEvent
@@ -336,15 +450,34 @@ function SessionManager.init()
 	})
 
 	MapBuilder.setHandlers({
-		travel = function(player: Player, cc: string)
-			enterCountry(player, cc)
+		travel = function(player: Player, destination: string)
+			if limited(player, "Travel") then
+				return
+			end
+			travelTo(player, destination)
 		end,
-		lobby = returnToLobby,
+		travelLocation = function(player: Player, locationId: string)
+			if limited(player, "Travel") then
+				return
+			end
+			enterLocation(player, locationId)
+		end,
+		lobby = function(player: Player)
+			if limited(player, "Travel") then
+				return
+			end
+			returnToLobby(player)
+		end,
 		mentor = talkToMentor,
 		station = function(player: Player, cc: string, kind: string)
 			local s = sessionOf(player)
+			local defaultLocId = Registry.defaultLocationId(cc)
 			if s.country ~= cc then
 				enterCountry(player, cc)
+			elseif defaultLocId and s.location and s.location ~= defaultLocId then
+				hintFor(player, { ok = false, reason = "wrong-location", state = snapshot(player, s) })
+				challengeEnded:FireClient(player)
+				return
 			end
 			hintFor(player, runCurrent(player, kind))
 			challengeEnded:FireClient(player)
@@ -362,11 +495,37 @@ function SessionManager.init()
 		if limited(player, "SelectCountry") then
 			return { ok = false, reason = "slow" }
 		end
-		if type(cc) ~= "string" or not VALID[cc] then
+		if type(cc) ~= "string" then
 			return { ok = false, reason = "invalid" }
 		end
-		enterCountry(player, cc)
-		return { ok = true, state = snapshot(player, sessionOf(player)) }
+		local upper = string.upper(cc)
+		if VALID[upper] then
+			local ok, reason = travelTo(player, upper)
+			if not ok and reason ~= "already-there" then
+				return { ok = false, reason = reason or "invalid", state = snapshot(player, sessionOf(player)) }
+			end
+			return { ok = true, state = snapshot(player, sessionOf(player)) }
+		end
+		local loc = Registry.getLocation(cc)
+		if loc then
+			local ok, reason = enterLocation(player, loc.locationId)
+			if not ok then
+				return { ok = false, reason = reason or "invalid", state = snapshot(player, sessionOf(player)) }
+			end
+			return { ok = true, state = snapshot(player, sessionOf(player)) }
+		end
+		return { ok = false, reason = "invalid" }
+	end
+
+	travelToLocation.OnServerInvoke = function(player, locationId)
+		if limited(player, "TravelToLocation") then
+			return { ok = false, reason = "slow" }
+		end
+		if type(locationId) ~= "string" then
+			return { ok = false, reason = "invalid-destination" }
+		end
+		local ok, reason = enterLocation(player, locationId)
+		return { ok = ok, reason = reason, state = snapshot(player, sessionOf(player)) }
 	end
 
 	-- For countries without placed stations. Station countries still pass the distance check.
@@ -385,7 +544,7 @@ function SessionManager.init()
 			return
 		end
 		local session = sessionOf(player)
-		if session.country and not session.busy then
+		if (session.country or session.location) and not session.busy then
 			returnToLobby(player)
 		end
 	end)

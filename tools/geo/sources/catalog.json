@@ -1,0 +1,902 @@
+{
+  "version": "1.0.0",
+  "title": "Miraverse 11-Country Real-World Geographic & Topographic Catalog",
+  "sources": {
+    "copernicus_glo30": {
+      "id": "COP-DEM_GLO-30",
+      "name": "Copernicus DEM GLO-30 (DGED / COG)",
+      "type": "DSM",
+      "url": "https://dataspace.copernicus.eu/explore-data/data-collections/copernicus-contributing-missions/collections-description/COP-DEM",
+      "s3BucketUrl": "https://copernicus-dem-30m.s3.amazonaws.com",
+      "crs": "EPSG:4326",
+      "horizontalResolutionMeters": 30,
+      "verticalDatum": "EGM2008",
+      "verticalUnits": "meters",
+      "license": "Copernicus DEM License (Free, full and open access)",
+      "attribution": "© DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+      "notes": "Digital Surface Model (DSM); buildings and dense tree canopy can slightly elevate local surfaces."
+    },
+    "mapzen_terrarium": {
+      "id": "MAPZEN_TERRARIUM_AWS",
+      "name": "Mapzen Terrain Tiles (Terrarium format on AWS Open Data)",
+      "type": "DEM_TILED",
+      "url": "https://registry.opendata.aws/terrain-tiles/",
+      "tileEndpoint": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+      "docUrl": "https://github.com/tilezen/joerd",
+      "crs": "EPSG:3857",
+      "verticalDatum": "EGM96 / Regional Source Composite (SRTM, GMTED, ETOPO1)",
+      "verticalUnits": "meters",
+      "license": "Open Data / Composite Public Domain & Attribution (SRTM, USGS, ETOPO1)",
+      "attribution": "Terrain tiles via Mapzen Joerd on AWS Open Data (underlying sources: SRTM, GMTED2010, ETOPO1)."
+    },
+    "openstreetmap": {
+      "id": "OSM_ODBL",
+      "name": "OpenStreetMap Vector Coastlines, Rivers, Roads & Landmarks",
+      "type": "VECTOR",
+      "url": "https://www.openstreetmap.org/",
+      "extractUrl": "https://download.geofabrik.de/",
+      "crs": "EPSG:4326",
+      "license": "ODbL 1.0 (Open Data Commons Open Database License)",
+      "attribution": "© OpenStreetMap contributors, licensed under ODbL 1.0."
+    },
+    "hydrosheds": {
+      "id": "HYDROSHEDS_V1",
+      "name": "HydroSHEDS (HydroRIVERS & HydroLAKES)",
+      "type": "HYDROLOGY",
+      "url": "https://www.hydrosheds.org/products/hydrorivers",
+      "lakesUrl": "https://www.hydrosheds.org/products/hydrolakes",
+      "crs": "EPSG:4326",
+      "license": "HydroSHEDS License (Free for non-commercial and commercial educational use with attribution)",
+      "attribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS)."
+    }
+  },
+  "countries": {
+    "LB": {
+      "countryId": "LB",
+      "name": "Lebanon",
+      "cellIndex": 1,
+      "targetCRS": "EPSG:32636",
+      "overviewBbox": [35.05, 33.05, 36.65, 34.70],
+      "terrainIdentity": "Mediterranean coastline, coastal settlements, Mount Lebanon ridges, valleys and highlands, and inland Bekaa transition.",
+      "locations": ["byblos", "mount_lebanon", "beirut"]
+    },
+    "EG": {
+      "countryId": "EG",
+      "name": "Egypt",
+      "cellIndex": 2,
+      "targetCRS": "EPSG:32636",
+      "overviewBbox": [29.50, 23.80, 33.20, 31.60],
+      "terrainIdentity": "Nile Valley, Nile Delta, Mediterranean coast, surrounding desert plateaus, and Upper Egypt cataract granite river landscapes.",
+      "locations": ["cairo", "alexandria", "aswan"]
+    },
+    "IQ": {
+      "countryId": "IQ",
+      "name": "Iraq",
+      "cellIndex": 3,
+      "targetCRS": "EPSG:32638",
+      "overviewBbox": [43.50, 30.20, 48.00, 36.60],
+      "terrainIdentity": "Mesopotamian alluvial plains, Tigris and Euphrates river systems, northern Kurdish foothills and mountains around Erbil, and southern Shatt al-Arab lowland waterways in Basra.",
+      "locations": ["baghdad", "erbil", "basra"]
+    },
+    "KR": {
+      "countryId": "KR",
+      "name": "South Korea",
+      "cellIndex": 4,
+      "targetCRS": "EPSG:32652",
+      "overviewBbox": [126.50, 34.90, 129.30, 37.80],
+      "terrainIdentity": "Mountainous peninsula, inland basins and ridges around Jeonju, the Han River setting and Bukhansan/Namsan in Seoul, and Busan's coastal hills and Korea Strait waterways.",
+      "locations": ["jeonju", "seoul", "busan"]
+    },
+    "FR": {
+      "countryId": "FR",
+      "name": "France",
+      "cellIndex": 5,
+      "targetCRS": "EPSG:32631",
+      "overviewBbox": [2.10, 43.10, 5.60, 49.00],
+      "terrainIdentity": "Lyon's Rhône–Saône confluence and Fourvière/Croix-Rousse hills, Paris's gentle Seine basin and Montmartre hill, and Marseille's dramatic Mediterranean limestone coastal relief.",
+      "locations": ["lyon", "paris", "marseille"]
+    },
+    "DE": {
+      "countryId": "DE",
+      "name": "Germany",
+      "cellIndex": 6,
+      "targetCRS": "EPSG:32632",
+      "overviewBbox": [7.50, 49.90, 8.00, 50.30],
+      "terrainIdentity": "Upper Middle Rhine Valley gorge, steep slate cliffs around the Lorelei bend, riverside terraces, and wooded Hunsrück/Taunus uplands.",
+      "locations": ["rhine_valley"]
+    },
+    "CN": {
+      "countryId": "CN",
+      "name": "China",
+      "cellIndex": 7,
+      "targetCRS": "EPSG:32649",
+      "overviewBbox": [111.30, 28.70, 111.70, 29.10],
+      "terrainIdentity": "Wuling-inspired Taoyuan (Hunan) karst hills, Yuan River tributary stream valley, narrow mountain pass, and enclosed agricultural basin.",
+      "locations": ["wuling_valley"]
+    },
+    "JP": {
+      "countryId": "JP",
+      "name": "Japan",
+      "cellIndex": 8,
+      "targetCRS": "EPSG:32654",
+      "overviewBbox": [140.30, 38.20, 141.20, 38.50],
+      "terrainIdentity": "Bashō's Oku no Hosomichi Tohoku route corridor connecting Yamadera's rocky mountain temple slopes with Matsushima Bay's pine-clad coastal islands.",
+      "locations": ["tohoku_route"]
+    },
+    "RU": {
+      "countryId": "RU",
+      "name": "Russia",
+      "cellIndex": 9,
+      "targetCRS": "EPSG:32638",
+      "overviewBbox": [45.10, 56.75, 45.30, 56.90],
+      "terrainIdentity": "Lake Svetloyar oval glacial-karst lake basin in the Zavolzhye northern forest lowlands, surrounded by gentle birch-and-pine hills.",
+      "locations": ["lake_svetloyar"]
+    },
+    "UA": {
+      "countryId": "UA",
+      "name": "Ukraine",
+      "cellIndex": 10,
+      "targetCRS": "EPSG:32636",
+      "overviewBbox": [30.40, 50.38, 30.65, 50.52],
+      "terrainIdentity": "Steep right-bank Kyiv founding hills (Starokyivska, Shchekavytsia, Khorevytsia), Podil river terrace, and the wide Dnipro River with Trukhaniv island.",
+      "locations": ["kyiv_hills"]
+    },
+    "MA": {
+      "countryId": "MA",
+      "name": "Morocco",
+      "cellIndex": 11,
+      "targetCRS": "EPSG:32629",
+      "overviewBbox": [-8.20, 31.10, -7.80, 31.75],
+      "terrainIdentity": "Flat semi-arid Haouz Plain around Marrakesh Medina and Jemaa el-Fnaa (~450 m), with the High Atlas mountain range rising in the southern regional distance.",
+      "locations": ["marrakesh"]
+    }
+  },
+  "locations": {
+    "byblos": {
+      "locationId": "byblos",
+      "countryId": "LB",
+      "displayName": "Byblos",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 34.1230,
+      "centerLon": 35.6435,
+      "bbox": [35.6280, 34.1080, 35.6680, 34.1380],
+      "regionalBbox": [35.6000, 34.0800, 35.7200, 34.1700],
+      "targetCRS": "EPSG:32636",
+      "copernicusTile": "Copernicus_DSM_COG_10_N34_00_E035_00_DEM",
+      "hasCoastline": true,
+      "coastlineDirection": "west_northwest",
+      "hasRiver": false,
+      "seaLevelMeters": 0.0,
+      "biome": "mediterranean_coastal",
+      "robloxOrigin": [800, 10, 0],
+      "robloxSpawn": [800, 10.5, 28],
+      "spatialBounds": {
+        "min": [660, -25, -210],
+        "max": [940, 95, 165]
+      },
+      "horizontalExtentStuds": [240, 260],
+      "verticalRangeStuds": [6, 36],
+      "verticalExaggeration": 1.15,
+      "gameplayAdaptations": [
+        "Flattened harbor quay and main town plaza around (800, 10, 0) within a 96x96 stud deformation mask so Teta Nahla and all 5 Chapter 1 challenge stations remain level and accessible.",
+        "Preserved Mediterranean Sea basin north/west of the harbor quay at Y = 6.5..10 studs with sandy seabed and limestone breakwater.",
+        "Mapped real inland coastal foothills rising east/southeast of Byblos Old Town up to Y = 34 studs."
+      ],
+      "controlPoints": [
+        { "name": "Byblos Ancient Port & Quay", "lat": 34.1236, "lon": 35.6419, "expectedElevM": 2.0, "gameOffset": [0, -1.5, -56] },
+        { "name": "Byblos Citadel & Crusader Castle Mound", "lat": 34.1197, "lon": 35.6454, "expectedElevM": 24.0, "gameOffset": [22, 0.5, -36] },
+        { "name": "Inland Jbeil Foothill Terrace", "lat": 34.1215, "lon": 35.6580, "expectedElevM": 115.0, "gameOffset": [0, 14.0, 95] }
+      ]
+    },
+    "mount_lebanon": {
+      "locationId": "mount_lebanon",
+      "countryId": "LB",
+      "displayName": "Mount Lebanon",
+      "locationType": "region",
+      "geographicClass": "verified_real_world",
+      "centerLat": 34.0686,
+      "centerLon": 35.8906,
+      "bbox": [35.8600, 34.0450, 35.9200, 34.0950],
+      "regionalBbox": [35.7500, 34.0000, 36.0500, 34.2500],
+      "targetCRS": "EPSG:32636",
+      "copernicusTile": "Copernicus_DSM_COG_10_N34_00_E035_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Nahr Ibrahim (Adonis River) Headwaters at Afqa",
+      "seaLevelMeters": 0.0,
+      "biome": "mediterranean_montane_cedar_olive",
+      "robloxOrigin": [800, 38, 260],
+      "robloxSpawn": [800, 38.5, 288],
+      "spatialBounds": {
+        "min": [660, 10, 175],
+        "max": [940, 140, 390]
+      },
+      "horizontalExtentStuds": [240, 200],
+      "verticalRangeStuds": [26, 96],
+      "verticalExaggeration": 1.25,
+      "gameplayAdaptations": [
+        "Terraced agricultural step mask (Al-Jall) across Tiers 1, 2, and 3 (Y = 38, 46, 54 studs) so players can ascend stone stairs and smooth ramps without steep slope slippage.",
+        "Preserved high limestone cliff amphitheater and Afqa spring basin on the western flank (X = 742, Y = 39, Z = 246) and framing Mount Lebanon ridge peaks behind Tier 3 up to Y = 96 studs."
+      ],
+      "controlPoints": [
+        { "name": "Afqa Grotto & Nahr Ibrahim Spring", "lat": 34.0686, "lon": 35.8906, "expectedElevM": 1255.0, "gameOffset": [-58, 1.1, -14] },
+        { "name": "Al-Jall Mid-Slope Agricultural Terrace", "lat": 34.0750, "lon": 35.8820, "expectedElevM": 1340.0, "gameOffset": [0, 8.0, 36] },
+        { "name": "Mount Lebanon Upper Cedar Escarpment", "lat": 34.0620, "lon": 35.9050, "expectedElevM": 1680.0, "gameOffset": [0, 26.0, 106] }
+      ]
+    },
+    "beirut": {
+      "locationId": "beirut",
+      "countryId": "LB",
+      "displayName": "Beirut",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 33.8938,
+      "centerLon": 35.5018,
+      "bbox": [35.4680, 33.8780, 35.5350, 33.9120],
+      "regionalBbox": [35.4500, 33.8400, 35.6000, 33.9500],
+      "targetCRS": "EPSG:32636",
+      "copernicusTile": "Copernicus_DSM_COG_10_N33_00_E035_00_DEM",
+      "hasCoastline": true,
+      "coastlineDirection": "north_and_west_promontory",
+      "hasRiver": true,
+      "riverName": "Nahr Beirut (East flank)",
+      "seaLevelMeters": 0.0,
+      "biome": "mediterranean_coastal_promontory",
+      "robloxOrigin": [800, 14, -290],
+      "robloxSpawn": [800, 14.5, -262],
+      "spatialBounds": {
+        "min": [660, -20, -395],
+        "max": [940, 95, -215]
+      },
+      "horizontalExtentStuds": [220, 160],
+      "verticalRangeStuds": [6, 38],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Levelled Ras Beirut / Corniche promenade and central civic square at Y = 14 studs with gentle stone steps rising toward the Achrafieh / Serail hills.",
+        "Preserved Beirut's characteristic triangular coastal promontory with Mediterranean water wrapping both the northern St. George Bay side and western Raouché sea stacks."
+      ],
+      "controlPoints": [
+        { "name": "Raouché (Pigeon Rocks) Western Sea Cliff", "lat": 33.8898, "lon": 35.4701, "expectedElevM": 32.0, "gameOffset": [-78, 4.0, -18] },
+        { "name": "Beirut Corniche & Zaitunay Waterfront", "lat": 33.9020, "lon": 35.4950, "expectedElevM": 4.0, "gameOffset": [0, -2.0, -48] },
+        { "name": "Achrafieh Hilltop Overlook", "lat": 33.8885, "lon": 35.5180, "expectedElevM": 88.0, "gameOffset": [52, 12.0, 28] }
+      ]
+    },
+    "cairo": {
+      "locationId": "cairo",
+      "countryId": "EG",
+      "displayName": "Cairo",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 30.0426,
+      "centerLon": 31.2578,
+      "bbox": [31.2100, 30.0100, 31.2900, 30.0750],
+      "regionalBbox": [31.1000, 29.9500, 31.3800, 30.1500],
+      "targetCRS": "EPSG:32636",
+      "copernicusTile": "Copernicus_DSM_COG_10_N30_00_E031_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Nile River (Gezira / Zamalek Channel)",
+      "seaLevelMeters": 18.0,
+      "biome": "arid_river_valley_and_limestone_escarpment",
+      "robloxOrigin": [1600, 10, 0],
+      "robloxSpawn": [1600, 10.5, 28],
+      "spatialBounds": {
+        "min": [1460, -20, -165],
+        "max": [1740, 85, 165]
+      },
+      "horizontalExtentStuds": [220, 220],
+      "verticalRangeStuds": [7, 28],
+      "verticalExaggeration": 1.15,
+      "gameplayAdaptations": [
+        "Maintained flat Nile floodplain courtyard around (1600, 10, 0) for Teta Samira's plaza, with the Nile River channel to the west and the Muqattam limestone plateau rising gently to the east (never alpine mountains)."
+      ],
+      "controlPoints": [
+        { "name": "Nile Corniche & Gezira Channel", "lat": 30.0444, "lon": 31.2280, "expectedElevM": 19.0, "gameOffset": [-68, -2.5, 0] },
+        { "name": "Bab Zuweila & Historic Cairo Quarter", "lat": 30.0426, "lon": 31.2578, "expectedElevM": 32.0, "gameOffset": [0, 0.0, 0] },
+        { "name": "Muqattam Limestone Escarpment", "lat": 30.0280, "lon": 31.2780, "expectedElevM": 145.0, "gameOffset": [74, 14.0, 36] }
+      ]
+    },
+    "alexandria": {
+      "locationId": "alexandria",
+      "countryId": "EG",
+      "displayName": "Alexandria",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 31.2001,
+      "centerLon": 29.9187,
+      "bbox": [29.8750, 31.1800, 29.9550, 31.2250],
+      "regionalBbox": [29.8200, 31.1200, 30.0200, 31.2600],
+      "targetCRS": "EPSG:32635",
+      "copernicusTile": "Copernicus_DSM_COG_10_N31_00_E029_00_DEM",
+      "hasCoastline": true,
+      "coastlineDirection": "north_crescent_harbor",
+      "hasRiver": false,
+      "seaLevelMeters": 0.0,
+      "biome": "mediterranean_delta_coast",
+      "robloxOrigin": [1600, 10, -280],
+      "robloxSpawn": [1600, 10.5, -252],
+      "spatialBounds": {
+        "min": [1460, -20, -390],
+        "max": [1740, 75, -185]
+      },
+      "horizontalExtentStuds": [220, 170],
+      "verticalRangeStuds": [6, 18],
+      "verticalExaggeration": 1.10,
+      "gameplayAdaptations": [
+        "Walkable Eastern Harbor Corniche crescent and Qaitbay promontory at low coastal elevation (Y = 10..15 studs), accurately reflecting Alexandria's low-lying coastal ridge between the Mediterranean and Lake Mariout."
+      ],
+      "controlPoints": [
+        { "name": "Qaitbay / Pharos Headland", "lat": 31.2140, "lon": 29.8856, "expectedElevM": 6.0, "gameOffset": [-56, 1.5, -46] },
+        { "name": "Eastern Harbor Corniche", "lat": 31.2015, "lon": 29.9090, "expectedElevM": 8.0, "gameOffset": [0, 0.0, -20] },
+        { "name": "Kom el-Dikka Low Ridge", "lat": 31.1950, "lon": 29.9040, "expectedElevM": 22.0, "gameOffset": [18, 4.0, 24] }
+      ]
+    },
+    "aswan": {
+      "locationId": "aswan",
+      "countryId": "EG",
+      "displayName": "Aswan",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 24.0889,
+      "centerLon": 32.8998,
+      "bbox": [32.8650, 24.0600, 32.9200, 24.1150],
+      "regionalBbox": [32.8200, 24.0100, 32.9600, 24.1500],
+      "targetCRS": "EPSG:32636",
+      "copernicusTile": "Copernicus_DSM_COG_10_N24_00_E032_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Nile River First Cataract & Elephantine Island",
+      "seaLevelMeters": 88.0,
+      "biome": "upper_egypt_cataract_granite_and_desert_dunes",
+      "robloxOrigin": [1600, 16, 280],
+      "robloxSpawn": [1600, 16.5, 308],
+      "spatialBounds": {
+        "min": [1460, -10, 185],
+        "max": [1740, 85, 390]
+      },
+      "horizontalExtentStuds": [220, 170],
+      "verticalRangeStuds": [11, 38],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Walkable East Bank Nile promenade and granite island stepping terrace at Y = 16 studs, facing the high golden Qubbet el-Hawa western desert dunes across the river channel."
+      ],
+      "controlPoints": [
+        { "name": "Elephantine Island Mid-Channel", "lat": 24.0850, "lon": 32.8860, "expectedElevM": 98.0, "gameOffset": [-18, -1.0, -8] },
+        { "name": "Aswan East Bank Corniche", "lat": 24.0889, "lon": 32.8998, "expectedElevM": 106.0, "gameOffset": [28, 0.0, 0] },
+        { "name": "Qubbet el-Hawa West Bank Sandstone Escarpment", "lat": 24.1015, "lon": 32.8830, "expectedElevM": 175.0, "gameOffset": [-68, 16.0, -24] }
+      ]
+    },
+    "baghdad": {
+      "locationId": "baghdad",
+      "countryId": "IQ",
+      "displayName": "Baghdad",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 33.3406,
+      "centerLon": 44.3879,
+      "bbox": [44.3500, 33.3100, 44.4200, 33.3700],
+      "regionalBbox": [44.2800, 33.2400, 44.4900, 33.4200],
+      "targetCRS": "EPSG:32638",
+      "copernicusTile": "Copernicus_DSM_COG_10_N33_00_E044_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Tigris River (Dijlah) Meander between Rusafa and Karkh",
+      "seaLevelMeters": 31.0,
+      "biome": "mesopotamian_alluvial_plain",
+      "robloxOrigin": [2400, 10, 0],
+      "robloxSpawn": [2400, 10.5, 28],
+      "spatialBounds": {
+        "min": [2260, -20, -165],
+        "max": [2540, 75, 165]
+      },
+      "horizontalExtentStuds": [220, 220],
+      "verticalRangeStuds": [7, 16],
+      "verticalExaggeration": 1.05,
+      "gameplayAdaptations": [
+        "Preserved Baghdad's true flat Mesopotamian alluvial plain (31-39 m ASL) with zero artificial mountains, sculpting the winding Tigris river channel and Rusafa/Al-Mutanabbi embankment."
+      ],
+      "controlPoints": [
+        { "name": "Al-Mutanabbi Street & Rusafa Bank", "lat": 33.3406, "lon": 44.3879, "expectedElevM": 36.0, "gameOffset": [18, 0.0, -10] },
+        { "name": "Tigris River Channel Center", "lat": 33.3385, "lon": 44.3835, "expectedElevM": 31.0, "gameOffset": [-28, -3.0, 0] },
+        { "name": "Karkh West Bank Terrace", "lat": 33.3485, "lon": 44.3660, "expectedElevM": 38.0, "gameOffset": [-64, 0.5, 14] }
+      ]
+    },
+    "erbil": {
+      "locationId": "erbil",
+      "countryId": "IQ",
+      "displayName": "Erbil",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 36.1911,
+      "centerLon": 44.0092,
+      "bbox": [43.9750, 36.1650, 44.0450, 36.2150],
+      "regionalBbox": [43.9000, 36.1200, 44.2500, 36.3800],
+      "targetCRS": "EPSG:32638",
+      "copernicusTile": "Copernicus_DSM_COG_10_N36_00_E044_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": false,
+      "seaLevelMeters": 390.0,
+      "biome": "northern_mesopotamian_steppe_and_zagros_foothills",
+      "robloxOrigin": [2400, 24, 280],
+      "robloxSpawn": [2400, 24.5, 308],
+      "spatialBounds": {
+        "min": [2260, 0, 185],
+        "max": [2540, 95, 390]
+      },
+      "horizontalExtentStuds": [220, 170],
+      "verticalRangeStuds": [18, 52],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Modeled the iconic oval tell (mound) of the Citadel of Erbil rising ~28-32 m above the surrounding plain, with northern Kurdish foothills (Safeen Mountain direction) along the northeastern horizon."
+      ],
+      "controlPoints": [
+        { "name": "Erbil Citadel Mound (Qalat Hewlêr)", "lat": 36.1911, "lon": 44.0092, "expectedElevM": 431.0, "gameOffset": [0, 8.0, -12] },
+        { "name": "Lower Bazaar & Southern Gate Plain", "lat": 36.1875, "lon": 44.0095, "expectedElevM": 398.0, "gameOffset": [0, 0.0, 24] },
+        { "name": "Northeast Foothill Ridge", "lat": 36.2120, "lon": 44.0420, "expectedElevM": 465.0, "gameOffset": [64, 16.0, -52] }
+      ]
+    },
+    "basra": {
+      "locationId": "basra",
+      "countryId": "IQ",
+      "displayName": "Basra",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 30.5081,
+      "centerLon": 47.8492,
+      "bbox": [47.8100, 30.4800, 47.8800, 30.5350],
+      "regionalBbox": [47.7400, 30.4200, 47.9500, 30.6000],
+      "targetCRS": "EPSG:32638",
+      "copernicusTile": "Copernicus_DSM_COG_10_N30_00_E047_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Shatt al-Arab & Ashar Creek Canal",
+      "seaLevelMeters": 1.0,
+      "biome": "southern_mesopotamian_estuary_and_date_palm_canals",
+      "robloxOrigin": [2400, 9, -280],
+      "robloxSpawn": [2400, 9.5, -252],
+      "spatialBounds": {
+        "min": [2260, -20, -390],
+        "max": [2540, 65, -185]
+      },
+      "horizontalExtentStuds": [220, 170],
+      "verticalRangeStuds": [6, 13],
+      "verticalExaggeration": 1.05,
+      "gameplayAdaptations": [
+        "Strictly ultra-low estuarine relief (1-6 m ASL, clearly distinct from Erbil's upland citadel and foothills), featuring the wide Shatt al-Arab waterway and intersecting Ashar canal bridged by walkable quays."
+      ],
+      "controlPoints": [
+        { "name": "Shatt al-Arab Corniche Waterway", "lat": 30.5150, "lon": 47.8480, "expectedElevM": 2.0, "gameOffset": [28, -2.5, -28] },
+        { "name": "Ashar Creek Shanasheel Quarter", "lat": 30.5081, "lon": 47.8380, "expectedElevM": 4.0, "gameOffset": [-18, 0.0, 0] },
+        { "name": "Date Palm Alluvial Lowland", "lat": 30.4950, "lon": 47.8550, "expectedElevM": 3.0, "gameOffset": [42, 0.5, 32] }
+      ]
+    },
+    "jeonju": {
+      "locationId": "jeonju",
+      "countryId": "KR",
+      "displayName": "Jeonju",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 35.8147,
+      "centerLon": 127.1526,
+      "bbox": [127.1300, 35.7950, 127.1800, 35.8350],
+      "regionalBbox": [127.0800, 35.7500, 127.2400, 35.8800],
+      "targetCRS": "EPSG:32652",
+      "copernicusTile": "Copernicus_DSM_COG_10_N35_00_E127_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Jeonjucheon Stream",
+      "seaLevelMeters": 35.0,
+      "biome": "korean_inland_basin_and_forested_ridges",
+      "robloxOrigin": [3200, 10, 0],
+      "robloxSpawn": [3200, 10.5, 28],
+      "spatialBounds": {
+        "min": [3060, -20, -165],
+        "max": [3340, 90, 165]
+      },
+      "horizontalExtentStuds": [220, 220],
+      "verticalRangeStuds": [8, 42],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Flat Hanok Village basin floor at Y = 10 studs bordered by the Jeonjucheon stream to the south/west and the Omokdae hill and Kirinbong forested ridges rising to the east/southeast."
+      ],
+      "controlPoints": [
+        { "name": "Jeonju Hanok Village Courtyard", "lat": 35.8147, "lon": 127.1526, "expectedElevM": 46.0, "gameOffset": [0, 0.0, 0] },
+        { "name": "Jeonjucheon Stream Bank", "lat": 35.8105, "lon": 127.1485, "expectedElevM": 38.0, "gameOffset": [-48, -2.0, 28] },
+        { "name": "Omokdae & Kirinbong Eastern Ridge", "lat": 35.8140, "lon": 127.1650, "expectedElevM": 265.0, "gameOffset": [68, 22.0, -18] }
+      ]
+    },
+    "seoul": {
+      "locationId": "seoul",
+      "countryId": "KR",
+      "displayName": "Seoul",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 37.5665,
+      "centerLon": 126.9780,
+      "bbox": [126.9350, 37.5150, 127.0200, 37.6050],
+      "regionalBbox": [126.8800, 37.4800, 127.0800, 37.6700],
+      "targetCRS": "EPSG:32652",
+      "copernicusTile": "Copernicus_DSM_COG_10_N37_00_E126_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Han River (Hangang) & Cheonggyecheon Basin",
+      "seaLevelMeters": 12.0,
+      "biome": "korean_temperate_mountain_basin",
+      "robloxOrigin": [3200, 14, 280],
+      "robloxSpawn": [3200, 14.5, 308],
+      "spatialBounds": {
+        "min": [3060, -15, 185],
+        "max": [3340, 105, 390]
+      },
+      "horizontalExtentStuds": [220, 170],
+      "verticalRangeStuds": [10, 56],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Walkable Jongno / Gwanghwamun basin floor between the steep granite peaks of Bugaksan/Bukhansan to the north, Namsan hill to the south, and the wide Han River channel."
+      ],
+      "controlPoints": [
+        { "name": "Gwanghwamun & Jongno Basin", "lat": 37.5725, "lon": 126.9768, "expectedElevM": 38.0, "gameOffset": [0, 0.0, -8] },
+        { "name": "Bugaksan Northern Granite Peak", "lat": 37.5955, "lon": 126.9800, "expectedElevM": 342.0, "gameOffset": [0, 28.0, -58] },
+        { "name": "Namsan Hill & Han River Corridor", "lat": 37.5512, "lon": 126.9882, "expectedElevM": 262.0, "gameOffset": [28, 18.0, 44] }
+      ]
+    },
+    "busan": {
+      "locationId": "busan",
+      "countryId": "KR",
+      "displayName": "Busan",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 35.1040,
+      "centerLon": 129.0320,
+      "bbox": [128.9950, 35.0750, 129.0650, 35.1350],
+      "regionalBbox": [128.9500, 35.0400, 129.1500, 35.2000],
+      "targetCRS": "EPSG:32652",
+      "copernicusTile": "Copernicus_DSM_COG_10_N35_00_E129_00_DEM",
+      "hasCoastline": true,
+      "coastlineDirection": "south_harbor_and_islands",
+      "hasRiver": false,
+      "seaLevelMeters": 0.0,
+      "biome": "korean_coastal_hills_and_harbor",
+      "robloxOrigin": [3200, 12, -280],
+      "robloxSpawn": [3200, 12.5, -252],
+      "spatialBounds": {
+        "min": [3060, -20, -390],
+        "max": [3340, 95, -185]
+      },
+      "horizontalExtentStuds": [220, 170],
+      "verticalRangeStuds": [6, 48],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Walkable Jagalchi / North Port waterfront rising steeply into Gamcheon-style terraced coastal hillsides and Gudeoksan/Cheonmasan peaks overlooking the Yeongdo channel."
+      ],
+      "controlPoints": [
+        { "name": "Busan Harbor & Jagalchi Quay", "lat": 35.0965, "lon": 129.0305, "expectedElevM": 4.0, "gameOffset": [0, -2.0, 32] },
+        { "name": "Cheonmasan & Gamcheon Coastal Hillside", "lat": 35.0975, "lon": 129.0105, "expectedElevM": 285.0, "gameOffset": [-54, 24.0, -22] },
+        { "name": "Yeongdo Island Across Harbor Channel", "lat": 35.0820, "lon": 129.0550, "expectedElevM": 160.0, "gameOffset": [58, 12.0, 52] }
+      ]
+    },
+    "lyon": {
+      "locationId": "lyon",
+      "countryId": "FR",
+      "displayName": "Lyon",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 45.7622,
+      "centerLon": 4.8273,
+      "bbox": [4.8000, 45.7400, 4.8600, 45.7850],
+      "regionalBbox": [4.7500, 45.7000, 4.9200, 45.8200],
+      "targetCRS": "EPSG:32631",
+      "copernicusTile": "Copernicus_DSM_COG_10_N45_00_E004_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Saône & Rhône Confluence around Presqu'île",
+      "seaLevelMeters": 162.0,
+      "biome": "rhone_saone_confluence_and_hills",
+      "robloxOrigin": [4000, 10, 0],
+      "robloxSpawn": [4000, 10.5, 28],
+      "spatialBounds": {
+        "min": [3860, -20, -165],
+        "max": [4140, 85, 165]
+      },
+      "horizontalExtentStuds": [220, 220],
+      "verticalRangeStuds": [7, 36],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Preserved the Presqu'île and Vieux Lyon riverfront plaza at Y = 10 studs, flanked by the Saône and Rhône river channels and the steep Fourvière hill to the west and Croix-Rousse plateau to the north."
+      ],
+      "controlPoints": [
+        { "name": "Vieux Lyon & Saône Quays", "lat": 45.7622, "lon": 4.8273, "expectedElevM": 168.0, "gameOffset": [-18, 0.0, 0] },
+        { "name": "Fourvière Western Hill", "lat": 45.7623, "lon": 4.8213, "expectedElevM": 287.0, "gameOffset": [-72, 20.0, -8] },
+        { "name": "Croix-Rousse Northern Silk Hill", "lat": 45.7726, "lon": 4.8347, "expectedElevM": 248.0, "gameOffset": [18, 16.0, -56] }
+      ]
+    },
+    "paris": {
+      "locationId": "paris",
+      "countryId": "FR",
+      "displayName": "Paris",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 48.8566,
+      "centerLon": 2.3522,
+      "bbox": [2.3100, 48.8350, 2.3900, 48.8900],
+      "regionalBbox": [2.2500, 48.8000, 2.4500, 48.9200],
+      "targetCRS": "EPSG:32631",
+      "copernicusTile": "Copernicus_DSM_COG_10_N48_00_E002_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Seine River & Île de la Cité",
+      "seaLevelMeters": 28.0,
+      "biome": "seine_sedimentary_basin",
+      "robloxOrigin": [4000, 10, 280],
+      "robloxSpawn": [4000, 10.5, 308],
+      "spatialBounds": {
+        "min": [3860, -20, 185],
+        "max": [4140, 75, 390]
+      },
+      "horizontalExtentStuds": [220, 170],
+      "verticalRangeStuds": [7, 24],
+      "verticalExaggeration": 1.15,
+      "gameplayAdaptations": [
+        "Strictly gentle sedimentary basin relief (28-130 m ASL, zero alpine mountains), featuring the curved Seine River with Île de la Cité and the modest Butte Montmartre hill on the northern rim."
+      ],
+      "controlPoints": [
+        { "name": "Île de la Cité & Seine Embankment", "lat": 48.8550, "lon": 2.3480, "expectedElevM": 33.0, "gameOffset": [0, -1.0, 8] },
+        { "name": "Montagne Sainte-Geneviève Left Bank", "lat": 48.8462, "lon": 2.3464, "expectedElevM": 61.0, "gameOffset": [-14, 4.0, 42] },
+        { "name": "Butte Montmartre Northern Hill", "lat": 48.8867, "lon": 2.3431, "expectedElevM": 130.0, "gameOffset": [12, 12.0, -54] }
+      ]
+    },
+    "marseille": {
+      "locationId": "marseille",
+      "countryId": "FR",
+      "displayName": "Marseille",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 43.2965,
+      "centerLon": 5.3698,
+      "bbox": [5.3400, 43.2750, 5.4050, 43.3150],
+      "regionalBbox": [5.2800, 43.2100, 5.4800, 43.3600],
+      "targetCRS": "EPSG:32631",
+      "copernicusTile": "Copernicus_DSM_COG_10_N43_00_E005_00_DEM",
+      "hasCoastline": true,
+      "coastlineDirection": "west_mediterranean_bay_and_calanques",
+      "hasRiver": false,
+      "seaLevelMeters": 0.0,
+      "biome": "mediterranean_limestone_calanques_coast",
+      "robloxOrigin": [4000, 12, -280],
+      "robloxSpawn": [4000, 12.5, -252],
+      "spatialBounds": {
+        "min": [3860, -20, -390],
+        "max": [4140, 90, -185]
+      },
+      "horizontalExtentStuds": [220, 170],
+      "verticalRangeStuds": [6, 42],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Walkable Vieux-Port basin opening westward to the Mediterranean Sea, framed by the steep limestone hill of La Garde to the south and pale Calanques-style coastal cliffs."
+      ],
+      "controlPoints": [
+        { "name": "Vieux-Port Harbor Basin", "lat": 43.2951, "lon": 5.3740, "expectedElevM": 2.0, "gameOffset": [0, -2.0, -12] },
+        { "name": "Le Panier Northern Old Town Hill", "lat": 43.2995, "lon": 5.3680, "expectedElevM": 38.0, "gameOffset": [-18, 6.0, -42] },
+        { "name": "Colline de la Garde Southern Limestone Peak", "lat": 43.2840, "lon": 5.3712, "expectedElevM": 149.0, "gameOffset": [16, 22.0, 48] }
+      ]
+    },
+    "rhine_valley": {
+      "locationId": "rhine_valley",
+      "countryId": "DE",
+      "displayName": "Upper Middle Rhine & Lorelei Gorge",
+      "locationType": "region",
+      "geographicClass": "verified_real_world_with_separate_story_layer",
+      "centerLat": 50.1394,
+      "centerLon": 7.7278,
+      "bbox": [7.6900, 50.1150, 7.7650, 50.1650],
+      "regionalBbox": [7.6000, 50.0500, 7.8500, 50.2500],
+      "targetCRS": "EPSG:32632",
+      "copernicusTile": "Copernicus_DSM_COG_10_N50_00_E007_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Rhine River (Mittelrhein Gorge at St. Goarshausen / Lorelei)",
+      "seaLevelMeters": 68.0,
+      "biome": "temperate_river_gorge_slate_cliffs",
+      "robloxOrigin": [4800, 14, 0],
+      "robloxSpawn": [4800, 14.5, 28],
+      "spatialBounds": {
+        "min": [4660, -20, -165],
+        "max": [4940, 110, 165]
+      },
+      "horizontalExtentStuds": [240, 240],
+      "verticalRangeStuds": [10, 56],
+      "verticalExaggeration": 1.25,
+      "gameplayAdaptations": [
+        "Derived directly from the real Upper Middle Rhine Gorge DEM at the Lorelei bend (St. Goarshausen, ~68 m river level to ~200+ m slate cliffs).",
+        "Symbolic Grail Hall story pavilion is placed as an explicitly labeled literary structure on the upper terrace, cleanly separated from the verified Rhine gorge geography."
+      ],
+      "controlPoints": [
+        { "name": "Rhine River Bend at St. Goarshausen", "lat": 50.1415, "lon": 7.7180, "expectedElevM": 69.0, "gameOffset": [-18, -3.0, 0] },
+        { "name": "Lorelei Slate Cliff Headland", "lat": 50.1394, "lon": 7.7278, "expectedElevM": 193.0, "gameOffset": [52, 26.0, -18] },
+        { "name": "Left Bank Hunsrück Upland Terrace", "lat": 50.1350, "lon": 7.7050, "expectedElevM": 215.0, "gameOffset": [-68, 28.0, 24] }
+      ]
+    },
+    "wuling_valley": {
+      "locationId": "wuling_valley",
+      "countryId": "CN",
+      "displayName": "Wuling-Inspired Peach Blossom Valley",
+      "locationType": "region",
+      "geographicClass": "fictional_literary_with_real_topographic_inspiration",
+      "centerLat": 28.9020,
+      "centerLon": 111.4880,
+      "bbox": [111.4500, 28.8750, 111.5250, 28.9300],
+      "regionalBbox": [111.3800, 28.8000, 111.6000, 29.0000],
+      "targetCRS": "EPSG:32649",
+      "copernicusTile": "Copernicus_DSM_COG_10_N28_00_E111_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Yuanjiang / Qinxi Tributary Stream (Taoyuan County, Changde, Hunan)",
+      "seaLevelMeters": 45.0,
+      "biome": "subtropical_karst_valley_peach_and_bamboo",
+      "robloxOrigin": [5600, 14, 0],
+      "robloxSpawn": [5600, 14.5, 28],
+      "spatialBounds": {
+        "min": [5460, -20, -165],
+        "max": [5740, 105, 165]
+      },
+      "horizontalExtentStuds": [240, 240],
+      "verticalRangeStuds": [10, 52],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Explicitly labeled as a fictional literary interpretation of Tao Yuanming's 421 CE prose 'Peach Blossom Spring' (Taohua Yuan Ji).",
+        "Underlying terrain uses the verified real-world DEM of the Wuling / Taoyuan stream valley in Changde, Hunan (where the historical Wuling commandery of the text was situated), adapted with a walkable stream pass and enclosed terraced orchard."
+      ],
+      "controlPoints": [
+        { "name": "Taoyuan Stream Confluence", "lat": 28.9120, "lon": 111.4820, "expectedElevM": 52.0, "gameOffset": [-24, -2.0, 28] },
+        { "name": "Wuling Foothill Pass", "lat": 28.9020, "lon": 111.4880, "expectedElevM": 135.0, "gameOffset": [0, 8.0, -12] },
+        { "name": "Enclosed Southern Valley Rim", "lat": 28.8880, "lon": 111.4950, "expectedElevM": 245.0, "gameOffset": [48, 24.0, -56] }
+      ]
+    },
+    "tohoku_route": {
+      "locationId": "tohoku_route",
+      "countryId": "JP",
+      "displayName": "Bashō Tohoku Route (Yamadera to Matsushima)",
+      "locationType": "region",
+      "geographicClass": "verified_real_world_multi_segment_route",
+      "centerLat": 38.3130,
+      "centerLon": 140.4380,
+      "bbox": [140.4050, 38.2900, 140.4700, 38.3350],
+      "secondarySegmentBbox": [141.0450, 38.3550, 141.0950, 38.3850],
+      "regionalBbox": [140.3000, 38.2000, 141.1500, 38.4500],
+      "targetCRS": "EPSG:32654",
+      "copernicusTile": "Copernicus_DSM_COG_10_N38_00_E140_00_DEM",
+      "secondaryCopernicusTile": "Copernicus_DSM_COG_10_N38_00_E141_00_DEM",
+      "hasCoastline": true,
+      "coastlineDirection": "east_matsushima_bay_segment",
+      "hasRiver": true,
+      "riverName": "Tachiya River at Yamadera & Matsushima Bay Coast",
+      "seaLevelMeters": 0.0,
+      "biome": "tohoku_mountain_temple_and_pine_coast_route",
+      "robloxOrigin": [6400, 16, 0],
+      "robloxSpawn": [6400, 16.5, 28],
+      "spatialBounds": {
+        "min": [6260, -20, -165],
+        "max": [6540, 110, 165]
+      },
+      "horizontalExtentStuds": [240, 240],
+      "verticalRangeStuds": [8, 58],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Does not invent a single town: represents two verified real-world segments of Matsuo Bashō's 1689 Oku no Hosomichi itinerary—Segment A (Yamadera / Risshaku-ji rocky mountain valley in Yamagata, 38.313°N 140.438°E) and Segment B (Matsushima Bay pine islands in Miyagi, 38.368°N 141.066°E)—linked by a clearly signposted waystation footbridge."
+      ],
+      "controlPoints": [
+        { "name": "Yamadera (Risshaku-ji) Mountain Slope (Segment A)", "lat": 38.3130, "lon": 140.4380, "expectedElevM": 365.0, "gameOffset": [-56, 26.0, -32] },
+        { "name": "Tachiya River Crossing Waystation", "lat": 38.3100, "lon": 140.4350, "expectedElevM": 240.0, "gameOffset": [0, 0.0, 0] },
+        { "name": "Matsushima Bay Pine Islet Overlook (Segment B)", "lat": 38.3680, "lon": 141.0660, "expectedElevM": 18.0, "gameOffset": [62, -4.0, 38] }
+      ]
+    },
+    "lake_svetloyar": {
+      "locationId": "lake_svetloyar",
+      "countryId": "RU",
+      "displayName": "Lake Svetloyar & Kitezh Folklore Reserve",
+      "locationType": "region",
+      "geographicClass": "verified_real_world_with_folklore_overlay",
+      "centerLat": 56.8194,
+      "centerLon": 45.2053,
+      "bbox": [45.1800, 56.8050, 45.2300, 56.8350],
+      "regionalBbox": [45.1200, 56.7600, 45.2800, 56.8800],
+      "targetCRS": "EPSG:32638",
+      "copernicusTile": "Copernicus_DSM_COG_10_N56_00_E045_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Lake Svetloyar Basin & Lunda Outflow",
+      "seaLevelMeters": 109.0,
+      "biome": "boreal_mixed_forest_lake_basin",
+      "robloxOrigin": [7200, 12, 0],
+      "robloxSpawn": [7200, 12.5, 28],
+      "spatialBounds": {
+        "min": [7060, -20, -165],
+        "max": [7340, 80, 165]
+      },
+      "horizontalExtentStuds": [240, 240],
+      "verticalRangeStuds": [8, 28],
+      "verticalExaggeration": 1.15,
+      "gameplayAdaptations": [
+        "Built from the actual oval basin DEM of Lake Svetloyar (Vosloma / Vladimirskoye, Nizhny Novgorod Oblast, ~109 m lake surface surrounded by 125-145 m forested moraine hills).",
+        "The legendary city of Kitezh is explicitly labeled as oral folklore and represented only through optical water-reflection markers and an archive pavilion."
+      ],
+      "controlPoints": [
+        { "name": "Lake Svetloyar Central Oval Basin", "lat": 56.8194, "lon": 45.2053, "expectedElevM": 109.0, "gameOffset": [0, -2.5, -18] },
+        { "name": "Northern Wooden Belfry Hillock", "lat": 56.8235, "lon": 45.2060, "expectedElevM": 134.0, "gameOffset": [14, 8.0, -56] },
+        { "name": "Vladimirskoye Shoreline Trail", "lat": 56.8155, "lon": 45.1980, "expectedElevM": 118.0, "gameOffset": [-32, 0.5, 22] }
+      ]
+    },
+    "kyiv_hills": {
+      "locationId": "kyiv_hills",
+      "countryId": "UA",
+      "displayName": "Kyiv Hills & Dnipro River Overlook",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 50.4580,
+      "centerLon": 30.5180,
+      "bbox": [30.4850, 50.4350, 30.5550, 50.4800],
+      "regionalBbox": [30.4200, 50.3900, 30.6200, 50.5200],
+      "targetCRS": "EPSG:32636",
+      "copernicusTile": "Copernicus_DSM_COG_10_N50_00_E030_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Dnipro River & Podil Harbour Terrace",
+      "seaLevelMeters": 91.0,
+      "biome": "dnipro_river_bluffs_and_deciduous_hills",
+      "robloxOrigin": [8000, 18, 0],
+      "robloxSpawn": [8000, 18.5, 28],
+      "spatialBounds": {
+        "min": [7860, -20, -165],
+        "max": [8140, 95, 165]
+      },
+      "horizontalExtentStuds": [240, 240],
+      "verticalRangeStuds": [8, 46],
+      "verticalExaggeration": 1.20,
+      "gameplayAdaptations": [
+        "Preserves the authentic topographic contrast between the high right-bank Kyiv hills (Starokyivska, Shchekavytsia, Volodymyrska Hill ~180-195 m ASL) on the west/south and the lower Podil terrace and wide Dnipro River (~91 m ASL) on the east/north."
+      ],
+      "controlPoints": [
+        { "name": "Starokyivska & Volodymyrska Hill Bluff", "lat": 50.4580, "lon": 30.5180, "expectedElevM": 186.0, "gameOffset": [-28, 12.0, -8] },
+        { "name": "Podil Lower River Terrace (Kontraktova)", "lat": 50.4650, "lon": 30.5180, "expectedElevM": 98.0, "gameOffset": [12, 0.0, -36] },
+        { "name": "Dnipro River Channel & Trukhaniv Bank", "lat": 50.4610, "lon": 30.5350, "expectedElevM": 91.0, "gameOffset": [64, -5.0, 0] }
+      ]
+    },
+    "marrakesh": {
+      "locationId": "marrakesh",
+      "countryId": "MA",
+      "displayName": "Marrakesh Medina & Haouz Horizon",
+      "locationType": "city",
+      "geographicClass": "verified_real_world",
+      "centerLat": 31.6258,
+      "centerLon": -7.9891,
+      "bbox": [-8.0250, 31.6000, -7.9550, 31.6550],
+      "regionalBbox": [-8.1500, 31.1500, -7.7500, 31.7200],
+      "targetCRS": "EPSG:32629",
+      "copernicusTile": "Copernicus_DSM_COG_10_N31_00_W008_00_DEM",
+      "hasCoastline": false,
+      "hasRiver": true,
+      "riverName": "Oued Tensift / Palmeraie Oasis Channels",
+      "seaLevelMeters": 445.0,
+      "biome": "semi_arid_haouz_plain_and_distant_high_atlas",
+      "robloxOrigin": [8800, 12, 0],
+      "robloxSpawn": [8800, 12.5, 28],
+      "spatialBounds": {
+        "min": [8660, -20, -165],
+        "max": [8940, 95, 165]
+      },
+      "horizontalExtentStuds": [240, 240],
+      "verticalRangeStuds": [9, 32],
+      "verticalExaggeration": 1.10,
+      "gameplayAdaptations": [
+        "Walkable Jemaa el-Fnaa and Medina terrain is accurately flat/gently sloping across the Haouz Plain (~450-465 m ASL).",
+        "The High Atlas Mountains are NOT placed inside the city; they are represented only on the distant southern regional horizon boundary (+Z edge) to respect their true ~40-60 km relative distance."
+      ],
+      "controlPoints": [
+        { "name": "Jemaa el-Fnaa Story Square", "lat": 31.6258, "lon": -7.9891, "expectedElevM": 454.0, "gameOffset": [0, 0.0, 0] },
+        { "name": "Koutoubia Gardens & Haouz Plain West", "lat": 31.6240, "lon": -7.9940, "expectedElevM": 451.0, "gameOffset": [-42, -0.5, 12] },
+        { "name": "Southern Regional Horizon (High Atlas Foothill Direction)", "lat": 31.3500, "lon": -7.9500, "expectedElevM": 1150.0, "gameOffset": [0, 22.0, 138] }
+      ]
+    }
+  }
+}

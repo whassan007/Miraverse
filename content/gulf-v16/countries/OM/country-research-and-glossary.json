@@ -1,0 +1,1067 @@
+{
+  "agentId": "DX07",
+  "dgxModel": "qwen/qwen3-coder-next",
+  "dgxNote": "In *MiraVerse v1.6*, *Oman (OM: The Waterkeepers of the Mountains)* presents a mythohistorical narrative where ancient mountain-dwelling custodians, bound by sacred hydrological oaths, steward subterranean aquifers and celestial rain cycles—yet their authority is increasingly contested by desert nomads whose shifting oral traditions challenge the canonical hydro-mythology.",
+  "country": {
+    "countryCode": "OM",
+    "stableId": "country.om",
+    "orderNumber": 5,
+    "isSixthAddedCountry": false,
+    "nameEn": "Oman",
+    "nameAr": "سلطنة عُمان",
+    "nameArabizi": "Saltanat 3uman (Oman)",
+    "storyArcTitleEn": "The Waterkeepers of the Mountains",
+    "storyArcTitleAr": "حُماة المياه في الجبال",
+    "storyArcTitleArabizi": "Humat il-Miyah fil-Jibal",
+    "dialectCode": "ar-OM",
+    "settingSummaryEn": "A well-researched Omani mountain oasis village and terraced date/pomegranate garden irrigated by UNESCO-listed aflaj gravity channels (#1207), paired with a distinct Dhofar frankincense trading trail (#1010).",
+    "settingSummaryAr": "قرية واحة جبلية عُمانية ومدرجات نخيل ورمان تُروى بقنوات الأفلاج المسجلة في اليونسكو (#1207)، مع مسار متميز لتجارة اللبان الظفاري (#1010).",
+    "settingSummaryArabizi": "Qaryat waha jabaliya 3umaniya turwa bi-qanawat il-aflaj (UNESCO #1207) ma3 masar tijarat il-luban.",
+    "folkloreAndEpistemicFrameEn": "Epistemic & Safety Note: UNESCO (#1207) documents the real hydrological engineering and equitable community time-sharing (athar) of Oman's aflaj. Popular folk tales attributing aflaj construction to Prophet Sulayman (Solomon) and the jinn, as well as legends of the \"Lost City of Ubar\", are labeled explicitly as folklore/legend rather than engineering history. Religious figures are never depicted as game NPCs.",
+    "folkloreAndEpistemicFrameAr": "ملاحظة معرفية: توثق اليونسكو (#1207) الهندسة المائية الحقيقية ونظام «الأثر» لتقسيم المياه في الأفلاج. أما الروايات الشعبية حول بناء سليمان والجن للأفلاج أو أسطورة «أوبار» فتُصنَّف صراحةً كتراث قصصي لا كتاريخ هندسي، ولا يتم تجسيد أي شخصيات دينية.",
+    "folkloreAndEpistemicFrameArabizi": "Mulahaza: Handasat il-aflaj muwaththaqa fil-UNESCO (#1207), amma qisas Sulayman wal-jinn wa Ubar fahiya folklore.",
+    "diasporaNarrativeEn": "For Omani families at home and abroad, the fair sharing of mountain water (athar), the welcoming scent of Hojari frankincense, and shared rosewater halwa embody stewardship and community harmony.",
+    "diasporaNarrativeAr": "لعائلات عُمان في الوطن والمهجر، يجسد تقاسم مياه الأفلاج بالعدل وعبق اللبان الحوجري والحلوى العُمانية بماء الورد قيم الأمانة والتكافل.",
+    "diasporaNarrativeArabizi": "Li-3ailat 3uman fil-mahjar, taqasum miyah il-falaj wa 3abaq il-luban yujassid il-takaful.",
+    "palette": {
+      "primary": "#15803D",
+      "secondary": "#D97706",
+      "accent": "#0284C7",
+      "surfaceBg": "#0F221D"
+    },
+    "mentor": {
+      "npcId": "npc.om.arif_salim_al_harthi",
+      "nameEn": "Arif Salim & Mazoon Al-Harthi (Fictional Mentors)",
+      "nameAr": "العريف سالم ومزون الحارثية (مرشدان خياليان)",
+      "nameArabizi": "Il-3arif Salim wa Mazoon Al-Harthi (Murshidan Khayaliyan)",
+      "roleEn": "Falaj Water Master (Arif) & Botanical Frankincense Archivist (Original Fictional Characters)",
+      "roleAr": "عريف فلج وباحثة في تراث اللبان والواحات (شخصيتان خياليتان أصليتان)",
+      "roleArabizi": "3arif Falaj wa Bahitha fi Turath il-Luban (Shakhsiyatan Khayaliyatan)",
+      "isOriginalFictionalCharacter": true,
+      "fictionalDisclosureEn": "Arif Salim and Mazoon are original fictional MiraVerse mentors created for educational storytelling; religious figures are never represented as NPCs.",
+      "greetingEn": "Hayyakum Allah in the mountain oasis! Follow the clear sound of the falaj channel and see how water brings every garden to life.",
+      "greetingAr": "حياكم الله في واحة الجبل! اتبعوا خرير مياه الفلج الصافية لنرى كيف تحيا البساتين بالعدل والتعاون.",
+      "greetingArabizi": "Hayyakum Allah fi wahat il-jabal! Ittabi3u miyah il-falaj il-safiya.",
+      "portraitSvgUrl": "/art/gulf-v16/mentors/mentor-OM.svg"
+    },
+    "keyArtUrl": "/art/gulf-v16/countries/OM/environment/key-art-OM.svg",
+    "adventureMapSvgUrl": "/art/gulf-v16/quest-maps/map-OM-overview.svg",
+    "passportStampSvgUrl": "/art/gulf-v16/stamps/stamp-OM.svg",
+    "passportStampCodeExample": "MV-OM1-5678-GULF",
+    "platformStatus": {
+      "website": "PLAYABLE VERIFIED",
+      "roblox": "TEST BUILD",
+      "minecraftBedrock": "TEST BUILD",
+      "blockerNoteEn": "Website portal is PLAYABLE VERIFIED. Roblox and Minecraft Bedrock functional water-routing structures are compiled and statically verified on Linux aarch64; native GUI client execution is UNVERIFIED/BLOCKED."
+    },
+    "realGeographicPins": [
+      {
+        "siteId": "site.om.falaj_daris_nizwa",
+        "countryCode": "OM",
+        "nameEn": "Aflaj Irrigation Systems of Oman — Falaj Daris & Al-Khatmeen (UNESCO #1207)",
+        "nameAr": "أنظمة الري بالأفلاج في عُمان — فلج دارس والخطمين (اليونسكو #1207)",
+        "nameArabizi": "Anzimat il-Rayy bil-Aflaj: Falaj Daris (UNESCO #1207)",
+        "coordinates": [
+          22.9964,
+          57.5489
+        ],
+        "uncertaintyMeters": 50,
+        "era": "Iron Age Foundations to Living Community Water System",
+        "category": "archaeology",
+        "summaryEn": "Gravity-fed water channels carrying mountain spring water to Dakhiliyah oasis villages under communal time-sharing governance.",
+        "summaryAr": "قنوات ري تعتمد على الجاذبية لنقل مياه الينابيع الجبلية إلى قرى وبساتين الداخلية وفق نظام تقسيم زمني عادل.",
+        "summaryArabizi": "Qanawat rayy تنقل miyah il-jibal ila basatin Nizwa wa Birkat il-Mouz.",
+        "attributionSource": "UNESCO World Heritage List #1207",
+        "sourceUrl": "https://whc.unesco.org/en/list/1207"
+      },
+      {
+        "siteId": "site.om.land_of_frankincense_dhofar",
+        "countryCode": "OM",
+        "nameEn": "Land of Frankincense — Wadi Dawkah & Khor Rori (UNESCO #1010)",
+        "nameAr": "أرض اللبان — وادي دوكة وخور روري (اليونسكو #1010)",
+        "nameArabizi": "Ard il-Luban: Wadi Dawkah wa Khor Rori (UNESCO #1010)",
+        "coordinates": [
+          17.3333,
+          54.0667
+        ],
+        "uncertaintyMeters": 100,
+        "era": "Antiquity to Present Botanical & Maritime Trade Heritage",
+        "category": "archaeology",
+        "summaryEn": "Boswellia sacra frankincense groves in Dhofar and ancient coastal trading ports linking Oman with the Indian Ocean and Mediterranean.",
+        "summaryAr": "محمية أشجار اللبان في ظفار والموانئ التاريخية التي ربطت عُمان بطرق التجارة القديمة.",
+        "summaryArabizi": "Ashjar il-luban fi Dhofar wal-mawani il-tarikhiya (UNESCO #1010).",
+        "attributionSource": "UNESCO World Heritage List #1010",
+        "sourceUrl": "https://whc.unesco.org/en/list/1010"
+      }
+    ],
+    "artifacts": [
+      {
+        "id": "artifact.om.lamad_sundial_stone",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "nameEn": "Lamad Solar Sundial Post & Athar Water-Share Board",
+        "nameAr": "مزولة «اللمد» الشمسية ولوح تقسيم الأثر",
+        "nameArabizi": "Mizwalat il-Lamad wa Lawh Taqsim il-Athar",
+        "eraAndMaterial": "UNESCO #1207 Aflaj Heritage · Carved Limestone Gnomon & Stone Markers",
+        "category": "archaeology",
+        "descriptionEn": "Used by the village Arif (water master) to measure 30-minute athar irrigation shares by the shadow of a vertical pole.",
+        "descriptionAr": "تُستخدم لقياس حصص المياه الزمنية (الأثر) عبر ظل العمود الحجري لضمان التوزيع العادل.",
+        "descriptionArabizi": "Tustakhdam li-qiyas hisas il-miyah (il-athar) عبر ظل الشمس.",
+        "provenanceNote": "Corroborated by UNESCO #1207 documentation of Omani aflaj timekeeping.",
+        "imageUrl": "/art/gulf-v16/artifacts/artifact-om-lamad-sundial.svg",
+        "questActNumber": 1,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "artifact.om.shari_a_basin_model",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "nameEn": "Shari'a First-Access Community Drinking Basin Model",
+        "nameAr": "مجسم «الشريعة» (أول نقطة مياه عذبة في الفلج)",
+        "nameArabizi": "Mujassam il-Shari3a fil-Falaj",
+        "eraAndMaterial": "Hydrological Architecture · Dressed Mountain Stone & Lime Mortar (Sarooj)",
+        "category": "history",
+        "descriptionEn": "Illustrates the hydrological rule that clean drinking water is always placed upstream before bathhouses and farm channels.",
+        "descriptionAr": "يوضح القاعدة الهندسية بجعل مياه الشرب في أعلى الفلج قبل الاستخدامات المنزلية وري المزارع.",
+        "descriptionArabizi": "Yuwadhih tartib miyah il-shurb awwalan قَبْل ري المزارع.",
+        "provenanceNote": "Core hydrological principle of Dawoodi, Ghaili, and Aini aflaj.",
+        "imageUrl": "/art/gulf-v16/artifacts/artifact-om-sharia-basin.svg",
+        "questActNumber": 1,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "artifact.om.hojari_frankincense_chest",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "nameEn": "Dhofari Hojari Frankincense Tear & Terracotta Majmar Burner",
+        "nameAr": "لبان حوجري ظفاري ومجمر فخاري مزخرف",
+        "nameArabizi": "Luban Hojari Dhofari wa Majmar Fakhkhari",
+        "eraAndMaterial": "UNESCO #1010 Frankincense Route · Boswellia Sacra Resin & Painted Clay",
+        "category": "history",
+        "descriptionEn": "Translucent tear-shaped aromatic resin harvested sustainably from Boswellia sacra trees in Dhofar alongside a traditional four-cornered clay burner.",
+        "descriptionAr": "فصوص اللبان العطري المقطوفة بعناية من أشجار وادي دوكة مع مجمر فخاري تقليدي.",
+        "descriptionArabizi": "Fusus il-luban il-3itri ma3 majmar fakhkhari Dhofari.",
+        "provenanceNote": "Corroborated via UNESCO #1010 (Land of Frankincense).",
+        "imageUrl": "/art/gulf-v16/artifacts/artifact-om-frankincense-majmar.svg",
+        "questActNumber": 2,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "artifact.om.sarooj_sluice_gate",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "nameEn": "Sarooj Hydraulic Mortar & Copper Sluice Stopper (Siqarah)",
+        "nameAr": "صاروج عُماني مقاوم للماء وسدادة قناة النحاس",
+        "nameArabizi": "Sarooj 3umani wa Saddadat Qanat il-Falaj",
+        "eraAndMaterial": "Traditional Hydraulic Engineering · Fired Clay-Lime Sarooj & Hammered Copper",
+        "category": "archaeology",
+        "descriptionEn": "Waterproof traditional mortar and movable channel gates used by villagers to repair and route falaj water without leaks.",
+        "descriptionAr": "ملاط الصاروج العُماني المقاوم للماء وبوابات التحويل المستخدمة في صيانة قنوات الأفلاج.",
+        "descriptionArabizi": "Milat il-sarooj wa بوابات tahwil miyah il-falaj.",
+        "provenanceNote": "Used in real falaj conservation across Nizwa and Birkat al-Mouz.",
+        "imageUrl": "/art/gulf-v16/artifacts/artifact-om-sarooj-sluice.svg",
+        "questActNumber": 3,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "artifact.om.folklore_vs_engineering_tablet",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "nameEn": "Epistemic Ledger: Aflaj Engineering vs Oral Legends of Ubar",
+        "nameAr": "دفتر التمييز المعرفي: هندسة الأفلاج مقابل أساطير أوبار",
+        "nameArabizi": "Daftar il-Tamyiz: Handasat il-Aflaj vs Asatir Ubar",
+        "eraAndMaterial": "Curatorial Teaching Folio · Ink & Watercolor on Cotton Paper",
+        "category": "folklore",
+        "descriptionEn": "Contrasts verified Iron Age/Islamic-era hydraulic engineering with popular folk legends about Solomon/jinn and the lost desert city of Ubar.",
+        "descriptionAr": "يقارن بوضوح بين الأدلة الأثرية والهندسية لبناء الأفلاج والمرويات الشعبية والأسطورية حول أوبار.",
+        "descriptionArabizi": "Yuqarin bayn il-adilla il-handasiya lil-aflaj wal-asatir il-sha3biya.",
+        "provenanceNote": "Explicitly separates folklore/legend from archaeological engineering history.",
+        "imageUrl": "/art/gulf-v16/artifacts/artifact-om-epistemic-ledger.svg",
+        "questActNumber": 3,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "artifact.om.rosewater_shisheh_vessel",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "nameEn": "Jabal Akhdar Distilled Rosewater Vessel & Copper Halwa Bowl",
+        "nameAr": "مرش ماء ورد الجبل الأخضر وصحن الحلوى النحاسي",
+        "nameArabizi": "Mirash Ma Ward il-Jabal il-Akhdar wa Sahn il-Halwa",
+        "eraAndMaterial": "Mountain Culinary & Botanical Craft · Hammered Copper & Damask Rose Distillate",
+        "category": "history",
+        "descriptionEn": "Fragrant rosewater distilled on mountain terraces and used in Omani hospitality dishes and botanical crafts.",
+        "descriptionAr": "ماء الورد المقطر في مدرجات الجبل الأخضر والمستخدم في صناعة الحلوى العُمانية والضيافة.",
+        "descriptionArabizi": "Ma il-ward il-muqattar fil-Jabal il-Akhdar.",
+        "provenanceNote": "Includes nut-free/gluten-free halwa and non-food botanical sachet craft options.",
+        "imageUrl": "/art/gulf-v16/artifacts/artifact-om-rosewater-vessel.svg",
+        "questActNumber": 4,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "artifact.om.bahla_pottery_jar",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "nameEn": "Bahla Wheel-Thrown Earthenware Water & Date Jar (Kharas)",
+        "nameAr": "جحلة وخرس فخار بهلاء التقليدي",
+        "nameArabizi": "Jahla min Fakhkhar Bahla il-Taqlidi",
+        "eraAndMaterial": "Omani Ceramic Heritage · Natural Mountain Clay",
+        "category": "history",
+        "descriptionEn": "Breathable clay vessel crafted in Bahla to keep drinking water cool and store harvested dates.",
+        "descriptionAr": "إناء فخاري مسامي من صناعة بهلاء يحفظ برودة الماء العذب ويخزن التمور.",
+        "descriptionArabizi": "Ina fakhkhari min Bahla yahfaz burudat il-ma.",
+        "provenanceNote": "Traditional Omani pottery craft.",
+        "imageUrl": "/art/gulf-v16/artifacts/artifact-om-bahla-jar.svg",
+        "questActNumber": 4,
+        "reviewStatus": "approved"
+      },
+      {
+        "id": "artifact.om.waterkeepers_charter_scroll",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "nameEn": "Village Waterkeepers' Equitable Irrigation Charter",
+        "nameAr": "ميثاق قرية الأفلاج لتقاسم المياه بالعدل",
+        "nameArabizi": "Mithaq Qaryat il-Aflaj li-Taqasum il-Miyah",
+        "eraAndMaterial": "Community Governance Archive · Leather-Bound Ledger & Star Clock Chart",
+        "category": "history",
+        "descriptionEn": "Records day (sundial) and night (star-clock) irrigation schedules ensuring every family garden receives its fair share.",
+        "descriptionAr": "يسجل جداول السقي النهارية والليلية لضمان حصول كل بستان عائلي على حصته العادلة من الماء.",
+        "descriptionArabizi": "Yusajjil jadawil il-saqi لضمان 3adalat tawzi3 il-ma.",
+        "provenanceNote": "Modeled on traditional Omani falaj books (دفتر الفلج).",
+        "imageUrl": "/art/gulf-v16/artifacts/artifact-om-water-charter.svg",
+        "questActNumber": 5,
+        "reviewStatus": "approved"
+      }
+    ],
+    "glossary": [
+      {
+        "termId": "vocab.om.aflaj",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "أفلاج (مفردها فلج)",
+        "msaEquivalent": "قنوات ري تقليدية بالجاذبية",
+        "arabiziPhonetic5To7": "aflaj (falaj)",
+        "arabiziStandard11To17": "aflaj (falaj)",
+        "englishGloss": "Gravity-fed water channels carrying mountain spring or groundwater to villages and gardens",
+        "culturalNote": "Five representative Omani aflaj are inscribed on the UNESCO World Heritage List (#1207).",
+        "audioPhoneticHint": "af-LAAJ / FA-laj"
+      },
+      {
+        "termId": "vocab.om.arif",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "عريف الفلج",
+        "msaEquivalent": "المشرف على توزيع مياه الفلج",
+        "arabiziPhonetic5To7": "Arif il-falaj",
+        "arabiziStandard11To17": "3arif il-falaj",
+        "englishGloss": "Trusted community water master who coordinates falaj maintenance and fair time-shares",
+        "culturalNote": "Uses sundials (lamad) by day and guiding stars by night.",
+        "audioPhoneticHint": "aa-REEF il-FA-laj"
+      },
+      {
+        "termId": "vocab.om.athar",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "أثر",
+        "msaEquivalent": "حصة زمنية لمياه الري (نحو ٣٠ دقيقة)",
+        "arabiziPhonetic5To7": "athar",
+        "arabiziStandard11To17": "athar",
+        "englishGloss": "Traditional 30-minute time unit of irrigation water (48 athar in a 24-hour day)",
+        "culturalNote": "Ensures water is shared by measured time rather than upstream monopoly.",
+        "audioPhoneticHint": "A-thar"
+      },
+      {
+        "termId": "vocab.om.luban",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "لبان حوجري",
+        "msaEquivalent": "صمغ اللبان العطري",
+        "arabiziPhonetic5To7": "luban Hojari",
+        "arabiziStandard11To17": "luban 7ojari",
+        "englishGloss": "Aromatic frankincense resin harvested from Boswellia sacra trees in Dhofar",
+        "culturalNote": "UNESCO World Heritage #1010 (Land of Frankincense).",
+        "audioPhoneticHint": "lu-BAAN ho-JA-ree"
+      },
+      {
+        "termId": "vocab.om.sarooj",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "صاروج",
+        "msaEquivalent": "ملاط طيني كلسي مقاوم للماء",
+        "arabiziPhonetic5To7": "sarooj",
+        "arabiziStandard11To17": "sarooj",
+        "englishGloss": "Traditional waterproof Omani mortar used to line falaj channels and cisterns",
+        "culturalNote": "Prepared by firing local clay and lime.",
+        "audioPhoneticHint": "sa-ROOJ"
+      },
+      {
+        "termId": "vocab.om.sharia_water",
+        "countryCode": "OM",
+        "dialectVariant": "ar-OM",
+        "arabicScript": "شريعة الفلج",
+        "msaEquivalent": "نقطة السقيا الأولى في مدخل القرية",
+        "arabiziPhonetic5To7": "shari-at il-falaj",
+        "arabiziStandard11To17": "shari3at il-falaj",
+        "englishGloss": "The first open-air basin where a falaj enters the village, reserved for clean drinking water",
+        "culturalNote": "Demonstrates community hygiene and water-priority engineering.",
+        "audioPhoneticHint": "sha-REE-at il-FA-laj"
+      }
+    ],
+    "questActs": [
+      {
+        "id": "quest.om.01",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "actNumber": 1,
+        "canonicalArchetype": "GATHER",
+        "countrySpecificAlias": "GATHER",
+        "titleEn": "Follow the Water",
+        "titleAr": "تتبّع مسار الماء",
+        "titleArabizi": "Tatabba3 Masar il-Ma",
+        "settingSubarea": "Mountain Foothill Mother-Well (Umm al-Falaj) & Village Shari'a Basin",
+        "mentorNpcId": "npc.om.arif_salim_al_harthi",
+        "mentorNameEn": "Arif Salim & Mazoon Al-Harthi",
+        "mentorNameAr": "العريف سالم ومزون الحارثية",
+        "mentorNameArabizi": "Il-3arif Salim wa Mazoon Al-Harthi",
+        "summaryEn": "Identify the hydrological sequence connecting mountain spring, main channel, drinking basin (shari'a), and terraced gardens while distinguishing UNESCO engineering from Solomon/jinn folklore.",
+        "summaryAr": "تعرّف على التسلسل المائي من نبع الجبل إلى الشريعة ثم البساتين، مع التمييز بين الهندسة الموثقة في اليونسكو والروايات الشعبية.",
+        "summaryArabizi": "Ta3arraf 3ala masar il-falaj min il-jabal ila il-shari3a wal-basatin.",
+        "epistemicCategory": "archaeology",
+        "epistemicWarningEn": "Separates UNESCO #1207 hydraulic engineering from Solomon/jinn creation folklore; never depicts religious figures as NPCs.",
+        "objectiveGraph": [
+          {
+            "stepId": "quest.om.01.step1",
+            "descriptionEn": "Walk with Arif Salim from the foothill spring inspection point to the village Shari'a drinking basin and identify why drinking water comes first.",
+            "requiredItemOrAction": "om_act1_step1",
+            "hintEn": "Follow the clear turquoise channel markers along the stone terrace.",
+            "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+          },
+          {
+            "stepId": "quest.om.01.step2",
+            "descriptionEn": "Inspect the Lamad sundial post and sort hydrological engineering facts from popular oral legends in the Epistemic Ledger.",
+            "requiredItemOrAction": "om_act1_step2",
+            "hintEn": "Gravity slope and waterproof sarooj mortar are engineering facts; jinn/Ubar tales are labeled as folklore.",
+            "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+          }
+        ],
+        "coopBehavior": {
+          "supportsTwoPlayerCoop": true,
+          "sharedCheckpointId": "checkpoint.om.01",
+          "roleSplitEn": "Player 1 traces the upstream drinking basin while Player 2 reads the Lamad sundial shadow markers."
+        },
+        "reward": {
+          "collectibleArtifactId": "artifact.om.lamad_sundial_stone",
+          "passportMilestoneId": "milestone.om.01",
+          "miraTokensEarned": 20,
+          "idempotencyKey": "reward.quest.om.01.v16"
+        },
+        "mapCheckpoint": {
+          "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-OM-act1.svg",
+          "markerXPercent": 18,
+          "markerYPercent": 64,
+          "checkpointLabelEn": "Act 1 · Follow the Water",
+          "checkpointLabelAr": "الفصل 1 · تتبّع مسار الماء",
+          "checkpointLabelArabizi": "Fasla 1 · Tatabba3 Masar il-Ma"
+        },
+        "vocabularyIds": [
+          "vocab.om.aflaj",
+          "vocab.om.sharia_water"
+        ],
+        "ageTiers": {
+          "5-7": {
+            "ageTier": "5-7",
+            "stageId": "quest.om.01.tier.5-7",
+            "durationMinutes": "5–8 min",
+            "readingLoad": "low_pictorial_captioned",
+            "titleEn": "Follow the Sparkling Mountain Stream!",
+            "titleAr": "اتبع جدول الجبل الصافي!",
+            "titleArabizi": "Yalla نتبع miyah il-falaj il-safiya!",
+            "objectiveEn": "Tap the 3 water stations in order: first clean drinking water, then washing, then watering the green date & pomegranate trees!",
+            "objectiveAr": "اضغط على محطات الماء الثلاث بالترتيب: أولاً ماء الشرب النقي، ثم الغسيل، ثم ري أشجار النخيل والرمان!",
+            "objectiveArabizi": "Idghat 3ala mahattat il-ma bil-tartib: il-shurb thumma il-basatin!",
+            "puzzleMechanicsEn": "3-step pictorial water-priority sequence.",
+            "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 4,
+            "robloxAdapterMechanics": "Upstream-to-garden hydrological trace & sundial station."
+          },
+          "8-10": {
+            "ageTier": "8-10",
+            "stageId": "quest.om.01.tier.8-10",
+            "durationMinutes": "8–15 min",
+            "readingLoad": "guided_bilingual_cards",
+            "titleEn": "How the Falaj Reaches the Village",
+            "titleAr": "كيف يصل الفلج إلى القرية",
+            "titleArabizi": "Kayfa Yasil il-Falaj ila il-Qarya",
+            "objectiveEn": "Order the four stages of the falaj channel and learn how the Lamad sundial measures 30-minute athar shares.",
+            "objectiveAr": "رتّب مراحل قناة الفلج الأربع وتعلّم كيف تقيس مزولة اللمد حصص «الأثر».",
+            "objectiveArabizi": "Rattib marahil il-falaj wa ta3allam qiyas il-athar bil-lamad.",
+            "puzzleMechanicsEn": "Hydrological sequence puzzle + sundial shadow reading.",
+            "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 6,
+            "robloxAdapterMechanics": "Upstream-to-garden hydrological trace & sundial station."
+          },
+          "11-13": {
+            "ageTier": "11-13",
+            "stageId": "quest.om.01.tier.11-13",
+            "durationMinutes": "12–20 min",
+            "readingLoad": "investigative_multi_step",
+            "titleEn": "Dawoodi, Ghaili & Aini Aflaj Hydrology",
+            "titleAr": "هيدرولوجيا الأفلاج الداوودية والغيلية والعينية",
+            "titleArabizi": "Anwa3 il-Aflaj: Dawoodi, Ghaili, wa 3aini",
+            "objectiveEn": "Compare the three hydrological types of Omani aflaj and distinguish archaeological evidence from folklore.",
+            "objectiveAr": "قارن بين الأنواع الثلاثة للأفلاج العُمانية وميّز بين الأدلة الأثرية والروايات الشعبية.",
+            "objectiveArabizi": "Qarin bayn anwa3 il-aflaj il-thalatha wa mayyiz il-adilla il-athariya.",
+            "puzzleMechanicsEn": "Hydrological classification & epistemic sorting puzzle.",
+            "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 8,
+            "robloxAdapterMechanics": "Upstream-to-garden hydrological trace & sundial station."
+          },
+          "14-17": {
+            "ageTier": "14-17",
+            "stageId": "quest.om.01.tier.14-17",
+            "durationMinutes": "15–30 min",
+            "readingLoad": "source_critical_provenance",
+            "titleEn": "UNESCO #1207 Hydrological Engineering vs Mythological Attribution",
+            "titleAr": "الهندسة المائية في اليونسكو (#1207) مقابل المرويات الأسطورية",
+            "titleArabizi": "Handasat il-Aflaj (UNESCO #1207) vs Il-Marwiyat il-Sha3biya",
+            "objectiveEn": "Evaluate Iron Age and Islamic-era archaeological surveys of Omani aflaj alongside folk traditions.",
+            "objectiveAr": "قيّم المسوحات الأثرية للأفلاج العُمانية منذ العصر الحديدي مقارنةً بالموروث القصصي الشعبي.",
+            "objectiveArabizi": "Qayyim il-adilla il-athariya lil-aflaj muqaranatan bil-folklore.",
+            "puzzleMechanicsEn": "Source-critical hydrological & provenance analysis.",
+            "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 10,
+            "robloxAdapterMechanics": "Upstream-to-garden hydrological trace & sundial station."
+          }
+        },
+        "robloxImplementation": {
+          "moduleName": "OmanAct1FollowTheWater",
+          "interactionType": "Upstream-to-garden hydrological trace & sundial station.",
+          "zoneAnchorName": "OM_MountainOasis_ShariaBasin",
+          "status": "TEST BUILD"
+        },
+        "bedrockImplementation": {
+          "scriptHandler": "runOmanAct1FollowTheWater",
+          "structureTemplateId": "miraverse:om_falaj_sharia_basin",
+          "customBlocksAndItems": [
+            "miraverse:om_lamad_sundial",
+            "miraverse:om_sharia_stone"
+          ],
+          "status": "TEST BUILD"
+        }
+      },
+      {
+        "id": "quest.om.02",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "actNumber": 2,
+        "canonicalArchetype": "TRADE",
+        "countrySpecificAlias": "TRADE",
+        "titleEn": "The Frankincense Route",
+        "titleAr": "طريق اللبان الظفاري",
+        "titleArabizi": "Tariq il-Luban il-Dhofari",
+        "settingSubarea": "Dhofar-Inspired Frankincense Terrace & Caravan Weigh-House",
+        "mentorNpcId": "npc.om.arif_salim_al_harthi",
+        "mentorNameEn": "Arif Salim & Mazoon Al-Harthi",
+        "mentorNameAr": "العريف سالم ومزون الحارثية",
+        "mentorNameArabizi": "Il-3arif Salim wa Mazoon Al-Harthi",
+        "summaryEn": "Trace historic commerce connecting Dhofar Boswellia sacra groves (UNESCO #1010) with mountain oases and ports using safe, fictive barter tokens.",
+        "summaryAr": "تتبّع تجارة اللبان التاريخية (اليونسكو #1010) بين ظفار وواحات الجبال والموانئ باستخدام وحدات تبادل تعليمية آمنة.",
+        "summaryArabizi": "Tatabba3 tijarat il-luban (UNESCO #1010) bayn Dhofar wal-wahat.",
+        "epistemicCategory": "history",
+        "epistemicWarningEn": "Separates UNESCO #1010 Khor Rori / Wadi Dawkah archaeological evidence from legends of the \"Lost City of Ubar\".",
+        "objectiveGraph": [
+          {
+            "stepId": "quest.om.02.step1",
+            "descriptionEn": "Sort harvestedfrankincense resin grades with Mazoon (silver-green Hojari, golden Najdi, and coastal Shathari) and inspect the terracotta majmar.",
+            "requiredItemOrAction": "om_act2_step1",
+            "hintEn": "Translucent pale-green teardrops are the prized Hojari grade.",
+            "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+          },
+          {
+            "stepId": "quest.om.02.step2",
+            "descriptionEn": "Balance a fair caravan exchange trading mountain dates, Bahla clay jars, and rosewater for Dhofari frankincense and woven mats.",
+            "requiredItemOrAction": "om_act2_step2",
+            "hintEn": "Match each community's surplus craft with what their climate cannot grow locally.",
+            "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+          }
+        ],
+        "coopBehavior": {
+          "supportsTwoPlayerCoop": true,
+          "sharedCheckpointId": "checkpoint.om.02",
+          "roleSplitEn": "Player 1 grades frankincense resin quality while Player 2 coordinates the mountain-to-coast caravan manifest."
+        },
+        "reward": {
+          "collectibleArtifactId": "artifact.om.hojari_frankincense_chest",
+          "passportMilestoneId": "milestone.om.02",
+          "miraTokensEarned": 20,
+          "idempotencyKey": "reward.quest.om.02.v16"
+        },
+        "mapCheckpoint": {
+          "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-OM-act2.svg",
+          "markerXPercent": 34,
+          "markerYPercent": 42,
+          "checkpointLabelEn": "Act 2 · The Frankincense Route",
+          "checkpointLabelAr": "الفصل 2 · طريق اللبان الظفاري",
+          "checkpointLabelArabizi": "Fasla 2 · Tariq il-Luban il-Dhofari"
+        },
+        "vocabularyIds": [
+          "vocab.om.luban"
+        ],
+        "ageTiers": {
+          "5-7": {
+            "ageTier": "5-7",
+            "stageId": "quest.om.02.tier.5-7",
+            "durationMinutes": "5–8 min",
+            "readingLoad": "low_pictorial_captioned",
+            "titleEn": "Sort the Sweet-Smelling Frankincense Crystals!",
+            "titleAr": "افرز فصوص اللبان العطرية!",
+            "titleArabizi": "Yalla نفصّل fusus il-luban il-3itriya!",
+            "objectiveEn": "Match the pearly frankincense drops with the painted clay burner and share mountain dates with the caravan!",
+            "objectiveAr": "طابق حبات اللبان اللامعة مع المجمر الفخاري الملون وشارك تمور الجبل مع القافلة!",
+            "objectiveArabizi": "Tabiq habbat il-luban ma3 il-majmar il-fakhkhari!",
+            "puzzleMechanicsEn": "3-color crystal sorting & friendly basket sharing.",
+            "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 4,
+            "robloxAdapterMechanics": "Botanical resin grading and mountain-to-coast barter puzzle."
+          },
+          "8-10": {
+            "ageTier": "8-10",
+            "stageId": "quest.om.02.tier.8-10",
+            "durationMinutes": "8–15 min",
+            "readingLoad": "guided_bilingual_cards",
+            "titleEn": "Trading Along the Land of Frankincense",
+            "titleAr": "التبادل على طريق أرض اللبان",
+            "titleArabizi": "Tabadul 3ala Tariq Ard il-Luban",
+            "objectiveEn": "Identify three grades of Omani frankincense and complete a fair barter between Dhofar groves and northern mountain oases.",
+            "objectiveAr": "ميّز ثلاث درجات من اللبان العُماني وأكمل مقايضة عادلة بين ظفار وواحات الجبل.",
+            "objectiveArabizi": "Mayyiz 3 darajat min il-luban wa akmil muqayada 3adila.",
+            "puzzleMechanicsEn": "Resin grading + inter-regional barter scale puzzle.",
+            "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 6,
+            "robloxAdapterMechanics": "Botanical resin grading and mountain-to-coast barter puzzle."
+          },
+          "11-13": {
+            "ageTier": "11-13",
+            "stageId": "quest.om.02.tier.11-13",
+            "durationMinutes": "12–20 min",
+            "readingLoad": "investigative_multi_step",
+            "titleEn": "Monsoon Ecology of Boswellia Sacra & Caravan Logistics",
+            "titleAr": "بيئة الخريف الموسمية لأشجار اللبان ولوجستيات القوافل",
+            "titleArabizi": "Bi'at Ashjar il-Luban wa Masarat il-Qawafil",
+            "objectiveEn": "Examine how the Khareef monsoon mist sustains Wadi Dawkah trees and how Khor Rori (Sumhuram) connected overland and sea routes.",
+            "objectiveAr": "ادرس كيف يغذي ضباب الخريف أشجار وادي دوكة وكيف ربط ميناء سمهرم (خور روري) البر بالبحر.",
+            "objectiveArabizi": "Idris kayfa yughadhi il-kharif ashjar Wadi Dawkah wa mina Khor Rori.",
+            "puzzleMechanicsEn": "Ecological & trade-route network puzzle.",
+            "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 8,
+            "robloxAdapterMechanics": "Botanical resin grading and mountain-to-coast barter puzzle."
+          },
+          "14-17": {
+            "ageTier": "14-17",
+            "stageId": "quest.om.02.tier.14-17",
+            "durationMinutes": "15–30 min",
+            "readingLoad": "source_critical_provenance",
+            "titleEn": "Archaeology of Khor Rori & Shisr vs the \"Ubar\" Mythos",
+            "titleAr": "آثار خور روري وشصر مقابل أسطورة «أوبار»",
+            "titleArabizi": "Athar Khor Rori wa Shisr vs Usturat Ubar",
+            "objectiveEn": "Distinguish verified archaeological excavations at Khor Rori and Shisr (UNESCO #1010) from romanticized media claims about the mythical city of Ubar.",
+            "objectiveAr": "ميّز بين الحفريات الأثرية الموثقة في خور روري وشصر (#1010) والادعاءات الإعلامية الأسطورية حول مدينة أوبار.",
+            "objectiveArabizi": "Mayyiz bayn حفريات UNESCO #1010 wa usturat Ubar.",
+            "puzzleMechanicsEn": "Source-critical archaeological provenance audit.",
+            "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 10,
+            "robloxAdapterMechanics": "Botanical resin grading and mountain-to-coast barter puzzle."
+          }
+        },
+        "robloxImplementation": {
+          "moduleName": "OmanAct2FrankincenseRoute",
+          "interactionType": "Botanical resin grading and mountain-to-coast barter puzzle.",
+          "zoneAnchorName": "OM_DhofarTrail_FrankincenseStation",
+          "status": "TEST BUILD"
+        },
+        "bedrockImplementation": {
+          "scriptHandler": "runOmanAct2FrankincenseRoute",
+          "structureTemplateId": "miraverse:om_frankincense_trade_station",
+          "customBlocksAndItems": [
+            "miraverse:om_hojari_luban",
+            "miraverse:om_clay_majmar"
+          ],
+          "status": "TEST BUILD"
+        }
+      },
+      {
+        "id": "quest.om.03",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "actNumber": 3,
+        "canonicalArchetype": "BUILD",
+        "countrySpecificAlias": "BUILD",
+        "titleEn": "Repair the Falaj",
+        "titleAr": "ترميم قناة الفلج",
+        "titleArabizi": "Tarmim Qanat il-Falaj",
+        "settingSubarea": "Terraced Orchard Aqueduct & Sarooj Sluice Junction",
+        "mentorNpcId": "npc.om.arif_salim_al_harthi",
+        "mentorNameEn": "Arif Salim & Mazoon Al-Harthi",
+        "mentorNameAr": "العريف سالم ومزون الحارثية",
+        "mentorNameArabizi": "Il-3arif Salim wa Mazoon Al-Harthi",
+        "summaryEn": "Collaborate on non-destructive repair of an educational falaj channel using waterproof sarooj mortar blocks and copper sluice gates so water flows cleanly to every terrace.",
+        "summaryAr": "تعاون في ترميم قناة فلج تعليمية باستخدام مكعبات الصاروج المقاوم للماء وبوابات التحويل النحاسية ليصل الماء إلى كل المدرجات.",
+        "summaryArabizi": "Ta3awan fi tarmim qanat il-falaj bil-sarooj wa بوابات il-tahwil.",
+        "epistemicCategory": "archaeology",
+        "epistemicWarningEn": "Minecraft bounded water-routing and Roblox channel valves operate in a dedicated educational simulation plot, never defacing heritage ruins.",
+        "objectiveGraph": [
+          {
+            "stepId": "quest.om.03.step1",
+            "descriptionEn": "Seal the cracked channel wall segments using dressed mountain stone and waterproof sarooj mortar blocks.",
+            "requiredItemOrAction": "om_act3_step1",
+            "hintEn": "Place sarooj blocks along the 3 leaking channel joints marked with blue droplets.",
+            "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+          },
+          {
+            "stepId": "quest.om.03.step2",
+            "descriptionEn": "Position the two movable copper sluice gates (siqarah) to route water evenly into both the eastern date terrace and western pomegranate terrace.",
+            "requiredItemOrAction": "om_act3_step2",
+            "hintEn": "Open Gate A for 1 athar cycle, then switch to Gate B so both gardens turn vibrant green.",
+            "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+          }
+        ],
+        "coopBehavior": {
+          "supportsTwoPlayerCoop": true,
+          "sharedCheckpointId": "checkpoint.om.03",
+          "roleSplitEn": "Player 1 seals the upstream sarooj channel walls while Player 2 operates the downstream sluice division gates."
+        },
+        "reward": {
+          "collectibleArtifactId": "artifact.om.sarooj_sluice_gate",
+          "passportMilestoneId": "milestone.om.03",
+          "miraTokensEarned": 20,
+          "idempotencyKey": "reward.quest.om.03.v16"
+        },
+        "mapCheckpoint": {
+          "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-OM-act3.svg",
+          "markerXPercent": 50,
+          "markerYPercent": 64,
+          "checkpointLabelEn": "Act 3 · Repair the Falaj",
+          "checkpointLabelAr": "الفصل 3 · ترميم قناة الفلج",
+          "checkpointLabelArabizi": "Fasla 3 · Tarmim Qanat il-Falaj"
+        },
+        "vocabularyIds": [
+          "vocab.om.aflaj",
+          "vocab.om.sarooj"
+        ],
+        "ageTiers": {
+          "5-7": {
+            "ageTier": "5-7",
+            "stageId": "quest.om.03.tier.5-7",
+            "durationMinutes": "5–8 min",
+            "readingLoad": "low_pictorial_captioned",
+            "titleEn": "Help the Water Reach the Thirsty Trees!",
+            "titleAr": "ساعد الماء ليصل إلى الأشجار العطشى!",
+            "titleArabizi": "Yalla نصلح qanat il-ma lil-ashjar!",
+            "objectiveEn": "Snap the smooth stone blocks into the water channel and open the little gate so the pomegranate blossoms bloom!",
+            "objectiveAr": "ركّب المكعبات الحجرية في القناة وافتح البوابة الصغيرة لتزهر أشجار الرمان!",
+            "objectiveArabizi": "Rakkib مكعبات il-hajar fil-qana wa iftah il-bawwaba!",
+            "puzzleMechanicsEn": "Guided 3-block channel repair with instant blooming tree animation.",
+            "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 4,
+            "robloxAdapterMechanics": "Validated co-op channel repair and sluice-valve water routing."
+          },
+          "8-10": {
+            "ageTier": "8-10",
+            "stageId": "quest.om.03.tier.8-10",
+            "durationMinutes": "8–15 min",
+            "readingLoad": "guided_bilingual_cards",
+            "titleEn": "Sealing the Channel with Sarooj & Sluice Gates",
+            "titleAr": "ترميم القناة بالصاروج وبوابات التقسيم",
+            "titleArabizi": "Tarmim il-Qana bil-Sarooj wal-Siqarah",
+            "objectiveEn": "Repair the falaj aqueduct blueprint with sarooj mortar and route water between two garden plots.",
+            "objectiveAr": "رمّم مخطط قناة الفلج بالصاروج ووجّه المياه بالتساوي بين بستانين.",
+            "objectiveArabizi": "Rammim qanat il-falaj bil-sarooj wa wajjih il-miyah bayn bustanayn.",
+            "puzzleMechanicsEn": "Rectangular channel blueprint + 2-gate water routing puzzle.",
+            "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 6,
+            "robloxAdapterMechanics": "Validated co-op channel repair and sluice-valve water routing."
+          },
+          "11-13": {
+            "ageTier": "11-13",
+            "stageId": "quest.om.03.tier.11-13",
+            "durationMinutes": "12–20 min",
+            "readingLoad": "investigative_multi_step",
+            "titleEn": "Gravity Gradient & Multi-Terrace Hydraulic Routing",
+            "titleAr": "الانحدار الطبيعي وتوجيه المياه عبر المدرجات الجبلية",
+            "titleArabizi": "Tawjih il-Miyah عبر المدرجات il-Jabaliya",
+            "objectiveEn": "Solve a 4-branch gravity-flow puzzle maintaining steady flow rate across upper, middle, and lower orchard terraces.",
+            "objectiveAr": "حل لغز توجيه المياه عبر أربع قنوات فرعية مع الحفاظ على ثبات التدفق في المدرجات العلوية والسفلية.",
+            "objectiveArabizi": "7ill lughz tawjih il-miyah عبر 4 qanawat far3iya.",
+            "puzzleMechanicsEn": "4-valve hydraulic flow-splitting simulation.",
+            "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 8,
+            "robloxAdapterMechanics": "Validated co-op channel repair and sluice-valve water routing."
+          },
+          "14-17": {
+            "ageTier": "14-17",
+            "stageId": "quest.om.03.tier.14-17",
+            "durationMinutes": "15–30 min",
+            "readingLoad": "source_critical_provenance",
+            "titleEn": "Hydraulic Conservation & Zero-Pump Gravity Engineering",
+            "titleAr": "الحفاظ الهيدروليكي وهندسة الجاذبية المستدامة",
+            "titleArabizi": "Handasat il-Jadhibiya il-Mustadama fil-Aflaj",
+            "objectiveEn": "Analyze how Omani aflaj maintain continuous gravity flow over kilometers without mechanical pumps or groundwater depletion.",
+            "objectiveAr": "حلل كيف تحافظ الأفلاج العُمانية على تدفق المياه بالجاذبية لمسافات طويلة دون مضخات ميكانيكية أو استنزاف للمياه الجوفية.",
+            "objectiveArabizi": "Hallil kayfa tuhafiz il-aflaj 3ala il-miyah bi-dun استنزاف.",
+            "puzzleMechanicsEn": "Engineering gradient & aquifer recharge simulation.",
+            "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 10,
+            "robloxAdapterMechanics": "Validated co-op channel repair and sluice-valve water routing."
+          }
+        },
+        "robloxImplementation": {
+          "moduleName": "OmanAct3RepairTheFalaj",
+          "interactionType": "Validated co-op channel repair and sluice-valve water routing.",
+          "zoneAnchorName": "OM_MountainOasis_FalajAqueduct",
+          "status": "TEST BUILD"
+        },
+        "bedrockImplementation": {
+          "scriptHandler": "runOmanAct3RepairTheFalaj",
+          "structureTemplateId": "miraverse:om_falaj_repair_aqueduct",
+          "customBlocksAndItems": [
+            "miraverse:om_sarooj_block",
+            "miraverse:om_copper_sluice_gate"
+          ],
+          "status": "TEST BUILD"
+        }
+      },
+      {
+        "id": "quest.om.04",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "actNumber": 4,
+        "canonicalArchetype": "COOK_OR_STORY",
+        "countrySpecificAlias": "COOK",
+        "titleEn": "The Oasis Family Table",
+        "titleAr": "مائدة عائلة الواحة",
+        "titleArabizi": "Ma'idat 3ailat il-Waha",
+        "settingSubarea": "Jabal Akhdar Rose-Terrace Veranda & Sablah Hospitality Hall",
+        "mentorNpcId": "npc.om.arif_salim_al_harthi",
+        "mentorNameEn": "Arif Salim & Mazoon Al-Harthi",
+        "mentorNameAr": "العريف سالم ومزون الحارثية",
+        "mentorNameArabizi": "Il-3arif Salim wa Mazoon Al-Harthi",
+        "summaryEn": "Learn Omani sablah hospitality, dates, and Jabal Akhdar rosewater craft; prepare an allergy-safe Omani Halwa / date-rosewater dish or craft a botanical rose-and-frankincense sachet.",
+        "summaryAr": "تعرّف على ضيافة السبلة العُمانية وتمور الواحة وماء ورد الجبل الأخضر، وحضّر حلوى عُمانية آمنة للحساسية أو كيساً عطرياً من الورد واللبان.",
+        "summaryArabizi": "Ta3arraf 3ala diyafat il-sablah il-3umaniya wa haddir 7alwa amina aw kis ward wa luban.",
+        "epistemicCategory": "history",
+        "epistemicWarningEn": "Includes nut-free, gluten-free, and non-food botanical craft alternatives; zero compulsory religious elements.",
+        "objectiveGraph": [
+          {
+            "stepId": "quest.om.04.step1",
+            "descriptionEn": "Harvest Damask rose petals and ripe fardh dates from thefalaj-watered terrace with Mazoon.",
+            "requiredItemOrAction": "om_act4_step1",
+            "hintEn": "Look for the terraced rose bushes overlooking the stone water channel.",
+            "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+          },
+          {
+            "stepId": "quest.om.04.step2",
+            "descriptionEn": "Choose your activity at the Sablah table: simmer Nut-Free Saffron-Rosewater Omani Halwa / Date Bites OR assemble a woven Jabal Akhdar Rose & Frankincense Botanical Sachet.",
+            "requiredItemOrAction": "om_act4_step2",
+            "hintEn": "All dietary and botanical craft paths earn the Rosewater Vessel keepsake.",
+            "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+          }
+        ],
+        "coopBehavior": {
+          "supportsTwoPlayerCoop": true,
+          "sharedCheckpointId": "checkpoint.om.04",
+          "roleSplitEn": "Player 1 tends the copper rosewater vessel while Player 2 arranges the date platter or botanical sachets."
+        },
+        "reward": {
+          "collectibleArtifactId": "artifact.om.rosewater_shisheh_vessel",
+          "passportMilestoneId": "milestone.om.04",
+          "miraTokensEarned": 20,
+          "idempotencyKey": "reward.quest.om.04.v16"
+        },
+        "mapCheckpoint": {
+          "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-OM-act4.svg",
+          "markerXPercent": 66,
+          "markerYPercent": 42,
+          "checkpointLabelEn": "Act 4 · The Oasis Family Table",
+          "checkpointLabelAr": "الفصل 4 · مائدة عائلة الواحة",
+          "checkpointLabelArabizi": "Fasla 4 · Ma'idat 3ailat il-Waha"
+        },
+        "vocabularyIds": [
+          "vocab.om.luban"
+        ],
+        "ageTiers": {
+          "5-7": {
+            "ageTier": "5-7",
+            "stageId": "quest.om.04.tier.5-7",
+            "durationMinutes": "5–8 min",
+            "readingLoad": "low_pictorial_captioned",
+            "titleEn": "Rosewater Scents & Sweet Oasis Dates!",
+            "titleAr": "عطر ماء الورد وتمر الواحة الحلو!",
+            "titleArabizi": "3itr Ma il-Ward wa Tamr il-Waha!",
+            "objectiveEn": "Pick pink mountain roses and sweet dates to make a cozy welcome tray or fragrant flower pouch!",
+            "objectiveAr": "اجمع ورد الجبل الوردي والتمر الحلو لإعداد صينية ترحيب أو كيس زهور عطري!",
+            "objectiveArabizi": "Ijma3 ward il-jabal wal-tamr li-siniyat il-terhib!",
+            "puzzleMechanicsEn": "3-item pictorial tray / flower-pouch maker.",
+            "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 4,
+            "robloxAdapterMechanics": "Sablah hospitality cooking or botanical rose-frankincense craft station."
+          },
+          "8-10": {
+            "ageTier": "8-10",
+            "stageId": "quest.om.04.tier.8-10",
+            "durationMinutes": "8–15 min",
+            "readingLoad": "guided_bilingual_cards",
+            "titleEn": "Hospitality in the Omani Sablah",
+            "titleAr": "الضيافة في السبلة العُمانية",
+            "titleArabizi": "Diyafat il-Sablah il-3umaniya",
+            "objectiveEn": "Follow the step-by-step recipe for nut-free rosewater-cardamom halwa (or botanical sachet craft) and learn Omani guest greetings.",
+            "objectiveAr": "اتبع خطوات إعداد الحلوى العُمانية بماء الورد والهيل (أو الكيس العطري) وتعلّم عبارات الترحيب.",
+            "objectiveArabizi": "Ittabi3 khutuwat tahdir il-halwa bi-ma il-ward aw il-kis il-3itri.",
+            "puzzleMechanicsEn": "Guided 3-step cooking/craft station with dietary selector.",
+            "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 6,
+            "robloxAdapterMechanics": "Sablah hospitality cooking or botanical rose-frankincense craft station."
+          },
+          "11-13": {
+            "ageTier": "11-13",
+            "stageId": "quest.om.04.tier.11-13",
+            "durationMinutes": "12–20 min",
+            "readingLoad": "investigative_multi_step",
+            "titleEn": "Mountain Microclimates & Traditional Distillation (Dejjan)",
+            "titleAr": "المناخ الجبلي وتقطير ماء الورد في الدهجان",
+            "titleArabizi": "Taqtir Ma il-Ward fil-Jabal il-Akhdar",
+            "objectiveEn": "Explore how altitude and falaj irrigation enable Jabal Akhdar rose distillation and pomegranate cultivation.",
+            "objectiveAr": "استكشف كيف يساعد ارتفاع الجبل الأخضر ومياه الأفلاج على زراعة الورد وتقطيره وزراعة الرمان.",
+            "objectiveArabizi": "Istakshif kayfa yusa3id irtifa3 il-Jabal il-Akhdar 3ala zira3at il-ward.",
+            "puzzleMechanicsEn": "Botanical distillation & inclusive menu puzzle.",
+            "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 8,
+            "robloxAdapterMechanics": "Sablah hospitality cooking or botanical rose-frankincense craft station."
+          },
+          "14-17": {
+            "ageTier": "14-17",
+            "stageId": "quest.om.04.tier.14-17",
+            "durationMinutes": "15–30 min",
+            "readingLoad": "source_critical_provenance",
+            "titleEn": "Agrobiodiversity & Heritage Livelihoods in Oman's Mountains",
+            "titleAr": "التنوع الزراعي واستدامة الحرف الجبلية في عُمان",
+            "titleArabizi": "Tanawwu3 Zira3i wa Hiraf il-Jabal fi 3uman",
+            "objectiveEn": "Analyze how terrace farming, Bahla pottery, and botanical distillation form an integrated sustainable mountain economy.",
+            "objectiveAr": "حلل كيف تشكل زراعة المدرجات وفخار بهلاء وتقطير الورد اقتصاداً جبلياً مستداماً ومتكاملاً.",
+            "objectiveArabizi": "Hallil takamul zira3at il-mudarrajat wa fakhkhar Bahla.",
+            "puzzleMechanicsEn": "Agro-ecological systems & inclusive hospitality challenge.",
+            "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 10,
+            "robloxAdapterMechanics": "Sablah hospitality cooking or botanical rose-frankincense craft station."
+          }
+        },
+        "robloxImplementation": {
+          "moduleName": "OmanAct4OasisFamilyTable",
+          "interactionType": "Sablah hospitality cooking or botanical rose-frankincense craft station.",
+          "zoneAnchorName": "OM_MountainOasis_SablahVeranda",
+          "status": "TEST BUILD"
+        },
+        "bedrockImplementation": {
+          "scriptHandler": "runOmanAct4OasisFamilyTable",
+          "structureTemplateId": "miraverse:om_sablah_hospitality_veranda",
+          "customBlocksAndItems": [
+            "miraverse:om_rosewater_vessel",
+            "miraverse:om_halwa_bowl"
+          ],
+          "status": "TEST BUILD"
+        }
+      },
+      {
+        "id": "quest.om.05",
+        "countryCode": "OM",
+        "stableCountryId": "country.om",
+        "actNumber": 5,
+        "canonicalArchetype": "WORD_FINALE",
+        "countrySpecificAlias": "WORD/FINALE",
+        "titleEn": "Share the Water, Share the Story",
+        "titleAr": "تقاسَم الماء وشارك الحكاية",
+        "titleArabizi": "Taqasam il-Ma wa Sharik il-Hikaya",
+        "settingSubarea": "Village Sundial Plaza & Heritage Archive Pavilion",
+        "mentorNpcId": "npc.om.arif_salim_al_harthi",
+        "mentorNameEn": "Arif Salim & Mazoon Al-Harthi",
+        "mentorNameAr": "العريف سالم ومزون الحارثية",
+        "mentorNameArabizi": "Il-3arif Salim wa Mazoon Al-Harthi",
+        "summaryEn": "Negotiate equitable athar irrigation schedules across village gardens, complete the Omani glossary, and create a village heritage archive entry to earn your Oman Passport Stamp.",
+        "summaryAr": "نسّق جدول حصص «الأثر» بالتساوي بين بساتين القرية، وأكمل معجم المفردات العُمانية، وأنشئ سجل أرشيف القرية لنيل ختم جواز سفر عُمان.",
+        "summaryArabizi": "Nassiq jadwal hisas il-athar bil-3adl wa akmil mu3jam kalimat 3uman.",
+        "epistemicCategory": "history",
+        "epistemicWarningEn": "Older tiers examine water sustainability, drought resilience, and equitable stakeholder scheduling.",
+        "objectiveGraph": [
+          {
+            "stepId": "quest.om.05.step1",
+            "descriptionEn": "Complete the 6-term Omani Waterkeepers Vocabulary Bridge (Aflaj, Arif, Athar, Luban, Sarooj, Shari'a).",
+            "requiredItemOrAction": "om_act5_step1",
+            "hintEn": "Match each Omani Arabic term with its Arabizi transliteration and hydrological meaning.",
+            "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+          },
+          {
+            "stepId": "quest.om.05.step2",
+            "descriptionEn": "Arrange the 24-hour Athar Water-Sharing Schedule with Arif Salim so every village garden and public basin receives fair water, unlocking your Oman Passport Stamp.",
+            "requiredItemOrAction": "om_act5_step2",
+            "hintEn": "Balance daytime sundial shares and nighttime star-clock shares across all community plots.",
+            "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+          }
+        ],
+        "coopBehavior": {
+          "supportsTwoPlayerCoop": true,
+          "sharedCheckpointId": "checkpoint.om.05",
+          "roleSplitEn": "Player 1 schedules daytime sundial athar shares while Player 2 balances nighttime star-clock shares."
+        },
+        "reward": {
+          "collectibleArtifactId": "artifact.om.waterkeepers_charter_scroll",
+          "passportMilestoneId": "milestone.om.05",
+          "miraTokensEarned": 40,
+          "idempotencyKey": "reward.quest.om.05.v16"
+        },
+        "mapCheckpoint": {
+          "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-OM-act5.svg",
+          "markerXPercent": 82,
+          "markerYPercent": 64,
+          "checkpointLabelEn": "Act 5 · Share the Water, Share the Story",
+          "checkpointLabelAr": "الفصل 5 · تقاسَم الماء وشارك الحكاية",
+          "checkpointLabelArabizi": "Fasla 5 · Taqasam il-Ma wa Sharik il-Hikaya"
+        },
+        "vocabularyIds": [
+          "vocab.om.aflaj",
+          "vocab.om.arif",
+          "vocab.om.athar",
+          "vocab.om.luban",
+          "vocab.om.sarooj",
+          "vocab.om.sharia_water"
+        ],
+        "ageTiers": {
+          "5-7": {
+            "ageTier": "5-7",
+            "stageId": "quest.om.05.tier.5-7",
+            "durationMinutes": "5–8 min",
+            "readingLoad": "low_pictorial_captioned",
+            "titleEn": "Every Garden Gets a Turn for Water!",
+            "titleAr": "كل بستان يأخذ دوره من الماء!",
+            "titleArabizi": "Kull bustan yakhudh dawrah min il-ma!",
+            "objectiveEn": "Give each family garden a glowing water token and say the Omani words with Arif Salim!",
+            "objectiveAr": "امنح كل بستان عائلي رمز ماء مضيء وردد الكلمات العُمانية مع العريف سالم!",
+            "objectiveArabizi": "Imnah kull bustan ramz ma wa raddid kalimat 3uman!",
+            "puzzleMechanicsEn": "Fair turn-taking picture board + spoken word celebration.",
+            "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 4,
+            "robloxAdapterMechanics": "Co-op athar sundial/star-clock scheduler & Passport ceremony."
+          },
+          "8-10": {
+            "ageTier": "8-10",
+            "stageId": "quest.om.05.tier.8-10",
+            "durationMinutes": "8–15 min",
+            "readingLoad": "guided_bilingual_cards",
+            "titleEn": "The Arif's Fair Water Schedule",
+            "titleAr": "جدول العريف العادل لتوزيع المياه",
+            "titleArabizi": "Jadwal il-3arif il-3adil lil-Miyah",
+            "objectiveEn": "Match all 6 Omani terms and assign fair athar time slots on the village sundial board.",
+            "objectiveAr": "طابق المفردات العُمانية الست ووزّع حصص الأثر بالتساوي على لوحة المزولة.",
+            "objectiveArabizi": "Tabiq 6 kalimat 3umaniya wa wazzi3 hisas il-athar.",
+            "puzzleMechanicsEn": "6-term vocabulary bridge + athar time-slot puzzle.",
+            "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+            "adultAssistanceOption": true,
+            "shorterSessionOverrideMinutes": 6,
+            "robloxAdapterMechanics": "Co-op athar sundial/star-clock scheduler & Passport ceremony."
+          },
+          "11-13": {
+            "ageTier": "11-13",
+            "stageId": "quest.om.05.tier.11-13",
+            "durationMinutes": "12–20 min",
+            "readingLoad": "investigative_multi_step",
+            "titleEn": "Co-Op Stakeholder Scheduling: Farms, Orchards & Village Basins",
+            "titleAr": "جدولة الموارد التعاونية بين المزارع والبساتين والقرية",
+            "titleArabizi": "Jadwalat il-Miyah bayn il-Mazari3 wal-Qarya",
+            "objectiveEn": "Negotiate a seasonal rotation (dawran) during a dry month so young saplings, elders' plots, and public basins are all protected.",
+            "objectiveAr": "نسّق دورة سقي موسمية في شهر قليل الأمطار لحماية الفسائل الصغيرة وبساتين الأهالي والمرافق العامة.",
+            "objectiveArabizi": "Nassiq dawrat saqi mawsimiya li-himayat جَميع البساتين.",
+            "puzzleMechanicsEn": "Multi-stakeholder resource allocation & equity puzzle.",
+            "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 8,
+            "robloxAdapterMechanics": "Co-op athar sundial/star-clock scheduler & Passport ceremony."
+          },
+          "14-17": {
+            "ageTier": "14-17",
+            "stageId": "quest.om.05.tier.14-17",
+            "durationMinutes": "15–30 min",
+            "readingLoad": "source_critical_provenance",
+            "titleEn": "Commons Governance: Ostrom's Principles & Omani Aflaj Sustainability",
+            "titleAr": "حوكمة الموارد المشتركة واستدامة الأفلاج العُمانية عبر القرون",
+            "titleArabizi": "7awkamat il-Mawarid il-Mushtaraka: Istidamat il-Aflaj",
+            "objectiveEn": "Analyze how community-governed Omani aflaj prevented the \"tragedy of the commons\" for over a millennium, and compile your Oman Passport dossier.",
+            "objectiveAr": "حلل كيف نجحت الحوكمة المجتمعية للأفلاج العُمانية في صون الموارد المشتركة لأكثر من ألف عام، وأكمل ملف جواز السفر.",
+            "objectiveArabizi": "Hallil najah 7awkamat il-aflaj il-mujtama3iya عبر القرون.",
+            "puzzleMechanicsEn": "Capstone sustainability, stakeholder negotiation & epistemic dossier.",
+            "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+            "adultAssistanceOption": false,
+            "shorterSessionOverrideMinutes": 10,
+            "robloxAdapterMechanics": "Co-op athar sundial/star-clock scheduler & Passport ceremony."
+          }
+        },
+        "robloxImplementation": {
+          "moduleName": "OmanAct5ShareTheWaterFinale",
+          "interactionType": "Co-op athar sundial/star-clock scheduler & Passport ceremony.",
+          "zoneAnchorName": "OM_MountainOasis_SundialPlaza",
+          "status": "TEST BUILD"
+        },
+        "bedrockImplementation": {
+          "scriptHandler": "runOmanAct5ShareTheWaterFinale",
+          "structureTemplateId": "miraverse:om_sundial_archive_plaza",
+          "customBlocksAndItems": [
+            "miraverse:om_water_charter",
+            "miraverse:om_passport_stamp"
+          ],
+          "status": "TEST BUILD"
+        }
+      }
+    ],
+    "familyConversationPrompts": [
+      {
+        "promptId": "prompt.om.01",
+        "questionEn": "Ask a family member: How does our family share responsibilities or conserve water and nature at home?",
+        "questionAr": "اسأل أحد أفراد العائلة: كيف تتعاون عائلتنا في تقاسم المسؤوليات والحفاظ على نعمة الماء والطبيعة في البيت؟",
+        "questionArabizi": "Is'al ahlak: Kayfa نتعاون في البيت للحفاظ على نعمة الماء؟",
+        "privacyNoteEn": "Optional offline family conversation—never recorded or uploaded."
+      }
+    ],
+    "traditionsAndFood": {
+      "dishOrCraftNameEn": "Jabal Akhdar Rosewater-Saffron Omani Halwa (Nut-Free Option) & Botanical Frankincense Sachet",
+      "dishOrCraftNameAr": "الحلوى العُمانية بماء ورد الجبل الأخضر والزعفران وكيس اللبان العطري",
+      "dishOrCraftNameArabizi": "Il-7alwa il-3umaniya bi-Ma il-Ward wa Kis il-Luban",
+      "descriptionEn": "Celebrates Omani sablah hospitality with slow-simmered rosewater-cardamom halwa alongside fragrant Dhofari frankincense and mountain rose petals.",
+      "allergySafeSubstitutionsEn": [
+        "Nut-free and sesame-free cornstarch/tapioca rosewater halwa preparation",
+        "Gluten-free and dairy-free fardh date & cardamom compote"
+      ],
+      "nonFoodCraftAlternativeEn": "Assemble a woven cotton sachet filled with dried Jabal Akhdar rose petals and Dhofari Hojari frankincense crystals."
+    },
+    "architectureAndMusic": {
+      "architecturalFeaturesEn": [
+        "UNESCO-listed gravity-fed aflaj channels lined with waterproof sarooj mortar (#1207)",
+        "Terraced mountain stone orchards and earthen/limestone sablah community halls"
+      ],
+      "rhythmicTraditionNoteEn": "Original licensed acoustic percussion inspired by Omani mountain and harvest work rhythms—no copyrighted or sacred recordings.",
+      "audioRightsStatus": "original_licensed_rhythm_only_no_copyrighted_or_sacred_recordings"
+    }
+  }
+}

@@ -4,12 +4,16 @@ local Workspace = game:GetService("Workspace")
 local ReplicatedStorageShared = game:GetService("ReplicatedStorage"):WaitForChild("Shared")
 local WorldRegistry = require(ReplicatedStorageShared:WaitForChild("WorldRegistry"))
 local ByblosWorld = require(script.Parent.world.ByblosWorld)
+local MountLebanonWorld = require(script.Parent.world.MountLebanonWorld)
+local BeirutWorld = require(script.Parent.world.BeirutWorld)
+local RegionalTerrainBuilder = require(script.Parent.world.RegionalTerrainBuilder)
 local MentorCharacter = require(script.Parent.world.MentorCharacter)
 
 local MapBuilder = {}
 
 type Handlers = {
 	travel: (Player, string) -> (),
+	travelLocation: ((Player, string) -> ())?,
 	lobby: (Player) -> (),
 	mentor: (Player, string) -> (),
 	station: (Player, string, string) -> (),
@@ -314,9 +318,13 @@ local function buildCountryPlaza(mapFolder: Folder, cc: CountryId, meta: Country
 	local primaryColor = hexToColor3(meta.primary, Color3.fromRGB(80, 140, 210))
 	local secondaryColor = hexToColor3(meta.secondary, Color3.fromRGB(220, 180, 80))
 
+	local defaultLoc = WorldRegistry.defaultLocation(cc)
+	local defaultLocationId = if defaultLoc then defaultLoc.locationId else string.lower(cc)
+
 	local plazaFolder = Instance.new("Folder")
 	plazaFolder.Name = "Plaza_" .. cc
 	plazaFolder:SetAttribute("Country", cc)
+	plazaFolder:SetAttribute("LocationId", defaultLocationId)
 	plazaFolder.Parent = mapFolder
 
 	local basePart = Instance.new("Part")
@@ -330,6 +338,7 @@ local function buildCountryPlaza(mapFolder: Folder, cc: CountryId, meta: Country
 	basePart.TopSurface = Enum.SurfaceType.Smooth
 	basePart.BottomSurface = Enum.SurfaceType.Smooth
 	basePart:SetAttribute("Country", cc)
+	basePart:SetAttribute("LocationId", defaultLocationId)
 	basePart.Parent = plazaFolder
 
 	local borderPart = Instance.new("Part")
@@ -341,6 +350,7 @@ local function buildCountryPlaza(mapFolder: Folder, cc: CountryId, meta: Country
 	borderPart.Color = secondaryColor
 	borderPart.Material = Enum.Material.SmoothPlastic
 	borderPart:SetAttribute("Country", cc)
+	borderPart:SetAttribute("LocationId", defaultLocationId)
 	borderPart.Parent = plazaFolder
 
 	local spawnPart = Instance.new("Part")
@@ -354,6 +364,7 @@ local function buildCountryPlaza(mapFolder: Folder, cc: CountryId, meta: Country
 	spawnPart.TopSurface = Enum.SurfaceType.Smooth
 	spawnPart.BottomSurface = Enum.SurfaceType.Smooth
 	spawnPart:SetAttribute("Country", cc)
+	spawnPart:SetAttribute("LocationId", defaultLocationId)
 	spawnPart.Parent = plazaFolder
 
 	local mentorPart = Instance.new("Part")
@@ -455,6 +466,144 @@ buildLebanonPeople = function(plaza: Folder, center: Vector3, meta: CountryMeta)
 			h.station(player, "LB", kind)
 		end)
 	end
+
+	-- Travel station from Byblos to Mount Lebanon (in front of arrival spawn at +34, 0, +14)
+	local trailStation = Instance.new("Model")
+	trailStation.Name = "TravelStation_ToMountLebanon"
+	trailStation.Parent = plaza
+
+	local trailPos = center + Vector3.new(34, 0, 14)
+
+	local trailBase = Instance.new("Part")
+	trailBase.Name = "TrailBase"
+	trailBase.Anchored = true
+	trailBase.CanCollide = true
+	trailBase.Size = Vector3.new(9, 1, 6)
+	trailBase.Position = trailPos + Vector3.new(0, 0.5, 0)
+	trailBase.Color = Color3.fromHex("D8C5A3")
+	trailBase.Material = Enum.Material.Limestone
+	trailBase.Parent = trailStation
+
+	local leftPost = Instance.new("Part")
+	leftPost.Name = "TrailPostL"
+	leftPost.Anchored = true
+	leftPost.CanCollide = true
+	leftPost.Size = Vector3.new(1.4, 9, 1.4)
+	leftPost.Position = trailPos + Vector3.new(-3.2, 5, 0)
+	leftPost.Color = Color3.fromHex("6B4423")
+	leftPost.Material = Enum.Material.WoodPlanks
+	leftPost.Parent = trailStation
+
+	local rightPost = Instance.new("Part")
+	rightPost.Name = "TrailPostR"
+	rightPost.Anchored = true
+	rightPost.CanCollide = true
+	rightPost.Size = Vector3.new(1.4, 9, 1.4)
+	rightPost.Position = trailPos + Vector3.new(3.2, 5, 0)
+	rightPost.Color = Color3.fromHex("6B4423")
+	rightPost.Material = Enum.Material.WoodPlanks
+	rightPost.Parent = trailStation
+
+	local lintel = Instance.new("Part")
+	lintel.Name = "TrailLintel"
+	lintel.Anchored = true
+	lintel.CanCollide = true
+	lintel.Size = Vector3.new(8.8, 1.4, 2)
+	lintel.Position = trailPos + Vector3.new(0, 9.8, 0)
+	lintel.Color = Color3.fromHex("1E5631")
+	lintel.Material = Enum.Material.SmoothPlastic
+	lintel.Parent = trailStation
+
+	local portalToMountLebanon = Instance.new("Part")
+	portalToMountLebanon.Name = "Portal_byblos_to_mount_lebanon"
+	portalToMountLebanon.Anchored = true
+	portalToMountLebanon.CanCollide = true
+	portalToMountLebanon.Size = Vector3.new(4.8, 7.6, 1.2)
+	portalToMountLebanon.Position = trailPos + Vector3.new(0, 4.8, 0)
+	portalToMountLebanon.Color = Color3.fromHex("1E5631")
+	portalToMountLebanon.Material = Enum.Material.Neon
+	portalToMountLebanon:SetAttribute("Country", "LB")
+	portalToMountLebanon:SetAttribute("SourceLocation", "byblos")
+	portalToMountLebanon:SetAttribute("TargetLocation", "mount_lebanon")
+	portalToMountLebanon.Parent = trailStation
+
+	createBillboardLabel(
+		portalToMountLebanon,
+		"Trail to Mount Lebanon",
+		"Cedar & Olive Terraces (Al-Jall)",
+		Color3.fromHex("00A651")
+	)
+
+	local trailPrompt = Instance.new("ProximityPrompt")
+	trailPrompt.Name = "TravelToMountLebanonPrompt"
+	trailPrompt.ActionText = "Travel to Mount Lebanon"
+	trailPrompt.ObjectText = "Mount Lebanon Region"
+	trailPrompt.HoldDuration = 0
+	trailPrompt.MaxActivationDistance = 14
+	trailPrompt.RequiresLineOfSight = false
+	trailPrompt.Parent = portalToMountLebanon
+
+	onPrompt(trailPrompt, function(h, player)
+		if h.travelLocation then
+			h.travelLocation(player, "mount_lebanon")
+		else
+			h.travel(player, "mount_lebanon")
+		end
+	end)
+
+	-- Travel station from Byblos to Beirut (coastal road portal at -34, 0, +14)
+	local beirutStation = Instance.new("Model")
+	beirutStation.Name = "TravelStation_ToBeirut"
+	beirutStation.Parent = plaza
+
+	local beirutPos = center + Vector3.new(-34, 0, 14)
+
+	local beirutBase = Instance.new("Part")
+	beirutBase.Name = "BeirutTrailBase"
+	beirutBase.Anchored = true
+	beirutBase.CanCollide = true
+	beirutBase.Size = Vector3.new(9, 1, 6)
+	beirutBase.Position = beirutPos + Vector3.new(0, 0.5, 0)
+	beirutBase.Color = Color3.fromHex("D8C5A3")
+	beirutBase.Material = Enum.Material.Limestone
+	beirutBase.Parent = beirutStation
+
+	local portalToBeirut = Instance.new("Part")
+	portalToBeirut.Name = "Portal_byblos_to_beirut"
+	portalToBeirut.Anchored = true
+	portalToBeirut.CanCollide = true
+	portalToBeirut.Size = Vector3.new(4.8, 7.6, 1.2)
+	portalToBeirut.Position = beirutPos + Vector3.new(0, 4.8, 0)
+	portalToBeirut.Color = Color3.fromRGB(36, 122, 168)
+	portalToBeirut.Material = Enum.Material.Neon
+	portalToBeirut:SetAttribute("Country", "LB")
+	portalToBeirut:SetAttribute("SourceLocation", "byblos")
+	portalToBeirut:SetAttribute("TargetLocation", "beirut")
+	portalToBeirut.Parent = beirutStation
+
+	createBillboardLabel(
+		portalToBeirut,
+		"Coastal Road to Beirut",
+		"Ras Beirut Promontory & Corniche",
+		Color3.fromRGB(36, 122, 168)
+	)
+
+	local beirutPrompt = Instance.new("ProximityPrompt")
+	beirutPrompt.Name = "TravelToBeirutPrompt"
+	beirutPrompt.ActionText = "Travel to Beirut"
+	beirutPrompt.ObjectText = "Beirut Coastal City"
+	beirutPrompt.HoldDuration = 0
+	beirutPrompt.MaxActivationDistance = 14
+	beirutPrompt.RequiresLineOfSight = false
+	beirutPrompt.Parent = portalToBeirut
+
+	onPrompt(beirutPrompt, function(h, player)
+		if h.travelLocation then
+			h.travelLocation(player, "beirut")
+		else
+			h.travel(player, "beirut")
+		end
+	end)
 end
 
 local function findMapPart(partName: string): BasePart?
@@ -483,6 +632,13 @@ function MapBuilder.build(): Folder
 				break
 			end
 		end
+		if
+			not existing:FindFirstChild("Spawn_mount_lebanon", true)
+			or not existing:FindFirstChild("Portal_byblos_to_mount_lebanon", true)
+			or not existing:FindFirstChild("Portal_mount_lebanon_to_byblos", true)
+		then
+			allPresent = false
+		end
 		if allPresent and existing:FindFirstChild("SpawnLocation", true) then
 			return existing
 		end
@@ -504,13 +660,69 @@ function MapBuilder.build(): Folder
 
 	for _, cc in ipairs(COUNTRIES) do
 		buildCountryPlaza(mapFolder, cc, metas[cc])
+		local plaza = mapFolder:FindFirstChild("Plaza_" .. cc)
+		local center = WorldRegistry.origin(cc)
+		local defaultLocId = WorldRegistry.defaultLocationId(cc)
+		local travelCallbacks = {
+			travelToLocation = function(player: Player, targetLocationId: string)
+				if handlers then
+					if handlers.travelLocation then
+						handlers.travelLocation(player, targetLocationId)
+					else
+						handlers.travel(player, targetLocationId)
+					end
+				end
+			end,
+			returnToLobby = function(player: Player)
+				if handlers then
+					handlers.lobby(player)
+				end
+			end,
+		}
 		if cc == "LB" then
-			local plaza = mapFolder:FindFirstChild("Plaza_LB")
-			local center = WorldRegistry.origin(cc)
 			if plaza and center then
 				ByblosWorld.build(plaza, center)
 				buildLebanonPeople(plaza :: Folder, center, metas[cc])
+				RegionalTerrainBuilder.augmentCityPlaza(plaza :: Folder, "byblos", center, travelCallbacks)
 			end
+			local mountLebanonLoc = WorldRegistry.getLocation("mount_lebanon")
+			if mountLebanonLoc then
+				MountLebanonWorld.build(mapFolder, mountLebanonLoc.origin, travelCallbacks)
+			end
+			local beirutLoc = WorldRegistry.getLocation("beirut")
+			if beirutLoc then
+				BeirutWorld.build(mapFolder, beirutLoc.origin, travelCallbacks)
+			end
+		elseif plaza and center and defaultLocId then
+			RegionalTerrainBuilder.augmentCityPlaza(plaza :: Folder, defaultLocId, center, travelCallbacks)
+			for _, locDef in ipairs(WorldRegistry.locationsForCountry(cc)) do
+				if locDef.locationId ~= defaultLocId then
+					RegionalTerrainBuilder.buildRegionalScene(mapFolder, locDef.locationId, travelCallbacks)
+				end
+			end
+		end
+	end
+
+	-- Build the 6 Global Catalog country scenes (DE, CN, JP, RU, UA, MA) from the shared DEM pipeline
+	local globalTravelCallbacks = {
+		travelToLocation = function(player: Player, targetLocationId: string)
+			if handlers then
+				if handlers.travelLocation then
+					handlers.travelLocation(player, targetLocationId)
+				else
+					handlers.travel(player, targetLocationId)
+				end
+			end
+		end,
+		returnToLobby = function(player: Player)
+			if handlers then
+				handlers.lobby(player)
+			end
+		end,
+	}
+	for _, globalCc in ipairs({ "DE", "CN", "JP", "RU", "UA", "MA" }) do
+		for _, locDef in ipairs(WorldRegistry.locationsForCountry(globalCc)) do
+			RegionalTerrainBuilder.buildRegionalScene(mapFolder, locDef.locationId, globalTravelCallbacks)
 		end
 	end
 
@@ -518,9 +730,38 @@ function MapBuilder.build(): Folder
 	return mapFolder
 end
 
+function MapBuilder.getLocationSpawn(locationId: string): BasePart?
+	if type(locationId) ~= "string" then
+		return nil
+	end
+	local loc = WorldRegistry.getLocation(locationId)
+	local canonicalId = if loc then loc.locationId else string.lower(locationId)
+	if canonicalId == "mount_lebanon" then
+		return findMapPart("Spawn_mount_lebanon")
+	elseif canonicalId == "byblos" then
+		return findMapPart("Spawn_LB")
+	end
+	local direct = findMapPart("Spawn_" .. canonicalId)
+	if direct then
+		return direct
+	end
+	local rawDirect = findMapPart("Spawn_" .. string.lower(locationId))
+	if rawDirect then
+		return rawDirect
+	end
+	if loc then
+		return findMapPart("Spawn_" .. loc.countryId)
+	end
+	return nil
+end
+
 function MapBuilder.getSpawn(country: string): BasePart?
 	if type(country) ~= "string" then
 		return nil
+	end
+	local byLoc = MapBuilder.getLocationSpawn(country)
+	if byLoc then
+		return byLoc
 	end
 	local cc = string.upper(country)
 	return findMapPart("Spawn_" .. cc)

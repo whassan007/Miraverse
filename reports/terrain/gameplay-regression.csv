@@ -1,0 +1,22 @@
+locationId,countryId,locationType,spawnClearancePass,portalReachabilityPass,mentorOrLandmarkAccessible,questStationsIntact,saveMigrationPass
+byblos,LB,city,PASS,PASS,PASS,PASS (5/5 Stations),PASS
+mount_lebanon,LB,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+beirut,LB,city,PASS,PASS,PASS,N/A (No Overwrite),PASS
+cairo,EG,city,PASS,PASS,PASS,N/A (No Overwrite),PASS
+alexandria,EG,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+aswan,EG,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+baghdad,IQ,city,PASS,PASS,PASS,N/A (No Overwrite),PASS
+erbil,IQ,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+basra,IQ,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+jeonju,KR,city,PASS,PASS,PASS,N/A (No Overwrite),PASS
+seoul,KR,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+busan,KR,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+lyon,FR,city,PASS,PASS,PASS,N/A (No Overwrite),PASS
+paris,FR,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+marseille,FR,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+rhine_valley,DE,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+wuling_valley,CN,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+tohoku_waystation,JP,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+lake_svetloyar,RU,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+kyiv_hills,UA,region,PASS,PASS,PASS,N/A (No Overwrite),PASS
+marrakesh_atlas,MA,region,PASS,PASS,PASS,N/A (No Overwrite),PASS

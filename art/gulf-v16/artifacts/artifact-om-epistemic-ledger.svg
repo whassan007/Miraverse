@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="300" role="img" aria-label="Epistemic Ledger: Aflaj Engineering vs Oral Legends of Ubar">
+  <rect width="420" height="300" rx="20" fill="#0F221D" stroke="#D97706" stroke-width="4"/>
+  <circle cx="210" cy="122" r="64" fill="#15803D" opacity="0.4" stroke="#D97706" stroke-width="3"/>
+  <polygon points="210,68 254,122 210,176 166,122" fill="#D97706" opacity="0.85" stroke="#FFF8EE" stroke-width="2"/>
+  <rect x="20" y="200" width="380" height="80" rx="12" fill="#09111E" opacity="0.92"/>
+  <text x="210" y="228" text-anchor="middle" fill="#FFF8EE" font-family="Georgia, serif" font-size="15" font-weight="bold">Epistemic Ledger: Aflaj Engineering vs Oral </text>
+  <text x="210" y="252" text-anchor="middle" fill="#D97706" font-family="sans-serif" font-size="14">دفتر التمييز المعرفي: هندسة الأفلاج مقابل أساط</text>
+  <text x="210" y="272" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11">artifact.om.folklore_vs_engineering_tablet · FOLKLORE</text>
+</svg>

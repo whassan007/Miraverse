@@ -4,6 +4,7 @@
 -- Palette and prop names follow art/source/countries/LB/kit-LB.json.
 -- Stylized and original: this is not a survey of the real town.
 local Workspace = game:GetService("Workspace")
+local GeoTerrainBuilder = require(script.Parent.GeoTerrainBuilder)
 
 local ByblosWorld = {}
 
@@ -147,18 +148,15 @@ local function boat(parent: Instance, base: CFrame, hull: Color3, sailUp: boolea
 	end
 end
 
-local function buildTerrain(c: Vector3)
+local function buildTerrain(c: Vector3, parent: Instance?)
+	-- Reconstruct real Copernicus GLO-30 DEM topography for Byblos (coastal plain, harbor basin, inland Jbeil hills)
+	GeoTerrainBuilder.buildLocationTerrain("LB", "byblos", c, parent)
 	local terrain = Workspace.Terrain
 	local groundTop = c.Y - 3
 	local sea = c.Z - 48
-	-- Land behind the harbor.
+	-- Gameplay adaptation layer: ensure harbor quay and main town square foundation are level and collision-safe
 	terrain:FillBlock(CFrame.new(c.X, groundTop - 10, c.Z + 42), Vector3.new(204, 20, 180), Enum.Material.Ground)
-	-- Green hills rising behind the town.
-	for i, offset in { -80, -30, 30, 80 } do
-		local radius = 34 + (i % 2) * 8
-		terrain:FillBall(Vector3.new(c.X + offset, groundTop - 10, c.Z + 118), radius, Enum.Material.Grass)
-	end
-	-- Sea floor and water north of the quay.
+	-- Sea floor and harbor basin water north of the quay
 	terrain:FillBlock(CFrame.new(c.X, groundTop - 15, sea - 70), Vector3.new(204, 8, 140), Enum.Material.Sand)
 	terrain:FillBlock(CFrame.new(c.X, groundTop - 7.5, sea - 70), Vector3.new(204, 7, 140), Enum.Material.Water)
 end
@@ -169,7 +167,7 @@ function ByblosWorld.build(parent: Instance, center: Vector3)
 		return CFrame.new(c.X + x, c.Y, c.Z + z) * CFrame.Angles(0, math.rad(rotation or 0), 0)
 	end
 
-	buildTerrain(c)
+	buildTerrain(c, parent)
 
 	-- Town ground sits just below the square, so buildings are never left floating.
 	part(parent, "TownGround", Vector3.new(204, 4, 164), CFrame.new(c.X, c.Y - 2.1, c.Z + 34), Color3.fromRGB(176, 158, 118), { material = Enum.Material.Ground })

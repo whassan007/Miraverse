@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.6.0",
+  "countryCode": "KW",
+  "stableId": "country.kw",
+  "nameEn": "Kuwait",
+  "nameAr": "الكويت",
+  "storyArcTitleEn": "Guardians of the Sea Stories",
+  "mentorNpc": "npc.kw.sulaiman_al_nakhuda",
+  "actsCount": 5,
+  "structures": [
+    {
+      "actId": "quest.kw.01",
+      "structureTemplateId": "miraverse:kw_naqah_boom_pier",
+      "origin": [
+        600,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:kw_deera_compass",
+        "miraverse:kw_fintas_water_chest",
+        "miraverse:kw_boom_model"
+      ]
+    },
+    {
+      "actId": "quest.kw.02",
+      "structureTemplateId": "miraverse:kw_sikak_ledger_alley",
+      "origin": [
+        632,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:kw_trust_ledger",
+        "miraverse:kw_kandil_oil_jar"
+      ]
+    },
+    {
+      "actId": "quest.kw.03",
+      "structureTemplateId": "miraverse:kw_qallaf_shipyard",
+      "origin": [
+        664,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:kw_qallaf_adze",
+        "miraverse:kw_boom_hull_frame"
+      ]
+    },
+    {
+      "actId": "quest.kw.04",
+      "structureTemplateId": "miraverse:kw_lantern_story_courtyard",
+      "origin": [
+        696,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:kw_brass_lantern",
+        "miraverse:kw_gers_ogaily_tray"
+      ]
+    },
+    {
+      "actId": "quest.kw.05",
+      "structureTemplateId": "miraverse:kw_sief_finale_pier",
+      "origin": [
+        728,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:kw_nahma_songbook",
+        "miraverse:kw_passport_stamp"
+      ]
+    }
+  ]
+}

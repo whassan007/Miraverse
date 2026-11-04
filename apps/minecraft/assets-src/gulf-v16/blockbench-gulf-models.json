@@ -1,0 +1,13 @@
+{
+  "version": "1.6.0",
+  "worlds": [
+    "QA",
+    "AE",
+    "KW",
+    "SA",
+    "OM",
+    "BH"
+  ],
+  "structuresCount": 30,
+  "customItemsCount": 48
+}

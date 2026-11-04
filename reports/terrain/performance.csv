@@ -1,0 +1,22 @@
+locationId,countryId,detailLevel,demMacroCells,voxelGridSize,playableFootprintStuds,estimatedPartCount,streamingSafe,mobileBudgetPass
+byblos,LB,3,64,20x20 / 16x16,240x350,145,true,PASS
+mount_lebanon,LB,2,64,20x20 / 16x16,280x220,98,true,PASS
+beirut,LB,3,64,20x20 / 16x16,240x200,145,true,PASS
+cairo,EG,3,64,20x20 / 16x16,240x240,145,true,PASS
+alexandria,EG,2,64,20x20 / 16x16,240x200,98,true,PASS
+aswan,EG,2,64,20x20 / 16x16,240x200,98,true,PASS
+baghdad,IQ,3,64,20x20 / 16x16,240x240,145,true,PASS
+erbil,IQ,2,64,20x20 / 16x16,240x200,98,true,PASS
+basra,IQ,2,64,20x20 / 16x16,240x200,98,true,PASS
+jeonju,KR,3,64,20x20 / 16x16,240x240,145,true,PASS
+seoul,KR,2,64,20x20 / 16x16,240x200,98,true,PASS
+busan,KR,2,64,20x20 / 16x16,240x200,98,true,PASS
+lyon,FR,3,64,20x20 / 16x16,240x240,145,true,PASS
+paris,FR,2,64,20x20 / 16x16,240x200,98,true,PASS
+marseille,FR,2,64,20x20 / 16x16,240x200,98,true,PASS
+rhine_valley,DE,2,64,20x20 / 16x16,260x240,98,true,PASS
+wuling_valley,CN,2,64,20x20 / 16x16,260x240,98,true,PASS
+tohoku_waystation,JP,2,64,20x20 / 16x16,260x240,98,true,PASS
+lake_svetloyar,RU,2,64,20x20 / 16x16,260x240,98,true,PASS
+kyiv_hills,UA,2,64,20x20 / 16x16,260x240,98,true,PASS
+marrakesh_atlas,MA,2,64,20x20 / 16x16,260x240,98,true,PASS

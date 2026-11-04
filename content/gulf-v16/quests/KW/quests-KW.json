@@ -1,0 +1,733 @@
+[
+  {
+    "id": "quest.kw.01",
+    "countryCode": "KW",
+    "stableCountryId": "country.kw",
+    "actNumber": 1,
+    "canonicalArchetype": "GATHER",
+    "countrySpecificAlias": "GATHER",
+    "titleEn": "The Sailor's Kit",
+    "titleAr": "عدّة البحار والمؤونة",
+    "titleArabizi": "3iddat il-Bahhar wal-Ma'una",
+    "settingSubarea": "Naq'ah Stone Harbor Pier & Boom Deck",
+    "mentorNpcId": "npc.kw.sulaiman_al_nakhuda",
+    "mentorNameEn": "Nakhuda Sulaiman & Bibi Mariam Al-Qana'i",
+    "mentorNameAr": "النوخذة سليمان وبيبي مريم القناعي",
+    "mentorNameArabizi": "Nakhuda Sulaiman wa Bibi Mariam Al-Qana3i",
+    "summaryEn": "Prepare a safe maritime voyage by sorting food, freshwater (fintas tank supplies), ropes, compass (deera), and wooden hull repair tools without any dangerous deep-water stunts.",
+    "summaryAr": "جهّز رحلة بحرية آمنة عبر فرز المؤونة، والمياه العذبة (الفنطاس)، والحبال، والبوصلة (الديرة)، وأدوات صيانة السفينة دون أي مخاطرة في المياه العميقة.",
+    "summaryArabizi": "Jahhiz rihla bahriya amina bi-farz il-ma'una wal-fintas wal-deera wa adawat il-siyana.",
+    "epistemicCategory": "history",
+    "epistemicWarningEn": "Focuses on authentic deck organization, freshwater stewardship, and navigation gear—zero hazardous diving or breath-holding mechanics.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.kw.01.step1",
+        "descriptionEn": "Join Nakhuda Sulaiman on the Naq'ah pier to inspect the wooden freshwater tank (fintas), dried dates, and rice stores.",
+        "requiredItemOrAction": "kw_act1_step1",
+        "hintEn": "Match the freshwater barrels to the shaded center of the Boom deck.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.kw.01.step2",
+        "descriptionEn": "Sort the boxed brass compass (deera), coiled rigging ropes, and wooden repair mallets into the Bahhar Deck Kit.",
+        "requiredItemOrAction": "kw_act1_step2",
+        "hintEn": "Place the compass near the helm and the coiled ropes beside the mainmast.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.kw.01",
+      "roleSplitEn": "Player 1 stows freshwater and food provisions while Player 2 organizes the navigation compass and rigging lines."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.kw.sailor_dayyin_compass_kit",
+      "passportMilestoneId": "milestone.kw.01",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.kw.01.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-KW-act1.svg",
+      "markerXPercent": 18,
+      "markerYPercent": 64,
+      "checkpointLabelEn": "Act 1 · The Sailor's Kit",
+      "checkpointLabelAr": "الفصل 1 · عدّة البحار والمؤونة",
+      "checkpointLabelArabizi": "Fasla 1 · 3iddat il-Bahhar wal-Ma'una"
+    },
+    "vocabularyIds": [
+      "vocab.kw.boom",
+      "vocab.kw.nakhuda",
+      "vocab.kw.naqah"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.kw.01.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Pack the Safe Boat Basket!",
+        "titleAr": "رتّب سلة السفينة الآمنة!",
+        "titleArabizi": "Yalla نرتب sallat il-safina il-amina!",
+        "objectiveEn": "Match the water jug, rope, and shiny compass pictures into Nakhuda Sulaiman's boat chest!",
+        "objectiveAr": "طابق صور جرة الماء والحبل والبوصلة اللامعة في صندوق سفينة النوخذة سليمان!",
+        "objectiveArabizi": "Tabiq suwar il-ma' wal-habl wal-busala fi sunduq il-safina!",
+        "puzzleMechanicsEn": "3-item pictorial drag-and-match deck packing station.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Cooperative deck stowage and compass calibration station."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.kw.01.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Readying the Boom in the Naq'ah Harbor",
+        "titleAr": "تجهيز البوم في نقعة الكويت",
+        "titleArabizi": "Tajhiz il-Boom fi Naq3at il-Kuwait",
+        "objectiveEn": "Sort 5 essential voyage supplies between the freshwater fintas hold, helm binnacle, and tool locker.",
+        "objectiveAr": "افرز 5 مستلزمات أساسية للرحلة بين فنطاس الماء، ومنصة القيادة، وخزانة الأدوات.",
+        "objectiveArabizi": "Ifriz 5 mustalzamat bayn il-fintas wa minassat il-qiyada.",
+        "puzzleMechanicsEn": "Guided checklist sorting puzzle with bilingual labels.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Cooperative deck stowage and compass calibration station."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.kw.01.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Ballast, Freshwater Fintas & Deck Logistics",
+        "titleAr": "توازن الحمولة وفنطاس المياه ولوجستيات السطح",
+        "titleArabizi": "Tawazun il-Humula wa Fintas il-Miyah",
+        "objectiveEn": "Balance the Boom dhow's center of gravity while allocating freshwater rations and spare cordage for a Gulf crossing.",
+        "objectiveAr": "وازن مركز ثقل سفينة البوم مع توزيع حصص المياه العذبة والحبال الاحتياطية لرحلة خليجية.",
+        "objectiveArabizi": "Wazin markaz thiqal il-Boom ma3 tawzi3 il-miyah wal-hibal.",
+        "puzzleMechanicsEn": "Hull weight-distribution and ration planning puzzle.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Cooperative deck stowage and compass calibration station."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.kw.01.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Maritime Provisioning & Freshwater Logistics in Pre-Oil Kuwait",
+        "titleAr": "تموين السفن ولوجستيات المياه العذبة في الكويت قديماً",
+        "titleArabizi": "Tamwin il-Sufun wa Tijarat il-Miyah fil-Kuwait",
+        "objectiveEn": "Examine historical records of Kuwaiti water-carrying Boom dhows and long-distance voyage provisioning.",
+        "objectiveAr": "ادرس السجلات التاريخية لأبوام نقل المياه العذبة وتموين الرحلات البحرية الطويلة في الكويت.",
+        "objectiveArabizi": "Idris sijillat abwam il-ma' wa tamwin il-rihlat fil-Kuwait.",
+        "puzzleMechanicsEn": "Source-backed cargo manifest and crew safety audit.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Cooperative deck stowage and compass calibration station."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "KWAct1SailorsKit",
+      "interactionType": "Cooperative deck stowage and compass calibration station.",
+      "zoneAnchorName": "KW_NaqahHarbor_BoomPier",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runKWAct1SailorsKit",
+      "structureTemplateId": "miraverse:kw_naqah_boom_pier",
+      "customBlocksAndItems": [
+        "miraverse:kw_deera_compass",
+        "miraverse:kw_fintas_water_chest",
+        "miraverse:kw_boom_model"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.kw.02",
+    "countryCode": "KW",
+    "stableCountryId": "country.kw",
+    "actNumber": 2,
+    "canonicalArchetype": "TRADE",
+    "countrySpecificAlias": "TRADE",
+    "titleEn": "The Merchant's Promise",
+    "titleAr": "كلمة التاجر وميثاق الأمانة",
+    "titleArabizi": "Kalimat il-Tajir wa Mithaq il-Amana",
+    "settingSubarea": "Shaded Sikak Trading Alley & Shipyard Ledger Office",
+    "mentorNpcId": "npc.kw.sulaiman_al_nakhuda",
+    "mentorNameEn": "Nakhuda Sulaiman & Bibi Mariam Al-Qana'i",
+    "mentorNameAr": "النوخذة سليمان وبيبي مريم القناعي",
+    "mentorNameArabizi": "Nakhuda Sulaiman wa Bibi Mariam Al-Qana3i",
+    "summaryEn": "Keep fair accounts between shipbuilders, families, and harbor traders using cooperative promise tokens rather than debt traps or speculation.",
+    "summaryAr": "احفظ الحسابات العادلة بين القلافين والأهالي وتجار الميناء باستخدام رموز الأمانة التعاونية بعيداً عن المضاربة.",
+    "summaryArabizi": "Ihfaz il-hisabat il-3adila bayn il-qallafin wal-ahali wa tujjar il-mina.",
+    "epistemicCategory": "history",
+    "epistemicWarningEn": "Models ethical mutual aid and fair supply stewardship across neighborhood families and shipwrights.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.kw.02.step1",
+        "descriptionEn": "Review the Harbor Trust Ledger in the shaded sikak alley to see what timber, shark-liver oil (sill), and family winter food shares are needed.",
+        "requiredItemOrAction": "kw_act2_step1",
+        "hintEn": "Match each family and workshop request card with the corresponding harbor warehouse crate.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.kw.02.step2",
+        "descriptionEn": "Stamp the cooperative Promise Tokens so the qallaf yard receives teak planks and every sailor's household receives full provisions.",
+        "requiredItemOrAction": "kw_act2_step2",
+        "hintEn": "Ensure all three community meters—Shipyard, Crew Families, and Harbor Store—reach balanced fairness.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.kw.02",
+      "roleSplitEn": "Player 1 allocates shipyard timber and oil jars while Player 2 guarantees household food baskets in the farij."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.kw.amiriya_trade_seal_ledger",
+      "passportMilestoneId": "milestone.kw.02",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.kw.02.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-KW-act2.svg",
+      "markerXPercent": 34,
+      "markerYPercent": 42,
+      "checkpointLabelEn": "Act 2 · The Merchant's Promise",
+      "checkpointLabelAr": "الفصل 2 · كلمة التاجر وميثاق الأمانة",
+      "checkpointLabelArabizi": "Fasla 2 · Kalimat il-Tajir wa Mithaq il-Amana"
+    },
+    "vocabularyIds": [
+      "vocab.kw.nakhuda",
+      "vocab.kw.qallaf_kw"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.kw.02.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Fair Sharing in the Harbor Alley!",
+        "titleAr": "القسمة العادلة في سكة الميناء!",
+        "titleArabizi": "Yalla نقسم bil-3adl fi sikkat il-mina!",
+        "objectiveEn": "Give wood planks to the boat builder and food baskets to the families so everyone smiles!",
+        "objectiveAr": "أعطِ ألواح الخشب لصانع السفن وسلال الطعام للعائلات ليفرح الجميع!",
+        "objectiveArabizi": "A3ti alwah il-khashab lil-qallaf wa silal il-ta3am lil-3ailat!",
+        "puzzleMechanicsEn": "Pictorial 2-way community sharing board.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Dual-ledger cooperative resource allocation table."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.kw.02.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Balancing the Harbor Trust Ledger",
+        "titleAr": "موازنة دفتر أمانة الميناء",
+        "titleArabizi": "Muwazanat Daftar Amanat il-Mina",
+        "objectiveEn": "Match timber, preservation oil, and household provisions across 3 neighborhood stations using Promise Tokens.",
+        "objectiveAr": "طابق الأخشاب ودهن الصلّ ومؤونة البيوت عبر 3 محطات في الفريج باستخدام رموز الأمانة.",
+        "objectiveArabizi": "Tabiq il-akhshab wa duhn il-sill wa ma'unat il-buyut.",
+        "puzzleMechanicsEn": "3-station ledger balancing puzzle.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Dual-ledger cooperative resource allocation table."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.kw.02.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Timber Imports, Qallaf Guilds & Family Stewardship",
+        "titleAr": "استيراد الأخشاب وحرف القلافة ورعاية أسر البحارة",
+        "titleArabizi": "Istirad il-Akhshab wa Ri3ayat Usar il-Bahhara",
+        "objectiveEn": "Coordinate Malabar teak shipments, mangrove poles (kandil), and community mutual-support funds across two seasons.",
+        "objectiveAr": "نسّق شحنات خشب الساج وخشب القندل وصناديق التكافل العائلي عبر موسمين.",
+        "objectiveArabizi": "Nassiq shahnat khashab il-saj wal-kandil wa takaful il-usar.",
+        "puzzleMechanicsEn": "Multi-season cooperative resource ledger.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Dual-ledger cooperative resource allocation table."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.kw.02.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Mercantile Ethics & Social Solidarity in Historic Kuwaiti Port Trade",
+        "titleAr": "أخلاقيات التجارة والتكافل الاجتماعي في ميناء الكويت التاريخي",
+        "titleArabizi": "Akhlaqiyat il-Tijara wal-Takaful fil-Kuwait",
+        "objectiveEn": "Evaluate historical merchant ledgers and community trust mechanisms that sustained Kuwait's maritime economy.",
+        "objectiveAr": "قيّم دفاتر التجار التاريخية وآليات الثقة والتكافل التي دعمت الاقتصاد البحري الكويتي.",
+        "objectiveArabizi": "Qayyim dafatir il-tujjar wa aliyat il-thiqa fil-iqtisad il-bahri.",
+        "puzzleMechanicsEn": "Stakeholder equity & historical ledger analysis.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Dual-ledger cooperative resource allocation table."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "KWAct2MerchantsPromise",
+      "interactionType": "Dual-ledger cooperative resource allocation table.",
+      "zoneAnchorName": "KW_OldCity_SikakLedgerAlley",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runKWAct2MerchantsPromise",
+      "structureTemplateId": "miraverse:kw_sikak_ledger_alley",
+      "customBlocksAndItems": [
+        "miraverse:kw_trust_ledger",
+        "miraverse:kw_kandil_oil_jar"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.kw.03",
+    "countryCode": "KW",
+    "stableCountryId": "country.kw",
+    "actNumber": 3,
+    "canonicalArchetype": "BUILD",
+    "countrySpecificAlias": "BUILD",
+    "titleEn": "Rescue the Model Dhow",
+    "titleAr": "إنقاذ وترميم سفينة البوم",
+    "titleArabizi": "Inqadh wa Tarmim Safinat il-Boom",
+    "settingSubarea": "Qallaf Dhow Shipbuilding & Repair Yard",
+    "mentorNpcId": "npc.kw.sulaiman_al_nakhuda",
+    "mentorNameEn": "Nakhuda Sulaiman & Bibi Mariam Al-Qana'i",
+    "mentorNameAr": "النوخذة سليمان وبيبي مريم القناعي",
+    "mentorNameArabizi": "Nakhuda Sulaiman wa Bibi Mariam Al-Qana3i",
+    "summaryEn": "Rebuild a storm-damaged Kuwaiti Boom dhow hull, mast, and rudder in a cooperative shipyard challenge guided by master qallaf joinery.",
+    "summaryAr": "رمّم هيكل وسارية ودفة سفينة بوم كويتية متضررة في تحدٍّ تعاوني داخل ساحة القلافة.",
+    "summaryArabizi": "Rammim haykal wa sariyat wa daffat safinat Boom fi sahat il-qallaf.",
+    "epistemicCategory": "history",
+    "epistemicWarningEn": "Demonstrates authentic plank-first dhow joinery, cotton caulking (jalfata), and distinctive Boom prow geometry.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.kw.03.step1",
+        "descriptionEn": "Fit the curved teak hull planks and the iconic black-and-white Boom stempost (badr) onto the keel cradle.",
+        "requiredItemOrAction": "kw_act3_step1",
+        "hintEn": "Align the long straight prow with the black circular tip at the bow.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.kw.03.step2",
+        "descriptionEn": "Seal the plank seams with cotton caulking (fatil) and oil, then step the mainmast and hang the rudder (sukkar).",
+        "requiredItemOrAction": "kw_act3_step2",
+        "hintEn": "Use the Qallaf adze and caulking iron icons in sequence from keel to gunwale.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.kw.03",
+      "roleSplitEn": "Player 1 aligns and fastens the teak hull planks while Player 2 seals the seams and raises the mainmast."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.kw.qallaf_adzes_caulking_set",
+      "passportMilestoneId": "milestone.kw.03",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.kw.03.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-KW-act3.svg",
+      "markerXPercent": 50,
+      "markerYPercent": 64,
+      "checkpointLabelEn": "Act 3 · Rescue the Model Dhow",
+      "checkpointLabelAr": "الفصل 3 · إنقاذ وترميم سفينة البوم",
+      "checkpointLabelArabizi": "Fasla 3 · Inqadh wa Tarmim Safinat il-Boom"
+    },
+    "vocabularyIds": [
+      "vocab.kw.boom",
+      "vocab.kw.qallaf_kw"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.kw.03.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Fix the Friendly Wooden Boat!",
+        "titleAr": "أصلح السفينة الخشبية الجميلة!",
+        "titleArabizi": "Yalla نصلح il-safina il-khashabiya!",
+        "objectiveEn": "Snap the wooden nose, the tall mast, and the steering rudder onto the Boom boat!",
+        "objectiveAr": "ركّب المقدمة الخشبية والسارية الطويلة والدفة على سفينة البوم!",
+        "objectiveArabizi": "Rakkib il-muqaddima wal-sariya wal-daffa 3ala safinat il-Boom!",
+        "puzzleMechanicsEn": "3-piece jigsaw hull & mast snap builder.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Cooperative multi-stage Boom dhow cradle assembly."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.kw.03.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Apprentice Qallaf at the Shipyard",
+        "titleAr": "مساعد القلاف في ساحة بناء السفن",
+        "titleArabizi": "Musa3id il-Qallaf fi Sahat il-Sufun",
+        "objectiveEn": "Assemble the keel, hull planks, cotton caulking, and rudder of the Kuwaiti Boom in the proper shipbuilding order.",
+        "objectiveAr": "ركّب البيص وألواح الهيكل وفتيل القطن والدفة لسفينة البوم بالترتيب الصحيح.",
+        "objectiveArabizi": "Rakkib il-bis wa alwah il-haykal wal-fatil wal-daffa bil-tartib.",
+        "puzzleMechanicsEn": "4-step ordered shipwright assembly puzzle.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Cooperative multi-stage Boom dhow cradle assembly."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.kw.03.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Plank-First Joinery, Caulking & Hydrodynamic Balance",
+        "titleAr": "الربط الخشبي والجلفطة والتوازن الهيدروديناميكي",
+        "titleArabizi": "Fann il-Qallafa wal-Jalfata wa Tawazun il-Boom",
+        "objectiveEn": "Diagnose three hull stress points, apply cotton-and-oil jalfata caulking, and calibrate rudder torque.",
+        "objectiveAr": "شخّص ثلاث نقاط إجهاد في الهيكل، وطبّق الجلفطة بالقطن والزيت، واضبط توازن الدفة.",
+        "objectiveArabizi": "Shakhkhis nuqat il-ijhad fil-haykal wa tabbiq il-jalfata.",
+        "puzzleMechanicsEn": "Structural diagnostic and multi-tool repair simulation.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Cooperative multi-stage Boom dhow cradle assembly."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.kw.03.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Naval Architecture of the Kuwaiti Boom & Indian Ocean Timber Networks",
+        "titleAr": "الهندسة البحرية للبوم الكويتي وشبكات أخشاب المحيط الهندي",
+        "titleArabizi": "Handasat il-Boom il-Kuwaiti wa Turath il-Qallafin",
+        "objectiveEn": "Analyze how Kuwaiti qallaf shipwrights adapted double-ended hull geometry for high-capacity open-ocean navigation.",
+        "objectiveAr": "حلل كيف طوّر القلافون الكويتيون هندسة البوم ذي النهايتين المدببتين للملاحة في أعالي البحار.",
+        "objectiveArabizi": "Hallil kayfa tawwara il-qallafun handasat il-Boom lil-ibhar.",
+        "puzzleMechanicsEn": "Naval architecture blueprint & museum provenance study.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Cooperative multi-stage Boom dhow cradle assembly."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "KWAct3RescueModelDhow",
+      "interactionType": "Cooperative multi-stage Boom dhow cradle assembly.",
+      "zoneAnchorName": "KW_NaqahHarbor_QallafYard",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runKWAct3RescueModelDhow",
+      "structureTemplateId": "miraverse:kw_qallaf_shipyard",
+      "customBlocksAndItems": [
+        "miraverse:kw_qallaf_adze",
+        "miraverse:kw_boom_hull_frame"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.kw.04",
+    "countryCode": "KW",
+    "stableCountryId": "country.kw",
+    "actNumber": 4,
+    "canonicalArchetype": "COOK_OR_STORY",
+    "countrySpecificAlias": "STORY/COOK",
+    "titleEn": "Who Makes the Night Sounds?",
+    "titleAr": "من يصدر أصوات الليل في الميناء؟",
+    "titleArabizi": "Man Yusdir Aswat il-Layl fil-Mina?",
+    "settingSubarea": "Lantern-Lit Harbor Courtyard & Bibi Mariam's Story Hearth",
+    "mentorNpcId": "npc.kw.sulaiman_al_nakhuda",
+    "mentorNameEn": "Nakhuda Sulaiman & Bibi Mariam Al-Qana'i",
+    "mentorNameAr": "النوخذة سليمان وبيبي مريم القناعي",
+    "mentorNameArabizi": "Nakhuda Sulaiman wa Bibi Mariam Al-Qana3i",
+    "summaryEn": "Explore the Bu Darya legend through gentle acoustic clues, distinguishing scary rumor from sea safety and empathy, while sharing warm harbor tea and Gers Ogaily cake (with allergy-safe and Sadu weaving options).",
+    "summaryAr": "استكشف حكاية «بو درياه» الشعبية عبر دلائل صوتية لطيفة تميّز بين الإشاعات المخيفة وقواعد أمان البحر والتراحم، مع ضيافة قرص عقيلي أو نسج السدو.",
+    "summaryArabizi": "Istakshif hikayat Bu Darya il-sha3biya bi-tarika latifa ma3 diyafat Qurs 3uqayli aw nasij il-Sadu.",
+    "epistemicCategory": "folklore",
+    "epistemicWarningEn": "Explicitly frames Bu Darya as maritime folklore (folklore); ages 5–7 and 8–10 experience a cozy, non-frightening sound-matching game identifying natural harbor sounds.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.kw.04.step1",
+        "descriptionEn": "Listen with Bibi Mariam to three night harbor sounds using the brass listening horn and match each sound to its real, friendly source (creaking wooden rigging, gentle waves in the naq'ah, and a loose watch-bell).",
+        "requiredItemOrAction": "kw_act4_step1",
+        "hintEn": "Follow the warm golden lantern glow to see what makes each sound along the pier.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.kw.04.step2",
+        "descriptionEn": "Prepare warm cardamom-saffron Gers Ogaily cake (with egg-free/gluten-free options) OR weave a geometric Sadu coaster to welcome the night watch crew.",
+        "requiredItemOrAction": "kw_act4_step2",
+        "hintEn": "Both the Gers Ogaily recipe and the Sadu weaving loom celebrate Kuwaiti warmth and mutual care.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.kw.04",
+      "roleSplitEn": "Player 1 matches the friendly night harbor sound clues while Player 2 prepares the hospitality tray or Sadu weave."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.kw.bu_darya_night_lantern",
+      "passportMilestoneId": "milestone.kw.04",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.kw.04.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-KW-act4.svg",
+      "markerXPercent": 66,
+      "markerYPercent": 42,
+      "checkpointLabelEn": "Act 4 · Who Makes the Night Sounds?",
+      "checkpointLabelAr": "الفصل 4 · من يصدر أصوات الليل في الميناء؟",
+      "checkpointLabelArabizi": "Fasla 4 · Man Yusdir Aswat il-Layl fil-Mina?"
+    },
+    "vocabularyIds": [
+      "vocab.kw.bu_darya",
+      "vocab.kw.naqah"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.kw.04.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Cozy Lantern Sounds by the Sea!",
+        "titleAr": "أصوات الفنر الدافئة عند البحر!",
+        "titleArabizi": "Aswat il-Fanar il-Dafi'a 3ind il-Bahr!",
+        "objectiveEn": "Shine your warm lantern to see the friendly waves and ringing bell, then share yummy yellow cake or colorful Sadu yarn!",
+        "objectiveAr": "أضئ الفنر الدافئ لترى الأمواج اللطيفة والجرس الرنان، ثم شارك كعكة قرص عقيلي أو خيوط السدو الملونة!",
+        "objectiveArabizi": "Adi' il-fanar li-tara il-amwaj wal-jaras, wa sharik Qurs 3uqayli aw khuyut il-Sadu!",
+        "puzzleMechanicsEn": "Cozy non-scary sound-to-picture reveal + hospitality choice.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Lantern acoustic discovery station and Gers Ogaily / Sadu hospitality table."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.kw.04.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "The Story of Bu Darya & Harbor Safety",
+        "titleAr": "حكاية بو درياه وأمان الميناء",
+        "titleArabizi": "Hikayat Bu Darya wa Aman il-Mina",
+        "objectiveEn": "Learn how sailors told the folklore story of Bu Darya to remind crews to stay alert and help one another, while identifying real night harbor sounds.",
+        "objectiveAr": "تعرّف كيف روى البحارة حكاية «بو درياه» الشعبية للتذكير بالحذر والتعاون، وميّز أصوات الميناء الطبيعية.",
+        "objectiveArabizi": "Ta3arraf 3ala hikayat Bu Darya il-sha3biya wa mayyiz aswat il-mina il-tabi3iya.",
+        "puzzleMechanicsEn": "Acoustic source-matching puzzle + Gers Ogaily / Sadu craft station.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Lantern acoustic discovery station and Gers Ogaily / Sadu hospitality table."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.kw.04.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Maritime Folklore vs Natural Acoustics & Sea Safety",
+        "titleAr": "الفلكلور البحري وتفسير الظواهر الصوتية وأمان الملاحة",
+        "titleArabizi": "Il-Folklore il-Bahri wa Tafsir الظواهر il-Sawtiya",
+        "objectiveEn": "Compare the folklore motif of Bu Darya with meteorological and acoustic phenomena in shallow tidal bays, then host the crew majlis.",
+        "objectiveAr": "قارن بين المرويات الشعبية عن «بو درياه» والظواهر الصوتية والمناخية في الجون، ثم استضف طاقم السفينة.",
+        "objectiveArabizi": "Qarin bayn marwiyat Bu Darya wal-zawahir il-sawtiya fil-jun.",
+        "puzzleMechanicsEn": "Epistemic folklore-vs-phenomenon sorting + hospitality preparation.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Lantern acoustic discovery station and Gers Ogaily / Sadu hospitality table."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.kw.04.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Folklore Functions in High-Risk Maritime Communities",
+        "titleAr": "وظيفة الحكاية الشعبية في المجتمعات البحرية التقليدية",
+        "titleArabizi": "Wazifat il-Hikaya il-Sha3biya fil-Mujtama3 il-Bahri",
+        "objectiveEn": "Analyze how Gulf maritime legends like Bu Darya encoded watchfulness, solidarity, and psychological resilience among seafarers.",
+        "objectiveAr": "حلل كيف عبّرت الحكايات البحرية مثل «بو درياه» عن قيم اليقظة والتضامن النفسي بين البحارة.",
+        "objectiveArabizi": "Hallil kayfa 3abbarat hikayat il-bahr 3an qiyam il-yaqaza wal-tadhamun.",
+        "puzzleMechanicsEn": "Ethnographic folklore analysis & comparative cultural card.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Lantern acoustic discovery station and Gers Ogaily / Sadu hospitality table."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "KWAct4NightSoundsStory",
+      "interactionType": "Lantern acoustic discovery station and Gers Ogaily / Sadu hospitality table.",
+      "zoneAnchorName": "KW_NaqahHarbor_LanternCourtyard",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runKWAct4NightSoundsStory",
+      "structureTemplateId": "miraverse:kw_lantern_story_courtyard",
+      "customBlocksAndItems": [
+        "miraverse:kw_brass_lantern",
+        "miraverse:kw_gers_ogaily_tray"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.kw.05",
+    "countryCode": "KW",
+    "stableCountryId": "country.kw",
+    "actNumber": 5,
+    "canonicalArchetype": "WORD_FINALE",
+    "countrySpecificAlias": "WORD/FINALE",
+    "titleEn": "Songs of Safe Return",
+    "titleAr": "أهازيج العودة السالمة (القفال)",
+    "titleArabizi": "Ahazij il-3awda il-Salima (Il-Quffal)",
+    "settingSubarea": "Sief Waterfront Finale Stage & Failaka Horizon Overlook",
+    "mentorNpcId": "npc.kw.sulaiman_al_nakhuda",
+    "mentorNameEn": "Nakhuda Sulaiman & Bibi Mariam Al-Qana'i",
+    "mentorNameAr": "النوخذة سليمان وبيبي مريم القناعي",
+    "mentorNameArabizi": "Nakhuda Sulaiman wa Bibi Mariam Al-Qana3i",
+    "summaryEn": "Learn Kuwaiti maritime vocabulary and complete a rhythmic call-and-response work-song pattern (original licensed rhythm, no copyrighted recordings) to celebrate the safe homecoming of the fleet.",
+    "summaryAr": "تعلّم المفردات البحرية الكويتية وأكمل نمط الإيقاع التفاعلي لفن النهمة (إيقاع أصلي مرخّص) للاحتفال بعودة السفن سالمة.",
+    "summaryArabizi": "Ta3allam مفردات il-bahr il-Kuwaitiya wa akmil iqa3 il-nahma lil-ihtifal bil-3awda.",
+    "epistemicCategory": "history",
+    "epistemicWarningEn": "Uses original licensed acoustic hand-clap and mirwas drum rhythms inspired by Nahma traditions—no copyrighted or sacred recordings.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.kw.05.step1",
+        "descriptionEn": "Complete the 6-word Kuwaiti Maritime Glossary Bridge (Boom, Nakhuda, Bu Darya, Nahham, Naq'ah, Qallaf).",
+        "requiredItemOrAction": "kw_act5_step1",
+        "hintEn": "Match each Kuwaiti Arabic term with its phonetic Arabizi guide and maritime role.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.kw.05.step2",
+        "descriptionEn": "Join the Nahham on the Sief pier in a cooperative call-and-response clap rhythm to guide the Boom into the Naq'ah and earn the Kuwait Passport Stamp.",
+        "requiredItemOrAction": "kw_act5_step2",
+        "hintEn": "Follow the glowing visual beat rings—accessibility mode allows untimed tap-to-advance completion.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.kw.05",
+      "roleSplitEn": "Player 1 leads the Nahham call phrase while Player 2 completes the crew clap-and-drum response."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.kw.nahma_safe_return_songbook",
+      "passportMilestoneId": "milestone.kw.05",
+      "miraTokensEarned": 40,
+      "idempotencyKey": "reward.quest.kw.05.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-KW-act5.svg",
+      "markerXPercent": 82,
+      "markerYPercent": 64,
+      "checkpointLabelEn": "Act 5 · Songs of Safe Return",
+      "checkpointLabelAr": "الفصل 5 · أهازيج العودة السالمة (القفال)",
+      "checkpointLabelArabizi": "Fasla 5 · Ahazij il-3awda il-Salima (Il-Quffal)"
+    },
+    "vocabularyIds": [
+      "vocab.kw.boom",
+      "vocab.kw.nakhuda",
+      "vocab.kw.bu_darya",
+      "vocab.kw.nahham",
+      "vocab.kw.naqah",
+      "vocab.kw.qallaf_kw"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.kw.05.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Clap Along to Welcome the Boats Home!",
+        "titleAr": "صفّق معنا للترحيب بعودة السفن!",
+        "titleArabizi": "Yalla نصفق معا li-3awdat il-sufun!",
+        "objectiveEn": "Tap the happy drum rings and say the Kuwaiti boat words to welcome Nakhuda Sulaiman home!",
+        "objectiveAr": "اضغط على حلقات الإيقاع المبهجة وردد كلمات البحر الكويتية للترحيب بعودة النوخذة سليمان!",
+        "objectiveArabizi": "Idghat 3ala halaqat il-iqa3 wa raddid kalimat il-bahr!",
+        "puzzleMechanicsEn": "Untimed visual clap-ring finale & spoken word celebration.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Co-op visual rhythm call-and-response & Passport ceremony."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.kw.05.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "The Nahham's Call & Maritime Glossary",
+        "titleAr": "نداء النهام ومعجم البحر الكويتي",
+        "titleArabizi": "Nida' il-Nahham wa Mu3jam il-Bahr",
+        "objectiveEn": "Match all 6 Kuwaiti maritime terms and complete the 4-beat call-and-response work rhythm.",
+        "objectiveAr": "طابق المفردات البحرية الكويتية الست وأكمل إيقاع العمل الرباعي مع النهام.",
+        "objectiveArabizi": "Tabiq 6 kalimat bahriya Kuwaitiya wa akmil iqa3 il-nahham.",
+        "puzzleMechanicsEn": "6-term bilingual word bridge + 4-beat visual rhythm sequence.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Co-op visual rhythm call-and-response & Passport ceremony."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.kw.05.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Work-Song Coordination (Nahma) & Failaka Sea Lanes",
+        "titleAr": "تنسيق العمل البحري (النهمة) ومسارات جزيرة فيلكا",
+        "titleArabizi": "Fann il-Nahma wa Masarat Jazirat Failaka",
+        "objectiveEn": "Connect how different rhythmic meters (khatfa for sail-hoisting vs dawari for capstan work) coordinated crew effort from Failaka to Kuwait Bay.",
+        "objectiveAr": "اربط بين أوزان النهمة المختلفة (الخطفة لرفع الشراع والدواري للمرساة) ومسار العودة من فيلكا إلى جون الكويت.",
+        "objectiveArabizi": "Irbut bayn awzan il-nahma wa masar il-3awda min Failaka ila Jun il-Kuwait.",
+        "puzzleMechanicsEn": "Work-task rhythm matching + Failaka-to-Naq'ah map completion.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Co-op visual rhythm call-and-response & Passport ceremony."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.kw.05.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Intangible Maritime Heritage: Fijiri, Nahma & Dialect Preservation",
+        "titleAr": "التراث البحري غير المادي: الفجري والنهمة وحفظ اللهجة الكويتية",
+        "titleArabizi": "Turath il-Nahma wal-Lahja il-Bahriya fil-Kuwait",
+        "objectiveEn": "Synthesize linguistic, archaeological (Failaka), and ethnomusicological notes into your Kuwait Passport portfolio.",
+        "objectiveAr": "اجمع التوثيق اللغوي والأثري (فيلكا) والموسيقي البحري في ملف جواز السفر الكويتي.",
+        "objectiveArabizi": "Ijma3 il-tawthiq il-lughawi wal-athari fi milaff Jawaz il-Safar.",
+        "puzzleMechanicsEn": "Capstone ethnomusicological & linguistic provenance synthesis.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Co-op visual rhythm call-and-response & Passport ceremony."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "KWAct5SongsOfSafeReturn",
+      "interactionType": "Co-op visual rhythm call-and-response & Passport ceremony.",
+      "zoneAnchorName": "KW_NaqahHarbor_SiefFinalePier",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runKWAct5SongsOfSafeReturn",
+      "structureTemplateId": "miraverse:kw_sief_finale_pier",
+      "customBlocksAndItems": [
+        "miraverse:kw_nahma_songbook",
+        "miraverse:kw_passport_stamp"
+      ],
+      "status": "TEST BUILD"
+    }
+  }
+]

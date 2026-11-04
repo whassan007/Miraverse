@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.6.0",
+  "countryCode": "AE",
+  "stableId": "country.ae",
+  "nameEn": "United Arab Emirates",
+  "nameAr": "الإمارات العربية المتحدة",
+  "storyArcTitleEn": "The Dhow and the Oasis",
+  "mentorNpc": "npc.ae.rashid_al_nuaimi",
+  "actsCount": 5,
+  "structures": [
+    {
+      "actId": "quest.ae.01",
+      "structureTemplateId": "miraverse:ae_creek_sunrise_pier",
+      "origin": [
+        400,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:ae_kamal_board",
+        "miraverse:ae_sambuk_model"
+      ]
+    },
+    {
+      "actId": "quest.ae.02",
+      "structureTemplateId": "miraverse:ae_covered_creek_souk",
+      "origin": [
+        432,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:ae_spice_chest",
+        "miraverse:ae_oasis_dates"
+      ]
+    },
+    {
+      "actId": "quest.ae.03",
+      "structureTemplateId": "miraverse:ae_barjeel_courtyard_workshop",
+      "origin": [
+        464,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:ae_coral_stone",
+        "miraverse:ae_barjeel_vent",
+        "miraverse:ae_gypsum_screen"
+      ]
+    },
+    {
+      "actId": "quest.ae.04",
+      "structureTemplateId": "miraverse:ae_al_ain_oasis_table",
+      "origin": [
+        496,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:ae_falaj_stone",
+        "miraverse:ae_date_bites",
+        "miraverse:ae_talli_band"
+      ]
+    },
+    {
+      "actId": "quest.ae.05",
+      "structureTemplateId": "miraverse:ae_sea_to_oasis_lookout",
+      "origin": [
+        528,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:ae_memory_atlas",
+        "miraverse:ae_passport_stamp"
+      ]
+    }
+  ]
+}

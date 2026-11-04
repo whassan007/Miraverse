@@ -1,0 +1,2016 @@
+{
+  "agentId": "DX11",
+  "policy": "Ages 5-7 use transparent phonetic Latin without numerals; Ages 11-17 allow 3/7/5 with phonetic notes.",
+  "records": [
+    {
+      "id": "quest.qa.01.intro.5-7",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "طابق أجزاء السفينة عند البحر — اضغط على الصور لمطابقة لوح الخشب وحبل النخيل والسلة المنسوجة مع الأستاذة نورة!",
+      "textArabizi": "Yalla niktishif il-jalboot (Match Boat Parts) — Yalla niktishif il-khashab wal-habl wal-salla ma3 Ustadha Noora!",
+      "textEnglish": "Match the Boat Parts by the Sea — Tap the picture icons to match the wooden hull plank, soft palm rope, and woven basket with Ustadha Noora!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.qa.01.intro.8-10",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "عدة القلّاف في ثلاث خطوات — حاور الأستاذة نورة واجمع لوح الساج وحبل الليف وسلة الديين وسمِّ كل أداة بالعربية والإنجليزية.",
+      "textArabizi": "3iddat il-Qallaf fil-Marfa — Ijma3 lawh il-saj wa habl il-leef wa sallat il-dayyin wa ta3allam اسماءها.",
+      "textEnglish": "The Qallaf's Three-Step Harbor Kit — Interview Ustadha Noora, collect the teak plank, palm-fiber rope, and dayyin basket, and label each tool in Arabic and English.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.qa.01.intro.11-13",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "تحقيق مسارات أخشاب وحبال المحيط الهندي — تعاون لتتبع سبب استيراد القلافين لخشب الساج مع جدل ألياف النخيل المحلية وتنظيم معرض سلامة المرفأ.",
+      "textArabizi": "Tahqiq Masarat الأخشاب wal-Hibal (3alam Mira) — Ta3awan li-tatabbu3 masadir khashab il-saj wa leef il-nakhil fil-marfa.",
+      "textEnglish": "Investigating Indian Ocean Timber & Cordage Routes — Work in two-player roles to trace why Qatari shipwrights imported Malabar teak while braiding local date-palm fiber, then organize the harbor safety exhibit.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.01.intro.14-17",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "التوثيق النقدي: العمل البحري والبيئة وتاريخ المقتنيات — حلل سجلات موقع الزبارة (اليونسكو #1402) ومرفأ الدوحة لإعداد معرض توثيقي أمين حول صناعة المحامل وسلامة البحارة.",
+      "textArabizi": "Tawthiq Naqdi: 3amal il-Bahr wa Provenance il-Mat7af — Hallil sijillat Al-Zubarah (UNESCO #1402) wa marfa il-Doha li-tasmin ma3rad tawthiqi.",
+      "textEnglish": "Source-Critical Archiving: Maritime Labor, Ecology & Museum Provenance — Analyze primary and museum provenance records from Al Zubarah (UNESCO #1402) and Doha harbor to curate an ethically framed exhibit on dhow craftsmanship and crew safety.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.02.intro.5-7",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "لعبة فرز اللؤلؤ الكبير والصغير — ضع حبات اللؤلؤ الكبيرة والمتوسطة والصغيرة في الطاسات النحاسية المناسبة وشارك سلال التمر!",
+      "textArabizi": "Yalla nafriz il-lulu bil-tasa — Hut il-lulu il-kabir wal-saghir fil-tasa wa sharik silal il-tamr!",
+      "textEnglish": "Big Pearl, Little Pearl Sieve Game — Drop the big, medium, and small pearl tokens into the matching brass bowls and share date baskets fairly!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.qa.02.intro.8-10",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "التبادل العادل في دكان الطواش — افرز ثلاث درجات من اللؤلؤ بالطاسة النحاسية ووازن مقايضة عادلة من التمر والجرار والحبال.",
+      "textArabizi": "Tabadul 3adil3ind il-Tawash — Ifriz il-lulu bil-tasa wa wazin muqayada 3adila min il-tamr wal-hibal.",
+      "textEnglish": "Fair Exchange at the Tawash Stall — Grade three pearl classes with the brass tasa and balance a fair barter of dates, water jars, and palm rope.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.qa.02.intro.11-13",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "شبكات تجارة الزبارة وأدوات القياس — ابحث في كيفية استخدام تجار الزبارة لأوزان العقيق والطاسات لربط مغاصات الخليج بتجارة القوافل.",
+      "textArabizi": "Shabakat Tijarat Al-Zubarah wal-Mithqal — Ibhath fi kayfiyat istikhdam tujjar Al-Zubarah li-awzan il-3aqiq wal-tasat.",
+      "textEnglish": "Al Zubarah Trade Networks & Metrology — Investigate how Al Zubarah merchants used agate weights and brass sieves to connect Gulf pearl banks with regional caravan trade.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.02.intro.14-17",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "التاريخ الاقتصادي ومنهجية توثيق التبادل القديم — قيّم الأدلة الأثرية من الزبارة واشرح لماذا يتجنب المؤرخون إسقاط أسعار العملات الحديثة على التبادل التاريخي.",
+      "textArabizi": "Tarikh Iqtisadi: Tawthiq Souq il-Lulu — Qayyim il-adilla il-athariya min Al-Zubarah حول التبادل التجاري القديم.",
+      "textEnglish": "Economic History & Methodological Humility in Historical Pricing — Evaluate archaeological evidence from Al Zubarah (excavated weights, ceramics, and pearl chests) and explain why historians avoid projecting modern currency values onto 18th-century barter.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.03.intro.5-7",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "ركّب سقف الفناء والباب المنقوش — اضغط على النقاط المضيئة لوضع أحجار الجدار وعوارض الظل والباب الخشبي المنقوش!",
+      "textArabizi": "Yalla نبني saqf il-warsha wal-bab — Hut il-hajar wa a3midat il-zill wal-bab il-khashabi fil-makan il-mudi!",
+      "textEnglish": "Snap the Sunny Courtyard Roof & Door — Tap the glowing spots to place the warm stone blocks, shade beams, and carved wooden door!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.qa.03.intro.8-10",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "البناء بالحجر الجيري وأعمدة الدنشل — اتبع المخطط الهندسي لترميم جدران الورشة وسقف الدنشل والباب المنقوش.",
+      "textArabizi": "Bina bil-Hajar il-Jiri wa A3midat il-Danshal — Ittabi3 il-mukhattat li-tarmim jidran il-warsha wa saqf il-danshal.",
+      "textEnglish": "Building with Limestone & Danshal Beams — Follow the 4x4 courtyard blueprint to restore the harbor workshop walls, woven mat ceiling, and carved door.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.qa.03.intro.11-13",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "التبريد الطبيعي وتصميم الليوان المظلل — صمم الجدران السميكة المكسوة بالجص والليوان المظلل للحفاظ على برودة المعرض في صيف الساحل.",
+      "textArabizi": "Tasmim il-Liwan il-Muzallal fil-Sahil — Sammim il-jidran wal-liwan il-muzallal li-tabrid il-ma3rad.",
+      "textEnglish": "Coastal Thermal Comfort & Shaded Liwan Design — Configure thick gypsum-plastered walls, recessed window screens, and shaded liwan verandas to keep the harbor exhibit cool in coastal summer heat.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.03.intro.14-17",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "أخلاقيات الحفاظ العمراني: المواقع الأصيلة مقابل المعارض التعليمية — قارن بين بروتوكولات الحفاظ على العمارة الترابية في الزبارة وتصميم أجنحة العرض الحديثة لعدم الخلط بين الأثر الأصلي والبناء التعليمي.",
+      "textArabizi": "Akhlaqiyat Hifz il-Turath: Al-Zubarah wal-Ma3ارض — Qarin bayn hifz il-athar il-asliya fi Al-Zubarah wa bina il-ma3arid il-ta3limiya.",
+      "textEnglish": "Heritage Conservation Ethics: Authentic Sites vs Interpretive Exhibits — Compare UNESCO earthen-masonry conservation protocols at Al Zubarah with the design of new interpretive museum pavilions so visitors never confuse modern reconstructions with ancient ruins.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.04.intro.5-7",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "حكاية السمكة الطيبة وصينية الضيافة — ساعد الراوية في ترتيب صور حكاية السمكة اللطيفة واختيار ضيافة آمنة أو سلال منسوجة للأصدقاء!",
+      "textArabizi": "Qissat il-Samaka il-Tayyiba (Al-Fisaikra) — Sa3id Ustadha Noora fi tartib suwar hikayat Al-Fisaikra wa siniyat il-diyafa!",
+      "textEnglish": "The Kind Sea-Fish Story & Sweet Tray — Help the kind storyteller arrange the shimmering fish storybook and pick safe, yummy treats (or woven coasters) for friends!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "pending",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.qa.04.intro.8-10",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "الحكاية الشعبية والتاريخ في مجلس السمر — اكتشف كيف تعلم حكاية الفسيفكرة قيم اللطف، ثم حضّر طبق ضيافة قطري آمن للحساسية أو حرفة خوص.",
+      "textArabizi": "Al-Fisaikra: Turath Sha3bi wa Diyafa — Iktishif qيم il-lutf fi hikayat Al-Fisaikra wa haddir siniyat diyafa amina.",
+      "textEnglish": "Folklore vs History in the Story Circle — Explore how Al Fisaikra teaches kindness through coastal folklore, then prepare an allergy-safe Qatari hospitality platter or palm-leaf craft.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "quest.qa.04.intro.11-13",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "مقارنة الحكايات الشفهية على ساحل الخليج — قارن بين حكاية الفسيفكرة القطرية ونظائرها من الحكايات البحرية الشعبية مع تنظيم مائدة مجتمعية شاملة.",
+      "textArabizi": "Muqaranat il-Hikayat il-Sha3biya fil-Khalij — Qarin bayn hikayat Al-Fisaikra wa nazairiha fil-turath il-bahri.",
+      "textEnglish": "Comparative Oral Folklore Across the Gulf Coast — Compare the Qatari tale of Al Fisaikra with marine Cinderella-type folktale motifs across maritime cultures while hosting an inclusive community table.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "pending",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.04.intro.14-17",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "توثيق التراث الثقافي غير المادي وتعدد الروايات الشفهية — ادرس كيف توثق سجلات التراث الوطني الروايات الشفهية المتعددة دون تجميدها في نص واحد أو الخلط بينها وبين التاريخ.",
+      "textArabizi": "Tawthiq il-Turath Ghayr il-Maddi: Al-Fisaikra — Idris kayfa tuwaththiq sijillat il-thaqafa il-riwayat il-shafahiya il-muta3addida.",
+      "textEnglish": "Archiving Intangible Cultural Heritage & Oral Variant Provenance — Examine how national folklore inventories (such as the Qatar Ministry of Culture catalog) record multiple oral variants without freezing a single \"official\" text or mistaking folklore for history.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "pending",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.05.intro.5-7",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "لوّح برايات الترحيب لعودة السفن! — طابق ٣ كلمات مصورة (لؤلؤ، جالبوت، القفال) ولوّح بالرايات العنابية عند عودة السفن!",
+      "textArabizi": "Yalla نرحب بالبحارة في القفال! — Tabiq 3 kalimat (Lulu, Jalboot, Al-Qaffal) wa irfa3 rayat il-terhib!",
+      "textEnglish": "Wave the Welcome Flags for the Boats! — Match 3 picture words (Lulu, Jalboot, Al-Qaffal) and wave the maroon welcome flags as the boats sail home!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.qa.05.intro.8-10",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "إشارات القفّال وبطاقة العائلة — أكمل تحدي مفردات المرفأ الست، ورتب فوانيس الشاطئ، وصمم بطاقة بريدية ثقافية.",
+      "textArabizi": "Isharat Al-Qaffal wa Bitaqat il-3aila — Akmil tahaddi 6 kalimat Qatariya wa rattib fawanis il-seef.",
+      "textEnglish": "Al Qaffal Signals & Family Postcard — Complete the 6-word Qatari harbor glossary challenge, arrange the shoreline welcome lanterns, and compose a pre-set cultural postcard.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.qa.05.intro.11-13",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "حفظ الذاكرة البحرية عبر المسافات — نسّق احتفالية استقبال القفال وصمم معرضاً ثنائي اللغة يشرح كيف يرتبط أبناء المهجر بالتراث الساحلي.",
+      "textArabizi": "Hifz il-Dhakira il-Bahriya fil-Mahjar — Nassiq ihtifal Al-Qaffal wa sammim ma3radan thuna'i il-lugha.",
+      "textEnglish": "Keeping Maritime Memory Across Distance — Coordinate the multi-stage Al Qaffal harbor welcome and curate a bilingual exhibit explaining how Qatari diaspora students connect with coastal heritage.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.qa.05.intro.14-17",
+      "countryId": "qa",
+      "language": "ar",
+      "dialectVariant": "ar-QA",
+      "scriptVariant": "Arab",
+      "textArabic": "الهوية العابرة للحدود ومستويات اللغة واستمرارية التراث — اجمع الأدلة التاريخية والأثرية والشعبية في ملف جواز سفر رقمي متكامل مع التمييز بين اللهجة القطرية والفصحى.",
+      "textArabizi": "Il-Hawiya wal-Lahja il-Qatariya عبر الأجيال — Ijma3 il-adilla il-tarikhiya wal-athariya wal-sha3biya fi milaff Jawaz il-Safar.",
+      "textEnglish": "Transnational Identity, Dialect Register & Cultural Continuity — Synthesize historical, archaeological, and folkloric evidence from Qatar into a complete digital Passport portfolio, distinguishing local Qatari Arabic register from MSA.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.01.intro.5-7",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "طابق النجوم والأشرعة عند الشروق — اضغط على نجم الجدي المضيء والشراع المثلث لمساعدة النوخذة راشد!",
+      "textArabizi": "Yalla نطابق il-nujum wal-shira3 — Idghat 3ala najm Al-Jadi wal-shira3 ma3 Captain Rashid!",
+      "textEnglish": "Star & Sail Picture Match at Sunrise — Tap the glowing North Star (Al-Jadi) and the triangular sail to help Captain Rashid ready the boat!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.ae.01.intro.8-10",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "الملاحة في الخور بآلة الكمال — ميّز بين نوعين من المحامل وقس ارتفاع نجم الجدي بآلة الكمال.",
+      "textArabizi": "Milahat il-Khor bi-Alat il-Kamal — Mayyiz bayn anwa3 il-mahamil wa qis najm Al-Jadi.",
+      "textEnglish": "Navigating the Creek with the Kamal — Distinguish two dhow hull types and measure the horizon height of Al-Jadi using the Kamal star-board.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.ae.01.intro.11-13",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "الرياح الموسمية ومسارات النجوم — نسّق اتجاهات النجوم وخرائط أعماق الخيران عبر موانئ دبي والشارقة وأبوظبي.",
+      "textArabizi": "Riyah il-Mawsim wa Masarat il-Nujum — Nassiq ittijahat il-nujum wa kharait il-khiran.",
+      "textEnglish": "Seasonal Monsoon Winds & Star Bearings — Coordinate star azimuth bearings and tidal creek depth charts across Dubai, Sharjah, and Abu Dhabi harbors.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.01.intro.14-17",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "مؤلفات الملاحة العربية في المحيط الهندي وأدوات القياس — حلل كيف استخدم ملاحو الخليج قياسات الإصبع الفلكية وتضاريس السواحل.",
+      "textArabizi": "Turath il-Milaha il-Falakiya fil-Imarat — Hallil kayfa istakhdama mallahu il-khalij qiyasat il-nujum.",
+      "textEnglish": "Arab Indian Ocean Navigation Treatises & Instrumentation — Analyze how classical Gulf navigators used finger-width stellar altitude measurements (isba) and coastal topography.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.02.intro.5-7",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "شارك تمر الواحة وخيرات البحر — طابق سلال التمر من الواحة مع قوارب الساحل ليحصل الجميع على مؤونة كاملة!",
+      "textArabizi": "Yalla نشارك tamr il-waha wa khayrat il-bahr — Tabiq silal il-tamr ma3 qawarib il-sahil!",
+      "textEnglish": "Share Dates from the Oasis & Shells from the Sea — Match the sweet date baskets from the oasis with the coastal boats so everyone has a full picnic basket!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.ae.02.intro.8-10",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "ربط الساحل بالواحة في السوق — تتبّع أربع سلع بين سوق الخور وواحة العين ووازن التبادل المجتمعي.",
+      "textArabizi": "Rabt il-Sahil bil-Waha fil-Souq — Tatabba3 4 sila3 bayn souq il-khor wa wahat Al-3ain.",
+      "textEnglish": "Connecting Coast and Oasis at the Souk — Trace four trade goods between the coastal creek souk and the Al Ain oasis and balance the community exchange.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.ae.02.intro.11-13",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "التكامل البيئي الموسمي عبر الإمارات — خطط تدفق الموارد الموسمية بين مقيظ الواحات ومواسم الإبحار الساحلي.",
+      "textArabizi": "Takamul Bi'i Mawsimi عبر الإمارات — Khattit mawaris il-maqiظ fil-waha wa mawsim il-bahr.",
+      "textEnglish": "Seasonal Ecological Interdependence Across the Emirates — Plan seasonal resource flows between summer oasis date harvests (al-قيظ) and coastal maritime voyages.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.02.intro.14-17",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "الاقتصادات المتكاملة بين الساحل وسفوح الحجر — حلل الوثائق التاريخية للتنقل الموسمي والتبادل بين الموانئ الساحلية وواحات العين وليوا.",
+      "textArabizi": "Iqtisad il-Sahil wal-Wahat fil-Imarat — Hallil wathaiq il-tabadul bayn il-sahil wa wahat Al-3ain wa Liwa.",
+      "textEnglish": "Complementary Economies of the Trucial Coast & Hajar Foothills — Analyze historical documentation of seasonal movement between coastal ports and inland oases like Al Ain and Liwa.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.03.intro.5-7",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "ابنِ برج النسيم البارد! — ركّب مكعبات البارجيل فوق بيت الفناء وشاهد شرائط النسيم الأزرق تتحرك!",
+      "textArabizi": "Yalla نبني burj il-barjeel il-barid! — Rakkib مكعبات il-barjeel wa shuf nasim il-hawa!",
+      "textEnglish": "Build the Cool Breeze Tower! — Snap the wind-tower blocks on top of the courtyard house and watch the blue breeze ribbons dance!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.ae.03.intro.8-10",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "كيف يلتقط البارجيل نسيم البحر — ابنِ برج البارجيل الرباعي والمشربيات الجصية واختبر محاكاة دخول الهواء البارد وخروج الهواء الدافئ.",
+      "textArabizi": "Kayfa Yaltaqit il-Barjeel il-Nasim — Ibni il-barjeel il-ruba3i wa ikhtabir muhakat il-hawa.",
+      "textEnglish": "How a Barjeel Catches the Breeze — Build the 4-way Barjeel shaft and gypsum screens, then test how warm air rises out while cool breeze flows down.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.ae.03.intro.11-13",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "التبريد الطبيعي والكتلة الحرارية وترشيد المياه — اضبط اتجاه الفناء وسماكة الحجر المرجاني وارتفاع البارجيل في محاكاة التبريد التعليمية.",
+      "textArabizi": "Tabrid Tabi3i wa Tarshid il-Miyah — Idbut ittijah il-fina wa irtifa3 il-barjeel fil-muhakat.",
+      "textEnglish": "Passive Cooling, Thermal Mass & Water Conservation — Optimize courtyard orientation, coral-stone wall thickness, and barjeel vent height in our educational physics simulation.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.03.intro.14-17",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "العمارة التقليدية المستدامة في المناخات الحارة — قارن بين عمارة البارجيل والحجر المرجاني التاريخية والتصميم العمراني المستدام الحديث في مدن الإمارات.",
+      "textArabizi": "3imara Mustadama: Il-Barjeel wal-Bi'a — Qarin bayn 3imarat il-barjeel wal-tasmim il-mustadam il-hadith.",
+      "textEnglish": "Sustainable Vernacular Architecture in Arid Climates — Compare historic Gulf barjeel and coral-stone architecture with modern sustainable urban design across UAE cities.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.04.intro.5-7",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "تمر الواحة وشرائط التلي الملونة — اجمع التمر الحلو بجانب قناة الفلج أو طابق ألوان شريط التلي اللامع لنزهة الواحة!",
+      "textArabizi": "Tamr il-Waha wa Sharait il-Talli — Ijma3 il-tamr bijanib il-falaj aw tabiq alwan il-Talli!",
+      "textEnglish": "Oasis Date Treats & Braided Ribbons — Pick sweet dates by the cool water channel or match the shiny Al-Talli ribbon colors for our oasis picnic!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.ae.04.intro.8-10",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "الضيافة تحت ظلال النخيل — تعرّف على ري النخيل بالفلج، ثم حضّر كرات التمر الآمنة للحساسية أو انسج نمط التلي الرباعي.",
+      "textArabizi": "Diyafa Taht Zilal il-Nakhil — Ta3arraf 3ala rayy il-nakhil bil-falaj wa haddir diyafat il-tamr aw il-Talli.",
+      "textEnglish": "Hospitality Under the Date Palms — Learn how the falaj waters the date palms, then prepare allergy-safe date bites or weave a 4-strand Al-Talli pattern.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.ae.04.intro.11-13",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "بيئة الواحة الزراعية وتراث الحرف اليدوية — استكشف طبقات الواحة الزراعية الثلاث (النخيل، الفواكه، المحاصيل) وحرفة التلي المسجلة في اليونسكو.",
+      "textArabizi": "Bi'at il-Waha wa Hirfat il-Talli — Istakshif tabaqat il-waha il-thalath wa hirfat il-Talli.",
+      "textEnglish": "Oasis Agro-Ecology & Intangible Craft Heritage — Explore the three-tier oasis canopy (date palms, fruit trees, ground crops) and UNESCO-listed Al-Talli braiding.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.04.intro.14-17",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "التراث غير المادي في اليونسكو والتعليم الثقافي الشامل — ادرس توثيق اليونسكو لواحات العين (#1343) وحرفة التلي لتصميم ورشة تعليمية شاملة.",
+      "textArabizi": "Turath Al-3ain wal-Talli fil-UNESCO — Idris tawthiq il-UNESCO li-wahat Al-3ain wa hirfat il-Talli.",
+      "textEnglish": "UNESCO Intangible Heritage & Inclusive Cultural Pedagogy — Examine UNESCO #1343 (Al Ain Oases) and the 2022 Al-Talli inscription to design an inclusive workshop for diverse learners.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.05.intro.5-7",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "اربط خور القوارب بواحة النخيل! — ضع ملصق السفينة عند البحر وملصق النخلة عند الواحة لإكمال خريطة الذاكرة!",
+      "textArabizi": "Yalla نربط il-khor bi-wahat il-nakhil! — Hut mulsaq il-safina 3ind il-bahr wal-nakhla 3ind il-waha!",
+      "textEnglish": "Connect the Boat Creek to the Palm Oasis! — Place the boat sticker by the sea and the palm tree sticker by the oasis to finish your memory map!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.ae.05.intro.8-10",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "بيئتان في كتاب رحلات واحد — طابق المفردات الإماراتية الست وتتبّع الرحلة من الخور الساحلي إلى فلج الواحة.",
+      "textArabizi": "Bi'atan fi Kitab Rihlat Wahid — Tabiq 6 kalimat Imaratiya min il-khor ila il-falaj.",
+      "textEnglish": "Two Landscapes, One Route Book — Match all 6 Emirati terms across Arabic, Arabizi, and English and trace the journey from coastal khor to inland falaj.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.ae.05.intro.11-13",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "الوعي الخرائطي: الجغرافيا الواقعية وخرائط المغامرة — قارن بين الإحداثيات الجغرافية الموثقة للعين والخيران الساحلية ونقاط خريطة المغامرة المرسومة.",
+      "textArabizi": "Wa3i Kharaiti: Jughrafiya Waqi3iya wa Kharait il-Lu3ba — Qarin bayn ihdathiyat Al-3ain il-jughrafiya wa kharitat il-mughamara.",
+      "textEnglish": "Cartographic Literacy: Real Geography vs Adventure Maps — Compare verified WGS84 coordinates for Al Ain (UNESCO #1343) and coastal creeks against our illustrated quest checkpoints.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.ae.05.intro.14-17",
+      "countryId": "ae",
+      "language": "ar",
+      "dialectVariant": "ar-AE",
+      "scriptVariant": "Arab",
+      "textArabic": "التنوع البيئي والهوية المكانية عبر الإمارات — اجمع تراث الساحل البحري والأفلاج والواحات في معرض رقمي موثق بالمصادر في جواز السفر.",
+      "textArabizi": "Tanawwu3 Bi'i wa Thaqافي fil-Imarat — Ijma3 turath il-sahil wal-aflaj wal-wahat fi milaff Jawaz il-Safar.",
+      "textEnglish": "Ecological Diversity & Regional Identity Across the Seven Emirates — Synthesize coastal maritime, mountain-piezometric falaj, and desert-oasis heritage into an evidence-backed digital Passport exhibit.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.01.intro.5-7",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "رتّب سلة السفينة الآمنة! — طابق صور جرة الماء والحبل والبوصلة اللامعة في صندوق سفينة النوخذة سليمان!",
+      "textArabizi": "Yalla نرتب sallat il-safina il-amina! — Tabiq suwar il-ma' wal-habl wal-busala fi sunduq il-safina!",
+      "textEnglish": "Pack the Safe Boat Basket! — Match the water jug, rope, and shiny compass pictures into Nakhuda Sulaiman's boat chest!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.kw.01.intro.8-10",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "تجهيز البوم في نقعة الكويت — افرز 5 مستلزمات أساسية للرحلة بين فنطاس الماء، ومنصة القيادة، وخزانة الأدوات.",
+      "textArabizi": "Tajhiz il-Boom fi Naq3at il-Kuwait — Ifriz 5 mustalzamat bayn il-fintas wa minassat il-qiyada.",
+      "textEnglish": "Readying the Boom in the Naq'ah Harbor — Sort 5 essential voyage supplies between the freshwater fintas hold, helm binnacle, and tool locker.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.kw.01.intro.11-13",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "توازن الحمولة وفنطاس المياه ولوجستيات السطح — وازن مركز ثقل سفينة البوم مع توزيع حصص المياه العذبة والحبال الاحتياطية لرحلة خليجية.",
+      "textArabizi": "Tawazun il-Humula wa Fintas il-Miyah — Wazin markaz thiqal il-Boom ma3 tawzi3 il-miyah wal-hibal.",
+      "textEnglish": "Ballast, Freshwater Fintas & Deck Logistics — Balance the Boom dhow's center of gravity while allocating freshwater rations and spare cordage for a Gulf crossing.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.01.intro.14-17",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "تموين السفن ولوجستيات المياه العذبة في الكويت قديماً — ادرس السجلات التاريخية لأبوام نقل المياه العذبة وتموين الرحلات البحرية الطويلة في الكويت.",
+      "textArabizi": "Tamwin il-Sufun wa Tijarat il-Miyah fil-Kuwait — Idris sijillat abwam il-ma' wa tamwin il-rihlat fil-Kuwait.",
+      "textEnglish": "Maritime Provisioning & Freshwater Logistics in Pre-Oil Kuwait — Examine historical records of Kuwaiti water-carrying Boom dhows and long-distance voyage provisioning.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.02.intro.5-7",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "القسمة العادلة في سكة الميناء! — أعطِ ألواح الخشب لصانع السفن وسلال الطعام للعائلات ليفرح الجميع!",
+      "textArabizi": "Yalla نقسم bil-3adl fi sikkat il-mina! — A3ti alwah il-khashab lil-qallaf wa silal il-ta3am lil-3ailat!",
+      "textEnglish": "Fair Sharing in the Harbor Alley! — Give wood planks to the boat builder and food baskets to the families so everyone smiles!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.kw.02.intro.8-10",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "موازنة دفتر أمانة الميناء — طابق الأخشاب ودهن الصلّ ومؤونة البيوت عبر 3 محطات في الفريج باستخدام رموز الأمانة.",
+      "textArabizi": "Muwazanat Daftar Amanat il-Mina — Tabiq il-akhshab wa duhn il-sill wa ma'unat il-buyut.",
+      "textEnglish": "Balancing the Harbor Trust Ledger — Match timber, preservation oil, and household provisions across 3 neighborhood stations using Promise Tokens.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.kw.02.intro.11-13",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "استيراد الأخشاب وحرف القلافة ورعاية أسر البحارة — نسّق شحنات خشب الساج وخشب القندل وصناديق التكافل العائلي عبر موسمين.",
+      "textArabizi": "Istirad il-Akhshab wa Ri3ayat Usar il-Bahhara — Nassiq shahnat khashab il-saj wal-kandil wa takaful il-usar.",
+      "textEnglish": "Timber Imports, Qallaf Guilds & Family Stewardship — Coordinate Malabar teak shipments, mangrove poles (kandil), and community mutual-support funds across two seasons.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.02.intro.14-17",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "أخلاقيات التجارة والتكافل الاجتماعي في ميناء الكويت التاريخي — قيّم دفاتر التجار التاريخية وآليات الثقة والتكافل التي دعمت الاقتصاد البحري الكويتي.",
+      "textArabizi": "Akhlaqiyat il-Tijara wal-Takaful fil-Kuwait — Qayyim dafatir il-tujjar wa aliyat il-thiqa fil-iqtisad il-bahri.",
+      "textEnglish": "Mercantile Ethics & Social Solidarity in Historic Kuwaiti Port Trade — Evaluate historical merchant ledgers and community trust mechanisms that sustained Kuwait's maritime economy.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.03.intro.5-7",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "أصلح السفينة الخشبية الجميلة! — ركّب المقدمة الخشبية والسارية الطويلة والدفة على سفينة البوم!",
+      "textArabizi": "Yalla نصلح il-safina il-khashabiya! — Rakkib il-muqaddima wal-sariya wal-daffa 3ala safinat il-Boom!",
+      "textEnglish": "Fix the Friendly Wooden Boat! — Snap the wooden nose, the tall mast, and the steering rudder onto the Boom boat!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.kw.03.intro.8-10",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "مساعد القلاف في ساحة بناء السفن — ركّب البيص وألواح الهيكل وفتيل القطن والدفة لسفينة البوم بالترتيب الصحيح.",
+      "textArabizi": "Musa3id il-Qallaf fi Sahat il-Sufun — Rakkib il-bis wa alwah il-haykal wal-fatil wal-daffa bil-tartib.",
+      "textEnglish": "Apprentice Qallaf at the Shipyard — Assemble the keel, hull planks, cotton caulking, and rudder of the Kuwaiti Boom in the proper shipbuilding order.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.kw.03.intro.11-13",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "الربط الخشبي والجلفطة والتوازن الهيدروديناميكي — شخّص ثلاث نقاط إجهاد في الهيكل، وطبّق الجلفطة بالقطن والزيت، واضبط توازن الدفة.",
+      "textArabizi": "Fann il-Qallafa wal-Jalfata wa Tawazun il-Boom — Shakhkhis nuqat il-ijhad fil-haykal wa tabbiq il-jalfata.",
+      "textEnglish": "Plank-First Joinery, Caulking & Hydrodynamic Balance — Diagnose three hull stress points, apply cotton-and-oil jalfata caulking, and calibrate rudder torque.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.03.intro.14-17",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "الهندسة البحرية للبوم الكويتي وشبكات أخشاب المحيط الهندي — حلل كيف طوّر القلافون الكويتيون هندسة البوم ذي النهايتين المدببتين للملاحة في أعالي البحار.",
+      "textArabizi": "Handasat il-Boom il-Kuwaiti wa Turath il-Qallafin — Hallil kayfa tawwara il-qallafun handasat il-Boom lil-ibhar.",
+      "textEnglish": "Naval Architecture of the Kuwaiti Boom & Indian Ocean Timber Networks — Analyze how Kuwaiti qallaf shipwrights adapted double-ended hull geometry for high-capacity open-ocean navigation.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.04.intro.5-7",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "أصوات الفنر الدافئة عند البحر! — أضئ الفنر الدافئ لترى الأمواج اللطيفة والجرس الرنان، ثم شارك كعكة قرص عقيلي أو خيوط السدو الملونة!",
+      "textArabizi": "Aswat il-Fanar il-Dafi'a 3ind il-Bahr! — Adi' il-fanar li-tara il-amwaj wal-jaras, wa sharik Qurs 3uqayli aw khuyut il-Sadu!",
+      "textEnglish": "Cozy Lantern Sounds by the Sea! — Shine your warm lantern to see the friendly waves and ringing bell, then share yummy yellow cake or colorful Sadu yarn!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.kw.04.intro.8-10",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "حكاية بو درياه وأمان الميناء — تعرّف كيف روى البحارة حكاية «بو درياه» الشعبية للتذكير بالحذر والتعاون، وميّز أصوات الميناء الطبيعية.",
+      "textArabizi": "Hikayat Bu Darya wa Aman il-Mina — Ta3arraf 3ala hikayat Bu Darya il-sha3biya wa mayyiz aswat il-mina il-tabi3iya.",
+      "textEnglish": "The Story of Bu Darya & Harbor Safety — Learn how sailors told the folklore story of Bu Darya to remind crews to stay alert and help one another, while identifying real night harbor sounds.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.kw.04.intro.11-13",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "الفلكلور البحري وتفسير الظواهر الصوتية وأمان الملاحة — قارن بين المرويات الشعبية عن «بو درياه» والظواهر الصوتية والمناخية في الجون، ثم استضف طاقم السفينة.",
+      "textArabizi": "Il-Folklore il-Bahri wa Tafsir الظواهر il-Sawtiya — Qarin bayn marwiyat Bu Darya wal-zawahir il-sawtiya fil-jun.",
+      "textEnglish": "Maritime Folklore vs Natural Acoustics & Sea Safety — Compare the folklore motif of Bu Darya with meteorological and acoustic phenomena in shallow tidal bays, then host the crew majlis.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.04.intro.14-17",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "وظيفة الحكاية الشعبية في المجتمعات البحرية التقليدية — حلل كيف عبّرت الحكايات البحرية مثل «بو درياه» عن قيم اليقظة والتضامن النفسي بين البحارة.",
+      "textArabizi": "Wazifat il-Hikaya il-Sha3biya fil-Mujtama3 il-Bahri — Hallil kayfa 3abbarat hikayat il-bahr 3an qiyam il-yaqaza wal-tadhamun.",
+      "textEnglish": "Folklore Functions in High-Risk Maritime Communities — Analyze how Gulf maritime legends like Bu Darya encoded watchfulness, solidarity, and psychological resilience among seafarers.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.05.intro.5-7",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "صفّق معنا للترحيب بعودة السفن! — اضغط على حلقات الإيقاع المبهجة وردد كلمات البحر الكويتية للترحيب بعودة النوخذة سليمان!",
+      "textArabizi": "Yalla نصفق معا li-3awdat il-sufun! — Idghat 3ala halaqat il-iqa3 wa raddid kalimat il-bahr!",
+      "textEnglish": "Clap Along to Welcome the Boats Home! — Tap the happy drum rings and say the Kuwaiti boat words to welcome Nakhuda Sulaiman home!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.kw.05.intro.8-10",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "نداء النهام ومعجم البحر الكويتي — طابق المفردات البحرية الكويتية الست وأكمل إيقاع العمل الرباعي مع النهام.",
+      "textArabizi": "Nida' il-Nahham wa Mu3jam il-Bahr — Tabiq 6 kalimat bahriya Kuwaitiya wa akmil iqa3 il-nahham.",
+      "textEnglish": "The Nahham's Call & Maritime Glossary — Match all 6 Kuwaiti maritime terms and complete the 4-beat call-and-response work rhythm.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.kw.05.intro.11-13",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "تنسيق العمل البحري (النهمة) ومسارات جزيرة فيلكا — اربط بين أوزان النهمة المختلفة (الخطفة لرفع الشراع والدواري للمرساة) ومسار العودة من فيلكا إلى جون الكويت.",
+      "textArabizi": "Fann il-Nahma wa Masarat Jazirat Failaka — Irbut bayn awzan il-nahma wa masar il-3awda min Failaka ila Jun il-Kuwait.",
+      "textEnglish": "Work-Song Coordination (Nahma) & Failaka Sea Lanes — Connect how different rhythmic meters (khatfa for sail-hoisting vs dawari for capstan work) coordinated crew effort from Failaka to Kuwait Bay.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.kw.05.intro.14-17",
+      "countryId": "kw",
+      "language": "ar",
+      "dialectVariant": "ar-KW",
+      "scriptVariant": "Arab",
+      "textArabic": "التراث البحري غير المادي: الفجري والنهمة وحفظ اللهجة الكويتية — اجمع التوثيق اللغوي والأثري (فيلكا) والموسيقي البحري في ملف جواز السفر الكويتي.",
+      "textArabizi": "Turath il-Nahma wal-Lahja il-Bahriya fil-Kuwait — Ijma3 il-tawthiq il-lughawi wal-athari fi milaff Jawaz il-Safar.",
+      "textEnglish": "Intangible Maritime Heritage: Fijiri, Nahma & Dialect Preservation — Synthesize linguistic, archaeological (Failaka), and ethnomusicological notes into your Kuwait Passport portfolio.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.01.intro.5-7",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "طابق صور قصيدة الصحراء الجميلة! — طابق صور زهرة الصحراء والفرس اللطيف والنجم المضيء لتسمع القصيدة مع الراوية سلمى!",
+      "textArabizi": "Yalla نطابق suwar qasidat il-sahra! — Tabiq suwar zahrat il-sahra wal-faras wal-najm ma3 Rawiya Salma!",
+      "textEnglish": "Match the Desert Poem Pictures! — Match the blooming desert flower, gentle horse, and bright star pictures to hear Rawiya Salma's kind poem!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.sa.01.intro.8-10",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "بناء بيت القصيدة بالإيقاع والمروءة — صل شطري بيت الشعر عن الكرم والشجاعة الأخلاقية، وتعلّم كلمتي «قصيدة» و«مروءة».",
+      "textArabizi": "Bina' Bayt il-Qasida bil-Iqa3 wal-Muru'a — Sil shatray bayt il-shi3r 3an il-karam wal-muru'a.",
+      "textEnglish": "Building a Qasida Line with Rhythm & Kindness — Pair two half-lines of verse about generosity and moral courage, and learn the words Qasida and Muru'a.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.sa.01.intro.11-13",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "البحر الشعري وصور الصحراء وتراث المعلقات — أعد ترتيب ثلاثة أبيات عن الطبيعة والفصاحة والعفة، وتعرّف على النقاش التاريخي حول سبب تسمية «المعلقات».",
+      "textArabizi": "Il-Bahr il-Shi3ri wa Turath il-Mu3allaqat — A3id tartib 3 abyat wa ta3arraf 3ala il-niqash حول tasmiyat il-Mu3allaqat.",
+      "textEnglish": "Poetic Meter, Desert Imagery & The Mu'allaqat Tradition — Reconstruct three couplets on nature, eloquence, and ethical restraint while examining why scholars debate the \"hung on the Kaaba\" story.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.01.intro.14-17",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "الشعر الجاهلي والرواية الشفهية والنقد التاريخي للمعلقات — حلل كيف دُوّنت المعلقات عبر الرواة مثل حماد الراوية ولماذا يُعد خبر تعليقها بماء الذهب تقليداً أدبياً محل نقاش.",
+      "textArabizi": "Il-Shi3r il-Qadim wal-Naqd il-Tarikhi lil-Mu3allaqat — Hallil kayfa duwwinat il-Mu3allaqat wa limadha yu3add khabar ta3liqiha taqlidan munaqashan.",
+      "textEnglish": "Pre-Islamic Poetics, Oral Transmission & Historiographical Critique — Analyze how 8th–10th century anthologists (such as Hammad al-Rawiya and Ibn Abd Rabbih) transmitted the Mu'allaqat and why the gold-lettered Kaaba account is treated as debated tradition.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.02.intro.5-7",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "شارك الماء وأرشد أصدقاء القافلة! — املأ قربة الماء، وانصب خيمة الظل، وأضئ علامات الطريق الحجرية ليصل الجميع إلى الواحة!",
+      "textArabizi": "Yalla نشارك il-ma' wa nurshid asdiqa' il-qafila! — Imla' qirbat il-ma' wa anir 3alamat il-tariq li-yasil il-jami3!",
+      "textEnglish": "Share Water & Guide the Caravan Friends! — Fill the water flasks, put up the shade tent, and light the stone path markers so everyone reaches the oasis!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.sa.02.intro.8-10",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "رعاية القافلة عبر الوادي — اجمع 4 مستلزمات للقافلة ووزّع الماء والظل لمساعدة عائلة متأخرة على الانضمام للرحلة بأمان.",
+      "textArabizi": "Ri3ayat il-Qafila 3abr il-Wadi — Ijma3 4 mustalzamat wa wazzi3 il-ma' wal-zill li-musa3adat il-3aila.",
+      "textEnglish": "Stewarding the Qafila Across the Wadi — Gather 4 caravan essentials and allocate shared water and shade so a delayed family can join the journey safely.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.sa.02.intro.11-13",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "موارد المياه الصحراوية والأعلام الحجرية وتكافل القوافل — احسب مراحل المسير بين آبار الوادي، وحدد اتجاهات المعالم والنجوم، وطبّق ميثاق التكافل في الطريق.",
+      "textArabizi": "Mawarid il-Miyah wal-A3lam wa Takaful il-Qawafil — Ihsib marahil il-masir bayn il-abar wa tabbiq mithaq il-takaful.",
+      "textEnglish": "Desert Hydrology, Stone Cairns & Caravan Mutual Aid — Calculate travel stages between wadi wells, orient star/landmark bearings, and uphold the ethical code of the road.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.02.intro.14-17",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "آثار طرق القوافل في الجزيرة العربية: من الحِجر (اليونسكو #1293) إلى نجد — ادرس الشواهد الأثرية للآبار والصهاريج الحجرية وعلامات الطرق ولوجستيات القوافل بين الحِجر ونجد.",
+      "textArabizi": "Athar Turuq il-Qawafil: Min Al-Hijr ila Najd — Idris il-shawahid il-athariya lil-abar wa turuq il-qawafil bayn Al-Hijr wa Najd.",
+      "textEnglish": "Archaeology of Arabian Trade Routes: Hegra (UNESCO #1293) to Najd — Examine archaeological evidence of Nabataean and early Islamic water cisterns, road milestones, and caravan logistics.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.03.intro.5-7",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "وازن ميزان السوق بالعدل والمحبة! — ضع سلة التمر ولفافة الصوف المتكافئة على الميزان الذهبي ليرضى الصديقان!",
+      "textArabizi": "Yalla نوازن mizan il-souq bil-3adl! — Hut sallat il-tamr wa lifafat il-suf 3ala il-mizan li-yarda il-sadiqan!",
+      "textEnglish": "Balance the Friendly Market Scales! — Put the matching date basket and soft wool roll on the golden scale so both friends are happy!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.sa.03.intro.8-10",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "الصلح بالمروءة في سوق الواحة — اكتشف الثقل غير المعاير، واضبط الميزان، وأبرم تبادلاً عادلاً بين نسّاجي القافلة ومزارعي الواحة.",
+      "textArabizi": "Il-Sulh bil-Muru'a fi Souq il-Waha — Iktashif il-thiqal wa idbut il-mizan li-tabadul 3adil.",
+      "textEnglish": "Mediating with Muru'a at the Oasis Souk — Identify the faulty weight, calibrate the scale, and arrange a fair trade between caravan weavers and oasis farmers.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.sa.03.intro.11-13",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "التكامل بين البادية والحاضرة وأخلاقيات التحكيم في السوق — دقّق نسب التبادل المتعددة (التمور، القمح، منسوجات السدو، اللبان) وصُغ ميثاق تراضٍ عادل.",
+      "textArabizi": "Takamul il-Badiya wal-Hadira fi Souq il-Waha — Daqqiq nisab il-tabadul wa sugh mithaq taradin 3adil.",
+      "textEnglish": "Oasis-Pastoralist Interdependence & Market Mediation — Audit multi-commodity exchange ratios (dates, wheat, Sadu textiles, aromatic resins) and draft a binding mutual-trust accord.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.03.intro.14-17",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "أعراف الأسواق العربية والبلاغة كوسيلة لفض النزاعات سلمياً — حلل الروايات التاريخية عن أمان الأسواق والمكاييل المعيارية وكيف أسهمت البلاغة والحكمة في حل الخلافات سلمياً.",
+      "textArabizi": "A3raf il-Aswaq wal-Balagha fi Fadd il-Niza3at — Hallil a3raf aman il-aswaq wa dawr il-balagha fi hall il-khilafat.",
+      "textEnglish": "Customary Law, Market Ethics &eloquence as Conflict Resolution — Analyze historical accounts of Arabian market truces, standard weights (sa' and mudd), and how poetic eloquence resolved disputes without bloodshed.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.04.intro.5-7",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "ابنِ فناء الحكايات والشعر الجميل! — ركّب مكعبات النوافذ المثلثة، وافرش بساط السدو الملون، وضع الفوانيس الدافئة في الفناء!",
+      "textArabizi": "Yalla نبني fina' il-hikayat wal-shi3r! — Rakkib il-nawafidh il-muthallatha wa ifrish bisat il-Sadu fil-fina'!",
+      "textEnglish": "Build the Cozy Poetry Courtyard! — Snap the triangle window blocks, roll out the colorful Sadu carpet, and place the warm lanterns in the courtyard!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.sa.04.intro.8-10",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "تصميم مجلس نجدي على طراز الدرعية — ركّب جدران الطين اللبن، والفرجات المثلثة، وعوارض خشب الأثل، وحلقة جلوس الضيافة.",
+      "textArabizi": "Tasmim Majlis Najdi 3ala Tiraz il-Dir3iya — Rakkib judran il-tin, wal-furjat il-muthallatha, wa halqat il-diyafa.",
+      "textEnglish": "Designing a Najdi Majlis Inspired by Diriyah — Assemble the mudbrick walls, triangular furjat vents, tamarisk roof beams, and hospitality seating circle.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.sa.04.intro.11-13",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "العمارة النجدية التقليدية والظل وصوتيات الفناء — اضبط سماكة الجدران وتدفق الهواء عبر الفرجات المثلثة وانعكاس الصوت لإلقاء الشعر بوضوح.",
+      "textArabizi": "Il-3imara il-Najdiya wal-Zill wa Sawtiyat il-Fina' — Idbut samakat il-judran wa harakat il-hawa عبر الفرجات وانعكاس الصوت.",
+      "textEnglish": "Najdi Vernacular Architecture, Shade & Courtyard Acoustics — Optimize wall thermal mass, triangular furjat airflow, and courtyard acoustic reflection for unamplified poetry recitation.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.04.intro.14-17",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "التنوع المعماري الإقليمي في المملكة العربية السعودية (سياق الطريف #1329) — قارن بين خصائص عمارة الطريف النجدية وعمارة الأقاليم السعودية الأخرى (الرواشين الحجازية، حصون عسير) لتجنب التعميم البصري.",
+      "textArabizi": "Il-Tanawwu3 il-Mi3mari fil-Mamlaka (At-Turaif UNESCO #1329) — Qarin bayn 3imarat At-Turaif il-Najdiya wa 3imarat il-aqalim il-ukhra.",
+      "textEnglish": "Regional Architectural Diversity in Saudi Arabia (UNESCO #1329 Context) — Compare At-Turaif's Najdi mudbrick/limestone morphology with other Saudi regional traditions (Hijazi coral stone, Asiri stone towers) to avoid architectural homogenization.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.05.intro.5-7",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "شارك قصيدتنا الجميلة في الفناء المضيء! — اختر 3 ملصقات قصصية عن اللطف والمشاركة والوطن، واحصل على ختم جواز السفر السعودي!",
+      "textArabizi": "Yalla نشارك qasidatna fil-fina' il-mudi'! — Ikhtar 3 mulsaqat 3an il-lutf wal-musharaka wa ihsal 3ala khatm Jawaz il-Safar!",
+      "textEnglish": "Share Our Kind Poem in the Starry Courtyard! — Pick 3 happy story stickers about kindness, sharing, and home, then receive your glittering Saudi Passport Stamp!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.sa.05.intro.8-10",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "شاعر التاريخ وبطل الحكاية: نظم قصيدة الختام — ميّز حقيقتين عن الشاعر التاريخي عنترة من حكايتين من السيرة الشعبية المتأخرة، ورتّب قصيدة من 4 أبيات بالمفردات الست.",
+      "textArabizi": "Sha3ir il-Tarikh wa Batal il-Hikaya: Qasidat il-Khitam — Mayyiz bayn il-sha3ir il-tarikhi wa Sirat 3antar, wa rattib qasida min 4 abyat.",
+      "textEnglish": "Poet of History vs Hero of Legend: Composing Our Finale Verse — Sort two facts about the real 6th-century poet Antarah from two later Sirat Antar legends, then assemble a 4-line poem using all 6 Arabic terms.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.sa.05.intro.11-13",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "التوثيق التاريخي لعنترة بن شداد وتلقي سيرة عنترة الشعبية — تتبّع كيف ألهمت أشعار عنترة في القرن السادس الميلادي عن العزة والكرامة سيرةً شعبية لاحقة عبر القرون، وقدّم بطاقة تأمل.",
+      "textArabizi": "Tawthiq 3antara ibn Shaddad wa Talaqqi Sirat 3antar — Tatabba3 kayfa alhamat ash3ar 3antara siratan sha3biya lahiqa عبر القرون.",
+      "textEnglish": "Historiography of Antarah ibn Shaddad & Sirat Antar Reception — Trace how a 6th-century Najdi poet's verses on dignity inspired a centuries-later pan-Arab oral romance, and present a diaspora reflection card.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.sa.05.intro.14-17",
+      "countryId": "sa",
+      "language": "ar",
+      "dialectVariant": "ar-SA",
+      "scriptVariant": "Arab",
+      "textArabic": "الوعي المعرفي: الشعر الكلاسيكي والسيرة الشعبية والذاكرة الثقافية — اجمع النصوص الشعرية والنقد التاريخي لرواية المعلقات وتوثيق اليونسكو (#1329 و#1293) في ملف جواز السفر.",
+      "textArabizi": "Il-Wa3i il-Ma3rifi: Il-Shi3r il-Klasiki wal-Sira il-Sha3biya — Ijma3 il-nusus il-shi3riya wal-naqd il-tarikhi wa tawthiq il-UNESCO fi Jawaz il-Safar.",
+      "textEnglish": "Epistemic Literacy: Classical Poetics, Popular Epic & Cultural Memory — Synthesize primary poetic texts, the debated historiography of the Mu'allaqat, and UNESCO heritage citations (#1329 & #1293) into your Saudi Passport portfolio.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.01.intro.5-7",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "اتبع جدول الجبل الصافي! — اضغط على محطات الماء الثلاث بالترتيب: أولاً ماء الشرب النقي، ثم الغسيل، ثم ري أشجار النخيل والرمان!",
+      "textArabizi": "Yalla نتبع miyah il-falaj il-safiya! — Idghat 3ala mahattat il-ma bil-tartib: il-shurb thumma il-basatin!",
+      "textEnglish": "Follow the Sparkling Mountain Stream! — Tap the 3 water stations in order: first clean drinking water, then washing, then watering the green date & pomegranate trees!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.om.01.intro.8-10",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "كيف يصل الفلج إلى القرية — رتّب مراحل قناة الفلج الأربع وتعلّم كيف تقيس مزولة اللمد حصص «الأثر».",
+      "textArabizi": "Kayfa Yasil il-Falaj ila il-Qarya — Rattib marahil il-falaj wa ta3allam qiyas il-athar bil-lamad.",
+      "textEnglish": "How the Falaj Reaches the Village — Order the four stages of the falaj channel and learn how the Lamad sundial measures 30-minute athar shares.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.om.01.intro.11-13",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "هيدرولوجيا الأفلاج الداوودية والغيلية والعينية — قارن بين الأنواع الثلاثة للأفلاج العُمانية وميّز بين الأدلة الأثرية والروايات الشعبية.",
+      "textArabizi": "Anwa3 il-Aflaj: Dawoodi, Ghaili, wa 3aini — Qarin bayn anwa3 il-aflaj il-thalatha wa mayyiz il-adilla il-athariya.",
+      "textEnglish": "Dawoodi, Ghaili & Aini Aflaj Hydrology — Compare the three hydrological types of Omani aflaj and distinguish archaeological evidence from folklore.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.01.intro.14-17",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "الهندسة المائية في اليونسكو (#1207) مقابل المرويات الأسطورية — قيّم المسوحات الأثرية للأفلاج العُمانية منذ العصر الحديدي مقارنةً بالموروث القصصي الشعبي.",
+      "textArabizi": "Handasat il-Aflaj (UNESCO #1207) vs Il-Marwiyat il-Sha3biya — Qayyim il-adilla il-athariya lil-aflaj muqaranatan bil-folklore.",
+      "textEnglish": "UNESCO #1207 Hydrological Engineering vs Mythological Attribution — Evaluate Iron Age and Islamic-era archaeological surveys of Omani aflaj alongside folk traditions.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.02.intro.5-7",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "افرز فصوص اللبان العطرية! — طابق حبات اللبان اللامعة مع المجمر الفخاري الملون وشارك تمور الجبل مع القافلة!",
+      "textArabizi": "Yalla نفصّل fusus il-luban il-3itriya! — Tabiq habbat il-luban ma3 il-majmar il-fakhkhari!",
+      "textEnglish": "Sort the Sweet-Smelling Frankincense Crystals! — Match the pearly frankincense drops with the painted clay burner and share mountain dates with the caravan!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.om.02.intro.8-10",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "التبادل على طريق أرض اللبان — ميّز ثلاث درجات من اللبان العُماني وأكمل مقايضة عادلة بين ظفار وواحات الجبل.",
+      "textArabizi": "Tabadul 3ala Tariq Ard il-Luban — Mayyiz 3 darajat min il-luban wa akmil muqayada 3adila.",
+      "textEnglish": "Trading Along the Land of Frankincense — Identify three grades of Omani frankincense and complete a fair barter between Dhofar groves and northern mountain oases.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.om.02.intro.11-13",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "بيئة الخريف الموسمية لأشجار اللبان ولوجستيات القوافل — ادرس كيف يغذي ضباب الخريف أشجار وادي دوكة وكيف ربط ميناء سمهرم (خور روري) البر بالبحر.",
+      "textArabizi": "Bi'at Ashjar il-Luban wa Masarat il-Qawafil — Idris kayfa yughadhi il-kharif ashjar Wadi Dawkah wa mina Khor Rori.",
+      "textEnglish": "Monsoon Ecology of Boswellia Sacra & Caravan Logistics — Examine how the Khareef monsoon mist sustains Wadi Dawkah trees and how Khor Rori (Sumhuram) connected overland and sea routes.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.02.intro.14-17",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "آثار خور روري وشصر مقابل أسطورة «أوبار» — ميّز بين الحفريات الأثرية الموثقة في خور روري وشصر (#1010) والادعاءات الإعلامية الأسطورية حول مدينة أوبار.",
+      "textArabizi": "Athar Khor Rori wa Shisr vs Usturat Ubar — Mayyiz bayn حفريات UNESCO #1010 wa usturat Ubar.",
+      "textEnglish": "Archaeology of Khor Rori & Shisr vs the \"Ubar\" Mythos — Distinguish verified archaeological excavations at Khor Rori and Shisr (UNESCO #1010) from romanticized media claims about the mythical city of Ubar.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.03.intro.5-7",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "ساعد الماء ليصل إلى الأشجار العطشى! — ركّب المكعبات الحجرية في القناة وافتح البوابة الصغيرة لتزهر أشجار الرمان!",
+      "textArabizi": "Yalla نصلح qanat il-ma lil-ashjar! — Rakkib مكعبات il-hajar fil-qana wa iftah il-bawwaba!",
+      "textEnglish": "Help the Water Reach the Thirsty Trees! — Snap the smooth stone blocks into the water channel and open the little gate so the pomegranate blossoms bloom!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.om.03.intro.8-10",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "ترميم القناة بالصاروج وبوابات التقسيم — رمّم مخطط قناة الفلج بالصاروج ووجّه المياه بالتساوي بين بستانين.",
+      "textArabizi": "Tarmim il-Qana bil-Sarooj wal-Siqarah — Rammim qanat il-falaj bil-sarooj wa wajjih il-miyah bayn bustanayn.",
+      "textEnglish": "Sealing the Channel with Sarooj & Sluice Gates — Repair the falaj aqueduct blueprint with sarooj mortar and route water between two garden plots.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.om.03.intro.11-13",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "الانحدار الطبيعي وتوجيه المياه عبر المدرجات الجبلية — حل لغز توجيه المياه عبر أربع قنوات فرعية مع الحفاظ على ثبات التدفق في المدرجات العلوية والسفلية.",
+      "textArabizi": "Tawjih il-Miyah عبر المدرجات il-Jabaliya — 7ill lughz tawjih il-miyah عبر 4 qanawat far3iya.",
+      "textEnglish": "Gravity Gradient & Multi-Terrace Hydraulic Routing — Solve a 4-branch gravity-flow puzzle maintaining steady flow rate across upper, middle, and lower orchard terraces.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.03.intro.14-17",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "الحفاظ الهيدروليكي وهندسة الجاذبية المستدامة — حلل كيف تحافظ الأفلاج العُمانية على تدفق المياه بالجاذبية لمسافات طويلة دون مضخات ميكانيكية أو استنزاف للمياه الجوفية.",
+      "textArabizi": "Handasat il-Jadhibiya il-Mustadama fil-Aflaj — Hallil kayfa tuhafiz il-aflaj 3ala il-miyah bi-dun استنزاف.",
+      "textEnglish": "Hydraulic Conservation & Zero-Pump Gravity Engineering — Analyze how Omani aflaj maintain continuous gravity flow over kilometers without mechanical pumps or groundwater depletion.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.04.intro.5-7",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "عطر ماء الورد وتمر الواحة الحلو! — اجمع ورد الجبل الوردي والتمر الحلو لإعداد صينية ترحيب أو كيس زهور عطري!",
+      "textArabizi": "3itr Ma il-Ward wa Tamr il-Waha! — Ijma3 ward il-jabal wal-tamr li-siniyat il-terhib!",
+      "textEnglish": "Rosewater Scents & Sweet Oasis Dates! — Pick pink mountain roses and sweet dates to make a cozy welcome tray or fragrant flower pouch!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.om.04.intro.8-10",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "الضيافة في السبلة العُمانية — اتبع خطوات إعداد الحلوى العُمانية بماء الورد والهيل (أو الكيس العطري) وتعلّم عبارات الترحيب.",
+      "textArabizi": "Diyafat il-Sablah il-3umaniya — Ittabi3 khutuwat tahdir il-halwa bi-ma il-ward aw il-kis il-3itri.",
+      "textEnglish": "Hospitality in the Omani Sablah — Follow the step-by-step recipe for nut-free rosewater-cardamom halwa (or botanical sachet craft) and learn Omani guest greetings.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.om.04.intro.11-13",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "المناخ الجبلي وتقطير ماء الورد في الدهجان — استكشف كيف يساعد ارتفاع الجبل الأخضر ومياه الأفلاج على زراعة الورد وتقطيره وزراعة الرمان.",
+      "textArabizi": "Taqtir Ma il-Ward fil-Jabal il-Akhdar — Istakshif kayfa yusa3id irtifa3 il-Jabal il-Akhdar 3ala zira3at il-ward.",
+      "textEnglish": "Mountain Microclimates & Traditional Distillation (Dejjan) — Explore how altitude and falaj irrigation enable Jabal Akhdar rose distillation and pomegranate cultivation.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.04.intro.14-17",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "التنوع الزراعي واستدامة الحرف الجبلية في عُمان — حلل كيف تشكل زراعة المدرجات وفخار بهلاء وتقطير الورد اقتصاداً جبلياً مستداماً ومتكاملاً.",
+      "textArabizi": "Tanawwu3 Zira3i wa Hiraf il-Jabal fi 3uman — Hallil takamul zira3at il-mudarrajat wa fakhkhar Bahla.",
+      "textEnglish": "Agrobiodiversity & Heritage Livelihoods in Oman's Mountains — Analyze how terrace farming, Bahla pottery, and botanical distillation form an integrated sustainable mountain economy.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.05.intro.5-7",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "كل بستان يأخذ دوره من الماء! — امنح كل بستان عائلي رمز ماء مضيء وردد الكلمات العُمانية مع العريف سالم!",
+      "textArabizi": "Kull bustan yakhudh dawrah min il-ma! — Imnah kull bustan ramz ma wa raddid kalimat 3uman!",
+      "textEnglish": "Every Garden Gets a Turn for Water! — Give each family garden a glowing water token and say the Omani words with Arif Salim!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.om.05.intro.8-10",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "جدول العريف العادل لتوزيع المياه — طابق المفردات العُمانية الست ووزّع حصص الأثر بالتساوي على لوحة المزولة.",
+      "textArabizi": "Jadwal il-3arif il-3adil lil-Miyah — Tabiq 6 kalimat 3umaniya wa wazzi3 hisas il-athar.",
+      "textEnglish": "The Arif's Fair Water Schedule — Match all 6 Omani terms and assign fair athar time slots on the village sundial board.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.om.05.intro.11-13",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "جدولة الموارد التعاونية بين المزارع والبساتين والقرية — نسّق دورة سقي موسمية في شهر قليل الأمطار لحماية الفسائل الصغيرة وبساتين الأهالي والمرافق العامة.",
+      "textArabizi": "Jadwalat il-Miyah bayn il-Mazari3 wal-Qarya — Nassiq dawrat saqi mawsimiya li-himayat جَميع البساتين.",
+      "textEnglish": "Co-Op Stakeholder Scheduling: Farms, Orchards & Village Basins — Negotiate a seasonal rotation (dawran) during a dry month so young saplings, elders' plots, and public basins are all protected.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.om.05.intro.14-17",
+      "countryId": "om",
+      "language": "ar",
+      "dialectVariant": "ar-OM",
+      "scriptVariant": "Arab",
+      "textArabic": "حوكمة الموارد المشتركة واستدامة الأفلاج العُمانية عبر القرون — حلل كيف نجحت الحوكمة المجتمعية للأفلاج العُمانية في صون الموارد المشتركة لأكثر من ألف عام، وأكمل ملف جواز السفر.",
+      "textArabizi": "7awkamat il-Mawarid il-Mushtaraka: Istidamat il-Aflaj — Hallil najah 7awkamat il-aflaj il-mujtama3iya عبر القرون.",
+      "textEnglish": "Commons Governance: Ostrom's Principles & Omani Aflaj Sustainability — Analyze how community-governed Omani aflaj prevented the \"tragedy of the commons\" for over a millennium, and compile your Oman Passport dossier.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.01.intro.5-7",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "الأقدم في الأسفل والأحدث في الأعلى! — ضع ختم دلمون الدائري القديم في الصندوق السفلي وصندوق اللؤلؤ الخشبي في الصندوق العلوي!",
+      "textArabizi": "Yalla نرتب tabaqat il-athar! — Hut khatm Dilmun fil-asfal wa sunduq il-lulu fil-a3la!",
+      "textEnglish": "Oldest on the Bottom, Newest on the Top! — Put the ancient round Dilmun stamp in the bottom layer box and the wooden pearl box in the top layer box!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.bh.01.intro.8-10",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "قراءة طبقات قلعة البحرين — صنّف أربع نسخ أثرية في عصورها الصحيحة لعدم الخلط بين دلمون القديمة والمحرق الحديثة.",
+      "textArabizi": "Qira'at Tabaqat Qal3at il-Bahrain — Sannif 4 luqa athariya fi 3usuriha il-sahiha.",
+      "textEnglish": "Reading the Layers of Qal'at al-Bahrain — Sort four artifact replicas into their proper historical eras so Bronze Age Dilmun and modern Muharraq are never mixed up.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.bh.01.intro.11-13",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "علم الطبقات الأثرية عبر خمسة آلاف عام — حلل كيف يؤرخ علماء الآثار تل قلعة البحرين عبر مراحل دلمون وتايلوس والعصر الإسلامي.",
+      "textArabizi": "3ilm il-Tabaqat il-Athariya fi Qal3at il-Bahrain — Hallil tasalsul tabaqat Qal3at il-Bahrain عبر العصور.",
+      "textEnglish": "Archaeological Stratigraphy Across Five Millennia — Analyze how archaeologists date the 12-meter tell at Qal'at al-Bahrain across Early/Middle Dilmun, Tylos, Islamic, and Portuguese phases.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.01.intro.14-17",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "الدقة الزمنية وتجنب الخلط التاريخي في المتاحف — انقد الخلط الشائع بين حضارة دلمون البرونزية واقتصاد اللؤلؤ الحديث أو التفسير الحرفي للأساطير.",
+      "textArabizi": "Il-Diqqa il-Zamaniya fi Mat7af il-Bahrain — Inqud il-khalt bayn 3asr Dilmun wa 3asr il-ghaws il-hadith.",
+      "textEnglish": "Chronological Rigor & Avoiding Anachronism in Public History — Critique common tourist misconceptions that conflate Bronze Age Dilmun with 19th-century pearling or literalize Gilgamesh myths.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.02.intro.5-7",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "اختم بطاقة الطين بختم الغزال الدائري! — اضغط بالختم الدائري على الطين الطري وطابق سلال النحاس والخرز في الميناء!",
+      "textArabizi": "Yalla نختم بطاقة الطين بختم دلمون! — Idghat bil-khatm il-da'iri wa tabiq silal il-nuhas!",
+      "textEnglish": "Stamp the Clay Tag with the Gazelle Seal! — Press the round Dilmun stamp onto the soft clay and match the shiny copper and bead baskets at the harbor!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.bh.02.intro.8-10",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "دلمون: ملتقى التجارة البحرية القديمة — استخدم ختم دلمون الدائري والأوزان الحجرية لربط النحاس والمنسوجات والخرز بين ثلاث مناطق قديمة.",
+      "textArabizi": "Dilmun: Multaqa il-Tijara il-Bahriya — Istakhdim khatm Dilmun li-rabt tijarat 3 manatiq qadima.",
+      "textEnglish": "Dilmun: The Island Trade Crossroads — Use the circular Dilmun seal and stone weights to connect copper, textiles, and beads across three ancient regions.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.bh.02.intro.11-13",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "معايير الأوزان وتجارة الموانئ في الخليج خلال العصر البرونزي — قارن بين معيار أوزان دلمون المكتشف في قلعة البحرين وأنظمة القياس في وادي السند وبلاد الرافدين.",
+      "textArabizi": "Ma3ayir il-Awzan fi Tijarat Dilmun — Qarin bayn awzan Dilmun wa anzinat il-Rafidayn wal-Sind.",
+      "textEnglish": "Weight Standards & Entrepôt Trade in the Bronze Age Gulf — Compare Dilmun's weight standard found at Qal'at al-Bahrain with Indus Valley and Mesopotamian metrological systems.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.02.intro.14-17",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "الأدلة الأثرية وحدود التفسير العلمي في تجارة العصر البرونزي — قيّم ما تؤكده النصوص المسمارية والأختام المكتشفة في قلعة البحرين مع توثيق الأسئلة العلمية المفتوحة.",
+      "textArabizi": "Il-Adilla il-Athariya wa 7udud il-Tafsir fi Dilmun — Qayyim ma tu'akkiduhu il-akhtam wal-nusus حول تجارة دلمون.",
+      "textEnglish": "Archaeological Evidence vs Interpretive Uncertainty in Bronze Age Trade — Evaluate what cuneiform texts from Ur and excavated seals at Qal'at al-Bahrain confirm, while documenting open scholarly questions.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.03.intro.5-7",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "ابنِ الجسر الخشبي الآمن حول الأحجار القديمة! — ركّب ألواح الجسر الخشبي ومظلة الظل ليشاهد الزوار الأحجار القديمة بأمان دون المشي عليها!",
+      "textArabizi": "Yalla نبني il-jisr il-khashabi لحماية الآثار! — Rakkib alwah il-jisr wal-mazalla li-himayat il-ahjar il-qadima!",
+      "textEnglish": "Build the Safe Wooden Bridge Around the Ancient Stones! — Snap the wooden bridge planks and shade roof into place so visitors can look at the ancient stones safely without stepping on them!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.bh.03.intro.8-10",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "حماية الآثار بالممرات الخشبية الواقية — اتبع مخطط الحفاظ الأثري لبناء ممر مرتفع ومظلة عرض وإطار متحفي واقٍ.",
+      "textArabizi": "7imayat il-Athar bil-Mamarrat il-Waqiya — Ittabi3 mukhattat il-hifz li-bina mamarr murtafi3 wa mazalla.",
+      "textEnglish": "Protecting Archaeology with Reversible Walkways — Follow the conservation blueprint to build a raised walkway, shade pavilion, and museum display frame.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.bh.03.intro.11-13",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "الحفاظ الوقائي: ملوحة الساحل والرياح ومسارات الزوار — صمّم مناطق عازلة ومسارات تحمي الحجارة الجيرية المنحوتة من الرطوبة الساحلية وحركة الزوار.",
+      "textArabizi": "Il-7ifz il-Wiqa'i fi Qal3at il-Bahrain — Sammim mamarrat tahmi il-ahjar il-jiriya min il-rutuba.",
+      "textEnglish": "Preventive Conservation: Coastal Salinity, Wind & Visitor Flow — Design protective buffer zones and drainage channels that shield limestone ashlar blocks from coastal humidity and foot traffic.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.03.intro.14-17",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "مواثيق الحفاظ الدولية وسلامة النطاق العازل للمواقع التراثية — طبّق مبادئ إدارة التراث العالمي لليونسكو (القابلية للإزالة، التدخل الأدنى، حماية الممر البصري) في قلعة البحرين.",
+      "textArabizi": "Mawathiq il-Hifz il-Dawliya (UNESCO #1192) — Tabbiq mabadi idarat il-turath il-3alami fi Qal3at il-Bahrain.",
+      "textEnglish": "International Conservation Charters & Buffer-Zone Integrity — Apply UNESCO World Heritage management principles (reversibility, minimal intervention, visual corridor protection) at Qal'at al-Bahrain.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.04.intro.5-7",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "الحلوى البحرينية والأشرطة الذهبية في المحرق! — زر بيت الأستاذة أمينة في المحرق لمشاركة الحلوى البحرينية الدافئة أو نسج أشرطة الكورار الذهبية مع الأصدقاء!",
+      "textArabizi": "Il-7alwa il-Bahrainiya wa Sharait il-Kurar fil-Muharraq! — Zur bayt Ustadha Ameena fil-Muharraq wa sharik il-7alwa aw il-Kurar!",
+      "textEnglish": "Sweet Bahraini Halwa & Golden Ribbons in Muharraq! — Visit Ustadha Ameena's cozy Muharraq courtyard to share warm red halwa or weave shiny golden Kurar ribbons with friends!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.bh.04.intro.8-10",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "بيوت اللؤلؤ في المحرق وحرفة الكورار — قارن بين أدوات الغوص في المحرق وأختام دلمون القديمة، ثم حضّر حلوى بحرينية آمنة للحساسية أو انسج شريط الكورار.",
+      "textArabizi": "Buyut il-Lulu fil-Muharraq wa Hirfat il-Kurar — Qarin bayn adawat il-Muharraq wa akhtam Dilmun wa haddir il-7alwa aw il-Kurar.",
+      "textEnglish": "Muharraq's Pearling Houses & Kurar Craft — Compare 19th-century Muharraq pearling tools with ancient Dilmun seals, then prepare allergy-safe Bahraini halwa or weave a Kurar band.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.bh.04.intro.11-13",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "طريق اللؤلؤ (اليونسكو #1364) والحرف النسائية التعاونية — استكشف كيف ربط مسار اللؤلؤ في المحرق بين ساحل قلعة بو ماهر ومجالس التجار وأفنية البيوت.",
+      "textArabizi": "Tariq il-Lulu fil-Muharraq (UNESCO #1364) wa Hirfat il-Kurar — Istakshif masar il-lulu min Qal3at Bu Maher ila buyut il-Muharraq.",
+      "textEnglish": "UNESCO #1364: Island Pearling Economy & Cooperative Women's Crafts — Explore how Muharraq's architecture connected Qal'at Bu Maher shore to merchant majlises and family courtyards where Kurar was woven.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.04.intro.14-17",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "التحولات الاقتصادية في ثلاثينيات القرن العشرين والحفاظ العمراني في المحرق — حلل كيف تكيّف اقتصاد البحرين بعد ظهور اللؤلؤ المستزرع في الثلاثينيات وكيف يصون مشروع طريق اللؤلؤ النسيج العمراني للمحرق.",
+      "textArabizi": "Ta7awwulat Iqtisad il-Lulu wa Hifz Turath il-Muharraq — Hallil تاريخ اقتصاد اللؤلؤ ومشروع طريق اللؤلؤ في المحرق (#1364).",
+      "textEnglish": "Economic Transitions: The 1930s Cultured Pearl Shift & Urban Preservation — Analyze how Bahrain's island economy adapted after the 1930s rise of cultured pearls and how UNESCO #1364 preserves Muharraq's social fabric.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.05.intro.5-7",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "ثلاثة أدراج لكنوز حكاية البحرين! — رتّب بطاقة الأسطورة وختم دلمون الدائري وشريط المحرق في الأدراج الثلاثة!",
+      "textArabizi": "Yalla نرتب 3 adraj li-hikayat il-Bahrain! — Rattib bitaqat il-ustura wa khatm Dilmun wa sharit il-Muharraq!",
+      "textEnglish": "Three Treasure Drawers for Bahrain's Story! — Sort the storybook fish/poem card, the round ancient stamp, and the Muharraq ribbon into the 3 treasure drawers!",
+      "register": "child-friendly",
+      "ageTier": "5-7",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "phoneticGuideAges5To7": "Uses transparent phonetic Latin letters without 3/7/5 numeral substitutions (e.g. Yalla niktishif il-lulu)."
+    },
+    {
+      "id": "quest.bh.05.intro.8-10",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "التمييز بين الأسطورة والآثار والتراث الحي — أكمل معجم الكلمات البحرينية الست وصنّف ست بطاقات بين الأسطورة ودلمون البرونزية والمحرق الحديثة.",
+      "textArabizi": "Tamyiz il-Ustura wal-Athar wal-Turath il-7ayy — Akmil 6 kalimat Bahrainiya wa sannif بطاقات الصندوق.",
+      "textEnglish": "Separating Myth, Archaeology & Living Tradition — Complete the 6-word Bahraini glossary and sort six cards into Myth, Bronze Age Dilmun, and Modern Muharraq.",
+      "register": "child-friendly",
+      "ageTier": "8-10",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "quest.bh.05.intro.11-13",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "«البحرين»: عيون الكوكب العذبة وأختام دلمون وطريق اللؤلؤ — اشرح كيف أسهمت عيون الماء العذب البحرية (الكوكب) في ازدهار الاستيطان الحقيقي في قلعة البحرين وفي إلهام الشعر الرافديني القديم.",
+      "textArabizi": "Il-Bahrayn: 3uyun il-Kawkab wa Akhtam Dilmun — Ishrah dawr 3uyun il-kawkab fil-tarikh wal-shi3r il-qadim.",
+      "textEnglish": "Al-Bahrain (\"The Two Seas\"): Kawkab Springs, Seals & Pearls — Explain how submarine freshwater springs (kawkab) shaped both real island settlement at Qal'at al-Bahrain and ancient Mesopotamian poetry.",
+      "register": "educational",
+      "ageTier": "11-13",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    },
+    {
+      "id": "quest.bh.05.intro.14-17",
+      "countryId": "bh",
+      "language": "ar",
+      "dialectVariant": "ar-BH",
+      "scriptVariant": "Arab",
+      "textArabic": "التركيب التاريخي النقدي: قلعة البحرين (#1192) وطريق اللؤلؤ (#1364) والأساطير المسمارية — صمّم معرض جواز السفر الرقمي للبحرين مع توثيق المصادر والحدود الزمنية الدقيقة عبر ٤٣٠٠ عام.",
+      "textArabizi": "Tarkib Tarikhi Naqdi: UNESCO #1192, #1364, wa Asatir Gilgamesh — Sammim ma3rad Jawaz il-Safar lil-Bahrain ma3 tawthiq il-masadir.",
+      "textEnglish": "Historiographical Synthesis: UNESCO #1192, UNESCO #1364 & Cuneiform Mythography — Curate the complete Bahrain digital Passport exhibit with full source citations and chronological boundaries across 4,300 years.",
+      "register": "educational",
+      "ageTier": "14-17",
+      "sourceIds": [
+        "SRC-V16-GULF-MYTHIC-ANCHORS-001"
+      ],
+      "reviewStatus": "approved",
+      "arabiziNumeralNoteAges11To17": "Supports optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) with explicit phonetic explanation."
+    }
+  ]
+}

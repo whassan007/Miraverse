@@ -1,0 +1,42 @@
+[
+  {
+    "agentId": "CODEX-01",
+    "backend": "codex",
+    "model": "default (codex-cli)",
+    "reasoningEffort": "medium",
+    "task": "Integration and persistence specification",
+    "status": "COMPLETED",
+    "worktree": "/home/wael/Code/mv-wt-ml/CODEX-01",
+    "startTime": "2026-11-04T18:34:40.254Z",
+    "endTime": "2026-11-04T18:35:52.903Z",
+    "filesChanged": [
+      "reports/mount-lebanon/CODEX-01.md"
+    ],
+    "testsExecuted": [],
+    "evidencePaths": [
+      "reports/mount-lebanon/CODEX-01.md"
+    ],
+    "estimatedPaidTokens": 1751,
+    "blockers": []
+  },
+  {
+    "agentId": "CLAUDE-01",
+    "backend": "claude",
+    "model": "sonnet",
+    "reasoningEffort": "medium",
+    "task": "Architecture and acceptance review",
+    "status": "COMPLETED",
+    "worktree": "/home/wael/Code/mv-wt-ml/CLAUDE-01",
+    "startTime": "2026-11-04T18:34:40.254Z",
+    "endTime": "2026-11-04T18:35:52.903Z",
+    "filesChanged": [
+      "reports/mount-lebanon/CLAUDE-01.md"
+    ],
+    "testsExecuted": [],
+    "evidencePaths": [
+      "reports/mount-lebanon/CLAUDE-01.md"
+    ],
+    "estimatedPaidTokens": 2795,
+    "blockers": []
+  }
+]

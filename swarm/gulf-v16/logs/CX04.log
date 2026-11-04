@@ -1,0 +1,17 @@
+=== AGENT CX04 (CODEX · W0) ===
+Timestamp: 2026-11-04T18:41:41.999Z
+Title: Bedrock Game Integrator: behavior/resource packs, actual placed worlds, quests, packaging, language capability test & Arabizi fallback
+Resolved Model: gpt-6-astra
+Runtime Environment: Codex Bedrock Integrator (Node v22.22.3 + tsc)
+Branch: gulf-v16/CX04
+Worktree: /home/wael/Code/mv-wt-gulf16/CX04
+Agent Commit SHA: 44a178b
+Owned Paths: apps/minecraft/scripts/gulf-v16/, apps/minecraft/world/gulf-v16/, apps/minecraft/structures/gulf-v16/
+Modified Files (14): apps/minecraft/scripts/gulf-v16/index.ts, apps/minecraft/structures/gulf-v16/ae_heritage_zone.mcstructure, apps/minecraft/structures/gulf-v16/bh_heritage_zone.mcstructure, apps/minecraft/structures/gulf-v16/kw_heritage_zone.mcstructure, apps/minecraft/structures/gulf-v16/om_heritage_zone.mcstructure, apps/minecraft/structures/gulf-v16/qa_heritage_zone.mcstructure, apps/minecraft/structures/gulf-v16/sa_heritage_zone.mcstructure, apps/minecraft/world/gulf-v16/AE-world-zone.json, apps/minecraft/world/gulf-v16/BH-world-zone.json, apps/minecraft/world/gulf-v16/KW-world-zone.json, apps/minecraft/world/gulf-v16/OM-world-zone.json, apps/minecraft/world/gulf-v16/QA-world-zone.json, apps/minecraft/world/gulf-v16/SA-world-zone.json, apps/minecraft/world/gulf-v16/capability-test-zone.json
+Test Command: npx tsc --noEmit apps/minecraft/scripts/gulf-v16/index.ts
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/scripts/gulf-v16/index.ts, apps/minecraft/world/gulf-v16/capability-test-zone.json, apps/minecraft/structures/gulf-v16/qa_heritage_zone.mcstructure
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE CX04 44a178b apps/minecraft/scripts/gulf-v16/index.ts

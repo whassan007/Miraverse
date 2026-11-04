@@ -1,0 +1,85 @@
+{
+  "locationId": "cairo",
+  "countryId": "EG",
+  "displayName": "Cairo",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N30_00_E031_00_DEM/Copernicus_DSM_COG_10_N30_00_E031_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    31.21,
+    30.01,
+    31.29,
+    30.075
+  ],
+  "regionalBoundingBox": [
+    31.1,
+    29.95,
+    31.38,
+    30.15
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32636",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    13.5,
+    209.08
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 35.566,
+    "metersPerStudZ": 32.2103,
+    "studsPerMeter": 0.02812
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 9.3133,
+    "verticalExaggeration": 1.15,
+    "robloxYRangeStuds": [
+      4.0,
+      28.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      1600,
+      10,
+      0
+    ],
+    "robloxSpawn": [
+      1600,
+      10.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        1460,
+        -20,
+        -165
+      ],
+      "max": [
+        1740,
+        85,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      332027.65,
+      3324784.57
+    ]
+  },
+  "terrainChecksum": "720fee0a39083e3c41f47ada872ebb4fdb281a857339e4cb11f5f3782f6bdc98",
+  "generatedAssetPaths": [
+    "data/geography/processed/cairo.json",
+    "apps/roblox/terrain/countries/EG/cairo_terrain.json",
+    "reports/terrain/heightmaps/cairo_heightmap.png",
+    "apps/roblox/terrain/countries/EG/cairo_heightmap.png",
+    "reports/terrain/hillshades/cairo_hillshade.png",
+    "reports/terrain/comparisons/cairo_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/EG.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:27.178031+00:00"
+}

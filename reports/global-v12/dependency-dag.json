@@ -1,0 +1,18 @@
+{
+  "kind": "wave-gates-not-a-replacement-for-exact-agent-roster",
+  "nodes": [
+    {"id":"inputs", "requires":[], "gate":"Exact v1.2 roster; inline catalog preserved and validated; research located"},
+    {"id":"baseline", "requires":[], "gate":"Active entry points, baseline tests, artifacts and source hashes"},
+    {"id":"foundation", "requires":["inputs","baseline"], "gate":"27 countries, 162 exact chapters, 648 substantive overlays; migration and compiler validation"},
+    {"id":"lebanon", "requires":["foundation"], "gate":"Six chapters and four ages wired into both native adapters"},
+    {"id":"checkpoint-2", "requires":["lebanon"], "gate":"Reviewed art, native Studio/Bedrock gameplay, real world export and English/French/Lebanese Arabic rendering evidence"},
+    {"id":"existing-ten", "requires":["checkpoint-2"], "gate":"Preserve progress; complete remaining existing destinations"},
+    {"id":"new-sixteen", "requires":["existing-ten"], "gate":"Complete countries through art, mechanics, localization and native tests"},
+    {"id":"checkpoint-4", "requires":["new-sixteen"], "gate":"Independent country/platform evidence, no empty destinations"},
+    {"id":"integration", "requires":["checkpoint-4"], "gate":"Global native matrices, performance, rights, cultural and locale approvals"},
+    {"id":"checkpoint-5", "requires":["integration"], "gate":"Release candidate hashes and honest readiness report"},
+    {"id":"release", "requires":["checkpoint-5"], "gate":"Explicit human publishing approval"}
+  ],
+  "agentDag": null,
+  "agentDagBlocker": "Exact MIRAVERSE_V12_50_AGENT_CROSS_PLATFORM_ROSTER.json unavailable; do not invent dependencies or ownership."
+}

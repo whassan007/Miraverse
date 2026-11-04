@@ -1,0 +1,21 @@
+{
+  "viewports": [
+    "390x844",
+    "768x1024",
+    "1440x900",
+    "1920x1080"
+  ],
+  "countries": [
+    "QA",
+    "AE",
+    "KW",
+    "SA",
+    "OM",
+    "BH"
+  ],
+  "scriptModes": [
+    "Arab",
+    "Latn",
+    "en"
+  ]
+}

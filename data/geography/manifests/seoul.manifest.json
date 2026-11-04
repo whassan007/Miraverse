@@ -1,0 +1,85 @@
+{
+  "locationId": "seoul",
+  "countryId": "KR",
+  "displayName": "Seoul",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N37_00_E126_00_DEM/Copernicus_DSM_COG_10_N37_00_E126_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    126.935,
+    37.515,
+    127.02,
+    37.605
+  ],
+  "regionalBoundingBox": [
+    126.88,
+    37.48,
+    127.08,
+    37.67
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32652",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    3.0,
+    315.37
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 35.1061,
+    "metersPerStudZ": 57.7936,
+    "studsPerMeter": 0.02849
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 6.7907,
+    "verticalExaggeration": 1.2,
+    "robloxYRangeStuds": [
+      8.0,
+      56.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      3200,
+      14,
+      280
+    ],
+    "robloxSpawn": [
+      3200,
+      14.5,
+      308
+    ],
+    "spatialBounds": {
+      "min": [
+        3060,
+        -15,
+        185
+      ],
+      "max": [
+        3340,
+        105,
+        390
+      ]
+    },
+    "projectedCenterMeters": [
+      321424.29,
+      4159640.64
+    ]
+  },
+  "terrainChecksum": "2a4db6ade4b21f99e67ab215b2c46b2f85fff9d27626693205e3ef422e765362",
+  "generatedAssetPaths": [
+    "data/geography/processed/seoul.json",
+    "apps/roblox/terrain/countries/KR/seoul_terrain.json",
+    "reports/terrain/heightmaps/seoul_heightmap.png",
+    "apps/roblox/terrain/countries/KR/seoul_heightmap.png",
+    "reports/terrain/hillshades/seoul_hillshade.png",
+    "reports/terrain/comparisons/seoul_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/KR.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:28.968451+00:00"
+}

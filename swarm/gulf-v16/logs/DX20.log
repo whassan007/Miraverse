@@ -1,0 +1,17 @@
+=== AGENT DX20 (DGX SPARK · W5) ===
+Timestamp: 2026-11-04T18:46:13.021Z
+Title: Evidence/Release Manifest: checksums, build IDs, source licensing, platform verification matrix
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: DGX Spark Local LLM (qwen/qwen3-coder-next)
+Branch: gulf-v16/DX20
+Worktree: /home/wael/Code/mv-wt-gulf16/DX20
+Agent Commit SHA: b90fa3d
+Owned Paths: reports/gulf-v16/manifest/
+Modified Files (1): reports/gulf-v16/manifest/EVIDENCE_AND_RELEASE_MANIFEST.json
+Test Command: test -f reports/gulf-v16/manifest/EVIDENCE_AND_RELEASE_MANIFEST.json
+Test Exit Code: 0
+Evidence Paths: reports/gulf-v16/manifest/EVIDENCE_AND_RELEASE_MANIFEST.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE DX20 b90fa3d reports/gulf-v16/manifest/EVIDENCE_AND_RELEASE_MANIFEST.json

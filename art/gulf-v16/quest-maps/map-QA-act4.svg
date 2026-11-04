@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700" role="img" aria-label="Act 4: The Fisaikra Story Circle">
+  <rect width="1200" height="700" fill="#0B1325"/>
+  <rect x="24" y="24" width="1152" height="652" rx="22" fill="#161F33" stroke="#E2C07D" stroke-width="3"/>
+  <path d="M80 520 Q360 390 640 470 T1120 380" fill="none" stroke="#0E7490" stroke-width="28" opacity="0.25"/>
+  <polyline points="320,426 520,358 680,392 820,325 960,266" fill="none" stroke="#E2C07D" stroke-width="5" stroke-dasharray="12 8"/>
+  <g transform="translate(320,426)">
+        <circle r="28" fill="#E2C07D" opacity="0.18"/>
+        <circle r="22" fill="#8A1538" stroke="#FFF8EE" stroke-width="3"/>
+        <text y="6" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="16" font-weight="bold">1</text>
+        <rect x="-95" y="32" width="190" height="30" rx="8" fill="#0F172A" stroke="#E2C07D" stroke-width="1.5"/>
+        <text y="52" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="12" font-weight="bold">The Boatwright&apos;s Ledger</text>
+      </g>
+<g transform="translate(520,358)">
+        <circle r="28" fill="#E2C07D" opacity="0.18"/>
+        <circle r="22" fill="#8A1538" stroke="#FFF8EE" stroke-width="3"/>
+        <text y="6" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="16" font-weight="bold">2</text>
+        <rect x="-95" y="32" width="190" height="30" rx="8" fill="#0F172A" stroke="#E2C07D" stroke-width="1.5"/>
+        <text y="52" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="12" font-weight="bold">The Pearl Market</text>
+      </g>
+<g transform="translate(680,392)">
+        <circle r="28" fill="#E2C07D" opacity="0.18"/>
+        <circle r="22" fill="#8A1538" stroke="#FFF8EE" stroke-width="3"/>
+        <text y="6" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="16" font-weight="bold">3</text>
+        <rect x="-95" y="32" width="190" height="30" rx="8" fill="#0F172A" stroke="#E2C07D" stroke-width="1.5"/>
+        <text y="52" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="12" font-weight="bold">Restore the Harbor Workshop</text>
+      </g>
+<g transform="translate(820,325)">
+        <circle r="36" fill="#E2C07D" opacity="0.45"/>
+        <circle r="30" fill="#E2C07D" stroke="#FFF8EE" stroke-width="3"/>
+        <text y="6" text-anchor="middle" fill="#0F172A" font-family="sans-serif" font-size="16" font-weight="bold">4</text>
+        <rect x="-95" y="40" width="190" height="30" rx="8" fill="#0F172A" stroke="#E2C07D" stroke-width="1.5"/>
+        <text y="60" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="12" font-weight="bold">The Fisaikra Story Circle</text>
+      </g>
+<g transform="translate(960,266)">
+        <circle r="28" fill="#E2C07D" opacity="0.18"/>
+        <circle r="22" fill="#8A1538" stroke="#FFF8EE" stroke-width="3"/>
+        <text y="6" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="16" font-weight="bold">5</text>
+        <rect x="-95" y="32" width="190" height="30" rx="8" fill="#0F172A" stroke="#E2C07D" stroke-width="1.5"/>
+        <text y="52" text-anchor="middle" fill="#FFF8EE" font-family="sans-serif" font-size="12" font-weight="bold">Al Qaffal: Coming Home</text>
+      </g>
+  <rect x="48" y="44" width="1104" height="86" rx="14" fill="#09111E" opacity="0.9" stroke="#E2C07D" stroke-width="1.5"/>
+  <text x="72" y="80" fill="#FFF8EE" font-family="Georgia, serif" font-size="24" font-weight="bold">Act 4: The Fisaikra Story Circle</text>
+  <text x="72" y="112" fill="#E2C07D" font-family="sans-serif" font-size="18">الفصل 4: حلقة حكاية الفسيفكرة · Illustrated Game Quest Map (Not to Geographic Survey Scale)</text>
+  <rect x="48" y="608" width="1104" height="46" rx="10" fill="#09111E" opacity="0.9"/>
+  <text x="72" y="636" fill="#CBD5E1" font-family="sans-serif" font-size="14">Legend: [1] Gather · [2] Trade · [3] Build · [4] Story/Cook · [5] Word &amp; Cultural Finale · Stable ID: quest.qa.04</text>
+</svg>

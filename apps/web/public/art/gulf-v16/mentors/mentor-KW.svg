@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Nakhuda Sulaiman &amp; Bibi Mariam Al-Qana&apos;i (Fictional Mentors)">
+  <rect width="400" height="400" rx="36" fill="#0F172A" stroke="#D97706" stroke-width="6"/>
+  <circle cx="200" cy="175" r="110" fill="#1D4ED8" opacity="0.35"/>
+  <path d="M110 330 Q200 245 290 330 L310 380 L90 380 Z" fill="#1D4ED8" stroke="#D97706" stroke-width="4"/>
+  <circle cx="200" cy="155" r="56" fill="#F3C69F" stroke="#D97706" stroke-width="3"/>
+  <path d="M135 145 Q200 75 265 145" fill="none" stroke="#D97706" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="182" cy="150" r="5" fill="#1E293B"/>
+  <circle cx="218" cy="150" r="5" fill="#1E293B"/>
+  <path d="M184 174 Q200 186 216 174" fill="none" stroke="#7C2D12" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="24" y="318" width="352" height="62" rx="12" fill="#09111E" opacity="0.92" stroke="#D97706" stroke-width="2"/>
+  <text x="200" y="344" text-anchor="middle" fill="#FFF8EE" font-family="Georgia, serif" font-size="15" font-weight="bold">Nakhuda Sulaiman &amp; Bibi Mariam Al-Qana&apos;i (Fictional Mentors)</text>
+  <text x="200" y="368" text-anchor="middle" fill="#D97706" font-family="sans-serif" font-size="13">النوخذة سليمان وبيبي مريم القناعي (مرشدان خياليان) · KW</text>
+</svg>

@@ -1,0 +1,17 @@
+=== AGENT GM13 (GEMINI · W4) ===
+Timestamp: 2026-11-04T18:45:23.202Z
+Title: Bahrain Environment: separate UNESCO Qal'at al-Bahrain Dilmun archaeology and later Muharraq pearling district
+Resolved Model: Gemini 4 Argon
+Runtime Environment: Antigravity Environment Artist (Gemini 4 Argon)
+Branch: gulf-v16/GM13
+Worktree: /home/wael/Code/mv-wt-gulf16/GM13
+Agent Commit SHA: 599e13b
+Owned Paths: art/gulf-v16/countries/BH/environment/, apps/web/public/art/gulf-v16/countries/BH/environment/
+Modified Files (2): apps/web/public/art/gulf-v16/countries/BH/environment/key-art-BH.svg, art/gulf-v16/countries/BH/environment/key-art-BH.svg
+Test Command: test -f apps/web/public/art/gulf-v16/countries/BH/environment/key-art-BH.svg
+Test Exit Code: 0
+Evidence Paths: apps/web/public/art/gulf-v16/countries/BH/environment/key-art-BH.svg
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE GM13 599e13b apps/web/public/art/gulf-v16/countries/BH/environment/key-art-BH.svg

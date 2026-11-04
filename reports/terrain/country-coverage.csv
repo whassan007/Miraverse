@@ -1,0 +1,12 @@
+countryId,countryName,locationCount,locations,primaryCRS,minElevationMeters,maxElevationMeters,waterFeatures,geographicSetting,status
+LB,Lebanon,3,byblos;mount_lebanon;beirut,EPSG:32636,-12.0,2173.0,Mediterranean Sea (Eastern Levantine Basin); Afqa Spring & Nahr Ibrahim (Adonis River Gorge); Mediterranean Sea (Ras Beirut / Raouche Sea Cliffs & St. George Bay),real_geography,VERIFIED
+EG,Egypt,3,cairo;alexandria;aswan,EPSG:32636,-386.0,237.0,Nile River & Gezira Island Channel; Mediterranean Sea (Eastern Harbor / Qaitbay Spit & Lake Mariout); Nile River First Cataract & Elephantine Island,real_geography,VERIFIED
+IQ,Iraq,3,baghdad;erbil;basra,EPSG:32638,-22.0,595.0,Tigris River (Dijlah) Meander; Seasonal Chai Streams & Upland Pediment; Shatt al-Arab Waterway & Ashar Creek,real_geography,VERIFIED
+KR,South Korea,3,jeonju;seoul;busan,EPSG:32652,-93.0,511.61,Jeonjucheon Stream; Han River (Hangang) & Cheonggyecheon Basin; Busan Harbor & Korea Strait,real_geography,VERIFIED
+FR,France,3,lyon;paris;marseille,EPSG:32631,-2.25,317.29,Rhône and Saône River Confluence (Presqu'île); Seine River & Île de la Cité; Mediterranean Sea (Gulf of Lion & Vieux-Port Inlet),real_geography,VERIFIED
+DE,Germany,1,rhine_valley,EPSG:32632,66.81,426.03,Rhine River (Mittelrhein) Gorge Bend at Lorelei,literary_inspired_real_geography,VERIFIED
+CN,China,1,wuling_valley,EPSG:32649,30.3,195.0,Yuan River Tributary & Taohua Stream,literary_inspired_real_geography,VERIFIED
+JP,Japan,1,tohoku_waystation,EPSG:32654,116.0,980.0,Tachiya River Mountain Crossing,literary_inspired_real_geography,VERIFIED
+RU,Russia,1,lake_svetloyar,EPSG:32638,101.0,147.0,Lake Svetloyar Oval Basin & Lyunda Tributary,literary_inspired_real_geography,VERIFIED
+UA,Ukraine,1,kyiv_hills,EPSG:32636,88.0,211.0,Dnipro River & Trukhaniv Island Channel,real_geography,VERIFIED
+MA,Morocco,1,marrakesh_atlas,EPSG:32629,416.0,2177.0,Oued Tensift / Ourika Piedmont & Khettara Oasis Channels,real_geography,VERIFIED

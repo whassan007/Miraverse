@@ -1,0 +1,17 @@
+=== AGENT CX01 (CODEX · W0) ===
+Timestamp: 2026-11-04T18:42:13.416Z
+Title: Website/Atlas Integrator: routes, 6 interactive pages, art assets, map coordinates versus quest map, LTR/RTL & Arabizi
+Resolved Model: gpt-6-astra
+Runtime Environment: Codex Website/Atlas Integrator (Node v22.22.3)
+Branch: gulf-v16/CX01
+Worktree: /home/wael/Code/mv-wt-gulf16/CX01
+Agent Commit SHA: 978288b
+Owned Paths: apps/web/src/features/gulf-atlas-v16/
+Modified Files (1): apps/web/src/features/gulf-atlas-v16/GulfExpansionSectionV16.tsx
+Test Command: node -e "const fs=require('fs'); const c=fs.readFileSync('./apps/web/src/features/gulf-atlas-v16/GulfExpansionSectionV16.tsx','utf8'); if(!c.includes('عالم يرا') || !c.includes('gulf-script-btn-')) process.exit(1);"
+Test Exit Code: 0
+Evidence Paths: apps/web/src/features/gulf-atlas-v16/GulfExpansionSectionV16.tsx
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE CX01 978288b apps/web/src/features/gulf-atlas-v16/GulfExpansionSectionV16.tsx

@@ -1,0 +1,1916 @@
+{
+  "version": "1.6.0",
+  "directive": "MiraVerse v1.6 — Arabian Peninsula and Gulf Diaspora Expansion (Website + Roblox + Minecraft Bedrock)",
+  "source_document": "Mythic Anchors in the Diaspora: How Cultural Quests and Legends Shape Transnational Identity — Section: The Arabian Peninsula and the Gulf: Desert Epics, Pearl Divers, and the Ancient Sea",
+  "mandatory_countries": [
+    "QA",
+    "AE",
+    "KW",
+    "SA",
+    "OM"
+  ],
+  "sixth_added_country": "BH",
+  "future_unreleased_candidates": [
+    "YE"
+  ],
+  "gulf_country_sequence": [
+    "QA",
+    "AE",
+    "KW",
+    "SA",
+    "OM",
+    "BH"
+  ],
+  "stable_country_ids": [
+    "country.qa",
+    "country.ae",
+    "country.kw",
+    "country.sa",
+    "country.om",
+    "country.bh"
+  ],
+  "age_tiers": [
+    "5-7",
+    "8-10",
+    "11-13",
+    "14-17"
+  ],
+  "supported_dialects": [
+    "ar-QA",
+    "ar-AE",
+    "ar-KW",
+    "ar-SA",
+    "ar-OM",
+    "ar-BH"
+  ],
+  "supported_scripts": [
+    "Arab",
+    "Latn"
+  ],
+  "integration_branch": "integration/gulf-v16",
+  "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+  "created_at": "2026-11-04T13:44:52.406Z",
+  "counts": {
+    "total": 50,
+    "gemini": 20,
+    "dgx": 20,
+    "claude": 5,
+    "codex": 5
+  },
+  "dgx_concurrency_limit": 1,
+  "agents": [
+    {
+      "id": "GM01",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W1",
+      "title": "Gulf Art Director: shared game-visual system, environment art bible, reference validity, art approval gates",
+      "depends_on": [
+        "CL01",
+        "CL04"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/direction/",
+        "apps/web/public/art/gulf-v16/direction/"
+      ],
+      "branch": "gulf-v16/GM01",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM01",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "5030731",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Creative Direction (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/direction/gulf-palette.json",
+        "art/gulf-v16/direction/GULF_ART_BIBLE.md"
+      ],
+      "evidence_paths": [
+        "art/gulf-v16/direction/GULF_ART_BIBLE.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM01.log"
+    },
+    {
+      "id": "GM02",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W1",
+      "title": "Regional Atlas Creative Lead: illustrated Gulf portal, geographic vs fantasy distinctions, atlas layouts",
+      "depends_on": [
+        "GM01",
+        "CL01"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/atlas/",
+        "apps/web/public/art/gulf-v16/atlas/"
+      ],
+      "branch": "gulf-v16/GM02",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM02",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "499b4d5",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Atlas Creative Lead (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/atlas/gulf-region-portal.svg",
+        "art/gulf-v16/atlas/gulf-region-portal.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/atlas/gulf-region-portal.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM02.log"
+    },
+    {
+      "id": "GM03",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W1",
+      "title": "Qatar Environment: Doha coastal heritage & Al Zubarah-inspired learning area, original approved key art, 5 visual scene briefs",
+      "depends_on": [
+        "GM01",
+        "DX03"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/countries/QA/environment/",
+        "apps/web/public/art/gulf-v16/countries/QA/environment/"
+      ],
+      "branch": "gulf-v16/GM03",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM03",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "c0faf65",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Environment Artist (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/countries/QA/environment/key-art-QA.svg",
+        "art/gulf-v16/countries/QA/environment/key-art-QA.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/countries/QA/environment/key-art-QA.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM03.log"
+    },
+    {
+      "id": "GM04",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W1",
+      "title": "Qatar Quests: 5-act scripts, NPC visual sheets, age-tailored storyboard, map",
+      "depends_on": [
+        "GM01",
+        "GM03",
+        "DX03"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/quests/QA/",
+        "art/gulf-v16/countries/QA/quests/"
+      ],
+      "branch": "gulf-v16/GM04",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM04",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "fa12c23",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Quest Narrative Designer (Gemini 4 Argon)",
+      "modified_files": [
+        "art/gulf-v16/countries/QA/quests/storyboard-QA.md",
+        "content/gulf-v16/quests/QA/quests-QA.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/quests/QA/quests-QA.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM04.log"
+    },
+    {
+      "id": "GM05",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W2",
+      "title": "UAE Environment: coastal quarter and Al Ain-type oasis, verified reference art, 5 scenes",
+      "depends_on": [
+        "GM01",
+        "DX04"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/countries/AE/environment/",
+        "apps/web/public/art/gulf-v16/countries/AE/environment/"
+      ],
+      "branch": "gulf-v16/GM05",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM05",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "c7997ce",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Environment Artist (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/countries/AE/environment/key-art-AE.svg",
+        "art/gulf-v16/countries/AE/environment/key-art-AE.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/countries/AE/environment/key-art-AE.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM05.log"
+    },
+    {
+      "id": "GM06",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W2",
+      "title": "UAE Quests: 5 acts, wind-tower/oasis engineering storyboards and objects",
+      "depends_on": [
+        "GM01",
+        "GM05",
+        "DX04"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/quests/AE/",
+        "art/gulf-v16/countries/AE/quests/"
+      ],
+      "branch": "gulf-v16/GM06",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM06",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "5d21e9c",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Quest Narrative Designer (Gemini 4 Argon)",
+      "modified_files": [
+        "art/gulf-v16/countries/AE/quests/storyboard-AE.md",
+        "content/gulf-v16/quests/AE/quests-AE.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/quests/AE/quests-AE.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM06.log"
+    },
+    {
+      "id": "GM07",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Kuwait Environment: old Kuwait City maritime quarter, trading alleys & dhows, original art, historically scoped props",
+      "depends_on": [
+        "GM01",
+        "DX05"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/countries/KW/environment/",
+        "apps/web/public/art/gulf-v16/countries/KW/environment/"
+      ],
+      "branch": "gulf-v16/GM07",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM07",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "05a59ef",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Environment Artist (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/countries/KW/environment/key-art-KW.svg",
+        "art/gulf-v16/countries/KW/environment/key-art-KW.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/countries/KW/environment/key-art-KW.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM07.log"
+    },
+    {
+      "id": "GM08",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Kuwait Quests: 5 acts, optional gentle Bu Darya interpretation for ages 5–10, accessibility",
+      "depends_on": [
+        "GM01",
+        "GM07",
+        "DX05"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/quests/KW/",
+        "art/gulf-v16/countries/KW/quests/"
+      ],
+      "branch": "gulf-v16/GM08",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM08",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "2c42bcd",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Quest Narrative Designer (Gemini 4 Argon)",
+      "modified_files": [
+        "art/gulf-v16/countries/KW/quests/storyboard-KW.md",
+        "content/gulf-v16/quests/KW/quests-KW.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/quests/KW/quests-KW.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM08.log"
+    },
+    {
+      "id": "GM09",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Saudi Environment: regionally scoped Najd/interior caravan and poetry courtyard art, no generic conflation",
+      "depends_on": [
+        "GM01",
+        "DX06"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/countries/SA/environment/",
+        "apps/web/public/art/gulf-v16/countries/SA/environment/"
+      ],
+      "branch": "gulf-v16/GM09",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM09",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "d8c9c62",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Environment Artist (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/countries/SA/environment/key-art-SA.svg",
+        "art/gulf-v16/countries/SA/environment/key-art-SA.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/countries/SA/environment/key-art-SA.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM09.log"
+    },
+    {
+      "id": "GM10",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W3",
+      "title": "Saudi Quests: 5 acts based on reviewed Antarah literary frame, story/dialogue without combat or reenacted slavery",
+      "depends_on": [
+        "GM01",
+        "GM09",
+        "DX06"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/quests/SA/",
+        "art/gulf-v16/countries/SA/quests/"
+      ],
+      "branch": "gulf-v16/GM10",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM10",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "f1d255e",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Quest Narrative Designer (Gemini 4 Argon)",
+      "modified_files": [
+        "art/gulf-v16/countries/SA/quests/storyboard-SA.md",
+        "content/gulf-v16/quests/SA/quests-SA.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/quests/SA/quests-SA.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM10.log"
+    },
+    {
+      "id": "GM11",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W4",
+      "title": "Oman Environment: UNESCO aflaj landscape, mountain oasis, frankincense route art",
+      "depends_on": [
+        "GM01",
+        "DX07"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/countries/OM/environment/",
+        "apps/web/public/art/gulf-v16/countries/OM/environment/"
+      ],
+      "branch": "gulf-v16/GM11",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM11",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "9586758",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Environment Artist (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/countries/OM/environment/key-art-OM.svg",
+        "art/gulf-v16/countries/OM/environment/key-art-OM.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/countries/OM/environment/key-art-OM.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM11.log"
+    },
+    {
+      "id": "GM12",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W4",
+      "title": "Oman Quests: 5 acts, functional irrigation/block interactions, storyboard",
+      "depends_on": [
+        "GM01",
+        "GM11",
+        "DX07"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/quests/OM/",
+        "art/gulf-v16/countries/OM/quests/"
+      ],
+      "branch": "gulf-v16/GM12",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM12",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "9fa9149",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Quest Narrative Designer (Gemini 4 Argon)",
+      "modified_files": [
+        "art/gulf-v16/countries/OM/quests/storyboard-OM.md",
+        "content/gulf-v16/quests/OM/quests-OM.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/quests/OM/quests-OM.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM12.log"
+    },
+    {
+      "id": "GM13",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W4",
+      "title": "Bahrain Environment: separate UNESCO Qal'at al-Bahrain Dilmun archaeology and later Muharraq pearling district",
+      "depends_on": [
+        "GM01",
+        "DX08"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/countries/BH/environment/",
+        "apps/web/public/art/gulf-v16/countries/BH/environment/"
+      ],
+      "branch": "gulf-v16/GM13",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM13",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "599e13b",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Environment Artist (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/countries/BH/environment/key-art-BH.svg",
+        "art/gulf-v16/countries/BH/environment/key-art-BH.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/countries/BH/environment/key-art-BH.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM13.log"
+    },
+    {
+      "id": "GM14",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W4",
+      "title": "Bahrain Quests: 5 acts, artifact stratigraphy, evidence-versus-myth UI",
+      "depends_on": [
+        "GM01",
+        "GM13",
+        "DX08"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/quests/BH/",
+        "art/gulf-v16/countries/BH/quests/"
+      ],
+      "branch": "gulf-v16/GM14",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM14",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "bb2f1d2",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Quest Narrative Designer (Gemini 4 Argon)",
+      "modified_files": [
+        "art/gulf-v16/countries/BH/quests/storyboard-BH.md",
+        "content/gulf-v16/quests/BH/quests-BH.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/quests/BH/quests-BH.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM14.log"
+    },
+    {
+      "id": "GM15",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W1",
+      "title": "Cross-Country NPC Character Lead: 6 fictional Gulf mentors, safe/consistent character silhouettes, expressions",
+      "depends_on": [
+        "GM01"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/mentors/",
+        "apps/web/public/art/gulf-v16/mentors/"
+      ],
+      "branch": "gulf-v16/GM15",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM15",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "5c74c6c",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Character Lead (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/mentors/mentor-AE.svg",
+        "apps/web/public/art/gulf-v16/mentors/mentor-BH.svg",
+        "apps/web/public/art/gulf-v16/mentors/mentor-KW.svg",
+        "apps/web/public/art/gulf-v16/mentors/mentor-OM.svg",
+        "apps/web/public/art/gulf-v16/mentors/mentor-QA.svg",
+        "apps/web/public/art/gulf-v16/mentors/mentor-SA.svg",
+        "art/gulf-v16/mentors/mentor-AE.svg",
+        "art/gulf-v16/mentors/mentor-BH.svg",
+        "art/gulf-v16/mentors/mentor-KW.svg",
+        "art/gulf-v16/mentors/mentor-OM.svg",
+        "art/gulf-v16/mentors/mentor-QA.svg",
+        "art/gulf-v16/mentors/mentor-SA.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/mentors/mentor-QA.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM15.log"
+    },
+    {
+      "id": "GM16",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W1",
+      "title": "Gulf Quest Map Illustrator: 30 quest maps with navigable markers and accessible legend",
+      "depends_on": [
+        "GM01",
+        "GM02"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/quest-maps/",
+        "apps/web/public/art/gulf-v16/quest-maps/"
+      ],
+      "branch": "gulf-v16/GM16",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM16",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "db179f8",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Quest Map Illustrator (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/quest-maps/map-AE-act1.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-AE-act2.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-AE-act3.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-AE-act4.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-AE-act5.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-AE-overview.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-BH-act1.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-BH-act2.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-BH-act3.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-BH-act4.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-BH-act5.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-BH-overview.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-KW-act1.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-KW-act2.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-KW-act3.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-KW-act4.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-KW-act5.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-KW-overview.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-OM-act1.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-OM-act2.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-OM-act3.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-OM-act4.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-OM-act5.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-OM-overview.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-QA-act1.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-QA-act2.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-QA-act3.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-QA-act4.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-QA-act5.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-QA-overview.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-SA-act1.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-SA-act2.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-SA-act3.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-SA-act4.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-SA-act5.svg",
+        "apps/web/public/art/gulf-v16/quest-maps/map-SA-overview.svg",
+        "art/gulf-v16/quest-maps/map-AE-act1.svg",
+        "art/gulf-v16/quest-maps/map-AE-act2.svg",
+        "art/gulf-v16/quest-maps/map-AE-act3.svg",
+        "art/gulf-v16/quest-maps/map-AE-act4.svg",
+        "art/gulf-v16/quest-maps/map-AE-act5.svg",
+        "art/gulf-v16/quest-maps/map-AE-overview.svg",
+        "art/gulf-v16/quest-maps/map-BH-act1.svg",
+        "art/gulf-v16/quest-maps/map-BH-act2.svg",
+        "art/gulf-v16/quest-maps/map-BH-act3.svg",
+        "art/gulf-v16/quest-maps/map-BH-act4.svg",
+        "art/gulf-v16/quest-maps/map-BH-act5.svg",
+        "art/gulf-v16/quest-maps/map-BH-overview.svg",
+        "art/gulf-v16/quest-maps/map-KW-act1.svg",
+        "art/gulf-v16/quest-maps/map-KW-act2.svg",
+        "art/gulf-v16/quest-maps/map-KW-act3.svg",
+        "art/gulf-v16/quest-maps/map-KW-act4.svg",
+        "art/gulf-v16/quest-maps/map-KW-act5.svg",
+        "art/gulf-v16/quest-maps/map-KW-overview.svg",
+        "art/gulf-v16/quest-maps/map-OM-act1.svg",
+        "art/gulf-v16/quest-maps/map-OM-act2.svg",
+        "art/gulf-v16/quest-maps/map-OM-act3.svg",
+        "art/gulf-v16/quest-maps/map-OM-act4.svg",
+        "art/gulf-v16/quest-maps/map-OM-act5.svg",
+        "art/gulf-v16/quest-maps/map-OM-overview.svg",
+        "art/gulf-v16/quest-maps/map-QA-act1.svg",
+        "art/gulf-v16/quest-maps/map-QA-act2.svg",
+        "art/gulf-v16/quest-maps/map-QA-act3.svg",
+        "art/gulf-v16/quest-maps/map-QA-act4.svg",
+        "art/gulf-v16/quest-maps/map-QA-act5.svg",
+        "art/gulf-v16/quest-maps/map-QA-overview.svg",
+        "art/gulf-v16/quest-maps/map-SA-act1.svg",
+        "art/gulf-v16/quest-maps/map-SA-act2.svg",
+        "art/gulf-v16/quest-maps/map-SA-act3.svg",
+        "art/gulf-v16/quest-maps/map-SA-act4.svg",
+        "art/gulf-v16/quest-maps/map-SA-act5.svg",
+        "art/gulf-v16/quest-maps/map-SA-overview.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/quest-maps/map-QA-act1.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM16.log"
+    },
+    {
+      "id": "GM17",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W1",
+      "title": "Gulf Collectible/Passport Illustrator: 6 stamps, 48+ artifact illustrations, rights manifest",
+      "depends_on": [
+        "GM01"
+      ],
+      "owned_paths": [
+        "art/gulf-v16/artifacts/",
+        "art/gulf-v16/stamps/",
+        "apps/web/public/art/gulf-v16/artifacts/",
+        "apps/web/public/art/gulf-v16/stamps/"
+      ],
+      "branch": "gulf-v16/GM17",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM17",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "404592c",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Collectible & Passport Illustrator (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/public/art/gulf-v16/artifacts/artifact-ae-barjeel-model.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-ae-falaj-marker.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-ae-gypsum-screen.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-ae-kamal-board.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-ae-memory-atlas.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-ae-sambuk-model.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-ae-spice-chest.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-ae-talli-craft.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-bh-bishtakhta-chest.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-bh-conservation-walkway.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-bh-copper-ingot.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-bh-dilmun-seal.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-bh-halwa-kurar.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-bh-kawkab-spring.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-bh-memory-chest.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-bh-stratigraphy-column.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-kw-boom-dhow-model.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-kw-bu-darya-lantern.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-kw-gers-ogaily-tray.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-kw-kandil-oil-jar.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-kw-nahma-songbook.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-kw-qallaf-adzes-set.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-kw-sailor-compass-kit.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-kw-trade-seal-ledger.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-om-bahla-jar.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-om-epistemic-ledger.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-om-frankincense-majmar.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-om-lamad-sundial.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-om-rosewater-vessel.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-om-sarooj-sluice.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-om-sharia-basin.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-om-water-charter.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-qa-boatwright-ledger.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-qa-carved-door.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-qa-fisaikra-charm.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-qa-hospitality-platter.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-qa-mithqal-scales.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-qa-pearl-basket.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-qa-qaffal-banner.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-qa-tasa-sieve.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-sa-caravan-satchel.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-sa-dallah-hearth-set.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-sa-fair-measure-scales.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-sa-muallaqat-scroll.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-sa-najdi-courtyard-arch.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-sa-sadu-tapestry.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-sa-sirat-antar-codex.svg",
+        "apps/web/public/art/gulf-v16/artifacts/artifact-sa-voice-dignity-emblem.svg",
+        "apps/web/public/art/gulf-v16/stamps/stamp-AE.svg",
+        "apps/web/public/art/gulf-v16/stamps/stamp-BH.svg",
+        "apps/web/public/art/gulf-v16/stamps/stamp-KW.svg",
+        "apps/web/public/art/gulf-v16/stamps/stamp-OM.svg",
+        "apps/web/public/art/gulf-v16/stamps/stamp-QA.svg",
+        "apps/web/public/art/gulf-v16/stamps/stamp-SA.svg",
+        "art/gulf-v16/artifacts/artifact-ae-barjeel-model.svg",
+        "art/gulf-v16/artifacts/artifact-ae-falaj-marker.svg",
+        "art/gulf-v16/artifacts/artifact-ae-gypsum-screen.svg",
+        "art/gulf-v16/artifacts/artifact-ae-kamal-board.svg",
+        "art/gulf-v16/artifacts/artifact-ae-memory-atlas.svg",
+        "art/gulf-v16/artifacts/artifact-ae-sambuk-model.svg",
+        "art/gulf-v16/artifacts/artifact-ae-spice-chest.svg",
+        "art/gulf-v16/artifacts/artifact-ae-talli-craft.svg",
+        "art/gulf-v16/artifacts/artifact-bh-bishtakhta-chest.svg",
+        "art/gulf-v16/artifacts/artifact-bh-conservation-walkway.svg",
+        "art/gulf-v16/artifacts/artifact-bh-copper-ingot.svg",
+        "art/gulf-v16/artifacts/artifact-bh-dilmun-seal.svg",
+        "art/gulf-v16/artifacts/artifact-bh-halwa-kurar.svg",
+        "art/gulf-v16/artifacts/artifact-bh-kawkab-spring.svg",
+        "art/gulf-v16/artifacts/artifact-bh-memory-chest.svg",
+        "art/gulf-v16/artifacts/artifact-bh-stratigraphy-column.svg",
+        "art/gulf-v16/artifacts/artifact-kw-boom-dhow-model.svg",
+        "art/gulf-v16/artifacts/artifact-kw-bu-darya-lantern.svg",
+        "art/gulf-v16/artifacts/artifact-kw-gers-ogaily-tray.svg",
+        "art/gulf-v16/artifacts/artifact-kw-kandil-oil-jar.svg",
+        "art/gulf-v16/artifacts/artifact-kw-nahma-songbook.svg",
+        "art/gulf-v16/artifacts/artifact-kw-qallaf-adzes-set.svg",
+        "art/gulf-v16/artifacts/artifact-kw-sailor-compass-kit.svg",
+        "art/gulf-v16/artifacts/artifact-kw-trade-seal-ledger.svg",
+        "art/gulf-v16/artifacts/artifact-om-bahla-jar.svg",
+        "art/gulf-v16/artifacts/artifact-om-epistemic-ledger.svg",
+        "art/gulf-v16/artifacts/artifact-om-frankincense-majmar.svg",
+        "art/gulf-v16/artifacts/artifact-om-lamad-sundial.svg",
+        "art/gulf-v16/artifacts/artifact-om-rosewater-vessel.svg",
+        "art/gulf-v16/artifacts/artifact-om-sarooj-sluice.svg",
+        "art/gulf-v16/artifacts/artifact-om-sharia-basin.svg",
+        "art/gulf-v16/artifacts/artifact-om-water-charter.svg",
+        "art/gulf-v16/artifacts/artifact-qa-boatwright-ledger.svg",
+        "art/gulf-v16/artifacts/artifact-qa-carved-door.svg",
+        "art/gulf-v16/artifacts/artifact-qa-fisaikra-charm.svg",
+        "art/gulf-v16/artifacts/artifact-qa-hospitality-platter.svg",
+        "art/gulf-v16/artifacts/artifact-qa-mithqal-scales.svg",
+        "art/gulf-v16/artifacts/artifact-qa-pearl-basket.svg",
+        "art/gulf-v16/artifacts/artifact-qa-qaffal-banner.svg",
+        "art/gulf-v16/artifacts/artifact-qa-tasa-sieve.svg",
+        "art/gulf-v16/artifacts/artifact-sa-caravan-satchel.svg",
+        "art/gulf-v16/artifacts/artifact-sa-dallah-hearth-set.svg",
+        "art/gulf-v16/artifacts/artifact-sa-fair-measure-scales.svg",
+        "art/gulf-v16/artifacts/artifact-sa-muallaqat-scroll.svg",
+        "art/gulf-v16/artifacts/artifact-sa-najdi-courtyard-arch.svg",
+        "art/gulf-v16/artifacts/artifact-sa-sadu-tapestry.svg",
+        "art/gulf-v16/artifacts/artifact-sa-sirat-antar-codex.svg",
+        "art/gulf-v16/artifacts/artifact-sa-voice-dignity-emblem.svg",
+        "art/gulf-v16/stamps/stamp-AE.svg",
+        "art/gulf-v16/stamps/stamp-BH.svg",
+        "art/gulf-v16/stamps/stamp-KW.svg",
+        "art/gulf-v16/stamps/stamp-OM.svg",
+        "art/gulf-v16/stamps/stamp-QA.svg",
+        "art/gulf-v16/stamps/stamp-SA.svg"
+      ],
+      "evidence_paths": [
+        "apps/web/public/art/gulf-v16/stamps/stamp-QA.svg"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM17.log"
+    },
+    {
+      "id": "GM18",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W1",
+      "title": "Localization UX Design: RTL Arabic and LTR Arabizi/English interactions, عالم يرا / Mira's World branding, mobile/gamepad readability",
+      "depends_on": [
+        "CL04"
+      ],
+      "owned_paths": [
+        "apps/web/src/features/gulf-localization-ux/"
+      ],
+      "branch": "gulf-v16/GM18",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM18",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "ca2dccd",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Localization UX Lead (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/web/src/features/gulf-localization-ux/GulfLocalizationUxSpec.ts"
+      ],
+      "evidence_paths": [
+        "apps/web/src/features/gulf-localization-ux/GulfLocalizationUxSpec.ts"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM18.log"
+    },
+    {
+      "id": "GM19",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W5",
+      "title": "Roblox Environment/Animation Art: engine-compatible meshes, textures, rigs and animations for 6 Gulf worlds",
+      "depends_on": [
+        "GM03",
+        "GM05",
+        "GM07",
+        "GM09",
+        "GM11",
+        "GM13"
+      ],
+      "owned_paths": [
+        "apps/roblox/assets/gulf-v16/"
+      ],
+      "branch": "gulf-v16/GM19",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM19",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "6e0a141",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Roblox Environment/Animation Artist (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/roblox/assets/gulf-v16/roblox-gulf-meshes-manifest.json"
+      ],
+      "evidence_paths": [
+        "apps/roblox/assets/gulf-v16/roblox-gulf-meshes-manifest.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM19.log"
+    },
+    {
+      "id": "GM20",
+      "family": "Gemini",
+      "backend": "antigravity",
+      "resolved_model": "Gemini 4 Argon",
+      "wave": "W5",
+      "title": "Minecraft Voxel/Blockbench Art: world block palettes, models, structure assembly guidance, screenshots for 6 Gulf worlds",
+      "depends_on": [
+        "GM03",
+        "GM05",
+        "GM07",
+        "GM09",
+        "GM11",
+        "GM13"
+      ],
+      "owned_paths": [
+        "apps/minecraft/assets-src/gulf-v16/"
+      ],
+      "branch": "gulf-v16/GM20",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/GM20",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "cb9529c",
+      "integration_sha": null,
+      "runtime_environment": "Antigravity Minecraft Voxel/Blockbench Artist (Gemini 4 Argon)",
+      "modified_files": [
+        "apps/minecraft/assets-src/gulf-v16/blockbench-gulf-models.json"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/assets-src/gulf-v16/blockbench-gulf-models.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/GM20.log"
+    },
+    {
+      "id": "DX01",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W0",
+      "title": "Repository Inventory: actual implemented country count, current quests, game integrations, dead code",
+      "depends_on": [],
+      "owned_paths": [
+        "reports/gulf-v16/inventory/",
+        "swarm/gulf-v16/dgx/"
+      ],
+      "branch": "gulf-v16/DX01",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX01",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "f71a2f3",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next, 26.32 tok/s)",
+      "modified_files": [
+        "reports/gulf-v16/inventory/REPOSITORY_INVENTORY.json",
+        "reports/gulf-v16/inventory/REPOSITORY_INVENTORY.md",
+        "swarm/gulf-v16/dgx/dgx-probe-w0.json"
+      ],
+      "evidence_paths": [
+        "reports/gulf-v16/inventory/REPOSITORY_INVENTORY.json",
+        "reports/gulf-v16/inventory/REPOSITORY_INVENTORY.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX01.log"
+    },
+    {
+      "id": "DX02",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W0",
+      "title": "Source Extractor: parse attached Gulf section into structured candidate claims with traceable offsets",
+      "depends_on": [
+        "DX01"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/source-registry/",
+        "content/gulf-v16/provenance/"
+      ],
+      "branch": "gulf-v16/DX02",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX02",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "e951cff",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next, 58.46 tok/s)",
+      "modified_files": [
+        "content/gulf-v16/provenance/CLAIM_PROVENANCE_V16.jsonl",
+        "content/gulf-v16/provenance/candidate-claims.json",
+        "content/gulf-v16/source-registry/SOURCE_REGISTRY_V16.json",
+        "content/gulf-v16/source-registry/gulf_arabian_peninsula_source.txt"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/source-registry/gulf_arabian_peninsula_source.txt",
+        "content/gulf-v16/source-registry/SOURCE_REGISTRY_V16.json",
+        "content/gulf-v16/provenance/CLAIM_PROVENANCE_V16.jsonl"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX02.log"
+    },
+    {
+      "id": "DX03",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Qatar Research/Glossary: sources, names, geographic landmarks (Doha, Al Zubarah), Al Fisaikra oral-story variations",
+      "depends_on": [
+        "DX02",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/countries/QA/"
+      ],
+      "branch": "gulf-v16/DX03",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX03",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "49c4c71",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next, 3.83 tok/s)",
+      "modified_files": [
+        "content/gulf-v16/countries/QA/country-research-and-glossary.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/countries/QA/country-research-and-glossary.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX03.log"
+    },
+    {
+      "id": "DX04",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W2",
+      "title": "UAE Research/Glossary: architectural, maritime (Dubai/Sharjah/Abu Dhabi) and Al Ain oasis/falaj precision",
+      "depends_on": [
+        "DX02",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/countries/AE/"
+      ],
+      "branch": "gulf-v16/DX04",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX04",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "41a91da",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next, 19.8 tok/s)",
+      "modified_files": [
+        "content/gulf-v16/countries/AE/country-research-and-glossary.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/countries/AE/country-research-and-glossary.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX04.log"
+    },
+    {
+      "id": "DX05",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W3",
+      "title": "Kuwait Research/Glossary: Bu Darya folklore and Kuwait City maritime history provenance",
+      "depends_on": [
+        "DX02",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/countries/KW/"
+      ],
+      "branch": "gulf-v16/DX05",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX05",
+      "status": "VERIFIED",
+      "attempts": 2,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "90c8c2a",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next, 14.26 tok/s)",
+      "modified_files": [
+        "content/gulf-v16/countries/KW/country-research-and-glossary.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/countries/KW/country-research-and-glossary.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX05.log"
+    },
+    {
+      "id": "DX06",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W3",
+      "title": "Saudi Research/Glossary: Antarah ibn Shaddad & Mu'allaqat literary-historical fact/legend separation",
+      "depends_on": [
+        "DX02",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/countries/SA/"
+      ],
+      "branch": "gulf-v16/DX06",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX06",
+      "status": "VERIFIED",
+      "attempts": 2,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "f97d1d4",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next, 14.56 tok/s)",
+      "modified_files": [
+        "content/gulf-v16/countries/SA/country-research-and-glossary.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/countries/SA/country-research-and-glossary.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX06.log"
+    },
+    {
+      "id": "DX07",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W4",
+      "title": "Oman Research/Glossary: UNESCO aflaj (#1207), frankincense, water-sharing and Solomon/jinn/Ubar folklore",
+      "depends_on": [
+        "DX02",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/countries/OM/"
+      ],
+      "branch": "gulf-v16/DX07",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX07",
+      "status": "VERIFIED",
+      "attempts": 2,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "11eb1fb",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next, 14.28 tok/s)",
+      "modified_files": [
+        "content/gulf-v16/countries/OM/country-research-and-glossary.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/countries/OM/country-research-and-glossary.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX07.log"
+    },
+    {
+      "id": "DX08",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W4",
+      "title": "Bahrain Research/Glossary: UNESCO Qal'at al-Bahrain (#1192) Dilmun archaeology vs Muharraq pearling, time periods",
+      "depends_on": [
+        "DX02",
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/countries/BH/"
+      ],
+      "branch": "gulf-v16/DX08",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX08",
+      "status": "VERIFIED",
+      "attempts": 2,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "bfbd86a",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next, 14.24 tok/s)",
+      "modified_files": [
+        "content/gulf-v16/countries/BH/country-research-and-glossary.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/countries/BH/country-research-and-glossary.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX08.log"
+    },
+    {
+      "id": "DX09",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Modern Standard Arabic Dataset: educational Arabic for six countries, sources, translation memory",
+      "depends_on": [
+        "DX02",
+        "CL04"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/locales/msa/"
+      ],
+      "branch": "gulf-v16/DX09",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX09",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "673be9f",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "content/gulf-v16/locales/msa/msa-educational-dataset.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/locales/msa/msa-educational-dataset.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX09.log"
+    },
+    {
+      "id": "DX10",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Gulf Dialects Dataset: six reviewer-ready dialogue vocabularies (ar-QA, ar-AE, ar-KW, ar-SA, ar-OM, ar-BH), register and orthography notes",
+      "depends_on": [
+        "DX09",
+        "CL04"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/locales/dialects/"
+      ],
+      "branch": "gulf-v16/DX10",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX10",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "df89eb9",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "content/gulf-v16/locales/dialects/gulf-dialects-dataset.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/locales/dialects/gulf-dialects-dataset.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX10.log"
+    },
+    {
+      "id": "DX11",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Arabizi Transliteration: Arabic↔Latin display mapping and child-friendly pronunciation (phonetic 5–7 vs optional 3/7/5 in 11–17)",
+      "depends_on": [
+        "DX10",
+        "CL04"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/locales/arabizi/"
+      ],
+      "branch": "gulf-v16/DX11",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX11",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "3ae208b",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "content/gulf-v16/locales/arabizi/arabizi-transliteration-dataset.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/locales/arabizi/arabizi-transliteration-dataset.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX11.log"
+    },
+    {
+      "id": "DX12",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Four Age-Tier Conversion: step validation, reading time, scaffolding, harm minimization for 30 acts (120 stage specs)",
+      "depends_on": [
+        "CL01",
+        "DX03"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/age-tiers/"
+      ],
+      "branch": "gulf-v16/DX12",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX12",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "4090d82",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "content/gulf-v16/age-tiers/age-tier-120-stages.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/age-tiers/age-tier-120-stages.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX12.log"
+    },
+    {
+      "id": "DX13",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Quest Schema Validator: IDs, prerequisites, item types, reward idempotency and state graph",
+      "depends_on": [
+        "DX12",
+        "CL01"
+      ],
+      "owned_paths": [
+        "tools/gulf-v16/quest-validator/"
+      ],
+      "branch": "gulf-v16/DX13",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX13",
+      "status": "VERIFIED",
+      "attempts": 3,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "f2f2494",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "tools/gulf-v16/quest-validator/validate-gulf-quests.mjs"
+      ],
+      "evidence_paths": [
+        "tools/gulf-v16/quest-validator/validate-gulf-quests.mjs"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX13.log"
+    },
+    {
+      "id": "DX14",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W5",
+      "title": "Real Geography QA: site metadata, WGS84 coordinate precision, attribution, temporal/geographic notes",
+      "depends_on": [
+        "DX03",
+        "DX04",
+        "DX05",
+        "DX06",
+        "DX07",
+        "DX08"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/geo-qa/"
+      ],
+      "branch": "gulf-v16/DX14",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX14",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "93fd027",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "content/gulf-v16/geo-qa/verified-wgs84-pins.json"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/geo-qa/verified-wgs84-pins.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX14.log"
+    },
+    {
+      "id": "DX15",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Visual Asset Pipeline: image compression, variants, sprite manifest, alpha/rights checks",
+      "depends_on": [
+        "GM01",
+        "GM15",
+        "GM16",
+        "GM17"
+      ],
+      "owned_paths": [
+        "tools/gulf-v16/asset-pipeline/"
+      ],
+      "branch": "gulf-v16/DX15",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX15",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "689cad8",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "tools/gulf-v16/asset-pipeline/verify-gulf-assets.mjs"
+      ],
+      "evidence_paths": [
+        "tools/gulf-v16/asset-pipeline/verify-gulf-assets.mjs"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX15.log"
+    },
+    {
+      "id": "DX16",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Roblox Content Build QA: source-data-to-Luau consistency, ar-001 localization tables, toolchain lint",
+      "depends_on": [
+        "CX03"
+      ],
+      "owned_paths": [
+        "tools/gulf-v16/roblox-qa/"
+      ],
+      "branch": "gulf-v16/DX16",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX16",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "23726e4",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "tools/gulf-v16/roblox-qa/verify-roblox-gulf.mjs"
+      ],
+      "evidence_paths": [
+        "tools/gulf-v16/roblox-qa/verify-roblox-gulf.mjs"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX16.log"
+    },
+    {
+      "id": "DX17",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Bedrock Content Build QA: .lang, packs, scripts, Blockbench structures, module compatibility",
+      "depends_on": [
+        "CX04"
+      ],
+      "owned_paths": [
+        "tools/gulf-v16/bedrock-qa/"
+      ],
+      "branch": "gulf-v16/DX17",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX17",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "3424c19",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "tools/gulf-v16/bedrock-qa/verify-bedrock-gulf.mjs"
+      ],
+      "evidence_paths": [
+        "tools/gulf-v16/bedrock-qa/verify-bedrock-gulf.mjs"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX17.log"
+    },
+    {
+      "id": "DX18",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W1",
+      "title": "Localization Automated QA: Arabic shaping fixtures, Unicode normalization, bidi punctuation, truncation, script toggles",
+      "depends_on": [
+        "DX09",
+        "DX10",
+        "DX11",
+        "GM18"
+      ],
+      "owned_paths": [
+        "tools/gulf-v16/localization-qa/"
+      ],
+      "branch": "gulf-v16/DX18",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX18",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "4dfd964",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "tools/gulf-v16/localization-qa/verify-localization-gulf.mjs"
+      ],
+      "evidence_paths": [
+        "tools/gulf-v16/localization-qa/verify-localization-gulf.mjs"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX18.log"
+    },
+    {
+      "id": "DX19",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W5",
+      "title": "Playwright/Screenshot Comparison: 6 country flows x 3 script modes x viewport matrix; no placeholding",
+      "depends_on": [
+        "CX01",
+        "CX02"
+      ],
+      "owned_paths": [
+        "tests/web/e2e/gulf-v16/",
+        "reports/gulf-v16/screens/"
+      ],
+      "branch": "gulf-v16/DX19",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX19",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "3963bdc",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "reports/gulf-v16/screens/SCREENSHOT_MATRIX.json",
+        "tests/web/e2e/gulf-v16/gulf-v16-portal.test.ts"
+      ],
+      "evidence_paths": [
+        "tests/web/e2e/gulf-v16/gulf-v16-portal.test.ts",
+        "reports/gulf-v16/screens/SCREENSHOT_MATRIX.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX19.log"
+    },
+    {
+      "id": "DX20",
+      "family": "DGX Spark",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "wave": "W5",
+      "title": "Evidence/Release Manifest: checksums, build IDs, source licensing, platform verification matrix",
+      "depends_on": [
+        "DX14",
+        "DX19",
+        "GM19",
+        "GM20"
+      ],
+      "owned_paths": [
+        "reports/gulf-v16/manifest/"
+      ],
+      "branch": "gulf-v16/DX20",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/DX20",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "b90fa3d",
+      "integration_sha": null,
+      "runtime_environment": "DGX Spark Local LLM (qwen/qwen3-coder-next)",
+      "modified_files": [
+        "reports/gulf-v16/manifest/EVIDENCE_AND_RELEASE_MANIFEST.json"
+      ],
+      "evidence_paths": [
+        "reports/gulf-v16/manifest/EVIDENCE_AND_RELEASE_MANIFEST.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/DX20.log"
+    },
+    {
+      "id": "CL01",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W0",
+      "title": "Shared Architecture: review existing integration contracts; no duplicate websites/game engines, v1.6 schema design",
+      "depends_on": [
+        "DX01"
+      ],
+      "owned_paths": [
+        "packages/contracts/v16/"
+      ],
+      "branch": "gulf-v16/CL01",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CL01",
+      "status": "VERIFIED",
+      "attempts": 2,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "bf988b2",
+      "integration_sha": null,
+      "runtime_environment": "Claude Architecture Contract Verifier (Node v22.22.3 + tsc)",
+      "modified_files": [
+        "packages/contracts/v16/ARCHITECTURE_CONTRACT.md",
+        "packages/contracts/v16/index.ts"
+      ],
+      "evidence_paths": [
+        "packages/contracts/v16/index.ts",
+        "packages/contracts/v16/ARCHITECTURE_CONTRACT.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CL01.log"
+    },
+    {
+      "id": "CL02",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W5",
+      "title": "Gulf Cultural/Historical Review: test factual claims and cultural variation; identify human review gates",
+      "depends_on": [
+        "DX03",
+        "DX04",
+        "DX05",
+        "DX06",
+        "DX07",
+        "DX08"
+      ],
+      "owned_paths": [
+        "reports/gulf-v16/cultural-review/"
+      ],
+      "branch": "gulf-v16/CL02",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CL02",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "fda19df",
+      "integration_sha": null,
+      "runtime_environment": "Claude Cultural & Historical Reviewer (Claude Sonnet 4.6)",
+      "modified_files": [
+        "reports/gulf-v16/cultural-review/CULTURAL_AND_HISTORICAL_REVIEW.md"
+      ],
+      "evidence_paths": [
+        "reports/gulf-v16/cultural-review/CULTURAL_AND_HISTORICAL_REVIEW.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CL02.log"
+    },
+    {
+      "id": "CL03",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W5",
+      "title": "Pedagogy and Child Safety: ages 5–17, optional religion/folklore, sensible story safety, accessibility",
+      "depends_on": [
+        "DX12",
+        "GM04",
+        "GM06",
+        "GM08",
+        "GM10",
+        "GM12",
+        "GM14"
+      ],
+      "owned_paths": [
+        "reports/gulf-v16/pedagogy-safety/"
+      ],
+      "branch": "gulf-v16/CL03",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CL03",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "0c84957",
+      "integration_sha": null,
+      "runtime_environment": "Claude Pedagogy & Child Safety Auditor (Claude Sonnet 4.6)",
+      "modified_files": [
+        "reports/gulf-v16/pedagogy-safety/PEDAGOGY_AND_CHILD_SAFETY_AUDIT.md"
+      ],
+      "evidence_paths": [
+        "reports/gulf-v16/pedagogy-safety/PEDAGOGY_AND_CHILD_SAFETY_AUDIT.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CL03.log"
+    },
+    {
+      "id": "CL04",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W0",
+      "title": "Arabic/Arabizi Language Design: platform capability matrix, reviewer workflow, fallback semantic integrity",
+      "depends_on": [
+        "CL01"
+      ],
+      "owned_paths": [
+        "content/gulf-v16/language-architecture/",
+        "reports/gulf-v16/bedrock-language-test-report.md"
+      ],
+      "branch": "gulf-v16/CL04",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CL04",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "d6a900c",
+      "integration_sha": null,
+      "runtime_environment": "Claude Arabic/Arabizi Language Architecture Verifier (Node v22.22.3)",
+      "modified_files": [
+        "content/gulf-v16/language-architecture/language-capability-matrix.json",
+        "reports/gulf-v16/bedrock-language-test-report.md"
+      ],
+      "evidence_paths": [
+        "content/gulf-v16/language-architecture/language-capability-matrix.json",
+        "reports/gulf-v16/bedrock-language-test-report.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CL04.log"
+    },
+    {
+      "id": "CL05",
+      "family": "Claude",
+      "backend": "claude",
+      "resolved_model": "Claude Sonnet 4.6",
+      "wave": "W5",
+      "title": "Independent Release Audit: challenge all unsupported claims, require native gameplay/screenshots, sign off SHIP/SHIP-WITH-LIMITATIONS/NO-GO",
+      "depends_on": [
+        "CL02",
+        "CL03",
+        "DX19",
+        "DX20",
+        "CX05"
+      ],
+      "owned_paths": [
+        "reports/gulf-v16/independent-audit/"
+      ],
+      "branch": "gulf-v16/CL05",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CL05",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "0020817",
+      "integration_sha": null,
+      "runtime_environment": "Claude Independent Release Auditor (Claude Sonnet 4.6)",
+      "modified_files": [
+        "reports/gulf-v16/independent-audit/INDEPENDENT_RELEASE_AUDIT.md"
+      ],
+      "evidence_paths": [
+        "reports/gulf-v16/independent-audit/INDEPENDENT_RELEASE_AUDIT.md"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CL05.log"
+    },
+    {
+      "id": "CX01",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W0",
+      "title": "Website/Atlas Integrator: routes, 6 interactive pages, art assets, map coordinates versus quest map, LTR/RTL & Arabizi",
+      "depends_on": [
+        "CL01",
+        "CL04"
+      ],
+      "owned_paths": [
+        "apps/web/src/features/gulf-atlas-v16/"
+      ],
+      "branch": "gulf-v16/CX01",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CX01",
+      "status": "VERIFIED",
+      "attempts": 2,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "978288b",
+      "integration_sha": null,
+      "runtime_environment": "Codex Website/Atlas Integrator (Node v22.22.3)",
+      "modified_files": [
+        "apps/web/src/features/gulf-atlas-v16/GulfExpansionSectionV16.tsx"
+      ],
+      "evidence_paths": [
+        "apps/web/src/features/gulf-atlas-v16/GulfExpansionSectionV16.tsx"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CX01.log"
+    },
+    {
+      "id": "CX02",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W1",
+      "title": "Shared Data, Localization, Passport Integrator: stable schema, content/build exports, preferences, validation",
+      "depends_on": [
+        "CL01",
+        "CL04",
+        "DX03",
+        "DX09",
+        "DX10",
+        "DX11",
+        "DX12"
+      ],
+      "owned_paths": [
+        "packages/content/gulf-v16/",
+        "apps/web/src/generated/gulfV16.json"
+      ],
+      "branch": "gulf-v16/CX02",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CX02",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "99bf289",
+      "integration_sha": null,
+      "runtime_environment": "Codex Shared Data & Localization Integrator (Node v22.22.3)",
+      "modified_files": [
+        "apps/web/src/generated/gulfV16.json",
+        "packages/content/gulf-v16/gulf-bundle-v16.json"
+      ],
+      "evidence_paths": [
+        "packages/content/gulf-v16/gulf-bundle-v16.json",
+        "apps/web/src/generated/gulfV16.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CX02.log"
+    },
+    {
+      "id": "CX03",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W0",
+      "title": "Roblox Game Integrator: Luau mechanics, content imports, ar-001 localization integration, savegame and co-op tests",
+      "depends_on": [
+        "CL01",
+        "CL04"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/shared/GulfV16.luau",
+        "apps/roblox/src/server/GulfWorldsV16.luau",
+        "apps/roblox/localization/gulf-v16/"
+      ],
+      "branch": "gulf-v16/CX03",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CX03",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "d9c1176",
+      "integration_sha": null,
+      "runtime_environment": "Codex Roblox Luau & ar-001 Localization Integrator (Node v22.22.3 + Rojo)",
+      "modified_files": [
+        "apps/roblox/localization/gulf-v16/ar-001-localization-table.json",
+        "apps/roblox/src/server/GulfWorldsV16.luau",
+        "apps/roblox/src/shared/GulfV16.luau"
+      ],
+      "evidence_paths": [
+        "apps/roblox/src/shared/GulfV16.luau",
+        "apps/roblox/src/server/GulfWorldsV16.luau",
+        "apps/roblox/localization/gulf-v16/ar-001-localization-table.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CX03.log"
+    },
+    {
+      "id": "CX04",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W0",
+      "title": "Bedrock Game Integrator: behavior/resource packs, actual placed worlds, quests, packaging, language capability test & Arabizi fallback",
+      "depends_on": [
+        "CL01",
+        "CL04"
+      ],
+      "owned_paths": [
+        "apps/minecraft/scripts/gulf-v16/",
+        "apps/minecraft/world/gulf-v16/",
+        "apps/minecraft/structures/gulf-v16/"
+      ],
+      "branch": "gulf-v16/CX04",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CX04",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "44a178b",
+      "integration_sha": null,
+      "runtime_environment": "Codex Bedrock Integrator (Node v22.22.3 + tsc)",
+      "modified_files": [
+        "apps/minecraft/scripts/gulf-v16/index.ts",
+        "apps/minecraft/structures/gulf-v16/ae_heritage_zone.mcstructure",
+        "apps/minecraft/structures/gulf-v16/bh_heritage_zone.mcstructure",
+        "apps/minecraft/structures/gulf-v16/kw_heritage_zone.mcstructure",
+        "apps/minecraft/structures/gulf-v16/om_heritage_zone.mcstructure",
+        "apps/minecraft/structures/gulf-v16/qa_heritage_zone.mcstructure",
+        "apps/minecraft/structures/gulf-v16/sa_heritage_zone.mcstructure",
+        "apps/minecraft/world/gulf-v16/AE-world-zone.json",
+        "apps/minecraft/world/gulf-v16/BH-world-zone.json",
+        "apps/minecraft/world/gulf-v16/KW-world-zone.json",
+        "apps/minecraft/world/gulf-v16/OM-world-zone.json",
+        "apps/minecraft/world/gulf-v16/QA-world-zone.json",
+        "apps/minecraft/world/gulf-v16/SA-world-zone.json",
+        "apps/minecraft/world/gulf-v16/capability-test-zone.json"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/scripts/gulf-v16/index.ts",
+        "apps/minecraft/world/gulf-v16/capability-test-zone.json",
+        "apps/minecraft/structures/gulf-v16/qa_heritage_zone.mcstructure"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CX04.log"
+    },
+    {
+      "id": "CX05",
+      "family": "Codex",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "wave": "W0",
+      "title": "Full-stack Verification and Release: CI, staged deployment, screenshot comparisons, real device evidence, parent-regression tests",
+      "depends_on": [
+        "CL01",
+        "CX01",
+        "CX03",
+        "CX04"
+      ],
+      "owned_paths": [
+        "tools/gulf-v16/release/",
+        "dist/gulf-v16/",
+        "tests/gulf-v16/"
+      ],
+      "branch": "gulf-v16/CX05",
+      "worktree": "/home/wael/Code/mv-wt-gulf16/CX05",
+      "status": "VERIFIED",
+      "attempts": 1,
+      "base_sha": "9e05a36f653efb58e7c61651239282cc444b3df8",
+      "commit_sha": "988e954",
+      "integration_sha": null,
+      "runtime_environment": "Codex Full-Stack Verification & Release Owner (Node v22.22.3 + Vitest)",
+      "modified_files": [
+        "dist/gulf-v16/BUILD_SUMMARY.json",
+        "tests/gulf-v16/gulf-v16-full-suite.test.ts",
+        "tools/gulf-v16/release/package-gulf-v16.mjs"
+      ],
+      "evidence_paths": [
+        "tests/gulf-v16/gulf-v16-full-suite.test.ts",
+        "dist/gulf-v16/BUILD_SUMMARY.json"
+      ],
+      "blockers": [],
+      "log_path": "swarm/gulf-v16/logs/CX05.log"
+    }
+  ]
+}

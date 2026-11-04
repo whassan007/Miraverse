@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="Saudi Arabia — Antarah&apos;s Voice and the Caravan">
+  <defs>
+    <linearGradient id="bg-SA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1C1917"/>
+      <stop offset="55%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#7C2D12"/>
+    </linearGradient>
+    <radialGradient id="glow-SA" cx="75%" cy="22%" r="45%">
+      <stop offset="0%" stop-color="#15803D" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#15803D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg-SA)"/>
+  <rect width="1280" height="720" fill="url(#glow-SA)"/>
+  <rect x="24" y="24" width="1232" height="672" rx="24" fill="none" stroke="#15803D" stroke-width="3" opacity="0.75"/>
+  <path d="M0 470 Q320 370 640 450 T1280 430 L1280 560 L0 560 Z" fill="#B45309" opacity="0.75"/>
+         <rect x="440" y="250" width="420" height="210" rx="12" fill="#C28E5C" stroke="#15803D" stroke-width="4"/>
+         <polygon points="440,250 470,220 500,250 530,220 560,250 590,220 620,250 650,220 680,250 710,220 740,250 770,220 800,250 830,220 860,250" fill="#15803D"/>
+  <rect x="0" y="475" width="1280" height="245" fill="#09111E" opacity="0.84"/>
+  <text x="64" y="100" fill="#15803D" font-family="Georgia, serif" font-size="22" font-weight="bold">عالم يرا · Mira's World — Gulf Diaspora Expansion v1.6 (country.sa)</text>
+  <text x="64" y="158" fill="#FFF8EE" font-family="Georgia, serif" font-size="46" font-weight="bold">Saudi Arabia (SA) — Antarah&apos;s Voice and the Caravan</text>
+  <text x="64" y="208" fill="#FDE68A" font-family="sans-serif" font-size="30" font-weight="bold">المملكة العربية السعودية — صوت عنترة والقافلة</text>
+  <text x="64" y="545" fill="#E2E8F0" font-family="sans-serif" font-size="22">Mentor: Rawiya Salma &amp; Hakim Tariq Al-Qahtani (Fictional Mentors) · Dialect: ar-SA</text>
+  <text x="64" y="585" fill="#94A3B8" font-family="sans-serif" font-size="18">Regionally specific Najd interior caravan oasis &amp; desert-edge poetry courtyard (informed by At-Turaif / Diriyah UNESCO...</text>
+  <text x="64" y="640" fill="#15803D" font-family="monospace" font-size="17">5 Canonical Acts × 4 Age Tracks (5–7, 8–10, 11–13, 14–17) · العربية / Arabizi / English</text>
+</svg>

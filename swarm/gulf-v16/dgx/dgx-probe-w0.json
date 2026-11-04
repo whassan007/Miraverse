@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "model": "qwen/qwen3-coder-next",
+  "content": "{\"status\":\"READY\",\"maxConcurrency\":1}",
+  "usage": {
+    "prompt_tokens": 55,
+    "completion_tokens": 11,
+    "total_tokens": 66,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "tokensPerSec": 26.32,
+  "elapsedMs": 418
+}

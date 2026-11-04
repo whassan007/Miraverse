@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.6.0",
+  "zoneId": "zone.gulf_v16.capability_test",
+  "nameEn": "Bedrock Arabic / Arabizi / English Rendering Test Court",
+  "origin": [
+    0,
+    64,
+    0
+  ],
+  "surfacesTested": [
+    "server_ui_form",
+    "actionbar_short",
+    "title_banner",
+    "npc_nametag",
+    "sign_text",
+    "book_page"
+  ],
+  "fakeLanguagesJsonCodesAdded": false,
+  "probes": [
+    {
+      "id": "probe.brand.header",
+      "arabic": "عالم يرا",
+      "arabizi": "3alam Mira",
+      "english": "Mira's World"
+    },
+    {
+      "id": "probe.qa.act1.invitation",
+      "arabic": "يلا نكتشف اللؤلؤ",
+      "arabizi": "Yalla niktishif il-lulu",
+      "english": "Let's discover the pearls"
+    }
+  ]
+}

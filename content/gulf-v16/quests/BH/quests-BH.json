@@ -1,0 +1,734 @@
+[
+  {
+    "id": "quest.bh.01",
+    "countryCode": "BH",
+    "stableCountryId": "country.bh",
+    "actNumber": 1,
+    "canonicalArchetype": "GATHER",
+    "countrySpecificAlias": "GATHER",
+    "titleEn": "The Archaeologist's Layers",
+    "titleAr": "طبقات عالم الآثار",
+    "titleArabizi": "Tabaqat 3alim il-Athar",
+    "settingSubarea": "Qal'at al-Bahrain Stratigraphy Teaching Pavilion (UNESCO #1192)",
+    "mentorNpcId": "npc.bh.dr_layla_al_arrayedh",
+    "mentorNameEn": "Dr. Layla Al-Arrayedh & Ustadha Ameena",
+    "mentorNameAr": "الدكتورة ليلى العريض والأستاذة أمينة",
+    "mentorNameArabizi": "Dr. Layla Al-3arrayedh wa Ustadha Ameena",
+    "summaryEn": "Sort artifact replicas by historical period and evidence category at the Qal'at al-Bahrain teaching pavilion, keeping Bronze Age Dilmun seals distinct from 19th-century Muharraq pearling tools.",
+    "summaryAr": "افرز نسخ اللقى الأثرية حسب حقبتها الزمنية وفئة الدليل في جناح قلعة البحرين التعليمي، مع الفصل التام بين أختام دلمون البرونزية وأدوات الغوص الحديثة.",
+    "summaryArabizi": "Ifriz il-luqa il-athariya hasab il-zaman: akhtam Dilmun il-bronziya vs adawat il-Muharraq.",
+    "epistemicCategory": "archaeology",
+    "epistemicWarningEn": "Strictly enforces chronological separation between Bronze Age Dilmun (c. 2300 BCE) and 19th–20th century Muharraq pearling.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.bh.01.step1",
+        "descriptionEn": "Meet Dr. Layla at the Qal'at al-Bahrain stratigraphy table and inspect the circular steatite Dilmun stamp seal replica and red-ridged Barbar pottery.",
+        "requiredItemOrAction": "bh_act1_step1",
+        "hintEn": "Notice how the oldest Bronze Age artifacts come from the deepest archaeological layer.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.bh.01.step2",
+        "descriptionEn": "Place three artifact replicas into their correct chronological drawers: Bronze Age Dilmun Seal (Deep Layer), Islamic Glazed Bowl (Middle Layer), and 19th-Century Bishtakhta Pearl Box (Modern Muharraq Layer).",
+        "requiredItemOrAction": "bh_act1_step2",
+        "hintEn": "Never put the 19th-century Muharraq pearl chest into the Bronze Age Dilmun drawer!",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.bh.01",
+      "roleSplitEn": "Player 1 identifies material and stratum depth while Player 2 assigns the chronological era card."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.bh.dilmun_circular_seal",
+      "passportMilestoneId": "milestone.bh.01",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.bh.01.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-BH-act1.svg",
+      "markerXPercent": 18,
+      "markerYPercent": 64,
+      "checkpointLabelEn": "Act 1 · The Archaeologist's Layers",
+      "checkpointLabelAr": "الفصل 1 · طبقات عالم الآثار",
+      "checkpointLabelArabizi": "Fasla 1 · Tabaqat 3alim il-Athar"
+    },
+    "vocabularyIds": [
+      "vocab.bh.dilmun",
+      "vocab.bh.tabaqat_athariya"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.bh.01.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Oldest on the Bottom, Newest on the Top!",
+        "titleAr": "الأقدم في الأسفل والأحدث في الأعلى!",
+        "titleArabizi": "Yalla نرتب tabaqat il-athar!",
+        "objectiveEn": "Put the ancient round Dilmun stamp in the bottom layer box and the wooden pearl box in the top layer box!",
+        "objectiveAr": "ضع ختم دلمون الدائري القديم في الصندوق السفلي وصندوق اللؤلؤ الخشبي في الصندوق العلوي!",
+        "objectiveArabizi": "Hut khatm Dilmun fil-asfal wa sunduq il-lulu fil-a3la!",
+        "puzzleMechanicsEn": "3-layer visual stacking puzzle with color-coded time badges.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Interactive 5-layer stratigraphy sorting column."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.bh.01.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Reading the Layers of Qal'at al-Bahrain",
+        "titleAr": "قراءة طبقات قلعة البحرين",
+        "titleArabizi": "Qira'at Tabaqat Qal3at il-Bahrain",
+        "objectiveEn": "Sort four artifact replicas into their proper historical eras so Bronze Age Dilmun and modern Muharraq are never mixed up.",
+        "objectiveAr": "صنّف أربع نسخ أثرية في عصورها الصحيحة لعدم الخلط بين دلمون القديمة والمحرق الحديثة.",
+        "objectiveArabizi": "Sannif 4 luqa athariya fi 3usuriha il-sahiha.",
+        "puzzleMechanicsEn": "Stratigraphic timeline sorting puzzle.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Interactive 5-layer stratigraphy sorting column."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.bh.01.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Archaeological Stratigraphy Across Five Millennia",
+        "titleAr": "علم الطبقات الأثرية عبر خمسة آلاف عام",
+        "titleArabizi": "3ilm il-Tabaqat il-Athariya fi Qal3at il-Bahrain",
+        "objectiveEn": "Analyze how archaeologists date the 12-meter tell at Qal'at al-Bahrain across Early/Middle Dilmun, Tylos, Islamic, and Portuguese phases.",
+        "objectiveAr": "حلل كيف يؤرخ علماء الآثار تل قلعة البحرين عبر مراحل دلمون وتايلوس والعصر الإسلامي.",
+        "objectiveArabizi": "Hallil tasalsul tabaqat Qal3at il-Bahrain عبر العصور.",
+        "puzzleMechanicsEn": "Multi-era stratigraphic matrix & ceramic typology puzzle.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Interactive 5-layer stratigraphy sorting column."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.bh.01.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Chronological Rigor & Avoiding Anachronism in Public History",
+        "titleAr": "الدقة الزمنية وتجنب الخلط التاريخي في المتاحف",
+        "titleArabizi": "Il-Diqqa il-Zamaniya fi Mat7af il-Bahrain",
+        "objectiveEn": "Critique common tourist misconceptions that conflate Bronze Age Dilmun with 19th-century pearling or literalize Gilgamesh myths.",
+        "objectiveAr": "انقد الخلط الشائع بين حضارة دلمون البرونزية واقتصاد اللؤلؤ الحديث أو التفسير الحرفي للأساطير.",
+        "objectiveArabizi": "Inqud il-khalt bayn 3asr Dilmun wa 3asr il-ghaws il-hadith.",
+        "puzzleMechanicsEn": "Source-critical stratigraphic & museum curation audit.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Interactive 5-layer stratigraphy sorting column."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "BahrainAct1ArchaeologistLayers",
+      "interactionType": "Interactive 5-layer stratigraphy sorting column.",
+      "zoneAnchorName": "BH_QalatAlBahrain_StratigraphyPavilion",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runBahrainAct1ArchaeologistLayers",
+      "structureTemplateId": "miraverse:bh_qalat_stratigraphy_pavilion",
+      "customBlocksAndItems": [
+        "miraverse:bh_dilmun_seal",
+        "miraverse:bh_stratigraphy_column"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.bh.02",
+    "countryCode": "BH",
+    "stableCountryId": "country.bh",
+    "actNumber": 2,
+    "canonicalArchetype": "TRADE",
+    "countrySpecificAlias": "TRADE",
+    "titleEn": "The Harbor's Exchange",
+    "titleAr": "تبادل ميناء دلمون",
+    "titleArabizi": "Tabadul Mina Dilmun",
+    "settingSubarea": "Bronze Age Dilmun Sea-Gate Exhibit & Warehouse Model",
+    "mentorNpcId": "npc.bh.dr_layla_al_arrayedh",
+    "mentorNameEn": "Dr. Layla Al-Arrayedh & Ustadha Ameena",
+    "mentorNameAr": "الدكتورة ليلى العريض والأستاذة أمينة",
+    "mentorNameArabizi": "Dr. Layla Al-3arrayedh wa Ustadha Ameena",
+    "summaryEn": "Reconstruct Bronze Age commercial connections between Dilmun (Bahrain), Magan (Oman), Mesopotamia, and the Indus Valley using circular stamp seals and cubic weights with transparent uncertainty notes.",
+    "summaryAr": "أعد تمثيل الروابط التجارية في العصر البرونزي بين دلمون ومجان وبلاد الرافدين ووادي السند باستخدام الأختام الدائرية والأوزان الحجرية مع ملاحظات عدم اليقين العلمي.",
+    "summaryArabizi": "A3id tamthil tijarat Dilmun ma3 Magan wal-Rafidayn bi-istikhdam il-akhtam il-da'iriya.",
+    "epistemicCategory": "archaeology",
+    "epistemicWarningEn": "Includes transparent archaeological uncertainty notes explaining what excavated weights prove vs what remains debated by scholars.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.bh.02.step1",
+        "descriptionEn": "Stamp the clay bale tags using the circular Dilmun seal replica and match the standardized chert stone weights.",
+        "requiredItemOrAction": "bh_act2_step1",
+        "hintEn": "Press the gazelle-and-boat seal onto the soft clay sealing tag.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.bh.02.step2",
+        "descriptionEn": "Route the Bronze Age trade cargo manifest connecting Magan copper ingots, Mesopotamian textiles, and Indus Valley carnelian beads.",
+        "requiredItemOrAction": "bh_act2_step2",
+        "hintEn": "Read the uncertainty badge noting how scholars identify Meluhha and Magan in cuneiform tablets.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.bh.02",
+      "roleSplitEn": "Player 1 authenticates cargo bales with the Dilmun seal while Player 2 balances the stone weight conversion table."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.bh.copper_ingot_and_weights",
+      "passportMilestoneId": "milestone.bh.02",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.bh.02.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-BH-act2.svg",
+      "markerXPercent": 34,
+      "markerYPercent": 42,
+      "checkpointLabelEn": "Act 2 · The Harbor's Exchange",
+      "checkpointLabelAr": "الفصل 2 · تبادل ميناء دلمون",
+      "checkpointLabelArabizi": "Fasla 2 · Tabadul Mina Dilmun"
+    },
+    "vocabularyIds": [
+      "vocab.bh.dilmun",
+      "vocab.bh.qalat_al_bahrain"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.bh.02.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Stamp the Clay Tag with the Gazelle Seal!",
+        "titleAr": "اختم بطاقة الطين بختم الغزال الدائري!",
+        "titleArabizi": "Yalla نختم بطاقة الطين بختم دلمون!",
+        "objectiveEn": "Press the round Dilmun stamp onto the soft clay and match the shiny copper and bead baskets at the harbor!",
+        "objectiveAr": "اضغط بالختم الدائري على الطين الطري وطابق سلال النحاس والخرز في الميناء!",
+        "objectiveArabizi": "Idghat bil-khatm il-da'iri wa tabiq silal il-nuhas!",
+        "puzzleMechanicsEn": "Interactive clay-stamp press + 3-basket harbor match.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Dilmun seal clay-stamping and Bronze Age cargo balance puzzle."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.bh.02.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Dilmun: The Island Trade Crossroads",
+        "titleAr": "دلمون: ملتقى التجارة البحرية القديمة",
+        "titleArabizi": "Dilmun: Multaqa il-Tijara il-Bahriya",
+        "objectiveEn": "Use the circular Dilmun seal and stone weights to connect copper, textiles, and beads across three ancient regions.",
+        "objectiveAr": "استخدم ختم دلمون الدائري والأوزان الحجرية لربط النحاس والمنسوجات والخرز بين ثلاث مناطق قديمة.",
+        "objectiveArabizi": "Istakhdim khatm Dilmun li-rabt tijarat 3 manatiq qadima.",
+        "puzzleMechanicsEn": "Seal stamping + 3-region cargo routing puzzle.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Dilmun seal clay-stamping and Bronze Age cargo balance puzzle."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.bh.02.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Weight Standards & Entrepôt Trade in the Bronze Age Gulf",
+        "titleAr": "معايير الأوزان وتجارة الموانئ في الخليج خلال العصر البرونزي",
+        "titleArabizi": "Ma3ayir il-Awzan fi Tijarat Dilmun",
+        "objectiveEn": "Compare Dilmun's weight standard found at Qal'at al-Bahrain with Indus Valley and Mesopotamian metrological systems.",
+        "objectiveAr": "قارن بين معيار أوزان دلمون المكتشف في قلعة البحرين وأنظمة القياس في وادي السند وبلاد الرافدين.",
+        "objectiveArabizi": "Qarin bayn awzan Dilmun wa anzinat il-Rafidayn wal-Sind.",
+        "puzzleMechanicsEn": "Metrological conversion & archaeological provenance puzzle.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Dilmun seal clay-stamping and Bronze Age cargo balance puzzle."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.bh.02.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Archaeological Evidence vs Interpretive Uncertainty in Bronze Age Trade",
+        "titleAr": "الأدلة الأثرية وحدود التفسير العلمي في تجارة العصر البرونزي",
+        "titleArabizi": "Il-Adilla il-Athariya wa 7udud il-Tafsir fi Dilmun",
+        "objectiveEn": "Evaluate what cuneiform texts from Ur and excavated seals at Qal'at al-Bahrain confirm, while documenting open scholarly questions.",
+        "objectiveAr": "قيّم ما تؤكده النصوص المسمارية والأختام المكتشفة في قلعة البحرين مع توثيق الأسئلة العلمية المفتوحة.",
+        "objectiveArabizi": "Qayyim ma tu'akkiduhu il-akhtam wal-nusus حول تجارة دلمون.",
+        "puzzleMechanicsEn": "Source-critical trade network & uncertainty annotation.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Dilmun seal clay-stamping and Bronze Age cargo balance puzzle."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "BahrainAct2HarborExchange",
+      "interactionType": "Dilmun seal clay-stamping and Bronze Age cargo balance puzzle.",
+      "zoneAnchorName": "BH_QalatAlBahrain_SeaGateWarehouse",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runBahrainAct2HarborExchange",
+      "structureTemplateId": "miraverse:bh_dilmun_sea_gate_warehouse",
+      "customBlocksAndItems": [
+        "miraverse:bh_copper_ingot",
+        "miraverse:bh_chert_weights"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.bh.03",
+    "countryCode": "BH",
+    "stableCountryId": "country.bh",
+    "actNumber": 3,
+    "canonicalArchetype": "BUILD",
+    "countrySpecificAlias": "BUILD",
+    "titleEn": "Preserve the Heritage Site",
+    "titleAr": "حماية الموقع التراثي وترميم جناح العرض",
+    "titleArabizi": "7imayat il-Mawqi3 il-Turathi",
+    "settingSubarea": "Fictional Interpretive Exhibit Buffer Zone Beside Qal'at al-Bahrain",
+    "mentorNpcId": "npc.bh.dr_layla_al_arrayedh",
+    "mentorNameEn": "Dr. Layla Al-Arrayedh & Ustadha Ameena",
+    "mentorNameAr": "الدكتورة ليلى العريض والأستاذة أمينة",
+    "mentorNameArabizi": "Dr. Layla Al-3arrayedh wa Ustadha Ameena",
+    "summaryEn": "Protect and restore fictional visitor exhibit walkways, shade canopies, and museum display cases in the buffer zone—never defacing or altering actual archaeological ruins.",
+    "summaryAr": "احمِ ورمّم ممرات الزوار الخشبية ومظلات العرض في المنطقة التعليمية المجاورة دون المساس بالحجارة الأثرية الأصلية.",
+    "summaryArabizi": "Rammim mamarrat il-zuwwar wa mazallat il-3ard دون المساس بالآثار الأصلية.",
+    "epistemicCategory": "archaeology",
+    "epistemicWarningEn": "Strictly follows UNESCO conservation ethics: players build reversible protective walkways and exhibit cases, never knocking down or altering ancient masonry.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.bh.03.step1",
+        "descriptionEn": "Construct the elevated, reversible wooden visitor walkway above the fragile soil buffer zone with Dr. Layla.",
+        "requiredItemOrAction": "bh_act3_step1",
+        "hintEn": "Place timber walkway planks on the raised support pads so footsteps never touch ancient strata.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.bh.03.step2",
+        "descriptionEn": "Assemble the protective glass-and-limestone interpretive canopy and bilingual heritage attribution plaques.",
+        "requiredItemOrAction": "bh_act3_step2",
+        "hintEn": "Attach the UNESCO #1192 conservation plaque to complete the visitor pavilion.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.bh.03",
+      "roleSplitEn": "Player 1 lays the elevated protective timber walkway while Player 2 builds the shade canopy and interpretive plaques."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.bh.barbar_ashlar_protective_frame",
+      "passportMilestoneId": "milestone.bh.03",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.bh.03.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-BH-act3.svg",
+      "markerXPercent": 50,
+      "markerYPercent": 64,
+      "checkpointLabelEn": "Act 3 · Preserve the Heritage Site",
+      "checkpointLabelAr": "الفصل 3 · حماية الموقع التراثي وترميم جناح العرض",
+      "checkpointLabelArabizi": "Fasla 3 · 7imayat il-Mawqi3 il-Turathi"
+    },
+    "vocabularyIds": [
+      "vocab.bh.qalat_al_bahrain",
+      "vocab.bh.tabaqat_athariya"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.bh.03.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Build the Safe Wooden Bridge Around the Ancient Stones!",
+        "titleAr": "ابنِ الجسر الخشبي الآمن حول الأحجار القديمة!",
+        "titleArabizi": "Yalla نبني il-jisr il-khashabi لحماية الآثار!",
+        "objectiveEn": "Snap the wooden bridge planks and shade roof into place so visitors can look at the ancient stones safely without stepping on them!",
+        "objectiveAr": "ركّب ألواح الجسر الخشبي ومظلة الظل ليشاهد الزوار الأحجار القديمة بأمان دون المشي عليها!",
+        "objectiveArabizi": "Rakkib alwah il-jisr wal-mazalla li-himayat il-ahjar il-qadima!",
+        "puzzleMechanicsEn": "Guided 3-part protective bridge & canopy snap.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Reversible conservation walkway & exhibit pavilion construction."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.bh.03.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Protecting Archaeology with Reversible Walkways",
+        "titleAr": "حماية الآثار بالممرات الخشبية الواقية",
+        "titleArabizi": "7imayat il-Athar bil-Mamarrat il-Waqiya",
+        "objectiveEn": "Follow the conservation blueprint to build a raised walkway, shade pavilion, and museum display frame.",
+        "objectiveAr": "اتبع مخطط الحفاظ الأثري لبناء ممر مرتفع ومظلة عرض وإطار متحفي واقٍ.",
+        "objectiveArabizi": "Ittabi3 mukhattat il-hifz li-bina mamarr murtafi3 wa mazalla.",
+        "puzzleMechanicsEn": "Conservation blueprint puzzle with no-touch archaeological buffer.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Reversible conservation walkway & exhibit pavilion construction."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.bh.03.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Preventive Conservation: Coastal Salinity, Wind & Visitor Flow",
+        "titleAr": "الحفاظ الوقائي: ملوحة الساحل والرياح ومسارات الزوار",
+        "titleArabizi": "Il-7ifz il-Wiqa'i fi Qal3at il-Bahrain",
+        "objectiveEn": "Design protective buffer zones and drainage channels that shield limestone ashlar blocks from coastal humidity and foot traffic.",
+        "objectiveAr": "صمّم مناطق عازلة ومسارات تحمي الحجارة الجيرية المنحوتة من الرطوبة الساحلية وحركة الزوار.",
+        "objectiveArabizi": "Sammim mamarrat tahmi il-ahjar il-jiriya min il-rutuba.",
+        "puzzleMechanicsEn": "Environmental conservation & visitor-routing puzzle.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Reversible conservation walkway & exhibit pavilion construction."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.bh.03.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "International Conservation Charters & Buffer-Zone Integrity",
+        "titleAr": "مواثيق الحفاظ الدولية وسلامة النطاق العازل للمواقع التراثية",
+        "titleArabizi": "Mawathiq il-Hifz il-Dawliya (UNESCO #1192)",
+        "objectiveEn": "Apply UNESCO World Heritage management principles (reversibility, minimal intervention, visual corridor protection) at Qal'at al-Bahrain.",
+        "objectiveAr": "طبّق مبادئ إدارة التراث العالمي لليونسكو (القابلية للإزالة، التدخل الأدنى، حماية الممر البصري) في قلعة البحرين.",
+        "objectiveArabizi": "Tabbiq mabadi idarat il-turath il-3alami fi Qal3at il-Bahrain.",
+        "puzzleMechanicsEn": "Conservation charter compliance & site-plan verification.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Reversible conservation walkway & exhibit pavilion construction."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "BahrainAct3PreserveHeritageSite",
+      "interactionType": "Reversible conservation walkway & exhibit pavilion construction.",
+      "zoneAnchorName": "BH_QalatAlBahrain_ConservationBuffer",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runBahrainAct3PreserveHeritageSite",
+      "structureTemplateId": "miraverse:bh_conservation_walkway_pavilion",
+      "customBlocksAndItems": [
+        "miraverse:bh_walkway_plank",
+        "miraverse:bh_exhibit_canopy",
+        "miraverse:bh_heritage_plaque"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.bh.04",
+    "countryCode": "BH",
+    "stableCountryId": "country.bh",
+    "actNumber": 4,
+    "canonicalArchetype": "COOK_OR_STORY",
+    "countrySpecificAlias": "COOK/STORY",
+    "titleEn": "Pearling Stories and Dates",
+    "titleAr": "حكايات اللؤلؤ والضيافة في المحرق",
+    "titleArabizi": "Hikayat il-Lulu wal-Diyafa fil-Muharraq",
+    "settingSubarea": "19th-Century Muharraq Pearling Path Courtyard House (UNESCO #1364)",
+    "mentorNpcId": "npc.bh.dr_layla_al_arrayedh",
+    "mentorNameEn": "Dr. Layla Al-Arrayedh & Ustadha Ameena",
+    "mentorNameAr": "الدكتورة ليلى العريض والأستاذة أمينة",
+    "mentorNameArabizi": "Dr. Layla Al-3arrayedh wa Ustadha Ameena",
+    "summaryEn": "Travel to the distinct 19th–20th century Muharraq pearling quarter; compare maritime traditions, inspect the Bishtakhta chest, and prepare Bahraini rosewater-saffron halwa/dates or weave a cooperative Kurar ribbon.",
+    "summaryAr": "انتقل إلى حي المحرق التاريخي (القرن ١٩–٢٠م)، وقارن التقاليد البحرية وافحص البشتختة، وحضّر الحلوى البحرينية/التمر أو انسج شريط «الكورار» التعاوني.",
+    "summaryArabizi": "Intaqil ila hayy il-Muharraq (UNESCO #1364) wa haddir il-7alwa il-Bahrainiya aw hirfat il-Kurar.",
+    "epistemicCategory": "history",
+    "epistemicWarningEn": "Clearly situates Muharraq's pearling houses in the 19th–early 20th century CE (UNESCO #1364), millennia after Bronze Age Dilmun.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.bh.04.step1",
+        "descriptionEn": "Greet Ustadha Ameena in the Muharraq courtyard house and inspect the 19th-century Bishtakhta pearl merchant's chest.",
+        "requiredItemOrAction": "bh_act4_step1",
+        "hintEn": "Notice the date plaque on the Muharraq doorway showing 19th–20th century island pearling history.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.bh.04.step2",
+        "descriptionEn": "Choose your Muharraq hospitality activity: prepare Nut-Free Saffron-Cardamom Bahraini Halwa & Date Platter OR join the cooperative Kurar golden-ribbon weaving frame.",
+        "requiredItemOrAction": "bh_act4_step2",
+        "hintEn": "Both culinary and Kurar textile paths celebrate Muharraq's living community warmth.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.bh.04",
+      "roleSplitEn": "In Kurar weaving (just like real Bahraini tradition!), Player 1 holds the shed stick (qabouq) while Player 2 crosses the metallic threads."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.bh.bahraini_halwa_and_kurar_frame",
+      "passportMilestoneId": "milestone.bh.04",
+      "miraTokensEarned": 20,
+      "idempotencyKey": "reward.quest.bh.04.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-BH-act4.svg",
+      "markerXPercent": 66,
+      "markerYPercent": 42,
+      "checkpointLabelEn": "Act 4 · Pearling Stories and Dates",
+      "checkpointLabelAr": "الفصل 4 · حكايات اللؤلؤ والضيافة في المحرق",
+      "checkpointLabelArabizi": "Fasla 4 · Hikayat il-Lulu wal-Diyafa fil-Muharraq"
+    },
+    "vocabularyIds": [
+      "vocab.bh.bishtakhta",
+      "vocab.bh.kurar"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.bh.04.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Sweet Bahraini Halwa & Golden Ribbons in Muharraq!",
+        "titleAr": "الحلوى البحرينية والأشرطة الذهبية في المحرق!",
+        "titleArabizi": "Il-7alwa il-Bahrainiya wa Sharait il-Kurar fil-Muharraq!",
+        "objectiveEn": "Visit Ustadha Ameena's cozy Muharraq courtyard to share warm red halwa or weave shiny golden Kurar ribbons with friends!",
+        "objectiveAr": "زر بيت الأستاذة أمينة في المحرق لمشاركة الحلوى البحرينية الدافئة أو نسج أشرطة الكورار الذهبية مع الأصدقاء!",
+        "objectiveArabizi": "Zur bayt Ustadha Ameena fil-Muharraq wa sharik il-7alwa aw il-Kurar!",
+        "puzzleMechanicsEn": "Cozy courtyard story + 3-step recipe or ribbon color match.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "Muharraq courtyard story, Bishtakhta inspection, and Halwa/Kurar co-op station."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.bh.04.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Muharraq's Pearling Houses & Kurar Craft",
+        "titleAr": "بيوت اللؤلؤ في المحرق وحرفة الكورار",
+        "titleArabizi": "Buyut il-Lulu fil-Muharraq wa Hirfat il-Kurar",
+        "objectiveEn": "Compare 19th-century Muharraq pearling tools with ancient Dilmun seals, then prepare allergy-safe Bahraini halwa or weave a Kurar band.",
+        "objectiveAr": "قارن بين أدوات الغوص في المحرق وأختام دلمون القديمة، ثم حضّر حلوى بحرينية آمنة للحساسية أو انسج شريط الكورار.",
+        "objectiveArabizi": "Qarin bayn adawat il-Muharraq wa akhtam Dilmun wa haddir il-7alwa aw il-Kurar.",
+        "puzzleMechanicsEn": "Era comparison + guided recipe/Kurar weaving puzzle.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "Muharraq courtyard story, Bishtakhta inspection, and Halwa/Kurar co-op station."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.bh.04.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "UNESCO #1364: Island Pearling Economy & Cooperative Women's Crafts",
+        "titleAr": "طريق اللؤلؤ (اليونسكو #1364) والحرف النسائية التعاونية",
+        "titleArabizi": "Tariq il-Lulu fil-Muharraq (UNESCO #1364) wa Hirfat il-Kurar",
+        "objectiveEn": "Explore how Muharraq's architecture connected Qal'at Bu Maher shore to merchant majlises and family courtyards where Kurar was woven.",
+        "objectiveAr": "استكشف كيف ربط مسار اللؤلؤ في المحرق بين ساحل قلعة بو ماهر ومجالس التجار وأفنية البيوت.",
+        "objectiveArabizi": "Istakshif masar il-lulu min Qal3at Bu Maher ila buyut il-Muharraq.",
+        "puzzleMechanicsEn": "Urban heritage trail mapping + co-op Kurar rhythm weave.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "Muharraq courtyard story, Bishtakhta inspection, and Halwa/Kurar co-op station."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.bh.04.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Economic Transitions: The 1930s Cultured Pearl Shift & Urban Preservation",
+        "titleAr": "التحولات الاقتصادية في ثلاثينيات القرن العشرين والحفاظ العمراني في المحرق",
+        "titleArabizi": "Ta7awwulat Iqtisad il-Lulu wa Hifz Turath il-Muharraq",
+        "objectiveEn": "Analyze how Bahrain's island economy adapted after the 1930s rise of cultured pearls and how UNESCO #1364 preserves Muharraq's social fabric.",
+        "objectiveAr": "حلل كيف تكيّف اقتصاد البحرين بعد ظهور اللؤلؤ المستزرع في الثلاثينيات وكيف يصون مشروع طريق اللؤلؤ النسيج العمراني للمحرق.",
+        "objectiveArabizi": "Hallil تاريخ اقتصاد اللؤلؤ ومشروع طريق اللؤلؤ في المحرق (#1364).",
+        "puzzleMechanicsEn": "Economic history & urban conservation synthesis.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "Muharraq courtyard story, Bishtakhta inspection, and Halwa/Kurar co-op station."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "BahrainAct4PearlingStoriesAndDates",
+      "interactionType": "Muharraq courtyard story, Bishtakhta inspection, and Halwa/Kurar co-op station.",
+      "zoneAnchorName": "BH_Muharraq_PearlingCourtyardHouse",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runBahrainAct4PearlingStoriesAndDates",
+      "structureTemplateId": "miraverse:bh_muharraq_pearling_courtyard",
+      "customBlocksAndItems": [
+        "miraverse:bh_bishtakhta_chest",
+        "miraverse:bh_halwa_dish",
+        "miraverse:bh_kurar_frame"
+      ],
+      "status": "TEST BUILD"
+    }
+  },
+  {
+    "id": "quest.bh.05",
+    "countryCode": "BH",
+    "stableCountryId": "country.bh",
+    "actNumber": 5,
+    "canonicalArchetype": "WORD_FINALE",
+    "countrySpecificAlias": "WORD/FINALE",
+    "titleEn": "The Dilmun Memory Chest",
+    "titleAr": "صندوق ذاكرة دلمون والبحرين",
+    "titleArabizi": "Sunduq Dhakirat Dilmun wal-Bahrain",
+    "settingSubarea": "Two-Seas (Al-Bahrain) Kawkab Spring Overlook & Curatorial Hall",
+    "mentorNpcId": "npc.bh.dr_layla_al_arrayedh",
+    "mentorNameEn": "Dr. Layla Al-Arrayedh & Ustadha Ameena",
+    "mentorNameAr": "الدكتورة ليلى العريض والأستاذة أمينة",
+    "mentorNameArabizi": "Dr. Layla Al-3arrayedh wa Ustadha Ameena",
+    "summaryEn": "Separate Mesopotamian paradise mythology, Bronze Age Dilmun archaeology, submarine freshwater spring (kawkab) hydrogeology, and present-day Muharraq living heritage to build your illustrated Bahrain Passport entry.",
+    "summaryAr": "افصل بوضوح بين أساطير الرافدين، وآثار دلمون البرونزية، وعيون الماء العذب البحرية (الكوكب)، والتراث الحي في المحرق لبناء صفحتك المصورة في جواز السفر.",
+    "summaryArabizi": "Ifsil bayn il-asatir, wa athar Dilmun, wa 3uyun il-kawkab, wa turath il-Muharraq fi Jawaz il-Safar.",
+    "epistemicCategory": "archaeology",
+    "epistemicWarningEn": "Explicitly prevents literalizing Gilgamesh immortality myths or collapsing ancient Dilmun and modern pearling into one era.",
+    "objectiveGraph": [
+      {
+        "stepId": "quest.bh.05.step1",
+        "descriptionEn": "Complete the 6-term Bahraini Glossary Bridge (Dilmun, Qal'at al-Bahrain, Kawkab, Bishtakhta, Kurar, Tabaqat Athariya).",
+        "requiredItemOrAction": "bh_act5_step1",
+        "hintEn": "Match each Bahraini term across Arabic script, Arabizi, and English.",
+        "failureRecovery": "Station remains active with visual guidance; zero timer or penalty."
+      },
+      {
+        "stepId": "quest.bh.05.step2",
+        "descriptionEn": "Organize the 3-drawer Dilmun Memory Chest (Mythology vs Bronze Age Archaeology vs Modern Living Heritage) with Dr. Layla and Ustadha Ameena to unlock the Bahrain Passport Stamp.",
+        "requiredItemOrAction": "bh_act5_step2",
+        "hintEn": "Place Gilgamesh sweet-water poems in the Mythology drawer, Steatite Seals in Bronze Age Archaeology, and Muharraq Bishtakhta/Kurar in Living Heritage.",
+        "failureRecovery": "Progress checkpoints save automatically; items respawn gently."
+      }
+    ],
+    "coopBehavior": {
+      "supportsTwoPlayerCoop": true,
+      "sharedCheckpointId": "checkpoint.bh.05",
+      "roleSplitEn": "Player 1 curates the Bronze Age & Hydrogeology drawers while Player 2 curates the Mythology & Modern Muharraq drawers."
+    },
+    "reward": {
+      "collectibleArtifactId": "artifact.bh.dilmun_memory_chest",
+      "passportMilestoneId": "milestone.bh.05",
+      "miraTokensEarned": 40,
+      "idempotencyKey": "reward.quest.bh.05.v16"
+    },
+    "mapCheckpoint": {
+      "questMapSvgUrl": "/art/gulf-v16/quest-maps/map-BH-act5.svg",
+      "markerXPercent": 82,
+      "markerYPercent": 64,
+      "checkpointLabelEn": "Act 5 · The Dilmun Memory Chest",
+      "checkpointLabelAr": "الفصل 5 · صندوق ذاكرة دلمون والبحرين",
+      "checkpointLabelArabizi": "Fasla 5 · Sunduq Dhakirat Dilmun wal-Bahrain"
+    },
+    "vocabularyIds": [
+      "vocab.bh.dilmun",
+      "vocab.bh.qalat_al_bahrain",
+      "vocab.bh.kawkab",
+      "vocab.bh.bishtakhta",
+      "vocab.bh.kurar",
+      "vocab.bh.tabaqat_athariya"
+    ],
+    "ageTiers": {
+      "5-7": {
+        "ageTier": "5-7",
+        "stageId": "quest.bh.05.tier.5-7",
+        "durationMinutes": "5–8 min",
+        "readingLoad": "low_pictorial_captioned",
+        "titleEn": "Three Treasure Drawers for Bahrain's Story!",
+        "titleAr": "ثلاثة أدراج لكنوز حكاية البحرين!",
+        "titleArabizi": "Yalla نرتب 3 adraj li-hikayat il-Bahrain!",
+        "objectiveEn": "Sort the storybook fish/poem card, the round ancient stamp, and the Muharraq ribbon into the 3 treasure drawers!",
+        "objectiveAr": "رتّب بطاقة الأسطورة وختم دلمون الدائري وشريط المحرق في الأدراج الثلاثة!",
+        "objectiveArabizi": "Rattib bitaqat il-ustura wa khatm Dilmun wa sharit il-Muharraq!",
+        "puzzleMechanicsEn": "3-drawer picture sorting + Bahrain Passport stamp celebration.",
+        "scaffoldingAndHintEn": "Glowing pictorial icons, spoken/captioned phrases, zero timers, and an explicit \"Ask a Grown-Up Helper\" button.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 4,
+        "robloxAdapterMechanics": "3-drawer epistemic sorting chest & Bahrain Passport ceremony."
+      },
+      "8-10": {
+        "ageTier": "8-10",
+        "stageId": "quest.bh.05.tier.8-10",
+        "durationMinutes": "8–15 min",
+        "readingLoad": "guided_bilingual_cards",
+        "titleEn": "Separating Myth, Archaeology & Living Tradition",
+        "titleAr": "التمييز بين الأسطورة والآثار والتراث الحي",
+        "titleArabizi": "Tamyiz il-Ustura wal-Athar wal-Turath il-7ayy",
+        "objectiveEn": "Complete the 6-word Bahraini glossary and sort six cards into Myth, Bronze Age Dilmun, and Modern Muharraq.",
+        "objectiveAr": "أكمل معجم الكلمات البحرينية الست وصنّف ست بطاقات بين الأسطورة ودلمون البرونزية والمحرق الحديثة.",
+        "objectiveArabizi": "Akmil 6 kalimat Bahrainiya wa sannif بطاقات الصندوق.",
+        "puzzleMechanicsEn": "6-term word bridge + 3-category epistemic chest sorting.",
+        "scaffoldingAndHintEn": "2–3 step guided checklist with side-by-side Arabic, Arabizi, and English vocabulary cards.",
+        "adultAssistanceOption": true,
+        "shorterSessionOverrideMinutes": 6,
+        "robloxAdapterMechanics": "3-drawer epistemic sorting chest & Bahrain Passport ceremony."
+      },
+      "11-13": {
+        "ageTier": "11-13",
+        "stageId": "quest.bh.05.tier.11-13",
+        "durationMinutes": "12–20 min",
+        "readingLoad": "investigative_multi_step",
+        "titleEn": "Al-Bahrain (\"The Two Seas\"): Kawkab Springs, Seals & Pearls",
+        "titleAr": "«البحرين»: عيون الكوكب العذبة وأختام دلمون وطريق اللؤلؤ",
+        "titleArabizi": "Il-Bahrayn: 3uyun il-Kawkab wa Akhtam Dilmun",
+        "objectiveEn": "Explain how submarine freshwater springs (kawkab) shaped both real island settlement at Qal'at al-Bahrain and ancient Mesopotamian poetry.",
+        "objectiveAr": "اشرح كيف أسهمت عيون الماء العذب البحرية (الكوكب) في ازدهار الاستيطان الحقيقي في قلعة البحرين وفي إلهام الشعر الرافديني القديم.",
+        "objectiveArabizi": "Ishrah dawr 3uyun il-kawkab fil-tarikh wal-shi3r il-qadim.",
+        "puzzleMechanicsEn": "Hydrogeology-vs-mythology synthesis & co-op chest lock.",
+        "scaffoldingAndHintEn": "Team role assignment, multi-step resource planning, and interactive map/system clues.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 8,
+        "robloxAdapterMechanics": "3-drawer epistemic sorting chest & Bahrain Passport ceremony."
+      },
+      "14-17": {
+        "ageTier": "14-17",
+        "stageId": "quest.bh.05.tier.14-17",
+        "durationMinutes": "15–30 min",
+        "readingLoad": "source_critical_provenance",
+        "titleEn": "Historiographical Synthesis: UNESCO #1192, UNESCO #1364 & Cuneiform Mythography",
+        "titleAr": "التركيب التاريخي النقدي: قلعة البحرين (#1192) وطريق اللؤلؤ (#1364) والأساطير المسمارية",
+        "titleArabizi": "Tarkib Tarikhi Naqdi: UNESCO #1192, #1364, wa Asatir Gilgamesh",
+        "objectiveEn": "Curate the complete Bahrain digital Passport exhibit with full source citations and chronological boundaries across 4,300 years.",
+        "objectiveAr": "صمّم معرض جواز السفر الرقمي للبحرين مع توثيق المصادر والحدود الزمنية الدقيقة عبر ٤٣٠٠ عام.",
+        "objectiveArabizi": "Sammim ma3rad Jawaz il-Safar lil-Bahrain ma3 tawthiq il-masadir.",
+        "puzzleMechanicsEn": "Capstone multi-era curatorial & provenance verification.",
+        "scaffoldingAndHintEn": "Primary/museum source provenance drawer, epistemic classification tags, and stakeholder tradeoff reasoning.",
+        "adultAssistanceOption": false,
+        "shorterSessionOverrideMinutes": 10,
+        "robloxAdapterMechanics": "3-drawer epistemic sorting chest & Bahrain Passport ceremony."
+      }
+    },
+    "robloxImplementation": {
+      "moduleName": "BahrainAct5DilmunMemoryChest",
+      "interactionType": "3-drawer epistemic sorting chest & Bahrain Passport ceremony.",
+      "zoneAnchorName": "BH_TwoSeasOverlook_CuratorialHall",
+      "status": "TEST BUILD"
+    },
+    "bedrockImplementation": {
+      "scriptHandler": "runBahrainAct5DilmunMemoryChest",
+      "structureTemplateId": "miraverse:bh_dilmun_memory_chest_hall",
+      "customBlocksAndItems": [
+        "miraverse:bh_kawkab_spring_model",
+        "miraverse:bh_memory_chest",
+        "miraverse:bh_passport_stamp"
+      ],
+      "status": "TEST BUILD"
+    }
+  }
+]

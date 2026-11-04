@@ -1,0 +1,85 @@
+{
+  "locationId": "alexandria",
+  "countryId": "EG",
+  "displayName": "Alexandria",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N31_00_E029_00_DEM/Copernicus_DSM_COG_10_N31_00_E029_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    29.875,
+    31.18,
+    29.955,
+    31.225
+  ],
+  "regionalBoundingBox": [
+    29.82,
+    31.12,
+    30.02,
+    31.26
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32635",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    -11.7,
+    35.79
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 34.0639,
+    "metersPerStudZ": 30.538,
+    "studsPerMeter": 0.02936
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 3.9579,
+    "verticalExaggeration": 1.1,
+    "robloxYRangeStuds": [
+      4.0,
+      18.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      1600,
+      10,
+      -280
+    ],
+    "robloxSpawn": [
+      1600,
+      10.5,
+      -252
+    ],
+    "spatialBounds": {
+      "min": [
+        1460,
+        -20,
+        -390
+      ],
+      "max": [
+        1740,
+        75,
+        -185
+      ]
+    },
+    "projectedCenterMeters": [
+      778109.4,
+      3455449.85
+    ]
+  },
+  "terrainChecksum": "51fe7371da807d8ef89bce82d8123a99ea0feaf7139efabc3ec19009dc4a3e88",
+  "generatedAssetPaths": [
+    "data/geography/processed/alexandria.json",
+    "apps/roblox/terrain/countries/EG/alexandria_terrain.json",
+    "reports/terrain/heightmaps/alexandria_heightmap.png",
+    "apps/roblox/terrain/countries/EG/alexandria_heightmap.png",
+    "reports/terrain/hillshades/alexandria_hillshade.png",
+    "reports/terrain/comparisons/alexandria_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/EG.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:27.413950+00:00"
+}

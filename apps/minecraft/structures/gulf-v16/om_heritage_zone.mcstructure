@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "size": [
+    24,
+    14,
+    24
+  ],
+  "country_id": "country.om",
+  "country_code": "OM",
+  "structures": [
+    {
+      "id": "miraverse:om_falaj_sharia_basin",
+      "act_id": "quest.om.01",
+      "title_en": "Follow the Water",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:om_frankincense_trade_station",
+      "act_id": "quest.om.02",
+      "title_en": "The Frankincense Route",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:om_falaj_repair_aqueduct",
+      "act_id": "quest.om.03",
+      "title_en": "Repair the Falaj",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:om_sablah_hospitality_veranda",
+      "act_id": "quest.om.04",
+      "title_en": "The Oasis Family Table",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    },
+    {
+      "id": "miraverse:om_sundial_archive_plaza",
+      "act_id": "quest.om.05",
+      "title_en": "Share the Water, Share the Story",
+      "palette": [
+        "minecraft:smooth_sandstone",
+        "minecraft:cut_sandstone",
+        "minecraft:dark_oak_planks",
+        "minecraft:lantern",
+        "minecraft:water"
+      ]
+    }
+  ]
+}

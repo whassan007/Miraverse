@@ -1,0 +1,85 @@
+{
+  "locationId": "tohoku_route",
+  "countryId": "JP",
+  "displayName": "Bash\u014d Tohoku Route (Yamadera to Matsushima)",
+  "geographicClass": "verified_real_world_multi_segment_route",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_E140_00_DEM/Copernicus_DSM_COG_10_N38_00_E140_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    140.405,
+    38.29,
+    140.47,
+    38.335
+  ],
+  "regionalBoundingBox": [
+    140.3,
+    38.2,
+    141.15,
+    38.45
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32654",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    158.54,
+    806.3
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 23.8041,
+    "metersPerStudZ": 20.6607,
+    "studsPerMeter": 0.04201
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 12.9553,
+    "verticalExaggeration": 1.2,
+    "robloxYRangeStuds": [
+      8.0,
+      58.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      6400,
+      16,
+      0
+    ],
+    "robloxSpawn": [
+      6400,
+      16.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        6260,
+        -20,
+        -165
+      ],
+      "max": [
+        6540,
+        110,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      450868.17,
+      4240693.34
+    ]
+  },
+  "terrainChecksum": "a51c1799e4d9a1fa6f497fdb339c0064b490bae2924dd18f8da1856d2bf73890",
+  "generatedAssetPaths": [
+    "data/geography/processed/tohoku_route.json",
+    "apps/roblox/terrain/countries/JP/tohoku_route_terrain.json",
+    "reports/terrain/heightmaps/tohoku_route_heightmap.png",
+    "apps/roblox/terrain/countries/JP/tohoku_route_heightmap.png",
+    "reports/terrain/hillshades/tohoku_route_hillshade.png",
+    "reports/terrain/comparisons/tohoku_route_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/JP.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:30.764503+00:00"
+}

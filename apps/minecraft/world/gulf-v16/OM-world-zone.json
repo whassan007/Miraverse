@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.6.0",
+  "countryCode": "OM",
+  "stableId": "country.om",
+  "nameEn": "Oman",
+  "nameAr": "سلطنة عُمان",
+  "storyArcTitleEn": "The Waterkeepers of the Mountains",
+  "mentorNpc": "npc.om.arif_salim_al_harthi",
+  "actsCount": 5,
+  "structures": [
+    {
+      "actId": "quest.om.01",
+      "structureTemplateId": "miraverse:om_falaj_sharia_basin",
+      "origin": [
+        1000,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:om_lamad_sundial",
+        "miraverse:om_sharia_stone"
+      ]
+    },
+    {
+      "actId": "quest.om.02",
+      "structureTemplateId": "miraverse:om_frankincense_trade_station",
+      "origin": [
+        1032,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:om_hojari_luban",
+        "miraverse:om_clay_majmar"
+      ]
+    },
+    {
+      "actId": "quest.om.03",
+      "structureTemplateId": "miraverse:om_falaj_repair_aqueduct",
+      "origin": [
+        1064,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:om_sarooj_block",
+        "miraverse:om_copper_sluice_gate"
+      ]
+    },
+    {
+      "actId": "quest.om.04",
+      "structureTemplateId": "miraverse:om_sablah_hospitality_veranda",
+      "origin": [
+        1096,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:om_rosewater_vessel",
+        "miraverse:om_halwa_bowl"
+      ]
+    },
+    {
+      "actId": "quest.om.05",
+      "structureTemplateId": "miraverse:om_sundial_archive_plaza",
+      "origin": [
+        1128,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:om_water_charter",
+        "miraverse:om_passport_stamp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "locationId": "lyon",
+  "countryId": "FR",
+  "displayName": "Lyon",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N45_00_E004_00_DEM/Copernicus_DSM_COG_10_N45_00_E004_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    4.8,
+    45.74,
+    4.86,
+    45.785
+  ],
+  "regionalBoundingBox": [
+    4.75,
+    45.7,
+    4.92,
+    45.82
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32631",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    160.5,
+    310.94
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 20.6876,
+    "metersPerStudZ": 23.2106,
+    "studsPerMeter": 0.04834
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 5.1877,
+    "verticalExaggeration": 1.2,
+    "robloxYRangeStuds": [
+      4.0,
+      36.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      4000,
+      10,
+      0
+    ],
+    "robloxSpawn": [
+      4000,
+      10.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        3860,
+        -20,
+        -165
+      ],
+      "max": [
+        4140,
+        85,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      642096.37,
+      5069250.51
+    ]
+  },
+  "terrainChecksum": "c034846c88b2f669ba0eeb9060c22e313ea9535287486f98910eb55033104682",
+  "generatedAssetPaths": [
+    "data/geography/processed/lyon.json",
+    "apps/roblox/terrain/countries/FR/lyon_terrain.json",
+    "reports/terrain/heightmaps/lyon_heightmap.png",
+    "apps/roblox/terrain/countries/FR/lyon_heightmap.png",
+    "reports/terrain/hillshades/lyon_hillshade.png",
+    "reports/terrain/comparisons/lyon_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/FR.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:29.466658+00:00"
+}

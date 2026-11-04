@@ -70,9 +70,17 @@ local function render(state: any)
 	end
 	picker.Visible = false
 	hud.Visible = true
-	playBtn.Visible = not state.hasStations and not state.stamp
-	lobbyButton.Visible = state.hasStations
-	if state.stamp then
+	local isRegion = state.locationType == "region"
+	playBtn.Visible = (state.canRunChallenge == true) and not state.hasStations and not isRegion and not state.stamp
+	lobbyButton.Visible = state.country ~= nil
+	if isRegion then
+		local regionTitle = state.locationName or "Mount Lebanon"
+		if state.stamp then
+			hudText.Text = string.format("%s (%s) · Stamp: %s", regionTitle, state.country, state.stamp)
+		else
+			hudText.Text = string.format("%s (%s) — Explore the mountain terraces", regionTitle, state.country)
+		end
+	elseif state.stamp then
 		hudText.Text = "Chapter complete! Stamp: " .. state.stamp
 	elseif state.hasStations and not state.met then
 		hudText.Text = "Go and talk to your mentor"

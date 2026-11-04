@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.6.0",
+  "countryCode": "QA",
+  "stableId": "country.qa",
+  "nameEn": "Qatar",
+  "nameAr": "قطر",
+  "storyArcTitleEn": "The Pearl of Stories",
+  "mentorNpc": "npc.qa.noora_al_qallaf",
+  "actsCount": 5,
+  "structures": [
+    {
+      "actId": "quest.qa.01",
+      "structureTemplateId": "miraverse:qa_doha_boatwright_pier",
+      "origin": [
+        200,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:qa_teak_plank",
+        "miraverse:qa_palm_rope",
+        "miraverse:qa_dayyin_basket"
+      ]
+    },
+    {
+      "actId": "quest.qa.02",
+      "structureTemplateId": "miraverse:qa_zubarah_market_courtyard",
+      "origin": [
+        232,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:qa_tasa_sieve",
+        "miraverse:qa_mithqal_scale",
+        "miraverse:qa_pearl_token"
+      ]
+    },
+    {
+      "actId": "quest.qa.03",
+      "structureTemplateId": "miraverse:qa_harbor_workshop_pavilion",
+      "origin": [
+        264,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:qa_limestone_block",
+        "miraverse:qa_danshal_beam",
+        "miraverse:qa_carved_door"
+      ]
+    },
+    {
+      "actId": "quest.qa.04",
+      "structureTemplateId": "miraverse:qa_fisaikra_story_courtyard",
+      "origin": [
+        296,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:qa_fisaikra_storybook",
+        "miraverse:qa_hospitality_platter",
+        "miraverse:qa_khous_coaster"
+      ]
+    },
+    {
+      "actId": "quest.qa.05",
+      "structureTemplateId": "miraverse:qa_al_qaffal_promenade",
+      "origin": [
+        328,
+        64,
+        200
+      ],
+      "size": [
+        24,
+        14,
+        24
+      ],
+      "customBlocksAndItems": [
+        "miraverse:qa_qaffal_banner",
+        "miraverse:qa_story_postcard",
+        "miraverse:qa_passport_stamp"
+      ]
+    }
+  ]
+}

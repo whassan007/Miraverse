@@ -1,0 +1,85 @@
+{
+  "locationId": "basra",
+  "countryId": "IQ",
+  "displayName": "Basra",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N30_00_E047_00_DEM/Copernicus_DSM_COG_10_N30_00_E047_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    47.81,
+    30.48,
+    47.88,
+    30.535
+  ],
+  "regionalBoundingBox": [
+    47.74,
+    30.42,
+    47.95,
+    30.6
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32638",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    -0.0,
+    13.92
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 29.8496,
+    "metersPerStudZ": 36.8714,
+    "studsPerMeter": 0.0335
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 1.9884,
+    "verticalExaggeration": 1.05,
+    "robloxYRangeStuds": [
+      3.0,
+      13.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      2400,
+      9,
+      -280
+    ],
+    "robloxSpawn": [
+      2400,
+      9.5,
+      -252
+    ],
+    "spatialBounds": {
+      "min": [
+        2260,
+        -20,
+        -390
+      ],
+      "max": [
+        2540,
+        65,
+        -185
+      ]
+    },
+    "projectedCenterMeters": [
+      773443.09,
+      3378542.44
+    ]
+  },
+  "terrainChecksum": "31a2b22410d0d100bbd7c9dfea2f276bfe8078af2a40d21cf393e9883e154ca0",
+  "generatedAssetPaths": [
+    "data/geography/processed/basra.json",
+    "apps/roblox/terrain/countries/IQ/basra_terrain.json",
+    "reports/terrain/heightmaps/basra_heightmap.png",
+    "apps/roblox/terrain/countries/IQ/basra_heightmap.png",
+    "reports/terrain/hillshades/basra_hillshade.png",
+    "reports/terrain/comparisons/basra_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/IQ.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:28.441279+00:00"
+}

@@ -1,0 +1,85 @@
+{
+  "locationId": "jeonju",
+  "countryId": "KR",
+  "displayName": "Jeonju",
+  "geographicClass": "verified_real_world",
+  "sourceDataset": "COP-DEM_GLO-30",
+  "sourceVersion": "2022-05-COG-v1",
+  "sourceUrl": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N35_00_E127_00_DEM/Copernicus_DSM_COG_10_N35_00_E127_00_DEM.tif",
+  "license": "Copernicus DEM License (Free, full and open access)",
+  "attribution": "\u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved.",
+  "vectorAttribution": "\u00a9 OpenStreetMap contributors, licensed under ODbL 1.0.",
+  "hydrologyAttribution": "Lehner, B., Grill G. (2013): Global river hydrography and network routing (HydroSHEDS).",
+  "sourceBoundingBox": [
+    127.13,
+    35.795,
+    127.18,
+    35.835
+  ],
+  "regionalBoundingBox": [
+    127.08,
+    35.75,
+    127.24,
+    35.88
+  ],
+  "sourceCRS": "EPSG:4326",
+  "targetCRS": "EPSG:32652",
+  "horizontalResolution": "30m",
+  "verticalDatum": "EGM2008",
+  "elevationRange": [
+    29.54,
+    303.97
+  ],
+  "horizontalScale": {
+    "metersPerStudX": 20.9148,
+    "metersPerStudZ": 19.7819,
+    "studsPerMeter": 0.04781
+  },
+  "verticalScale": {
+    "verticalMetersPerStud": 8.0715,
+    "verticalExaggeration": 1.2,
+    "robloxYRangeStuds": [
+      4.0,
+      42.0
+    ]
+  },
+  "terrainTransform": {
+    "robloxOrigin": [
+      3200,
+      10,
+      0
+    ],
+    "robloxSpawn": [
+      3200,
+      10.5,
+      28
+    ],
+    "spatialBounds": {
+      "min": [
+        3060,
+        -20,
+        -165
+      ],
+      "max": [
+        3340,
+        90,
+        165
+      ]
+    },
+    "projectedCenterMeters": [
+      333100.4,
+      3964971.11
+    ]
+  },
+  "terrainChecksum": "afcace14a437e7da0a53071f66aff8380efa65578e8a9d1594f2d5c4c0e2bf95",
+  "generatedAssetPaths": [
+    "data/geography/processed/jeonju.json",
+    "apps/roblox/terrain/countries/KR/jeonju_terrain.json",
+    "reports/terrain/heightmaps/jeonju_heightmap.png",
+    "apps/roblox/terrain/countries/KR/jeonju_heightmap.png",
+    "reports/terrain/hillshades/jeonju_hillshade.png",
+    "reports/terrain/comparisons/jeonju_comparison.png",
+    "apps/roblox/src/shared/GeoTerrainData/KR.luau"
+  ],
+  "generationTimestamp": "2026-11-04T19:48:28.687365+00:00"
+}

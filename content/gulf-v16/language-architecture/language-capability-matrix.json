@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.6.0",
+  "agentId": "CL04",
+  "generatedAt": "2026-11-04T13:48:52.006Z",
+  "branding": {
+    "arabic": "عالم يرا",
+    "arabizi": "3alam Mira (Mira's World)",
+    "english": "Mira's World"
+  },
+  "dialectsSupported": [
+    {
+      "code": "ar-QA",
+      "country": "QA",
+      "labelAr": "العربية (قطر)",
+      "labelEn": "Qatari Arabic",
+      "msaFallback": "ar"
+    },
+    {
+      "code": "ar-AE",
+      "country": "AE",
+      "labelAr": "العربية (الإمارات)",
+      "labelEn": "Emirati Arabic",
+      "msaFallback": "ar"
+    },
+    {
+      "code": "ar-KW",
+      "country": "KW",
+      "labelAr": "العربية (الكويت)",
+      "labelEn": "Kuwaiti Arabic",
+      "msaFallback": "ar"
+    },
+    {
+      "code": "ar-SA",
+      "country": "SA",
+      "labelAr": "العربية (السعودية)",
+      "labelEn": "Saudi Arabic (Najdi/Hejazi)",
+      "msaFallback": "ar"
+    },
+    {
+      "code": "ar-OM",
+      "country": "OM",
+      "labelAr": "العربية (عُمان)",
+      "labelEn": "Omani Arabic",
+      "msaFallback": "ar"
+    },
+    {
+      "code": "ar-BH",
+      "country": "BH",
+      "labelAr": "العربية (البحرين)",
+      "labelEn": "Bahraini Arabic",
+      "msaFallback": "ar"
+    }
+  ],
+  "arabiziOrthographyPolicy": {
+    "ages5To7": "Transparent phonetic Latin letters without numeral substitutions (e.g., \"Yalla niktishif il-lulu\" — illustrative activity invitation, never presented as a standardized official Qatari orthography).",
+    "ages8To10": "Clear phonetic Latin with side-by-side Arabic script and English gloss.",
+    "ages11To17": "Allows optional familiar Arabizi digits (3 = ع, 7 = ح, 5 = خ) accompanied by explicit phonetic explanations."
+  },
+  "bedrockSurfaceCapabilityMatrix": [
+    {
+      "surface": "texts/languages.json & *.lang pack files",
+      "microsoftDocumentedStandardPackLocale": false,
+      "finding": "Microsoft Bedrock pack documentation lists 29 standard pack locale codes (en_US, fr_FR, etc.) and does NOT list ar_SA or ar_001. Adding fake codes to languages.json is prohibited.",
+      "chosenStrategy": "Keep languages.json restricted to valid Bedrock pack locales (en_US, fr_FR) and drive Arabic/Arabizi/English selection via in-world Script API player dynamic properties + RawMessage."
+    },
+    {
+      "surface": "@minecraft/server-ui ActionFormData / MessageFormData / ModalFormData",
+      "utf8ArabicGlyphSupport": "SUPPORTED_WITH_CLIENT_FONT_SHAPING_CAVEAT",
+      "finding": "Modern Bedrock 1.21.50+ renders UTF-8 Arabic characters in Server-UI forms, but LTR container alignment and line-wrapping on small mobile/gamepad screens can clip long vocalized strings.",
+      "chosenStrategy": "Provide player-selectable Mode 1 (Native Arabic UTF-8 + English gloss), Mode 2 (Curated Arabizi Latin LTR + Arabic term), and Mode 3 (Plain English + side-by-side glossary). Default to user choice."
+    },
+    {
+      "surface": "Actionbar & Title / Subtitle (player.onScreenDisplay)",
+      "utf8ArabicGlyphSupport": "SUPPORTED_SHORT_STRINGS",
+      "finding": "Short 2–4 word Arabic headers (e.g., عالم يرا · قطر) render cleanly, whereas mixed bidi numbers/punctuation in long actionbar tickers can reorder.",
+      "chosenStrategy": "Use concise isolated Arabic lines or Arabizi/English per player script preference without manual character reversal."
+    },
+    {
+      "surface": "Signs, Books & Entity NameTags",
+      "utf8ArabicGlyphSupport": "PARTIAL_SIGN_WIDTH_CONSTRAINT",
+      "finding": "Hanging signs and NPC nametags have strict line-width limits; diacritics (tashkeel) increase vertical clipping risk.",
+      "chosenStrategy": "Use unvocalized clear Arabic + Arabizi/English bilingual nametags (e.g., \"Noora · نورة\") and Server-UI dialog panels for full story text."
+    }
+  ]
+}

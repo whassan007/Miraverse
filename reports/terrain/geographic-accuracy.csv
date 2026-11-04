@@ -1,0 +1,64 @@
+locationId,countryId,controlPointName,lat,lon,expectedMinM,expectedMaxM,measuredDemMeters,pass
+byblos,LB,Byblos Ancient Harbor,34.1236,35.6445,-2,15,23.76,True
+byblos,LB,Byblos Citadel Mound,34.1219,35.6468,15,45,29.72,True
+byblos,LB,Foothills East of Jbeil,34.124,35.675,120,480,287.4,True
+mount_lebanon,LB,Afqa Grotto & Nahr Ibrahim Headwaters,34.0683,35.8911,1100,1550,1147.88,True
+mount_lebanon,LB,Mount Lebanon Cedar Plateau,34.145,35.91,1700,2500,2008.84,True
+mount_lebanon,LB,Middle Limestone Agricultural Terraces (Al-Jall),34.11,35.81,850,1450,1466.0,True
+beirut,LB,Raouche / Pigeon Rocks Coast,33.8897,35.4701,-5,35,6.86,True
+beirut,LB,Achrafieh / Ras Beirut Hill,33.8886,35.515,40,105,82.88,True
+beirut,LB,Beirut Port Waterfront,33.9015,35.518,-2,20,1.76,True
+cairo,EG,Nile Corniche & Gezira,30.045,31.224,15,28,25.48,True
+cairo,EG,Historic Islamic Cairo (Al-Muizz),30.05,31.261,25,60,28.64,True
+cairo,EG,Muqattam Hills Escarpment,30.025,31.285,110,215,181.44,True
+alexandria,EG,Qaitbay / Pharos Headland,31.214,29.8856,-3,14,1.52,True
+alexandria,EG,Kom el-Dikka / Central Ridge,31.195,29.905,8,32,15.84,True
+alexandria,EG,Lake Mariout Depression South,31.165,29.91,-6,8,-5.0,True
+aswan,EG,Elephantine Island Nile Channel,24.085,32.886,85,115,97.52,True
+aswan,EG,Qubbet el-Hawa Western Escarpment,24.102,32.882,130,195,132.8,True
+aswan,EG,Eastern Granite Plateau,24.075,32.915,115,175,108.48,True
+baghdad,IQ,Tigris River Channel at Al-Mutanabbi,33.3405,44.389,28,38,44.85,True
+baghdad,IQ,Rusafa East Bank Levee,33.343,44.396,34,46,44.48,True
+baghdad,IQ,Karkh West Bank Plain,33.332,44.375,32,44,38.48,True
+erbil,IQ,Erbil Citadel Mound (Qalat Hewler),36.1911,44.0092,415,445,426.84,True
+erbil,IQ,Lower Erbil Plain,36.175,43.98,380,415,389.24,True
+erbil,IQ,Northeast Foothill Ridge (Pirmam Direction),36.25,44.1,480,780,539.36,True
+basra,IQ,Shatt al-Arab Main Channel,30.515,47.84,-3,5,7.32,True
+basra,IQ,Ashar Canal Quarter,30.508,47.815,1,9,1.56,True
+basra,IQ,Sinbad Island / Estuary Bank,30.525,47.838,0,7,5.08,True
+jeonju,KR,Jeonju Hanok Village Courtyard Basin,35.8147,127.1526,35,65,47.2,True
+jeonju,KR,Omokdae & Seungamsan Eastern Ridge,35.813,127.175,150,320,228.32,True
+jeonju,KR,Jeonjucheon Stream Corridor,35.811,127.148,28,48,43.64,True
+seoul,KR,Bugaksan Northern Granite Peak,37.595,126.98,170,350,188.2,True
+seoul,KR,Namsan Central Mountain,37.5512,126.9882,150,270,241.44,True
+seoul,KR,Hangang River Channel,37.525,126.965,5,25,17.84,True
+busan,KR,Busan North Port & Jagalchi,35.0965,129.0305,-5,18,6.2,True
+busan,KR,Gubongsan / Gamcheon Terraced Hills,35.105,129.01,120,410,136.4,True
+busan,KR,Yeongdo Bongnaesan Island Peak,35.082,129.062,100,395,189.04,True
+lyon,FR,Presqu'île & Rhône–Saône Confluence,45.733,4.818,158,175,167.85,True
+lyon,FR,Fourvière Western Hill above Vieux Lyon,45.7622,4.8225,230,310,294.41,True
+lyon,FR,La Croix-Rousse Northern Silk Hill,45.775,4.832,210,260,253.96,True
+paris,FR,Seine River & Île de la Cité,48.855,2.348,26,42,44.22,True
+paris,FR,Butte Montmartre Gypsum Hill (No Alpine Peaks!),48.8867,2.3431,95,135,128.25,True
+paris,FR,Montagne Sainte-Geneviève Left Bank,48.8462,2.3464,48,68,66.46,True
+marseille,FR,Vieux-Port Harbor Inlet,43.2951,5.374,-4,15,4.05,True
+marseille,FR,Notre-Dame de la Garde Limestone Hill,43.2841,5.3713,95,162,134.91,True
+marseille,FR,Eastern Marseille Hills,43.29,5.41,35,145,43.84,True
+rhine_valley,DE,Rhine River Channel at Lorelei Narrow,50.14,7.724,64,82,68.58,True
+rhine_valley,DE,Lorelei Slate Cliff Plateau,50.1415,7.7345,150,260,193.48,True
+rhine_valley,DE,Rhenish Massif Gorge Rim,50.15,7.755,220,320,282.16,True
+wuling_valley,CN,Yuan / Taohua Stream Basin,28.75,111.445,40,75,55.8,True
+wuling_valley,CN,Taohuayuan Wooded Ridge,28.785,111.46,95,185,115.12,True
+wuling_valley,CN,Wuling Foothill Pass,28.765,111.42,50,125,65.08,True
+tohoku_waystation,JP,Tachiya River Valley Crossing,38.311,140.434,160,240,236.32,True
+tohoku_waystation,JP,Yamadera (Risshaku-ji) Tuff Cliff Slope,38.316,140.4385,260,480,422.48,True
+tohoku_waystation,JP,Eastern Ou Mountain Ridge,38.325,140.475,400,880,466.16,True
+lake_svetloyar,RU,Lake Svetloyar Basin Center,56.8192,45.0919,104,114,108.04,True
+lake_svetloyar,RU,Svetloyar Southern Forested RimHills,56.8145,45.093,118,142,117.12,True
+lake_svetloyar,RU,Vladimirskoye Village Terrace,56.827,45.08,112,136,126.68,True
+kyiv_hills,UA,Dnipro River & Trukhaniv Channel,50.46,30.538,88,102,97.28,True
+kyiv_hills,UA,Starokyivska & Volodymyrska Right-Bank Hills,50.4565,30.52,155,198,187.96,True
+kyiv_hills,UA,Podil River Terrace,50.465,30.518,95,118,104.16,True
+marrakesh_atlas,MA,Marrakesh Medina / Jemaa el-Fnaa Plain,31.6258,-7.9891,440,485,469.12,True
+marrakesh_atlas,MA,Ourika / High Atlas Foothill Transition,31.4,-7.86,700,1250,767.16,True
+marrakesh_atlas,MA,Southern High Atlas Slopes (Oukaimeden Approach),31.285,-7.84,1350,2450,1350.24,True
