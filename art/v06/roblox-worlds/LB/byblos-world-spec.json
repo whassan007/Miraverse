@@ -1,0 +1,67 @@
+{
+  "countryId": "LB",
+  "chapterTitle": "Lebanon: Summer at Teta's",
+  "worldOrigin": [
+    -220,
+    8,
+    0
+  ],
+  "landmarks": [
+    {
+      "id": "lb_harbor_quay",
+      "name": "Byblos Phoenician Fishing Harbor & Wooden Boats",
+      "position": [
+        -240,
+        6,
+        18
+      ]
+    },
+    {
+      "id": "lb_teta_courtyard",
+      "name": "Teta Nahla's Limestone House & Bougainvillea Courtyard",
+      "position": [
+        -212,
+        8,
+        6
+      ]
+    },
+    {
+      "id": "lb_saj_bakery",
+      "name": "Domed Saj Flatbread Kitchen",
+      "position": [
+        -204,
+        8,
+        -8
+      ]
+    },
+    {
+      "id": "lb_souk_market",
+      "name": "Old Stone Souk & Spice Stalls",
+      "position": [
+        -192,
+        8,
+        12
+      ]
+    },
+    {
+      "id": "lb_restoration_plot",
+      "name": "Restorable Triple-Arch Stone House Plot",
+      "position": [
+        -220,
+        8,
+        -12
+      ]
+    }
+  ],
+  "npcs": [
+    "npc_teta_nahla",
+    "npc_ami_karim_spice_merchant",
+    "npc_rima_harbor_painter",
+    "npc_sami_boatwright"
+  ],
+  "soundscape": [
+    "mediterranean_harbor_waves",
+    "oud_courtyard_breeze",
+    "saj_crackle_warm"
+  ]
+}
