@@ -85,13 +85,21 @@
       "acceptance": "Complete Byblos district, 6 playable quest locations",
       "branch": "minecraft-global/AG02",
       "worktree": "/home/wael/Code/mv-wt-mcg/AG02",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "c363dfd",
+      "integration_sha": "b8318de",
+      "runtime_environment": "Antigravity World District Lead (LB · Byblos/Jbeil)",
+      "modified_files": [
+        "apps/minecraft/world/LB/district-v11.json",
+        "apps/minecraft/world/LB/quests/lb-quest-scenes.json",
+        "apps/minecraft/world/LB/structures/lb_district_v11.mcstructure.json"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/world/LB/district-v11.json",
+        "apps/minecraft/world/LB/structures/lb_district_v11.mcstructure.json",
+        "apps/minecraft/world/LB/quests/lb-quest-scenes.json"
+      ],
       "report_path": "reports/minecraft-global/agents/AG02.md",
       "log_path": "swarm/minecraft-global/logs/AG02.log",
       "blockers": []
