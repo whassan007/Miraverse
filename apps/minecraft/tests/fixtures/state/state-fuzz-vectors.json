@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "10.0.0",
+  "generatedAt": "2026-11-04T07:00:27.967Z",
+  "vectors": [
+    {
+      "id": "fuzz_corrupted_json",
+      "description": "Primary DynamicProperty JSON is truncated/invalid; must recover from :backup key.",
+      "rawPrimary": "{\"schemaVersion\":\"mv.mc.v10\",TRUNCATED",
+      "expectBackupRecovery": true
+    },
+    {
+      "id": "fuzz_duplicate_stamp_claim",
+      "description": "Player claims LB chapter stamp twice; second claim must return deduplicated=true and 0 extra tokens.",
+      "country": "LB",
+      "repeatClaims": 3,
+      "expectedTotalTokens": 100
+    },
+    {
+      "id": "fuzz_out_of_order_cooking",
+      "description": "Player attempts cooking step 2 before step 0; must reject with WRONG_INGREDIENT_ORDER and preserve inventory.",
+      "country": "EG",
+      "wrongIngredient": "miraverse:eg_rice",
+      "expectedOk": false
+    },
+    {
+      "id": "fuzz_unowned_plot_grief",
+      "description": "Guest player attempts to place block in owner plot without collaborator grant or in protected heritage street.",
+      "country": "IQ",
+      "actingPlayerId": "guest_2",
+      "ownerPlayerId": "host_1",
+      "expectedReason": "UNAUTHORIZED_PLOT_EDIT"
+    },
+    {
+      "id": "fuzz_plot_quota_overflow",
+      "description": "Authorized builder attempts to place 65th block on a 64-quota plot.",
+      "country": "KR",
+      "maxQuota": 64,
+      "attemptCount": 65,
+      "expectedReasonOn65": "PLOT_QUOTA_EXCEEDED"
+    }
+  ]
+}
