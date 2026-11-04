@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Mira Portrait">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#FFE8C2"/>
+      <stop offset="100%" stop-color="#3B6EA5"/>
+    </radialGradient>
+  </defs>
+  <circle cx="120" cy="120" r="114" fill="url(#bg)" stroke="#F4A261" stroke-width="6"/>
+  <path d="M55 215 C65 162, 175 162, 185 215 Z" fill="#2A6F97"/>
+  <path d="M84 166 Q120 186 156 166 L148 192 Q120 205 92 192 Z" fill="#F4A261"/>
+  <circle cx="120" cy="108" r="46" fill="#D99B78"/>
+  <path d="M68 105 C68 55, 172 55, 172 105 C162 78, 138 72, 120 74 C102 72, 78 78, 68 105 Z" fill="#2B2118"/>
+  <circle cx="103" cy="108" r="6" fill="#2B2118"/>
+  <circle cx="137" cy="108" r="6" fill="#2B2118"/>
+  <circle cx="105" cy="106" r="2" fill="#FFFFFF"/>
+  <circle cx="139" cy="106" r="2" fill="#FFFFFF"/>
+  <path d="M106 128 Q120 139 134 128" fill="none" stroke="#6B3E26" stroke-width="4" stroke-linecap="round"/>
+</svg>
