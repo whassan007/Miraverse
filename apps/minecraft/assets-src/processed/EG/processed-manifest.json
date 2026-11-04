@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "EG",
+  "countryName": "Egypt",
+  "region": "Cairo",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 57.09,
+    "hardware": "NVIDIA GB10, 580.178.04, 44, 0 % | Total=121GiB Used=100GiB Free=3GiB Available=21GiB",
+    "notes": "Here's a concise summary of **visual material and texture QA checks** for the *Egypt (Cairo)* section of a **Minecraft Bedrock Resource Pack**, covering **8 custom blocks** and **6 chapter artifacts**: --- ### ✅ **Visual & Texture QA Checklist – Egypt (Cairo)*"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/EG/items/eg_fanous_of_shared_light.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:eg_cairo_mashrabiya",
+      "shortName": "eg_cairo_mashrabiya",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/blocks/eg_cairo_mashrabiya.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:eg_fanous_lantern_block",
+      "shortName": "eg_fanous_lantern_block",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/blocks/eg_fanous_lantern_block.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:eg_khan_arch_stone",
+      "shortName": "eg_khan_arch_stone",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/blocks/eg_khan_arch_stone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:eg_courtyard_fountain_tile",
+      "shortName": "eg_courtyard_fountain_tile",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/blocks/eg_courtyard_fountain_tile.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:eg_koshari_cauldron_block",
+      "shortName": "eg_koshari_cauldron_block",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/blocks/eg_koshari_cauldron_block.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:eg_carved_cedar_door_frame",
+      "shortName": "eg_carved_cedar_door_frame",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/blocks/eg_carved_cedar_door_frame.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:eg_alabaster_lamp",
+      "shortName": "eg_alabaster_lamp",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/blocks/eg_alabaster_lamp.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:eg_spice_bazaar_canopy",
+      "shortName": "eg_spice_bazaar_canopy",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/blocks/eg_spice_bazaar_canopy.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "eg_lantern_frame",
+      "chapterId": "EG01",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/items/eg_lantern_frame.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "eg_glass_star",
+      "chapterId": "EG02",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/items/eg_glass_star.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "eg_market_scale",
+      "chapterId": "EG03",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/items/eg_market_scale.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "eg_koshari_bowl",
+      "chapterId": "EG04",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/items/eg_koshari_bowl.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "eg_story_flame",
+      "chapterId": "EG05",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/items/eg_story_flame.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "eg_cairo_light_stamp",
+      "chapterId": "EG06",
+      "texturePath": "apps/minecraft/assets-src/processed/EG/items/eg_cairo_light_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}
