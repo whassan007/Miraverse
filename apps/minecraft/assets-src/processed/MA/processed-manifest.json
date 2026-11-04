@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "MA",
+  "countryName": "Morocco",
+  "region": "Marrakesh / Jemaa el-Fnaa-inspired square",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 56.79,
+    "hardware": "NVIDIA GB10, 580.178.04, 48, 0 % | Total=121GiB Used=101GiB Free=0GiB Available=19GiB",
+    "notes": "Here's a concise summary of **Visual Material & Texture QA Checks** for a Morocco-themed (specifically Marrakesh/Jemaa el-Fnaa-inspired) section in a **Minecraft Bedrock Resource Pack**, covering **8 custom blocks** and **6 chapter artifacts**: --- ### ✅ **Gen"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/MA/items/ma_storytellers_circle_drum.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:ma_marrakesh_terracotta_pise",
+      "shortName": "ma_marrakesh_terracotta_pise",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/blocks/ma_marrakesh_terracotta_pise.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ma_zellij_star_mosaic",
+      "shortName": "ma_zellij_star_mosaic",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/blocks/ma_zellij_star_mosaic.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ma_carved_cedar_arch",
+      "shortName": "ma_carved_cedar_arch",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/blocks/ma_carved_cedar_arch.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ma_halqa_circle_paver",
+      "shortName": "ma_halqa_circle_paver",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/blocks/ma_halqa_circle_paver.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ma_mint_tea_hospitality_table",
+      "shortName": "ma_mint_tea_hospitality_table",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/blocks/ma_mint_tea_hospitality_table.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ma_brass_pierced_lantern",
+      "shortName": "ma_brass_pierced_lantern",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/blocks/ma_brass_pierced_lantern.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ma_riad_courtyard_fountain",
+      "shortName": "ma_riad_courtyard_fountain",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/blocks/ma_riad_courtyard_fountain.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:ma_storyteller_stage_canopy",
+      "shortName": "ma_storyteller_stage_canopy",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/blocks/ma_storyteller_stage_canopy.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "ma_circle_invitation",
+      "chapterId": "MA01",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/items/ma_circle_invitation.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ma_hakawati_token",
+      "chapterId": "MA02",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/items/ma_hakawati_token.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ma_mint_tea_tray",
+      "chapterId": "MA03",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/items/ma_mint_tea_tray.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ma_story_thread",
+      "chapterId": "MA04",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/items/ma_story_thread.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ma_heritage_map",
+      "chapterId": "MA05",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/items/ma_heritage_map.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "ma_morocco_circle_stamp",
+      "chapterId": "MA06",
+      "texturePath": "apps/minecraft/assets-src/processed/MA/items/ma_morocco_circle_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}
