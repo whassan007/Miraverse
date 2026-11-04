@@ -153,12 +153,15 @@
       "task_card": "swarm/minecraft-v10/cards/AG05.md",
       "branch": "minecraft-v10/AG05",
       "worktree": "/home/wael/Code/mv-wt-mc10/AG05",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "83d8c08",
       "test_command": "test -s apps/minecraft/world/EG/cairo-district.json && test -s apps/minecraft/world/EG/EG.mcstructure.json",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/world/EG/cairo-district.json",
+        "apps/minecraft/world/EG/EG.mcstructure.json"
+      ],
+      "runtime_environment": "Antigravityorchestrator -> gemini-4-argon",
       "blockers": []
     },
     {
