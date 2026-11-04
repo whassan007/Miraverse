@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "FR",
+  "countryName": "France",
+  "region": "Vieux Lyon",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 57.06,
+    "hardware": "NVIDIA GB10, 580.178.04, 45, 0 % | Total=121GiB Used=100GiB Free=3GiB Available=20GiB",
+    "notes": "Here's a concise summary of **visual material and texture QA checks** for the *France – Vieux Lyon* section of a **Minecraft Bedrock Resource Pack**, covering **8 custom blocks** and **6 chapter artifacts**: --- ### ✅ **Visual & Texture QA Checklist** #### **1"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/FR/items/fr_meres_lyonnaises_recipe_book.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:fr_lyon_ochre_stucco",
+      "shortName": "fr_lyon_ochre_stucco",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/blocks/fr_lyon_ochre_stucco.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:fr_mansard_slate_shingle",
+      "shortName": "fr_mansard_slate_shingle",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/blocks/fr_mansard_slate_shingle.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:fr_carved_oak_shutter",
+      "shortName": "fr_carved_oak_shutter",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/blocks/fr_carved_oak_shutter.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:fr_traboule_vault_stone",
+      "shortName": "fr_traboule_vault_stone",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/blocks/fr_traboule_vault_stone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:fr_boulangerie_wood_oven",
+      "shortName": "fr_boulangerie_wood_oven",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/blocks/fr_boulangerie_wood_oven.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:fr_wrought_iron_balcony",
+      "shortName": "fr_wrought_iron_balcony",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/blocks/fr_wrought_iron_balcony.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:fr_gilded_bakery_sign",
+      "shortName": "fr_gilded_bakery_sign",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/blocks/fr_gilded_bakery_sign.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:fr_cobblestone_paver",
+      "shortName": "fr_cobblestone_paver",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/blocks/fr_cobblestone_paver.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "fr_traboule_key",
+      "chapterId": "FR01",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/items/fr_traboule_key.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "fr_silk_ribbon",
+      "chapterId": "FR02",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/items/fr_silk_ribbon.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "fr_chefs_notebook",
+      "chapterId": "FR03",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/items/fr_chefs_notebook.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "fr_market_basket",
+      "chapterId": "FR04",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/items/fr_market_basket.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "fr_masons_crest",
+      "chapterId": "FR05",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/items/fr_masons_crest.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "fr_lyon_heritage_stamp",
+      "chapterId": "FR06",
+      "texturePath": "apps/minecraft/assets-src/processed/FR/items/fr_lyon_heritage_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}
