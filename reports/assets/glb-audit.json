@@ -1,0 +1,87 @@
+{
+  "auditedAt": "2026-11-04T02:28:43.264Z",
+  "allValid": true,
+  "assets": [
+    {
+      "assetId": "glb:hero_mira",
+      "glbPath": "/assets/models/hero_mira.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1616,
+      "withinBudget": true,
+      "animationClipCount": 12
+    },
+    {
+      "assetId": "glb:npc_mentor",
+      "glbPath": "/assets/models/npc_mentor.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1624,
+      "withinBudget": true,
+      "animationClipCount": 12
+    },
+    {
+      "assetId": "glb:world_hub",
+      "glbPath": "/assets/models/world_hub.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1452,
+      "withinBudget": true,
+      "animationClipCount": 0
+    },
+    {
+      "assetId": "glb:world_FR",
+      "glbPath": "/assets/models/world_FR.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1448,
+      "withinBudget": true,
+      "animationClipCount": 0
+    },
+    {
+      "assetId": "glb:world_LB",
+      "glbPath": "/assets/models/world_LB.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1444,
+      "withinBudget": true,
+      "animationClipCount": 0
+    },
+    {
+      "assetId": "glb:world_EG",
+      "glbPath": "/assets/models/world_EG.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1444,
+      "withinBudget": true,
+      "animationClipCount": 0
+    },
+    {
+      "assetId": "glb:world_IQ",
+      "glbPath": "/assets/models/world_IQ.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1448,
+      "withinBudget": true,
+      "animationClipCount": 0
+    },
+    {
+      "assetId": "glb:world_KR",
+      "glbPath": "/assets/models/world_KR.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1448,
+      "withinBudget": true,
+      "animationClipCount": 0
+    },
+    {
+      "assetId": "glb:landing_diorama",
+      "glbPath": "/assets/models/landing_diorama.glb",
+      "validMagicHeader": true,
+      "gltfVersion": 2,
+      "byteLength": 1480,
+      "withinBudget": true,
+      "animationClipCount": 0
+    }
+  ]
+}
