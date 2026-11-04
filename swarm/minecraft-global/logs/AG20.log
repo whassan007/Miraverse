@@ -1,0 +1,19 @@
+=== AGENT AG20 (ANTIGRAVITY · W5) ===
+Timestamp: 2026-11-04T13:45:13.300Z
+Task: Windows Editor production, real-client screenshot operator
+Resolved Model: Gemini 4 Argon
+Runtime Environment: Antigravity Windows Editor Handoff & Capture Lane (Linux aarch64)
+Branch: minecraft-global/AG20
+Worktree: /home/wael/Code/mv-wt-mcg/AG20
+Agent Commit SHA: a04b564
+Integration Merge SHA: c35486c
+Owned Paths: apps/minecraft/editor/, reports/minecraft-global/client-captures/
+Modified Files (3): apps/minecraft/editor/editor-project.json, apps/minecraft/editor/export-windows-mcworld.ps1, reports/minecraft-global/client-captures/CAPTURE-STATUS.md
+Test Command: node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('apps/minecraft/editor/editor-project.json','utf8')); if(p.districtsToPlace.length!==11 || !p.linuxHostStatus.includes('BLOCKED')) process.exit(1); console.log('AG20 Windows Editor handoff verified');"
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/editor/editor-project.json, apps/minecraft/editor/export-windows-mcworld.ps1, reports/minecraft-global/client-captures/CAPTURE-STATUS.md
+Blockers: Windows Minecraft Bedrock Editor/Client GUI runtime is PC-only and unavailable on this Linux aarch64 host (`BLOCKED: native runtime missing`).
+--- STDOUT/STDERR ---
+AG20 Windows Editor handoff verified
+
+DONE AG20 a04b564 apps/minecraft/editor/editor-project.json

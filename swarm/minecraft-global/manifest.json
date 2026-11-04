@@ -1036,16 +1036,26 @@
       "acceptance": "Actual `.mcworld` exports and unmodified GUI captures or explicitly BLOCKED evidence",
       "branch": "minecraft-global/AG20",
       "worktree": "/home/wael/Code/mv-wt-mcg/AG20",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "INTEGRATED",
+      "attempts": 1,
+      "commit_sha": "a04b564",
+      "integration_sha": "c35486c",
+      "runtime_environment": "Antigravity Windows Editor Handoff & Capture Lane (Linux aarch64)",
+      "modified_files": [
+        "apps/minecraft/editor/editor-project.json",
+        "apps/minecraft/editor/export-windows-mcworld.ps1",
+        "reports/minecraft-global/client-captures/CAPTURE-STATUS.md"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/editor/editor-project.json",
+        "apps/minecraft/editor/export-windows-mcworld.ps1",
+        "reports/minecraft-global/client-captures/CAPTURE-STATUS.md"
+      ],
       "report_path": "reports/minecraft-global/agents/AG20.md",
       "log_path": "swarm/minecraft-global/logs/AG20.log",
-      "blockers": []
+      "blockers": [
+        "Windows Minecraft Bedrock Editor/Client GUI runtime is PC-only and unavailable on this Linux aarch64 host (`BLOCKED: native runtime missing`)."
+      ]
     },
     {
       "id": "DX01",
