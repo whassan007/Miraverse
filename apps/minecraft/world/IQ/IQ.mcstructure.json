@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "structureId": "miraverse:iq_district",
+  "size": [
+    96,
+    32,
+    96
+  ],
+  "origin": [
+    600,
+    64,
+    0
+  ],
+  "palette": [
+    "miraverse:iq_tigris_glazed_brick",
+    "miraverse:iq_shanasheel_oriel_screen",
+    "miraverse:iq_turquoise_muqarnas",
+    "miraverse:iq_kleicha_brick_oven"
+  ]
+}

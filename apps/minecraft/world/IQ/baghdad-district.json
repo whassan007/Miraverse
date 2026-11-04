@@ -1,0 +1,542 @@
+{
+  "country": "IQ",
+  "titleEn": "Baghdad Riverside",
+  "titleNative": "بغداد · العراق",
+  "origin": {
+    "x": 600,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 600,
+    "y": 65,
+    "z": -18
+  },
+  "returnPortalPos": {
+    "x": 600,
+    "y": 65,
+    "z": -24
+  },
+  "privatePlotOrigin": {
+    "x": 632,
+    "y": 65,
+    "z": 20
+  },
+  "privatePlotRadius": 8,
+  "restorationOrigin": {
+    "x": 592,
+    "y": 65,
+    "z": 8
+  },
+  "restorationRequiredItems": [
+    {
+      "itemId": "miraverse:iq_palm_wood",
+      "count": 3
+    }
+  ],
+  "exteriors": [
+    {
+      "buildingId": "iq_mentor_kitchen_house",
+      "nameEn": "Bibi Amal's Culinary House",
+      "nameNative": "بغداد · العراق",
+      "origin": {
+        "x": 588,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_turquoise_muqarnas",
+      "trimBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "hasInterior": true,
+      "interiorId": "iq_int_kitchen"
+    },
+    {
+      "buildingId": "iq_family_courtyard",
+      "nameEn": "Baghdad Riverside Family Courtyard",
+      "nameNative": "بغداد · العراق",
+      "origin": {
+        "x": 606,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_turquoise_muqarnas",
+      "trimBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "hasInterior": true,
+      "interiorId": "iq_int_salon"
+    },
+    {
+      "buildingId": "iq_artisan_workshop",
+      "nameEn": "Baghdad Riverside Artisan Workshop",
+      "nameNative": "بغداد · العراق",
+      "origin": {
+        "x": 584,
+        "y": 64,
+        "z": -12
+      },
+      "size": {
+        "x": 10,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_turquoise_muqarnas",
+      "trimBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "hasInterior": true,
+      "interiorId": "iq_int_workshop"
+    },
+    {
+      "buildingId": "iq_market_pavilion",
+      "nameEn": "Baghdad Riverside Market Bazaar Pavilion",
+      "nameNative": "بغداد · العراق",
+      "origin": {
+        "x": 610,
+        "y": 64,
+        "z": -14
+      },
+      "size": {
+        "x": 11,
+        "y": 6,
+        "z": 9
+      },
+      "wallBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_turquoise_muqarnas",
+      "trimBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "iq_heritage_tower",
+      "nameEn": "Baghdad Riverside Heritage Landmark Gate",
+      "nameNative": "بغداد · العراق",
+      "origin": {
+        "x": 596,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 9,
+        "y": 10,
+        "z": 9
+      },
+      "wallBlock": "miraverse:iq_tigris_glazed_brick",
+      "roofBlock": "miraverse:iq_turquoise_muqarnas",
+      "trimBlock": "miraverse:iq_shanasheel_oriel_screen",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "iq_int_kitchen",
+      "buildingId": "iq_mentor_kitchen_house",
+      "nameEn": "Bibi Amal's Kitchen Interior",
+      "entryPos": {
+        "x": 592,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "iq_hearth",
+          "blockId": "miraverse:iq_kleicha_brick_oven",
+          "offset": {
+            "x": 594,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Cardamom Date Kleicha Cooking Station"
+        },
+        {
+          "propId": "iq_prep_table",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 591,
+            "y": 65,
+            "z": 7
+          },
+          "labelEn": "Preparation Table"
+        },
+        {
+          "propId": "iq_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 593,
+            "y": 67,
+            "z": 6
+          },
+          "labelEn": "Warm Kitchen Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "iq_int_salon",
+      "buildingId": "iq_family_courtyard",
+      "nameEn": "Baghdad Riverside Family Salon Interior",
+      "entryPos": {
+        "x": 612,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "iq_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 610,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Storybook Stand"
+        },
+        {
+          "propId": "iq_carpet",
+          "blockId": "minecraft:red_carpet",
+          "offset": {
+            "x": 611,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Woven Courtyard Rug"
+        }
+      ]
+    },
+    {
+      "interiorId": "iq_int_workshop",
+      "buildingId": "iq_artisan_workshop",
+      "nameEn": "Baghdad Riverside Artisan Workshop Interior",
+      "entryPos": {
+        "x": 588,
+        "y": 65,
+        "z": -12
+      },
+      "furnishings": [
+        {
+          "propId": "iq_barrel",
+          "blockId": "minecraft:barrel",
+          "offset": {
+            "x": 590,
+            "y": 65,
+            "z": -9
+          },
+          "labelEn": "Artisan Supply Barrel"
+        },
+        {
+          "propId": "iq_workbench",
+          "blockId": "minecraft:stonecutter_block",
+          "offset": {
+            "x": 589,
+            "y": 65,
+            "z": -8
+          },
+          "labelEn": "Craftsman Workbench"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "npc:IQ:mentor",
+      "entityTypeId": "miraverse:mentor_iq",
+      "country": "IQ",
+      "nameEn": "Bibi Amal",
+      "nameNative": "بيبي أمل",
+      "role": "mentor",
+      "spawnPos": {
+        "x": 593,
+        "y": 65,
+        "z": 3
+      },
+      "defaultAnimation": "greeting",
+      "dialogueGreetingEn": "Welcome to Baghdad Riverside! Let's gather ingredients, trade at the market, cook Cardamom Date Kleicha, restore our landmark, and learn 3 cultural words.",
+      "dialogueGreetingNative": "بغداد · العراق",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:IQ:merchant",
+      "entityTypeId": "miraverse:mentor_iq",
+      "country": "IQ",
+      "nameEn": "Baghdad Riverside Market Merchant",
+      "nameNative": "بيبي أمل",
+      "role": "merchant",
+      "spawnPos": {
+        "x": 589,
+        "y": 65,
+        "z": -11
+      },
+      "defaultAnimation": "idle",
+      "dialogueGreetingEn": "Trade your gathered herbs and ingredients for specialty cooking supplies!",
+      "dialogueGreetingNative": "بغداد · العراق",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:IQ:artisan",
+      "entityTypeId": "miraverse:mentor_iq",
+      "country": "IQ",
+      "nameEn": "Baghdad Riverside Master Artisan",
+      "nameNative": "بيبي أمل",
+      "role": "artisan",
+      "spawnPos": {
+        "x": 591,
+        "y": 65,
+        "z": 9
+      },
+      "defaultAnimation": "pointing",
+      "dialogueGreetingEn": "Place restoration blocks on our damaged landmark to see the before/after transformation!",
+      "dialogueGreetingNative": "بغداد · العراق",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:IQ:cousin",
+      "entityTypeId": "miraverse:mentor_iq",
+      "country": "IQ",
+      "nameEn": "Baghdad Riverside Cousin Guide",
+      "nameNative": "بيبي أمل",
+      "role": "cousin",
+      "spawnPos": {
+        "x": 612,
+        "y": 65,
+        "z": -14
+      },
+      "defaultAnimation": "walk",
+      "dialogueGreetingEn": "Explore the streets and discover the three cultural vocabulary objects!",
+      "dialogueGreetingNative": "بغداد · العراق",
+      "humanReviewRequired": true
+    }
+  ],
+  "anchors": [
+    {
+      "anchorId": "anchor:IQ:return_hub",
+      "country": "IQ",
+      "kind": "portal",
+      "pos": {
+        "x": 600,
+        "y": 65,
+        "z": -24
+      },
+      "blockId": "miraverse:iq_shanasheel_oriel_screen",
+      "labelEn": "Return to MiraVerse Gateway Hub"
+    },
+    {
+      "anchorId": "anchor:IQ:gather_1",
+      "country": "IQ",
+      "kind": "gather_node",
+      "pos": {
+        "x": 582,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather miraverse:iq_date_paste",
+      "linkedItemId": "miraverse:iq_date_paste"
+    },
+    {
+      "anchorId": "anchor:IQ:gather_2",
+      "country": "IQ",
+      "kind": "gather_node",
+      "pos": {
+        "x": 585,
+        "y": 65,
+        "z": -4
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather miraverse:iq_wheat_dough",
+      "linkedItemId": "miraverse:iq_wheat_dough"
+    },
+    {
+      "anchorId": "anchor:IQ:trade_stall",
+      "country": "IQ",
+      "kind": "trade_stall",
+      "pos": {
+        "x": 589,
+        "y": 65,
+        "z": -10
+      },
+      "blockId": "minecraft:emerald_block",
+      "labelEn": "Market Trade Stall",
+      "linkedItemId": "miraverse:iq_cardamom"
+    },
+    {
+      "anchorId": "anchor:IQ:cooking_station",
+      "country": "IQ",
+      "kind": "cooking_station",
+      "pos": {
+        "x": 594,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:iq_kleicha_brick_oven",
+      "labelEn": "Cook Cardamom Date Kleicha",
+      "linkedItemId": "miraverse:iq_kleicha"
+    },
+    {
+      "anchorId": "anchor:IQ:restoration_site",
+      "country": "IQ",
+      "kind": "restoration_site",
+      "pos": {
+        "x": 592,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:iq_tigris_glazed_brick",
+      "labelEn": "Restore Baghdad Riverside Landmark",
+      "linkedItemId": "miraverse:iq_palm_wood"
+    },
+    {
+      "anchorId": "anchor:IQ:word_1",
+      "country": "IQ",
+      "kind": "word_object",
+      "pos": {
+        "x": 595,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:iq_kleicha_brick_oven",
+      "labelEn": "Word: Carved Oriel Balcony",
+      "labelNative": "شناشيل",
+      "transliteration": "shanāshīl"
+    },
+    {
+      "anchorId": "anchor:IQ:word_2",
+      "country": "IQ",
+      "kind": "word_object",
+      "pos": {
+        "x": 583,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "miraverse:iq_shanasheel_oriel_screen",
+      "labelEn": "Word: Spiced Date Pastry",
+      "labelNative": "كليجة",
+      "transliteration": "klīcha"
+    },
+    {
+      "anchorId": "anchor:IQ:word_3",
+      "country": "IQ",
+      "kind": "word_object",
+      "pos": {
+        "x": 612,
+        "y": 64,
+        "z": -16
+      },
+      "blockId": "miraverse:iq_turquoise_muqarnas",
+      "labelEn": "Word: Tigris River",
+      "labelNative": "دجلة",
+      "transliteration": "dijla"
+    },
+    {
+      "anchorId": "anchor:IQ:private_plot",
+      "country": "IQ",
+      "kind": "plot_stone",
+      "pos": {
+        "x": 632,
+        "y": 65,
+        "z": 20
+      },
+      "blockId": "miraverse:iq_shanasheel_oriel_screen",
+      "labelEn": "Baghdad Riverside Explorer Private Building Plot"
+    },
+    {
+      "anchorId": "anchor:IQ:optional_collectible",
+      "country": "IQ",
+      "kind": "optional_collectible",
+      "pos": {
+        "x": 598,
+        "y": 66,
+        "z": 24
+      },
+      "blockId": "minecraft:chest",
+      "labelEn": "Optional Keepsake (miraverse:iq_pomegranate)",
+      "linkedItemId": "miraverse:iq_pomegranate"
+    }
+  ],
+  "restorationStages": [
+    {
+      "stage": 0,
+      "descriptionEn": "Before Restoration: Damaged masonry and missing architectural trim.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "descriptionEn": "Stage 1 Restoration: Structural walls rebuilt.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:iq_tigris_glazed_brick"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:iq_shanasheel_oriel_screen"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "descriptionEn": "Stage 2 Restoration: Complete roof, shutters, and lanterns restored!",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:iq_tigris_glazed_brick"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:iq_shanasheel_oriel_screen"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "miraverse:iq_turquoise_muqarnas"
+        }
+      ]
+    }
+  ]
+}
