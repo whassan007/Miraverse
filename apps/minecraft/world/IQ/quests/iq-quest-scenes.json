@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "iq_quest_iq01",
+    "chapterId": "IQ01",
+    "title": "Street of Books",
+    "kind": "exploration_and_organization",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 570,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:iq_shanasheel_oriel_screen",
+    "rewardArtifactId": "iq_bookseller_seal"
+  },
+  {
+    "anchorId": "iq_quest_iq02",
+    "chapterId": "IQ02",
+    "title": "The House of Wisdom",
+    "kind": "restoration_and_discovery",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 582,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:iq_tigris_glazed_brick",
+    "rewardArtifactId": "iq_scholars_astrolabe"
+  },
+  {
+    "anchorId": "iq_quest_iq03",
+    "chapterId": "IQ03",
+    "title": "Words That Travel",
+    "kind": "source_comparison",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 594,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:iq_baghdadi_courtyard_arch",
+    "rewardArtifactId": "iq_translation_scroll"
+  },
+  {
+    "anchorId": "iq_quest_iq04",
+    "chapterId": "IQ04",
+    "title": "Dates and Kleicha",
+    "kind": "cooking_and_trade",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 606,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:iq_kleicha_brick_oven",
+    "rewardArtifactId": "iq_kleicha_mold"
+  },
+  {
+    "anchorId": "iq_quest_iq05",
+    "chapterId": "IQ05",
+    "title": "The Courtyard of Questions",
+    "kind": "architecture_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 618,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:iq_turquoise_muqarnas",
+    "rewardArtifactId": "iq_courtyard_lattice"
+  },
+  {
+    "anchorId": "iq_quest_iq06",
+    "chapterId": "IQ06",
+    "title": "A Library Across Oceans",
+    "kind": "cooperative_exhibit",
+    "sourceType": "fictional_gameplay",
+    "coords": {
+      "x": 630,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:iq_palm_weave_mat",
+    "rewardArtifactId": "iq_knowledge_keeper_stamp"
+  }
+]
