@@ -1,0 +1,17 @@
+{
+  "locale": "fr",
+  "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW",
+  "strings": {
+    "landing.hero.playFree": "Jouer gratuitement",
+    "landing.hero.exploreWorlds": "Explorer les mondes",
+    "landing.hero.forParents": "Espace Parents",
+    "landing.hero.tagline": "Une aventure culturelle en 3D à travers cinq mondes vivants",
+    "hud.questTracker": "Quête en cours",
+    "hud.inventory": "Sacoche",
+    "hud.miraTokens": "Jetons Mira (Enregistrés sur cet appareil)",
+    "hud.returnHub": "Place du Monde",
+    "parents.portal.title": "Portail Parents et Tuteurs MiraVerse",
+    "parents.shop.badge.earned": "Gagné en jeu (Gratuit)",
+    "parents.shop.badge.parent": "Achat Parent (Optionnel)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "locale": "ar-EG",
+  "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW",
+  "strings": {
+    "landing.hero.playFree": "العب مجاناً",
+    "landing.hero.exploreWorlds": "استكشف العوالم",
+    "landing.hero.forParents": "لأولياء الأمور",
+    "landing.hero.tagline": "مغامرة ثقافية ثلاثية الأبعاد في خمس عوالم حية",
+    "hud.questTracker": "المهمة الحالية",
+    "hud.inventory": "الشنطة",
+    "hud.miraTokens": "رموز ميرا (محفوظة على الجهاز ده)",
+    "hud.returnHub": "ساحة العوالم",
+    "parents.portal.title": "بوابة أولياء الأمور في ميرا فيرس",
+    "parents.shop.badge.earned": "مكتسب في اللعبة (مجاني)",
+    "parents.shop.badge.parent": "مشتريات أولياء الأمور (اختياري)"
+  }
+}
