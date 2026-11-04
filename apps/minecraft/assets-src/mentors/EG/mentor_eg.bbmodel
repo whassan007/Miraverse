@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "format_version": "4.9",
+    "model_format": "bedrock",
+    "box_uv": true
+  },
+  "name": "mentor_eg",
+  "model_identifier": "geometry.miraverse.mentor",
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "head_cube",
+      "from": [
+        -4,
+        24,
+        -4
+      ],
+      "to": [
+        4,
+        32,
+        4
+      ],
+      "uv_offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "body_cube",
+      "from": [
+        -4,
+        12,
+        -2
+      ],
+      "to": [
+        4,
+        24,
+        2
+      ],
+      "uv_offset": [
+        16,
+        16
+      ]
+    }
+  ],
+  "outliner": [
+    {
+      "name": "root",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "children": [
+        "head_cube",
+        "body_cube"
+      ]
+    }
+  ]
+}
