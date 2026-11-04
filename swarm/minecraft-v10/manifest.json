@@ -184,12 +184,15 @@
       "task_card": "swarm/minecraft-v10/cards/AG06.md",
       "branch": "minecraft-v10/AG06",
       "worktree": "/home/wael/Code/mv-wt-mc10/AG06",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "3ba340e",
       "test_command": "test -s apps/minecraft/world/IQ/baghdad-district.json && test -s apps/minecraft/world/IQ/IQ.mcstructure.json",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/world/IQ/baghdad-district.json",
+        "apps/minecraft/world/IQ/IQ.mcstructure.json"
+      ],
+      "runtime_environment": "Antigravityorchestrator -> gemini-4-argon",
       "blockers": []
     },
     {

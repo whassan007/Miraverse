@@ -1,0 +1,15 @@
+=== AGENT AG06 (ANTIGRAVITY · W2) ===
+Timestamp: 2026-11-04T06:57:19.764Z
+Resolved Model: gemini-4-argon
+Runtime Environment: Antigravityorchestrator -> gemini-4-argon
+Branch: minecraft-v10/AG06
+Agent Commit SHA: 3ba340e
+Integration Merge SHA: 1681c54
+Owned Paths: apps/minecraft/world/IQ/
+Test Command: test -s apps/minecraft/world/IQ/baghdad-district.json && test -s apps/minecraft/world/IQ/IQ.mcstructure.json
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/world/IQ/baghdad-district.json, apps/minecraft/world/IQ/IQ.mcstructure.json
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE AG06 3ba340e apps/minecraft/world/IQ/baghdad-district.json
