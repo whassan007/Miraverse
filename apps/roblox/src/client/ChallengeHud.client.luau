@@ -44,6 +44,52 @@ local remotes = ReplicatedStorage:WaitForChild("MiraVerseRemotes")
 remotes:WaitForChild("ChallengeEnded").OnClientEvent:Connect(function()
 	panel.Visible = false
 end)
+-- Mentor dialogue and station hints.
+local dialogue = UI.panel(gui, UDim2.fromScale(0.6, 0.3), UDim2.fromScale(0.2, 0.42))
+dialogue.Visible = false
+dialogue.ZIndex = 5
+local speaker = UI.label(dialogue, "", UDim2.fromScale(0.9, 0.2), UDim2.fromScale(0.05, 0.04))
+local nativeLine = UI.label(dialogue, "", UDim2.fromScale(0.9, 0.24), UDim2.fromScale(0.05, 0.25))
+local englishLine = UI.label(dialogue, "", UDim2.fromScale(0.9, 0.24), UDim2.fromScale(0.05, 0.5))
+local okButton = UI.button(dialogue, "OK", UDim2.fromScale(0.2, 0.17), function()
+	dialogue.Visible = false
+end)
+okButton.Position = UDim2.fromScale(0.4, 0.79)
+okButton.ZIndex = 6
+
+remotes:WaitForChild("DialogueShown").OnClientEvent:Connect(function(d: any)
+	if type(d) ~= "table" then
+		return
+	end
+	speaker.Text = tostring(d.name or "")
+	nativeLine.Text = tostring(d.native or "")
+	englishLine.Text = if d.finished then "You did it! Thank you for your help." elseif d.nextLabel then tostring(d.english or "") .. " Next: " .. tostring(d.nextLabel) else tostring(d.english or "")
+	dialogue.Visible = true
+end)
+
+speaker.ZIndex, nativeLine.ZIndex, englishLine.ZIndex = 6, 6, 6
+
+local HINTS = {
+	["meet-mentor"] = "Talk to your mentor first!",
+	["wrong-station"] = "Not this one yet. Look at the top of your screen for where to go next.",
+	["too-far"] = "Come a little closer.",
+	["failed"] = "Let's try that again.",
+	["complete"] = "You already finished this chapter!",
+}
+remotes:WaitForChild("StationHint").OnClientEvent:Connect(function(kind: any)
+	local text = HINTS[kind]
+	if text then
+		panel.Visible = true
+		goalLabel.Text = text
+		detailLabel.Text = ""
+		task.delay(4, function()
+			if goalLabel.Text == text then
+				panel.Visible = false
+			end
+		end)
+	end
+end)
+
 local challengeRemotes = ReplicatedStorage:WaitForChild("ChallengeRemotes", math.huge)
 local notify = challengeRemotes:WaitForChild("Notify", math.huge) :: RemoteEvent
 local state = challengeRemotes:WaitForChild("State", math.huge) :: RemoteEvent

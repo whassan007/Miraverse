@@ -59,12 +59,26 @@ closeBtn.Position = UDim2.fromScale(0.3, 0.72)
 closeBtn.ZIndex = 11
 
 local function render(state: any)
-	if not state or not state.country then
+	if not state then
+		return
+	end
+	if not state.country then
+		picker.Visible = true
+		hud.Visible = false
 		return
 	end
 	picker.Visible = false
 	hud.Visible = true
-	hudText.Text = string.format("%s - challenge %d of %d (%d done)", state.country, state.index, state.total, state.done)
+	playBtn.Visible = not state.hasStations and not state.stamp
+	if state.stamp then
+		hudText.Text = "Chapter complete! Stamp: " .. state.stamp
+	elseif state.hasStations and not state.met then
+		hudText.Text = "Go and talk to your mentor"
+	elseif state.hasStations and state.nextLabel then
+		hudText.Text = string.format("Next: %s (%d of %d done)", state.nextLabel, state.done, state.total)
+	else
+		hudText.Text = string.format("%s - challenge %d of %d (%d done)", state.country, state.index, state.total, state.done)
+	end
 end
 
 for i, c in COUNTRIES do
@@ -120,6 +134,16 @@ phraseShown.OnClientEvent:Connect(function(userId: any, text: any)
 	task.delay(3, function()
 		bb:Destroy()
 	end)
+end)
+
+local stateChanged = remotes:WaitForChild("StateChanged") :: RemoteEvent
+local stationHint = remotes:WaitForChild("StationHint") :: RemoteEvent
+stateChanged.OnClientEvent:Connect(render)
+stationHint.OnClientEvent:Connect(function(kind: any, detail: any)
+	if kind == "stamp" and type(detail) == "string" then
+		modalCode.Text = detail
+		modal.Visible = true
+	end
 end)
 
 task.spawn(function()

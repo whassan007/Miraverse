@@ -1,9 +1,32 @@
 --!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Workspace = game:GetService("Workspace")
+local ReplicatedStorageShared = game:GetService("ReplicatedStorage"):WaitForChild("Shared")
+local WorldRegistry = require(ReplicatedStorageShared:WaitForChild("WorldRegistry"))
 local ByblosWorld = require(script.Parent.world.ByblosWorld)
+local MentorCharacter = require(script.Parent.world.MentorCharacter)
 
 local MapBuilder = {}
+
+type Handlers = {
+	travel: (Player, string) -> (),
+	lobby: (Player) -> (),
+	mentor: (Player, string) -> (),
+	station: (Player, string, string) -> (),
+}
+local handlers: Handlers? = nil
+
+function MapBuilder.setHandlers(h: Handlers)
+	handlers = h
+end
+
+local function onPrompt(prompt: ProximityPrompt, fn: (Handlers, Player) -> ())
+	prompt.Triggered:Connect(function(player: Player)
+		if handlers then
+			fn(handlers, player)
+		end
+	end)
+end
 
 export type CountryId = "LB" | "EG" | "IQ" | "KR" | "FR"
 
@@ -24,7 +47,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "Lebanon",
 		primary = "#CE1126",
 		secondary = "#00A651",
-		mentorName = "Teta Salwa",
+		mentorName = "Teta Nahla",
 		mentorGreeting = "Ahlan wa sahlan! Welcome to Byblos.",
 	},
 	EG = {
@@ -32,7 +55,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "Egypt",
 		primary = "#C09300",
 		secondary = "#CE1126",
-		mentorName = "Ammo Karim",
+		mentorName = "Teta Samira",
 		mentorGreeting = "Marhaba! Welcome to Cairo.",
 	},
 	IQ = {
@@ -40,7 +63,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "Iraq",
 		primary = "#1E5AA8",
 		secondary = "#D4AF37",
-		mentorName = "Bibi Nadia",
+		mentorName = "Bibi Amal",
 		mentorGreeting = "Hala! Welcome to Baghdad.",
 	},
 	KR = {
@@ -48,7 +71,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "South Korea",
 		primary = "#0047A0",
 		secondary = "#CD2E3A",
-		mentorName = "Halmeoni Sunja",
+		mentorName = "Halmeoni",
 		mentorGreeting = "Annyeonghaseyo! Welcome to Jeonju.",
 	},
 	FR = {
@@ -56,7 +79,7 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		name_en = "France",
 		primary = "#0055A4",
 		secondary = "#EF4135",
-		mentorName = "Mamie Colette",
+		mentorName = "Mamie Claire",
 		mentorGreeting = "Bonjour! Welcome to Lyon.",
 	},
 }
@@ -193,12 +216,14 @@ local function createBillboardLabel(parent: Instance, titleText: string, subtitl
 	return billboard
 end
 
+local buildLebanonPeople: (Folder, Vector3, CountryMeta) -> ()
+
 local function buildTravelLobby(mapFolder: Folder, metas: { [string]: CountryMeta })
 	local lobbyFolder = Instance.new("Folder")
 	lobbyFolder.Name = "TravelLobby"
 	lobbyFolder.Parent = mapFolder
 
-	local lobbyCenter = Vector3.new(0, 10, 0)
+	local lobbyCenter = WorldRegistry.LOBBY
 
 	local platform = Instance.new("Part")
 	platform.Name = "LobbyPlatform"
@@ -276,20 +301,16 @@ local function buildTravelLobby(mapFolder: Folder, metas: { [string]: CountryMet
 		prompt.RequiresLineOfSight = false
 		prompt.Parent = portalPart
 
-		prompt.Triggered:Connect(function(player: Player)
-			local targetSpawn = MapBuilder.getSpawn(cc)
-			local character = player.Character
-			if targetSpawn and character then
-				character:PivotTo(targetSpawn.CFrame + Vector3.new(0, 3.5, 0))
-			end
+		onPrompt(prompt, function(h, player)
+			h.travel(player, cc)
 		end)
 
 		createBillboardLabel(portalPart, meta.name_en, "Portal · " .. cc, secondaryColor)
 	end
 end
 
-local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId, meta: CountryMeta)
-	local plazaCenter = Vector3.new(index * 160, 10, 0)
+local function buildCountryPlaza(mapFolder: Folder, cc: CountryId, meta: CountryMeta)
+	local plazaCenter = WorldRegistry.origin(cc) :: Vector3
 	local primaryColor = hexToColor3(meta.primary, Color3.fromRGB(80, 140, 210))
 	local secondaryColor = hexToColor3(meta.secondary, Color3.fromRGB(220, 180, 80))
 
@@ -357,6 +378,9 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	mentorPrompt.MaxActivationDistance = 14
 	mentorPrompt.RequiresLineOfSight = false
 	mentorPrompt.Parent = mentorPart
+	onPrompt(mentorPrompt, function(h, player)
+		h.mentor(player, cc)
+	end)
 
 	createBillboardLabel(mentorPart, meta.mentorName, meta.name_en, primaryColor)
 
@@ -393,12 +417,44 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	returnPrompt.RequiresLineOfSight = false
 	returnPrompt.Parent = returnPortal
 
-	returnPrompt.Triggered:Connect(function(player: Player)
-		local character = player.Character
-		if character then
-			character:PivotTo(CFrame.new(0, 14, 0))
-		end
+	onPrompt(returnPrompt, function(h, player)
+		h.lobby(player)
 	end)
+end
+
+-- Teta Nahla and the five physical challenge stations.
+buildLebanonPeople = function(plaza: Folder, center: Vector3, meta: CountryMeta)
+	local anchor = plaza:FindFirstChild("Mentor_LB")
+	if anchor and anchor:IsA("BasePart") then
+		anchor.Transparency = 1
+		anchor.CanCollide = false
+		MentorCharacter.build(plaza, meta.mentorName, CFrame.lookAt(anchor.Position - Vector3.new(0, 3, 0), center + Vector3.new(0, 0, 28)), {
+			skin = Color3.fromRGB(214, 170, 135),
+			dress = Color3.fromRGB(30, 110, 96),
+			apron = Color3.fromRGB(240, 230, 208),
+			scarf = Color3.fromRGB(217, 123, 56),
+		})
+	end
+	for kind, station in WorldRegistry.STATIONS.LB do
+		local pad = Instance.new("Part")
+		pad.Name = "Station_" .. kind
+		pad.Anchored = true
+		pad.Size = Vector3.new(6, 0.4, 6)
+		pad.Position = center + Vector3.new(station.x, 0.2, station.z)
+		pad.Color = Color3.fromRGB(217, 123, 56)
+		pad.Material = Enum.Material.Neon
+		pad.Parent = plaza
+		local prompt = Instance.new("ProximityPrompt")
+		prompt.ActionText = "Start"
+		prompt.ObjectText = station.label
+		prompt.HoldDuration = 0
+		prompt.MaxActivationDistance = 12
+		prompt.RequiresLineOfSight = false
+		prompt.Parent = pad
+		onPrompt(prompt, function(h, player)
+			h.station(player, "LB", kind)
+		end)
+	end
 end
 
 local function findMapPart(partName: string): BasePart?
@@ -446,12 +502,14 @@ function MapBuilder.build(): Folder
 
 	buildTravelLobby(mapFolder, metas)
 
-	for i, cc in ipairs(COUNTRIES) do
-		buildCountryPlaza(mapFolder, i, cc, metas[cc])
+	for _, cc in ipairs(COUNTRIES) do
+		buildCountryPlaza(mapFolder, cc, metas[cc])
 		if cc == "LB" then
 			local plaza = mapFolder:FindFirstChild("Plaza_LB")
-			if plaza then
-				ByblosWorld.build(plaza, Vector3.new(i * 160, 10, 0))
+			local center = WorldRegistry.origin(cc)
+			if plaza and center then
+				ByblosWorld.build(plaza, center)
+				buildLebanonPeople(plaza :: Folder, center, metas[cc])
 			end
 		end
 	end
@@ -465,12 +523,7 @@ function MapBuilder.getSpawn(country: string): BasePart?
 		return nil
 	end
 	local cc = string.upper(country)
-	local part = findMapPart("Spawn_" .. cc)
-	if not part and FALLBACK_META[cc] then
-		MapBuilder.build()
-		part = findMapPart("Spawn_" .. cc)
-	end
-	return part
+	return findMapPart("Spawn_" .. cc)
 end
 
 function MapBuilder.getMentorSpot(country: string): BasePart?
@@ -478,12 +531,7 @@ function MapBuilder.getMentorSpot(country: string): BasePart?
 		return nil
 	end
 	local cc = string.upper(country)
-	local part = findMapPart("Mentor_" .. cc)
-	if not part and FALLBACK_META[cc] then
-		MapBuilder.build()
-		part = findMapPart("Mentor_" .. cc)
-	end
-	return part
+	return findMapPart("Mentor_" .. cc)
 end
 
 function MapBuilder.getBuildOrigin(country: string): BasePart?
@@ -491,12 +539,7 @@ function MapBuilder.getBuildOrigin(country: string): BasePart?
 		return nil
 	end
 	local cc = string.upper(country)
-	local part = findMapPart("BuildOrigin_" .. cc)
-	if not part and FALLBACK_META[cc] then
-		MapBuilder.build()
-		part = findMapPart("BuildOrigin_" .. cc)
-	end
-	return part
+	return findMapPart("BuildOrigin_" .. cc)
 end
 
 return MapBuilder
