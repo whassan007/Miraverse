@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "v06.1",
+  "bedrockMinimumEngineVersion": [
+    1,
+    21,
+    50
+  ],
+  "primaryCompanionWorld": {
+    "countryId": "LB",
+    "title": "Byblos Harbor & Teta's Courtyard Block-Building Companion",
+    "origin": [
+      -200,
+      64,
+      0
+    ],
+    "paletteBlocks": [
+      "minecraft:smooth_sandstone",
+      "minecraft:cut_sandstone",
+      "minecraft:spruce_planks",
+      "minecraft:campfire",
+      "minecraft:prismarine",
+      "minecraft:lantern",
+      "minecraft:flowering_azalea_leaves"
+    ],
+    "restorationTargetBlocks": 12
+  },
+  "expansionKits": [
+    {
+      "countryId": "EG",
+      "origin": [
+        0,
+        64,
+        200
+      ],
+      "signatureBlock": "minecraft:soul_lantern"
+    },
+    {
+      "countryId": "IQ",
+      "origin": [
+        0,
+        64,
+        -200
+      ],
+      "signatureBlock": "minecraft:cyan_glazed_terracotta"
+    },
+    {
+      "countryId": "KR",
+      "origin": [
+        200,
+        64,
+        200
+      ],
+      "signatureBlock": "minecraft:decorated_pot"
+    },
+    {
+      "countryId": "FR",
+      "origin": [
+        200,
+        64,
+        0
+      ],
+      "signatureBlock": "minecraft:smoker"
+    }
+  ]
+}
