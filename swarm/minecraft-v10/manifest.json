@@ -942,12 +942,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX12.md",
       "branch": "minecraft-v10/DX12",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX12",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "fe90b5a",
       "test_command": "test -s apps/minecraft/tests/fixtures/state/state-fuzz-vectors.json",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tests/fixtures/state/state-fuzz-vectors.json"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (59.36 tok/s)",
       "blockers": []
     },
     {
