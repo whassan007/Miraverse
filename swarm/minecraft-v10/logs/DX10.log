@@ -1,0 +1,16 @@
+=== AGENT DX10 (DGX · W1) ===
+Timestamp: 2026-11-04T06:51:33.699Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (60.42 tok/s)
+Branch: minecraft-v10/DX10
+Agent Commit SHA: e1d4579
+Integration Merge SHA: 550db51
+Owned Paths: apps/minecraft/tools/checks/npc/
+Test Command: node apps/minecraft/tools/checks/npc/check-npc.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/checks/npc/check-npc.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+PASS: DX10 verified Blockbench rigs and 6 animation states.
+
+DONE DX10 e1d4579 apps/minecraft/tools/checks/npc/check-npc.mjs

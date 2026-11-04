@@ -850,12 +850,14 @@
       "task_card": "swarm/minecraft-v10/cards/DX10.md",
       "branch": "minecraft-v10/DX10",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX10",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "e1d4579",
       "test_command": "node apps/minecraft/tools/checks/npc/check-npc.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tools/checks/npc/check-npc.mjs"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (60.42 tok/s)",
       "blockers": []
     },
     {
