@@ -1,0 +1,12 @@
+{
+  "country": "FR",
+  "mentorNameEn": "Mamie Claire",
+  "entityTypeId": "miraverse:mentor_fr",
+  "texturePath": "apps/minecraft/assets-src/mentors/FR/mentor_fr.png",
+  "variants": [
+    "mentor",
+    "merchant",
+    "artisan",
+    "cousin"
+  ]
+}
