@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.1.0",
+  "chapterStates": [
+    "LOCKED",
+    "AVAILABLE",
+    "STARTED",
+    "OBJECTIVE_PROGRESS",
+    "ACTIVITY_COMPLETE",
+    "REWARD_GRANTED",
+    "COMPLETED"
+  ],
+  "finaleRequirement": {
+    "minCountryKeepsakes": 3,
+    "totalPossibleKeepsakes": 11,
+    "finaleRewardStampId": "stamp_global_storykeeper"
+  },
+  "legacyMigrationMap": {
+    "lb_main_01": "LB01",
+    "iq_main_01": "IQ01",
+    "eg_main_01": "EG01",
+    "fr_main_01": "FR01",
+    "kr_main_01": "KR01"
+  },
+  "rewardBoundaries": {
+    "monetaryValue": false,
+    "crossPlatformWalletSync": false,
+    "strangerTradingAllowed": false,
+    "idempotentLedgerKeyFormat": "${playerId}:${rewardId}"
+  }
+}
