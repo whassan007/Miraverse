@@ -64,3 +64,18 @@ describe('CX13 — Option A Website Routes, Truthful Roblox Launcher, Adult Test
     expect(validEnv.valid).toBe(true);
   });
 });
+
+import { resolveRobloxPlayAction } from '../../../../apps/web/src/launch/RobloxLaunchPage';
+
+describe('Roblox Play button honesty (audit P0)', () => {
+  it('never labels the button "Play" without a published, verified share URL', () => {
+    const a = resolveRobloxPlayAction(undefined, 'Lebanon');
+    expect(a.kind).toBe('not-published');
+    expect(a.label).not.toMatch(/^▶?\s*Play/i);
+  });
+  it('only offers a launch action when PUBLISHED with an official share URL', () => {
+    const a = resolveRobloxPlayAction({ configuredPlaceId: '1', officialShareUrl: 'https://www.roblox.com/games/1/x', publishingStatus: 'PUBLISHED' }, 'Lebanon');
+    expect(a.kind).toBe('launch');
+    expect(a.href).toContain('roblox.com/games/1');
+  });
+});
