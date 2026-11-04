@@ -1,0 +1,260 @@
+{
+  "project": "MiraVerse Minecraft Bedrock Global",
+  "version": "1.1.0",
+  "verifiedNoDuplicateWriters": true,
+  "totalOwnedPathRoots": 75,
+  "ownersByPath": {
+    "apps/minecraft/world/hub/": "AG01",
+    "apps/minecraft/assets-src/art-direction/": "AG01",
+    "apps/minecraft/world/LB/": "AG02",
+    "apps/minecraft/world/IQ/": "AG03",
+    "apps/minecraft/world/EG/": "AG04",
+    "apps/minecraft/world/FR/": "AG05",
+    "apps/minecraft/world/KR/": "AG06",
+    "apps/minecraft/world/DE/": "AG07",
+    "apps/minecraft/world/CN/": "AG08",
+    "apps/minecraft/world/JP/": "AG09",
+    "apps/minecraft/world/RU/": "AG10",
+    "apps/minecraft/world/UA/": "AG11",
+    "apps/minecraft/world/MA/": "AG12",
+    "apps/minecraft/world/integration/": "AG13",
+    "apps/minecraft/assets-src/characters/": "AG14",
+    "apps/minecraft/assets-src/palettes/": "AG15",
+    "apps/minecraft/assets-src/artifacts/": "AG16",
+    "apps/minecraft/assets-src/ambience/": "AG17",
+    "apps/minecraft/assets-src/ui/": "AG18",
+    "apps/minecraft/world/accessibility/": "AG19",
+    "apps/minecraft/editor/": "AG20",
+    "reports/minecraft-global/client-captures/": "AG20",
+    "apps/minecraft/assets-src/processed/LB/": "DX01",
+    "apps/minecraft/assets-src/processed/IQ/": "DX02",
+    "apps/minecraft/assets-src/processed/EG/": "DX03",
+    "apps/minecraft/assets-src/processed/FR/": "DX04",
+    "apps/minecraft/assets-src/processed/KR/": "DX05",
+    "apps/minecraft/assets-src/processed/DE/": "DX06",
+    "apps/minecraft/assets-src/processed/CN/": "DX07",
+    "apps/minecraft/assets-src/processed/JP/": "DX08",
+    "apps/minecraft/assets-src/processed/RU/": "DX09",
+    "apps/minecraft/assets-src/processed/UA/": "DX10",
+    "apps/minecraft/assets-src/processed/MA/": "DX11",
+    "reports/minecraft-global/provenance/": "DX12",
+    "packages/content/locales/en-US/": "DX13",
+    "packages/content/locales/fr-FR/": "DX13",
+    "packages/content/locales/fr-CA/": "DX13",
+    "packages/content/locales/de-DE/": "DX13",
+    "packages/content/locales/zh-Hans-CN/": "DX14",
+    "packages/content/locales/ja-JP/": "DX14",
+    "packages/content/locales/ko-KR/": "DX14",
+    "packages/content/locales/ru-RU/": "DX15",
+    "packages/content/locales/uk-UA/": "DX15",
+    "packages/content/locales/ar/": "DX16",
+    "packages/content/locales/ar-LB/": "DX16",
+    "packages/content/locales/ar-IQ/": "DX16",
+    "packages/content/locales/ar-EG/": "DX16",
+    "packages/content/locales/ar-MA/": "DX16",
+    "apps/minecraft/tools/rtl/": "DX17",
+    "apps/minecraft/tests/quests/": "DX18",
+    "apps/minecraft/tools/optimize/": "DX19",
+    "apps/minecraft/tools/distribution/": "DX20",
+    "docs/minecraft-global/narrative/": "CL01",
+    "docs/minecraft-global/age-design/": "CL02",
+    "docs/minecraft-global/localization/": "CL03",
+    "docs/minecraft-global/systems/": "CL04",
+    "docs/minecraft-global/safety/": "CL05",
+    "apps/minecraft/tools/content-compiler/": "CX01",
+    "packages/content/minecraft-global/": "CX01",
+    "apps/minecraft/scripts/src/quests/": "CX02",
+    "apps/minecraft/scripts/src/ui/": "CX02",
+    "apps/minecraft/scripts/src/locales/": "CX02",
+    "apps/minecraft/scripts/src/state/": "CX03",
+    "apps/minecraft/scripts/src/multiplayer/": "CX03",
+    "apps/minecraft/scripts/src/building/": "CX03",
+    "apps/minecraft/tools/build/": "CX04",
+    ".github/workflows/minecraft-global.yml": "CX04",
+    "apps/minecraft/bp/": "CX04",
+    "apps/minecraft/rp/": "CX04",
+    "apps/minecraft/scripts/src/contracts/": "CX04",
+    "apps/minecraft/scripts/src/bootstrap/": "CX04",
+    "apps/minecraft/scripts/main.ts": "CX04",
+    "apps/minecraft/tests/e2e/": "CX05",
+    "reports/minecraft-global/release/": "CX05",
+    "apps/minecraft/dist/": "CX05"
+  },
+  "pathsByAgent": {
+    "AG01": [
+      "apps/minecraft/world/hub/",
+      "apps/minecraft/assets-src/art-direction/"
+    ],
+    "AG02": [
+      "apps/minecraft/world/LB/"
+    ],
+    "AG03": [
+      "apps/minecraft/world/IQ/"
+    ],
+    "AG04": [
+      "apps/minecraft/world/EG/"
+    ],
+    "AG05": [
+      "apps/minecraft/world/FR/"
+    ],
+    "AG06": [
+      "apps/minecraft/world/KR/"
+    ],
+    "AG07": [
+      "apps/minecraft/world/DE/"
+    ],
+    "AG08": [
+      "apps/minecraft/world/CN/"
+    ],
+    "AG09": [
+      "apps/minecraft/world/JP/"
+    ],
+    "AG10": [
+      "apps/minecraft/world/RU/"
+    ],
+    "AG11": [
+      "apps/minecraft/world/UA/"
+    ],
+    "AG12": [
+      "apps/minecraft/world/MA/"
+    ],
+    "AG13": [
+      "apps/minecraft/world/integration/"
+    ],
+    "AG14": [
+      "apps/minecraft/assets-src/characters/"
+    ],
+    "AG15": [
+      "apps/minecraft/assets-src/palettes/"
+    ],
+    "AG16": [
+      "apps/minecraft/assets-src/artifacts/"
+    ],
+    "AG17": [
+      "apps/minecraft/assets-src/ambience/"
+    ],
+    "AG18": [
+      "apps/minecraft/assets-src/ui/"
+    ],
+    "AG19": [
+      "apps/minecraft/world/accessibility/"
+    ],
+    "AG20": [
+      "apps/minecraft/editor/",
+      "reports/minecraft-global/client-captures/"
+    ],
+    "DX01": [
+      "apps/minecraft/assets-src/processed/LB/"
+    ],
+    "DX02": [
+      "apps/minecraft/assets-src/processed/IQ/"
+    ],
+    "DX03": [
+      "apps/minecraft/assets-src/processed/EG/"
+    ],
+    "DX04": [
+      "apps/minecraft/assets-src/processed/FR/"
+    ],
+    "DX05": [
+      "apps/minecraft/assets-src/processed/KR/"
+    ],
+    "DX06": [
+      "apps/minecraft/assets-src/processed/DE/"
+    ],
+    "DX07": [
+      "apps/minecraft/assets-src/processed/CN/"
+    ],
+    "DX08": [
+      "apps/minecraft/assets-src/processed/JP/"
+    ],
+    "DX09": [
+      "apps/minecraft/assets-src/processed/RU/"
+    ],
+    "DX10": [
+      "apps/minecraft/assets-src/processed/UA/"
+    ],
+    "DX11": [
+      "apps/minecraft/assets-src/processed/MA/"
+    ],
+    "DX12": [
+      "reports/minecraft-global/provenance/"
+    ],
+    "DX13": [
+      "packages/content/locales/en-US/",
+      "packages/content/locales/fr-FR/",
+      "packages/content/locales/fr-CA/",
+      "packages/content/locales/de-DE/"
+    ],
+    "DX14": [
+      "packages/content/locales/zh-Hans-CN/",
+      "packages/content/locales/ja-JP/",
+      "packages/content/locales/ko-KR/"
+    ],
+    "DX15": [
+      "packages/content/locales/ru-RU/",
+      "packages/content/locales/uk-UA/"
+    ],
+    "DX16": [
+      "packages/content/locales/ar/",
+      "packages/content/locales/ar-LB/",
+      "packages/content/locales/ar-IQ/",
+      "packages/content/locales/ar-EG/",
+      "packages/content/locales/ar-MA/"
+    ],
+    "DX17": [
+      "apps/minecraft/tools/rtl/"
+    ],
+    "DX18": [
+      "apps/minecraft/tests/quests/"
+    ],
+    "DX19": [
+      "apps/minecraft/tools/optimize/"
+    ],
+    "DX20": [
+      "apps/minecraft/tools/distribution/"
+    ],
+    "CL01": [
+      "docs/minecraft-global/narrative/"
+    ],
+    "CL02": [
+      "docs/minecraft-global/age-design/"
+    ],
+    "CL03": [
+      "docs/minecraft-global/localization/"
+    ],
+    "CL04": [
+      "docs/minecraft-global/systems/"
+    ],
+    "CL05": [
+      "docs/minecraft-global/safety/"
+    ],
+    "CX01": [
+      "apps/minecraft/tools/content-compiler/",
+      "packages/content/minecraft-global/"
+    ],
+    "CX02": [
+      "apps/minecraft/scripts/src/quests/",
+      "apps/minecraft/scripts/src/ui/",
+      "apps/minecraft/scripts/src/locales/"
+    ],
+    "CX03": [
+      "apps/minecraft/scripts/src/state/",
+      "apps/minecraft/scripts/src/multiplayer/",
+      "apps/minecraft/scripts/src/building/"
+    ],
+    "CX04": [
+      "apps/minecraft/tools/build/",
+      ".github/workflows/minecraft-global.yml",
+      "apps/minecraft/bp/",
+      "apps/minecraft/rp/",
+      "apps/minecraft/scripts/src/contracts/",
+      "apps/minecraft/scripts/src/bootstrap/",
+      "apps/minecraft/scripts/main.ts"
+    ],
+    "CX05": [
+      "apps/minecraft/tests/e2e/",
+      "reports/minecraft-global/release/",
+      "apps/minecraft/dist/"
+    ]
+  }
+}
