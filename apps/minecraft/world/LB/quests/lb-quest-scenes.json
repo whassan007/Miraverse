@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "lb_quest_lb01",
+    "chapterId": "LB01",
+    "title": "The Harbor Wakes",
+    "kind": "navigation_and_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 170,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:lb_byblos_limestone",
+    "rewardArtifactId": "lb_harbor_compass"
+  },
+  {
+    "anchorId": "lb_quest_lb02",
+    "chapterId": "LB02",
+    "title": "Letters in Stone",
+    "kind": "epigraphy_and_craft",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 182,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:lb_carved_arch_stone",
+    "rewardArtifactId": "lb_alphabet_tile"
+  },
+  {
+    "anchorId": "lb_quest_lb03",
+    "chapterId": "LB03",
+    "title": "Teta’s Table",
+    "kind": "cooking_and_trade",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 194,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:lb_terracotta_roof_tile",
+    "rewardArtifactId": "lb_family_recipe_card"
+  },
+  {
+    "anchorId": "lb_quest_lb04",
+    "chapterId": "LB04",
+    "title": "The Cedar Chest",
+    "kind": "myth_vs_history",
+    "sourceType": "folklore",
+    "coords": {
+      "x": 206,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:lb_cedar_shutter",
+    "rewardArtifactId": "lb_cedar_token"
+  },
+  {
+    "anchorId": "lb_quest_lb05",
+    "chapterId": "LB05",
+    "title": "Photographs Across the Sea",
+    "kind": "oral_history_archive",
+    "sourceType": "fictional_gameplay",
+    "coords": {
+      "x": 218,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:lb_saj_hearth_block",
+    "rewardArtifactId": "lb_archive_album"
+  },
+  {
+    "anchorId": "lb_quest_lb06",
+    "chapterId": "LB06",
+    "title": "Festival of Return",
+    "kind": "cooperative_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 230,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:lb_harbor_bollard",
+    "rewardArtifactId": "lb_harbor_home_stamp"
+  }
+]
