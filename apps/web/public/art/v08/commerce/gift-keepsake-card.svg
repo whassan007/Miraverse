@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" role="img" aria-label="MiraVerse Printable Family Gift Keepsake Card">
+  <defs>
+    <linearGradient id="giftBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="55%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="404" height="224" rx="22" fill="url(#giftBg)" stroke="#F4A261" stroke-width="4"/>
+  <line x1="8" y1="120" x2="412" y2="120" stroke="#F4A261" stroke-width="8" opacity="0.45"/>
+  <line x1="210" y1="8" x2="210" y2="232" stroke="#F4A261" stroke-width="8" opacity="0.45"/>
+  <circle cx="210" cy="120" r="34" fill="#F4A261" stroke="#FFF8EE" stroke-width="3"/>
+  <polygon points="210,94 217,112 236,112 221,123 226,142 210,131 194,142 199,123 184,112 203,112" fill="#0F172A"/>
+  <text x="32" y="48" fill="#FEF08A" font-family="Georgia, serif" font-size="18" font-weight="800">MiraVerse Family Keepsake Gift</text>
+  <text x="32" y="204" fill="#CBD5E1" font-family="monospace" font-size="13">MVGIFT-XXXX-XXXX · Web-Only Deliverable</text>
+</svg>

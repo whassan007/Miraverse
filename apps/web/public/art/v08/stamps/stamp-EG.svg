@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="CAIRO COURTYARD Collectible Passport Stamp">
+  <rect x="14" y="14" width="172" height="172" rx="18" fill="#78350F" stroke="#FDE68A" stroke-width="5" stroke-dasharray="8 6"/>
+  <rect x="24" y="24" width="152" height="152" rx="12" fill="none" stroke="#FFF8EE" stroke-width="2" opacity="0.65"/>
+  <circle cx="100" cy="84" r="44" fill="#D97706" stroke="#FDE68A" stroke-width="3"/>
+  <polygon points="100,46 118,68 112,108 88,108 82,68" fill="#FBBF24" stroke="#FFF8EE" stroke-width="2"/><circle cx="100" cy="82" r="10" fill="#FFFBEB"/>
+  <text x="100" y="146" text-anchor="middle" fill="#FFF8EE" font-family="Georgia, serif" font-size="14" font-weight="900" letter-spacing="1">CAIRO COURTYARD</text>
+  <text x="100" y="164" text-anchor="middle" fill="#FDE68A" font-family="system-ui, sans-serif" font-size="12" font-weight="700">مصر · القاهرة</text>
+  <text x="100" y="38" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="1.2">NILE FANOUS CHAPTER 1</text>
+</svg>

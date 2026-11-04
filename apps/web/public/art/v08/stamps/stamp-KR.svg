@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="JEONJU HANOK Collectible Passport Stamp">
+  <rect x="14" y="14" width="172" height="172" rx="18" fill="#312E81" stroke="#A5B4FC" stroke-width="5" stroke-dasharray="8 6"/>
+  <rect x="24" y="24" width="152" height="152" rx="12" fill="none" stroke="#FFF8EE" stroke-width="2" opacity="0.65"/>
+  <circle cx="100" cy="84" r="44" fill="#4F46E5" stroke="#A5B4FC" stroke-width="3"/>
+  <circle cx="100" cy="76" r="24" fill="#FEF08A"/><path d="M66 94 Q100 72 134 94 L128 106 Q100 88 72 106 Z" fill="#1E293B" stroke="#FFF8EE" stroke-width="2"/>
+  <text x="100" y="146" text-anchor="middle" fill="#FFF8EE" font-family="Georgia, serif" font-size="14" font-weight="900" letter-spacing="1">JEONJU HANOK</text>
+  <text x="100" y="164" text-anchor="middle" fill="#A5B4FC" font-family="system-ui, sans-serif" font-size="12" font-weight="700">대한민국 · 전주</text>
+  <text x="100" y="38" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="1.2">HARVEST MOON CHAPTER 1</text>
+</svg>

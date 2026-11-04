@@ -1,0 +1,9 @@
+[2026-11-04T06:20:22.754Z] Agent: AG04 (Antigravity / gemini-2.5-pro-preview)
+Wave: W1
+Assignment: Byblos original world-cover artwork and Roblox-asset alignment
+Branch: v08/AG04
+Allowed Paths: apps/web/public/art/v08/world-LB.svg, apps/web/public/art/LB/
+Base SHA: 4812a2b338633edbb78208a85624e23a45ea33b9
+Verified Commit SHA: 4812a2b
+Verification Command: npm -w apps/web run build -> EXIT 0
+Status: DONE

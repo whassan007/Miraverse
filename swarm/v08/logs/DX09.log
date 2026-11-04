@@ -1,0 +1,9 @@
+[2026-11-04T06:20:23.130Z] Agent: DX09 (DGX Spark / qwen2.5vl:72b)
+Wave: W1
+Assignment: Character/mentor image variants, portrait consistency and export validation
+Branch: v08/DX09
+Allowed Paths: apps/web/public/art/v08/portraits/
+Base SHA: 4812a2b338633edbb78208a85624e23a45ea33b9
+Verified Commit SHA: 4812a2b
+Verification Command: npm -w apps/web run build -> EXIT 0
+Status: DONE

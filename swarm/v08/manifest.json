@@ -1,0 +1,1898 @@
+{
+  "version": "0.8.0",
+  "directive": "MiraVerse v0.8: 65-Agent Website Transformation and Visual Quality Recovery",
+  "strategy": "OPTION_A_ROBLOX_FIRST_MINECRAFT_COMPANION_CINEMATIC_WEBSITE",
+  "integration_branch": "integration/miraverse-v0.8-visual-recovery",
+  "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+  "created_at": "2026-11-04T06:00:18.950Z",
+  "counts": {
+    "total": 65,
+    "antigravity": 20,
+    "claude": 15,
+    "codex": 15,
+    "dgx_spark": 15
+  },
+  "dgx_concurrency_limit": 2,
+  "agents": [
+    {
+      "id": "AG01",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "Creative direction, brand bible, design critique and visual acceptance rubric",
+      "depends_on": [
+        "CL01",
+        "DX02"
+      ],
+      "allowed_paths": [
+        "reports/v08/DESIGN_SYSTEM.md",
+        "art/v08/direction/"
+      ],
+      "branch": "v08/AG01",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG01",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG01.log",
+      "artifacts": [
+        "reports/v08/DESIGN_SYSTEM.md",
+        "art/v08/direction/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.734Z"
+    },
+    {
+      "id": "AG02",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "Original MiraVerse logo treatment, iconography, color/typography system",
+      "depends_on": [
+        "AG01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/brand-crest.svg",
+        "apps/web/src/design-system/v08/"
+      ],
+      "branch": "v08/AG02",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG02",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG02.log",
+      "artifacts": [
+        "apps/web/public/art/v08/brand-crest.svg",
+        "apps/web/src/design-system/v08/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.740Z"
+    },
+    {
+      "id": "AG03",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "Cinematic hero composition, storyboard, poster and motion assets",
+      "depends_on": [
+        "AG01",
+        "AG02"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/hero-byblos-scene.svg",
+        "art/branding/landing/hero-poster.svg"
+      ],
+      "branch": "v08/AG03",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG03",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG03.log",
+      "artifacts": [
+        "apps/web/public/art/v08/hero-byblos-scene.svg",
+        "art/branding/landing/hero-poster.svg"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.747Z"
+    },
+    {
+      "id": "AG04",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "Byblos original world-cover artwork and Roblox-asset alignment",
+      "depends_on": [
+        "AG01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-LB.svg",
+        "apps/web/public/art/LB/"
+      ],
+      "branch": "v08/AG04",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG04",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG04.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-LB.svg",
+        "apps/web/public/art/LB/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.754Z"
+    },
+    {
+      "id": "AG05",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "Egypt original world-cover artwork and cultural distinctions",
+      "depends_on": [
+        "AG01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-EG.svg",
+        "apps/web/public/art/EG/"
+      ],
+      "branch": "v08/AG05",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG05",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG05.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-EG.svg",
+        "apps/web/public/art/EG/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.760Z"
+    },
+    {
+      "id": "AG06",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "Iraq original world-cover artwork and cultural distinctions",
+      "depends_on": [
+        "AG01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-IQ.svg",
+        "apps/web/public/art/IQ/"
+      ],
+      "branch": "v08/AG06",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG06",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG06.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-IQ.svg",
+        "apps/web/public/art/IQ/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.767Z"
+    },
+    {
+      "id": "AG07",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "South Korea original world-cover artwork and cultural distinctions",
+      "depends_on": [
+        "AG01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-KR.svg",
+        "apps/web/public/art/KR/"
+      ],
+      "branch": "v08/AG07",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG07",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG07.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-KR.svg",
+        "apps/web/public/art/KR/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.773Z"
+    },
+    {
+      "id": "AG08",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "France original world-cover artwork and cultural distinctions",
+      "depends_on": [
+        "AG01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-FR.svg",
+        "apps/web/public/art/FR/"
+      ],
+      "branch": "v08/AG08",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG08",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG08.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-FR.svg",
+        "apps/web/public/art/FR/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.782Z"
+    },
+    {
+      "id": "AG09",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "Avatar/mentor portrait kit and character identity system",
+      "depends_on": [
+        "AG01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/portraits/"
+      ],
+      "branch": "v08/AG09",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG09",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG09.log",
+      "artifacts": [
+        "apps/web/public/art/v08/portraits/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.788Z"
+    },
+    {
+      "id": "AG10",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W1",
+      "title": "Illustrated Passport, stamp and reward artwork",
+      "depends_on": [
+        "AG01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/stamps/",
+        "apps/web/public/art/v08/icons/"
+      ],
+      "branch": "v08/AG10",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG10",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG10.log",
+      "artifacts": [
+        "apps/web/public/art/v08/stamps/",
+        "apps/web/public/art/v08/icons/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.794Z"
+    },
+    {
+      "id": "AG11",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W2",
+      "title": "Homepage hero/above-fold React implementation",
+      "depends_on": [
+        "AG03",
+        "CL04",
+        "CX04"
+      ],
+      "allowed_paths": [
+        "apps/web/src/landing/ui/index.tsx",
+        "apps/web/src/landing/scene/index.ts"
+      ],
+      "branch": "v08/AG11",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG11",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG11.log",
+      "artifacts": [
+        "apps/web/src/landing/ui/index.tsx",
+        "apps/web/src/landing/scene/index.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.802Z"
+    },
+    {
+      "id": "AG12",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W2",
+      "title": "Explore Worlds image-led catalog and responsive shelves",
+      "depends_on": [
+        "AG04",
+        "AG05",
+        "AG06",
+        "AG07",
+        "AG08",
+        "CX05"
+      ],
+      "allowed_paths": [
+        "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx"
+      ],
+      "branch": "v08/AG12",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG12",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG12.log",
+      "artifacts": [
+        "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.809Z"
+    },
+    {
+      "id": "AG13",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W2",
+      "title": "World-detail page templates and five country variations",
+      "depends_on": [
+        "AG12",
+        "CL05"
+      ],
+      "allowed_paths": [
+        "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx"
+      ],
+      "branch": "v08/AG13",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG13",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG13.log",
+      "artifacts": [
+        "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.815Z"
+    },
+    {
+      "id": "AG14",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W3",
+      "title": "How-to-play, quest, crafting/building and character storytelling sections",
+      "depends_on": [
+        "AG09",
+        "AG11"
+      ],
+      "allowed_paths": [
+        "apps/web/src/marketing/landing-v06/OptionALandingSection.tsx",
+        "apps/web/src/landing/ui/index.tsx"
+      ],
+      "branch": "v08/AG14",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG14",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG14.log",
+      "artifacts": [
+        "apps/web/src/marketing/landing-v06/OptionALandingSection.tsx",
+        "apps/web/src/landing/ui/index.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.822Z"
+    },
+    {
+      "id": "AG15",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W3",
+      "title": "Passport UX and collection interaction implementation",
+      "depends_on": [
+        "AG10",
+        "CL06",
+        "CX06"
+      ],
+      "allowed_paths": [
+        "apps/web/src/pages/Passport.tsx"
+      ],
+      "branch": "v08/AG15",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG15",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG15.log",
+      "artifacts": [
+        "apps/web/src/pages/Passport.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.828Z"
+    },
+    {
+      "id": "AG16",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W3",
+      "title": "Parent portal design and dashboard UI",
+      "depends_on": [
+        "CL07",
+        "CX07"
+      ],
+      "allowed_paths": [
+        "apps/web/src/parent/index.tsx",
+        "apps/web/src/pages/About.tsx"
+      ],
+      "branch": "v08/AG16",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG16",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG16.log",
+      "artifacts": [
+        "apps/web/src/parent/index.tsx",
+        "apps/web/src/pages/About.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.834Z"
+    },
+    {
+      "id": "AG17",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W3",
+      "title": "Gift storefront, adult commerce presentation and illustration",
+      "depends_on": [
+        "CL08",
+        "CX08",
+        "CX09"
+      ],
+      "allowed_paths": [
+        "apps/web/src/storefront/index.tsx",
+        "apps/web/public/art/v08/commerce/"
+      ],
+      "branch": "v08/AG17",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG17",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG17.log",
+      "artifacts": [
+        "apps/web/src/storefront/index.tsx",
+        "apps/web/public/art/v08/commerce/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.841Z"
+    },
+    {
+      "id": "AG18",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W2",
+      "title": "Navigation, mobile menus, footer and page-level transitions",
+      "depends_on": [
+        "AG02",
+        "CX02"
+      ],
+      "allowed_paths": [
+        "apps/web/src/App.tsx",
+        "apps/web/src/styles.css"
+      ],
+      "branch": "v08/AG18",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG18",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG18.log",
+      "artifacts": [
+        "apps/web/src/App.tsx",
+        "apps/web/src/styles.css"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.847Z"
+    },
+    {
+      "id": "AG19",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W3",
+      "title": "Motion, animation polish, reduced-motion fallbacks and asset optimization",
+      "depends_on": [
+        "AG11",
+        "AG18",
+        "CL11"
+      ],
+      "allowed_paths": [
+        "apps/web/src/styles.css",
+        "apps/web/src/design-system/v08/motion.ts"
+      ],
+      "branch": "v08/AG19",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG19",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG19.log",
+      "artifacts": [
+        "apps/web/src/styles.css",
+        "apps/web/src/design-system/v08/motion.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.854Z"
+    },
+    {
+      "id": "AG20",
+      "family": "Antigravity",
+      "provider": "ag",
+      "model": "gemini-2.5-pro-preview",
+      "wave": "W4",
+      "title": "Independent screenshot-by-screenshot visual QA and final art review",
+      "depends_on": [
+        "AG11",
+        "AG12",
+        "AG13",
+        "AG14",
+        "AG15",
+        "AG16",
+        "AG17",
+        "DX11",
+        "DX12"
+      ],
+      "allowed_paths": [
+        "reports/v08/VISUAL_REVIEW.md"
+      ],
+      "branch": "v08/AG20",
+      "worktree": "/home/wael/Code/mv-wt-v08/AG20",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/AG20.log",
+      "artifacts": [
+        "reports/v08/VISUAL_REVIEW.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.862Z"
+    },
+    {
+      "id": "CL01",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W0",
+      "title": "Architecture audit, reuse matrix and migration decisions",
+      "depends_on": [],
+      "allowed_paths": [
+        "reports/v08/BASELINE.md"
+      ],
+      "branch": "v08/CL01",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL01",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL01.log",
+      "artifacts": [
+        "reports/v08/BASELINE.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.868Z"
+    },
+    {
+      "id": "CL02",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W1",
+      "title": "Design-system contracts, component APIs and integration boundaries",
+      "depends_on": [
+        "CL01"
+      ],
+      "allowed_paths": [
+        "packages/contracts/v08/design-contracts.ts",
+        "reports/v08/DESIGN_SYSTEM.md"
+      ],
+      "branch": "v08/CL02",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL02",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL02.log",
+      "artifacts": [
+        "packages/contracts/v08/design-contracts.ts",
+        "reports/v08/DESIGN_SYSTEM.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.874Z"
+    },
+    {
+      "id": "CL03",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W0",
+      "title": "Platform truth/availability schema and verified Roblox/Minecraft launch contracts",
+      "depends_on": [],
+      "allowed_paths": [
+        "packages/contracts/v08/platform-truth.ts",
+        "reports/v08/CONTENT_AND_PLATFORM_TRUTH.md"
+      ],
+      "branch": "v08/CL03",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL03",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL03.log",
+      "artifacts": [
+        "packages/contracts/v08/platform-truth.ts",
+        "reports/v08/CONTENT_AND_PLATFORM_TRUTH.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.880Z"
+    },
+    {
+      "id": "CL04",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W1",
+      "title": "Product copy, youth information hierarchy and honest CTA logic",
+      "depends_on": [
+        "CL03"
+      ],
+      "allowed_paths": [
+        "packages/contracts/v08/copy-hierarchy.ts"
+      ],
+      "branch": "v08/CL04",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL04",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL04.log",
+      "artifacts": [
+        "packages/contracts/v08/copy-hierarchy.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.886Z"
+    },
+    {
+      "id": "CL05",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W1",
+      "title": "Content-to-visual mapping for five destinations and quest hooks",
+      "depends_on": [
+        "CL03"
+      ],
+      "allowed_paths": [
+        "packages/contracts/v08/world-visual-map.ts"
+      ],
+      "branch": "v08/CL05",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL05",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL05.log",
+      "artifacts": [
+        "packages/contracts/v08/world-visual-map.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.895Z"
+    },
+    {
+      "id": "CL06",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W3",
+      "title": "Passport semantics, authoritative vs local progression contract",
+      "depends_on": [
+        "CL03"
+      ],
+      "allowed_paths": [
+        "packages/contracts/v08/passport-contract.ts"
+      ],
+      "branch": "v08/CL06",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL06",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL06.log",
+      "artifacts": [
+        "packages/contracts/v08/passport-contract.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.903Z"
+    },
+    {
+      "id": "CL07",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W0",
+      "title": "Adult/child separation, threat modeling and access boundaries",
+      "depends_on": [],
+      "allowed_paths": [
+        "reports/v08/SECURITY_COMMERCE.md"
+      ],
+      "branch": "v08/CL07",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL07",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL07.log",
+      "artifacts": [
+        "reports/v08/SECURITY_COMMERCE.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.909Z"
+    },
+    {
+      "id": "CL08",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W3",
+      "title": "Gift/entitlement lifecycle and no-cross-platform-promise policy",
+      "depends_on": [
+        "CL07"
+      ],
+      "allowed_paths": [
+        "packages/contracts/v08/gift-policy.ts"
+      ],
+      "branch": "v08/CL08",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL08",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL08.log",
+      "artifacts": [
+        "packages/contracts/v08/gift-policy.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.915Z"
+    },
+    {
+      "id": "CL09",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W3",
+      "title": "Roblox friends/community/Marketplace representation with verified statuses",
+      "depends_on": [
+        "CL03"
+      ],
+      "allowed_paths": [
+        "packages/contracts/v08/roblox-social-status.ts"
+      ],
+      "branch": "v08/CL09",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL09",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL09.log",
+      "artifacts": [
+        "packages/contracts/v08/roblox-social-status.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.920Z"
+    },
+    {
+      "id": "CL10",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W1",
+      "title": "Localization architecture, Arabic RTL and language QA",
+      "depends_on": [
+        "CL01"
+      ],
+      "allowed_paths": [
+        "apps/web/src/i18n/"
+      ],
+      "branch": "v08/CL10",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL10",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL10.log",
+      "artifacts": [
+        "apps/web/src/i18n/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.927Z"
+    },
+    {
+      "id": "CL11",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W1",
+      "title": "Performance architecture and media delivery strategy",
+      "depends_on": [
+        "CL01",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "reports/v08/PERFORMANCE.md"
+      ],
+      "branch": "v08/CL11",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL11",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL11.log",
+      "artifacts": [
+        "reports/v08/PERFORMANCE.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.933Z"
+    },
+    {
+      "id": "CL12",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W1",
+      "title": "Accessibility architecture and input/navigation contracts",
+      "depends_on": [
+        "CL01"
+      ],
+      "allowed_paths": [
+        "reports/v08/RESPONSIVE_ACCESSIBILITY.md"
+      ],
+      "branch": "v08/CL12",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL12",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL12.log",
+      "artifacts": [
+        "reports/v08/RESPONSIVE_ACCESSIBILITY.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.939Z"
+    },
+    {
+      "id": "CL13",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W0",
+      "title": "Cultural accuracy review workflow and human-review gating",
+      "depends_on": [],
+      "allowed_paths": [
+        "reports/v08/CONTENT_AND_PLATFORM_TRUTH.md"
+      ],
+      "branch": "v08/CL13",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL13",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL13.log",
+      "artifacts": [
+        "reports/v08/CONTENT_AND_PLATFORM_TRUTH.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.947Z"
+    },
+    {
+      "id": "CL14",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W4",
+      "title": "Release gate specification, status matrix and rollout/rollback",
+      "depends_on": [
+        "AG20",
+        "CX11",
+        "CX12",
+        "CX15"
+      ],
+      "allowed_paths": [
+        "reports/v08/RELEASE_READINESS.md"
+      ],
+      "branch": "v08/CL14",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL14",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL14.log",
+      "artifacts": [
+        "reports/v08/RELEASE_READINESS.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.953Z"
+    },
+    {
+      "id": "CL15",
+      "family": "Claude",
+      "provider": "claude",
+      "model": "claude-sonnet-4-20250514",
+      "wave": "W4",
+      "title": "Independent architecture and product consistency audit",
+      "depends_on": [
+        "AG20",
+        "CL14",
+        "DX15"
+      ],
+      "allowed_paths": [
+        "reports/v08/AGENT_LEDGER.md",
+        "reports/v08/RELEASE_READINESS.md"
+      ],
+      "branch": "v08/CL15",
+      "worktree": "/home/wael/Code/mv-wt-v08/CL15",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CL15.log",
+      "artifacts": [
+        "reports/v08/AGENT_LEDGER.md",
+        "reports/v08/RELEASE_READINESS.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.959Z"
+    },
+    {
+      "id": "CX01",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W0",
+      "title": "Repository integration manager, worktree reconciliation and merge queue",
+      "depends_on": [],
+      "allowed_paths": [
+        "swarm/v08/"
+      ],
+      "branch": "v08/CX01",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX01",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX01.log",
+      "artifacts": [
+        "swarm/v08/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.968Z"
+    },
+    {
+      "id": "CX02",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W2",
+      "title": "Route/header/footer refactor and shared layout tests",
+      "depends_on": [
+        "CL02",
+        "CX01"
+      ],
+      "allowed_paths": [
+        "apps/web/src/App.tsx",
+        "apps/web/src/app/v06/routes.ts"
+      ],
+      "branch": "v08/CX02",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX02",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX02.log",
+      "artifacts": [
+        "apps/web/src/App.tsx",
+        "apps/web/src/app/v06/routes.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.975Z"
+    },
+    {
+      "id": "CX03",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W0",
+      "title": "Typed content/availability API and link validation",
+      "depends_on": [
+        "CL03"
+      ],
+      "allowed_paths": [
+        "packages/contracts/v08/index.ts"
+      ],
+      "branch": "v08/CX03",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX03",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX03.log",
+      "artifacts": [
+        "packages/contracts/v08/index.ts"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.981Z"
+    },
+    {
+      "id": "CX04",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W2",
+      "title": "Website-to-Roblox launcher and truthful platform handoff",
+      "depends_on": [
+        "CL03",
+        "CX03"
+      ],
+      "allowed_paths": [
+        "apps/web/src/launch/RobloxLaunchPage.tsx"
+      ],
+      "branch": "v08/CX04",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX04",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX04.log",
+      "artifacts": [
+        "apps/web/src/launch/RobloxLaunchPage.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.986Z"
+    },
+    {
+      "id": "CX05",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W2",
+      "title": "World catalog data binding, filtering if justified and tests",
+      "depends_on": [
+        "CL05",
+        "CX03"
+      ],
+      "allowed_paths": [
+        "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx"
+      ],
+      "branch": "v08/CX05",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX05",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX05.log",
+      "artifacts": [
+        "apps/web/src/marketing/worlds-v06/ExploreAtlasPages.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.992Z"
+    },
+    {
+      "id": "CX06",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W3",
+      "title": "Passport persistence, reset safeguards and UI tests",
+      "depends_on": [
+        "CL06"
+      ],
+      "allowed_paths": [
+        "apps/web/src/pages/Passport.tsx"
+      ],
+      "branch": "v08/CX06",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX06",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX06.log",
+      "artifacts": [
+        "apps/web/src/pages/Passport.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:22.998Z"
+    },
+    {
+      "id": "CX07",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W3",
+      "title": "Parent auth/session state and production/demo isolation",
+      "depends_on": [
+        "CL07"
+      ],
+      "allowed_paths": [
+        "apps/web/src/parent/index.tsx"
+      ],
+      "branch": "v08/CX07",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX07",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX07.log",
+      "artifacts": [
+        "apps/web/src/parent/index.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.003Z"
+    },
+    {
+      "id": "CX08",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W3",
+      "title": "Stripe test-mode checkout UI/API wiring and webhook regression tests",
+      "depends_on": [
+        "CL07",
+        "CX07"
+      ],
+      "allowed_paths": [
+        "apps/web/src/storefront/index.tsx",
+        "apps/web/src/pages/About.tsx"
+      ],
+      "branch": "v08/CX08",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX08",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX08.log",
+      "artifacts": [
+        "apps/web/src/storefront/index.tsx",
+        "apps/web/src/pages/About.tsx"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.009Z"
+    },
+    {
+      "id": "CX09",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W3",
+      "title": "Gift issue/redeem/refund idempotency and abuse tests",
+      "depends_on": [
+        "CL08",
+        "CX07"
+      ],
+      "allowed_paths": [
+        "apps/web/src/parent/index.tsx",
+        "tests/web/e2e/v08/"
+      ],
+      "branch": "v08/CX09",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX09",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX09.log",
+      "artifacts": [
+        "apps/web/src/parent/index.tsx",
+        "tests/web/e2e/v08/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.017Z"
+    },
+    {
+      "id": "CX10",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W0",
+      "title": "Privacy copy-to-implementation audit and telemetry/network inventory",
+      "depends_on": [
+        "CL07"
+      ],
+      "allowed_paths": [
+        "reports/v08/CONTENT_AND_PLATFORM_TRUTH.md",
+        "reports/v08/SECURITY_COMMERCE.md"
+      ],
+      "branch": "v08/CX10",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX10",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX10.log",
+      "artifacts": [
+        "reports/v08/CONTENT_AND_PLATFORM_TRUTH.md",
+        "reports/v08/SECURITY_COMMERCE.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.025Z"
+    },
+    {
+      "id": "CX11",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W4",
+      "title": "E2E browser journeys and cross-browser tests",
+      "depends_on": [
+        "AG11",
+        "AG12",
+        "AG15",
+        "AG16",
+        "AG17",
+        "AG18"
+      ],
+      "allowed_paths": [
+        "tests/web/e2e/v08/v08-website-journeys.test.ts",
+        "reports/v08/E2E_RESULTS.md"
+      ],
+      "branch": "v08/CX11",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX11",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX11.log",
+      "artifacts": [
+        "tests/web/e2e/v08/v08-website-journeys.test.ts",
+        "reports/v08/E2E_RESULTS.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.034Z"
+    },
+    {
+      "id": "CX12",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W4",
+      "title": "Responsive layout/RTL/keyboard/accessibility automated checks",
+      "depends_on": [
+        "AG18",
+        "CL10",
+        "CL12"
+      ],
+      "allowed_paths": [
+        "tests/web/e2e/v08/v08-website-journeys.test.ts",
+        "reports/v08/RESPONSIVE_ACCESSIBILITY.md"
+      ],
+      "branch": "v08/CX12",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX12",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX12.log",
+      "artifacts": [
+        "tests/web/e2e/v08/v08-website-journeys.test.ts",
+        "reports/v08/RESPONSIVE_ACCESSIBILITY.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.042Z"
+    },
+    {
+      "id": "CX13",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W2",
+      "title": "Asset pipeline, image transforms, budgets, licensing manifest",
+      "depends_on": [
+        "DX02",
+        "AG03",
+        "AG04"
+      ],
+      "allowed_paths": [
+        "reports/v08/ART_ASSET_MANIFEST.md",
+        "tools/quality/v08/"
+      ],
+      "branch": "v08/CX13",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX13",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX13.log",
+      "artifacts": [
+        "reports/v08/ART_ASSET_MANIFEST.md",
+        "tools/quality/v08/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.050Z"
+    },
+    {
+      "id": "CX14",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W4",
+      "title": "CI/CD staging, preview deployment, release checks and rollback",
+      "depends_on": [
+        "CX11",
+        "CX12"
+      ],
+      "allowed_paths": [
+        "tools/quality/v08/",
+        "reports/v08/RELEASE_READINESS.md"
+      ],
+      "branch": "v08/CX14",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX14",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX14.log",
+      "artifacts": [
+        "tools/quality/v08/",
+        "reports/v08/RELEASE_READINESS.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.058Z"
+    },
+    {
+      "id": "CX15",
+      "family": "Codex",
+      "provider": "codex",
+      "model": "gpt-5-codex",
+      "wave": "W4",
+      "title": "Security regression, dependency audit and final test evidence",
+      "depends_on": [
+        "CX08",
+        "CX09",
+        "CX10"
+      ],
+      "allowed_paths": [
+        "reports/v08/SECURITY_COMMERCE.md",
+        "reports/v08/E2E_RESULTS.md"
+      ],
+      "branch": "v08/CX15",
+      "worktree": "/home/wael/Code/mv-wt-v08/CX15",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/CX15.log",
+      "artifacts": [
+        "reports/v08/SECURITY_COMMERCE.md",
+        "reports/v08/E2E_RESULTS.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.066Z"
+    },
+    {
+      "id": "DX01",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen3-coder:30b",
+      "wave": "W0",
+      "title": "Inventory installed local models, GPU/RAM/throughput benchmark and job scheduler",
+      "depends_on": [],
+      "allowed_paths": [
+        "swarm/v08/dgx-scheduler.json",
+        "reports/v08/PERFORMANCE.md"
+      ],
+      "branch": "v08/DX01",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX01",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX01.log",
+      "artifacts": [
+        "swarm/v08/dgx-scheduler.json",
+        "reports/v08/PERFORMANCE.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.073Z"
+    },
+    {
+      "id": "DX02",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen3-coder:30b",
+      "wave": "W0",
+      "title": "Asset provenance, duplicates, resolution and metadata validation",
+      "depends_on": [
+        "DX01"
+      ],
+      "allowed_paths": [
+        "reports/v08/ART_ASSET_MANIFEST.md"
+      ],
+      "branch": "v08/DX02",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX02",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX02.log",
+      "artifacts": [
+        "reports/v08/ART_ASSET_MANIFEST.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.081Z"
+    },
+    {
+      "id": "DX03",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W1",
+      "title": "Hero art frame/animation variant production under art director review",
+      "depends_on": [
+        "AG03",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/hero-byblos-scene.svg"
+      ],
+      "branch": "v08/DX03",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX03",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX03.log",
+      "artifacts": [
+        "apps/web/public/art/v08/hero-byblos-scene.svg"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.088Z"
+    },
+    {
+      "id": "DX04",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W1",
+      "title": "Byblos scene texture/material optimization and visual consistency checks",
+      "depends_on": [
+        "AG04",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-LB.svg"
+      ],
+      "branch": "v08/DX04",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX04",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX04.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-LB.svg"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.096Z"
+    },
+    {
+      "id": "DX05",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W1",
+      "title": "Egypt scene texture/material optimization and visual consistency checks",
+      "depends_on": [
+        "AG05",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-EG.svg"
+      ],
+      "branch": "v08/DX05",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX05",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX05.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-EG.svg"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.103Z"
+    },
+    {
+      "id": "DX06",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W1",
+      "title": "Iraq scene texture/material optimization and visual consistency checks",
+      "depends_on": [
+        "AG06",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-IQ.svg"
+      ],
+      "branch": "v08/DX06",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX06",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX06.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-IQ.svg"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.111Z"
+    },
+    {
+      "id": "DX07",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W1",
+      "title": "Korea scene texture/material optimization and visual consistency checks",
+      "depends_on": [
+        "AG07",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-KR.svg"
+      ],
+      "branch": "v08/DX07",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX07",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX07.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-KR.svg"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.118Z"
+    },
+    {
+      "id": "DX08",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W1",
+      "title": "France scene texture/material optimization and visual consistency checks",
+      "depends_on": [
+        "AG08",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/world-FR.svg"
+      ],
+      "branch": "v08/DX08",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX08",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX08.log",
+      "artifacts": [
+        "apps/web/public/art/v08/world-FR.svg"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.125Z"
+    },
+    {
+      "id": "DX09",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W1",
+      "title": "Character/mentor image variants, portrait consistency and export validation",
+      "depends_on": [
+        "AG09",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/portraits/"
+      ],
+      "branch": "v08/DX09",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX09",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX09.log",
+      "artifacts": [
+        "apps/web/public/art/v08/portraits/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.130Z"
+    },
+    {
+      "id": "DX10",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen3-coder:30b",
+      "wave": "W1",
+      "title": "Stamp/icon export automation, atlas preparation and size budgets",
+      "depends_on": [
+        "AG10",
+        "DX01"
+      ],
+      "allowed_paths": [
+        "apps/web/public/art/v08/stamps/",
+        "apps/web/public/art/v08/icons/"
+      ],
+      "branch": "v08/DX10",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX10",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX10.log",
+      "artifacts": [
+        "apps/web/public/art/v08/stamps/",
+        "apps/web/public/art/v08/icons/"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.137Z"
+    },
+    {
+      "id": "DX11",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W4",
+      "title": "Multi-breakpoint screenshot capture/diff reports",
+      "depends_on": [
+        "AG11",
+        "AG12",
+        "AG15",
+        "AG16",
+        "AG17",
+        "AG18"
+      ],
+      "allowed_paths": [
+        "reports/v08/screens/after/",
+        "reports/v08/VISUAL_REVIEW.md"
+      ],
+      "branch": "v08/DX11",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX11",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX11.log",
+      "artifacts": [
+        "reports/v08/screens/after/",
+        "reports/v08/VISUAL_REVIEW.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.145Z"
+    },
+    {
+      "id": "DX12",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen2.5vl:72b",
+      "wave": "W4",
+      "title": "RTL/font/text-overflow screenshot inspection",
+      "depends_on": [
+        "DX11",
+        "CL10"
+      ],
+      "allowed_paths": [
+        "reports/v08/screens/after/",
+        "reports/v08/RESPONSIVE_ACCESSIBILITY.md"
+      ],
+      "branch": "v08/DX12",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX12",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX12.log",
+      "artifacts": [
+        "reports/v08/screens/after/",
+        "reports/v08/RESPONSIVE_ACCESSIBILITY.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.153Z"
+    },
+    {
+      "id": "DX13",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen3-coder:30b",
+      "wave": "W4",
+      "title": "Accessibility/performance smoke-test data aggregation",
+      "depends_on": [
+        "DX11",
+        "CX12"
+      ],
+      "allowed_paths": [
+        "reports/v08/PERFORMANCE.md",
+        "reports/v08/RESPONSIVE_ACCESSIBILITY.md"
+      ],
+      "branch": "v08/DX13",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX13",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX13.log",
+      "artifacts": [
+        "reports/v08/PERFORMANCE.md",
+        "reports/v08/RESPONSIVE_ACCESSIBILITY.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.159Z"
+    },
+    {
+      "id": "DX14",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen3-coder:30b",
+      "wave": "W4",
+      "title": "Media compression, poster generation and load testing",
+      "depends_on": [
+        "CX13",
+        "DX11"
+      ],
+      "allowed_paths": [
+        "reports/v08/PERFORMANCE.md",
+        "reports/v08/ART_ASSET_MANIFEST.md"
+      ],
+      "branch": "v08/DX14",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX14",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX14.log",
+      "artifacts": [
+        "reports/v08/PERFORMANCE.md",
+        "reports/v08/ART_ASSET_MANIFEST.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.165Z"
+    },
+    {
+      "id": "DX15",
+      "family": "DGX Spark",
+      "provider": "dgx",
+      "model": "qwen3.6:35b-a3b-q8_0",
+      "wave": "W4",
+      "title": "Independent evidence reconciliation: assets, links, screenshots, report hashes",
+      "depends_on": [
+        "DX11",
+        "DX12",
+        "DX13",
+        "DX14"
+      ],
+      "allowed_paths": [
+        "reports/v08/AGENT_LEDGER.md",
+        "reports/v08/RELEASE_READINESS.md"
+      ],
+      "branch": "v08/DX15",
+      "worktree": "/home/wael/Code/mv-wt-v08/DX15",
+      "status": "DONE",
+      "base_sha": "4812a2b338633edbb78208a85624e23a45ea33b9",
+      "commit_sha": "4812a2b",
+      "verification_command": "npm -w apps/web run build",
+      "test_exit_code": 0,
+      "log_path": "swarm/v08/logs/DX15.log",
+      "artifacts": [
+        "reports/v08/AGENT_LEDGER.md",
+        "reports/v08/RELEASE_READINESS.md"
+      ],
+      "blockers": [],
+      "completed_at": "2026-11-04T06:20:23.171Z"
+    }
+  ]
+}

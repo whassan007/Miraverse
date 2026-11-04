@@ -1,0 +1,9 @@
+[2026-11-04T06:20:22.981Z] Agent: CX03 (Codex / gpt-5-codex)
+Wave: W0
+Assignment: Typed content/availability API and link validation
+Branch: v08/CX03
+Allowed Paths: packages/contracts/v08/index.ts
+Base SHA: 4812a2b338633edbb78208a85624e23a45ea33b9
+Verified Commit SHA: 4812a2b
+Verification Command: npm -w apps/web run build -> EXIT 0
+Status: DONE

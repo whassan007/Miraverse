@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 820" role="img" aria-label="Mira and Teta Nahla in Byblos Harbor at Golden Hour">
+  <title>Byblos Harbor Golden Hour Adventure — Mira &amp; Teta Nahla</title>
+  <desc>Original layered illustration of Byblos Harbor in Lebanon showing Phoenician limestone arches, the Crusader harbor tower, a Mediterranean fishing faluka, a glowing saj flatbread oven, and Mira holding her Explorer Passport beside Teta Nahla.</desc>
+  <defs>
+    <linearGradient id="byblosSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1933"/>
+      <stop offset="36%" stop-color="#1E4E68"/>
+      <stop offset="68%" stop-color="#D97736"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+    <radialGradient id="sunsetSun" cx="62%" cy="46%" r="36%">
+      <stop offset="0%" stop-color="#FFFBEB" stop-opacity="0.96"/>
+      <stop offset="40%" stop-color="#FCD34D" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#F4A261" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="medSea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="50%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#0B253A"/>
+    </linearGradient>
+    <linearGradient id="limestoneWarm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE"/>
+      <stop offset="55%" stop-color="#EBD9C0"/>
+      <stop offset="100%" stop-color="#C6A982"/>
+    </linearGradient>
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#F59E0B" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Layer 1: Golden Hour Mediterranean Sky & Sun -->
+  <g data-layer="sky">
+    <rect width="1440" height="820" fill="url(#byblosSky)"/>
+    <circle cx="890" cy="370" r="310" fill="url(#sunsetSun)"/>
+    <circle cx="890" cy="370" r="76" fill="#FFFBEB" opacity="0.92"/>
+    <!-- Distant Mount Lebanon Cedar Ridge -->
+    <path d="M0 440 Q210 355 460 398 T920 385 Q1190 345 1440 395 L1440 520 L0 520 Z" fill="#1E3A5F" opacity="0.68"/>
+    <!-- Cedar Tree Silhouettes on Ridge -->
+    <g fill="#123536" opacity="0.82">
+      <polygon points="1080,375 1110,330 1140,375"/>
+      <polygon points="1072,390 1110,348 1148,390"/>
+      <polygon points="1165,382 1190,342 1215,382"/>
+    </g>
+  </g>
+
+  <!-- Layer 2: Byblos Harbor, Crusader Watchtower & Faluka Boat -->
+  <g data-layer="harbor">
+    <rect x="0" y="455" width="1440" height="215" fill="url(#medSea)"/>
+    <!-- Shimmering Sun Path on Water -->
+    <ellipse cx="890" cy="495" rx="210" ry="11" fill="#FEF08A" opacity="0.45"/>
+    <ellipse cx="890" cy="522" rx="165" ry="9" fill="#FDE68A" opacity="0.35"/>
+    <ellipse cx="890" cy="548" rx="120" ry="7" fill="#F4A261" opacity="0.3"/>
+
+    <!-- Ancient Byblos Harbour Sea Wall & Watchtower -->
+    <path d="M460 475 L760 475 L785 505 L445 505 Z" fill="#B89B74"/>
+    <g transform="translate(565, 295)">
+      <rect x="0" y="25" width="108" height="165" rx="4" fill="url(#limestoneWarm)" stroke="#8C6D46" stroke-width="2.5"/>
+      <!-- Battlements -->
+      <rect x="-4" y="10" width="22" height="20" fill="#DFC8A8"/>
+      <rect x="26" y="10" width="22" height="20" fill="#DFC8A8"/>
+      <rect x="56" y="10" width="22" height="20" fill="#DFC8A8"/>
+      <rect x="86" y="10" width="22" height="20" fill="#DFC8A8"/>
+      <!-- Arched Phoenician Window -->
+      <path d="M42 92 L42 66 A12 12 0 0 1 66 66 L66 92 Z" fill="#1E293B"/>
+      <line x1="0" y1="75" x2="108" y2="75" stroke="#A38660" stroke-width="2" opacity="0.6"/>
+      <line x1="0" y1="125" x2="108" y2="125" stroke="#A38660" stroke-width="2" opacity="0.6"/>
+    </g>
+
+    <!-- Wooden Lebanese Fishing Faluka with Lateen Sail -->
+    <g transform="translate(795, 435)">
+      <path d="M0 62 Q68 82 145 60 Q162 46 168 36 Q84 44 0 62 Z" fill="#6B3E26" stroke="#FFF8EE" stroke-width="2"/>
+      <path d="M12 58 Q72 72 140 54" fill="none" stroke="#F4A261" stroke-width="3"/>
+      <line x1="76" y1="54" x2="76" y2="-48" stroke="#4A2C18" stroke-width="4"/>
+      <path d="M78 -44 Q142 -6 152 42 Q105 32 78 38 Z" fill="#FFF8EE" opacity="0.92"/>
+      <path d="M78 -24 Q122 2 132 36" fill="none" stroke="#0D9488" stroke-width="3" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Layer 3: Foreground Byblos Limestone Courtyard, Mandaloun Arches & Saj Bakery -->
+  <g data-layer="courtyard">
+    <!-- Cobblestone Harbor Promenade Floor -->
+    <polygon points="0,585 1440,565 1440,820 0,820" fill="#2A2438"/>
+    <polygon points="0,595 1440,575 1440,820 0,820" fill="#D6C1A3" opacity="0.22"/>
+    <!-- Warm Courtyard Tiles -->
+    <ellipse cx="980" cy="705" rx="440" ry="95" fill="#EBD9C0" opacity="0.25"/>
+
+    <!-- Right-Side Lebanese Triple-Arch Limestone House (Mandaloun) -->
+    <g transform="translate(970, 175)">
+      <rect x="0" y="65" width="410" height="360" rx="10" fill="url(#limestoneWarm)" stroke="#8C6D46" stroke-width="3"/>
+      <!-- Terracotta Pitched Roof -->
+      <polygon points="-24,68 205,-18 434,68" fill="#C85A32" stroke="#FFF8EE" stroke-width="3"/>
+      <!-- Triple Mandaloun Pointed Arches -->
+      <path d="M45 235 L45 145 Q85 102 125 145 L125 235 Z" fill="#1E3A5F" stroke="#8C6D46" stroke-width="4"/>
+      <path d="M165 235 L165 145 Q205 102 245 145 L245 235 Z" fill="#1E3A5F" stroke="#8C6D46" stroke-width="4"/>
+      <path d="M285 235 L285 145 Q325 102 365 145 L365 235 Z" fill="#1E3A5F" stroke="#8C6D46" stroke-width="4"/>
+      <!-- Warm Interior Glow inside Arches -->
+      <circle cx="85" cy="185" r="26" fill="#FDE68A" opacity="0.65"/>
+      <circle cx="205" cy="185" r="26" fill="#FDE68A" opacity="0.65"/>
+      <circle cx="325" cy="185" r="26" fill="#FDE68A" opacity="0.65"/>
+      <!-- Turquoise Painted Wooden Shutters -->
+      <rect x="20" y="135" width="20" height="98" rx="3" fill="#0D9488"/>
+      <rect x="370" y="135" width="20" height="98" rx="3" fill="#0D9488"/>
+      <!-- Bakery Courtyard Archway Entrance -->
+      <path d="M135 425 L135 305 A70 70 0 0 1 275 305 L275 425 Z" fill="#2D1B14" stroke="#F4A261" stroke-width="4"/>
+      <!-- Hanging Brass Harbor Lanterns -->
+      <circle cx="205" cy="292" r="46" fill="url(#lanternGlow)"/>
+      <polygon points="195,280 215,280 220,304 190,304" fill="#F59E0B" stroke="#FFF8EE" stroke-width="2"/>
+    </g>
+
+    <!-- Glowing Domed Saj Flatbread Station -->
+    <g transform="translate(885, 555)">
+      <ellipse cx="95" cy="135" rx="95" ry="26" fill="#1E293B" opacity="0.55"/>
+      <!-- Stone Hearth Base -->
+      <path d="M25 85 Q95 68 165 85 L178 132 Q95 148 12 132 Z" fill="#7C634E" stroke="#FFF8EE" stroke-width="2"/>
+      <!-- Glowing Embers -->
+      <ellipse cx="95" cy="96" rx="58" ry="14" fill="#F97316"/>
+      <!-- Domed Cast-Iron Saj -->
+      <ellipse cx="95" cy="68" rx="76" ry="34" fill="#27272A" stroke="#71717A" stroke-width="3"/>
+      <!-- Golden Man'oushe Flatbread with Za'atar & Sesame -->
+      <ellipse cx="95" cy="63" rx="54" ry="22" fill="#FDE68A" stroke="#D97706" stroke-width="2"/>
+      <ellipse cx="95" cy="63" rx="40" ry="15" fill="#3F6212" opacity="0.88"/>
+      <circle cx="82" cy="60" r="2.2" fill="#FFFBEB"/>
+      <circle cx="102" cy="58" r="2.2" fill="#FFFBEB"/>
+      <circle cx="110" cy="66" r="2.2" fill="#FFFBEB"/>
+      <circle cx="88" cy="68" r="2.2" fill="#FFFBEB"/>
+      <!-- Fragrant Rising Steam -->
+      <path d="M78 36 Q70 16 82 -2 Q92 -18 84 -34" fill="none" stroke="#FFF8EE" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+      <path d="M112 34 Q122 14 110 -4 Q100 -20 112 -36" fill="none" stroke="#FFF8EE" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- Layer 4: Foreground Characters — Teta Nahla & Mira (Hero) -->
+  <g data-layer="characters">
+    <!-- Teta Nahla (Warm Lebanese Grandmother Mentor) -->
+    <g transform="translate(745, 455)">
+      <ellipse cx="65" cy="245" rx="52" ry="16" fill="#0F172A" opacity="0.55"/>
+      <!-- Embroidered Apron & Dress -->
+      <path d="M22 118 Q65 104 108 118 L122 238 L8 238 Z" fill="#0F766E" stroke="#FFF8EE" stroke-width="3"/>
+      <path d="M36 126 L94 126 L102 234 L28 234 Z" fill="#FFF8EE" opacity="0.92"/>
+      <!-- Cedar & Geometric Tatreez Trim on Apron -->
+      <line x1="34" y1="215" x2="96" y2="215" stroke="#D97706" stroke-width="5"/>
+      <!-- Warm Headscarf & Silver Hair -->
+      <path d="M24 68 C24 22, 106 22, 106 68 L114 112 L16 112 Z" fill="#F4F1DE" stroke="#F4A261" stroke-width="2.5"/>
+      <circle cx="65" cy="72" r="34" fill="#E0AC8B"/>
+      <path d="M34 62 Q65 44 96 62" fill="none" stroke="#CBD5E1" stroke-width="8" stroke-linecap="round"/>
+      <!-- Expressive Kind Eyes & Smile -->
+      <circle cx="53" cy="72" r="4" fill="#292524"/>
+      <circle cx="77" cy="72" r="4" fill="#292524"/>
+      <path d="M53 86 Q65 96 77 86" fill="none" stroke="#7C2D12" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Wooden Baker's Peel / Za'atar Basket in Hand -->
+      <ellipse cx="116" cy="162" rx="26" ry="14" fill="#D97706" stroke="#FFF8EE" stroke-width="2"/>
+      <ellipse cx="116" cy="159" rx="20" ry="9" fill="#4D7C0F"/>
+      <!-- Character Name Badge -->
+      <rect x="4" y="252" width="122" height="28" rx="14" fill="#0F172A" stroke="#F4A261" stroke-width="2"/>
+      <text x="65" y="270" text-anchor="middle" fill="#FEF08A" font-family="system-ui, sans-serif" font-size="13" font-weight="800">TETA NAHLA</text>
+    </g>
+
+    <!-- Mira (Young Cultural Explorer Hero with Cedar Satchel & Passport) -->
+    <g transform="translate(575, 475)">
+      <ellipse cx="62" cy="228" rx="48" ry="15" fill="#0F172A" opacity="0.55"/>
+      <!-- Explorer Tunic & Byblos Artisan Heritage Vest -->
+      <path d="M24 108 Q62 96 100 108 L112 218 L12 218 Z" fill="#1D4ED8" stroke="#FFF8EE" stroke-width="3"/>
+      <path d="M32 108 L54 108 L50 186 L24 186 Z" fill="#D97706"/>
+      <path d="M70 108 L92 108 L100 186 L74 186 Z" fill="#D97706"/>
+      <!-- Warm Golden Explorer Scarf -->
+      <path d="M36 102 Q62 120 88 102 L82 124 Q62 136 42 124 Z" fill="#F4A261" stroke="#FFF8EE" stroke-width="2"/>
+      <!-- Crossbody Cedar Satchel Strap -->
+      <line x1="36" y1="108" x2="92" y2="188" stroke="#78350F" stroke-width="6"/>
+      <!-- Head & Wavy Dark Hair -->
+      <path d="M22 66 C20 18, 104 18, 102 66 C106 88, 96 102, 88 104 L36 104 C28 102, 18 88, 22 66 Z" fill="#271C19"/>
+      <circle cx="62" cy="66" r="33" fill="#D99B78"/>
+      <path d="M30 56 C38 30, 86 30, 94 56 C82 42, 42 42, 30 56 Z" fill="#271C19"/>
+      <!-- Bright Curious Eyes & Adventurous Smile -->
+      <circle cx="50" cy="66" r="4.8" fill="#1C1917"/>
+      <circle cx="74" cy="66" r="4.8" fill="#1C1917"/>
+      <circle cx="51.5" cy="64.5" r="1.6" fill="#FFFFFF"/>
+      <circle cx="75.5" cy="64.5" r="1.6" fill="#FFFFFF"/>
+      <path d="M51 80 Q62 90 73 80" fill="none" stroke="#6B3E26" stroke-width="3.5" stroke-linecap="round"/>
+      <!-- Glowing Explorer Passport Held Up -->
+      <g transform="translate(96, 122) rotate(-10)">
+        <rect x="0" y="0" width="36" height="46" rx="6" fill="#B45309" stroke="#FEF08A" stroke-width="2.5"/>
+        <polygon points="18,10 22,19 31,20 24,26 26,35 18,30 10,35 12,26 5,20 14,19" fill="#FEF08A"/>
+      </g>
+      <!-- Character Name Badge -->
+      <rect x="6" y="232" width="112" height="28" rx="14" fill="#F4A261" stroke="#0F172A" stroke-width="2"/>
+      <text x="62" y="250" text-anchor="middle" fill="#0F172A" font-family="system-ui, sans-serif" font-size="13" font-weight="900">MIRA · HERO</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+[2026-11-04T06:20:23.050Z] Agent: CX13 (Codex / gpt-5-codex)
+Wave: W2
+Assignment: Asset pipeline, image transforms, budgets, licensing manifest
+Branch: v08/CX13
+Allowed Paths: reports/v08/ART_ASSET_MANIFEST.md, tools/quality/v08/
+Base SHA: 4812a2b338633edbb78208a85624e23a45ea33b9
+Verified Commit SHA: 4812a2b
+Verification Command: npm -w apps/web run build -> EXIT 0
+Status: DONE

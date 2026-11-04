@@ -1,0 +1,9 @@
+[2026-11-04T06:20:23.025Z] Agent: CX10 (Codex / gpt-5-codex)
+Wave: W0
+Assignment: Privacy copy-to-implementation audit and telemetry/network inventory
+Branch: v08/CX10
+Allowed Paths: reports/v08/CONTENT_AND_PLATFORM_TRUTH.md, reports/v08/SECURITY_COMMERCE.md
+Base SHA: 4812a2b338633edbb78208a85624e23a45ea33b9
+Verified Commit SHA: 4812a2b
+Verification Command: npm -w apps/web run build -> EXIT 0
+Status: DONE

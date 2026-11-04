@@ -48,29 +48,12 @@ function Shell() {
 
   useEffect(() => {
     if (previousPath.current !== pathname) {
-      main.current?.focus();
+      main.current?.focus({ preventScroll: true });
       previousPath.current = pathname;
     }
   }, [pathname]);
 
-  const isFullBleed =
-    pathname === '/' ||
-    pathname.startsWith('/play') ||
-    pathname.startsWith('/explore') ||
-    pathname === '/adventures' ||
-    pathname === '/characters' ||
-    pathname === '/minecraft' ||
-    pathname === '/legacy-game' ||
-    pathname === '/shop' ||
-    pathname.startsWith('/gifts') ||
-    pathname.startsWith('/parent') ||
-    pathname === '/account' ||
-    pathname === '/help' ||
-    pathname.startsWith('/legal') ||
-    pathname === '/privacy' ||
-    pathname === '/terms' ||
-    pathname === '/refunds' ||
-    pathname === '/support';
+  const isFullBleed = !pathname.startsWith('/story/');
 
   return (
     <>
@@ -84,57 +67,55 @@ function Shell() {
       >
         {t('nav.skip', 'Skip to content')}
       </a>
-      <header
-        className="site-header"
-        style={{
-          background: '#0B1325',
-          color: '#FFF8EE',
-          borderBottom: '1px solid rgba(244, 162, 97, 0.35)',
-          padding: '6px clamp(12px, 3vw, 32px)',
-          gap: '12px',
-        }}
-      >
-        <Link className="brand" to="/" style={{ color: '#FFF8EE', fontSize: '1.2rem' }}>
-          ✦ {t('app.title')}
+      <header className="site-header" data-testid="unified-site-header">
+        <Link className="brand" to="/" aria-label="MiraVerse Home">
+          <img
+            src="/art/v08/brand-crest.svg"
+            alt=""
+            width={34}
+            height={34}
+            style={{ borderRadius: '8px', flexShrink: 0 }}
+          />
+          <span>{t('app.title', 'MiraVerse')}</span>
         </Link>
+
         <nav aria-label={t('nav.label', 'Main navigation')}>
-          <NavLink to="/" end style={{ color: '#E2E8F0', minBlockSize: '36px', padding: '4px 8px' }}>
-            {t('nav.home')}
+          <NavLink to="/" end>
+            {t('nav.home', 'Home')}
           </NavLink>
-          <NavLink to="/explore" style={{ color: '#E2E8F0', minBlockSize: '36px', padding: '4px 8px' }}>
-            Explore
+          <NavLink to="/explore">
+            Explore Worlds
           </NavLink>
-          <NavLink to="/adventures" style={{ color: '#E2E8F0', minBlockSize: '36px', padding: '4px 8px' }}>
+          <NavLink to="/adventures">
             Adventures
           </NavLink>
-          <NavLink to="/characters" style={{ color: '#E2E8F0', minBlockSize: '36px', padding: '4px 8px' }}>
-            Characters
+          <NavLink to="/passport">
+            {t('nav.passport', 'Passport')}
           </NavLink>
-          <NavLink to="/play/LB" style={{ color: '#6EE7B7', minBlockSize: '36px', padding: '4px 8px', fontWeight: 800 }}>
-            Play Free on Roblox
+          <NavLink to="/gifts">
+            Gifts (18+)
           </NavLink>
-          <NavLink to="/minecraft" style={{ color: '#FCD34D', minBlockSize: '36px', padding: '4px 8px' }}>
-            Minecraft
-          </NavLink>
-          <NavLink to="/passport" style={{ color: '#E2E8F0', minBlockSize: '36px', padding: '4px 8px' }}>
-            {t('nav.passport')}
-          </NavLink>
-          <NavLink to="/parents" style={{ color: '#F4A261', minBlockSize: '36px', padding: '4px 8px' }}>
+          <NavLink to="/parents">
             For Parents
           </NavLink>
+          <NavLink to="/play/LB" className="nav-cta-roblox" data-testid="header-cta-play-roblox">
+            ▶ Play on Roblox
+          </NavLink>
         </nav>
-        <label className="language-picker" htmlFor="ui-language" style={{ color: '#CBD5E1', fontSize: '13px' }}>
-          <span>{t('nav.language')}</span>
+
+        <label className="language-picker" htmlFor="ui-language">
+          <span>{t('nav.language', 'Language')}</span>
           <select
             id="ui-language"
             value={lang}
             onChange={(event) => setLang(event.target.value as Lang)}
             style={{
-              background: '#1E293B',
+              background: '#131F38',
               color: '#FFF8EE',
               border: '1px solid rgba(244, 162, 97, 0.5)',
               minBlockSize: '36px',
               padding: '4px 8px',
+              borderRadius: '8px',
             }}
           >
             {UI_LANGS.map((locale) => (
@@ -192,9 +173,9 @@ function Shell() {
           <Route
             path="*"
             element={
-              <section style={{ padding: '2rem' }}>
+              <section style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
                 <h1>{t('route.notFound', 'Page not found')}</h1>
-                <Link to="/">{t('nav.home')}</Link>
+                <Link to="/">{t('nav.home', 'Return Home')}</Link>
               </section>
             }
           />

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="MiraVerse Compass &amp; Storybook Crest">
+  <defs>
+    <linearGradient id="crestBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="55%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="crestGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#F4A261"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="108" height="108" rx="28" fill="url(#crestBg)" stroke="url(#crestGold)" stroke-width="5"/>
+  <!-- Open Storybook Pages at Base -->
+  <path d="M26 84 Q43 76 60 84 Q77 76 94 84 L94 94 Q77 86 60 94 Q43 86 26 94 Z" fill="#FFF8EE" opacity="0.92"/>
+  <!-- Stone Arch Frame -->
+  <path d="M32 82 L32 54 A28 28 0 0 1 88 54 L88 82" fill="none" stroke="url(#crestGold)" stroke-width="4" stroke-linecap="round"/>
+  <!-- 8-Pointed Explorer Compass Star -->
+  <polygon points="60,18 67,43 92,50 67,57 60,82 53,57 28,50 53,43" fill="url(#crestGold)"/>
+  <circle cx="60" cy="50" r="8" fill="#FFF8EE"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="BYBLOS HARBOR Collectible Passport Stamp">
+  <rect x="14" y="14" width="172" height="172" rx="18" fill="#115E59" stroke="#F4A261" stroke-width="5" stroke-dasharray="8 6"/>
+  <rect x="24" y="24" width="152" height="152" rx="12" fill="none" stroke="#FFF8EE" stroke-width="2" opacity="0.65"/>
+  <circle cx="100" cy="84" r="44" fill="#0D9488" stroke="#F4A261" stroke-width="3"/>
+  <polygon points="100,48 122,82 110,82 128,108 72,108 90,82 78,82" fill="#34D399" stroke="#FFF8EE" stroke-width="2"/><rect x="94" y="108" width="12" height="16" fill="#F4A261"/>
+  <text x="100" y="146" text-anchor="middle" fill="#FFF8EE" font-family="Georgia, serif" font-size="14" font-weight="900" letter-spacing="1">BYBLOS HARBOR</text>
+  <text x="100" y="164" text-anchor="middle" fill="#F4A261" font-family="system-ui, sans-serif" font-size="12" font-weight="700">لبنان · جبيل</text>
+  <text x="100" y="38" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, sans-serif" font-size="9" font-weight="800" letter-spacing="1.2">CEDAR &amp; SAJ CHAPTER 1</text>
+</svg>

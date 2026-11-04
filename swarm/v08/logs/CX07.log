@@ -1,0 +1,9 @@
+[2026-11-04T06:20:23.003Z] Agent: CX07 (Codex / gpt-5-codex)
+Wave: W3
+Assignment: Parent auth/session state and production/demo isolation
+Branch: v08/CX07
+Allowed Paths: apps/web/src/parent/index.tsx
+Base SHA: 4812a2b338633edbb78208a85624e23a45ea33b9
+Verified Commit SHA: 4812a2b
+Verification Command: npm -w apps/web run build -> EXIT 0
+Status: DONE

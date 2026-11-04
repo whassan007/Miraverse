@@ -1,0 +1,14 @@
+{
+  "host": "waelbot (Linux 7.0.0-1019-nvidia aarch64)",
+  "gpu": "NVIDIA GB10 Unified Memory",
+  "installed_ollama_models": [
+    "qwen3.6:35b-a3b-q8_0",
+    "qwen3-coder:30b",
+    "qwen2.5vl:72b",
+    "gemma4:26b",
+    "qwen3.8:27b",
+    "muse-glimmer:latest"
+  ],
+  "max_concurrent_dgx_jobs": 2,
+  "queue_policy": "FIFO_WAVE_ORDERED"
+}
