@@ -143,7 +143,7 @@ local function boat(parent: Instance, base: CFrame, hull: Color3, sailUp: boolea
 	part(m, "Bench", Vector3.new(5.4, 0.4, 1.4), base * CFrame.new(0, 1.2, 3), CEDAR, { material = Enum.Material.Wood })
 	if sailUp then
 		part(m, "Mast", Vector3.new(0.5, 12, 0.5), base * CFrame.new(0, 7, 0), CEDAR, { material = Enum.Material.Wood })
-		part(m, "Sail", Vector3.new(0.2, 8, 6), base * CFrame.new(0.4, 8.5, 0), Color3.fromRGB(245, 236, 214), { material = Enum.Material.Fabric, collide = false })
+		part(m, "Sail", Vector3.new(6, 8, 0.2), base * CFrame.new(0, 8.5, 0.5), Color3.fromRGB(250, 245, 230), { material = Enum.Material.SmoothPlastic, collide = false })
 	end
 end
 
@@ -219,8 +219,17 @@ function ByblosWorld.build(parent: Instance, center: Vector3)
 	if walls and walls:IsA("BasePart") then
 		sign(courtyard, walls, "Teta Nahla's House", 12)
 	end
-	for _, z in { -18, -14, -10, -2, 2, 6 } do
-		part(courtyard, "Bougainvillea", Vector3.new(3, 8, 5), at(-34.2, z) * CFrame.new(0, 7, 0), BOUGAINVILLEA, { shape = Enum.PartType.Ball, material = Enum.Material.Grass, collide = false })
+	part(courtyard, "TrellisBar", Vector3.new(0.4, 0.4, 26), at(-34.6, -6) * CFrame.new(0, 9.5, 0), CEDAR, { material = Enum.Material.Wood })
+	for i = 0, 20 do
+		-- A climbing vine: small blossoms that thin out toward the ground, leaving the door clear.
+		local z = -18.5 + i * 1.25
+		if z < -9.5 or z > -2.5 then
+			local height = 3 + (i * 7 % 6)
+			for k = 0, 1 do
+				local y = height + k * 2.4 + (i % 2)
+				part(courtyard, "Bougainvillea", Vector3.new(1.5, 1.5, 1.5), at(-34.4, z) * CFrame.new(0, y, 0), if (i + k) % 3 == 0 then LEAF else BOUGAINVILLEA, { shape = Enum.PartType.Ball, material = Enum.Material.Grass, collide = false })
+			end
+		end
 	end
 	part(courtyard, "Rug", Vector3.new(8, 0.15, 12), at(-27, -6) * CFrame.new(0, 0.08, 0), Color3.fromRGB(150, 50, 40), { material = Enum.Material.Fabric, collide = false })
 

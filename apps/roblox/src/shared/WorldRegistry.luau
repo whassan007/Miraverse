@@ -23,7 +23,7 @@ export type Station = { kind: string, label: string, x: number, z: number, faceX
 -- Offsets are relative to the country origin. faceX/faceZ is the point the challenge opens toward.
 WorldRegistry.STATIONS = {
 	LB = {
-		build = { kind = "build", label = "Stone House to Restore", x = 22, z = -22, faceX = 22, faceZ = -40 },
+		build = { kind = "build", label = "Stone House to Restore", x = 22, z = -14, faceX = 22, faceZ = -40 },
 		cook = { kind = "cook", label = "Saj Kitchen", x = -14, z = -14, faceX = -14, faceZ = -30 },
 		gather = { kind = "gather", label = "Terrace Harvest", x = -66, z = 14, faceX = -66, faceZ = 0 },
 		trade = { kind = "trade", label = "Old Stone Souk", x = 26, z = 0, faceX = 40, faceZ = 0 },

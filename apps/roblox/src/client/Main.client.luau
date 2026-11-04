@@ -39,7 +39,7 @@ local picker = UI.panel(gui, UDim2.fromScale(0.5, 0.6), UDim2.fromScale(0.25, 0.
 UI.label(picker, "Choose a country!", UDim2.fromScale(0.9, 0.14), UDim2.fromScale(0.05, 0.03))
 
 -- HUD
-local hud = UI.panel(gui, UDim2.fromScale(0.3, 0.14), UDim2.fromScale(0.35, 0.02))
+local hud = UI.panel(gui, UDim2.fromScale(0.28, 0.14), UDim2.fromScale(0.01, 0.02))
 hud.Visible = false
 local hudText = UI.label(hud, "", UDim2.fromScale(0.94, 0.5), UDim2.fromScale(0.03, 0.05))
 local playBtn: TextButton

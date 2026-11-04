@@ -431,8 +431,8 @@ buildLebanonPeople = function(plaza: Folder, center: Vector3, meta: CountryMeta)
 		MentorCharacter.build(plaza, meta.mentorName, CFrame.lookAt(anchor.Position - Vector3.new(0, 3, 0), center + Vector3.new(0, 0, 28)), {
 			skin = Color3.fromRGB(214, 170, 135),
 			dress = Color3.fromRGB(30, 110, 96),
-			apron = Color3.fromRGB(240, 230, 208),
-			scarf = Color3.fromRGB(217, 123, 56),
+			apron = Color3.fromRGB(217, 123, 56),
+			scarf = Color3.fromRGB(245, 238, 222),
 		})
 	end
 	for kind, station in WorldRegistry.STATIONS.LB do
