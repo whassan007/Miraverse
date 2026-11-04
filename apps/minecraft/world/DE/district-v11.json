@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "DE",
+  "countryName": "Germany",
+  "regionName": "Rhine / symbolic Grail landscape",
+  "storyTitle": "The Song and the Healing Question",
+  "localLocale": "de-DE",
+  "culturalWarning": "Lorelei and Parzival are literary/mythic tales and should not be presented as literal history. Remove drowning, trauma and religious coercion from child-facing gameplay; provide respectful historical framing.",
+  "origin": {
+    "x": 1200,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 1200,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 1200,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 1196,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 1230,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "de_compass_of_compassion",
+    "name": "Compass of Compassion"
+  },
+  "passportStamp": {
+    "id": "de_german_memory_stamp",
+    "name": "German Memory Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "de_mentor_cultural_house",
+      "nameEn": "Rhine / symbolic Grail landscape Mentor Courtyard & Hearth",
+      "nameNative": "Deutschland · Mittelrhein",
+      "origin": {
+        "x": 1182,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:de_rhine_slate_stone",
+      "trimBlock": "miraverse:de_half_timber_oak_frame",
+      "roofBlock": "miraverse:de_signal_beacon_lantern",
+      "hasInterior": true,
+      "interiorId": "de_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "de_story_archive_hall",
+      "nameEn": "Rhine / symbolic Grail landscape Story & Epigraphy Archive",
+      "nameNative": "Deutschland · Mittelrhein",
+      "origin": {
+        "x": 1204,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:de_rhine_slate_stone",
+      "trimBlock": "miraverse:de_half_timber_oak_frame",
+      "roofBlock": "miraverse:de_signal_beacon_lantern",
+      "hasInterior": true,
+      "interiorId": "de_interior_story_archive"
+    },
+    {
+      "buildingId": "de_artisan_craft_guild",
+      "nameEn": "Rhine / symbolic Grail landscape Master Artisan Workshop",
+      "nameNative": "Deutschland · Mittelrhein",
+      "origin": {
+        "x": 1180,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:de_rhine_slate_stone",
+      "trimBlock": "miraverse:de_half_timber_oak_frame",
+      "roofBlock": "miraverse:de_signal_beacon_lantern",
+      "hasInterior": true,
+      "interiorId": "de_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "de_market_bazaar_arcade",
+      "nameEn": "Rhine / symbolic Grail landscape Fair-Trade Market Arcade",
+      "nameNative": "Deutschland · Mittelrhein",
+      "origin": {
+        "x": 1206,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:de_rhine_slate_stone",
+      "trimBlock": "miraverse:de_half_timber_oak_frame",
+      "roofBlock": "miraverse:de_signal_beacon_lantern",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "de_heritage_landmark_pavilion",
+      "nameEn": "Rhine / symbolic Grail landscape Community Gathering & Performance Pavilion",
+      "nameNative": "Deutschland · Mittelrhein",
+      "origin": {
+        "x": 1194,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:de_rhine_slate_stone",
+      "trimBlock": "miraverse:de_half_timber_oak_frame",
+      "roofBlock": "miraverse:de_signal_beacon_lantern",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "de_interior_mentor_hearth",
+      "buildingId": "de_mentor_cultural_house",
+      "nameEn": "Rhine / symbolic Grail landscape Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 1188,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "de_cooking_hearth",
+          "blockId": "miraverse:de_grail_hall_column",
+          "offset": {
+            "x": 1188,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "de_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 1186,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "de_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 1188,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "de_interior_story_archive",
+      "buildingId": "de_story_archive_hall",
+      "nameEn": "Rhine / symbolic Grail landscape Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 1210,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "de_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 1210,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "de_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 1212,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "de_keepsake_display",
+          "blockId": "miraverse:de_renewing_garden_trellis",
+          "offset": {
+            "x": 1208,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Compass of Compassion"
+        }
+      ]
+    },
+    {
+      "interiorId": "de_interior_artisan_workshop",
+      "buildingId": "de_artisan_craft_guild",
+      "nameEn": "Rhine / symbolic Grail landscape Restoration & Craft Studio",
+      "entryPos": {
+        "x": 1186,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "de_craft_bench",
+          "blockId": "miraverse:de_stained_story_glass",
+          "offset": {
+            "x": 1186,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "de_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 1184,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "de_navigator_klara",
+      "countryCode": "DE",
+      "nameEn": "River Navigator Klara",
+      "nameNative": "Flusslotsin Klara",
+      "role": "mentor",
+      "greetingNative": "Willkommen am Rhein! Gemeinsam lesen wir die sicheren Signale auf dem Fluss.",
+      "spawnPos": {
+        "x": 1176,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "DE01",
+        "DE06"
+      ]
+    },
+    {
+      "npcId": "de_historian_lukas",
+      "countryCode": "DE",
+      "nameEn": "Historian Lukas",
+      "nameNative": "Historiker Lukas",
+      "role": "scholar",
+      "greetingNative": "Wir unterscheiden literarische Dichtungen wie die Lorelei von der echten Flussgeschichte.",
+      "spawnPos": {
+        "x": 1188,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "DE02"
+      ]
+    },
+    {
+      "npcId": "de_narrator_lorelei",
+      "countryCode": "DE",
+      "nameEn": "Storyteller Marlene",
+      "nameNative": "Erzählerin Marlene",
+      "role": "storyteller",
+      "greetingNative": "Jedes Echo am Felsen erinnert uns daran, genau hinzuhören statt uns ablenken zu lassen.",
+      "spawnPos": {
+        "x": 1200,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "DE03"
+      ]
+    },
+    {
+      "npcId": "de_parzival",
+      "countryCode": "DE",
+      "nameEn": "Traveler Parzival",
+      "nameNative": "Wanderer Parzival",
+      "role": "cousin",
+      "greetingNative": "Früher schwieg ich aus Unsicherheit — doch eine mitfühlende Frage kann vieles heilen.",
+      "spawnPos": {
+        "x": 1212,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "DE04"
+      ]
+    },
+    {
+      "npcId": "de_gardener_jonas",
+      "countryCode": "DE",
+      "nameEn": "Gardener Jonas",
+      "nameNative": "Gärtner Jonas",
+      "role": "artisan",
+      "greetingNative": "Hilf mir, den verlassenen Burggarten wieder zum Blühen zu bringen!",
+      "spawnPos": {
+        "x": 1224,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "DE05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "de_quest_de01",
+      "chapterId": "DE01",
+      "title": "The River’s Bend",
+      "kind": "navigation_and_mapping",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 1170,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:de_rhine_slate_stone",
+      "rewardArtifactId": "de_rhine_route_map"
+    },
+    {
+      "anchorId": "de_quest_de02",
+      "chapterId": "DE02",
+      "title": "The Enchanted Song",
+      "kind": "literature_comparison",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1182,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:de_half_timber_oak_frame",
+      "rewardArtifactId": "de_lorelei_songstone"
+    },
+    {
+      "anchorId": "de_quest_de03",
+      "chapterId": "DE03",
+      "title": "The Navigator’s Choice",
+      "kind": "signal_prioritization",
+      "sourceType": "fictional_gameplay",
+      "coords": {
+        "x": 1194,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:de_signal_beacon_lantern",
+      "rewardArtifactId": "de_steady_helm"
+    },
+    {
+      "anchorId": "de_quest_de04",
+      "chapterId": "DE04",
+      "title": "The Quiet Grail Hall",
+      "kind": "observation_and_empathy",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1206,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:de_acoustic_echo_chime",
+      "rewardArtifactId": "de_hall_of_questions_token"
+    },
+    {
+      "anchorId": "de_quest_de05",
+      "chapterId": "DE05",
+      "title": "What Ails You?",
+      "kind": "myth_interpretation",
+      "sourceType": "literature",
+      "coords": {
+        "x": 1218,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:de_grail_hall_column",
+      "rewardArtifactId": "de_healing_question_scroll"
+    },
+    {
+      "anchorId": "de_quest_de06",
+      "chapterId": "DE06",
+      "title": "The Garden Returns",
+      "kind": "cooperative_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1230,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:de_stained_story_glass",
+      "rewardArtifactId": "de_german_memory_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "de_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 1200,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "de_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 1210,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Rhine / symbolic Grail landscape Fair-Trade Stall"
+    },
+    {
+      "anchorId": "de_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 1176,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:de_river_quay_bollard",
+      "labelEn": "Rhine / symbolic Grail landscape Resource Gathering Spot"
+    },
+    {
+      "anchorId": "de_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 1196,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:de_rhine_slate_stone",
+      "labelEn": "Rhine / symbolic Grail landscape Community Restoration Plot"
+    },
+    {
+      "anchorId": "de_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 1230,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:de_half_timber_oak_frame",
+      "labelEn": "Rhine / symbolic Grail landscape Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "mitgefuehl",
+      "native": "Mitgefühl",
+      "translit": "mit-guh-fuel",
+      "en": "Compassion and active empathy for others"
+    },
+    {
+      "key": "strom",
+      "native": "Strom",
+      "translit": "shtrohm",
+      "en": "Wide navigable river current"
+    },
+    {
+      "key": "frage",
+      "native": "Frage",
+      "translit": "frah-guh",
+      "en": "A caring question that opens understanding"
+    }
+  ]
+}

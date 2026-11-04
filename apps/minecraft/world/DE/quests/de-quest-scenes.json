@@ -1,0 +1,86 @@
+[
+  {
+    "anchorId": "de_quest_de01",
+    "chapterId": "DE01",
+    "title": "The River’s Bend",
+    "kind": "navigation_and_mapping",
+    "sourceType": "historical_context",
+    "coords": {
+      "x": 1170,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:de_rhine_slate_stone",
+    "rewardArtifactId": "de_rhine_route_map"
+  },
+  {
+    "anchorId": "de_quest_de02",
+    "chapterId": "DE02",
+    "title": "The Enchanted Song",
+    "kind": "literature_comparison",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1182,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:de_half_timber_oak_frame",
+    "rewardArtifactId": "de_lorelei_songstone"
+  },
+  {
+    "anchorId": "de_quest_de03",
+    "chapterId": "DE03",
+    "title": "The Navigator’s Choice",
+    "kind": "signal_prioritization",
+    "sourceType": "fictional_gameplay",
+    "coords": {
+      "x": 1194,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:de_signal_beacon_lantern",
+    "rewardArtifactId": "de_steady_helm"
+  },
+  {
+    "anchorId": "de_quest_de04",
+    "chapterId": "DE04",
+    "title": "The Quiet Grail Hall",
+    "kind": "observation_and_empathy",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1206,
+      "y": 65,
+      "z": -20
+    },
+    "stationBlockId": "miraverse:de_acoustic_echo_chime",
+    "rewardArtifactId": "de_hall_of_questions_token"
+  },
+  {
+    "anchorId": "de_quest_de05",
+    "chapterId": "DE05",
+    "title": "What Ails You?",
+    "kind": "myth_interpretation",
+    "sourceType": "literature",
+    "coords": {
+      "x": 1218,
+      "y": 65,
+      "z": -4
+    },
+    "stationBlockId": "miraverse:de_grail_hall_column",
+    "rewardArtifactId": "de_healing_question_scroll"
+  },
+  {
+    "anchorId": "de_quest_de06",
+    "chapterId": "DE06",
+    "title": "The Garden Returns",
+    "kind": "cooperative_restoration",
+    "sourceType": "contemporary_tradition",
+    "coords": {
+      "x": 1230,
+      "y": 65,
+      "z": 12
+    },
+    "stationBlockId": "miraverse:de_stained_story_glass",
+    "rewardArtifactId": "de_german_memory_stamp"
+  }
+]
