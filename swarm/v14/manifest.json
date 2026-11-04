@@ -1,0 +1,524 @@
+{
+  "releaseVersion": "1.4.0",
+  "directive": "MiraVerse v1.4: 21-Agent Dynamic Animated Multi-Country Landing Hero Showcase",
+  "countryOrder": ["LB", "IQ", "EG", "FR", "KR"],
+  "cycleDurationMs": 5200,
+  "totalAgents": 21,
+  "totalAssignments": 21,
+  "executionGroups": {
+    "antigravity": 21
+  },
+  "agents": [
+    {
+      "id": "AG01",
+      "group": "Antigravity",
+      "role": "Dynamic 5-Country Hero Showcase Architecture & Contracts",
+      "status": "DONE",
+      "ownedFiles": [
+        "packages/contracts/v14/index.ts"
+      ],
+      "artifacts": [
+        "packages/contracts/v14/index.ts"
+      ],
+      "verificationCriteria": [
+        "Defines V14_RELEASE_VERSION = '1.4.0', V14_HERO_CYCLE_MS = 5200, and V14_HERO_COUNTRIES = ['LB', 'IQ', 'EG', 'FR', 'KR']",
+        "Defines HeroOverlayLayerSpec interface and V14_HERO_SLIDES record with desktop/mobile artwork, ambientOverlaySvgUrl, mentor metadata, bilingual greetings, radialGradientCss, and palette tokens for all 5 countries"
+      ]
+    },
+    {
+      "id": "AG02",
+      "group": "Antigravity",
+      "role": "Lebanon (LB — Byblos Harbor) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/public/art/v14/hero-overlays/overlay-LB.svg",
+        "art/v14/hero-overlays/overlay-LB.svg"
+      ],
+      "artifacts": [
+        "apps/web/public/art/v14/hero-overlays/overlay-LB.svg",
+        "art/v14/hero-overlays/overlay-LB.svg"
+      ],
+      "verificationCriteria": [
+        "Renders 1280x752 transparent ambient SVG overlay featuring luminous Phoenician 22-letter abjad glyphs, swaying Mount Lebanon cedar boughs, saj hearth steam, and Mediterranean harbor waves",
+        "Includes @keyframes CSS animations and @media (prefers-reduced-motion: reduce) pause rule"
+      ]
+    },
+    {
+      "id": "AG03",
+      "group": "Antigravity",
+      "role": "Iraq (IQ — Baghdad Tigris Courtyards) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/public/art/v14/hero-overlays/overlay-IQ.svg",
+        "art/v14/hero-overlays/overlay-IQ.svg"
+      ],
+      "artifacts": [
+        "apps/web/public/art/v14/hero-overlays/overlay-IQ.svg",
+        "art/v14/hero-overlays/overlay-IQ.svg"
+      ],
+      "verificationCriteria": [
+        "Renders 1280x752 transparent ambient SVG overlay featuring rotating brass astrolabe celestial retes, Abbasid geometric star rosettes, turquoise fountain ripples, and Tigris lantern glows",
+        "Includes @keyframes CSS animations and @media (prefers-reduced-motion: reduce) pause rule"
+      ]
+    },
+    {
+      "id": "AG04",
+      "group": "Antigravity",
+      "role": "Egypt (EG — Historic Cairo & Nile) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/public/art/v14/hero-overlays/overlay-EG.svg",
+        "art/v14/hero-overlays/overlay-EG.svg"
+      ],
+      "artifacts": [
+        "apps/web/public/art/v14/hero-overlays/overlay-EG.svg",
+        "art/v14/hero-overlays/overlay-EG.svg"
+      ],
+      "verificationCriteria": [
+        "Renders 1280x752 transparent ambient SVG overlay featuring swaying pierced-brass fanous lanterns, refracted stained-glass optics halos, 12-point khayamiya star medallions, and Nile shimmer",
+        "Includes @keyframes CSS animations and @media (prefers-reduced-motion: reduce) pause rule"
+      ]
+    },
+    {
+      "id": "AG05",
+      "group": "Antigravity",
+      "role": "France (FR — Vieux Lyon Boulangerie & Traboules) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/public/art/v14/hero-overlays/overlay-FR.svg",
+        "art/v14/hero-overlays/overlay-FR.svg"
+      ],
+      "artifacts": [
+        "apps/web/public/art/v14/hero-overlays/overlay-FR.svg",
+        "art/v14/hero-overlays/overlay-FR.svg"
+      ],
+      "verificationCriteria": [
+        "Renders 1280x752 transparent ambient SVG overlay featuring Renaissance Vieux Lyon traboule lantern arches, Canut Jacquard punch-card binary matrices, golden silk ribbons, and boulangerie hearth steam",
+        "Includes @keyframes CSS animations and @media (prefers-reduced-motion: reduce) pause rule"
+      ]
+    },
+    {
+      "id": "AG06",
+      "group": "Antigravity",
+      "role": "South Korea (KR — Jeonju Hanok Village) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/public/art/v14/hero-overlays/overlay-KR.svg",
+        "art/v14/hero-overlays/overlay-KR.svg"
+      ],
+      "artifacts": [
+        "apps/web/public/art/v14/hero-overlays/overlay-KR.svg",
+        "art/v14/hero-overlays/overlay-KR.svg"
+      ],
+      "verificationCriteria": [
+        "Renders 1280x752 transparent ambient SVG overlay featuring curving giwa hanok eaves, Cheongsachorong silk hanji lanterns, Obangsaek five-color harmony ribbons, and drifting golden ginkgo leaves",
+        "Includes @keyframes CSS animations and @media (prefers-reduced-motion: reduce) pause rule"
+      ]
+    },
+    {
+      "id": "AG07",
+      "group": "Antigravity",
+      "role": "Hero Autoplay & Cycle State-Machine Hook",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/useHeroAutoplay.ts"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/useHeroAutoplay.ts"
+      ],
+      "verificationCriteria": [
+        "Implements deterministic 5-country progression across HERO_SEQUENCE = ['LB', 'IQ', 'EG', 'FR', 'KR'] with 5200ms default cycle duration and 100ms progress ticks",
+        "Supports play/pause toggle, manual country selection, prev/next wrapping, hover/focus pause, and automatic pause under prefers-reduced-motion"
+      ]
+    },
+    {
+      "id": "AG08",
+      "group": "Antigravity",
+      "role": "Hero Animated Stage with Ken Burns & Crossfade Compositor",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/HeroAnimatedStage.tsx"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/HeroAnimatedStage.tsx"
+      ],
+      "verificationCriteria": [
+        "Renders [data-testid='hero-animated-stage'], [data-testid='hero-primary-artwork'] with responsive WebP/JPG <picture> sources and mvHeroKenBurns pan/zoom, [data-testid='hero-ambient-overlay'] SVG compositor, and [data-testid='hero-live-country-pill']",
+        "Disables Ken Burns and crossfade animations immediately when reducedMotion is true"
+      ]
+    },
+    {
+      "id": "AG09",
+      "group": "Antigravity",
+      "role": "Hero Transport Controls & Auto-Tour Progress Bar",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/HeroTransportControls.tsx"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/HeroTransportControls.tsx"
+      ],
+      "verificationCriteria": [
+        "Renders [data-testid='hero-transport-controls'], [data-testid='hero-prev-slide'], [data-testid='hero-play-pause-btn'], [data-testid='hero-next-slide'], [data-testid='hero-slide-counter'], and [data-testid='hero-autoplay-progress'] progressbar",
+        "Exposes accessible ARIA labels, aria-pressed state on play/pause, and aria-valuenow progress percentage"
+      ]
+    },
+    {
+      "id": "AG10",
+      "group": "Antigravity",
+      "role": "Hero Interactive Route & Cultural Telemetry Overlay Strip",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/HeroCulturalTelemetryBar.tsx"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/HeroCulturalTelemetryBar.tsx"
+      ],
+      "verificationCriteria": [
+        "Renders [data-testid='hero-cultural-telemetry-bar'] with interactive 5-node route indicator ([data-testid='hero-route-node-LB'..'KR']), active epistemic highlight, signature dish, and quest map thumbnail linking to /atlas ([data-testid='hero-telemetry-atlas-link'])"
+      ]
+    },
+    {
+      "id": "AG11",
+      "group": "Antigravity",
+      "role": "Hero Ambient Backdrop & Dynamic Radial Aura Engine",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/HeroDynamicBackdrop.tsx"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/HeroDynamicBackdrop.tsx"
+      ],
+      "verificationCriteria": [
+        "Renders [data-testid='landing-hero-fallback'] and [data-testid='landing-hero-dynamic-aura'] with data-active-country attribute and smooth country-specific radial gradient + artwork transitions",
+        "Disables CSS transitions when reducedMotion is true"
+      ]
+    },
+    {
+      "id": "AG12",
+      "group": "Antigravity",
+      "role": "Hero Keyboard & Screen-Reader Live Announcer",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/HeroLiveAnnouncer.tsx"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/HeroLiveAnnouncer.tsx"
+      ],
+      "verificationCriteria": [
+        "Renders polite screen-reader status region ([data-testid='hero-live-announcer']) that suppresses live announcements during auto-tour (aria-live='off') and announces manual country changes (aria-live='polite')",
+        "Renders focusable [data-testid='hero-keyboard-hint'] handling ArrowLeft, ArrowRight, and Spacebar keyboard navigation"
+      ]
+    },
+    {
+      "id": "AG13",
+      "group": "Antigravity",
+      "role": "Hero Multilingual Mentor Greeting & Script Banner",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/HeroMentorGreetingBanner.tsx"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/HeroMentorGreetingBanner.tsx"
+      ],
+      "verificationCriteria": [
+        "Renders [data-testid='hero-mentor-greeting-banner'] with mentor portrait, script badge (ar-LB, ar-IQ, ar-EG, fr, ko), native-script greeting ([data-testid='hero-mentor-greeting-native']) with accurate dir='rtl'|'ltr' and lang attributes, and English translation ([data-testid='hero-mentor-greeting-en'])"
+      ]
+    },
+    {
+      "id": "AG14",
+      "group": "Antigravity",
+      "role": "Hero Filmstrip Thumbnail Scrubber",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/HeroFilmstripScrubber.tsx"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/HeroFilmstripScrubber.tsx"
+      ],
+      "verificationCriteria": [
+        "Renders [data-testid='hero-filmstrip-scrubber'] with 5 interactive world cover thumbnail cards ([data-testid='hero-filmstrip-card-LB'..'KR']) and real-time active card progress bar ([data-testid='hero-filmstrip-progress-LB'..'KR'])"
+      ]
+    },
+    {
+      "id": "AG15",
+      "group": "Antigravity",
+      "role": "Dynamic Hero Showcase Master Composite Component",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/DynamicWorldHeroShowcase.tsx"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/DynamicWorldHeroShowcase.tsx"
+      ],
+      "verificationCriteria": [
+        "Composes HeroAnimatedStage, HeroTransportControls, HeroLiveAnnouncer, HeroFilmstripScrubber, scene caption bar, HeroMentorGreetingBanner, HeroCulturalTelemetryBar, and 5-world tab switcher inside [data-testid='hero-visual-frame']"
+      ]
+    },
+    {
+      "id": "AG16",
+      "group": "Antigravity",
+      "role": "Hero Idle Image & SVG Overlay Preloader Hook",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/hero-v14/useHeroImagePreloader.ts"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/hero-v14/useHeroImagePreloader.ts"
+      ],
+      "verificationCriteria": [
+        "Preloads all 5 countries' WebP/JPG hero artwork, ambient SVG overlays, and quest map thumbnails via requestIdleCallback (or 150ms fallback timeout) for zero-flicker transitions"
+      ]
+    },
+    {
+      "id": "AG17",
+      "group": "Antigravity",
+      "role": "Cinematic Landing Page v1.4 Hero Integration & Motion Toggle",
+      "status": "DONE",
+      "ownedFiles": [
+        "apps/web/src/landing/ui/index.tsx",
+        "apps/web/src/styles.css"
+      ],
+      "artifacts": [
+        "apps/web/src/landing/ui/index.tsx",
+        "apps/web/src/styles.css"
+      ],
+      "verificationCriteria": [
+        "Integrates useHeroAutoplay, useHeroImagePreloader, HeroDynamicBackdrop, and DynamicWorldHeroShowcase into CinematicLandingPage while preserving all existing v0.8/v1.3 testids and honest platform availability badges"
+      ]
+    },
+    {
+      "id": "AG18",
+      "group": "Antigravity",
+      "role": "Hero Autoplay Contracts & Asset Integrity Unit Test Suite",
+      "status": "DONE",
+      "ownedFiles": [
+        "tests/web/unit/v14/hero-autoplay-contracts.test.ts"
+      ],
+      "artifacts": [
+        "tests/web/unit/v14/hero-autoplay-contracts.test.ts"
+      ],
+      "verificationCriteria": [
+        "Verifies V14_HERO_COUNTRIES = ['LB', 'IQ', 'EG', 'FR', 'KR'], V14_HERO_CYCLE_MS = 5200, on-disk existence of all public artwork and SVG overlays, and @keyframes + prefers-reduced-motion rules in all 5 SVG overlays"
+      ]
+    },
+    {
+      "id": "AG19",
+      "group": "Antigravity",
+      "role": "Dynamic 5-Country Hero Showcase Playwright E2E & Visual Progression Suite",
+      "status": "DONE",
+      "ownedFiles": [
+        "tests/web/e2e/v14/v14-dynamic-hero.test.ts"
+      ],
+      "artifacts": [
+        "tests/web/e2e/v14/v14-dynamic-hero.test.ts"
+      ],
+      "verificationCriteria": [
+        "Verifies deterministic LB initial render on /#/, interactive transport & filmstrip controls, full 5-country progression (LB -> IQ -> EG -> FR -> KR -> LB), dynamic aura updates, bilingual mentor greetings, and reduced-motion pause"
+      ]
+    },
+    {
+      "id": "AG20",
+      "group": "Antigravity",
+      "role": "Dynamic Hero Multi-Country Screenshot Capture & Visual Audit Tool",
+      "status": "DONE",
+      "ownedFiles": [
+        "tools/v14/capture-v14-hero-screenshots.mjs"
+      ],
+      "artifacts": [
+        "tools/v14/capture-v14-hero-screenshots.mjs",
+        "reports/v14/visual-audit.json"
+      ],
+      "verificationCriteria": [
+        "Captures 1440x900 Playwright screenshots for all 5 countries (01-hero-LB-byblos-animated.png through 05-hero-KR-jeonju-animated.png) and writes reports/v14/visual-audit.json with zero broken images"
+      ]
+    },
+    {
+      "id": "AG21",
+      "group": "Antigravity",
+      "role": "21-Agent Swarm Ledger & Release Readiness Auditor",
+      "status": "DONE",
+      "ownedFiles": [
+        "swarm/v14/manifest.json",
+        "reports/v14/AGENT_LEDGER_AND_READINESS.md"
+      ],
+      "artifacts": [
+        "swarm/v14/manifest.json",
+        "reports/v14/AGENT_LEDGER_AND_READINESS.md"
+      ],
+      "verificationCriteria": [
+        "Documents all 21 Antigravity agents (AG01-AG21), owned file paths, 5-country animated SVG overlay architecture, Ken Burns + crossfade stage, autoplay hook, transport controls, filmstrip scrubber, mentor greeting banner, cultural telemetry strip, accessibility compliance, and E2E test coverage"
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "id": "AG01",
+      "group": "Antigravity",
+      "role": "Dynamic 5-Country Hero Showcase Architecture & Contracts",
+      "status": "DONE",
+      "ownedFiles": ["packages/contracts/v14/index.ts"],
+      "artifacts": ["packages/contracts/v14/index.ts"]
+    },
+    {
+      "id": "AG02",
+      "group": "Antigravity",
+      "role": "Lebanon (LB — Byblos Harbor) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/public/art/v14/hero-overlays/overlay-LB.svg", "art/v14/hero-overlays/overlay-LB.svg"],
+      "artifacts": ["apps/web/public/art/v14/hero-overlays/overlay-LB.svg", "art/v14/hero-overlays/overlay-LB.svg"]
+    },
+    {
+      "id": "AG03",
+      "group": "Antigravity",
+      "role": "Iraq (IQ — Baghdad Tigris Courtyards) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/public/art/v14/hero-overlays/overlay-IQ.svg", "art/v14/hero-overlays/overlay-IQ.svg"],
+      "artifacts": ["apps/web/public/art/v14/hero-overlays/overlay-IQ.svg", "art/v14/hero-overlays/overlay-IQ.svg"]
+    },
+    {
+      "id": "AG04",
+      "group": "Antigravity",
+      "role": "Egypt (EG — Historic Cairo & Nile) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/public/art/v14/hero-overlays/overlay-EG.svg", "art/v14/hero-overlays/overlay-EG.svg"],
+      "artifacts": ["apps/web/public/art/v14/hero-overlays/overlay-EG.svg", "art/v14/hero-overlays/overlay-EG.svg"]
+    },
+    {
+      "id": "AG05",
+      "group": "Antigravity",
+      "role": "France (FR — Vieux Lyon Boulangerie & Traboules) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/public/art/v14/hero-overlays/overlay-FR.svg", "art/v14/hero-overlays/overlay-FR.svg"],
+      "artifacts": ["apps/web/public/art/v14/hero-overlays/overlay-FR.svg", "art/v14/hero-overlays/overlay-FR.svg"]
+    },
+    {
+      "id": "AG06",
+      "group": "Antigravity",
+      "role": "South Korea (KR — Jeonju Hanok Village) Animated Cultural Ambient SVG Overlay",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/public/art/v14/hero-overlays/overlay-KR.svg", "art/v14/hero-overlays/overlay-KR.svg"],
+      "artifacts": ["apps/web/public/art/v14/hero-overlays/overlay-KR.svg", "art/v14/hero-overlays/overlay-KR.svg"]
+    },
+    {
+      "id": "AG07",
+      "group": "Antigravity",
+      "role": "Hero Autoplay & Cycle State-Machine Hook",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/useHeroAutoplay.ts"],
+      "artifacts": ["apps/web/src/landing/hero-v14/useHeroAutoplay.ts"]
+    },
+    {
+      "id": "AG08",
+      "group": "Antigravity",
+      "role": "Hero Animated Stage with Ken Burns & Crossfade Compositor",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/HeroAnimatedStage.tsx"],
+      "artifacts": ["apps/web/src/landing/hero-v14/HeroAnimatedStage.tsx"]
+    },
+    {
+      "id": "AG09",
+      "group": "Antigravity",
+      "role": "Hero Transport Controls & Auto-Tour Progress Bar",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/HeroTransportControls.tsx"],
+      "artifacts": ["apps/web/src/landing/hero-v14/HeroTransportControls.tsx"]
+    },
+    {
+      "id": "AG10",
+      "group": "Antigravity",
+      "role": "Hero Interactive Route & Cultural Telemetry Overlay Strip",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/HeroCulturalTelemetryBar.tsx"],
+      "artifacts": ["apps/web/src/landing/hero-v14/HeroCulturalTelemetryBar.tsx"]
+    },
+    {
+      "id": "AG11",
+      "group": "Antigravity",
+      "role": "Hero Ambient Backdrop & Dynamic Radial Aura Engine",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/HeroDynamicBackdrop.tsx"],
+      "artifacts": ["apps/web/src/landing/hero-v14/HeroDynamicBackdrop.tsx"]
+    },
+    {
+      "id": "AG12",
+      "group": "Antigravity",
+      "role": "Hero Keyboard & Screen-Reader Live Announcer",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/HeroLiveAnnouncer.tsx"],
+      "artifacts": ["apps/web/src/landing/hero-v14/HeroLiveAnnouncer.tsx"]
+    },
+    {
+      "id": "AG13",
+      "group": "Antigravity",
+      "role": "Hero Multilingual Mentor Greeting & Script Banner",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/HeroMentorGreetingBanner.tsx"],
+      "artifacts": ["apps/web/src/landing/hero-v14/HeroMentorGreetingBanner.tsx"]
+    },
+    {
+      "id": "AG14",
+      "group": "Antigravity",
+      "role": "Hero Filmstrip Thumbnail Scrubber",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/HeroFilmstripScrubber.tsx"],
+      "artifacts": ["apps/web/src/landing/hero-v14/HeroFilmstripScrubber.tsx"]
+    },
+    {
+      "id": "AG15",
+      "group": "Antigravity",
+      "role": "Dynamic Hero Showcase Master Composite Component",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/DynamicWorldHeroShowcase.tsx"],
+      "artifacts": ["apps/web/src/landing/hero-v14/DynamicWorldHeroShowcase.tsx"]
+    },
+    {
+      "id": "AG16",
+      "group": "Antigravity",
+      "role": "Hero Idle Image & SVG Overlay Preloader Hook",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/hero-v14/useHeroImagePreloader.ts"],
+      "artifacts": ["apps/web/src/landing/hero-v14/useHeroImagePreloader.ts"]
+    },
+    {
+      "id": "AG17",
+      "group": "Antigravity",
+      "role": "Cinematic Landing Page v1.4 Hero Integration & Motion Toggle",
+      "status": "DONE",
+      "ownedFiles": ["apps/web/src/landing/ui/index.tsx", "apps/web/src/styles.css"],
+      "artifacts": ["apps/web/src/landing/ui/index.tsx", "apps/web/src/styles.css"]
+    },
+    {
+      "id": "AG18",
+      "group": "Antigravity",
+      "role": "Hero Autoplay Contracts & Asset Integrity Unit Test Suite",
+      "status": "DONE",
+      "ownedFiles": ["tests/web/unit/v14/hero-autoplay-contracts.test.ts"],
+      "artifacts": ["tests/web/unit/v14/hero-autoplay-contracts.test.ts"]
+    },
+    {
+      "id": "AG19",
+      "group": "Antigravity",
+      "role": "Dynamic 5-Country Hero Showcase Playwright E2E & Visual Progression Suite",
+      "status": "DONE",
+      "ownedFiles": ["tests/web/e2e/v14/v14-dynamic-hero.test.ts"],
+      "artifacts": ["tests/web/e2e/v14/v14-dynamic-hero.test.ts"]
+    },
+    {
+      "id": "AG20",
+      "group": "Antigravity",
+      "role": "Dynamic Hero Multi-Country Screenshot Capture & Visual Audit Tool",
+      "status": "DONE",
+      "ownedFiles": ["tools/v14/capture-v14-hero-screenshots.mjs"],
+      "artifacts": ["tools/v14/capture-v14-hero-screenshots.mjs", "reports/v14/visual-audit.json"]
+    },
+    {
+      "id": "AG21",
+      "group": "Antigravity",
+      "role": "21-Agent Swarm Ledger & Release Readiness Auditor",
+      "status": "DONE",
+      "ownedFiles": ["swarm/v14/manifest.json", "reports/v14/AGENT_LEDGER_AND_READINESS.md"],
+      "artifacts": ["swarm/v14/manifest.json", "reports/v14/AGENT_LEDGER_AND_READINESS.md"]
+    }
+  ]
+}

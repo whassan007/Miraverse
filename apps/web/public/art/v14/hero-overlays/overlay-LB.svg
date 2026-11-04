@@ -1,0 +1,455 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 752" width="1280" height="752" fill="none">
+  <defs>
+    <!-- Soft radial glows -->
+    <radialGradient id="lb-sky-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7C948" stop-opacity="0.22" />
+      <stop offset="55%" stop-color="#E59866" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#1E3A5F" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="lb-hearth-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF8C42" stop-opacity="0.26" />
+      <stop offset="50%" stop-color="#F7C948" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#FF8C42" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="lb-ember-dot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF3B0" stop-opacity="0.95" />
+      <stop offset="45%" stop-color="#FF9F1C" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#E71D36" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="lb-wave-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2EC4B6" stop-opacity="0" />
+      <stop offset="28%" stop-color="#2EC4B6" stop-opacity="0.38" />
+      <stop offset="52%" stop-color="#FFD166" stop-opacity="0.65" />
+      <stop offset="78%" stop-color="#48CAE4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#2EC4B6" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="lb-wave-teal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#48CAE4" stop-opacity="0" />
+      <stop offset="35%" stop-color="#90E0EF" stop-opacity="0.42" />
+      <stop offset="65%" stop-color="#F7C948" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#2EC4B6" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="lb-steam-grad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#FFE5B4" stop-opacity="0" />
+      <stop offset="40%" stop-color="#FFF8E7" stop-opacity="0.26" />
+      <stop offset="80%" stop-color="#FFD166" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="lb-compass-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE599" stop-opacity="0.78" />
+      <stop offset="50%" stop-color="#F7C948" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.22" />
+    </linearGradient>
+
+    <filter id="lb-soft-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" />
+    </filter>
+
+    <filter id="lb-steam-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+
+    <filter id="lb-glyph-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes lbWaveShimmerA {
+      0%, 100% {
+        transform: translateX(0px) translateY(0px) scaleX(1);
+        opacity: 0.45;
+      }
+      50% {
+        transform: translateX(16px) translateY(-2px) scaleX(1.04);
+        opacity: 0.85;
+      }
+    }
+
+    @keyframes lbWaveShimmerB {
+      0%, 100% {
+        transform: translateX(0px) translateY(0px) scaleX(1);
+        opacity: 0.78;
+      }
+      50% {
+        transform: translateX(-14px) translateY(2px) scaleX(0.96);
+        opacity: 0.35;
+      }
+    }
+
+    @keyframes lbSparklePulse {
+      0%, 100% {
+        opacity: 0.2;
+        transform: scale(0.85);
+      }
+      50% {
+        opacity: 0.85;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes lbEmberRiseA {
+      0% {
+        transform: translate(0px, 0px) scale(0.8);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.85;
+      }
+      75% {
+        opacity: 0.55;
+      }
+      100% {
+        transform: translate(-18px, -86px) scale(1.15);
+        opacity: 0;
+      }
+    }
+
+    @keyframes lbEmberRiseB {
+      0% {
+        transform: translate(0px, 0px) scale(0.75);
+        opacity: 0;
+      }
+      25% {
+        opacity: 0.78;
+      }
+      80% {
+        opacity: 0.45;
+      }
+      100% {
+        transform: translate(15px, -96px) scale(1.1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes lbSteamDrift {
+      0%, 100% {
+        transform: translateY(0px) translateX(0px) scale(0.96);
+        opacity: 0.22;
+      }
+      50% {
+        transform: translateY(-18px) translateX(8px) scale(1.05);
+        opacity: 0.52;
+      }
+    }
+
+    @keyframes lbGlyphPulse {
+      0%, 100% {
+        opacity: 0.36;
+        transform: translateY(0px);
+      }
+      50% {
+        opacity: 0.82;
+        transform: translateY(-4px);
+      }
+    }
+
+    @keyframes lbCompassRotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(6deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes lbHaloBreathe {
+      0%, 100% {
+        opacity: 0.65;
+        transform: scale(0.98);
+      }
+      50% {
+        opacity: 0.95;
+        transform: scale(1.04);
+      }
+    }
+
+    .lb-wave-a {
+      animation: lbWaveShimmerA 6.5s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-wave-b {
+      animation: lbWaveShimmerB 7.8s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-wave-c {
+      animation: lbWaveShimmerA 9.2s ease-in-out infinite 1.4s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-sparkle-1 {
+      animation: lbSparklePulse 4.2s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-sparkle-2 {
+      animation: lbSparklePulse 5.1s ease-in-out infinite 1.7s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-ember-1 {
+      animation: lbEmberRiseA 5.8s ease-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-ember-2 {
+      animation: lbEmberRiseB 6.6s ease-out infinite 1.3s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-ember-3 {
+      animation: lbEmberRiseA 7.2s ease-out infinite 2.7s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-ember-4 {
+      animation: lbEmberRiseB 5.4s ease-out infinite 3.6s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-steam-1 {
+      animation: lbSteamDrift 7.5s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-steam-2 {
+      animation: lbSteamDrift 9s ease-in-out infinite 2.2s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-glyph-1 {
+      animation: lbGlyphPulse 5.5s ease-in-out infinite 0s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-glyph-2 {
+      animation: lbGlyphPulse 6.2s ease-in-out infinite 1.1s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-glyph-3 {
+      animation: lbGlyphPulse 5.8s ease-in-out infinite 2.2s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-glyph-4 {
+      animation: lbGlyphPulse 6.6s ease-in-out infinite 3.3s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-glyph-5 {
+      animation: lbGlyphPulse 6s ease-in-out infinite 4.1s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .lb-compass-dial {
+      animation: lbCompassRotate 18s ease-in-out infinite;
+      transform-origin: 1090px 148px;
+    }
+
+    .lb-halo-ring {
+      animation: lbHaloBreathe 8s ease-in-out infinite;
+      transform-origin: 1090px 148px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- ===================================================================== -->
+  <!-- 1. UPPER SKY PHOENICIAN HALO & ANCIENT MARITIME COMPASS ROSE          -->
+  <!-- ===================================================================== -->
+  <g id="byblos-phoenician-sky-halo">
+    <!-- Translucent golden ambient sky halo -->
+    <circle cx="1090" cy="148" r="138" fill="url(#lb-sky-halo)" class="lb-halo-ring" />
+    <circle cx="1090" cy="148" r="96" stroke="url(#lb-compass-gold)" stroke-width="1" stroke-dasharray="5 7" opacity="0.55" class="lb-halo-ring" />
+    <circle cx="1090" cy="148" r="72" stroke="#F7C948" stroke-width="0.75" stroke-opacity="0.32" />
+
+    <!-- Ancient Phoenician Compass Rose -->
+    <g class="lb-compass-dial" opacity="0.78">
+      <!-- Outer cardinal ring ticks -->
+      <circle cx="1090" cy="148" r="46" stroke="url(#lb-compass-gold)" stroke-width="1.1" stroke-opacity="0.5" />
+      <circle cx="1090" cy="148" r="24" stroke="#FFE599" stroke-width="0.75" stroke-dasharray="2 4" stroke-opacity="0.45" />
+
+      <!-- 8-point maritime star -->
+      <!-- Minor diagonal points -->
+      <path d="M1090 148 L1116 122 L1096 148 L1116 174 L1090 154 L1064 174 L1084 148 L1064 122 Z"
+            fill="#F7C948" fill-opacity="0.16" stroke="#FFE599" stroke-width="0.8" stroke-opacity="0.45" />
+
+      <!-- Major cardinal points (N, E, S, W) -->
+      <path d="M1090 92 L1097 141 L1146 148 L1097 155 L1090 204 L1083 155 L1034 148 L1083 141 Z"
+            fill="url(#lb-compass-gold)" stroke="#FFF3B0" stroke-width="0.9" stroke-opacity="0.65" />
+
+      <!-- North fleur/arrow accent -->
+      <path d="M1090 82 L1095 95 L1090 91 L1085 95 Z" fill="#FFF3B0" fill-opacity="0.8" />
+
+      <!-- Center jewel -->
+      <circle cx="1090" cy="148" r="4.5" fill="#FFF3B0" fill-opacity="0.85" />
+      <circle cx="1090" cy="148" r="2" fill="#FFFFFF" />
+    </g>
+
+    <!-- Softly Glowing Phoenician Consonantal Letters Around Halo Arc -->
+    <!-- 𐤀 Aleph (Ox head / origin of A) -->
+    <g class="lb-glyph-1" filter="url(#lb-glyph-glow)">
+      <text x="996" y="102" fill="#FFF3B0" fill-opacity="0.78" font-family="serif" font-size="24" text-anchor="middle">𐤀</text>
+      <circle cx="996" cy="112" r="1.8" fill="#FFD166" fill-opacity="0.6" />
+    </g>
+
+    <!-- 𐤁 Beth (House / origin of B) -->
+    <g class="lb-glyph-2" filter="url(#lb-glyph-glow)">
+      <text x="1044" y="64" fill="#FFE599" fill-opacity="0.75" font-family="serif" font-size="22" text-anchor="middle">𐤁</text>
+      <circle cx="1044" cy="73" r="1.6" fill="#FFD166" fill-opacity="0.55" />
+    </g>
+
+    <!-- 𐤌 Mem (Water waves / origin of M) -->
+    <g class="lb-glyph-3" filter="url(#lb-glyph-glow)">
+      <text x="1138" y="64" fill="#FFF3B0" fill-opacity="0.8" font-family="serif" font-size="23" text-anchor="middle">𐤌</text>
+      <circle cx="1138" cy="73" r="1.8" fill="#FFD166" fill-opacity="0.6" />
+    </g>
+
+    <!-- 𐤓 Resh (Head / origin of R) -->
+    <g class="lb-glyph-4" filter="url(#lb-glyph-glow)">
+      <text x="1186" y="108" fill="#FFE599" fill-opacity="0.74" font-family="serif" font-size="22" text-anchor="middle">𐤓</text>
+      <circle cx="1186" cy="117" r="1.6" fill="#FFD166" fill-opacity="0.55" />
+    </g>
+
+    <!-- 𐤕 Taw (Mark / cross / origin of T) -->
+    <g class="lb-glyph-5" filter="url(#lb-glyph-glow)">
+      <text x="1176" y="198" fill="#FFF3B0" fill-opacity="0.76" font-family="serif" font-size="22" text-anchor="middle">𐤕</text>
+      <circle cx="1176" cy="207" r="1.6" fill="#FFD166" fill-opacity="0.55" />
+    </g>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- 2. MEDITERRANEAN HARBOR GOLDEN-TEAL WAVE REFLECTIONS (BOTTOM-LEFT)     -->
+  <!-- ===================================================================== -->
+  <g id="byblos-harbor-reflections">
+    <!-- Ambient water surface sheen -->
+    <ellipse cx="310" cy="648" rx="290" ry="70" fill="url(#lb-wave-teal)" opacity="0.22" filter="url(#lb-soft-blur)" />
+
+    <!-- Shimmering ribbon Group A -->
+    <g class="lb-wave-a">
+      <path d="M 38 586 Q 118 578, 198 586 T 358 584 T 512 590"
+            stroke="url(#lb-wave-gold)" stroke-width="2.6" stroke-linecap="round" />
+      <path d="M 82 618 Q 168 610, 254 619 T 432 617 T 576 622"
+            stroke="url(#lb-wave-teal)" stroke-width="2.2" stroke-linecap="round" />
+      <path d="M 24 656 Q 124 646, 224 656 T 420 654 T 610 660"
+            stroke="url(#lb-wave-gold)" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- Shimmering ribbon Group B (counter-phase) -->
+    <g class="lb-wave-b">
+      <path d="M 64 602 Q 148 610, 232 601 T 396 603 T 548 598"
+            stroke="url(#lb-wave-teal)" stroke-width="2" stroke-linecap="round" />
+      <path d="M 46 636 Q 144 644, 242 635 T 448 637 T 594 633"
+            stroke="url(#lb-wave-gold)" stroke-width="2.8" stroke-linecap="round" />
+      <path d="M 96 678 Q 192 670, 288 679 T 484 677 T 648 682"
+            stroke="url(#lb-wave-teal)" stroke-width="2.4" stroke-linecap="round" />
+    </g>
+
+    <!-- Foreground gentle harbor ripples Group C -->
+    <g class="lb-wave-c">
+      <path d="M 118 698 Q 220 690, 322 699 T 526 696"
+            stroke="url(#lb-wave-gold)" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M 58 718 Q 164 712, 270 719 T 468 717"
+            stroke="url(#lb-wave-teal)" stroke-width="1.8" stroke-linecap="round" />
+    </g>
+
+    <!-- Sunlit Mediterranean water sparkles -->
+    <g class="lb-sparkle-1">
+      <circle cx="154" cy="596" r="2.2" fill="#FFF3B0" fill-opacity="0.8" />
+      <circle cx="286" cy="628" r="2.6" fill="#FFD166" fill-opacity="0.75" />
+      <circle cx="418" cy="608" r="2" fill="#90E0EF" fill-opacity="0.75" />
+      <circle cx="212" cy="664" r="2.4" fill="#FFF3B0" fill-opacity="0.8" />
+      <circle cx="364" cy="686" r="2.1" fill="#FFD166" fill-opacity="0.7" />
+    </g>
+
+    <g class="lb-sparkle-2">
+      <circle cx="112" cy="642" r="2.3" fill="#90E0EF" fill-opacity="0.8" />
+      <circle cx="248" cy="588" r="2" fill="#FFF3B0" fill-opacity="0.75" />
+      <circle cx="338" cy="648" r="2.8" fill="#FFD166" fill-opacity="0.85" />
+      <circle cx="486" cy="638" r="2.2" fill="#FFF3B0" fill-opacity="0.7" />
+      <circle cx="178" cy="702" r="2" fill="#90E0EF" fill-opacity="0.72" />
+    </g>
+  </g>
+
+  <!-- ===================================================================== -->
+  <!-- 3. SAJ BAKERY HEARTH WARM FLOATING EMBERS & RISING STEAM              -->
+  <!-- ===================================================================== -->
+  <g id="byblos-saj-bakery-hearth">
+    <!-- Warm ambient hearth glow -->
+    <ellipse cx="885" cy="545" rx="95" ry="62" fill="url(#lb-hearth-glow)" class="lb-halo-ring" />
+
+    <!-- Soft rising aromatic bread steam wisps -->
+    <g class="lb-steam-1" filter="url(#lb-steam-blur)">
+      <path d="M 856 540 C 842 508, 872 476, 858 442 C 846 414, 868 388, 860 362"
+            stroke="url(#lb-steam-grad)" stroke-width="16" stroke-linecap="round" fill="none" />
+      <path d="M 898 548 C 912 514, 884 482, 902 448 C 914 422, 892 394, 904 368"
+            stroke="url(#lb-steam-grad)" stroke-width="14" stroke-linecap="round" fill="none" />
+    </g>
+
+    <g class="lb-steam-2" filter="url(#lb-steam-blur)">
+      <path d="M 876 552 C 890 518, 862 486, 878 452 C 892 420, 870 396, 882 370"
+            stroke="url(#lb-steam-grad)" stroke-width="18" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- Floating golden-amber hearth embers -->
+    <g class="lb-ember-1">
+      <circle cx="862" cy="536" r="3.5" fill="url(#lb-ember-dot)" />
+      <circle cx="894" cy="522" r="2.6" fill="url(#lb-ember-dot)" />
+      <circle cx="848" cy="508" r="2.2" fill="url(#lb-ember-dot)" />
+    </g>
+
+    <g class="lb-ember-2">
+      <circle cx="878" cy="542" r="3.2" fill="url(#lb-ember-dot)" />
+      <circle cx="912" cy="530" r="2.8" fill="url(#lb-ember-dot)" />
+      <circle cx="866" cy="514" r="2.4" fill="url(#lb-ember-dot)" />
+    </g>
+
+    <g class="lb-ember-3">
+      <circle cx="854" cy="546" r="2.9" fill="url(#lb-ember-dot)" />
+      <circle cx="888" cy="534" r="3.4" fill="url(#lb-ember-dot)" />
+      <circle cx="904" cy="512" r="2.1" fill="url(#lb-ember-dot)" />
+    </g>
+
+    <g class="lb-ember-4">
+      <circle cx="870" cy="528" r="3" fill="url(#lb-ember-dot)" />
+      <circle cx="898" cy="544" r="2.5" fill="url(#lb-ember-dot)" />
+      <circle cx="842" cy="524" r="2.2" fill="url(#lb-ember-dot)" />
+    </g>
+  </g>
+</svg>

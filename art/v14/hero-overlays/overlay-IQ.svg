@@ -1,0 +1,446 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 752" width="1280" height="752" fill="none">
+  <defs>
+    <!-- Warm Lantern Glow Gradient -->
+    <radialGradient id="iq-lantern-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD166" stop-opacity="0.7" />
+      <stop offset="45%" stop-color="#F4A261" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#E76F51" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Brass Astrolabe Halo -->
+    <radialGradient id="iq-astrolabe-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE599" stop-opacity="0.22" />
+      <stop offset="65%" stop-color="#D4AF37" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Brass Metallic Stroke Gradient -->
+    <linearGradient id="iq-brass-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3B0" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#E09F3E" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#9E2A2B" stop-opacity="0.25" />
+    </linearGradient>
+
+    <!-- Turquoise Fountain Ripple Gradient -->
+    <linearGradient id="iq-turquoise-ripple" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#2EC4B6" stop-opacity="0" />
+      <stop offset="30%" stop-color="#48CAE4" stop-opacity="0.65" />
+      <stop offset="50%" stop-color="#ADE8F4" stop-opacity="0.85" />
+      <stop offset="70%" stop-color="#48CAE4" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#2EC4B6" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Amber Fountain Ripple Gradient -->
+    <linearGradient id="iq-amber-ripple" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#F4A261" stop-opacity="0" />
+      <stop offset="35%" stop-color="#FFD166" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#FFF3B0" stop-opacity="0.8" />
+      <stop offset="65%" stop-color="#FFD166" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#F4A261" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Fountain Pool Ambient Shimmer -->
+    <radialGradient id="iq-pool-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2EC4B6" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#F4A261" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#2EC4B6" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Reusable 8-Pointed Islamic Star (Rub el Hizb) -->
+    <g id="iq-eight-star">
+      <rect x="-5" y="-5" width="10" height="10" stroke="#FFE599" stroke-width="1" fill="none" />
+      <rect x="-5" y="-5" width="10" height="10" stroke="#FFE599" stroke-width="1" fill="none" transform="rotate(45)" />
+      <circle cx="0" cy="0" r="1.5" fill="#FFF8D6" />
+    </g>
+
+    <!-- Reusable 4-Pointed Sparkle -->
+    <path id="iq-sparkle" d="M0,-6 C0.6,-1.8 1.8,-0.6 6,0 C1.8,0.6 0.6,1.8 0,6 C-0.6,1.8 -1.8,0.6 -6,0 C-1.8,-0.6 -0.6,-1.8 0,-6 Z" fill="#FFF3B0" />
+  </defs>
+
+  <style>
+    @keyframes iq-rotate-cw {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes iq-rotate-ccw {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes iq-constellation-twinkle {
+      0%, 100% { opacity: 0.35; transform: scale(0.92); }
+      50% { opacity: 0.95; transform: scale(1.06); }
+    }
+
+    @keyframes iq-lantern-pulse {
+      0%, 100% { opacity: 0.45; transform: scale(0.94); }
+      50% { opacity: 0.92; transform: scale(1.08); }
+    }
+
+    @keyframes iq-lantern-sway {
+      0%, 100% { transform: rotate(-1.5deg); }
+      50% { transform: rotate(1.5deg); }
+    }
+
+    @keyframes iq-ripple-expand {
+      0% { transform: scale(0.55); opacity: 0; }
+      35% { opacity: 0.78; }
+      100% { transform: scale(1.38); opacity: 0; }
+    }
+
+    @keyframes iq-fountain-jet {
+      0%, 100% { opacity: 0.35; transform: translateY(2px) scaleY(0.96); }
+      50% { opacity: 0.75; transform: translateY(-3px) scaleY(1.04); }
+    }
+
+    @keyframes iq-calligraphy-float {
+      0% { transform: translate(0px, 12px) rotate(-4deg) scale(0.88); opacity: 0; }
+      25% { opacity: 0.85; }
+      75% { opacity: 0.75; }
+      100% { transform: translate(-10px, -34px) rotate(5deg) scale(1.08); opacity: 0; }
+    }
+
+    .iq-astro-outer {
+      transform-origin: 1035px 175px;
+      animation: iq-rotate-cw 78s linear infinite;
+    }
+
+    .iq-astro-rete {
+      transform-origin: 1035px 175px;
+      animation: iq-rotate-ccw 52s linear infinite;
+    }
+
+    .iq-astro-alidade {
+      transform-origin: 1035px 175px;
+      animation: iq-rotate-cw 34s ease-in-out infinite alternate;
+    }
+
+    .iq-star-twinkle-1 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-constellation-twinkle 4.5s ease-in-out infinite;
+    }
+
+    .iq-star-twinkle-2 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-constellation-twinkle 6s ease-in-out 1.8s infinite;
+    }
+
+    .iq-star-twinkle-3 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-constellation-twinkle 5.2s ease-in-out 3.1s infinite;
+    }
+
+    .iq-lantern-glow-1 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-lantern-pulse 5.5s ease-in-out infinite;
+    }
+
+    .iq-lantern-glow-2 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-lantern-pulse 6.8s ease-in-out 1.7s infinite;
+    }
+
+    .iq-lantern-glow-3 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-lantern-pulse 4.9s ease-in-out 3.2s infinite;
+    }
+
+    .iq-lantern-body {
+      transform-box: fill-box;
+      transform-origin: top center;
+      animation: iq-lantern-sway 7s ease-in-out infinite;
+    }
+
+    .iq-ripple-1 {
+      transform-origin: 640px 618px;
+      animation: iq-ripple-expand 7.5s cubic-bezier(0.2, 0.5, 0.35, 1) infinite;
+    }
+
+    .iq-ripple-2 {
+      transform-origin: 640px 618px;
+      animation: iq-ripple-expand 7.5s cubic-bezier(0.2, 0.5, 0.35, 1) 2.5s infinite;
+    }
+
+    .iq-ripple-3 {
+      transform-origin: 640px 618px;
+      animation: iq-ripple-expand 7.5s cubic-bezier(0.2, 0.5, 0.35, 1) 5s infinite;
+    }
+
+    .iq-fountain-plume {
+      transform-origin: 640px 605px;
+      animation: iq-fountain-jet 3.6s ease-in-out infinite;
+    }
+
+    .iq-script-1 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-calligraphy-float 9s ease-in-out infinite;
+    }
+
+    .iq-script-2 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-calligraphy-float 10.5s ease-in-out 2.2s infinite;
+    }
+
+    .iq-script-3 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-calligraphy-float 8.5s ease-in-out 4.5s infinite;
+    }
+
+    .iq-script-4 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-calligraphy-float 11s ease-in-out 6.4s infinite;
+    }
+
+    .iq-script-5 {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: iq-calligraphy-float 9.6s ease-in-out 1.1s infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- ========================================================================= -->
+  <!-- 1. UPPER-RIGHT SKY: GOLDEN BRASS ASTROLABE & STAR CONSTELLATIONS          -->
+  <!-- ========================================================================= -->
+  <g id="baghdad-celestial-astrolabe">
+    <!-- Ambient Celestial Gold Halo -->
+    <circle cx="1035" cy="175" r="210" fill="url(#iq-astrolabe-halo)" />
+
+    <!-- Star Constellations in Upper-Right Sky (House of Wisdom Astronomy) -->
+    <g id="iq-constellations" opacity="0.82">
+      <!-- Constellation Alpha (Left of Astrolabe) -->
+      <polyline points="735,92 785,68 838,88 872,58 915,76" stroke="#FFE599" stroke-width="0.9" stroke-dasharray="3 4" opacity="0.55" />
+      <polyline points="785,68 802,126 854,142 838,88" stroke="#48CAE4" stroke-width="0.75" stroke-dasharray="2 4" opacity="0.45" />
+      <use href="#iq-sparkle" x="735" y="92" class="iq-star-twinkle-1" />
+      <use href="#iq-eight-star" x="785" y="68" class="iq-star-twinkle-2" />
+      <circle cx="838" cy="88" r="2.2" fill="#FFF3B0" class="iq-star-twinkle-3" />
+      <use href="#iq-sparkle" x="872" y="58" class="iq-star-twinkle-1" />
+      <circle cx="915" cy="76" r="2" fill="#ADE8F4" class="iq-star-twinkle-2" />
+      <circle cx="802" cy="126" r="2.3" fill="#FFD166" class="iq-star-twinkle-3" />
+      <use href="#iq-sparkle" x="854" y="142" transform="scale(0.8)" class="iq-star-twinkle-2" />
+
+      <!-- Constellation Beta (Below/Right of Astrolabe) -->
+      <polyline points="1148,74 1196,52 1234,94 1208,148 1165,182 1218,225" stroke="#FFE599" stroke-width="0.9" stroke-dasharray="3 5" opacity="0.5" />
+      <use href="#iq-sparkle" x="1148" y="74" class="iq-star-twinkle-3" />
+      <use href="#iq-eight-star" x="1196" y="52" class="iq-star-twinkle-1" />
+      <circle cx="1234" cy="94" r="2.4" fill="#FFF3B0" class="iq-star-twinkle-2" />
+      <use href="#iq-sparkle" x="1208" y="148" class="iq-star-twinkle-3" />
+      <circle cx="1165" cy="182" r="2" fill="#48CAE4" class="iq-star-twinkle-1" />
+      <use href="#iq-eight-star" x="1218" y="225" class="iq-star-twinkle-2" />
+
+      <!-- Faint Meridian Arc Across the Sky -->
+      <path d="M 690,42 A 480,480 0 0 1 1245,310" stroke="url(#iq-brass-grad)" stroke-width="0.85" stroke-dasharray="6 8" opacity="0.45" />
+    </g>
+
+    <!-- Astrolabe Outer Mater & Degree Scale (Slow Clockwise Rotation) -->
+    <g class="iq-astro-outer">
+      <circle cx="1035" cy="175" r="138" stroke="url(#iq-brass-grad)" stroke-width="1.8" opacity="0.7" />
+      <circle cx="1035" cy="175" r="130" stroke="#FFD166" stroke-width="4" stroke-dasharray="1.5 9.8" opacity="0.55" />
+      <circle cx="1035" cy="175" r="124" stroke="url(#iq-brass-grad)" stroke-width="1.1" opacity="0.6" />
+      <!-- Cardinal & Intercardinal Brass Filigree Nodes -->
+      <circle cx="1035" cy="37" r="3.5" fill="#FFE599" opacity="0.8" />
+      <circle cx="1035" cy="313" r="3.5" fill="#FFE599" opacity="0.8" />
+      <circle cx="897" cy="175" r="3.5" fill="#FFE599" opacity="0.8" />
+      <circle cx="1173" cy="175" r="3.5" fill="#FFE599" opacity="0.8" />
+      <!-- 8-Fold Geometric Rosette inscribed in Mater -->
+      <rect x="945" y="85" width="180" height="180" stroke="#FFD166" stroke-width="0.75" opacity="0.32" />
+      <rect x="945" y="85" width="180" height="180" stroke="#FFD166" stroke-width="0.75" opacity="0.32" transform="rotate(45 1035 175)" />
+    </g>
+
+    <!-- Astrolabe Rete / Ecliptic Ring & Star Pointers (Counter-Clockwise Rotation) -->
+    <g class="iq-astro-rete">
+      <circle cx="1035" cy="175" r="96" stroke="#FFE599" stroke-width="1.3" stroke-dasharray="14 6 3 6" opacity="0.68" />
+      <!-- Offset Ecliptic Zodiac Ring -->
+      <circle cx="1035" cy="153" r="68" stroke="url(#iq-brass-grad)" stroke-width="1.8" opacity="0.75" />
+      <circle cx="1035" cy="153" r="63" stroke="#FFE599" stroke-width="2.5" stroke-dasharray="2 8.5" opacity="0.5" />
+      <!-- Equatorial & Horizon Arcs -->
+      <path d="M 943,175 A 95,62 0 0 1 1127,175" stroke="#FFD166" stroke-width="1" opacity="0.55" />
+      <path d="M 958,132 A 88,88 0 0 0 1112,132" stroke="#48CAE4" stroke-width="0.9" stroke-dasharray="4 4" opacity="0.5" />
+      <!-- Curved Brass Star Pointers (Daggers) -->
+      <path d="M 1035,85 Q 1044,108 1035,122 Q 1026,108 1035,85 Z" fill="#FFE599" opacity="0.65" />
+      <path d="M 1103,153 Q 1084,160 1072,153 Q 1084,146 1103,153 Z" fill="#FFE599" opacity="0.65" />
+      <path d="M 967,153 Q 986,160 998,153 Q 986,146 967,153 Z" fill="#FFE599" opacity="0.65" />
+      <use href="#iq-eight-star" x="1035" y="85" />
+    </g>
+
+    <!-- Astrolabe Sighting Rule / Alidade & Central Axis Pin -->
+    <g class="iq-astro-alidade">
+      <line x1="912" y1="175" x2="1158" y2="175" stroke="#FFF3B0" stroke-width="1.4" opacity="0.7" />
+      <polygon points="908,175 924,170 920,175 924,180" fill="#FFD166" opacity="0.85" />
+      <polygon points="1162,175 1146,170 1150,175 1146,180" fill="#FFD166" opacity="0.85" />
+      <circle cx="975" cy="175" r="4" stroke="#FFE599" stroke-width="1.2" fill="none" opacity="0.75" />
+      <circle cx="1095" cy="175" r="4" stroke="#FFE599" stroke-width="1.2" fill="none" opacity="0.75" />
+    </g>
+
+    <!-- Central Qutb (Pin) -->
+    <circle cx="1035" cy="175" r="6" fill="#FFE599" stroke="#E09F3E" stroke-width="1.5" />
+    <circle cx="1035" cy="175" r="2.2" fill="#FFFFFF" />
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 2. ABBASID POINTED ARCHES: WARM LANTERN GLOW PULSES                       -->
+  <!-- ========================================================================= -->
+  <g id="abbasid-arch-lanterns">
+    <!-- Subtle Golden Highlight Tracing Pointed Abbasid Arch Contours -->
+    <path d="M 105,390 Q 112,245 215,182 Q 318,245 325,390" stroke="url(#iq-brass-grad)" stroke-width="1.3" stroke-dasharray="8 6" opacity="0.38" />
+    <path d="M 480,350 Q 492,188 640,118 Q 788,188 800,350" stroke="url(#iq-brass-grad)" stroke-width="1.5" stroke-dasharray="10 6" opacity="0.42" />
+    <path d="M 955,390 Q 962,245 1065,182 Q 1168,245 1175,390" stroke="url(#iq-brass-grad)" stroke-width="1.3" stroke-dasharray="8 6" opacity="0.38" />
+
+    <!-- Left Arch Hanging Brass Lantern (x=215, y=268) -->
+    <g id="lantern-left">
+      <circle cx="215" cy="268" r="78" fill="url(#iq-lantern-glow)" class="iq-lantern-glow-1" />
+      <g class="iq-lantern-body">
+        <line x1="215" y1="182" x2="215" y2="246" stroke="#FFD166" stroke-width="1.4" opacity="0.75" />
+        <path d="M 205,246 L 225,246 L 231,264 L 221,288 L 209,288 L 199,264 Z" fill="#E09F3E" fill-opacity="0.35" stroke="#FFE599" stroke-width="1.2" />
+        <circle cx="215" cy="266" r="7" fill="#FFF8D6" opacity="0.9" />
+        <path d="M 212,288 L 215,298 L 218,288" stroke="#FFE599" stroke-width="1.2" />
+      </g>
+    </g>
+
+    <!--Left-Inner Arch Arcade Lantern (x=412, y=305) -->
+    <g id="lantern-mid-left">
+      <circle cx="412" cy="305" r="56" fill="url(#iq-lantern-glow)" class="iq-lantern-glow-2" />
+      <g class="iq-lantern-body">
+        <line x1="412" y1="238" x2="412" y2="290" stroke="#FFD166" stroke-width="1.1" opacity="0.65" />
+        <path d="M 405,290 L 419,290 L 423,303 L 416,319 L 408,319 L 401,303 Z" fill="#E09F3E" fill-opacity="0.35" stroke="#FFE599" stroke-width="1" />
+        <circle cx="412" cy="304" r="5" fill="#FFF8D6" opacity="0.85" />
+      </g>
+    </g>
+
+    <!-- Center Grand Abbasid Arch Hanging Mosque Lamp (x=640, y=224) -->
+    <g id="lantern-center">
+      <circle cx="640" cy="224" r="95" fill="url(#iq-lantern-glow)" class="iq-lantern-glow-3" />
+      <g class="iq-lantern-body">
+        <line x1="640" y1="118" x2="640" y2="196" stroke="#FFD166" stroke-width="1.6" opacity="0.8" />
+        <line x1="640" y1="176" x2="626" y2="204" stroke="#FFD166" stroke-width="0.9" opacity="0.65" />
+        <line x1="640" y1="176" x2="654" y2="204" stroke="#FFD166" stroke-width="0.9" opacity="0.65" />
+        <path d="M 626,204 L 654,204 L 662,224 L 648,252 L 632,252 L 618,224 Z" fill="#E09F3E" fill-opacity="0.4" stroke="#FFE599" stroke-width="1.4" />
+        <circle cx="640" cy="225" r="9" fill="#FFF8D6" opacity="0.95" />
+        <path d="M 636,252 L 640,265 L 644,252" stroke="#FFE599" stroke-width="1.3" />
+      </g>
+    </g>
+
+    <!-- Right-Inner Arch Arcade Lantern (x=868, y=305) -->
+    <g id="lantern-mid-right">
+      <circle cx="868" cy="305" r="56" fill="url(#iq-lantern-glow)" class="iq-lantern-glow-1" />
+      <g class="iq-lantern-body">
+        <line x1="868" y1="238" x2="868" y2="290" stroke="#FFD166" stroke-width="1.1" opacity="0.65" />
+        <path d="M 861,290 L 875,290 L 879,303 L 872,319 L 864,319 L 857,303 Z" fill="#E09F3E" fill-opacity="0.35" stroke="#FFE599" stroke-width="1" />
+        <circle cx="868" cy="304" r="5" fill="#FFF8D6" opacity="0.85" />
+      </g>
+    </g>
+
+    <!-- Right Arch Hanging Brass Lantern (x=1065, y=268) -->
+    <g id="lantern-right">
+      <circle cx="1065" cy="268" r="78" fill="url(#iq-lantern-glow)" class="iq-lantern-glow-2" />
+      <g class="iq-lantern-body">
+        <line x1="1065" y1="182" x2="1065" y2="246" stroke="#FFD166" stroke-width="1.4" opacity="0.75" />
+        <path d="M 1055,246 L 1075,246 L 1081,264 L 1071,288 L 1059,288 L 1049,264 Z" fill="#E09F3E" fill-opacity="0.35" stroke="#FFE599" stroke-width="1.2" />
+        <circle cx="1065" cy="266" r="7" fill="#FFF8D6" opacity="0.9" />
+        <path d="M 1062,288 L 1065,298 L 1068,288" stroke="#FFE599" stroke-width="1.2" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 3. COURTYARD AREA: FOUNTAIN RIPPLES & SCHOLARLY CALLIGRAPHY SPARKLES      -->
+  <!-- ========================================================================= -->
+  <g id="courtyard-fountain-and-calligraphy">
+    <!-- Ambient Courtyard Basin Glow -->
+    <ellipse cx="640" cy="618" rx="280" ry="72" fill="url(#iq-pool-glow)" />
+
+    <!-- Expanding Turquoise & Amber Fountain Water Ripples -->
+    <g class="iq-ripple-1">
+      <ellipse cx="640" cy="618" rx="145" ry="34" stroke="url(#iq-turquoise-ripple)" stroke-width="2" />
+      <ellipse cx="640" cy="618" rx="105" ry="24" stroke="url(#iq-amber-ripple)" stroke-width="1.3" stroke-dasharray="18 10" />
+    </g>
+
+    <g class="iq-ripple-2">
+      <ellipse cx="640" cy="618" rx="155" ry="36" stroke="url(#iq-amber-ripple)" stroke-width="1.8" />
+      <ellipse cx="640" cy="618" rx="115" ry="26" stroke="url(#iq-turquoise-ripple)" stroke-width="1.4" stroke-dasharray="22 12" />
+    </g>
+
+    <g class="iq-ripple-3">
+      <ellipse cx="640" cy="618" rx="150" ry="35" stroke="url(#iq-turquoise-ripple)" stroke-width="1.9" />
+      <ellipse cx="640" cy="618" rx="95" ry="22" stroke="url(#iq-amber-ripple)" stroke-width="1.2" />
+    </g>
+
+    <!-- Gentle Shimmering Water Lines in Foreground Basin -->
+    <path d="M 455,632 Q 545,624 640,632 T 825,632" stroke="url(#iq-turquoise-ripple)" stroke-width="1.4" opacity="0.65" />
+    <path d="M 495,654 Q 570,648 640,654 T 785,654" stroke="url(#iq-amber-ripple)" stroke-width="1.2" opacity="0.55" />
+    <path d="M 420,675 Q 530,666 640,675 T 860,675" stroke="url(#iq-turquoise-ripple)" stroke-width="1.1" opacity="0.45" />
+
+    <!-- Central Fountain Water Plume & Droplets -->
+    <g class="iq-fountain-plume">
+      <path d="M 640,612 Q 638,560 616,538" stroke="#ADE8F4" stroke-width="1.6" stroke-linecap="round" opacity="0.7" />
+      <path d="M 640,612 Q 642,560 664,538" stroke="#ADE8F4" stroke-width="1.6" stroke-linecap="round" opacity="0.7" />
+      <path d="M 640,612 Q 632,575 598,566" stroke="#FFD166" stroke-width="1.2" stroke-linecap="round" opacity="0.6" />
+      <path d="M 640,612 Q 648,575 682,566" stroke="#FFD166" stroke-width="1.2" stroke-linecap="round" opacity="0.6" />
+      <circle cx="640" cy="526" r="2.5" fill="#FFF8D6" />
+      <circle cx="612" cy="545" r="2" fill="#ADE8F4" />
+      <circle cx="668" cy="545" r="2" fill="#ADE8F4" />
+      <circle cx="594" cy="574" r="1.8" fill="#FFD166" />
+      <circle cx="686" cy="574" r="1.8" fill="#FFD166" />
+    </g>
+
+    <!-- Floating Scholarly Calligraphy Sparkles & Diacritical Motifs (Bayt al-Hikma) -->
+    <!-- Group 1: Left Courtyard Scholarly Ribbon & Nuqat (Dots) -->
+    <g class="iq-script-1">
+      <path d="M 325,535 C 345,518 372,542 396,516 C 410,501 402,486 388,492" stroke="#FFE599" stroke-width="2" stroke-linecap="round" />
+      <rect x="358" y="498" width="4.5" height="4.5" fill="#48CAE4" transform="rotate(45 360 500)" />
+      <rect x="366" y="492" width="4.5" height="4.5" fill="#FFD166" transform="rotate(45 368 494)" />
+      <use href="#iq-sparkle" x="332" y="514" />
+    </g>
+
+    <!-- Group 2: Mid-Left Courtyard Thuluth Flourish & Sparkle -->
+    <g class="iq-script-2">
+      <path d="M 468,495 Q 495,468 524,485 T 558,462" stroke="#FFD166" stroke-width="2.1" stroke-linecap="round" />
+      <path d="M 482,504 Q 512,488 538,496" stroke="#48CAE4" stroke-width="1.2" stroke-linecap="round" opacity="0.8" />
+      <rect x="508" y="462" width="5" height="5" fill="#FFF3B0" transform="rotate(45 510 464)" />
+      <use href="#iq-eight-star" x="548" y="452" />
+    </g>
+
+    <!-- Group 3: Center Courtyard Rising Wisdom Motif -->
+    <g class="iq-script-3">
+      <path d="M 605,468 C 625,446 655,472 678,444" stroke="#FFF3B0" stroke-width="2.2" stroke-linecap="round" />
+      <rect x="634" y="438" width="4.5" height="4.5" fill="#FFD166" transform="rotate(45 636 440)" />
+      <rect x="643" y="432" width="4.5" height="4.5" fill="#48CAE4" transform="rotate(45 645 434)" />
+      <rect x="638" y="424" width="4.5" height="4.5" fill="#FFF3B0" transform="rotate(45 640 426)" />
+      <use href="#iq-sparkle" x="612" y="446" />
+      <use href="#iq-sparkle" x="676" y="434" />
+    </g>
+
+    <!-- Group 4: Mid-Right Courtyard Golden Reed-Pen Calligraphic Stroke -->
+    <g class="iq-script-4">
+      <path d="M 735,498 C 758,512 788,486 812,468 C 824,458 815,444 802,452" stroke="#FFE599" stroke-width="2" stroke-linecap="round" />
+      <path d="M 752,512 Q 782,502 806,482" stroke="#48CAE4" stroke-width="1.2" stroke-linecap="round" opacity="0.8" />
+      <rect x="772" y="472" width="5" height="5" fill="#FFD166" transform="rotate(45 774 474)" />
+      <use href="#iq-sparkle" x="816" y="456" />
+    </g>
+
+    <!-- Group 5: Right Courtyard Scholarly Scroll Flourish & Geometric Star -->
+    <g class="iq-script-5">
+      <path d="M 885,532 Q 918,506 946,522 T 982,494" stroke="#FFD166" stroke-width="1.9" stroke-linecap="round" />
+      <rect x="922" y="496" width="4.5" height="4.5" fill="#48CAE4" transform="rotate(45 924 498)" />
+      <rect x="932" y="492" width="4.5" height="4.5" fill="#FFE599" transform="rotate(45 934 494)" />
+      <use href="#iq-eight-star" x="962" y="484" />
+      <use href="#iq-sparkle" x="895" y="512" />
+    </g>
+  </g>
+</svg>

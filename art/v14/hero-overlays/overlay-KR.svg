@@ -1,0 +1,311 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 752" width="1280" height="752" fill="none">
+  <title>Jeonju Hanok Village Ambient Overlay — Ginkgo Leaves, Silk Hanji Lanterns, and Obangsaek Harmony Emblem</title>
+  <defs>
+    <!-- Soft Warm Glows for Cheongsachorong Silk Hanji Lanterns -->
+    <radialGradient id="kr-lantern-glow-warm" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5D6" stop-opacity="0.72" />
+      <stop offset="38%" stop-color="#FF9E44" stop-opacity="0.34" />
+      <stop offset="72%" stop-color="#D93829" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#1E3F66" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="kr-lantern-core" cx="50%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#FFFDF7" stop-opacity="0.95" />
+      <stop offset="55%" stop-color="#FFD470" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#FF8826" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Cheongsachorong Silk Gradients (Jeok Red Top & Cheong Blue Bottom) -->
+    <linearGradient id="kr-silk-jeok" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E63B2E" stop-opacity="0.92" />
+      <stop offset="50%" stop-color="#C8281E" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#961B12" stop-opacity="0.92" />
+    </linearGradient>
+
+    <linearGradient id="kr-silk-cheong" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D5B96" stop-opacity="0.92" />
+      <stop offset="50%" stop-color="#154373" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#0E2C4D" stop-opacity="0.92" />
+    </linearGradient>
+
+    <!-- Golden Autumn Ginkgo Gradients -->
+    <linearGradient id="kr-ginkgo-gold-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE875" />
+      <stop offset="60%" stop-color="#F5B82E" />
+      <stop offset="100%" stop-color="#D98218" />
+    </linearGradient>
+
+    <linearGradient id="kr-ginkgo-gold-b" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF099" />
+      <stop offset="55%" stop-color="#EFA81E" />
+      <stop offset="100%" stop-color="#C46D12" />
+    </linearGradient>
+
+    <!-- Subtle Eave Horizon Mist -->
+    <linearGradient id="kr-eave-mist" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFF3D1" stop-opacity="0" />
+      <stop offset="30%" stop-color="#FFE6B3" stop-opacity="0.08" />
+      <stop offset="70%" stop-color="#FFD485" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#FFF3D1" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Reusable Ginkgo Biloba Fan Leaf Symbol -->
+    <g id="kr-ginkgo-leaf">
+      <!-- Delicate Stem -->
+      <path d="M0,6 Q-1,14 -3,19" stroke="#B86B14" stroke-width="1.3" stroke-linecap="round" fill="none" />
+      <!-- Fan-shaped Biloba Blade with Center Notch -->
+      <path d="M0,7 C-6,5 -15,-1 -17,-9 C-18,-13 -14,-16 -10,-15 C-6,-14 -3,-11 -1.5,-7 C-0.8,-5 -0.2,-5 0,-7 C0.5,-11 3.5,-15 8,-16 C12,-17 17,-14 16,-9 C14,-1 6,5 0,7 Z" fill="url(#kr-ginkgo-gold-a)" stroke="#C97A16" stroke-width="0.6" />
+      <!-- Subtle radiating veins -->
+      <path d="M0,5 L-9,-10 M0,5 L-4,-11 M0,5 L4,-11 M0,5 L9,-10" stroke="#FFF4B8" stroke-width="0.45" stroke-opacity="0.65" stroke-linecap="round" />
+    </g>
+
+    <g id="kr-ginkgo-leaf-alt">
+      <path d="M0,5 Q2,12 4,16" stroke="#A65E10" stroke-width="1.2" stroke-linecap="round" fill="none" />
+      <path d="M0,6 C-5,4 -13,-1 -14,-8 C-15,-11 -11,-14 -8,-13 C-4,-12 -2,-9 -1,-5 C-0.3,-4 0.3,-4 1,-6 C2,-10 5,-13 9,-13 C12,-13 15,-10 14,-7 C12,0 5,4 0,6 Z" fill="url(#kr-ginkgo-gold-b)" stroke="#B86B14" stroke-width="0.55" />
+      <path d="M0,4 L-7,-8 M0,4 L-2.5,-9 M0,4 L3,-9 M0,4 L7.5,-8" stroke="#FFF6C4" stroke-width="0.4" stroke-opacity="0.6" stroke-linecap="round" />
+    </g>
+
+    <!-- Traditional Korean Cheongsachorong (Red & Blue Silk Hanji Lantern) -->
+    <g id="kr-cheongsachorong">
+      <!-- Hanging Silk Cord -->
+      <line x1="0" y1="0" x2="0" y2="28" stroke="#2B2623" stroke-width="1.8" />
+      <!-- Wooden Canopy Cap -->
+      <path d="M-16,28 L16,28 L22,33 L-22,33 Z" fill="#2A2421" stroke="#D9A74A" stroke-width="0.7" />
+      <!-- Ambient Outer Radial Halo -->
+      <circle cx="0" cy="64" r="68" fill="url(#kr-lantern-glow-warm)" class="kr-lantern-halo" />
+      <!-- Upper Red Silk Section (Jeok) -->
+      <path d="M-18,33 C-28,42 -30,54 -28,64 L28,64 C30,54 28,42 18,33 Z" fill="url(#kr-silk-jeok)" />
+      <!-- Lower Blue Silk Section (Cheong) -->
+      <path d="M-28,64 C-30,74 -28,86 -18,95 L18,95 C28,86 30,74 28,64 Z" fill="url(#kr-silk-cheong)" />
+      <!-- Inner Warm Hanji Candle Core Glow -->
+      <ellipse cx="0" cy="64" rx="16" ry="22" fill="url(#kr-lantern-core)" class="kr-lantern-halo" />
+      <!-- Vertical Hanji Bamboo Ribs -->
+      <path d="M-10,33 C-16,52 -16,76 -10,95" stroke="#1A1715" stroke-width="0.75" stroke-opacity="0.45" fill="none" />
+      <path d="M10,33 C16,52 16,76 10,95" stroke="#1A1715" stroke-width="0.75" stroke-opacity="0.45" fill="none" />
+      <line x1="0" y1="33" x2="0" y2="95" stroke="#1A1715" stroke-width="0.65" stroke-opacity="0.35" />
+      <!-- Gold Trim Sash at Equator -->
+      <path d="M-28,64 L28,64" stroke="#F0C451" stroke-width="1.4" stroke-opacity="0.85" />
+      <!-- Lower Wooden Base Collar -->
+      <path d="M-19,95 L19,95 L14,100 L-14,100 Z" fill="#2A2421" stroke="#D9A74A" stroke-width="0.7" />
+      <!-- Crimson & Gold Maedeup Knot and Flowing Tassel -->
+      <circle cx="0" cy="105" r="3.2" fill="#D93829" stroke="#F0C451" stroke-width="0.8" />
+      <path d="M0,108 C-2,118 -4,127 -6,136 M0,108 C0,119 0,128 0,138 M0,108 C2,118 4,127 6,136" stroke="#C8281E" stroke-width="1.3" stroke-linecap="round" fill="none" />
+      <path d="M0,108 L0,126" stroke="#F0C451" stroke-width="0.8" stroke-linecap="round" />
+    </g>
+  </defs>
+
+  <style>
+    @keyframes krLanternSwaySlow {
+      0%, 100% { transform: rotate(-2.4deg); }
+      50% { transform: rotate(2.6deg); }
+    }
+    @keyframes krLanternSwayAlt {
+      0%, 100% { transform: rotate(2.1deg); }
+      50% { transform: rotate(-2.5deg); }
+    }
+    @keyframes krLanternPulse {
+      0%, 100% { opacity: 0.78; }
+      50% { opacity: 1; }
+    }
+    @keyframes krGinkgoDrift1 {
+      0% { transform: translate3d(0px, 0px, 0) rotate(0deg); opacity: 0; }
+      12% { opacity: 0.92; }
+      50% { transform: translate3d(-110px, 95px, 0) rotate(24deg); opacity: 0.95; }
+      88% { opacity: 0.85; }
+      100% { transform: translate3d(-230px, 205px, 0) rotate(52deg); opacity: 0; }
+    }
+    @keyframes krGinkgoDrift2 {
+      0% { transform: translate3d(0px, 0px, 0) rotate(-12deg); opacity: 0; }
+      15% { opacity: 0.88; }
+      55% { transform: translate3d(-95px, 115px, 0) rotate(-38deg); opacity: 0.92; }
+      85% { opacity: 0.78; }
+      100% { transform: translate3d(-195px, 235px, 0) rotate(-65deg); opacity: 0; }
+    }
+    @keyframes krGinkgoDrift3 {
+      0% { transform: translate3d(0px, 0px, 0) rotate(8deg) scale(0.85); opacity: 0; }
+      18% { opacity: 0.84; }
+      52% { transform: translate3d(-135px, 80px, 0) rotate(36deg) scale(0.85); opacity: 0.9; }
+      88% { opacity: 0.75; }
+      100% { transform: translate3d(-260px, 175px, 0) rotate(68deg) scale(0.85); opacity: 0; }
+    }
+    @keyframes krGinkgoBob {
+      0%, 100% { transform: translateY(0px) rotate(-6deg); }
+      50% { transform: translateY(9px) rotate(8deg); }
+    }
+    @keyframes krObangsaekRotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes krObangsaekCounter {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .kr-lantern-a {
+      transform-origin: 184px 36px;
+      animation: krLanternSwaySlow 7.5s ease-in-out infinite;
+    }
+    .kr-lantern-b {
+      transform-origin: 336px 68px;
+      animation: krLanternSwayAlt 8.8s ease-in-out infinite;
+    }
+    .kr-lantern-c {
+      transform-origin: 968px 54px;
+      animation: krLanternSwaySlow 8.2s ease-in-out -2.4s infinite;
+    }
+    .kr-lantern-halo {
+      animation: krLanternPulse 4.6s ease-in-out infinite;
+    }
+
+    .kr-leaf-drift-1 {
+      animation: krGinkgoDrift1 15s ease-in-out infinite;
+    }
+    .kr-leaf-drift-2 {
+      animation: krGinkgoDrift2 18s ease-in-out -4.5s infinite;
+    }
+    .kr-leaf-drift-3 {
+      animation: krGinkgoDrift3 16.5s ease-in-out -9s infinite;
+    }
+    .kr-leaf-drift-4 {
+      animation: krGinkgoDrift1 19s ease-in-out -12s infinite;
+    }
+    .kr-leaf-drift-5 {
+      animation: krGinkgoDrift2 14.5s ease-in-out -7.2s infinite;
+    }
+    .kr-leaf-drift-6 {
+      animation: krGinkgoDrift3 17.5s ease-in-out -2.8s infinite;
+    }
+    .kr-leaf-canopy-bob {
+      animation: krGinkgoBob 6.4s ease-in-out infinite;
+    }
+
+    .kr-obangsaek-wheel {
+      transform-origin: 1184px 92px;
+      animation: krObangsaekRotate 42s linear infinite;
+    }
+    .kr-obangsaek-inner {
+      transform-origin: 1184px 92px;
+      animation: krObangsaekCounter 28s linear infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <!-- Subtle Golden Hour Warm Mist Across the Giwa Roof Eaves -->
+  <rect x="60" y="120" width="1160" height="190" fill="url(#kr-eave-mist)" opacity="0.65" />
+
+  <!-- Subtle Giwa Roof Eave Silhouette Curve Hints (Left & Right Foreground Framing) -->
+  <g opacity="0.42">
+    <path d="M-10,44 Q165,68 395,28" stroke="#1E2229" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <path d="M-10,50 Q165,74 388,35" stroke="#D9A74A" stroke-width="1" stroke-opacity="0.55" stroke-linecap="round" fill="none" />
+    <path d="M875,26 Q1060,64 1290,38" stroke="#1E2229" stroke-width="3.2" stroke-linecap="round" fill="none" />
+  </g>
+
+  <!-- Swaying Red-and-Blue Silk Hanji Lanterns (Cheongsachorong) Beneath the Giwa Eaves -->
+  <g class="kr-lantern-a">
+    <g transform="translate(184, 36) scale(0.95)">
+      <use href="#kr-cheongsachorong" />
+    </g>
+  </g>
+
+  <g class="kr-lantern-b">
+    <g transform="translate(336, 68) scale(0.76)">
+      <use href="#kr-cheongsachorong" />
+    </g>
+  </g>
+
+  <g class="kr-lantern-c">
+    <g transform="translate(968, 54) scale(0.84)">
+      <use href="#kr-cheongsachorong" />
+    </g>
+  </g>
+
+  <!-- Golden Autumn Ginkgo Branch Cluster Framing Upper Left Eave -->
+  <g class="kr-leaf-canopy-bob" style="transform-origin: 96px 42px;">
+    <path d="M-12,18 Q58,34 128,62 M48,29 Q82,54 106,82" stroke="#593A1E" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.75" />
+    <use href="#kr-ginkgo-leaf" transform="translate(42, 34) rotate(28) scale(1.05)" />
+    <use href="#kr-ginkgo-leaf-alt" transform="translate(78, 44) rotate(-18) scale(0.95)" />
+    <use href="#kr-ginkgo-leaf" transform="translate(114, 58) rotate(14) scale(1.1)" />
+    <use href="#kr-ginkgo-leaf-alt" transform="translate(96, 78) rotate(42) scale(0.88)" />
+    <use href="#kr-ginkgo-leaf" transform="translate(64, 64) rotate(-32) scale(0.82)" />
+  </g>
+
+  <!-- Gently Drifting Golden Autumn Ginkgo Leaves Across the Giwa Roof Eaves -->
+  <g>
+    <!-- Leaf Stream 1: Upper Left Eave to Courtyard -->
+    <g class="kr-leaf-drift-1">
+      <use href="#kr-ginkgo-leaf" transform="translate(420, 86) rotate(18) scale(1.05)" />
+    </g>
+    <!-- Leaf Stream 2: Mid-Roof Ridge Drift -->
+    <g class="kr-leaf-drift-2">
+      <use href="#kr-ginkgo-leaf-alt" transform="translate(680, 72) rotate(-24) scale(0.95)" />
+    </g>
+    <!-- Leaf Stream 3: Right Hanok Eave Drift -->
+    <g class="kr-leaf-drift-3">
+      <use href="#kr-ginkgo-leaf" transform="translate(920, 118) rotate(32) scale(1.12)" />
+    </g>
+    <!-- Leaf Stream 4: High Canopy Breeze -->
+    <g class="kr-leaf-drift-4">
+      <use href="#kr-ginkgo-leaf-alt" transform="translate(540, 145) rotate(-15) scale(0.86)" />
+    </g>
+    <!-- Leaf Stream 5: Warm Lantern Breeze -->
+    <g class="kr-leaf-drift-5">
+      <use href="#kr-ginkgo-leaf" transform="translate(310, 168) rotate(40) scale(0.92)" />
+    </g>
+    <!-- Leaf Stream 6: Far Right Courtyard Eave -->
+    <g class="kr-leaf-drift-6">
+      <use href="#kr-ginkgo-leaf-alt" transform="translate(1060, 152) rotate(-28) scale(0.98)" />
+    </g>
+
+    <!-- Ambient Resting/Floating Golden Ginkgo Accents in Foreground Breeze -->
+    <g class="kr-leaf-canopy-bob" style="transform-origin: 760px 210px;">
+      <use href="#kr-ginkgo-leaf" transform="translate(760, 210) rotate(-22) scale(0.78)" opacity="0.82" />
+    </g>
+    <g class="kr-leaf-canopy-bob" style="transform-origin: 245px 235px;">
+      <use href="#kr-ginkgo-leaf-alt" transform="translate(245, 235) rotate(35) scale(0.72)" opacity="0.78" />
+    </g>
+  </g>
+
+  <!-- Rotating Five-Color Obangsaek Harmony Emblem in the Upper Right Corner -->
+  <!-- Colors: Cheong (#1D6F8A blue/green), Jeok (#D93829 red), Hwang (#F2B705 yellow), Baek (#FAF6EE white), Heuk (#232528 dark charcoal) -->
+  <g aria-label="Obangsaek Traditional Korean Five-Color Harmony Emblem">
+    <!-- Subtle Outer Halo Ring -->
+    <circle cx="1184" cy="92" r="56" fill="#FAF6EE" fill-opacity="0.06" stroke="#F2B705" stroke-width="0.9" stroke-opacity="0.45" stroke-dasharray="4 4" />
+    <circle cx="1184" cy="92" r="48" fill="none" stroke="#FAF6EE" stroke-width="0.7" stroke-opacity="0.35" />
+
+    <!-- Slowly Rotating Five-Segmented Obangsaek Dancheong Lotus Wheel -->
+    <g class="kr-obangsaek-wheel">
+      <!-- 1. Cheong (Blue/Teal-Green — East / Wood) -->
+      <path d="M1184,92 L1184,48 A44,44 0 0,1 1225.8,78.4 Z" fill="#1D6F8A" fill-opacity="0.88" stroke="#FAF6EE" stroke-width="0.8" />
+      <!-- 2. Jeok (Red — South / Fire) -->
+      <path d="M1184,92 L1225.8,78.4 A44,44 0 0,1 1209.9,127.6 Z" fill="#D93829" fill-opacity="0.88" stroke="#FAF6EE" stroke-width="0.8" />
+      <!-- 3. Hwang (Golden Yellow — Center / Earth) -->
+      <path d="M1184,92 L1209.9,127.6 A44,44 0 0,1 1158.1,127.6 Z" fill="#F2B705" fill-opacity="0.90" stroke="#FAF6EE" stroke-width="0.8" />
+      <!-- 4. Baek (Warm Silk White — West / Metal) -->
+      <path d="M1184,92 L1158.1,127.6 A44,44 0 0,1 1142.2,78.4 Z" fill="#FAF6EE" fill-opacity="0.90" stroke="#232528" stroke-width="0.7" />
+      <!-- 5. Heuk (Dark Charcoal Ink — North / Water) -->
+      <path d="M1184,92 L1142.2,78.4 A44,44 0 0,1 1184,48 Z" fill="#232528" fill-opacity="0.88" stroke="#FAF6EE" stroke-width="0.8" />
+
+      <!-- Ornamental Dancheong Petal Rim Dots -->
+      <circle cx="1184" cy="53" r="2.3" fill="#FAF6EE" />
+      <circle cx="1221" cy="80" r="2.3" fill="#F2B705" />
+      <circle cx="1207" cy="123" r="2.3" fill="#FAF6EE" />
+      <circle cx="1161" cy="123" r="2.3" fill="#D93829" />
+      <circle cx="1147" cy="80" r="2.3" fill="#1D6F8A" />
+    </g>
+
+    <!-- Counter-Rotating Inner Hwang/Cheong/Jeok Harmony Core -->
+    <g class="kr-obangsaek-inner">
+      <circle cx="1184" cy="92" r="18" fill="#FAF6EE" stroke="#232528" stroke-width="1.2" />
+      <!-- Three-way Sam-Taegeuk Inspired Swirl Core -->
+      <path d="M1184,76 A16,16 0 0,1 1197.8,100 A8,8 0 0,1 1184,92 A8,8 0 0,0 1184,76 Z" fill="#D93829" />
+      <path d="M1197.8,100 A16,16 0 0,1 1170.2,100 A8,8 0 0,1 1184,92 A8,8 0 0,0 1197.8,100 Z" fill="#1D6F8A" />
+      <path d="M1170.2,100 A16,16 0 0,1 1184,76 A8,8 0 0,1 1184,92 A8,8 0 0,0 1170.2,100 Z" fill="#F2B705" />
+      <circle cx="1184" cy="92" r="3.2" fill="#232528" stroke="#FAF6EE" stroke-width="0.9" />
+    </g>
+  </g>
+</svg>

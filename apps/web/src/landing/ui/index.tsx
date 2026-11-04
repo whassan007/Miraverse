@@ -21,11 +21,19 @@ import {
   V13_COUNTRIES_ORDERED,
   V13_COUNTRY_EXPERIENCES,
 } from '../../../../../packages/contracts/v13/index';
+import {
+  V14_HERO_CYCLE_MS,
+  V14_HERO_SLIDES,
+  V14_HERO_SLIDES_ORDERED,
+} from '../../../../../packages/contracts/v14/index';
+import { DynamicWorldHeroShowcase } from '../hero-v14/DynamicWorldHeroShowcase';
+import { HeroDynamicBackdrop } from '../hero-v14/HeroDynamicBackdrop';
+import { useHeroAutoplay } from '../hero-v14/useHeroAutoplay';
+import { useHeroImagePreloader } from '../hero-v14/useHeroImagePreloader';
 
 const EXPANSION_COUNTRIES: CountryCode[] = ['IQ', 'EG', 'FR', 'KR'];
 
 export const CinematicLandingPage: React.FC = () => {
-  const [selectedCountry, setSelectedCountry] = useState<CountryCode>('LB');
   const [reducedMotion, setReducedMotion] = useState(false);
 
   useEffect(() => {
@@ -36,7 +44,26 @@ export const CinematicLandingPage: React.FC = () => {
     setReducedMotion(Boolean(mq?.matches));
   }, []);
 
+  useHeroImagePreloader([...V14_HERO_SLIDES_ORDERED]);
+
+  const {
+    selectedCountry,
+    slideIndex,
+    isPlaying,
+    progressPct,
+    selectCountry,
+    nextSlide,
+    prevSlide,
+    togglePlayPause,
+    setHoverOrFocusPause,
+  } = useHeroAutoplay({
+    initialCountry: 'LB',
+    cycleDurationMs: V14_HERO_CYCLE_MS,
+    reducedMotion,
+  });
+
   const activeWorld = V08_WORLD_VISUAL_MAP[selectedCountry];
+  const activeHeroSlide = V14_HERO_SLIDES[selectedCountry];
   const byblos = V08_WORLD_VISUAL_MAP.LB;
 
   return (
@@ -63,19 +90,12 @@ export const CinematicLandingPage: React.FC = () => {
           borderBottom: '1px solid rgba(244, 162, 97, 0.35)',
         }}
       >
-        {/* Static Poster Fallback Layer for LCP and Reduced Motion */}
-        <div
-          data-testid="landing-hero-fallback"
-          aria-hidden="true"
-          style={{
-            position: 'absolute',
-            inset: 0,
-            backgroundImage: `linear-gradient(95deg, rgba(11,19,37,0.94) 0%, rgba(11,19,37,0.84) 48%, rgba(11,19,37,0.58) 100%), url('${P0_PRODUCTION_ART_ASSETS.heroDesktopJpg}')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            pointerEvents: 'none',
-            zIndex: 1,
-          }}
+        {/* Dynamic Poster & Radial Aura Layer for LCP, Multi-Country Transitions & Reduced Motion (data-testid="landing-hero-fallback" preserved) */}
+        <HeroDynamicBackdrop
+          activeCountry={selectedCountry}
+          heroDesktopJpg={activeHeroSlide.heroDesktopJpg}
+          radialGradientCss={activeHeroSlide.radialGradientCss}
+          reducedMotion={reducedMotion}
         />
 
         <div
@@ -230,152 +250,19 @@ export const CinematicLandingPage: React.FC = () => {
             </p>
           </div>
 
-          {/* Right Column: Painted Cinematic Byblos Harbor Environment & World Switcher */}
-          <div
-            data-testid="hero-visual-frame"
-            style={{
-              background: '#131F38',
-              borderRadius: '24px',
-              padding: '12px',
-              border: '2px solid rgba(244, 162, 97, 0.78)',
-              boxShadow: '0 24px 56px rgba(0, 0, 0, 0.65)',
-            }}
-          >
-            <div style={{ position: 'relative', borderRadius: '16px', overflow: 'hidden', aspectRatio: '16 / 9.4', background: '#0B1933' }}>
-              {selectedCountry === 'LB' ? (
-                <picture>
-                  <source media="(max-width: 640px)" srcSet={P0_PRODUCTION_ART_ASSETS.heroMobileWebp} type="image/webp" />
-                  <source media="(max-width: 640px)" srcSet={P0_PRODUCTION_ART_ASSETS.heroMobileJpg} type="image/jpeg" />
-                  <source srcSet={P0_PRODUCTION_ART_ASSETS.heroDesktopWebp} type="image/webp" />
-                  <img
-                    data-testid="hero-primary-artwork"
-                    src={P0_PRODUCTION_ART_ASSETS.heroDesktopJpg}
-                    alt={`${activeWorld.nameEn} — ${activeWorld.locationLabel} with Mira and ${activeWorld.mentorName}`}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                  />
-                </picture>
-              ) : (
-                <img
-                  data-testid="hero-primary-artwork"
-                  src={activeWorld.coverArtUrl}
-                  alt={`${activeWorld.nameEn} — ${activeWorld.locationLabel} with ${activeWorld.mentorName}`}
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                />
-              )}
-            </div>
-
-            {/* Scene Caption Bar Below Hero Artwork (Unobstructed on Mobile & Desktop) */}
-            <div
-              style={{
-                marginTop: '10px',
-                background: 'rgba(11, 19, 37, 0.92)',
-                borderRadius: '14px',
-                padding: '10px 14px',
-                border: '1px solid rgba(244, 162, 97, 0.45)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                gap: '12px',
-                flexWrap: 'wrap',
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <img
-                  src={activeWorld.portraitArtUrl}
-                  alt={activeWorld.mentorName}
-                  width={42}
-                  height={42}
-                  style={{ borderRadius: '50%', border: '2px solid #F4A261', flexShrink: 0, objectFit: 'cover' }}
-                />
-                <div>
-                  <strong style={{ fontSize: '14px', color: '#FEF08A', display: 'block' }}>
-                    {activeWorld.nameEn}: {activeWorld.chapterTitle} ({activeWorld.locationLabel})
-                  </strong>
-                  <span style={{ fontSize: '12px', color: '#CBD5E1' }}>
-                    Mentor: <strong>{activeWorld.mentorName}</strong> · Dish: <strong>{activeWorld.signatureDish}</strong>
-                  </span>
-                </div>
-              </div>
-              <span
-                style={{
-                  background: activeWorld.isFlagshipSlice ? 'rgba(16, 185, 129, 0.22)' : 'rgba(244, 162, 97, 0.2)',
-                  color: activeWorld.isFlagshipSlice ? '#6EE7B7' : '#FDE68A',
-                  border: `1px solid ${activeWorld.isFlagshipSlice ? '#10B981' : '#F4A261'}`,
-                  padding: '4px 10px',
-                  borderRadius: '999px',
-                  fontSize: '11px',
-                  fontWeight: 800,
-                }}
-              >
-                {activeWorld.robloxStatusLabel}
-              </span>
-            </div>
-
-            {/* Interactive 5-World Scene Switcher inside Hero Artwork Frame */}
-            <div
-              role="region"
-              aria-label="Interactive Destination Preview"
-              data-testid="hero-world-switcher"
-              style={{
-                marginTop: '12px',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                flexWrap: 'wrap',
-                gap: '8px',
-                padding: '4px 6px',
-              }}
-            >
-              <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }} role="tablist" aria-label="Five Cultural Worlds">
-                {V13_COUNTRIES_ORDERED.map((code) => {
-                  const w = V08_WORLD_VISUAL_MAP[code];
-                  const v13Exp = V13_COUNTRY_EXPERIENCES[code];
-                  const active = selectedCountry === code;
-                  return (
-                    <button
-                      key={code}
-                      role="tab"
-                      aria-selected={active}
-                      data-testid={`preview-tab-${code}`}
-                      type="button"
-                      onClick={() => setSelectedCountry(code)}
-                      style={{
-                        padding: '6px 12px',
-                        minBlockSize: '34px',
-                        borderRadius: '999px',
-                        border: active ? '2px solid #FEF08A' : '1px solid rgba(255,255,255,0.2)',
-                        background: active ? w.primaryColorHex : 'rgba(255,255,255,0.06)',
-                        color: '#FFF8EE',
-                        fontWeight: 700,
-                        fontSize: '12px',
-                        cursor: 'pointer',
-                      }}
-                    >
-                      {v13Exp.orderIndex}. {v13Exp.countryNameEn}: {v13Exp.cityName}
-                    </button>
-                  );
-                })}
-              </div>
-
-              <div style={{ display: 'flex', gap: '8px' }}>
-                <Link
-                  to={`/explore/${selectedCountry}`}
-                  data-testid={`launch-world-${selectedCountry}`}
-                  style={{
-                    background: '#F4A261',
-                    color: '#0F172A',
-                    textDecoration: 'none',
-                    padding: '6px 14px',
-                    borderRadius: '999px',
-                    fontSize: '12px',
-                    fontWeight: 800,
-                  }}
-                >
-                  Explore {activeWorld.nameEn} →
-                </Link>
-              </div>
-            </div>
-          </div>
+          {/* Right Column: Dynamic 5-Country Animated Hero Showcase (Never Stuck on One Country) */}
+          <DynamicWorldHeroShowcase
+            selectedCountry={selectedCountry}
+            slideIndex={slideIndex}
+            isPlaying={isPlaying}
+            progressPct={progressPct}
+            reducedMotion={reducedMotion}
+            onSelectCountry={(code) => selectCountry(code)}
+            onPrevSlide={prevSlide}
+            onNextSlide={nextSlide}
+            onTogglePlayPause={togglePlayPause}
+            onHoverOrFocusChange={setHoverOrFocusPause}
+          />
         </div>
       </section>
 
