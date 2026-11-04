@@ -1,0 +1,721 @@
+{
+  "schemaVersion": "1.1.0",
+  "totalIcons": 89,
+  "chapterArtifacts": 66,
+  "capstoneKeepsakes": 11,
+  "stamps": 12,
+  "items": [
+    {
+      "id": "lb_harbor_compass",
+      "name": "Harbor Compass",
+      "countryCode": "LB",
+      "chapterId": "LB01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/lb_harbor_compass.png"
+    },
+    {
+      "id": "lb_alphabet_tile",
+      "name": "Alphabet Tile",
+      "countryCode": "LB",
+      "chapterId": "LB02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/lb_alphabet_tile.png"
+    },
+    {
+      "id": "lb_family_recipe_card",
+      "name": "Family Recipe Card",
+      "countryCode": "LB",
+      "chapterId": "LB03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/lb_family_recipe_card.png"
+    },
+    {
+      "id": "lb_cedar_token",
+      "name": "Cedar Token",
+      "countryCode": "LB",
+      "chapterId": "LB04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/lb_cedar_token.png"
+    },
+    {
+      "id": "lb_archive_album",
+      "name": "Archive Album",
+      "countryCode": "LB",
+      "chapterId": "LB05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/lb_archive_album.png"
+    },
+    {
+      "id": "lb_harbor_home_stamp",
+      "name": "Harbor Home Stamp",
+      "countryCode": "LB",
+      "chapterId": "LB06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/lb_harbor_home_stamp.png"
+    },
+    {
+      "id": "lb_cedar_sea_memory_chest",
+      "name": "Cedar-and-sea Memory Chest",
+      "countryCode": "LB",
+      "chapterId": "LB06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/lb_cedar_sea_memory_chest.png"
+    },
+    {
+      "id": "lb_harbor_home_stamp",
+      "name": "Harbor Home Stamp",
+      "countryCode": "LB",
+      "chapterId": "LB06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/lb_harbor_home_stamp.png"
+    },
+    {
+      "id": "iq_bookseller_seal",
+      "name": "Bookseller Seal",
+      "countryCode": "IQ",
+      "chapterId": "IQ01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/iq_bookseller_seal.png"
+    },
+    {
+      "id": "iq_scholars_astrolabe",
+      "name": "Scholar’s Astrolabe",
+      "countryCode": "IQ",
+      "chapterId": "IQ02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/iq_scholars_astrolabe.png"
+    },
+    {
+      "id": "iq_translation_scroll",
+      "name": "Translation Scroll",
+      "countryCode": "IQ",
+      "chapterId": "IQ03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/iq_translation_scroll.png"
+    },
+    {
+      "id": "iq_kleicha_mold",
+      "name": "Kleicha Mold",
+      "countryCode": "IQ",
+      "chapterId": "IQ04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/iq_kleicha_mold.png"
+    },
+    {
+      "id": "iq_courtyard_lattice",
+      "name": "Courtyard Lattice",
+      "countryCode": "IQ",
+      "chapterId": "IQ05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/iq_courtyard_lattice.png"
+    },
+    {
+      "id": "iq_knowledge_keeper_stamp",
+      "name": "Knowledge Keeper Stamp",
+      "countryCode": "IQ",
+      "chapterId": "IQ06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/iq_knowledge_keeper_stamp.png"
+    },
+    {
+      "id": "iq_house_of_wisdom_book",
+      "name": "House of Wisdom Book",
+      "countryCode": "IQ",
+      "chapterId": "IQ06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/iq_house_of_wisdom_book.png"
+    },
+    {
+      "id": "iq_knowledge_keeper_stamp",
+      "name": "Knowledge Keeper Stamp",
+      "countryCode": "IQ",
+      "chapterId": "IQ06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/iq_knowledge_keeper_stamp.png"
+    },
+    {
+      "id": "eg_lantern_frame",
+      "name": "Lantern Frame",
+      "countryCode": "EG",
+      "chapterId": "EG01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/eg_lantern_frame.png"
+    },
+    {
+      "id": "eg_glass_star",
+      "name": "Glass Star",
+      "countryCode": "EG",
+      "chapterId": "EG02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/eg_glass_star.png"
+    },
+    {
+      "id": "eg_market_scale",
+      "name": "Market Scale",
+      "countryCode": "EG",
+      "chapterId": "EG03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/eg_market_scale.png"
+    },
+    {
+      "id": "eg_koshari_bowl",
+      "name": "Koshari Bowl",
+      "countryCode": "EG",
+      "chapterId": "EG04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/eg_koshari_bowl.png"
+    },
+    {
+      "id": "eg_story_flame",
+      "name": "Story Flame",
+      "countryCode": "EG",
+      "chapterId": "EG05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/eg_story_flame.png"
+    },
+    {
+      "id": "eg_cairo_light_stamp",
+      "name": "Cairo Light Stamp",
+      "countryCode": "EG",
+      "chapterId": "EG06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/eg_cairo_light_stamp.png"
+    },
+    {
+      "id": "eg_fanous_of_shared_light",
+      "name": "Fanous of Shared Light",
+      "countryCode": "EG",
+      "chapterId": "EG06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/eg_fanous_of_shared_light.png"
+    },
+    {
+      "id": "eg_cairo_light_stamp",
+      "name": "Cairo Light Stamp",
+      "countryCode": "EG",
+      "chapterId": "EG06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/eg_cairo_light_stamp.png"
+    },
+    {
+      "id": "fr_traboule_key",
+      "name": "Traboule Key",
+      "countryCode": "FR",
+      "chapterId": "FR01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/fr_traboule_key.png"
+    },
+    {
+      "id": "fr_silk_ribbon",
+      "name": "Silk Ribbon",
+      "countryCode": "FR",
+      "chapterId": "FR02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/fr_silk_ribbon.png"
+    },
+    {
+      "id": "fr_chefs_notebook",
+      "name": "Chef’s Notebook",
+      "countryCode": "FR",
+      "chapterId": "FR03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/fr_chefs_notebook.png"
+    },
+    {
+      "id": "fr_market_basket",
+      "name": "Market Basket",
+      "countryCode": "FR",
+      "chapterId": "FR04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/fr_market_basket.png"
+    },
+    {
+      "id": "fr_masons_crest",
+      "name": "Mason’s Crest",
+      "countryCode": "FR",
+      "chapterId": "FR05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/fr_masons_crest.png"
+    },
+    {
+      "id": "fr_lyon_heritage_stamp",
+      "name": "Lyon Heritage Stamp",
+      "countryCode": "FR",
+      "chapterId": "FR06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/fr_lyon_heritage_stamp.png"
+    },
+    {
+      "id": "fr_meres_lyonnaises_recipe_book",
+      "name": "Mères Lyonnaises Recipe Book",
+      "countryCode": "FR",
+      "chapterId": "FR06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/fr_meres_lyonnaises_recipe_book.png"
+    },
+    {
+      "id": "fr_lyon_heritage_stamp",
+      "name": "Lyon Heritage Stamp",
+      "countryCode": "FR",
+      "chapterId": "FR06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/fr_lyon_heritage_stamp.png"
+    },
+    {
+      "id": "kr_hanok_door_charm",
+      "name": "Hanok Door Charm",
+      "countryCode": "KR",
+      "chapterId": "KR01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/kr_hanok_door_charm.png"
+    },
+    {
+      "id": "kr_five_color_palette",
+      "name": "Five-Color Palette",
+      "countryCode": "KR",
+      "chapterId": "KR02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/kr_five_color_palette.png"
+    },
+    {
+      "id": "kr_market_token",
+      "name": "Market Token",
+      "countryCode": "KR",
+      "chapterId": "KR03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/kr_market_token.png"
+    },
+    {
+      "id": "kr_bibimbap_bowl",
+      "name": "Bibimbap Bowl",
+      "countryCode": "KR",
+      "chapterId": "KR04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/kr_bibimbap_bowl.png"
+    },
+    {
+      "id": "kr_joinery_pattern",
+      "name": "Joinery Pattern",
+      "countryCode": "KR",
+      "chapterId": "KR05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/kr_joinery_pattern.png"
+    },
+    {
+      "id": "kr_jeonju_harmony_stamp",
+      "name": "Jeonju Harmony Stamp",
+      "countryCode": "KR",
+      "chapterId": "KR06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/kr_jeonju_harmony_stamp.png"
+    },
+    {
+      "id": "kr_five_color_bibimbap_bowl",
+      "name": "Five-Color Bibimbap Bowl",
+      "countryCode": "KR",
+      "chapterId": "KR06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/kr_five_color_bibimbap_bowl.png"
+    },
+    {
+      "id": "kr_jeonju_harmony_stamp",
+      "name": "Jeonju Harmony Stamp",
+      "countryCode": "KR",
+      "chapterId": "KR06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/kr_jeonju_harmony_stamp.png"
+    },
+    {
+      "id": "de_rhine_route_map",
+      "name": "Rhine Route Map",
+      "countryCode": "DE",
+      "chapterId": "DE01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/de_rhine_route_map.png"
+    },
+    {
+      "id": "de_lorelei_songstone",
+      "name": "Lorelei Songstone",
+      "countryCode": "DE",
+      "chapterId": "DE02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/de_lorelei_songstone.png"
+    },
+    {
+      "id": "de_steady_helm",
+      "name": "Steady Helm",
+      "countryCode": "DE",
+      "chapterId": "DE03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/de_steady_helm.png"
+    },
+    {
+      "id": "de_hall_of_questions_token",
+      "name": "Hall of Questions Token",
+      "countryCode": "DE",
+      "chapterId": "DE04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/de_hall_of_questions_token.png"
+    },
+    {
+      "id": "de_healing_question_scroll",
+      "name": "Healing Question Scroll",
+      "countryCode": "DE",
+      "chapterId": "DE05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/de_healing_question_scroll.png"
+    },
+    {
+      "id": "de_german_memory_stamp",
+      "name": "German Memory Stamp",
+      "countryCode": "DE",
+      "chapterId": "DE06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/de_german_memory_stamp.png"
+    },
+    {
+      "id": "de_compass_of_compassion",
+      "name": "Compass of Compassion",
+      "countryCode": "DE",
+      "chapterId": "DE06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/de_compass_of_compassion.png"
+    },
+    {
+      "id": "de_german_memory_stamp",
+      "name": "German Memory Stamp",
+      "countryCode": "DE",
+      "chapterId": "DE06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/de_german_memory_stamp.png"
+    },
+    {
+      "id": "cn_blossom_petal",
+      "name": "Blossom Petal",
+      "countryCode": "CN",
+      "chapterId": "CN01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/cn_blossom_petal.png"
+    },
+    {
+      "id": "cn_valley_map",
+      "name": "Valley Map",
+      "countryCode": "CN",
+      "chapterId": "CN02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/cn_valley_map.png"
+    },
+    {
+      "id": "cn_season_wheel",
+      "name": "Season Wheel",
+      "countryCode": "CN",
+      "chapterId": "CN03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/cn_season_wheel.png"
+    },
+    {
+      "id": "cn_changing_compass",
+      "name": "Changing Compass",
+      "countryCode": "CN",
+      "chapterId": "CN04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/cn_changing_compass.png"
+    },
+    {
+      "id": "cn_moon_letter",
+      "name": "Moon Letter",
+      "countryCode": "CN",
+      "chapterId": "CN05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/cn_moon_letter.png"
+    },
+    {
+      "id": "cn_peach_spring_stamp",
+      "name": "Peach Spring Stamp",
+      "countryCode": "CN",
+      "chapterId": "CN06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/cn_peach_spring_stamp.png"
+    },
+    {
+      "id": "cn_peach_blossom_keepsake",
+      "name": "Peach Blossom Keepsake",
+      "countryCode": "CN",
+      "chapterId": "CN06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/cn_peach_blossom_keepsake.png"
+    },
+    {
+      "id": "cn_peach_spring_stamp",
+      "name": "Peach Spring Stamp",
+      "countryCode": "CN",
+      "chapterId": "CN06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/cn_peach_spring_stamp.png"
+    },
+    {
+      "id": "jp_travelers_sandal",
+      "name": "Traveler’s Sandal",
+      "countryCode": "JP",
+      "chapterId": "JP01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/jp_travelers_sandal.png"
+    },
+    {
+      "id": "jp_river_bridge_token",
+      "name": "River Bridge Token",
+      "countryCode": "JP",
+      "chapterId": "JP02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/jp_river_bridge_token.png"
+    },
+    {
+      "id": "jp_haiku_leaf",
+      "name": "Haiku Leaf",
+      "countryCode": "JP",
+      "chapterId": "JP03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/jp_haiku_leaf.png"
+    },
+    {
+      "id": "jp_waystation_lantern",
+      "name": "Waystation Lantern",
+      "countryCode": "JP",
+      "chapterId": "JP04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/jp_waystation_lantern.png"
+    },
+    {
+      "id": "jp_seasonal_scroll",
+      "name": "Seasonal Scroll",
+      "countryCode": "JP",
+      "chapterId": "JP05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/jp_seasonal_scroll.png"
+    },
+    {
+      "id": "jp_narrow_road_stamp",
+      "name": "Narrow Road Stamp",
+      "countryCode": "JP",
+      "chapterId": "JP06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/jp_narrow_road_stamp.png"
+    },
+    {
+      "id": "jp_travelers_ink_brush",
+      "name": "Traveler’s Ink Brush",
+      "countryCode": "JP",
+      "chapterId": "JP06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/jp_travelers_ink_brush.png"
+    },
+    {
+      "id": "jp_narrow_road_stamp",
+      "name": "Narrow Road Stamp",
+      "countryCode": "JP",
+      "chapterId": "JP06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/jp_narrow_road_stamp.png"
+    },
+    {
+      "id": "ru_lake_bell_fragment",
+      "name": "Lake Bell Fragment",
+      "countryCode": "RU",
+      "chapterId": "RU01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ru_lake_bell_fragment.png"
+    },
+    {
+      "id": "ru_reflection_prism",
+      "name": "Reflection Prism",
+      "countryCode": "RU",
+      "chapterId": "RU02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ru_reflection_prism.png"
+    },
+    {
+      "id": "ru_gusli_charm",
+      "name": "Gusli Charm",
+      "countryCode": "RU",
+      "chapterId": "RU03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ru_gusli_charm.png"
+    },
+    {
+      "id": "ru_reed_wreath",
+      "name": "Reed Wreath",
+      "countryCode": "RU",
+      "chapterId": "RU04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ru_reed_wreath.png"
+    },
+    {
+      "id": "ru_legend_folio",
+      "name": "Legend Folio",
+      "countryCode": "RU",
+      "chapterId": "RU05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ru_legend_folio.png"
+    },
+    {
+      "id": "ru_kitezh_memory_stamp",
+      "name": "Kitezh Memory Stamp",
+      "countryCode": "RU",
+      "chapterId": "RU06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ru_kitezh_memory_stamp.png"
+    },
+    {
+      "id": "ru_kitezh_bell",
+      "name": "Kitezh Bell",
+      "countryCode": "RU",
+      "chapterId": "RU06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/ru_kitezh_bell.png"
+    },
+    {
+      "id": "ru_kitezh_memory_stamp",
+      "name": "Kitezh Memory Stamp",
+      "countryCode": "RU",
+      "chapterId": "RU06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/ru_kitezh_memory_stamp.png"
+    },
+    {
+      "id": "ua_founders_river_map",
+      "name": "Founders’ River Map",
+      "countryCode": "UA",
+      "chapterId": "UA01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ua_founders_river_map.png"
+    },
+    {
+      "id": "ua_river_bridge_plaque",
+      "name": "River Bridge Plaque",
+      "countryCode": "UA",
+      "chapterId": "UA02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ua_river_bridge_plaque.png"
+    },
+    {
+      "id": "ua_bandura_string",
+      "name": "Bandura String",
+      "countryCode": "UA",
+      "chapterId": "UA03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ua_bandura_string.png"
+    },
+    {
+      "id": "ua_dumy_page",
+      "name": "Dumy Page",
+      "countryCode": "UA",
+      "chapterId": "UA04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ua_dumy_page.png"
+    },
+    {
+      "id": "ua_carved_music_stand",
+      "name": "Carved Music Stand",
+      "countryCode": "UA",
+      "chapterId": "UA05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ua_carved_music_stand.png"
+    },
+    {
+      "id": "ua_ukraine_song_stamp",
+      "name": "Ukraine Song Stamp",
+      "countryCode": "UA",
+      "chapterId": "UA06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ua_ukraine_song_stamp.png"
+    },
+    {
+      "id": "ua_bandura_memory_charm",
+      "name": "Bandura Memory Charm",
+      "countryCode": "UA",
+      "chapterId": "UA06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/ua_bandura_memory_charm.png"
+    },
+    {
+      "id": "ua_ukraine_song_stamp",
+      "name": "Ukraine Song Stamp",
+      "countryCode": "UA",
+      "chapterId": "UA06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/ua_ukraine_song_stamp.png"
+    },
+    {
+      "id": "ma_circle_invitation",
+      "name": "Circle Invitation",
+      "countryCode": "MA",
+      "chapterId": "MA01",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ma_circle_invitation.png"
+    },
+    {
+      "id": "ma_hakawati_token",
+      "name": "Hakawati Token",
+      "countryCode": "MA",
+      "chapterId": "MA02",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ma_hakawati_token.png"
+    },
+    {
+      "id": "ma_mint_tea_tray",
+      "name": "Mint Tea Tray",
+      "countryCode": "MA",
+      "chapterId": "MA03",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ma_mint_tea_tray.png"
+    },
+    {
+      "id": "ma_story_thread",
+      "name": "Story Thread",
+      "countryCode": "MA",
+      "chapterId": "MA04",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ma_story_thread.png"
+    },
+    {
+      "id": "ma_heritage_map",
+      "name": "Heritage Map",
+      "countryCode": "MA",
+      "chapterId": "MA05",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ma_heritage_map.png"
+    },
+    {
+      "id": "ma_morocco_circle_stamp",
+      "name": "Morocco Circle Stamp",
+      "countryCode": "MA",
+      "chapterId": "MA06",
+      "category": "chapter_artifact",
+      "iconPath": "apps/minecraft/assets-src/artifacts/chapters/ma_morocco_circle_stamp.png"
+    },
+    {
+      "id": "ma_storytellers_circle_drum",
+      "name": "Storyteller’s Circle Drum",
+      "countryCode": "MA",
+      "chapterId": "MA06",
+      "category": "capstone_keepsake",
+      "iconPath": "apps/minecraft/assets-src/artifacts/keepsakes/ma_storytellers_circle_drum.png"
+    },
+    {
+      "id": "ma_morocco_circle_stamp",
+      "name": "Morocco Circle Stamp",
+      "countryCode": "MA",
+      "chapterId": "MA06",
+      "category": "passport_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/ma_morocco_circle_stamp.png"
+    },
+    {
+      "id": "stamp_global_storykeeper",
+      "name": "Global Storykeeper Stamp",
+      "countryCode": "GLOBAL",
+      "chapterId": "FINALE_CIRCLE_OF_STORIES",
+      "category": "finale_stamp",
+      "iconPath": "apps/minecraft/assets-src/artifacts/stamps/stamp_global_storykeeper.png"
+    }
+  ]
+}
