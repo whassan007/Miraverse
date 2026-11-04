@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 4,
+  "updatedAt": "2026-11-04T02:20:32.849Z",
+  "policy": "100% Original & Procedural First-Party Assets — Zero Unlicensed Third-Party Media",
+  "assets": [
+    {
+      "assetId": "glb:hero_mira",
+      "path": "/assets/models/hero_mira.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    },
+    {
+      "assetId": "glb:npc_mentor",
+      "path": "/assets/models/npc_mentor.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    },
+    {
+      "assetId": "glb:world_hub",
+      "path": "/assets/models/world_hub.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    },
+    {
+      "assetId": "glb:world_FR",
+      "path": "/assets/models/world_FR.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    },
+    {
+      "assetId": "glb:world_LB",
+      "path": "/assets/models/world_LB.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    },
+    {
+      "assetId": "glb:world_EG",
+      "path": "/assets/models/world_EG.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    },
+    {
+      "assetId": "glb:world_IQ",
+      "path": "/assets/models/world_IQ.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    },
+    {
+      "assetId": "glb:world_KR",
+      "path": "/assets/models/world_KR.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    },
+    {
+      "assetId": "glb:landing_diorama",
+      "path": "/assets/models/landing_diorama.glb",
+      "source": "tools/assets/build-glb.ts",
+      "author": "MiraVerse Studio (Procedural Pipeline)",
+      "license": "CC0-1.0 / MIT First-Party Original",
+      "verifiedRightsCleared": true
+    }
+  ]
+}
