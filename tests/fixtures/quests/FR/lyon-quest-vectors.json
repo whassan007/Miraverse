@@ -1,0 +1,13 @@
+{
+  "countryId": "FR",
+  "questId": "QUEST_FR_MAIN_V06",
+  "mentor": "Chef Camille",
+  "steps": [
+    "gather",
+    "trade",
+    "cook",
+    "build",
+    "word"
+  ],
+  "totalTokens": 150
+}
