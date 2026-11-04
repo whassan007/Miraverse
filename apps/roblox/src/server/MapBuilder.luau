@@ -5,6 +5,7 @@ local ReplicatedStorageShared = game:GetService("ReplicatedStorage"):WaitForChil
 local WorldRegistry = require(ReplicatedStorageShared:WaitForChild("WorldRegistry"))
 local ByblosWorld = require(script.Parent.world.ByblosWorld)
 local MentorCharacter = require(script.Parent.world.MentorCharacter)
+local TerrainManager = require(script.Parent.TerrainManager)
 
 local MapBuilder = {}
 
@@ -28,7 +29,7 @@ local function onPrompt(prompt: ProximityPrompt, fn: (Handlers, Player) -> ())
 	end)
 end
 
-export type CountryId = "LB" | "EG" | "IQ" | "KR" | "FR"
+export type CountryId = "LB" | "EG" | "IQ" | "KR" | "FR" | "DE" | "CN" | "JP" | "RU" | "UA" | "MA"
 
 type CountryMeta = {
 	country: CountryId,
@@ -39,7 +40,7 @@ type CountryMeta = {
 	mentorGreeting: string,
 }
 
-local COUNTRIES: { CountryId } = { "LB", "EG", "IQ", "KR", "FR" }
+local COUNTRIES: { CountryId } = { "LB", "EG", "IQ", "KR", "FR", "DE", "CN", "JP", "RU", "UA", "MA" }
 
 local FALLBACK_META: { [string]: CountryMeta } = {
 	LB = {
@@ -81,6 +82,54 @@ local FALLBACK_META: { [string]: CountryMeta } = {
 		secondary = "#EF4135",
 		mentorName = "Mamie Claire",
 		mentorGreeting = "Bonjour! Welcome to Lyon.",
+	},
+	DE = {
+		country = "DE",
+		name_en = "Germany",
+		primary = "#2B2B2B",
+		secondary = "#FFCC00",
+		mentorName = "Opa Heinrich",
+		mentorGreeting = "Guten Tag! Willkommen am Rhein.",
+	},
+	CN = {
+		country = "CN",
+		name_en = "China",
+		primary = "#DE2910",
+		secondary = "#FFDE00",
+		mentorName = "Lao Lao",
+		mentorGreeting = "Ni hao! Welcome to Peach Blossom Spring.",
+	},
+	JP = {
+		country = "JP",
+		name_en = "Japan",
+		primary = "#BC002D",
+		secondary = "#EEEEEE",
+		mentorName = "Obaasan",
+		mentorGreeting = "Konnichiwa! Welcome to Tohoku.",
+	},
+	RU = {
+		country = "RU",
+		name_en = "Russia",
+		primary = "#1E88E5",
+		secondary = "#D32F2F",
+		mentorName = "Babushka",
+		mentorGreeting = "Zdravstvuyte! Welcome to Lake Svetloyar.",
+	},
+	UA = {
+		country = "UA",
+		name_en = "Ukraine",
+		primary = "#0057B7",
+		secondary = "#FFD700",
+		mentorName = "Babusya",
+		mentorGreeting = "Pryvit! Welcome to Kyiv.",
+	},
+	MA = {
+		country = "MA",
+		name_en = "Morocco",
+		primary = "#C1272D",
+		secondary = "#006233",
+		mentorName = "Lalla Fatima",
+		mentorGreeting = "Marhaban! Welcome to Marrakesh.",
 	},
 }
 
@@ -422,6 +471,33 @@ local function buildCountryPlaza(mapFolder: Folder, cc: CountryId, meta: Country
 	end)
 end
 
+local function buildCountryStations(plaza: Folder, center: Vector3, cc: string)
+	local stationSet = WorldRegistry.STATIONS[cc]
+	if not stationSet then
+		return
+	end
+	for kind, station in stationSet do
+		local pad = Instance.new("Part")
+		pad.Name = "Station_" .. kind
+		pad.Anchored = true
+		pad.Size = Vector3.new(6, 0.4, 6)
+		pad.Position = center + Vector3.new(station.x, 0.2, station.z)
+		pad.Color = Color3.fromRGB(217, 123, 56)
+		pad.Material = Enum.Material.Neon
+		pad.Parent = plaza
+		local prompt = Instance.new("ProximityPrompt")
+		prompt.ActionText = "Start"
+		prompt.ObjectText = station.label
+		prompt.HoldDuration = 0
+		prompt.MaxActivationDistance = 12
+		prompt.RequiresLineOfSight = false
+		prompt.Parent = pad
+		onPrompt(prompt, function(h, player)
+			h.station(player, cc, kind)
+		end)
+	end
+end
+
 -- Teta Nahla and the five physical challenge stations.
 buildLebanonPeople = function(plaza: Folder, center: Vector3, meta: CountryMeta)
 	local anchor = plaza:FindFirstChild("Mentor_LB")
@@ -504,12 +580,15 @@ function MapBuilder.build(): Folder
 
 	for _, cc in ipairs(COUNTRIES) do
 		buildCountryPlaza(mapFolder, cc, metas[cc])
-		if cc == "LB" then
-			local plaza = mapFolder:FindFirstChild("Plaza_LB")
-			local center = WorldRegistry.origin(cc)
-			if plaza and center then
+		TerrainManager.buildCountryTerrain(mapFolder, cc)
+		local plaza = mapFolder:FindFirstChild("Plaza_" .. cc)
+		local center = WorldRegistry.origin(cc)
+		if plaza and center then
+			if cc == "LB" then
 				ByblosWorld.build(plaza, center)
 				buildLebanonPeople(plaza :: Folder, center, metas[cc])
+			else
+				buildCountryStations(plaza :: Folder, center, cc)
 			end
 		end
 	end

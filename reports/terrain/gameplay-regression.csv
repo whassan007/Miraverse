@@ -1,0 +1,10 @@
+station_or_quest_id,country,location,original_coords,new_coords,proximity_prompt_intact,npc_mentor_intact,status
+LB_build,LB,Byblos,"(22, -14)","(22, -14)",YES,YES (Teta Nahla),PASS
+LB_cook,LB,Byblos,"(-14, -14)","(-14, -14)",YES,YES (Teta Nahla),PASS
+LB_gather,LB,Byblos,"(-66, 14)","(-66, 14)",YES,YES (Teta Nahla),PASS
+LB_trade,LB,Byblos,"(26, 0)","(26, 0)",YES,YES (Teta Nahla),PASS
+LB_word,LB,Byblos,"(-12, 2)","(-12, 2)",YES,YES (Teta Nahla),PASS
+EG_stations,EG,Cairo,(various),(various),YES,YES (Teta Samira),PASS
+IQ_stations,IQ,Baghdad,(various),(various),YES,YES (Bibi Amal),PASS
+KR_stations,KR,Jeonju,(various),(various),YES,YES (Halmeoni),PASS
+FR_stations,FR,Lyon,(various),(various),YES,YES (Mamie Claire),PASS

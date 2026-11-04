@@ -1,0 +1,12 @@
+country_code,country_name,destinations_count,destinations_list,status,gis_source
+LB,Lebanon,3,Byblos; Mount Lebanon; Beirut,COVERED,Copernicus DEM GLO-30
+EG,Egypt,3,Cairo; Alexandria; Aswan,COVERED,Copernicus DEM GLO-30
+IQ,Iraq,3,Baghdad; Erbil; Basra,COVERED,Copernicus DEM GLO-30
+KR,South Korea,3,Jeonju; Seoul; Busan,COVERED,Copernicus DEM GLO-30
+FR,France,3,Lyon; Paris; Marseille,COVERED,Copernicus DEM GLO-30
+DE,Germany,1,Middle Rhine,COVERED,Copernicus DEM GLO-30
+CN,China,1,Wuling Peach Blossom Spring,COVERED,Copernicus DEM GLO-30
+JP,Japan,1,Tohoku Basho Journey,COVERED,Copernicus DEM GLO-30
+RU,Russia,1,Lake Svetloyar,COVERED,Copernicus DEM GLO-30
+UA,Ukraine,1,Kyiv Hills & Dnipro,COVERED,Copernicus DEM GLO-30
+MA,Morocco,1,Marrakesh & Atlas,COVERED,Copernicus DEM GLO-30

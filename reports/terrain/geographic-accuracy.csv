@@ -1,0 +1,22 @@
+dest_id,country,name,latitude,longitude,min_elev_m,max_elev_m,relief_m,crs,vertical_datum,status
+LB_byblos,LB,Byblos (Jbeil),34.123,35.6435,-1.85,580.0,581.85,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+LB_mount_lebanon,LB,Mount Lebanon (Afqa / Qadisha),34.0686,35.8906,790.0,2027.0,1237.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+LB_beirut,LB,Beirut Peninsula & Corniche,33.8938,35.5018,-26.0,110.0,136.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+EG_cairo,EG,Cairo (Al-Mu'izz / Nile),30.0444,31.2357,4.0,209.0,205.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+EG_alexandria,EG,Alexandria Harbor,31.2001,29.9187,-80.0,57.0,137.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+EG_aswan,EG,Aswan Cataracts & Granite,24.0889,32.8998,-386.0,237.0,623.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+IQ_baghdad,IQ,Baghdad (Al-Mutanabbi / Tigris),33.3406,44.3879,25.0,59.0,34.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+IQ_erbil,IQ,Erbil Citadel,36.1911,44.0092,378.0,479.0,101.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+IQ_basra,IQ,Basra & Shatt al-Arab,30.5081,47.7835,-32.0,30.0,62.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+KR_jeonju,KR,Jeonju Hanok Village,35.815,127.1536,15.0,430.0,415.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+KR_seoul,KR,Seoul (Bukhan / Han River),37.5665,126.978,0.0,282.0,282.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+KR_busan,KR,Busan Harbor & Coastal Hills,35.1796,129.0756,-1.0,628.0,629.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+FR_lyon,FR,Vieux Lyon & Saône-Rhône Confluence,45.764,4.8357,154.5,318.36,163.85,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+FR_paris,FR,Paris (Île de la Cité & Seine),48.8566,2.3522,22.65,119.89,97.24,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+FR_marseille,FR,Marseille (Vieux-Port & Calanques relief),43.2965,5.3698,-2.81,143.25,146.06,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+DE_rhine,DE,Middle Rhine Gorge (Lorelei),50.1417,7.7289,66.51,480.53,414.02,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+CN_wuling,CN,Wuling / Taoyuan Spring Setting,28.9,111.4833,22.0,155.0,133.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+JP_tohoru,JP,Tohoku Bashō Journey (Matsushima / Hiraizumi),38.3714,141.0667,-73.0,175.0,248.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+RU_svetloyar,RU,Lake Svetloyar,56.8189,45.0931,101.0,146.0,45.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+UA_kyiv,UA,Kyiv Hills & Dnipro River,50.4501,30.5234,89.74,206.0,116.26,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
+MA_marrakesh,MA,Marrakesh & High Atlas Foreland,31.6295,-7.9811,429.0,512.0,83.0,WGS84 (EPSG:4326) -> Metric Web Mercator (EPSG:3857),EGM96 geoid,VERIFIED
