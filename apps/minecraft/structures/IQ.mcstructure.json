@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "structure_id": "miraverse:iq_district",
+  "size": [
+    36,
+    16,
+    36
+  ],
+  "world_origin": [
+    0,
+    64,
+    -200
+  ],
+  "palette": [
+    "minecraft:mud_bricks",
+    "minecraft:dark_oak_fence",
+    "minecraft:cyan_glazed_terracotta",
+    "minecraft:water"
+  ],
+  "integrity": 1,
+  "single_time_placement_checkpoint": "mv:placed:IQ"
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "structure_id": "miraverse:fr_district",
+  "size": [
+    36,
+    16,
+    36
+  ],
+  "world_origin": [
+    200,
+    64,
+    0
+  ],
+  "palette": [
+    "minecraft:SANDSTONE",
+    "minecraft:deepslate_tile_stairs",
+    "minecraft:oak_trapdoor",
+    "minecraft:smoker"
+  ],
+  "integrity": 1,
+  "single_time_placement_checkpoint": "mv:placed:FR"
+}

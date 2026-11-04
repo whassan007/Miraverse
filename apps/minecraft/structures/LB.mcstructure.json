@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "structure_id": "miraverse:lb_district",
+  "size": [
+    36,
+    14,
+    36
+  ],
+  "world_origin": [
+    -200,
+    64,
+    0
+  ],
+  "palette": [
+    "minecraft:smooth_sandstone",
+    "minecraft:spruce_planks",
+    "minecraft:campfire",
+    "minecraft:prismarine"
+  ],
+  "integrity": 1,
+  "single_time_placement_checkpoint": "mv:placed:LB"
+}
