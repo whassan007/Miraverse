@@ -1,18 +1,80 @@
 {
-  "schemaVersion": "10.0.0",
-  "packIcon": "apps/minecraft/assets-src/ui/pack_icon.png",
-  "stamps": [
-    "apps/minecraft/assets-src/ui/stamp_lb.png",
-    "apps/minecraft/assets-src/ui/stamp_eg.png",
-    "apps/minecraft/assets-src/ui/stamp_iq.png",
-    "apps/minecraft/assets-src/ui/stamp_kr.png",
-    "apps/minecraft/assets-src/ui/stamp_fr.png"
+  "schemaVersion": "1.1.0",
+  "postersCount": 11,
+  "ageTrackIconsCount": 4,
+  "posters": [
+    {
+      "countryCode": "LB",
+      "title": "Lebanon — Byblos/Jbeil",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_lb.png"
+    },
+    {
+      "countryCode": "IQ",
+      "title": "Iraq — Baghdad",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_iq.png"
+    },
+    {
+      "countryCode": "EG",
+      "title": "Egypt — Cairo",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_eg.png"
+    },
+    {
+      "countryCode": "FR",
+      "title": "France — Vieux Lyon",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_fr.png"
+    },
+    {
+      "countryCode": "KR",
+      "title": "South Korea — Jeonju",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_kr.png"
+    },
+    {
+      "countryCode": "DE",
+      "title": "Germany — Rhine / symbolic Grail landscape",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_de.png"
+    },
+    {
+      "countryCode": "CN",
+      "title": "China — Peach Blossom Spring, Wuling-inspired setting",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_cn.png"
+    },
+    {
+      "countryCode": "JP",
+      "title": "Japan — Bashō’s journey, Tohoku-inspired route",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_jp.png"
+    },
+    {
+      "countryCode": "RU",
+      "title": "Russia — Lake Svetloyar / Kitezh-inspired mythic landscape",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_ru.png"
+    },
+    {
+      "countryCode": "UA",
+      "title": "Ukraine — Kyiv founding hills / community music square",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_ua.png"
+    },
+    {
+      "countryCode": "MA",
+      "title": "Morocco — Marrakesh / Jemaa el-Fnaa-inspired square",
+      "posterPath": "apps/minecraft/assets-src/ui/posters/poster_ma.png"
+    }
   ],
-  "chapterPosters": [
-    "apps/minecraft/assets-src/ui/poster_LB.png",
-    "apps/minecraft/assets-src/ui/poster_EG.png",
-    "apps/minecraft/assets-src/ui/poster_IQ.png",
-    "apps/minecraft/assets-src/ui/poster_KR.png",
-    "apps/minecraft/assets-src/ui/poster_FR.png"
+  "ageTrackIcons": [
+    {
+      "ageTrack": "5-7",
+      "iconPath": "apps/minecraft/assets-src/ui/age-tracks/track_5-7.png"
+    },
+    {
+      "ageTrack": "8-10",
+      "iconPath": "apps/minecraft/assets-src/ui/age-tracks/track_8-10.png"
+    },
+    {
+      "ageTrack": "11-13",
+      "iconPath": "apps/minecraft/assets-src/ui/age-tracks/track_11-13.png"
+    },
+    {
+      "ageTrack": "14-17",
+      "iconPath": "apps/minecraft/assets-src/ui/age-tracks/track_14-17.png"
+    }
   ]
 }
