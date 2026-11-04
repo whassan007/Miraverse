@@ -1,0 +1,86 @@
+{
+  "auditedAt": "2026-11-04T07:04:15.699Z",
+  "hostPlatform": "Linux aarch64 (headless)",
+  "syntheticOrForgedMediaDetected": 0,
+  "liveBedrockGuiCapturesStatus": "BLOCKED_REQUIRES_WINDOWS_BEDROCK_CLIENT",
+  "regions": {
+    "hub": {
+      "expectedShots": [
+        "arrival_vista",
+        "street_facade",
+        "kitchen_interior",
+        "mentor_interaction",
+        "restoration_before",
+        "restoration_after",
+        "passport_stamp"
+      ],
+      "actualLiveBedrockCaptures": 0,
+      "status": "BLOCKED_PENDING_WINDOWS_CLIENT_CAPTURE"
+    },
+    "LB": {
+      "expectedShots": [
+        "arrival_vista",
+        "street_facade",
+        "kitchen_interior",
+        "mentor_interaction",
+        "restoration_before",
+        "restoration_after",
+        "passport_stamp"
+      ],
+      "actualLiveBedrockCaptures": 0,
+      "status": "BLOCKED_PENDING_WINDOWS_CLIENT_CAPTURE"
+    },
+    "EG": {
+      "expectedShots": [
+        "arrival_vista",
+        "street_facade",
+        "kitchen_interior",
+        "mentor_interaction",
+        "restoration_before",
+        "restoration_after",
+        "passport_stamp"
+      ],
+      "actualLiveBedrockCaptures": 0,
+      "status": "BLOCKED_PENDING_WINDOWS_CLIENT_CAPTURE"
+    },
+    "IQ": {
+      "expectedShots": [
+        "arrival_vista",
+        "street_facade",
+        "kitchen_interior",
+        "mentor_interaction",
+        "restoration_before",
+        "restoration_after",
+        "passport_stamp"
+      ],
+      "actualLiveBedrockCaptures": 0,
+      "status": "BLOCKED_PENDING_WINDOWS_CLIENT_CAPTURE"
+    },
+    "KR": {
+      "expectedShots": [
+        "arrival_vista",
+        "street_facade",
+        "kitchen_interior",
+        "mentor_interaction",
+        "restoration_before",
+        "restoration_after",
+        "passport_stamp"
+      ],
+      "actualLiveBedrockCaptures": 0,
+      "status": "BLOCKED_PENDING_WINDOWS_CLIENT_CAPTURE"
+    },
+    "FR": {
+      "expectedShots": [
+        "arrival_vista",
+        "street_facade",
+        "kitchen_interior",
+        "mentor_interaction",
+        "restoration_before",
+        "restoration_after",
+        "passport_stamp"
+      ],
+      "actualLiveBedrockCaptures": 0,
+      "status": "BLOCKED_PENDING_WINDOWS_CLIENT_CAPTURE"
+    }
+  }
+}
