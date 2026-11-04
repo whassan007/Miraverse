@@ -826,13 +826,19 @@
       "acceptance": "Licensed/original country ambience and accessible non-essential effects",
       "branch": "minecraft-global/AG17",
       "worktree": "/home/wael/Code/mv-wt-mcg/AG17",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "82ddea8",
+      "integration_sha": "e6738b0",
+      "runtime_environment": "Antigravity Soundscape & Particle FX Lane (Linux aarch64)",
+      "modified_files": [
+        "apps/minecraft/assets-src/ambience/particles-manifest.json",
+        "apps/minecraft/assets-src/ambience/sound_definitions.json"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/assets-src/ambience/sound_definitions.json",
+        "apps/minecraft/assets-src/ambience/particles-manifest.json"
+      ],
       "report_path": "reports/minecraft-global/agents/AG17.md",
       "log_path": "swarm/minecraft-global/logs/AG17.log",
       "blockers": []
