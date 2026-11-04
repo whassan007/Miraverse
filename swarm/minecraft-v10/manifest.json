@@ -998,13 +998,18 @@
       "task_card": "swarm/minecraft-v10/cards/DX14.md",
       "branch": "minecraft-v10/DX14",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX14",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "INTEGRATED",
+      "attempts": 1,
+      "commit_sha": "399b91f",
       "test_command": "node apps/minecraft/tools/evidence/audit-evidence.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
-      "blockers": []
+      "evidence_paths": [
+        "apps/minecraft/tools/evidence/audit-evidence.mjs",
+        "apps/minecraft/tools/evidence/evidence-audit.json"
+      ],
+      "runtime_environment": "dgx-spark-local:qwen/qwen3-coder-next (59.16 tok/s)",
+      "blockers": [
+        "Live Bedrock GUI screenshot and video captures (reports/minecraft-v10/screens/* and video/*) are BLOCKED on Linux aarch64 and require a Windows Bedrock client."
+      ]
     },
     {
       "id": "DX15",

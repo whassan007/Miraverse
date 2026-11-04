@@ -1,0 +1,16 @@
+=== AGENT DX14 (DGX · W5) ===
+Timestamp: 2026-11-04T07:04:15.898Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: dgx-spark-local:qwen/qwen3-coder-next (59.16 tok/s)
+Branch: minecraft-v10/DX14
+Agent Commit SHA: 399b91f
+Integration Merge SHA: c2c0554
+Owned Paths: apps/minecraft/tools/evidence/
+Test Command: node apps/minecraft/tools/evidence/audit-evidence.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/evidence/audit-evidence.mjs, apps/minecraft/tools/evidence/evidence-audit.json
+Blockers: Live Bedrock GUI screenshot and video captures (reports/minecraft-v10/screens/* and video/*) are BLOCKED on Linux aarch64 and require a Windows Bedrock client.
+--- STDOUT/STDERR ---
+PASS: DX14 audited evidence directories (0 fake/synthetic screenshots; live Windows Bedrock GUI captures truthfully marked BLOCKED).
+
+DONE DX14 399b91f apps/minecraft/tools/evidence/audit-evidence.mjs
