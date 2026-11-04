@@ -1,0 +1,656 @@
+[
+  {
+    "id": "MA01",
+    "countryCode": "MA",
+    "chapterIndex": 1,
+    "title": "Join the Circle",
+    "activity": "Find the square and learn how the audience helps a story unfold",
+    "mechanic": "interactive_circle_onboarding",
+    "scene": "MA/jemaa_story_square",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-MA-AL-HALQA-UNESCO"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "ma_hakawati_driss",
+    "supportNpcId": "ma_tea_host_kenza",
+    "stationAnchorId": "ma_station_ma01",
+    "stationCoords": {
+      "x": 2170,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "ma_circle_invitation",
+      "artifactName": "Circle Invitation",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.MA01.title",
+      "summaryKey": "quest.MA01.summary",
+      "greetingKey": "quest.MA01.greeting",
+      "completionKey": "quest.MA01.completion",
+      "sourceNoteKey": "quest.MA01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored floor circles, mimic gestures and pick picture story endings. (Join the Circle)",
+        "objectiveNodes": [
+          "MA01:explorer:step1",
+          "MA01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade craft items, invite NPC characters and sequence a short story. (Join the Circle)",
+        "objectiveNodes": [
+          "MA01:adventurer:step1",
+          "MA01:adventurer:step2",
+          "MA01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare versions of an oral tale and use group dialogue to build consensus. (Join the Circle)",
+        "objectiveNodes": [
+          "MA01:investigator:step1",
+          "MA01:investigator:step2",
+          "MA01:investigator:step3",
+          "MA01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design branching story logic with attribution, safeguarding and an accessible community performance. (Join the Circle)",
+        "objectiveNodes": [
+          "MA01:curator:step1",
+          "MA01:curator:step2",
+          "MA01:curator:step3",
+          "MA01:curator:step4",
+          "MA01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "MA02",
+    "countryCode": "MA",
+    "chapterIndex": 2,
+    "title": "A Tale With Many Voices",
+    "activity": "Choose sound, gesture and question prompts for a branching oral tale",
+    "mechanic": "branching_oral_story",
+    "scene": "MA/story_dais",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-MA-AL-HALQA-UNESCO"
+    ],
+    "prerequisiteChapterId": "MA01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ma_tea_host_kenza",
+    "supportNpcId": "ma_merchant_yassine",
+    "stationAnchorId": "ma_station_ma02",
+    "stationCoords": {
+      "x": 2182,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "ma_hakawati_token",
+      "artifactName": "Hakawati Token",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.MA02.title",
+      "summaryKey": "quest.MA02.summary",
+      "greetingKey": "quest.MA02.greeting",
+      "completionKey": "quest.MA02.completion",
+      "sourceNoteKey": "quest.MA02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored floor circles, mimic gestures and pick picture story endings. (A Tale With Many Voices)",
+        "objectiveNodes": [
+          "MA02:explorer:step1",
+          "MA02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade craft items, invite NPC characters and sequence a short story. (A Tale With Many Voices)",
+        "objectiveNodes": [
+          "MA02:adventurer:step1",
+          "MA02:adventurer:step2",
+          "MA02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare versions of an oral tale and use group dialogue to build consensus. (A Tale With Many Voices)",
+        "objectiveNodes": [
+          "MA02:investigator:step1",
+          "MA02:investigator:step2",
+          "MA02:investigator:step3",
+          "MA02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design branching story logic with attribution, safeguarding and an accessible community performance. (A Tale With Many Voices)",
+        "objectiveNodes": [
+          "MA02:curator:step1",
+          "MA02:curator:step2",
+          "MA02:curator:step3",
+          "MA02:curator:step4",
+          "MA02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "MA03",
+    "countryCode": "MA",
+    "chapterIndex": 3,
+    "title": "Tea and Craft",
+    "activity": "Gather mint and complete a non-heating hospitality sequence; trade for craft decorations",
+    "mechanic": "hospitality_and_trade",
+    "scene": "MA/mint_garden_souk",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-MA-MINT-TEA-HOSPITALITY"
+    ],
+    "prerequisiteChapterId": "MA02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ma_merchant_yassine",
+    "supportNpcId": "ma_historian_salma",
+    "stationAnchorId": "ma_station_ma03",
+    "stationCoords": {
+      "x": 2194,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "ma_mint_tea_tray",
+      "artifactName": "Mint Tea Tray",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.MA03.title",
+      "summaryKey": "quest.MA03.summary",
+      "greetingKey": "quest.MA03.greeting",
+      "completionKey": "quest.MA03.completion",
+      "sourceNoteKey": "quest.MA03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored floor circles, mimic gestures and pick picture story endings. (Tea and Craft)",
+        "objectiveNodes": [
+          "MA03:explorer:step1",
+          "MA03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade craft items, invite NPC characters and sequence a short story. (Tea and Craft)",
+        "objectiveNodes": [
+          "MA03:adventurer:step1",
+          "MA03:adventurer:step2",
+          "MA03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare versions of an oral tale and use group dialogue to build consensus. (Tea and Craft)",
+        "objectiveNodes": [
+          "MA03:investigator:step1",
+          "MA03:investigator:step2",
+          "MA03:investigator:step3",
+          "MA03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design branching story logic with attribution, safeguarding and an accessible community performance. (Tea and Craft)",
+        "objectiveNodes": [
+          "MA03:curator:step1",
+          "MA03:curator:step2",
+          "MA03:curator:step3",
+          "MA03:curator:step4",
+          "MA03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "MA04",
+    "countryCode": "MA",
+    "chapterIndex": 4,
+    "title": "The Story We Change",
+    "activity": "Co-create a short tale with different endings and preserve author attribution",
+    "mechanic": "collaborative_attribution",
+    "scene": "MA/riad_courtyard",
+    "sourceType": "fictional_gameplay",
+    "sourceIds": [
+      "SRC-MA-AL-HALQA-UNESCO"
+    ],
+    "prerequisiteChapterId": "MA03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ma_historian_salma",
+    "supportNpcId": "ma_performer_amine",
+    "stationAnchorId": "ma_station_ma04",
+    "stationCoords": {
+      "x": 2206,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "ma_story_thread",
+      "artifactName": "Story Thread",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.MA04.title",
+      "summaryKey": "quest.MA04.summary",
+      "greetingKey": "quest.MA04.greeting",
+      "completionKey": "quest.MA04.completion",
+      "sourceNoteKey": "quest.MA04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored floor circles, mimic gestures and pick picture story endings. (The Story We Change)",
+        "objectiveNodes": [
+          "MA04:explorer:step1",
+          "MA04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade craft items, invite NPC characters and sequence a short story. (The Story We Change)",
+        "objectiveNodes": [
+          "MA04:adventurer:step1",
+          "MA04:adventurer:step2",
+          "MA04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare versions of an oral tale and use group dialogue to build consensus. (The Story We Change)",
+        "objectiveNodes": [
+          "MA04:investigator:step1",
+          "MA04:investigator:step2",
+          "MA04:investigator:step3",
+          "MA04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design branching story logic with attribution, safeguarding and an accessible community performance. (The Story We Change)",
+        "objectiveNodes": [
+          "MA04:curator:step1",
+          "MA04:curator:step2",
+          "MA04:curator:step3",
+          "MA04:curator:step4",
+          "MA04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "MA05",
+    "countryCode": "MA",
+    "chapterIndex": 5,
+    "title": "Paths of Wisdom",
+    "activity": "Explore a respectful heritage map inspired by accounts of Marrakesh’s Seven Saints",
+    "mechanic": "respectful_heritage_mapping",
+    "scene": "MA/heritage_gallery",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-MA-MARRAKESH-HERITAGE"
+    ],
+    "prerequisiteChapterId": "MA04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ma_performer_amine",
+    "supportNpcId": "ma_hakawati_driss",
+    "stationAnchorId": "ma_station_ma05",
+    "stationCoords": {
+      "x": 2218,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "ma_heritage_map",
+      "artifactName": "Heritage Map",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.MA05.title",
+      "summaryKey": "quest.MA05.summary",
+      "greetingKey": "quest.MA05.greeting",
+      "completionKey": "quest.MA05.completion",
+      "sourceNoteKey": "quest.MA05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored floor circles, mimic gestures and pick picture story endings. (Paths of Wisdom)",
+        "objectiveNodes": [
+          "MA05:explorer:step1",
+          "MA05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade craft items, invite NPC characters and sequence a short story. (Paths of Wisdom)",
+        "objectiveNodes": [
+          "MA05:adventurer:step1",
+          "MA05:adventurer:step2",
+          "MA05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare versions of an oral tale and use group dialogue to build consensus. (Paths of Wisdom)",
+        "objectiveNodes": [
+          "MA05:investigator:step1",
+          "MA05:investigator:step2",
+          "MA05:investigator:step3",
+          "MA05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design branching story logic with attribution, safeguarding and an accessible community performance. (Paths of Wisdom)",
+        "objectiveNodes": [
+          "MA05:curator:step1",
+          "MA05:curator:step2",
+          "MA05:curator:step3",
+          "MA05:curator:step4",
+          "MA05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "MA06",
+    "countryCode": "MA",
+    "chapterIndex": 6,
+    "title": "The Circle Travels",
+    "activity": "Build a small storyteller stage and host a multilingual cooperative performance",
+    "mechanic": "cooperative_stage_performance",
+    "scene": "MA/multilingual_stage",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-MA-AL-HALQA-UNESCO"
+    ],
+    "prerequisiteChapterId": "MA05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "ma_hakawati_driss",
+    "supportNpcId": "ma_tea_host_kenza",
+    "stationAnchorId": "ma_station_ma06",
+    "stationCoords": {
+      "x": 2230,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "ma_morocco_circle_stamp",
+      "artifactName": "Morocco Circle Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "ma_morocco_circle_stamp",
+      "grantsCapstoneKeepsake": "ma_storytellers_circle_drum"
+    },
+    "stringKeys": {
+      "titleKey": "quest.MA06.title",
+      "summaryKey": "quest.MA06.summary",
+      "greetingKey": "quest.MA06.greeting",
+      "completionKey": "quest.MA06.completion",
+      "sourceNoteKey": "quest.MA06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored floor circles, mimic gestures and pick picture story endings. (The Circle Travels)",
+        "objectiveNodes": [
+          "MA06:explorer:step1",
+          "MA06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade craft items, invite NPC characters and sequence a short story. (The Circle Travels)",
+        "objectiveNodes": [
+          "MA06:adventurer:step1",
+          "MA06:adventurer:step2",
+          "MA06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare versions of an oral tale and use group dialogue to build consensus. (The Circle Travels)",
+        "objectiveNodes": [
+          "MA06:investigator:step1",
+          "MA06:investigator:step2",
+          "MA06:investigator:step3",
+          "MA06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Design branching story logic with attribution, safeguarding and an accessible community performance. (The Circle Travels)",
+        "objectiveNodes": [
+          "MA06:curator:step1",
+          "MA06:curator:step2",
+          "MA06:curator:step3",
+          "MA06:curator:step4",
+          "MA06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "code": "EG",
+  "order": 3,
+  "name": "Egypt",
+  "nameNative": "مصر · القاهرة",
+  "city": "Cairo",
+  "subtitle": "The Lanterns of Cairo",
+  "theme": "Light, shared celebration and inherited craftsmanship",
+  "visualIdentity": "Cairo lanes and courtyard, lantern workshops, neighborhood market, food stall, rooftop view and Nile-linked trade exhibit.",
+  "localLanguage": "ar-EG",
+  "culturalWarning": "The Fatimid lantern origin is a widely circulated tradition, not a single definitively established historical account. Distinguish contemporary Cairo from ancient Egyptian settings.",
+  "origin": [
+    400,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      352,
+      60,
+      -48
+    ],
+    "max": [
+      448,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    218,
+    165,
+    68
+  ],
+  "accentRgb": [
+    43,
+    76,
+    126
+  ],
+  "customBlocks": [
+    "miraverse:eg_cairo_mashrabiya",
+    "miraverse:eg_fanous_lantern_block",
+    "miraverse:eg_khan_arch_stone",
+    "miraverse:eg_courtyard_fountain_tile",
+    "miraverse:eg_koshari_cauldron_block",
+    "miraverse:eg_carved_cedar_door_frame",
+    "miraverse:eg_alabaster_lamp",
+    "miraverse:eg_spice_bazaar_canopy"
+  ],
+  "capstoneArtifact": {
+    "id": "eg_fanous_of_shared_light",
+    "name": "Fanous of Shared Light"
+  },
+  "stampId": "eg_cairo_light_stamp",
+  "stampName": "Cairo Light Stamp",
+  "learnWords": [
+    {
+      "key": "fanous",
+      "native": "فانوس",
+      "translit": "fānūs",
+      "en": "Decorative brass and colored-glass lantern"
+    },
+    {
+      "key": "koshari",
+      "native": "كشري",
+      "translit": "kusharī",
+      "en": "Layered rice, lentils, pasta, tomato sauce, and crispy onions"
+    },
+    {
+      "key": "mashrabiya",
+      "native": "مشربية",
+      "translit": "mashrabiyya",
+      "en": "Turned-wood geometric lattice screen"
+    }
+  ],
+  "chapterIds": [
+    "EG01",
+    "EG02",
+    "EG03",
+    "EG04",
+    "EG05",
+    "EG06"
+  ],
+  "castIds": [
+    "eg_layla_guide",
+    "eg_lantern_maker_amm_adel",
+    "eg_market_auntie_nadia",
+    "eg_cook_ibrahim",
+    "eg_storyteller_youssef"
+  ]
+}

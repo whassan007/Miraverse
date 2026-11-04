@@ -1,0 +1,90 @@
+{
+  "code": "CN",
+  "order": 7,
+  "name": "China",
+  "nameNative": "中国 · 桃花源",
+  "city": "Peach Blossom Spring, Wuling-inspired setting",
+  "subtitle": "The Valley Beyond the Blossoms",
+  "theme": "Change, memory and the impossibility of freezing a place in time",
+  "visualIdentity": "Peach forest, winding river, hidden pass, terraced valley, village homes, bamboo grove and moon-viewing courtyard.",
+  "localLanguage": "zh-Hans-CN",
+  "culturalWarning": "Peach Blossom Spring is literary fiction. Chang’e’s moon story has multiple versions and should be introduced as folklore, not fact.",
+  "origin": [
+    1400,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      1352,
+      60,
+      -48
+    ],
+    "max": [
+      1448,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    228,
+    148,
+    168
+  ],
+  "accentRgb": [
+    68,
+    142,
+    108
+  ],
+  "customBlocks": [
+    "miraverse:cn_peach_blossom_timber",
+    "miraverse:cn_whitewashed_hui_wall",
+    "miraverse:cn_grey_curved_roof_tile",
+    "miraverse:cn_bamboo_lattice_screen",
+    "miraverse:cn_terrace_water_channel",
+    "miraverse:cn_moon_pavilion_lantern",
+    "miraverse:cn_stone_bridge_arch",
+    "miraverse:cn_mooncake_hearth_table"
+  ],
+  "capstoneArtifact": {
+    "id": "cn_peach_blossom_keepsake",
+    "name": "Peach Blossom Keepsake"
+  },
+  "stampId": "cn_peach_spring_stamp",
+  "stampName": "Peach Spring Stamp",
+  "learnWords": [
+    {
+      "key": "taohua",
+      "native": "桃花",
+      "translit": "táohuā",
+      "en": "Peach blossom flower"
+    },
+    {
+      "key": "tuanyuan",
+      "native": "团圆",
+      "translit": "tuányuán",
+      "en": "Warm reunion and gathering together"
+    },
+    {
+      "key": "bianhua",
+      "native": "变化",
+      "translit": "biànhuà",
+      "en": "Natural change and renewal over time"
+    }
+  ],
+  "chapterIds": [
+    "CN01",
+    "CN02",
+    "CN03",
+    "CN04",
+    "CN05",
+    "CN06"
+  ],
+  "castIds": [
+    "cn_elder_lin",
+    "cn_fisher_zhou",
+    "cn_orchard_keeper_mei",
+    "cn_mapmaker_chen",
+    "cn_moon_host_yue"
+  ]
+}

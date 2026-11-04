@@ -1,0 +1,90 @@
+{
+  "code": "RU",
+  "order": 9,
+  "name": "Russia",
+  "nameNative": "Россия · Озеро Светлояр",
+  "city": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+  "subtitle": "The Bells Beneath the Lake",
+  "theme": "How stories preserve cultural memory when places change or disappear",
+  "visualIdentity": "Northern forest and lake, wooden settlement, lookout, mythic submerged-city vision, musical dock and archive hut.",
+  "localLanguage": "ru-RU",
+  "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+  "origin": [
+    1800,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      1752,
+      60,
+      -48
+    ],
+    "max": [
+      1848,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    86,
+    134,
+    168
+  ],
+  "accentRgb": [
+    214,
+    162,
+    74
+  ],
+  "customBlocks": [
+    "miraverse:ru_carved_pine_izba_log",
+    "miraverse:ru_svetloyar_reflection_prism",
+    "miraverse:ru_wooden_belfry_shingle",
+    "miraverse:ru_lakeside_reed_bed",
+    "miraverse:ru_musical_dock_plank",
+    "miraverse:ru_folklore_archive_shelf",
+    "miraverse:ru_painted_window_nalichnik",
+    "miraverse:ru_story_pavilion_arch"
+  ],
+  "capstoneArtifact": {
+    "id": "ru_kitezh_bell",
+    "name": "Kitezh Bell"
+  },
+  "stampId": "ru_kitezh_memory_stamp",
+  "stampName": "Kitezh Memory Stamp",
+  "learnWords": [
+    {
+      "key": "ozero",
+      "native": "озеро",
+      "translit": "ózero",
+      "en": "Clear forest lake"
+    },
+    {
+      "key": "gusli",
+      "native": "гусли",
+      "translit": "gúsli",
+      "en": "Traditional plucked multi-stringed folk instrument"
+    },
+    {
+      "key": "predaniye",
+      "native": "предание",
+      "translit": "predániye",
+      "en": "Oral legend passed across generations"
+    }
+  ],
+  "chapterIds": [
+    "RU01",
+    "RU02",
+    "RU03",
+    "RU04",
+    "RU05",
+    "RU06"
+  ],
+  "castIds": [
+    "ru_keeper_yelena",
+    "ru_historian_pavel",
+    "ru_musician_ilya",
+    "ru_archivist_vera",
+    "ru_carpenter_maksim"
+  ]
+}

@@ -1,0 +1,656 @@
+[
+  {
+    "id": "LB01",
+    "countryCode": "LB",
+    "chapterIndex": 1,
+    "title": "The Harbor Wakes",
+    "activity": "Follow lantern-marked docks, gather harbor supplies, repair a safe footpath",
+    "mechanic": "navigation_and_restoration",
+    "scene": "LB/harbor_docks",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-LB-BYBLOS-MARITIME"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "lb_teta_nahla",
+    "supportNpcId": "lb_archivist_rami",
+    "stationAnchorId": "lb_station_lb01",
+    "stationCoords": {
+      "x": 170,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "lb_harbor_compass",
+      "artifactName": "Harbor Compass",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.LB01.title",
+      "summaryKey": "quest.LB01.summary",
+      "greetingKey": "quest.LB01.greeting",
+      "completionKey": "quest.LB01.completion",
+      "sourceNoteKey": "quest.LB01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow glowing landmarks, match pictures of food and boats, assemble four big blocks. (The Harbor Wakes)",
+        "objectiveNodes": [
+          "LB01:explorer:step1",
+          "LB01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade with two merchants, cook by sequencing pictures, assemble a harbor sign. (The Harbor Wakes)",
+        "objectiveNodes": [
+          "LB01:adventurer:step1",
+          "LB01:adventurer:step2",
+          "LB01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare maps and written clues, track resource budgets, distinguish myth from evidence. (The Harbor Wakes)",
+        "objectiveNodes": [
+          "LB01:investigator:step1",
+          "LB01:investigator:step2",
+          "LB01:investigator:step3",
+          "LB01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a provenance-labelled archive, optimize restoration resources and explain interpretation. (The Harbor Wakes)",
+        "objectiveNodes": [
+          "LB01:curator:step1",
+          "LB01:curator:step2",
+          "LB01:curator:step3",
+          "LB01:curator:step4",
+          "LB01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "LB02",
+    "countryCode": "LB",
+    "chapterIndex": 2,
+    "title": "Letters in Stone",
+    "activity": "Match Phoenician-inspired letter motifs to trade labels; reconstruct a small inscribed sign",
+    "mechanic": "epigraphy_and_craft",
+    "scene": "LB/script_workshop",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-LB-AHIRAM-ALPHABET"
+    ],
+    "prerequisiteChapterId": "LB01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "lb_archivist_rami",
+    "supportNpcId": "lb_captain_faris",
+    "stationAnchorId": "lb_station_lb02",
+    "stationCoords": {
+      "x": 182,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "lb_alphabet_tile",
+      "artifactName": "Alphabet Tile",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.LB02.title",
+      "summaryKey": "quest.LB02.summary",
+      "greetingKey": "quest.LB02.greeting",
+      "completionKey": "quest.LB02.completion",
+      "sourceNoteKey": "quest.LB02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow glowing landmarks, match pictures of food and boats, assemble four big blocks. (Letters in Stone)",
+        "objectiveNodes": [
+          "LB02:explorer:step1",
+          "LB02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade with two merchants, cook by sequencing pictures, assemble a harbor sign. (Letters in Stone)",
+        "objectiveNodes": [
+          "LB02:adventurer:step1",
+          "LB02:adventurer:step2",
+          "LB02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare maps and written clues, track resource budgets, distinguish myth from evidence. (Letters in Stone)",
+        "objectiveNodes": [
+          "LB02:investigator:step1",
+          "LB02:investigator:step2",
+          "LB02:investigator:step3",
+          "LB02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a provenance-labelled archive, optimize restoration resources and explain interpretation. (Letters in Stone)",
+        "objectiveNodes": [
+          "LB02:curator:step1",
+          "LB02:curator:step2",
+          "LB02:curator:step3",
+          "LB02:curator:step4",
+          "LB02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "LB03",
+    "countryCode": "LB",
+    "chapterIndex": 3,
+    "title": "Teta’s Table",
+    "activity": "Collect za’atar and ingredients, negotiate at a market, prepare man’oushe with supervised simulated heat",
+    "mechanic": "cooking_and_trade",
+    "scene": "LB/teta_bakery",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-LB-CULINARY-MANOUSHE"
+    ],
+    "prerequisiteChapterId": "LB02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "lb_captain_faris",
+    "supportNpcId": "lb_baker_tariq",
+    "stationAnchorId": "lb_station_lb03",
+    "stationCoords": {
+      "x": 194,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "lb_family_recipe_card",
+      "artifactName": "Family Recipe Card",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.LB03.title",
+      "summaryKey": "quest.LB03.summary",
+      "greetingKey": "quest.LB03.greeting",
+      "completionKey": "quest.LB03.completion",
+      "sourceNoteKey": "quest.LB03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow glowing landmarks, match pictures of food and boats, assemble four big blocks. (Teta’s Table)",
+        "objectiveNodes": [
+          "LB03:explorer:step1",
+          "LB03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade with two merchants, cook by sequencing pictures, assemble a harbor sign. (Teta’s Table)",
+        "objectiveNodes": [
+          "LB03:adventurer:step1",
+          "LB03:adventurer:step2",
+          "LB03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare maps and written clues, track resource budgets, distinguish myth from evidence. (Teta’s Table)",
+        "objectiveNodes": [
+          "LB03:investigator:step1",
+          "LB03:investigator:step2",
+          "LB03:investigator:step3",
+          "LB03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a provenance-labelled archive, optimize restoration resources and explain interpretation. (Teta’s Table)",
+        "objectiveNodes": [
+          "LB03:curator:step1",
+          "LB03:curator:step2",
+          "LB03:curator:step3",
+          "LB03:curator:step4",
+          "LB03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "LB04",
+    "countryCode": "LB",
+    "chapterIndex": 4,
+    "title": "The Cedar Chest",
+    "activity": "Investigate a myth-inspired cedar chest and compare legend with historical evidence",
+    "mechanic": "myth_vs_history",
+    "scene": "LB/cedar_sanctuary",
+    "sourceType": "folklore",
+    "sourceIds": [
+      "SRC-LB-PLUTARCH-OSIRIS-MYTH"
+    ],
+    "prerequisiteChapterId": "LB03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "lb_baker_tariq",
+    "supportNpcId": "lb_artisan_nadia",
+    "stationAnchorId": "lb_station_lb04",
+    "stationCoords": {
+      "x": 206,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "lb_cedar_token",
+      "artifactName": "Cedar Token",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.LB04.title",
+      "summaryKey": "quest.LB04.summary",
+      "greetingKey": "quest.LB04.greeting",
+      "completionKey": "quest.LB04.completion",
+      "sourceNoteKey": "quest.LB04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow glowing landmarks, match pictures of food and boats, assemble four big blocks. (The Cedar Chest)",
+        "objectiveNodes": [
+          "LB04:explorer:step1",
+          "LB04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade with two merchants, cook by sequencing pictures, assemble a harbor sign. (The Cedar Chest)",
+        "objectiveNodes": [
+          "LB04:adventurer:step1",
+          "LB04:adventurer:step2",
+          "LB04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare maps and written clues, track resource budgets, distinguish myth from evidence. (The Cedar Chest)",
+        "objectiveNodes": [
+          "LB04:investigator:step1",
+          "LB04:investigator:step2",
+          "LB04:investigator:step3",
+          "LB04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a provenance-labelled archive, optimize restoration resources and explain interpretation. (The Cedar Chest)",
+        "objectiveNodes": [
+          "LB04:curator:step1",
+          "LB04:curator:step2",
+          "LB04:curator:step3",
+          "LB04:curator:step4",
+          "LB04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "LB05",
+    "countryCode": "LB",
+    "chapterIndex": 5,
+    "title": "Photographs Across the Sea",
+    "activity": "Interview fictional family characters, order dated photos, curate a consent-safe exhibit",
+    "mechanic": "oral_history_archive",
+    "scene": "LB/story_archive",
+    "sourceType": "fictional_gameplay",
+    "sourceIds": [
+      "SRC-LB-DIASPORA-ARCHIVE"
+    ],
+    "prerequisiteChapterId": "LB04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "lb_artisan_nadia",
+    "supportNpcId": "lb_teta_nahla",
+    "stationAnchorId": "lb_station_lb05",
+    "stationCoords": {
+      "x": 218,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "lb_archive_album",
+      "artifactName": "Archive Album",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.LB05.title",
+      "summaryKey": "quest.LB05.summary",
+      "greetingKey": "quest.LB05.greeting",
+      "completionKey": "quest.LB05.completion",
+      "sourceNoteKey": "quest.LB05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow glowing landmarks, match pictures of food and boats, assemble four big blocks. (Photographs Across the Sea)",
+        "objectiveNodes": [
+          "LB05:explorer:step1",
+          "LB05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade with two merchants, cook by sequencing pictures, assemble a harbor sign. (Photographs Across the Sea)",
+        "objectiveNodes": [
+          "LB05:adventurer:step1",
+          "LB05:adventurer:step2",
+          "LB05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare maps and written clues, track resource budgets, distinguish myth from evidence. (Photographs Across the Sea)",
+        "objectiveNodes": [
+          "LB05:investigator:step1",
+          "LB05:investigator:step2",
+          "LB05:investigator:step3",
+          "LB05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a provenance-labelled archive, optimize restoration resources and explain interpretation. (Photographs Across the Sea)",
+        "objectiveNodes": [
+          "LB05:curator:step1",
+          "LB05:curator:step2",
+          "LB05:curator:step3",
+          "LB05:curator:step4",
+          "LB05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "LB06",
+    "countryCode": "LB",
+    "chapterIndex": 6,
+    "title": "Festival of Return",
+    "activity": "Restore the gathering square, arrange a cooperative feast, tell a new family story",
+    "mechanic": "cooperative_restoration",
+    "scene": "LB/gathering_square",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-LB-BYBLOS-MARITIME"
+    ],
+    "prerequisiteChapterId": "LB05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "lb_teta_nahla",
+    "supportNpcId": "lb_archivist_rami",
+    "stationAnchorId": "lb_station_lb06",
+    "stationCoords": {
+      "x": 230,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "lb_harbor_home_stamp",
+      "artifactName": "Harbor Home Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "lb_harbor_home_stamp",
+      "grantsCapstoneKeepsake": "lb_cedar_sea_memory_chest"
+    },
+    "stringKeys": {
+      "titleKey": "quest.LB06.title",
+      "summaryKey": "quest.LB06.summary",
+      "greetingKey": "quest.LB06.greeting",
+      "completionKey": "quest.LB06.completion",
+      "sourceNoteKey": "quest.LB06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow glowing landmarks, match pictures of food and boats, assemble four big blocks. (Festival of Return)",
+        "objectiveNodes": [
+          "LB06:explorer:step1",
+          "LB06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Trade with two merchants, cook by sequencing pictures, assemble a harbor sign. (Festival of Return)",
+        "objectiveNodes": [
+          "LB06:adventurer:step1",
+          "LB06:adventurer:step2",
+          "LB06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare maps and written clues, track resource budgets, distinguish myth from evidence. (Festival of Return)",
+        "objectiveNodes": [
+          "LB06:investigator:step1",
+          "LB06:investigator:step2",
+          "LB06:investigator:step3",
+          "LB06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Curate a provenance-labelled archive, optimize restoration resources and explain interpretation. (Festival of Return)",
+        "objectiveNodes": [
+          "LB06:curator:step1",
+          "LB06:curator:step2",
+          "LB06:curator:step3",
+          "LB06:curator:step4",
+          "LB06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

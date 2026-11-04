@@ -1,0 +1,656 @@
+[
+  {
+    "id": "DE01",
+    "countryCode": "DE",
+    "chapterIndex": 1,
+    "title": "The River’s Bend",
+    "activity": "Chart a safe Rhine route using beacons, current patterns and map symbols",
+    "mechanic": "navigation_and_mapping",
+    "scene": "DE/rhine_bend_docks",
+    "sourceType": "historical_context",
+    "sourceIds": [
+      "SRC-DE-RHINE-NAVIGATION"
+    ],
+    "prerequisiteChapterId": null,
+    "independentlyAvailableAtStart": true,
+    "npcLeadId": "de_navigator_klara",
+    "supportNpcId": "de_historian_lukas",
+    "stationAnchorId": "de_station_de01",
+    "stationCoords": {
+      "x": 1170,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "de_rhine_route_map",
+      "artifactName": "Rhine Route Map",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.DE01.title",
+      "summaryKey": "quest.DE01.summary",
+      "greetingKey": "quest.DE01.greeting",
+      "completionKey": "quest.DE01.completion",
+      "sourceNoteKey": "quest.DE01.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored river buoys, listen for a quiet bell and ask “Are you okay?”. (The River’s Bend)",
+        "objectiveNodes": [
+          "DE01:explorer:step1",
+          "DE01:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Distinguish safe signals, gather garden supplies and sequence supportive actions. (The River’s Bend)",
+        "objectiveNodes": [
+          "DE01:adventurer:step1",
+          "DE01:adventurer:step2",
+          "DE01:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two Lorelei versions, map conflicting clues and justify a compassionate choice. (The River’s Bend)",
+        "objectiveNodes": [
+          "DE01:investigator:step1",
+          "DE01:investigator:step2",
+          "DE01:investigator:step3",
+          "DE01:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Analyze nostalgia as an unreliable signal, document literary variants and optimize restoration tradeoffs. (The River’s Bend)",
+        "objectiveNodes": [
+          "DE01:curator:step1",
+          "DE01:curator:step2",
+          "DE01:curator:step3",
+          "DE01:curator:step4",
+          "DE01:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "DE02",
+    "countryCode": "DE",
+    "chapterIndex": 2,
+    "title": "The Enchanted Song",
+    "activity": "Identify distractions in a sound-and-light puzzle, listen to different versions of the Lorelei legend",
+    "mechanic": "literature_comparison",
+    "scene": "DE/echo_cliff_lookout",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-DE-LORELEI-LITERATURE"
+    ],
+    "prerequisiteChapterId": "DE01",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "de_historian_lukas",
+    "supportNpcId": "de_narrator_lorelei",
+    "stationAnchorId": "de_station_de02",
+    "stationCoords": {
+      "x": 1182,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "de_lorelei_songstone",
+      "artifactName": "Lorelei Songstone",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.DE02.title",
+      "summaryKey": "quest.DE02.summary",
+      "greetingKey": "quest.DE02.greeting",
+      "completionKey": "quest.DE02.completion",
+      "sourceNoteKey": "quest.DE02.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored river buoys, listen for a quiet bell and ask “Are you okay?”. (The Enchanted Song)",
+        "objectiveNodes": [
+          "DE02:explorer:step1",
+          "DE02:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Distinguish safe signals, gather garden supplies and sequence supportive actions. (The Enchanted Song)",
+        "objectiveNodes": [
+          "DE02:adventurer:step1",
+          "DE02:adventurer:step2",
+          "DE02:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two Lorelei versions, map conflicting clues and justify a compassionate choice. (The Enchanted Song)",
+        "objectiveNodes": [
+          "DE02:investigator:step1",
+          "DE02:investigator:step2",
+          "DE02:investigator:step3",
+          "DE02:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Analyze nostalgia as an unreliable signal, document literary variants and optimize restoration tradeoffs. (The Enchanted Song)",
+        "objectiveNodes": [
+          "DE02:curator:step1",
+          "DE02:curator:step2",
+          "DE02:curator:step3",
+          "DE02:curator:step4",
+          "DE02:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "DE03",
+    "countryCode": "DE",
+    "chapterIndex": 3,
+    "title": "The Navigator’s Choice",
+    "activity": "Help a boat reach shelter by prioritizing real signals over distracting echoes",
+    "mechanic": "signal_prioritization",
+    "scene": "DE/riverside_shelter",
+    "sourceType": "fictional_gameplay",
+    "sourceIds": [
+      "SRC-DE-RHINE-NAVIGATION"
+    ],
+    "prerequisiteChapterId": "DE02",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "de_narrator_lorelei",
+    "supportNpcId": "de_parzival",
+    "stationAnchorId": "de_station_de03",
+    "stationCoords": {
+      "x": 1194,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "de_steady_helm",
+      "artifactName": "Steady Helm",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.DE03.title",
+      "summaryKey": "quest.DE03.summary",
+      "greetingKey": "quest.DE03.greeting",
+      "completionKey": "quest.DE03.completion",
+      "sourceNoteKey": "quest.DE03.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored river buoys, listen for a quiet bell and ask “Are you okay?”. (The Navigator’s Choice)",
+        "objectiveNodes": [
+          "DE03:explorer:step1",
+          "DE03:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Distinguish safe signals, gather garden supplies and sequence supportive actions. (The Navigator’s Choice)",
+        "objectiveNodes": [
+          "DE03:adventurer:step1",
+          "DE03:adventurer:step2",
+          "DE03:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two Lorelei versions, map conflicting clues and justify a compassionate choice. (The Navigator’s Choice)",
+        "objectiveNodes": [
+          "DE03:investigator:step1",
+          "DE03:investigator:step2",
+          "DE03:investigator:step3",
+          "DE03:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Analyze nostalgia as an unreliable signal, document literary variants and optimize restoration tradeoffs. (The Navigator’s Choice)",
+        "objectiveNodes": [
+          "DE03:curator:step1",
+          "DE03:curator:step2",
+          "DE03:curator:step3",
+          "DE03:curator:step4",
+          "DE03:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "DE04",
+    "countryCode": "DE",
+    "chapterIndex": 4,
+    "title": "The Quiet Grail Hall",
+    "activity": "Explore a mythic castle and notice that a character needs help",
+    "mechanic": "observation_and_empathy",
+    "scene": "DE/grail_hall_courtyard",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-DE-PARZIVAL-WOLFRAM"
+    ],
+    "prerequisiteChapterId": "DE03",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "de_parzival",
+    "supportNpcId": "de_gardener_jonas",
+    "stationAnchorId": "de_station_de04",
+    "stationCoords": {
+      "x": 1206,
+      "y": 65,
+      "z": -20
+    },
+    "reward": {
+      "artifactId": "de_hall_of_questions_token",
+      "artifactName": "Hall of Questions Token",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.DE04.title",
+      "summaryKey": "quest.DE04.summary",
+      "greetingKey": "quest.DE04.greeting",
+      "completionKey": "quest.DE04.completion",
+      "sourceNoteKey": "quest.DE04.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored river buoys, listen for a quiet bell and ask “Are you okay?”. (The Quiet Grail Hall)",
+        "objectiveNodes": [
+          "DE04:explorer:step1",
+          "DE04:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Distinguish safe signals, gather garden supplies and sequence supportive actions. (The Quiet Grail Hall)",
+        "objectiveNodes": [
+          "DE04:adventurer:step1",
+          "DE04:adventurer:step2",
+          "DE04:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two Lorelei versions, map conflicting clues and justify a compassionate choice. (The Quiet Grail Hall)",
+        "objectiveNodes": [
+          "DE04:investigator:step1",
+          "DE04:investigator:step2",
+          "DE04:investigator:step3",
+          "DE04:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Analyze nostalgia as an unreliable signal, document literary variants and optimize restoration tradeoffs. (The Quiet Grail Hall)",
+        "objectiveNodes": [
+          "DE04:curator:step1",
+          "DE04:curator:step2",
+          "DE04:curator:step3",
+          "DE04:curator:step4",
+          "DE04:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "DE05",
+    "countryCode": "DE",
+    "chapterIndex": 5,
+    "title": "What Ails You?",
+    "activity": "Ask an empathetic question and choose helpful actions instead of keeping silent",
+    "mechanic": "myth_interpretation",
+    "scene": "DE/grail_hall",
+    "sourceType": "literature",
+    "sourceIds": [
+      "SRC-DE-PARZIVAL-WOLFRAM"
+    ],
+    "prerequisiteChapterId": "DE04",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "de_gardener_jonas",
+    "supportNpcId": "de_navigator_klara",
+    "stationAnchorId": "de_station_de05",
+    "stationCoords": {
+      "x": 1218,
+      "y": 65,
+      "z": -4
+    },
+    "reward": {
+      "artifactId": "de_healing_question_scroll",
+      "artifactName": "Healing Question Scroll",
+      "storySparks": 25,
+      "grantsCountryStamp": null,
+      "grantsCapstoneKeepsake": null
+    },
+    "stringKeys": {
+      "titleKey": "quest.DE05.title",
+      "summaryKey": "quest.DE05.summary",
+      "greetingKey": "quest.DE05.greeting",
+      "completionKey": "quest.DE05.completion",
+      "sourceNoteKey": "quest.DE05.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored river buoys, listen for a quiet bell and ask “Are you okay?”. (What Ails You?)",
+        "objectiveNodes": [
+          "DE05:explorer:step1",
+          "DE05:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Distinguish safe signals, gather garden supplies and sequence supportive actions. (What Ails You?)",
+        "objectiveNodes": [
+          "DE05:adventurer:step1",
+          "DE05:adventurer:step2",
+          "DE05:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two Lorelei versions, map conflicting clues and justify a compassionate choice. (What Ails You?)",
+        "objectiveNodes": [
+          "DE05:investigator:step1",
+          "DE05:investigator:step2",
+          "DE05:investigator:step3",
+          "DE05:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Analyze nostalgia as an unreliable signal, document literary variants and optimize restoration tradeoffs. (What Ails You?)",
+        "objectiveNodes": [
+          "DE05:curator:step1",
+          "DE05:curator:step2",
+          "DE05:curator:step3",
+          "DE05:curator:step4",
+          "DE05:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  },
+  {
+    "id": "DE06",
+    "countryCode": "DE",
+    "chapterIndex": 6,
+    "title": "The Garden Returns",
+    "activity": "Cooperatively restore an abandoned garden and record what changed",
+    "mechanic": "cooperative_restoration",
+    "scene": "DE/renewing_garden",
+    "sourceType": "contemporary_tradition",
+    "sourceIds": [
+      "SRC-DE-PARZIVAL-WOLFRAM"
+    ],
+    "prerequisiteChapterId": "DE05",
+    "independentlyAvailableAtStart": false,
+    "npcLeadId": "de_navigator_klara",
+    "supportNpcId": "de_historian_lukas",
+    "stationAnchorId": "de_station_de06",
+    "stationCoords": {
+      "x": 1230,
+      "y": 65,
+      "z": 12
+    },
+    "reward": {
+      "artifactId": "de_german_memory_stamp",
+      "artifactName": "German Memory Stamp",
+      "storySparks": 25,
+      "grantsCountryStamp": "de_german_memory_stamp",
+      "grantsCapstoneKeepsake": "de_compass_of_compassion"
+    },
+    "stringKeys": {
+      "titleKey": "quest.DE06.title",
+      "summaryKey": "quest.DE06.summary",
+      "greetingKey": "quest.DE06.greeting",
+      "completionKey": "quest.DE06.completion",
+      "sourceNoteKey": "quest.DE06.source_note"
+    },
+    "ageVariants": {
+      "5-7": {
+        "track": "Explorer",
+        "interaction": "guided_pictogram_and_place",
+        "steps": 2,
+        "hint": "persistent_glow_and_icon",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "low_pictorial_with_caregiver_assist",
+        "activitySummary": "Follow colored river buoys, listen for a quiet bell and ask “Are you okay?”. (The Garden Returns)",
+        "objectiveNodes": [
+          "DE06:explorer:step1",
+          "DE06:explorer:step2"
+        ],
+        "recoveryMode": "instant_gentle_retry"
+      },
+      "8-10": {
+        "track": "Adventurer",
+        "interaction": "short_sequence_trade_and_craft",
+        "steps": 3,
+        "hint": "on_request_tooltip",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "short_instructions_and_word_tooltips",
+        "activitySummary": "Distinguish safe signals, gather garden supplies and sequence supportive actions. (The Garden Returns)",
+        "objectiveNodes": [
+          "DE06:adventurer:step1",
+          "DE06:adventurer:step2",
+          "DE06:adventurer:step3"
+        ],
+        "recoveryMode": "recoverable_sequence_reset_no_penalty"
+      },
+      "11-13": {
+        "track": "Investigator",
+        "interaction": "evidence_compare_and_material_choice",
+        "steps": 4,
+        "hint": "on_request_journal_clue",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "quest_journal_and_source_comparison",
+        "activitySummary": "Compare two Lorelei versions, map conflicting clues and justify a compassionate choice. (The Garden Returns)",
+        "objectiveNodes": [
+          "DE06:investigator:step1",
+          "DE06:investigator:step2",
+          "DE06:investigator:step3",
+          "DE06:investigator:step4"
+        ],
+        "recoveryMode": "reversible_branch_state"
+      },
+      "14-17": {
+        "track": "Architect / Curator",
+        "interaction": "provenance_curation_and_system_restoration",
+        "steps": 5,
+        "hint": "optional_curator_notes",
+        "timersEnabled": false,
+        "resourceLossPossible": false,
+        "checkpointEveryStep": true,
+        "readingLoad": "primary_secondary_source_labels_and_reflection",
+        "activitySummary": "Analyze nostalgia as an unreliable signal, document literary variants and optimize restoration tradeoffs. (The Garden Returns)",
+        "objectiveNodes": [
+          "DE06:curator:step1",
+          "DE06:curator:step2",
+          "DE06:curator:step3",
+          "DE06:curator:step4",
+          "DE06:curator:step5"
+        ],
+        "recoveryMode": "justified_multi_perspective_reflection_with_skip_option"
+      }
+    }
+  }
+]

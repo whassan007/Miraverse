@@ -1,0 +1,90 @@
+{
+  "code": "FR",
+  "order": 4,
+  "name": "France",
+  "nameNative": "France · Vieux Lyon",
+  "city": "Vieux Lyon",
+  "subtitle": "The Hidden Passage and the Kitchen",
+  "theme": "Recipes, passages and the quiet persistence of craft",
+  "visualIdentity": "Renaissance courtyards, traboule-inspired walkways, silk looms, bouchon, bakery, market and river embankment.",
+  "localLanguage": "fr-FR",
+  "culturalWarning": "Traboules have varied uses over time; do not imply every passage has a documented Resistance history. Present Mères Lyonnaises as diverse chefs rather than one singular myth.",
+  "origin": [
+    1000,
+    64,
+    0
+  ],
+  "bounds": {
+    "min": [
+      952,
+      60,
+      -48
+    ],
+    "max": [
+      1048,
+      96,
+      48
+    ]
+  },
+  "paletteRgb": [
+    216,
+    164,
+    92
+  ],
+  "accentRgb": [
+    59,
+    110,
+    165
+  ],
+  "customBlocks": [
+    "miraverse:fr_lyon_ochre_stucco",
+    "miraverse:fr_mansard_slate_shingle",
+    "miraverse:fr_carved_oak_shutter",
+    "miraverse:fr_traboule_vault_stone",
+    "miraverse:fr_boulangerie_wood_oven",
+    "miraverse:fr_wrought_iron_balcony",
+    "miraverse:fr_gilded_bakery_sign",
+    "miraverse:fr_cobblestone_paver"
+  ],
+  "capstoneArtifact": {
+    "id": "fr_meres_lyonnaises_recipe_book",
+    "name": "Mères Lyonnaises Recipe Book"
+  },
+  "stampId": "fr_lyon_heritage_stamp",
+  "stampName": "Lyon Heritage Stamp",
+  "learnWords": [
+    {
+      "key": "traboule",
+      "native": "traboule",
+      "translit": "trah-bool",
+      "en": "Covered passageway connecting courtyards and streets in Lyon"
+    },
+    {
+      "key": "boulangerie",
+      "native": "boulangerie",
+      "translit": "boo-lahn-zhuh-ree",
+      "en": "Neighborhood bread and pastry bakery"
+    },
+    {
+      "key": "canut",
+      "native": "canut",
+      "translit": "kah-noo",
+      "en": "Historic silk weaver of Lyon"
+    }
+  ],
+  "chapterIds": [
+    "FR01",
+    "FR02",
+    "FR03",
+    "FR04",
+    "FR05",
+    "FR06"
+  ],
+  "castIds": [
+    "fr_camille_mamie",
+    "fr_silk_artisan_henri",
+    "fr_chef_marguerite",
+    "fr_guide_luc",
+    "fr_merchant_elise"
+  ]
+}
