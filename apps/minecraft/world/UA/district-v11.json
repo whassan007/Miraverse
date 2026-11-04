@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "UA",
+  "countryName": "Ukraine",
+  "regionName": "Kyiv founding hills / community music square",
+  "storyTitle": "The Guardian of Songs",
+  "localLocale": "uk-UA",
+  "culturalWarning": "The Kyiv founders are chronicle legends. Kobzar traditions are varied; do not imply all practitioners were blind or use disability as a supernatural device. No graphic violence or combat reenactment.",
+  "origin": {
+    "x": 2000,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 2000,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 2000,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 1996,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 2030,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "ua_bandura_memory_charm",
+    "name": "Bandura Memory Charm"
+  },
+  "passportStamp": {
+    "id": "ua_ukraine_song_stamp",
+    "name": "Ukraine Song Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "ua_mentor_cultural_house",
+      "nameEn": "Kyiv founding hills / community music square Mentor Courtyard & Hearth",
+      "nameNative": "Україна · Київські пагорби",
+      "origin": {
+        "x": 1982,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ua_kyiv_hill_timber",
+      "trimBlock": "miraverse:ua_embroidered_rushnyk_banner",
+      "roofBlock": "miraverse:ua_bandura_luthier_bench",
+      "hasInterior": true,
+      "interiorId": "ua_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "ua_story_archive_hall",
+      "nameEn": "Kyiv founding hills / community music square Story & Epigraphy Archive",
+      "nameNative": "Україна · Київські пагорби",
+      "origin": {
+        "x": 2004,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ua_kyiv_hill_timber",
+      "trimBlock": "miraverse:ua_embroidered_rushnyk_banner",
+      "roofBlock": "miraverse:ua_bandura_luthier_bench",
+      "hasInterior": true,
+      "interiorId": "ua_interior_story_archive"
+    },
+    {
+      "buildingId": "ua_artisan_craft_guild",
+      "nameEn": "Kyiv founding hills / community music square Master Artisan Workshop",
+      "nameNative": "Україна · Київські пагорби",
+      "origin": {
+        "x": 1980,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:ua_kyiv_hill_timber",
+      "trimBlock": "miraverse:ua_embroidered_rushnyk_banner",
+      "roofBlock": "miraverse:ua_bandura_luthier_bench",
+      "hasInterior": true,
+      "interiorId": "ua_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "ua_market_bazaar_arcade",
+      "nameEn": "Kyiv founding hills / community music square Fair-Trade Market Arcade",
+      "nameNative": "Україна · Київські пагорби",
+      "origin": {
+        "x": 2006,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:ua_kyiv_hill_timber",
+      "trimBlock": "miraverse:ua_embroidered_rushnyk_banner",
+      "roofBlock": "miraverse:ua_bandura_luthier_bench",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "ua_heritage_landmark_pavilion",
+      "nameEn": "Kyiv founding hills / community music square Community Gathering & Performance Pavilion",
+      "nameNative": "Україна · Київські пагорби",
+      "origin": {
+        "x": 1994,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ua_kyiv_hill_timber",
+      "trimBlock": "miraverse:ua_embroidered_rushnyk_banner",
+      "roofBlock": "miraverse:ua_bandura_luthier_bench",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "ua_interior_mentor_hearth",
+      "buildingId": "ua_mentor_cultural_house",
+      "nameEn": "Kyiv founding hills / community music square Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 1988,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "ua_cooking_hearth",
+          "blockId": "miraverse:ua_carved_oak_archway",
+          "offset": {
+            "x": 1988,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "ua_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 1986,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "ua_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 1988,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "ua_interior_story_archive",
+      "buildingId": "ua_story_archive_hall",
+      "nameEn": "Kyiv founding hills / community music square Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 2010,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "ua_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 2010,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "ua_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 2012,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "ua_keepsake_display",
+          "blockId": "miraverse:ua_river_footbridge_stone",
+          "offset": {
+            "x": 2008,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Bandura Memory Charm"
+        }
+      ]
+    },
+    {
+      "interiorId": "ua_interior_artisan_workshop",
+      "buildingId": "ua_artisan_craft_guild",
+      "nameEn": "Kyiv founding hills / community music square Restoration & Craft Studio",
+      "entryPos": {
+        "x": 1986,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "ua_craft_bench",
+          "blockId": "miraverse:ua_sunflower_garden_border",
+          "offset": {
+            "x": 1986,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "ua_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 1984,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "ua_guide_lybid",
+      "countryCode": "UA",
+      "nameEn": "Guide Olena (Lybid Route)",
+      "nameNative": "Провідниця Олена",
+      "role": "mentor",
+      "greetingNative": "Ласкаво просимо на київські пагорби! Тут пісні й майстерність об’єднують громаду.",
+      "spawnPos": {
+        "x": 1976,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "UA01",
+        "UA06"
+      ]
+    },
+    {
+      "npcId": "ua_storyteller_taras",
+      "countryCode": "UA",
+      "nameEn": "Historical Storyteller Taras",
+      "nameNative": "Оповідач Тарас",
+      "role": "scholar",
+      "greetingNative": "Літописна легенда про Кия, Щека, Хорива та Либідь — це стародавній переказ про заснування міста.",
+      "spawnPos": {
+        "x": 1988,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "UA02"
+      ]
+    },
+    {
+      "npcId": "ua_kobzar_mykola",
+      "countryCode": "UA",
+      "nameEn": "Musician Mykola",
+      "nameNative": "Кобзар Микола",
+      "role": "storyteller",
+      "greetingNative": "Послухай звучання бандури та приєднуйся до нашої спільної мелодії!",
+      "spawnPos": {
+        "x": 2000,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "UA03"
+      ]
+    },
+    {
+      "npcId": "ua_maker_solomiya",
+      "countryCode": "UA",
+      "nameEn": "Instrument Maker Solomiya",
+      "nameNative": "Майстриня Соломія",
+      "role": "artisan",
+      "greetingNative": "Кожна струна бандури виготовляється з увагою до традиції та доступності.",
+      "spawnPos": {
+        "x": 2012,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "UA04"
+      ]
+    },
+    {
+      "npcId": "ua_curator_kateryna",
+      "countryCode": "UA",
+      "nameEn": "Curator Kateryna",
+      "nameNative": "Кураторка Катерина",
+      "role": "archivist",
+      "greetingNative": "Ми відокремлюємо усні думи від документальних хронік у спільному архіві.",
+      "spawnPos": {
+        "x": 2024,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "UA05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "ua_quest_ua01",
+      "chapterId": "UA01",
+      "title": "The Four Founders",
+      "kind": "exploration_and_mapping",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 1970,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:ua_kyiv_hill_timber",
+      "rewardArtifactId": "ua_founders_river_map"
+    },
+    {
+      "anchorId": "ua_quest_ua02",
+      "chapterId": "UA02",
+      "title": "The City by the Water",
+      "kind": "accessible_bridge_build",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1982,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:ua_embroidered_rushnyk_banner",
+      "rewardArtifactId": "ua_river_bridge_plaque"
+    },
+    {
+      "anchorId": "ua_quest_ua03",
+      "chapterId": "UA03",
+      "title": "Listen to the Kobzar",
+      "kind": "call_and_response_music",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1994,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:ua_bandura_luthier_bench",
+      "rewardArtifactId": "ua_bandura_string"
+    },
+    {
+      "anchorId": "ua_quest_ua04",
+      "chapterId": "UA04",
+      "title": "The Dumy Notebook",
+      "kind": "oral_vs_documented_history",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 2006,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:ua_cobblestone_music_stage",
+      "rewardArtifactId": "ua_dumy_page"
+    },
+    {
+      "anchorId": "ua_quest_ua05",
+      "chapterId": "UA05",
+      "title": "The Living Music Hall",
+      "kind": "venue_restoration",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 2018,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:ua_carved_oak_archway",
+      "rewardArtifactId": "ua_carved_music_stand"
+    },
+    {
+      "anchorId": "ua_quest_ua06",
+      "chapterId": "UA06",
+      "title": "Songs That Travel",
+      "kind": "cooperative_composition",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 2030,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:ua_sunflower_garden_border",
+      "rewardArtifactId": "ua_ukraine_song_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "ua_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 2000,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "ua_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 2010,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Kyiv founding hills / community music square Fair-Trade Stall"
+    },
+    {
+      "anchorId": "ua_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 1976,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:ua_archive_display_case",
+      "labelEn": "Kyiv founding hills / community music square Resource Gathering Spot"
+    },
+    {
+      "anchorId": "ua_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 1996,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:ua_kyiv_hill_timber",
+      "labelEn": "Kyiv founding hills / community music square Community Restoration Plot"
+    },
+    {
+      "anchorId": "ua_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 2030,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:ua_embroidered_rushnyk_banner",
+      "labelEn": "Kyiv founding hills / community music square Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "bandura",
+      "native": "бандура",
+      "translit": "bandúra",
+      "en": "Ukrainian plucked string instrument combining lute and harp elements"
+    },
+    {
+      "key": "dumy",
+      "native": "думи",
+      "translit": "dúmy",
+      "en": "Sung epic poems preserving oral cultural memory"
+    },
+    {
+      "key": "toloka",
+      "native": "толока",
+      "translit": "tolóka",
+      "en": "Community solidarity gathering to build or restore together"
+    }
+  ]
+}
