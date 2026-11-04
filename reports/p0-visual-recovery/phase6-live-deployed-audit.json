@@ -1,0 +1,82 @@
+{
+  "deployedUrl": "https://miraverse.pages.dev",
+  "verifiedAt": "2026-11-04T06:46:23.197Z",
+  "viewports": {
+    "390x844": {
+      "scripts": [
+        "./assets/index-BbPWiZLN.js"
+      ],
+      "headerCount": 1,
+      "horizontalOverflow": false,
+      "heroSrc": "/art/p0/hero-byblos-desktop.jpg",
+      "robloxCtaText": "▶ Play free on Roblox",
+      "worldCovers": [
+        "/art/p0/world-cover-LB.jpg",
+        "/art/p0/world-cover-EG.jpg",
+        "/art/p0/world-cover-IQ.jpg",
+        "/art/p0/world-cover-KR.jpg",
+        "/art/p0/world-cover-FR.jpg"
+      ],
+      "totalImages": 38,
+      "brokenImages": [],
+      "failedAssets": []
+    },
+    "768x1024": {
+      "scripts": [
+        "./assets/index-BbPWiZLN.js"
+      ],
+      "headerCount": 1,
+      "horizontalOverflow": false,
+      "heroSrc": "/art/p0/hero-byblos-desktop.jpg",
+      "robloxCtaText": "▶ Play free on Roblox",
+      "worldCovers": [
+        "/art/p0/world-cover-LB.jpg",
+        "/art/p0/world-cover-EG.jpg",
+        "/art/p0/world-cover-IQ.jpg",
+        "/art/p0/world-cover-KR.jpg",
+        "/art/p0/world-cover-FR.jpg"
+      ],
+      "totalImages": 38,
+      "brokenImages": [],
+      "failedAssets": []
+    },
+    "1440x900": {
+      "scripts": [
+        "./assets/index-BbPWiZLN.js"
+      ],
+      "headerCount": 1,
+      "horizontalOverflow": false,
+      "heroSrc": "/art/p0/hero-byblos-desktop.jpg",
+      "robloxCtaText": "▶ Play free on Roblox",
+      "worldCovers": [
+        "/art/p0/world-cover-LB.jpg",
+        "/art/p0/world-cover-EG.jpg",
+        "/art/p0/world-cover-IQ.jpg",
+        "/art/p0/world-cover-KR.jpg",
+        "/art/p0/world-cover-FR.jpg"
+      ],
+      "totalImages": 38,
+      "brokenImages": [],
+      "failedAssets": []
+    },
+    "1920x1080": {
+      "scripts": [
+        "./assets/index-BbPWiZLN.js"
+      ],
+      "headerCount": 1,
+      "horizontalOverflow": false,
+      "heroSrc": "/art/p0/hero-byblos-desktop.jpg",
+      "robloxCtaText": "▶ Play free on Roblox",
+      "worldCovers": [
+        "/art/p0/world-cover-LB.jpg",
+        "/art/p0/world-cover-EG.jpg",
+        "/art/p0/world-cover-IQ.jpg",
+        "/art/p0/world-cover-KR.jpg",
+        "/art/p0/world-cover-FR.jpg"
+      ],
+      "totalImages": 38,
+      "brokenImages": [],
+      "failedAssets": []
+    }
+  }
+}
