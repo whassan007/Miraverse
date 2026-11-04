@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 4,
+  "generatedBy": "DX06",
+  "legacySaveV1Fixture": {
+    "mvStamps": {
+      "FR": "MV1-FR-GATHER.TRADE.BUILD.COOK.WORD-4B8A"
+    }
+  },
+  "commerceEdgeCases": {
+    "validTestSku": "SKU_GIFT_EXPLORER_BUNDLE",
+    "expectedServerPriceCents": 1400,
+    "tamperedClientPriceCents": 1,
+    "forgedSignatureHeader": "t=1700000000,v1=0000000000000000000000000000000000000000000000000000000000000000",
+    "sampleRawGiftCodeForRedactionTest": "MVGIFT-1A2B-3C4D-5E6F-7890"
+  }
+}
