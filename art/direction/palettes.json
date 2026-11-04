@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 4,
+  "worlds": {
+    "HUB": {
+      "skyTop": "#1D3557",
+      "skyHorizon": "#F4A261",
+      "ground": "#E9C46A",
+      "fog": "#F4F1DE",
+      "sunIntensity": 1.25
+    },
+    "FR": {
+      "skyTop": "#3B6EA5",
+      "skyHorizon": "#F6D59E",
+      "ground": "#C8B6A6",
+      "fog": "#F3E9DC",
+      "sunIntensity": 1.3
+    },
+    "LB": {
+      "skyTop": "#1E7A68",
+      "skyHorizon": "#F4D399",
+      "ground": "#E6CCB2",
+      "fog": "#F8EFE6",
+      "sunIntensity": 1.4
+    },
+    "EG": {
+      "skyTop": "#1F2A44",
+      "skyHorizon": "#E07A5F",
+      "ground": "#DDA15E",
+      "fog": "#3D405B",
+      "sunIntensity": 0.95
+    },
+    "IQ": {
+      "skyTop": "#264653",
+      "skyHorizon": "#E9C46A",
+      "ground": "#C68B59",
+      "fog": "#F4A261",
+      "sunIntensity": 1.2
+    },
+    "KR": {
+      "skyTop": "#2B3A55",
+      "skyHorizon": "#E8A598",
+      "ground": "#D8C3A5",
+      "fog": "#EAE0D5",
+      "sunIntensity": 1.15
+    }
+  }
+}
