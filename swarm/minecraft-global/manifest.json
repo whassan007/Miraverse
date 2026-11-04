@@ -1843,13 +1843,17 @@
       "acceptance": "Automated coverage for 66 chapters × 4 age tracks and replay safety",
       "branch": "minecraft-global/DX18",
       "worktree": "/home/wael/Code/mv-wt-mcg/DX18",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "5605fed",
+      "integration_sha": "583e5d2",
+      "runtime_environment": "DGX Spark (qwen/qwen3-coder-next, 56.86 tok/s, maxConcurrency=1) | NVIDIA GB10, 580.178.04, 42, 0 % | Total=121GiB Used=101GiB Free=1GiB Available=19GiB",
+      "modified_files": [
+        "apps/minecraft/tests/quests/global-264-variants.test.ts"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/tests/quests/global-264-variants.test.ts"
+      ],
       "report_path": "reports/minecraft-global/agents/DX18.md",
       "log_path": "swarm/minecraft-global/logs/DX18.log",
       "blockers": []
