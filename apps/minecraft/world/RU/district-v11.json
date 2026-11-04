@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "RU",
+  "countryName": "Russia",
+  "regionName": "Lake Svetloyar / Kitezh-inspired mythic landscape",
+  "storyTitle": "The Bells Beneath the Lake",
+  "localLocale": "ru-RU",
+  "culturalWarning": "Kitezh is folklore with historical variants, not a factual submerged city. Avoid romanticizing political violence or presenting spiritual-national exclusivity as moral truth; support plural interpretations.",
+  "origin": {
+    "x": 1800,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 1800,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 1800,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 1796,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 1830,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "ru_kitezh_bell",
+    "name": "Kitezh Bell"
+  },
+  "passportStamp": {
+    "id": "ru_kitezh_memory_stamp",
+    "name": "Kitezh Memory Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "ru_mentor_cultural_house",
+      "nameEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Mentor Courtyard & Hearth",
+      "nameNative": "Россия · Озеро Светлояр",
+      "origin": {
+        "x": 1782,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ru_carved_pine_izba_log",
+      "trimBlock": "miraverse:ru_svetloyar_reflection_prism",
+      "roofBlock": "miraverse:ru_wooden_belfry_shingle",
+      "hasInterior": true,
+      "interiorId": "ru_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "ru_story_archive_hall",
+      "nameEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Story & Epigraphy Archive",
+      "nameNative": "Россия · Озеро Светлояр",
+      "origin": {
+        "x": 1804,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ru_carved_pine_izba_log",
+      "trimBlock": "miraverse:ru_svetloyar_reflection_prism",
+      "roofBlock": "miraverse:ru_wooden_belfry_shingle",
+      "hasInterior": true,
+      "interiorId": "ru_interior_story_archive"
+    },
+    {
+      "buildingId": "ru_artisan_craft_guild",
+      "nameEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Master Artisan Workshop",
+      "nameNative": "Россия · Озеро Светлояр",
+      "origin": {
+        "x": 1780,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:ru_carved_pine_izba_log",
+      "trimBlock": "miraverse:ru_svetloyar_reflection_prism",
+      "roofBlock": "miraverse:ru_wooden_belfry_shingle",
+      "hasInterior": true,
+      "interiorId": "ru_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "ru_market_bazaar_arcade",
+      "nameEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Fair-Trade Market Arcade",
+      "nameNative": "Россия · Озеро Светлояр",
+      "origin": {
+        "x": 1806,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:ru_carved_pine_izba_log",
+      "trimBlock": "miraverse:ru_svetloyar_reflection_prism",
+      "roofBlock": "miraverse:ru_wooden_belfry_shingle",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "ru_heritage_landmark_pavilion",
+      "nameEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Community Gathering & Performance Pavilion",
+      "nameNative": "Россия · Озеро Светлояр",
+      "origin": {
+        "x": 1794,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ru_carved_pine_izba_log",
+      "trimBlock": "miraverse:ru_svetloyar_reflection_prism",
+      "roofBlock": "miraverse:ru_wooden_belfry_shingle",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "ru_interior_mentor_hearth",
+      "buildingId": "ru_mentor_cultural_house",
+      "nameEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 1788,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "ru_cooking_hearth",
+          "blockId": "miraverse:ru_musical_dock_plank",
+          "offset": {
+            "x": 1788,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "ru_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 1786,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "ru_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 1788,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "ru_interior_story_archive",
+      "buildingId": "ru_story_archive_hall",
+      "nameEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 1810,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "ru_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 1810,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "ru_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 1812,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "ru_keepsake_display",
+          "blockId": "miraverse:ru_painted_window_nalichnik",
+          "offset": {
+            "x": 1808,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Kitezh Bell"
+        }
+      ]
+    },
+    {
+      "interiorId": "ru_interior_artisan_workshop",
+      "buildingId": "ru_artisan_craft_guild",
+      "nameEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Restoration & Craft Studio",
+      "entryPos": {
+        "x": 1786,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "ru_craft_bench",
+          "blockId": "miraverse:ru_folklore_archive_shelf",
+          "offset": {
+            "x": 1786,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "ru_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 1784,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "ru_keeper_yelena",
+      "countryCode": "RU",
+      "nameEn": "Lake Keeper Yelena",
+      "nameNative": "Хранительница озера Елена",
+      "role": "mentor",
+      "greetingNative": "Добро пожаловать на озеро Светлояр! Здесь бережно хранят природный край и народные предания.",
+      "spawnPos": {
+        "x": 1776,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "RU01",
+        "RU06"
+      ]
+    },
+    {
+      "npcId": "ru_historian_pavel",
+      "countryCode": "RU",
+      "nameEn": "Village Historian Pavel",
+      "nameNative": "Историк Павел",
+      "role": "scholar",
+      "greetingNative": "Легенда о Китеже существует в разных вариантах — мы отличаем фольклор от наблюдений природы.",
+      "spawnPos": {
+        "x": 1788,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "RU02"
+      ]
+    },
+    {
+      "npcId": "ru_musician_ilya",
+      "countryCode": "RU",
+      "nameEn": "Musical Traveler Ilya",
+      "nameNative": "Музыкант Илья",
+      "role": "storyteller",
+      "greetingNative": "Послушай звон струн гуслей, вдохновлённый сказкой о Садко!",
+      "spawnPos": {
+        "x": 1800,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "RU03"
+      ]
+    },
+    {
+      "npcId": "ru_archivist_vera",
+      "countryCode": "RU",
+      "nameEn": "Archivist Vera",
+      "nameNative": "Архивист Вера",
+      "role": "archivist",
+      "greetingNative": "Мы записываем устные рассказы жителей и сохраняем их для будущих поколений.",
+      "spawnPos": {
+        "x": 1812,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "RU04"
+      ]
+    },
+    {
+      "npcId": "ru_carpenter_maksim",
+      "countryCode": "RU",
+      "nameEn": "Carpenter Maksim",
+      "nameNative": "Плотник Максим",
+      "role": "artisan",
+      "greetingNative": "Помоги построить деревянный павильон для общих историй у воды!",
+      "spawnPos": {
+        "x": 1824,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "RU05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "ru_quest_ru01",
+      "chapterId": "RU01",
+      "title": "The Bell at Dawn",
+      "kind": "sound_navigation_and_repair",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 1770,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:ru_carved_pine_izba_log",
+      "rewardArtifactId": "ru_lake_bell_fragment"
+    },
+    {
+      "anchorId": "ru_quest_ru02",
+      "chapterId": "RU02",
+      "title": "The City in Reflection",
+      "kind": "reflection_puzzle",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 1782,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:ru_svetloyar_reflection_prism",
+      "rewardArtifactId": "ru_reflection_prism"
+    },
+    {
+      "anchorId": "ru_quest_ru03",
+      "chapterId": "RU03",
+      "title": "Sadko’s Strings",
+      "kind": "musical_rhythm",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 1794,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:ru_wooden_belfry_shingle",
+      "rewardArtifactId": "ru_gusli_charm"
+    },
+    {
+      "anchorId": "ru_quest_ru04",
+      "chapterId": "RU04",
+      "title": "The Water Garden",
+      "kind": "ecological_stewardship",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1806,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:ru_lakeside_reed_bed",
+      "rewardArtifactId": "ru_reed_wreath"
+    },
+    {
+      "anchorId": "ru_quest_ru05",
+      "chapterId": "RU05",
+      "title": "Keepers of Stories",
+      "kind": "source_comparison_archive",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 1818,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:ru_musical_dock_plank",
+      "rewardArtifactId": "ru_legend_folio"
+    },
+    {
+      "anchorId": "ru_quest_ru06",
+      "chapterId": "RU06",
+      "title": "A Story Above Water",
+      "kind": "cooperative_pavilion_build",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 1830,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:ru_folklore_archive_shelf",
+      "rewardArtifactId": "ru_kitezh_memory_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "ru_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 1800,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "ru_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 1810,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Fair-Trade Stall"
+    },
+    {
+      "anchorId": "ru_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 1776,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:ru_story_pavilion_arch",
+      "labelEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Resource Gathering Spot"
+    },
+    {
+      "anchorId": "ru_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 1796,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:ru_carved_pine_izba_log",
+      "labelEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Community Restoration Plot"
+    },
+    {
+      "anchorId": "ru_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 1830,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:ru_svetloyar_reflection_prism",
+      "labelEn": "Lake Svetloyar / Kitezh-inspired mythic landscape Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "ozero",
+      "native": "озеро",
+      "translit": "ózero",
+      "en": "Clear forest lake"
+    },
+    {
+      "key": "gusli",
+      "native": "гусли",
+      "translit": "gúsli",
+      "en": "Traditional plucked multi-stringed folk instrument"
+    },
+    {
+      "key": "predaniye",
+      "native": "предание",
+      "translit": "predániye",
+      "en": "Oral legend passed across generations"
+    }
+  ]
+}
