@@ -1,0 +1,19 @@
+=== AGENT DX17 (DGX · W1) ===
+Timestamp: 2026-11-04T13:36:51.696Z
+Task: RTL/BiDi rendering and language-switch QA
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: DGX Spark (qwen/qwen3-coder-next, 58.24 tok/s, maxConcurrency=1) | NVIDIA GB10, 580.178.04, 43, 92 % | Total=121GiB Used=99GiB Free=5GiB Available=21GiB
+Branch: minecraft-global/DX17
+Worktree: /home/wael/Code/mv-wt-mcg/DX17
+Agent Commit SHA: d9b7ffa
+Integration Merge SHA: a0cadf5
+Owned Paths: apps/minecraft/tools/rtl/
+Modified Files (1): apps/minecraft/tools/rtl/verify-rtl-locales.mjs
+Test Command: node apps/minecraft/tools/rtl/verify-rtl-locales.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/rtl/verify-rtl-locales.mjs
+Blockers: None
+--- STDOUT/STDERR ---
+RTL_LOCALE_VERIFIER_OK {"ok":true,"localeCount":14,"baselineKeyCount":604,"rtlLocalesVerified":["ar","ar-LB","ar-IQ","ar-EG","ar-MA"],"nativeBedrockPackLocalesCount":9}
+
+DONE DX17 d9b7ffa apps/minecraft/tools/rtl/verify-rtl-locales.mjs

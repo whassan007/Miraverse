@@ -1497,13 +1497,17 @@
       "acceptance": "Real-client shaping, directionality, screenshot and fallback validation evidence",
       "branch": "minecraft-global/DX17",
       "worktree": "/home/wael/Code/mv-wt-mcg/DX17",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "d9b7ffa",
+      "integration_sha": "a0cadf5",
+      "runtime_environment": "DGX Spark (qwen/qwen3-coder-next, 58.24 tok/s, maxConcurrency=1) | NVIDIA GB10, 580.178.04, 43, 92 % | Total=121GiB Used=99GiB Free=5GiB Available=21GiB",
+      "modified_files": [
+        "apps/minecraft/tools/rtl/verify-rtl-locales.mjs"
+      ],
+      "evidence_paths": [
+        "apps/minecraft/tools/rtl/verify-rtl-locales.mjs"
+      ],
       "report_path": "reports/minecraft-global/agents/DX17.md",
       "log_path": "swarm/minecraft-global/logs/DX17.log",
       "blockers": []
