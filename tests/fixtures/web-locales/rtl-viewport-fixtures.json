@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "v06.1",
+  "viewports": [
+    360,
+    390,
+    768,
+    1440,
+    1920
+  ],
+  "rtlLocales": [
+    "ar-LB",
+    "ar-EG",
+    "ar-IQ"
+  ],
+  "ltrLocales": [
+    "en",
+    "fr",
+    "ko"
+  ],
+  "launcherFallbackCopy": {
+    "en": "Requires the free Roblox app and a Roblox account. In-game progress is saved in Roblox DataStoreService.",
+    "ar-LB": "يتطلب تطبيق روبلوكس المجاني وحساب روبلوكس. يتم حفظ التقدم داخل اللعبة."
+  }
+}
