@@ -1,0 +1,898 @@
+{
+  "schemaVersion": "1.1.0",
+  "countriesCount": 11,
+  "totalWaypoints": 66,
+  "routes": [
+    {
+      "countryCode": "LB",
+      "countryName": "Lebanon",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "LB01",
+          "waypointId": "glow_lb01",
+          "coords": {
+            "x": 170,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_navigation_and_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "LB02",
+          "waypointId": "glow_lb02",
+          "coords": {
+            "x": 182,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_epigraphy_and_craft",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "LB03",
+          "waypointId": "glow_lb03",
+          "coords": {
+            "x": 194,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooking_and_trade",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "LB04",
+          "waypointId": "glow_lb04",
+          "coords": {
+            "x": 206,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_myth_vs_history",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "LB05",
+          "waypointId": "glow_lb05",
+          "coords": {
+            "x": 218,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_oral_history_archive",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "LB06",
+          "waypointId": "glow_lb06",
+          "coords": {
+            "x": 230,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "IQ",
+      "countryName": "Iraq",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "IQ01",
+          "waypointId": "glow_iq01",
+          "coords": {
+            "x": 570,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_exploration_and_organization",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "IQ02",
+          "waypointId": "glow_iq02",
+          "coords": {
+            "x": 582,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_restoration_and_discovery",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "IQ03",
+          "waypointId": "glow_iq03",
+          "coords": {
+            "x": 594,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_source_comparison",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "IQ04",
+          "waypointId": "glow_iq04",
+          "coords": {
+            "x": 606,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_cooking_and_trade",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "IQ05",
+          "waypointId": "glow_iq05",
+          "coords": {
+            "x": 618,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_architecture_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "IQ06",
+          "waypointId": "glow_iq06",
+          "coords": {
+            "x": 630,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_exhibit",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "EG",
+      "countryName": "Egypt",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "EG01",
+          "waypointId": "glow_eg01",
+          "coords": {
+            "x": 370,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_navigation_and_gathering",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "EG02",
+          "waypointId": "glow_eg02",
+          "coords": {
+            "x": 382,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_craft_and_assembly",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "EG03",
+          "waypointId": "glow_eg03",
+          "coords": {
+            "x": 394,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_weighted_trade",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "EG04",
+          "waypointId": "glow_eg04",
+          "coords": {
+            "x": 406,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_cooking_sequence",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "EG05",
+          "waypointId": "glow_eg05",
+          "coords": {
+            "x": 418,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_folklore_comparison",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "EG06",
+          "waypointId": "glow_eg06",
+          "coords": {
+            "x": 430,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_accessible_route_design",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "FR",
+      "countryName": "France",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "FR01",
+          "waypointId": "glow_fr01",
+          "coords": {
+            "x": 970,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_navigation_and_mapping",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "FR02",
+          "waypointId": "glow_fr02",
+          "coords": {
+            "x": 982,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_pattern_craft",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "FR03",
+          "waypointId": "glow_fr03",
+          "coords": {
+            "x": 994,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooking_sequence",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "FR04",
+          "waypointId": "glow_fr04",
+          "coords": {
+            "x": 1006,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_trade_and_provenance",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "FR05",
+          "waypointId": "glow_fr05",
+          "coords": {
+            "x": 1018,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_architecture_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "FR06",
+          "waypointId": "glow_fr06",
+          "coords": {
+            "x": 1030,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_feast",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "KR",
+      "countryName": "South Korea",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "KR01",
+          "waypointId": "glow_kr01",
+          "coords": {
+            "x": 770,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_navigation_and_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "KR02",
+          "waypointId": "glow_kr02",
+          "coords": {
+            "x": 782,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_gathering_and_classification",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "KR03",
+          "waypointId": "glow_kr03",
+          "coords": {
+            "x": 794,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_polite_trade",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "KR04",
+          "waypointId": "glow_kr04",
+          "coords": {
+            "x": 806,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_cooking_sequence",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "KR05",
+          "waypointId": "glow_kr05",
+          "coords": {
+            "x": 818,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_architecture_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "KR06",
+          "waypointId": "glow_kr06",
+          "coords": {
+            "x": 830,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_feast",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "DE",
+      "countryName": "Germany",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "DE01",
+          "waypointId": "glow_de01",
+          "coords": {
+            "x": 1170,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_navigation_and_mapping",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "DE02",
+          "waypointId": "glow_de02",
+          "coords": {
+            "x": 1182,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_literature_comparison",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "DE03",
+          "waypointId": "glow_de03",
+          "coords": {
+            "x": 1194,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_signal_prioritization",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "DE04",
+          "waypointId": "glow_de04",
+          "coords": {
+            "x": 1206,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_observation_and_empathy",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "DE05",
+          "waypointId": "glow_de05",
+          "coords": {
+            "x": 1218,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_myth_interpretation",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "DE06",
+          "waypointId": "glow_de06",
+          "coords": {
+            "x": 1230,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "CN",
+      "countryName": "China",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "CN01",
+          "waypointId": "glow_cn01",
+          "coords": {
+            "x": 1370,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_exploration_and_discovery",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "CN02",
+          "waypointId": "glow_cn02",
+          "coords": {
+            "x": 1382,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_gathering_and_bridge_repair",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "CN03",
+          "waypointId": "glow_cn03",
+          "coords": {
+            "x": 1394,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_seasonal_comparison",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "CN04",
+          "waypointId": "glow_cn04",
+          "coords": {
+            "x": 1406,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_map_revision_reasoning",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "CN05",
+          "waypointId": "glow_cn05",
+          "coords": {
+            "x": 1418,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_folklore_and_cooking",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "CN06",
+          "waypointId": "glow_cn06",
+          "coords": {
+            "x": 1430,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "JP",
+      "countryName": "Japan",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "JP01",
+          "waypointId": "glow_jp01",
+          "coords": {
+            "x": 1570,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_preparation_and_wayfinding",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "JP02",
+          "waypointId": "glow_jp02",
+          "coords": {
+            "x": 1582,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_bridge_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "JP03",
+          "waypointId": "glow_jp03",
+          "coords": {
+            "x": 1594,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_poetic_composition",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "JP04",
+          "waypointId": "glow_jp04",
+          "coords": {
+            "x": 1606,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_trade_and_roof_repair",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "JP05",
+          "waypointId": "glow_jp05",
+          "coords": {
+            "x": 1618,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_temporal_comparison",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "JP06",
+          "waypointId": "glow_jp06",
+          "coords": {
+            "x": 1630,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_garden_build",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "RU",
+      "countryName": "Russia",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "RU01",
+          "waypointId": "glow_ru01",
+          "coords": {
+            "x": 1770,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_sound_navigation_and_repair",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "RU02",
+          "waypointId": "glow_ru02",
+          "coords": {
+            "x": 1782,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_reflection_puzzle",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "RU03",
+          "waypointId": "glow_ru03",
+          "coords": {
+            "x": 1794,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_musical_rhythm",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "RU04",
+          "waypointId": "glow_ru04",
+          "coords": {
+            "x": 1806,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_ecological_stewardship",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "RU05",
+          "waypointId": "glow_ru05",
+          "coords": {
+            "x": 1818,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_source_comparison_archive",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "RU06",
+          "waypointId": "glow_ru06",
+          "coords": {
+            "x": 1830,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_pavilion_build",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "UA",
+      "countryName": "Ukraine",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "UA01",
+          "waypointId": "glow_ua01",
+          "coords": {
+            "x": 1970,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_exploration_and_mapping",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "UA02",
+          "waypointId": "glow_ua02",
+          "coords": {
+            "x": 1982,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_accessible_bridge_build",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "UA03",
+          "waypointId": "glow_ua03",
+          "coords": {
+            "x": 1994,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_call_and_response_music",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "UA04",
+          "waypointId": "glow_ua04",
+          "coords": {
+            "x": 2006,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_oral_vs_documented_history",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "UA05",
+          "waypointId": "glow_ua05",
+          "coords": {
+            "x": 2018,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_venue_restoration",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "UA06",
+          "waypointId": "glow_ua06",
+          "coords": {
+            "x": 2030,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_composition",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    },
+    {
+      "countryCode": "MA",
+      "countryName": "Morocco",
+      "explorerGlowPathEnabled": true,
+      "noDeadEndsVerified": true,
+      "maxStepHeightBlocks": 0.5,
+      "waypoints": [
+        {
+          "chapterId": "MA01",
+          "waypointId": "glow_ma01",
+          "coords": {
+            "x": 2170,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_interactive_circle_onboarding",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "MA02",
+          "waypointId": "glow_ma02",
+          "coords": {
+            "x": 2182,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_branching_oral_story",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "MA03",
+          "waypointId": "glow_ma03",
+          "coords": {
+            "x": 2194,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_hospitality_and_trade",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "MA04",
+          "waypointId": "glow_ma04",
+          "coords": {
+            "x": 2206,
+            "y": 65,
+            "z": -20
+          },
+          "pictogramIcon": "icon_collaborative_attribution",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "MA05",
+          "waypointId": "glow_ma05",
+          "coords": {
+            "x": 2218,
+            "y": 65,
+            "z": -4
+          },
+          "pictogramIcon": "icon_respectful_heritage_mapping",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        },
+        {
+          "chapterId": "MA06",
+          "waypointId": "glow_ma06",
+          "coords": {
+            "x": 2230,
+            "y": 65,
+            "z": 12
+          },
+          "pictogramIcon": "icon_cooperative_stage_performance",
+          "beaconBlock": "minecraft:sea_lantern",
+          "checkpointOnArrival": true
+        }
+      ]
+    }
+  ]
+}
