@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "KR",
+  "countryName": "South Korea",
+  "region": "Jeonju",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 57.25,
+    "hardware": "NVIDIA GB10, 580.178.04, 46, 0 % | Total=121GiB Used=100GiB Free=3GiB Available=20GiB",
+    "notes": "Here's a concise summary of **visual material and texture QA checks** for the *South Korea (Jeonju)* section of a **Minecraft Bedrock Resource Pack**, covering **8 custom blocks** and **6 chapter artifacts**: --- ### ✅ **General Visual & Texture QA Checks** - "
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/KR/items/kr_five_color_bibimbap_bowl.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:kr_giwa_eave_tile",
+      "shortName": "kr_giwa_eave_tile",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/blocks/kr_giwa_eave_tile.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:kr_hanji_sliding_screen",
+      "shortName": "kr_hanji_sliding_screen",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/blocks/kr_hanji_sliding_screen.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:kr_ondol_hearth_stone",
+      "shortName": "kr_ondol_hearth_stone",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/blocks/kr_ondol_hearth_stone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:kr_onggi_fermentation_jar",
+      "shortName": "kr_onggi_fermentation_jar",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/blocks/kr_onggi_fermentation_jar.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:kr_pine_beam_bracket",
+      "shortName": "kr_pine_beam_bracket",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/blocks/kr_pine_beam_bracket.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:kr_songpyeon_steamer_block",
+      "shortName": "kr_songpyeon_steamer_block",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/blocks/kr_songpyeon_steamer_block.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:kr_stone_pagoda_lantern",
+      "shortName": "kr_stone_pagoda_lantern",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/blocks/kr_stone_pagoda_lantern.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:kr_courtyard_stepping_stone",
+      "shortName": "kr_courtyard_stepping_stone",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/blocks/kr_courtyard_stepping_stone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "kr_hanok_door_charm",
+      "chapterId": "KR01",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/items/kr_hanok_door_charm.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "kr_five_color_palette",
+      "chapterId": "KR02",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/items/kr_five_color_palette.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "kr_market_token",
+      "chapterId": "KR03",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/items/kr_market_token.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "kr_bibimbap_bowl",
+      "chapterId": "KR04",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/items/kr_bibimbap_bowl.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "kr_joinery_pattern",
+      "chapterId": "KR05",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/items/kr_joinery_pattern.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "kr_jeonju_harmony_stamp",
+      "chapterId": "KR06",
+      "texturePath": "apps/minecraft/assets-src/processed/KR/items/kr_jeonju_harmony_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}
