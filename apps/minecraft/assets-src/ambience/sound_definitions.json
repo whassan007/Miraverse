@@ -1,0 +1,181 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "miraverse.lb.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.lb.ambient",
+      "visualParticleEquivalent": "miraverse:lb_glow_motes",
+      "sounds": [
+        "sounds/ambient/lb_loop"
+      ]
+    },
+    "miraverse.lb.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.lb.chime",
+      "visualParticleEquivalent": "miraverse:lb_completion_burst",
+      "sounds": [
+        "sounds/ui/lb_chime"
+      ]
+    },
+    "miraverse.iq.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.iq.ambient",
+      "visualParticleEquivalent": "miraverse:iq_glow_motes",
+      "sounds": [
+        "sounds/ambient/iq_loop"
+      ]
+    },
+    "miraverse.iq.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.iq.chime",
+      "visualParticleEquivalent": "miraverse:iq_completion_burst",
+      "sounds": [
+        "sounds/ui/iq_chime"
+      ]
+    },
+    "miraverse.eg.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.eg.ambient",
+      "visualParticleEquivalent": "miraverse:eg_glow_motes",
+      "sounds": [
+        "sounds/ambient/eg_loop"
+      ]
+    },
+    "miraverse.eg.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.eg.chime",
+      "visualParticleEquivalent": "miraverse:eg_completion_burst",
+      "sounds": [
+        "sounds/ui/eg_chime"
+      ]
+    },
+    "miraverse.fr.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.fr.ambient",
+      "visualParticleEquivalent": "miraverse:fr_glow_motes",
+      "sounds": [
+        "sounds/ambient/fr_loop"
+      ]
+    },
+    "miraverse.fr.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.fr.chime",
+      "visualParticleEquivalent": "miraverse:fr_completion_burst",
+      "sounds": [
+        "sounds/ui/fr_chime"
+      ]
+    },
+    "miraverse.kr.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.kr.ambient",
+      "visualParticleEquivalent": "miraverse:kr_glow_motes",
+      "sounds": [
+        "sounds/ambient/kr_loop"
+      ]
+    },
+    "miraverse.kr.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.kr.chime",
+      "visualParticleEquivalent": "miraverse:kr_completion_burst",
+      "sounds": [
+        "sounds/ui/kr_chime"
+      ]
+    },
+    "miraverse.de.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.de.ambient",
+      "visualParticleEquivalent": "miraverse:de_glow_motes",
+      "sounds": [
+        "sounds/ambient/de_loop"
+      ]
+    },
+    "miraverse.de.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.de.chime",
+      "visualParticleEquivalent": "miraverse:de_completion_burst",
+      "sounds": [
+        "sounds/ui/de_chime"
+      ]
+    },
+    "miraverse.cn.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.cn.ambient",
+      "visualParticleEquivalent": "miraverse:cn_glow_motes",
+      "sounds": [
+        "sounds/ambient/cn_loop"
+      ]
+    },
+    "miraverse.cn.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.cn.chime",
+      "visualParticleEquivalent": "miraverse:cn_completion_burst",
+      "sounds": [
+        "sounds/ui/cn_chime"
+      ]
+    },
+    "miraverse.jp.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.jp.ambient",
+      "visualParticleEquivalent": "miraverse:jp_glow_motes",
+      "sounds": [
+        "sounds/ambient/jp_loop"
+      ]
+    },
+    "miraverse.jp.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.jp.chime",
+      "visualParticleEquivalent": "miraverse:jp_completion_burst",
+      "sounds": [
+        "sounds/ui/jp_chime"
+      ]
+    },
+    "miraverse.ru.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.ru.ambient",
+      "visualParticleEquivalent": "miraverse:ru_glow_motes",
+      "sounds": [
+        "sounds/ambient/ru_loop"
+      ]
+    },
+    "miraverse.ru.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.ru.chime",
+      "visualParticleEquivalent": "miraverse:ru_completion_burst",
+      "sounds": [
+        "sounds/ui/ru_chime"
+      ]
+    },
+    "miraverse.ua.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.ua.ambient",
+      "visualParticleEquivalent": "miraverse:ua_glow_motes",
+      "sounds": [
+        "sounds/ambient/ua_loop"
+      ]
+    },
+    "miraverse.ua.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.ua.chime",
+      "visualParticleEquivalent": "miraverse:ua_completion_burst",
+      "sounds": [
+        "sounds/ui/ua_chime"
+      ]
+    },
+    "miraverse.ma.ambient": {
+      "category": "ambient",
+      "subtitleKey": "subtitles.miraverse.ma.ambient",
+      "visualParticleEquivalent": "miraverse:ma_glow_motes",
+      "sounds": [
+        "sounds/ambient/ma_loop"
+      ]
+    },
+    "miraverse.ma.chime": {
+      "category": "ui",
+      "subtitleKey": "subtitles.miraverse.ma.chime",
+      "visualParticleEquivalent": "miraverse:ma_completion_burst",
+      "sounds": [
+        "sounds/ui/ma_chime"
+      ]
+    }
+  }
+}
