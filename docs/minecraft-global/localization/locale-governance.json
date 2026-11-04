@@ -1,0 +1,343 @@
+{
+  "schemaVersion": "1.1.0",
+  "localeCount": 14,
+  "nativeBedrockLocales": [
+    {
+      "profileCode": "en-US",
+      "bedrockLangCode": "en_US"
+    },
+    {
+      "profileCode": "fr-FR",
+      "bedrockLangCode": "fr_FR"
+    },
+    {
+      "profileCode": "fr-CA",
+      "bedrockLangCode": "fr_CA"
+    },
+    {
+      "profileCode": "de-DE",
+      "bedrockLangCode": "de_DE"
+    },
+    {
+      "profileCode": "zh-Hans-CN",
+      "bedrockLangCode": "zh_CN"
+    },
+    {
+      "profileCode": "ja-JP",
+      "bedrockLangCode": "ja_JP"
+    },
+    {
+      "profileCode": "ru-RU",
+      "bedrockLangCode": "ru_RU"
+    },
+    {
+      "profileCode": "uk-UA",
+      "bedrockLangCode": "uk_UA"
+    },
+    {
+      "profileCode": "ko-KR",
+      "bedrockLangCode": "ko_KR"
+    }
+  ],
+  "customArabicLocales": [
+    {
+      "profileCode": "ar",
+      "fallbackChain": [
+        "ar",
+        "en-US"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "profileCode": "ar-LB",
+      "fallbackChain": [
+        "ar-LB",
+        "ar",
+        "en-US"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "profileCode": "ar-IQ",
+      "fallbackChain": [
+        "ar-IQ",
+        "ar",
+        "en-US"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "profileCode": "ar-EG",
+      "fallbackChain": [
+        "ar-EG",
+        "ar",
+        "en-US"
+      ],
+      "humanReviewRequired": true
+    },
+    {
+      "profileCode": "ar-MA",
+      "fallbackChain": [
+        "ar-MA",
+        "ar",
+        "en-US"
+      ],
+      "humanReviewRequired": true
+    }
+  ],
+  "culturalTermsByCountry": {
+    "LB": {
+      "localLanguage": "ar-LB",
+      "learnWords": [
+        {
+          "key": "saj",
+          "native": "صاج",
+          "translit": "ṣāj",
+          "en": "Domed griddle for baking flatbread"
+        },
+        {
+          "key": "zaatar",
+          "native": "زعتر",
+          "translit": "za'tar",
+          "en": "Fragrant wild thyme, sesame, and sumac blend"
+        },
+        {
+          "key": "mina",
+          "native": "مينا",
+          "translit": "mīnā",
+          "en": "Coastal harbor and stone dock"
+        }
+      ]
+    },
+    "IQ": {
+      "localLanguage": "ar-IQ",
+      "learnWords": [
+        {
+          "key": "shanasheel",
+          "native": "شناشيل",
+          "translit": "shanāshīl",
+          "en": "Carved wooden lattice balcony overhanging the street"
+        },
+        {
+          "key": "kleicha",
+          "native": "كليجة",
+          "translit": "klīcha",
+          "en": "Cardamom-spiced date pastry shared at celebrations"
+        },
+        {
+          "key": "hikma",
+          "native": "حكمة",
+          "translit": "ḥikma",
+          "en": "Wisdom and shared scholarly inquiry"
+        }
+      ]
+    },
+    "EG": {
+      "localLanguage": "ar-EG",
+      "learnWords": [
+        {
+          "key": "fanous",
+          "native": "فانوس",
+          "translit": "fānūs",
+          "en": "Decorative brass and colored-glass lantern"
+        },
+        {
+          "key": "koshari",
+          "native": "كشري",
+          "translit": "kusharī",
+          "en": "Layered rice, lentils, pasta, tomato sauce, and crispy onions"
+        },
+        {
+          "key": "mashrabiya",
+          "native": "مشربية",
+          "translit": "mashrabiyya",
+          "en": "Turned-wood geometric lattice screen"
+        }
+      ]
+    },
+    "FR": {
+      "localLanguage": "fr-FR",
+      "learnWords": [
+        {
+          "key": "traboule",
+          "native": "traboule",
+          "translit": "trah-bool",
+          "en": "Covered passageway connecting courtyards and streets in Lyon"
+        },
+        {
+          "key": "boulangerie",
+          "native": "boulangerie",
+          "translit": "boo-lahn-zhuh-ree",
+          "en": "Neighborhood bread and pastry bakery"
+        },
+        {
+          "key": "canut",
+          "native": "canut",
+          "translit": "kah-noo",
+          "en": "Historic silk weaver of Lyon"
+        }
+      ]
+    },
+    "KR": {
+      "localLanguage": "ko-KR",
+      "learnWords": [
+        {
+          "key": "hanok",
+          "native": "한옥",
+          "translit": "hanok",
+          "en": "Traditional Korean timber-framed house with curved giwa roof tiles"
+        },
+        {
+          "key": "obangsaek",
+          "native": "오방색",
+          "translit": "obangsaek",
+          "en": "Traditional Korean five-color harmony palette"
+        },
+        {
+          "key": "bibimbap",
+          "native": "비빔밥",
+          "translit": "bibimbap",
+          "en": "Warm rice mixed with seasoned vegetables and savory sauces"
+        }
+      ]
+    },
+    "DE": {
+      "localLanguage": "de-DE",
+      "learnWords": [
+        {
+          "key": "mitgefuehl",
+          "native": "Mitgefühl",
+          "translit": "mit-guh-fuel",
+          "en": "Compassion and active empathy for others"
+        },
+        {
+          "key": "strom",
+          "native": "Strom",
+          "translit": "shtrohm",
+          "en": "Wide navigable river current"
+        },
+        {
+          "key": "frage",
+          "native": "Frage",
+          "translit": "frah-guh",
+          "en": "A caring question that opens understanding"
+        }
+      ]
+    },
+    "CN": {
+      "localLanguage": "zh-Hans-CN",
+      "learnWords": [
+        {
+          "key": "taohua",
+          "native": "桃花",
+          "translit": "táohuā",
+          "en": "Peach blossom flower"
+        },
+        {
+          "key": "tuanyuan",
+          "native": "团圆",
+          "translit": "tuányuán",
+          "en": "Warm reunion and gathering together"
+        },
+        {
+          "key": "bianhua",
+          "native": "变化",
+          "translit": "biànhuà",
+          "en": "Natural change and renewal over time"
+        }
+      ]
+    },
+    "JP": {
+      "localLanguage": "ja-JP",
+      "learnWords": [
+        {
+          "key": "tabi",
+          "native": "旅",
+          "translit": "tabi",
+          "en": "Journey and mindful travel across seasons"
+        },
+        {
+          "key": "haiku",
+          "native": "俳句",
+          "translit": "haiku",
+          "en": "Short three-line seasonal poem observing nature"
+        },
+        {
+          "key": "kakehashi",
+          "native": "架け橋",
+          "translit": "kakehashi",
+          "en": "Connecting bridge between places and people"
+        }
+      ]
+    },
+    "RU": {
+      "localLanguage": "ru-RU",
+      "learnWords": [
+        {
+          "key": "ozero",
+          "native": "озеро",
+          "translit": "ózero",
+          "en": "Clear forest lake"
+        },
+        {
+          "key": "gusli",
+          "native": "гусли",
+          "translit": "gúsli",
+          "en": "Traditional plucked multi-stringed folk instrument"
+        },
+        {
+          "key": "predaniye",
+          "native": "предание",
+          "translit": "predániye",
+          "en": "Oral legend passed across generations"
+        }
+      ]
+    },
+    "UA": {
+      "localLanguage": "uk-UA",
+      "learnWords": [
+        {
+          "key": "bandura",
+          "native": "бандура",
+          "translit": "bandúra",
+          "en": "Ukrainian plucked string instrument combining lute and harp elements"
+        },
+        {
+          "key": "dumy",
+          "native": "думи",
+          "translit": "dúmy",
+          "en": "Sung epic poems preserving oral cultural memory"
+        },
+        {
+          "key": "toloka",
+          "native": "толока",
+          "translit": "tolóka",
+          "en": "Community solidarity gathering to build or restore together"
+        }
+      ]
+    },
+    "MA": {
+      "localLanguage": "ar-MA",
+      "learnWords": [
+        {
+          "key": "halqa",
+          "native": "حلقة",
+          "translit": "ḥalqa",
+          "en": "Interactive audience circle gathered around a storyteller"
+        },
+        {
+          "key": "atay",
+          "native": "أتاي",
+          "translit": "atāy",
+          "en": "Moroccan green tea infused with fresh spearmint"
+        },
+        {
+          "key": "zellij",
+          "native": "زليج",
+          "translit": "zallīj",
+          "en": "Hand-cut geometric glazed tilework"
+        }
+      ]
+    }
+  }
+}
