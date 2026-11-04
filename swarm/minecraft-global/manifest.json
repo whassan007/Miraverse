@@ -1378,13 +1378,21 @@
       "acceptance": "CJK locales, glyph metrics, truncation and line-break tests",
       "branch": "minecraft-global/DX14",
       "worktree": "/home/wael/Code/mv-wt-mcg/DX14",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "bfaa96c",
+      "integration_sha": "a128003",
+      "runtime_environment": "DGX Spark (qwen/qwen3-coder-next, 52.96 tok/s, maxConcurrency=1) | NVIDIA GB10, 580.178.04, 42, 92 % | Total=121GiB Used=99GiB Free=6GiB Available=22GiB",
+      "modified_files": [
+        "packages/content/locales/ja-JP/messages.json",
+        "packages/content/locales/ko-KR/messages.json",
+        "packages/content/locales/zh-Hans-CN/messages.json"
+      ],
+      "evidence_paths": [
+        "packages/content/locales/zh-Hans-CN/messages.json",
+        "packages/content/locales/ja-JP/messages.json",
+        "packages/content/locales/ko-KR/messages.json"
+      ],
       "report_path": "reports/minecraft-global/agents/DX14.md",
       "log_path": "swarm/minecraft-global/logs/DX14.log",
       "blockers": []
