@@ -1,0 +1,48 @@
+{
+  "characterId": "char:hero:mira",
+  "name": "Mira",
+  "heightMeters": 1.45,
+  "radiusMeters": 0.35,
+  "skeletonJoints": [
+    "root",
+    "pelvis",
+    "spine",
+    "chest",
+    "neck",
+    "head",
+    "shoulder_L",
+    "arm_L",
+    "hand_L",
+    "shoulder_R",
+    "arm_R",
+    "hand_R",
+    "leg_L",
+    "shin_L",
+    "foot_L",
+    "leg_R",
+    "shin_R",
+    "foot_R"
+  ],
+  "palette": {
+    "skin": "#D99B78",
+    "hair": "#2B2118",
+    "tunic": "#2A6F97",
+    "scarf": "#F4A261",
+    "satchel": "#8C4A27",
+    "boots": "#4A3525"
+  },
+  "requiredClips": [
+    "idle_breathing",
+    "idle_variation",
+    "walk",
+    "run",
+    "stop_turn",
+    "interact_reach",
+    "pickup",
+    "talk_gesture",
+    "celebrate",
+    "sit_observe",
+    "cook_action",
+    "repair_build"
+  ]
+}
