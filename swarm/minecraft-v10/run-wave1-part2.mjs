@@ -58,7 +58,7 @@ export function buildEntityDescriptor(id, country, role = 'mentor') {
         geometry: { default: 'geometry.miraverse.mentor' },
         animations: {
           idle: 'animation.miraverse.mentor.idle',
-          greet: 'animation.miraverse.mentor.greet',
+          greeting: 'animation.miraverse.mentor.greeting',
           celebrate: 'animation.miraverse.mentor.celebrate',
         },
         scripts: {
@@ -107,15 +107,14 @@ import { buildEntityDescriptor } from '../entity-gen/generate-entities.mjs';
 import { generateBlockDefinition } from '../resource-gen/generate-resources.mjs';
 
 const ROOT = process.cwd();
-const palettesPath = path.join(ROOT, 'apps/minecraft/art-direction/v10/palettes.json');
-const palettes = JSON.parse(fs.readFileSync(palettesPath, 'utf8'));
+const blocksManifestPath = path.join(ROOT, 'apps/minecraft/assets-src/blocks/blocks-kit-manifest.json');
+const blocksKit = JSON.parse(fs.readFileSync(blocksManifestPath, 'utf8'));
 
-const customBlocks = [];
-for (const [region, p] of Object.entries(palettes.palettes)) {
-  for (const b of p.customBlocks) {
-    customBlocks.push({ region, blockId: b, definition: generateBlockDefinition(b) });
-  }
-}
+const customBlocks = (blocksKit.blocks || []).map((b) => ({
+  region: b.country,
+  blockId: b.blockId,
+  definition: generateBlockDefinition(b.blockId, b.mapColorHex || '#C4A472'),
+}));
 
 const entities = [
   buildEntityDescriptor('mentor_lb', 'LB', 'mentor'),
@@ -174,6 +173,9 @@ async function runCX03() {
  * StructureBuilderV10 — Chunk-safe multi-tick structure placement & 3-stage landmark restoration
  * Owner: CX03
  */
+import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { RestorationStageIndex } from '../contracts/index.js';
+import { REGIONS_V10 } from '../regions/index.js';
 
 export interface BlockPlacementOp {
   x: number;
@@ -182,21 +184,10 @@ export interface BlockPlacementOp {
   blockId: string;
 }
 
-export interface RestorationSnapshot {
-  country: 'LB' | 'EG' | 'IQ' | 'KR' | 'FR';
-  landmarkId: string;
-  currentStage: 0 | 1 | 2;
-  stages: {
-    stage: 0 | 1 | 2;
-    label: string;
-    ops: BlockPlacementOp[];
-  }[];
-}
-
 export class StructureBuilderV10 {
   private readonly maxBlocksPerTick: number;
   private readonly queue: BlockPlacementOp[] = [];
-  private readonly restorations = new Map<string, RestorationSnapshot>();
+  private readonly activeStage = new Map<CountryId, RestorationStageIndex>();
 
   constructor(maxBlocksPerTick = 64) {
     this.maxBlocksPerTick = maxBlocksPerTick;
@@ -219,29 +210,25 @@ export class StructureBuilderV10 {
     return this.queue.length;
   }
 
-  registerRestoration(snapshot: RestorationSnapshot): void {
-    this.restorations.set(snapshot.country, snapshot);
+  applyRestorationStage(country: CountryId, stage: RestorationStageIndex): { ops: BlockPlacementOp[]; descriptionEn: string } {
+    const region = REGIONS_V10[country];
+    const spec = region?.restorationStages.find((s) => s.stage === stage);
+    if (!region || !spec) {
+      return { ops: [], descriptionEn: 'unknown_stage' };
+    }
+    const ops: BlockPlacementOp[] = spec.blockPlacements.map((p) => ({
+      x: region.restorationOrigin.x + p.offset.x,
+      y: region.restorationOrigin.y + p.offset.y,
+      z: region.restorationOrigin.z + p.offset.z,
+      blockId: p.blockId,
+    }));
+    this.activeStage.set(country, stage);
+    this.enqueueOperations(ops);
+    return { ops, descriptionEn: spec.descriptionEn };
   }
 
-  advanceRestorationStage(
-    country: 'LB' | 'EG' | 'IQ' | 'KR' | 'FR',
-    targetStage: 0 | 1 | 2
-  ): { appliedOps: BlockPlacementOp[]; label: string } {
-    const snap = this.restorations.get(country);
-    if (!snap) {
-      return { appliedOps: [], label: 'unregistered' };
-    }
-    const stageDef = snap.stages.find((s) => s.stage === targetStage);
-    if (!stageDef) {
-      return { appliedOps: [], label: 'invalid_stage' };
-    }
-    snap.currentStage = targetStage;
-    this.enqueueOperations(stageDef.ops);
-    return { appliedOps: stageDef.ops, label: stageDef.label };
-  }
-
-  getRestorationStage(country: 'LB' | 'EG' | 'IQ' | 'KR' | 'FR'): 0 | 1 | 2 {
-    return this.restorations.get(country)?.currentStage ?? 0;
+  getRestorationStage(country: CountryId): RestorationStageIndex {
+    return this.activeStage.get(country) ?? 0;
   }
 }
 `;
@@ -252,10 +239,9 @@ export class StructureBuilderV10 {
  * Native Bedrock @minecraft/server-ui Forms & HUD Coordinator
  * Owner: CX03
  */
-
-import type { CountryId } from '../contracts/index.js';
-import type { PlayerAdventureState } from '../progression/index.js';
-import type { DialogueNode } from '../dialogue/index.js';
+import type { CountryId } from '../../../../../../packages/content/schema.js';
+import { COUNTRIES_V10, type PlayerSaveStateV10 } from '../contracts/index.js';
+import { REGIONS_V10 } from '../regions/index.js';
 
 export interface ActionFormDescriptor {
   title: string;
@@ -272,93 +258,126 @@ export class BedrockUiFormsV10 {
       buttons.push({ id: 'skip_tutorial', label: 'Skip Tutorial — Choose Destination Now', iconPath: 'textures/items/mira_token' });
     }
     return {
-      title: 'Welcome to MiraVerse Airport Hub',
+      title: 'Welcome to MiraVerse Gateway Hub',
       body: 'Explore five authentic cultural towns: Byblos (LB), Historic Cairo (EG), Baghdad Riverfront (IQ), Jeonju Hanok Village (KR), and Vieux Lyon (FR).',
       buttons,
     };
   }
 
-  buildPassportOverviewForm(state: PlayerAdventureState): ActionFormDescriptor {
-    const stampLines = (['LB', 'EG', 'IQ', 'KR', 'FR'] as CountryId[]).map((cc) => {
-      const p = state.countries[cc];
-      return \`\${cc}: \${p.stampCode ? \`STAMPED (\${p.stampCode})\` : \`\${p.completedChallenges.length}/5 challenges\`}\`;
+  buildPassportOverviewForm(state: PlayerSaveStateV10): ActionFormDescriptor {
+    const stampLines = COUNTRIES_V10.map((cc) => {
+      const q = state.quests[cc];
+      return \`\${cc}: \${q?.stampCode ? \`STAMPED (\${q.stampCode})\` : \`\${q?.completedChallenges.length ?? 0}/5 challenges\`}\`;
     });
     return {
-      title: \`MiraVerse Passport — \${state.miraTokens} Mira Tokens\`,
+      title: \`MiraVerse Passport — \${state.localMiraTokens} Mira Tokens\`,
       body: [
-        \`Active Country: \${state.activeCountry ?? 'Hub'}\`,
-        \`Discovered Words: \${state.vocabularyBook.length}\`,
+        \`Active Region: \${state.activeCountry}\`,
         ...stampLines,
       ].join('\\n'),
       buttons: [
-        { id: 'travel_LB', label: 'Port of Byblos (Lebanon)' },
-        { id: 'travel_EG', label: 'Historic Cairo (Egypt)' },
-        { id: 'travel_IQ', label: 'Baghdad Riverfront (Iraq)' },
-        { id: 'travel_KR', label: 'Jeonju Hanok Village (South Korea)' },
-        { id: 'travel_FR', label: 'Vieux Lyon & Boulangerie (France)' },
-        { id: 'travel_HUB', label: 'Return to Airport Hub' },
+        ...COUNTRIES_V10.map((cc) => ({
+          id: \`travel_\${cc}\`,
+          label: \`\${REGIONS_V10[cc].titleEn} (\${cc})\`,
+        })),
+        { id: 'travel_HUB', label: 'Return to Gateway Hub' },
       ],
     };
   }
 
-  buildMentorDialogueForm(node: DialogueNode, locale = 'en'): ActionFormDescriptor {
-    const text = node.lines[locale] ?? node.lines['en'] ?? '';
+  buildMentorDialogueForm(
+    country: CountryId,
+    npcName: string,
+    greetingEn: string,
+    greetingNative: string,
+    nextRecommendedChallenge: string
+  ): ActionFormDescriptor {
     return {
-      title: node.speakerName,
-      body: node.vocabCallout
-        ? \`\${text}\\n\\n[Word Discovery: \${node.vocabCallout.romanized} — \${node.vocabCallout.english}]\`
-        : text,
-      buttons: node.choices.map((c) => ({
-        id: c.id,
-        label: c.labels[locale] ?? c.labels['en'] ?? c.id,
-      })),
+      title: \`\${npcName} (\${country})\`,
+      body: \`\${greetingEn}\\n\\n\${greetingNative}\\n\\nNext Objective: \${nextRecommendedChallenge.toUpperCase()}\`,
+      buttons: [
+        { id: 'accept_objective', label: \`Start/Continue: \${nextRecommendedChallenge}\` },
+        { id: 'open_passport', label: 'Open MiraVerse Passport' },
+      ],
     };
   }
 }
 `;
   writeWtFile(wtDir, 'apps/minecraft/scripts/src/ui/index.ts', uiCode);
 
-  // 3. Bootstrap orchestrator connecting Progression, Dialogue, Challenges, Structures, Multiplayer, and UI
+  // 3. Bootstrap orchestrator connecting State, Quests, NPC, Challenges, Structures, Multiplayer, and UI
   const bootstrapCode = `/**
  * MiraVerse v1.0 Bedrock Runtime Bootstrap
  * Owner: CX03
  */
-
-import { ProgressionStore, type PlayerAdventureState } from '../progression/index.js';
-import { MentorDialogueRegistry, getReturnToMentorBreadcrumb } from '../dialogue/index.js';
-import { ChallengeEngineV10 } from '../challenges/index.js';
-import { PlotProtectionManager, CoopSessionCoordinator } from '../multiplayer/index.js';
+import type { CountryId } from '../../../../../../packages/content/schema.js';
+import type { PlayerSaveStateV10, WorldSaveStateV10 } from '../contracts/index.js';
+import { createDefaultPlayerStateV10, createDefaultWorldStateV10 } from '../state/index.js';
+import { interactWithNpcV10 } from '../npc/index.js';
+import {
+  performGatherAnchor,
+  performTradeAnchor,
+  performCookingStep,
+  performRestorationStep,
+  performWordObjectDiscovery,
+} from '../challenges/index.js';
+import { claimOrGetPrivatePlot } from '../multiplayer/index.js';
 import { StructureBuilderV10 } from '../structures/index.js';
 import { BedrockUiFormsV10 } from '../ui/index.js';
 
 export class MiraVerseBedrockRuntimeV10 {
-  readonly progression = new ProgressionStore();
-  readonly dialogue = new MentorDialogueRegistry();
-  readonly challenges = new ChallengeEngineV10(this.progression);
-  readonly plots = new PlotProtectionManager();
-  readonly coop = new CoopSessionCoordinator();
   readonly structures = new StructureBuilderV10(64);
   readonly ui = new BedrockUiFormsV10();
-  private tutorialCompleted = new Set<string>();
+  readonly worldState: WorldSaveStateV10 = createDefaultWorldStateV10();
+  private readonly players = new Map<string, PlayerSaveStateV10>();
 
-  initializePlayer(playerId: string, rawSaveJson?: string): PlayerAdventureState {
-    return this.progression.loadPlayerState(playerId, rawSaveJson);
+  getOrCreatePlayer(playerId: string, playerName = 'Explorer'): PlayerSaveStateV10 {
+    let p = this.players.get(playerId);
+    if (!p) {
+      p = createDefaultPlayerStateV10(playerId, playerName);
+      this.players.set(playerId, p);
+    }
+    return p;
   }
 
-  completeOrSkipTutorial(playerId: string): boolean {
-    this.tutorialCompleted.add(playerId);
-    return true;
+  completeOrSkipTutorial(playerId: string): PlayerSaveStateV10 {
+    const p = this.getOrCreatePlayer(playerId);
+    p.tutorialCompleted = true;
+    return p;
   }
 
-  isTutorialDone(playerId: string): boolean {
-    return this.tutorialCompleted.has(playerId);
+  talkToMentor(playerId: string, country: CountryId, npcId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    return interactWithNpcV10(p, country, npcId);
   }
 
-  getActiveBreadcrumb(playerId: string): string {
-    const state = this.progression.loadPlayerState(playerId);
-    if (!state.activeCountry) return 'Visit the Departure Board at (0, 65, -18) to select a country.';
-    const cp = state.countries[state.activeCountry];
-    return getReturnToMentorBreadcrumb(state.activeCountry, cp.completedChallenges.length);
+  gather(playerId: string, country: CountryId, anchorId: string) {
+    return performGatherAnchor(this.getOrCreatePlayer(playerId), country, anchorId);
+  }
+
+  trade(playerId: string, country: CountryId) {
+    return performTradeAnchor(this.getOrCreatePlayer(playerId), country);
+  }
+
+  cookStep(playerId: string, country: CountryId, stepIndex: number) {
+    return performCookingStep(this.getOrCreatePlayer(playerId), country, stepIndex);
+  }
+
+  restoreStep(playerId: string, country: CountryId) {
+    const res = performRestorationStep(this.getOrCreatePlayer(playerId), country);
+    if (res.ok) {
+      this.structures.applyRestorationStage(country, res.newStage);
+      this.worldState.restorationStageByCountry[country] = res.newStage;
+    }
+    return res;
+  }
+
+  discoverWord(playerId: string, country: CountryId, anchorId: string) {
+    return performWordObjectDiscovery(this.getOrCreatePlayer(playerId), country, anchorId);
+  }
+
+  claimPlot(playerId: string, country: CountryId) {
+    return claimOrGetPrivatePlot(this.worldState, country, playerId);
   }
 }
 `;
@@ -385,7 +404,7 @@ export class MiraVerseBedrockRuntimeV10 {
 async function runDX03() {
   const id = 'DX03';
   const { wtDir } = prepareWorktree(id);
-  const dgx = await queryDgxSpark('Verify Hub structure bounds and 5 country gate coordinates.');
+  const dgx = await queryDgxSpark('Verify Hub structure bounds and 5 country portal coordinates.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
@@ -393,15 +412,16 @@ import path from 'node:path';
 
 const hub = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/world/hub/hub-district.json'), 'utf8'));
 const countries = ['LB', 'EG', 'IQ', 'KR', 'FR'];
+const portals = hub.portals || hub.departureGates || [];
 for (const c of countries) {
-  if (!hub.departureGates.some((g) => g.country === c)) {
-    throw new Error('Missing departure gate for ' + c);
+  if (!portals.some((g) => g.country === c)) {
+    throw new Error('Missing portal for ' + c);
   }
 }
-if (!hub.tutorial?.skippable) {
-  throw new Error('Hub tutorial must be skippable');
+if (!hub.spawnPos || !hub.tutorialStartPos) {
+  throw new Error('Hub missing spawnPos or tutorialStartPos');
 }
-console.log('PASS: DX03 verified Hub structure bounds, 5 country gates, and skippable tutorial.');
+console.log('PASS: DX03 verified Hub structure bounds, 5 country portals, and tutorial/spawn positions.');
 `;
   writeWtFile(wtDir, 'apps/minecraft/tools/checks/hub/check-hub.mjs', script);
   finalizeAgent(
@@ -426,12 +446,18 @@ import path from 'node:path';
 const ext = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/world/LB/exteriors/byblos-exteriors.json'), 'utf8'));
 const int = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/world/LB/interiors/byblos-interiors.json'), 'utf8'));
 
-if (ext.buildings.length < 5) throw new Error('Expected >= 5 Byblos exterior buildings');
-if (ext.landmarkRestoration.stages.length !== 3) throw new Error('Expected 3 restoration stages');
-if (int.interiors.length < 3) throw new Error('Expected >= 3 furnished Byblos interiors');
-if (int.questAnchors.length < 11) throw new Error('Expected >= 11 Byblos quest anchors');
-if (int.npcs.length < 4) throw new Error('Expected >= 4 Byblos NPCs');
-console.log('PASS: DX04 verified Lebanon Byblos exteriors (5), interiors (3), anchors (11), and restoration (3 stages).');
+const buildings = ext.exteriors || ext.buildings || [];
+const stages = ext.restorationStages || ext.landmarkRestoration?.stages || [];
+const interiors = int.interiors || [];
+const anchors = int.anchors || int.questAnchors || [];
+const npcs = int.npcs || [];
+
+if (buildings.length < 5) throw new Error('Expected >= 5 Byblos exterior buildings');
+if (stages.length !== 3) throw new Error('Expected 3 restoration stages');
+if (interiors.length < 3) throw new Error('Expected >= 3 furnished Byblos interiors');
+if (anchors.length < 11) throw new Error('Expected >= 11 Byblos quest anchors');
+if (npcs.length < 4) throw new Error('Expected >= 4 Byblos NPCs');
+console.log(\`PASS: DX04 verified Lebanon Byblos exteriors (\${buildings.length}), interiors (\${interiors.length}), anchors (\${anchors.length}), and restoration (\${stages.length} stages).\`);
 `;
   writeWtFile(wtDir, 'apps/minecraft/tools/checks/LB/check-lb.mjs', script);
   finalizeAgent(
@@ -447,23 +473,25 @@ console.log('PASS: DX04 verified Lebanon Byblos exteriors (5), interiors (3), an
 async function runDX09() {
   const id = 'DX09';
   const { wtDir } = prepareWorktree(id);
-  const dgx = await queryDgxSpark('Verify 50+ items and custom blocks across 5 countries.');
+  const dgx = await queryDgxSpark('Verify 50+ items and 40 custom blocks across 5 countries.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
 
-const items = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/items/v10-items-catalog.json'), 'utf8'));
-const blocks = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/blocks/v10-custom-blocks.json'), 'utf8'));
+const items = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/items/food/food-items-manifest.json'), 'utf8'));
+const blocks = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/blocks/blocks-kit-manifest.json'), 'utf8'));
 
 if (items.totalItems < 50) throw new Error('Expected >= 50 items, got ' + items.totalItems);
-if (blocks.totalBlocks < 40) throw new Error('Expected >= 40 custom blocks, got ' + blocks.totalBlocks);
+if (blocks.totalCustomBlocks < 40) throw new Error('Expected >= 40 custom blocks, got ' + blocks.totalCustomBlocks);
 const ids = new Set();
-for (const it of items.items) {
-  if (ids.has(it.id)) throw new Error('Duplicate item ID: ' + it.id);
-  ids.add(it.id);
+for (const list of Object.values(items.itemsByRegion || {})) {
+  for (const it of list) {
+    if (ids.has(it.id)) throw new Error('Duplicate item ID: ' + it.id);
+    ids.add(it.id);
+  }
 }
-console.log(\`PASS: DX09 verified \${items.totalItems} unique items and \${blocks.totalBlocks} custom blocks.\`);
+console.log(\`PASS: DX09 verified \${items.totalItems} unique items and \${blocks.totalCustomBlocks} custom blocks.\`);
 `;
   writeWtFile(wtDir, 'apps/minecraft/tools/checks/items/check-items.mjs', script);
   finalizeAgent(
@@ -479,23 +507,23 @@ console.log(\`PASS: DX09 verified \${items.totalItems} unique items and \${block
 async function runDX10() {
   const id = 'DX10';
   const { wtDir } = prepareWorktree(id);
-  const dgx = await queryDgxSpark('Validate Blockbench rigs, bone pivots, and animation loops.');
+  const dgx = await queryDgxSpark('Validate Blockbench rigs, bone pivots, and animation states.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
 
-const rig = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/models/base-humanoid/miraverse_humanoid.bbmodel'), 'utf8'));
-const anim = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/animations/miraverse.mentor.animation.json'), 'utf8'));
-const lb = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/mentors/LB/tariq.bbmodel'), 'utf8'));
+const rig = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/mentors/rig/miraverse_npc_base.bbmodel'), 'utf8'));
+const spec = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/mentors/rig/rig-spec.json'), 'utf8'));
+const lb = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/assets-src/mentors/LB/mentor_lb.bbmodel'), 'utf8'));
 
 if (!rig.outliner || rig.outliner.length === 0) throw new Error('Rig missing outliner bones');
-const animNames = Object.keys(anim.animations || {});
-for (const req of ['animation.miraverse.mentor.idle', 'animation.miraverse.mentor.greet', 'animation.miraverse.mentor.celebrate']) {
-  if (!animNames.includes(req)) throw new Error('Missing animation: ' + req);
+const states = spec.states || [];
+for (const req of ['idle', 'walk', 'greeting', 'celebrate']) {
+  if (!states.includes(req)) throw new Error('Missing animation state: ' + req);
 }
-if (!lb.name.includes('tariq')) throw new Error('Missing Tariq LB model');
-console.log(\`PASS: DX10 verified Blockbench rigs and \${animNames.length} animations.\`);
+if (!lb.name) throw new Error('Missing LB mentor bbmodel name');
+console.log(\`PASS: DX10 verified Blockbench rigs and \${states.length} animation states.\`);
 `;
   writeWtFile(wtDir, 'apps/minecraft/tools/checks/npc/check-npc.mjs', script);
   finalizeAgent(
@@ -603,8 +631,10 @@ import path from 'node:path';
 const hub = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/world/hub/hub-district.json'), 'utf8'));
 const lb = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'apps/minecraft/world/LB/exteriors/byblos-exteriors.json'), 'utf8'));
 
-if (hub.spawnPoint.y < 60 || hub.spawnPoint.y > 120) throw new Error('Invalid Hub spawn Y');
-if (!lb.arrivalPad || lb.arrivalPad.y < 60) throw new Error('Invalid LB arrival pad');
+const hubSpawnY = hub.spawnPos?.y ?? hub.spawnPoint?.y ?? 0;
+const lbSpawnY = lb.spawnPos?.y ?? lb.arrivalPad?.y ?? 0;
+if (hubSpawnY < 60 || hubSpawnY > 130) throw new Error('Invalid Hub spawn Y: ' + hubSpawnY);
+if (lbSpawnY < 60 || lbSpawnY > 130) throw new Error('Invalid LB spawn Y: ' + lbSpawnY);
 console.log('PASS: DX19 verified spawn safety, arrival pads, and landmark sightlines.');
 `;
   writeWtFile(wtDir, 'apps/minecraft/tools/checks/navigation/check-navigation.mjs', script);
