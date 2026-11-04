@@ -17,6 +17,7 @@
     "build:roblox": "mkdir -p apps/roblox/dist && rojo build apps/roblox -o apps/roblox/dist/miraverse.rbxlx",
     "check": "npm run validate && npm run compile && npm -w apps/web run build && npm -w apps/minecraft run build && vitest run",
     "check:release": "npm run validate:release && npm run compile && npm run textures && npm -w apps/web run build && npm -w apps/minecraft run build && npm run build:roblox && npm run pack:mcaddon && vitest run",
+    "build:cloudflare": "npm run compile && npm run textures && npm -w apps/web run build && npm -w apps/minecraft run build && npm run pack:mcaddon && mkdir -p apps/web/dist/downloads && cp apps/minecraft/dist/miraverse.mcaddon apps/web/dist/downloads/",
     "dev": "npm -w apps/web run dev"
   },
   "devDependencies": {

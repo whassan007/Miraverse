@@ -8,6 +8,8 @@ import { describe, expect, it } from 'vitest';
 import { COUNTRIES, STORY_LANGS, UI_LANGS, type Pack } from '../../packages/content/schema.js';
 import { GOLDEN_VECTORS } from '../../packages/shared/stamp.js';
 import { make as mcMake, verify as mcVerify } from '../../apps/minecraft/scripts/core/stamp.js';
+import { onRequestPost as checkoutPost } from '../../functions/api/checkout.js';
+import { verifyStripeWebhookSignature } from '../../functions/api/webhook.js';
 import { validateWorkspace } from '../../tools/validate.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -396,5 +398,34 @@ describe('Gate G6 — Swarm path-boundary and status hygiene rules', () => {
       expect(a.testCommand.length).toBeGreaterThan(0);
       expect(a.testExitCode).toBe(0);
     }
+  });
+});
+
+describe('Cloudflare Pages Stripe Checkout & Webhook Functions', () => {
+  it('blocks checkout without adult confirmation and verifies HMAC-SHA256 Stripe webhook signatures', async () => {
+    const blockedReq = new Request('https://miraverse.studio/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ parentGateConfirmed: false }),
+    });
+    const blockedRes = await checkoutPost({
+      request: blockedReq,
+      env: { STRIPE_SECRET_KEY: 'sk_test_123', STRIPE_PRICE_ID: 'price_123' },
+    });
+    expect(blockedRes.status).toBe(403);
+
+    const secret = 'whsec_test_miraverse_secret';
+    const ts = 1762219200;
+    const rawPayload = JSON.stringify({
+      id: 'evt_1',
+      type: 'checkout.session.completed',
+      data: { object: { id: 'cs_test_1', payment_status: 'paid' } },
+    });
+    const mac = crypto.createHmac('sha256', secret).update(`${ts}.${rawPayload}`).digest('hex');
+    const sigHeader = `t=${ts},v1=${mac}`;
+
+    await expect(verifyStripeWebhookSignature(rawPayload, sigHeader, secret, ts + 10)).resolves.toBe(true);
+    await expect(verifyStripeWebhookSignature(rawPayload, sigHeader, 'wrong_secret', ts + 10)).resolves.toBe(false);
+    await expect(verifyStripeWebhookSignature(rawPayload, sigHeader, secret, ts + 999)).resolves.toBe(false);
   });
 });
