@@ -1344,13 +1344,20 @@
       "task_card": "swarm/minecraft-v10/cards/CL05.md",
       "branch": "minecraft-v10/CL05",
       "worktree": "/home/wael/Code/mv-wt-mc10/CL05",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "INTEGRATED",
+      "attempts": 1,
+      "commit_sha": "e98289c",
       "test_command": "test -s reports/minecraft-v10/independent/INDEPENDENT_AUDIT_V10.md && test -s apps/minecraft/docs/minecraft-safety/v10/CHILD_SAFETY_AND_PRIVACY.md && test -s apps/minecraft/content/minecraft-review/v10/CULTURAL_CONTINUITY_MATRIX.md",
-      "evidence_paths": [],
-      "runtime_environment": null,
-      "blockers": []
+      "evidence_paths": [
+        "reports/minecraft-v10/independent/INDEPENDENT_AUDIT_V10.md",
+        "apps/minecraft/docs/minecraft-safety/v10/CHILD_SAFETY_AND_PRIVACY.md",
+        "apps/minecraft/content/minecraft-review/v10/CULTURAL_CONTINUITY_MATRIX.md"
+      ],
+      "runtime_environment": "Claude Sonnet 4.6 (worktree execution)",
+      "blockers": [
+        "MC-B02/MC-B03/MC-B04 & MC-V01..MC-V10: Live Windows Bedrock client world export (.mcworld) and GUI screenshot capture require a Windows 10/11 Bedrock host.",
+        "MC-Q05: Native-speaker human review (humanReviewRequired: true) remains open for final human linguist signoff."
+      ]
     },
     {
       "id": "CX01",
