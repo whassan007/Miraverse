@@ -1,0 +1,1800 @@
+{
+  "release": "MiraVerse v0.5",
+  "branch": "integration/miraverse-v0.5",
+  "createdAt": "2026-11-04T04:57:39.851Z",
+  "concurrencyLimits": {
+    "antigravity": 4,
+    "claude": 3,
+    "codex": 3,
+    "dgx": 1
+  },
+  "counts": {
+    "total": 65,
+    "antigravity": 20,
+    "claude": 15,
+    "codex": 15,
+    "dgx": 15
+  },
+  "agents": [
+    {
+      "id": "CL01",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "wave": "W0",
+      "dependencies": [],
+      "owned_paths": [
+        "docs/product/v05/"
+      ],
+      "read_paths": [
+        "apps/web/src/App.tsx",
+        "reports/V05_BASELINE.md"
+      ],
+      "acceptance": "Signed-off route/user-journey matrix and contradictions resolved in docs/product/v05/IA_AND_JOURNEYS.md",
+      "branch": "v05/CL01",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL01",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL01.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL02",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "CL01",
+        "CX01",
+        "AG01",
+        "DX01"
+      ],
+      "owned_paths": [
+        "packages/contracts/worlds/"
+      ],
+      "read_paths": [
+        "packages/contracts/index.ts",
+        "packages/content/schema.ts"
+      ],
+      "acceptance": "Schema tests, complete parity identifiers, no broken legacy content in packages/contracts/worlds/index.ts",
+      "branch": "v05/CL02",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL02",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL02.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL03",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "CL01",
+        "CX01"
+      ],
+      "owned_paths": [
+        "docs/security/privacy/"
+      ],
+      "read_paths": [
+        "apps/api/src/index.ts",
+        "docs/policy/commerce/COMMERCE_POLICY_V04.md"
+      ],
+      "acceptance": "Threat model and policy checklist with legal/human signoff blockers explicit in docs/security/privacy/COPPA_AND_PRIVACY_V05.md",
+      "branch": "v05/CL03",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL03",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL03.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL04",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "CL01",
+        "CX01"
+      ],
+      "owned_paths": [
+        "docs/commerce/spec/"
+      ],
+      "read_paths": [
+        "apps/api/src/index.ts",
+        "packages/contracts/commerce/index.ts"
+      ],
+      "acceptance": "State-machine invariants and testable acceptance specs; no unapproved live sales in docs/commerce/spec/COMMERCE_STATE_MACHINE_V05.md",
+      "branch": "v05/CL04",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL04",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL04.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL05",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "wave": "W1",
+      "dependencies": [
+        "CL01",
+        "CX01"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/Foundation/"
+      ],
+      "read_paths": [
+        "apps/roblox/default.project.json",
+        "apps/roblox/src/server/Core/SessionManager.luau"
+      ],
+      "acceptance": "Rojo build and mocked Studio smoke tests; no web checkout prompts in apps/roblox/src/server/Foundation/WorldBootstrap.luau",
+      "branch": "v05/CL05",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL05",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL05.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL06",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "wave": "W2",
+      "dependencies": [
+        "CL02",
+        "CL05",
+        "DX13"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/Quests/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/shared/Packs.luau",
+        "apps/roblox/src/server/Foundation/"
+      ],
+      "acceptance": "Complete FR quest path in Studio test; server validates grants in apps/roblox/src/server/Quests/QuestAdapter.luau",
+      "branch": "v05/CL06",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL06",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL06.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL07",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "wave": "W3",
+      "dependencies": [
+        "CL06",
+        "AG11"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/client/Presentation/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/client/Main.client.luau",
+        "art/direction/v05/"
+      ],
+      "acceptance": "Five worlds navigable, child-safe UI and no default debug screens in apps/roblox/src/client/Presentation/NativeHud.luau",
+      "branch": "v05/CL07",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL07",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL07.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL08",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "wave": "W4",
+      "dependencies": [
+        "CL04",
+        "CL07"
+      ],
+      "owned_paths": [
+        "apps/roblox/src/server/CommerceBoundary/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/server/Foundation/",
+        "docs/commerce/spec/"
+      ],
+      "acceptance": "No links/QR/solicitation to web payments; duplicate receipt tests in apps/roblox/src/server/CommerceBoundary/ProcessReceiptGuard.luau",
+      "branch": "v05/CL08",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL08",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL08.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL09",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "wave": "W1",
+      "dependencies": [
+        "CL01",
+        "CX01"
+      ],
+      "owned_paths": [
+        "apps/minecraft/scripts/core/"
+      ],
+      "read_paths": [
+        "apps/minecraft/bp/manifest.json",
+        "apps/minecraft/scripts/main.ts"
+      ],
+      "acceptance": "Behavior/resource pack builds against verified stable API in apps/minecraft/scripts/core/",
+      "branch": "v05/CL09",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL09",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL09.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL10",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "wave": "W2",
+      "dependencies": [
+        "CL02",
+        "CL09",
+        "DX14"
+      ],
+      "owned_paths": [
+        "apps/minecraft/scripts/challenges/"
+      ],
+      "read_paths": [
+        "apps/minecraft/scripts/generated/packs.ts",
+        "apps/minecraft/scripts/core/"
+      ],
+      "acceptance": "FR playable with action forms, collectible items and reward in apps/minecraft/scripts/challenges/",
+      "branch": "v05/CL10",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL10",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL10.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL11",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "wave": "W3",
+      "dependencies": [
+        "CL10"
+      ],
+      "owned_paths": [
+        "apps/minecraft/scripts/npc/"
+      ],
+      "read_paths": [
+        "apps/minecraft/scripts/challenges/",
+        "packages/contracts/worlds/"
+      ],
+      "acceptance": "Five mentors functional and supported API checks pass in apps/minecraft/scripts/npc/",
+      "branch": "v05/CL11",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL11",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL11.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL12",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "medium",
+      "wave": "W4",
+      "dependencies": [
+        "CL11",
+        "DX14"
+      ],
+      "owned_paths": [
+        "apps/minecraft/tools/release/"
+      ],
+      "read_paths": [
+        "apps/minecraft/bp/manifest.json",
+        "tools/pack/mcaddon.mjs"
+      ],
+      "acceptance": "Package imports in tested Bedrock environment or reports explicit missing runtime in apps/minecraft/tools/release/pack-mcworld.mjs",
+      "branch": "v05/CL12",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL12",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL12.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL13",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "wave": "W3",
+      "dependencies": [
+        "CL02",
+        "DX08"
+      ],
+      "owned_paths": [
+        "content/narrative/v05/"
+      ],
+      "read_paths": [
+        "packages/content/stories/",
+        "content/dialogue/"
+      ],
+      "acceptance": "Continuity matrix, locale coverage and all unresolved cultural items tagged in content/narrative/v05/",
+      "branch": "v05/CL13",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL13",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL13.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL14",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "CL01",
+        "CX01"
+      ],
+      "owned_paths": [
+        "packages/game-domain/progression/"
+      ],
+      "read_paths": [
+        "packages/game-domain/index.ts",
+        "packages/contracts/index.ts"
+      ],
+      "acceptance": "Deterministic domain unit tests; no client-authoritative premium unlock in packages/game-domain/progression/index.ts",
+      "branch": "v05/CL14",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL14",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL14.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CL15",
+      "backend": "claude",
+      "resolved_model": "claude-sonnet-4-6",
+      "complexity": "high",
+      "wave": "W5",
+      "dependencies": [
+        "CX11",
+        "CX12",
+        "CX13",
+        "CX14",
+        "AG19",
+        "DELIVERABLES_W4"
+      ],
+      "owned_paths": [
+        "reports/independent/"
+      ],
+      "read_paths": [
+        "reports/",
+        "tests/"
+      ],
+      "acceptance": "PASS/FAIL/BLOCKED per release criterion with independent evidence and remediation owners in reports/independent/INDEPENDENT_RELEASE_AUDIT.md",
+      "branch": "v05/CL15",
+      "worktree": "/home/wael/Code/mv-wt-v05/CL15",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CL15.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX01",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W0",
+      "dependencies": [],
+      "owned_paths": [
+        "reports/engineering/"
+      ],
+      "read_paths": [
+        "package.json",
+        "apps/web/package.json",
+        "apps/api/package.json"
+      ],
+      "acceptance": "Reproducible baseline build and mapping of all existing routes/tests in reports/engineering/ARCHITECTURE_AUDIT_V05.md",
+      "branch": "v05/CX01",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX01",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX01.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX02",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "CL01",
+        "CX01",
+        "AG01",
+        "DX01"
+      ],
+      "owned_paths": [
+        "apps/web/src/app/"
+      ],
+      "read_paths": [
+        "apps/web/src/App.tsx",
+        "docs/product/v05/"
+      ],
+      "acceptance": "Deep-link route smoke tests; no child checkout cross-link in apps/web/src/app/index.tsx",
+      "branch": "v05/CX02",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX02",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX02.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX03",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "CX01",
+        "AG01"
+      ],
+      "owned_paths": [
+        "apps/web/src/game3d/runtime/"
+      ],
+      "read_paths": [
+        "apps/web/src/pages/Play.tsx",
+        "packages/contracts/index.ts"
+      ],
+      "acceptance": "Game enters FR with keyboard/touch and no shader/console failures in apps/web/src/game3d/runtime/index.ts",
+      "branch": "v05/CX03",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX03",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX03.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX04",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W2",
+      "dependencies": [
+        "CX03",
+        "CL02"
+      ],
+      "owned_paths": [
+        "apps/web/src/game3d/interactions/"
+      ],
+      "read_paths": [
+        "apps/web/src/game3d/runtime/index.ts",
+        "content/levels/web/FR/level.json"
+      ],
+      "acceptance": "FR full playthrough; no external web dashboard as challenge in apps/web/src/game3d/interactions/index.ts",
+      "branch": "v05/CX04",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX04",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX04.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX05",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "CX01"
+      ],
+      "owned_paths": [
+        "packages/game-domain/state/"
+      ],
+      "read_paths": [
+        "packages/game-domain/index.ts",
+        "packages/shared/stamp.ts"
+      ],
+      "acceptance": "Unit tests for broken saves, duplicate completion, reload in packages/game-domain/state/index.ts",
+      "branch": "v05/CX05",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX05",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX05.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX06",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W2",
+      "dependencies": [
+        "CL03",
+        "CL04"
+      ],
+      "owned_paths": [
+        "apps/api/src/identity/"
+      ],
+      "read_paths": [
+        "apps/api/src/auth/index.ts",
+        "apps/api/src/consent/index.ts"
+      ],
+      "acceptance": "IDOR/auth tests, no unauthenticated parent data, no child signup requirement in apps/api/src/identity/index.ts",
+      "branch": "v05/CX06",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX06",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX06.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX07",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W2",
+      "dependencies": [
+        "CL04",
+        "CX06",
+        "DX10"
+      ],
+      "owned_paths": [
+        "apps/api/src/payments/"
+      ],
+      "read_paths": [
+        "apps/api/src/billing/index.ts",
+        "apps/api/src/orders/index.ts"
+      ],
+      "acceptance": "Simulated payment, failed redirect, duplicate/out-of-order webhook tests in apps/api/src/payments/index.ts",
+      "branch": "v05/CX07",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX07",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX07.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX08",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W3",
+      "dependencies": [
+        "CX07",
+        "DX10"
+      ],
+      "owned_paths": [
+        "apps/api/src/gifts/"
+      ],
+      "read_paths": [
+        "apps/api/src/entitlements/index.ts",
+        "docs/commerce/spec/"
+      ],
+      "acceptance": "Two simultaneous redemptions produce one winner; refund handling in apps/api/src/gifts/index.ts",
+      "branch": "v05/CX08",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX08",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX08.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX09",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W3",
+      "dependencies": [
+        "CX06",
+        "DX11"
+      ],
+      "owned_paths": [
+        "apps/api/src/wallet/"
+      ],
+      "read_paths": [
+        "apps/api/src/profiles/index.ts",
+        "packages/game-domain/progression/"
+      ],
+      "acceptance": "Replay/fuzz tests, balance nonnegative, no grant via client editing in apps/api/src/wallet/index.ts",
+      "branch": "v05/CX09",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX09",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX09.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX10",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W3",
+      "dependencies": [
+        "CX06",
+        "CX07",
+        "CX08",
+        "CX09"
+      ],
+      "owned_paths": [
+        "apps/api/src/parent/"
+      ],
+      "read_paths": [
+        "apps/api/src/index.ts",
+        "docs/security/privacy/"
+      ],
+      "acceptance": "Parent A cannot access Parent B, deletion and access policy tests in apps/api/src/parent/index.ts",
+      "branch": "v05/CX10",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX10",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX10.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX11",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W4",
+      "dependencies": [
+        "CX06",
+        "CX07",
+        "CX08",
+        "CX09",
+        "CX10"
+      ],
+      "owned_paths": [
+        "tests/security/v05/"
+      ],
+      "read_paths": [
+        "apps/api/src/",
+        "apps/web/src/"
+      ],
+      "acceptance": "Failing P0/P1 security findings block release; evidence/repair tickets in tests/security/v05/security-redteam.test.ts",
+      "branch": "v05/CX11",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX11",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX11.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX12",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W4",
+      "dependencies": [
+        "AG04",
+        "AG05",
+        "AG06",
+        "AG07",
+        "AG08",
+        "AG09",
+        "AG16",
+        "AG17",
+        "AG18"
+      ],
+      "owned_paths": [
+        "tests/e2e/v05/"
+      ],
+      "read_paths": [
+        "apps/web/src/",
+        "tests/integration/web-e2e.test.ts"
+      ],
+      "acceptance": "Deterministic fixture-backed suite with screenshots and errors captured in tests/e2e/v05/miraverse-v05-e2e.test.ts",
+      "branch": "v05/CX12",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX12",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX12.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX13",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "medium",
+      "wave": "W4",
+      "dependencies": [
+        "DX02",
+        "DX13",
+        "DX14"
+      ],
+      "owned_paths": [
+        "tools/ci/v05/"
+      ],
+      "read_paths": [
+        "package.json",
+        "tools/validate.ts"
+      ],
+      "acceptance": "CI pass on clean checkout; no || true for mandatory checks in tools/ci/v05/run-ci-gates.mjs",
+      "branch": "v05/CX13",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX13",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX13.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX14",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W4",
+      "dependencies": [
+        "AG04",
+        "CX03"
+      ],
+      "owned_paths": [
+        "tools/perf/v05/"
+      ],
+      "read_paths": [
+        "apps/web/vite.config.ts",
+        "apps/web/src/game3d/runtime/"
+      ],
+      "acceptance": "Measured LCP/INP/CLS, FPS and memory report, before/after diffs in tools/perf/v05/measure-perf.mjs",
+      "branch": "v05/CX14",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX14",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX14.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "CX15",
+      "backend": "codex",
+      "resolved_model": "gpt-6-astra",
+      "complexity": "high",
+      "wave": "W5",
+      "dependencies": [
+        "CX11",
+        "CX12",
+        "CX13",
+        "CX14",
+        "CL15",
+        "AG20"
+      ],
+      "owned_paths": [
+        "reports/integration/"
+      ],
+      "read_paths": [
+        "swarm/v05/manifest.json",
+        "reports/"
+      ],
+      "acceptance": "Reproducible merge, complete end-to-end build matrix and zero unresolved ownership collisions in reports/integration/V05_INTEGRATION_REPORT.md",
+      "branch": "v05/CX15",
+      "worktree": "/home/wael/Code/mv-wt-v05/CX15",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/CX15.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG01",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W0",
+      "dependencies": [],
+      "owned_paths": [
+        "art/direction/v05/"
+      ],
+      "read_paths": [
+        "art/direction/STYLE_BIBLE.md",
+        "art/direction/palettes.json"
+      ],
+      "acceptance": "Inspiration vs copying audit, 5 unique culturally distinct visual packs and approval contact sheet in art/direction/v05/STYLE_BIBLE_V05.md",
+      "branch": "v05/AG01",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG01",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG01.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG02",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "AG01"
+      ],
+      "owned_paths": [
+        "art/landing/"
+      ],
+      "read_paths": [
+        "art/branding/landing/hero-poster.svg",
+        "art/source/landing/diorama-timeline.json"
+      ],
+      "acceptance": "Hero looks like a premium family adventure; reduced-motion fallback; provenance tracked in art/landing/",
+      "branch": "v05/AG02",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG02",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG02.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG03",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W1",
+      "dependencies": [
+        "AG01"
+      ],
+      "owned_paths": [
+        "apps/web/src/design-system/"
+      ],
+      "read_paths": [
+        "apps/web/src/styles.css",
+        "art/direction/v05/"
+      ],
+      "acceptance": "Consistent browser rendering from 360px to 1920px; WCAG-oriented keyboard tests in apps/web/src/design-system/index.tsx",
+      "branch": "v05/AG03",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG03",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG03.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG04",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W2",
+      "dependencies": [
+        "AG02",
+        "AG03",
+        "CX02"
+      ],
+      "owned_paths": [
+        "apps/web/src/marketing/landing/"
+      ],
+      "read_paths": [
+        "apps/web/src/landing/ui/index.tsx",
+        "packages/game-domain/index.ts"
+      ],
+      "acceptance": "Homepage route complete with all 10 required sections + Continue Adventure returning player CTA, LCP budget measured, no stock gameplay misrepresentation",
+      "branch": "v05/AG04",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG04",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG04.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG05",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "wave": "W1",
+      "dependencies": [
+        "AG01",
+        "AG03"
+      ],
+      "owned_paths": [
+        "apps/web/src/marketing/explore/"
+      ],
+      "read_paths": [
+        "packages/contracts/index.ts",
+        "content/levels/web/"
+      ],
+      "acceptance": "Country selection keyboard/touch; correct 5 route links and no dead previews in apps/web/src/marketing/explore/index.tsx",
+      "branch": "v05/AG05",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG05",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG05.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG06",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "wave": "W3",
+      "dependencies": [
+        "AG03",
+        "AG05",
+        "CL02"
+      ],
+      "owned_paths": [
+        "apps/web/src/marketing/adventures/"
+      ],
+      "read_paths": [
+        "packages/content/packs/",
+        "content/quests/"
+      ],
+      "acceptance": "Five complete pages, no invented unlocks, all Play links correct in apps/web/src/marketing/adventures/index.tsx",
+      "branch": "v05/AG06",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG06",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG06.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG07",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W2",
+      "dependencies": [
+        "AG03",
+        "CX05",
+        "CL14"
+      ],
+      "owned_paths": [
+        "apps/web/src/player/home/"
+      ],
+      "read_paths": [
+        "packages/game-domain/index.ts",
+        "apps/web/src/pages/Play.tsx"
+      ],
+      "acceptance": "Reload returns to correct quest; no commerce or false social engagement in apps/web/src/player/home/index.tsx",
+      "branch": "v05/AG07",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG07",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG07.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG08",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "wave": "W2",
+      "dependencies": [
+        "AG03",
+        "CL14"
+      ],
+      "owned_paths": [
+        "apps/web/src/player/characters/"
+      ],
+      "read_paths": [
+        "art/source/characters/",
+        "packages/contracts/index.ts"
+      ],
+      "acceptance": "Animation preview works; guest mode does not require account in apps/web/src/player/characters/index.tsx",
+      "branch": "v05/AG08",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG08",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG08.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG09",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "wave": "W3",
+      "dependencies": [
+        "AG03",
+        "AG07"
+      ],
+      "owned_paths": [
+        "apps/web/src/player/passport/"
+      ],
+      "read_paths": [
+        "apps/web/src/pages/Passport.tsx",
+        "packages/shared/stamp.ts"
+      ],
+      "acceptance": "All five stamps display correctly; wallet display has trusted provenance in apps/web/src/player/passport/index.tsx",
+      "branch": "v05/AG09",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG09",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG09.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG10",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W2",
+      "dependencies": [
+        "AG03",
+        "CX03",
+        "CX04"
+      ],
+      "owned_paths": [
+        "apps/web/src/game3d/presentation/"
+      ],
+      "read_paths": [
+        "apps/web/src/ui/hud/index.tsx",
+        "apps/web/src/ui/dialogue/index.tsx"
+      ],
+      "acceptance": "No large HTML panel over a canvas; movement and objective readable on mobile in apps/web/src/game3d/presentation/index.tsx",
+      "branch": "v05/AG10",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG10",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG10.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG11",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W2",
+      "dependencies": [
+        "AG01",
+        "DX02"
+      ],
+      "owned_paths": [
+        "art/worlds/FR/"
+      ],
+      "read_paths": [
+        "art/source/countries/FR/",
+        "content/levels/web/FR/level.json"
+      ],
+      "acceptance": "Playable FR scene with source assets, 4+ meaningful landmarks and in-world restoration in art/worlds/FR/",
+      "branch": "v05/AG11",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG11",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG11.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG12",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W3",
+      "dependencies": [
+        "AG11"
+      ],
+      "owned_paths": [
+        "art/worlds/LB/"
+      ],
+      "read_paths": [
+        "art/source/countries/LB/",
+        "content/levels/web/LB/level.json"
+      ],
+      "acceptance": "Distinct world recognizable without labels; no reused Cairo/Baghdad kits in art/worlds/LB/",
+      "branch": "v05/AG12",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG12",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG12.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG13",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W3",
+      "dependencies": [
+        "AG11"
+      ],
+      "owned_paths": [
+        "art/worlds/EG/"
+      ],
+      "read_paths": [
+        "art/source/countries/EG/",
+        "content/levels/web/EG/level.json"
+      ],
+      "acceptance": "Distinct culturally grounded Cairo level, all interaction markers in art/worlds/EG/",
+      "branch": "v05/AG13",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG13",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG13.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG14",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W3",
+      "dependencies": [
+        "AG11"
+      ],
+      "owned_paths": [
+        "art/worlds/IQ/"
+      ],
+      "read_paths": [
+        "art/source/countries/IQ/",
+        "content/levels/web/IQ/level.json"
+      ],
+      "acceptance": "Distinct Baghdad scene, accurate interactive set pieces and independent audit in art/worlds/IQ/",
+      "branch": "v05/AG14",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG14",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG14.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG15",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W3",
+      "dependencies": [
+        "AG11"
+      ],
+      "owned_paths": [
+        "art/worlds/KR/"
+      ],
+      "read_paths": [
+        "art/source/countries/KR/",
+        "content/levels/web/KR/level.json"
+      ],
+      "acceptance": "Distinct Korean environment, scale/collision and no exoticizing stereotypes in art/worlds/KR/",
+      "branch": "v05/AG15",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG15",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG15.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG16",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "wave": "W1",
+      "dependencies": [
+        "AG03",
+        "CL04"
+      ],
+      "owned_paths": [
+        "apps/web/src/parent/store-ui/"
+      ],
+      "read_paths": [
+        "apps/web/src/storefront/index.tsx",
+        "apps/api/src/catalog/index.ts"
+      ],
+      "acceptance": "Adult gate before buy; no child modal/CTA; uses server price in apps/web/src/parent/store-ui/index.tsx",
+      "branch": "v05/AG16",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG16",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG16.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG17",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "wave": "W4",
+      "dependencies": [
+        "AG16",
+        "CX08"
+      ],
+      "owned_paths": [
+        "apps/web/src/parent/gift-ui/"
+      ],
+      "read_paths": [
+        "apps/web/src/parent/index.tsx",
+        "apps/api/src/gifts/index.ts"
+      ],
+      "acceptance": "All test redemption states shown; no child-contact data requirement in apps/web/src/parent/gift-ui/index.tsx",
+      "branch": "v05/AG17",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG17",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG17.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG18",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "medium",
+      "wave": "W4",
+      "dependencies": [
+        "AG16",
+        "CX10"
+      ],
+      "owned_paths": [
+        "apps/web/src/parent/dashboard-ui/"
+      ],
+      "read_paths": [
+        "apps/web/src/parent/index.tsx",
+        "apps/api/src/parent/"
+      ],
+      "acceptance": "Only authorized parent screens; usable in all locales in apps/web/src/parent/dashboard-ui/index.tsx",
+      "branch": "v05/AG18",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG18",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG18.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG19",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W4",
+      "dependencies": [
+        "AG04",
+        "AG05",
+        "AG06",
+        "AG07",
+        "AG08",
+        "AG09",
+        "AG10",
+        "AG17",
+        "AG18",
+        "DX09"
+      ],
+      "owned_paths": [
+        "reports/ux-accessibility/"
+      ],
+      "read_paths": [
+        "apps/web/src/",
+        "tests/fixtures/rtl/"
+      ],
+      "acceptance": "5 viewport screenshot evidence, actionable issues and post-fix rerun in reports/ux-accessibility/UX_A11Y_REVIEW_V05.md",
+      "branch": "v05/AG19",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG19",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG19.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "AG20",
+      "backend": "antigravity",
+      "resolved_model": "gemini-4-argon",
+      "complexity": "high",
+      "wave": "W5",
+      "dependencies": [
+        "AG11",
+        "AG12",
+        "AG13",
+        "AG14",
+        "AG15",
+        "AG19",
+        "DX12"
+      ],
+      "owned_paths": [
+        "reports/visual-acceptance/"
+      ],
+      "read_paths": [
+        "reports/v05/screens/",
+        "reports/v05/video/",
+        "art/direction/v05/"
+      ],
+      "acceptance": "Scores across 10 categories (>=42/50), citations to real screenshots/video, release pass/fail in reports/visual-acceptance/VISUAL_ACCEPTANCE_V05.md",
+      "branch": "v05/AG20",
+      "worktree": "/home/wael/Code/mv-wt-v05/AG20",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/AG20.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX01",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W0",
+      "dependencies": [],
+      "owned_paths": [
+        "reports/asset-inventory/"
+      ],
+      "read_paths": [
+        "apps/web/public/assets/",
+        "art/",
+        "packages/content/"
+      ],
+      "acceptance": "Inventory totals reconcile with repository; evidence source paths included in reports/asset-inventory/inventory.json",
+      "branch": "v05/DX01",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX01",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX01.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX02",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "wave": "W1",
+      "dependencies": [
+        "DX01",
+        "AG01"
+      ],
+      "owned_paths": [
+        "tools/assets/v05/"
+      ],
+      "read_paths": [
+        "tools/assets/build-glb.ts",
+        "apps/web/public/assets/models/manifest.json"
+      ],
+      "acceptance": "Reproducible asset pass, original source intact, no automatic IP laundering in tools/assets/v05/optimize-and-verify.mjs",
+      "branch": "v05/DX02",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX02",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX02.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX03",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W2",
+      "dependencies": [
+        "DX02",
+        "AG11"
+      ],
+      "owned_paths": [
+        "art/generated-checks/FR/"
+      ],
+      "read_paths": [
+        "content/levels/web/FR/level.json",
+        "art/worlds/FR/"
+      ],
+      "acceptance": "FR asset validation report and deterministic fixtures in art/generated-checks/FR/check-FR.json",
+      "branch": "v05/DX03",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX03",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX03.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX04",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W3",
+      "dependencies": [
+        "DX02",
+        "AG12"
+      ],
+      "owned_paths": [
+        "art/generated-checks/LB/"
+      ],
+      "read_paths": [
+        "content/levels/web/LB/level.json",
+        "art/worlds/LB/"
+      ],
+      "acceptance": "No missing maps/quest markers/texture refs in art/generated-checks/LB/check-LB.json",
+      "branch": "v05/DX04",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX04",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX04.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX05",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W3",
+      "dependencies": [
+        "DX02",
+        "AG13"
+      ],
+      "owned_paths": [
+        "art/generated-checks/EG/"
+      ],
+      "read_paths": [
+        "content/levels/web/EG/level.json",
+        "art/worlds/EG/"
+      ],
+      "acceptance": "No missing anchors or invalid models in art/generated-checks/EG/check-EG.json",
+      "branch": "v05/DX05",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX05",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX05.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX06",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W3",
+      "dependencies": [
+        "DX02",
+        "AG14"
+      ],
+      "owned_paths": [
+        "art/generated-checks/IQ/"
+      ],
+      "read_paths": [
+        "content/levels/web/IQ/level.json",
+        "art/worlds/IQ/"
+      ],
+      "acceptance": "No missing anchors or invalid models in art/generated-checks/IQ/check-IQ.json",
+      "branch": "v05/DX06",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX06",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX06.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX07",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W3",
+      "dependencies": [
+        "DX02",
+        "AG15"
+      ],
+      "owned_paths": [
+        "art/generated-checks/KR/"
+      ],
+      "read_paths": [
+        "content/levels/web/KR/level.json",
+        "art/worlds/KR/"
+      ],
+      "acceptance": "No missing anchors or invalid models in art/generated-checks/KR/check-KR.json",
+      "branch": "v05/DX07",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX07",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX07.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX08",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "wave": "W1",
+      "dependencies": [
+        "CL01",
+        "DX01"
+      ],
+      "owned_paths": [
+        "content/localization/v05/"
+      ],
+      "read_paths": [
+        "apps/web/src/i18n/locales/",
+        "packages/content/vocab/"
+      ],
+      "acceptance": "100% key coverage, native linguistic approval explicitly not implied in content/localization/v05/",
+      "branch": "v05/DX08",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX08",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX08.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX09",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W3",
+      "dependencies": [
+        "DX08"
+      ],
+      "owned_paths": [
+        "tests/fixtures/rtl/"
+      ],
+      "read_paths": [
+        "content/localization/v05/",
+        "apps/web/src/i18n/locales/"
+      ],
+      "acceptance": "Rendering tests can detect overflow without inventing translations in tests/fixtures/rtl/rtl-stress.json",
+      "branch": "v05/DX09",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX09",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX09.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX10",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W2",
+      "dependencies": [
+        "CL04"
+      ],
+      "owned_paths": [
+        "tests/fixtures/gifts/"
+      ],
+      "read_paths": [
+        "docs/commerce/spec/",
+        "apps/api/src/gifts/index.ts"
+      ],
+      "acceptance": "Fixtures cover replay, race, invalid auth, out-of-order events in tests/fixtures/gifts/gift-scenarios.json",
+      "branch": "v05/DX10",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX10",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX10.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX11",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W2",
+      "dependencies": [
+        "CL04",
+        "CL14"
+      ],
+      "owned_paths": [
+        "tests/fixtures/wallet/"
+      ],
+      "read_paths": [
+        "apps/api/src/wallet/index.ts",
+        "packages/game-domain/progression/"
+      ],
+      "acceptance": "Thousands of synthetic operations yield deterministic expected balances in tests/fixtures/wallet/wallet-fuzz.json",
+      "branch": "v05/DX11",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX11",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX11.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX12",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "wave": "W4",
+      "dependencies": [
+        "CX12"
+      ],
+      "owned_paths": [
+        "tools/visual-regression/"
+      ],
+      "read_paths": [
+        "reports/v05/screens/"
+      ],
+      "acceptance": "Deterministic Playwright screenshot comparison on repeat runs in tools/visual-regression/compare-screenshots.mjs",
+      "branch": "v05/DX12",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX12",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX12.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX13",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "wave": "W1",
+      "dependencies": [
+        "CL02",
+        "CL05"
+      ],
+      "owned_paths": [
+        "tools/roblox/v05/"
+      ],
+      "read_paths": [
+        "apps/roblox/src/shared/Packs.luau",
+        "tools/compiler/roblox.ts"
+      ],
+      "acceptance": "Stable deterministic generated content and parity ID checks in tools/roblox/v05/validate-roblox.mjs",
+      "branch": "v05/DX13",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX13",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX13.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX14",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "medium",
+      "wave": "W1",
+      "dependencies": [
+        "CL02",
+        "CL09"
+      ],
+      "owned_paths": [
+        "tools/minecraft/v05/"
+      ],
+      "read_paths": [
+        "apps/minecraft/bp/manifest.json",
+        "tools/compiler/minecraft.ts"
+      ],
+      "acceptance": "All packs validate and build; no experimental API unless flagged in tools/minecraft/v05/validate-bedrock.mjs",
+      "branch": "v05/DX14",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX14",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX14.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    },
+    {
+      "id": "DX15",
+      "backend": "dgx",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "complexity": "low",
+      "wave": "W4",
+      "dependencies": [
+        "DX01",
+        "DX02",
+        "CX13"
+      ],
+      "owned_paths": [
+        "docs/operations/v05/"
+      ],
+      "read_paths": [
+        "docs/operations/BUILD_AND_PLAYTEST_MANUAL.md",
+        "reports/asset-inventory/"
+      ],
+      "acceptance": "No undocumented third-party assets, bounded checklist and handoff in docs/operations/v05/RUNBOOK_AND_PROVENANCE_V05.md",
+      "branch": "v05/DX15",
+      "worktree": "/home/wael/Code/mv-wt-v05/DX15",
+      "attempts": 0,
+      "status": "PENDING",
+      "log": "swarm/v05/logs/DX15.log",
+      "evidence": "",
+      "commit_sha": "",
+      "actual_runtime": ""
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "waves": {
+    "W0": [
+      {
+        "id": "CL01",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [],
+        "owned_paths": [
+          "docs/product/v05/"
+        ]
+      },
+      {
+        "id": "CX01",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [],
+        "owned_paths": [
+          "reports/engineering/"
+        ]
+      },
+      {
+        "id": "AG01",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [],
+        "owned_paths": [
+          "art/direction/v05/"
+        ]
+      },
+      {
+        "id": "DX01",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [],
+        "owned_paths": [
+          "reports/asset-inventory/"
+        ]
+      }
+    ],
+    "W1": [
+      {
+        "id": "CL02",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL01",
+          "CX01",
+          "AG01",
+          "DX01"
+        ],
+        "owned_paths": [
+          "packages/contracts/worlds/"
+        ]
+      },
+      {
+        "id": "CL03",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL01",
+          "CX01"
+        ],
+        "owned_paths": [
+          "docs/security/privacy/"
+        ]
+      },
+      {
+        "id": "CL04",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL01",
+          "CX01"
+        ],
+        "owned_paths": [
+          "docs/commerce/spec/"
+        ]
+      },
+      {
+        "id": "CL05",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL01",
+          "CX01"
+        ],
+        "owned_paths": [
+          "apps/roblox/src/server/Foundation/"
+        ]
+      },
+      {
+        "id": "CL09",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL01",
+          "CX01"
+        ],
+        "owned_paths": [
+          "apps/minecraft/scripts/core/"
+        ]
+      },
+      {
+        "id": "CL14",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL01",
+          "CX01"
+        ],
+        "owned_paths": [
+          "packages/game-domain/progression/"
+        ]
+      },
+      {
+        "id": "CX02",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CL01",
+          "CX01",
+          "AG01",
+          "DX01"
+        ],
+        "owned_paths": [
+          "apps/web/src/app/"
+        ]
+      },
+      {
+        "id": "CX03",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CX01",
+          "AG01"
+        ],
+        "owned_paths": [
+          "apps/web/src/game3d/runtime/"
+        ]
+      },
+      {
+        "id": "CX05",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CX01"
+        ],
+        "owned_paths": [
+          "packages/game-domain/state/"
+        ]
+      },
+      {
+        "id": "AG02",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG01"
+        ],
+        "owned_paths": [
+          "art/landing/"
+        ]
+      },
+      {
+        "id": "AG03",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG01"
+        ],
+        "owned_paths": [
+          "apps/web/src/design-system/"
+        ]
+      },
+      {
+        "id": "AG05",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG01",
+          "AG03"
+        ],
+        "owned_paths": [
+          "apps/web/src/marketing/explore/"
+        ]
+      },
+      {
+        "id": "AG16",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG03",
+          "CL04"
+        ],
+        "owned_paths": [
+          "apps/web/src/parent/store-ui/"
+        ]
+      },
+      {
+        "id": "DX02",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "DX01",
+          "AG01"
+        ],
+        "owned_paths": [
+          "tools/assets/v05/"
+        ]
+      },
+      {
+        "id": "DX08",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "CL01",
+          "DX01"
+        ],
+        "owned_paths": [
+          "content/localization/v05/"
+        ]
+      },
+      {
+        "id": "DX13",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "CL02",
+          "CL05"
+        ],
+        "owned_paths": [
+          "tools/roblox/v05/"
+        ]
+      },
+      {
+        "id": "DX14",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "CL02",
+          "CL09"
+        ],
+        "owned_paths": [
+          "tools/minecraft/v05/"
+        ]
+      }
+    ],
+    "W2": [
+      {
+        "id": "CL06",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL02",
+          "CL05",
+          "DX13"
+        ],
+        "owned_paths": [
+          "apps/roblox/src/server/Quests/"
+        ]
+      },
+      {
+        "id": "CL10",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL02",
+          "CL09",
+          "DX14"
+        ],
+        "owned_paths": [
+          "apps/minecraft/scripts/challenges/"
+        ]
+      },
+      {
+        "id": "CX04",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CX03",
+          "CL02"
+        ],
+        "owned_paths": [
+          "apps/web/src/game3d/interactions/"
+        ]
+      },
+      {
+        "id": "CX06",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CL03",
+          "CL04"
+        ],
+        "owned_paths": [
+          "apps/api/src/identity/"
+        ]
+      },
+      {
+        "id": "CX07",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CL04",
+          "CX06",
+          "DX10"
+        ],
+        "owned_paths": [
+          "apps/api/src/payments/"
+        ]
+      },
+      {
+        "id": "AG04",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG02",
+          "AG03",
+          "CX02"
+        ],
+        "owned_paths": [
+          "apps/web/src/marketing/landing/"
+        ]
+      },
+      {
+        "id": "AG07",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG03",
+          "CX05",
+          "CL14"
+        ],
+        "owned_paths": [
+          "apps/web/src/player/home/"
+        ]
+      },
+      {
+        "id": "AG08",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG03",
+          "CL14"
+        ],
+        "owned_paths": [
+          "apps/web/src/player/characters/"
+        ]
+      },
+      {
+        "id": "AG10",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG03",
+          "CX03",
+          "CX04"
+        ],
+        "owned_paths": [
+          "apps/web/src/game3d/presentation/"
+        ]
+      },
+      {
+        "id": "AG11",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG01",
+          "DX02"
+        ],
+        "owned_paths": [
+          "art/worlds/FR/"
+        ]
+      },
+      {
+        "id": "DX03",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "DX02",
+          "AG11"
+        ],
+        "owned_paths": [
+          "art/generated-checks/FR/"
+        ]
+      },
+      {
+        "id": "DX10",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "CL04"
+        ],
+        "owned_paths": [
+          "tests/fixtures/gifts/"
+        ]
+      },
+      {
+        "id": "DX11",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "CL04",
+          "CL14"
+        ],
+        "owned_paths": [
+          "tests/fixtures/wallet/"
+        ]
+      }
+    ],
+    "W3": [
+      {
+        "id": "CL07",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL06",
+          "AG11"
+        ],
+        "owned_paths": [
+          "apps/roblox/src/client/Presentation/"
+        ]
+      },
+      {
+        "id": "CL11",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL10"
+        ],
+        "owned_paths": [
+          "apps/minecraft/scripts/npc/"
+        ]
+      },
+      {
+        "id": "CL13",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL02",
+          "DX08"
+        ],
+        "owned_paths": [
+          "content/narrative/v05/"
+        ]
+      },
+      {
+        "id": "CX08",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CX07",
+          "DX10"
+        ],
+        "owned_paths": [
+          "apps/api/src/gifts/"
+        ]
+      },
+      {
+        "id": "CX09",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CX06",
+          "DX11"
+        ],
+        "owned_paths": [
+          "apps/api/src/wallet/"
+        ]
+      },
+      {
+        "id": "CX10",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CX06",
+          "CX07",
+          "CX08",
+          "CX09"
+        ],
+        "owned_paths": [
+          "apps/api/src/parent/"
+        ]
+      },
+      {
+        "id": "AG06",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG03",
+          "AG05",
+          "CL02"
+        ],
+        "owned_paths": [
+          "apps/web/src/marketing/adventures/"
+        ]
+      },
+      {
+        "id": "AG09",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG03",
+          "AG07"
+        ],
+        "owned_paths": [
+          "apps/web/src/player/passport/"
+        ]
+      },
+      {
+        "id": "AG12",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG11"
+        ],
+        "owned_paths": [
+          "art/worlds/LB/"
+        ]
+      },
+      {
+        "id": "AG13",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG11"
+        ],
+        "owned_paths": [
+          "art/worlds/EG/"
+        ]
+      },
+      {
+        "id": "AG14",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG11"
+        ],
+        "owned_paths": [
+          "art/worlds/IQ/"
+        ]
+      },
+      {
+        "id": "AG15",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG11"
+        ],
+        "owned_paths": [
+          "art/worlds/KR/"
+        ]
+      },
+      {
+        "id": "DX04",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "DX02",
+          "AG12"
+        ],
+        "owned_paths": [
+          "art/generated-checks/LB/"
+        ]
+      },
+      {
+        "id": "DX05",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "DX02",
+          "AG13"
+        ],
+        "owned_paths": [
+          "art/generated-checks/EG/"
+        ]
+      },
+      {
+        "id": "DX06",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "DX02",
+          "AG14"
+        ],
+        "owned_paths": [
+          "art/generated-checks/IQ/"
+        ]
+      },
+      {
+        "id": "DX07",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "DX02",
+          "AG15"
+        ],
+        "owned_paths": [
+          "art/generated-checks/KR/"
+        ]
+      },
+      {
+        "id": "DX09",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "DX08"
+        ],
+        "owned_paths": [
+          "tests/fixtures/rtl/"
+        ]
+      }
+    ],
+    "W4": [
+      {
+        "id": "CL08",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL04",
+          "CL07"
+        ],
+        "owned_paths": [
+          "apps/roblox/src/server/CommerceBoundary/"
+        ]
+      },
+      {
+        "id": "CL12",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CL11",
+          "DX14"
+        ],
+        "owned_paths": [
+          "apps/minecraft/tools/release/"
+        ]
+      },
+      {
+        "id": "CX11",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CX06",
+          "CX07",
+          "CX08",
+          "CX09",
+          "CX10"
+        ],
+        "owned_paths": [
+          "tests/security/v05/"
+        ]
+      },
+      {
+        "id": "CX12",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "AG04",
+          "AG05",
+          "AG06",
+          "AG07",
+          "AG08",
+          "AG09",
+          "AG16",
+          "AG17",
+          "AG18"
+        ],
+        "owned_paths": [
+          "tests/e2e/v05/"
+        ]
+      },
+      {
+        "id": "CX13",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "DX02",
+          "DX13",
+          "DX14"
+        ],
+        "owned_paths": [
+          "tools/ci/v05/"
+        ]
+      },
+      {
+        "id": "CX14",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "AG04",
+          "CX03"
+        ],
+        "owned_paths": [
+          "tools/perf/v05/"
+        ]
+      },
+      {
+        "id": "AG17",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG16",
+          "CX08"
+        ],
+        "owned_paths": [
+          "apps/web/src/parent/gift-ui/"
+        ]
+      },
+      {
+        "id": "AG18",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG16",
+          "CX10"
+        ],
+        "owned_paths": [
+          "apps/web/src/parent/dashboard-ui/"
+        ]
+      },
+      {
+        "id": "AG19",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG04",
+          "AG05",
+          "AG06",
+          "AG07",
+          "AG08",
+          "AG09",
+          "AG10",
+          "AG17",
+          "AG18",
+          "DX09"
+        ],
+        "owned_paths": [
+          "reports/ux-accessibility/"
+        ]
+      },
+      {
+        "id": "DX12",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "CX12"
+        ],
+        "owned_paths": [
+          "tools/visual-regression/"
+        ]
+      },
+      {
+        "id": "DX15",
+        "backend": "dgx",
+        "resolved_model": "qwen/qwen3-coder-next",
+        "dependencies": [
+          "DX01",
+          "DX02",
+          "CX13"
+        ],
+        "owned_paths": [
+          "docs/operations/v05/"
+        ]
+      }
+    ],
+    "W5": [
+      {
+        "id": "CL15",
+        "backend": "claude",
+        "resolved_model": "claude-sonnet-4-6",
+        "dependencies": [
+          "CX11",
+          "CX12",
+          "CX13",
+          "CX14",
+          "AG19",
+          "DELIVERABLES_W4"
+        ],
+        "owned_paths": [
+          "reports/independent/"
+        ]
+      },
+      {
+        "id": "CX15",
+        "backend": "codex",
+        "resolved_model": "gpt-6-astra",
+        "dependencies": [
+          "CX11",
+          "CX12",
+          "CX13",
+          "CX14",
+          "CL15",
+          "AG20"
+        ],
+        "owned_paths": [
+          "reports/integration/"
+        ]
+      },
+      {
+        "id": "AG20",
+        "backend": "antigravity",
+        "resolved_model": "gemini-4-argon",
+        "dependencies": [
+          "AG11",
+          "AG12",
+          "AG13",
+          "AG14",
+          "AG15",
+          "AG19",
+          "DX12"
+        ],
+        "owned_paths": [
+          "reports/visual-acceptance/"
+        ]
+      }
+    ]
+  }
+}
