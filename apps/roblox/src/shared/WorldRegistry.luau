@@ -148,7 +148,7 @@ WorldRegistry.LOCATIONS = {
 	beirut = {
 		locationId = "beirut",
 		countryId = "LB",
-		locationType = "region",
+		locationType = "city",
 		geographicSetting = "real_geography",
 		detailLevel = 3,
 		displayName = "Beirut",
@@ -545,6 +545,33 @@ function WorldRegistry.locationStation(locationId: string, kind: string): Statio
 		return nil
 	end
 	return loc.stations[kind]
+end
+
+function WorldRegistry.hasStations(countryOrLocation: string, locationId: string?): boolean
+	local loc = if locationId then WorldRegistry.getLocation(locationId) else WorldRegistry.getLocation(countryOrLocation)
+	if loc then
+		return loc.stations ~= nil and next(loc.stations) ~= nil
+	end
+	local defaultLoc = WorldRegistry.defaultLocation(countryOrLocation)
+	if defaultLoc then
+		return defaultLoc.stations ~= nil and next(defaultLoc.stations) ~= nil
+	end
+	return false
+end
+
+function WorldRegistry.getRoutes(countryOrLocation: string, locationId: string?): { string }
+	local loc = if locationId then WorldRegistry.getLocation(locationId) else WorldRegistry.getLocation(countryOrLocation)
+	if not loc then
+		loc = WorldRegistry.defaultLocation(countryOrLocation)
+	end
+	if not loc or not loc.travelConnections then
+		return {}
+	end
+	local routes: { string } = {}
+	for _, dest in ipairs(loc.travelConnections) do
+		table.insert(routes, dest)
+	end
+	return routes
 end
 
 function WorldRegistry.canTravel(fromLocationId: string?, toDestinationId: string): boolean
