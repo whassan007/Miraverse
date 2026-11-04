@@ -93,4 +93,16 @@ const mcPath = path.join(root, 'apps/minecraft/scripts/generated/knowledgeV12.ts
 fs.mkdirSync(path.dirname(mcPath), { recursive: true });
 fs.writeFileSync(mcPath, mcOut, 'utf8');
 
+const geo = JSON.parse(fs.readFileSync(path.join(root, 'content/v12/geo/atlas-v12-geodata.json'), 'utf8'));
+const webOut = {
+  version: '1.2.0',
+  records: Object.values(recordsByCountry).flat(),
+  quest_acts: questActsData.acts,
+  real_world_places: geo.real_world_places,
+  in_game_quest_markers: geo.in_game_quest_markers,
+};
+const webPath = path.join(root, 'apps/web/src/generated/knowledgeV12.json');
+fs.mkdirSync(path.dirname(webPath), { recursive: true });
+fs.writeFileSync(webPath, JSON.stringify(webOut, null, 2) + '\n', 'utf8');
+
 console.log('CX02 compiled v1.2 knowledge base (25 records, 25 acts, 100 age variations) to Roblox Luau and Minecraft Bedrock TS.');
