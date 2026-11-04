@@ -1,0 +1,19 @@
+=== AGENT CL03 (CLAUDE · W0) ===
+Timestamp: 2026-11-04T13:33:51.800Z
+Task: Localization editorial standards and cultural review governance
+Resolved Model: Claude Sonnet 4.6
+Runtime Environment: Claude Localization & Dialect Editorial Lane (Linux aarch64)
+Branch: minecraft-global/CL03
+Worktree: /home/wael/Code/mv-wt-mcg/CL03
+Agent Commit SHA: 3338d43
+Integration Merge SHA: 4eccd5f
+Owned Paths: docs/minecraft-global/localization/
+Modified Files (2): docs/minecraft-global/localization/LOCALIZATION-GUIDE.md, docs/minecraft-global/localization/locale-governance.json
+Test Command: node -e "const fs=require('fs'); const d=JSON.parse(fs.readFileSync('docs/minecraft-global/localization/locale-governance.json','utf8')); if(d.localeCount!==14 || d.nativeBedrockLocales.length!==9 || d.customArabicLocales.length!==5) process.exit(1); console.log('CL03 localization governance verified: 14 locales (9 native + 5 custom Arabic)');"
+Test Exit Code: 0
+Evidence Paths: docs/minecraft-global/localization/LOCALIZATION-GUIDE.md, docs/minecraft-global/localization/locale-governance.json
+Blockers: None
+--- STDOUT/STDERR ---
+CL03 localization governance verified: 14 locales (9 native + 5 custom Arabic)
+
+DONE CL03 3338d43 docs/minecraft-global/localization/LOCALIZATION-GUIDE.md

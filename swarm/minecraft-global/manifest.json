@@ -1299,13 +1299,19 @@
       "acceptance": "Locale style guides, native reviewer queue, termbases and acceptance contracts",
       "branch": "minecraft-global/CL03",
       "worktree": "/home/wael/Code/mv-wt-mcg/CL03",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "3338d43",
+      "integration_sha": "4eccd5f",
+      "runtime_environment": "Claude Localization & Dialect Editorial Lane (Linux aarch64)",
+      "modified_files": [
+        "docs/minecraft-global/localization/LOCALIZATION-GUIDE.md",
+        "docs/minecraft-global/localization/locale-governance.json"
+      ],
+      "evidence_paths": [
+        "docs/minecraft-global/localization/LOCALIZATION-GUIDE.md",
+        "docs/minecraft-global/localization/locale-governance.json"
+      ],
       "report_path": "reports/minecraft-global/agents/CL03.md",
       "log_path": "swarm/minecraft-global/logs/CL03.log",
       "blockers": []
