@@ -1,0 +1,16 @@
+=== AGENT CX01 (CODEX · W0) ===
+Timestamp: 2026-11-04T06:34:25.594Z
+Resolved Model: gpt-6-astra
+Runtime Environment: Codex CLI gpt-6-astra (worktree execution)
+Branch: minecraft-v10/CX01
+Agent Commit SHA: 1e4f8ca
+Integration Merge SHA: 5332ca9
+Owned Paths: apps/minecraft/tools/integration/, reports/minecraft-v10/integration/
+Test Command: node apps/minecraft/tools/integration/verify-ownership.mjs
+Test Exit Code: 0
+Evidence Paths: apps/minecraft/tools/integration/verify-ownership.mjs, reports/minecraft-v10/integration/INTEGRATION_RULES_V10.md
+Blockers: None
+--- STDOUT/STDERR ---
+{"ok":true,"counts":{"total":50,"antigravity":20,"dgx":20,"claude":5,"codex":5},"uniqueOwnedRoots":69}
+
+DONE CX01 1e4f8ca apps/minecraft/tools/integration/verify-ownership.mjs

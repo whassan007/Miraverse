@@ -1258,12 +1258,15 @@
       "task_card": "swarm/minecraft-v10/cards/CX01.md",
       "branch": "minecraft-v10/CX01",
       "worktree": "/home/wael/Code/mv-wt-mc10/CX01",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "1e4f8ca",
       "test_command": "node apps/minecraft/tools/integration/verify-ownership.mjs",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "apps/minecraft/tools/integration/verify-ownership.mjs",
+        "reports/minecraft-v10/integration/INTEGRATION_RULES_V10.md"
+      ],
+      "runtime_environment": "Codex CLI gpt-6-astra (worktree execution)",
       "blockers": []
     },
     {
