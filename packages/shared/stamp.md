@@ -48,3 +48,13 @@ A stamp code is valid if and only if:
 ## 5. Golden Test Vectors
 
 *(Worker X7 appends the 5 verified cross-platform golden test vectors below without altering sections 1–4.)*
+
+The hash is unsigned decimal; checksums use least-significant digit first.
+
+| Country | Chapter | Nonce | FNV-1a hash | Checksum | Code |
+| --- | --- | --- | --- | --- | --- |
+| LB | 1 | 2345 | 454244685 | HBWS | `MV-LB1-2345-HBWS` |
+| EG | 1 | 6789 | 3578993471 | DEBH | `MV-EG1-6789-DEBH` |
+| IQ | 1 | ABCD | 3897764377 | 9BN3 | `MV-IQ1-ABCD-9BN3` |
+| KR | 1 | EFGH | 418192528 | YCMA | `MV-KR1-EFGH-YCMA` |
+| FR | 1 | JKMN | 1523677599 | B5H4 | `MV-FR1-JKMN-B5H4` |
