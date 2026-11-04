@@ -583,61 +583,63 @@ merge_batch() {
   "$ROOT/swarm/merge.sh" "$target"
 }
 
-cmd="${1:-status}"
-arg="${2:-}"
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+  cmd="${1:-status}"
+  arg="${2:-}"
 
-case "$cmd" in
-  preflight)
-    echo "=== MiraVerse Preflight Check ==="
-    for tool in node npm git rojo claude codex agy jq zip unzip; do
-      printf "%-8s : %s\n" "$tool" "$(command -v "$tool" || echo MISSING)"
-    done
-    cat "$ROOT/swarm/PREFLIGHT.md" | head -n 35
-    ;;
-  bootstrap)
-    init_status_json
-    echo "Initialized $STATUS_FILE with $(jq '.agents | length' "$STATUS_FILE") agent assignments."
-    ;;
-  wave)
-    if [ "$arg" = "A" ]; then
-      run_batch "A1" 0 && merge_batch "A1" && \
-      run_batch "A2" 0 && merge_batch "A2" && \
-      run_batch "A3" 0
-    else
-      run_batch "$arg" 0
-    fi
-    ;;
-  merge)
-    merge_batch "$arg"
-    ;;
-  resume)
-    target_wave="${arg:-A}"
-    if [ "$target_wave" = "A" ]; then
-      run_batch "A1" 1 && merge_batch "A1" && \
-      run_batch "A2" 1 && merge_batch "A2" && \
-      run_batch "A3" 1 && merge_batch "A3"
-    else
-      run_batch "$target_wave" 1
-    fi
-    ;;
-  verify)
-    npm run check:release
-    ;;
-  status)
-    init_status_json
-    jq -r '.agents | to_entries[] | "\(.value.id)\t\(.value.provider)\t\(.value.wave)\t\(.value.status)\t\(.value.commitSha)"' "$STATUS_FILE"
-    echo "--- Summary ---"
-    jq -r '[.agents[].status] | group_by(.) | map("\(.[0]): \(length)") | join(", ")' "$STATUS_FILE"
-    ;;
-  report)
-    if [ -f "$ROOT/swarm/REPORT.md" ]; then
-      cat "$ROOT/swarm/REPORT.md"
-    else
-      echo "swarm/REPORT.md not yet generated (run Wave C)."
-    fi
-    ;;
-  *)
-    echo "Usage: $0 {preflight|bootstrap|wave|merge|resume|verify|status|report} [target]"
-    exit 1
-    ;;
-esac
+  case "$cmd" in
+    preflight)
+      echo "=== MiraVerse Preflight Check ==="
+      for tool in node npm git rojo claude codex agy jq zip unzip; do
+        printf "%-8s : %s\n" "$tool" "$(command -v "$tool" || echo MISSING)"
+      done
+      cat "$ROOT/swarm/PREFLIGHT.md" | head -n 35
+      ;;
+    bootstrap)
+      init_status_json
+      echo "Initialized $STATUS_FILE with $(jq '.agents | length' "$STATUS_FILE") agent assignments."
+      ;;
+    wave)
+      if [ "$arg" = "A" ]; then
+        run_batch "A1" 0 && merge_batch "A1" && \
+        run_batch "A2" 0 && merge_batch "A2" && \
+        run_batch "A3" 0
+      else
+        run_batch "$arg" 0
+      fi
+      ;;
+    merge)
+      merge_batch "$arg"
+      ;;
+    resume)
+      target_wave="${arg:-A}"
+      if [ "$target_wave" = "A" ]; then
+        run_batch "A1" 1 && merge_batch "A1" && \
+        run_batch "A2" 1 && merge_batch "A2" && \
+        run_batch "A3" 1 && merge_batch "A3"
+      else
+        run_batch "$target_wave" 1
+      fi
+      ;;
+    verify)
+      npm run check:release
+      ;;
+    status)
+      init_status_json
+      jq -r '.agents | to_entries[] | "\(.value.id)\t\(.value.provider)\t\(.value.wave)\t\(.value.status)\t\(.value.commitSha)"' "$STATUS_FILE"
+      echo "--- Summary ---"
+      jq -r '[.agents[].status] | group_by(.) | map("\(.[0]): \(length)") | join(", ")' "$STATUS_FILE"
+      ;;
+    report)
+      if [ -f "$ROOT/swarm/REPORT.md" ]; then
+        cat "$ROOT/swarm/REPORT.md"
+      else
+        echo "swarm/REPORT.md not yet generated (run Wave C)."
+      fi
+      ;;
+    *)
+      echo "Usage: $0 {preflight|bootstrap|wave|merge|resume|verify|status|report} [target]"
+      exit 1
+      ;;
+  esac
+fi
