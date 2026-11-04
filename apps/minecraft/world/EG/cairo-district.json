@@ -1,0 +1,542 @@
+{
+  "country": "EG",
+  "titleEn": "Cairo Lantern Courtyard",
+  "titleNative": "القاهرة · مصر",
+  "origin": {
+    "x": 400,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 400,
+    "y": 65,
+    "z": -18
+  },
+  "returnPortalPos": {
+    "x": 400,
+    "y": 65,
+    "z": -24
+  },
+  "privatePlotOrigin": {
+    "x": 432,
+    "y": 65,
+    "z": 20
+  },
+  "privatePlotRadius": 8,
+  "restorationOrigin": {
+    "x": 392,
+    "y": 65,
+    "z": 8
+  },
+  "restorationRequiredItems": [
+    {
+      "itemId": "miraverse:eg_fanous_lantern",
+      "count": 3
+    }
+  ],
+  "exteriors": [
+    {
+      "buildingId": "eg_mentor_kitchen_house",
+      "nameEn": "Teta Samira's Culinary House",
+      "nameNative": "القاهرة · مصر",
+      "origin": {
+        "x": 388,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:eg_khan_arch_stone",
+      "roofBlock": "miraverse:eg_spice_bazaar_canopy",
+      "trimBlock": "miraverse:eg_cairo_mashrabiya",
+      "hasInterior": true,
+      "interiorId": "eg_int_kitchen"
+    },
+    {
+      "buildingId": "eg_family_courtyard",
+      "nameEn": "Cairo Lantern Courtyard Family Courtyard",
+      "nameNative": "القاهرة · مصر",
+      "origin": {
+        "x": 406,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:eg_khan_arch_stone",
+      "roofBlock": "miraverse:eg_spice_bazaar_canopy",
+      "trimBlock": "miraverse:eg_cairo_mashrabiya",
+      "hasInterior": true,
+      "interiorId": "eg_int_salon"
+    },
+    {
+      "buildingId": "eg_artisan_workshop",
+      "nameEn": "Cairo Lantern Courtyard Artisan Workshop",
+      "nameNative": "القاهرة · مصر",
+      "origin": {
+        "x": 384,
+        "y": 64,
+        "z": -12
+      },
+      "size": {
+        "x": 10,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:eg_khan_arch_stone",
+      "roofBlock": "miraverse:eg_spice_bazaar_canopy",
+      "trimBlock": "miraverse:eg_cairo_mashrabiya",
+      "hasInterior": true,
+      "interiorId": "eg_int_workshop"
+    },
+    {
+      "buildingId": "eg_market_pavilion",
+      "nameEn": "Cairo Lantern Courtyard Market Bazaar Pavilion",
+      "nameNative": "القاهرة · مصر",
+      "origin": {
+        "x": 410,
+        "y": 64,
+        "z": -14
+      },
+      "size": {
+        "x": 11,
+        "y": 6,
+        "z": 9
+      },
+      "wallBlock": "miraverse:eg_khan_arch_stone",
+      "roofBlock": "miraverse:eg_spice_bazaar_canopy",
+      "trimBlock": "miraverse:eg_cairo_mashrabiya",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "eg_heritage_tower",
+      "nameEn": "Cairo Lantern Courtyard Heritage Landmark Gate",
+      "nameNative": "القاهرة · مصر",
+      "origin": {
+        "x": 396,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 9,
+        "y": 10,
+        "z": 9
+      },
+      "wallBlock": "miraverse:eg_khan_arch_stone",
+      "roofBlock": "miraverse:eg_spice_bazaar_canopy",
+      "trimBlock": "miraverse:eg_cairo_mashrabiya",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "eg_int_kitchen",
+      "buildingId": "eg_mentor_kitchen_house",
+      "nameEn": "Teta Samira's Kitchen Interior",
+      "entryPos": {
+        "x": 392,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "eg_hearth",
+          "blockId": "miraverse:eg_koshari_cauldron_block",
+          "offset": {
+            "x": 394,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Cairene Koshari Cooking Station"
+        },
+        {
+          "propId": "eg_prep_table",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 391,
+            "y": 65,
+            "z": 7
+          },
+          "labelEn": "Preparation Table"
+        },
+        {
+          "propId": "eg_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 393,
+            "y": 67,
+            "z": 6
+          },
+          "labelEn": "Warm Kitchen Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "eg_int_salon",
+      "buildingId": "eg_family_courtyard",
+      "nameEn": "Cairo Lantern Courtyard Family Salon Interior",
+      "entryPos": {
+        "x": 412,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "eg_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 410,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Storybook Stand"
+        },
+        {
+          "propId": "eg_carpet",
+          "blockId": "minecraft:red_carpet",
+          "offset": {
+            "x": 411,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Woven Courtyard Rug"
+        }
+      ]
+    },
+    {
+      "interiorId": "eg_int_workshop",
+      "buildingId": "eg_artisan_workshop",
+      "nameEn": "Cairo Lantern Courtyard Artisan Workshop Interior",
+      "entryPos": {
+        "x": 388,
+        "y": 65,
+        "z": -12
+      },
+      "furnishings": [
+        {
+          "propId": "eg_barrel",
+          "blockId": "minecraft:barrel",
+          "offset": {
+            "x": 390,
+            "y": 65,
+            "z": -9
+          },
+          "labelEn": "Artisan Supply Barrel"
+        },
+        {
+          "propId": "eg_workbench",
+          "blockId": "minecraft:stonecutter_block",
+          "offset": {
+            "x": 389,
+            "y": 65,
+            "z": -8
+          },
+          "labelEn": "Craftsman Workbench"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "npc:EG:mentor",
+      "entityTypeId": "miraverse:mentor_eg",
+      "country": "EG",
+      "nameEn": "Teta Samira",
+      "nameNative": "تيتا سميرة",
+      "role": "mentor",
+      "spawnPos": {
+        "x": 393,
+        "y": 65,
+        "z": 3
+      },
+      "defaultAnimation": "greeting",
+      "dialogueGreetingEn": "Welcome to Cairo Lantern Courtyard! Let's gather ingredients, trade at the market, cook Cairene Koshari, restore our landmark, and learn 3 cultural words.",
+      "dialogueGreetingNative": "القاهرة · مصر",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:EG:merchant",
+      "entityTypeId": "miraverse:mentor_eg",
+      "country": "EG",
+      "nameEn": "Cairo Lantern Courtyard Market Merchant",
+      "nameNative": "تيتا سميرة",
+      "role": "merchant",
+      "spawnPos": {
+        "x": 389,
+        "y": 65,
+        "z": -11
+      },
+      "defaultAnimation": "idle",
+      "dialogueGreetingEn": "Trade your gathered herbs and ingredients for specialty cooking supplies!",
+      "dialogueGreetingNative": "القاهرة · مصر",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:EG:artisan",
+      "entityTypeId": "miraverse:mentor_eg",
+      "country": "EG",
+      "nameEn": "Cairo Lantern Courtyard Master Artisan",
+      "nameNative": "تيتا سميرة",
+      "role": "artisan",
+      "spawnPos": {
+        "x": 391,
+        "y": 65,
+        "z": 9
+      },
+      "defaultAnimation": "pointing",
+      "dialogueGreetingEn": "Place restoration blocks on our damaged landmark to see the before/after transformation!",
+      "dialogueGreetingNative": "القاهرة · مصر",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:EG:cousin",
+      "entityTypeId": "miraverse:mentor_eg",
+      "country": "EG",
+      "nameEn": "Cairo Lantern Courtyard Cousin Guide",
+      "nameNative": "تيتا سميرة",
+      "role": "cousin",
+      "spawnPos": {
+        "x": 412,
+        "y": 65,
+        "z": -14
+      },
+      "defaultAnimation": "walk",
+      "dialogueGreetingEn": "Explore the streets and discover the three cultural vocabulary objects!",
+      "dialogueGreetingNative": "القاهرة · مصر",
+      "humanReviewRequired": true
+    }
+  ],
+  "anchors": [
+    {
+      "anchorId": "anchor:EG:return_hub",
+      "country": "EG",
+      "kind": "portal",
+      "pos": {
+        "x": 400,
+        "y": 65,
+        "z": -24
+      },
+      "blockId": "miraverse:eg_cairo_mashrabiya",
+      "labelEn": "Return to MiraVerse Gateway Hub"
+    },
+    {
+      "anchorId": "anchor:EG:gather_1",
+      "country": "EG",
+      "kind": "gather_node",
+      "pos": {
+        "x": 382,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather miraverse:eg_lentils",
+      "linkedItemId": "miraverse:eg_lentils"
+    },
+    {
+      "anchorId": "anchor:EG:gather_2",
+      "country": "EG",
+      "kind": "gather_node",
+      "pos": {
+        "x": 385,
+        "y": 65,
+        "z": -4
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather miraverse:eg_rice",
+      "linkedItemId": "miraverse:eg_rice"
+    },
+    {
+      "anchorId": "anchor:EG:trade_stall",
+      "country": "EG",
+      "kind": "trade_stall",
+      "pos": {
+        "x": 389,
+        "y": 65,
+        "z": -10
+      },
+      "blockId": "minecraft:emerald_block",
+      "labelEn": "Market Trade Stall",
+      "linkedItemId": "miraverse:eg_tomato_sauce"
+    },
+    {
+      "anchorId": "anchor:EG:cooking_station",
+      "country": "EG",
+      "kind": "cooking_station",
+      "pos": {
+        "x": 394,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:eg_koshari_cauldron_block",
+      "labelEn": "Cook Cairene Koshari",
+      "linkedItemId": "miraverse:eg_koshari"
+    },
+    {
+      "anchorId": "anchor:EG:restoration_site",
+      "country": "EG",
+      "kind": "restoration_site",
+      "pos": {
+        "x": 392,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:eg_khan_arch_stone",
+      "labelEn": "Restore Cairo Lantern Courtyard Landmark",
+      "linkedItemId": "miraverse:eg_fanous_lantern"
+    },
+    {
+      "anchorId": "anchor:EG:word_1",
+      "country": "EG",
+      "kind": "word_object",
+      "pos": {
+        "x": 395,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:eg_koshari_cauldron_block",
+      "labelEn": "Word: Ramadan Lantern",
+      "labelNative": "فانوس",
+      "transliteration": "fānūs"
+    },
+    {
+      "anchorId": "anchor:EG:word_2",
+      "country": "EG",
+      "kind": "word_object",
+      "pos": {
+        "x": 383,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "miraverse:eg_cairo_mashrabiya",
+      "labelEn": "Word: Cairene Koshari Dish",
+      "labelNative": "كشري",
+      "transliteration": "kusharī"
+    },
+    {
+      "anchorId": "anchor:EG:word_3",
+      "country": "EG",
+      "kind": "word_object",
+      "pos": {
+        "x": 412,
+        "y": 64,
+        "z": -16
+      },
+      "blockId": "miraverse:eg_spice_bazaar_canopy",
+      "labelEn": "Word: River Nile",
+      "labelNative": "نيل",
+      "transliteration": "nīl"
+    },
+    {
+      "anchorId": "anchor:EG:private_plot",
+      "country": "EG",
+      "kind": "plot_stone",
+      "pos": {
+        "x": 432,
+        "y": 65,
+        "z": 20
+      },
+      "blockId": "miraverse:eg_cairo_mashrabiya",
+      "labelEn": "Cairo Lantern Courtyard Explorer Private Building Plot"
+    },
+    {
+      "anchorId": "anchor:EG:optional_collectible",
+      "country": "EG",
+      "kind": "optional_collectible",
+      "pos": {
+        "x": 398,
+        "y": 66,
+        "z": 24
+      },
+      "blockId": "minecraft:chest",
+      "labelEn": "Optional Keepsake (miraverse:eg_sun_stone)",
+      "linkedItemId": "miraverse:eg_sun_stone"
+    }
+  ],
+  "restorationStages": [
+    {
+      "stage": 0,
+      "descriptionEn": "Before Restoration: Damaged masonry and missing architectural trim.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "descriptionEn": "Stage 1 Restoration: Structural walls rebuilt.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:eg_khan_arch_stone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:eg_cairo_mashrabiya"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "descriptionEn": "Stage 2 Restoration: Complete roof, shutters, and lanterns restored!",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:eg_khan_arch_stone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:eg_cairo_mashrabiya"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "miraverse:eg_spice_bazaar_canopy"
+        }
+      ]
+    }
+  ]
+}
