@@ -16,3 +16,9 @@ swarm/.status.lock
 swarm/status.json
 *.mcaddon
 *.rbxlx
+
+# Local credentials and Wrangler state
+.env
+.env.*
+.dev.vars
+.wrangler
