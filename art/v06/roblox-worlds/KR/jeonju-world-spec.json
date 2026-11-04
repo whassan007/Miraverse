@@ -1,0 +1,16 @@
+{
+  "countryId": "KR",
+  "chapterTitle": "South Korea: Autumn in Jeonju",
+  "mentorId": "npc_jiwoo_jeonju",
+  "worldOrigin": [
+    220,
+    8,
+    220
+  ],
+  "landmarks": [
+    "jeonju_hanok_courtyard",
+    "onggi_terrace",
+    "ginkgo_pavilion_kitchen"
+  ],
+  "dish": "Songpyeon"
+}
