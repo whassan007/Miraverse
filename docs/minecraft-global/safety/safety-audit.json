@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.1.0",
+  "status": "APPROVED",
+  "redLines": {
+    "violentProgression": false,
+    "birthDateOrEthnicOriginCollection": false,
+    "unmoderatedChildChat": false,
+    "paidUpgradesOrMicrotransactions": false,
+    "mandatoryTimersForExplorer5To7": false,
+    "audioOnlyPuzzlesWithoutVisualCues": false
+  },
+  "auditedCountriesCount": 11,
+  "auditedChaptersCount": 66
+}
