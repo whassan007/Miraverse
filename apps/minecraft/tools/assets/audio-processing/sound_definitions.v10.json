@@ -1,0 +1,47 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "miraverse.hub.portal_chime": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/random/levelup"
+      ]
+    },
+    "miraverse.lb.saj_sizzle": {
+      "category": "block",
+      "sounds": [
+        "sounds/block/furnace/fire_crackle"
+      ]
+    },
+    "miraverse.eg.bazaar_lantern": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/block/lantern/place"
+      ]
+    },
+    "miraverse.iq.tigris_breeze": {
+      "category": "ambient",
+      "sounds": [
+        "sounds/liquid/water"
+      ]
+    },
+    "miraverse.kr.hanok_chime": {
+      "category": "note",
+      "sounds": [
+        "sounds/note/chime"
+      ]
+    },
+    "miraverse.fr.bakery_bell": {
+      "category": "block",
+      "sounds": [
+        "sounds/note/bell"
+      ]
+    },
+    "miraverse.passport.stamp_earned": {
+      "category": "ui",
+      "sounds": [
+        "sounds/random/orb"
+      ]
+    }
+  }
+}
