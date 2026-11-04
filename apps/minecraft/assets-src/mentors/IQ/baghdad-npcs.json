@@ -1,0 +1,12 @@
+{
+  "country": "IQ",
+  "mentorNameEn": "Bibi Amal",
+  "entityTypeId": "miraverse:mentor_iq",
+  "texturePath": "apps/minecraft/assets-src/mentors/IQ/mentor_iq.png",
+  "variants": [
+    "mentor",
+    "merchant",
+    "artisan",
+    "cousin"
+  ]
+}
