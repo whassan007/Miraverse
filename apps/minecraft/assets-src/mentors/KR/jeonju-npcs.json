@@ -1,0 +1,12 @@
+{
+  "country": "KR",
+  "mentorNameEn": "Halmeoni",
+  "entityTypeId": "miraverse:mentor_kr",
+  "texturePath": "apps/minecraft/assets-src/mentors/KR/mentor_kr.png",
+  "variants": [
+    "mentor",
+    "merchant",
+    "artisan",
+    "cousin"
+  ]
+}
