@@ -1330,13 +1330,19 @@
       "acceptance": "State machine, migration, rewards, chapter accessibility and anti-exploit policy",
       "branch": "minecraft-global/CL04",
       "worktree": "/home/wael/Code/mv-wt-mcg/CL04",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
-      "integration_sha": null,
-      "runtime_environment": null,
-      "modified_files": [],
-      "evidence_paths": [],
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "afadd88",
+      "integration_sha": "9379530",
+      "runtime_environment": "Claude Systems & Progression Architecture Lane (Linux aarch64)",
+      "modified_files": [
+        "docs/minecraft-global/systems/PROGRESSION-AND-MIGRATION.md",
+        "docs/minecraft-global/systems/state-contract.json"
+      ],
+      "evidence_paths": [
+        "docs/minecraft-global/systems/PROGRESSION-AND-MIGRATION.md",
+        "docs/minecraft-global/systems/state-contract.json"
+      ],
       "report_path": "reports/minecraft-global/agents/CL04.md",
       "log_path": "swarm/minecraft-global/logs/CL04.log",
       "blockers": []
