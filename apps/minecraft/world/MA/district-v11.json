@@ -1,0 +1,517 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "MA",
+  "countryName": "Morocco",
+  "regionName": "Marrakesh / Jemaa el-Fnaa-inspired square",
+  "storyTitle": "The Living Circle",
+  "localLocale": "ar-MA",
+  "culturalWarning": "Al Halqa is a living performance tradition, not one fixed text. Cultural/religious stories, including the Seven Saints, must be reviewed and presented respectfully without assigning sacred characters arbitrary game powers.",
+  "origin": {
+    "x": 2200,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 2200,
+    "y": 65,
+    "z": -22
+  },
+  "returnPortalPos": {
+    "x": 2200,
+    "y": 65,
+    "z": -28
+  },
+  "restorationPlotOrigin": {
+    "x": 2196,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotOrigin": {
+    "x": 2230,
+    "y": 65,
+    "z": 20
+  },
+  "coopPlotRadius": 8,
+  "capstoneKeepsake": {
+    "id": "ma_storytellers_circle_drum",
+    "name": "Storyteller’s Circle Drum"
+  },
+  "passportStamp": {
+    "id": "ma_morocco_circle_stamp",
+    "name": "Morocco Circle Stamp"
+  },
+  "exteriorsCount": 5,
+  "interiorsCount": 3,
+  "npcsCount": 5,
+  "interactiveLocationsCount": 11,
+  "chapterLocationsCount": 6,
+  "exteriors": [
+    {
+      "buildingId": "ma_mentor_cultural_house",
+      "nameEn": "Marrakesh / Jemaa el-Fnaa-inspired square Mentor Courtyard & Hearth",
+      "nameNative": "المغرب · مراكش",
+      "origin": {
+        "x": 2182,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ma_marrakesh_terracotta_pise",
+      "trimBlock": "miraverse:ma_zellij_star_mosaic",
+      "roofBlock": "miraverse:ma_carved_cedar_arch",
+      "hasInterior": true,
+      "interiorId": "ma_interior_mentor_hearth"
+    },
+    {
+      "buildingId": "ma_story_archive_hall",
+      "nameEn": "Marrakesh / Jemaa el-Fnaa-inspired square Story & Epigraphy Archive",
+      "nameNative": "المغرب · مراكش",
+      "origin": {
+        "x": 2204,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 9,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ma_marrakesh_terracotta_pise",
+      "trimBlock": "miraverse:ma_zellij_star_mosaic",
+      "roofBlock": "miraverse:ma_carved_cedar_arch",
+      "hasInterior": true,
+      "interiorId": "ma_interior_story_archive"
+    },
+    {
+      "buildingId": "ma_artisan_craft_guild",
+      "nameEn": "Marrakesh / Jemaa el-Fnaa-inspired square Master Artisan Workshop",
+      "nameNative": "المغرب · مراكش",
+      "origin": {
+        "x": 2180,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:ma_marrakesh_terracotta_pise",
+      "trimBlock": "miraverse:ma_zellij_star_mosaic",
+      "roofBlock": "miraverse:ma_carved_cedar_arch",
+      "hasInterior": true,
+      "interiorId": "ma_interior_artisan_workshop"
+    },
+    {
+      "buildingId": "ma_market_bazaar_arcade",
+      "nameEn": "Marrakesh / Jemaa el-Fnaa-inspired square Fair-Trade Market Arcade",
+      "nameNative": "المغرب · مراكش",
+      "origin": {
+        "x": 2206,
+        "y": 64,
+        "z": -16
+      },
+      "size": {
+        "x": 14,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:ma_marrakesh_terracotta_pise",
+      "trimBlock": "miraverse:ma_zellij_star_mosaic",
+      "roofBlock": "miraverse:ma_carved_cedar_arch",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "ma_heritage_landmark_pavilion",
+      "nameEn": "Marrakesh / Jemaa el-Fnaa-inspired square Community Gathering & Performance Pavilion",
+      "nameNative": "المغرب · مراكش",
+      "origin": {
+        "x": 2194,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 12,
+        "y": 10,
+        "z": 12
+      },
+      "wallBlock": "miraverse:ma_marrakesh_terracotta_pise",
+      "trimBlock": "miraverse:ma_zellij_star_mosaic",
+      "roofBlock": "miraverse:ma_carved_cedar_arch",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "ma_interior_mentor_hearth",
+      "buildingId": "ma_mentor_cultural_house",
+      "nameEn": "Marrakesh / Jemaa el-Fnaa-inspired square Culinary & Hospitality Interior",
+      "entryPos": {
+        "x": 2188,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "ma_cooking_hearth",
+          "blockId": "miraverse:ma_mint_tea_hospitality_table",
+          "offset": {
+            "x": 2188,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Supervised Culinary Hearth"
+        },
+        {
+          "propId": "ma_prep_counter",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 2186,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Ingredient Prep Table"
+        },
+        {
+          "propId": "ma_hospitality_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 2188,
+            "y": 66,
+            "z": 8
+          },
+          "labelEn": "Warmth Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "ma_interior_story_archive",
+      "buildingId": "ma_story_archive_hall",
+      "nameEn": "Marrakesh / Jemaa el-Fnaa-inspired square Provenance & Oral History Gallery",
+      "entryPos": {
+        "x": 2210,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "ma_source_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 2210,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Primary/Secondary Source Stand"
+        },
+        {
+          "propId": "ma_map_table",
+          "blockId": "minecraft:cartography_table",
+          "offset": {
+            "x": 2212,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Heritage Map Table"
+        },
+        {
+          "propId": "ma_keepsake_display",
+          "blockId": "miraverse:ma_riad_courtyard_fountain",
+          "offset": {
+            "x": 2208,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Storyteller’s Circle Drum"
+        }
+      ]
+    },
+    {
+      "interiorId": "ma_interior_artisan_workshop",
+      "buildingId": "ma_artisan_craft_guild",
+      "nameEn": "Marrakesh / Jemaa el-Fnaa-inspired square Restoration & Craft Studio",
+      "entryPos": {
+        "x": 2186,
+        "y": 65,
+        "z": -16
+      },
+      "furnishings": [
+        {
+          "propId": "ma_craft_bench",
+          "blockId": "miraverse:ma_brass_pierced_lantern",
+          "offset": {
+            "x": 2186,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Artisan Bench"
+        },
+        {
+          "propId": "ma_supply_chest",
+          "blockId": "minecraft:Barrel",
+          "offset": {
+            "x": 2184,
+            "y": 65,
+            "z": -12
+          },
+          "labelEn": "Restoration Timber & Stone"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "ma_hakawati_driss",
+      "countryCode": "MA",
+      "nameEn": "Hakawati Master Driss",
+      "nameNative": "الحكواتي المعلم إدريس",
+      "role": "mentor",
+      "greetingNative": "مرحبا بيكم فجامع الفنا بمراكش! الحلقة كتكمل بوجودكم وبحكاياتكم.",
+      "spawnPos": {
+        "x": 2176,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "MA01",
+        "MA06"
+      ]
+    },
+    {
+      "npcId": "ma_tea_host_kenza",
+      "countryCode": "MA",
+      "nameEn": "Tea Host Kenza",
+      "nameNative": "لالة كنزة مضيفة أتاي",
+      "role": "cook",
+      "greetingNative": "أتاي بالنعناع الطري رمز الضيافة والترحيب فكل دار مغربية.",
+      "spawnPos": {
+        "x": 2188,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "MA02"
+      ]
+    },
+    {
+      "npcId": "ma_merchant_yassine",
+      "countryCode": "MA",
+      "nameEn": "Craft Merchant Yassine",
+      "nameNative": "الصانع ياسين",
+      "role": "merchant",
+      "greetingNative": "الزليج والخشب المنقوش صنعة تقليدية متوارثة فأسواق المدينة.",
+      "spawnPos": {
+        "x": 2200,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "MA03"
+      ]
+    },
+    {
+      "npcId": "ma_historian_salma",
+      "countryCode": "MA",
+      "nameEn": "Historian Salma",
+      "nameNative": "المؤرخة سلمى",
+      "role": "scholar",
+      "greetingNative": "كنحافظو على التراث الشفوي وتاريخ مراكش باحترام وتوثيق دقيق.",
+      "spawnPos": {
+        "x": 2212,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "MA04"
+      ]
+    },
+    {
+      "npcId": "ma_performer_amine",
+      "countryCode": "MA",
+      "nameEn": "Young Performer Amine",
+      "nameNative": "الفنان الشاب أمين",
+      "role": "cousin",
+      "greetingNative": "أجي نشاركو فالحلقة ونبنيو مسرح الحكايات متعددة اللغات!",
+      "spawnPos": {
+        "x": 2224,
+        "y": 65,
+        "z": -6
+      },
+      "linkedChapters": [
+        "MA05"
+      ]
+    }
+  ],
+  "chapterLocations": [
+    {
+      "anchorId": "ma_quest_ma01",
+      "chapterId": "MA01",
+      "title": "Join the Circle",
+      "kind": "interactive_circle_onboarding",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 2170,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:ma_marrakesh_terracotta_pise",
+      "rewardArtifactId": "ma_circle_invitation"
+    },
+    {
+      "anchorId": "ma_quest_ma02",
+      "chapterId": "MA02",
+      "title": "A Tale With Many Voices",
+      "kind": "branching_oral_story",
+      "sourceType": "folklore",
+      "coords": {
+        "x": 2182,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:ma_zellij_star_mosaic",
+      "rewardArtifactId": "ma_hakawati_token"
+    },
+    {
+      "anchorId": "ma_quest_ma03",
+      "chapterId": "MA03",
+      "title": "Tea and Craft",
+      "kind": "hospitality_and_trade",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 2194,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:ma_carved_cedar_arch",
+      "rewardArtifactId": "ma_mint_tea_tray"
+    },
+    {
+      "anchorId": "ma_quest_ma04",
+      "chapterId": "MA04",
+      "title": "The Story We Change",
+      "kind": "collaborative_attribution",
+      "sourceType": "fictional_gameplay",
+      "coords": {
+        "x": 2206,
+        "y": 65,
+        "z": -20
+      },
+      "stationBlockId": "miraverse:ma_halqa_circle_paver",
+      "rewardArtifactId": "ma_story_thread"
+    },
+    {
+      "anchorId": "ma_quest_ma05",
+      "chapterId": "MA05",
+      "title": "Paths of Wisdom",
+      "kind": "respectful_heritage_mapping",
+      "sourceType": "historical_context",
+      "coords": {
+        "x": 2218,
+        "y": 65,
+        "z": -4
+      },
+      "stationBlockId": "miraverse:ma_mint_tea_hospitality_table",
+      "rewardArtifactId": "ma_heritage_map"
+    },
+    {
+      "anchorId": "ma_quest_ma06",
+      "chapterId": "MA06",
+      "title": "The Circle Travels",
+      "kind": "cooperative_stage_performance",
+      "sourceType": "contemporary_tradition",
+      "coords": {
+        "x": 2230,
+        "y": 65,
+        "z": 12
+      },
+      "stationBlockId": "miraverse:ma_brass_pierced_lantern",
+      "rewardArtifactId": "ma_morocco_circle_stamp"
+    }
+  ],
+  "supportLocations": [
+    {
+      "anchorId": "ma_return_hub_portal",
+      "kind": "portal",
+      "coords": {
+        "x": 2200,
+        "y": 65,
+        "z": -28
+      },
+      "stationBlockId": "minecraft:sea_lantern",
+      "labelEn": "Return to The Atlas Observatory"
+    },
+    {
+      "anchorId": "ma_market_trade_stall",
+      "kind": "market",
+      "coords": {
+        "x": 2210,
+        "y": 65,
+        "z": -12
+      },
+      "stationBlockId": "minecraft:emerald_block",
+      "labelEn": "Marrakesh / Jemaa el-Fnaa-inspired square Fair-Trade Stall"
+    },
+    {
+      "anchorId": "ma_gathering_garden",
+      "kind": "gathering",
+      "coords": {
+        "x": 2176,
+        "y": 65,
+        "z": 14
+      },
+      "stationBlockId": "miraverse:ma_storyteller_stage_canopy",
+      "labelEn": "Marrakesh / Jemaa el-Fnaa-inspired square Resource Gathering Spot"
+    },
+    {
+      "anchorId": "ma_restoration_plot",
+      "kind": "restoration",
+      "coords": {
+        "x": 2196,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:ma_marrakesh_terracotta_pise",
+      "labelEn": "Marrakesh / Jemaa el-Fnaa-inspired square Community Restoration Plot"
+    },
+    {
+      "anchorId": "ma_coop_build_plot",
+      "kind": "coop_plot",
+      "coords": {
+        "x": 2230,
+        "y": 65,
+        "z": 20
+      },
+      "stationBlockId": "miraverse:ma_zellij_star_mosaic",
+      "labelEn": "Marrakesh / Jemaa el-Fnaa-inspired square Co-op Storykeeper Build Plot"
+    }
+  ],
+  "learnWords": [
+    {
+      "key": "halqa",
+      "native": "حلقة",
+      "translit": "ḥalqa",
+      "en": "Interactive audience circle gathered around a storyteller"
+    },
+    {
+      "key": "atay",
+      "native": "أتاي",
+      "translit": "atāy",
+      "en": "Moroccan green tea infused with fresh spearmint"
+    },
+    {
+      "key": "zellij",
+      "native": "زليج",
+      "translit": "zallīj",
+      "en": "Hand-cut geometric glazed tilework"
+    }
+  ]
+}
