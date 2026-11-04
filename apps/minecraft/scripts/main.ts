@@ -14,7 +14,7 @@ import {
   showPassport,
 } from './core/passport.js';
 import { make } from './core/stamp.js';
-import { MiraVerseBedrockRuntimeV10 } from './src/bootstrap/index.js';
+import { MiraVerseBedrockRuntimeV10, MiraVerseGlobalRuntimeV11 } from './src/bootstrap/index.js';
 import { REGIONS_V10 } from './src/regions/index.js';
 import { COUNTRIES_V10 } from './src/contracts/index.js';
 import { claimChapterPassportReward } from './src/passport/index.js';
@@ -152,3 +152,6 @@ world.afterEvents.itemUse.subscribe((ev) => {
     if (getCountry(player) && !busy.has(player.id)) void begin(player);
   })();
 });
+
+export const runtimeGlobalV11 = new MiraVerseGlobalRuntimeV11();
+export { MiraVerseGlobalRuntimeV11 };

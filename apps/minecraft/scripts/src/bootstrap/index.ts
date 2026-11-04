@@ -72,3 +72,102 @@ export class MiraVerseBedrockRuntimeV10 {
     return claimOrGetPrivatePlot(this.worldState, country, playerId);
   }
 }
+
+
+// ============================================================================
+// MiraVerse Global v1.1 — Unified Global Runtime Bootstrap
+// Owner: CX04 (Wave W4)
+// ============================================================================
+import {
+  QuestDirector,
+  ObjectiveRegistry,
+  AgeTrackResolver,
+  type GlobalAgeTrack,
+  type GlobalCountryCode,
+} from '../quests/index.js';
+import { LocaleService, DialogueService, type SupportedLocaleId } from '../locales/index.js';
+import { StateStore, RewardLedger, type GlobalPlayerSaveStateV11 } from '../state/index.js';
+import { CoopSession } from '../multiplayer/index.js';
+import { StructureRestore } from '../building/index.js';
+import { AtlasJournal, ArtifactViewer } from '../ui/index.js';
+
+export class MiraVerseGlobalRuntimeV11 {
+  readonly coop = new CoopSession();
+  readonly restore = new StructureRestore();
+  private readonly players = new Map<string, GlobalPlayerSaveStateV11>();
+
+  getOrCreatePlayer(
+    playerId: string,
+    playerName = 'Storykeeper',
+    locale: SupportedLocaleId = 'en-US',
+    ageTrack: GlobalAgeTrack = '8-10'
+  ): GlobalPlayerSaveStateV11 {
+    let p = this.players.get(playerId);
+    if (!p) {
+      p = StateStore.createDefaultGlobalPlayerState(playerId, playerName, locale, ageTrack);
+      this.players.set(playerId, p);
+    }
+    return p;
+  }
+
+  switchLocale(playerId: string, newLocale: SupportedLocaleId) {
+    const p = this.getOrCreatePlayer(playerId);
+    p.locale = newLocale;
+    return {
+      ok: true,
+      locale: p.locale,
+      hubWelcome: LocaleService.translate(newLocale, 'ui.hub.welcome'),
+    };
+  }
+
+  switchAgeTrack(playerId: string, newAgeTrack: GlobalAgeTrack, activeChapterId?: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    p.ageTrack = AgeTrackResolver.normalizeTrack(newAgeTrack);
+    if (activeChapterId && p.chapters[activeChapterId]) {
+      QuestDirector.switchAgeTrackMidQuest(p.chapters, activeChapterId, p.ageTrack);
+    }
+    return { ok: true, ageTrack: p.ageTrack };
+  }
+
+  playFullChapter(playerId: string, chapterId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    const startRes = QuestDirector.startChapter(p.chapters, chapterId, p.ageTrack);
+    if (!startRes.ok || !startRes.variant) {
+      return { ok: false, reason: startRes.reason };
+    }
+    for (const node of startRes.variant.objectiveNodes) {
+      QuestDirector.advanceObjectiveStep(p.chapters, chapterId, p.ageTrack, node);
+    }
+    const compRes = QuestDirector.completeChapterAndUnlockNext(p.chapters, chapterId);
+    const rewardRes = RewardLedger.grantChapterRewardsIdempotent(
+      p,
+      chapterId,
+      compRes.reward.artifactId,
+      compRes.reward.storySparks,
+      compRes.reward.grantsCountryStamp,
+      compRes.reward.grantsCapstoneKeepsake
+    );
+    const dialogue = DialogueService.buildChapterDialogue(chapterId, p.locale, p.ageTrack);
+    const sourceInspect = ArtifactViewer.inspectChapterSource(chapterId, p.locale, p.ageTrack);
+    return {
+      ok: true,
+      chapterId,
+      ageTrack: p.ageTrack,
+      locale: p.locale,
+      unlockedNextChapterId: compRes.unlockedNextChapterId,
+      reward: rewardRes,
+      dialogue,
+      sourceInspect,
+    };
+  }
+
+  openAtlasJournal(playerId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    return AtlasJournal.buildAtlasOverview(p.locale, p.ageTrack, p.chapters, p.earnedKeepsakes, p.earnedStamps);
+  }
+
+  attemptCircleOfStoriesFinale(playerId: string) {
+    const p = this.getOrCreatePlayer(playerId);
+    return RewardLedger.tryCompleteCircleOfStoriesFinale(p);
+  }
+}
