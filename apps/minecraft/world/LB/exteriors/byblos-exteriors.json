@@ -1,0 +1,299 @@
+{
+  "country": "LB",
+  "regionName": "Byblos Harbor · Summer at Teta's",
+  "origin": {
+    "x": 200,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 200,
+    "y": 65,
+    "z": -18
+  },
+  "returnPortalPos": {
+    "x": 200,
+    "y": 65,
+    "z": -24
+  },
+  "privatePlotOrigin": {
+    "x": 232,
+    "y": 65,
+    "z": 20
+  },
+  "privatePlotRadius": 8,
+  "restorationOrigin": {
+    "x": 192,
+    "y": 65,
+    "z": 8
+  },
+  "exteriors": [
+    {
+      "buildingId": "lb_teta_saj_bakery",
+      "nameEn": "Teta Nahla's Limestone Saj Bakery",
+      "nameNative": "فرن صاج تيتا نهلة",
+      "origin": {
+        "x": 188,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:lb_byblos_limestone",
+      "roofBlock": "miraverse:lb_terracotta_roof_tile",
+      "trimBlock": "miraverse:lb_cedar_shutter",
+      "hasInterior": true,
+      "interiorId": "lb_interior_saj_kitchen"
+    },
+    {
+      "buildingId": "lb_family_courtyard_house",
+      "nameEn": "Byblos Family Courtyard House",
+      "nameNative": "بيت العيلة في جبيل",
+      "origin": {
+        "x": 206,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:lb_byblos_limestone",
+      "roofBlock": "miraverse:lb_terracotta_roof_tile",
+      "trimBlock": "miraverse:lb_carved_arch_stone",
+      "hasInterior": true,
+      "interiorId": "lb_interior_family_salon"
+    },
+    {
+      "buildingId": "lb_old_souk_artisan_shop",
+      "nameEn": "Old Souk Olive Oil & Spice Workshop",
+      "nameNative": "دكان زيت الزيتون والزعتر",
+      "origin": {
+        "x": 184,
+        "y": 64,
+        "z": -12
+      },
+      "size": {
+        "x": 10,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "minecraft:smooth_sandstone",
+      "roofBlock": "miraverse:lb_terracotta_roof_tile",
+      "trimBlock": "miraverse:lb_cedar_shutter",
+      "hasInterior": true,
+      "interiorId": "lb_interior_souk_workshop"
+    },
+    {
+      "buildingId": "lb_harbor_fisherman_boathouse",
+      "nameEn": "Byblos Harbor Fisherman Boathouse & Quay",
+      "nameNative": "ميناء الصيادين",
+      "origin": {
+        "x": 210,
+        "y": 63,
+        "z": -16
+      },
+      "size": {
+        "x": 12,
+        "y": 6,
+        "z": 9
+      },
+      "wallBlock": "minecraft:cut_sandstone",
+      "roofBlock": "minecraft:spruce_slab",
+      "trimBlock": "miraverse:lb_harbor_bollard",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "lb_sea_wall_watchtower",
+      "nameEn": "Phoenician Harbor Arch & Sea-Wall Tower",
+      "nameNative": "برج المرفأ الفينيقي",
+      "origin": {
+        "x": 196,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 9,
+        "y": 11,
+        "z": 9
+      },
+      "wallBlock": "miraverse:lb_carved_arch_stone",
+      "roofBlock": "minecraft:stone_brick_slab",
+      "trimBlock": "miraverse:lb_byblos_limestone",
+      "hasInterior": false
+    }
+  ],
+  "restorationStages": [
+    {
+      "stage": 0,
+      "descriptionEn": "Before Restoration: Weathered bakery corner with cracked sandstone and missing cedar shutters.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "minecraft:air"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "minecraft:air"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone_slab"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone_slab"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "descriptionEn": "Mid Restoration: Cut Byblos limestone blocks and triple-arch masonry courses laid.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_byblos_limestone"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_byblos_limestone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_carved_arch_stone"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_carved_arch_stone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone_slab"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone_slab"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "descriptionEn": "After Restoration: Finished Byblos limestone bakery corner with cedar shutters, terracotta roof tiles, and warm harbor lanterns.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_byblos_limestone"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_byblos_limestone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_cedar_shutter"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_cedar_shutter"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_terracotta_roof_tile"
+        },
+        {
+          "offset": {
+            "x": 1,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "miraverse:lb_terracotta_roof_tile"
+        }
+      ]
+    }
+  ]
+}
