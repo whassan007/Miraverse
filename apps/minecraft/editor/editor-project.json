@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.1.0",
+  "projectName": "MiraVerse Global: Echoes of Home — The Atlas of Belonging",
+  "windowsEditorRequired": true,
+  "linuxHostStatus": "BLOCKED (native runtime missing on Linux aarch64 host; Windows Bedrock Editor is PC-only)",
+  "worldIntegrationManifest": "apps/minecraft/world/integration/world-spatial-integration.json",
+  "addonArchive": "apps/minecraft/dist/miraverse-global.mcaddon",
+  "exportScript": "apps/minecraft/editor/export-windows-mcworld.ps1",
+  "districtsToPlace": [
+    {
+      "countryCode": "LB",
+      "origin": [
+        200,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/LB/structures/lb_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "IQ",
+      "origin": [
+        600,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/IQ/structures/iq_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "EG",
+      "origin": [
+        400,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/EG/structures/eg_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "FR",
+      "origin": [
+        1000,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/FR/structures/fr_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "KR",
+      "origin": [
+        800,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/KR/structures/kr_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "DE",
+      "origin": [
+        1200,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/DE/structures/de_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "CN",
+      "origin": [
+        1400,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/CN/structures/cn_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "JP",
+      "origin": [
+        1600,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/JP/structures/jp_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "RU",
+      "origin": [
+        1800,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/RU/structures/ru_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "UA",
+      "origin": [
+        2000,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/UA/structures/ua_district_v11.mcstructure.json"
+    },
+    {
+      "countryCode": "MA",
+      "origin": [
+        2200,
+        64,
+        0
+      ],
+      "structureFile": "apps/minecraft/world/MA/structures/ma_district_v11.mcstructure.json"
+    }
+  ]
+}
