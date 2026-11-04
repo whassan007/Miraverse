@@ -1,11 +1,14 @@
 {
   "name": "miraverse",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "workspaces": [
     "apps/web",
-    "apps/minecraft"
+    "apps/minecraft",
+    "apps/api",
+    "packages/contracts",
+    "packages/game-domain"
   ],
   "scripts": {
     "validate": "tsx tools/validate.ts --profile=structural",
@@ -13,12 +16,15 @@
     "validate:release": "tsx tools/validate.ts --profile=release",
     "compile": "tsx tools/compiler/index.ts",
     "textures": "node tools/textures/gen.mjs",
+    "assets:build": "tsx tools/assets/build-glb.ts",
     "pack:mcaddon": "node tools/pack/mcaddon.mjs",
     "build:roblox": "mkdir -p apps/roblox/dist && rojo build apps/roblox -o apps/roblox/dist/miraverse.rbxlx",
-    "check": "npm run validate && npm run compile && npm -w apps/web run build && npm -w apps/minecraft run build && vitest run",
-    "check:release": "npm run validate:release && npm run compile && npm run textures && npm -w apps/web run build && npm -w apps/minecraft run build && npm run build:roblox && npm run pack:mcaddon && vitest run",
-    "build:cloudflare": "npm run compile && npm run textures && npm -w apps/web run build && npm -w apps/minecraft run build && npm run pack:mcaddon && mkdir -p apps/web/dist/downloads && cp apps/minecraft/dist/miraverse.mcaddon apps/web/dist/downloads/",
-    "dev": "npm -w apps/web run dev"
+    "build:api": "npm -w apps/api run build",
+    "check": "npm run validate && npm run compile && npm -w apps/web run build && npm -w apps/minecraft run build && npm -w apps/api run build && vitest run",
+    "check:release": "npm run validate:release && npm run compile && npm run textures && npm run assets:build && npm -w apps/web run build && npm -w apps/minecraft run build && npm -w apps/api run build && npm run build:roblox && npm run pack:mcaddon && vitest run",
+    "build:cloudflare": "npm run compile && npm run textures && npm run assets:build && npm -w apps/web run build && npm -w apps/minecraft run build && npm run pack:mcaddon && mkdir -p apps/web/dist/downloads && cp apps/minecraft/dist/miraverse.mcaddon apps/web/dist/downloads/",
+    "dev": "npm -w apps/web run dev",
+    "dev:api": "npm -w apps/api run start"
   },
   "devDependencies": {
     "@playwright/test": "^1.49.0",
