@@ -1,0 +1,41 @@
+{
+  "kitId": "byblos_stone_house_kit_v06",
+  "gridSnapStuds": 2,
+  "partsCount": 16,
+  "parts": [
+    "limestone_wall_base",
+    "limestone_corner_pillar",
+    "limestone_triple_arch",
+    "cedar_shutter_left",
+    "cedar_shutter_right",
+    "arched_cedar_door",
+    "terracotta_roof_eave",
+    "terracotta_roof_ridge",
+    "stone_courtyard_bench",
+    "bougainvillea_trellis",
+    "terracotta_olive_jar",
+    "brass_harbor_lantern",
+    "woven_courtyard_rug",
+    "wooden_saj_table",
+    "stone_balustrade",
+    "painted_window_box"
+  ],
+  "restorationStages": [
+    {
+      "stage": 0,
+      "label": "Weathered Stone Foundation"
+    },
+    {
+      "stage": 1,
+      "label": "Limestone Walls & Triple-Arch Mandaloun Restored"
+    },
+    {
+      "stage": 2,
+      "label": "Terracotta Roof & Painted Cedar Shutters Installed"
+    },
+    {
+      "stage": 3,
+      "label": "Blooming Bougainvillea Courtyard & Harbor Lanterns Complete"
+    }
+  ]
+}
