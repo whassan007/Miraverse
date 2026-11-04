@@ -1,0 +1,323 @@
+{
+  "task": "MiraVerse: Make Beirut a Playable City",
+  "branch": "fix/roblox-honest-play-button",
+  "baseCommit": "e1b859b342029a0e55a826475454848b19c9f043",
+  "leadAgent": {
+    "role": "lead",
+    "cli": "agy",
+    "model": "Gemini 4 Argon (High)",
+    "exclusiveOwnership": [
+      "reports/agents/beirut-ledger.json"
+    ]
+  },
+  "capabilityCheck": {
+    "checkedAt": "2026-11-04T10:32:27-08:00",
+    "robloxStudioMcpConfiguredInAgy": false,
+    "agyMcpListOutput": "No MCP servers configured.",
+    "robloxStudioProcessesOnHost": true,
+    "canTargetMiraverseStudioWindow": false,
+    "status": "UNAVAILABLE",
+    "notes": "Antigravity CLI (agy) has no MCP servers configured and exposes no Roblox Studio MCP tools in this session. Although RobloxStudio.app processes exist on macOS, there is no sanctioned Studio MCP channel to target the Miraverse Studio window, run live playtests, read the Studio console, count live parts, or capture Studio screenshots. Runtime verification items must be marked NOT TESTED with a complete orchestrator checklist."
+  },
+  "sourceEvidenceSummary": {
+    "searchedDirectories": [
+      "content/",
+      "content/v12/",
+      "art/"
+    ],
+    "supportedFactsAndLandmarks": [
+      {
+        "path": "apps/roblox/src/shared/Packs.luau",
+        "lines": "869-881",
+        "evidence": "LB.regions includes { id = 'byblos', name_en = 'Byblos' }, { id = 'mount_lebanon', name_en = 'Mount Lebanon' }, { id = 'beirut', name_en = 'Beirut' }."
+      },
+      {
+        "path": "content/v12/staging/countries/LB/records.json",
+        "lines": "21, 64, 288-385, 387-485",
+        "evidence": "LB-KB-PLACE-BYBLOS-PORT notes Byblos is north of Beirut and sensitivity_notes requires: 'Present Beirut and Mount Lebanon as distinct geographic areas, not walkable extensions of a single block street.' LB-KB-ARTIFACT-AHIRAM-SARCOPHAGUS documents the Sarcophagus of King Ahiram (c. 1000 BCE, unearthed in Byblos by Pierre Montet in 1923) housed in the National Museum of Beirut (atlas:real:LB:beirut_museum) bearing the 22-letter Phoenician consonantal abjad inscription with acrophonic signs Aleph (ox), Beth (house), Mem (water), Resh (head), and Taw (mark). LB-KB-THEME-PORTABLE-ARCHIVE-DIASPORA links Beirut and Byblos through portable writing, diaspora family postcards, letters, and saj man'oushe recipe cards."
+      },
+      {
+        "path": "content/v12/source-registry/passages.json",
+        "lines": "30-55",
+        "evidence": "Passages LB-P04, LB-P05, LB-P06 corroborate the National Museum of Beirut housing the Ahiram sarcophagus (c. 1000 BCE), the 22-letter Phoenician abjad (Aleph, Beth, Mem, Resh, Taw), historical caution against monocausal script-invention claims, and diaspora portable archives."
+      },
+      {
+        "path": "content/v12/source-registry/transnational_quest_for_home_source.txt",
+        "lines": "11-13",
+        "evidence": "Raw source passages [LB-P04], [LB-P05], [LB-P06] matching passages.json."
+      }
+    ],
+    "identifiedGaps": [
+      "No art/v06/roblox-worlds/LB/beirut-world-spec.json or Beirut-specific 3D prop kit exists in art/ (kit-LB.json and byblos-world-spec.json cover only Byblos Harbor & Old Souk).",
+      "content/v12/geo/atlas-v12-geodata.json defines WGS84 coordinates only for Byblos Harbor and Afqa Spring, not for Beirut or the National Museum of Beirut.",
+      "content/quests/LB.json and apps/roblox/src/shared/Packs.luau define all five Lebanon challenges (gather, cook, build, trade, word) for Chapter 1 in Byblos; no Beirut-specific quest or challenge activity exists in content/."
+    ]
+  },
+  "sharedContracts": {
+    "WorldRegistry": {
+      "owner": "A1",
+      "file": "apps/roblox/src/shared/WorldRegistry.luau",
+      "requirements": [
+        "Preserve CELL_SIZE = 800, GROUND_Y = 10, LOBBY = Vector3.new(0, 10, 0), COUNTRY_ORDER = { 'LB', 'EG', 'IQ', 'KR', 'FR' }, and STATIONS.LB (5 Byblos stations).",
+        "Support multiple locations per country via LOCATIONS, LOCATION_ORDER, DEFAULT_LOCATION, BY_ID, and Location type { id, country, type, name, displayName, origin, spawnOffset, spawn, stations, implemented }.",
+        "Register 'byblos' under LB with type = 'town', displayName = 'Byblos', origin = Vector3.new(800, 10, 0), spawnOffset = Vector3.new(0, 0.5, 28), spawn = Vector3.new(800, 10.5, 28), stations = WorldRegistry.STATIONS.LB, implemented = true.",
+        "Register 'beirut' under LB with type = 'city', displayName = 'Beirut', origin = Vector3.new(800, 10, -800), spawnOffset = Vector3.new(0, 0.5, 28), spawn = Vector3.new(800, 10.5, -772), stations = {}, implemented = true.",
+        "Do NOT register or expose 'mount_lebanon' or any unbuilt location.",
+        "Provide origin(countryOrLoc, locId?), spawn(countryOrLoc, locId?), station(countryOrLoc, kind, locId?), hasStations(countryOrLoc, locId?), getLocation(countryOrLoc, locId?), getLocationsForCountry(country), getRoutes(country, fromLocId?), defaultLocationId(country), and resolveTarget(target, locId?)."
+      ]
+    },
+    "BeirutWorldAndMapBuilder": {
+      "owner": "A2",
+      "files": [
+        "apps/roblox/src/server/world/BeirutWorld.luau",
+        "apps/roblox/src/server/MapBuilder.luau"
+      ],
+      "requirements": [
+        "Build Beirut at WorldRegistry.origin('LB', 'beirut') = Vector3.new(800, 10, -800) inside Folder 'Plaza_beirut' (with Spawn_beirut at offset (0, 0.5, 28)).",
+        "Include source-supported National Museum of Beirut (lb_beirut_national_museum) housing the Sarcophagus of King Ahiram & 22-Letter Phoenician Abjad Exhibit (Aleph, Beth, Mem, Resh, Taw) and the Diaspora Portable Archive Pavilion (lb_beirut_diaspora_archive).",
+        "Use a stylized walkable urban city layout (civic esplanade, colonnade arcades, east/west boulevards, urban garden court) clearly distinct from Byblos; invent no unsupported historical or cultural landmarks.",
+        "Ensure arrival-visible onward route portals in front of the player's arrival view (Z = +14, X = +/-16) in both Byblos (Travel to Beirut, Return to Travel Lobby) and Beirut (Travel to Byblos, Return to Travel Lobby), plus a Beirut portal in TravelLobby.",
+        "Update MapBuilder.getSpawn(countryOrLocation, locationId?) to resolve both country codes and location IDs."
+      ]
+    },
+    "TravelAndSessionManager": {
+      "owner": "A3",
+      "files": [
+        "apps/roblox/src/server/Core/SessionManager.luau",
+        "apps/roblox/src/client/Main.client.luau"
+      ],
+      "requirements": [
+        "Route all travel (SelectCountry remote, MapBuilder travel prompt handler, and onward route buttons/portals) through SessionManager's server travel path using WorldRegistry.resolveTarget.",
+        "Reject unbuilt locations such as 'mount_lebanon'.",
+        "Track session.country and session.location, persist visits via ProgressService.recordVisit(save, cc, locId), and restore saved location on join/rejoin.",
+        "Keep Lebanon's 5 challenges in Byblos (disallow running Byblos challenges while in Beirut; keep HUD Play challenge button hidden in Beirut and Byblos).",
+        "Keep Back to Lobby button visible and working in both Beirut and Byblos, and render arrival-visible onward route buttons in the HUD for implemented locations in the same country."
+      ]
+    },
+    "ProgressService": {
+      "owner": "A4",
+      "files": [
+        "apps/roblox/src/server/Progression/ProgressService.luau"
+      ],
+      "requirements": [
+        "Persist current location (lastCountry, lastLocation, countries[cc].currentLocation) and visited locations (visitedLocations[locId], countries[cc].locations[locId]).",
+        "Preserve all existing save data (chapters, completed challenges, stamps, metMentor, inventory) across migrate() and merge().",
+        "Migrate legacy mv.roblox.save.v6 saves and existing schemaVersion 2 saves without data loss, defaulting LB location to 'byblos' when lastCountry == 'LB' and lastLocation is nil."
+      ]
+    },
+    "AutomatedTests": {
+      "owner": "X1",
+      "files": [
+        "tests/roblox/beirut-location.test.ts"
+      ],
+      "requirements": [
+        "Add automated tests verifying WorldRegistry multi-location validity, Byblos/Beirut separation and metadata, BeirutWorld source compliance, SessionManager travel and challenge gating, and ProgressService save/migration compatibility.",
+        "Execute npm run build:roblox, node tools/v06/luau-checks/check-luau.mjs, and npx vitest run."
+      ]
+    }
+  },
+  "workers": [
+    {
+      "id": "D1",
+      "backend": "DGX Spark",
+      "model": "qwen3-coder:30b",
+      "mode": "text-only",
+      "scope": "Draft a Beirut source inventory from supplied excerpts of content/, content/v12/, and art/; distinguish supported landmarks and activities from gaps.",
+      "ownedFiles": [],
+      "worktree": null,
+      "baseCommit": "e1b859b342029a0e55a826475454848b19c9f043",
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "POST http://100.113.62.112:11434/api/generate (model: qwen3-coder:30b)",
+      "evidencePath": "reports/agents/beirut-D1.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "D2",
+      "backend": "DGX Spark",
+      "model": "qwen3-coder:30b",
+      "mode": "text-only",
+      "scope": "Validate the proposed multi-location registry contract and Byblos compatibility using supplied registry and consumer excerpts.",
+      "ownedFiles": [],
+      "worktree": null,
+      "baseCommit": "e1b859b342029a0e55a826475454848b19c9f043",
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "POST http://100.113.62.112:11434/api/generate (model: qwen3-coder:30b)",
+      "evidencePath": "reports/agents/beirut-D2.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "D3",
+      "backend": "DGX Spark",
+      "model": "qwen3-coder:30b",
+      "mode": "text-only",
+      "scope": "Validate proposed travel and save migration behavior using supplied SessionManager.luau, ProgressService excerpts, and interface contract.",
+      "ownedFiles": [],
+      "worktree": null,
+      "baseCommit": "e1b859b342029a0e55a826475454848b19c9f043",
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "POST http://100.113.62.112:11434/api/generate (model: qwen3-coder:30b)",
+      "evidencePath": "reports/agents/beirut-D3.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "D4",
+      "backend": "DGX Spark",
+      "model": "qwen3-coder:30b",
+      "mode": "text-only",
+      "scope": "Validate Beirut layout and static geometry risks from supplied world-source excerpts; draft exact runtime checks for routes, separation, spawn safety, and part counts.",
+      "ownedFiles": [],
+      "worktree": null,
+      "baseCommit": "e1b859b342029a0e55a826475454848b19c9f043",
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "POST http://100.113.62.112:11434/api/generate (model: qwen3-coder:30b)",
+      "evidencePath": "reports/agents/beirut-D4.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "A1",
+      "backend": "Antigravity",
+      "model": "gemini-3.8-flash-low",
+      "mode": "worktree",
+      "scope": "Implement the prerequisite multi-location registry, preserve Byblos, add Beirut metadata, and update registry consumers not owned below.",
+      "ownedFiles": [
+        "apps/roblox/src/shared/WorldRegistry.luau"
+      ],
+      "worktree": "/tmp/miraverse-beirut-worktrees/A1",
+      "baseCommit": "e1b859b342029a0e55a826475454848b19c9f043",
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "agy -p \"<worker prompt>\" --model gemini-3.8-flash-low",
+      "evidencePath": "reports/agents/beirut-A1.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "A2",
+      "backend": "Antigravity",
+      "model": "gemini-3.8-flash-low",
+      "mode": "worktree",
+      "scope": "Implement a distinct, walkable Beirut world grounded in source evidence.",
+      "ownedFiles": [
+        "apps/roblox/src/server/world/BeirutWorld.luau",
+        "apps/roblox/src/server/MapBuilder.luau"
+      ],
+      "worktree": "/tmp/miraverse-beirut-worktrees/A2",
+      "baseCommit": null,
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "agy -p \"<worker prompt>\" --model gemini-3.8-flash-low",
+      "evidencePath": "reports/agents/beirut-A2.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "A3",
+      "backend": "Antigravity",
+      "model": "gemini-3.8-flash-low",
+      "mode": "worktree",
+      "scope": "Implement server travel through the existing path, arrival-visible routes, and Back to Lobby behavior.",
+      "ownedFiles": [
+        "apps/roblox/src/server/Core/SessionManager.luau",
+        "apps/roblox/src/client/Main.client.luau"
+      ],
+      "worktree": "/tmp/miraverse-beirut-worktrees/A3",
+      "baseCommit": null,
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "agy -p \"<worker prompt>\" --model gemini-3.8-flash-low",
+      "evidencePath": "reports/agents/beirut-A3.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "A4",
+      "backend": "Antigravity",
+      "model": "gemini-3.8-flash-low",
+      "mode": "worktree",
+      "scope": "Persist current and visited locations with backward-compatible saves and stamp preservation.",
+      "ownedFiles": [
+        "apps/roblox/src/server/Progression/ProgressService.luau"
+      ],
+      "worktree": "/tmp/miraverse-beirut-worktrees/A4",
+      "baseCommit": null,
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "agy -p \"<worker prompt>\" --model gemini-3.8-flash-low",
+      "evidencePath": "reports/agents/beirut-A4.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "C1",
+      "backend": "Claude",
+      "model": "sonnet",
+      "mode": "text-only",
+      "scope": "Independently review the integrated diff for requirements, unsupported cultural claims, regressions, migration safety, and missing verification.",
+      "ownedFiles": [],
+      "worktree": null,
+      "baseCommit": null,
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "claude -p \"<worker prompt>\" --model sonnet",
+      "evidencePath": "reports/agents/beirut-C1.md",
+      "validationResults": null,
+      "errors": null
+    },
+    {
+      "id": "X1",
+      "backend": "Codex",
+      "model": "codex-cli",
+      "mode": "worktree",
+      "scope": "Implement automated location-data tests, run integration checks, and report exact outputs and failures.",
+      "ownedFiles": [
+        "tests/roblox/beirut-location.test.ts"
+      ],
+      "worktree": "/tmp/miraverse-beirut-worktrees/X1",
+      "baseCommit": null,
+      "resultingCommit": null,
+      "integrated": false,
+      "status": "PENDING",
+      "startedAt": null,
+      "completedAt": null,
+      "invocation": "codex exec -C /tmp/miraverse-beirut-worktrees/X1 -",
+      "evidencePath": "reports/agents/beirut-X1.md",
+      "validationResults": null,
+      "errors": null
+    }
+  ]
+}

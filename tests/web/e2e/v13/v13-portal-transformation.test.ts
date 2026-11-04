@@ -138,7 +138,11 @@ describe('MiraVerse v1.3 Portal Transformation & Visual Recovery Contracts', () 
           // 5. Verify Passport (/passport) displays artifacts and age milestones
           await page.goto(`${baseUrl}/#/passport`, { waitUntil: 'networkidle' });
           await expect(page.getByTestId('passport-artifacts-and-milestones').isVisible()).resolves.toBe(true);
-          expect(await page.locator('[data-testid^="passport-artifact-"]').count()).toBe(10);
+          const totalArtifacts = Object.values(V13_COUNTRY_EXPERIENCES).reduce(
+            (acc, country) => acc + country.artifacts.length,
+            0
+          );
+          expect(await page.locator('[data-testid^="passport-artifact-"]').count()).toBe(totalArtifacts);
 
           // 6. Verify Mobile (390x844) and Tablet (768x1024) have zero horizontal overflow and zero broken images
           for (const vp of [

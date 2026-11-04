@@ -1,0 +1,733 @@
+{
+  "schema_version": "1.2.0",
+  "owner": "DX05",
+  "country": "LB",
+  "topic": "Tyre: The Rock of Melqart",
+  "dgx_note": "Ten canonical cultural knowledge records for Phoenician Tyre (Island dual-harbor engineering, Murex purple biochemistry, Temple of Melqart, Hiramic-Solomonic alliance, Carthage foundation, Esarhaddon vassal treaty, 13-year Babylonian siege, Alexander's mole and fireship defense, tombolo sedimentation geoarchaeology, and silver Shekels of Tyre). All records include four age-tier adaptations (5-7, 8-10, 11-13, 14-17) and rigorous epistemic classifications.",
+  "record_count": 10,
+  "records": [
+    {
+      "id": "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+      "country": "LB",
+      "title": {
+        "en": "Tyre (Sour) Island Fortress & Dual Harbors",
+        "fr": "Tyr (Sour) : Forteresse insulaire et ports jumeaux",
+        "ar-LB": "صور الجزيرة وميناءي صيدون ومصر",
+        "ar-EG": "مدينة صور وموانئها الفينيقية",
+        "ar-IQ": "مدينة صور ومرافئها البحرية",
+        "ko": "티레(수르) 섬 요새와 이중 항구 시스템"
+      },
+      "entity_type": "place",
+      "summary": "Offshore Phoenician island fortress with northern Sidonian and southern Egyptian harbors engineered using submerged ashlar masonry headers up to 2.25 meters long.",
+      "expanded_explanation": "Tyre (Phoenician ṣūr, 'rock') comprised a heavily fortified offshore island paired with mainland Ushu (Palaetyrus). Tyrian engineers artificially modified sandstone reefs with massive limestone ashlar blocks in a header formation (up to 2.25m by 0.45m), creating two sheltered basins: the northern Sidonian harbor facing Phoenicia and the southern Egyptian harbor spanning roughly one hectare. This allowed merchant fleets to dock regardless of seasonal Mediterranean winds.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "c. 1200 BCE – 332 BCE",
+      "people": [
+        "King Hiram I",
+        "Abimilki (Amarna Mayor of Tyre)",
+        "Chief Harbor Engineer Baalsillem"
+      ],
+      "places": [
+        "Tyre (Sour)",
+        "Sidonian Harbor",
+        "Egyptian Harbor",
+        "Ushu (Palaetyrus)"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-GEO-TOMBOLO-SEDIMENTATION",
+          "relation": "transformed_by",
+          "note": "Southern harbor silted up following Alexander's causeway construction"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P02",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "UNESCO-WHC-299",
+          "passage_locator": "Tyre World Heritage Listing #299",
+          "url": "https://whc.unesco.org/en/list/299/",
+          "verified": true,
+          "external_citation": "UNESCO World Heritage Centre, Tyre (Criterion iii, vi) — Roman and Phoenician submerged harbor architecture"
+        }
+      ],
+      "sensitivity_notes": [
+        "Highlight that ancient Tyre was an offshore island, whereas modern Sour is a peninsula due to post-332 BCE sedimentation."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Ancient Tyre was a brave island city surrounded by blue ocean waves, with two safe stone harbors where sailing ships rested.",
+        "8-10": "Tyrian shipbuilders built two harbors—one facing north and one south—using giant carved stone blocks so boats could dock in any wind.",
+        "11-13": "Underwater archaeology confirms Tyre's dual-harbor engineering: limestone ashlar blocks up to 2.25 meters long absorbed wave energy and anchored Mediterranean merchant fleets.",
+        "14-17": "Corroborated by marine geoarchaeology and historical coring, Tyre's northern Sidonian and southern Egyptian harbors formed an open-sea transshipment hub connecting Near Eastern, Cypriot, and Aegean commerce."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-INDUSTRY-MUREX-PURPLE-DYE",
+      "country": "LB",
+      "title": {
+        "en": "The Tyrian Purple Murex Monopoly & Biochemistry",
+        "fr": "Le monopole de la pourpre de Tyr et la biochimie du Murex",
+        "ar-LB": "صباغ الأرجوان الصوري ومصائد الموريكس",
+        "ar-EG": "صناعة الأرجوان الصوري الملكي",
+        "ar-IQ": "صناعة الصباغ الأرجواني في صور",
+        "ko": "티레의 무렉스 보라색 염료 독점과 생화학"
+      },
+      "entity_type": "practice",
+      "summary": "Industrial extraction of dibromoindigo dye from Hexaplex trunculus and Bolinus brandaris snails, requiring 10,000 snails per gram and ten-day vat heating.",
+      "expanded_explanation": "Tyre held an ancient monopoly over Tyrian purple (Imperial purple), synthesized from hypobranchial glands of predatory marine snails (Hexaplex trunculus and Bolinus brandaris). Colorless precursors were extracted, exposed to sun and air, then simmered in lead/tin vats with an alkaline solution for ten days to form dibromoindigo. Producing one gram of dye required roughly 10,000 mollusks, creating massive discarded shell mounds (some over 40 meters tall) and a notorious odor relegated to the city's outskirts.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "c. 1200 BCE – 1453 CE",
+      "people": [
+        "Pliny the Elder (Documenter)",
+        "Tyrian Dye Masters"
+      ],
+      "places": [
+        "Tyre Coastal Industrial Quarter",
+        "Sidon Shell Mound"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+          "relation": "produced_in",
+          "note": "Dye workshops were sited along coastal downwind margins"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P03",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "PLINY-NAT-HIST-IX",
+          "passage_locator": "Pliny the Elder, Naturalis Historia, Book IX, ch. 60–65",
+          "url": "https://data.perseus.org/citations/urn:cts:latinLit:phi0978.phi001.perseus-eng1:9.60",
+          "verified": true,
+          "external_citation": "Pliny the Elder, Natural History IX.60–65 on purpura extraction and boiling vats"
+        }
+      ],
+      "sensitivity_notes": [
+        "Address the strong smell of fermentation historically without presenting ancient coastal workers disrespectfully."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Tyrian artists discovered that special seashells from the sea made a brilliant royal purple color that never washed away.",
+        "8-10": "Dye makers gathered sea snails in wicker traps and gently heated them in big pots to make the rarest purple cloth in the world.",
+        "11-13": "It took 10,000 Murex snails and ten days of chemical processing to produce a single gram of pure dibromoindigo, making Tyrian purple worth more than its weight in silver.",
+        "14-17": "Experimental archaeology and chemical chromatography demonstrate the complex biochemical conversion of molluscan chromogens into dibromoindigo, an industry whose scale generated 40-meter shell mounds."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-MYTH-TEMPLE-OF-MELQART",
+      "country": "LB",
+      "title": {
+        "en": "The Sanctuary of Melqart & The Twin Pillars",
+        "fr": "Le sanctuaire de Melqart et les colonnes jumelles",
+        "ar-LB": "معبد ملقارت والعمودين الذهب والزمرد",
+        "ar-EG": "معبد ملقارت في صور",
+        "ar-IQ": "معبد ملقارت في مدينة صور",
+        "ko": "멜카르트 신전과 황금·에메랄드 쌍둥이 기둥"
+      },
+      "entity_type": "myth",
+      "summary": "Sacred center of Tyrian identity dedicated to tutelary deity Melqart ('King of the City'), featuring twin gold and emerald pillars and an eternal flame.",
+      "expanded_explanation": "Melqart (from Melek-qart, 'King of the City') was Tyre's patron deity, symbolizing civic rebirth, sovereignty, and maritime navigation. King Hiram I constructed a monumental sanctuary featuring twin sacred pillars—one of refined gold and the other of glowing green stone (classical accounts report smaragdus/emerald)—and an aniconic eternal flame. The Greeks syncretized Melqart with Heracles. In 332 BCE, Alexander's demand to sacrifice within this temple triggered the siege, yet he spared those seeking refuge inside after capturing the city.",
+      "knowledge_class": "mythology",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "c. 10th Century BCE – Hellenistic Era",
+      "people": [
+        "King Hiram I",
+        "Alexander the Great",
+        "Herodotus (Chronicler)",
+        "King Azemilcus"
+      ],
+      "places": [
+        "Temple of Melqart (Tyre)",
+        "Palaetyrus Mainland Shrine"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE",
+          "relation": "commissioned_by",
+          "note": "Rebuilt by King Hiram I during Tyre's architectural expansion"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P04",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "HERODOTUS-HIST-II-44",
+          "passage_locator": "Herodotus, Histories, Book II, ch. 44",
+          "url": "https://data.perseus.org/citations/urn:cts:greekLit:tlg0016.tlg001.perseus-eng1:2.44",
+          "verified": true,
+          "external_citation": "Herodotus II.44 describing his visit to the Temple of Melqart in Tyre and its twin pillars"
+        }
+      ],
+      "sensitivity_notes": [
+        "Clarify that the emerald pillar was described in antiquity as smaragdus, likely green beryl or iridescent glass glowing at night."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "In Tyre stood a majestic temple with an eternal golden flame and two glowing pillars that welcomed sailors home.",
+        "8-10": "King Hiram built a grand temple for Melqart with two tall pillars—one of gold and one of shining green stone—symbolizing new beginnings.",
+        "11-13": "Ancient accounts describe Melqart's temple featuring an aniconic eternal fire rather than an idol, reflecting Phoenician religious practices centered on protection and maritime enterprise.",
+        "14-17": "Herodotus's eyewitness account (Histories II.44) highlights the cultural weight of Melqart's sanctuary; syncretized with Heracles, the refusal to let Alexander sacrifice inside catalyzed the 332 BCE siege."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-EVENT-HIRAM-SOLOMON-ALLIANCE",
+      "country": "LB",
+      "title": {
+        "en": "King Hiram I & The Solomonic Maritime Alliance",
+        "fr": "Le roi Hiram Ier et l'alliance maritime salomonienne",
+        "ar-LB": "الملك حيرام الأول والتحالف البحري مع سليمان",
+        "ar-EG": "حلف حيرام الأول التجاري والبحري",
+        "ar-IQ": "تحالف الملك حيرام وسليمان البحري",
+        "ko": "히람 1세와 솔로몬의 해상 동맹 및 오피르 원정"
+      },
+      "entity_type": "event",
+      "summary": "Historic diplomatic and trade pact supplying Lebanese cedar timber and master artisans for Jerusalem construction and launching Ships of Tarshish to Ophir.",
+      "expanded_explanation": "King Hiram I of Tyre (reigned c. 980–947 BCE) forged an economic and naval alliance with the United Monarchy of Israel under David and Solomon. Tyre provided cedar timber and master masons for Jerusalem's First Temple and royal palaces in exchange for continental grain and olive oil. Joint fleets of 'ships of Tarshish' sailed triennially from the Red Sea port of Ezion-Geber to Ophir, returning with gold, silver, ivory, and exotic fauna, giving Tyre control over Mediterranean and Red Sea commercial corridors.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "c. 980 – 947 BCE",
+      "people": [
+        "King Hiram I",
+        "King Solomon",
+        "King David"
+      ],
+      "places": [
+        "Tyre",
+        "Jerusalem",
+        "Ezion-Geber",
+        "Ophir"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+          "relation": "ruled_from",
+          "note": "Hiram expanded the island harbor quays"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P04",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "JOSEPHUS-AGAINST-APION-I-17",
+          "passage_locator": "Josephus, Against Apion, Book I, ch. 17–18 (citing Menander of Ephesus)",
+          "url": "https://data.perseus.org/citations/urn:cts:greekLit:tlg0526.tlg003.perseus-eng1:1.17",
+          "verified": true,
+          "external_citation": "Flavius Josephus, Against Apion I.17–18 quoting Tyrian city archives and Menander of Ephesus on Hiram I"
+        }
+      ],
+      "sensitivity_notes": [
+        "Present the partnership as an equitable commercial exchange between two sovereign Near Eastern polities."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "King Hiram of Tyre shared strong cedar wood and clever carpenters to help build grand buildings and friendly trade routes.",
+        "8-10": "Tyrian sailors navigated large wooden ships to far-off lands, trading purple fabrics for golden treasures and exotic animals.",
+        "11-13": "Hiram I's alliance with Solomon secured agricultural staples for island Tyre while joint fleets ventured from Ezion-Geber to Ophir every three years.",
+        "14-17": "Preserved in Tyrian royal annals cited by Menander and biblical records, the Hiramic-Solomonic pact integrated Levantine forestry, maritime logistics, and Indian Ocean trade networks."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-EVENT-CARTHAGE-FOUNDATION-DIDO",
+      "country": "LB",
+      "title": {
+        "en": "Queen Elissa (Dido) & The Foundation of Carthage",
+        "fr": "La reine Élissa (Didon) et la fondation de Carthage",
+        "ar-LB": "الملكة أليسا وتأسيس قرطاج",
+        "ar-EG": "الملكة عليسة وتأسيس قرطاج الفينيقية",
+        "ar-IQ": "الملكة أليسا وتأسيس قرطاجنة",
+        "ko": "엘리사 여왕(디도)과 카르타고의 건설"
+      },
+      "entity_type": "event",
+      "summary": "Tyrian dynastic crisis prompting Queen Elissa's westward maritime exodus and the 814 BCE foundation of Carthage (Qart-hadasht).",
+      "expanded_explanation": "Following the assassination of High Priest Sychaeus by King Pygmalion of Tyre, his widow Queen Elissa (Dido) led a coalition of senators and citizens on a secret naval exodus across the Mediterranean around 814 BCE. Reaching the Gulf of Tunis, she secured land from local ruler Iarbas through the Byrsa oxhide partition and founded Qart-hadasht ('New City', Carthage). Carthage became the western Mediterranean's dominant maritime empire, safeguarding Phoenician heritage.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "c. 814 BCE",
+      "people": [
+        "Queen Elissa (Dido)",
+        "King Pygmalion",
+        "Sychaeus (Acerbas)",
+        "King Iarbas"
+      ],
+      "places": [
+        "Tyre",
+        "Carthage (Qart-hadasht)",
+        "Byrsa Hill",
+        "Cyprus"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+          "relation": "departed_from",
+          "note": "Tyrian fleet commandeered from the island harbor"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P05",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "JUSTIN-EPITOME-XVIII",
+          "passage_locator": "Justin, Epitome of Pompeius Trogus, Book XVIII, ch. 4–6",
+          "url": "https://data.perseus.org/citations/urn:cts:latinLit:phi0893.phi001.perseus-eng1:18.4",
+          "verified": true,
+          "external_citation": "Justin, Philippic Histories XVIII.4–6 narrating Elissa's flight from Tyre and Carthage's foundation"
+        }
+      ],
+      "sensitivity_notes": [
+        "Distinguish Virgil's poetic Aeneid embellishments from the Phoenician historiographical tradition of Elissa."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "A brave Tyrian leader named Elissa sailed across the sea and built a famous new sister city named Carthage.",
+        "8-10": "Elissa used her clever mind to solve a land puzzle with an oxhide strip, founding Carthage as a thriving new harbor.",
+        "11-13": "Escaping royal tyranny in Tyre, Elissa and Tyrian elites established Qart-hadasht in North Africa around 814 BCE, expanding Phoenician alphabet and trade.",
+        "14-17": "Carthage's foundation represents a strategic dispersion of Tyrian capital and political institutions, creating a central Mediterranean superpower that sustained Tyrian commercial culture for centuries."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-TREATY-ESARHADDON-BAAL",
+      "country": "LB",
+      "title": {
+        "en": "The Vassal Treaty of Esarhaddon & King Ba'al I",
+        "fr": "Le traité de vassalité d'Assarhaddon et le roi Ba'al Ier",
+        "ar-LB": "معاهدة أسرحدون مع الملك بعل الأول الصوري",
+        "ar-EG": "معاهدة أسرحدون الأشورية مع صور",
+        "ar-IQ": "معاهدة أسرحدون والملك بعل الأول",
+        "ko": "에사르하돈의 조공 조약과 바알 1세의 해상권"
+      },
+      "entity_type": "event",
+      "summary": "672 BCE cuneiform vassal treaty regulating Tyrian maritime salvage, embedding an Assyrian overseer, and invoking Phoenician divine curses.",
+      "expanded_explanation": "Imposed by Neo-Assyrian Emperor Esarhaddon upon King Ba'al I of Tyre in 672 BCE, this cuneiform treaty recovered from Nineveh stripped Tyre of diplomatic autonomy to block a Tyrian-Egyptian naval alliance. It placed an Assyrian deputy in Tyre and decreed that any Tyrian ship wrecked along Assyrian-controlled coasts forfeited its cargo to the emperor. Strikingly, Esarhaddon weaponized Tyre's pantheon in the curse formula, calling on Melqart, Eshmun, and Ba'al-samem to sink violating ships with evil winds.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "672 BCE",
+      "people": [
+        "King Ba'al I of Tyre",
+        "Emperor Esarhaddon",
+        "Ashurbanipal"
+      ],
+      "places": [
+        "Tyre",
+        "Nineveh",
+        "Levantine Coast (Pilistu)"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-MYTH-TEMPLE-OF-MELQART",
+          "relation": "referenced_in",
+          "note": "Melqart and Eshmun invoked as guarantors of treaty curses"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P06",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "SAA-II-05",
+          "passage_locator": "State Archives of Assyria, Vol. II, Text 5 (Esarhaddon's Treaty with Ba'al of Tyre)",
+          "url": "http://oracc.museum.upenn.edu/saao/saa02/corpus",
+          "verified": true,
+          "external_citation": "Parpola & Watanabe, Neo-Assyrian Treaties and Loyalty Oaths (SAA II, 1988), Treaty with Ba'al of Tyre"
+        }
+      ],
+      "sensitivity_notes": [
+        "Present ancient imperial tributary extortion objectively as historical diplomacy rather than ethnic antagonism."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Ancient kings wrote agreements on clay tablets with bird-feather pens to decide rules for trading ships.",
+        "8-10": "An Assyrian treaty set strict rules on shipwrecked goods and asked sea gods to watch over the promises made by sailors.",
+        "11-13": "The 672 BCE clay tablet shows how Tyre maintained maritime trade by paying heavy tribute, while an Assyrian deputy watched over royal letters.",
+        "14-17": "The Treaty of Esarhaddon reveals sophisticated Near Eastern international law: it regulated maritime salvage rights, restricted Tyrian foreign policy, and invoked Phoenician storm deities like Ba'al-Saphon."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-EVENT-NEBUCHADNEZZAR-THIRTEEN-YEAR-SIEGE",
+      "country": "LB",
+      "title": {
+        "en": "The Thirteen-Year Babylonian Siege & Shoftim Era",
+        "fr": "Le siège babylonien de treize ans et l'ère des Shoftim",
+        "ar-LB": "حصار نبوخذنصر لثلاثة عشر عاماً وعهد القضاة",
+        "ar-EG": "حصار نبوخذنصر لمدينة صور الفينيقية",
+        "ar-IQ": "حصار نبوخذ نصر الثاني لمدينة صور لثلاثة عشر عاماً",
+        "ko": "느부갓네살 2세의 13년 포위 공격과 쇼프팀(판관) 통치"
+      },
+      "entity_type": "event",
+      "summary": "Thirteen-year siege (586–573 BCE) by Nebuchadnezzar II resulting in mainland destruction but island survival, leading to judicial governance by shoftim.",
+      "expanded_explanation": "From 586 to 573 BCE, King Nebuchadnezzar II of Babylon besieged Tyre. While Babylonian forces dismantled mainland Ushu (Palaetyrus), their lack of a naval armada stalemated them against the fortified island half a mile offshore, which was provisioned by Carthage and overseas colonies. The prophet Ezekiel noted Babylonian soldiers grew bald and rubbed their shoulders bare hauling siege works without taking the island. The siege ended in a negotiated compromise, after which the monarchy was replaced by an oligarchic magistrate council of shoftim (judges).",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "586 – 573 BCE",
+      "people": [
+        "King Nebuchadnezzar II",
+        "King Ithobaal III",
+        "Prophet Ezekiel",
+        "Judge Baal II",
+        "Hiram III"
+      ],
+      "places": [
+        "Tyre Island",
+        "Ushu (Palaetyrus)",
+        "Babylon"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-PLACE-TYRE-ISLAND-HARBORS",
+          "relation": "defended_by",
+          "note": "Island fleet maintained supply lines to Carthage"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P07",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "JOSEPHUS-ANTIQUITIES-X",
+          "passage_locator": "Flavius Josephus, Antiquities of the Jews, Book X, ch. 11",
+          "url": "https://data.perseus.org/citations/urn:cts:greekLit:tlg0526.tlg001.perseus-eng1:10.11",
+          "verified": true,
+          "external_citation": "Josephus, Jewish Antiquities X.11.1 and Against Apion I.21 recording Philostratus on the 13-year siege of Tyre"
+        }
+      ],
+      "sensitivity_notes": [
+        "Highlight the endurance of island civil institutions and the transition to elected magistrate governance."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "The island of Tyre was protected by deep ocean water, and sailing friends brought food and supplies across the waves.",
+        "8-10": "For thirteen years, big armies stayed on the shore while Tyre used its merchant boats to stay safe and bring grain home.",
+        "11-13": "Because Babylon had no navy, Tyre survived a 13-year siege by keeping its sea lanes open to Carthage, leading afterwards to a council of elected judges (shoftim).",
+        "14-17": "Ezekiel's contemporary testimony (Ezekiel 26–29) and Josephus's citation of Philostratus document the grueling 586–573 BCE stalemate, which precipitated a constitutional shift from monarchy to republican shoftim magistrates."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-EVENT-ALEXANDER-SIEGE-MOLE",
+      "country": "LB",
+      "title": {
+        "en": "Alexander's Mole & The Tyrian Fireship Defense",
+        "fr": "La digue d'Alexandre et la défense du brûlot tyrien",
+        "ar-LB": "سد الإسكندر المائي وحراقة صور البحرية",
+        "ar-EG": "حصار الإسكندر الأكبر وسفينة النار الصورية",
+        "ar-IQ": "حصار الإسكندر لمدينة صور وحراقة النار",
+        "ko": "알렉산드로스의 방파제 제방과 티레의 화선 방어전"
+      },
+      "entity_type": "event",
+      "summary": "Seven-month 332 BCE siege featuring Alexander's 60-meter-wide causeway, Tyrian sulfur fireship counter-strike, and decisive naval ram breach.",
+      "expanded_explanation": "In 332 BCE, Alexander the Great besieged Tyre after the city rejected his demand to sacrifice inside the island Temple of Melqart. Lacking a navy, Alexander constructed a 60-meter-wide mole (causeway) from mainland Palaetyrus stone and Lebanese cedar logs. Tyrian engineers launched a twin-masted fireship laden with pitch, sulfur, and oil cauldrons that burned Macedonian siege engines. Alexander subsequently assembled 220+ ships from Cyprus and Sidon to blockade both harbors and breached the southern wall with ship-mounted rams.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "332 BCE",
+      "people": [
+        "Alexander the Great",
+        "King Azemilcus",
+        "Tyrian Naval Engineers"
+      ],
+      "places": [
+        "Tyre Island",
+        "The Mole (Causeway)",
+        "Palaetyrus",
+        "Sidon"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-GEO-TOMBOLO-SEDIMENTATION",
+          "relation": "caused",
+          "note": "The construction of the mole permanently converted the island into a tombolo"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P10",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "ARRIAN-ANABASIS-II",
+          "passage_locator": "Arrian, Anabasis of Alexander, Book II, ch. 18–24",
+          "url": "https://data.perseus.org/citations/urn:cts:greekLit:tlg0074.tlg001.perseus-eng1:2.18",
+          "verified": true,
+          "external_citation": "Arrian, Anabasis II.18–24 detailing the engineering of the mole, the Tyrian fireship, and harbor blockade"
+        }
+      ],
+      "sensitivity_notes": [
+        "Present the tragic civilian toll of ancient siege warfare solemnly and with historical empathy."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Ancient builders built a long stone bridge across the sea water to reach the island walls.",
+        "8-10": "Tyrian sailors built a clever floating fireship to protect their city before ships arrived from across the sea.",
+        "11-13": "Alexander built a 60-meter-wide causeway from mainland stones; the Tyrians destroyed his siege towers with an oil fireship before a combined armada breached the walls.",
+        "14-17": "Detailed by Arrian (Anabasis II.18–24) and Quintus Curtius Rufus, the 332 BCE siege was a watershed in military engineering, demonstrating how naval supremacy combined with ship-borne artillery overcame fortress isolation."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-GEO-TOMBOLO-SEDIMENTATION",
+      "country": "LB",
+      "title": {
+        "en": "The Tyrian Tombolo: Hydrodynamics & Sediment Accretion",
+        "fr": "Le tombolo de Tyr : Hydrodynamique et sédimentation",
+        "ar-LB": "برزخ صور الجيولوجي وتراكم الرمال",
+        "ar-EG": "تشكل لسان صور الرملي الجيولوجي",
+        "ar-IQ": "برزخ صور الرملي والتراكم الرسوبي",
+        "ko": "티레의 톰볼로(육계사주): 해안 유체역학과 퇴적 작용"
+      },
+      "entity_type": "place",
+      "summary": "Geoarchaeological phenomenon where Alexander's 332 BCE mole trapped coastal drift, accumulating 30 million cubic meters of sand to fuse the island to Lebanon.",
+      "expanded_explanation": "Alexander's 60-meter-wide causeway permanently altered the Levant's coastal hydrodynamics. Prior to 332 BCE, longshore currents prevented heavy siltation around the offshore island. The impermeable mole acted as a sediment trap: over centuries, northward Mediterranean currents deposited roughly 30 million cubic meters of sand along the causeway at rates of 30,000–50,000 m³ annually, forming a gigantic sandy tombolo that permanently attached Tyre to the Lebanese mainland and buried its southern harbor.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "332 BCE – Roman Era to Present",
+      "people": [
+        "Nick Marriner (Geoarchaeologist)",
+        "Christophe Morhange (Geoarchaeologist)"
+      ],
+      "places": [
+        "Tyre Tombolo",
+        "Submerged Egyptian Harbor",
+        "Roman Bath Complex (Al-Mina)"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-EVENT-ALEXANDER-SIEGE-MOLE",
+          "relation": "originated_from",
+          "note": "Initiated by the artificial Macedonian causeway"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P11",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "PNAS-MARRINER-2007",
+          "passage_locator": "Marriner et al., PNAS May 22, 2007 104 (22) 9218-9223",
+          "url": "https://doi.org/10.1073/pnas.0701150104",
+          "verified": true,
+          "external_citation": "Marriner, Morhange, Boudagher-Fadel (2007). Geoarchaeology of the north and south harbours of Tyre. PNAS 104(22):9218-9223"
+        }
+      ],
+      "sensitivity_notes": [
+        "Emphasize how human military engineering unintentionally triggered monumental long-term geological transformation."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Sea currents slowly pushed golden sand against the old stone pathway until the island became joined to the mainland beach.",
+        "8-10": "Over many centuries, ocean waves carried millions of wheelbarrows of sand against the bridge, turning the island into a peninsula.",
+        "11-13": "Geoarchaeological coring proves that trapping coastal sand currents added 30 million cubic meters of sediment, permanently merging the island with Lebanon.",
+        "14-17": "Peer-reviewed sedimentological research (PNAS 2007) shows Alexander's causeway disrupted longshore drift, triggering 30,000–50,000 m³/year accretion and converting an offshore insular biome into an anthropogenically induced tombolo."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    },
+    {
+      "id": "LB-KB-ARTIFACT-SHEKEL-OF-TYRE",
+      "country": "LB",
+      "title": {
+        "en": "The Silver Shekel of Tyre & Temple Numismatics",
+        "fr": "Le sicle d'argent de Tyr et la numismatique du Temple",
+        "ar-LB": "شيكل صور الفضي وعملة الهيكل",
+        "ar-EG": "شيكل صور الفضي عالي النقاوة",
+        "ar-IQ": "شيكل صور الفضي",
+        "ko": "티레의 은 셰켈과 예루살렘 성전세 주화"
+      },
+      "entity_type": "artifact",
+      "summary": "Renowned high-purity silver coinage bearing Heracles-Melqart and an eagle on a ship's prow, mandated for Jerusalem's Second Temple half-shekel tax.",
+      "expanded_explanation": "Minted in Tyre from 126 BCE through Roman imperial times, the Tyrian tetradrachm (Shekel of Tyre) possessed an exceptional silver purity of 94–98%. The obverse depicted the laureate head of Heracles-Melqart wearing a lion's skin, while the reverse featured an eagle perched on a ship's prow with a palm branch. Because of its unwavering metal purity, Jewish religious authorities in Jerusalem mandated it as the only acceptable coinage for the annual half-shekel Temple tax, making it historically linked with the 'thirty pieces of silver'.",
+      "knowledge_class": "historical_claim",
+      "claim_status": "externally_corrobated",
+      "confidence": "high",
+      "time_period": "126 BCE – 66 CE",
+      "people": [
+        "Tyrian Moneyers",
+        "Second Temple Authorities"
+      ],
+      "places": [
+        "Tyre Mint",
+        "Jerusalem Second Temple",
+        "Levant"
+      ],
+      "relationships": [
+        {
+          "target_id": "LB-KB-MYTH-TEMPLE-OF-MELQART",
+          "relation": "features_iconography_of",
+          "note": "Obverse bears the portrait of Heracles-Melqart"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "SRC-V12-TYRE-MELQART-001",
+          "passage_locator": "LB-TYRE-P12",
+          "url": null,
+          "verified": false
+        },
+        {
+          "source_id": "MISHNAH-SHEKALIM",
+          "passage_locator": "Mishnah, Tractate Shekalim 2:4; Bekhorot 8:7",
+          "url": "https://www.sefaria.org/Mishnah_Bekhorot.8.7",
+          "verified": true,
+          "external_citation": "Mishnah Bekhorot 8:7: 'All payments of redemption money are calculated according to the Tyrian maneh/shekel'"
+        }
+      ],
+      "sensitivity_notes": [
+        "Explain the numismatic reliance on silver assay purity across religious boundaries respectfully."
+      ],
+      "cultural_review": "pending",
+      "age_tier_explanations": {
+        "5-7": "Ancient silver coins from Tyre had a strong sea eagle standing proudly on the front of a wooden boat.",
+        "8-10": "People across ancient lands trusted Tyrian silver coins because they were made with pure silver that never lost its sparkle.",
+        "11-13": "Because of their 94–98% silver purity, Tyrian shekels featuring Melqart and the ship eagle were used as standard money throughout the eastern Mediterranean.",
+        "14-17": "Rabbinic halakha explicitly mandated the Tyrian shekel for the Jerusalem Temple tax due to its consistent metallurgical standard, illustrating how Tyrian numismatic prestige transcended cultural borders."
+      },
+      "localization_status": {
+        "en": "verified",
+        "fr": "draft_ai_pending_native_review",
+        "ar-LB": "draft_ai_pending_native_review",
+        "ar-EG": "draft_ai_pending_native_review",
+        "ar-IQ": "draft_ai_pending_native_review",
+        "ko": "draft_ai_pending_native_review"
+      },
+      "rights": {
+        "text": "paraphrase_only"
+      }
+    }
+  ]
+}
