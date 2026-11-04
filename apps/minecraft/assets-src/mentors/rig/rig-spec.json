@@ -1,0 +1,23 @@
+{
+  "geometryIdentifier": "geometry.miraverse.mentor",
+  "controllerIdentifier": "controller.animation.miraverse.mentor",
+  "renderControllerIdentifier": "controller.render.miraverse.mentor",
+  "bones": [
+    "root",
+    "waist",
+    "body",
+    "head",
+    "rightArm",
+    "leftArm",
+    "rightLeg",
+    "leftLeg"
+  ],
+  "states": [
+    "idle",
+    "walk",
+    "greeting",
+    "pointing",
+    "celebrate",
+    "working"
+  ]
+}

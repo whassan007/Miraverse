@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "bedrock",
+    "box_uv": true
+  },
+  "name": "miraverse_npc_base",
+  "geometry_name": "geometry.miraverse.mentor",
+  "resolution": {
+    "width": 64,
+    "height": 64
+  },
+  "elements": [
+    {
+      "name": "head_cube",
+      "from": [
+        -4,
+        24,
+        -4
+      ],
+      "to": [
+        4,
+        32,
+        4
+      ],
+      "uv_offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "body_cube",
+      "from": [
+        -4,
+        12,
+        -2
+      ],
+      "to": [
+        4,
+        24,
+        2
+      ],
+      "uv_offset": [
+        16,
+        16
+      ]
+    },
+    {
+      "name": "rightArm_cube",
+      "from": [
+        -8,
+        12,
+        -2
+      ],
+      "to": [
+        -4,
+        24,
+        2
+      ],
+      "uv_offset": [
+        40,
+        16
+      ]
+    },
+    {
+      "name": "leftArm_cube",
+      "from": [
+        4,
+        12,
+        -2
+      ],
+      "to": [
+        8,
+        24,
+        2
+      ],
+      "uv_offset": [
+        32,
+        48
+      ]
+    },
+    {
+      "name": "rightLeg_cube",
+      "from": [
+        -4,
+        0,
+        -2
+      ],
+      "to": [
+        0,
+        12,
+        2
+      ],
+      "uv_offset": [
+        0,
+        16
+      ]
+    },
+    {
+      "name": "leftLeg_cube",
+      "from": [
+        0,
+        0,
+        -2
+      ],
+      "to": [
+        4,
+        12,
+        2
+      ],
+      "uv_offset": [
+        16,
+        48
+      ]
+    }
+  ],
+  "outliner": [
+    {
+      "name": "root",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "children": [
+        {
+          "name": "waist",
+          "origin": [
+            0,
+            12,
+            0
+          ],
+          "children": [
+            {
+              "name": "body",
+              "origin": [
+                0,
+                12,
+                0
+              ],
+              "children": [
+                {
+                  "name": "head",
+                  "origin": [
+                    0,
+                    24,
+                    0
+                  ]
+                },
+                {
+                  "name": "rightArm",
+                  "origin": [
+                    -5,
+                    22,
+                    0
+                  ]
+                },
+                {
+                  "name": "leftArm",
+                  "origin": [
+                    5,
+                    22,
+                    0
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "rightLeg",
+          "origin": [
+            -1.9,
+            12,
+            0
+          ]
+        },
+        {
+          "name": "leftLeg",
+          "origin": [
+            1.9,
+            12,
+            0
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": [
+    {
+      "name": "animation.miraverse.mentor.idle",
+      "loop": "loop",
+      "length": 2
+    },
+    {
+      "name": "animation.miraverse.mentor.walk",
+      "loop": "loop",
+      "length": 1.2
+    },
+    {
+      "name": "animation.miraverse.mentor.greeting",
+      "loop": "hold_on_last_frame",
+      "length": 1.5
+    },
+    {
+      "name": "animation.miraverse.mentor.pointing",
+      "loop": "hold_on_last_frame",
+      "length": 1.4
+    },
+    {
+      "name": "animation.miraverse.mentor.celebrate",
+      "loop": "loop",
+      "length": 1.6
+    },
+    {
+      "name": "animation.miraverse.mentor.working",
+      "loop": "loop",
+      "length": 1.8
+    }
+  ]
+}
