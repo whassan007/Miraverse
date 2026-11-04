@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "10.0.0",
+  "packIcon": "apps/minecraft/assets-src/ui/pack_icon.png",
+  "stamps": [
+    "apps/minecraft/assets-src/ui/stamp_lb.png",
+    "apps/minecraft/assets-src/ui/stamp_eg.png",
+    "apps/minecraft/assets-src/ui/stamp_iq.png",
+    "apps/minecraft/assets-src/ui/stamp_kr.png",
+    "apps/minecraft/assets-src/ui/stamp_fr.png"
+  ],
+  "chapterPosters": [
+    "apps/minecraft/assets-src/ui/poster_LB.png",
+    "apps/minecraft/assets-src/ui/poster_EG.png",
+    "apps/minecraft/assets-src/ui/poster_IQ.png",
+    "apps/minecraft/assets-src/ui/poster_KR.png",
+    "apps/minecraft/assets-src/ui/poster_FR.png"
+  ]
+}
