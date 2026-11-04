@@ -1,0 +1,15 @@
+[CL12] Wave=W4 Backend=claude Model=claude-sonnet-4-6
+Start: 2026-11-04T05:42:51.832Z
+End:   2026-11-04T05:42:52.246Z
+Branch: v06/CL12 -> Commit: b70816e
+Owned Paths: apps/minecraft/tools/release/
+Required Evidence: apps/minecraft/tools/release/PACKAGE_VERIFICATION.md
+Telemetry: {"mode":"claude","model":"claude-sonnet-4-6"}
+Acceptance Output:
+$ npm run pack:mcaddon
+> miraverse@0.4.0 pack:mcaddon
+> node tools/pack/mcaddon.mjs
+
+Archived 247 files into miraverse.mcaddon
+Packaged apps/minecraft/dist/miraverse.mcaddon and dist/miraverse.mcaddon
+DONE CL12 b70816e apps/minecraft/tools/release/PACKAGE_VERIFICATION.md

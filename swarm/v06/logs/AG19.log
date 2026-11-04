@@ -1,0 +1,12 @@
+[AG19] Wave=W4 Backend=antigravity Model=gemini-4-argon
+Start: 2026-11-04T05:42:46.796Z
+End:   2026-11-04T05:42:47.589Z
+Branch: v06/AG19 -> Commit: b70816e
+Owned Paths: art/v06/minecraft/
+Required Evidence: art/v06/minecraft/bedrock-byblos-kit.json
+Telemetry: {"mode":"antigravity","model":"gemini-4-argon"}
+Acceptance Output:
+$ npm -w apps/minecraft run build
+> @miraverse/minecraft@0.1.0 build
+> tsc --noEmit && node build.mjs
+DONE AG19 b70816e art/v06/minecraft/bedrock-byblos-kit.json

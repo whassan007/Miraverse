@@ -1,0 +1,44 @@
+[AG20] Wave=W6 Backend=antigravity Model=gemini-4-argon
+Start: 2026-11-04T05:43:10.954Z
+End:   2026-11-04T05:43:16.057Z
+Branch: v06/AG20 -> Commit: b70816e
+Owned Paths: reports/v06/art-review/, reports/v06/art-review/avatar-social/
+Required Evidence: reports/v06/art-review/avatar-social/AVATAR_SOCIAL_ART_REVIEW.md
+Telemetry: {"mode":"antigravity","model":"gemini-4-argon"}
+Acceptance Output:
+$ npx vitest run
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/roblox/integration/social-avatar/social-avatar-integration.test.ts (2 tests) 2ms
+ ✓ tests/roblox/roblox-v04.test.ts (2 tests) 2ms
+ ✓ tests/stamp.test.ts (41 tests) 10ms
+ ✓ tests/roblox/security/social-avatar/social-avatar-security.test.ts (2 tests) 2ms
+ ✓ tests/cross-platform/parity.test.ts (1 test) 3ms
+ ✓ tests/scaffold.test.ts (3 tests) 6ms
+ ✓ tests/minecraft/integration/bedrock-v06.test.ts (1 test) 2ms
+ ✓ tests/contracts/contracts.test.ts (2 tests) 4ms
+ ✓ tests/validate.test.ts (17 tests) 6ms
+ ✓ tests/compiler.test.ts (3 tests) 11ms
+ ✓ tests/compiler/compiler.test.ts (3 tests) 15ms
+ ✓ tests/content/validate.test.ts (17 tests) 15ms
+ ✓ tests/web/e2e/v06/option-a-routes.test.ts (3 tests) 6ms
+ ✓ tests/e2e/commerce/commerce-c01-c20.test.ts (5 tests) 6ms
+stdout | tests/e2e/web/web-3d-adventure.test.ts > CX08 — Web 3D Adventure Runtime, France Vertical Slice & 5-World Save Persistence > constructs sculpted 3D Babylon.js scenes for HUB and all 5 countries with Hero rig, NPCs, and restorable landmarks
+BJS - [21:43:11]: Babylon.js v7.34.2 - Null engine
+BJS - [21:43:11]: Babylon.js v7.34.2 - Null engine
+BJS - [21:43:11]: Babylon.js v7.34.2 - Null engine
+BJS - [21:43:11]: Babylon.js v7.34.2 - Null engine
+BJS - [21:43:11]: Babylon.js v7.34.2 - Null engine
+BJS - [21:43:11]: Babylon.js v7.34.2 - Null engine
+
+ ✓ tests/e2e/web/web-3d-adventure.test.ts (2 tests) 48ms
+ ✓ tests/integration/gates.test.ts (12 tests) 634ms
+   ✓ Gate G2 — Compiler and stamp determinism & cross-platform consistency > produces identical byte hashes across two successive runs of the workspace compiler 503ms
+ ✓ tests/integration/web-e2e.test.ts (1 test) 4275ms
+   ✓ Gate G3 — Web build E2E smoke test and responsive LTR/RTL screenshots > completes Home, Story (1..15 + gloss + vocab), Play (5 challenges -> stamp), Passport (redeem/reject/reset), and responsive screenshots with zero errors or external requests 4275ms
+
+ Test Files  17 passed (17)
+      Tests  117 passed (117)
+   Start at  21:43:11
+   Duration  4.72s (transform 851ms, setup 0ms, collect 2.25s, tests 5.04s, environment 1ms, prepare 612ms)
+DONE AG20 b70816e reports/v06/art-review/avatar-social/AVATAR_SOCIAL_ART_REVIEW.md

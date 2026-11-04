@@ -1,0 +1,18 @@
+[DX10] Wave=W5 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:42:59.227Z
+End:   2026-11-04T05:43:03.312Z
+Branch: v06/DX10 -> Commit: b70816e
+Owned Paths: tests/fixtures/quests/EG/
+Required Evidence: tests/fixtures/quests/EG/cairo-quest-vectors.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":64,"completion_tokens":200,"total_tokens":264,"latency_ms":3482}
+Acceptance Output:
+$ npx vitest run tests/content/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/content/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:43:03
+   Duration  252ms (transform 115ms, setup 0ms, collect 100ms, tests 6ms, environment 0ms, prepare 47ms)
+DONE DX10 b70816e tests/fixtures/quests/EG/cairo-quest-vectors.json

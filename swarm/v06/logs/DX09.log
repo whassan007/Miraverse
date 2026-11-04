@@ -1,0 +1,18 @@
+[DX09] Wave=W5 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:42:55.192Z
+End:   2026-11-04T05:42:59.225Z
+Branch: v06/DX09 -> Commit: b70816e
+Owned Paths: tests/fixtures/quests/FR/
+Required Evidence: tests/fixtures/quests/FR/lyon-quest-vectors.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":61,"completion_tokens":200,"total_tokens":261,"latency_ms":3458}
+Acceptance Output:
+$ npx vitest run tests/content/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/content/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:42:58
+   Duration  225ms (transform 88ms, setup 0ms, collect 100ms, tests 6ms, environment 0ms, prepare 28ms)
+DONE DX09 b70816e tests/fixtures/quests/FR/lyon-quest-vectors.json

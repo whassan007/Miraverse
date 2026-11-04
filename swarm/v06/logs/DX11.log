@@ -1,0 +1,18 @@
+[DX11] Wave=W5 Backend=dgx-spark Model=qwen/qwen3-coder-next
+Start: 2026-11-04T05:43:03.313Z
+End:   2026-11-04T05:43:07.324Z
+Branch: v06/DX11 -> Commit: b70816e
+Owned Paths: tests/fixtures/quests/IQ/
+Required Evidence: tests/fixtures/quests/IQ/baghdad-quest-vectors.json
+Telemetry: {"mode":"dgx-spark-http","endpoint":"http://localhost:1234/v1","model":"qwen/qwen3-coder-next","prompt_tokens":63,"completion_tokens":200,"total_tokens":263,"latency_ms":3473}
+Acceptance Output:
+$ npx vitest run tests/content/validate.test.ts
+RUN  v2.1.9 /home/wael/Code/Miraverse
+
+ ✓ tests/content/validate.test.ts (17 tests) 6ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  21:43:07
+   Duration  213ms (transform 79ms, setup 0ms, collect 80ms, tests 6ms, environment 0ms, prepare 33ms)
+DONE DX11 b70816e tests/fixtures/quests/IQ/baghdad-quest-vectors.json
