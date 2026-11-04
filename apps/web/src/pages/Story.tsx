@@ -68,7 +68,7 @@ function Reader({ story }: { story: StoryData }) {
         }}>
         <p className="story-counter" role="status" aria-live="polite" aria-atomic="true">Scene {index + 1} / {story.scenes.length}</p>
         <img key={`${story.country}-${scene.id}`} className="story-illustration"
-          src={`/art/${story.country}/${scene.id}.svg`} alt="" width="960" height="540"
+          src={`/art/${story.country}/${((scene.id - 1) % 5) + 1}.svg`} alt="" width="960" height="540"
           onError={event => {
             const image = event.currentTarget;
             if (image.dataset.fallback) {
