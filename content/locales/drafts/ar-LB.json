@@ -1,0 +1,17 @@
+{
+  "locale": "ar-LB",
+  "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW",
+  "strings": {
+    "landing.hero.playFree": "العب مجاناً",
+    "landing.hero.exploreWorlds": "استكشف العوالم",
+    "landing.hero.forParents": "للأهل",
+    "landing.hero.tagline": "مغامرة ثقافية ثلاثية الأبعاد في خمسة عوالم نابضة بالحياة",
+    "hud.questTracker": "المهمة الحالية",
+    "hud.inventory": "الحقيبة",
+    "hud.miraTokens": "رموز ميرا (محفوظة على هذا الجهاز)",
+    "hud.returnHub": "ساحة العوالم",
+    "parents.portal.title": "بوابة الأهل وأولياء الأمور",
+    "parents.shop.badge.earned": "مكتسب باللعب (مجاني)",
+    "parents.shop.badge.parent": "شراء للأهل (اختياري)"
+  }
+}

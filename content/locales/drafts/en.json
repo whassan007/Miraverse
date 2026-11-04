@@ -1,0 +1,17 @@
+{
+  "locale": "en",
+  "reviewStatus": "PENDING_NATIVE_HUMAN_REVIEW",
+  "strings": {
+    "landing.hero.playFree": "Play Free",
+    "landing.hero.exploreWorlds": "Explore Worlds",
+    "landing.hero.forParents": "For Parents",
+    "landing.hero.tagline": "A Handcrafted 3D Cultural Adventure Across Five Living Worlds",
+    "hud.questTracker": "Current Quest",
+    "hud.inventory": "Satchel",
+    "hud.miraTokens": "Mira Tokens (Saved on this device)",
+    "hud.returnHub": "World Hub",
+    "parents.portal.title": "MiraVerse Parent & Guardian Portal",
+    "parents.shop.badge.earned": "Earned in Game (Free)",
+    "parents.shop.badge.parent": "Parent Purchase (Optional)"
+  }
+}
