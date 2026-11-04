@@ -579,12 +579,15 @@
       "task_card": "swarm/minecraft-v10/cards/DX01.md",
       "branch": "minecraft-v10/DX01",
       "worktree": "/home/wael/Code/mv-wt-mc10/DX01",
-      "status": "QUEUED",
-      "attempts": 0,
-      "commit_sha": null,
+      "status": "VERIFIED",
+      "attempts": 1,
+      "commit_sha": "61e6df0",
       "test_command": "test -s reports/minecraft-v10/dgx/DGX_BENCHMARK_AND_SCHEDULE.json",
-      "evidence_paths": [],
-      "runtime_environment": null,
+      "evidence_paths": [
+        "reports/minecraft-v10/dgx/DGX_BENCHMARK_AND_SCHEDULE.json",
+        "reports/minecraft-v10/dgx/DGX_REPORT.md"
+      ],
+      "runtime_environment": "Local DGX Spark (qwen/qwen3-coder-next, 44.99 tok/s)",
       "blockers": []
     },
     {

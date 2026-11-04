@@ -1,0 +1,15 @@
+=== AGENT DX01 (DGX · W0) ===
+Timestamp: 2026-11-04T06:34:26.951Z
+Resolved Model: qwen/qwen3-coder-next
+Runtime Environment: Local DGX Spark (qwen/qwen3-coder-next, 44.99 tok/s)
+Branch: minecraft-v10/DX01
+Agent Commit SHA: 61e6df0
+Integration Merge SHA: 7e082cd
+Owned Paths: reports/minecraft-v10/dgx/
+Test Command: test -s reports/minecraft-v10/dgx/DGX_BENCHMARK_AND_SCHEDULE.json
+Test Exit Code: 0
+Evidence Paths: reports/minecraft-v10/dgx/DGX_BENCHMARK_AND_SCHEDULE.json, reports/minecraft-v10/dgx/DGX_REPORT.md
+Blockers: None
+--- STDOUT/STDERR ---
+
+DONE DX01 61e6df0 reports/minecraft-v10/dgx/DGX_BENCHMARK_AND_SCHEDULE.json
