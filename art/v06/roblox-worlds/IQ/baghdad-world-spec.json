@@ -1,0 +1,16 @@
+{
+  "countryId": "IQ",
+  "chapterTitle": "Iraq: Afternoon by the Tigris",
+  "mentorId": "npc_noor_baghdad",
+  "worldOrigin": [
+    0,
+    8,
+    -220
+  ],
+  "landmarks": [
+    "baghdad_shanasheel_house",
+    "tigris_palm_promenade",
+    "cardamom_kleicha_hearth"
+  ],
+  "dish": "Kleicha"
+}
