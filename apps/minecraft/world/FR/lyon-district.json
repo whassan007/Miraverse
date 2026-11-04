@@ -1,0 +1,542 @@
+{
+  "country": "FR",
+  "titleEn": "Vieux Lyon Bakery",
+  "titleNative": "Vieux Lyon · France",
+  "origin": {
+    "x": 1000,
+    "y": 64,
+    "z": 0
+  },
+  "footprint": {
+    "width": 96,
+    "height": 32,
+    "depth": 96
+  },
+  "spawnPos": {
+    "x": 1000,
+    "y": 65,
+    "z": -18
+  },
+  "returnPortalPos": {
+    "x": 1000,
+    "y": 65,
+    "z": -24
+  },
+  "privatePlotOrigin": {
+    "x": 1032,
+    "y": 65,
+    "z": 20
+  },
+  "privatePlotRadius": 8,
+  "restorationOrigin": {
+    "x": 992,
+    "y": 65,
+    "z": 8
+  },
+  "restorationRequiredItems": [
+    {
+      "itemId": "miraverse:fr_cut_stone",
+      "count": 3
+    }
+  ],
+  "exteriors": [
+    {
+      "buildingId": "fr_mentor_kitchen_house",
+      "nameEn": "Mamie Claire's Culinary House",
+      "nameNative": "Vieux Lyon · France",
+      "origin": {
+        "x": 988,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 12,
+        "y": 7,
+        "z": 10
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "roofBlock": "miraverse:fr_mansard_slate_shingle",
+      "trimBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": true,
+      "interiorId": "fr_int_kitchen"
+    },
+    {
+      "buildingId": "fr_family_courtyard",
+      "nameEn": "Vieux Lyon Bakery Family Courtyard",
+      "nameNative": "Vieux Lyon · France",
+      "origin": {
+        "x": 1006,
+        "y": 64,
+        "z": 4
+      },
+      "size": {
+        "x": 14,
+        "y": 8,
+        "z": 12
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "roofBlock": "miraverse:fr_mansard_slate_shingle",
+      "trimBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": true,
+      "interiorId": "fr_int_salon"
+    },
+    {
+      "buildingId": "fr_artisan_workshop",
+      "nameEn": "Vieux Lyon Bakery Artisan Workshop",
+      "nameNative": "Vieux Lyon · France",
+      "origin": {
+        "x": 984,
+        "y": 64,
+        "z": -12
+      },
+      "size": {
+        "x": 10,
+        "y": 6,
+        "z": 10
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "roofBlock": "miraverse:fr_mansard_slate_shingle",
+      "trimBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": true,
+      "interiorId": "fr_int_workshop"
+    },
+    {
+      "buildingId": "fr_market_pavilion",
+      "nameEn": "Vieux Lyon Bakery Market Bazaar Pavilion",
+      "nameNative": "Vieux Lyon · France",
+      "origin": {
+        "x": 1010,
+        "y": 64,
+        "z": -14
+      },
+      "size": {
+        "x": 11,
+        "y": 6,
+        "z": 9
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "roofBlock": "miraverse:fr_mansard_slate_shingle",
+      "trimBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": false
+    },
+    {
+      "buildingId": "fr_heritage_tower",
+      "nameEn": "Vieux Lyon Bakery Heritage Landmark Gate",
+      "nameNative": "Vieux Lyon · France",
+      "origin": {
+        "x": 996,
+        "y": 64,
+        "z": 22
+      },
+      "size": {
+        "x": 9,
+        "y": 10,
+        "z": 9
+      },
+      "wallBlock": "miraverse:fr_lyon_ochre_stucco",
+      "roofBlock": "miraverse:fr_mansard_slate_shingle",
+      "trimBlock": "miraverse:fr_carved_oak_shutter",
+      "hasInterior": false
+    }
+  ],
+  "interiors": [
+    {
+      "interiorId": "fr_int_kitchen",
+      "buildingId": "fr_mentor_kitchen_house",
+      "nameEn": "Mamie Claire's Kitchen Interior",
+      "entryPos": {
+        "x": 992,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "fr_hearth",
+          "blockId": "miraverse:fr_boulangerie_wood_oven",
+          "offset": {
+            "x": 994,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Galette des Rois Cooking Station"
+        },
+        {
+          "propId": "fr_prep_table",
+          "blockId": "minecraft:crafting_table",
+          "offset": {
+            "x": 991,
+            "y": 65,
+            "z": 7
+          },
+          "labelEn": "Preparation Table"
+        },
+        {
+          "propId": "fr_lantern",
+          "blockId": "minecraft:lantern",
+          "offset": {
+            "x": 993,
+            "y": 67,
+            "z": 6
+          },
+          "labelEn": "Warm Kitchen Lantern"
+        }
+      ]
+    },
+    {
+      "interiorId": "fr_int_salon",
+      "buildingId": "fr_family_courtyard",
+      "nameEn": "Vieux Lyon Bakery Family Salon Interior",
+      "entryPos": {
+        "x": 1012,
+        "y": 65,
+        "z": 4
+      },
+      "furnishings": [
+        {
+          "propId": "fr_lectern",
+          "blockId": "minecraft:lectern",
+          "offset": {
+            "x": 1010,
+            "y": 65,
+            "z": 9
+          },
+          "labelEn": "Storybook Stand"
+        },
+        {
+          "propId": "fr_carpet",
+          "blockId": "minecraft:red_carpet",
+          "offset": {
+            "x": 1011,
+            "y": 65,
+            "z": 8
+          },
+          "labelEn": "Woven Courtyard Rug"
+        }
+      ]
+    },
+    {
+      "interiorId": "fr_int_workshop",
+      "buildingId": "fr_artisan_workshop",
+      "nameEn": "Vieux Lyon Bakery Artisan Workshop Interior",
+      "entryPos": {
+        "x": 988,
+        "y": 65,
+        "z": -12
+      },
+      "furnishings": [
+        {
+          "propId": "fr_barrel",
+          "blockId": "minecraft:barrel",
+          "offset": {
+            "x": 990,
+            "y": 65,
+            "z": -9
+          },
+          "labelEn": "Artisan Supply Barrel"
+        },
+        {
+          "propId": "fr_workbench",
+          "blockId": "minecraft:stonecutter_block",
+          "offset": {
+            "x": 989,
+            "y": 65,
+            "z": -8
+          },
+          "labelEn": "Craftsman Workbench"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npcId": "npc:FR:mentor",
+      "entityTypeId": "miraverse:mentor_fr",
+      "country": "FR",
+      "nameEn": "Mamie Claire",
+      "nameNative": "Mamie Claire",
+      "role": "mentor",
+      "spawnPos": {
+        "x": 993,
+        "y": 65,
+        "z": 3
+      },
+      "defaultAnimation": "greeting",
+      "dialogueGreetingEn": "Welcome to Vieux Lyon Bakery! Let's gather ingredients, trade at the market, cook Galette des Rois, restore our landmark, and learn 3 cultural words.",
+      "dialogueGreetingNative": "Vieux Lyon · France",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:FR:merchant",
+      "entityTypeId": "miraverse:mentor_fr",
+      "country": "FR",
+      "nameEn": "Vieux Lyon Bakery Market Merchant",
+      "nameNative": "Mamie Claire",
+      "role": "merchant",
+      "spawnPos": {
+        "x": 989,
+        "y": 65,
+        "z": -11
+      },
+      "defaultAnimation": "idle",
+      "dialogueGreetingEn": "Trade your gathered herbs and ingredients for specialty cooking supplies!",
+      "dialogueGreetingNative": "Vieux Lyon · France",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:FR:artisan",
+      "entityTypeId": "miraverse:mentor_fr",
+      "country": "FR",
+      "nameEn": "Vieux Lyon Bakery Master Artisan",
+      "nameNative": "Mamie Claire",
+      "role": "artisan",
+      "spawnPos": {
+        "x": 991,
+        "y": 65,
+        "z": 9
+      },
+      "defaultAnimation": "pointing",
+      "dialogueGreetingEn": "Place restoration blocks on our damaged landmark to see the before/after transformation!",
+      "dialogueGreetingNative": "Vieux Lyon · France",
+      "humanReviewRequired": true
+    },
+    {
+      "npcId": "npc:FR:cousin",
+      "entityTypeId": "miraverse:mentor_fr",
+      "country": "FR",
+      "nameEn": "Vieux Lyon Bakery Cousin Guide",
+      "nameNative": "Mamie Claire",
+      "role": "cousin",
+      "spawnPos": {
+        "x": 1012,
+        "y": 65,
+        "z": -14
+      },
+      "defaultAnimation": "walk",
+      "dialogueGreetingEn": "Explore the streets and discover the three cultural vocabulary objects!",
+      "dialogueGreetingNative": "Vieux Lyon · France",
+      "humanReviewRequired": true
+    }
+  ],
+  "anchors": [
+    {
+      "anchorId": "anchor:FR:return_hub",
+      "country": "FR",
+      "kind": "portal",
+      "pos": {
+        "x": 1000,
+        "y": 65,
+        "z": -24
+      },
+      "blockId": "miraverse:fr_carved_oak_shutter",
+      "labelEn": "Return to MiraVerse Gateway Hub"
+    },
+    {
+      "anchorId": "anchor:FR:gather_1",
+      "country": "FR",
+      "kind": "gather_node",
+      "pos": {
+        "x": 982,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather miraverse:fr_puff_pastry",
+      "linkedItemId": "miraverse:fr_puff_pastry"
+    },
+    {
+      "anchorId": "anchor:FR:gather_2",
+      "country": "FR",
+      "kind": "gather_node",
+      "pos": {
+        "x": 985,
+        "y": 65,
+        "z": -4
+      },
+      "blockId": "minecraft:barrel",
+      "labelEn": "Gather miraverse:fr_porcelain_feve",
+      "linkedItemId": "miraverse:fr_porcelain_feve"
+    },
+    {
+      "anchorId": "anchor:FR:trade_stall",
+      "country": "FR",
+      "kind": "trade_stall",
+      "pos": {
+        "x": 989,
+        "y": 65,
+        "z": -10
+      },
+      "blockId": "minecraft:emerald_block",
+      "labelEn": "Market Trade Stall",
+      "linkedItemId": "miraverse:fr_almond_cream"
+    },
+    {
+      "anchorId": "anchor:FR:cooking_station",
+      "country": "FR",
+      "kind": "cooking_station",
+      "pos": {
+        "x": 994,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:fr_boulangerie_wood_oven",
+      "labelEn": "Cook Galette des Rois",
+      "linkedItemId": "miraverse:fr_galette_des_rois"
+    },
+    {
+      "anchorId": "anchor:FR:restoration_site",
+      "country": "FR",
+      "kind": "restoration_site",
+      "pos": {
+        "x": 992,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:fr_lyon_ochre_stucco",
+      "labelEn": "Restore Vieux Lyon Bakery Landmark",
+      "linkedItemId": "miraverse:fr_cut_stone"
+    },
+    {
+      "anchorId": "anchor:FR:word_1",
+      "country": "FR",
+      "kind": "word_object",
+      "pos": {
+        "x": 995,
+        "y": 65,
+        "z": 8
+      },
+      "blockId": "miraverse:fr_boulangerie_wood_oven",
+      "labelEn": "Word: Neighborhood Bakery",
+      "labelNative": "boulangerie",
+      "transliteration": "boo-lahn-zhuh-ree"
+    },
+    {
+      "anchorId": "anchor:FR:word_2",
+      "country": "FR",
+      "kind": "word_object",
+      "pos": {
+        "x": 983,
+        "y": 65,
+        "z": 2
+      },
+      "blockId": "miraverse:fr_carved_oak_shutter",
+      "labelEn": "Word: Flaky Almond King Cake",
+      "labelNative": "galette",
+      "transliteration": "gah-let"
+    },
+    {
+      "anchorId": "anchor:FR:word_3",
+      "country": "FR",
+      "kind": "word_object",
+      "pos": {
+        "x": 1012,
+        "y": 64,
+        "z": -16
+      },
+      "blockId": "miraverse:fr_mansard_slate_shingle",
+      "labelEn": "Word: Covered Renaissance Passageway",
+      "labelNative": "traboule",
+      "transliteration": "trah-bool"
+    },
+    {
+      "anchorId": "anchor:FR:private_plot",
+      "country": "FR",
+      "kind": "plot_stone",
+      "pos": {
+        "x": 1032,
+        "y": 65,
+        "z": 20
+      },
+      "blockId": "miraverse:fr_carved_oak_shutter",
+      "labelEn": "Vieux Lyon Bakery Explorer Private Building Plot"
+    },
+    {
+      "anchorId": "anchor:FR:optional_collectible",
+      "country": "FR",
+      "kind": "optional_collectible",
+      "pos": {
+        "x": 998,
+        "y": 66,
+        "z": 24
+      },
+      "blockId": "minecraft:chest",
+      "labelEn": "Optional Keepsake (miraverse:fr_lavender)",
+      "linkedItemId": "miraverse:fr_lavender"
+    }
+  ],
+  "restorationStages": [
+    {
+      "stage": 0,
+      "descriptionEn": "Before Restoration: Damaged masonry and missing architectural trim.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "minecraft:cobblestone"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "minecraft:air"
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "descriptionEn": "Stage 1 Restoration: Structural walls rebuilt.",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:fr_lyon_ochre_stucco"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:fr_carved_oak_shutter"
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "descriptionEn": "Stage 2 Restoration: Complete roof, shutters, and lanterns restored!",
+      "blockPlacements": [
+        {
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "blockId": "miraverse:fr_lyon_ochre_stucco"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "blockId": "miraverse:fr_carved_oak_shutter"
+        },
+        {
+          "offset": {
+            "x": 0,
+            "y": 2,
+            "z": 0
+          },
+          "blockId": "miraverse:fr_mansard_slate_shingle"
+        }
+      ]
+    }
+  ]
+}
