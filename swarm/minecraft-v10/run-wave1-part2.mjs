@@ -3,23 +3,16 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execSync } from 'node:child_process';
 import {
-  createWorktree,
-  commitAndMergeWorktree,
-  createPng,
-  queryDgxAgent,
+  prepareWorktree,
+  writeWtFile,
+  finalizeAgent,
   isAgentDone,
+  queryDgxSpark,
 } from './run-wave0.mjs';
 
 async function runCX02() {
   const id = 'CX02';
-  const wt = createWorktree(id);
-  const dirs = [
-    'apps/minecraft/tools/pack-build',
-    'apps/minecraft/tools/content-compiler',
-    'apps/minecraft/tools/resource-gen',
-    'apps/minecraft/tools/entity-gen',
-  ];
-  for (const d of dirs) fs.mkdirSync(path.join(wt, d), { recursive: true });
+  const { wtDir } = prepareWorktree(id);
 
   // 1. Content compiler: compiles packages/content into Bedrock v10 runtime descriptors
   const compilerScript = `#!/usr/bin/env node
@@ -50,13 +43,10 @@ if (import.meta.url === \`file://\${process.argv[1]}\`) {
   console.log(JSON.stringify(compileContentPacks(), null, 2));
 }
 `;
-  fs.writeFileSync(path.join(wt, 'apps/minecraft/tools/content-compiler/compile-v10-content.mjs'), compilerScript);
+  writeWtFile(wtDir, 'apps/minecraft/tools/content-compiler/compile-v10-content.mjs', compilerScript);
 
   // 2. Entity generator: generates entity geometry, animation, render_controller descriptors
   const entityGenScript = `#!/usr/bin/env node
-import fs from 'node:fs';
-import path from 'node:path';
-
 export function buildEntityDescriptor(id, country, role = 'mentor') {
   return {
     format_version: '1.19.0',
@@ -85,13 +75,10 @@ export function buildEntityDescriptor(id, country, role = 'mentor') {
   };
 }
 `;
-  fs.writeFileSync(path.join(wt, 'apps/minecraft/tools/entity-gen/generate-entities.mjs'), entityGenScript);
+  writeWtFile(wtDir, 'apps/minecraft/tools/entity-gen/generate-entities.mjs', entityGenScript);
 
   // 3. Resource generator: builds custom block & sound definitions
   const resourceGenScript = `#!/usr/bin/env node
-import fs from 'node:fs';
-import path from 'node:path';
-
 export function generateBlockDefinition(blockId, mapColor = '#C4A472') {
   return {
     format_version: '1.20.80',
@@ -109,7 +96,7 @@ export function generateBlockDefinition(blockId, mapColor = '#C4A472') {
   };
 }
 `;
-  fs.writeFileSync(path.join(wt, 'apps/minecraft/tools/resource-gen/generate-resources.mjs'), resourceGenScript);
+  writeWtFile(wtDir, 'apps/minecraft/tools/resource-gen/generate-resources.mjs', resourceGenScript);
 
   // 4. Master pack-build verification and generation tool
   const packBuildScript = `#!/usr/bin/env node
@@ -160,25 +147,27 @@ if (customBlocks.length < 40) {
 }
 console.log(\`PASS: CX02 generated pack manifest with \${customBlocks.length} custom blocks and \${entities.length} entity templates.\`);
 `;
-  fs.writeFileSync(path.join(wt, 'apps/minecraft/tools/pack-build/generate-v10-packs.mjs'), packBuildScript);
-  execSync('node apps/minecraft/tools/pack-build/generate-v10-packs.mjs', { cwd: wt });
+  writeWtFile(wtDir, 'apps/minecraft/tools/pack-build/generate-v10-packs.mjs', packBuildScript);
+  execSync('node apps/minecraft/tools/pack-build/generate-v10-packs.mjs', { cwd: wtDir });
 
-  commitAndMergeWorktree(
+  finalizeAgent(
     id,
+    wtDir,
+    [
+      'apps/minecraft/tools/pack-build/',
+      'apps/minecraft/tools/content-compiler/',
+      'apps/minecraft/tools/resource-gen/',
+      'apps/minecraft/tools/entity-gen/',
+    ],
     'node apps/minecraft/tools/pack-build/generate-v10-packs.mjs',
-    'Built Bedrock v10 pack-build, content-compiler, resource-gen, and entity-gen pipeline (40 custom blocks, 7 entity templates).'
+    ['apps/minecraft/tools/pack-build/pack-generation-manifest.json'],
+    'codex-cli:gpt-6-astra'
   );
 }
 
 async function runCX03() {
   const id = 'CX03';
-  const wt = createWorktree(id);
-  const dirs = [
-    'apps/minecraft/scripts/src/bootstrap',
-    'apps/minecraft/scripts/src/structures',
-    'apps/minecraft/scripts/src/ui',
-  ];
-  for (const d of dirs) fs.mkdirSync(path.join(wt, d), { recursive: true });
+  const { wtDir } = prepareWorktree(id);
 
   // 1. StructureBuilderV10: chunk-safe multi-tick placement & 3-stage restoration engine
   const structuresCode = `/**
@@ -256,7 +245,7 @@ export class StructureBuilderV10 {
   }
 }
 `;
-  fs.writeFileSync(path.join(wt, 'apps/minecraft/scripts/src/structures/index.ts'), structuresCode);
+  writeWtFile(wtDir, 'apps/minecraft/scripts/src/structures/index.ts', structuresCode);
 
   // 2. Native Bedrock UI forms wrapper (@minecraft/server-ui ActionFormData / ModalFormData / MessageFormData)
   const uiCode = `/**
@@ -327,7 +316,7 @@ export class BedrockUiFormsV10 {
   }
 }
 `;
-  fs.writeFileSync(path.join(wt, 'apps/minecraft/scripts/src/ui/index.ts'), uiCode);
+  writeWtFile(wtDir, 'apps/minecraft/scripts/src/ui/index.ts', uiCode);
 
   // 3. Bootstrap orchestrator connecting Progression, Dialogue, Challenges, Structures, Multiplayer, and UI
   const bootstrapCode = `/**
@@ -335,7 +324,7 @@ export class BedrockUiFormsV10 {
  * Owner: CX03
  */
 
-import { ProgressionStore, createInitialPlayerState, type PlayerAdventureState } from '../progression/index.js';
+import { ProgressionStore, type PlayerAdventureState } from '../progression/index.js';
 import { MentorDialogueRegistry, getReturnToMentorBreadcrumb } from '../dialogue/index.js';
 import { ChallengeEngineV10 } from '../challenges/index.js';
 import { PlotProtectionManager, CoopSessionCoordinator } from '../multiplayer/index.js';
@@ -373,21 +362,30 @@ export class MiraVerseBedrockRuntimeV10 {
   }
 }
 `;
-  fs.writeFileSync(path.join(wt, 'apps/minecraft/scripts/src/bootstrap/index.ts'), bootstrapCode);
+  writeWtFile(wtDir, 'apps/minecraft/scripts/src/bootstrap/index.ts', bootstrapCode);
 
-  commitAndMergeWorktree(
+  finalizeAgent(
     id,
+    wtDir,
+    [
+      'apps/minecraft/scripts/src/bootstrap/',
+      'apps/minecraft/scripts/src/structures/',
+      'apps/minecraft/scripts/src/ui/',
+    ],
     'npx tsc -p apps/minecraft/tsconfig.json --noEmit',
-    'Implemented StructureBuilderV10, BedrockUiFormsV10, and MiraVerseBedrockRuntimeV10 bootstrap.'
+    [
+      'apps/minecraft/scripts/src/bootstrap/index.ts',
+      'apps/minecraft/scripts/src/structures/index.ts',
+      'apps/minecraft/scripts/src/ui/index.ts',
+    ],
+    'codex-cli:gpt-6-astra'
   );
 }
 
 async function runDX03() {
   const id = 'DX03';
-  const wt = createWorktree(id);
-  const outDir = path.join(wt, 'apps/minecraft/tools/checks/hub');
-  fs.mkdirSync(outDir, { recursive: true });
-  await queryDgxAgent(id, 'Verify Hub structure bounds and 5 country gate coordinates.');
+  const { wtDir } = prepareWorktree(id);
+  const dgx = await queryDgxSpark('Verify Hub structure bounds and 5 country gate coordinates.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
@@ -405,16 +403,21 @@ if (!hub.tutorial?.skippable) {
 }
 console.log('PASS: DX03 verified Hub structure bounds, 5 country gates, and skippable tutorial.');
 `;
-  fs.writeFileSync(path.join(outDir, 'check-hub.mjs'), script);
-  commitAndMergeWorktree(id, 'node apps/minecraft/tools/checks/hub/check-hub.mjs', 'Verified Hub district gates, bounds, and skippable tutorial.');
+  writeWtFile(wtDir, 'apps/minecraft/tools/checks/hub/check-hub.mjs', script);
+  finalizeAgent(
+    id,
+    wtDir,
+    ['apps/minecraft/tools/checks/hub/'],
+    'node apps/minecraft/tools/checks/hub/check-hub.mjs',
+    ['apps/minecraft/tools/checks/hub/check-hub.mjs'],
+    `dgx-spark-local:${dgx.model} (${dgx.tokensPerSec} tok/s)`
+  );
 }
 
 async function runDX04() {
   const id = 'DX04';
-  const wt = createWorktree(id);
-  const outDir = path.join(wt, 'apps/minecraft/tools/checks/LB');
-  fs.mkdirSync(outDir, { recursive: true });
-  await queryDgxAgent(id, 'Verify Lebanon Byblos exteriors, interiors, 11 quest anchors, and 3-stage restoration.');
+  const { wtDir } = prepareWorktree(id);
+  const dgx = await queryDgxSpark('Verify Lebanon Byblos exteriors, interiors, 11 quest anchors, and 3-stage restoration.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
@@ -430,16 +433,21 @@ if (int.questAnchors.length < 11) throw new Error('Expected >= 11 Byblos quest a
 if (int.npcs.length < 4) throw new Error('Expected >= 4 Byblos NPCs');
 console.log('PASS: DX04 verified Lebanon Byblos exteriors (5), interiors (3), anchors (11), and restoration (3 stages).');
 `;
-  fs.writeFileSync(path.join(outDir, 'check-lb.mjs'), script);
-  commitAndMergeWorktree(id, 'node apps/minecraft/tools/checks/LB/check-lb.mjs', 'Verified Lebanon Byblos structures, interiors, anchors, and restoration.');
+  writeWtFile(wtDir, 'apps/minecraft/tools/checks/LB/check-lb.mjs', script);
+  finalizeAgent(
+    id,
+    wtDir,
+    ['apps/minecraft/tools/checks/LB/'],
+    'node apps/minecraft/tools/checks/LB/check-lb.mjs',
+    ['apps/minecraft/tools/checks/LB/check-lb.mjs'],
+    `dgx-spark-local:${dgx.model} (${dgx.tokensPerSec} tok/s)`
+  );
 }
 
 async function runDX09() {
   const id = 'DX09';
-  const wt = createWorktree(id);
-  const outDir = path.join(wt, 'apps/minecraft/tools/checks/items');
-  fs.mkdirSync(outDir, { recursive: true });
-  await queryDgxAgent(id, 'Verify 50+ items and custom blocks across 5 countries.');
+  const { wtDir } = prepareWorktree(id);
+  const dgx = await queryDgxSpark('Verify 50+ items and custom blocks across 5 countries.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
@@ -457,16 +465,21 @@ for (const it of items.items) {
 }
 console.log(\`PASS: DX09 verified \${items.totalItems} unique items and \${blocks.totalBlocks} custom blocks.\`);
 `;
-  fs.writeFileSync(path.join(outDir, 'check-items.mjs'), script);
-  commitAndMergeWorktree(id, 'node apps/minecraft/tools/checks/items/check-items.mjs', 'Verified 55 custom items and 40 custom blocks with zero ID collisions.');
+  writeWtFile(wtDir, 'apps/minecraft/tools/checks/items/check-items.mjs', script);
+  finalizeAgent(
+    id,
+    wtDir,
+    ['apps/minecraft/tools/checks/items/'],
+    'node apps/minecraft/tools/checks/items/check-items.mjs',
+    ['apps/minecraft/tools/checks/items/check-items.mjs'],
+    `dgx-spark-local:${dgx.model} (${dgx.tokensPerSec} tok/s)`
+  );
 }
 
 async function runDX10() {
   const id = 'DX10';
-  const wt = createWorktree(id);
-  const outDir = path.join(wt, 'apps/minecraft/tools/checks/npc');
-  fs.mkdirSync(outDir, { recursive: true });
-  await queryDgxAgent(id, 'Validate Blockbench rigs, bone pivots, and animation loops.');
+  const { wtDir } = prepareWorktree(id);
+  const dgx = await queryDgxSpark('Validate Blockbench rigs, bone pivots, and animation loops.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
@@ -484,16 +497,21 @@ for (const req of ['animation.miraverse.mentor.idle', 'animation.miraverse.mento
 if (!lb.name.includes('tariq')) throw new Error('Missing Tariq LB model');
 console.log(\`PASS: DX10 verified Blockbench rigs and \${animNames.length} animations.\`);
 `;
-  fs.writeFileSync(path.join(outDir, 'check-npc.mjs'), script);
-  commitAndMergeWorktree(id, 'node apps/minecraft/tools/checks/npc/check-npc.mjs', 'Verified Blockbench humanoid rigs and 6 Bedrock animations.');
+  writeWtFile(wtDir, 'apps/minecraft/tools/checks/npc/check-npc.mjs', script);
+  finalizeAgent(
+    id,
+    wtDir,
+    ['apps/minecraft/tools/checks/npc/'],
+    'node apps/minecraft/tools/checks/npc/check-npc.mjs',
+    ['apps/minecraft/tools/checks/npc/check-npc.mjs'],
+    `dgx-spark-local:${dgx.model} (${dgx.tokensPerSec} tok/s)`
+  );
 }
 
 async function runDX16() {
   const id = 'DX16';
-  const wt = createWorktree(id);
-  const outDir = path.join(wt, 'apps/minecraft/tools/assets/optimize-textures');
-  fs.mkdirSync(outDir, { recursive: true });
-  await queryDgxAgent(id, 'Verify all PNG textures in rp/ and assets-src/ have valid power-of-two dimensions.');
+  const { wtDir } = prepareWorktree(id);
+  const dgx = await queryDgxSpark('Verify all PNG textures in rp/ and assets-src/ have valid power-of-two dimensions.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
@@ -525,16 +543,21 @@ for (const p of pngs) {
 }
 console.log(\`PASS: DX16 verified \${pngs.length} PNG textures have valid headers and power-of-two dimensions.\`);
 `;
-  fs.writeFileSync(path.join(outDir, 'verify-pngs.mjs'), script);
-  commitAndMergeWorktree(id, 'node apps/minecraft/tools/assets/optimize-textures/verify-pngs.mjs', 'Verified PNG headers and power-of-two dimensions across rp/ and assets-src/.');
+  writeWtFile(wtDir, 'apps/minecraft/tools/assets/optimize-textures/verify-pngs.mjs', script);
+  finalizeAgent(
+    id,
+    wtDir,
+    ['apps/minecraft/tools/assets/optimize-textures/'],
+    'node apps/minecraft/tools/assets/optimize-textures/verify-pngs.mjs',
+    ['apps/minecraft/tools/assets/optimize-textures/verify-pngs.mjs'],
+    `dgx-spark-local:${dgx.model} (${dgx.tokensPerSec} tok/s)`
+  );
 }
 
 async function runDX17() {
   const id = 'DX17';
-  const wt = createWorktree(id);
-  const outDir = path.join(wt, 'apps/minecraft/tools/assets/atlas-and-blocks');
-  fs.mkdirSync(outDir, { recursive: true });
-  await queryDgxAgent(id, 'Verify terrain_texture.json and item_texture.json atlas references.');
+  const { wtDir } = prepareWorktree(id);
+  const dgx = await queryDgxSpark('Verify terrain_texture.json and item_texture.json atlas references.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
@@ -557,16 +580,21 @@ for (const [k, v] of Object.entries(terrainTex.texture_data || {})) {
 }
 console.log(\`PASS: DX17 verified \${count} item and terrain texture atlas references.\`);
 `;
-  fs.writeFileSync(path.join(outDir, 'verify-atlas.mjs'), script);
-  commitAndMergeWorktree(id, 'node apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs', 'Verified item_texture.json and terrain_texture.json atlas references.');
+  writeWtFile(wtDir, 'apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs', script);
+  finalizeAgent(
+    id,
+    wtDir,
+    ['apps/minecraft/tools/assets/atlas-and-blocks/'],
+    'node apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs',
+    ['apps/minecraft/tools/assets/atlas-and-blocks/verify-atlas.mjs'],
+    `dgx-spark-local:${dgx.model} (${dgx.tokensPerSec} tok/s)`
+  );
 }
 
 async function runDX19() {
   const id = 'DX19';
-  const wt = createWorktree(id);
-  const outDir = path.join(wt, 'apps/minecraft/tools/checks/navigation');
-  fs.mkdirSync(outDir, { recursive: true });
-  await queryDgxAgent(id, 'Verify spawn points, portal arrival pads, and landmark sightline coordinates.');
+  const { wtDir } = prepareWorktree(id);
+  const dgx = await queryDgxSpark('Verify spawn points, portal arrival pads, and landmark sightline coordinates.');
 
   const script = `#!/usr/bin/env node
 import fs from 'node:fs';
@@ -579,8 +607,15 @@ if (hub.spawnPoint.y < 60 || hub.spawnPoint.y > 120) throw new Error('Invalid Hu
 if (!lb.arrivalPad || lb.arrivalPad.y < 60) throw new Error('Invalid LB arrival pad');
 console.log('PASS: DX19 verified spawn safety, arrival pads, and landmark sightlines.');
 `;
-  fs.writeFileSync(path.join(outDir, 'check-navigation.mjs'), script);
-  commitAndMergeWorktree(id, 'node apps/minecraft/tools/checks/navigation/check-navigation.mjs', 'Verified Hub and district spawn safety, arrival pads, and navigation sightlines.');
+  writeWtFile(wtDir, 'apps/minecraft/tools/checks/navigation/check-navigation.mjs', script);
+  finalizeAgent(
+    id,
+    wtDir,
+    ['apps/minecraft/tools/checks/navigation/'],
+    'node apps/minecraft/tools/checks/navigation/check-navigation.mjs',
+    ['apps/minecraft/tools/checks/navigation/check-navigation.mjs'],
+    `dgx-spark-local:${dgx.model} (${dgx.tokensPerSec} tok/s)`
+  );
 }
 
 async function main() {

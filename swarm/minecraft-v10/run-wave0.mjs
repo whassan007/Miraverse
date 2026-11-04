@@ -22,7 +22,7 @@ function sh(cmd, cwd = ROOT) {
   return execSync(cmd, { cwd, encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] }).trim();
 }
 
-async function queryDgxSpark(prompt, maxTokens = 400) {
+export async function queryDgxSpark(prompt, maxTokens = 400) {
   const start = Date.now();
   try {
     const res = await fetch('http://localhost:1234/v1/chat/completions', {
