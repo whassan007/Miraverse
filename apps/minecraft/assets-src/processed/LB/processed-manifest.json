@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.1.0",
+  "countryCode": "LB",
+  "countryName": "Lebanon",
+  "region": "Byblos/Jbeil",
+  "dgxSparkQa": {
+    "model": "qwen/qwen3-coder-next",
+    "tokensPerSec": 56,
+    "hardware": "NVIDIA GB10, 580.178.04, 42, 0 % | Total=121GiB Used=99GiB Free=5GiB Available=21GiB",
+    "notes": "Here's a concise summary of **visual material and texture QA checks** for the *Lebanon (Byblos/Jbeil)* region in a **Minecraft Bedrock Resource Pack**, covering **8 custom blocks** and **6 chapter artifacts**: --- ### ✅ **Visual & Texture QA Checklist** #### *"
+  },
+  "blocksCount": 8,
+  "chapterArtifactsCount": 6,
+  "capstoneKeepsakePath": "apps/minecraft/assets-src/processed/LB/items/lb_cedar_sea_memory_chest.png",
+  "blocks": [
+    {
+      "blockId": "miraverse:lb_byblos_limestone",
+      "shortName": "lb_byblos_limestone",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/blocks/lb_byblos_limestone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:lb_carved_arch_stone",
+      "shortName": "lb_carved_arch_stone",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/blocks/lb_carved_arch_stone.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:lb_terracotta_roof_tile",
+      "shortName": "lb_terracotta_roof_tile",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/blocks/lb_terracotta_roof_tile.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:lb_cedar_shutter",
+      "shortName": "lb_cedar_shutter",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/blocks/lb_cedar_shutter.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:lb_saj_hearth_block",
+      "shortName": "lb_saj_hearth_block",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/blocks/lb_saj_hearth_block.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:lb_harbor_bollard",
+      "shortName": "lb_harbor_bollard",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/blocks/lb_harbor_bollard.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:lb_mosaic_courtyard_tile",
+      "shortName": "lb_mosaic_courtyard_tile",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/blocks/lb_mosaic_courtyard_tile.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    },
+    {
+      "blockId": "miraverse:lb_zaatar_drying_rack",
+      "shortName": "lb_zaatar_drying_rack",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/blocks/lb_zaatar_drying_rack.png",
+      "resolution": "16x16",
+      "mipmapSafe": true
+    }
+  ],
+  "chapterArtifacts": [
+    {
+      "artifactId": "lb_harbor_compass",
+      "chapterId": "LB01",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/items/lb_harbor_compass.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "lb_alphabet_tile",
+      "chapterId": "LB02",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/items/lb_alphabet_tile.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "lb_family_recipe_card",
+      "chapterId": "LB03",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/items/lb_family_recipe_card.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "lb_cedar_token",
+      "chapterId": "LB04",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/items/lb_cedar_token.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "lb_archive_album",
+      "chapterId": "LB05",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/items/lb_archive_album.png",
+      "resolution": "16x16"
+    },
+    {
+      "artifactId": "lb_harbor_home_stamp",
+      "chapterId": "LB06",
+      "texturePath": "apps/minecraft/assets-src/processed/LB/items/lb_harbor_home_stamp.png",
+      "resolution": "16x16"
+    }
+  ]
+}
