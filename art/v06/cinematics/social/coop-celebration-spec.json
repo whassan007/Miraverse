@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "v06.1",
+  "sequences": [
+    {
+      "id": "cine_lb_harbor_arrival",
+      "durationSec": 4.5,
+      "skippable": true,
+      "reducedMotionFallback": "dissolve_cut"
+    },
+    {
+      "id": "cine_lb_chapter_complete",
+      "durationSec": 5,
+      "skippable": true,
+      "awardsStamp": true
+    },
+    {
+      "id": "cine_lb_coop_feast_celebration",
+      "durationSec": 4,
+      "skippable": true,
+      "participants": 2
+    }
+  ]
+}
