@@ -1,0 +1,52 @@
+{
+  "agentId": "DX01",
+  "measuredAt": "2026-11-04T06:34:26.836Z",
+  "hardware": "NVIDIA GB10, 580.178.04, 47, 32.97 W",
+  "unifiedMemoryGb": 128,
+  "primaryEndpoint": "http://localhost:1234/v1",
+  "primaryModel": "qwen/qwen3-coder-next",
+  "ollamaModelsAvailable": [
+    "qwen3.6:35b-a3b-q8_0",
+    "qwen3-coder:30b",
+    "qwen2.5vl:72b",
+    "gemma4:26b",
+    "qwen3.8:27b"
+  ],
+  "benchmarkProbe": {
+    "ok": true,
+    "elapsedMs": 978,
+    "tokensPerSec": 44.99,
+    "usage": {
+      "prompt_tokens": 62,
+      "completion_tokens": 44,
+      "total_tokens": 106,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "response": "Ready for sequential (concurrency=1) execution across DX01–DX20 on the local NVIDIA GB10 DGX Spark server for MiraVerse v1.0 Minecraft Bedrock benchmarking."
+  },
+  "maxConcurrency": 1,
+  "scheduleOrder": [
+    "DX01",
+    "DX02",
+    "DX03",
+    "DX04",
+    "DX09",
+    "DX10",
+    "DX16",
+    "DX17",
+    "DX19",
+    "DX05",
+    "DX06",
+    "DX07",
+    "DX08",
+    "DX11",
+    "DX18",
+    "DX12",
+    "DX13",
+    "DX15",
+    "DX20",
+    "DX14"
+  ]
+}
