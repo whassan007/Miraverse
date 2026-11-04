@@ -1,0 +1,13 @@
+{
+  "countryId": "KR",
+  "questId": "QUEST_KR_MAIN_V06",
+  "mentor": "Halmeoni Ji-woo",
+  "steps": [
+    "gather",
+    "trade",
+    "cook",
+    "build",
+    "word"
+  ],
+  "totalTokens": 150
+}
