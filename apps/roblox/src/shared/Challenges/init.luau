@@ -62,6 +62,11 @@ local function getRemotes()
 	return remotes
 end
 
+-- Creates the remotes up front so clients can subscribe before the first challenge.
+function Challenges.init()
+	getRemotes()
+end
+
 -- Optional hook so the host game can back items with a real inventory.
 function Challenges.setInventoryProvider(provider)
 	inventory = provider

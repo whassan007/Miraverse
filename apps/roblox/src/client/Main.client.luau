@@ -3,6 +3,7 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local StarterGui = game:GetService("StarterGui")
 local TextChatService = game:GetService("TextChatService")
+local Workspace = game:GetService("Workspace")
 
 local UI = require(script.Parent.UI)
 
@@ -38,6 +39,11 @@ local gui = UI.make("ScreenGui", { Name = "MiraVerseUI", ResetOnSpawn = false },
 local picker = UI.panel(gui, UDim2.fromScale(0.5, 0.6), UDim2.fromScale(0.25, 0.2))
 UI.label(picker, "Choose a country!", UDim2.fromScale(0.9, 0.14), UDim2.fromScale(0.05, 0.03))
 
+-- The Phoenicia staging build starts in Tyre, so the picker would cover it.
+if Workspace:GetAttribute("MV_PHOENICIA") == true then
+	picker.Visible = false
+end
+
 -- HUD
 local hud = UI.panel(gui, UDim2.fromScale(0.3, 0.14), UDim2.fromScale(0.35, 0.02))
 hud.Visible = false
@@ -52,7 +58,7 @@ local modalTitle = UI.label(modal, "Souvenir stamp!", UDim2.fromScale(0.9, 0.25)
 local modalCode = UI.label(modal, "", UDim2.fromScale(0.9, 0.3), UDim2.fromScale(0.05, 0.35))
 modalTitle.ZIndex = 11
 modalCode.ZIndex = 11
-local closeBtn = UI.button(modal, "Close", UDim2.fromScale(0.4, 0.2), UDim2.fromScale(0.3, 0.72), function()
+local closeBtn = UI.button(modal, "Close", UDim2.fromScale(0.4, 0.2), function()
 	modal.Visible = false
 end)
 closeBtn.Position = UDim2.fromScale(0.3, 0.72)
@@ -119,6 +125,31 @@ phraseShown.OnClientEvent:Connect(function(userId: any, text: any)
 	UI.label(bb, text, UDim2.fromScale(1, 1), UDim2.fromScale(0, 0)).BackgroundTransparency = 0.2
 	task.delay(3, function()
 		bb:Destroy()
+	end)
+end)
+
+-- Challenge goals and feedback from the server.
+local TOAST_SECONDS = 6
+local toast = UI.panel(gui, UDim2.fromScale(0.5, 0.1), UDim2.fromScale(0.25, 0.18))
+toast.Name = "ChallengeToast"
+toast.Visible = false
+local toastMessage = UI.label(toast, "", UDim2.fromScale(0.94, 0.86), UDim2.fromScale(0.03, 0.07))
+toastMessage.Name = "Message"
+local toastVersion = 0
+local challengeRemotes = ReplicatedStorage:WaitForChild("ChallengeRemotes")
+local notify = challengeRemotes:WaitForChild("Notify") :: RemoteEvent
+notify.OnClientEvent:Connect(function(_challengeId: any, text: any)
+	if type(text) ~= "string" then
+		return
+	end
+	toastVersion += 1
+	local version = toastVersion
+	toastMessage.Text = text
+	toast.Visible = true
+	task.delay(TOAST_SECONDS, function()
+		if version == toastVersion then
+			toast.Visible = false
+		end
 	end)
 end)
 

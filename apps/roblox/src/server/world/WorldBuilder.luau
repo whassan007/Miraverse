@@ -1,6 +1,8 @@
 --!strict
 -- MiraVerse v0.4 Native Roblox 3D World Hub & 5 Stylized Towns Builder
 -- Owner: CL03
+-- Not run at startup: it overlapped MapBuilder's world and added six extra spawn points.
+-- MapBuilder is the live world. This module stays only as a reference for its landmarks.
 local Workspace = game:GetService("Workspace")
 local Lighting = game:GetService("Lighting")
 

@@ -64,9 +64,10 @@ local function newRemote(class: string, name: string): Instance
 end
 
 function SessionManager.init()
-	local shared = ReplicatedStorage:WaitForChild("Shared")
+	local shared = ReplicatedStorage:WaitForChild("MiraVerseShared")
 	Challenges = require(shared:WaitForChild("Challenges"))
 	Packs = require(shared:WaitForChild("Packs"))
+	Challenges.init()
 
 	remotes = Instance.new("Folder")
 	remotes.Name = "MiraVerseRemotes"

@@ -1,5 +1,6 @@
 --!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Lighting = game:GetService("Lighting")
 local Workspace = game:GetService("Workspace")
 
 local MapBuilder = {}
@@ -77,11 +78,8 @@ local function hexToColor3(hex: string?, defaultColor: Color3): Color3
 end
 
 local function loadContentPacks(): { [string]: any }
-	local sharedFolder = ReplicatedStorage:FindFirstChild("Shared")
-	if not sharedFolder then
-		return {}
-	end
-	local contentMod = sharedFolder:FindFirstChild("ContentData") or sharedFolder:FindFirstChild("Content")
+	local sharedFolder = ReplicatedStorage:WaitForChild("MiraVerseShared")
+	local contentMod = sharedFolder:WaitForChild("Packs")
 	if contentMod and contentMod:IsA("ModuleScript") then
 		local ok, data = pcall(require, contentMod)
 		if ok and type(data) == "table" then
@@ -450,6 +448,8 @@ function MapBuilder.build(): Folder
 	end
 
 	mapFolder.Parent = Workspace
+	Lighting.ClockTime = 16.5
+	Lighting.Brightness = 2.2
 	return mapFolder
 end
 
