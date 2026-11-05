@@ -122,7 +122,7 @@ export class AgeTrackResolver {
   }
 
   static resolveChapterVariant(chapterId: string, ageTrack: GlobalAgeTrack) {
-    const ch = (registryData.chapters as any[]).find((c) => c.id === chapterId);
+    const ch = ObjectiveRegistry.findChapter(chapterId);
     if (!ch) throw new Error(`Unknown chapterId: ${chapterId}`);
     const normalized = this.normalizeTrack(ageTrack);
     const variant = ch.ageVariants[normalized];
@@ -139,16 +139,29 @@ export class AgeTrackResolver {
 }
 
 export class ObjectiveRegistry {
+  /** Feature-flagged content such as Phoenicia. Kept out of the 66-chapter global catalog. */
+  private static readonly extensionChapters = new Map<string, any>();
+
+  static registerExtensionChapter(chapter: { id: string }) {
+    this.extensionChapters.set(chapter.id, chapter);
+  }
+
+  static findChapter(chapterId: string) {
+    return (registryData.chapters as any[]).find((c) => c.id === chapterId) ?? this.extensionChapters.get(chapterId);
+  }
+
   static getAllChapters() {
     return registryData.chapters as any[];
   }
 
   static getCountryChapters(countryCode: GlobalCountryCode) {
-    return (registryData.chapters as any[]).filter((c) => c.countryCode === countryCode);
+    return [...(registryData.chapters as any[]), ...this.extensionChapters.values()].filter(
+      (c) => c.countryCode === countryCode
+    );
   }
 
   static getChapterDefinition(chapterId: string) {
-    const ch = (registryData.chapters as any[]).find((c) => c.id === chapterId);
+    const ch = this.findChapter(chapterId);
     if (!ch) throw new Error(`Chapter not found: ${chapterId}`);
     return ch;
   }

@@ -21,6 +21,9 @@ import { claimChapterPassportReward } from './src/passport/index.js';
 import { StructureBuilderV10 } from './src/structures/index.js';
 import { BedrockUiFormsV10 } from './src/ui/index.js';
 import type { CountryId } from '../../../packages/content/schema.js';
+import { buildPhoeniciaWorld, startPhoenicia, enterPhoenicia } from './src/phoenicia/bedrock.js';
+
+declare const __MV_PHOENICIA__: boolean;
 
 export const runtimeV10 = new MiraVerseBedrockRuntimeV10();
 export {
@@ -122,6 +125,10 @@ async function begin(player: Player): Promise<void> {
 }
 
 world.afterEvents.worldInitialize.subscribe(() => {
+  if (__MV_PHOENICIA__) {
+    startPhoenicia();
+    system.runTimeout(() => buildPhoeniciaWorld(), 100);
+  }
   // Wait for chunks to load before building.
   system.runTimeout(() => {
     buildWorld()
@@ -141,6 +148,10 @@ world.afterEvents.worldInitialize.subscribe(() => {
 world.afterEvents.playerSpawn.subscribe((ev) => {
   if (!ev.initialSpawn) return;
   givePassport(ev.player);
+  if (__MV_PHOENICIA__) {
+    enterPhoenicia(ev.player);
+    return;
+  }
   void begin(ev.player);
 });
 

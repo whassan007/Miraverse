@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "scope": "vertical-slice",
+  "league": {
+    "name": "Phoenician Maritime League",
+    "classification": "game_fiction",
+    "note": "Invented for gameplay. Phoenician city-states were politically independent."
+  },
+  "epochs": [
+    { "id": "phoenician_golden_age", "label": "The Phoenician Golden Age", "approxBce": [1000, 800], "implemented": true },
+    { "id": "age_of_sieges", "label": "The Age of Sieges", "approxBce": [700, 332], "implemented": false },
+    { "id": "connected_city", "label": "The Connected City", "approxBce": [332, null], "implemented": false }
+  ],
+  "projection": {
+    "unit": "1 layout unit = 1 Minecraft block = 3 Roblox studs",
+    "axes": "+x = east, -z = north, y = height above sea level",
+    "scale": "Compressed game scale, not true scale. Relative bearings are kept; distances are not.",
+    "seaLevelY": 0,
+    "seabedY": -4,
+    "landTopY": 2,
+    "minecraftSeaLevelY": 104,
+    "robloxStudsPerUnit": 3
+  },
+  "regions": {
+    "tyre": {
+      "name": "Tyre",
+      "nativeName": "صور",
+      "transliteration": "Ṣūr",
+      "modernCountry": "Lebanon",
+      "geo": { "lat": 33.27083, "lon": 35.19611, "sourceId": "wp-tyre", "confidence": "modern_reference" },
+      "bounds": 75,
+      "origins": { "minecraft": [6000, 6000], "roblox": [0, 6000] },
+      "land": [
+        { "id": "tyre_island", "kind": "island", "shape": "ellipse", "center": [-20, 0], "radius": [38, 32],
+          "confidence": "interpretive", "sourceId": "fr-culture-tyre",
+          "note": "Offshore island attested; this outline is an interpretive shape, not a survey." },
+        { "id": "ushu_mainland", "kind": "mainland", "shape": "rect", "min": [50, -75], "max": [75, 75],
+          "confidence": "interpretive", "sourceId": "wp-tyre",
+          "note": "Ushu/Palaetyrus lay on the adjacent mainland; the channel is compressed from about 500 to 700 m." }
+      ],
+      "buildings": [
+        { "id": "market_warehouse_w", "x": [-44, -32], "z": [-14, -6], "h": 6, "material": "limestone", "door": "e", "district": "great_market" },
+        { "id": "market_warehouse_e", "x": [-8, 4], "z": [-14, -6], "h": 6, "material": "limestone", "door": "w", "district": "great_market" },
+        { "id": "harbor_store", "x": [-40, -28], "z": [-30, -24], "h": 5, "material": "plaster", "door": "s", "district": "sidonian_harbor" }
+      ],
+      "boxes": [
+        { "id": "wall_n_w", "min": [-48, 3, -20], "max": [-24, 8, -19], "material": "ashlar", "district": "city_walls" },
+        { "id": "wall_n_e", "min": [-16, 3, -20], "max": [8, 8, -19], "material": "ashlar", "district": "city_walls" },
+        { "id": "wall_s", "min": [-48, 3, 19], "max": [8, 8, 20], "material": "ashlar", "district": "city_walls" },
+        { "id": "wall_w", "min": [-48, 3, -20], "max": [-47, 8, 20], "material": "ashlar", "district": "city_walls" },
+        { "id": "wall_e", "min": [7, 3, -20], "max": [8, 8, 20], "material": "ashlar", "district": "city_walls" },
+        { "id": "street_north", "min": [-23, 2, -32], "max": [-17, 2, 10], "material": "paving", "district": "great_market" },
+        { "id": "stall_cedar_top", "min": [-29, 6, 1], "max": [-25, 6, 5], "material": "purple_cloth", "district": "great_market" },
+        { "id": "stall_cedar_post", "min": [-29, 3, 1], "max": [-29, 5, 1], "material": "cedar", "district": "great_market" },
+        { "id": "stall_cedar_post2", "min": [-25, 3, 5], "max": [-25, 5, 5], "material": "cedar", "district": "great_market" },
+        { "id": "stall_pottery_top", "min": [-15, 6, 1], "max": [-11, 6, 5], "material": "ochre", "district": "great_market" },
+        { "id": "stall_pottery_post", "min": [-15, 3, 1], "max": [-15, 5, 1], "material": "cedar", "district": "great_market" },
+        { "id": "stall_pottery_post2", "min": [-11, 3, 5], "max": [-11, 5, 5], "material": "cedar", "district": "great_market" },
+        { "id": "north_dock", "min": [-23, 1, -52], "max": [-17, 2, -32], "material": "cedar", "district": "sidonian_harbor" },
+        { "id": "north_breakwater", "min": [-58, 0, -56], "max": [-34, 2, -53], "material": "ashlar", "district": "sidonian_harbor",
+          "note": "A north harbour breakwater is attested archaeologically, but its plan here is interpretive." },
+        { "id": "ship_hull", "min": [-30, 0, -50], "max": [-25, 2, -36], "material": "cedar", "group": "ship" },
+        { "id": "ship_mast", "min": [-28, 3, -44], "max": [-27, 10, -43], "material": "cedar", "group": "ship" },
+        { "id": "ship_sail", "min": [-31, 6, -44], "max": [-24, 10, -44], "material": "purple_cloth", "group": "ship" },
+        { "id": "ushu_field", "min": [54, 2, -30], "max": [72, 2, -10], "material": "field", "district": "ushu_mainland" },
+        { "id": "ushu_well", "min": [60, 3, 4], "max": [62, 4, 6], "material": "ashlar", "district": "ushu_mainland" }
+      ],
+      "points": {
+        "arrival": { "x": -20, "z": -40 },
+        "resume": { "x": -20, "z": -40 },
+        "shipDeck": { "x": -27, "z": -40, "y": 3 },
+        "seaApproach": { "x": -27, "z": -74 }
+      },
+      "npcs": [
+        { "id": "hanno", "nameKey": "npc.hanno", "role": "cedar_merchant", "x": -20, "z": 4, "patrol": [[-24, 3], [-16, 3]], "classification": "game_fiction" },
+        { "id": "harbor_master", "nameKey": "npc.harbor_master", "role": "harbor_master", "x": -15, "z": -36, "patrol": [[-15, -36], [-15, -44]], "classification": "game_fiction" }
+      ]
+    },
+    "byblos": {
+      "name": "Byblos",
+      "nativeName": "جبيل",
+      "transliteration": "Jbeil",
+      "modernCountry": "Lebanon",
+      "geo": { "lat": 34.12361, "lon": 35.65194, "sourceId": "wp-byblos", "confidence": "modern_reference" },
+      "bounds": 35,
+      "origins": { "minecraft": [6500, 6000], "roblox": [0, 9000] },
+      "land": [
+        { "id": "byblos_coast", "kind": "mainland", "shape": "rect", "min": [-5, -35], "max": [35, 35],
+          "confidence": "interpretive", "sourceId": "wp-byblos",
+          "note": "A straight coast stands in for the real shoreline in this port zone." }
+      ],
+      "buildings": [
+        { "id": "byblos_yard_office", "x": [20, 30], "z": [-14, -6], "h": 6, "material": "limestone", "door": "s", "district": "cedar_yard" }
+      ],
+      "boxes": [
+        { "id": "byblos_dock", "min": [-26, 1, -3], "max": [-5, 2, 3], "material": "cedar", "district": "byblos_harbor" },
+        { "id": "byblos_street", "min": [-5, 2, -2], "max": [14, 2, 2], "material": "paving", "district": "byblos_harbor" },
+        { "id": "log_seasoned", "min": [10, 3, 4], "max": [18, 4, 5], "material": "seasoned_cedar", "district": "cedar_yard" },
+        { "id": "log_green", "min": [10, 3, 8], "max": [18, 4, 9], "material": "green_cedar", "district": "cedar_yard" },
+        { "id": "log_split", "min": [10, 3, 12], "max": [15, 4, 13], "material": "split_cedar", "district": "cedar_yard" },
+        { "id": "byblos_ship_hull", "min": [-24, 0, 4], "max": [-11, 2, 9], "material": "cedar", "group": "ship" },
+        { "id": "byblos_ship_mast", "min": [-18, 3, 6], "max": [-17, 10, 7], "material": "cedar", "group": "ship" },
+        { "id": "byblos_ship_sail", "min": [-18, 6, 3], "max": [-18, 10, 10], "material": "purple_cloth", "group": "ship" }
+      ],
+      "points": {
+        "arrival": { "x": -10, "z": 0 },
+        "resume": { "x": -10, "z": 0 },
+        "shipDeck": { "x": -16, "z": 6, "y": 3 },
+        "seaApproach": { "x": -34, "z": 6 }
+      },
+      "npcs": [
+        { "id": "arishat", "nameKey": "npc.arishat", "role": "cedar_broker", "x": 8, "z": 6, "patrol": [[8, 4], [8, 12]], "classification": "game_fiction" }
+      ]
+    }
+  },
+  "routes": {
+    "tyre_to_byblos": { "from": "tyre", "to": "byblos", "ship": "merchant_vessel", "cargo": ["dyed_textiles"], "bearing": "north", "gameSeconds": 8,
+      "note": "gameSeconds is pacing only and models no real sailing time." },
+    "byblos_to_tyre": { "from": "byblos", "to": "tyre", "ship": "merchant_vessel", "cargo": ["lebanese_cedar"], "bearing": "south", "gameSeconds": 8,
+      "note": "gameSeconds is pacing only and models no real sailing time." }
+  },
+  "materials": {
+    "limestone": { "minecraft": "minecraft:smooth_sandstone", "roblox": { "color": [222, 208, 178], "material": "Limestone" } },
+    "plaster": { "minecraft": "minecraft:white_terracotta", "roblox": { "color": [236, 228, 212], "material": "Plaster" } },
+    "ashlar": { "minecraft": "minecraft:sandstone", "roblox": { "color": [201, 184, 150], "material": "Sandstone" } },
+    "paving": { "minecraft": "minecraft:smooth_stone", "roblox": { "color": [176, 164, 142], "material": "Cobblestone" } },
+    "cedar": { "minecraft": "minecraft:spruce_planks", "roblox": { "color": [120, 78, 48], "material": "WoodPlanks" } },
+    "seasoned_cedar": { "minecraft": "minecraft:stripped_spruce_log", "roblox": { "color": [160, 112, 72], "material": "Wood" } },
+    "green_cedar": { "minecraft": "minecraft:jungle_log", "roblox": { "color": [96, 110, 62], "material": "Wood" } },
+    "split_cedar": { "minecraft": "minecraft:dark_oak_log", "roblox": { "color": [70, 52, 40], "material": "Wood" } },
+    "purple_cloth": { "minecraft": "minecraft:purple_wool", "roblox": { "color": [102, 36, 110], "material": "Fabric" } },
+    "ochre": { "minecraft": "minecraft:orange_terracotta", "roblox": { "color": [190, 120, 64], "material": "Fabric" } },
+    "field": { "minecraft": "minecraft:farmland", "roblox": { "color": [122, 96, 58], "material": "Ground" } }
+  }
+}

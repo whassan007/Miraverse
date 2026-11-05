@@ -1,0 +1,56 @@
+{
+  "accessed": "2026-11-04",
+  "sources": [
+    {
+      "id": "fr-culture-tyre",
+      "title": "Tyre, French Ministry of Culture, Archaeology in the Near East",
+      "url": "https://archeologie.culture.gouv.fr/proche-orient/en/tyre",
+      "status": "read",
+      "supports": ["Island settlement close to the coast", "Secondary settlement on the continental side", "Jetty built in the 332 BCE siege gradually became an isthmus", "Tyrian sailors founded towns including Carthage"]
+    },
+    {
+      "id": "wp-tyre",
+      "title": "Tyre, Lebanon, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tyre,_Lebanon",
+      "status": "partly_read",
+      "tier": "tertiary",
+      "supports": ["Modern coordinates", "Island 500 to 700 m offshore, with Ushu on the mainland", "Sidonian and Egyptian harbour names", "Southern harbour location is uncertain"]
+    },
+    {
+      "id": "wp-byblos",
+      "title": "Byblos, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Byblos",
+      "status": "partly_read",
+      "tier": "tertiary",
+      "supports": ["Modern coordinates", "First Dynasty Egyptian tombs used timbers from Byblos"]
+    },
+    {
+      "id": "wp-wenamun",
+      "title": "Story of Wenamun, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Story_of_Wenamun",
+      "status": "read",
+      "tier": "tertiary",
+      "supports": ["Lumber bargaining with Zakar-Baal at Byblos", "Text is generally regarded as a mostly fictional literary work"]
+    },
+    {
+      "id": "unesco-tyre",
+      "title": "Tyre, UNESCO World Heritage List",
+      "url": "https://whc.unesco.org/en/list/299/",
+      "status": "unreachable",
+      "reason": "HTTP 403 to the automated fetch. Nothing here relies on it."
+    },
+    {
+      "id": "met-phoenicians",
+      "title": "The Phoenicians (1500–300 B.C.), Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/essays/the-phoenicians-1500-300-b-c",
+      "status": "unreachable",
+      "reason": "HTTP 429 to the automated fetch. Nothing here relies on it."
+    },
+    {
+      "id": "rock-of-melqart",
+      "title": "The Rock of Melqart: The Ascendancy, Engineering, and Enduring Sieges of Phoenician Tyre",
+      "status": "missing",
+      "reason": "Named as the primary narrative input but not supplied, and not found in the repository or the usual user folders."
+    }
+  ]
+}

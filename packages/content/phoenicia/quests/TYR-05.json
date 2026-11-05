@@ -1,0 +1,112 @@
+{
+  "id": "TYR-05",
+  "countryCode": "PH",
+  "chapterIndex": 5,
+  "title": "The Cedar Fleet",
+  "titleKey": "quest.tyr05.title",
+  "hub": "tyre",
+  "epoch": "phoenician_golden_age",
+  "activity": "Sail from Tyre to Byblos, choose ship timber at the cedar yard and return to commission a merchant vessel",
+  "mechanic": "maritime_navigation",
+  "scene": "PH/tyre_great_market",
+  "sourceType": "historical_reconstruction",
+  "sourceIds": ["wp-byblos", "wp-wenamun", "fr-culture-tyre"],
+  "prerequisiteChapterId": null,
+  "campaignPrerequisiteChapterId": "TYR-04",
+  "prerequisiteNote": "TYR-04 does not exist yet, so the slice starts this quest directly.",
+  "independentlyAvailableAtStart": true,
+  "reward": {
+    "artifactId": "ph_cedar_keel_token",
+    "artifactName": "Cedar Keel Token",
+    "storySparks": 50,
+    "grantsCountryStamp": null,
+    "grantsCapstoneKeepsake": null
+  },
+  "nodes": [
+    {
+      "id": "TYR-05:accept",
+      "anchor": { "region": "tyre", "x": -20, "z": 4, "radius": 7 },
+      "promptKey": "prompt.talk_hanno",
+      "titleKey": "npc.hanno",
+      "bodyKey": "tyr05.accept.body",
+      "hintKey": "tyr05.accept.hint",
+      "options": [{ "id": "accept", "correct": true, "labelKey": "tyr05.accept.yes" }],
+      "successKey": "tyr05.accept.success"
+    },
+    {
+      "id": "TYR-05:sail_north",
+      "anchor": { "region": "tyre", "x": -20, "z": -42, "radius": 8 },
+      "promptKey": "prompt.board_ship",
+      "titleKey": "tyr05.sail_north.title",
+      "bodyKey": "tyr05.sail_north.body",
+      "hintKey": "tyr05.sail_north.hint",
+      "options": [
+        { "id": "coast_starboard", "correct": true, "labelKey": "course.coast_right" },
+        { "id": "coast_port", "correct": false, "labelKey": "course.coast_left", "feedbackKey": "tyr05.sail_north.wrong_port" },
+        { "id": "open_west", "correct": false, "labelKey": "course.open_west", "feedbackKey": "course.wrong_open_west" }
+      ],
+      "successKey": "tyr05.sail_north.success",
+      "routeId": "tyre_to_byblos",
+      "arriveRegion": "byblos"
+    },
+    {
+      "id": "TYR-05:choose_cedar",
+      "anchor": { "region": "byblos", "x": 8, "z": 6, "radius": 9 },
+      "promptKey": "prompt.talk_arishat",
+      "titleKey": "npc.arishat",
+      "bodyKey": "tyr05.cedar.body",
+      "hintKey": "tyr05.cedar.hint",
+      "options": [
+        { "id": "seasoned", "correct": true, "labelKey": "tyr05.cedar.seasoned" },
+        { "id": "green", "correct": false, "labelKey": "tyr05.cedar.green", "feedbackKey": "tyr05.cedar.wrong_green" },
+        { "id": "split", "correct": false, "labelKey": "tyr05.cedar.split", "feedbackKey": "tyr05.cedar.wrong_split" }
+      ],
+      "successKey": "tyr05.cedar.success"
+    },
+    {
+      "id": "TYR-05:sail_south",
+      "anchor": { "region": "byblos", "x": -14, "z": 0, "radius": 8 },
+      "promptKey": "prompt.board_ship",
+      "titleKey": "tyr05.sail_south.title",
+      "bodyKey": "tyr05.sail_south.body",
+      "hintKey": "tyr05.sail_south.hint",
+      "options": [
+        { "id": "coast_port", "correct": true, "labelKey": "course.coast_left" },
+        { "id": "coast_starboard", "correct": false, "labelKey": "course.coast_right", "feedbackKey": "tyr05.sail_south.wrong_starboard" },
+        { "id": "open_west", "correct": false, "labelKey": "course.open_west", "feedbackKey": "course.wrong_open_west" }
+      ],
+      "successKey": "tyr05.sail_south.success",
+      "routeId": "byblos_to_tyre",
+      "arriveRegion": "tyre"
+    },
+    {
+      "id": "TYR-05:commission",
+      "anchor": { "region": "tyre", "x": -20, "z": 4, "radius": 7 },
+      "promptKey": "prompt.talk_hanno",
+      "titleKey": "npc.hanno",
+      "bodyKey": "tyr05.commission.body",
+      "hintKey": "tyr05.commission.hint",
+      "options": [{ "id": "commission", "correct": true, "labelKey": "tyr05.commission.yes" }],
+      "successKey": "tyr05.commission.success"
+    }
+  ],
+  "codex": [
+    { "id": "island", "classification": "historical_evidence", "textKey": "codex.island", "sourceIds": ["fr-culture-tyre", "wp-tyre"] },
+    { "id": "harbors", "classification": "historical_evidence", "textKey": "codex.harbors", "sourceIds": ["wp-tyre"] },
+    { "id": "byblos_timber", "classification": "historical_evidence", "textKey": "codex.byblos_timber", "sourceIds": ["wp-byblos"] },
+    { "id": "wenamun", "classification": "historical_tradition", "textKey": "codex.wenamun", "sourceIds": ["wp-wenamun"] },
+    { "id": "league", "classification": "game_fiction", "textKey": "codex.league", "sourceIds": [] }
+  ],
+  "ageVariantDefaults": {
+    "timersEnabled": false,
+    "resourceLossPossible": false,
+    "checkpointEveryStep": true,
+    "recoveryMode": "instant_gentle_retry",
+    "tracks": {
+      "5-7": { "track": "Explorer", "hint": "persistent_glow_and_icon" },
+      "8-10": { "track": "Adventurer", "hint": "on_request_tooltip" },
+      "11-13": { "track": "Investigator", "hint": "on_request_journal_clue" },
+      "14-17": { "track": "Architect / Curator", "hint": "optional_curator_notes" }
+    }
+  }
+}

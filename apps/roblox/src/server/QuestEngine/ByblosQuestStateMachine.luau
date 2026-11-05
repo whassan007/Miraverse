@@ -91,4 +91,46 @@ function ByblosQuestStateMachine.submitObjectiveEvent(
     return true, "STEP_COMPLETED", stepAward
 end
 
+-- Same dedupe and ordering rules as submitObjectiveEvent, for quests that define
+-- their own node order and rewards. The caller owns the record, so it can be saved.
+function ByblosQuestStateMachine.newDefinedRecord(userId: number, countryId: string, questId: string): PlayerQuestRecord
+    return {
+        userId = userId,
+        countryId = countryId,
+        questId = questId,
+        completedSteps = {},
+        currentStepIndex = 1,
+        chapterCompleted = false,
+        grantedEventIds = {},
+        miraTokensEarned = 0,
+        unlockedCosmetics = {},
+        passportStampIssued = nil,
+    }
+end
+
+function ByblosQuestStateMachine.submitDefinedNode(
+    rec: PlayerQuestRecord,
+    nodeOrder: { string },
+    eventId: string,
+    nodeId: string
+): (boolean, string)
+    if rec.grantedEventIds[eventId] then
+        return false, "DUPLICATE_EVENT_IGNORED"
+    end
+    if rec.completedSteps[nodeId] then
+        return false, "STEP_ALREADY_COMPLETED"
+    end
+    if nodeOrder[rec.currentStepIndex] ~= nodeId then
+        return false, "OUT_OF_ORDER_STEP"
+    end
+    rec.grantedEventIds[eventId] = true
+    rec.completedSteps[nodeId] = true
+    rec.currentStepIndex += 1
+    if rec.currentStepIndex > #nodeOrder then
+        rec.chapterCompleted = true
+        return true, "CHAPTER_COMPLETED"
+    end
+    return true, "STEP_COMPLETED"
+end
+
 return ByblosQuestStateMachine

@@ -1,0 +1,678 @@
+{
+ "scenarios": [
+  {
+   "name": "happy path",
+   "steps": [
+    [
+     {
+      "eventId": "e-01",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-02",
+      "nodeId": "TYR-05:sail_north",
+      "region": "tyre",
+      "x": -20,
+      "z": -40,
+      "choiceId": "coast_starboard"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north"
+      ],
+      "region": "byblos",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-03",
+      "nodeId": "TYR-05:choose_cedar",
+      "region": "byblos",
+      "x": 8,
+      "z": 6,
+      "choiceId": "seasoned"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north",
+       "TYR-05:choose_cedar"
+      ],
+      "region": "byblos",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-04",
+      "nodeId": "TYR-05:sail_south",
+      "region": "byblos",
+      "x": -10,
+      "z": 0,
+      "choiceId": "coast_port"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north",
+       "TYR-05:choose_cedar",
+       "TYR-05:sail_south"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-05",
+      "nodeId": "TYR-05:commission",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "commission"
+     },
+     {
+      "code": "QUEST_COMPLETED",
+      "lifecycle": "COMPLETED",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north",
+       "TYR-05:choose_cedar",
+       "TYR-05:sail_south",
+       "TYR-05:commission"
+      ],
+      "region": "tyre",
+      "storySparks": 50,
+      "artifacts": [
+       "ph_cedar_keel_token"
+      ],
+      "attempts": 0
+     }
+    ]
+   ]
+  },
+  {
+   "name": "objectives cannot be skipped",
+   "steps": [
+    [
+     {
+      "eventId": "e-01",
+      "nodeId": "TYR-05:commission",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "commission"
+     },
+     {
+      "code": "OUT_OF_ORDER",
+      "lifecycle": "AVAILABLE",
+      "completed": [],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-02",
+      "nodeId": "TYR-05:choose_cedar",
+      "region": "byblos",
+      "x": 8,
+      "z": 6,
+      "choiceId": "seasoned"
+     },
+     {
+      "code": "OUT_OF_ORDER",
+      "lifecycle": "AVAILABLE",
+      "completed": [],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ]
+   ]
+  },
+  {
+   "name": "must be in the right place",
+   "steps": [
+    [
+     {
+      "eventId": "e-01",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": 40,
+      "z": 40,
+      "choiceId": "accept"
+     },
+     {
+      "code": "OUT_OF_RANGE",
+      "lifecycle": "AVAILABLE",
+      "completed": [],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-02",
+      "nodeId": "TYR-05:accept",
+      "region": "byblos",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "WRONG_REGION",
+      "lifecycle": "AVAILABLE",
+      "completed": [],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ]
+   ]
+  },
+  {
+   "name": "teleporting to byblos does not count as sailing",
+   "steps": [
+    [
+     {
+      "eventId": "e-01",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-02",
+      "nodeId": "TYR-05:choose_cedar",
+      "region": "byblos",
+      "x": 8,
+      "z": 6,
+      "choiceId": "seasoned"
+     },
+     {
+      "code": "OUT_OF_ORDER",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-03",
+      "nodeId": "TYR-05:sail_north",
+      "region": "byblos",
+      "x": -20,
+      "z": -42,
+      "choiceId": "coast_starboard"
+     },
+     {
+      "code": "WRONG_REGION",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ]
+   ]
+  },
+  {
+   "name": "wrong answers retry without penalty",
+   "steps": [
+    [
+     {
+      "eventId": "e-01",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-02",
+      "nodeId": "TYR-05:sail_north",
+      "region": "tyre",
+      "x": -20,
+      "z": -40,
+      "choiceId": "open_west"
+     },
+     {
+      "code": "WRONG_CHOICE",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 1
+     }
+    ],
+    [
+     {
+      "eventId": "e-03",
+      "nodeId": "TYR-05:sail_north",
+      "region": "tyre",
+      "x": -20,
+      "z": -40,
+      "choiceId": "coast_port"
+     },
+     {
+      "code": "WRONG_CHOICE",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 2
+     }
+    ],
+    [
+     {
+      "eventId": "e-04",
+      "nodeId": "TYR-05:sail_north",
+      "region": "tyre",
+      "x": -20,
+      "z": -40,
+      "choiceId": "made_up"
+     },
+     {
+      "code": "INVALID_CHOICE",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 2
+     }
+    ],
+    [
+     {
+      "eventId": "e-05",
+      "nodeId": "TYR-05:sail_north",
+      "region": "tyre",
+      "x": -20,
+      "z": -40,
+      "choiceId": "coast_starboard"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north"
+      ],
+      "region": "byblos",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 2
+     }
+    ]
+   ]
+  },
+  {
+   "name": "repeated triggers change nothing",
+   "steps": [
+    [
+     {
+      "eventId": "e-01",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-01",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "DUPLICATE_EVENT",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-09",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "OUT_OF_ORDER",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ]
+   ]
+  },
+  {
+   "name": "reward is granted exactly once",
+   "steps": [
+    [
+     {
+      "eventId": "e-01",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-02",
+      "nodeId": "TYR-05:sail_north",
+      "region": "tyre",
+      "x": -20,
+      "z": -40,
+      "choiceId": "coast_starboard"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north"
+      ],
+      "region": "byblos",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-03",
+      "nodeId": "TYR-05:choose_cedar",
+      "region": "byblos",
+      "x": 8,
+      "z": 6,
+      "choiceId": "seasoned"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north",
+       "TYR-05:choose_cedar"
+      ],
+      "region": "byblos",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-04",
+      "nodeId": "TYR-05:sail_south",
+      "region": "byblos",
+      "x": -10,
+      "z": 0,
+      "choiceId": "coast_port"
+     },
+     {
+      "code": "OK",
+      "lifecycle": "OBJECTIVE_PROGRESS",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north",
+       "TYR-05:choose_cedar",
+       "TYR-05:sail_south"
+      ],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-05",
+      "nodeId": "TYR-05:commission",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "commission"
+     },
+     {
+      "code": "QUEST_COMPLETED",
+      "lifecycle": "COMPLETED",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north",
+       "TYR-05:choose_cedar",
+       "TYR-05:sail_south",
+       "TYR-05:commission"
+      ],
+      "region": "tyre",
+      "storySparks": 50,
+      "artifacts": [
+       "ph_cedar_keel_token"
+      ],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-05",
+      "nodeId": "TYR-05:commission",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "commission"
+     },
+     {
+      "code": "DUPLICATE_EVENT",
+      "lifecycle": "COMPLETED",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north",
+       "TYR-05:choose_cedar",
+       "TYR-05:sail_south",
+       "TYR-05:commission"
+      ],
+      "region": "tyre",
+      "storySparks": 50,
+      "artifacts": [
+       "ph_cedar_keel_token"
+      ],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-06",
+      "nodeId": "TYR-05:commission",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "commission"
+     },
+     {
+      "code": "ALREADY_COMPLETE",
+      "lifecycle": "COMPLETED",
+      "completed": [
+       "TYR-05:accept",
+       "TYR-05:sail_north",
+       "TYR-05:choose_cedar",
+       "TYR-05:sail_south",
+       "TYR-05:commission"
+      ],
+      "region": "tyre",
+      "storySparks": 50,
+      "artifacts": [
+       "ph_cedar_keel_token"
+      ],
+      "attempts": 0
+     }
+    ]
+   ]
+  },
+  {
+   "name": "malformed events are rejected",
+   "steps": [
+    [
+     {
+      "eventId": "x",
+      "nodeId": "TYR-05:accept",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "INVALID_EVENT",
+      "lifecycle": "AVAILABLE",
+      "completed": [],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ],
+    [
+     {
+      "eventId": "e-02",
+      "nodeId": "TYR-99:nope",
+      "region": "tyre",
+      "x": -20,
+      "z": 4,
+      "choiceId": "accept"
+     },
+     {
+      "code": "UNKNOWN_NODE",
+      "lifecycle": "AVAILABLE",
+      "completed": [],
+      "region": "tyre",
+      "storySparks": 0,
+      "artifacts": [],
+      "attempts": 0
+     }
+    ]
+   ]
+  }
+ ]
+}
