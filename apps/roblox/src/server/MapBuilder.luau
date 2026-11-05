@@ -338,8 +338,8 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	mentorPart.CanCollide = true
 	mentorPart.Size = Vector3.new(4, 6, 4)
 	mentorPart.Position = plazaCenter + Vector3.new(-18, 3, -12)
-	mentorPart.Color = secondaryColor
-	mentorPart.Material = Enum.Material.SmoothPlastic
+	-- Invisible: this part carries the prompt and name label; the character is what shows.
+	mentorPart.Transparency = 1
 	mentorPart.TopSurface = Enum.SurfaceType.Smooth
 	mentorPart.BottomSurface = Enum.SurfaceType.Smooth
 	mentorPart:SetAttribute("Country", cc)
@@ -356,6 +356,11 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	mentorPrompt.Parent = mentorPart
 
 	createBillboardLabel(mentorPart, meta.mentorName, meta.name_en, primaryColor)
+
+	local MentorCharacter = require(ReplicatedStorage:WaitForChild("MiraVerseShared"):WaitForChild("Characters"):WaitForChild("MentorCharacter"))
+	local mentorFeet = plazaCenter + Vector3.new(-18, 0, -12)
+	local plazaSpawn = plazaCenter + Vector3.new(0, 0, 28)
+	MentorCharacter.build("MentorCharacter_" .. cc, CFrame.lookAt(mentorFeet, plazaSpawn), primaryColor, secondaryColor, plazaFolder)
 
 	local buildOriginPart = Instance.new("Part")
 	buildOriginPart.Name = "BuildOrigin_" .. cc

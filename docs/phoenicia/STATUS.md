@@ -21,7 +21,7 @@ States: `QUEUED → RUNNING → VALIDATING → READY_TO_MERGE → MERGED → VER
 |---|---|---|
 | Claude | Available | |
 | Codex | Available | Not yet dispatched; the slice was integrated directly |
-| Gemini | BLOCKED | No auth method configured in `~/.gemini/settings.json` |
+| Gemini | Available via `agy` | `agy -p` is signed in and lists Gemini models; the `gemini` command itself has no auth configured |
 | DGX Spark | Reachable | SSH works and LM Studio and Ollama list models; no inference test or throughput measurement yet |
 
 ## Playtest the slice

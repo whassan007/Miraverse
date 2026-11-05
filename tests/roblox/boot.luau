@@ -415,6 +415,7 @@ local function solveChallenge(folder, character)
 			end
 		end
 	elseif folder:FindFirstChild("Mentor") then
+		check("trade mentor is a character, not a box", folder.Mentor.Transparency == 1 and folder:FindFirstChild("MentorCharacter") ~= nil)
 		click(folder.Mentor)
 	end
 	return nil
@@ -454,6 +455,15 @@ local function defaultMode()
 	check("server creates its remotes", ReplicatedStorage:FindFirstChild("MiraVerseRemotes") ~= nil)
 	local mentor = map and map:FindFirstChild("Mentor_LB", true)
 	check("mentor name comes from the content pack", mentor and mentor:GetAttribute("MentorName") == "Teta Nahla", mentor and mentor:GetAttribute("MentorName"))
+
+	for _, code in { "LB", "EG", "IQ", "KR", "FR" } do
+		local anchor = map:FindFirstChild("Mentor_" .. code, true)
+		local figure = map:FindFirstChild("MentorCharacter_" .. code, true)
+		check(code .. ": mentor's interaction part is invisible", anchor and anchor.Transparency == 1)
+		check(code .. ": mentor is a character, not a box", figure ~= nil and #figure:GetChildren() >= 15 and figure:FindFirstChild("Head").Shape == Enum.PartType.Ball)
+		local prompt = anchor and anchor:FindFirstChildOfClass("ProximityPrompt")
+		check(code .. ": mentor can still be talked to", prompt ~= nil)
+	end
 
 	local player, character, root = addPlayer(101)
 	runScripts(game:GetService("StarterPlayer"), "LocalScript", "client")

@@ -1,11 +1,27 @@
 -- Trade: player offers required items to the mentor and receives the reward.
+local MentorCharacter = require(script.Parent.Parent.Characters.MentorCharacter)
+
 local Trade = {}
 Trade.__index = Trade
 
 function Trade.start(ctx)
 	local self = setmetatable({ ctx = ctx }, Trade)
 	local mentor = ctx.pack.mentor or {}
-	local part = ctx.newPart("Mentor", Vector3.new(3, 6, 3), ctx.origin() * CFrame.new(0, 3, -10), Color3.fromRGB(240, 200, 150))
+	local place = ctx.origin() * CFrame.new(0, 3, -10)
+	local part = ctx.newPart("Mentor", Vector3.new(3, 6, 3), place, Color3.fromRGB(240, 200, 150))
+	part.Transparency = 1
+	local colors = ctx.pack.colors or {}
+	local function color(hex, fallback)
+		local ok, value = pcall(Color3.fromHex, hex)
+		return ok and value or fallback
+	end
+	MentorCharacter.build(
+		"MentorCharacter",
+		place * CFrame.new(0, -3, 0) * CFrame.Angles(0, math.pi, 0),
+		color(colors.primary, Color3.fromRGB(120, 60, 70)),
+		color(colors.secondary, Color3.fromRGB(220, 180, 90)),
+		ctx.folder
+	)
 	ctx.label(part, mentor.name or "Mentor")
 	ctx.click(part, function()
 		self:describe()
