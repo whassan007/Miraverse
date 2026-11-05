@@ -125,7 +125,14 @@ describe('MiraVerse Global v1.1 — 11-Country, 66-Chapter, 264-Age-Variant & 14
       const dlg = DialogueService.buildChapterDialogue('LB01', loc, '11-13');
       expect(dlg.title.length).toBeGreaterThan(2);
       expect(dlg.greeting.length).toBeGreaterThan(10);
-      expect(dlg.sourceNote).toContain('contemporary_tradition');
+      const englishNote = DialogueService.buildChapterDialogue('LB01', 'en-US', '11-13').sourceNote;
+      expect(englishNote).toContain('living traditions');
+      if (loc === 'en-US') {
+        expect(dlg.sourceNote).toBe(englishNote);
+      } else {
+        expect(dlg.sourceNote.length).toBeGreaterThan(10);
+        expect(dlg.sourceNote).not.toBe(englishNote);
+      }
     }
 
     const msa = LocaleService.translate('ar', 'ui.hub.welcome');
