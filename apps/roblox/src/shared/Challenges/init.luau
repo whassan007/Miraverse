@@ -5,6 +5,8 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 
+local Locale = require(script.Parent.Atlas.Locale)
+
 local Challenges = {}
 
 local HANDLERS = {
@@ -13,6 +15,7 @@ local HANDLERS = {
 	build = "Build",
 	trade = "Trade",
 	word = "Word",
+	source = "Source",
 }
 
 local active = {} -- [Player] = session
@@ -153,8 +156,23 @@ local function buildContext(session)
 		return CFrame.new(0, 5, 0)
 	end
 
+	function ctx.t(key, ...)
+		return Locale.get(session.locale, key, ...)
+	end
+
+	function ctx.meaning(word)
+		if word.meaningKey then
+			return Locale.meaning(session.locale, word.meaningKey)
+		end
+		return word.en
+	end
+
 	function ctx.itemName(id)
-		return items[id] and items[id].name_en or tostring(id)
+		local item = items[id]
+		if item and item.nameKey then
+			return ctx.t(item.nameKey)
+		end
+		return item and item.name_en or tostring(id)
 	end
 
 	function ctx.itemColor(id)
@@ -233,6 +251,10 @@ local function buildContext(session)
 		getRemotes().Notify:FireClient(player, session.challenge.id, text, kind or "info")
 	end
 
+	function ctx.say(key, ...)
+		ctx.notify(ctx.t(key, ...), "info")
+	end
+
 	function ctx.progress(payload)
 		getRemotes().State:FireClient(player, session.challenge.id, payload)
 	end
@@ -262,7 +284,7 @@ end
 
 -- Blocks the calling thread until the challenge completes (true) or is
 -- abandoned (false). Returns success, results.
-function Challenges.run(player, challenge, pack)
+function Challenges.run(player, challenge, pack, locale)
 	if typeof(player) ~= "Instance" or not player:IsA("Player") or player.Parent ~= Players then
 		return false, {}
 	end
@@ -283,6 +305,7 @@ function Challenges.run(player, challenge, pack)
 		player = player,
 		challenge = challenge,
 		pack = pack,
+		locale = locale,
 		connections = {},
 		results = {},
 		done = false,
@@ -316,7 +339,11 @@ function Challenges.run(player, challenge, pack)
 		return false, {}
 	end
 
-	ctx.notify(challenge.goal_en or challenge.title_en or "", "goal")
+	if challenge.goalKey then
+		ctx.say(challenge.goalKey)
+	elseif challenge.goal_en or challenge.title_en then
+		ctx.notify(challenge.goal_en or challenge.title_en, "goal")
+	end
 	if not session.done then
 		session.finished.Event:Wait()
 	end

@@ -33,7 +33,7 @@ function Build.start(ctx)
 				self.cells[r .. "," .. c] = part
 				ctx.click(part, function()
 					if not self.selected then
-						ctx.notify("Choose a block first.", "info")
+						ctx.say("rbx.choose_block")
 						return
 					end
 					self:place(r, c, self.selected)
@@ -70,7 +70,7 @@ function Build:select(id)
 	for _, req in pairs(self.required) do
 		if req == id then
 			self.selected = id
-			self.ctx.notify("Selected " .. self.ctx.itemName(id), "info")
+			self.ctx.say("rbx.selected", self.ctx.itemName(id))
 			return
 		end
 	end
@@ -83,7 +83,7 @@ function Build:place(r, c, id)
 		return
 	end
 	if need ~= id then
-		self.ctx.notify("That block does not belong there.", "error")
+		self.ctx.say("rbx.wrong_block")
 		return
 	end
 	self.filled[key] = true
@@ -96,7 +96,7 @@ function Build:place(r, c, id)
 	solid:SetAttribute("ItemId", id)
 	self.ctx.progress({ remaining = self.remaining })
 	if self.remaining == 0 then
-		self.ctx.notify("Blueprint complete!", "ok")
+		self.ctx.say("rbx.blueprint_complete")
 		self.ctx.finish(true)
 	end
 end

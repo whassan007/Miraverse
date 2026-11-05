@@ -5,7 +5,7 @@ local Workspace = game:GetService("Workspace")
 
 local MapBuilder = {}
 
-export type CountryId = "LB" | "EG" | "IQ" | "KR" | "FR"
+export type CountryId = string
 
 type CountryMeta = {
 	country: CountryId,
@@ -14,9 +14,10 @@ type CountryMeta = {
 	secondary: string,
 	mentorName: string,
 	mentorGreeting: string,
+	characterStyle: string?,
 }
 
-local COUNTRIES: { CountryId } = { "LB", "EG", "IQ", "KR", "FR" }
+local COUNTRIES: { string } = {}
 
 local FALLBACK_META: { [string]: CountryMeta } = {
 	LB = {
@@ -94,45 +95,32 @@ local function loadContentPacks(): { [string]: any }
 	return {}
 end
 
-local function resolveCountryMeta(cc: CountryId, packData: any): CountryMeta
+local function resolveCountryMeta(cc: string, packData: any, catalog: any, Locale: any): CountryMeta
 	local fallback = FALLBACK_META[cc]
-	if type(packData) ~= "table" then
-		return fallback
-	end
-
-	local name_en = if type(packData.name_en) == "string" and #packData.name_en > 0
-		then packData.name_en
-		else fallback.name_en
-
-	local primary = fallback.primary
-	local secondary = fallback.secondary
-	if type(packData.colors) == "table" then
-		if type(packData.colors.primary) == "string" then
-			primary = packData.colors.primary
-		end
-		if type(packData.colors.secondary) == "string" then
-			secondary = packData.colors.secondary
+	local entry = nil
+	for _, country in catalog.countries do
+		if country.code == cc then
+			entry = country
 		end
 	end
-
-	local mentorName = fallback.mentorName
-	local mentorGreeting = fallback.mentorGreeting
-	if type(packData.mentor) == "table" then
-		if type(packData.mentor.name) == "string" and #packData.mentor.name > 0 then
-			mentorName = packData.mentor.name
-		end
-		if type(packData.mentor.greeting_en) == "string" and #packData.mentor.greeting_en > 0 then
-			mentorGreeting = packData.mentor.greeting_en
-		end
+	local english = Locale.get("en-US", entry.nameKey)
+	local name_en = string.match(english, "^(.-) %(") or english
+	local mentorName = Locale.get("en-US", entry.leadNameKey)
+	if type(packData) == "table" and type(packData.mentor) == "table" and type(packData.mentor.name) == "string" then
+		mentorName = packData.mentor.name
 	end
-
 	return {
 		country = cc,
 		name_en = name_en,
-		primary = primary,
-		secondary = secondary,
+		primary = if type(packData) == "table" and type(packData.colors) == "table" and packData.colors.primary
+			then packData.colors.primary
+			else entry.primary,
+		secondary = if type(packData) == "table" and type(packData.colors) == "table" and packData.colors.secondary
+			then packData.colors.secondary
+			else entry.secondary,
 		mentorName = mentorName,
-		mentorGreeting = mentorGreeting,
+		mentorGreeting = fallback and fallback.mentorGreeting or "",
+		characterStyle = entry.characterStyle,
 	}
 end
 
@@ -285,7 +273,7 @@ local function buildTravelLobby(mapFolder: Folder, metas: { [string]: CountryMet
 	end
 end
 
-local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId, meta: CountryMeta)
+local function buildCountryPlaza(mapFolder: Folder, index: number, cc: string, meta: CountryMeta)
 	local plazaCenter = Vector3.new(index * 160, 10, 0)
 	local primaryColor = hexToColor3(meta.primary, Color3.fromRGB(80, 140, 210))
 	local secondaryColor = hexToColor3(meta.secondary, Color3.fromRGB(220, 180, 80))
@@ -360,7 +348,29 @@ local function buildCountryPlaza(mapFolder: Folder, index: number, cc: CountryId
 	local MentorCharacter = require(ReplicatedStorage:WaitForChild("MiraVerseShared"):WaitForChild("Characters"):WaitForChild("MentorCharacter"))
 	local mentorFeet = plazaCenter + Vector3.new(-18, 0, -12)
 	local plazaSpawn = plazaCenter + Vector3.new(0, 0, 28)
-	MentorCharacter.build("MentorCharacter_" .. cc, CFrame.lookAt(mentorFeet, plazaSpawn), primaryColor, secondaryColor, plazaFolder)
+	MentorCharacter.build("MentorCharacter_" .. cc, CFrame.lookAt(mentorFeet, plazaSpawn), primaryColor, secondaryColor, plazaFolder, meta.characterStyle)
+
+	-- Simple town buildings in the country's colors, so the plaza isn't empty.
+	for _, house in { { -40, -40, 14, 10 }, { 40, -40, 12, 8 }, { 40, 12, 10, 9 }, { -40, 28, 12, 7 } } do
+		local building = Instance.new("Part")
+		building.Name = "TownBuilding"
+		building.Anchored = true
+		building.Size = Vector3.new(house[3], house[4], house[3])
+		building.Position = plazaCenter + Vector3.new(house[1], house[4] / 2, house[2])
+		building.Color = primaryColor:Lerp(Color3.new(1, 1, 1), 0.35)
+		building.Material = Enum.Material.Brick
+		building.TopSurface = Enum.SurfaceType.Smooth
+		building.Parent = plazaFolder
+		local roof = Instance.new("Part")
+		roof.Name = "TownRoof"
+		roof.Anchored = true
+		roof.Size = Vector3.new(house[3] + 1, 1, house[3] + 1)
+		roof.Position = plazaCenter + Vector3.new(house[1], house[4] + 0.5, house[2])
+		roof.Color = secondaryColor
+		roof.Material = Enum.Material.SmoothPlastic
+		roof.TopSurface = Enum.SurfaceType.Smooth
+		roof.Parent = plazaFolder
+	end
 
 	local buildOriginPart = Instance.new("Part")
 	buildOriginPart.Name = "BuildOrigin_" .. cc
@@ -416,6 +426,15 @@ local function findMapPart(partName: string): BasePart?
 end
 
 function MapBuilder.build(): Folder
+	local shared = ReplicatedStorage:WaitForChild("MiraVerseShared")
+	local atlas = shared:WaitForChild("Atlas")
+	local catalog = require(atlas:WaitForChild("Catalog"))
+	local Locale = require(atlas:WaitForChild("Locale"))
+	if #COUNTRIES == 0 then
+		for _, country in catalog.countries do
+			table.insert(COUNTRIES, country.code)
+		end
+	end
 	local existing = Workspace:FindFirstChild("MiraVerseMap")
 	if existing and existing:IsA("Folder") then
 		local allPresent = true
@@ -443,7 +462,7 @@ function MapBuilder.build(): Folder
 	local packs = loadContentPacks()
 	local metas: { [string]: CountryMeta } = {}
 	for _, cc in ipairs(COUNTRIES) do
-		metas[cc] = resolveCountryMeta(cc, packs[cc])
+		metas[cc] = resolveCountryMeta(cc, packs[cc], catalog, Locale)
 	end
 
 	buildTravelLobby(mapFolder, metas)
@@ -464,7 +483,7 @@ function MapBuilder.getSpawn(country: string): BasePart?
 	end
 	local cc = string.upper(country)
 	local part = findMapPart("Spawn_" .. cc)
-	if not part and FALLBACK_META[cc] then
+	if not part and table.find(COUNTRIES, cc) then
 		MapBuilder.build()
 		part = findMapPart("Spawn_" .. cc)
 	end
@@ -477,7 +496,7 @@ function MapBuilder.getMentorSpot(country: string): BasePart?
 	end
 	local cc = string.upper(country)
 	local part = findMapPart("Mentor_" .. cc)
-	if not part and FALLBACK_META[cc] then
+	if not part and table.find(COUNTRIES, cc) then
 		MapBuilder.build()
 		part = findMapPart("Mentor_" .. cc)
 	end
@@ -490,7 +509,7 @@ function MapBuilder.getBuildOrigin(country: string): BasePart?
 	end
 	local cc = string.upper(country)
 	local part = findMapPart("BuildOrigin_" .. cc)
-	if not part and FALLBACK_META[cc] then
+	if not part and table.find(COUNTRIES, cc) then
 		MapBuilder.build()
 		part = findMapPart("BuildOrigin_" .. cc)
 	end

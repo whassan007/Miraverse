@@ -20,8 +20,9 @@ end
 function Word:prompt()
 	local w = self.words[self.step + 1]
 	if w then
-		self.ctx.notify("Find the word for: " .. w.en, "info")
-		self.ctx.progress({ step = self.step, total = #self.words, ask = w.en })
+		local meaning = self.ctx.meaning(w)
+		self.ctx.say("rbx.find_word", meaning)
+		self.ctx.progress({ step = self.step, total = #self.words, ask = meaning })
 	end
 end
 
@@ -31,14 +32,14 @@ function Word:pick(i)
 	end
 	if i == self.step + 1 then
 		self.step += 1
-		self.ctx.notify(self.words[i].word .. " = " .. self.words[i].en, "ok")
+		self.ctx.say("rbx.word_match", self.words[i].word, self.ctx.meaning(self.words[i]))
 		if self.step == #self.words then
 			self.ctx.finish(true)
 		else
 			self:prompt()
 		end
 	else
-		self.ctx.notify("Not that one. Try again!", "error")
+		self.ctx.say("rbx.not_that_one")
 	end
 end
 

@@ -48,7 +48,7 @@ function Gather:collect(item)
 		return
 	end
 	self.got[item] += 1
-	self.ctx.notify("Collected " .. self.ctx.itemName(item), "ok")
+	self.ctx.say("rbx.collected", self.ctx.itemName(item))
 	self:report()
 	for id, n in pairs(self.need) do
 		if self.got[id] < n then

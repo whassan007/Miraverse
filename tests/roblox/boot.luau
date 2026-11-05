@@ -370,7 +370,7 @@ local function press(gui, text)
 end
 
 -- Plays whichever challenge folder exists using the world objects a player would use.
-local function solveChallenge(folder, character)
+local function solveChallenge(folder, character, challenge)
 	local root = character.HumanoidRootPart
 	local hasType = function(prefix)
 		for _, part in folder:GetChildren() do
@@ -384,7 +384,15 @@ local function solveChallenge(folder, character)
 		part:FindFirstChildOfClass("ClickDetector").MouseClick:Fire(localPlayer)
 		settle(0.01)
 	end
-	if hasType("Collect_") then
+	if hasType("Label_") then
+		for _, option in challenge.options do
+			if option ~= challenge.answer then
+				click(folder:FindFirstChild("Label_" .. option))
+			end
+		end
+		check(challenge.id .. " wrong answer keeps the check open", folder.Parent ~= nil)
+		click(folder:FindFirstChild("Label_" .. challenge.answer))
+	elseif hasType("Collect_") then
 		for _, part in folder:GetChildren() do
 			if string.sub(part.Name, 1, 8) == "Collect_" then
 				part.Touched:Fire(root)
@@ -456,13 +464,23 @@ local function defaultMode()
 	local mentor = map and map:FindFirstChild("Mentor_LB", true)
 	check("mentor name comes from the content pack", mentor and mentor:GetAttribute("MentorName") == "Teta Nahla", mentor and mentor:GetAttribute("MentorName"))
 
-	for _, code in { "LB", "EG", "IQ", "KR", "FR" } do
+	local Catalog = require("../../apps/roblox/src/shared/Atlas/Catalog")
+	local packs = require("../../apps/roblox/src/shared/Packs")
+	local english = require("../../apps/roblox/src/shared/Atlas/Locales/en-US")
+	local en = function(key)
+		return english[key] or key
+	end
+	check("catalog has every country and chapter", #Catalog.countries == 11 and #Catalog.chapters == 66)
+	check("catalog has every language", #Catalog.locales == 14)
+	for _, country in Catalog.countries do
+		local code = country.code
 		local anchor = map:FindFirstChild("Mentor_" .. code, true)
 		local figure = map:FindFirstChild("MentorCharacter_" .. code, true)
-		check(code .. ": mentor's interaction part is invisible", anchor and anchor.Transparency == 1)
-		check(code .. ": mentor is a character, not a box", figure ~= nil and #figure:GetChildren() >= 15 and figure:FindFirstChild("Head").Shape == Enum.PartType.Ball)
-		local prompt = anchor and anchor:FindFirstChildOfClass("ProximityPrompt")
-		check(code .. ": mentor can still be talked to", prompt ~= nil)
+		check(code .. ": lead character is not a box", anchor and anchor.Transparency == 1 and figure ~= nil and #figure:GetChildren() >= 12)
+		check(code .. ": lead uses the right style", figure ~= nil and (figure:FindFirstChild("Bun") ~= nil) == (country.characterStyle == "grandmother"))
+		check(code .. ": lead can be talked to", anchor ~= nil and anchor:FindFirstChildOfClass("ProximityPrompt") ~= nil)
+		check(code .. ": lobby has a portal", map:FindFirstChild("Portal_" .. code, true) ~= nil)
+		check(code .. ": plaza has town buildings", map:FindFirstChild("Plaza_" .. code):FindFirstChild("TownBuilding") ~= nil)
 	end
 
 	local player, character, root = addPlayer(101)
@@ -474,70 +492,115 @@ local function defaultMode()
 	if not gui then
 		return
 	end
-	local picker = findButton(gui, "Lebanon")
-	check("country picker is visible", picker ~= nil and isVisibleChain(picker))
-	if not picker then
-		return
+	for _, locale in Catalog.locales do
+		check("language offered: " .. locale.id, findButton(gui, locale.name) ~= nil)
 	end
+	check("language menu shows first", isVisibleChain(findButton(gui, "English")))
+	check("country menu is hidden until a language is chosen", gui.CountryPanel.Visible == false)
+	press(gui, "English")
+	settle(0.3)
 
-	local packs = require("../../apps/roblox/src/shared/Packs")
-	local countries = {
-		{ "LB", "Lebanon" }, { "EG", "Egypt" }, { "IQ", "Iraq" }, { "KR", "South Korea" }, { "FR", "France" },
-	}
-	for _, country in countries do
-		local code, label = country[1], country[2]
-		print("  -- " .. label)
-		press(gui, label)
-		settle(0.3)
-		local spawn = map:FindFirstChild("Spawn_" .. code, true)
-		check(code .. ": moves the player to its plaza", (root.Position - spawn.Position).Magnitude < 8, root.Position)
-		local playButton = findButton(gui, "Play challenge")
-		check(code .. ": play button is visible", playButton ~= nil and isVisibleChain(playButton))
-
-		for index, challenge in packs[code].chapters[1].challenges do
-			settle(0.3)
+	local chapterIsOpen = function()
+		for _, item in workspace:GetChildren() do
+			if string.sub(item.Name, 1, 10) == "Challenge_" then
+				return item
+			end
+		end
+		return nil
+	end
+	local playChallenges = function(label, challenges, playButton)
+		for index, challenge in challenges do
+			settle(0.28)
 			playButton.Activated:Fire()
-			settle(0.2)
-			local folder
-			for _, item in workspace:GetChildren() do
-				if string.sub(item.Name, 1, 10) == "Challenge_" then
-					folder = item
-				end
-			end
-			local label2 = string.format("%s: challenge %d (%s)", code, index, challenge.type)
-			check(label2 .. " opens in the world", folder ~= nil)
+			settle(0.1)
+			local folder = chapterIsOpen()
+			check(string.format("%s #%d %s opens", label, index, challenge.type), folder ~= nil)
 			if not folder then
-				break
+				return false
 			end
-			if solveChallenge(folder, character) == "cook" then
+			if solveChallenge(folder, character, challenge) == "cook" then
 				for _, id in challenge.recipe.inputs do
 					folder:FindFirstChild("Station_" .. id):FindFirstChildOfClass("ClickDetector").MouseClick:Fire(player)
 					settle(0.01)
 				end
 			end
-			settle(0.2)
-			local stillOpen = false
-			for _, item in workspace:GetChildren() do
-				if string.sub(item.Name, 1, 10) == "Challenge_" then
-					stillOpen = true
-				end
+			settle(0.1)
+			check(string.format("%s #%d %s can be completed", label, index, challenge.type), chapterIsOpen() == nil)
+			if chapterIsOpen() ~= nil then
+				return false
 			end
-			check(label2 .. " can be completed", not stillOpen)
-			if stillOpen then
+		end
+		return true
+	end
+
+	local chaptersPlayed = 0
+	for _, country in Catalog.countries do
+		local code = country.code
+		print("  -- " .. code)
+		press(gui, en(country.nameKey))
+		settle(0.3)
+		local spawn = map:FindFirstChild("Spawn_" .. code, true)
+		check(code .. ": moves the player to its plaza", (root.Position - spawn.Position).Magnitude < 8, root.Position)
+
+		local chapters = {}
+		for _, chapter in Catalog.chapters do
+			if chapter.country == code then
+				table.insert(chapters, chapter)
+			end
+		end
+		check(code .. ": has six chapters", #chapters == 6)
+
+		-- A locked chapter must refuse to start.
+		settle(0.3)
+		press(gui, "2. " .. en(chapters[2].titleKey) .. " (" .. en("rbx.locked") .. ")")
+		settle(0.3)
+		check(code .. ": locked chapter refuses to start", gui.ChapterPanel.Visible == true)
+
+		for _, chapter in chapters do
+			settle(0.28)
+			local title = chapter.index .. ". " .. en(chapter.titleKey)
+			local button = findButton(gui, title)
+			check(chapter.id .. " unlocked in order", button ~= nil)
+			if not button then
 				break
 			end
+			button.Activated:Fire()
+			settle(0.1)
+			local playButton = findButton(gui, en("rbx.play_challenge"))
+			if not playChallenges(chapter.id, chapter.challenges, playButton) then
+				break
+			end
+			settle(0.1)
+			check(chapter.id .. " shows its reward", gui:FindFirstChild("ChallengeToast") ~= nil and findButton(gui, en("rbx.close")) ~= nil and isVisibleChain(findButton(gui, en("rbx.close"))))
+			press(gui, en("rbx.close"))
+			settle(0.05)
+			chaptersPlayed += 1
 		end
-		settle(0.3)
-		local stamp = nil
-		for _, item in gui:GetDescendants() do
-			if item.ClassName == "TextLabel" and string.find(item.Text, "^MV") and isVisibleChain(item) then
-				stamp = item.Text
+
+		-- The original five countries keep their classic adventure and stamp.
+		if packs[code] then
+			settle(0.28)
+			press(gui, en("rbx.classic_adventure"))
+			settle(0.1)
+			local playButton = findButton(gui, en("rbx.play_challenge"))
+			if playChallenges(code .. " classic", packs[code].chapters[1].challenges, playButton) then
+				settle(0.1)
+				local stamp = nil
+				for _, item in gui:GetDescendants() do
+					if item.ClassName == "TextLabel" and string.find(item.Text, "^MV") and isVisibleChain(item) then
+						stamp = item.Text
+					end
+				end
+				check(code .. ": classic adventure shows the stamp", stamp ~= nil and string.find(stamp, code, 1, true) ~= nil, stamp)
+				press(gui, en("rbx.close"))
+				settle(0.05)
 			end
 		end
-		check(code .. ": finishing the chapter shows the souvenir stamp", stamp ~= nil and string.find(stamp, code, 1, true) ~= nil, stamp)
-		press(gui, "Close")
+		settle(0.28)
+		press(gui, en("rbx.back"))
 		settle(0.05)
 	end
+	check("all 66 chapters were played", chaptersPlayed == 66, chaptersPlayed)
 	local toast = gui:FindFirstChild("ChallengeToast")
 	check("challenge goals are shown to the player", toast ~= nil and #toast.Message.Text > 0)
 end
@@ -563,8 +626,8 @@ local function phoeniciaMode()
 		return
 	end
 	local countryUi = player.PlayerGui:FindFirstChild("MiraVerseUI")
-	local picker = countryUi and findButton(countryUi, "Lebanon")
-	check("country picker doesn't cover Tyre", picker == nil or not isVisibleChain(picker))
+	local picker = countryUi and findButton(countryUi, "English")
+	check("game menus don't cover Tyre", picker == nil or not isVisibleChain(picker))
 
 	local answer = function(text)
 		local deadline = os.clock() + 15

@@ -31,16 +31,16 @@ function Cook:add(id)
 	end
 	if self.inputs[self.step + 1] == id then
 		self.step += 1
-		self.ctx.notify("Added " .. self.ctx.itemName(id), "ok")
+		self.ctx.say("rbx.added", self.ctx.itemName(id))
 		self.ctx.progress({ step = self.step, total = #self.inputs })
 		if self.step == #self.inputs then
 			self.ctx.grant(self.output, 1)
-			self.ctx.notify("Made " .. self.ctx.itemName(self.output) .. "!", "ok")
+			self.ctx.say("rbx.made", self.ctx.itemName(self.output))
 			self.ctx.finish(true)
 		end
 	else
 		self.step = 0
-		self.ctx.notify("Wrong order! Start again from the first step.", "error")
+		self.ctx.say("rbx.wrong_order")
 		self.ctx.progress({ step = 0, total = #self.inputs })
 	end
 end

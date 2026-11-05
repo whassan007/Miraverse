@@ -7,6 +7,7 @@ Trade.__index = Trade
 function Trade.start(ctx)
 	local self = setmetatable({ ctx = ctx }, Trade)
 	local mentor = ctx.pack.mentor or {}
+	local mentorName = mentor.nameKey and ctx.t(mentor.nameKey) or mentor.name or "Mentor"
 	local place = ctx.origin() * CFrame.new(0, 3, -10)
 	local part = ctx.newPart("Mentor", Vector3.new(3, 6, 3), place, Color3.fromRGB(240, 200, 150))
 	part.Transparency = 1
@@ -20,9 +21,10 @@ function Trade.start(ctx)
 		place * CFrame.new(0, -3, 0) * CFrame.Angles(0, math.pi, 0),
 		color(colors.primary, Color3.fromRGB(120, 60, 70)),
 		color(colors.secondary, Color3.fromRGB(220, 180, 90)),
-		ctx.folder
+		ctx.folder,
+		ctx.pack.characterStyle
 	)
-	ctx.label(part, mentor.name or "Mentor")
+	ctx.label(part, mentorName)
 	ctx.click(part, function()
 		self:describe()
 		-- Convenience: clicking the mentor offers exactly what is needed.
@@ -36,7 +38,7 @@ function Trade:describe()
 	for _, n in ipairs(self.ctx.challenge.needs or {}) do
 		table.insert(parts, n.count .. " x " .. self.ctx.itemName(n.item))
 	end
-	self.ctx.notify("Needs: " .. table.concat(parts, ", "), "info")
+	self.ctx.say("rbx.needs", table.concat(parts, ", "))
 end
 
 function Trade:offer(offered)
@@ -48,7 +50,7 @@ function Trade:offer(offered)
 	local have = {}
 	for _, o in ipairs(offered) do
 		if type(o) ~= "table" or type(o.item) ~= "string" or type(o.count) ~= "number" or o.count < 1 or o.count % 1 ~= 0 then
-			ctx.notify("That offer is not valid.", "error")
+			ctx.say("rbx.offer_invalid")
 			return
 		end
 		have[o.item] = (have[o.item] or 0) + o.count
@@ -59,19 +61,19 @@ function Trade:offer(offered)
 	end
 	for item, count in pairs(need) do
 		if (have[item] or 0) < count then
-			ctx.notify("Not enough " .. ctx.itemName(item) .. ".", "error")
+			ctx.say("rbx.not_enough", ctx.itemName(item))
 			return
 		end
 	end
 	for item in pairs(have) do
 		if not need[item] then
-			ctx.notify("The mentor did not ask for " .. ctx.itemName(item) .. ".", "error")
+			ctx.say("rbx.not_asked", ctx.itemName(item))
 			return
 		end
 	end
 	for item, count in pairs(need) do
 		if not ctx.has(item, count) then
-			ctx.notify("You do not have " .. ctx.itemName(item) .. " yet.", "error")
+			ctx.say("rbx.do_not_have", ctx.itemName(item))
 			return
 		end
 	end
@@ -81,7 +83,7 @@ function Trade:offer(offered)
 	local reward = ctx.challenge.reward
 	if reward then
 		ctx.grant(reward.item, reward.count)
-		ctx.notify("Received " .. reward.count .. " x " .. ctx.itemName(reward.item), "ok")
+		ctx.say("rbx.received", reward.count, ctx.itemName(reward.item))
 	end
 	ctx.finish(true)
 end

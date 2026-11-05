@@ -44,6 +44,10 @@ Acceptance journey for both:
 
 Also check: terrain and water look right, NPCs walk, the ship moves (Roblox), the UI fits on a phone, and Arabic renders correctly. Bedrock may not shape Arabic properly, which is why 3arabizi is offered.
 
+## Roblox Atlas (11 countries, 66 chapters, 14 languages)
+
+Separate from Tyre, and on by default. `npm run compile` generates it from the shared registry and locale catalogs. `npm run test:roblox` plays every chapter in the simulator. Translations are machine-made through `tools/locale/translate.mjs` and flagged for human review. Chapter challenges are generated from each chapter's type, so they repeat patterns.
+
 ## Known limits of the slice
 
 - TYR-05 starts directly because TYR-01 to TYR-04 don't exist yet.
