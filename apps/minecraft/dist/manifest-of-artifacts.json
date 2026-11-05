@@ -17,13 +17,13 @@
     },
     "apps/minecraft/dist/miraverse-global.mcaddon": {
       "status": "VERIFIED",
-      "sha256": "b7d7e5f22a290df80ed4769126892c521563a78b35189ad5fdbc2ab721a34483",
-      "bytes": 2798064
+      "sha256": "9b5c899f6f943e5749d789bfb837a24b82bdd3de30cb994564f73ddb03f3fe80",
+      "bytes": 3565048
     },
     "apps/minecraft/dist/miraverse-global-sources.zip": {
       "status": "VERIFIED",
-      "sha256": "8f1b51e04a1eacb7c4e92741f5212702c7016ded272ceadcff48601abc946808",
-      "bytes": 12261608
+      "sha256": "87823e0db6a6651437677677a71814c09f4a53729d9277f9edcc8d0e647319f5",
+      "bytes": 12318558
     },
     "apps/minecraft/dist/global-content-catalog.json": {
       "status": "VERIFIED",
