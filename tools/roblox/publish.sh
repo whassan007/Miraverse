@@ -2,7 +2,7 @@
 # Builds, tests and uploads the Roblox place through the Open Cloud Place Publishing API,
 # so an update needs no manual save in Studio.
 #
-#   tools/roblox/publish.sh setup               store the API key and IDs (one time)
+#   tools/roblox/publish.sh setup               store the API key (one time)
 #   tools/roblox/publish.sh check               verify settings without uploading
 #   tools/roblox/publish.sh saved [--phoenicia]     upload as a saved version; players don't get it
 #   tools/roblox/publish.sh published [--phoenicia] upload and make it live for players
@@ -14,6 +14,9 @@ set -euo pipefail
 CONFIG="${HOME}/.config/miraverse/roblox.env"
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 API_BASE="https://apis.roblox.com/universes/v1"
+# The Miraverse experience. These IDs are public; only the API key is secret.
+ROBLOX_UNIVERSE_ID=10774667343
+ROBLOX_PLACE_ID=137990683693866
 
 load_config() {
   if [[ ! -f "$CONFIG" ]]; then
@@ -22,31 +25,19 @@ load_config() {
   fi
   # shellcheck disable=SC1090
   source "$CONFIG"
-  for name in ROBLOX_API_KEY ROBLOX_UNIVERSE_ID ROBLOX_PLACE_ID; do
-    if [[ -z "${!name:-}" ]]; then
-      echo "$name is not set in $CONFIG." >&2
-      exit 1
-    fi
-  done
-  if [[ ! "$ROBLOX_UNIVERSE_ID" =~ ^[0-9]+$ || ! "$ROBLOX_PLACE_ID" =~ ^[0-9]+$ ]]; then
-    echo "ROBLOX_UNIVERSE_ID and ROBLOX_PLACE_ID must be numbers." >&2
+  if [[ -z "${ROBLOX_API_KEY:-}" ]]; then
+    echo "ROBLOX_API_KEY is not set in $CONFIG." >&2
     exit 1
   fi
 }
 
 setup() {
   mkdir -p "$(dirname "$CONFIG")"
-  read -r -p "Universe ID: " universe_id
-  read -r -p "Place ID: " place_id
   read -r -s -p "Open Cloud API key (hidden): " api_key
   echo
   (
     umask 077
-    {
-      printf 'ROBLOX_UNIVERSE_ID=%q\n' "$universe_id"
-      printf 'ROBLOX_PLACE_ID=%q\n' "$place_id"
-      printf 'ROBLOX_API_KEY=%q\n' "$api_key"
-    } >"$CONFIG"
+    printf 'ROBLOX_API_KEY=%q\n' "$api_key" >"$CONFIG"
   )
   echo "Saved to $CONFIG."
 }
