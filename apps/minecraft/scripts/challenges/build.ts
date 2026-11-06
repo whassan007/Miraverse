@@ -8,7 +8,7 @@ import { itemId, say, show } from './util.js';
 const FALLBACK_BLOCK = 'minecraft:white_concrete';
 
 function blockTypeFor(pack: Pack, item: string): string {
-  const id = itemId(pack, item);
+  const id = (pack as { atlasBlocks?: Record<string, string> }).atlasBlocks?.[item] ?? itemId(pack, item);
   try {
     BlockPermutation.resolve(id);
     return id;

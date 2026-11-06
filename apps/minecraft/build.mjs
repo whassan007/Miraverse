@@ -25,6 +25,8 @@ await esbuild.build({
   bundle: true,
   format: 'esm',
   target: 'es2022',
+  // Keeps translated text compact instead of escaping every character.
+  charset: 'utf8',
   external: ['@minecraft/server', '@minecraft/server-ui'],
   // Phoenicia stays out of default builds. Set MV_PHOENICIA=1 for a staging build.
   define: { __MV_PHOENICIA__: phoeniciaEnabled ? 'true' : 'false' },

@@ -14,7 +14,7 @@
     "validate": "tsx tools/validate.ts --profile=structural",
     "validate:structural": "tsx tools/validate.ts --profile=structural",
     "validate:release": "tsx tools/validate.ts --profile=release",
-    "compile": "tsx tools/compiler/index.ts && node tools/phoenicia/compile.mjs && node tools/roblox/compile-atlas.mjs",
+    "compile": "tsx tools/compiler/index.ts && node tools/phoenicia/compile.mjs && node tools/roblox/compile-atlas.mjs && node tools/minecraft/compile-atlas.mjs",
     "textures": "node tools/textures/gen.mjs",
     "assets:build": "tsx tools/assets/build-glb.ts",
     "pack:mcaddon": "node tools/pack/mcaddon.mjs",

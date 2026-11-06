@@ -269,4 +269,8 @@ fs.writeFileSync(path.join(OUT_DIR, 'Catalog.luau'), `${HEADER}return ${toLuau(c
 for (const [id, table] of tables) {
   fs.writeFileSync(path.join(OUT_DIR, 'Locales', `${id}.luau`), `${HEADER}return ${toLuau(table)}\n`);
 }
+// Shared with tools/minecraft/compile-atlas.mjs so both games use one chapter design.
+const sharedDir = path.join(ROOT, 'packages/content/minecraft-global/generated');
+fs.mkdirSync(sharedDir, { recursive: true });
+fs.writeFileSync(path.join(sharedDir, 'atlas-catalog.json'), JSON.stringify(catalog));
 console.log(`Compiled Atlas: ${catalog.countries.length} countries, ${catalog.chapters.length} chapters, ${tables.length} languages.`);

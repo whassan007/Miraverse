@@ -3,6 +3,7 @@ import { ActionFormData } from '@minecraft/server-ui';
 import { COUNTRIES, type CountryId } from '../../../../packages/content/schema.js';
 import { PACKS } from '../generated/packs.js';
 import { verify } from './stamp.js';
+import { ATLAS_COUNTRIES, atlasPassportLines, isAtlasCountry } from '../atlas/index.js';
 
 export const PASSPORT_ITEM = 'miraverse:passport';
 const K_COUNTRY = 'mv:country';
@@ -22,7 +23,7 @@ function readJson<T>(player: Player, key: string, fallback: T): T {
 
 export function getCountry(player: Player): CountryId | undefined {
   const c = player.getDynamicProperty(K_COUNTRY);
-  return typeof c === 'string' && (COUNTRIES as string[]).includes(c) ? (c as CountryId) : undefined;
+  return typeof c === 'string' && ((COUNTRIES as string[]).includes(c) || isAtlasCountry(c)) ? (c as CountryId) : undefined;
 }
 
 export function setCountry(player: Player, cc: CountryId): void {
@@ -68,8 +69,8 @@ export function getStamp(player: Player, cc: CountryId): string | undefined {
   return getStamps(player).find((s) => verify(s)?.country === cc);
 }
 
-/** Show the Passport UI. Local-only; nothing leaves the world. */
-export async function showPassport(player: Player): Promise<void> {
+/** Show the Passport UI. Local-only; nothing leaves the world. Returns true to change country. */
+export async function showPassport(player: Player): Promise<boolean> {
   const current = getCountry(player);
   const stamps = getStamps(player);
   const progress = getProgress(player);
@@ -84,21 +85,28 @@ export async function showPassport(player: Player): Promise<void> {
       `${pack.country === current ? '> ' : ''}${pack.name_en}: ${done}/${total}${stamp ? `  ${stamp}` : ''}`,
     );
   }
+  lines.push(...atlasPassportLines(player));
   const form = new ActionFormData()
     .title('MiraVerse Passport')
     .body(`${lines.join('\n')}\n\nStamps: ${stamps.length}/${PACKS.length}\nProgress is saved only in this world.`)
-    .button('Close');
-  await form.show(player);
+    .button('Close')
+    .button('Change country');
+  const res = await form.show(player);
+  return !res.canceled && res.selection === 1;
 }
 
 /** Country selection form; returns the chosen country (and saves it) or undefined if dismissed. */
 export async function chooseCountry(player: Player): Promise<CountryId | undefined> {
   const form = new ActionFormData().title('Choose your adventure').body('Where would you like to start?');
-  for (const p of PACKS) form.button(p.name_en);
+  const choices: { code: string; name: string }[] = [
+    ...PACKS.map((p) => ({ code: p.country as string, name: p.name_en })),
+    ...ATLAS_COUNTRIES,
+  ];
+  for (const choice of choices) form.button(choice.name);
   const res = await form.show(player);
   if (res.canceled || res.selection === undefined) return undefined;
-  const pack = PACKS[res.selection];
-  if (!pack) return undefined;
-  setCountry(player, pack.country);
-  return pack.country;
+  const choice = choices[res.selection];
+  if (!choice) return undefined;
+  setCountry(player, choice.code as CountryId);
+  return choice.code as CountryId;
 }

@@ -21,6 +21,7 @@ import { claimChapterPassportReward } from './src/passport/index.js';
 import { StructureBuilderV10 } from './src/structures/index.js';
 import { BedrockUiFormsV10 } from './src/ui/index.js';
 import type { CountryId } from '../../../packages/content/schema.js';
+import { buildAtlasWorld, isAtlasCountry, playAtlasCountry, waitForAtlasArea } from './atlas/index.js';
 import { buildPhoeniciaWorld, startPhoenicia, enterPhoenicia } from './src/phoenicia/bedrock.js';
 
 declare const __MV_PHOENICIA__: boolean;
@@ -110,6 +111,14 @@ async function begin(player: Player): Promise<void> {
     let cc = getCountry(player);
     if (!cc) cc = await chooseCountry(player);
     if (!cc) return;
+    if (isAtlasCountry(cc)) {
+      if (!(await waitForAtlasArea(cc))) {
+        player.sendMessage('The world is still loading. Use your passport to try again.');
+        return;
+      }
+      await playAtlasCountry(player, cc);
+      return;
+    }
     if (!(await waitUntilReady(cc))) {
       player.sendMessage('The world is still loading. Use your passport to try again.');
       return;
@@ -138,6 +147,7 @@ world.afterEvents.worldInitialize.subscribe(() => {
           if (loc) spawnMentor(p.country, loc);
         }
         worldReady = true;
+        buildAtlasWorld();
       })
       .catch(() => {
         worldReady = false;
@@ -159,7 +169,12 @@ world.afterEvents.itemUse.subscribe((ev) => {
   if (ev.itemStack.typeId !== PASSPORT_ITEM) return;
   const player = ev.source;
   void (async () => {
-    await showPassport(player);
+    if (busy.has(player.id)) return;
+    const changeCountry = await showPassport(player);
+    if (changeCountry) {
+      const picked = await chooseCountry(player);
+      if (!picked) return;
+    }
     if (getCountry(player) && !busy.has(player.id)) void begin(player);
   })();
 });
