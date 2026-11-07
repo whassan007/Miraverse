@@ -680,7 +680,7 @@ return {
 	["item.ua_sunflower_garden_border"] = "حافة حديقة دوار الشمس",
 	["item.ua_river_footbridge_stone"] = "حجر جسر النهر للمشاة",
 	["item.ua_archive_display_case"] = "خزانة عرض الأرشيف",
-	["item.ma_marrakesh_terracotta_pisé"] = "طين مراكش الفخاري المدكوك",
+	["item.ma_marrakesh_terracotta_pise"] = "طين مراكش الفخاري المدكوك",
 	["item.ma_zellij_star_mosaic"] = "فسيفساء زليج النجمية",
 	["item.ma_carved_cedar_arch"] = "قوس أرز منحوت",
 	["item.ma_halqa_circle_paver"] = "بلاطة رصف دائرة الحلقة",

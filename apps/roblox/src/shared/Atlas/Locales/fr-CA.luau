@@ -680,7 +680,7 @@ return {
 	["item.ua_sunflower_garden_border"] = "Bordure de jardin de tournesols",
 	["item.ua_river_footbridge_stone"] = "Pierre de passerelle de rivière",
 	["item.ua_archive_display_case"] = "Vitrine d'archives",
-	["item.ma_marrakesh_terracotta_pisé"] = "Pisé en terre cuite de Marrakech",
+	["item.ma_marrakesh_terracotta_pise"] = "Pisé en terre cuite de Marrakech",
 	["item.ma_zellij_star_mosaic"] = "Mosaïque étoilée en zellige",
 	["item.ma_carved_cedar_arch"] = "Arche en cèdre sculpté",
 	["item.ma_halqa_circle_paver"] = "Pavé du cercle de halqa",

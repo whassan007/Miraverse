@@ -257,7 +257,7 @@
         },
         {
           "propId": "cn_supply_chest",
-          "blockId": "minecraft:Barrel",
+          "blockId": "minecraft:barrel",
           "offset": {
             "x": 1384,
             "y": 65,

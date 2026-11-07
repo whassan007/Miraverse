@@ -837,8 +837,8 @@ return {
 					["color"] = "#d06044",
 				},
 				{
-					["id"] = "ma_marrakesh_terracotta_pisé",
-					["nameKey"] = "item.ma_marrakesh_terracotta_pisé",
+					["id"] = "ma_marrakesh_terracotta_pise",
+					["nameKey"] = "item.ma_marrakesh_terracotta_pise",
 					["color"] = "#d06044",
 				},
 				{

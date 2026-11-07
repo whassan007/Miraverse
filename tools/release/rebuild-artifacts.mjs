@@ -20,6 +20,7 @@ const run = (command) => {
 
 run('npm run -s compile');
 run('npm run -s textures');
+run('npm run -s minecraft:textures');
 run('npm run -s build:roblox');
 run('npm run -s build:phoenicia:roblox');
 run('npm run -s build:phoenicia:minecraft'); // Finishes by rebuilding the default add-on.

@@ -24,6 +24,7 @@
     "check:release": "npm run validate:release && npm run compile && npm run textures && npm run assets:build && npm -w apps/web run build && npm -w apps/minecraft run build && npm -w apps/api run build && npm run build:roblox && npm run pack:mcaddon && vitest run",
     "build:cloudflare": "npm run compile && npm run textures && npm run assets:build && npm -w apps/web run build && npm -w apps/minecraft run build && npm run pack:mcaddon && node apps/minecraft/tools/build/build-global-mcaddon.mjs && mkdir -p apps/web/dist/downloads && cp apps/minecraft/dist/miraverse.mcaddon apps/web/dist/downloads/ && cp apps/minecraft/dist/miraverse-global.mcaddon apps/web/dist/downloads/",
     "artifacts": "node tools/release/rebuild-artifacts.mjs",
+    "minecraft:textures": "node tools/minecraft/gen-block-textures.mjs",
     "phoenicia:compile": "node tools/phoenicia/compile.mjs",
     "test:phoenicia": "node tools/phoenicia/compile.mjs && vitest run tests/phoenicia && lune run tests/phoenicia/lune/run.luau",
     "test:roblox": "npm run build:roblox && lune run tests/roblox/boot.luau default apps/roblox/dist/miraverse.rbxlx && npm run build:phoenicia:roblox && lune run tests/roblox/boot.luau phoenicia apps/roblox/dist/miraverse-phoenicia-staging.rbxlx",

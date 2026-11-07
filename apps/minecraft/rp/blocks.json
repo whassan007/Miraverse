@@ -1,0 +1,267 @@
+{
+  "format_version": "1.21.40",
+  "miraverse:cn_bamboo_lattice_screen": {
+    "sound": "wood"
+  },
+  "miraverse:cn_grey_curved_roof_tile": {
+    "sound": "stone"
+  },
+  "miraverse:cn_moon_pavilion_lantern": {
+    "sound": "glass"
+  },
+  "miraverse:cn_mooncake_hearth_table": {
+    "sound": "stone"
+  },
+  "miraverse:cn_peach_blossom_timber": {
+    "sound": "wood"
+  },
+  "miraverse:cn_stone_bridge_arch": {
+    "sound": "stone"
+  },
+  "miraverse:cn_terrace_water_channel": {
+    "sound": "stone"
+  },
+  "miraverse:cn_whitewashed_hui_wall": {
+    "sound": "stone"
+  },
+  "miraverse:de_acoustic_echo_chime": {
+    "sound": "metal"
+  },
+  "miraverse:de_grail_hall_column": {
+    "sound": "stone"
+  },
+  "miraverse:de_half_timber_oak_frame": {
+    "sound": "wood"
+  },
+  "miraverse:de_renewing_garden_trellis": {
+    "sound": "wood"
+  },
+  "miraverse:de_rhine_slate_stone": {
+    "sound": "stone"
+  },
+  "miraverse:de_river_quay_bollard": {
+    "sound": "wood"
+  },
+  "miraverse:de_signal_beacon_lantern": {
+    "sound": "glass"
+  },
+  "miraverse:de_stained_story_glass": {
+    "sound": "glass"
+  },
+  "miraverse:eg_alabaster_lamp": {
+    "sound": "glass"
+  },
+  "miraverse:eg_cairo_mashrabiya": {
+    "sound": "wood"
+  },
+  "miraverse:eg_carved_cedar_door_frame": {
+    "sound": "wood"
+  },
+  "miraverse:eg_courtyard_fountain_tile": {
+    "sound": "stone"
+  },
+  "miraverse:eg_fanous_lantern_block": {
+    "sound": "glass"
+  },
+  "miraverse:eg_khan_arch_stone": {
+    "sound": "stone"
+  },
+  "miraverse:eg_koshari_cauldron_block": {
+    "sound": "stone"
+  },
+  "miraverse:eg_spice_bazaar_canopy": {
+    "sound": "cloth"
+  },
+  "miraverse:fr_boulangerie_wood_oven": {
+    "sound": "stone"
+  },
+  "miraverse:fr_carved_oak_shutter": {
+    "sound": "wood"
+  },
+  "miraverse:fr_cobblestone_paver": {
+    "sound": "stone"
+  },
+  "miraverse:fr_gilded_bakery_sign": {
+    "sound": "metal"
+  },
+  "miraverse:fr_lyon_ochre_stucco": {
+    "sound": "stone"
+  },
+  "miraverse:fr_mansard_slate_shingle": {
+    "sound": "stone"
+  },
+  "miraverse:fr_traboule_vault_stone": {
+    "sound": "stone"
+  },
+  "miraverse:fr_wrought_iron_balcony": {
+    "sound": "wood"
+  },
+  "miraverse:iq_baghdadi_courtyard_arch": {
+    "sound": "stone"
+  },
+  "miraverse:iq_calligraphy_frieze": {
+    "sound": "stone"
+  },
+  "miraverse:iq_copper_samovar_stand": {
+    "sound": "stone"
+  },
+  "miraverse:iq_kleicha_brick_oven": {
+    "sound": "stone"
+  },
+  "miraverse:iq_palm_weave_mat": {
+    "sound": "stone"
+  },
+  "miraverse:iq_shanasheel_oriel_screen": {
+    "sound": "wood"
+  },
+  "miraverse:iq_tigris_glazed_brick": {
+    "sound": "stone"
+  },
+  "miraverse:iq_turquoise_muqarnas": {
+    "sound": "stone"
+  },
+  "miraverse:jp_bamboo_water_spout": {
+    "sound": "wood"
+  },
+  "miraverse:jp_cedar_waystation_beam": {
+    "sound": "wood"
+  },
+  "miraverse:jp_kawara_roof_tile": {
+    "sound": "stone"
+  },
+  "miraverse:jp_poetic_lectern_stand": {
+    "sound": "wood"
+  },
+  "miraverse:jp_shoji_paper_lattice": {
+    "sound": "wood"
+  },
+  "miraverse:jp_stepping_garden_stone": {
+    "sound": "stone"
+  },
+  "miraverse:jp_wayfinding_stone_marker": {
+    "sound": "stone"
+  },
+  "miraverse:jp_wooden_footbridge_plank": {
+    "sound": "wood"
+  },
+  "miraverse:kr_courtyard_stepping_stone": {
+    "sound": "stone"
+  },
+  "miraverse:kr_giwa_eave_tile": {
+    "sound": "stone"
+  },
+  "miraverse:kr_hanji_sliding_screen": {
+    "sound": "wood"
+  },
+  "miraverse:kr_ondol_hearth_stone": {
+    "sound": "stone"
+  },
+  "miraverse:kr_onggi_fermentation_jar": {
+    "sound": "stone"
+  },
+  "miraverse:kr_pine_beam_bracket": {
+    "sound": "wood"
+  },
+  "miraverse:kr_songpyeon_steamer_block": {
+    "sound": "stone"
+  },
+  "miraverse:kr_stone_pagoda_lantern": {
+    "sound": "glass"
+  },
+  "miraverse:lb_byblos_limestone": {
+    "sound": "stone"
+  },
+  "miraverse:lb_carved_arch_stone": {
+    "sound": "stone"
+  },
+  "miraverse:lb_cedar_shutter": {
+    "sound": "wood"
+  },
+  "miraverse:lb_harbor_bollard": {
+    "sound": "wood"
+  },
+  "miraverse:lb_mosaic_courtyard_tile": {
+    "sound": "stone"
+  },
+  "miraverse:lb_saj_hearth_block": {
+    "sound": "stone"
+  },
+  "miraverse:lb_terracotta_roof_tile": {
+    "sound": "stone"
+  },
+  "miraverse:lb_zaatar_drying_rack": {
+    "sound": "wood"
+  },
+  "miraverse:ma_brass_pierced_lantern": {
+    "sound": "glass"
+  },
+  "miraverse:ma_carved_cedar_arch": {
+    "sound": "wood"
+  },
+  "miraverse:ma_halqa_circle_paver": {
+    "sound": "stone"
+  },
+  "miraverse:ma_marrakesh_terracotta_pise": {
+    "sound": "stone"
+  },
+  "miraverse:ma_mint_tea_hospitality_table": {
+    "sound": "wood"
+  },
+  "miraverse:ma_riad_courtyard_fountain": {
+    "sound": "stone"
+  },
+  "miraverse:ma_storyteller_stage_canopy": {
+    "sound": "cloth"
+  },
+  "miraverse:ma_zellij_star_mosaic": {
+    "sound": "stone"
+  },
+  "miraverse:ru_carved_pine_izba_log": {
+    "sound": "wood"
+  },
+  "miraverse:ru_folklore_archive_shelf": {
+    "sound": "wood"
+  },
+  "miraverse:ru_lakeside_reed_bed": {
+    "sound": "cloth"
+  },
+  "miraverse:ru_musical_dock_plank": {
+    "sound": "wood"
+  },
+  "miraverse:ru_painted_window_nalichnik": {
+    "sound": "stone"
+  },
+  "miraverse:ru_story_pavilion_arch": {
+    "sound": "stone"
+  },
+  "miraverse:ru_svetloyar_reflection_prism": {
+    "sound": "glass"
+  },
+  "miraverse:ru_wooden_belfry_shingle": {
+    "sound": "stone"
+  },
+  "miraverse:ua_archive_display_case": {
+    "sound": "wood"
+  },
+  "miraverse:ua_bandura_luthier_bench": {
+    "sound": "wood"
+  },
+  "miraverse:ua_carved_oak_archway": {
+    "sound": "wood"
+  },
+  "miraverse:ua_cobblestone_music_stage": {
+    "sound": "stone"
+  },
+  "miraverse:ua_embroidered_rushnyk_banner": {
+    "sound": "cloth"
+  },
+  "miraverse:ua_kyiv_hill_timber": {
+    "sound": "wood"
+  },
+  "miraverse:ua_river_footbridge_stone": {
+    "sound": "wood"
+  },
+  "miraverse:ua_sunflower_garden_border": {
+    "sound": "stone"
+  }
+}

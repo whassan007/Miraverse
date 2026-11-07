@@ -197,8 +197,6 @@ const countries = CODES.map((code) => {
 
 const outDir = path.join(MC, 'scripts/generated');
 fs.mkdirSync(outDir, { recursive: true });
-// IDs must be plain ASCII for Script API keys; the display names keep their accents.
-const output = JSON.stringify({ countries }).replaceAll('terracotta_pisé', 'terracotta_pise');
-fs.writeFileSync(path.join(outDir, 'atlas.json'), output);
+fs.writeFileSync(path.join(outDir, 'atlas.json'), JSON.stringify({ countries }));
 const fillCount = countries.reduce((sum, c) => sum + c.packedFills.length, 0);
 console.log(`Compiled Minecraft Atlas: ${countries.length} countries, ${fillCount} block fills.`);

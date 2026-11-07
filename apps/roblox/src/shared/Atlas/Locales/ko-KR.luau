@@ -680,7 +680,7 @@ return {
 	["item.ua_sunflower_garden_border"] = "해바라기 정원 울타리",
 	["item.ua_river_footbridge_stone"] = "강가 인도교 돌",
 	["item.ua_archive_display_case"] = "기록 보관 진열장",
-	["item.ma_marrakesh_terracotta_pisé"] = "마라케시 테라코타 다진 흙벽",
+	["item.ma_marrakesh_terracotta_pise"] = "마라케시 테라코타 다진 흙벽",
 	["item.ma_zellij_star_mosaic"] = "젤리즈 별 모자이크",
 	["item.ma_carved_cedar_arch"] = "조각된 삼나무 아치",
 	["item.ma_halqa_circle_paver"] = "할카 원형 바닥돌",

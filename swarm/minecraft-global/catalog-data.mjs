@@ -599,7 +599,7 @@ export const COUNTRIES_GLOBAL = [
     paletteRgb: [208, 96, 68],
     accentRgb: [42, 148, 126],
     customBlocks: [
-      'miraverse:ma_marrakesh_terracotta_pisé',
+      'miraverse:ma_marrakesh_terracotta_pise',
       'miraverse:ma_zellij_star_mosaic',
       'miraverse:ma_carved_cedar_arch',
       'miraverse:ma_halqa_circle_paver',

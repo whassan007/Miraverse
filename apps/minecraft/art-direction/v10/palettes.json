@@ -44,7 +44,7 @@
         "minecraft:gold_block",
         "minecraft:tinted_glass",
         "minecraft:lantern",
-        "minecraft:AZALEA_LEAVES"
+        "minecraft:azalea_leaves"
       ],
       "focalLandmark": "Compass Rose Astrolabe Rotunda & Five Cultural Portal Arches"
     },
@@ -116,7 +116,7 @@
         "minecraft:smooth_red_sandstone",
         "minecraft:dark_oak_trapdoor",
         "minecraft:terracotta",
-        "minecraft:Jungle_planks"
+        "minecraft:jungle_planks"
       ],
       "customBlocks": [
         "miraverse:eg_cairo_mashrabiya",
