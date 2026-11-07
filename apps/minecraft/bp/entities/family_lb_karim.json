@@ -1,0 +1,95 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "miraverse:family_lb_karim",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "miraverse:walk_to_dock": {
+        "minecraft:behavior.move_to_block": {
+          "priority": 3,
+          "tick_interval": 10,
+          "start_chance": 1,
+          "search_range": 32,
+          "search_height": 6,
+          "goal_radius": 1.5,
+          "stay_duration": 30,
+          "speed_multiplier": 1,
+          "target_blocks": [
+            "minecraft:lodestone"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "miraverse_family",
+          "npc"
+        ]
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {},
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:navigation.walk": {
+        "can_walk": true,
+        "can_path_over_water": false,
+        "avoid_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 2,
+        "look_distance": 8,
+        "probability": 0.8
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.8,
+        "xz_dist": 6,
+        "y_dist": 2
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      }
+    },
+    "events": {
+      "miraverse:go_to_dock": {
+        "add": {
+          "component_groups": [
+            "miraverse:walk_to_dock"
+          ]
+        }
+      }
+    }
+  }
+}

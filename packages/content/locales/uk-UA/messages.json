@@ -11,7 +11,7 @@
     "en-US"
   ],
   "humanReviewRequired": true,
-  "keyCount": 768,
+  "keyCount": 788,
   "strings": {
     "ui.campaign.title": "Відлуння дому: Атлас єднання",
     "ui.hub.title": "Обсерваторія Атласу",
@@ -780,6 +780,26 @@
     "item.food_fresh_mint": "Свіжа м'ята",
     "item.food_green_tea": "Зелений чай",
     "item.food_sugar": "Цукор",
-    "item.food_mint_tea_tray": "Таця з м'ятним чаєм"
+    "item.food_mint_tea_tray": "Таця з м'ятним чаєм",
+    "ui.language.choose": "Обери мову",
+    "ui.quest.current": "Завдання",
+    "ui.quest.continue": "Продовжити",
+    "npc.family_lb_karim.name": "Карім",
+    "npc.family_lb_karim.unavailable": "Привіт! Зараз я не можу говорити. Приходь до мене в порт.",
+    "npc.family_lb_karim.complete": "Поглянь на цю доріжку! Рибальські човни знову можуть дістатися кінця молу. Дякую тобі, кузене!",
+    "quest.pq_lb_harbor.title": "Зламана доріжка",
+    "quest.pq_lb_harbor.reward": "Ти отримуєш Портовий компас і 25 Іскорок історій!",
+    "quest.pq_lb_harbor.talk_start.intro": "Кузене, яке щастя! Шторм пробив діру в портовій доріжці, і рибалки не можуть дістатися кінця молу. Допоможеш мені її полагодити?",
+    "quest.pq_lb_harbor.talk_start.objective": "Поговори з Карімом на причалі",
+    "quest.pq_lb_harbor.inspect.objective": "Пройдися вздовж молу й подивися на пролом",
+    "quest.pq_lb_harbor.inspect.active": "Пройдися вздовж молу на захід від причалу. Ти побачиш пролом.",
+    "quest.pq_lb_harbor.collect.objective": "Розбий стос деревини біля складу та збери дошки",
+    "quest.pq_lb_harbor.collect.active": "Нам потрібні дошки. Розбий стос деревини на північ від складу.",
+    "quest.pq_lb_harbor.place.objective": "Поклади дошки, щоб закрити весь пролом",
+    "quest.pq_lb_harbor.place.active": "Заповни дошками весь пролом врівень із доріжкою.",
+    "quest.pq_lb_harbor.cross.objective": "Перейди полагодженою доріжкою до самого кінця молу",
+    "quest.pq_lb_harbor.cross.active": "А тепер випробуй її! Пройдися до самого кінця молу.",
+    "quest.pq_lb_harbor.talk_end.objective": "Повернися й розкажи Каріму",
+    "quest.pq_lb_harbor.talk_end.active": "У тебе вийшло? Тримається? Чудово!"
   }
 }

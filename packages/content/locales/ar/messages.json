@@ -11,7 +11,7 @@
     "en-US"
   ],
   "humanReviewRequired": true,
-  "keyCount": 768,
+  "keyCount": 788,
   "strings": {
     "ui.campaign.title": "أصداء الوطن: أطلس الانتماء",
     "ui.hub.title": "مرصد الأطلس",
@@ -780,6 +780,26 @@
     "item.food_fresh_mint": "نعناع طازج",
     "item.food_green_tea": "شاي أخضر",
     "item.food_sugar": "سكر",
-    "item.food_mint_tea_tray": "صينية شاي بالنعناع"
+    "item.food_mint_tea_tray": "صينية شاي بالنعناع",
+    "ui.language.choose": "اختر لغتك",
+    "ui.quest.current": "الهدف",
+    "ui.quest.continue": "متابعة",
+    "npc.family_lb_karim.name": "كريم",
+    "npc.family_lb_karim.unavailable": "مرحبًا! لا أستطيع التحدث الآن. تعال وابحث عني في الميناء.",
+    "npc.family_lb_karim.complete": "انظر إلى ذلك الممشى! يمكن لقوارب الصيد الوصول إلى نهاية كاسر الأمواج مجددًا. شكرًا لك يا ابن عمي.",
+    "quest.pq_lb_harbor.title": "الممشى المكسور",
+    "quest.pq_lb_harbor.reward": "لقد حصلت على بوصلة الميناء و25 من شرارات القصص!",
+    "quest.pq_lb_harbor.talk_start.intro": "يا ابن عمي، الحمد لله! تسببت عاصفة في إحداث فجوة في ممشى الميناء، ولا يستطيع الصيادون الوصول إلى نهاية كاسر الأمواج. هل تساعدني في إصلاحه؟",
+    "quest.pq_lb_harbor.talk_start.objective": "تحدث إلى كريم عند رصيف الميناء",
+    "quest.pq_lb_harbor.inspect.objective": "امشِ على طول كاسر الأمواج وانظر إلى الفجوة",
+    "quest.pq_lb_harbor.inspect.active": "امشِ على طول كاسر الأمواج غربًا من الرصيف. وسترى الفجوة.",
+    "quest.pq_lb_harbor.collect.objective": "اكسر كومة الأخشاب بجوار المستودع واجمع الألواح",
+    "quest.pq_lb_harbor.collect.active": "نحن بحاجة إلى ألواح خشبية. اكسر كومة الخشب شمال المستودع مباشرة.",
+    "quest.pq_lb_harbor.place.objective": "ضع الألواح لملء كل فراغ في الفجوة",
+    "quest.pq_lb_harbor.place.active": "املأ كل فراغ في الفجوة بالألواح حتى تصبح بمستوى الممشى نفسه.",
+    "quest.pq_lb_harbor.cross.objective": "اعبر فوق الجزء المُصلَح إلى نهاية كاسر الأمواج",
+    "quest.pq_lb_harbor.cross.active": "والآن اختبره! اعبر إلى نهاية كاسر الأمواج تمامًا.",
+    "quest.pq_lb_harbor.talk_end.objective": "عُد وأخبر كريم",
+    "quest.pq_lb_harbor.talk_end.active": "هل فعلتها؟ هل صمد؟ رائع!"
   }
 }

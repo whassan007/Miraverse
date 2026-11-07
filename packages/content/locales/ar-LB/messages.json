@@ -12,7 +12,7 @@
     "en-US"
   ],
   "humanReviewRequired": true,
-  "keyCount": 768,
+  "keyCount": 788,
   "strings": {
     "ui.campaign.title": "أصداء البيت: أطلس الانتماء",
     "ui.hub.title": "مرصد الأطلس",
@@ -781,6 +781,26 @@
     "item.food_fresh_mint": "نعناع طازج",
     "item.food_green_tea": "شاي أخضر",
     "item.food_sugar": "سكر",
-    "item.food_mint_tea_tray": "صينية شاي بالنعناع"
+    "item.food_mint_tea_tray": "صينية شاي بالنعناع",
+    "ui.language.choose": "نقّي لغتك",
+    "ui.quest.current": "الهدف",
+    "ui.quest.continue": "كمّل",
+    "npc.family_lb_karim.name": "كريم",
+    "npc.family_lb_karim.unavailable": "مرحبا! ما فيني إحكي هلّق. لاقيني بالمرفأ.",
+    "npc.family_lb_karim.complete": "شوف هل الممشى ما أحلاه! صار في فِلاك الصيد يوصلوا لآخر الرصيف من جديد. شكراً يا إبن عمي.",
+    "quest.pq_lb_harbor.title": "الممشى المكسور",
+    "quest.pq_lb_harbor.reward": "ربحت بوصلة المرفأ و٢٥ شعلة حكايات!",
+    "quest.pq_lb_harbor.talk_start.intro": "يا إبن عمي، الحمدلله على سلامتك! في عاصفة عملت فجوة بممشى المرفأ، وما عادوا الصيادين عم يقدروا يوصلوا لآخر الرصيف. بتساعدني نصلّحه؟",
+    "quest.pq_lb_harbor.talk_start.objective": "إحكي مع كريم ع الرصيف",
+    "quest.pq_lb_harbor.inspect.objective": "إمشي على طول الرصيف وشوف الفجوة",
+    "quest.pq_lb_harbor.inspect.active": "إمشي على طول الرصيف، غرب المرفأ. رح تشوف الفجوة هناك.",
+    "quest.pq_lb_harbor.collect.objective": "كسّر كومة الخشب حد المستودع ولمّ ألواح خشب",
+    "quest.pq_lb_harbor.collect.active": "بدنا ألواح خشب. كسّر كومة الخشب يلي شمال المستودع دغري.",
+    "quest.pq_lb_harbor.place.objective": "حط ألواح خشب ت تسكّر كل الفراغات بالفجوة",
+    "quest.pq_lb_harbor.place.active": "سكّر كل الفراغات بالفجوة بألواح الخشب، ع نفس مستوى الممشى.",
+    "quest.pq_lb_harbor.cross.objective": "إمشي فوق التصليح لتوصل لآخر الرصيف",
+    "quest.pq_lb_harbor.cross.active": "هلّق جرّبه! إمشي فوقه لتوصل لآخر الرصيف بالمرة.",
+    "quest.pq_lb_harbor.talk_end.objective": "إرجع وخَبّر كريم",
+    "quest.pq_lb_harbor.talk_end.active": "عملتها؟ وتحمّل؟ يا عيني، ممتاز!"
   }
 }

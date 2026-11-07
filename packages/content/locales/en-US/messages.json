@@ -10,7 +10,7 @@
     "en-US"
   ],
   "humanReviewRequired": false,
-  "keyCount": 768,
+  "keyCount": 788,
   "strings": {
     "ui.campaign.title": "Echoes of Home: The Atlas of Belonging",
     "ui.hub.title": "The Atlas Observatory",
@@ -779,6 +779,26 @@
     "item.food_fresh_mint": "Fresh Mint",
     "item.food_green_tea": "Green Tea",
     "item.food_sugar": "Sugar",
-    "item.food_mint_tea_tray": "Mint Tea Tray"
+    "item.food_mint_tea_tray": "Mint Tea Tray",
+    "ui.language.choose": "Choose your language",
+    "ui.quest.current": "Objective",
+    "ui.quest.continue": "Continue",
+    "npc.family_lb_karim.name": "Karim",
+    "npc.family_lb_karim.unavailable": "Hi! I can't talk right now. Come and find me at the harbor.",
+    "npc.family_lb_karim.complete": "Look at that walkway! The fishing boats can reach the end of the mole again. Thank you, cousin.",
+    "quest.pq_lb_harbor.title": "The Broken Walkway",
+    "quest.pq_lb_harbor.reward": "You earned the Harbor Compass and 25 Story Sparks!",
+    "quest.pq_lb_harbor.talk_start.intro": "Cousin, thank goodness! A storm tore a hole in the harbor walkway, and the fishers can't reach the end of the mole. Will you help me fix it?",
+    "quest.pq_lb_harbor.talk_start.objective": "Talk to Karim at the dock",
+    "quest.pq_lb_harbor.inspect.objective": "Walk out along the mole and look at the gap",
+    "quest.pq_lb_harbor.inspect.active": "Walk out along the mole, west from the dock. You will see the gap.",
+    "quest.pq_lb_harbor.collect.objective": "Break the timber stack by the warehouse and collect planks",
+    "quest.pq_lb_harbor.collect.active": "We need planks. Break the stack of timber just north of the warehouse.",
+    "quest.pq_lb_harbor.place.objective": "Place planks to fill every space in the gap",
+    "quest.pq_lb_harbor.place.active": "Fill every space in the gap with planks, level with the walkway.",
+    "quest.pq_lb_harbor.cross.objective": "Walk across the repair to the end of the mole",
+    "quest.pq_lb_harbor.cross.active": "Now test it! Walk across to the very end of the mole.",
+    "quest.pq_lb_harbor.talk_end.objective": "Go back and tell Karim",
+    "quest.pq_lb_harbor.talk_end.active": "You did it? It held? Wonderful!"
   }
 }

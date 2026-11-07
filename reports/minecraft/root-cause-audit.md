@@ -86,10 +86,8 @@ The seven defects have fewer than seven causes.
 
 | Blocker | Why it matters |
 |---|---|
-| No Bedrock runtime | The brief's Level 3 tests can't run without it. A dedicated server on the DGX could cover loading, content logs and scripted players, but not rendering. |
-| Family characters undefined | Liam, Kassem and Sharazad appear nowhere in the repository, and the only Layla is an Egyptian guide. |
-| Brief truncated | The text ends at Phase 11, Level 3, "Switch". |
+| No Bedrock runtime | The brief's Level 3 tests can't run without it. A dedicated server on the DGX could cover loading, content logs and scripted players, but not rendering. The download host currently returns NXDOMAIN. |
 
 ## Status
 
-No part of the 40-agent plan has been dispatched, because the brief requires the Lebanon slice to work first. Defects 4 and 7 are repaired in source. Defects 1, 2, 3, 5 and 6 are open.
+No part of the 40-agent plan has been dispatched, because the brief requires the Lebanon slice to work first. Defects 4 and 7 are repaired in source. Defects 1, 2, 3, 5 and 6 are open in released builds. See `recovery-report.md` for the current state and the Byblos slice.

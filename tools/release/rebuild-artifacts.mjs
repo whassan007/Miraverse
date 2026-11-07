@@ -24,6 +24,7 @@ run('npm run -s minecraft:textures');
 run('npm run -s build:roblox');
 run('npm run -s build:phoenicia:roblox');
 run('npm run -s build:phoenicia:minecraft'); // Finishes by rebuilding the default add-on.
+run('npm run -s build:physical:minecraft');
 run('node apps/minecraft/tools/build/build-global-mcaddon.mjs');
 
 const { buildDeterministicZipSync } = await import(
@@ -62,4 +63,5 @@ for (const [file, entry] of Object.entries(manifest.deliverables)) {
   if (entry.bytes !== undefined) entry.bytes = bytes.length;
 }
 fs.writeFileSync(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
+run('node tools/minecraft/gen-parity.mjs');
 console.log('All artifacts rebuilt.');

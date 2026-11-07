@@ -12,7 +12,7 @@
     "en-US"
   ],
   "humanReviewRequired": true,
-  "keyCount": 768,
+  "keyCount": 788,
   "strings": {
     "ui.campaign.title": "أصداء الوطن: أطلس الانتماء",
     "ui.hub.title": "مرصد الأطلس",
@@ -781,6 +781,26 @@
     "item.food_fresh_mint": "نعناع تازة",
     "item.food_green_tea": "چاي أخضر",
     "item.food_sugar": "شكر",
-    "item.food_mint_tea_tray": "صينية چاي بالنعناع"
+    "item.food_mint_tea_tray": "صينية چاي بالنعناع",
+    "ui.language.choose": "اختار لغتك",
+    "ui.quest.current": "الهدف",
+    "ui.quest.continue": "كمّل",
+    "npc.family_lb_karim.name": "كريم",
+    "npc.family_lb_karim.unavailable": "هلا! ما أگدر أحچي هسه. تعال وتلگاني بالمينا.",
+    "npc.family_lb_karim.complete": "شوف هذا الممر! قوارب الصيد تگدر توصل لنهاية كاسر الأمواج مرة ثانية. شكراً إلك، يا ابن عمي.",
+    "quest.pq_lb_harbor.title": "الممر المكسور",
+    "quest.pq_lb_harbor.reward": "حصلت على بوصلة المينا و25 شرارة قصة!",
+    "quest.pq_lb_harbor.talk_start.intro": "الحمد لله جيت يا ابن عمي! العاصفة كسرت ممر المينا، والصيادين ما يگدرون يوصلون لنهاية كاسر الأمواج. تساعدني نصلحه؟",
+    "quest.pq_lb_harbor.talk_start.objective": "احچي ويا كريم برصيف المينا",
+    "quest.pq_lb_harbor.inspect.objective": "امشي على طول كاسر الأمواج وشوف الفتحة",
+    "quest.pq_lb_harbor.inspect.active": "امشي على طول كاسر الأمواج باتجاه الغرب من الرصيف، وراح تشوف الفتحة.",
+    "quest.pq_lb_harbor.collect.objective": "اكسر كومة الخشب يم المخزن واجمع الألواح",
+    "quest.pq_lb_harbor.collect.active": "نحتاج ألواح. اكسر كومة الخشب اللي صايرة شمال المخزن.",
+    "quest.pq_lb_harbor.place.objective": "حط الألواح حتى تسد كل الفراغ بالفتحة",
+    "quest.pq_lb_harbor.place.active": "سد كل فراغ بالفتحة بالألواح، وخليها متساوية ويّه الممر.",
+    "quest.pq_lb_harbor.cross.objective": "اعبر فوگ التصليح وروح لنهاية كاسر الأمواج",
+    "quest.pq_lb_harbor.cross.active": "هسه جرّبه! اعبر للطرف الأخير من كاسر الأمواج.",
+    "quest.pq_lb_harbor.talk_end.objective": "ارجع وگول لكريم",
+    "quest.pq_lb_harbor.talk_end.active": "سويتها؟ ثابت وما انكسر؟ كلش حلو، عاشت إيدك!"
   }
 }

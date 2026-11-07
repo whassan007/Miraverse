@@ -11,7 +11,7 @@
     "en-US"
   ],
   "humanReviewRequired": true,
-  "keyCount": 768,
+  "keyCount": 788,
   "strings": {
     "ui.campaign.title": "Echoes of Home: Der Atlas der Zugehörigkeit",
     "ui.hub.title": "Das Atlas-Observatorium",
@@ -780,6 +780,26 @@
     "item.food_fresh_mint": "Frische Minze",
     "item.food_green_tea": "Grüner Tee",
     "item.food_sugar": "Zucker",
-    "item.food_mint_tea_tray": "Minztee-Tablett"
+    "item.food_mint_tea_tray": "Minztee-Tablett",
+    "ui.language.choose": "Wähle deine Sprache",
+    "ui.quest.current": "Aufgabe",
+    "ui.quest.continue": "Weiter",
+    "npc.family_lb_karim.name": "Karim",
+    "npc.family_lb_karim.unavailable": "Hallo! Ich kann gerade nicht sprechen. Komm und such mich am Hafen.",
+    "npc.family_lb_karim.complete": "Schau dir den Steg an! Die Fischerboote kommen wieder bis ans Ende der Mole. Danke, Cousin.",
+    "quest.pq_lb_harbor.title": "Der kaputte Steg",
+    "quest.pq_lb_harbor.reward": "Du hast den Hafenkompass und 25 Geschichtenfunken erhalten!",
+    "quest.pq_lb_harbor.talk_start.intro": "Cousin, ein Glück! Ein Sturm hat ein Loch in den Hafensteg gerissen und die Fischer kommen nicht mehr ans Ende der Mole. Hilfst du mir, ihn zu reparieren?",
+    "quest.pq_lb_harbor.talk_start.objective": "Sprich mit Karim am Dock",
+    "quest.pq_lb_harbor.inspect.objective": "Geh die Mole entlang und schau dir die Lücke an",
+    "quest.pq_lb_harbor.inspect.active": "Geh vom Dock aus nach Westen die Mole entlang. Du wirst die Lücke sehen.",
+    "quest.pq_lb_harbor.collect.objective": "Zerschlage den Holzstapel beim Lagerhaus und sammle Bretter",
+    "quest.pq_lb_harbor.collect.active": "Wir brauchen Bretter. Zerschlage den Holzstapel direkt nördlich vom Lagerhaus.",
+    "quest.pq_lb_harbor.place.objective": "Platziere Bretter, um jeden Freiraum in der Lücke zu füllen",
+    "quest.pq_lb_harbor.place.active": "Fülle jeden Freiraum in der Lücke mit Brettern, auf gleicher Höhe mit dem Steg.",
+    "quest.pq_lb_harbor.cross.objective": "Geh über die reparierte Stelle bis ans Ende der Mole",
+    "quest.pq_lb_harbor.cross.active": "Jetzt teste es! Geh hinüber bis ganz ans Ende der Mole.",
+    "quest.pq_lb_harbor.talk_end.objective": "Geh zurück und sag Karim Bescheid",
+    "quest.pq_lb_harbor.talk_end.active": "Du hast es geschafft? Es hat gehalten? Wunderbar!"
   }
 }

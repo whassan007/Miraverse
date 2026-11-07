@@ -12,7 +12,7 @@
     "en-US"
   ],
   "humanReviewRequired": true,
-  "keyCount": 768,
+  "keyCount": 788,
   "strings": {
     "ui.campaign.title": "أصداء البيت: أطلس الانتماء",
     "ui.hub.title": "مرصد الأطلس",
@@ -781,6 +781,26 @@
     "item.food_fresh_mint": "نعناع طازة",
     "item.food_green_tea": "شاي أخضر",
     "item.food_sugar": "سكر",
-    "item.food_mint_tea_tray": "صينية شاي بالنعناع"
+    "item.food_mint_tea_tray": "صينية شاي بالنعناع",
+    "ui.language.choose": "اختار لغتك",
+    "ui.quest.current": "الهدف",
+    "ui.quest.continue": "كمّل",
+    "npc.family_lb_karim.name": "كريم",
+    "npc.family_lb_karim.unavailable": "أهلاً! مش هعرف أتكلم دلوقتي، تعالى دور عليا عند المينا.",
+    "npc.family_lb_karim.complete": "بص على الممشى كده! مراكب الصيد تقدر توصل لآخر الرصيف تاني. شكراً يا ابن عمي.",
+    "quest.pq_lb_harbor.title": "الممشى المكسور",
+    "quest.pq_lb_harbor.reward": "كسبت بوصلة المينا و25 شرارة قصة!",
+    "quest.pq_lb_harbor.talk_start.intro": "يا ابن عمي، الحمد لله! العاصفة عملت فتحة في ممشى المينا، والصيادين مش عارفين يوصلوا لآخر الرصيف. ممكن تساعدني نصلحه؟",
+    "quest.pq_lb_harbor.talk_start.objective": "اتكلم مع كريم عند رصيف المينا",
+    "quest.pq_lb_harbor.inspect.objective": "امشي بطول الرصيف وبص على الفتحة",
+    "quest.pq_lb_harbor.inspect.active": "امشي بطول الرصيف ناحية الغرب من رصيف المينا، وهتشوف الفتحة.",
+    "quest.pq_lb_harbor.collect.objective": "اكسر كومة الخشب جنب المخزن واجمع ألواح خشب",
+    "quest.pq_lb_harbor.collect.active": "محتاجين ألواح خشب. اكسر كومة الخشب اللي شمال المخزن على طول.",
+    "quest.pq_lb_harbor.place.objective": "حط ألواح الخشب عشان تملى كل الفراغ في الفتحة",
+    "quest.pq_lb_harbor.place.active": "املى كل مكان في الفتحة بألواح الخشب، وخليها في نفس مستوى الممشى.",
+    "quest.pq_lb_harbor.cross.objective": "امشي فوق الجزء اللي اتصلح لحد آخر الرصيف",
+    "quest.pq_lb_harbor.cross.active": "دلوقتي جربها! امشي وعدّي لحد آخر الرصيف خالص.",
+    "quest.pq_lb_harbor.talk_end.objective": "ارجع وقول لكريم",
+    "quest.pq_lb_harbor.talk_end.active": "عملتها؟ ومسكت كويس؟ رائع جداً!"
   }
 }

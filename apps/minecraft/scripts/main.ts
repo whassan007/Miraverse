@@ -22,9 +22,11 @@ import { StructureBuilderV10 } from './src/structures/index.js';
 import { BedrockUiFormsV10 } from './src/ui/index.js';
 import type { CountryId } from '../../../packages/content/schema.js';
 import { buildAtlasWorld, isAtlasCountry, playAtlasCountry, waitForAtlasArea } from './atlas/index.js';
+import { chooseLanguage, enterByblos, isByblosReady, startPhysical } from './physical/index.js';
 import { buildPhoeniciaWorld, startPhoenicia, enterPhoenicia } from './src/phoenicia/bedrock.js';
 
 declare const __MV_PHOENICIA__: boolean;
+declare const __MV_PHYSICAL__: boolean;
 
 export const runtimeV10 = new MiraVerseBedrockRuntimeV10();
 export {
@@ -111,6 +113,11 @@ async function begin(player: Player): Promise<void> {
     let cc = getCountry(player);
     if (!cc) cc = await chooseCountry(player);
     if (!cc) return;
+    if (__MV_PHYSICAL__ && cc === 'LB' && isByblosReady()) {
+      await chooseLanguage(player);
+      enterByblos(player);
+      return;
+    }
     if (isAtlasCountry(cc)) {
       if (!(await waitForAtlasArea(cc))) {
         player.sendMessage('The world is still loading. Use your passport to try again.');
@@ -134,6 +141,7 @@ async function begin(player: Player): Promise<void> {
 }
 
 world.afterEvents.worldInitialize.subscribe(() => {
+  if (__MV_PHYSICAL__) system.runTimeout(() => startPhysical(), 120);
   if (__MV_PHOENICIA__) {
     startPhoenicia();
     system.runTimeout(() => buildPhoeniciaWorld(), 100);

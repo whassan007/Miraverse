@@ -1,0 +1,1286 @@
+{
+  "summary": {
+    "chapters": 66,
+    "minecraftMenuBased": 36,
+    "minecraftMissing": 30,
+    "minecraftPhysical": 0,
+    "physicalSliceQuests": 1,
+    "realGameRuntimeTests": 0
+  },
+  "chapters": [
+    {
+      "id": "LB01",
+      "country": "LB",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "LB02",
+      "country": "LB",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "LB03",
+      "country": "LB",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "LB04",
+      "country": "LB",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "LB05",
+      "country": "LB",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "LB06",
+      "country": "LB",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "IQ01",
+      "country": "IQ",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "IQ02",
+      "country": "IQ",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "IQ03",
+      "country": "IQ",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "IQ04",
+      "country": "IQ",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "IQ05",
+      "country": "IQ",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "IQ06",
+      "country": "IQ",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "EG01",
+      "country": "EG",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "EG02",
+      "country": "EG",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "EG03",
+      "country": "EG",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "EG04",
+      "country": "EG",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "EG05",
+      "country": "EG",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "EG06",
+      "country": "EG",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "FR01",
+      "country": "FR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "FR02",
+      "country": "FR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "FR03",
+      "country": "FR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "FR04",
+      "country": "FR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "FR05",
+      "country": "FR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "FR06",
+      "country": "FR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "KR01",
+      "country": "KR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "KR02",
+      "country": "KR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "KR03",
+      "country": "KR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "KR04",
+      "country": "KR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "KR05",
+      "country": "KR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "KR06",
+      "country": "KR",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "missing",
+        "automatedTest": "none",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "none",
+      "knownLimitations": [
+        "Not offered in Minecraft",
+        "Blocked until physical quests are proven"
+      ]
+    },
+    {
+      "id": "DE01",
+      "country": "DE",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "DE02",
+      "country": "DE",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "DE03",
+      "country": "DE",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "DE04",
+      "country": "DE",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "DE05",
+      "country": "DE",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "DE06",
+      "country": "DE",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "CN01",
+      "country": "CN",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "CN02",
+      "country": "CN",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "CN03",
+      "country": "CN",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "CN04",
+      "country": "CN",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "CN05",
+      "country": "CN",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "CN06",
+      "country": "CN",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "JP01",
+      "country": "JP",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "JP02",
+      "country": "JP",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "JP03",
+      "country": "JP",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "JP04",
+      "country": "JP",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "JP05",
+      "country": "JP",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "JP06",
+      "country": "JP",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "RU01",
+      "country": "RU",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "RU02",
+      "country": "RU",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "RU03",
+      "country": "RU",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "RU04",
+      "country": "RU",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "RU05",
+      "country": "RU",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "RU06",
+      "country": "RU",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "UA01",
+      "country": "UA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "UA02",
+      "country": "UA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "UA03",
+      "country": "UA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "UA04",
+      "country": "UA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "UA05",
+      "country": "UA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "UA06",
+      "country": "UA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "MA01",
+      "country": "MA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "MA02",
+      "country": "MA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "MA03",
+      "country": "MA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "MA04",
+      "country": "MA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "MA05",
+      "country": "MA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    },
+    {
+      "id": "MA06",
+      "country": "MA",
+      "roblox": {
+        "state": "implemented_generated_activity",
+        "automatedTest": "tests/roblox/boot.luau (simulated engine)",
+        "runtimeTest": "not_played_in_real_roblox"
+      },
+      "minecraft": {
+        "state": "menu_based",
+        "automatedTest": "tests/minecraft/atlas-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "partial_shared_design_but_menu_driven",
+      "knownLimitations": [
+        "Objectives advance through menus",
+        "Fails AC-04 until converted to physical gameplay"
+      ]
+    }
+  ],
+  "physicalQuests": [
+    {
+      "id": "pq_lb_harbor",
+      "country": "LB",
+      "roblox": {
+        "state": "no_equivalent",
+        "automatedTest": "none",
+        "runtimeTest": "none"
+      },
+      "minecraft": {
+        "state": "physical_behind_staging_flag",
+        "automatedTest": "tests/minecraft/physical-flow.test.ts (simulated API)",
+        "runtimeTest": "not_run_no_bedrock_runtime"
+      },
+      "objectiveEquivalence": "minecraft_only_vertical_slice",
+      "knownLimitations": [
+        "Not in default builds until it runs on a real Bedrock server"
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@
     "validate": "tsx tools/validate.ts --profile=structural",
     "validate:structural": "tsx tools/validate.ts --profile=structural",
     "validate:release": "tsx tools/validate.ts --profile=release",
-    "compile": "tsx tools/compiler/index.ts && node tools/phoenicia/compile.mjs && node tools/roblox/compile-atlas.mjs && node tools/minecraft/compile-atlas.mjs",
+    "compile": "tsx tools/compiler/index.ts && node tools/phoenicia/compile.mjs && node tools/roblox/compile-atlas.mjs && node tools/minecraft/compile-atlas.mjs && node tools/minecraft/compile-physical.mjs",
     "textures": "node tools/textures/gen.mjs",
     "assets:build": "tsx tools/assets/build-glb.ts",
     "pack:mcaddon": "node tools/pack/mcaddon.mjs",
@@ -29,6 +29,7 @@
     "test:phoenicia": "node tools/phoenicia/compile.mjs && vitest run tests/phoenicia && lune run tests/phoenicia/lune/run.luau",
     "test:roblox": "npm run build:roblox && lune run tests/roblox/boot.luau default apps/roblox/dist/miraverse.rbxlx && npm run build:phoenicia:roblox && lune run tests/roblox/boot.luau phoenicia apps/roblox/dist/miraverse-phoenicia-staging.rbxlx",
     "build:phoenicia:roblox": "npm run compile && mkdir -p apps/roblox/dist && rojo build apps/roblox/phoenicia.project.json -o apps/roblox/dist/miraverse-phoenicia-staging.rbxlx",
+    "build:physical:minecraft": "MV_PHYSICAL=1 node apps/minecraft/build.mjs && node tools/pack/mcaddon.mjs && cp apps/minecraft/dist/miraverse.mcaddon apps/minecraft/dist/miraverse-physical-staging.mcaddon && node apps/minecraft/build.mjs && node tools/pack/mcaddon.mjs",
     "build:phoenicia:minecraft": "MV_PHOENICIA=1 node apps/minecraft/build.mjs && node tools/pack/mcaddon.mjs && cp apps/minecraft/dist/miraverse.mcaddon apps/minecraft/dist/miraverse-phoenicia-staging.mcaddon && node apps/minecraft/build.mjs && node tools/pack/mcaddon.mjs",
     "dev": "npm -w apps/web run dev",
     "dev:api": "npm -w apps/api run start"

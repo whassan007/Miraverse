@@ -8,15 +8,23 @@ const outFile = path.join(__dirname, 'bp/scripts/main.js');
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
 
 const phoeniciaEnabled = process.env.MV_PHOENICIA === '1';
+// Physical quests stay out of default builds until they've run on a real Bedrock server.
+const physicalEnabled = process.env.MV_PHYSICAL === '1';
 
 // With the flag off, the Phoenicia entry resolves to empty stubs, so none of its code ships.
 const phoeniciaFlagPlugin = {
   name: 'phoenicia-flag',
   setup(build) {
-    if (phoeniciaEnabled) return;
-    build.onResolve({ filter: /phoenicia\/bedrock\.js$/ }, () => ({
-      path: path.join(__dirname, 'scripts/src/phoenicia/disabled.ts'),
-    }));
+    if (!phoeniciaEnabled) {
+      build.onResolve({ filter: /phoenicia\/bedrock\.js$/ }, () => ({
+        path: path.join(__dirname, 'scripts/src/phoenicia/disabled.ts'),
+      }));
+    }
+    if (!physicalEnabled) {
+      build.onResolve({ filter: /physical\/index\.js$/ }, () => ({
+        path: path.join(__dirname, 'scripts/physical/disabled.ts'),
+      }));
+    }
   },
 };
 
@@ -29,7 +37,10 @@ await esbuild.build({
   charset: 'utf8',
   external: ['@minecraft/server', '@minecraft/server-ui'],
   // Phoenicia stays out of default builds. Set MV_PHOENICIA=1 for a staging build.
-  define: { __MV_PHOENICIA__: phoeniciaEnabled ? 'true' : 'false' },
+  define: {
+    __MV_PHOENICIA__: phoeniciaEnabled ? 'true' : 'false',
+    __MV_PHYSICAL__: physicalEnabled ? 'true' : 'false',
+  },
   plugins: [phoeniciaFlagPlugin],
   outfile: outFile,
 });
