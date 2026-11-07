@@ -97,7 +97,7 @@ vi.mock('@minecraft/server', () => {
       setDynamicProperty: (k: string, v: unknown) => sim.worldProps.set(k, v),
       sendMessage: () => {},
       beforeEvents: { playerInteractWithEntity: signal('interact') },
-      afterEvents: { playerPlaceBlock: signal('place'), playerBreakBlock: signal('break') },
+      afterEvents: { playerPlaceBlock: signal('place'), playerBreakBlock: signal('break'), playerInteractWithEntity: signal('interactAfter'), dataDrivenEntityTrigger: signal('trigger') },
     },
   };
 });
@@ -135,6 +135,7 @@ function newPlayer(name = 'A') {
   const props = new Map<string, unknown>();
   const slots: any[] = Array(36).fill(undefined);
   const player: any = {
+    id: `player-${sim.players.length}-${name}-${Math.random()}`,
     name,
     location: { ...byblos.spawn },
     messages: [] as string[],
@@ -366,6 +367,37 @@ describe('the Byblos repair quest needs real actions', () => {
     expect(french).not.toBe('');
   });
 
+  it('also responds when only the after-event fires', async () => {
+    const player = newPlayer();
+    fire('interactAfter', { player, target: karim() });
+    await flush();
+    expect(stage(player)).toBe(1);
+  });
+
+  it('responds to the entity trigger for a nearby player, once', async () => {
+    const player = newPlayer();
+    player.location = { ...karim().location };
+    sim.answer = 0;
+    fire('trigger', { entity: karim() });
+    await flush();
+    expect(stage(player)).toBe(1);
+    fire('trigger', { entity: karim() });
+    await flush();
+    expect(stage(player)).toBe(1);
+  });
+
+  it('ignores the entity trigger when no player is close', async () => {
+    const player = newPlayer();
+    player.location = { ...karim().location, x: karim().location.x + 40 };
+    fire('trigger', { entity: karim() });
+    await flush();
+    expect(stage(player)).toBeUndefined();
+  });
+
+  it('uses a seabed that gravity cannot collapse', () => {
+    for (const block of byblos.palette) expect(block).not.toMatch(/:(sand|gravel|red_sand)$/);
+  });
+
   it('cancels the default screen and opens dialogue on a later tick', async () => {
     const player = newPlayer();
     const event = await talk(player);
@@ -402,6 +434,15 @@ describe('Byblos is a distinct place', () => {
       expect(blockAt({ ...cell, y: cell.y - 1 })).toBe('minecraft:water');
     }
     expect(engine.missingCells(objective('place'))).toBe(objective('place').cells.length);
+  });
+
+  it('spawns players outside every building', () => {
+    const inside = (p: any, box: any) => p.x >= box.min[0] && p.x <= box.max[0] && p.z >= box.min[2] && p.z <= box.max[2] && p.y <= box.max[1] && p.y >= box.min[1] - 6;
+    const roofs = byblos.packedFills
+      .filter((f: number[]) => byblos.palette[f[6]] === 'miraverse:lb_terracotta_roof_tile')
+      .map((f: number[]) => ({ min: f.slice(0, 3), max: f.slice(3, 6) }));
+    expect(roofs.length).toBeGreaterThan(0);
+    for (const roof of roofs) expect(inside(byblos.spawn, roof), JSON.stringify(roof)).toBe(false);
   });
 
   it('stands everyone on solid ground, with open air above', () => {
@@ -465,6 +506,8 @@ describe('Byblos is a distinct place', () => {
     expect(entity.components['minecraft:movement'].value).toBeGreaterThan(0);
     expect(entity.components['minecraft:movement.basic']).toBeTruthy();
     expect(entity.components['minecraft:navigation.walk']).toBeTruthy();
+    expect(entity.components['minecraft:interact'].interactions[0].on_interact.event).toBe('miraverse:on_talk');
+    expect(entity.events['miraverse:on_talk']).toBeTruthy();
     expect(entity.component_groups['miraverse:walk_to_dock']['minecraft:behavior.move_to_block'].target_blocks).toEqual(['minecraft:lodestone']);
     expect(fs.existsSync('apps/minecraft/rp/entity/family_lb_karim.entity.json')).toBe(true);
     expect(fs.existsSync('apps/minecraft/rp/textures/entity/family_lb_karim.png')).toBe(true);

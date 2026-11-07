@@ -13,14 +13,14 @@ export const LOBBY_ORIGIN: BlockPos = { x: 0, y: 100, z: 0 };
 export const COUNTRY_BLOCKS: Record<CountryId, string> = {
   LB: 'minecraft:stone_bricks',
   EG: 'minecraft:sandstone',
-  IQ: 'minecraft:terracotta',
+  IQ: 'minecraft:hardened_clay',
   KR: 'minecraft:spruce_planks',
   FR: 'minecraft:quartz_block',
 };
 
 const MARKER_BLOCKS: Record<'spawn' | 'mentor' | 'build', string> = {
   spawn: 'minecraft:quartz_block',
-  mentor: 'minecraft:terracotta',
+  mentor: 'minecraft:hardened_clay',
   build: 'minecraft:stone_bricks',
 };
 
@@ -73,8 +73,11 @@ function safeSetBlock(
     if (!block) return false;
     block.setType?.(blockId);
     return true;
-  } catch {
-    // Unloaded chunk or out-of-bounds block operation; skip safely.
+  } catch (error) {
+    // Unloaded chunks are retried by the caller. Anything else is a real bug worth seeing.
+    if (!/unloaded/i.test(String((error as Error)?.name) + String(error))) {
+      console.warn(`[build] base: cannot place ${blockId}: ${error}`);
+    }
     return false;
   }
 }
@@ -232,12 +235,36 @@ export async function buildWorld(): Promise<void> {
     ];
 
     const MAX_BLOCKS_PER_TICK = 128;
+    const RETRY_TICKS = 20;
+    const MAX_ROUNDS = 60;
     let stageIndex = 0;
     let opIndex = 0;
+    let rounds = 0;
+    let pending = stages[0]?.ops ?? [];
+    let failedOps: Array<{ pos: BlockPos; blockId: string }> = [];
+
+    const areaName = (index: number) => `mv_base_${index}`;
+    const area = (command: 'add' | 'remove', index: number): void => {
+      const ops = stages[index]?.ops ?? [];
+      if (!dim || ops.length === 0) return;
+      const xs = ops.map((o) => o.pos.x);
+      const zs = ops.map((o) => o.pos.z);
+      try {
+        dim.runCommand(
+          command === 'add'
+            ? `tickingarea add ${Math.min(...xs)} 100 ${Math.min(...zs)} ${Math.max(...xs)} 100 ${Math.max(...zs)} ${areaName(index)} true`
+            : `tickingarea remove ${areaName(index)}`
+        );
+      } catch (error) {
+        console.warn(`[build] base: tickingarea ${command} ${areaName(index)}: ${error}`);
+      }
+    };
+    area('add', 0);
 
     const step = (): void => {
       if (stageIndex >= stages.length) {
         try {
+          // Only recorded here, once every block has really been placed.
           world?.setDynamicProperty?.(WORLD_BUILT_PROP, true);
         } catch {
           // Ignore dynamic property persistence errors in restricted test environments.
@@ -247,25 +274,47 @@ export async function buildWorld(): Promise<void> {
         return;
       }
 
-      const currentStage = stages[stageIndex];
-      const endOp = Math.min(opIndex + MAX_BLOCKS_PER_TICK, currentStage.ops.length);
-
+      const endOp = Math.min(opIndex + MAX_BLOCKS_PER_TICK, pending.length);
       if (dim) {
         for (let i = opIndex; i < endOp; i++) {
-          const op = currentStage.ops[i];
-          safeSetBlock(dim, op.pos, op.blockId);
+          const op = pending[i];
+          if (!safeSetBlock(dim, op.pos, op.blockId)) failedOps.push(op);
         }
       }
 
       opIndex = endOp;
-      if (opIndex >= currentStage.ops.length) {
-        if (currentStage.cc) {
-          readyAreas.add(currentStage.cc);
-        }
-        stageIndex++;
-        opIndex = 0;
+      if (opIndex < pending.length) {
+        scheduleNextTick(step);
+        return;
       }
-
+      if (failedOps.length > 0 && ++rounds < MAX_ROUNDS) {
+        // Chunks are still loading: wait, then retry only what failed.
+        pending = failedOps;
+        failedOps = [];
+        opIndex = 0;
+        // The request can be lost while other areas load, so ask again now and then.
+        if (rounds % 10 === 0) area('add', stageIndex);
+        system.runTimeout(step, RETRY_TICKS);
+        return;
+      }
+      if (failedOps.length > 0) {
+        const sample = failedOps[0];
+        console.warn(`[build] base: gave up on ${failedOps.length} blocks in stage ${stageIndex}, for example ${sample.blockId} at ${sample.pos.x},${sample.pos.y},${sample.pos.z}`);
+        area('remove', stageIndex);
+        activeBuildPromise = null;
+        resolve();
+        return;
+      }
+      console.warn(`[build] base: stage ${stageIndex} done at tick ${system.currentTick}`);
+      const finished = stages[stageIndex];
+      if (finished.cc) readyAreas.add(finished.cc);
+      area('remove', stageIndex);
+      stageIndex++;
+      area('add', stageIndex);
+      pending = stages[stageIndex]?.ops ?? [];
+      failedOps = [];
+      opIndex = 0;
+      rounds = 0;
       scheduleNextTick(step);
     };
 

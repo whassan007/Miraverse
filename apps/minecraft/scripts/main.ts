@@ -22,7 +22,7 @@ import { StructureBuilderV10 } from './src/structures/index.js';
 import { BedrockUiFormsV10 } from './src/ui/index.js';
 import type { CountryId } from '../../../packages/content/schema.js';
 import { buildAtlasWorld, isAtlasCountry, playAtlasCountry, waitForAtlasArea } from './atlas/index.js';
-import { chooseLanguage, enterByblos, isByblosReady, startPhysical } from './physical/index.js';
+import { chooseLanguage, enterByblos, startPhysical, waitForByblos } from './physical/index.js';
 import { buildPhoeniciaWorld, startPhoenicia, enterPhoenicia } from './src/phoenicia/bedrock.js';
 
 declare const __MV_PHOENICIA__: boolean;
@@ -113,7 +113,12 @@ async function begin(player: Player): Promise<void> {
     let cc = getCountry(player);
     if (!cc) cc = await chooseCountry(player);
     if (!cc) return;
-    if (__MV_PHYSICAL__ && cc === 'LB' && isByblosReady()) {
+    if (__MV_PHYSICAL__ && cc === 'LB') {
+      player.sendMessage('Byblos is being prepared. This can take a minute the first time.');
+      if (!(await waitForByblos())) {
+        player.sendMessage('Byblos is still loading. Use your passport to try again.');
+        return;
+      }
       await chooseLanguage(player);
       enterByblos(player);
       return;
@@ -150,16 +155,19 @@ world.afterEvents.worldInitialize.subscribe(() => {
   system.runTimeout(() => {
     buildWorld()
       .then(() => {
+        console.warn('[build] base world finished');
         for (const p of PACKS) {
           const loc = mentorSpots[p.country];
           if (loc) spawnMentor(p.country, loc);
         }
         worldReady = true;
-        void buildAtlasWorld();
       })
-      .catch(() => {
+      .catch((error) => {
+        console.warn(`[build] base world failed: ${error}`);
         worldReady = false;
       });
+    // Separate from the base world, so a problem there can't hold back the cities.
+    void buildAtlasWorld();
   }, 100);
 });
 

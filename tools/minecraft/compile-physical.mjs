@@ -90,11 +90,12 @@ function writeKarim() {
             priority: 3,
             tick_interval: 10,
             start_chance: 1,
-            search_range: 32,
-            search_height: 6,
+            search_range: 16,
+            search_height: 4,
             goal_radius: 1.5,
             stay_duration: 30,
             speed_multiplier: 1,
+            target_selection_method: 'nearest',
             target_blocks: ['minecraft:lodestone'],
           },
         },
@@ -108,6 +109,16 @@ function writeKarim() {
         'minecraft:damage_sensor': { triggers: [{ cause: 'all', deals_damage: false }] },
         'minecraft:pushable': { is_pushable: false, is_pushable_by_piston: false },
         'minecraft:nameable': { always_show: true, allow_name_tag_renaming: false },
+        // Without this the game doesn't treat him as interactable, and touch controls show no button.
+        'minecraft:interact': {
+          interactions: [
+            {
+              on_interact: { filters: { test: 'is_family', subject: 'other', value: 'player' }, event: 'miraverse:on_talk' },
+              interact_text: 'action.interact.talk',
+              swing: false,
+            },
+          ],
+        },
         'minecraft:movement': { value: 0.25 },
         'minecraft:movement.basic': {},
         'minecraft:jump.static': {},
@@ -118,6 +129,8 @@ function writeKarim() {
       },
       events: {
         'miraverse:go_to_dock': { add: { component_groups: ['miraverse:walk_to_dock'] } },
+        // The script handles the conversation; this event only marks the interaction as valid.
+        'miraverse:on_talk': {},
       },
     },
   };

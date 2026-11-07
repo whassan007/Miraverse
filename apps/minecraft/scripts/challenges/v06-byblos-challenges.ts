@@ -10,7 +10,7 @@ export const ALLOWED_BYBLOS_RESTORATION_BLOCKS = new Set([
   'minecraft:spruce_planks',
   'minecraft:lantern',
   'minecraft:brick_block',
-  'minecraft:terracotta',
+  'minecraft:hardened_clay',
 ]);
 
 export function verifyBedrockBlockPlacementV06(

@@ -1,6 +1,6 @@
 // Reports what really exists on the running server, using only stable APIs.
 // Dynamic properties are private to each pack, so this checks blocks and entities instead.
-import { system, world } from '@minecraft/server';
+import { BlockPermutation, system, world } from '@minecraft/server';
 
 const CHECKS = [
   ['quay', 3030, 101, 30],
@@ -16,6 +16,19 @@ const CHECKS = [
   ['MA floor', 2200, 100, 0],
   ['lobby', 0, 100, 0],
 ];
+
+system.runTimeout(() => {
+  const dimension = world.getDimension('overworld');
+  for (const id of ['minecraft:terracotta', 'minecraft:hardened_clay', 'minecraft:stone_bricks', 'minecraft:quartz_block', 'minecraft:spruce_planks', 'minecraft:sandstone']) {
+    try {
+      BlockPermutation.resolve(id);
+      console.warn(`[probe] id ok: ${id}`);
+    } catch (error) {
+      console.warn(`[probe] id INVALID: ${id}: ${error}`);
+    }
+  }
+  void dimension;
+}, 60);
 
 system.runInterval(() => {
   const dimension = world.getDimension('overworld');

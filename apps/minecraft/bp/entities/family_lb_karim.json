@@ -12,11 +12,12 @@
           "priority": 3,
           "tick_interval": 10,
           "start_chance": 1,
-          "search_range": 32,
-          "search_height": 6,
+          "search_range": 16,
+          "search_height": 4,
           "goal_radius": 1.5,
           "stay_duration": 30,
           "speed_multiplier": 1,
+          "target_selection_method": "nearest",
           "target_blocks": [
             "minecraft:lodestone"
           ]
@@ -56,6 +57,22 @@
         "always_show": true,
         "allow_name_tag_renaming": false
       },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "event": "miraverse:on_talk"
+            },
+            "interact_text": "action.interact.talk",
+            "swing": false
+          }
+        ]
+      },
       "minecraft:movement": {
         "value": 0.25
       },
@@ -89,7 +106,8 @@
             "miraverse:walk_to_dock"
           ]
         }
-      }
+      },
+      "miraverse:on_talk": {}
     }
   }
 }

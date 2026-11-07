@@ -85,10 +85,11 @@ function compileFills(district) {
     // The authored floor covers only part of the district.
     { min: [ox, y, oz], max: [ox + sx - 1, y, oz + sz - 1], block: FLOOR_BLOCK },
     // A safety wall, so children can't fall off the raised district.
-    { min: [ox - 1, y, oz - 1], max: [ox + sx, y + 3, oz - 1], block: 'minecraft:barrier' },
-    { min: [ox - 1, y, oz + sz], max: [ox + sx, y + 3, oz + sz], block: 'minecraft:barrier' },
-    { min: [ox - 1, y, oz], max: [ox - 1, y + 3, oz + sz - 1], block: 'minecraft:barrier' },
-    { min: [ox + sx, y, oz], max: [ox + sx, y + 3, oz + sz - 1], block: 'minecraft:barrier' },
+    // It stays inside the district's chunks, so the ticking area needs no extra ones.
+    { min: [ox, y + 1, oz], max: [ox + sx - 1, y + 3, oz], block: 'minecraft:barrier' },
+    { min: [ox, y + 1, oz + sz - 1], max: [ox + sx - 1, y + 3, oz + sz - 1], block: 'minecraft:barrier' },
+    { min: [ox, y + 1, oz], max: [ox, y + 3, oz + sz - 1], block: 'minecraft:barrier' },
+    { min: [ox + sx - 1, y + 1, oz], max: [ox + sx - 1, y + 3, oz + sz - 1], block: 'minecraft:barrier' },
   ];
   const rows = new Map();
   for (const voxel of district.voxels) {
@@ -183,8 +184,8 @@ const countries = CODES.map((code) => {
     mentorName: t(country.leadNameKey),
     spawn: shift(info.spawnPos),
     bounds: {
-      min: [structure.origin[0] - 1, structure.origin[1] + Y_SHIFT, structure.origin[2] - 1],
-      max: [structure.origin[0] + structure.size[0], structure.origin[1] + Y_SHIFT, structure.origin[2] + structure.size[2]],
+      min: [structure.origin[0], structure.origin[1] + Y_SHIFT, structure.origin[2]],
+      max: [structure.origin[0] + structure.size[0] - 1, structure.origin[1] + Y_SHIFT, structure.origin[2] + structure.size[2] - 1],
     },
     stampName: info.passportStamp.name,
     npcs: info.npcs.map((n) => ({ id: n.npcId, name: n.nameEn, pos: shift(n.spawnPos) })),

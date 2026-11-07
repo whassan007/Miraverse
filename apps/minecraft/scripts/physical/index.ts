@@ -24,6 +24,7 @@ const LOCALE_KEY = 'mv:locale_v1';
 const BUILT_KEY = 'mv:physical_built_v1:byblos';
 const NPC_TAG = 'miraverse_physical_npc';
 const CHECK_TICKS = 10;
+const TALK_REACH = 8;
 const RECOVERY_TICKS = 200;
 const DEFAULT_LOCALE: SupportedLocaleId = 'en-US';
 const GLOBAL_LOCALE_IDS: SupportedLocaleId[] = [
@@ -149,7 +150,10 @@ export function advance(player: Player, quest: any): void {
     progress.objective += 1;
     changed = true;
     const next = quest.objectives[progress.objective];
-    if (next) player.sendMessage(`§e${t(player, next.textKey)}`);
+    if (next) {
+      player.sendMessage(`§e${t(player, next.textKey)}`);
+      console.warn(`[quest] ${player.name} objective ${next.id}`);
+    }
   }
   if (changed) writeSave(player, save);
 }
@@ -172,19 +176,31 @@ export function dialogueFor(player: Player, quest: any, npcId: string): { key: s
   return { key: objective.dialogueKey, advances: false };
 }
 
+const lastTalkTick = new Map<string, number>();
+const TALK_DEDUPE_TICKS = 5;
+
 export async function talkToNpc(player: Player, npcId: string): Promise<void> {
+  lastTalkTick.set(player.id, system.currentTick);
   const quest = physical.quests.pq_lb_harbor;
   const text = physical.npcText[npcId];
   const { key, advances } = dialogueFor(player, quest, npcId);
-  const selection = await say(player, t(player, text.nameKey), t(player, key), [t(player, 'ui.quest.continue')]);
-  if (selection === undefined || !advances) return;
-  const save = loadSave(player);
-  const progress = save.quests[quest.id] ?? { objective: 0, done: false };
-  save.quests[quest.id] = progress;
-  progress.objective += 1;
-  if (progress.objective >= quest.objectives.length) completeQuest(player, quest, save);
-  else player.sendMessage(`§e${t(player, quest.objectives[progress.objective].textKey)}`);
-  writeSave(player, save);
+  console.warn(`[quest] ${player.name} talked to ${npcId}: ${key}`);
+  // Talking is the objective, so it counts on interaction, whatever the menu does next.
+  if (advances) {
+    const save = loadSave(player);
+    const progress = save.quests[quest.id] ?? { objective: 0, done: false };
+    save.quests[quest.id] = progress;
+    progress.objective += 1;
+    if (progress.objective >= quest.objectives.length) {
+      completeQuest(player, quest, save);
+      console.warn(`[quest] ${player.name} COMPLETED ${quest.id}: sparks=${save.storySparks} artifacts=${save.artifacts.join(',')}`);
+    } else {
+      player.sendMessage(`§e${t(player, quest.objectives[progress.objective].textKey)}`);
+      console.warn(`[quest] ${player.name} objective ${quest.objectives[progress.objective].id}`);
+    }
+    writeSave(player, save);
+  }
+  await say(player, t(player, text.nameKey), t(player, key), [t(player, 'ui.quest.continue')]);
 }
 
 export async function chooseLanguage(player: Player): Promise<void> {
@@ -277,6 +293,22 @@ async function buildByblos(): Promise<void> {
 
 export const isByblosReady = (): boolean => world.getDynamicProperty(BUILT_KEY) === true;
 
+/** Resolves true once Byblos is built, or false if that takes longer than tries seconds. */
+export function waitForByblos(tries = 120): Promise<boolean> {
+  return new Promise((resolve) => {
+    let attempts = 0;
+    const handle = system.runInterval(() => {
+      if (isByblosReady()) {
+        system.clearRun(handle);
+        resolve(true);
+      } else if (++attempts >= tries) {
+        system.clearRun(handle);
+        resolve(false);
+      }
+    }, 20);
+  });
+}
+
 export function enterByblos(player: Player): void {
   const { x, y, z } = byblos.spawn;
   player.teleport({ x: x + 0.5, y, z: z + 0.5 });
@@ -285,14 +317,44 @@ export function enterByblos(player: Player): void {
 }
 
 export function startPhysical(): void {
+  // The before-event doesn't always fire, so the after-event covers it, without talking twice.
+  const handledBefore = new Set<string>();
+  const npcFor = (target: Entity) => byblos.npcs.find((n: any) => target.hasTag(`${NPC_TAG}_${n.id}`));
   world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
-    const npc = byblos.npcs.find((n: any) => event.target.hasTag(`${NPC_TAG}_${n.id}`));
+    const npc = npcFor(event.target);
     if (!npc) return;
     event.cancel = true;
     const { player } = event;
+    handledBefore.add(player.id);
     // Before-events run in read-only mode, so the dialogue opens on the next tick.
-    system.run(() => void talkToNpc(player, npc.id));
+    system.run(() => {
+      handledBefore.delete(player.id);
+      void talkToNpc(player, npc.id);
+    });
   });
+  world.afterEvents.playerInteractWithEntity.subscribe((event) => {
+    console.warn(`[quest] after-event from ${event.player.name}`);
+    if (handledBefore.has(event.player.id)) return;
+    const npc = event.target && npcFor(event.target);
+    if (npc) void talkToNpc(event.player, npc.id);
+  });
+  // The entity's own interact component fires this, whichever client did the interacting.
+  world.afterEvents.dataDrivenEntityTrigger.subscribe(
+    (event) => {
+      const npc = npcFor(event.entity);
+      if (!npc) return;
+      const nearest = world
+        .getAllPlayers()
+        .map((player) => ({ player, distance: Math.hypot(player.location.x - event.entity.location.x, player.location.z - event.entity.location.z) }))
+        .sort((a, b) => a.distance - b.distance)[0];
+      console.warn(`[quest] on_talk trigger; nearest ${nearest?.player.name} at ${nearest?.distance.toFixed(1)}`);
+      if (!nearest || nearest.distance > TALK_REACH) return;
+      const last = lastTalkTick.get(nearest.player.id);
+      if (last !== undefined && system.currentTick - last < TALK_DEDUPE_TICKS) return;
+      void talkToNpc(nearest.player, npc.id);
+    },
+    { eventTypes: ['miraverse:on_talk'] }
+  );
   const quest = physical.quests.pq_lb_harbor;
   world.afterEvents.playerPlaceBlock.subscribe((event) => advance(event.player, quest));
   world.afterEvents.playerBreakBlock.subscribe((event) => advance(event.player, quest));

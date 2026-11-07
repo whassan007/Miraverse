@@ -20,7 +20,8 @@ const BOLLARD = 'miraverse:lb_harbor_bollard';
 const MOSAIC = 'miraverse:lb_mosaic_courtyard_tile';
 const PLANK = 'minecraft:spruce_planks';
 const WATER = 'minecraft:water';
-const SAND = 'minecraft:sand';
+// Not sand: sand obeys gravity, and this floor is raised above open air.
+const SEABED = 'minecraft:sandstone';
 const AIR = 'minecraft:air';
 
 // The mole runs west from the quay. Its gap is what the player repairs.
@@ -40,7 +41,7 @@ export function buildByblos(origin) {
   const at = (x, y, z) => ({ x: origin.x + x, y: origin.y + y, z: origin.z + z });
 
   // Sea and seabed across the whole site, held in by an invisible wall.
-  fill(-1, -3, -1, WIDTH, -3, DEPTH, SAND);
+  fill(-1, -3, -1, WIDTH, -3, DEPTH, SEABED);
   for (let y = -2; y <= SEA_Y; y++) fill(0, y, 0, WIDTH - 1, y, DEPTH - 1, WATER);
   fill(-1, -3, -1, WIDTH, 12, -1, 'minecraft:barrier');
   fill(-1, -3, DEPTH, WIDTH, 12, DEPTH, 'minecraft:barrier');
@@ -121,8 +122,10 @@ export function buildByblos(origin) {
     gapLookout: at(GAP.x1 + 2, 2, MOLE_Z + 1),
     moleEnd: at(MOLE_END_X + 1, 2, MOLE_Z + 1),
     dock: at(QUAY_X + 3, 2, MOLE_Z + 1),
-    spawn: at(QUAY_X + 4, 2, MOLE_Z + 8),
-    karimStart: at(SOUK_X - 3, 2, 24),
+    // On the open quay, in sight of the dock and clear of the warehouse.
+    spawn: at(QUAY_X + 1, 2, MOLE_Z + 8),
+    // Close enough for his search range, with the warehouse to walk around.
+    karimStart: at(SOUK_X - 4, 2, 24),
     soukEntrance: at(SOUK_X, 3, 29),
     castleGate: at(CASTLE_X + 2, 6, 39),
   };
