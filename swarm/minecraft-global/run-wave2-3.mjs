@@ -132,7 +132,7 @@ export function buildDistrictForCountry(c) {
       entryPos: { x: ox - 14, y: oy + 1, z: oz - 16 },
       furnishings: [
         { propId: `${ccLower}_craft_bench`, blockId: c.customBlocks[5], offset: { x: ox - 14, y: oy + 1, z: oz - 12 }, labelEn: 'Artisan Bench' },
-        { propId: `${ccLower}_supply_chest`, blockId: 'minecraft:Barrel', offset: { x: ox - 16, y: oy + 1, z: oz - 12 }, labelEn: 'Restoration Timber & Stone' },
+        { propId: `${ccLower}_supply_chest`, blockId: 'minecraft:barrel', offset: { x: ox - 16, y: oy + 1, z: oz - 12 }, labelEn: 'Restoration Timber & Stone' },
       ],
     },
   ];

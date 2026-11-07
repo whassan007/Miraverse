@@ -246,7 +246,7 @@ export const ALLOWED_BYBLOS_RESTORATION_BLOCKS = new Set([
   'minecraft:cut_sandstone',
   'minecraft:spruce_planks',
   'minecraft:lantern',
-  'minecraft:Brick_block',
+  'minecraft:brick_block',
   'minecraft:terracotta',
 ]);
 

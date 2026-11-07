@@ -95,7 +95,7 @@ function commitAndVerify(wtDir, stageId, agentId, ownPaths, testCmd, evidencePat
 async function buildCL07(wtDir) {
   const districts = [
     { id: 'hub', name: 'Compass Plaza Arrival Hub', origin: [0, 64, 0], size: [32, 12, 32], blocks: ['minecraft:stone_bricks', 'minecraft:chiseled_stone_bricks', 'minecraft:lantern', 'minecraft:gold_block'] },
-    { id: 'FR', name: 'France · Vieux Lyon Boulangerie District', origin: [200, 64, 0], size: [36, 16, 36], blocks: ['minecraft:SANDSTONE', 'minecraft:deepslate_tile_stairs', 'minecraft:oak_trapdoor', 'minecraft:smoker'] },
+    { id: 'FR', name: 'France · Vieux Lyon Boulangerie District', origin: [200, 64, 0], size: [36, 16, 36], blocks: ['minecraft:sandstone', 'minecraft:deepslate_tile_stairs', 'minecraft:oak_trapdoor', 'minecraft:smoker'] },
     { id: 'LB', name: 'Lebanon · Byblos Harbor & Saj District', origin: [-200, 64, 0], size: [36, 14, 36], blocks: ['minecraft:smooth_sandstone', 'minecraft:spruce_planks', 'minecraft:campfire', 'minecraft:prismarine'] },
     { id: 'EG', name: 'Egypt · Cairo Courtyard & Fanous District', origin: [0, 64, 200], size: [36, 15, 36], blocks: ['minecraft:cut_sandstone', 'minecraft:acacia_fence', 'minecraft:soul_lantern', 'minecraft:terracotta'] },
     { id: 'IQ', name: 'Iraq · Baghdad Shanasheel & Tigris District', origin: [0, 64, -200], size: [36, 16, 36], blocks: ['minecraft:mud_bricks', 'minecraft:dark_oak_fence', 'minecraft:cyan_glazed_terracotta', 'minecraft:water'] },
