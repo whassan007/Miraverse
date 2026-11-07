@@ -1,0 +1,14 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "MiraVerse Test Probe",
+    "description": "Test-server only. Never shipped to players.",
+    "uuid": "6c8d9b21-4f2a-4d03-8b25-300000000001",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 21, 50]
+  },
+  "modules": [
+    { "type": "script", "language": "javascript", "uuid": "6c8d9b21-4f2a-4d03-8b25-300000000002", "entry": "scripts/main.js", "version": [0, 1, 0] }
+  ],
+  "dependencies": [{ "module_name": "@minecraft/server", "version": "1.17.0" }]
+}

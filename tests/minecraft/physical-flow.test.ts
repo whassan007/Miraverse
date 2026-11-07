@@ -40,7 +40,10 @@ vi.mock('@minecraft/server', () => {
         }
       }
     },
-    runCommand: (command: string) => sim.commands.push(command),
+    runCommand: (command: string) => {
+      sim.commands.push(command);
+      return { successCount: 1 };
+    },
     getEntities: ({ tags }: { tags: string[] }) => sim.entities.filter((e) => tags.every((t) => e.tags.includes(t))),
     spawnEntity: (typeId: string, location: any) => {
       const entity = {

@@ -155,7 +155,7 @@ world.afterEvents.worldInitialize.subscribe(() => {
           if (loc) spawnMentor(p.country, loc);
         }
         worldReady = true;
-        buildAtlasWorld();
+        void buildAtlasWorld();
       })
       .catch(() => {
         worldReady = false;

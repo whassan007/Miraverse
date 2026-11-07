@@ -2,17 +2,17 @@
  * Plays the Atlas countries (Germany, China, Japan, Russia, Ukraine, Morocco) through the
  * existing challenge runners, and places their city districts.
  */
-import { BlockVolume, UnloadedChunksError, system, world, type Player } from '@minecraft/server';
+import { system, world, type Player } from '@minecraft/server';
 import { ActionFormData } from '@minecraft/server-ui';
 import { run as runChallenge } from '../challenges/index.js';
 import { say, show } from '../challenges/util.js';
 import { buildOrigins } from '../world/index.js';
+import { releaseArea, runFills } from '../world/fill-runner.js';
 import atlasData from '../generated/atlas.json';
 
 const atlas = atlasData as any;
 const BUILT_PREFIX = 'mv:atlas_built_v1:';
 const PROGRESS_KEY = 'mv:atlas_progress_v1';
-const CHUNK_WAIT_TICKS = 6000;
 const AREA_RETRY_TICKS = 20;
 const NPC_TAG = 'miraverse_atlas_npc';
 const BUILD_OFFSET = 2;
@@ -167,14 +167,6 @@ export function isAtlasAreaReady(code: string): boolean {
   }
 }
 
-function runAreaCommand(command: string): void {
-  try {
-    world.getDimension('overworld').runCommand(command);
-  } catch {
-    // The area may already exist, or may already be gone.
-  }
-}
-
 function spawnNpcs(country: any): void {
   const dimension = world.getDimension('overworld');
   for (const npc of country.npcs) {
@@ -188,31 +180,15 @@ function spawnNpcs(country: any): void {
 }
 
 /** Places one district. Partial builds aren't marked done, so the next world load retries. */
-function* buildDistrict(country: any): Generator<void, void, void> {
-  const name = `mv_atlas_${country.code.toLowerCase()}`;
-  const { min, max } = country.bounds;
-  runAreaCommand(`tickingarea add ${min[0]} ${min[1]} ${min[2]} ${max[0]} ${max[1]} ${max[2]} ${name} true`);
-  const dimension = world.getDimension('overworld');
-  let failed = 0;
-  for (const [ax, ay, az, bx, by, bz, blockIndex] of country.packedFills) {
-    const block = country.palette[blockIndex];
-    const deadline = system.currentTick + CHUNK_WAIT_TICKS;
-    for (;;) {
-      try {
-        dimension.fillBlocks(new BlockVolume({ x: ax, y: ay, z: az }, { x: bx, y: by, z: bz }), block);
-        break;
-      } catch (error) {
-        if (error instanceof UnloadedChunksError && system.currentTick < deadline) {
-          yield;
-          continue;
-        }
-        failed += 1;
-        console.warn(`Atlas: fill failed in ${country.code} for ${block}: ${error}`);
-        break;
-      }
-    }
-    yield;
-  }
+async function buildDistrict(country: any): Promise<void> {
+  const areaName = `mv_atlas_${country.code.toLowerCase()}`;
+  let failed = await runFills({
+    label: country.code,
+    areaName,
+    bounds: country.bounds,
+    palette: country.palette,
+    packedFills: country.packedFills,
+  });
   try {
     spawnNpcs(country);
   } catch (error) {
@@ -221,21 +197,17 @@ function* buildDistrict(country: any): Generator<void, void, void> {
   }
   if (failed === 0) {
     world.setDynamicProperty(builtKey(country.code), true);
-    // The area has done its job; it would otherwise keep chunks loaded forever.
-    runAreaCommand(`tickingarea remove ${name}`);
+    releaseArea(areaName);
   } else {
     world.sendMessage(`Some of ${country.name} could not be built. It will retry next time this world loads.`);
   }
 }
 
-export function buildAtlasWorld(): void {
-  system.runJob(
-    (function* () {
-      for (const country of atlas.countries) {
-        if (!isAtlasAreaReady(country.code)) yield* buildDistrict(country);
-      }
-    })()
-  );
+/** One district at a time, so their ticking areas and fills don't compete. */
+export async function buildAtlasWorld(): Promise<void> {
+  for (const country of atlas.countries) {
+    if (!isAtlasAreaReady(country.code)) await buildDistrict(country);
+  }
 }
 
 export function waitForAtlasArea(code: string, tries = 300): Promise<boolean> {

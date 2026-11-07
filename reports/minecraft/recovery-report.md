@@ -20,46 +20,54 @@ DEFECT RESOLUTION
 7. Invalid identifier: PASS in source (repository-wide scan passes; not yet loaded by a real game)
 
 GAMEPLAY METRICS
-Countries validated: 0 in a real game
-Cities structurally verified: 1 (Byblos, by route and terrain tests against generated data)
-Quests physically playable: 0 proven in a real game; 1 passes against a simulated API
+Countries validated: 0 end to end
+Cities structurally verified: 1 (Byblos: built on a real server; route tests use generated data)
+Quests physically playable: 0 proven with a player on a real server; 1 passes against a simulated API
 NPCs interactive: 0 proven in a real game; 1 passes against a simulated API
-NPCs mobile: 0 proven; 1 has pathfinding components that have never run
-Custom blocks rendering: 0 observed
+NPCs mobile: 1 observed moving on a real server (Karim, by the game's own AI); he doesn't yet reach the dock
+Custom blocks rendering: 0 observed; custom blocks load and place without errors on a real server
 Localized strings verified: 0 in a real game; automated checks cover all 13 non-English catalogs
 Save migrations tested: 0
 
 TESTING
 Static validation: passing, including the identifier scan and texture references
-Runtime tests: passing against simulated APIs, not a real game
+Runtime tests: passing against simulated APIs
+Bedrock server tests: add-on loads on 1.26.63.1 with 0 errors and 0 content-log warnings; Byblos builds with 0 failed fills
 Bedrock client tests: NOT RUN
-Quest completion tests: 1 quest against a simulated API; 0 in a real game
+Quest completion tests: 1 quest against a simulated API; 0 with a player on a real server
 Multiplayer tests: 1 simulated test that two players' saves stay separate; 0 in a real game
 Visual tests: NOT RUN, marked unverified
 
 BUILD
-Minecraft version: targets 1.21.50 or newer, Script API 1.17.0; current server release is 1.26.63.1 (never loaded)
-Behavior pack: built
-Resource pack: built
+Minecraft version: targets 1.21.50 or newer, Script API 1.17.0; tested on server 1.26.63.1
+Behavior pack: built, loaded by a real server
+Resource pack: built; a server can't confirm rendering
 Release package: miraverse.mcaddon and miraverse-global.mcaddon; slice in miraverse-physical-staging.mcaddon
 Build errors: none
 
 BLOCKERS
-1. Bedrock Dedicated Server can't be downloaded. Mojang's API lists only www.minecraft.net,
-   which returned NXDOMAIN from 1.1.1.1, 8.8.8.8 and 9.9.9.9 on 2026-11-06. Docker on the DGX is
-   ready, with the image pulled and untested under ARM emulation.
-2. No Bedrock client has been available, so Level 4 visual acceptance can't start.
+1. No Bedrock client has been available, so Level 4 visual acceptance can't start.
+2. Under x86 emulation on the DGX, the server hangs at startup on about half of its starts.
+   A restart-on-hang watchdog works around it. Cause not confirmed.
+
+OPEN BUGS FOUND ON THE REAL SERVER
+- Karim strolls but never reaches the dock, so his walk-to-marker behavior isn't working.
+- Germany's district waits indefinitely on 1 unloaded chunk of 36, so the Atlas districts don't finish building.
+- The existing lobby and plaza builder can mark the world built after failing on unloaded chunks. Not yet confirmed with a player online.
+
+FIXED BECAUSE OF THE REAL SERVER
+- 5 mentors had an invalid skin_list, and 5 recipes lacked required unlock data.
+- A retry loop starved chunk loading, so Byblos often never built, with no error logged.
 
 UNVERIFIED ITEMS
-- Whether any pack, block, entity or script loads in Bedrock.
-- Whether the server image runs under emulation on the DGX.
-- Karim's pathfinding, and every interaction event, on a real server.
+- Any player action on a real server: interaction, breaking, placing, quest completion.
 - Texture rendering, Arabic rendering and menu layout on a real client.
 - Whether Byblos reads as a distinctive place when seen.
 
 FINAL STATUS
-NOT COMPLETE. AC-11 is met in source. No other acceptance criterion is met. The Byblos slice
-has passed only simulated tests, so the brief's first vertical slice has not passed.
+NOT COMPLETE. AC-11 is met and the new ID loads on a real server. No other acceptance criterion is
+met. Byblos builds and Karim moves on a real server, but no player has played the quest on one, so
+the brief's first vertical slice has not passed.
 ```
 
 ## Family decision

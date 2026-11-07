@@ -87,6 +87,7 @@ export default async function compileMinecraft(packs: Pack[]): Promise<void> {
           'minecraft:recipe_shapeless': {
             description: { identifier: `miraverse:${id}` },
             tags: ['crafting_table'],
+            unlock: { context: 'AlwaysUnlocked' },
             ingredients: [...inputs].sort(compareText).map(input => ({ item: `miraverse:${itemId(pack.country, input)}` })),
             result: { item: `miraverse:${id}`, count: 1 },
           },

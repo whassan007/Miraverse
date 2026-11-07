@@ -38,7 +38,10 @@ vi.mock('@minecraft/server', () => {
       }
       sim.fills.push({ min: volume.from, max: volume.to, block });
     },
-    runCommand: (command: string) => sim.commands.push(command),
+    runCommand: (command: string) => {
+      sim.commands.push(command);
+      return { successCount: 1 };
+    },
     getEntities: ({ tags }: { tags: string[] }) => sim.entities.filter((e) => tags.every((t) => e.tags.includes(t))),
     spawnEntity: (typeId: string) => {
       const entity = {
@@ -285,9 +288,9 @@ describe('playing every chapter', () => {
 });
 
 describe('building the districts', () => {
-  it('places every district, waits for chunks, spawns NPCs and releases ticking areas', () => {
+  it('places every district, waits for chunks, spawns NPCs and releases ticking areas', async () => {
     sim.unloadedFailures = 25;
-    atlas.buildAtlasWorld();
+    await atlas.buildAtlasWorld();
     for (const country of COUNTRIES) {
       expect(atlas.isAtlasAreaReady(country.code), country.code).toBe(true);
     }
@@ -298,11 +301,11 @@ describe('building the districts', () => {
     expect(sim.commands.filter((c) => c.startsWith('tickingarea remove'))).toHaveLength(6);
   });
 
-  it('does not rebuild a finished district or duplicate its NPCs', () => {
-    atlas.buildAtlasWorld();
+  it('does not rebuild a finished district or duplicate its NPCs', async () => {
+    await atlas.buildAtlasWorld();
     const firstFills = sim.fills.length;
     const firstNpcs = sim.entities.length;
-    atlas.buildAtlasWorld();
+    await atlas.buildAtlasWorld();
     expect(sim.fills).toHaveLength(firstFills);
     expect(sim.entities).toHaveLength(firstNpcs);
   });

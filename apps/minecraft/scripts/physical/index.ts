@@ -6,7 +6,6 @@
 import {
   BlockVolume,
   ItemStack,
-  UnloadedChunksError,
   system,
   world,
   type Entity,
@@ -15,6 +14,7 @@ import {
 } from '@minecraft/server';
 import { ActionFormData } from '@minecraft/server-ui';
 import { LocaleService, type SupportedLocaleId } from '../src/locales/index.js';
+import { runFills } from '../world/fill-runner.js';
 import physicalData from '../generated/physical.json';
 
 const physical = physicalData as any;
@@ -25,7 +25,6 @@ const BUILT_KEY = 'mv:physical_built_v1:byblos';
 const NPC_TAG = 'miraverse_physical_npc';
 const CHECK_TICKS = 10;
 const RECOVERY_TICKS = 200;
-const CHUNK_WAIT_TICKS = 6000;
 const DEFAULT_LOCALE: SupportedLocaleId = 'en-US';
 const GLOBAL_LOCALE_IDS: SupportedLocaleId[] = [
   'en-US', 'fr-FR', 'fr-CA', 'de-DE', 'zh-Hans-CN', 'ja-JP', 'ru-RU', 'uk-UA', 'ko-KR', 'ar', 'ar-LB', 'ar-IQ', 'ar-EG', 'ar-MA',
@@ -259,39 +258,19 @@ function spawnNpcs(): void {
   }
 }
 
-function* buildByblos(): Generator<void, void, void> {
-  const { min, max } = byblos.bounds;
-  const name = 'mv_physical_byblos';
-  const dimension = world.getDimension('overworld');
-  try {
-    dimension.runCommand(`tickingarea add ${min[0]} ${min[1]} ${min[2]} ${max[0]} ${max[1]} ${max[2]} ${name} true`);
-  } catch {
-    // It may already exist from an earlier attempt.
-  }
-  let failed = 0;
-  for (const [ax, ay, az, bx, by, bz, blockIndex] of byblos.packedFills) {
-    const block = byblos.palette[blockIndex];
-    const deadline = system.currentTick + CHUNK_WAIT_TICKS;
-    for (;;) {
-      try {
-        dimension.fillBlocks(new BlockVolume({ x: ax, y: ay, z: az }, { x: bx, y: by, z: bz }), block);
-        break;
-      } catch (error) {
-        if (error instanceof UnloadedChunksError && system.currentTick < deadline) {
-          yield;
-          continue;
-        }
-        failed += 1;
-        console.warn(`Physical: fill failed for ${block}: ${error}`);
-        break;
-      }
-    }
-    yield;
-  }
+async function buildByblos(): Promise<void> {
+  const failed = await runFills({
+    label: 'Byblos',
+    areaName: 'mv_physical_byblos',
+    bounds: byblos.bounds,
+    palette: byblos.palette,
+    packedFills: byblos.packedFills,
+  });
   if (failed > 0) {
     world.sendMessage(`Byblos: ${failed} sections failed to build. It will retry next time this world loads.`);
     return;
   }
+  // The area stays, so Karim keeps walking and the timber can regrow when nobody is nearby.
   spawnNpcs();
   world.setDynamicProperty(BUILT_KEY, true);
 }
@@ -323,5 +302,5 @@ export function startPhysical(): void {
     recoverNpcs();
     refillTimber();
   }, RECOVERY_TICKS);
-  if (!isByblosReady()) system.runJob(buildByblos());
+  if (!isByblosReady()) void buildByblos();
 }
