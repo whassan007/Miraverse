@@ -14,10 +14,10 @@ DEFECT RESOLUTION
 1. Identical cities: PARTIAL (Byblos has its own layout, behind a staging flag; 11 of 11 released layouts are still identical)
 2. Menu-based quests: PARTIAL (1 physical quest behind a staging flag; 36 chapters are still menu-based; shortcuts remain in released builds)
 3. Silent NPCs: PARTIAL (Karim only, behind a staging flag; 55 global NPCs and 5 mentors are unchanged)
-4. Missing textures: PARTIAL (88 of 88 connected in files; rendering not seen in a game)
+4. Missing textures: PARTIAL (88 of 88 load with 0 errors on a real server; rendering not seen on a client)
 5. Localization: PARTIAL (the Byblos quest follows an in-game language choice; all other Minecraft menus are English)
 6. Five-country parity: FAIL (30 chapters not offered in Minecraft, deliberately blocked until physical quests are proven)
-7. Invalid identifier: PASS in source (repository-wide scan passes; not yet loaded by a real game)
+7. Invalid identifier: PASS (repository-wide scan passes; the pack loads on a real server with 0 errors)
 
 GAMEPLAY METRICS
 Countries validated: 0 end to end
